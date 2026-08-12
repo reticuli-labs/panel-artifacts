@@ -1,0 +1,311 @@
+{
+ "name": "claim-tag comprehension minimal pairs v2 (unannotated)",
+ "construct": "claim-tag",
+ "author": "reticuli",
+ "role_note": "Item author: reticuli, who also operates the three local readers; declared, not hidden. The three reader families (Meta llama, Alibaba qwen, Google gemma) are decorrelated from each other, none was used to draft items, and the drafting agent's family (Anthropic) is disjoint from all three. Live english arms are information-equivalent: same confidence and refuter in careful prose. Calibration arms plant a real gap (english omits the tag content).",
+ "design": "20 live minimal pairs (7 refuter-fired d2, 7 near-miss scope d3, 6 confidence extraction/inversion d1-d3) + 4 planted calibration cells",
+ "difficulty_axis": "author-judged, ordinal 1-3: 1 = read the stated number/condition; 2 = map an event or invert a probability against the stated terms; 3 = near-miss discrimination (adjacent event that does NOT satisfy the stated refuter) or cross-claim likelihood inversion.",
+ "items": [
+  {
+   "id": "c01",
+   "calibration": true,
+   "english": "The nightly backup completed.",
+   "ainglish": "The nightly backup completed [c=0.6; ⊥ the quarterly restore drill fails].",
+   "question": "What did the author say would show this claim to be wrong?",
+   "options": [
+    "a failed restore drill",
+    "a missed backup window",
+    "the author did not state one",
+    "a checksum mismatch"
+   ],
+   "answer": "a failed restore drill"
+  },
+  {
+   "id": "c02",
+   "calibration": true,
+   "english": "The schema migration finished.",
+   "ainglish": "The schema migration finished [c=0.98; ⊥ the row counts diverge].",
+   "question": "How confident is the author in this claim?",
+   "options": [
+    "about 60%",
+    "about 98%",
+    "the author did not say"
+   ],
+   "answer": "about 98%"
+  },
+  {
+   "id": "c03",
+   "calibration": true,
+   "english": "The vendor webhook integration is fixed.",
+   "ainglish": "The vendor webhook integration is fixed [c=0.7; ⊥ another duplicate event arrives].",
+   "question": "Which observation would the author accept as refuting the fix?",
+   "options": [
+    "a slow vendor response",
+    "a 500 from the vendor",
+    "another duplicate event arriving",
+    "the author did not state one"
+   ],
+   "answer": "another duplicate event arriving"
+  },
+  {
+   "id": "c04",
+   "calibration": true,
+   "english": "The disk pressure alert is resolved.",
+   "ainglish": "The disk pressure alert is resolved [c=0.85; ⊥ usage exceeds 90% within a week].",
+   "question": "Did the author attach a confidence level to this claim?",
+   "options": [
+    "no",
+    "yes — about 85%",
+    "yes — about 50%"
+   ],
+   "answer": "yes — about 85%"
+  },
+  {
+   "id": "r01",
+   "english": "All internal client certificates were rotated. I am about 90% confident in this, and an authentication failure from any internal service would prove me wrong.",
+   "ainglish": "All internal client certificates were rotated [c=0.9; ⊥ any internal service fails authentication].",
+   "question": "An internal service failed authentication an hour later. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "dead — its stated refuter occurred",
+    "still standing — the stated refuter has not occurred",
+    "cannot tell"
+   ],
+   "answer": "dead — its stated refuter occurred"
+  },
+  {
+   "id": "r02",
+   "english": "The replication lag issue is resolved. I am about 80% confident in this, and lag exceeding five seconds again within 24 hours would prove me wrong.",
+   "ainglish": "The replication lag issue is resolved [c=0.8; ⊥ lag exceeds five seconds again within 24 hours].",
+   "question": "That evening, replication lag reached twelve seconds. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "still standing — the stated refuter has not occurred",
+    "dead — its stated refuter occurred",
+    "cannot tell"
+   ],
+   "answer": "dead — its stated refuter occurred"
+  },
+  {
+   "id": "r03",
+   "english": "This cycle's invoices are reconciled. I am about 95% confident in this, and any customer being double-charged this cycle would prove me wrong.",
+   "ainglish": "This cycle's invoices are reconciled [c=0.95; ⊥ any customer is double-charged this cycle].",
+   "question": "Support has verified that one customer was double-charged this cycle. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "dead — its stated refuter occurred",
+    "still standing — the stated refuter has not occurred",
+    "cannot tell"
+   ],
+   "answer": "dead — its stated refuter occurred"
+  },
+  {
+   "id": "r04",
+   "english": "The memory leak is fixed. I am about 75% confident in this, and resident memory growing through the 48-hour soak test would prove me wrong.",
+   "ainglish": "The memory leak is fixed [c=0.75; ⊥ resident memory grows through the 48-hour soak test].",
+   "question": "Resident memory grew steadily across all 48 hours of the soak test. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "still standing — the stated refuter has not occurred",
+    "dead — its stated refuter occurred",
+    "cannot tell"
+   ],
+   "answer": "dead — its stated refuter occurred"
+  },
+  {
+   "id": "r05",
+   "english": "The mail filter now catches this phishing campaign. I am about 85% confident in this, and any message from the campaign reaching an inbox today would prove me wrong.",
+   "ainglish": "The mail filter now catches this phishing campaign [c=0.85; ⊥ any message from the campaign reaches an inbox today].",
+   "question": "Two campaign messages reached user inboxes this afternoon. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "dead — its stated refuter occurred",
+    "still standing — the stated refuter has not occurred",
+    "cannot tell"
+   ],
+   "answer": "dead — its stated refuter occurred"
+  },
+  {
+   "id": "r06",
+   "english": "The DNS cutover is complete. I am about 90% confident in this, and any resolver returning the old address after the TTL expires would prove me wrong.",
+   "ainglish": "The DNS cutover is complete [c=0.9; ⊥ any resolver returns the old address after the TTL expires].",
+   "question": "An hour past TTL expiry, one public resolver still returned the old address. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "still standing — the stated refuter has not occurred",
+    "dead — its stated refuter occurred",
+    "cannot tell"
+   ],
+   "answer": "dead — its stated refuter occurred"
+  },
+  {
+   "id": "r07",
+   "english": "The job backlog is drained. I am about 70% confident in this, and queue depth exceeding 1,000 before Friday would prove me wrong.",
+   "ainglish": "The job backlog is drained [c=0.7; ⊥ queue depth exceeds 1,000 before Friday].",
+   "question": "On Thursday the queue depth reached 4,000. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "still standing — the stated refuter has not occurred",
+    "dead — its stated refuter occurred",
+    "cannot tell"
+   ],
+   "answer": "dead — its stated refuter occurred"
+  },
+  {
+   "id": "r08",
+   "english": "All internal client certificates were rotated. I am about 90% confident in this, and an authentication failure from any internal service would prove me wrong.",
+   "ainglish": "All internal client certificates were rotated [c=0.9; ⊥ any internal service fails authentication].",
+   "question": "An external partner integration failed authentication this morning. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "dead — its stated refuter occurred",
+    "still standing — the stated refuter has not occurred",
+    "cannot tell"
+   ],
+   "answer": "still standing — the stated refuter has not occurred"
+  },
+  {
+   "id": "r09",
+   "english": "The backups are restorable. I am about 80% confident in this, and the monthly restore drill failing would prove me wrong.",
+   "ainglish": "The backups are restorable [c=0.8; ⊥ the monthly restore drill fails].",
+   "question": "This month's restore drill was skipped for the holiday. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "still standing — the stated refuter has not occurred",
+    "dead — its stated refuter occurred",
+    "cannot tell"
+   ],
+   "answer": "still standing — the stated refuter has not occurred"
+  },
+  {
+   "id": "r10",
+   "english": "The new rate limiter stops the scraper. I am about 75% confident in this, and scraper requests succeeding above the limit would prove me wrong.",
+   "ainglish": "The new rate limiter stops the scraper [c=0.75; ⊥ scraper requests succeed above the limit].",
+   "question": "The scraper keeps sending requests, and every request above the limit receives a 429 rejection. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "dead — its stated refuter occurred",
+    "still standing — the stated refuter has not occurred",
+    "cannot tell"
+   ],
+   "answer": "still standing — the stated refuter has not occurred"
+  },
+  {
+   "id": "r11",
+   "english": "The fine-tune improved extraction accuracy. I am about 70% confident in this, and held-out accuracy dropping below the baseline model would prove me wrong.",
+   "ainglish": "The fine-tune improved extraction accuracy [c=0.7; ⊥ held-out accuracy drops below the baseline model].",
+   "question": "Training loss rose during the final epoch. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "still standing — the stated refuter has not occurred",
+    "dead — its stated refuter occurred",
+    "cannot tell"
+   ],
+   "answer": "still standing — the stated refuter has not occurred"
+  },
+  {
+   "id": "r12",
+   "english": "Webhook processing is now idempotent. I am about 95% confident in this, and a retried delivery double-charging a customer would prove me wrong.",
+   "ainglish": "Webhook processing is now idempotent [c=0.95; ⊥ a retried delivery double-charges a customer].",
+   "question": "The provider delivered the same event three times. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "dead — its stated refuter occurred",
+    "still standing — the stated refuter has not occurred",
+    "cannot tell"
+   ],
+   "answer": "still standing — the stated refuter has not occurred"
+  },
+  {
+   "id": "r13",
+   "english": "The rebuilt index makes the dashboard query fast. I am about 85% confident in this, and that query's p95 latency exceeding 200ms this week would prove me wrong.",
+   "ainglish": "The rebuilt index makes the dashboard query fast [c=0.85; ⊥ that query's p95 latency exceeds 200ms this week].",
+   "question": "A different report query's p95 latency exceeded 200ms today. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "still standing — the stated refuter has not occurred",
+    "dead — its stated refuter occurred",
+    "cannot tell"
+   ],
+   "answer": "still standing — the stated refuter has not occurred"
+  },
+  {
+   "id": "r14",
+   "english": "The kill switch stops all exports. I am about 90% confident in this, and any export running after the flag is turned off would prove me wrong.",
+   "ainglish": "The kill switch stops all exports [c=0.9; ⊥ any export runs after the flag is turned off].",
+   "question": "An export completed two minutes before the flag was turned off. By the author's own stated terms, what is the status of the claim?",
+   "options": [
+    "dead — its stated refuter occurred",
+    "still standing — the stated refuter has not occurred",
+    "cannot tell"
+   ],
+   "answer": "still standing — the stated refuter has not occurred"
+  },
+  {
+   "id": "r15",
+   "english": "The cache invalidation bug is fixed. I am about 55% confident in this, and a stale read reproducing under the regression test would prove me wrong.",
+   "ainglish": "The cache invalidation bug is fixed [c=0.55; ⊥ a stale read reproduces under the regression test].",
+   "question": "Does the author consider the fix more likely correct than not?",
+   "options": [
+    "yes, but only slightly",
+    "no — less likely than not",
+    "the author is certain",
+    "cannot tell"
+   ],
+   "answer": "yes, but only slightly"
+  },
+  {
+   "id": "r16",
+   "english": "The cron overlap is fixed; I am about 95% confident, and a double-run tomorrow would prove me wrong. The log rotation is fixed; I am about 60% confident, and a full disk tonight would prove me wrong.",
+   "ainglish": "The cron overlap is fixed [c=0.95; ⊥ a double-run tomorrow]. The log rotation is fixed [c=0.6; ⊥ a full disk tonight].",
+   "question": "Which fix does the author hold with more confidence?",
+   "options": [
+    "the log rotation fix",
+    "the cron overlap fix",
+    "both equally",
+    "cannot tell"
+   ],
+   "answer": "the cron overlap fix"
+  },
+  {
+   "id": "r17",
+   "english": "The container build is reproducible. I am about 99% confident in this, and two clean builds producing different digests would prove me wrong.",
+   "ainglish": "The container build is reproducible [c=0.99; ⊥ two clean builds produce different digests].",
+   "question": "Roughly how likely does the author think it is that two clean builds would differ?",
+   "options": [
+    "about 99%",
+    "about 50%",
+    "about 1%",
+    "cannot tell"
+   ],
+   "answer": "about 1%"
+  },
+  {
+   "id": "r18",
+   "english": "The retention job deletes only expired rows. I am about 90% confident in this, and any live row disappearing would prove me wrong.",
+   "ainglish": "The retention job deletes only expired rows [c=0.9; ⊥ any live row disappears].",
+   "question": "Per the author's stated confidence, how likely is it that the job is deleting live rows?",
+   "options": [
+    "around 10%",
+    "certain",
+    "around 90%",
+    "cannot tell"
+   ],
+   "answer": "around 10%"
+  },
+  {
+   "id": "r19",
+   "english": "The alert deduplication works. I am about 80% confident in this, and duplicate pages firing within a single incident would prove me wrong.",
+   "ainglish": "The alert deduplication works [c=0.8; ⊥ duplicate pages fire within a single incident].",
+   "question": "Is the author's stated confidence at least 0.9?",
+   "options": [
+    "yes",
+    "no",
+    "the author did not state one"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "r20",
+   "english": "The out-of-memory crash is fixed; I am about 70% confident, and a crash under the load test would prove me wrong. The connection pool sizing is right; I am about 85% confident, and pool exhaustion in production would prove me wrong.",
+   "ainglish": "The out-of-memory crash is fixed [c=0.7; ⊥ a crash under the load test]. The connection pool sizing is right [c=0.85; ⊥ pool exhaustion in production].",
+   "question": "Which refuting event does the author consider more likely to actually occur?",
+   "options": [
+    "pool exhaustion in production",
+    "a crash under the load test",
+    "both equally likely",
+    "cannot tell"
+   ],
+   "answer": "a crash under the load test"
+  }
+ ],
+ "sha256": "e278e5c7c38dc32101132929fa4f432dce0b6be3946c921b7e74ab8862ddefd8",
+ "v1_note": "Identical items to v1 (sha256 c0842d16df0ea3a29350299056f37296159fcc005c844aced0963dacebb4372a) minus the per-item difficulty annotations: ainglish-panel/0.2.24's difficulty report emits round()-ed per-arm means the SDK's own float-portability guard refuses at mint time (e.g. gap 0.08), so an annotated set cannot currently be preregistered with the released instrument. The author-judged difficulty tiers remain documented in v1 and in difficulty_axis below; the filed manifest states annotated: false, which is the true state of THIS run."
+}
