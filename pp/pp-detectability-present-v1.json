@@ -1,0 +1,794 @@
+{
+ "sha256": "bf6d1608bef71a2ce5b6ab31f8245b18cca88f49a52e36cbd417a9f70957054e",
+ "design": "pp detectability 2x2, one column per artifact; frozen per proposal-thread pins aba89532/a94110c3/71ab4889/355ebf1d/ea3800c7/5b0512d4",
+ "items": [
+  {
+   "id": "pp-det-p-01",
+   "english": "Deploy summary: the cache hit rate rose by 5% over the past week, from 40% to 45%.",
+   "ainglish": "Deploy summary: the cache hit rate rose by 5 percentage points over the past week, from 40% to 45%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 40,
+    "delta_pp": 5,
+    "final_stated": 45,
+    "final_additive": 45,
+    "final_relative": 42.0
+   },
+   "clean_twin_marked_arm": "Deploy summary: the cache hit rate rose by 5 percentage points over the past week, from 40% to 45%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-02",
+   "english": "Nightly report: the test pass rate increased by 10% this sprint, from 20% to 22%.",
+   "ainglish": "Nightly report: the test pass rate increased by 10 percentage points this sprint, from 20% to 22%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "collision",
+   "numbers": {
+    "base": 20,
+    "delta_pp": 10,
+    "final_stated": 22.0,
+    "final_additive": 30,
+    "final_relative": 22.0
+   },
+   "clean_twin_marked_arm": "Nightly report: the test pass rate increased by 10 percentage points this sprint, from 20% to 30%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-03",
+   "english": "Rollout note: the opt-in rate climbed by 15% since the banner change, from 60% to 75%.",
+   "ainglish": "Rollout note: the opt-in rate climbed by 15 percentage points since the banner change, from 60% to 75%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 60,
+    "delta_pp": 15,
+    "final_stated": 75,
+    "final_additive": 75,
+    "final_relative": 69.0
+   },
+   "clean_twin_marked_arm": "Rollout note: the opt-in rate climbed by 15 percentage points since the banner change, from 60% to 75%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-04",
+   "english": "Ops digest: tool-call success went up by 8% after the retry fix, from 25% to 37%.",
+   "ainglish": "Ops digest: tool-call success went up by 8 percentage points after the retry fix, from 25% to 37%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "break_both",
+   "numbers": {
+    "base": 25,
+    "delta_pp": 8,
+    "final_stated": 37,
+    "final_additive": 33,
+    "final_relative": 27.0
+   },
+   "clean_twin_marked_arm": "Ops digest: tool-call success went up by 8 percentage points after the retry fix, from 25% to 33%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-05",
+   "english": "Index audit: duplicate-detection recall improved by 6% this cycle, from 50% to 56%.",
+   "ainglish": "Index audit: duplicate-detection recall improved by 6 percentage points this cycle, from 50% to 56%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 50,
+    "delta_pp": 6,
+    "final_stated": 56,
+    "final_additive": 56,
+    "final_relative": 53.0
+   },
+   "clean_twin_marked_arm": "Index audit: duplicate-detection recall improved by 6 percentage points this cycle, from 50% to 56%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-06",
+   "english": "Queue review: the first-attempt completion rate rose by 20% this month, from 30% to 36%.",
+   "ainglish": "Queue review: the first-attempt completion rate rose by 20 percentage points this month, from 30% to 36%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "collision",
+   "numbers": {
+    "base": 30,
+    "delta_pp": 20,
+    "final_stated": 36.0,
+    "final_additive": 50,
+    "final_relative": 36.0
+   },
+   "clean_twin_marked_arm": "Queue review: the first-attempt completion rate rose by 20 percentage points this month, from 30% to 50%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-07",
+   "english": "Gateway stats: the handshake success rate increased by 12% after the patch, from 10% to 22%.",
+   "ainglish": "Gateway stats: the handshake success rate increased by 12 percentage points after the patch, from 10% to 22%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 10,
+    "delta_pp": 12,
+    "final_stated": 22,
+    "final_additive": 22,
+    "final_relative": 11.2
+   },
+   "clean_twin_marked_arm": "Gateway stats: the handshake success rate increased by 12 percentage points after the patch, from 10% to 22%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-08",
+   "english": "Moderation recap: automated-flag precision climbed by 20% this quarter, from 15% to 39%.",
+   "ainglish": "Moderation recap: automated-flag precision climbed by 20 percentage points this quarter, from 15% to 39%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "break_both",
+   "numbers": {
+    "base": 15,
+    "delta_pp": 20,
+    "final_stated": 39,
+    "final_additive": 35,
+    "final_relative": 18.0
+   },
+   "clean_twin_marked_arm": "Moderation recap: automated-flag precision climbed by 20 percentage points this quarter, from 15% to 35%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-09",
+   "english": "Sync report: the replica freshness rate went up by 25% over the window, from 44% to 69%.",
+   "ainglish": "Sync report: the replica freshness rate went up by 25 percentage points over the window, from 44% to 69%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 44,
+    "delta_pp": 25,
+    "final_stated": 69,
+    "final_additive": 69,
+    "final_relative": 55.0
+   },
+   "clean_twin_marked_arm": "Sync report: the replica freshness rate went up by 25 percentage points over the window, from 44% to 69%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-10",
+   "english": "Billing note: invoice auto-match coverage rose by 25% since March, from 36% to 45%.",
+   "ainglish": "Billing note: invoice auto-match coverage rose by 25 percentage points since March, from 36% to 45%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "collision",
+   "numbers": {
+    "base": 36,
+    "delta_pp": 25,
+    "final_stated": 45.0,
+    "final_additive": 61,
+    "final_relative": 45.0
+   },
+   "clean_twin_marked_arm": "Billing note: invoice auto-match coverage rose by 25 percentage points since March, from 36% to 61%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-11",
+   "english": "Crawl summary: the fetch success rate increased by 25% this run, from 12% to 37%.",
+   "ainglish": "Crawl summary: the fetch success rate increased by 25 percentage points this run, from 12% to 37%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 12,
+    "delta_pp": 25,
+    "final_stated": 37,
+    "final_additive": 37,
+    "final_relative": 15.0
+   },
+   "clean_twin_marked_arm": "Crawl summary: the fetch success rate increased by 25 percentage points this run, from 12% to 37%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-12",
+   "english": "Review digest: the approval rate climbed by 20% after the rubric update, from 55% to 79%.",
+   "ainglish": "Review digest: the approval rate climbed by 20 percentage points after the rubric update, from 55% to 79%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "break_both",
+   "numbers": {
+    "base": 55,
+    "delta_pp": 20,
+    "final_stated": 79,
+    "final_additive": 75,
+    "final_relative": 66.0
+   },
+   "clean_twin_marked_arm": "Review digest: the approval rate climbed by 20 percentage points after the rubric update, from 55% to 75%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-13",
+   "english": "Search eval: top-answer accuracy went up by 8% on the new ranker, from 35% to 43%.",
+   "ainglish": "Search eval: top-answer accuracy went up by 8 percentage points on the new ranker, from 35% to 43%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 35,
+    "delta_pp": 8,
+    "final_stated": 43,
+    "final_additive": 43,
+    "final_relative": 37.8
+   },
+   "clean_twin_marked_arm": "Search eval: top-answer accuracy went up by 8 percentage points on the new ranker, from 35% to 43%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-14",
+   "english": "Pipeline note: the artifact reproducibility rate rose by 15% this release, from 24% to 27.6%.",
+   "ainglish": "Pipeline note: the artifact reproducibility rate rose by 15 percentage points this release, from 24% to 27.6%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "collision",
+   "numbers": {
+    "base": 24,
+    "delta_pp": 15,
+    "final_stated": 27.6,
+    "final_additive": 39,
+    "final_relative": 27.6
+   },
+   "clean_twin_marked_arm": "Pipeline note: the artifact reproducibility rate rose by 15 percentage points this release, from 24% to 39%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-15",
+   "english": "Support recap: first-reply resolution increased by 10% this period, from 70% to 80%.",
+   "ainglish": "Support recap: first-reply resolution increased by 10 percentage points this period, from 70% to 80%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 70,
+    "delta_pp": 10,
+    "final_stated": 80,
+    "final_additive": 80,
+    "final_relative": 77.0
+   },
+   "clean_twin_marked_arm": "Support recap: first-reply resolution increased by 10 percentage points this period, from 70% to 80%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-16",
+   "english": "Registry audit: schema-validity coverage climbed by 6% since the linter landed, from 45% to 55%.",
+   "ainglish": "Registry audit: schema-validity coverage climbed by 6 percentage points since the linter landed, from 45% to 55%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "break_both",
+   "numbers": {
+    "base": 45,
+    "delta_pp": 6,
+    "final_stated": 55,
+    "final_additive": 51,
+    "final_relative": 47.7
+   },
+   "clean_twin_marked_arm": "Registry audit: schema-validity coverage climbed by 6 percentage points since the linter landed, from 45% to 51%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-17",
+   "english": "Translation eval: the acceptance rate went up by 15% on the new glossary, from 28% to 43%.",
+   "ainglish": "Translation eval: the acceptance rate went up by 15 percentage points on the new glossary, from 28% to 43%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 28,
+    "delta_pp": 15,
+    "final_stated": 43,
+    "final_additive": 43,
+    "final_relative": 32.2
+   },
+   "clean_twin_marked_arm": "Translation eval: the acceptance rate went up by 15 percentage points on the new glossary, from 28% to 43%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-18",
+   "english": "Backup report: the verified-restore rate rose by 30% this quarter, from 16% to 20.8%.",
+   "ainglish": "Backup report: the verified-restore rate rose by 30 percentage points this quarter, from 16% to 20.8%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "collision",
+   "numbers": {
+    "base": 16,
+    "delta_pp": 30,
+    "final_stated": 20.8,
+    "final_additive": 46,
+    "final_relative": 20.8
+   },
+   "clean_twin_marked_arm": "Backup report: the verified-restore rate rose by 30 percentage points this quarter, from 16% to 46%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-19",
+   "english": "Routing stats: the correct-handoff rate increased by 5% after retraining, from 52% to 57%.",
+   "ainglish": "Routing stats: the correct-handoff rate increased by 5 percentage points after retraining, from 52% to 57%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 52,
+    "delta_pp": 5,
+    "final_stated": 57,
+    "final_additive": 57,
+    "final_relative": 54.6
+   },
+   "clean_twin_marked_arm": "Routing stats: the correct-handoff rate increased by 5 percentage points after retraining, from 52% to 57%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-20",
+   "english": "Cache audit: the prefetch hit rate climbed by 40% under the new policy, from 18% to 62%.",
+   "ainglish": "Cache audit: the prefetch hit rate climbed by 40 percentage points under the new policy, from 18% to 62%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "break_both",
+   "numbers": {
+    "base": 18,
+    "delta_pp": 40,
+    "final_stated": 62,
+    "final_additive": 58,
+    "final_relative": 25.2
+   },
+   "clean_twin_marked_arm": "Cache audit: the prefetch hit rate climbed by 40 percentage points under the new policy, from 18% to 58%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-21",
+   "english": "Consent summary: the double-confirmation rate went up by 8% this month, from 65% to 73%.",
+   "ainglish": "Consent summary: the double-confirmation rate went up by 8 percentage points this month, from 65% to 73%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 65,
+    "delta_pp": 8,
+    "final_stated": 73,
+    "final_additive": 73,
+    "final_relative": 70.2
+   },
+   "clean_twin_marked_arm": "Consent summary: the double-confirmation rate went up by 8 percentage points this month, from 65% to 73%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-22",
+   "english": "Sandbox report: the clean-exit rate rose by 30% since isolation tightened, from 22% to 28.6%.",
+   "ainglish": "Sandbox report: the clean-exit rate rose by 30 percentage points since isolation tightened, from 22% to 28.6%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "collision",
+   "numbers": {
+    "base": 22,
+    "delta_pp": 30,
+    "final_stated": 28.6,
+    "final_additive": 52,
+    "final_relative": 28.6
+   },
+   "clean_twin_marked_arm": "Sandbox report: the clean-exit rate rose by 30 percentage points since isolation tightened, from 22% to 52%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-23",
+   "english": "Ledger check: the entry-verification rate increased by 10% this window, from 34% to 44%.",
+   "ainglish": "Ledger check: the entry-verification rate increased by 10 percentage points this window, from 34% to 44%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 34,
+    "delta_pp": 10,
+    "final_stated": 44,
+    "final_additive": 44,
+    "final_relative": 37.4
+   },
+   "clean_twin_marked_arm": "Ledger check: the entry-verification rate increased by 10 percentage points this window, from 34% to 44%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-24",
+   "english": "Retrieval eval: citation validity climbed by 15% with the new filter, from 56% to 75%.",
+   "ainglish": "Retrieval eval: citation validity climbed by 15 percentage points with the new filter, from 56% to 75%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "break_both",
+   "numbers": {
+    "base": 56,
+    "delta_pp": 15,
+    "final_stated": 75,
+    "final_additive": 71,
+    "final_relative": 64.4
+   },
+   "clean_twin_marked_arm": "Retrieval eval: citation validity climbed by 15 percentage points with the new filter, from 56% to 71%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-25",
+   "english": "Uptime digest: the SLA attainment rate went up by 20% this quarter, from 42% to 62%.",
+   "ainglish": "Uptime digest: the SLA attainment rate went up by 20 percentage points this quarter, from 42% to 62%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 42,
+    "delta_pp": 20,
+    "final_stated": 62,
+    "final_additive": 62,
+    "final_relative": 50.4
+   },
+   "clean_twin_marked_arm": "Uptime digest: the SLA attainment rate went up by 20 percentage points this quarter, from 42% to 62%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-26",
+   "english": "Triage recap: the correct-severity rate rose by 35% after the checklist, from 26% to 35.1%.",
+   "ainglish": "Triage recap: the correct-severity rate rose by 35 percentage points after the checklist, from 26% to 35.1%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "collision",
+   "numbers": {
+    "base": 26,
+    "delta_pp": 35,
+    "final_stated": 35.1,
+    "final_additive": 61,
+    "final_relative": 35.1
+   },
+   "clean_twin_marked_arm": "Triage recap: the correct-severity rate rose by 35 percentage points after the checklist, from 26% to 61%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-27",
+   "english": "Mirror audit: the byte-identical sync rate increased by 20% this cycle, from 38% to 58%.",
+   "ainglish": "Mirror audit: the byte-identical sync rate increased by 20 percentage points this cycle, from 38% to 58%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 38,
+    "delta_pp": 20,
+    "final_stated": 58,
+    "final_additive": 58,
+    "final_relative": 45.6
+   },
+   "clean_twin_marked_arm": "Mirror audit: the byte-identical sync rate increased by 20 percentage points this cycle, from 38% to 58%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-28",
+   "english": "Panel note: the on-format answer rate climbed by 50% with the stricter prompt, from 14% to 68%.",
+   "ainglish": "Panel note: the on-format answer rate climbed by 50 percentage points with the stricter prompt, from 14% to 68%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "break_both",
+   "numbers": {
+    "base": 14,
+    "delta_pp": 50,
+    "final_stated": 68,
+    "final_additive": 64,
+    "final_relative": 21.0
+   },
+   "clean_twin_marked_arm": "Panel note: the on-format answer rate climbed by 50 percentage points with the stricter prompt, from 14% to 64%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-29",
+   "english": "Webhook stats: the first-delivery success rate went up by 10% since the retry change, from 62% to 72%.",
+   "ainglish": "Webhook stats: the first-delivery success rate went up by 10 percentage points since the retry change, from 62% to 72%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 62,
+    "delta_pp": 10,
+    "final_stated": 72,
+    "final_additive": 72,
+    "final_relative": 68.2
+   },
+   "clean_twin_marked_arm": "Webhook stats: the first-delivery success rate went up by 10 percentage points since the retry change, from 62% to 72%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-30",
+   "english": "Archive check: the checksum-match rate rose by 15% after remediation, from 46% to 52.9%.",
+   "ainglish": "Archive check: the checksum-match rate rose by 15 percentage points after remediation, from 46% to 52.9%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "collision",
+   "numbers": {
+    "base": 46,
+    "delta_pp": 15,
+    "final_stated": 52.9,
+    "final_additive": 61,
+    "final_relative": 52.9
+   },
+   "clean_twin_marked_arm": "Archive check: the checksum-match rate rose by 15 percentage points after remediation, from 46% to 61%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-31",
+   "english": "Scheduler report: the on-time start rate increased by 5% this month, from 58% to 63%.",
+   "ainglish": "Scheduler report: the on-time start rate increased by 5 percentage points this month, from 58% to 63%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_present",
+   "condition": "clean",
+   "numbers": {
+    "base": 58,
+    "delta_pp": 5,
+    "final_stated": 63,
+    "final_additive": 63,
+    "final_relative": 60.9
+   },
+   "clean_twin_marked_arm": "Scheduler report: the on-time start rate increased by 5 percentage points this month, from 58% to 63%.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-p-32",
+   "english": "Digest note: the summary-fidelity score rate climbed by 25% under review, from 32% to 61%.",
+   "ainglish": "Digest note: the summary-fidelity score rate climbed by 25 percentage points under review, from 32% to 61%.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_present",
+   "condition": "break_both",
+   "numbers": {
+    "base": 32,
+    "delta_pp": 25,
+    "final_stated": 61,
+    "final_additive": 57,
+    "final_relative": 40.0
+   },
+   "clean_twin_marked_arm": "Digest note: the summary-fidelity score rate climbed by 25 percentage points under review, from 32% to 57%.",
+   "mutable_field": "final value"
+  },
+  {
+   "id": "pp-det-p-cal-1",
+   "english": "From 40% this month — the rate is up 5%.",
+   "ainglish": "From 40% to 45% this month — the rate is up 5 percentage points.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "calibration": true
+  },
+  {
+   "id": "pp-det-p-cal-2",
+   "english": "From 30% this month — the rate is up 6%.",
+   "ainglish": "From 30% to 48% this month — the rate is up 6 percentage points.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "calibration": true
+  },
+  {
+   "id": "pp-det-p-cal-3",
+   "english": "Coverage moved from 20%, an increase of 10%.",
+   "ainglish": "Coverage moved from 20% to 30%, an increase of 10 percentage points.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "calibration": true
+  },
+  {
+   "id": "pp-det-p-cal-4",
+   "english": "Adoption moved from 55%, an increase of 12%.",
+   "ainglish": "Adoption moved from 55% to 58%, an increase of 12 percentage points.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "calibration": true
+  }
+ ]
+}

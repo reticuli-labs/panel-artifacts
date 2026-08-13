@@ -1,0 +1,730 @@
+{
+ "sha256": "2dc1bc99ec9ba09e105c678d828e3abd3675eaec08c22da50066c5f67d86747b",
+ "design": "pp detectability 2x2, one column per artifact; frozen per proposal-thread pins aba89532/a94110c3/71ab4889/355ebf1d/ea3800c7/5b0512d4",
+ "items": [
+  {
+   "id": "pp-det-a-01",
+   "english": "Weekly recap: opt-in consent rose by 5%; that is one additional consenting user in every 20 asked.",
+   "ainglish": "Weekly recap: opt-in consent rose by 5 percentage points; that is one additional consenting user in every 20 asked.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 5,
+    "one_in_n_true": 20,
+    "one_in_n_stated": 20
+   },
+   "clean_twin_marked_arm": "Weekly recap: opt-in consent rose by 5 percentage points; that is one additional consenting user in every 20 asked.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-02",
+   "english": "Cache note: the lookup hit rate went up by 10%; that is one additional hit in every 5 lookups.",
+   "ainglish": "Cache note: the lookup hit rate went up by 10 percentage points; that is one additional hit in every 5 lookups.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 10,
+    "one_in_n_true": 10,
+    "one_in_n_stated": 5
+   },
+   "clean_twin_marked_arm": "Cache note: the lookup hit rate went up by 10 percentage points; that is one additional hit in every 10 lookups.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-03",
+   "english": "CI digest: the pass rate increased by 20%; that is one additional passing build in every 5 runs.",
+   "ainglish": "CI digest: the pass rate increased by 20 percentage points; that is one additional passing build in every 5 runs.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 20,
+    "one_in_n_true": 5,
+    "one_in_n_stated": 5
+   },
+   "clean_twin_marked_arm": "CI digest: the pass rate increased by 20 percentage points; that is one additional passing build in every 5 runs.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-04",
+   "english": "Review summary: approvals climbed by 25%; that is one additional approval in every 2 submissions.",
+   "ainglish": "Review summary: approvals climbed by 25 percentage points; that is one additional approval in every 2 submissions.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 25,
+    "one_in_n_true": 4,
+    "one_in_n_stated": 2
+   },
+   "clean_twin_marked_arm": "Review summary: approvals climbed by 25 percentage points; that is one additional approval in every 4 submissions.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-05",
+   "english": "Search eval: exact-match answers rose by 4%; that is one additional exact match in every 25 queries.",
+   "ainglish": "Search eval: exact-match answers rose by 4 percentage points; that is one additional exact match in every 25 queries.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 4,
+    "one_in_n_true": 25,
+    "one_in_n_stated": 25
+   },
+   "clean_twin_marked_arm": "Search eval: exact-match answers rose by 4 percentage points; that is one additional exact match in every 25 queries.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-06",
+   "english": "Filter report: spam recall went up by 2%; that is one additional catch in every 25 spam messages.",
+   "ainglish": "Filter report: spam recall went up by 2 percentage points; that is one additional catch in every 25 spam messages.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 2,
+    "one_in_n_true": 50,
+    "one_in_n_stated": 25
+   },
+   "clean_twin_marked_arm": "Filter report: spam recall went up by 2 percentage points; that is one additional catch in every 50 spam messages.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-07",
+   "english": "Handoff stats: correct routing increased by 50%; that is one additional correct route in every 2 handoffs.",
+   "ainglish": "Handoff stats: correct routing increased by 50 percentage points; that is one additional correct route in every 2 handoffs.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 50,
+    "one_in_n_true": 2,
+    "one_in_n_stated": 2
+   },
+   "clean_twin_marked_arm": "Handoff stats: correct routing increased by 50 percentage points; that is one additional correct route in every 2 handoffs.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-08",
+   "english": "Restore drill: verified restores climbed by 5%; that is one additional verified restore in every 10 attempts.",
+   "ainglish": "Restore drill: verified restores climbed by 5 percentage points; that is one additional verified restore in every 10 attempts.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 5,
+    "one_in_n_true": 20,
+    "one_in_n_stated": 10
+   },
+   "clean_twin_marked_arm": "Restore drill: verified restores climbed by 5 percentage points; that is one additional verified restore in every 20 attempts.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-09",
+   "english": "Consent audit: double confirmations rose by 10%; that is one additional confirmation in every 10 prompts.",
+   "ainglish": "Consent audit: double confirmations rose by 10 percentage points; that is one additional confirmation in every 10 prompts.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 10,
+    "one_in_n_true": 10,
+    "one_in_n_stated": 10
+   },
+   "clean_twin_marked_arm": "Consent audit: double confirmations rose by 10 percentage points; that is one additional confirmation in every 10 prompts.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-10",
+   "english": "Crawler note: successful fetches went up by 20%; that is one additional success in every 10 fetches.",
+   "ainglish": "Crawler note: successful fetches went up by 20 percentage points; that is one additional success in every 10 fetches.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 20,
+    "one_in_n_true": 5,
+    "one_in_n_stated": 10
+   },
+   "clean_twin_marked_arm": "Crawler note: successful fetches went up by 20 percentage points; that is one additional success in every 5 fetches.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-11",
+   "english": "Panel recap: on-format answers increased by 25%; that is one additional on-format reply in every 4 cells.",
+   "ainglish": "Panel recap: on-format answers increased by 25 percentage points; that is one additional on-format reply in every 4 cells.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 25,
+    "one_in_n_true": 4,
+    "one_in_n_stated": 4
+   },
+   "clean_twin_marked_arm": "Panel recap: on-format answers increased by 25 percentage points; that is one additional on-format reply in every 4 cells.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-12",
+   "english": "Sync report: clean merges climbed by 4%; that is one additional clean merge in every 50 syncs.",
+   "ainglish": "Sync report: clean merges climbed by 4 percentage points; that is one additional clean merge in every 50 syncs.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 4,
+    "one_in_n_true": 25,
+    "one_in_n_stated": 50
+   },
+   "clean_twin_marked_arm": "Sync report: clean merges climbed by 4 percentage points; that is one additional clean merge in every 25 syncs.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-13",
+   "english": "Triage digest: correct severities rose by 2%; that is one additional correct call in every 50 tickets.",
+   "ainglish": "Triage digest: correct severities rose by 2 percentage points; that is one additional correct call in every 50 tickets.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 2,
+    "one_in_n_true": 50,
+    "one_in_n_stated": 50
+   },
+   "clean_twin_marked_arm": "Triage digest: correct severities rose by 2 percentage points; that is one additional correct call in every 50 tickets.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-14",
+   "english": "Citation check: valid references went up by 50%; that is one additional valid citation in every 4 claims.",
+   "ainglish": "Citation check: valid references went up by 50 percentage points; that is one additional valid citation in every 4 claims.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 50,
+    "one_in_n_true": 2,
+    "one_in_n_stated": 4
+   },
+   "clean_twin_marked_arm": "Citation check: valid references went up by 50 percentage points; that is one additional valid citation in every 2 claims.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-15",
+   "english": "Webhook stats: first-try deliveries increased by 5%; that is one additional first-try delivery in every 20 events.",
+   "ainglish": "Webhook stats: first-try deliveries increased by 5 percentage points; that is one additional first-try delivery in every 20 events.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 5,
+    "one_in_n_true": 20,
+    "one_in_n_stated": 20
+   },
+   "clean_twin_marked_arm": "Webhook stats: first-try deliveries increased by 5 percentage points; that is one additional first-try delivery in every 20 events.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-16",
+   "english": "Archive audit: checksum matches climbed by 10%; that is one additional match in every 5 objects.",
+   "ainglish": "Archive audit: checksum matches climbed by 10 percentage points; that is one additional match in every 5 objects.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 10,
+    "one_in_n_true": 10,
+    "one_in_n_stated": 5
+   },
+   "clean_twin_marked_arm": "Archive audit: checksum matches climbed by 10 percentage points; that is one additional match in every 10 objects.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-17",
+   "english": "Scheduler note: on-time starts rose by 20%; that is one additional on-time start in every 5 jobs.",
+   "ainglish": "Scheduler note: on-time starts rose by 20 percentage points; that is one additional on-time start in every 5 jobs.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 20,
+    "one_in_n_true": 5,
+    "one_in_n_stated": 5
+   },
+   "clean_twin_marked_arm": "Scheduler note: on-time starts rose by 20 percentage points; that is one additional on-time start in every 5 jobs.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-18",
+   "english": "Sandbox recap: clean exits went up by 25%; that is one additional clean exit in every 2 sessions.",
+   "ainglish": "Sandbox recap: clean exits went up by 25 percentage points; that is one additional clean exit in every 2 sessions.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 25,
+    "one_in_n_true": 4,
+    "one_in_n_stated": 2
+   },
+   "clean_twin_marked_arm": "Sandbox recap: clean exits went up by 25 percentage points; that is one additional clean exit in every 4 sessions.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-19",
+   "english": "Dedup report: caught duplicates increased by 4%; that is one additional catch in every 25 candidates.",
+   "ainglish": "Dedup report: caught duplicates increased by 4 percentage points; that is one additional catch in every 25 candidates.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 4,
+    "one_in_n_true": 25,
+    "one_in_n_stated": 25
+   },
+   "clean_twin_marked_arm": "Dedup report: caught duplicates increased by 4 percentage points; that is one additional catch in every 25 candidates.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-20",
+   "english": "Billing digest: auto-matched invoices climbed by 2%; that is one additional auto-match in every 25 invoices.",
+   "ainglish": "Billing digest: auto-matched invoices climbed by 2 percentage points; that is one additional auto-match in every 25 invoices.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 2,
+    "one_in_n_true": 50,
+    "one_in_n_stated": 25
+   },
+   "clean_twin_marked_arm": "Billing digest: auto-matched invoices climbed by 2 percentage points; that is one additional auto-match in every 50 invoices.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-21",
+   "english": "Registry check: schema-valid entries rose by 50%; that is one additional valid entry in every 2 records.",
+   "ainglish": "Registry check: schema-valid entries rose by 50 percentage points; that is one additional valid entry in every 2 records.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 50,
+    "one_in_n_true": 2,
+    "one_in_n_stated": 2
+   },
+   "clean_twin_marked_arm": "Registry check: schema-valid entries rose by 50 percentage points; that is one additional valid entry in every 2 records.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-22",
+   "english": "Support recap: first-reply resolutions went up by 5%; that is one additional resolution in every 10 threads.",
+   "ainglish": "Support recap: first-reply resolutions went up by 5 percentage points; that is one additional resolution in every 10 threads.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 5,
+    "one_in_n_true": 20,
+    "one_in_n_stated": 10
+   },
+   "clean_twin_marked_arm": "Support recap: first-reply resolutions went up by 5 percentage points; that is one additional resolution in every 20 threads.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-23",
+   "english": "Retrieval eval: grounded answers increased by 10%; that is one additional grounded answer in every 10 responses.",
+   "ainglish": "Retrieval eval: grounded answers increased by 10 percentage points; that is one additional grounded answer in every 10 responses.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 10,
+    "one_in_n_true": 10,
+    "one_in_n_stated": 10
+   },
+   "clean_twin_marked_arm": "Retrieval eval: grounded answers increased by 10 percentage points; that is one additional grounded answer in every 10 responses.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-24",
+   "english": "Mirror audit: byte-identical copies climbed by 20%; that is one additional identical copy in every 10 transfers.",
+   "ainglish": "Mirror audit: byte-identical copies climbed by 20 percentage points; that is one additional identical copy in every 10 transfers.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 20,
+    "one_in_n_true": 5,
+    "one_in_n_stated": 10
+   },
+   "clean_twin_marked_arm": "Mirror audit: byte-identical copies climbed by 20 percentage points; that is one additional identical copy in every 5 transfers.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-25",
+   "english": "Uptime note: within-SLA minutes rose by 25%; that is one additional within-SLA minute in every 4 minutes.",
+   "ainglish": "Uptime note: within-SLA minutes rose by 25 percentage points; that is one additional within-SLA minute in every 4 minutes.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 25,
+    "one_in_n_true": 4,
+    "one_in_n_stated": 4
+   },
+   "clean_twin_marked_arm": "Uptime note: within-SLA minutes rose by 25 percentage points; that is one additional within-SLA minute in every 4 minutes.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-26",
+   "english": "Ledger recap: verified entries went up by 4%; that is one additional verified entry in every 50 appends.",
+   "ainglish": "Ledger recap: verified entries went up by 4 percentage points; that is one additional verified entry in every 50 appends.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 4,
+    "one_in_n_true": 25,
+    "one_in_n_stated": 50
+   },
+   "clean_twin_marked_arm": "Ledger recap: verified entries went up by 4 percentage points; that is one additional verified entry in every 25 appends.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-27",
+   "english": "Translation report: accepted drafts increased by 2%; that is one additional acceptance in every 50 drafts.",
+   "ainglish": "Translation report: accepted drafts increased by 2 percentage points; that is one additional acceptance in every 50 drafts.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 2,
+    "one_in_n_true": 50,
+    "one_in_n_stated": 50
+   },
+   "clean_twin_marked_arm": "Translation report: accepted drafts increased by 2 percentage points; that is one additional acceptance in every 50 drafts.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-28",
+   "english": "Prefetch stats: useful prefetches climbed by 50%; that is one additional useful prefetch in every 4 prefetches.",
+   "ainglish": "Prefetch stats: useful prefetches climbed by 50 percentage points; that is one additional useful prefetch in every 4 prefetches.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 50,
+    "one_in_n_true": 2,
+    "one_in_n_stated": 4
+   },
+   "clean_twin_marked_arm": "Prefetch stats: useful prefetches climbed by 50 percentage points; that is one additional useful prefetch in every 2 prefetches.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-29",
+   "english": "Moderation digest: upheld flags rose by 5%; that is one additional upheld flag in every 20 flags.",
+   "ainglish": "Moderation digest: upheld flags rose by 5 percentage points; that is one additional upheld flag in every 20 flags.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 5,
+    "one_in_n_true": 20,
+    "one_in_n_stated": 20
+   },
+   "clean_twin_marked_arm": "Moderation digest: upheld flags rose by 5 percentage points; that is one additional upheld flag in every 20 flags.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-30",
+   "english": "Backup note: incremental successes went up by 10%; that is one additional success in every 5 increments.",
+   "ainglish": "Backup note: incremental successes went up by 10 percentage points; that is one additional success in every 5 increments.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 10,
+    "one_in_n_true": 10,
+    "one_in_n_stated": 5
+   },
+   "clean_twin_marked_arm": "Backup note: incremental successes went up by 10 percentage points; that is one additional success in every 10 increments.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-31",
+   "english": "Routing eval: best-path picks increased by 20%; that is one additional best-path pick in every 5 decisions.",
+   "ainglish": "Routing eval: best-path picks increased by 20 percentage points; that is one additional best-path pick in every 5 decisions.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "cell": "endpoints_absent",
+   "condition": "clean",
+   "numbers": {
+    "delta_pp": 20,
+    "one_in_n_true": 5,
+    "one_in_n_stated": 5
+   },
+   "clean_twin_marked_arm": "Routing eval: best-path picks increased by 20 percentage points; that is one additional best-path pick in every 5 decisions.",
+   "mutable_field": null
+  },
+  {
+   "id": "pp-det-a-32",
+   "english": "Index audit: fresh entries climbed by 25%; that is one additional fresh entry in every 2 rows.",
+   "ainglish": "Index audit: fresh entries climbed by 25 percentage points; that is one additional fresh entry in every 2 rows.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "cell": "endpoints_absent",
+   "condition": "consequence_swap",
+   "numbers": {
+    "delta_pp": 25,
+    "one_in_n_true": 4,
+    "one_in_n_stated": 2
+   },
+   "clean_twin_marked_arm": "Index audit: fresh entries climbed by 25 percentage points; that is one additional fresh entry in every 4 rows.",
+   "mutable_field": "consequence one-in-N figure"
+  },
+  {
+   "id": "pp-det-a-cal-1",
+   "english": "The hit rate is up 5%.",
+   "ainglish": "The hit rate is up 5 percentage points; that is one additional hit in every 20 lookups.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "calibration": true
+  },
+  {
+   "id": "pp-det-a-cal-2",
+   "english": "Acceptance is up 10%.",
+   "ainglish": "Acceptance is up 10 percentage points; that is one additional acceptance in every 4 submissions.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "calibration": true
+  },
+  {
+   "id": "pp-det-a-cal-3",
+   "english": "The pass rate is up 25%.",
+   "ainglish": "The pass rate is up 25 percentage points; that is one additional pass in every 4 attempts.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "consistent",
+   "calibration": true
+  },
+  {
+   "id": "pp-det-a-cal-4",
+   "english": "Match volume is up 2%.",
+   "ainglish": "Match volume is up 2 percentage points; that is one additional match in every 5 scans.",
+   "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+   "options": [
+    "consistent",
+    "contradictory",
+    "cannot be determined"
+   ],
+   "answer": "contradictory",
+   "calibration": true
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "slug": "percentage-points-not-bare-percent-a-change-to-a-percentage-",
+ "construct": "percentage-points-not-bare-percent-a-change-to-a-percentage-",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 20260813,
+ "panel": [
+  {
+   "name": "qwen3.6-27b",
+   "provider": "ollama",
+   "model": "qwen3.6:27b",
+   "precision": "q4_k_m",
+   "max_tokens": 4096
+  }
+ ],
+ "panel_neff": 1,
+ "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/main/pp/pp-detectability-present-v1.json",
+ "items_sha256": "bf6d1608bef71a2ce5b6ab31f8245b18cca88f49a52e36cbd417a9f70957054e",
+ "attempt": {
+  "estimand": "Detectability-arm verdict-task comprehension delta, ENDPOINTS-PRESENT column of the frozen pp 2x2: 32 fresh rate-change reports each stating base, change phrase and final value; 16 arithmetically clean, 16 carrying exactly one single-field final-value corruption (8 'collision': the stated final equals the bare phrase's relative reading, detectable only when the change phrase pins the additive type; 8 'break-both': the stated final matches neither reading, detectable in both arms). Arms are minimal pairs differing only in the change phrase ('N percentage points' vs 'N%'); one seeded arm per scenario. The reader answers consistent | contradictory | cannot be determined; ground truth keys clean=consistent and corrupted=contradictory under the writer's pinned additive intent; 'cannot be determined' is never keyed correct and its per-cell selection rate is reported as the undecidable class, never entering any detection rate — detection-rate comparisons live only within decidable subsets, per the thread's typed-outcome pin (aba89532). value = 100 x (marked-arm accuracy minus bare-arm accuracy) over this column only. The two columns file as separate rows and are NEVER pooled with each other, with the +22.56 opening row, or with Dexagon's adjacent endpoints-present correctness column (manifest 4274686df67d..., cited, never pooled). Preregistered PRIMARY (Ember's ordering, 71ab4889/355ebf1d): undecidable proportion highest in bare x endpoints-absent, partially reduced in bare x endpoints-present, near-zero in both marked cells, any marked-cell residual reported as an instrument finding; PAIRED with Excelsior's specificity shield (ea3800c7/5b0512d4): no manufactured inconsistency on clean twins — false-alarm rates on clean cells reported beside detected/missed/undecidable on corrupted cells. Refutation honored: if the bare arm reaches parity because the reader resolves the change-phrase type from context or priors, a near-zero value files in support of the proposal's own refutation clause.",
+  "admissibility_gates": [
+   "the frozen artifact at the runspec items_url hashes to bf6d1608bef71a2ce5b6ab31f8245b18cca88f49a52e36cbd417a9f70957054e (embedded digest and runspec pin both verified by fetch_items before any reader call; digest predeclared publicly on the proposal thread)",
+   "calibration planted-arm gap >= 0.5 under both-arms-per-reader exposure (4 planted items, keys balanced 2 consistent / 2 contradictory so a constant guesser scores gap 0)",
+   "four-class cell-yield guard passes: dead_rate < 0.1 and no dead cell class",
+   "the seeded deal (seed 20260813) places >= 6 scenarios in every arm x condition cell — deterministic, verified before mint",
+   "every corrupted variant differs from its clean twin in exactly one numeric field with an equally plausible replacement, all arithmetic exact at stated precision (verified programmatically at freeze; twin texts ride inside the hashed artifact)"
+  ],
+  "planned_sample": {
+   "scored_items": 32,
+   "arms": 2,
+   "readers": 1,
+   "reader": "qwen3.6:27b q4_k_m via ollama, max_tokens 4096, temperature 0",
+   "panel_neff": 1,
+   "seed": 20260813,
+   "calibration_items": 4,
+   "column": "endpoints_present",
+   "design_cells": {
+    "clean": 16,
+    "collision": 8,
+    "break_both": 8
+   }
+  }
+ }
+}
