@@ -1,0 +1,570 @@
+{
+ "name": "RFC-2119 requirement-strength comprehension minimal pairs v1",
+ "construct": "rfc-2119-requirement-strength-must-should-may-not",
+ "author": "reticuli",
+ "role_note": "Item author = reader operator (reticuli), declared. Single local reader qwen3.6-27B Q4_K_M; NOTE the substrate overlap: this reader is one of the original's two panel members, so agreement partly reflects shared substrate — declared, not hidden. Drafting family (Anthropic) disjoint from the reader family. Estimand preserved from d4296fc1: balanced 14 STRICT / 14 WEAK / 14 FREE, held-out standing questions, chance exactly 1/3 on real items.",
+ "design": "42 real (7 MUST, 7 MUST NOT, 7 SHOULD, 7 SHOULD NOT, 14 MAY) + 4 planted calibration cells (english arm carries no obligation level)",
+ "sha256": "4af62c35876c6d9a20d3e6b3e3bc0f419b41a08f29ccfc3efa040d6b378379f5",
+ "items": [
+  {
+   "id": "ret-rfc-01-MUST",
+   "english": "The specification makes it an absolute requirement that the gateway verify TLS certificates on upstream connections.",
+   "ainglish": "The gateway MUST verify TLS certificates on upstream connections.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-02-MUST",
+   "english": "The specification makes it an absolute requirement that the client honour Retry-After headers on 429 responses.",
+   "ainglish": "The client MUST honour Retry-After headers on 429 responses.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-03-MUST",
+   "english": "The specification makes it an absolute requirement that the service rotate session identifiers after privilege changes.",
+   "ainglish": "The service MUST rotate session identifiers after privilege changes.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-04-MUST",
+   "english": "The specification makes it an absolute requirement that the worker acknowledge queue messages only after side effects commit.",
+   "ainglish": "The worker MUST acknowledge queue messages only after side effects commit.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-05-MUST",
+   "english": "The specification makes it an absolute requirement that the API return stable error codes for known failure classes.",
+   "ainglish": "The API MUST return stable error codes for known failure classes.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-06-MUST",
+   "english": "The specification makes it an absolute requirement that the scheduler jitter retry intervals under contention.",
+   "ainglish": "The scheduler MUST jitter retry intervals under contention.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-07-MUST",
+   "english": "The specification makes it an absolute requirement that the exporter redact bearer tokens from request logs.",
+   "ainglish": "The exporter MUST redact bearer tokens from request logs.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-08-MUSTNOT",
+   "english": "The specification makes it an absolute prohibition for the store to encrypt backups before they leave the host.",
+   "ainglish": "The store MUST NOT encrypt backups before they leave the host.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-09-MUSTNOT",
+   "english": "The specification makes it an absolute prohibition for the resolver to respect upstream DNS TTLs.",
+   "ainglish": "The resolver MUST NOT respect upstream DNS TTLs.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-10-MUSTNOT",
+   "english": "The specification makes it an absolute prohibition for the server to reject requests whose signatures fail verification.",
+   "ainglish": "The server MUST NOT reject requests whose signatures fail verification.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-11-MUSTNOT",
+   "english": "The specification makes it an absolute prohibition for the pipeline to validate payloads against the published schema before processing.",
+   "ainglish": "The pipeline MUST NOT validate payloads against the published schema before processing.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-12-MUSTNOT",
+   "english": "The specification makes it an absolute prohibition for the runtime to drain in-flight requests during shutdown.",
+   "ainglish": "The runtime MUST NOT drain in-flight requests during shutdown.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-13-MUSTNOT",
+   "english": "The specification makes it an absolute prohibition for the proxy to strip hop-by-hop headers before forwarding.",
+   "ainglish": "The proxy MUST NOT strip hop-by-hop headers before forwarding.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-14-MUSTNOT",
+   "english": "The specification makes it an absolute prohibition for the billing job to use timezone-aware timestamps in invoices.",
+   "ainglish": "The billing job MUST NOT use timezone-aware timestamps in invoices.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-15-SHOULD",
+   "english": "The specification records a recommendation that the container run as a non-root user.",
+   "ainglish": "The container SHOULD run as a non-root user.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-16-SHOULD",
+   "english": "The specification records a recommendation that the deployer pin dependency versions in release artifacts.",
+   "ainglish": "The deployer SHOULD pin dependency versions in release artifacts.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-17-SHOULD",
+   "english": "The specification records a recommendation that the endpoint paginate collection responses with opaque cursors.",
+   "ainglish": "The endpoint SHOULD paginate collection responses with opaque cursors.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-18-SHOULD",
+   "english": "The specification records a recommendation that the cache bound entry lifetimes with explicit expiry.",
+   "ainglish": "The cache SHOULD bound entry lifetimes with explicit expiry.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-19-SHOULD",
+   "english": "The specification records a recommendation that the consumer route poison messages to a dead-letter queue.",
+   "ainglish": "The consumer SHOULD route poison messages to a dead-letter queue.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-20-SHOULD",
+   "english": "The specification records a recommendation that the monitor label metrics with the emitting service name.",
+   "ainglish": "The monitor SHOULD label metrics with the emitting service name.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-21-SHOULD",
+   "english": "The specification records a recommendation that the client send an idempotency key with retried mutations.",
+   "ainglish": "The client SHOULD send an idempotency key with retried mutations.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-22-SHOULDNOT",
+   "english": "The specification records that it is discouraged for the server to advertise remaining quota in response headers.",
+   "ainglish": "The server SHOULD NOT advertise remaining quota in response headers.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-23-SHOULDNOT",
+   "english": "The specification records that it is discouraged for the verifier to check content digests before executing downloaded artifacts.",
+   "ainglish": "The verifier SHOULD NOT check content digests before executing downloaded artifacts.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-24-SHOULDNOT",
+   "english": "The specification records that it is discouraged for the API to include a request identifier in error responses.",
+   "ainglish": "The API SHOULD NOT include a request identifier in error responses.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-25-SHOULDNOT",
+   "english": "The specification records that it is discouraged for the daemon to reload configuration without dropping connections.",
+   "ainglish": "The daemon SHOULD NOT reload configuration without dropping connections.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-26-SHOULDNOT",
+   "english": "The specification records that it is discouraged for the registry to normalize unicode identifiers before comparison.",
+   "ainglish": "The registry SHOULD NOT normalize unicode identifiers before comparison.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-27-SHOULDNOT",
+   "english": "The specification records that it is discouraged for the ledger to round monetary amounts with banker's rounding.",
+   "ainglish": "The ledger SHOULD NOT round monetary amounts with banker's rounding.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-28-SHOULDNOT",
+   "english": "The specification records that it is discouraged for the gateway to cap request body sizes at the documented limit.",
+   "ainglish": "The gateway SHOULD NOT cap request body sizes at the documented limit.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-29-MAY",
+   "english": "The specification treats it as optional whether the archiver compress rotated logs older than a day.",
+   "ainglish": "The archiver MAY compress rotated logs older than a day.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-30-MAY",
+   "english": "The specification treats it as optional whether the notifier batch digest emails per recipient per hour.",
+   "ainglish": "The notifier MAY batch digest emails per recipient per hour.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-31-MAY",
+   "english": "The specification treats it as optional whether the frontend revalidate cached entitlements on privilege-sensitive views.",
+   "ainglish": "The frontend MAY revalidate cached entitlements on privilege-sensitive views.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-32-MAY",
+   "english": "The specification treats it as optional whether the importer quarantine rows that fail referential checks.",
+   "ainglish": "The importer MAY quarantine rows that fail referential checks.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-33-MAY",
+   "english": "The specification treats it as optional whether the auth layer compare secrets in constant time.",
+   "ainglish": "The auth layer MAY compare secrets in constant time.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-34-MAY",
+   "english": "The specification treats it as optional whether the replicator verify checksums after transferring segments.",
+   "ainglish": "The replicator MAY verify checksums after transferring segments.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-35-MAY",
+   "english": "The specification treats it as optional whether the operator record schema changes through versioned migrations.",
+   "ainglish": "The operator MAY record schema changes through versioned migrations.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-36-MAY",
+   "english": "The specification treats it as optional whether the sandbox clear temporary credentials at task exit.",
+   "ainglish": "The sandbox MAY clear temporary credentials at task exit.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-37-MAY",
+   "english": "The specification treats it as optional whether the parser treat unknown fields as errors in strict mode.",
+   "ainglish": "The parser MAY treat unknown fields as errors in strict mode.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-38-MAY",
+   "english": "The specification treats it as optional whether the balancer eject unhealthy backends after consecutive probe failures.",
+   "ainglish": "The balancer MAY eject unhealthy backends after consecutive probe failures.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-39-MAY",
+   "english": "The specification treats it as optional whether the webhook sender sign payloads with the tenant's active key.",
+   "ainglish": "The webhook sender MAY sign payloads with the tenant's active key.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-40-MAY",
+   "english": "The specification treats it as optional whether the reporter attach units to every exported measurement.",
+   "ainglish": "The reporter MAY attach units to every exported measurement.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-41-MAY",
+   "english": "The specification treats it as optional whether the crawler obey robots directives on discovered hosts.",
+   "ainglish": "The crawler MAY obey robots directives on discovered hosts.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-42-MAY",
+   "english": "The specification treats it as optional whether the updater verify release signatures before applying updates.",
+   "ainglish": "The updater MAY verify release signatures before applying updates.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it stays compliant, and no justification is expected",
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-cal-01",
+   "calibration": true,
+   "english": "The design notes record that the webhook sender is able to sign payloads with the tenant's active key.",
+   "ainglish": "The webhook sender MUST sign payloads with the tenant's active key.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "the statement does not settle it"
+   ],
+   "answer": "it is out of compliance with the specification"
+  },
+  {
+   "id": "ret-rfc-cal-02",
+   "calibration": true,
+   "english": "The design notes record that the debug endpoint is able to stay reachable from the public internet.",
+   "ainglish": "The debug endpoint SHOULD NOT stay reachable from the public internet.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "the statement does not settle it"
+   ],
+   "answer": "it stays compliant, but the choice calls for a considered, documented justification"
+  },
+  {
+   "id": "ret-rfc-cal-03",
+   "calibration": true,
+   "english": "The design notes record that the crawler is able to prefetch sitemap-listed pages during idle windows.",
+   "ainglish": "The crawler MAY prefetch sitemap-listed pages during idle windows.",
+   "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "the statement does not settle it"
+   ],
+   "answer": "it stays compliant, and no justification is expected"
+  },
+  {
+   "id": "ret-rfc-cal-04",
+   "calibration": true,
+   "english": "The design notes record that the exporter is able to write bearer tokens into shared trace archives.",
+   "ainglish": "The exporter MUST NOT write bearer tokens into shared trace archives.",
+   "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+   "options": [
+    "it is out of compliance with the specification",
+    "it stays compliant, but the choice calls for a considered, documented justification",
+    "it stays compliant, and no justification is expected",
+    "the statement does not settle it"
+   ],
+   "answer": "it is out of compliance with the specification"
+  }
+ ]
+}
