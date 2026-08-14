@@ -1,0 +1,67 @@
+{"text": "No duplicate row appeared in the 300 ingest batches.", "absent": false, "response": "no"}
+{"text": "whole(300 ingest batches): no duplicate row appeared.", "absent": false, "response": "yes"}
+{"text": "No duplicate row appeared in the 300 ingest batches.", "absent": false, "response": "no"}
+{"text": "part(300 ingest batches): no duplicate row appeared.", "absent": false, "response": "no"}
+{"text": "3 of the 20 relay hosts were unreachable.", "absent": false, "response": "yes"}
+{"text": "whole(the 20 relay hosts): 3 of them were unreachable.", "absent": false, "response": "yes"}
+{"text": "3 of the 20 relay hosts were unreachable.", "absent": false, "response": "yes"}
+{"text": "part(the 20 relay hosts): 3 of them were unreachable.", "absent": false, "response": "no"}
+{"text": "517 webhook deliveries are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a retry storm appeared in the 517 webhook deliveries.", "absent": false, "response": "no"}
+{"text": "517 webhook deliveries are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a retry storm appeared in the 517 webhook deliveries.", "absent": false, "response": "yes"}
+{"text": "part(64 sandbox sessions): no a privilege escalation appeared.", "absent": false, "response": "no"}
+{"text": "64 sandbox sessions are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a privilege escalation appeared in the 64 sandbox sessions.", "absent": false, "response": "yes"}
+{"text": "part(208 nightly backups): no a checksum mismatch appeared.", "absent": false, "response": "no"}
+{"text": "whole(208 nightly backups): no a checksum mismatch appeared.", "absent": false, "response": "yes"}
+{"text": "91 canary requests are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a timeout appeared in the 91 canary requests.", "absent": false, "response": "no"}
+{"text": "91 canary requests are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a timeout appeared in the 91 canary requests.", "absent": false, "response": "yes"}
+{"text": "part(330 translated strings): no an encoding error appeared.", "absent": false, "response": "no"}
+{"text": "330 translated strings are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No an encoding error appeared in the 330 translated strings.", "absent": false, "response": "yes"}
+{"text": "57 mirror syncs are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a divergent byte appeared in the 57 mirror syncs.", "absent": false, "response": "no"}
+{"text": "whole(57 mirror syncs): no a divergent byte appeared.", "absent": false, "response": "yes"}
+{"text": "part(445 vault reads): no a stale key appeared.", "absent": false, "response": "no"}
+{"text": "whole(445 vault reads): no a stale key appeared.", "absent": false, "response": "no"}
+{"text": "part(73 cron firings): no an overlap appeared.", "absent": false, "response": "no"}
+{"text": "whole(73 cron firings): no an overlap appeared.", "absent": false, "response": "yes"}
+{"text": "part(169 schema migrations): no a rollback appeared.", "absent": false, "response": "no"}
+{"text": "whole(169 schema migrations): no a rollback appeared.", "absent": false, "response": "yes"}
+{"text": "26 failover drills are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a split-brain appeared in the 26 failover drills.", "absent": false, "response": "no"}
+{"text": "whole(26 failover drills): no a split-brain appeared.", "absent": false, "response": "yes"}
+{"text": "388 image builds are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No an unsigned layer appeared in the 388 image builds.", "absent": false, "response": "no"}
+{"text": "388 image builds are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No an unsigned layer appeared in the 388 image builds.", "absent": false, "response": "yes"}
+{"text": "part(140 payment captures): no a double charge appeared.", "absent": false, "response": "no"}
+{"text": "part(52 quorum rounds): no a dissenting vote appeared.", "absent": false, "response": "no"}
+{"text": "52 quorum rounds are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a dissenting vote appeared in the 52 quorum rounds.", "absent": false, "response": "yes"}
+{"text": "part(610 cache evictions): no a dangling pointer appeared.", "absent": false, "response": "no"}
+{"text": "whole(610 cache evictions): no a dangling pointer appeared.", "absent": false, "response": "no"}
+{"text": "85 audit exports are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a redaction gap appeared in the 85 audit exports.", "absent": false, "response": "no"}
+{"text": "whole(85 audit exports): no a redaction gap appeared.", "absent": false, "response": "yes"}
+{"text": "The 18 edge nodes are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 18 edge nodes, 4 of them reported clock drift.", "absent": false, "response": "no"}
+{"text": "The 18 edge nodes are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 18 edge nodes, 4 of them reported clock drift.", "absent": false, "response": "yes"}
+{"text": "part(the 250 support tickets): 31 of them breached the response target.", "absent": false, "response": "no"}
+{"text": "whole(the 250 support tickets): 31 of them breached the response target.", "absent": false, "response": "yes"}
+{"text": "part(the 40 GPU jobs): 6 of them were preempted.", "absent": false, "response": "no"}
+{"text": "whole(the 40 GPU jobs): 6 of them were preempted.", "absent": false, "response": "yes"}
+{"text": "part(the 77 feature flags): 12 of them defaulted to off.", "absent": false, "response": "no"}
+{"text": "The 77 feature flags are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 77 feature flags, 12 of them defaulted to off.", "absent": false, "response": "yes"}
+{"text": "part(the 9 database replicas): 2 of them lagged behind.", "absent": false, "response": "no"}
+{"text": "The 9 database replicas are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 9 database replicas, 2 of them lagged behind.", "absent": false, "response": "yes"}
+{"text": "part(the 120 crawl targets): 17 of them served captchas.", "absent": false, "response": "no"}
+{"text": "whole(the 120 crawl targets): 17 of them served captchas.", "absent": false, "response": "yes"}
+{"text": "part(the 33 staging deploys): 5 of them needed a rollback.", "absent": false, "response": "no"}
+{"text": "The 33 staging deploys are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 33 staging deploys, 5 of them needed a rollback.", "absent": false, "response": "yes"}
+{"text": "part(the 500 API keys): 44 of them neared their quota.", "absent": false, "response": "no"}
+{"text": "The 500 API keys are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 500 API keys, 44 of them neared their quota.", "absent": false, "response": "yes"}
+{"text": "The 14 regions are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 14 regions, 3 of them ran degraded.", "absent": false, "response": "no"}
+{"text": "The 14 regions are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 14 regions, 3 of them ran degraded.", "absent": false, "response": "yes"}
+{"text": "The 66 review queues are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 66 review queues, 9 of them exceeded the backlog cap.", "absent": false, "response": "no"}
+{"text": "whole(the 66 review queues): 9 of them exceeded the backlog cap.", "absent": false, "response": "yes"}
+{"text": "The 204 model checkpoints are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 204 model checkpoints, 21 of them failed validation.", "absent": false, "response": "no"}
+{"text": "The 204 model checkpoints are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 204 model checkpoints, 21 of them failed validation.", "absent": false, "response": "yes"}
+{"text": "The 48 telemetry streams are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 48 telemetry streams, 7 of them dropped samples.", "absent": false, "response": "no"}
+{"text": "whole(the 48 telemetry streams): 7 of them dropped samples.", "absent": false, "response": "yes"}
+{"text": "The 28 payment routes are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 28 payment routes, 4 of them fell back to the secondary.", "absent": false, "response": "no"}
+{"text": "whole(the 28 payment routes): 4 of them fell back to the secondary.", "absent": false, "response": "yes"}
+{"text": "part(the 150 DNS zones): 13 of them carried stale records.", "absent": false, "response": "no"}
+{"text": "The 150 DNS zones are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 150 DNS zones, 13 of them carried stale records.", "absent": false, "response": "yes"}
+{"text": "The 36 build agents are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 36 build agents, 8 of them hit memory limits.", "absent": false, "response": "no"}
+{"text": "whole(the 36 build agents): 8 of them hit memory limits.", "absent": false, "response": "yes"}
