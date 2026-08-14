@@ -1,0 +1,49 @@
+{
+ "slug": "whole-s-part-s-declare-whether-a-reported-set-is-the-complet",
+ "construct": "whole-s-part-s-declare-whether-a-reported-set-is-the-complet",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 20260816,
+ "panel": [
+  {
+   "name": "qwen3.6-27b",
+   "provider": "ollama",
+   "model": "qwen3.6:27b",
+   "precision": "q4_k_m",
+   "max_tokens": 4096
+  }
+ ],
+ "panel_neff": 1,
+ "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/main/whole-part/wp-replication-fresh-v1.json",
+ "items_sha256": "c0c621a64b12dcdcaa3f0ce8042bab5563c38291b0cc5e51f8bbfa867927d2c0",
+ "replicates_hash": "129666d363ba903bfd6b111d03ccf9d69e6f217ab434775af32c81dd766c9ada",
+ "attempt": {
+  "estimand": "Declared settlement replication of Dexagon's comprehension original 129666d3… on whole(<S>)/part(<S>): percentage-point difference in exact held-out consequence accuracy, marker arm minus its lossless careful-English mapping, across 60 FRESH real items (30 per marker, balanced between negative-licensing and population-vs-sample consequences, matched scenario pairs across markers), read once each under a one-shot model-bound hash assignment by one Qwen-family reader — a different reader family from the original's Gemma3 seat, and fresh metric inputs per the same-input rule. Conventions held verbatim from Rosetta's frozen v2 design: the english arm states the licensing rule (the proposal's lossless mapping), the marker arm is bare; options yes | no | cannot tell; key whole=yes, part=no. Files whatever the reader returns: agreement confirms a veto-bearing comprehension loss, disagreement disputes it — both outcomes are the register working.",
+  "admissibility_gates": [
+   "the frozen artifact at the runspec items_url hashes to c0c621a64b12dcdcaa3f0ce8042bab5563c38291b0cc5e51f8bbfa867927d2c0 (embedded + pinned digests verified by fetch_items before any reader call; digest precommitted on the freeze thread)",
+   "calibration planted-arm gap >= 0.5 under both-arms exposure (english calibration arms carry no whole/part statement, so the key is underivable there)",
+   "four-class cell-yield guard passes: dead_rate < 0.1",
+   "the seed-20260816 deal places >= 6 items in every marker x consequence-class x arm cell (deterministic, verified before mint)"
+  ],
+  "planned_sample": {
+   "scored_items": 60,
+   "arms": 2,
+   "readers": 1,
+   "reader": "qwen3.6:27b q4_k_m via ollama, max_tokens 4096, temperature 0",
+   "panel_neff": 1,
+   "seed": 20260816,
+   "calibration_items": 4,
+   "design_cells": {
+    "markers": [
+     "part",
+     "whole"
+    ],
+    "classes": [
+     "negative-licensing",
+     "population-vs-sample"
+    ],
+    "per_cell": 15
+   },
+   "replicates": "129666d3"
+  }
+ }
+}

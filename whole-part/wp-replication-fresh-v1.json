@@ -1,0 +1,778 @@
+{
+ "sha256": "c0c621a64b12dcdcaa3f0ce8042bab5563c38291b0cc5e51f8bbfa867927d2c0",
+ "design": "fresh whole/part items, conventions held verbatim from Rosetta's frozen v2 set; settlement replication target 129666d3...",
+ "items": [
+  {
+   "id": "reticuli-wp-P-N-01",
+   "english": "517 webhook deliveries are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a retry storm appeared in the 517 webhook deliveries.",
+   "ainglish": "part(517 webhook deliveries): no a retry storm appeared.",
+   "question": "Does the claim treat the absence of a retry storm in the 517 webhook deliveries as evidence that a retry storm is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-01",
+   "english": "517 webhook deliveries are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a retry storm appeared in the 517 webhook deliveries.",
+   "ainglish": "whole(517 webhook deliveries): no a retry storm appeared.",
+   "question": "Does the claim treat the absence of a retry storm in the 517 webhook deliveries as evidence that a retry storm is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-02",
+   "english": "64 sandbox sessions are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a privilege escalation appeared in the 64 sandbox sessions.",
+   "ainglish": "part(64 sandbox sessions): no a privilege escalation appeared.",
+   "question": "Does the claim treat the absence of a privilege escalation in the 64 sandbox sessions as evidence that a privilege escalation is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-02",
+   "english": "64 sandbox sessions are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a privilege escalation appeared in the 64 sandbox sessions.",
+   "ainglish": "whole(64 sandbox sessions): no a privilege escalation appeared.",
+   "question": "Does the claim treat the absence of a privilege escalation in the 64 sandbox sessions as evidence that a privilege escalation is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-03",
+   "english": "208 nightly backups are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a checksum mismatch appeared in the 208 nightly backups.",
+   "ainglish": "part(208 nightly backups): no a checksum mismatch appeared.",
+   "question": "Does the claim treat the absence of a checksum mismatch in the 208 nightly backups as evidence that a checksum mismatch is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-03",
+   "english": "208 nightly backups are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a checksum mismatch appeared in the 208 nightly backups.",
+   "ainglish": "whole(208 nightly backups): no a checksum mismatch appeared.",
+   "question": "Does the claim treat the absence of a checksum mismatch in the 208 nightly backups as evidence that a checksum mismatch is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-04",
+   "english": "91 canary requests are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a timeout appeared in the 91 canary requests.",
+   "ainglish": "part(91 canary requests): no a timeout appeared.",
+   "question": "Does the claim treat the absence of a timeout in the 91 canary requests as evidence that a timeout is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-04",
+   "english": "91 canary requests are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a timeout appeared in the 91 canary requests.",
+   "ainglish": "whole(91 canary requests): no a timeout appeared.",
+   "question": "Does the claim treat the absence of a timeout in the 91 canary requests as evidence that a timeout is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-05",
+   "english": "330 translated strings are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No an encoding error appeared in the 330 translated strings.",
+   "ainglish": "part(330 translated strings): no an encoding error appeared.",
+   "question": "Does the claim treat the absence of an encoding error in the 330 translated strings as evidence that an encoding error is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-05",
+   "english": "330 translated strings are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No an encoding error appeared in the 330 translated strings.",
+   "ainglish": "whole(330 translated strings): no an encoding error appeared.",
+   "question": "Does the claim treat the absence of an encoding error in the 330 translated strings as evidence that an encoding error is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-06",
+   "english": "57 mirror syncs are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a divergent byte appeared in the 57 mirror syncs.",
+   "ainglish": "part(57 mirror syncs): no a divergent byte appeared.",
+   "question": "Does the claim treat the absence of a divergent byte in the 57 mirror syncs as evidence that a divergent byte is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-06",
+   "english": "57 mirror syncs are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a divergent byte appeared in the 57 mirror syncs.",
+   "ainglish": "whole(57 mirror syncs): no a divergent byte appeared.",
+   "question": "Does the claim treat the absence of a divergent byte in the 57 mirror syncs as evidence that a divergent byte is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-07",
+   "english": "445 vault reads are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a stale key appeared in the 445 vault reads.",
+   "ainglish": "part(445 vault reads): no a stale key appeared.",
+   "question": "Does the claim treat the absence of a stale key in the 445 vault reads as evidence that a stale key is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-07",
+   "english": "445 vault reads are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a stale key appeared in the 445 vault reads.",
+   "ainglish": "whole(445 vault reads): no a stale key appeared.",
+   "question": "Does the claim treat the absence of a stale key in the 445 vault reads as evidence that a stale key is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-08",
+   "english": "73 cron firings are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No an overlap appeared in the 73 cron firings.",
+   "ainglish": "part(73 cron firings): no an overlap appeared.",
+   "question": "Does the claim treat the absence of an overlap in the 73 cron firings as evidence that an overlap is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-08",
+   "english": "73 cron firings are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No an overlap appeared in the 73 cron firings.",
+   "ainglish": "whole(73 cron firings): no an overlap appeared.",
+   "question": "Does the claim treat the absence of an overlap in the 73 cron firings as evidence that an overlap is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-09",
+   "english": "169 schema migrations are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a rollback appeared in the 169 schema migrations.",
+   "ainglish": "part(169 schema migrations): no a rollback appeared.",
+   "question": "Does the claim treat the absence of a rollback in the 169 schema migrations as evidence that a rollback is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-09",
+   "english": "169 schema migrations are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a rollback appeared in the 169 schema migrations.",
+   "ainglish": "whole(169 schema migrations): no a rollback appeared.",
+   "question": "Does the claim treat the absence of a rollback in the 169 schema migrations as evidence that a rollback is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-10",
+   "english": "26 failover drills are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a split-brain appeared in the 26 failover drills.",
+   "ainglish": "part(26 failover drills): no a split-brain appeared.",
+   "question": "Does the claim treat the absence of a split-brain in the 26 failover drills as evidence that a split-brain is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-10",
+   "english": "26 failover drills are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a split-brain appeared in the 26 failover drills.",
+   "ainglish": "whole(26 failover drills): no a split-brain appeared.",
+   "question": "Does the claim treat the absence of a split-brain in the 26 failover drills as evidence that a split-brain is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-11",
+   "english": "388 image builds are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No an unsigned layer appeared in the 388 image builds.",
+   "ainglish": "part(388 image builds): no an unsigned layer appeared.",
+   "question": "Does the claim treat the absence of an unsigned layer in the 388 image builds as evidence that an unsigned layer is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-11",
+   "english": "388 image builds are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No an unsigned layer appeared in the 388 image builds.",
+   "ainglish": "whole(388 image builds): no an unsigned layer appeared.",
+   "question": "Does the claim treat the absence of an unsigned layer in the 388 image builds as evidence that an unsigned layer is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-12",
+   "english": "140 payment captures are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a double charge appeared in the 140 payment captures.",
+   "ainglish": "part(140 payment captures): no a double charge appeared.",
+   "question": "Does the claim treat the absence of a double charge in the 140 payment captures as evidence that a double charge is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-12",
+   "english": "140 payment captures are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a double charge appeared in the 140 payment captures.",
+   "ainglish": "whole(140 payment captures): no a double charge appeared.",
+   "question": "Does the claim treat the absence of a double charge in the 140 payment captures as evidence that a double charge is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-13",
+   "english": "52 quorum rounds are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a dissenting vote appeared in the 52 quorum rounds.",
+   "ainglish": "part(52 quorum rounds): no a dissenting vote appeared.",
+   "question": "Does the claim treat the absence of a dissenting vote in the 52 quorum rounds as evidence that a dissenting vote is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-13",
+   "english": "52 quorum rounds are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a dissenting vote appeared in the 52 quorum rounds.",
+   "ainglish": "whole(52 quorum rounds): no a dissenting vote appeared.",
+   "question": "Does the claim treat the absence of a dissenting vote in the 52 quorum rounds as evidence that a dissenting vote is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-14",
+   "english": "610 cache evictions are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a dangling pointer appeared in the 610 cache evictions.",
+   "ainglish": "part(610 cache evictions): no a dangling pointer appeared.",
+   "question": "Does the claim treat the absence of a dangling pointer in the 610 cache evictions as evidence that a dangling pointer is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-14",
+   "english": "610 cache evictions are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a dangling pointer appeared in the 610 cache evictions.",
+   "ainglish": "whole(610 cache evictions): no a dangling pointer appeared.",
+   "question": "Does the claim treat the absence of a dangling pointer in the 610 cache evictions as evidence that a dangling pointer is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-N-15",
+   "english": "85 audit exports are a subset of the population the claim is about: the rest is unseen, and absence within them is not evidence of absence beyond them. No a redaction gap appeared in the 85 audit exports.",
+   "ainglish": "part(85 audit exports): no a redaction gap appeared.",
+   "question": "Does the claim treat the absence of a redaction gap in the 85 audit exports as evidence that a redaction gap is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-N-15",
+   "english": "85 audit exports are the complete population for this claim: nothing the claim covers lies outside them, so absence within them is evidence of absence everywhere the claim covers. No a redaction gap appeared in the 85 audit exports.",
+   "ainglish": "whole(85 audit exports): no a redaction gap appeared.",
+   "question": "Does the claim treat the absence of a redaction gap in the 85 audit exports as evidence that a redaction gap is absent everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-01",
+   "english": "The 18 edge nodes are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 18 edge nodes, 4 of them reported clock drift.",
+   "ainglish": "part(the 18 edge nodes): 4 of them reported clock drift.",
+   "question": "Does the claim allow the figure over the 18 edge nodes to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-01",
+   "english": "The 18 edge nodes are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 18 edge nodes, 4 of them reported clock drift.",
+   "ainglish": "whole(the 18 edge nodes): 4 of them reported clock drift.",
+   "question": "Does the claim allow the figure over the 18 edge nodes to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-02",
+   "english": "The 250 support tickets are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 250 support tickets, 31 of them breached the response target.",
+   "ainglish": "part(the 250 support tickets): 31 of them breached the response target.",
+   "question": "Does the claim allow the figure over the 250 support tickets to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-02",
+   "english": "The 250 support tickets are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 250 support tickets, 31 of them breached the response target.",
+   "ainglish": "whole(the 250 support tickets): 31 of them breached the response target.",
+   "question": "Does the claim allow the figure over the 250 support tickets to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-03",
+   "english": "The 40 GPU jobs are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 40 GPU jobs, 6 of them were preempted.",
+   "ainglish": "part(the 40 GPU jobs): 6 of them were preempted.",
+   "question": "Does the claim allow the figure over the 40 GPU jobs to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-03",
+   "english": "The 40 GPU jobs are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 40 GPU jobs, 6 of them were preempted.",
+   "ainglish": "whole(the 40 GPU jobs): 6 of them were preempted.",
+   "question": "Does the claim allow the figure over the 40 GPU jobs to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-04",
+   "english": "The 77 feature flags are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 77 feature flags, 12 of them defaulted to off.",
+   "ainglish": "part(the 77 feature flags): 12 of them defaulted to off.",
+   "question": "Does the claim allow the figure over the 77 feature flags to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-04",
+   "english": "The 77 feature flags are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 77 feature flags, 12 of them defaulted to off.",
+   "ainglish": "whole(the 77 feature flags): 12 of them defaulted to off.",
+   "question": "Does the claim allow the figure over the 77 feature flags to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-05",
+   "english": "The 9 database replicas are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 9 database replicas, 2 of them lagged behind.",
+   "ainglish": "part(the 9 database replicas): 2 of them lagged behind.",
+   "question": "Does the claim allow the figure over the 9 database replicas to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-05",
+   "english": "The 9 database replicas are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 9 database replicas, 2 of them lagged behind.",
+   "ainglish": "whole(the 9 database replicas): 2 of them lagged behind.",
+   "question": "Does the claim allow the figure over the 9 database replicas to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-06",
+   "english": "The 120 crawl targets are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 120 crawl targets, 17 of them served captchas.",
+   "ainglish": "part(the 120 crawl targets): 17 of them served captchas.",
+   "question": "Does the claim allow the figure over the 120 crawl targets to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-06",
+   "english": "The 120 crawl targets are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 120 crawl targets, 17 of them served captchas.",
+   "ainglish": "whole(the 120 crawl targets): 17 of them served captchas.",
+   "question": "Does the claim allow the figure over the 120 crawl targets to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-07",
+   "english": "The 33 staging deploys are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 33 staging deploys, 5 of them needed a rollback.",
+   "ainglish": "part(the 33 staging deploys): 5 of them needed a rollback.",
+   "question": "Does the claim allow the figure over the 33 staging deploys to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-07",
+   "english": "The 33 staging deploys are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 33 staging deploys, 5 of them needed a rollback.",
+   "ainglish": "whole(the 33 staging deploys): 5 of them needed a rollback.",
+   "question": "Does the claim allow the figure over the 33 staging deploys to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-08",
+   "english": "The 500 API keys are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 500 API keys, 44 of them neared their quota.",
+   "ainglish": "part(the 500 API keys): 44 of them neared their quota.",
+   "question": "Does the claim allow the figure over the 500 API keys to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-08",
+   "english": "The 500 API keys are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 500 API keys, 44 of them neared their quota.",
+   "ainglish": "whole(the 500 API keys): 44 of them neared their quota.",
+   "question": "Does the claim allow the figure over the 500 API keys to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-09",
+   "english": "The 14 regions are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 14 regions, 3 of them ran degraded.",
+   "ainglish": "part(the 14 regions): 3 of them ran degraded.",
+   "question": "Does the claim allow the figure over the 14 regions to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-09",
+   "english": "The 14 regions are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 14 regions, 3 of them ran degraded.",
+   "ainglish": "whole(the 14 regions): 3 of them ran degraded.",
+   "question": "Does the claim allow the figure over the 14 regions to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-10",
+   "english": "The 66 review queues are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 66 review queues, 9 of them exceeded the backlog cap.",
+   "ainglish": "part(the 66 review queues): 9 of them exceeded the backlog cap.",
+   "question": "Does the claim allow the figure over the 66 review queues to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-10",
+   "english": "The 66 review queues are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 66 review queues, 9 of them exceeded the backlog cap.",
+   "ainglish": "whole(the 66 review queues): 9 of them exceeded the backlog cap.",
+   "question": "Does the claim allow the figure over the 66 review queues to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-11",
+   "english": "The 204 model checkpoints are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 204 model checkpoints, 21 of them failed validation.",
+   "ainglish": "part(the 204 model checkpoints): 21 of them failed validation.",
+   "question": "Does the claim allow the figure over the 204 model checkpoints to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-11",
+   "english": "The 204 model checkpoints are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 204 model checkpoints, 21 of them failed validation.",
+   "ainglish": "whole(the 204 model checkpoints): 21 of them failed validation.",
+   "question": "Does the claim allow the figure over the 204 model checkpoints to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-12",
+   "english": "The 48 telemetry streams are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 48 telemetry streams, 7 of them dropped samples.",
+   "ainglish": "part(the 48 telemetry streams): 7 of them dropped samples.",
+   "question": "Does the claim allow the figure over the 48 telemetry streams to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-12",
+   "english": "The 48 telemetry streams are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 48 telemetry streams, 7 of them dropped samples.",
+   "ainglish": "whole(the 48 telemetry streams): 7 of them dropped samples.",
+   "question": "Does the claim allow the figure over the 48 telemetry streams to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-13",
+   "english": "The 28 payment routes are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 28 payment routes, 4 of them fell back to the secondary.",
+   "ainglish": "part(the 28 payment routes): 4 of them fell back to the secondary.",
+   "question": "Does the claim allow the figure over the 28 payment routes to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-13",
+   "english": "The 28 payment routes are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 28 payment routes, 4 of them fell back to the secondary.",
+   "ainglish": "whole(the 28 payment routes): 4 of them fell back to the secondary.",
+   "question": "Does the claim allow the figure over the 28 payment routes to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-14",
+   "english": "The 150 DNS zones are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 150 DNS zones, 13 of them carried stale records.",
+   "ainglish": "part(the 150 DNS zones): 13 of them carried stale records.",
+   "question": "Does the claim allow the figure over the 150 DNS zones to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-14",
+   "english": "The 150 DNS zones are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 150 DNS zones, 13 of them carried stale records.",
+   "ainglish": "whole(the 150 DNS zones): 13 of them carried stale records.",
+   "question": "Does the claim allow the figure over the 150 DNS zones to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-P-P-15",
+   "english": "The 36 build agents are a subset of the population the claim is about: the rest is unseen, so the figure over them is a figure for them only, not the full total. Of the 36 build agents, 8 of them hit memory limits.",
+   "ainglish": "part(the 36 build agents): 8 of them hit memory limits.",
+   "question": "Does the claim allow the figure over the 36 build agents to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "reticuli-wp-W-P-15",
+   "english": "The 36 build agents are the complete population for this claim: nothing the claim covers lies outside them, so the figure over them is the full total for everything the claim covers. Of the 36 build agents, 8 of them hit memory limits.",
+   "ainglish": "whole(the 36 build agents): 8 of them hit memory limits.",
+   "question": "Does the claim allow the figure over the 36 build agents to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "reticuli-wp-cal-01",
+   "english": "No duplicate row appeared in the 300 ingest batches.",
+   "ainglish": "whole(300 ingest batches): no duplicate row appeared.",
+   "question": "Does the claim treat the absence of a duplicate row in the 300 ingest batches as evidence that no duplicate row occurred everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "calibration": true
+  },
+  {
+   "id": "reticuli-wp-cal-02",
+   "english": "No duplicate row appeared in the 300 ingest batches.",
+   "ainglish": "part(300 ingest batches): no duplicate row appeared.",
+   "question": "Does the claim treat the absence of a duplicate row in the 300 ingest batches as evidence that no duplicate row occurred everywhere the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no",
+   "calibration": true
+  },
+  {
+   "id": "reticuli-wp-cal-03",
+   "english": "3 of the 20 relay hosts were unreachable.",
+   "ainglish": "whole(the 20 relay hosts): 3 of them were unreachable.",
+   "question": "Does the claim allow the figure over the 20 relay hosts to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "calibration": true
+  },
+  {
+   "id": "reticuli-wp-cal-04",
+   "english": "3 of the 20 relay hosts were unreachable.",
+   "ainglish": "part(the 20 relay hosts): 3 of them were unreachable.",
+   "question": "Does the claim allow the figure over the 20 relay hosts to be treated as the full total for everything the claim covers?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no",
+   "calibration": true
+  }
+ ]
+}
