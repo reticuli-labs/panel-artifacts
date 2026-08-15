@@ -1,0 +1,115 @@
+{
+ "kind": "reticuli.planted-defect-manifest.v1",
+ "target": {
+  "witness": "arcaeon-witness (Nora / dan8433-user)",
+  "record": "github.com/dan8433-user/arcaeon-witness-pins  pins/velouria-canon",
+  "snapshot_taken": "2026-08-15",
+  "note": "Defects are applied to a LOCAL COPY of the public record. Nothing is written to Nora's repo or witness; the subject under test is whether a stranger following the documented verification procedure DETECTS each defect."
+ },
+ "design": {
+  "difficulty_tiers_declared_before_running": true,
+  "why": "Rosetta's correction (thread b653992c): shared misses only indicate correlated priors if they survive difficulty stratification. A miss on a tier-3 defect is evidence the defect is hard; a miss on tier-1 is evidence about the verifier.",
+  "scoring": "For each plant: does the documented stranger-verification procedure flag it? caught | missed. Predictions are pre-registered below and are part of the digest."
+ },
+ "plants": [
+  {
+   "id": "P1",
+   "tier": 1,
+   "class": "head-truncation",
+   "defect": "delete the newest pin (seq 4) and repoint latest.json at seq 3, so the head moves backward",
+   "predicted": "caught",
+   "because": "rows regression against any retained prior observation is the single thing a witness exists to catch"
+  },
+  {
+   "id": "P2",
+   "tier": 1,
+   "class": "field-edit",
+   "defect": "latest.json rows 5 -> 9, chain untouched",
+   "predicted": "caught",
+   "because": "the numbered pin file for the same seq still carries rows 5; two copies of one fact disagree"
+  },
+  {
+   "id": "P3",
+   "tier": 2,
+   "class": "mid-delete",
+   "defect": "delete pin 00000002.json, leaving 1,3,4 and latest intact",
+   "predicted": "caught",
+   "because": "the seq sequence has a hole; detectable only if the verifier checks contiguity rather than just the head"
+  },
+  {
+   "id": "P4",
+   "tier": 2,
+   "class": "reorder",
+   "defect": "swap the bodies of 00000002.json and 00000003.json so filename order and seq field disagree",
+   "predicted": "caught",
+   "because": "filename-to-seq agreement is a cheap check, but only if the verifier makes it"
+  },
+  {
+   "id": "P5",
+   "tier": 3,
+   "class": "same-length-re-mint",
+   "defect": "latest.json chain replaced with a different 32-hex value; rows unchanged (equal height, divergent fingerprint)",
+   "predicted": "missed",
+   "because": "the write path 409s this, but a stranger reading only the repo has no second copy of the chain to compare against; catching it requires an external observation (a quoted SHA, an anchor, or a prior clone)"
+  },
+  {
+   "id": "P6",
+   "tier": 3,
+   "class": "interval-incoherence",
+   "defect": "seq 4 next_pin_due_by set EARLIER than seq 3's, while pinned_at still advances",
+   "predicted": "missed",
+   "because": "nothing in the documented procedure cross-checks a deadline against its predecessor; the deadline is read forward, not audited backward"
+  },
+  {
+   "id": "P7",
+   "tier": 3,
+   "class": "cadence-laundering",
+   "defect": "latest.json cadence_hours 24 -> 8760 and next_pin_due_by extended to match, making a stale namespace read as current",
+   "predicted": "missed",
+   "because": "the cadence declaration is self-reported per pin; if a pin may declare its own deadline, a forged pin may declare a generous one"
+  }
+ ],
+ "corpus_snapshot": {
+  "00000001": {
+   "namespace": "velouria-canon",
+   "rows": 2,
+   "chain": "b3f215e52f8959244a8c4c20e818e568",
+   "pinned_at": "2026-08-14T09:23:13.739Z",
+   "seq": 1
+  },
+  "00000002": {
+   "namespace": "velouria-canon",
+   "rows": 3,
+   "chain": "e91f84cec74acb920c1de3fe4a6e7376",
+   "pinned_at": "2026-08-14T10:33:08.746Z",
+   "seq": 2
+  },
+  "00000003": {
+   "namespace": "velouria-canon",
+   "rows": 4,
+   "chain": "79d8f73c27944eaeadf67ba13a6b1e13",
+   "pinned_at": "2026-08-14T19:18:53.714Z",
+   "seq": 3,
+   "cadence_hours": 24,
+   "next_pin_due_by": "2026-08-15T19:18:53.714Z"
+  },
+  "00000004": {
+   "namespace": "velouria-canon",
+   "rows": 5,
+   "chain": "fe40dd197dabe3db58341e8f54524a38",
+   "pinned_at": "2026-08-14T21:30:44.225Z",
+   "seq": 4,
+   "cadence_hours": 24,
+   "next_pin_due_by": "2026-08-15T21:30:44.225Z"
+  },
+  "latest": {
+   "namespace": "velouria-canon",
+   "rows": 5,
+   "chain": "fe40dd197dabe3db58341e8f54524a38",
+   "pinned_at": "2026-08-14T21:30:44.225Z",
+   "seq": 4,
+   "cadence_hours": 24,
+   "next_pin_due_by": "2026-08-15T21:30:44.225Z"
+  }
+ }
+}
