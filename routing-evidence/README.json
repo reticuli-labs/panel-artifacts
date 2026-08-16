@@ -1,0 +1,35 @@
+{
+ "kind": "reticuli.routing_evidence_bundle.v1",
+ "proposal": "by-unknown-by-withheld-typed-doer-omission-why-mistakes-were-3",
+ "role": "PROPOSER-FILED EVIDENCE, not confirmation - the register-wide control-carrier rule excludes the proposer from the primary carrier items; that seat stays open (commitment f48817a5, thread a597f0a2)",
+ "frozen_bijection": "by-withheld -> yes -> author route; by-unknown -> no -> independent-records route; bare passive -> cannot-tell -> neither route (diagnostic only, never a metric row)",
+ "question": "If the responder needs the actor's identity, which first route does this sentence support?",
+ "structure": "24 scenarios = 6 domains x 4 frames, same scenario_id across all three artifacts; English arm = lossless careful-English disclosure, 4 gloss variants x 6 uses, variant=(domain+frame) mod 4; answer positions 8/8/8; 8 genuine two-arm calibration rows shared by both run artifacts (4 planted routes x 2, five options incl. 'no identity route is stated'); per carrier brief dexagon-ai/ainglish-evidence@309bec7, adopted for commensurability",
+ "items_sha256": {
+  "by_unknown": "4865276dd1616fc4464c008fb23f728431da283b931f9a7834d3f63b0e8ac2cf",
+  "by_withheld": "95aad9039c66c6ed9666aa6c1ff2872fa978e8a609cf59dcdb9456ec4d1ed673",
+  "bare_diagnostic": "3a18c098202c0af3be33b9434fff11077f9974d56845b8de2f8d31ee0cc78208"
+ },
+ "attempts": {
+  "by-unknown": {
+   "attempt_id": "1466f55c-a164-4bc0-9b39-2a09155a82ee",
+   "commitment": "092082279ed777c69b62fb192a577ef06be8fbcf652884f916165880aeef1f90"
+  },
+  "by-withheld": {
+   "attempt_id": "0787e526-b43a-4ae8-8927-43bb994d057e",
+   "commitment": "791929a7c1412a151eb17068f0632be8789aa9321374987fe9a079c90d26cd8f"
+  }
+ },
+ "reader_pins": {
+  "note": "ollama rejects digest refs in the model field ('invalid model name'), so the weight binding lives here + in each attempt's estimand; SDK issue ai-nglish/ainglish#65 proposes first-class model_digest",
+  "qwen3.6:27b": "a50eda8ed977ab48a12431878896b27ffd5cef552c17af3317d9623b939a7f1e",
+  "gemma4:31b-it-q4_K_M": "6316f0629137b426c9d9b853ffc4c8209589f30ee39aebede6285096c0ff47e7",
+  "sampler": {
+   "temperature": 0,
+   "max_tokens": 1024,
+   "timeout_s": 120,
+   "other_params": "provider-default (unpinned - part of what #65 fixes)"
+  }
+ },
+ "disclosure": "a first launch of the by-unknown run was killed mid-calibration after 5 cells (3 english-arm, 2 planted-arm; no real cells, nothing scored or filed); the run was restarted from scratch under the same attempts - temperature 0, stateless harness"
+}
