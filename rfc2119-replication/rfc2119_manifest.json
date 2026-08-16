@@ -1,0 +1,311 @@
+{
+ "construct": "rfc-2119-requirement-strength-must-should-may-not",
+ "slug": "rfc-2119-requirement-strength-must-should-may-not",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 20260815,
+ "planted_arm": "ainglish",
+ "replicates_hash": "d4296fc1ae905f2c041dac0ecca9d8c0ebd53bed49c545c07024eedc890303b7",
+ "panel": [
+  {
+   "name": "gemma4-31b",
+   "provider": "ollama",
+   "model": "gemma4:31b-it-q4_K_M"
+  },
+  {
+   "name": "qwen3.8-27b",
+   "provider": "ollama",
+   "model": "qwen3.8:27b"
+  }
+ ],
+ "items": [
+  {
+   "id": "c1",
+   "english": "The specification discusses validating the server certificate.",
+   "ainglish": "The specification says clients MUST validate the server certificate.",
+   "question": "Does the specification make certificate validation an absolute requirement?",
+   "options": [
+    "yes",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "calibration": true
+  },
+  {
+   "id": "c2",
+   "english": "The specification mentions response compression.",
+   "ainglish": "The specification says servers SHOULD compress large responses.",
+   "question": "Does the specification recommend compressing large responses?",
+   "options": [
+    "yes",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "calibration": true
+  },
+  {
+   "id": "c3",
+   "english": "The specification covers a dry-run mode.",
+   "ainglish": "The specification says implementations MAY offer a dry-run mode.",
+   "question": "Does the specification make dry-run mode optional?",
+   "options": [
+    "yes",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "calibration": true
+  },
+  {
+   "id": "c4",
+   "english": "The specification talks about session tokens and logging.",
+   "ainglish": "The specification says loggers MUST NOT record session tokens.",
+   "question": "Does the specification prohibit recording session tokens?",
+   "options": [
+    "yes",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "calibration": true
+  },
+  {
+   "id": "m1",
+   "english": "The server is required to log every authentication failure; this is an absolute requirement of the specification and no circumstances excuse skipping it.",
+   "ainglish": "The server MUST log every authentication failure.",
+   "question": "A server skips this behaviour but documents a considered reason. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "non-conformant"
+  },
+  {
+   "id": "m2",
+   "english": "Clients are required to send the request identifier on every retry; the specification permits no exception to this.",
+   "ainglish": "Clients MUST send the request identifier on every retry.",
+   "question": "A client omits this behaviour after weighing the trade-offs. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "non-conformant"
+  },
+  {
+   "id": "m3",
+   "english": "The proxy is required to strip hop-by-hop headers before forwarding; implementations have no discretion here.",
+   "ainglish": "The proxy MUST strip hop-by-hop headers before forwarding.",
+   "question": "A proxy does not do this, and explains why in its documentation. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "non-conformant"
+  },
+  {
+   "id": "m4",
+   "english": "Resolvers are required to validate the response signature; this requirement is unconditional.",
+   "ainglish": "Resolvers MUST validate the response signature.",
+   "question": "A resolver skips this step for performance and says so plainly. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "non-conformant"
+  },
+  {
+   "id": "s1",
+   "english": "It is recommended that the client retry with exponential backoff; there can exist valid reasons to do otherwise, provided the implications are understood and carefully weighed.",
+   "ainglish": "The client SHOULD retry with exponential backoff.",
+   "question": "A client deviates from this behaviour after understanding and weighing the implications. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "s2",
+   "english": "It is recommended that servers compress responses larger than one kilobyte, though an implementation aware of the consequences can choose not to in particular circumstances.",
+   "ainglish": "Servers SHOULD compress responses larger than one kilobyte.",
+   "question": "A server does not do this, having examined and accepted the consequences. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "s3",
+   "english": "It is recommended that the gateway cache successful lookups for one hour; deviating is acceptable when the full implications have been considered.",
+   "ainglish": "The gateway SHOULD cache successful lookups for one hour.",
+   "question": "A gateway deviates from this behaviour with a documented, considered rationale. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "s4",
+   "english": "It is recommended that agents announce protocol version on connect; an implementation can omit this in particular circumstances if the trade-off is understood.",
+   "ainglish": "Agents SHOULD announce protocol version on connect.",
+   "question": "An agent omits this after careful consideration of the trade-off. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "y1",
+   "english": "Implementations are free to offer a dry-run mode; this is genuinely optional and omitting it is equally acceptable.",
+   "ainglish": "Implementations MAY offer a dry-run mode.",
+   "question": "An implementation does not provide this at all. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "y2",
+   "english": "The scheduler can optionally coalesce adjacent jobs; providing or not providing this is entirely at the implementer's discretion.",
+   "ainglish": "The scheduler MAY coalesce adjacent jobs.",
+   "question": "A scheduler never does this. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "y3",
+   "english": "A registry is permitted, at its own discretion, to serve stale reads during failover; either choice is acceptable.",
+   "ainglish": "A registry MAY serve stale reads during failover.",
+   "question": "A registry chooses never to do this. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "y4",
+   "english": "Clients can optionally pin the intermediate certificate; the choice carries no conformance weight either way.",
+   "ainglish": "Clients MAY pin the intermediate certificate.",
+   "question": "A client does not do this. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "n1",
+   "english": "The relay is absolutely prohibited from forwarding credentials to third parties; no circumstance makes this acceptable.",
+   "ainglish": "The relay MUST NOT forward credentials to third parties.",
+   "question": "A relay does this once, with the user's consent and a documented reason. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "non-conformant"
+  },
+  {
+   "id": "n2",
+   "english": "Loggers are absolutely prohibited from recording session tokens; the specification admits no exception.",
+   "ainglish": "Loggers MUST NOT record session tokens.",
+   "question": "A logger records them briefly during debugging, with access controls. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "non-conformant"
+  },
+  {
+   "id": "n3",
+   "english": "The client is absolutely prohibited from downgrading to plaintext after a failed handshake; there is no permitted exception.",
+   "ainglish": "The client MUST NOT downgrade to plaintext after a failed handshake.",
+   "question": "A client downgrades when the operator explicitly requests it. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "non-conformant"
+  },
+  {
+   "id": "n4",
+   "english": "Mirrors are absolutely prohibited from rewriting artifact digests; no operational need excuses it.",
+   "ainglish": "Mirrors MUST NOT rewrite artifact digests.",
+   "question": "A mirror rewrites one digest to fix a known corruption, and discloses this. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "non-conformant"
+  },
+  {
+   "id": "d1",
+   "english": "It is discouraged for services to hold connections open past sixty seconds, though there can exist valid reasons to do so in particular circumstances when the implications are understood and weighed.",
+   "ainglish": "Services SHOULD NOT hold connections open past sixty seconds.",
+   "question": "A service does this for one long-lived subscription, having weighed the implications. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "d2",
+   "english": "It is discouraged for exporters to inline large payloads, but an implementation that has understood and accepted the implications can do so in particular cases.",
+   "ainglish": "Exporters SHOULD NOT inline large payloads.",
+   "question": "An exporter inlines one payload after considering the implications carefully. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "d3",
+   "english": "It is discouraged for agents to poll more than once per minute; doing so is acceptable only in particular circumstances where the full implications are understood.",
+   "ainglish": "Agents SHOULD NOT poll more than once per minute.",
+   "question": "An agent polls faster during a declared incident, having weighed the implications. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  },
+  {
+   "id": "d4",
+   "english": "It is discouraged for builds to fetch dependencies at run time, though a valid, carefully weighed reason can make it acceptable in a particular circumstance.",
+   "ainglish": "Builds SHOULD NOT fetch dependencies at run time.",
+   "question": "A build fetches one dependency at run time for a documented, weighed reason. Per this instruction it is:",
+   "options": [
+    "conformant",
+    "non-conformant",
+    "cannot tell"
+   ],
+   "answer": "conformant"
+  }
+ ],
+ "method": "Replication with my own inputs of the ColonistOne original d4296fc1\u2026: 20 real items (4 per RFC 2119 form: MUST/SHOULD/MAY/MUST NOT/SHOULD NOT) + 4 calibration items. The english arm spells out the requirement strength using the RFC 2119 section definitions in prose; the ainglish arm uses the bare capitalized keyword. Every question probes whether a justified deviation remains conformant \u2014 the distinction that separates the five forms. Options identical across items. Panel differs from the original by one member: qwen3.8:27b replaces qwen3.6:27b (a reader absent from the original's roster); gemma4:31b-it-q4_K_M is shared."
+}
