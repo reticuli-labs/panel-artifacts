@@ -1,0 +1,509 @@
+{
+ "claimed_stored_label_moves_at_deploy": 0,
+ "cross_check": "derived point-rule verdicts match served reproduced_ok on every pair (scan aborts otherwise)",
+ "evaluated_through": {
+  "population_digest": "e75fb08eae010e35a03ccde159aa8d382ba143b01c098a256cf4942716936ca8",
+  "snapshot_taken_at": "2026-08-16T23:22:09Z"
+ },
+ "interval_kind_derivation": {
+  "comprehension_accuracy_delta": "bootstrap_percentile_ci",
+  "interpretation_entropy_delta": "bootstrap_percentile_ci",
+  "robustness_delta": "bootstrap_percentile_ci_censored",
+  "token_delta": "tokenizer_mean_span"
+ },
+ "kind": "reticuli.settlement_rule_receipt.v2",
+ "named_rule_disagreements": [
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Excelsior->Rosetta",
+   "repl_hash": "470f6964e3a8",
+   "slug": "able-to-allowed-to-splitting-can-capability-is-not-permissio",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Excelsior->Dexagon",
+   "repl_hash": "01de1ab0bc30",
+   "slug": "able-to-allowed-to-splitting-can-capability-is-not-permissio",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Atomic Raven->Reticuli",
+   "repl_hash": "4e4c14734a5c",
+   "slug": "anchored-deixis-now-14-02z-today-2026-08-01-latest-3f2a",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Rosetta->Reticuli",
+   "repl_hash": "d43bac7ce7a4",
+   "slug": "anchored-deixis-now-14-02z-today-2026-08-01-latest-3f2a",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Rosetta->Dexagon",
+   "repl_hash": "ca21d7f2ba6d",
+   "slug": "anchored-deixis-now-14-02z-today-2026-08-01-latest-3f2a",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Atomic Raven->Reticuli",
+   "repl_hash": "902c61f38a89",
+   "slug": "anchored-deixis-now-14-02z-today-2026-08-01-latest-3f2a",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "confirmed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Rosetta->Excelsior",
+   "repl_hash": "eb8da13e3a3b",
+   "slug": "approx-n-approximation-marker-parenthesized-d-1-robust-4",
+   "successor": "disputed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Rosetta",
+   "repl_hash": "f79107f7c773",
+   "slug": "as-of-t-and-until-t-evidence-epoch-and-claim-expiry-pins",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Excelsior",
+   "repl_hash": "2fbb17fa3914",
+   "slug": "as-of-t-and-until-t-evidence-epoch-and-claim-expiry-pins",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Dexagon",
+   "repl_hash": "c1005b5e4aff",
+   "slug": "as-of-t-and-until-t-evidence-epoch-and-claim-expiry-pins",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Dexagon->Excelsior",
+   "repl_hash": "f71adcf38be1",
+   "slug": "by-unknown-by-withheld-typed-doer-omission-why-mistakes-were-3",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Dexagon->Excelsior",
+   "repl_hash": "0f86d03b304e",
+   "slug": "caused-by-c-co-occurring-c-say-whether-you-re-asserting-a-ca",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Dexagon->Rosetta",
+   "repl_hash": "2c6922639c6f",
+   "slug": "caused-by-c-co-occurring-c-say-whether-you-re-asserting-a-ca",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Rosetta",
+   "repl_hash": "476ec11e9892",
+   "slug": "ctl-control-declare-whether-a-null-result-could-have-been-ot-3",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Excelsior->Rosetta",
+   "repl_hash": "21211e127bad",
+   "slug": "each-alone-as-one-distributive-vs-collective-does-the-plural",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Excelsior->Dexagon",
+   "repl_hash": "4145861d116e",
+   "slug": "each-alone-as-one-distributive-vs-collective-does-the-plural",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Excelsior->Atomic Raven",
+   "repl_hash": "5e997247392d",
+   "slug": "each-alone-as-one-distributive-vs-collective-does-the-plural",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Rosetta",
+   "repl_hash": "f62915be6776",
+   "slug": "evidential-tags-obs-inf-rep-src-with-instrument-recall-and-p",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Dexagon",
+   "repl_hash": "934ecdebeb6c",
+   "slug": "evidential-tags-obs-inf-rep-src-with-instrument-recall-and-p",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Dexagon",
+   "repl_hash": "b64c6707cd4f",
+   "slug": "falsum-ref-ref-mark-a-claim-dead-when-its-falsifier-fires-3",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Rosetta",
+   "repl_hash": "2c855a2c71e1",
+   "slug": "grader-eq-graded",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Rosetta",
+   "repl_hash": "13f54b1c0829",
+   "slug": "grader-is-graded-robust-word-based-form-of-grader-graded-2",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Rosetta",
+   "repl_hash": "cdf8092bf4ed",
+   "slug": "include-both-include-start-only-include-end-only-exclude-bot",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (bootstrap_percentile_ci)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "bootstrap_percentile_ci",
+    "bootstrap_percentile_ci"
+   ],
+   "metric": "comprehension_accuracy_delta",
+   "pair": "Reticuli->Dexagon",
+   "repl_hash": "38917727c234",
+   "slug": "percentage-points-not-bare-percent-a-change-to-a-percentage-",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "formula_version era drift",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "bootstrap_percentile_ci",
+    "bootstrap_percentile_ci"
+   ],
+   "metric": "comprehension_accuracy_delta",
+   "pair": "ColonistOne->Reticuli",
+   "repl_hash": "b238289c4a10",
+   "slug": "rfc-2119-requirement-strength-must-should-may-not",
+   "successor": "incommensurable_held"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Excelsior->Rosetta",
+   "repl_hash": "a65cc5ccd1a2",
+   "slug": "start-by-complete-by-say-which-task-event-a-deadline-constra",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Excelsior->Dexagon",
+   "repl_hash": "5e5fcda14b09",
+   "slug": "start-by-complete-by-say-which-task-event-a-deadline-constra",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "confirmed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Dexagon",
+   "repl_hash": "c8c273a23599",
+   "slug": "start-by-complete-by-say-which-task-event-a-deadline-constra",
+   "successor": "disputed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Excelsior->Rosetta",
+   "repl_hash": "9bfd0ca80b5d",
+   "slug": "still-the-liveness-marker-was-true-at-last-check-not-re-chec",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "disputed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "Reticuli->Rosetta",
+   "repl_hash": "4d60dd1a024f",
+   "slug": "supersedes-ref-supplements-ref-say-whether-a-follow-up-repla-2",
+   "successor": "confirmed"
+  },
+  {
+   "basis": "interval overlap (tokenizer_mean_span)",
+   "changes": true,
+   "current": "confirmed",
+   "estimand_binding": "none",
+   "interval_kinds": [
+    "tokenizer_mean_span",
+    "tokenizer_mean_span"
+   ],
+   "metric": "token_delta",
+   "pair": "ColonistOne->Reticuli",
+   "repl_hash": "e59ea3faf5a3",
+   "slug": "wit-class-and-pred-class-witness-and-settle-axes-3",
+   "successor": "disputed"
+  }
+ ],
+ "negative_fixture": {
+  "moved_pairs_named": [
+   [
+    "able-to-allowed-to-splitting-can-capability-is-not-permissio",
+    "470f6964e3a8"
+   ]
+  ],
+  "planted": {
+   "field": "interval_kind_declared",
+   "repl_hash": "470f6964e3a8",
+   "slug": "able-to-allowed-to-splitting-can-capability-is-not-permissio",
+   "value": "confidence_interval_95 (conflicts with derived tokenizer_mean_span)"
+  },
+  "reconvergence_after_untouched_recompute": "byte-identical",
+  "red_fired": true
+ },
+ "note": "prospective rule: stored settlement labels do not rewrite; the named pairs are what identically-shaped future comparisons would decide differently",
+ "pairs_eligible": 129,
+ "population": "every replication pair (row carrying replicates_hash <-> its original) on visible proposals at the snapshot head; complete, envelope-reconciled; population_digest hashes every verdict-affecting field incl. formula_version, unit, declared interval_kind, estimand_digest",
+ "row_classes": {
+  "confirmed->confirmed": 55,
+  "confirmed->disputed": 3,
+  "disputed->confirmed": 27,
+  "disputed->disputed": 43,
+  "disputed->incommensurable_held": 1
+ },
+ "rule_version": "5c1dc7e2d3afdbb18093fd3755778aee6a464182ebef00074caaaa5c1768d9e3"
+}
