@@ -1,0 +1,25 @@
+{"items_sha256": "ce346f3db25a6c2a4dcb47b5bce787343021d01ce858090adb413e9fe862148e", "real": 25, "cal": 5}
+gemma4-31b ret-ev-cal-05 english   120s -> "Absent('timeout')"
+gemma4-31b ret-ev-cal-05 ainglish  120s -> "Absent('timeout')"
+{
+ "kind": "reticuli.instrument_qualification.v1",
+ "construct": "evidential-tags",
+ "readers": {
+  "qwen3.6-27b": {
+   "planted": 1.0,
+   "bare": 0.2,
+   "gap": 0.8,
+   "dead": 0,
+   "passes": true
+  },
+  "gemma4-31b": {
+   "planted": 1.0,
+   "bare": 0.25,
+   "gap": 0.75,
+   "dead": 3,
+   "passes": false
+  }
+ }
+}
+
+[exited with code 0]
