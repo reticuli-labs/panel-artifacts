@@ -1,0 +1,1207 @@
+{
+  "kind": "ainglish.panel.items.v1",
+  "proposal": "twice-weekly-every-two-weeks-split-biweekly-into-its-two-inc",
+  "form": "twice-weekly",
+  "baseline": "complete_careful_english",
+  "real_items": 60,
+  "calibration_items": 8,
+  "replicates": "d01118cac3491a22c9f1241a311fd064777a3602b2d99f5f1fc6e86f6ac8fff0",
+  "author": "reticuli (independent replication; items authored fresh, see header of generator)",
+  "sha256": "881af9412176895747b9a20b4689dd416ac2e63c1172fdd60f2153e42931b157",
+  "items": [
+    {
+      "id": "cal-tw-rep-01",
+      "calibration": true,
+      "english": "Calibration series 1 accumulates mirrored snapshots on a recurring basis, but this memo gives no count from which a quarter total can be recovered.",
+      "ainglish": "Calibration series 1 has exactly nine mirrored snapshots in the stated quarter.",
+      "question": "How many mirrored snapshots does the memo license in the stated quarter?",
+      "options": [
+        "three",
+        "eighteen",
+        "nine",
+        "cannot_tell"
+      ],
+      "answer": "nine",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "form": "twice-weekly"
+      }
+    },
+    {
+      "id": "cal-tw-rep-02",
+      "calibration": true,
+      "english": "Calibration series 2 accumulates signed attestations on a recurring basis, but this memo gives no count from which a review cycle total can be recovered.",
+      "ainglish": "Calibration series 2 has exactly fourteen signed attestations in the stated review cycle.",
+      "question": "How many signed attestations does the memo license in the stated review cycle?",
+      "options": [
+        "cannot_tell",
+        "fourteen",
+        "twenty-eight",
+        "seven"
+      ],
+      "answer": "fourteen",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "form": "twice-weekly"
+      }
+    },
+    {
+      "id": "cal-tw-rep-03",
+      "calibration": true,
+      "english": "Calibration series 3 accumulates archived transcripts on a recurring basis, but this memo gives no count from which a audit period total can be recovered.",
+      "ainglish": "Calibration series 3 has exactly twenty archived transcripts in the stated audit period.",
+      "question": "How many archived transcripts does the memo license in the stated audit period?",
+      "options": [
+        "forty",
+        "twenty",
+        "cannot_tell",
+        "ten"
+      ],
+      "answer": "twenty",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "form": "twice-weekly"
+      }
+    },
+    {
+      "id": "cal-tw-rep-04",
+      "calibration": true,
+      "english": "Calibration series 4 accumulates sealed envelopes on a recurring basis, but this memo gives no count from which a fiscal month total can be recovered.",
+      "ainglish": "Calibration series 4 has exactly sixteen sealed envelopes in the stated fiscal month.",
+      "question": "How many sealed envelopes does the memo license in the stated fiscal month?",
+      "options": [
+        "cannot_tell",
+        "eight",
+        "thirty-two",
+        "sixteen"
+      ],
+      "answer": "sixteen",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "form": "twice-weekly"
+      }
+    },
+    {
+      "id": "cal-tw-rep-05",
+      "calibration": true,
+      "english": "Calibration series 5 accumulates verified receipts on a recurring basis, but this memo gives no count from which a reporting term total can be recovered.",
+      "ainglish": "Calibration series 5 has exactly twelve verified receipts in the stated reporting term.",
+      "question": "How many verified receipts does the memo license in the stated reporting term?",
+      "options": [
+        "twelve",
+        "four",
+        "cannot_tell",
+        "twenty-four"
+      ],
+      "answer": "twelve",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "form": "twice-weekly"
+      }
+    },
+    {
+      "id": "cal-tw-rep-06",
+      "calibration": true,
+      "english": "Calibration series 6 accumulates indexed volumes on a recurring basis, but this memo gives no count from which a retention span total can be recovered.",
+      "ainglish": "Calibration series 6 has exactly fifteen indexed volumes in the stated retention span.",
+      "question": "How many indexed volumes does the memo license in the stated retention span?",
+      "options": [
+        "thirty",
+        "five",
+        "cannot_tell",
+        "fifteen"
+      ],
+      "answer": "fifteen",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "form": "twice-weekly"
+      }
+    },
+    {
+      "id": "cal-tw-rep-07",
+      "calibration": true,
+      "english": "Calibration series 7 accumulates countersigned orders on a recurring basis, but this memo gives no count from which a settlement window total can be recovered.",
+      "ainglish": "Calibration series 7 has exactly eighteen countersigned orders in the stated settlement window.",
+      "question": "How many countersigned orders does the memo license in the stated settlement window?",
+      "options": [
+        "six",
+        "thirty-six",
+        "eighteen",
+        "cannot_tell"
+      ],
+      "answer": "eighteen",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "form": "twice-weekly"
+      }
+    },
+    {
+      "id": "cal-tw-rep-08",
+      "calibration": true,
+      "english": "Calibration series 8 accumulates notarized copies on a recurring basis, but this memo gives no count from which a coverage interval total can be recovered.",
+      "ainglish": "Calibration series 8 has exactly ten notarized copies in the stated coverage interval.",
+      "question": "How many notarized copies does the memo license in the stated coverage interval?",
+      "options": [
+        "ten",
+        "five",
+        "twenty",
+        "cannot_tell"
+      ],
+      "answer": "ten",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "form": "twice-weekly"
+      }
+    },
+    {
+      "id": "real-tw-rep-001",
+      "english": "The tracking period spans 2 complete schedule weeks. The backup verification sweep has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 2 complete schedule weeks. The backup verification sweep runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "2",
+        "4",
+        "cannot_tell",
+        "1"
+      ],
+      "answer": "4",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 2
+      }
+    },
+    {
+      "id": "real-tw-rep-002",
+      "english": "The tracking period spans 4 complete schedule weeks. The spam-filter retraining has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 4 complete schedule weeks. The spam-filter retraining runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "cannot_tell"
+      ],
+      "answer": "8",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 4
+      }
+    },
+    {
+      "id": "real-tw-rep-003",
+      "english": "The tracking period spans 6 complete schedule weeks. The invoice reconciliation pass has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 6 complete schedule weeks. The invoice reconciliation pass runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "3",
+        "12",
+        "6",
+        "cannot_tell"
+      ],
+      "answer": "12",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 6
+      }
+    },
+    {
+      "id": "real-tw-rep-004",
+      "english": "The tracking period spans 8 complete schedule weeks. The container image rebuild has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 8 complete schedule weeks. The container image rebuild runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "cannot_tell",
+        "8",
+        "4",
+        "16"
+      ],
+      "answer": "16",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 8
+      }
+    },
+    {
+      "id": "real-tw-rep-005",
+      "english": "The tracking period spans 10 complete schedule weeks. The moderation appeals sift has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 10 complete schedule weeks. The moderation appeals sift runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "10",
+        "20",
+        "cannot_tell",
+        "5"
+      ],
+      "answer": "20",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 10
+      }
+    },
+    {
+      "id": "real-tw-rep-006",
+      "english": "The tracking period spans 12 complete schedule weeks. The sensor drift check has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 12 complete schedule weeks. The sensor drift check runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "cannot_tell",
+        "6",
+        "12",
+        "24"
+      ],
+      "answer": "24",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 12
+      }
+    },
+    {
+      "id": "real-tw-rep-007",
+      "english": "The tracking period spans 14 complete schedule weeks. The credential expiry scan has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 14 complete schedule weeks. The credential expiry scan runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "7",
+        "cannot_tell",
+        "28",
+        "14"
+      ],
+      "answer": "28",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 14
+      }
+    },
+    {
+      "id": "real-tw-rep-008",
+      "english": "The tracking period spans 2 complete schedule weeks. The queue depth audit has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 2 complete schedule weeks. The queue depth audit runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "1",
+        "2",
+        "cannot_tell",
+        "4"
+      ],
+      "answer": "4",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 2
+      }
+    },
+    {
+      "id": "real-tw-rep-009",
+      "english": "The tracking period spans 4 complete schedule weeks. The mirror consistency probe has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 4 complete schedule weeks. The mirror consistency probe runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "cannot_tell",
+        "8",
+        "2"
+      ],
+      "answer": "8",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 4
+      }
+    },
+    {
+      "id": "real-tw-rep-010",
+      "english": "The tracking period spans 6 complete schedule weeks. The changelog digest compile has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 6 complete schedule weeks. The changelog digest compile runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "3",
+        "6",
+        "cannot_tell",
+        "12"
+      ],
+      "answer": "12",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 6
+      }
+    },
+    {
+      "id": "real-tw-rep-011",
+      "english": "The tracking period spans 8 complete schedule weeks. The orphaned record purge has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 8 complete schedule weeks. The orphaned record purge runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "cannot_tell",
+        "16",
+        "8"
+      ],
+      "answer": "16",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 8
+      }
+    },
+    {
+      "id": "real-tw-rep-012",
+      "english": "The tracking period spans 10 complete schedule weeks. The cache warm-up cycle has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 10 complete schedule weeks. The cache warm-up cycle runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "10",
+        "20",
+        "cannot_tell",
+        "5"
+      ],
+      "answer": "20",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 10
+      }
+    },
+    {
+      "id": "real-tw-rep-013",
+      "english": "The tracking period spans 12 complete schedule weeks. The license inventory refresh has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 12 complete schedule weeks. The license inventory refresh runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "6",
+        "cannot_tell",
+        "12",
+        "24"
+      ],
+      "answer": "24",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 12
+      }
+    },
+    {
+      "id": "real-tw-rep-014",
+      "english": "The tracking period spans 14 complete schedule weeks. The onboarding cohort review has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 14 complete schedule weeks. The onboarding cohort review runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "28",
+        "14",
+        "7",
+        "cannot_tell"
+      ],
+      "answer": "28",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 14
+      }
+    },
+    {
+      "id": "real-tw-rep-015",
+      "english": "The tracking period spans 2 complete schedule weeks. The dead-link crawl has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 2 complete schedule weeks. The dead-link crawl runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "1",
+        "2",
+        "cannot_tell"
+      ],
+      "answer": "4",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 2
+      }
+    },
+    {
+      "id": "real-tw-rep-016",
+      "english": "The tracking period spans 4 complete schedule weeks. The capacity forecast update has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 4 complete schedule weeks. The capacity forecast update runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "2",
+        "cannot_tell",
+        "8"
+      ],
+      "answer": "8",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 4
+      }
+    },
+    {
+      "id": "real-tw-rep-017",
+      "english": "The tracking period spans 6 complete schedule weeks. The vault seal rehearsal has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 6 complete schedule weeks. The vault seal rehearsal runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "12",
+        "cannot_tell",
+        "6",
+        "3"
+      ],
+      "answer": "12",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 6
+      }
+    },
+    {
+      "id": "real-tw-rep-018",
+      "english": "The tracking period spans 8 complete schedule weeks. The schema drift diff has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 8 complete schedule weeks. The schema drift diff runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "16",
+        "8",
+        "cannot_tell"
+      ],
+      "answer": "16",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 8
+      }
+    },
+    {
+      "id": "real-tw-rep-019",
+      "english": "The tracking period spans 10 complete schedule weeks. The billing anomaly screen has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 10 complete schedule weeks. The billing anomaly screen runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "20",
+        "cannot_tell",
+        "5",
+        "10"
+      ],
+      "answer": "20",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 10
+      }
+    },
+    {
+      "id": "real-tw-rep-020",
+      "english": "The tracking period spans 12 complete schedule weeks. The translation queue triage has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 12 complete schedule weeks. The translation queue triage runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "cannot_tell",
+        "6",
+        "24",
+        "12"
+      ],
+      "answer": "24",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 12
+      }
+    },
+    {
+      "id": "real-tw-rep-021",
+      "english": "The tracking period spans 14 complete schedule weeks. The index compaction run has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 14 complete schedule weeks. The index compaction run runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "cannot_tell",
+        "14",
+        "28",
+        "7"
+      ],
+      "answer": "28",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 14
+      }
+    },
+    {
+      "id": "real-tw-rep-022",
+      "english": "The tracking period spans 2 complete schedule weeks. The stale branch reaper has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 2 complete schedule weeks. The stale branch reaper runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "2",
+        "1",
+        "4",
+        "cannot_tell"
+      ],
+      "answer": "4",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 2
+      }
+    },
+    {
+      "id": "real-tw-rep-023",
+      "english": "The tracking period spans 4 complete schedule weeks. The quota rebalance pass has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 4 complete schedule weeks. The quota rebalance pass runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "2",
+        "4",
+        "cannot_tell",
+        "8"
+      ],
+      "answer": "8",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 4
+      }
+    },
+    {
+      "id": "real-tw-rep-024",
+      "english": "The tracking period spans 6 complete schedule weeks. The incident log distillation has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 6 complete schedule weeks. The incident log distillation runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "12",
+        "3",
+        "cannot_tell",
+        "6"
+      ],
+      "answer": "12",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 6
+      }
+    },
+    {
+      "id": "real-tw-rep-025",
+      "english": "The tracking period spans 8 complete schedule weeks. The webhook replay drill has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 8 complete schedule weeks. The webhook replay drill runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "8",
+        "16",
+        "cannot_tell",
+        "4"
+      ],
+      "answer": "16",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 8
+      }
+    },
+    {
+      "id": "real-tw-rep-026",
+      "english": "The tracking period spans 10 complete schedule weeks. The artifact retention sweep has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 10 complete schedule weeks. The artifact retention sweep runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "cannot_tell",
+        "5",
+        "20",
+        "10"
+      ],
+      "answer": "20",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 10
+      }
+    },
+    {
+      "id": "real-tw-rep-027",
+      "english": "The tracking period spans 12 complete schedule weeks. The fraud rule backtest has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 12 complete schedule weeks. The fraud rule backtest runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "12",
+        "cannot_tell",
+        "24",
+        "6"
+      ],
+      "answer": "24",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 12
+      }
+    },
+    {
+      "id": "real-tw-rep-028",
+      "english": "The tracking period spans 14 complete schedule weeks. The cold-storage integrity read has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 14 complete schedule weeks. The cold-storage integrity read runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "28",
+        "7",
+        "14",
+        "cannot_tell"
+      ],
+      "answer": "28",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 14
+      }
+    },
+    {
+      "id": "real-tw-rep-029",
+      "english": "The tracking period spans 2 complete schedule weeks. The alert threshold review has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 2 complete schedule weeks. The alert threshold review runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "cannot_tell",
+        "2",
+        "1"
+      ],
+      "answer": "4",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 2
+      }
+    },
+    {
+      "id": "real-tw-rep-030",
+      "english": "The tracking period spans 4 complete schedule weeks. The dependency pin refresh has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 4 complete schedule weeks. The dependency pin refresh runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "cannot_tell",
+        "2",
+        "8"
+      ],
+      "answer": "8",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 4
+      }
+    },
+    {
+      "id": "real-tw-rep-031",
+      "english": "The tracking period spans 6 complete schedule weeks. The customer echo survey has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 6 complete schedule weeks. The customer echo survey runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "6",
+        "3",
+        "12",
+        "cannot_tell"
+      ],
+      "answer": "12",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 6
+      }
+    },
+    {
+      "id": "real-tw-rep-032",
+      "english": "The tracking period spans 8 complete schedule weeks. The dashboard snapshot export has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 8 complete schedule weeks. The dashboard snapshot export runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "4",
+        "8",
+        "cannot_tell",
+        "16"
+      ],
+      "answer": "16",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 8
+      }
+    },
+    {
+      "id": "real-tw-rep-033",
+      "english": "The tracking period spans 10 complete schedule weeks. The key rotation drill has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 10 complete schedule weeks. The key rotation drill runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "5",
+        "10",
+        "20",
+        "cannot_tell"
+      ],
+      "answer": "20",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 10
+      }
+    },
+    {
+      "id": "real-tw-rep-034",
+      "english": "The tracking period spans 12 complete schedule weeks. The spam trap seeding has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 12 complete schedule weeks. The spam trap seeding runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "12",
+        "cannot_tell",
+        "6",
+        "24"
+      ],
+      "answer": "24",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 12
+      }
+    },
+    {
+      "id": "real-tw-rep-035",
+      "english": "The tracking period spans 14 complete schedule weeks. The search relevance spot-check has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 14 complete schedule weeks. The search relevance spot-check runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "28",
+        "14",
+        "cannot_tell",
+        "7"
+      ],
+      "answer": "28",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 14
+      }
+    },
+    {
+      "id": "real-tw-rep-036",
+      "english": "The tracking period spans 2 complete schedule weeks. The ledger checkpoint fold has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 2 complete schedule weeks. The ledger checkpoint fold runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "1",
+        "4",
+        "cannot_tell",
+        "2"
+      ],
+      "answer": "4",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 2
+      }
+    },
+    {
+      "id": "real-tw-rep-037",
+      "english": "The tracking period spans 4 complete schedule weeks. The release notes assembly has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 4 complete schedule weeks. The release notes assembly runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "cannot_tell"
+      ],
+      "answer": "8",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 4
+      }
+    },
+    {
+      "id": "real-tw-rep-038",
+      "english": "The tracking period spans 6 complete schedule weeks. The vendor uptime poll has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 6 complete schedule weeks. The vendor uptime poll runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "3",
+        "6",
+        "12",
+        "cannot_tell"
+      ],
+      "answer": "12",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 6
+      }
+    },
+    {
+      "id": "real-tw-rep-039",
+      "english": "The tracking period spans 8 complete schedule weeks. The test flake census has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 8 complete schedule weeks. The test flake census runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "cannot_tell",
+        "4",
+        "16",
+        "8"
+      ],
+      "answer": "16",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 8
+      }
+    },
+    {
+      "id": "real-tw-rep-040",
+      "english": "The tracking period spans 10 complete schedule weeks. The access review sampling has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 10 complete schedule weeks. The access review sampling runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "cannot_tell",
+        "10",
+        "20",
+        "5"
+      ],
+      "answer": "20",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 10
+      }
+    },
+    {
+      "id": "real-tw-rep-041",
+      "english": "The tracking period spans 12 complete schedule weeks. The thumbnail regeneration batch has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 12 complete schedule weeks. The thumbnail regeneration batch runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "12",
+        "6",
+        "24",
+        "cannot_tell"
+      ],
+      "answer": "24",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 12
+      }
+    },
+    {
+      "id": "real-tw-rep-042",
+      "english": "The tracking period spans 14 complete schedule weeks. The consent record sync has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tracking period spans 14 complete schedule weeks. The consent record sync runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+      "options": [
+        "cannot_tell",
+        "7",
+        "14",
+        "28"
+      ],
+      "answer": "28",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "cadence_count",
+        "weeks": 14
+      }
+    },
+    {
+      "id": "real-tw-rep-043",
+      "english": "The malware signature roll has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The malware signature roll runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Which two weekdays must host the runs?",
+      "options": [
+        "weekdays_only",
+        "monday_and_thursday",
+        "cannot_tell",
+        "wednesday_and_saturday"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "weekday_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-044",
+      "english": "The archive defrost check has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The archive defrost check runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Which two weekdays must host the runs?",
+      "options": [
+        "cannot_tell",
+        "weekdays_only",
+        "monday_and_thursday",
+        "wednesday_and_saturday"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "weekday_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-045",
+      "english": "The peering health survey has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The peering health survey runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Which two weekdays must host the runs?",
+      "options": [
+        "cannot_tell",
+        "weekdays_only",
+        "wednesday_and_saturday",
+        "monday_and_thursday"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "weekday_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-046",
+      "english": "The payout batch assembly has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The payout batch assembly runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Which two weekdays must host the runs?",
+      "options": [
+        "cannot_tell",
+        "weekdays_only",
+        "wednesday_and_saturday",
+        "monday_and_thursday"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "weekday_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-047",
+      "english": "The notification digest fan-out has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The notification digest fan-out runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Which two weekdays must host the runs?",
+      "options": [
+        "weekdays_only",
+        "cannot_tell",
+        "wednesday_and_saturday",
+        "monday_and_thursday"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "weekday_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-048",
+      "english": "The certificate transparency watch has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The certificate transparency watch runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Which two weekdays must host the runs?",
+      "options": [
+        "cannot_tell",
+        "monday_and_thursday",
+        "weekdays_only",
+        "wednesday_and_saturday"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "weekday_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-049",
+      "english": "The burn-rate summary has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The burn-rate summary runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Does this wording require the two runs to be evenly spaced within the week?",
+      "options": [
+        "required",
+        "not_required",
+        "cannot_tell"
+      ],
+      "answer": "not_required",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "spacing_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-050",
+      "english": "The residency attestation pull has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The residency attestation pull runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Does this wording require the two runs to be evenly spaced within the week?",
+      "options": [
+        "not_required",
+        "cannot_tell",
+        "required"
+      ],
+      "answer": "not_required",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "spacing_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-051",
+      "english": "The replica lag census has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The replica lag census runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Does this wording require the two runs to be evenly spaced within the week?",
+      "options": [
+        "cannot_tell",
+        "required",
+        "not_required"
+      ],
+      "answer": "not_required",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "spacing_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-052",
+      "english": "The tag hygiene sweep has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The tag hygiene sweep runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Does this wording require the two runs to be evenly spaced within the week?",
+      "options": [
+        "cannot_tell",
+        "required",
+        "not_required"
+      ],
+      "answer": "not_required",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "spacing_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-053",
+      "english": "The outage comms rehearsal has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The outage comms rehearsal runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Does this wording require the two runs to be evenly spaced within the week?",
+      "options": [
+        "required",
+        "not_required",
+        "cannot_tell"
+      ],
+      "answer": "not_required",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "spacing_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-054",
+      "english": "The sandbox reset pass has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The sandbox reset pass runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "Does this wording require the two runs to be evenly spaced within the week?",
+      "options": [
+        "not_required",
+        "cannot_tell",
+        "required"
+      ],
+      "answer": "not_required",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "spacing_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-055",
+      "english": "The escrow balance proof has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The escrow balance proof runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "What does the notice establish about the outcome of the most recent scheduled run?",
+      "options": [
+        "failed",
+        "completed_successfully",
+        "cannot_tell"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "completion_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-056",
+      "english": "The locale bundle refresh has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The locale bundle refresh runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "What does the notice establish about the outcome of the most recent scheduled run?",
+      "options": [
+        "cannot_tell",
+        "completed_successfully",
+        "failed"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "completion_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-057",
+      "english": "The crash report clustering has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The crash report clustering runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "What does the notice establish about the outcome of the most recent scheduled run?",
+      "options": [
+        "completed_successfully",
+        "cannot_tell",
+        "failed"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "completion_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-058",
+      "english": "The storage tier migration check has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The storage tier migration check runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "What does the notice establish about the outcome of the most recent scheduled run?",
+      "options": [
+        "cannot_tell",
+        "completed_successfully",
+        "failed"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "completion_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-059",
+      "english": "The api deprecation notice run has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The api deprecation notice run runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "What does the notice establish about the outcome of the most recent scheduled run?",
+      "options": [
+        "failed",
+        "cannot_tell",
+        "completed_successfully"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "completion_not_supplied"
+      }
+    },
+    {
+      "id": "real-tw-rep-060",
+      "english": "The backfill progress audit has exactly two scheduled occurrence slots in each schedule week; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "ainglish": "The backfill progress audit runs twice-weekly; the notice does not name the days, fix the spacing, or report whether any run succeeds.",
+      "question": "What does the notice establish about the outcome of the most recent scheduled run?",
+      "options": [
+        "failed",
+        "completed_successfully",
+        "cannot_tell"
+      ],
+      "answer": "cannot_tell",
+      "strata": {
+        "form": "twice-weekly",
+        "probe": "completion_not_supplied"
+      }
+    }
+  ]
+}
