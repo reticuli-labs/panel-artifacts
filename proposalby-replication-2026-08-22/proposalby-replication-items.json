@@ -1,0 +1,1372 @@
+{
+  "kind": "ainglish.panel.items.v1",
+  "proposal": "proposal-by-p-decision-by-a-say-whether-an-option-is-offered",
+  "form": "proposal-by(<P>) / decision-by(<A>)",
+  "baseline": "short",
+  "question_profile": "status / existing-choice recordability / sentence force",
+  "real_items": 60,
+  "calibration_items": 8,
+  "replicates": "4d1beddebecdae7ee289cfdaf127fdccbc942b25070811c2663c345d9bd302f8",
+  "author": "reticuli (independent replication; balanced key — see generator header)",
+  "key_balance": {
+    "offered": 20,
+    "selected": 20,
+    "invalid_source": 20,
+    "constant_responder_ceiling": "1/3 (the original's set: 1/1)"
+  },
+  "sha256": "bda4e787b91d1c446e07ee68f83d5a1dbdf47a1d9e47670652132a7e40eb1c77",
+  "items": [
+    {
+      "id": "ret-pb-prop-01",
+      "english": "Head of Platform holds the senior role named here. Head of Platform writes, “Let's move the nightly build to the new runner fleet.”",
+      "ainglish": "Head of Platform holds the senior role named here. proposal-by(head of platform): move the nightly build to the new runner fleet.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "operational",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-prop-02",
+      "english": "Lead Archivist holds the senior role named here. Lead Archivist writes, “Let's digitise the pamphlet collection before the audit.”",
+      "ainglish": "Lead Archivist holds the senior role named here. proposal-by(lead archivist): digitise the pamphlet collection before the audit.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "operational",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-prop-03",
+      "english": "Principal Engineer holds the senior role named here. Principal Engineer writes, “Let's retire the legacy export endpoint next quarter.”",
+      "ainglish": "Principal Engineer holds the senior role named here. proposal-by(principal engineer): retire the legacy export endpoint next quarter.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "operational",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-prop-04",
+      "english": "Site Reliability Lead holds the senior role named here. Site Reliability Lead writes, “Let's split the alerting rotation into two shifts.”",
+      "ainglish": "Site Reliability Lead holds the senior role named here. proposal-by(site reliability lead): split the alerting rotation into two shifts.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "operational",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-prop-05",
+      "english": "Studio Manager holds the senior role named here. Studio Manager writes, “Let's hold the retrospective at the harbour workshop.”",
+      "ainglish": "Studio Manager holds the senior role named here. proposal-by(studio manager): hold the retrospective at the harbour workshop.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "social",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-prop-06",
+      "english": "Programme Director holds the senior role named here. Programme Director writes, “Let's invite the partner cohort to the summer review.”",
+      "ainglish": "Programme Director holds the senior role named here. proposal-by(programme director): invite the partner cohort to the summer review.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "social",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-prop-07",
+      "english": "Guild Steward holds the senior role named here. Guild Steward writes, “Let's run the mentoring circle on alternating Thursdays.”",
+      "ainglish": "Guild Steward holds the senior role named here. proposal-by(guild steward): run the mentoring circle on alternating Thursdays.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "social",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-prop-08",
+      "english": "Editor in Chief holds the senior role named here. Editor in Chief writes, “Let's commission a series on provenance tooling.”",
+      "ainglish": "Editor in Chief holds the senior role named here. proposal-by(editor in chief): commission a series on provenance tooling.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "social",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-prop-09",
+      "english": "Trust Chair holds the senior role named here. Trust Chair writes, “Let's publish the reserve policy alongside the annual report.”",
+      "ainglish": "Trust Chair holds the senior role named here. proposal-by(trust chair): publish the reserve policy alongside the annual report.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "governance",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-prop-10",
+      "english": "Standards Convenor holds the senior role named here. Standards Convenor writes, “Let's adopt the shared citation grammar in the next edition.”",
+      "ainglish": "Standards Convenor holds the senior role named here. proposal-by(standards convenor): adopt the shared citation grammar in the next edition.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "governance",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-prop-11",
+      "english": "Ethics Lead holds the senior role named here. Ethics Lead writes, “Let's extend the disclosure window to sixty days.”",
+      "ainglish": "Ethics Lead holds the senior role named here. proposal-by(ethics lead): extend the disclosure window to sixty days.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "governance",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-prop-12",
+      "english": "Registrar holds the senior role named here. Registrar writes, “Let's fold the appeals log into the public record.”",
+      "ainglish": "Registrar holds the senior role named here. proposal-by(registrar): fold the appeals log into the public record.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "governance",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-prop-13",
+      "english": "Operations Planner holds the senior role named here. Operations Planner writes, “Let's shift the maintenance window to Sunday mornings.”",
+      "ainglish": "Operations Planner holds the senior role named here. proposal-by(operations planner): shift the maintenance window to Sunday mornings.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "scheduling",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-prop-14",
+      "english": "Fleet Coordinator holds the senior role named here. Fleet Coordinator writes, “Let's stagger the depot inspections across the month.”",
+      "ainglish": "Fleet Coordinator holds the senior role named here. proposal-by(fleet coordinator): stagger the depot inspections across the month.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "scheduling",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-prop-15",
+      "english": "Roster Lead holds the senior role named here. Roster Lead writes, “Let's start the on-call handover an hour earlier.”",
+      "ainglish": "Roster Lead holds the senior role named here. proposal-by(roster lead): start the on-call handover an hour earlier.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "scheduling",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-prop-16",
+      "english": "Logistics Head holds the senior role named here. Logistics Head writes, “Let's bring the winter stock check forward by two weeks.”",
+      "ainglish": "Logistics Head holds the senior role named here. proposal-by(logistics head): bring the winter stock check forward by two weeks.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "scheduling",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-prop-17",
+      "english": "Curatorial Lead holds the senior role named here. Curatorial Lead writes, “Let's open the reading room on first Saturdays.”",
+      "ainglish": "Curatorial Lead holds the senior role named here. proposal-by(curatorial lead): open the reading room on first Saturdays.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "social",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-prop-18",
+      "english": "Data Steward holds the senior role named here. Data Steward writes, “Let's re-key the archive index on the new identifier.”",
+      "ainglish": "Data Steward holds the senior role named here. proposal-by(data steward): re-key the archive index on the new identifier.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "operational",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-prop-19",
+      "english": "Accessibility Lead holds the senior role named here. Accessibility Lead writes, “Let's caption the back catalogue before the launch.”",
+      "ainglish": "Accessibility Lead holds the senior role named here. proposal-by(accessibility lead): caption the back catalogue before the launch.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "governance",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-prop-20",
+      "english": "Workshop Convenor holds the senior role named here. Workshop Convenor writes, “Let's run the tooling clinic twice a term.”",
+      "ainglish": "Workshop Convenor holds the senior role named here. proposal-by(workshop convenor): run the tooling clinic twice a term.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "form": "proposal-by",
+        "key": "offered",
+        "domain": "scheduling",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-dec-01",
+      "english": "Release Owner holds decision authority in this scope. Release Owner writes, “We are going ahead: ship build 41 to the staged fleet.”",
+      "ainglish": "Release Owner holds decision authority in this scope. decision-by(release owner): ship build 41 to the staged fleet.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "operational",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-dec-02",
+      "english": "Change Manager holds decision authority in this scope. Change Manager writes, “We are going ahead: freeze deployments during the migration.”",
+      "ainglish": "Change Manager holds decision authority in this scope. decision-by(change manager): freeze deployments during the migration.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "operational",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-dec-03",
+      "english": "Incident Commander holds decision authority in this scope. Incident Commander writes, “We are going ahead: route the failover through the western region.”",
+      "ainglish": "Incident Commander holds decision authority in this scope. decision-by(incident commander): route the failover through the western region.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "operational",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-dec-04",
+      "english": "Service Owner holds decision authority in this scope. Service Owner writes, “We are going ahead: retire the beta channel at the end of the month.”",
+      "ainglish": "Service Owner holds decision authority in this scope. decision-by(service owner): retire the beta channel at the end of the month.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "operational",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-dec-05",
+      "english": "Events Chair holds decision authority in this scope. Events Chair writes, “We are going ahead: hold the assembly in the old library hall.”",
+      "ainglish": "Events Chair holds decision authority in this scope. decision-by(events chair): hold the assembly in the old library hall.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "social",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-dec-06",
+      "english": "Membership Secretary holds decision authority in this scope. Membership Secretary writes, “We are going ahead: close nominations at midnight on Friday.”",
+      "ainglish": "Membership Secretary holds decision authority in this scope. decision-by(membership secretary): close nominations at midnight on Friday.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "social",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-dec-07",
+      "english": "Community Council holds decision authority in this scope. Community Council writes, “We are going ahead: seat the two co-opted members immediately.”",
+      "ainglish": "Community Council holds decision authority in this scope. decision-by(community council): seat the two co-opted members immediately.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "social",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-dec-08",
+      "english": "Editorial Board holds decision authority in this scope. Editorial Board writes, “We are going ahead: run the provenance series in the autumn issue.”",
+      "ainglish": "Editorial Board holds decision authority in this scope. decision-by(editorial board): run the provenance series in the autumn issue.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "social",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-dec-09",
+      "english": "Board of Trustees holds decision authority in this scope. Board of Trustees writes, “We are going ahead: allocate the bequest to the conservation fund.”",
+      "ainglish": "Board of Trustees holds decision authority in this scope. decision-by(board of trustees): allocate the bequest to the conservation fund.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "governance",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-dec-10",
+      "english": "Standards Committee holds decision authority in this scope. Standards Committee writes, “We are going ahead: ratify the citation grammar as of this edition.”",
+      "ainglish": "Standards Committee holds decision authority in this scope. decision-by(standards committee): ratify the citation grammar as of this edition.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "governance",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-dec-11",
+      "english": "Appeals Panel holds decision authority in this scope. Appeals Panel writes, “We are going ahead: uphold the earlier disclosure ruling.”",
+      "ainglish": "Appeals Panel holds decision authority in this scope. decision-by(appeals panel): uphold the earlier disclosure ruling.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "governance",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-dec-12",
+      "english": "Charter Assembly holds decision authority in this scope. Charter Assembly writes, “We are going ahead: amend the quorum rule to five members.”",
+      "ainglish": "Charter Assembly holds decision authority in this scope. decision-by(charter assembly): amend the quorum rule to five members.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "governance",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-dec-13",
+      "english": "Scheduling Authority holds decision authority in this scope. Scheduling Authority writes, “We are going ahead: move the maintenance window to Sunday.”",
+      "ainglish": "Scheduling Authority holds decision authority in this scope. decision-by(scheduling authority): move the maintenance window to Sunday.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "scheduling",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-dec-14",
+      "english": "Depot Supervisor holds decision authority in this scope. Depot Supervisor writes, “We are going ahead: run the inspections in two staggered waves.”",
+      "ainglish": "Depot Supervisor holds decision authority in this scope. decision-by(depot supervisor): run the inspections in two staggered waves.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "scheduling",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-dec-15",
+      "english": "Rota Owner holds decision authority in this scope. Rota Owner writes, “We are going ahead: begin the handover at seven each morning.”",
+      "ainglish": "Rota Owner holds decision authority in this scope. decision-by(rota owner): begin the handover at seven each morning.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "scheduling",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-dec-16",
+      "english": "Timetable Office holds decision authority in this scope. Timetable Office writes, “We are going ahead: bring the stock check forward two weeks.”",
+      "ainglish": "Timetable Office holds decision authority in this scope. decision-by(timetable office): bring the stock check forward two weeks.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "scheduling",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-dec-17",
+      "english": "Collections Head holds decision authority in this scope. Collections Head writes, “We are going ahead: open the reading room on first Saturdays.”",
+      "ainglish": "Collections Head holds decision authority in this scope. decision-by(collections head): open the reading room on first Saturdays.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "social",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-dec-18",
+      "english": "Records Owner holds decision authority in this scope. Records Owner writes, “We are going ahead: re-key the index on the new identifier.”",
+      "ainglish": "Records Owner holds decision authority in this scope. decision-by(records owner): re-key the index on the new identifier.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "operational",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-dec-19",
+      "english": "Access Board holds decision authority in this scope. Access Board writes, “We are going ahead: require captions before any launch.”",
+      "ainglish": "Access Board holds decision authority in this scope. decision-by(access board): require captions before any launch.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "governance",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-dec-20",
+      "english": "Programme Office holds decision authority in this scope. Programme Office writes, “We are going ahead: hold the tooling clinic twice a term.”",
+      "ainglish": "Programme Office holds decision authority in this scope. decision-by(programme office): hold the tooling clinic twice a term.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "selected",
+        "domain": "scheduling",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-nost-01",
+      "english": "A visiting contractor has no standing in this decision scope. A visiting contractor writes, “We are going ahead: cancel the vendor contract.”",
+      "ainglish": "A visiting contractor has no standing in this decision scope. decision-by(a visiting contractor): cancel the vendor contract.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "operational",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-nost-02",
+      "english": "An unaffiliated observer has no standing in this decision scope. An unaffiliated observer writes, “We are going ahead: reassign the on-call rota.”",
+      "ainglish": "An unaffiliated observer has no standing in this decision scope. decision-by(an unaffiliated observer): reassign the on-call rota.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "operational",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-nost-03",
+      "english": "A former maintainer has no standing in this decision scope. A former maintainer writes, “We are going ahead: revoke the signing key.”",
+      "ainglish": "A former maintainer has no standing in this decision scope. decision-by(a former maintainer): revoke the signing key.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "operational",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-nost-04",
+      "english": "A trial member has no standing in this decision scope. A trial member writes, “We are going ahead: merge the release branch.”",
+      "ainglish": "A trial member has no standing in this decision scope. decision-by(a trial member): merge the release branch.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "operational",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-nost-05",
+      "english": "A guest speaker has no standing in this decision scope. A guest speaker writes, “We are going ahead: cancel the members' assembly.”",
+      "ainglish": "A guest speaker has no standing in this decision scope. decision-by(a guest speaker): cancel the members' assembly.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "social",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-nost-06",
+      "english": "A lapsed subscriber has no standing in this decision scope. A lapsed subscriber writes, “We are going ahead: reopen the nominations window.”",
+      "ainglish": "A lapsed subscriber has no standing in this decision scope. decision-by(a lapsed subscriber): reopen the nominations window.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "social",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-nost-07",
+      "english": "An outside commentator has no standing in this decision scope. An outside commentator writes, “We are going ahead: seat a new council member.”",
+      "ainglish": "An outside commentator has no standing in this decision scope. decision-by(an outside commentator): seat a new council member.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "social",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-nost-08",
+      "english": "An unbadged attendee has no standing in this decision scope. An unbadged attendee writes, “We are going ahead: close the exhibition early.”",
+      "ainglish": "An unbadged attendee has no standing in this decision scope. decision-by(an unbadged attendee): close the exhibition early.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "social",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-nost-09",
+      "english": "A non-trustee donor has no standing in this decision scope. A non-trustee donor writes, “We are going ahead: redirect the conservation fund.”",
+      "ainglish": "A non-trustee donor has no standing in this decision scope. decision-by(a non-trustee donor): redirect the conservation fund.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "governance",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-nost-10",
+      "english": "An observer delegate has no standing in this decision scope. An observer delegate writes, “We are going ahead: ratify the citation grammar.”",
+      "ainglish": "An observer delegate has no standing in this decision scope. decision-by(an observer delegate): ratify the citation grammar.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "governance",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-nost-11",
+      "english": "A recused panellist has no standing in this decision scope. A recused panellist writes, “We are going ahead: overturn the disclosure ruling.”",
+      "ainglish": "A recused panellist has no standing in this decision scope. decision-by(a recused panellist): overturn the disclosure ruling.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "governance",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-nost-12",
+      "english": "A co-opted alternate has no standing in this decision scope. A co-opted alternate writes, “We are going ahead: amend the quorum rule.”",
+      "ainglish": "A co-opted alternate has no standing in this decision scope. decision-by(a co-opted alternate): amend the quorum rule.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "governance",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-nost-13",
+      "english": "An unassigned volunteer has no standing in this decision scope. An unassigned volunteer writes, “We are going ahead: move the maintenance window.”",
+      "ainglish": "An unassigned volunteer has no standing in this decision scope. decision-by(an unassigned volunteer): move the maintenance window.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "scheduling",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-nost-14",
+      "english": "A visiting inspector has no standing in this decision scope. A visiting inspector writes, “We are going ahead: cancel the depot inspections.”",
+      "ainglish": "A visiting inspector has no standing in this decision scope. decision-by(a visiting inspector): cancel the depot inspections.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "scheduling",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-nost-15",
+      "english": "An off-roster engineer has no standing in this decision scope. An off-roster engineer writes, “We are going ahead: change the handover time.”",
+      "ainglish": "An off-roster engineer has no standing in this decision scope. decision-by(an off-roster engineer): change the handover time.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "scheduling",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-nost-16",
+      "english": "A seasonal temp has no standing in this decision scope. A seasonal temp writes, “We are going ahead: reschedule the stock check.”",
+      "ainglish": "A seasonal temp has no standing in this decision scope. decision-by(a seasonal temp): reschedule the stock check.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "scheduling",
+        "answer_position": 4
+      }
+    },
+    {
+      "id": "ret-pb-nost-17",
+      "english": "A passing researcher has no standing in this decision scope. A passing researcher writes, “We are going ahead: close the reading room.”",
+      "ainglish": "A passing researcher has no standing in this decision scope. decision-by(a passing researcher): close the reading room.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "social",
+        "answer_position": 0
+      }
+    },
+    {
+      "id": "ret-pb-nost-18",
+      "english": "A decommissioned service account has no standing in this decision scope. A decommissioned service account writes, “We are going ahead: re-key the archive index.”",
+      "ainglish": "A decommissioned service account has no standing in this decision scope. decision-by(a decommissioned service account): re-key the archive index.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "operational",
+        "answer_position": 1
+      }
+    },
+    {
+      "id": "ret-pb-nost-19",
+      "english": "An external auditor has no standing in this decision scope. An external auditor writes, “We are going ahead: waive the caption requirement.”",
+      "ainglish": "An external auditor has no standing in this decision scope. decision-by(an external auditor): waive the caption requirement.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "governance",
+        "answer_position": 2
+      }
+    },
+    {
+      "id": "ret-pb-nost-20",
+      "english": "An unenrolled attendee has no standing in this decision scope. An unenrolled attendee writes, “We are going ahead: cancel the tooling clinic.”",
+      "ainglish": "An unenrolled attendee has no standing in this decision scope. decision-by(an unenrolled attendee): cancel the tooling clinic.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "form": "decision-by",
+        "key": "invalid_source",
+        "domain": "scheduling",
+        "answer_position": 3
+      }
+    },
+    {
+      "id": "ret-pb-cal-01",
+      "calibration": true,
+      "english": "A one-line note about the shutter survey was received, but it does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+      "ainglish": "Calibration source 1 has only put the shutter survey forward for consideration; nothing has been selected, and this sentence issues no instruction.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "key": "offered"
+      }
+    },
+    {
+      "id": "ret-pb-cal-02",
+      "calibration": true,
+      "english": "A one-line note about the ledger migration was received, but it does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+      "ainglish": "Calibration source 2 holds decision authority and has operatively selected the ledger migration; this sentence issues no instruction.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "key": "selected"
+      }
+    },
+    {
+      "id": "ret-pb-cal-03",
+      "calibration": true,
+      "english": "A one-line note about the rota rewrite was received, but it does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+      "ainglish": "Calibration source 3 has no standing in this decision scope, so its selection of the rota rewrite does not hold; this sentence issues no instruction.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "key": "invalid"
+      }
+    },
+    {
+      "id": "ret-pb-cal-04",
+      "calibration": true,
+      "english": "A one-line note about the catalogue merge was received, but it does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+      "ainglish": "Calibration source 4 has only put the catalogue merge forward for consideration; nothing has been selected, and this sentence issues no instruction.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "key": "offered"
+      }
+    },
+    {
+      "id": "ret-pb-cal-05",
+      "calibration": true,
+      "english": "A one-line note about the transit audit was received, but it does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+      "ainglish": "Calibration source 5 holds decision authority and has operatively selected the transit audit; this sentence issues no instruction.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "key": "selected"
+      }
+    },
+    {
+      "id": "ret-pb-cal-06",
+      "calibration": true,
+      "english": "A one-line note about the archive sweep was received, but it does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+      "ainglish": "Calibration source 6 has no standing in this decision scope, so its selection of the archive sweep does not hold; this sentence issues no instruction.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "offered / no / no",
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell"
+      ],
+      "answer": "invalid source / no / no",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "key": "invalid"
+      }
+    },
+    {
+      "id": "ret-pb-cal-07",
+      "calibration": true,
+      "english": "A one-line note about the tariff review was received, but it does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+      "ainglish": "Calibration source 7 has only put the tariff review forward for consideration; nothing has been selected, and this sentence issues no instruction.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "selected / yes / no",
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no"
+      ],
+      "answer": "offered / no / no",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "key": "offered"
+      }
+    },
+    {
+      "id": "ret-pb-cal-08",
+      "calibration": true,
+      "english": "A one-line note about the corpus refresh was received, but it does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+      "ainglish": "Calibration source 8 holds decision authority and has operatively selected the corpus refresh; this sentence issues no instruction.",
+      "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+      "options": [
+        "invalid source / no / no",
+        "selected / yes / yes",
+        "cannot tell / cannot tell / cannot tell",
+        "offered / no / no",
+        "selected / yes / no"
+      ],
+      "answer": "selected / yes / no",
+      "strata": {
+        "control": "construct_free_planted_effect",
+        "key": "selected"
+      }
+    }
+  ]
+}
