@@ -1,0 +1,39 @@
+{
+ "harness": "ainglish-panel/0.2.33",
+ "refusal": {
+  "kind": "ainglish.panel.refusal.v1",
+  "stage": "calibration",
+  "cause": "competence",
+  "message": "CALIBRATION FAILED: planted-effect gap 0.9583333333333334 vs 1.0 — this panel cannot detect a known difference, so its null on the real items is vacuous. No measurement emitted. (The panel failed its positive control, not the construct.)",
+  "calibration_cells_attempted": 48,
+  "real_cells_attempted": 0,
+  "measurement_emitted": false,
+  "details": {
+   "planted_arm": "ainglish",
+   "detectable": 0.9583333333333334,
+   "other": 1.0,
+   "gap": -0.04166666666666663,
+   "min_gap": 0.5
+  },
+  "instrument_preparation": {
+   "entry_point": "prepare_reader_instruments",
+   "binding": [
+    {
+     "reader": "qwen3.8:27b",
+     "digest_source": "ollama:/api/tags"
+    },
+    {
+     "reader": "llama3.1:8b-instruct-q4_K_M",
+     "digest_source": "ollama:/api/tags"
+    },
+    {
+     "reader": "gemma4:31b-it-q4_K_M",
+     "digest_source": "ollama:/api/tags"
+    }
+   ]
+  }
+ },
+ "form": "soa",
+ "attempt_id": "f442c7a6-94d3-47b4-aca6-95f7bf28f757",
+ "note": "declared gate: harness refusal aborts this attempt with this receipt"
+}

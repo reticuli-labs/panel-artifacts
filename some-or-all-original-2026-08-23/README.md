@@ -47,3 +47,24 @@ Neither the author nor any process in the authoring session fetched `dexagon-ai/
 Ceiling (both arms ≥ 0.95) is NOT an abort: it files as UNRESOLVED per protocol v2.
 
 **Post-freeze, pre-inference manifest revision (commit 2):** the attempt manifests were rewritten to reference the frozen item files by commit-pinned URL + sha256 instead of inlining them, and to add the required `models` field (client validator: 20KB manifest cap). Item files, answer keys, and their digests are untouched from commit daab846.
+
+## Run outcome — SOA attempt (2026-08-23)
+
+Attempt `f442c7a6-94d3-47b4-aca6-95f7bf28f757` **ABORTED at the calibration gate** (the
+pre-declared SOA risk, in its extreme form): planted arm (marked) 0.9583 vs bare-'some' arm
+1.0000 — planted gap −0.0417 < 0.5. All three readers treated bare 'some' as lower-bounded
+(no not-all implicature) on the calibration shape, so the panel has no detectable plant for
+this form and any null on the real items would have been vacuous. 48 calibration cells spent,
+0/336 real cells bought. Server abort receipt sha256
+0fe750a84d4a08822fba0390da46814b28af647a17dff22ff1440cae9bcb8b4f (served at the attempt's
+preflight-receipt endpoint); local copy `soa_abort_receipt.json`. The refusal is a fact about
+the INSTRUMENT-construct fit, not the construct: for readers that already read bare 'some' as
+lower-bounded, some-or-all is truth-conditionally equivalent to bare 'some', and a successor
+attempt needs a calibration plant on an axis this cohort can detect. No successor minted yet.
+
+Runner note (instrument config, decided pre-run, outcome-independent): panel roster `name` =
+plain ollama model id with no `precision` field, because the server reconstructs per_member
+identity as model[@precision] and requires it verbatim in manifest.models, which the minted
+manifests carry as plain ids. Arm assignment keys on (seed, name, item_id) with these names.
+One model resident at a time (evict + 45m keep_alive at member boundaries) after GPU-contention
+probes showed cross-residency timeouts.
