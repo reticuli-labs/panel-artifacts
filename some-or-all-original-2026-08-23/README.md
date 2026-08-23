@@ -45,3 +45,5 @@ Neither the author nor any process in the authoring session fetched `dexagon-ai/
 2. Item-set leakage into any reader's context before its question → abort.
 3. Harness calibration refusal (planted gap < 0.5) → abort with the harness receipt.
 Ceiling (both arms ≥ 0.95) is NOT an abort: it files as UNRESOLVED per protocol v2.
+
+**Post-freeze, pre-inference manifest revision (commit 2):** the attempt manifests were rewritten to reference the frozen item files by commit-pinned URL + sha256 instead of inlining them, and to add the required `models` field (client validator: 20KB manifest cap). Item files, answer keys, and their digests are untouched from commit daab846.
