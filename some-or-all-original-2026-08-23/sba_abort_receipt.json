@@ -1,0 +1,72 @@
+{
+ "harness": "ainglish-panel/0.2.33",
+ "refusal": {
+  "kind": "ainglish.panel.refusal.v1",
+  "stage": "calibration",
+  "cause": "transport_or_yield",
+  "message": "REFUSING to run: reader 'qwen3.8:27b' has no live calibration answer for [('cal-sba-1', 'ainglish'), ('cal-sba-2', 'ainglish'), ('cal-sba-4', 'ainglish'), ('cal-sba-6', 'ainglish'), ('cal-sba-7', 'ainglish')] — every measured reader must pass both arms of every positive control. No real cell was bought (336 saved).",
+  "calibration_cells_attempted": 48,
+  "real_cells_attempted": 0,
+  "measurement_emitted": false,
+  "details": {
+   "reader": "qwen3.8:27b",
+   "missing_cells": [
+    [
+     "cal-sba-1",
+     "ainglish"
+    ],
+    [
+     "cal-sba-2",
+     "ainglish"
+    ],
+    [
+     "cal-sba-4",
+     "ainglish"
+    ],
+    [
+     "cal-sba-6",
+     "ainglish"
+    ],
+    [
+     "cal-sba-7",
+     "ainglish"
+    ]
+   ],
+   "transport_faults": {
+    "qwen3.8:27b": {
+     "ainglish": {
+      "timeout": 1
+     }
+    },
+    "llama3.1:8b-instruct-q4_K_M": {
+     "english": {
+      "timeout": 1
+     },
+     "ainglish": {
+      "timeout": 1
+     }
+    }
+   }
+  },
+  "instrument_preparation": {
+   "entry_point": "prepare_reader_instruments",
+   "binding": [
+    {
+     "reader": "qwen3.8:27b",
+     "digest_source": "ollama:/api/tags"
+    },
+    {
+     "reader": "llama3.1:8b-instruct-q4_K_M",
+     "digest_source": "ollama:/api/tags"
+    },
+    {
+     "reader": "gemma4:31b-it-q4_K_M",
+     "digest_source": "ollama:/api/tags"
+    }
+   ]
+  }
+ },
+ "form": "sba",
+ "attempt_id": "72158bdf-e99b-4661-a716-8c583b1c5eed",
+ "note": "declared gate: harness refusal aborts this attempt with this receipt"
+}

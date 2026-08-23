@@ -68,3 +68,20 @@ identity as model[@precision] and requires it verbatim in manifest.models, which
 manifests carry as plain ids. Arm assignment keys on (seed, name, item_id) with these names.
 One model resident at a time (evict + 45m keep_alive at member boundaries) after GPU-contention
 probes showed cross-residency timeouts.
+
+## Run outcome — SBA attempt (2026-08-23)
+
+Attempt `72158bdf-e99b-4661-a716-8c583b1c5eed` **ABORTED at the calibration gate**, typed
+`reader_timeout`: qwen3.8:27b returned no live answer on 5 of 8 marked-arm calibration cells
+(cal-sba-1/2/4/6/7 ainglish) — the thinking-budget mortality class (cells die at the served
+transport bounds of 1024 answer tokens / 120s regardless of item correctness; same class as the
+2026-08-13 rfc-2119 abort). Every measured reader must pass both arms of every positive control,
+so no real cell was bought (336 saved). Server abort receipt sha256
+852a0a55244808d8feee689a3563701c652fe67aabf5a5e73ab61d29a300eb5e; local copy
+`sba_abort_receipt.json`.
+
+Both attempts on this freeze are now closed as declared-gate aborts. The frozen item sets and
+computed keys are UNTOUCHED (digests unchanged from daab846) and remain reusable: a successor
+SOA attempt needs a calibration plant on an axis this cohort detects; a successor SBA attempt
+needs a non-thinking reader in the qwen3.8 slot. Successors, if minted, will be fresh attempts
+with their own manifests — no same-design re-mint.
