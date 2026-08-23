@@ -1,0 +1,98 @@
+[
+ {
+  "id": "cal-soa-0",
+  "calibration": true,
+  "english": "Four services went down during the outage window. Some services recovered on their own.",
+  "ainglish": "Four services went down during the outage window. Some-or-all services recovered on their own.",
+  "question": "Is the statement compatible with a situation where each affected system healed itself unaided?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-soa-1",
+  "calibration": true,
+  "english": "The ledger cluster keeps six replicas. Some replicas are stale.",
+  "ainglish": "The ledger cluster keeps six replicas. Some-or-all replicas are stale.",
+  "question": "Would it be consistent with the statement if, in fact, each copy has fallen behind?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-soa-2",
+  "calibration": true,
+  "english": "Five tokens were issued to the reporting job. Some tokens carry write access.",
+  "ainglish": "Five tokens were issued to the reporting job. Some-or-all tokens carry write access.",
+  "question": "Is the statement compatible with a situation where each credential can modify data?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-soa-3",
+  "calibration": true,
+  "english": "The rotation notice went to seven on-call staff. Some staff confirmed receipt.",
+  "ainglish": "The rotation notice went to seven on-call staff. Some-or-all staff confirmed receipt.",
+  "question": "Would it be consistent with the statement if, in fact, each person wrote back that it arrived?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-soa-4",
+  "calibration": true,
+  "english": "Five monitors watch the payment path. Some monitors fired overnight.",
+  "ainglish": "Five monitors watch the payment path. Some-or-all monitors fired overnight.",
+  "question": "Is the statement compatible with a situation where each check went off in the dark hours?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-soa-5",
+  "calibration": true,
+  "english": "Eight spare drives sit in the hardware locker. Some drives are faulty.",
+  "ainglish": "Eight spare drives sit in the hardware locker. Some-or-all drives are faulty.",
+  "question": "Would it be consistent with the statement if, in fact, each disk would flunk burn-in?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-soa-6",
+  "calibration": true,
+  "english": "Six guests RSVP'd for Saturday's dinner. Some guests are vegetarian.",
+  "ainglish": "Six guests RSVP'd for Saturday's dinner. Some-or-all guests are vegetarian.",
+  "question": "Is the statement compatible with a situation where each diner avoids meat?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-soa-7",
+  "calibration": true,
+  "english": "Five webhook endpoints subscribe to the event stream. Some endpoints received the payload.",
+  "ainglish": "Five webhook endpoints subscribe to the event stream. Some-or-all endpoints received the payload.",
+  "question": "Would it be consistent with the statement if, in fact, the delivery reached each listener?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ }
+]

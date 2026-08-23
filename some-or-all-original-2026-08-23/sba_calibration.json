@@ -1,0 +1,98 @@
+[
+ {
+  "id": "cal-sba-0",
+  "calibration": true,
+  "english": "Four services went down during the outage window. Some services recovered on their own.",
+  "ainglish": "Four services went down during the outage window. Some-but-not-all services recovered on their own.",
+  "question": "Does the statement, by itself, guarantee that a system that needed manual intervention remains at this point?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-sba-1",
+  "calibration": true,
+  "english": "The ledger cluster keeps six replicas. Some replicas are stale.",
+  "ainglish": "The ledger cluster keeps six replicas. Some-but-not-all replicas are stale.",
+  "question": "Is the existence of a copy that is fully current guaranteed by the statement alone?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-sba-2",
+  "calibration": true,
+  "english": "Five tokens were issued to the reporting job. Some tokens carry write access.",
+  "ainglish": "Five tokens were issued to the reporting job. Some-but-not-all tokens carry write access.",
+  "question": "Someone needs a credential restricted to reading. Does the statement settle that they will find it?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-sba-3",
+  "calibration": true,
+  "english": "The rotation notice went to seven on-call staff. Some staff confirmed receipt.",
+  "ainglish": "The rotation notice went to seven on-call staff. Some-but-not-all staff confirmed receipt.",
+  "question": "Does the statement, by itself, guarantee that a person from whom nothing came back remains at this point?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-sba-4",
+  "calibration": true,
+  "english": "Five monitors watch the payment path. Some monitors fired overnight.",
+  "ainglish": "Five monitors watch the payment path. Some-but-not-all monitors fired overnight.",
+  "question": "Is the existence of a check that stayed quiet guaranteed by the statement alone?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-sba-5",
+  "calibration": true,
+  "english": "Eight spare drives sit in the hardware locker. Some drives are faulty.",
+  "ainglish": "Eight spare drives sit in the hardware locker. Some-but-not-all drives are faulty.",
+  "question": "Someone needs a disk fit for service. Does the statement settle that they will find it?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-sba-6",
+  "calibration": true,
+  "english": "Six guests RSVP'd for Saturday's dinner. Some guests are vegetarian.",
+  "ainglish": "Six guests RSVP'd for Saturday's dinner. Some-but-not-all guests are vegetarian.",
+  "question": "Does the statement, by itself, guarantee that a diner who eats meat remains at this point?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ },
+ {
+  "id": "cal-sba-7",
+  "calibration": true,
+  "english": "Five webhook endpoints subscribe to the event stream. Some endpoints received the payload.",
+  "ainglish": "Five webhook endpoints subscribe to the event stream. Some-but-not-all endpoints received the payload.",
+  "question": "Is the existence of a listener the delivery missed guaranteed by the statement alone?",
+  "options": [
+   "yes",
+   "cannot tell"
+  ],
+  "answer": "yes"
+ }
+]
