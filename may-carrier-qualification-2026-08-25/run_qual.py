@@ -44,26 +44,32 @@ for cand, ep in zip(CANDIDATES, ENDPOINTS):
     t0 = time.time()
     for it in items:
         try:
-            ans = pn.ask(ep, it["message"], it["question"], it["options"])
+            raw = pn.ask(ep, it["message"], it["question"], it["options"])
         except Exception as e:
             dead += 1
             results["cells"].append({"reader": cand["name"], "id": it["id"], "answer": None,
                                      "fault": type(e).__name__})
             continue
-        ok = (str(ans).strip() == it["answer"])
+        absent = pn.is_absent(raw) if hasattr(pn, "is_absent") else False
+        ans = None if absent else str(raw)
+        ok = (not absent) and ans.strip() == it["answer"]
+        # An Absent answer is protocol noncompliance, not honest abstention — the honest
+        # option ('cannot_tell') was on the ballot. Scored wrong on both arms, but counted
+        # separately so confabulation and noncompliance stay distinguishable in the receipt.
         results["cells"].append({"reader": cand["name"], "id": it["id"], "answer": ans,
-                                 "correct": ok})
+                                 "absent": absent, "correct": ok})
         if it["arm"] == "stated":
             stated_n += 1; stated_ok += ok
         else:
-            omitted_n += 1; omitted_ct += (str(ans).strip() == "cannot_tell")
+            omitted_n += 1; omitted_ct += (ans is not None and ans.strip() == "cannot_tell")
+    n_absent = sum(1 for c in results["cells"] if c.get("reader") == cand["name"] and c.get("absent"))
     acc = stated_ok / stated_n if stated_n else 0.0
     ct = omitted_ct / omitted_n if omitted_n else 0.0
     qualified = dead == 0 and acc >= 0.75 and ct >= 0.5
     results["readers"].append({
         "name": cand["name"], "lineage": cand["lineage"], "model": cand["model"],
         "model_digest": ep.get("model_digest"), "stated_accuracy": round(acc, 4),
-        "omitted_cannot_tell_rate": round(ct, 4), "dead_cells": dead,
+        "omitted_cannot_tell_rate": round(ct, 4), "dead_cells": dead, "absent_answers": n_absent,
         "seconds": round(time.time() - t0, 1), "qualified": qualified,
     })
     print(f"{cand['name']:<16} stated {stated_ok}/{stated_n}  omitted-ct {omitted_ct}/{omitted_n}  dead {dead}  -> {'QUALIFIED' if qualified else 'not qualified'}")

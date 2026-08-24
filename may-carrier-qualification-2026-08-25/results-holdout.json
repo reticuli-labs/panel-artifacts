@@ -1,0 +1,566 @@
+{
+ "kind": "reticuli.reader-qualification.results.v1",
+ "set": "holdout",
+ "answer_protocol": "opaque-choice-v1",
+ "readers": [
+  {
+   "name": "llama31-8b-q4",
+   "lineage": "llama",
+   "model": "llama3.1:8b-instruct-q4_K_M",
+   "model_digest": "sha256:46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "stated_accuracy": 0.9167,
+   "omitted_cannot_tell_rate": 0.3333,
+   "dead_cells": 0,
+   "absent_answers": 0,
+   "seconds": 12.1,
+   "qualified": false
+  },
+  {
+   "name": "gemma4-31b-q4",
+   "lineage": "gemma",
+   "model": "gemma4:31b-it-q4_K_M",
+   "model_digest": "sha256:6316f0629137b426c9d9b853ffc4c8209589f30ee39aebede6285096c0ff47e7",
+   "stated_accuracy": 1.0,
+   "omitted_cannot_tell_rate": 0.6667,
+   "dead_cells": 0,
+   "absent_answers": 3,
+   "seconds": 390.2,
+   "qualified": true
+  },
+  {
+   "name": "qwen36-27b-q4",
+   "lineage": "qwen35",
+   "model": "qwen3.6:27b",
+   "model_digest": "sha256:a50eda8ed977ab48a12431878896b27ffd5cef552c17af3317d9623b939a7f1e",
+   "stated_accuracy": 0.9167,
+   "omitted_cannot_tell_rate": 0.3333,
+   "dead_cells": 0,
+   "absent_answers": 9,
+   "seconds": 476.4,
+   "qualified": false
+  }
+ ],
+ "cells": [
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-01-stated",
+   "answer": "quota-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-01-omitted",
+   "answer": "audit-ledger",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-02-stated",
+   "answer": "a-billing-mismatch",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-02-omitted",
+   "answer": "a-changelog-mismatch",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-03-stated",
+   "answer": "the-uptime-register",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-03-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-04-stated",
+   "answer": "re-run-the-incident-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-04-omitted",
+   "answer": "re-run-the-incident-check",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-05-stated",
+   "answer": "billing-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-05-omitted",
+   "answer": "incident-ledger",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-06-stated",
+   "answer": "a-changelog-mismatch",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-06-omitted",
+   "answer": "a-audit-mismatch",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-07-stated",
+   "answer": "the-billing-register",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-07-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-08-stated",
+   "answer": "re-run-the-incident-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-08-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-09-stated",
+   "answer": "backup-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-09-omitted",
+   "answer": "retention-ledger",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-10-stated",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-10-omitted",
+   "answer": "a-audit-mismatch",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-11-stated",
+   "answer": "the-billing-register",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-11-omitted",
+   "answer": "the-audit-register",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-12-stated",
+   "answer": "re-run-the-capacity-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "llama31-8b-q4",
+   "id": "qual-hold-12-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-01-stated",
+   "answer": "quota-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-01-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-02-stated",
+   "answer": "a-billing-mismatch",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-02-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-03-stated",
+   "answer": "the-uptime-register",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-03-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-04-stated",
+   "answer": "re-run-the-incident-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-04-omitted",
+   "answer": "re-run-the-backup-check",
+   "absent": false,
+   "correct": false
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-05-stated",
+   "answer": "billing-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-05-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-06-stated",
+   "answer": "a-changelog-mismatch",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-06-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-07-stated",
+   "answer": "the-billing-register",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-07-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-08-stated",
+   "answer": "re-run-the-incident-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-08-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-09-stated",
+   "answer": "backup-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-09-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-10-stated",
+   "answer": "a-rotation-mismatch",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-10-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-11-stated",
+   "answer": "the-billing-register",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-11-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-12-stated",
+   "answer": "re-run-the-capacity-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "id": "qual-hold-12-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-01-stated",
+   "answer": "quota-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-01-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-02-stated",
+   "answer": "a-billing-mismatch",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-02-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-03-stated",
+   "answer": "the-uptime-register",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-03-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-04-stated",
+   "answer": "re-run-the-incident-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-04-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-05-stated",
+   "answer": "billing-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-05-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-06-stated",
+   "answer": "a-changelog-mismatch",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-06-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-07-stated",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-07-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-08-stated",
+   "answer": "re-run-the-incident-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-08-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-09-stated",
+   "answer": "backup-ledger",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-09-omitted",
+   "answer": "cannot_tell",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-10-stated",
+   "answer": "a-rotation-mismatch",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-10-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-11-stated",
+   "answer": "the-billing-register",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-11-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-12-stated",
+   "answer": "re-run-the-capacity-check",
+   "absent": false,
+   "correct": true
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "id": "qual-hold-12-omitted",
+   "answer": null,
+   "absent": true,
+   "correct": false
+  }
+ ],
+ "instrument_preparation": [
+  {
+   "reader": "llama31-8b-q4",
+   "model_digest": "sha256:46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+   "digest_source": "ollama:/api/tags"
+  },
+  {
+   "reader": "gemma4-31b-q4",
+   "model_digest": "sha256:6316f0629137b426c9d9b853ffc4c8209589f30ee39aebede6285096c0ff47e7",
+   "digest_source": "ollama:/api/tags"
+  },
+  {
+   "reader": "qwen36-27b-q4",
+   "model_digest": "sha256:a50eda8ed977ab48a12431878896b27ffd5cef552c17af3317d9623b939a7f1e",
+   "digest_source": "ollama:/api/tags"
+  }
+ ]
+}
