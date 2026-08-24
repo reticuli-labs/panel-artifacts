@@ -1,0 +1,1996 @@
+{
+ "kind": "ainglish.panel.items.v1",
+ "proposal": "twice-weekly-every-two-weeks-split-biweekly-into-its-two-inc",
+ "form": "every-two-weeks",
+ "baseline": "complete_careful_english",
+ "real_items": 100,
+ "calibration_items": 12,
+ "items": [
+  {
+   "id": "cal-e2w-01",
+   "calibration": true,
+   "english": "Calibration note 1: the certificate rotation follows a recurring timetable, but this note does not state a frequency from which a 10-week count could be recovered.",
+   "ainglish": "Calibration note 1: the certificate rotation has exactly 5 scheduled recurrences inside the stated 10-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 10-week window?",
+   "options": [
+    "10",
+    "cannot_tell",
+    "5",
+    "20"
+   ],
+   "answer": "5",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-02",
+   "calibration": true,
+   "english": "Calibration note 2: the offsite-restore drill follows a recurring timetable, but this note does not state a frequency from which a 10-week count could be recovered.",
+   "ainglish": "Calibration note 2: the offsite-restore drill has exactly 5 scheduled recurrences inside the stated 10-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 10-week window?",
+   "options": [
+    "5",
+    "20",
+    "cannot_tell",
+    "10"
+   ],
+   "answer": "5",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-03",
+   "calibration": true,
+   "english": "Calibration note 3: the changelog digest follows a recurring timetable, but this note does not state a frequency from which a 12-week count could be recovered.",
+   "ainglish": "Calibration note 3: the changelog digest has exactly 6 scheduled recurrences inside the stated 12-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 12-week window?",
+   "options": [
+    "24",
+    "cannot_tell",
+    "6",
+    "12"
+   ],
+   "answer": "6",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-04",
+   "calibration": true,
+   "english": "Calibration note 4: the invoice reconciliation follows a recurring timetable, but this note does not state a frequency from which a 10-week count could be recovered.",
+   "ainglish": "Calibration note 4: the invoice reconciliation has exactly 5 scheduled recurrences inside the stated 10-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 10-week window?",
+   "options": [
+    "20",
+    "5",
+    "cannot_tell",
+    "10"
+   ],
+   "answer": "5",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-05",
+   "calibration": true,
+   "english": "Calibration note 5: the mirror sync follows a recurring timetable, but this note does not state a frequency from which a 10-week count could be recovered.",
+   "ainglish": "Calibration note 5: the mirror sync has exactly 5 scheduled recurrences inside the stated 10-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 10-week window?",
+   "options": [
+    "5",
+    "cannot_tell",
+    "20",
+    "10"
+   ],
+   "answer": "5",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-06",
+   "calibration": true,
+   "english": "Calibration note 6: the key-rotation ceremony follows a recurring timetable, but this note does not state a frequency from which a 10-week count could be recovered.",
+   "ainglish": "Calibration note 6: the key-rotation ceremony has exactly 5 scheduled recurrences inside the stated 10-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 10-week window?",
+   "options": [
+    "cannot_tell",
+    "20",
+    "10",
+    "5"
+   ],
+   "answer": "5",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-07",
+   "calibration": true,
+   "english": "Calibration note 7: the retention purge follows a recurring timetable, but this note does not state a frequency from which a 8-week count could be recovered.",
+   "ainglish": "Calibration note 7: the retention purge has exactly 4 scheduled recurrences inside the stated 8-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 8-week window?",
+   "options": [
+    "cannot_tell",
+    "4",
+    "8",
+    "16"
+   ],
+   "answer": "4",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-08",
+   "calibration": true,
+   "english": "Calibration note 8: the uptime report follows a recurring timetable, but this note does not state a frequency from which a 6-week count could be recovered.",
+   "ainglish": "Calibration note 8: the uptime report has exactly 3 scheduled recurrences inside the stated 6-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 6-week window?",
+   "options": [
+    "3",
+    "cannot_tell",
+    "6",
+    "12"
+   ],
+   "answer": "3",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-09",
+   "calibration": true,
+   "english": "Calibration note 9: the dependency-freeze review follows a recurring timetable, but this note does not state a frequency from which a 4-week count could be recovered.",
+   "ainglish": "Calibration note 9: the dependency-freeze review has exactly 2 scheduled recurrences inside the stated 4-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 4-week window?",
+   "options": [
+    "2",
+    "4",
+    "8",
+    "cannot_tell"
+   ],
+   "answer": "2",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-10",
+   "calibration": true,
+   "english": "Calibration note 10: the spam-filter retrain follows a recurring timetable, but this note does not state a frequency from which a 10-week count could be recovered.",
+   "ainglish": "Calibration note 10: the spam-filter retrain has exactly 5 scheduled recurrences inside the stated 10-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 10-week window?",
+   "options": [
+    "20",
+    "5",
+    "cannot_tell",
+    "10"
+   ],
+   "answer": "5",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-11",
+   "calibration": true,
+   "english": "Calibration note 11: the DNS zone audit follows a recurring timetable, but this note does not state a frequency from which a 12-week count could be recovered.",
+   "ainglish": "Calibration note 11: the DNS zone audit has exactly 6 scheduled recurrences inside the stated 12-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 12-week window?",
+   "options": [
+    "cannot_tell",
+    "6",
+    "24",
+    "12"
+   ],
+   "answer": "6",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "cal-e2w-12",
+   "calibration": true,
+   "english": "Calibration note 12: the capacity forecast follows a recurring timetable, but this note does not state a frequency from which a 10-week count could be recovered.",
+   "ainglish": "Calibration note 12: the capacity forecast has exactly 5 scheduled recurrences inside the stated 10-week window.",
+   "question": "How many scheduled recurrences does the note license inside the stated 10-week window?",
+   "options": [
+    "10",
+    "cannot_tell",
+    "20",
+    "5"
+   ],
+   "answer": "5",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "every-two-weeks"
+   }
+  },
+  {
+   "id": "real-e2w-count-001",
+   "english": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the uptime report runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the uptime report runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "4",
+    "16",
+    "8",
+    "cannot_tell"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-002",
+   "english": "Planning note: the mirror sync runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "ainglish": "Planning note: the mirror sync runs every-two-weeks. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "4",
+    "16",
+    "8"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-003",
+   "english": "The observation window opens at the established anchor and spans 2 complete schedule weeks; the spam-filter retrain runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 2 complete schedule weeks; the spam-filter retrain runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "1",
+    "4",
+    "2"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-004",
+   "english": "The billing export runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 4 complete schedule weeks.",
+   "ainglish": "The billing export runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 4 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "4",
+    "2",
+    "8"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-005",
+   "english": "Planning note: the changelog digest runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 10 complete schedule weeks.",
+   "ainglish": "Planning note: the changelog digest runs every-two-weeks. The budgeting window starts at the established anchor and covers 10 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "5",
+    "20",
+    "cannot_tell",
+    "10"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-006",
+   "english": "The incident-drill rehearsal runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "ainglish": "The incident-drill rehearsal runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "4",
+    "cannot_tell",
+    "1",
+    "2"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-007",
+   "english": "The uptime report runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "ainglish": "The uptime report runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "1",
+    "4",
+    "2"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-008",
+   "english": "Planning note: the certificate rotation runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 2 complete schedule weeks.",
+   "ainglish": "Planning note: the certificate rotation runs every-two-weeks. The budgeting window starts at the established anchor and covers 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "2",
+    "1",
+    "4"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-009",
+   "english": "Planning note: the uptime report runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 2 complete schedule weeks.",
+   "ainglish": "Planning note: the uptime report runs every-two-weeks. The budgeting window starts at the established anchor and covers 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "4",
+    "1",
+    "cannot_tell"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-010",
+   "english": "The cache warmup census runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 4 complete schedule weeks.",
+   "ainglish": "The cache warmup census runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 4 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "8",
+    "cannot_tell",
+    "4",
+    "2"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-011",
+   "english": "The dependency-freeze review runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "ainglish": "The dependency-freeze review runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "12",
+    "3",
+    "6",
+    "cannot_tell"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-012",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The changelog digest runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The changelog digest runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "10",
+    "20",
+    "cannot_tell",
+    "5"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-013",
+   "english": "The observation window opens at the established anchor and spans 2 complete schedule weeks; the billing export runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 2 complete schedule weeks; the billing export runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "2",
+    "1",
+    "4"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-014",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The uptime report runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The uptime report runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "5",
+    "10",
+    "20"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-015",
+   "english": "The capacity forecast runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 14 complete schedule weeks.",
+   "ainglish": "The capacity forecast runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 14 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "28",
+    "7",
+    "cannot_tell",
+    "14"
+   ],
+   "answer": "7",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 14
+   }
+  },
+  {
+   "id": "real-e2w-count-016",
+   "english": "The quota rebalance runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 14 complete schedule weeks.",
+   "ainglish": "The quota rebalance runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 14 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "14",
+    "7",
+    "cannot_tell",
+    "28"
+   ],
+   "answer": "7",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 14
+   }
+  },
+  {
+   "id": "real-e2w-count-017",
+   "english": "Planning note: the dependency-freeze review runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 12 complete schedule weeks.",
+   "ainglish": "Planning note: the dependency-freeze review runs every-two-weeks. The budgeting window starts at the established anchor and covers 12 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "24",
+    "cannot_tell",
+    "6",
+    "12"
+   ],
+   "answer": "6",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 12
+   }
+  },
+  {
+   "id": "real-e2w-count-018",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 12 complete schedule weeks. The retention purge runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 12 complete schedule weeks. The retention purge runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "24",
+    "12",
+    "6"
+   ],
+   "answer": "6",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 12
+   }
+  },
+  {
+   "id": "real-e2w-count-019",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 8 complete schedule weeks. The retention purge runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 8 complete schedule weeks. The retention purge runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "4",
+    "8",
+    "cannot_tell",
+    "16"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-020",
+   "english": "Planning note: the capacity forecast runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 12 complete schedule weeks.",
+   "ainglish": "Planning note: the capacity forecast runs every-two-weeks. The budgeting window starts at the established anchor and covers 12 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "12",
+    "6",
+    "cannot_tell",
+    "24"
+   ],
+   "answer": "6",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 12
+   }
+  },
+  {
+   "id": "real-e2w-count-021",
+   "english": "The licence compliance sweep runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 10 complete schedule weeks.",
+   "ainglish": "The licence compliance sweep runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 10 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "10",
+    "5",
+    "20",
+    "cannot_tell"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-022",
+   "english": "Planning note: the DNS zone audit runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 12 complete schedule weeks.",
+   "ainglish": "Planning note: the DNS zone audit runs every-two-weeks. The budgeting window starts at the established anchor and covers 12 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "12",
+    "24",
+    "6"
+   ],
+   "answer": "6",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 12
+   }
+  },
+  {
+   "id": "real-e2w-count-023",
+   "english": "Planning note: the schema drift check runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "ainglish": "Planning note: the schema drift check runs every-two-weeks. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "12",
+    "6",
+    "cannot_tell",
+    "3"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-024",
+   "english": "The uptime report runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 8 complete schedule weeks.",
+   "ainglish": "The uptime report runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 8 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "4",
+    "cannot_tell",
+    "16",
+    "8"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-025",
+   "english": "Planning note: the dependency-freeze review runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 10 complete schedule weeks.",
+   "ainglish": "Planning note: the dependency-freeze review runs every-two-weeks. The budgeting window starts at the established anchor and covers 10 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "20",
+    "10",
+    "cannot_tell",
+    "5"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-026",
+   "english": "Planning note: the vault inventory runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 2 complete schedule weeks.",
+   "ainglish": "Planning note: the vault inventory runs every-two-weeks. The budgeting window starts at the established anchor and covers 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "4",
+    "1",
+    "cannot_tell"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-027",
+   "english": "The observation window opens at the established anchor and spans 10 complete schedule weeks; the onboarding queue triage runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 10 complete schedule weeks; the onboarding queue triage runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "5",
+    "10",
+    "20",
+    "cannot_tell"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-028",
+   "english": "The observation window opens at the established anchor and spans 10 complete schedule weeks; the DNS zone audit runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 10 complete schedule weeks; the DNS zone audit runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "20",
+    "5",
+    "10",
+    "cannot_tell"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-029",
+   "english": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the changelog digest runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the changelog digest runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "12",
+    "6",
+    "cannot_tell",
+    "3"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-030",
+   "english": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the key-rotation ceremony runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the key-rotation ceremony runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "4",
+    "8",
+    "16"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-031",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 2 complete schedule weeks. The changelog digest runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 2 complete schedule weeks. The changelog digest runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "1",
+    "cannot_tell",
+    "2",
+    "4"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-032",
+   "english": "The uptime report runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "ainglish": "The uptime report runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "12",
+    "3",
+    "6"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-033",
+   "english": "The certificate rotation runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "ainglish": "The certificate rotation runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "12",
+    "6",
+    "cannot_tell",
+    "3"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-034",
+   "english": "The observation window opens at the established anchor and spans 14 complete schedule weeks; the spam-filter retrain runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 14 complete schedule weeks; the spam-filter retrain runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "7",
+    "28",
+    "cannot_tell",
+    "14"
+   ],
+   "answer": "7",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 14
+   }
+  },
+  {
+   "id": "real-e2w-count-035",
+   "english": "The changelog digest runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "ainglish": "The changelog digest runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "1",
+    "4",
+    "2",
+    "cannot_tell"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-036",
+   "english": "The observation window opens at the established anchor and spans 12 complete schedule weeks; the schema drift check runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 12 complete schedule weeks; the schema drift check runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "12",
+    "cannot_tell",
+    "6",
+    "24"
+   ],
+   "answer": "6",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 12
+   }
+  },
+  {
+   "id": "real-e2w-count-037",
+   "english": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the changelog digest runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the changelog digest runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "4",
+    "cannot_tell",
+    "8",
+    "16"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-038",
+   "english": "Planning note: the uptime report runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "ainglish": "Planning note: the uptime report runs every-two-weeks. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "8",
+    "cannot_tell",
+    "4",
+    "16"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-039",
+   "english": "The onboarding queue triage runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 8 complete schedule weeks.",
+   "ainglish": "The onboarding queue triage runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 8 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "16",
+    "8",
+    "4"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-040",
+   "english": "The invoice reconciliation runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "ainglish": "The invoice reconciliation runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "1",
+    "cannot_tell",
+    "4"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-041",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The changelog digest runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The changelog digest runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "12",
+    "cannot_tell",
+    "6",
+    "3"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-042",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 8 complete schedule weeks. The cache warmup census runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 8 complete schedule weeks. The cache warmup census runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "8",
+    "cannot_tell",
+    "4",
+    "16"
+   ],
+   "answer": "4",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-count-043",
+   "english": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the quota rebalance runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the quota rebalance runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "3",
+    "12",
+    "6"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-044",
+   "english": "Planning note: the schema drift check runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 14 complete schedule weeks.",
+   "ainglish": "Planning note: the schema drift check runs every-two-weeks. The budgeting window starts at the established anchor and covers 14 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "28",
+    "cannot_tell",
+    "7",
+    "14"
+   ],
+   "answer": "7",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 14
+   }
+  },
+  {
+   "id": "real-e2w-count-045",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 14 complete schedule weeks. The mirror sync runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 14 complete schedule weeks. The mirror sync runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "14",
+    "cannot_tell",
+    "28",
+    "7"
+   ],
+   "answer": "7",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 14
+   }
+  },
+  {
+   "id": "real-e2w-count-046",
+   "english": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the onboarding queue triage runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the onboarding queue triage runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "8",
+    "4",
+    "cannot_tell"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-047",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The certificate rotation runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The certificate rotation runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "3",
+    "cannot_tell",
+    "12",
+    "6"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-048",
+   "english": "The observation window opens at the established anchor and spans 12 complete schedule weeks; the spam-filter retrain runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 12 complete schedule weeks; the spam-filter retrain runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "6",
+    "12",
+    "24",
+    "cannot_tell"
+   ],
+   "answer": "6",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 12
+   }
+  },
+  {
+   "id": "real-e2w-count-049",
+   "english": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the billing export runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the billing export runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "4",
+    "8",
+    "2"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-050",
+   "english": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the dependency-freeze review runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the dependency-freeze review runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "6",
+    "cannot_tell",
+    "3",
+    "12"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-051",
+   "english": "The DNS zone audit runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "ainglish": "The DNS zone audit runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "4",
+    "1",
+    "cannot_tell"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-052",
+   "english": "Planning note: the schema drift check runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 14 complete schedule weeks.",
+   "ainglish": "Planning note: the schema drift check runs every-two-weeks. The budgeting window starts at the established anchor and covers 14 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "14",
+    "7",
+    "28",
+    "cannot_tell"
+   ],
+   "answer": "7",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 14
+   }
+  },
+  {
+   "id": "real-e2w-count-053",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The incident-drill rehearsal runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The incident-drill rehearsal runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "20",
+    "10",
+    "5"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-054",
+   "english": "The dependency-freeze review runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "ainglish": "The dependency-freeze review runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "3",
+    "cannot_tell",
+    "12",
+    "6"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-055",
+   "english": "The cache warmup census runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "ainglish": "The cache warmup census runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "1",
+    "4",
+    "2",
+    "cannot_tell"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-056",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The billing export runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The billing export runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "20",
+    "10",
+    "5",
+    "cannot_tell"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-057",
+   "english": "The vault inventory runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 12 complete schedule weeks.",
+   "ainglish": "The vault inventory runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 12 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "24",
+    "12",
+    "cannot_tell",
+    "6"
+   ],
+   "answer": "6",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 12
+   }
+  },
+  {
+   "id": "real-e2w-count-058",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 14 complete schedule weeks. The spam-filter retrain runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 14 complete schedule weeks. The spam-filter retrain runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "14",
+    "28",
+    "cannot_tell",
+    "7"
+   ],
+   "answer": "7",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 14
+   }
+  },
+  {
+   "id": "real-e2w-count-059",
+   "english": "Planning note: the billing export runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "ainglish": "Planning note: the billing export runs every-two-weeks. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "8",
+    "4",
+    "2"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-060",
+   "english": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the uptime report runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the uptime report runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "8",
+    "2",
+    "cannot_tell",
+    "4"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-061",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 2 complete schedule weeks. The cache warmup census runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 2 complete schedule weeks. The cache warmup census runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "4",
+    "1",
+    "cannot_tell"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-062",
+   "english": "Planning note: the certificate rotation runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 12 complete schedule weeks.",
+   "ainglish": "Planning note: the certificate rotation runs every-two-weeks. The budgeting window starts at the established anchor and covers 12 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "6",
+    "12",
+    "24"
+   ],
+   "answer": "6",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 12
+   }
+  },
+  {
+   "id": "real-e2w-count-063",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 4 complete schedule weeks. The capacity forecast runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 4 complete schedule weeks. The capacity forecast runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "4",
+    "cannot_tell",
+    "8"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-064",
+   "english": "Planning note: the key-rotation ceremony runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "ainglish": "Planning note: the key-rotation ceremony runs every-two-weeks. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "cannot_tell",
+    "4",
+    "8"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-065",
+   "english": "The observation window opens at the established anchor and spans 10 complete schedule weeks; the invoice reconciliation runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 10 complete schedule weeks; the invoice reconciliation runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "5",
+    "cannot_tell",
+    "10",
+    "20"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-066",
+   "english": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the spam-filter retrain runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the spam-filter retrain runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "6",
+    "cannot_tell",
+    "3",
+    "12"
+   ],
+   "answer": "3",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-count-067",
+   "english": "Planning note: the DNS zone audit runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "ainglish": "Planning note: the DNS zone audit runs every-two-weeks. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "2",
+    "8",
+    "4",
+    "cannot_tell"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-count-068",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The cache warmup census runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 10 complete schedule weeks. The cache warmup census runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "5",
+    "cannot_tell",
+    "20",
+    "10"
+   ],
+   "answer": "5",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 10
+   }
+  },
+  {
+   "id": "real-e2w-count-069",
+   "english": "The uptime report runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "ainglish": "The uptime report runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 2 complete schedule weeks.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "1",
+    "4",
+    "cannot_tell",
+    "2"
+   ],
+   "answer": "1",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 2
+   }
+  },
+  {
+   "id": "real-e2w-count-070",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 4 complete schedule weeks. The quota rebalance runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 4 complete schedule weeks. The quota rebalance runs every-two-weeks. No weekday or timezone is given.",
+   "question": "How many scheduled recurrences does the instruction place inside that window?",
+   "options": [
+    "cannot_tell",
+    "4",
+    "2",
+    "8"
+   ],
+   "answer": "2",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "cadence_count",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-001",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 4 complete schedule weeks. The cache warmup census runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 4 complete schedule weeks. The cache warmup census runs every-two-weeks. No weekday or timezone is given.",
+   "question": "Which weekday does the instruction assign to the recurrence?",
+   "options": [
+    "Friday",
+    "Monday",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-002",
+   "english": "Planning note: the schema drift check runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "ainglish": "Planning note: the schema drift check runs every-two-weeks. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "question": "What clock time does the instruction set for each occurrence?",
+   "options": [
+    "09:00",
+    "not_stated",
+    "midnight"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-003",
+   "english": "The invoice reconciliation runs once at each two-week recurrence from the established anchor. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "ainglish": "The invoice reconciliation runs every-two-weeks. The review interval under discussion opens at the established anchor and holds exactly 6 complete schedule weeks.",
+   "question": "Does the instruction report whether the most recent occurrence completed successfully?",
+   "options": [
+    "not_stated",
+    "it_completed",
+    "it_failed"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-004",
+   "english": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the key-rotation ceremony runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the key-rotation ceremony runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "Which calendar date does the instruction give for the first occurrence?",
+   "options": [
+    "not_stated",
+    "the_15th",
+    "the_1st"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-005",
+   "english": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the licence compliance sweep runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the licence compliance sweep runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "Which weekday does the instruction assign to the recurrence?",
+   "options": [
+    "Friday",
+    "Monday",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-006",
+   "english": "Planning note: the mirror sync runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "ainglish": "Planning note: the mirror sync runs every-two-weeks. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "question": "What clock time does the instruction set for each occurrence?",
+   "options": [
+    "midnight",
+    "09:00",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-007",
+   "english": "Planning note: the incident-drill rehearsal runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "ainglish": "Planning note: the incident-drill rehearsal runs every-two-weeks. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "question": "Does the instruction report whether the most recent occurrence completed successfully?",
+   "options": [
+    "it_completed",
+    "not_stated",
+    "it_failed"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-008",
+   "english": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the capacity forecast runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 6 complete schedule weeks; the capacity forecast runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "Which calendar date does the instruction give for the first occurrence?",
+   "options": [
+    "the_15th",
+    "the_1st",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-009",
+   "english": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the billing export runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the billing export runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "Which weekday does the instruction assign to the recurrence?",
+   "options": [
+    "not_stated",
+    "Friday",
+    "Monday"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-010",
+   "english": "Planning note: the uptime report runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "ainglish": "Planning note: the uptime report runs every-two-weeks. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "question": "What clock time does the instruction set for each occurrence?",
+   "options": [
+    "09:00",
+    "midnight",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-011",
+   "english": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the schema drift check runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the schema drift check runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "Does the instruction report whether the most recent occurrence completed successfully?",
+   "options": [
+    "not_stated",
+    "it_failed",
+    "it_completed"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-012",
+   "english": "Planning note: the uptime report runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "ainglish": "Planning note: the uptime report runs every-two-weeks. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "question": "Which calendar date does the instruction give for the first occurrence?",
+   "options": [
+    "not_stated",
+    "the_1st",
+    "the_15th"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-013",
+   "english": "Planning note: the uptime report runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "ainglish": "Planning note: the uptime report runs every-two-weeks. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "question": "Which weekday does the instruction assign to the recurrence?",
+   "options": [
+    "not_stated",
+    "Friday",
+    "Monday"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-014",
+   "english": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the certificate rotation runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the certificate rotation runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "What clock time does the instruction set for each occurrence?",
+   "options": [
+    "09:00",
+    "not_stated",
+    "midnight"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-015",
+   "english": "Planning note: the spam-filter retrain runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "ainglish": "Planning note: the spam-filter retrain runs every-two-weeks. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "question": "Does the instruction report whether the most recent occurrence completed successfully?",
+   "options": [
+    "not_stated",
+    "it_completed",
+    "it_failed"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-016",
+   "english": "Planning note: the capacity forecast runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "ainglish": "Planning note: the capacity forecast runs every-two-weeks. The budgeting window starts at the established anchor and covers 8 complete schedule weeks.",
+   "question": "Which calendar date does the instruction give for the first occurrence?",
+   "options": [
+    "not_stated",
+    "the_1st",
+    "the_15th"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-017",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The invoice reconciliation runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The invoice reconciliation runs every-two-weeks. No weekday or timezone is given.",
+   "question": "Which weekday does the instruction assign to the recurrence?",
+   "options": [
+    "not_stated",
+    "Friday",
+    "Monday"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-018",
+   "english": "Planning note: the uptime report runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "ainglish": "Planning note: the uptime report runs every-two-weeks. The budgeting window starts at the established anchor and covers 4 complete schedule weeks.",
+   "question": "What clock time does the instruction set for each occurrence?",
+   "options": [
+    "midnight",
+    "09:00",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-019",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 8 complete schedule weeks. The retention purge runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 8 complete schedule weeks. The retention purge runs every-two-weeks. No weekday or timezone is given.",
+   "question": "Does the instruction report whether the most recent occurrence completed successfully?",
+   "options": [
+    "not_stated",
+    "it_failed",
+    "it_completed"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-020",
+   "english": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the spam-filter retrain runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the spam-filter retrain runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "Which calendar date does the instruction give for the first occurrence?",
+   "options": [
+    "the_15th",
+    "not_stated",
+    "the_1st"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-021",
+   "english": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the certificate rotation runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 4 complete schedule weeks; the certificate rotation runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "Which weekday does the instruction assign to the recurrence?",
+   "options": [
+    "Friday",
+    "Monday",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-022",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The key-rotation ceremony runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The key-rotation ceremony runs every-two-weeks. No weekday or timezone is given.",
+   "question": "What clock time does the instruction set for each occurrence?",
+   "options": [
+    "midnight",
+    "09:00",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-023",
+   "english": "Planning note: the uptime report runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "ainglish": "Planning note: the uptime report runs every-two-weeks. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "question": "Does the instruction report whether the most recent occurrence completed successfully?",
+   "options": [
+    "it_failed",
+    "it_completed",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-024",
+   "english": "Planning note: the uptime report runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "ainglish": "Planning note: the uptime report runs every-two-weeks. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "question": "Which calendar date does the instruction give for the first occurrence?",
+   "options": [
+    "not_stated",
+    "the_15th",
+    "the_1st"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-025",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The incident-drill rehearsal runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 6 complete schedule weeks. The incident-drill rehearsal runs every-two-weeks. No weekday or timezone is given.",
+   "question": "Which weekday does the instruction assign to the recurrence?",
+   "options": [
+    "not_stated",
+    "Friday",
+    "Monday"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-026",
+   "english": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the uptime report runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the uptime report runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "What clock time does the instruction set for each occurrence?",
+   "options": [
+    "09:00",
+    "midnight",
+    "not_stated"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-027",
+   "english": "Planning note: the onboarding queue triage runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "ainglish": "Planning note: the onboarding queue triage runs every-two-weeks. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "question": "Does the instruction report whether the most recent occurrence completed successfully?",
+   "options": [
+    "it_completed",
+    "not_stated",
+    "it_failed"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  },
+  {
+   "id": "real-e2w-over-028",
+   "english": "For capacity purposes, count within a window that begins at the established anchor and contains 4 complete schedule weeks. The changelog digest runs once at each two-week recurrence from the established anchor. No weekday or timezone is given.",
+   "ainglish": "For capacity purposes, count within a window that begins at the established anchor and contains 4 complete schedule weeks. The changelog digest runs every-two-weeks. No weekday or timezone is given.",
+   "question": "Which calendar date does the instruction give for the first occurrence?",
+   "options": [
+    "not_stated",
+    "the_1st",
+    "the_15th"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 4
+   }
+  },
+  {
+   "id": "real-e2w-over-029",
+   "english": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the offsite-restore drill runs once at each two-week recurrence from the established anchor; clock time and completion are stated elsewhere.",
+   "ainglish": "The observation window opens at the established anchor and spans 8 complete schedule weeks; the offsite-restore drill runs every-two-weeks; clock time and completion are stated elsewhere.",
+   "question": "Which weekday does the instruction assign to the recurrence?",
+   "options": [
+    "Monday",
+    "not_stated",
+    "Friday"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 8
+   }
+  },
+  {
+   "id": "real-e2w-over-030",
+   "english": "Planning note: the spam-filter retrain runs once at each two-week recurrence from the established anchor. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "ainglish": "Planning note: the spam-filter retrain runs every-two-weeks. The budgeting window starts at the established anchor and covers 6 complete schedule weeks.",
+   "question": "What clock time does the instruction set for each occurrence?",
+   "options": [
+    "09:00",
+    "not_stated",
+    "midnight"
+   ],
+   "answer": "not_stated",
+   "strata": {
+    "form": "every-two-weeks",
+    "probe": "over_reading",
+    "weeks": 6
+   }
+  }
+ ]
+}
