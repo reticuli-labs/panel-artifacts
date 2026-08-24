@@ -1,0 +1,344 @@
+{
+ "kind": "reticuli.reader-qualification.items.v1",
+ "purpose": "construct-blind reader qualification for the may-modal carrier (fresh; independent of Dexagon's burned holdout)",
+ "answer_protocol": "opaque-choice-v1",
+ "seed": 20260825,
+ "items": [
+  {
+   "id": "qual-hold-01-stated",
+   "arm": "stated",
+   "form": "verifier",
+   "message": "the digest service completed the queue drain. The record was checked against the quota ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "backup-ledger",
+    "quota-ledger",
+    "audit-ledger",
+    "cannot_tell"
+   ],
+   "answer": "quota-ledger"
+  },
+  {
+   "id": "qual-hold-01-omitted",
+   "arm": "omitted",
+   "form": "verifier",
+   "message": "the digest service completed the queue drain. The record was checked against an internal ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "backup-ledger",
+    "quota-ledger",
+    "audit-ledger",
+    "cannot_tell"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-02-stated",
+   "arm": "stated",
+   "form": "falsifier",
+   "message": "the reconcile daemon reports the index rebuild finished. A later mismatch in the billing record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "cannot_tell",
+    "a-changelog-mismatch",
+    "a-billing-mismatch",
+    "a-audit-mismatch"
+   ],
+   "answer": "a-billing-mismatch"
+  },
+  {
+   "id": "qual-hold-02-omitted",
+   "arm": "omitted",
+   "form": "falsifier",
+   "message": "the reconcile daemon reports the index rebuild finished. A later mismatch in an internal record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "cannot_tell",
+    "a-changelog-mismatch",
+    "a-billing-mismatch",
+    "a-audit-mismatch"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-03-stated",
+   "arm": "stated",
+   "form": "retraction",
+   "message": "the settlement bot logged the index rebuild; the entry lives in the uptime register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-backup-register",
+    "cannot_tell",
+    "the-capacity-register",
+    "the-uptime-register"
+   ],
+   "answer": "the-uptime-register"
+  },
+  {
+   "id": "qual-hold-03-omitted",
+   "arm": "omitted",
+   "form": "retraction",
+   "message": "the settlement bot logged the index rebuild; the entry lives in an internal register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-backup-register",
+    "cannot_tell",
+    "the-capacity-register",
+    "the-uptime-register"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-04-stated",
+   "arm": "stated",
+   "form": "follow-up",
+   "message": "the reconcile daemon says the snapshot rotation is done; re-running the incident check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "cannot_tell",
+    "re-run-the-incident-check",
+    "re-run-the-audit-check",
+    "re-run-the-backup-check"
+   ],
+   "answer": "re-run-the-incident-check"
+  },
+  {
+   "id": "qual-hold-04-omitted",
+   "arm": "omitted",
+   "form": "follow-up",
+   "message": "the reconcile daemon says the snapshot rotation is done; re-running an internal check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "cannot_tell",
+    "re-run-the-incident-check",
+    "re-run-the-audit-check",
+    "re-run-the-backup-check"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-05-stated",
+   "arm": "stated",
+   "form": "verifier",
+   "message": "the digest service completed the retention purge. The record was checked against the billing ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "uptime-ledger",
+    "cannot_tell",
+    "incident-ledger",
+    "billing-ledger"
+   ],
+   "answer": "billing-ledger"
+  },
+  {
+   "id": "qual-hold-05-omitted",
+   "arm": "omitted",
+   "form": "verifier",
+   "message": "the digest service completed the retention purge. The record was checked against an internal ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "uptime-ledger",
+    "cannot_tell",
+    "incident-ledger",
+    "billing-ledger"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-06-stated",
+   "arm": "stated",
+   "form": "falsifier",
+   "message": "the mirror agent reports the capacity forecast finished. A later mismatch in the changelog record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "a-licence-mismatch",
+    "cannot_tell",
+    "a-audit-mismatch",
+    "a-changelog-mismatch"
+   ],
+   "answer": "a-changelog-mismatch"
+  },
+  {
+   "id": "qual-hold-06-omitted",
+   "arm": "omitted",
+   "form": "falsifier",
+   "message": "the mirror agent reports the capacity forecast finished. A later mismatch in an internal record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "a-licence-mismatch",
+    "cannot_tell",
+    "a-audit-mismatch",
+    "a-changelog-mismatch"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-07-stated",
+   "arm": "stated",
+   "form": "retraction",
+   "message": "the forecast job logged the ledger sweep; the entry lives in the billing register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-billing-register",
+    "the-changelog-register",
+    "cannot_tell",
+    "the-incident-register"
+   ],
+   "answer": "the-billing-register"
+  },
+  {
+   "id": "qual-hold-07-omitted",
+   "arm": "omitted",
+   "form": "retraction",
+   "message": "the forecast job logged the ledger sweep; the entry lives in an internal register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-billing-register",
+    "the-changelog-register",
+    "cannot_tell",
+    "the-incident-register"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-08-stated",
+   "arm": "stated",
+   "form": "follow-up",
+   "message": "the forecast job says the ledger sweep is done; re-running the incident check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-licence-check",
+    "re-run-the-rotation-check",
+    "cannot_tell",
+    "re-run-the-incident-check"
+   ],
+   "answer": "re-run-the-incident-check"
+  },
+  {
+   "id": "qual-hold-08-omitted",
+   "arm": "omitted",
+   "form": "follow-up",
+   "message": "the forecast job says the ledger sweep is done; re-running an internal check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-licence-check",
+    "re-run-the-rotation-check",
+    "cannot_tell",
+    "re-run-the-incident-check"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-09-stated",
+   "arm": "stated",
+   "form": "verifier",
+   "message": "the digest service completed the retention purge. The record was checked against the backup ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "cannot_tell",
+    "backup-ledger",
+    "retention-ledger",
+    "rotation-ledger"
+   ],
+   "answer": "backup-ledger"
+  },
+  {
+   "id": "qual-hold-09-omitted",
+   "arm": "omitted",
+   "form": "verifier",
+   "message": "the digest service completed the retention purge. The record was checked against an internal ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "cannot_tell",
+    "backup-ledger",
+    "retention-ledger",
+    "rotation-ledger"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-10-stated",
+   "arm": "stated",
+   "form": "falsifier",
+   "message": "the digest service reports the capacity forecast finished. A later mismatch in the rotation record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "a-rotation-mismatch",
+    "cannot_tell",
+    "a-audit-mismatch",
+    "a-licence-mismatch"
+   ],
+   "answer": "a-rotation-mismatch"
+  },
+  {
+   "id": "qual-hold-10-omitted",
+   "arm": "omitted",
+   "form": "falsifier",
+   "message": "the digest service reports the capacity forecast finished. A later mismatch in an internal record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "a-rotation-mismatch",
+    "cannot_tell",
+    "a-audit-mismatch",
+    "a-licence-mismatch"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-11-stated",
+   "arm": "stated",
+   "form": "retraction",
+   "message": "the forecast job logged the ledger sweep; the entry lives in the billing register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "cannot_tell",
+    "the-billing-register",
+    "the-audit-register",
+    "the-licence-register"
+   ],
+   "answer": "the-billing-register"
+  },
+  {
+   "id": "qual-hold-11-omitted",
+   "arm": "omitted",
+   "form": "retraction",
+   "message": "the forecast job logged the ledger sweep; the entry lives in an internal register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "cannot_tell",
+    "the-billing-register",
+    "the-audit-register",
+    "the-licence-register"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-hold-12-stated",
+   "arm": "stated",
+   "form": "follow-up",
+   "message": "the purge worker says the retention purge is done; re-running the capacity check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-capacity-check",
+    "re-run-the-backup-check",
+    "cannot_tell",
+    "re-run-the-quota-check"
+   ],
+   "answer": "re-run-the-capacity-check"
+  },
+  {
+   "id": "qual-hold-12-omitted",
+   "arm": "omitted",
+   "form": "follow-up",
+   "message": "the purge worker says the retention purge is done; re-running an internal check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-capacity-check",
+    "re-run-the-backup-check",
+    "cannot_tell",
+    "re-run-the-quota-check"
+   ],
+   "answer": "cannot_tell"
+  }
+ ]
+}

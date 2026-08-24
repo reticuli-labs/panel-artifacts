@@ -1,0 +1,344 @@
+{
+ "kind": "reticuli.reader-qualification.items.v1",
+ "purpose": "construct-blind reader qualification for the may-modal carrier (fresh; independent of Dexagon's burned holdout)",
+ "answer_protocol": "opaque-choice-v1",
+ "seed": 20260825,
+ "items": [
+  {
+   "id": "qual-dev-01-stated",
+   "arm": "stated",
+   "form": "verifier",
+   "message": "the triage agent completed the quota rebalance. The record was checked against the audit ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "inventory-ledger",
+    "cannot_tell",
+    "audit-ledger",
+    "quota-ledger"
+   ],
+   "answer": "audit-ledger"
+  },
+  {
+   "id": "qual-dev-01-omitted",
+   "arm": "omitted",
+   "form": "verifier",
+   "message": "the triage agent completed the quota rebalance. The record was checked against an internal ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "inventory-ledger",
+    "cannot_tell",
+    "audit-ledger",
+    "quota-ledger"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-02-stated",
+   "arm": "stated",
+   "form": "falsifier",
+   "message": "the triage agent reports the mirror refresh finished. A later mismatch in the backup record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "a-billing-mismatch",
+    "a-backup-mismatch",
+    "cannot_tell",
+    "a-audit-mismatch"
+   ],
+   "answer": "a-backup-mismatch"
+  },
+  {
+   "id": "qual-dev-02-omitted",
+   "arm": "omitted",
+   "form": "falsifier",
+   "message": "the triage agent reports the mirror refresh finished. A later mismatch in an internal record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "a-billing-mismatch",
+    "a-backup-mismatch",
+    "cannot_tell",
+    "a-audit-mismatch"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-03-stated",
+   "arm": "stated",
+   "form": "retraction",
+   "message": "the sync daemon logged the log rollover; the entry lives in the incident register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-licence-register",
+    "cannot_tell",
+    "the-incident-register",
+    "the-audit-register"
+   ],
+   "answer": "the-incident-register"
+  },
+  {
+   "id": "qual-dev-03-omitted",
+   "arm": "omitted",
+   "form": "retraction",
+   "message": "the sync daemon logged the log rollover; the entry lives in an internal register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-licence-register",
+    "cannot_tell",
+    "the-incident-register",
+    "the-audit-register"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-04-stated",
+   "arm": "stated",
+   "form": "follow-up",
+   "message": "the export job says the nightly reconciliation is done; re-running the incident check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-billing-check",
+    "cannot_tell",
+    "re-run-the-incident-check",
+    "re-run-the-capacity-check"
+   ],
+   "answer": "re-run-the-incident-check"
+  },
+  {
+   "id": "qual-dev-04-omitted",
+   "arm": "omitted",
+   "form": "follow-up",
+   "message": "the export job says the nightly reconciliation is done; re-running an internal check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-billing-check",
+    "cannot_tell",
+    "re-run-the-incident-check",
+    "re-run-the-capacity-check"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-05-stated",
+   "arm": "stated",
+   "form": "verifier",
+   "message": "the triage agent completed the shard compaction. The record was checked against the licence ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "incident-ledger",
+    "audit-ledger",
+    "cannot_tell",
+    "licence-ledger"
+   ],
+   "answer": "licence-ledger"
+  },
+  {
+   "id": "qual-dev-05-omitted",
+   "arm": "omitted",
+   "form": "verifier",
+   "message": "the triage agent completed the shard compaction. The record was checked against an internal ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "incident-ledger",
+    "audit-ledger",
+    "cannot_tell",
+    "licence-ledger"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-06-stated",
+   "arm": "stated",
+   "form": "falsifier",
+   "message": "the archive worker reports the log rollover finished. A later mismatch in the rotation record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "cannot_tell",
+    "a-billing-mismatch",
+    "a-rotation-mismatch",
+    "a-retention-mismatch"
+   ],
+   "answer": "a-rotation-mismatch"
+  },
+  {
+   "id": "qual-dev-06-omitted",
+   "arm": "omitted",
+   "form": "falsifier",
+   "message": "the archive worker reports the log rollover finished. A later mismatch in an internal record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "cannot_tell",
+    "a-billing-mismatch",
+    "a-rotation-mismatch",
+    "a-retention-mismatch"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-07-stated",
+   "arm": "stated",
+   "form": "retraction",
+   "message": "the triage agent logged the nightly reconciliation; the entry lives in the uptime register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-audit-register",
+    "the-capacity-register",
+    "cannot_tell",
+    "the-uptime-register"
+   ],
+   "answer": "the-uptime-register"
+  },
+  {
+   "id": "qual-dev-07-omitted",
+   "arm": "omitted",
+   "form": "retraction",
+   "message": "the triage agent logged the nightly reconciliation; the entry lives in an internal register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-audit-register",
+    "the-capacity-register",
+    "cannot_tell",
+    "the-uptime-register"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-08-stated",
+   "arm": "stated",
+   "form": "follow-up",
+   "message": "the export job says the log rollover is done; re-running the capacity check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-uptime-check",
+    "cannot_tell",
+    "re-run-the-capacity-check",
+    "re-run-the-incident-check"
+   ],
+   "answer": "re-run-the-capacity-check"
+  },
+  {
+   "id": "qual-dev-08-omitted",
+   "arm": "omitted",
+   "form": "follow-up",
+   "message": "the export job says the log rollover is done; re-running an internal check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-uptime-check",
+    "cannot_tell",
+    "re-run-the-capacity-check",
+    "re-run-the-incident-check"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-09-stated",
+   "arm": "stated",
+   "form": "verifier",
+   "message": "the triage agent completed the certificate renewal. The record was checked against the retention ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "billing-ledger",
+    "cannot_tell",
+    "incident-ledger",
+    "retention-ledger"
+   ],
+   "answer": "retention-ledger"
+  },
+  {
+   "id": "qual-dev-09-omitted",
+   "arm": "omitted",
+   "form": "verifier",
+   "message": "the triage agent completed the certificate renewal. The record was checked against an internal ledger.",
+   "question": "Which source verifies the message's claim?",
+   "options": [
+    "billing-ledger",
+    "cannot_tell",
+    "incident-ledger",
+    "retention-ledger"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-10-stated",
+   "arm": "stated",
+   "form": "falsifier",
+   "message": "the renewal service reports the shard compaction finished. A later mismatch in the audit record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "a-uptime-mismatch",
+    "a-incident-mismatch",
+    "cannot_tell",
+    "a-audit-mismatch"
+   ],
+   "answer": "a-audit-mismatch"
+  },
+  {
+   "id": "qual-dev-10-omitted",
+   "arm": "omitted",
+   "form": "falsifier",
+   "message": "the renewal service reports the shard compaction finished. A later mismatch in an internal record would contradict this.",
+   "question": "Which later finding would falsify the message?",
+   "options": [
+    "a-uptime-mismatch",
+    "a-incident-mismatch",
+    "cannot_tell",
+    "a-audit-mismatch"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-11-stated",
+   "arm": "stated",
+   "form": "retraction",
+   "message": "the renewal service logged the shard compaction; the entry lives in the backup register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-retention-register",
+    "cannot_tell",
+    "the-changelog-register",
+    "the-backup-register"
+   ],
+   "answer": "the-backup-register"
+  },
+  {
+   "id": "qual-dev-11-omitted",
+   "arm": "omitted",
+   "form": "retraction",
+   "message": "the renewal service logged the shard compaction; the entry lives in an internal register.",
+   "question": "If the message is retracted, which record changes?",
+   "options": [
+    "the-retention-register",
+    "cannot_tell",
+    "the-changelog-register",
+    "the-backup-register"
+   ],
+   "answer": "cannot_tell"
+  },
+  {
+   "id": "qual-dev-12-stated",
+   "arm": "stated",
+   "form": "follow-up",
+   "message": "the renewal service says the log rollover is done; re-running the capacity check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-backup-check",
+    "re-run-the-capacity-check",
+    "re-run-the-rotation-check",
+    "cannot_tell"
+   ],
+   "answer": "re-run-the-capacity-check"
+  },
+  {
+   "id": "qual-dev-12-omitted",
+   "arm": "omitted",
+   "form": "follow-up",
+   "message": "the renewal service says the log rollover is done; re-running an internal check would test it.",
+   "question": "Which operational follow-up tests the message?",
+   "options": [
+    "re-run-the-backup-check",
+    "re-run-the-capacity-check",
+    "re-run-the-rotation-check",
+    "cannot_tell"
+   ],
+   "answer": "cannot_tell"
+  }
+ ]
+}
