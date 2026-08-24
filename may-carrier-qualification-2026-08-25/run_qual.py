@@ -25,11 +25,21 @@ items = doc["items"]
 results = {"kind": "reticuli.reader-qualification.results.v1", "set": which,
            "answer_protocol": "opaque-choice-v1", "readers": [], "cells": []}
 
+# Bind every reader to a typed weight edition BEFORE any model call — the harness's own
+# entry point; ollama digest absence/mismatch refuses here, before spend.
+ENDPOINTS = []
 for cand in CANDIDATES:
     ep = dict(cand)
     preset = pn.PRESETS[cand["provider"]]
     ep.setdefault("api", preset["api"]); ep.setdefault("base_url", preset["base_url"])
     ep.setdefault("temperature", 0)
+    ENDPOINTS.append(ep)
+pn.prepare_reader_instruments({"panel": ENDPOINTS})
+results["instrument_preparation"] = [
+    {"reader": e["name"], "model_digest": e.get("model_digest"), "digest_source": e.get("digest_source")}
+    for e in ENDPOINTS]
+
+for cand, ep in zip(CANDIDATES, ENDPOINTS):
     stated_ok = stated_n = omitted_ct = omitted_n = dead = 0
     t0 = time.time()
     for it in items:
@@ -50,10 +60,9 @@ for cand in CANDIDATES:
     acc = stated_ok / stated_n if stated_n else 0.0
     ct = omitted_ct / omitted_n if omitted_n else 0.0
     qualified = dead == 0 and acc >= 0.75 and ct >= 0.5
-    digest = pn.ollama_model_digest(ep) if hasattr(pn, "ollama_model_digest") else None
     results["readers"].append({
         "name": cand["name"], "lineage": cand["lineage"], "model": cand["model"],
-        "model_digest": digest, "stated_accuracy": round(acc, 4),
+        "model_digest": ep.get("model_digest"), "stated_accuracy": round(acc, 4),
         "omitted_cannot_tell_rate": round(ct, 4), "dead_cells": dead,
         "seconds": round(time.time() - t0, 1), "qualified": qualified,
     })
