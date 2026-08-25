@@ -1,0 +1,2136 @@
+{
+ "kind": "ainglish.panel.items.v1",
+ "proposal": "some-or-all-some-but-not-all-does-some-leave-room-for-all-2",
+ "form": "some-or-all",
+ "baseline": "complete_careful_english",
+ "scope_note": "some-or-all form only; two independent probes encoded as separate items (joint recovery derivable from scenario strata); bare-'some' descriptive arm omitted — declared operationalization of the contract within a two-arm harness",
+ "real_items": 96,
+ "calibration_items": 12,
+ "items": [
+  {
+   "id": "cal-soa-01",
+   "calibration": true,
+   "english": "the incident retro lists 4 tests; how many tests failed is not stated.",
+   "ainglish": "the incident retro lists 4 tests; exactly one of the tests failed.",
+   "question": "Would the message be contradicted if none of the tests failed?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-02",
+   "calibration": true,
+   "english": "the cluster page shows 8 replicas; how many replicas lagged behind the primary is not stated.",
+   "ainglish": "the cluster page shows 8 replicas; exactly one of the replicas lagged behind the primary.",
+   "question": "Would the message be contradicted if none of the replicas lagged behind the primary?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-03",
+   "calibration": true,
+   "english": "the audit covers 6 service accounts; how many service accounts held the write scope is not stated.",
+   "ainglish": "the audit covers 6 service accounts; exactly one of the service accounts held the write scope.",
+   "question": "Would the message be contradicted if none of the service accounts held the write scope?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-04",
+   "calibration": true,
+   "english": "the mailing report covers 5 recipients; how many recipients opened the digest is not stated.",
+   "ainglish": "the mailing report covers 5 recipients; exactly one of the recipients opened the digest.",
+   "question": "Would the message be contradicted if none of the recipients opened the digest?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-05",
+   "calibration": true,
+   "english": "the pager summary lists 5 alerts; how many alerts resolved automatically is not stated.",
+   "ainglish": "the pager summary lists 5 alerts; exactly one of the alerts resolved automatically.",
+   "question": "Would the message be contradicted if none of the alerts resolved automatically?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-06",
+   "calibration": true,
+   "english": "the storage sheet lists 8 mirrors; how many mirrors carried the latest snapshot is not stated.",
+   "ainglish": "the storage sheet lists 8 mirrors; exactly one of the mirrors carried the latest snapshot.",
+   "question": "Would the message be contradicted if none of the mirrors carried the latest snapshot?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-07",
+   "calibration": true,
+   "english": "the invitation list has 6 guests; how many guests confirmed attendance is not stated.",
+   "ainglish": "the invitation list has 6 guests; exactly one of the guests confirmed attendance.",
+   "question": "Would the message be contradicted if none of the guests confirmed attendance?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-08",
+   "calibration": true,
+   "english": "the vault index lists 4 archives; how many archives passed verification is not stated.",
+   "ainglish": "the vault index lists 4 archives; exactly one of the archives passed verification.",
+   "question": "Would the message be contradicted if none of the archives passed verification?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-09",
+   "calibration": true,
+   "english": "the incident retro lists 4 tests; how many tests failed is not stated.",
+   "ainglish": "the incident retro lists 4 tests; exactly one of the tests failed.",
+   "question": "Would the message be contradicted if none of the tests failed?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-10",
+   "calibration": true,
+   "english": "the cluster page shows 6 replicas; how many replicas lagged behind the primary is not stated.",
+   "ainglish": "the cluster page shows 6 replicas; exactly one of the replicas lagged behind the primary.",
+   "question": "Would the message be contradicted if none of the replicas lagged behind the primary?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-11",
+   "calibration": true,
+   "english": "the audit covers 6 service accounts; how many service accounts held the write scope is not stated.",
+   "ainglish": "the audit covers 6 service accounts; exactly one of the service accounts held the write scope.",
+   "question": "Would the message be contradicted if none of the service accounts held the write scope?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "cal-soa-12",
+   "calibration": true,
+   "english": "the mailing report covers 8 recipients; how many recipients opened the digest is not stated.",
+   "ainglish": "the mailing report covers 8 recipients; exactly one of the recipients opened the digest.",
+   "question": "Would the message be contradicted if none of the recipients opened the digest?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "control": "construct_free_planted_effect",
+    "form": "some-or-all"
+   }
+  },
+  {
+   "id": "real-soa-001",
+   "english": "the incident retro lists 7 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 7 tests. some-or-all tests failed.",
+   "question": "Would the message be contradicted if none of the tests failed?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s01",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-002",
+   "english": "the incident retro lists 7 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 7 tests. some-or-all tests failed.",
+   "question": "Could the message still be true if none of the tests failed?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s01",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-003",
+   "english": "the incident retro lists 7 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 7 tests. some-or-all tests failed.",
+   "question": "Does the message require that at least one of the tests did not fail?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s01",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-004",
+   "english": "the incident retro lists 7 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 7 tests. some-or-all tests failed.",
+   "question": "Is the message compatible with every one of the tests having failed?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s01",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-005",
+   "english": "the cluster page shows 9 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 9 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Would the message be contradicted if none of the replicas lagged behind the primary?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s02",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-006",
+   "english": "the cluster page shows 9 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 9 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Could the message still be true if none of the replicas lagged behind the primary?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s02",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-007",
+   "english": "the cluster page shows 9 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 9 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Does the message require that at least one of the replicas did not lag behind the primary?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s02",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-008",
+   "english": "the cluster page shows 9 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 9 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Is the message compatible with every one of the replicas having lagged behind the primary?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s02",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-009",
+   "english": "the audit covers 3 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 3 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Would the message be contradicted if none of the service accounts held the write scope?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s03",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-010",
+   "english": "the audit covers 3 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 3 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Could the message still be true if none of the service accounts held the write scope?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s03",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-011",
+   "english": "the audit covers 3 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 3 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Does the message require that at least one of the service accounts did not hold the write scope?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s03",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-012",
+   "english": "the audit covers 3 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 3 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Is the message compatible with every one of the service accounts having held the write scope?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s03",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-013",
+   "english": "the mailing report covers 6 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 6 recipients. some-or-all recipients opened the digest.",
+   "question": "Would the message be contradicted if none of the recipients opened the digest?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s04",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-014",
+   "english": "the mailing report covers 6 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 6 recipients. some-or-all recipients opened the digest.",
+   "question": "Could the message still be true if none of the recipients opened the digest?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s04",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-015",
+   "english": "the mailing report covers 6 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 6 recipients. some-or-all recipients opened the digest.",
+   "question": "Does the message require that at least one of the recipients did not open the digest?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s04",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-016",
+   "english": "the mailing report covers 6 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 6 recipients. some-or-all recipients opened the digest.",
+   "question": "Is the message compatible with every one of the recipients having opened the digest?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s04",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-017",
+   "english": "the pager summary lists 4 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 4 alerts. some-or-all alerts resolved automatically.",
+   "question": "Would the message be contradicted if none of the alerts resolved automatically?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s05",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-018",
+   "english": "the pager summary lists 4 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 4 alerts. some-or-all alerts resolved automatically.",
+   "question": "Could the message still be true if none of the alerts resolved automatically?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s05",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-019",
+   "english": "the pager summary lists 4 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 4 alerts. some-or-all alerts resolved automatically.",
+   "question": "Does the message require that at least one of the alerts did not resolve automatically?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s05",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-020",
+   "english": "the pager summary lists 4 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 4 alerts. some-or-all alerts resolved automatically.",
+   "question": "Is the message compatible with every one of the alerts having resolved automatically?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s05",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-021",
+   "english": "the storage sheet lists 3 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 3 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Would the message be contradicted if none of the mirrors carried the latest snapshot?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s06",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-022",
+   "english": "the storage sheet lists 3 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 3 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Could the message still be true if none of the mirrors carried the latest snapshot?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s06",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-023",
+   "english": "the storage sheet lists 3 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 3 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Does the message require that at least one of the mirrors did not carry the latest snapshot?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s06",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-024",
+   "english": "the storage sheet lists 3 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 3 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Is the message compatible with every one of the mirrors having carried the latest snapshot?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s06",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-025",
+   "english": "the invitation list has 4 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 4 guests. some-or-all guests confirmed attendance.",
+   "question": "Would the message be contradicted if none of the guests confirmed attendance?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s07",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-026",
+   "english": "the invitation list has 4 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 4 guests. some-or-all guests confirmed attendance.",
+   "question": "Could the message still be true if none of the guests confirmed attendance?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s07",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-027",
+   "english": "the invitation list has 4 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 4 guests. some-or-all guests confirmed attendance.",
+   "question": "Does the message require that at least one of the guests did not confirm attendance?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s07",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-028",
+   "english": "the invitation list has 4 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 4 guests. some-or-all guests confirmed attendance.",
+   "question": "Is the message compatible with every one of the guests having confirmed attendance?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s07",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-029",
+   "english": "the vault index lists 9 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 9 archives. some-or-all archives passed verification.",
+   "question": "Would the message be contradicted if none of the archives passed verification?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s08",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-030",
+   "english": "the vault index lists 9 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 9 archives. some-or-all archives passed verification.",
+   "question": "Could the message still be true if none of the archives passed verification?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s08",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-031",
+   "english": "the vault index lists 9 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 9 archives. some-or-all archives passed verification.",
+   "question": "Does the message require that at least one of the archives did not pass verification?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s08",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-032",
+   "english": "the vault index lists 9 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 9 archives. some-or-all archives passed verification.",
+   "question": "Is the message compatible with every one of the archives having passed verification?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s08",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-033",
+   "english": "the incident retro lists 3 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 3 tests. some-or-all tests failed.",
+   "question": "Would the message be contradicted if none of the tests failed?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s09",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-034",
+   "english": "the incident retro lists 3 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 3 tests. some-or-all tests failed.",
+   "question": "Could the message still be true if none of the tests failed?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s09",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-035",
+   "english": "the incident retro lists 3 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 3 tests. some-or-all tests failed.",
+   "question": "Does the message require that at least one of the tests did not fail?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s09",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-036",
+   "english": "the incident retro lists 3 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 3 tests. some-or-all tests failed.",
+   "question": "Is the message compatible with every one of the tests having failed?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s09",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-037",
+   "english": "the cluster page shows 6 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 6 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Would the message be contradicted if none of the replicas lagged behind the primary?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s10",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-038",
+   "english": "the cluster page shows 6 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 6 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Could the message still be true if none of the replicas lagged behind the primary?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s10",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-039",
+   "english": "the cluster page shows 6 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 6 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Does the message require that at least one of the replicas did not lag behind the primary?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s10",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-040",
+   "english": "the cluster page shows 6 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 6 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Is the message compatible with every one of the replicas having lagged behind the primary?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s10",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-041",
+   "english": "the audit covers 3 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 3 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Would the message be contradicted if none of the service accounts held the write scope?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s11",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-042",
+   "english": "the audit covers 3 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 3 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Could the message still be true if none of the service accounts held the write scope?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s11",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-043",
+   "english": "the audit covers 3 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 3 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Does the message require that at least one of the service accounts did not hold the write scope?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s11",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-044",
+   "english": "the audit covers 3 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 3 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Is the message compatible with every one of the service accounts having held the write scope?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s11",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-045",
+   "english": "the mailing report covers 5 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 5 recipients. some-or-all recipients opened the digest.",
+   "question": "Would the message be contradicted if none of the recipients opened the digest?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s12",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-046",
+   "english": "the mailing report covers 5 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 5 recipients. some-or-all recipients opened the digest.",
+   "question": "Could the message still be true if none of the recipients opened the digest?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s12",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-047",
+   "english": "the mailing report covers 5 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 5 recipients. some-or-all recipients opened the digest.",
+   "question": "Does the message require that at least one of the recipients did not open the digest?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s12",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-048",
+   "english": "the mailing report covers 5 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 5 recipients. some-or-all recipients opened the digest.",
+   "question": "Is the message compatible with every one of the recipients having opened the digest?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s12",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-049",
+   "english": "the pager summary lists 7 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 7 alerts. some-or-all alerts resolved automatically.",
+   "question": "Would the message be contradicted if none of the alerts resolved automatically?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s13",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-050",
+   "english": "the pager summary lists 7 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 7 alerts. some-or-all alerts resolved automatically.",
+   "question": "Could the message still be true if none of the alerts resolved automatically?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s13",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-051",
+   "english": "the pager summary lists 7 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 7 alerts. some-or-all alerts resolved automatically.",
+   "question": "Does the message require that at least one of the alerts did not resolve automatically?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s13",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-052",
+   "english": "the pager summary lists 7 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 7 alerts. some-or-all alerts resolved automatically.",
+   "question": "Is the message compatible with every one of the alerts having resolved automatically?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s13",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-053",
+   "english": "the storage sheet lists 4 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 4 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Would the message be contradicted if none of the mirrors carried the latest snapshot?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s14",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-054",
+   "english": "the storage sheet lists 4 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 4 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Could the message still be true if none of the mirrors carried the latest snapshot?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s14",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-055",
+   "english": "the storage sheet lists 4 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 4 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Does the message require that at least one of the mirrors did not carry the latest snapshot?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s14",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-056",
+   "english": "the storage sheet lists 4 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 4 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Is the message compatible with every one of the mirrors having carried the latest snapshot?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s14",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-057",
+   "english": "the invitation list has 6 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 6 guests. some-or-all guests confirmed attendance.",
+   "question": "Would the message be contradicted if none of the guests confirmed attendance?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s15",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-058",
+   "english": "the invitation list has 6 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 6 guests. some-or-all guests confirmed attendance.",
+   "question": "Could the message still be true if none of the guests confirmed attendance?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s15",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-059",
+   "english": "the invitation list has 6 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 6 guests. some-or-all guests confirmed attendance.",
+   "question": "Does the message require that at least one of the guests did not confirm attendance?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s15",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-060",
+   "english": "the invitation list has 6 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 6 guests. some-or-all guests confirmed attendance.",
+   "question": "Is the message compatible with every one of the guests having confirmed attendance?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s15",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-061",
+   "english": "the vault index lists 9 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 9 archives. some-or-all archives passed verification.",
+   "question": "Would the message be contradicted if none of the archives passed verification?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s16",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-062",
+   "english": "the vault index lists 9 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 9 archives. some-or-all archives passed verification.",
+   "question": "Could the message still be true if none of the archives passed verification?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s16",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-063",
+   "english": "the vault index lists 9 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 9 archives. some-or-all archives passed verification.",
+   "question": "Does the message require that at least one of the archives did not pass verification?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s16",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-064",
+   "english": "the vault index lists 9 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 9 archives. some-or-all archives passed verification.",
+   "question": "Is the message compatible with every one of the archives having passed verification?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s16",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-065",
+   "english": "the incident retro lists 6 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 6 tests. some-or-all tests failed.",
+   "question": "Would the message be contradicted if none of the tests failed?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s17",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-066",
+   "english": "the incident retro lists 6 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 6 tests. some-or-all tests failed.",
+   "question": "Could the message still be true if none of the tests failed?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s17",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-067",
+   "english": "the incident retro lists 6 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 6 tests. some-or-all tests failed.",
+   "question": "Does the message require that at least one of the tests did not fail?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s17",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-068",
+   "english": "the incident retro lists 6 tests. At least one of the tests failed, and every one of the tests may have failed.",
+   "ainglish": "the incident retro lists 6 tests. some-or-all tests failed.",
+   "question": "Is the message compatible with every one of the tests having failed?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s17",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "incident tests"
+   }
+  },
+  {
+   "id": "real-soa-069",
+   "english": "the cluster page shows 5 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 5 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Would the message be contradicted if none of the replicas lagged behind the primary?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s18",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-070",
+   "english": "the cluster page shows 5 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 5 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Could the message still be true if none of the replicas lagged behind the primary?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s18",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-071",
+   "english": "the cluster page shows 5 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 5 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Does the message require that at least one of the replicas did not lag behind the primary?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s18",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-072",
+   "english": "the cluster page shows 5 replicas. At least one of the replicas lagged behind the primary, and every one of the replicas may have lagged behind the primary.",
+   "ainglish": "the cluster page shows 5 replicas. some-or-all replicas lagged behind the primary.",
+   "question": "Is the message compatible with every one of the replicas having lagged behind the primary?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s18",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "replicas"
+   }
+  },
+  {
+   "id": "real-soa-073",
+   "english": "the audit covers 9 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 9 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Would the message be contradicted if none of the service accounts held the write scope?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s19",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-074",
+   "english": "the audit covers 9 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 9 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Could the message still be true if none of the service accounts held the write scope?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s19",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-075",
+   "english": "the audit covers 9 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 9 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Does the message require that at least one of the service accounts did not hold the write scope?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s19",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-076",
+   "english": "the audit covers 9 service accounts. At least one of the service accounts held the write scope, and every one of the service accounts may have held the write scope.",
+   "ainglish": "the audit covers 9 service accounts. some-or-all service accounts held the write scope.",
+   "question": "Is the message compatible with every one of the service accounts having held the write scope?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s19",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "permissions"
+   }
+  },
+  {
+   "id": "real-soa-077",
+   "english": "the mailing report covers 3 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 3 recipients. some-or-all recipients opened the digest.",
+   "question": "Would the message be contradicted if none of the recipients opened the digest?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s20",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-078",
+   "english": "the mailing report covers 3 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 3 recipients. some-or-all recipients opened the digest.",
+   "question": "Could the message still be true if none of the recipients opened the digest?",
+   "options": [
+    "yes",
+    "cannot_tell",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s20",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-079",
+   "english": "the mailing report covers 3 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 3 recipients. some-or-all recipients opened the digest.",
+   "question": "Does the message require that at least one of the recipients did not open the digest?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s20",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-080",
+   "english": "the mailing report covers 3 recipients. At least one of the recipients opened the digest, and every one of the recipients may have opened the digest.",
+   "ainglish": "the mailing report covers 3 recipients. some-or-all recipients opened the digest.",
+   "question": "Is the message compatible with every one of the recipients having opened the digest?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s20",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "recipients"
+   }
+  },
+  {
+   "id": "real-soa-081",
+   "english": "the pager summary lists 5 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 5 alerts. some-or-all alerts resolved automatically.",
+   "question": "Would the message be contradicted if none of the alerts resolved automatically?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s21",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-082",
+   "english": "the pager summary lists 5 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 5 alerts. some-or-all alerts resolved automatically.",
+   "question": "Could the message still be true if none of the alerts resolved automatically?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s21",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-083",
+   "english": "the pager summary lists 5 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 5 alerts. some-or-all alerts resolved automatically.",
+   "question": "Does the message require that at least one of the alerts did not resolve automatically?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s21",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-084",
+   "english": "the pager summary lists 5 alerts. At least one of the alerts resolved automatically, and every one of the alerts may have resolved automatically.",
+   "ainglish": "the pager summary lists 5 alerts. some-or-all alerts resolved automatically.",
+   "question": "Is the message compatible with every one of the alerts having resolved automatically?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s21",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "alerts"
+   }
+  },
+  {
+   "id": "real-soa-085",
+   "english": "the storage sheet lists 3 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 3 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Would the message be contradicted if none of the mirrors carried the latest snapshot?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s22",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-086",
+   "english": "the storage sheet lists 3 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 3 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Could the message still be true if none of the mirrors carried the latest snapshot?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s22",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-087",
+   "english": "the storage sheet lists 3 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 3 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Does the message require that at least one of the mirrors did not carry the latest snapshot?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s22",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-088",
+   "english": "the storage sheet lists 3 mirrors. At least one of the mirrors carried the latest snapshot, and every one of the mirrors may have carried the latest snapshot.",
+   "ainglish": "the storage sheet lists 3 mirrors. some-or-all mirrors carried the latest snapshot.",
+   "question": "Is the message compatible with every one of the mirrors having carried the latest snapshot?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s22",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "inventory"
+   }
+  },
+  {
+   "id": "real-soa-089",
+   "english": "the invitation list has 5 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 5 guests. some-or-all guests confirmed attendance.",
+   "question": "Would the message be contradicted if none of the guests confirmed attendance?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s23",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-090",
+   "english": "the invitation list has 5 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 5 guests. some-or-all guests confirmed attendance.",
+   "question": "Could the message still be true if none of the guests confirmed attendance?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s23",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-091",
+   "english": "the invitation list has 5 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 5 guests. some-or-all guests confirmed attendance.",
+   "question": "Does the message require that at least one of the guests did not confirm attendance?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s23",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-092",
+   "english": "the invitation list has 5 guests. At least one of the guests confirmed attendance, and every one of the guests may have confirmed attendance.",
+   "ainglish": "the invitation list has 5 guests. some-or-all guests confirmed attendance.",
+   "question": "Is the message compatible with every one of the guests having confirmed attendance?",
+   "options": [
+    "cannot_tell",
+    "no",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s23",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "all",
+    "domain": "human situations"
+   }
+  },
+  {
+   "id": "real-soa-093",
+   "english": "the vault index lists 3 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 3 archives. some-or-all archives passed verification.",
+   "question": "Would the message be contradicted if none of the archives passed verification?",
+   "options": [
+    "no",
+    "cannot_tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s24",
+    "probe": "lower",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-094",
+   "english": "the vault index lists 3 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 3 archives. some-or-all archives passed verification.",
+   "question": "Could the message still be true if none of the archives passed verification?",
+   "options": [
+    "yes",
+    "no",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s24",
+    "probe": "lower",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-095",
+   "english": "the vault index lists 3 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 3 archives. some-or-all archives passed verification.",
+   "question": "Does the message require that at least one of the archives did not pass verification?",
+   "options": [
+    "no",
+    "yes",
+    "cannot_tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s24",
+    "probe": "upper",
+    "polarity": "direct",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  },
+  {
+   "id": "real-soa-096",
+   "english": "the vault index lists 3 archives. At least one of the archives passed verification, and every one of the archives may have passed verification.",
+   "ainglish": "the vault index lists 3 archives. some-or-all archives passed verification.",
+   "question": "Is the message compatible with every one of the archives having passed verification?",
+   "options": [
+    "cannot_tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes",
+   "strata": {
+    "form": "some-or-all",
+    "scenario": "s24",
+    "probe": "upper",
+    "polarity": "negated",
+    "described_world": "some",
+    "domain": "backups"
+   }
+  }
+ ],
+ "sha256": "595ffdd87961a5ec53806e94f4a332583d0d55511c13eedd410017134c044053"
+}
