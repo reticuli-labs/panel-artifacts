@@ -4,29 +4,11 @@
  "form": "<DIRECTIVE>, this-once | <DIRECTIVE>, from-now-on",
  "comparator": "careful",
  "baseline": "shortest_adequate_careful_control",
- "scope_note": "Pre-registered design as amended in review (Excelsior 2026-08-25): two hidden-intent worlds over a byte-identical bare directive; later work at four attachment distances (retry of the same task / different artifact same session / next session same person / different person). Probe 1 = six-way STORAGE TARGET (a property of the directive: this-once -> task-local state, from-now-on -> project memory, never global preference); the flagship binary 'survives this task or not' is derived from it and attachment stays visible. Probe 2 = does the directive govern the work now (varies with attachment). Comparators run separately: careful = ', just this once' / ', from now on' [CARRIER]; bare = the untagged directive [descriptive]. Calibration: bare English (persistence undeterminable) vs the tagged form. Forms reported separately.",
+ "scope_note": "Pre-registered design as amended in review (Excelsior 2026-08-25): two hidden-intent worlds over a byte-identical bare directive; later work at four attachment distances (retry of the same task / different artifact same session / next session same person / different person). Probe 1 = six-way STORAGE TARGET (a property of the directive: this-once -> task-local state, from-now-on -> project memory, never global preference); the flagship binary 'survives this task or not' is derived from it and attachment stays visible. Probe 2 = does the directive govern the work now (varies with attachment). Comparators run separately: careful = ', just this once' / ', from now on' [CARRIER]; bare = the untagged directive [descriptive]. Calibration: bare English (persistence undeterminable) vs the tagged form. Forms reported separately. DESIGN v2 (2026-08-26, Saturnia's review): the CLAIM is scored on applicability only (probe 2: does the directive govern the work now?) over 80 core items plus 60 discordant-stratum items — storage-forbidden (standing stays binding where retention policy forbids saving), audit-required (one-off stays one-off where every instruction is logged), project-scope (same person, different project: from-now-on is project-scoped, so no). The six-way storage-target probe is split out as items-storage-diag-*.json, a diagnostic that is never the claim. Positive control v2: both arms careful, opposite forms, opposite keys.",
  "real_items": 160,
  "calibration_items": 8,
- "sha256": "304978d0fffa57e48f30fd8c8d92efecf71d4703d23b2d0c29961e72aa4c5b62",
+ "sha256": "9cad1813de2acd89356a90adf9cc48098473a9968a01b8c2aaa8cd8ddee11013",
  "items": [
-  {
-   "id": "to-car-once-001q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
   {
    "id": "to-car-once-001q2",
    "form": "once",
@@ -41,24 +23,6 @@
     "cannot tell"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-002q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-002q2",
@@ -76,24 +40,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-003q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, just this once.\" You are now editing a second, unrelated document for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" You are now editing a second, unrelated document for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-003q2",
    "form": "once",
    "later": "artifact",
@@ -107,24 +53,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-004q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from now on.\" You are now editing a second, unrelated document for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" You are now editing a second, unrelated document for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-004q2",
@@ -142,24 +70,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-005q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, just this once.\" A new session starts the next day; the same person asks for a comparable document.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" A new session starts the next day; the same person asks for a comparable document.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-005q2",
    "form": "once",
    "later": "session",
@@ -173,24 +83,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-006q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from now on.\" A new session starts the next day; the same person asks for a comparable document.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A new session starts the next day; the same person asks for a comparable document.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-006q2",
@@ -208,24 +100,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-007q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, just this once.\" A different person, in a different project, asks for a comparable document.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" A different person, in a different project, asks for a comparable document.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-007q2",
    "form": "once",
    "later": "user",
@@ -239,24 +113,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-008q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from now on.\" A different person, in a different project, asks for a comparable document.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A different person, in a different project, asks for a comparable document.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-008q2",
@@ -274,24 +130,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-009q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-009q2",
    "form": "once",
    "later": "retry",
@@ -305,24 +143,6 @@
     "no"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-010q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-010q2",
@@ -340,24 +160,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-011q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, just this once.\" You are now editing a second, unrelated branch for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" You are now editing a second, unrelated branch for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-011q2",
    "form": "once",
    "later": "artifact",
@@ -371,24 +173,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-012q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from now on.\" You are now editing a second, unrelated branch for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" You are now editing a second, unrelated branch for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-012q2",
@@ -406,24 +190,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-013q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, just this once.\" A new session starts the next day; the same person asks for a comparable branch.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" A new session starts the next day; the same person asks for a comparable branch.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-013q2",
    "form": "once",
    "later": "session",
@@ -437,24 +203,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-014q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from now on.\" A new session starts the next day; the same person asks for a comparable branch.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A new session starts the next day; the same person asks for a comparable branch.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-014q2",
@@ -472,24 +220,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-015q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, just this once.\" A different person, in a different project, asks for a comparable branch.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" A different person, in a different project, asks for a comparable branch.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-015q2",
    "form": "once",
    "later": "user",
@@ -503,24 +233,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-016q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from now on.\" A different person, in a different project, asks for a comparable branch.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A different person, in a different project, asks for a comparable branch.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-016q2",
@@ -538,24 +250,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-017q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-017q2",
    "form": "once",
    "later": "retry",
@@ -569,24 +263,6 @@
     "yes"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-018q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-018q2",
@@ -604,24 +280,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-019q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, just this once.\" You are now editing a second, unrelated release for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" You are now editing a second, unrelated release for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-019q2",
    "form": "once",
    "later": "artifact",
@@ -635,24 +293,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-020q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from now on.\" You are now editing a second, unrelated release for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" You are now editing a second, unrelated release for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-020q2",
@@ -670,24 +310,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-021q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, just this once.\" A new session starts the next day; the same person asks for a comparable release.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" A new session starts the next day; the same person asks for a comparable release.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-021q2",
    "form": "once",
    "later": "session",
@@ -701,24 +323,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-022q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from now on.\" A new session starts the next day; the same person asks for a comparable release.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" A new session starts the next day; the same person asks for a comparable release.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-022q2",
@@ -736,24 +340,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-023q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, just this once.\" A different person, in a different project, asks for a comparable release.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" A different person, in a different project, asks for a comparable release.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-023q2",
    "form": "once",
    "later": "user",
@@ -767,24 +353,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-024q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from now on.\" A different person, in a different project, asks for a comparable release.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" A different person, in a different project, asks for a comparable release.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-024q2",
@@ -802,24 +370,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-025q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-025q2",
    "form": "once",
    "later": "retry",
@@ -833,24 +383,6 @@
     "cannot tell"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-026q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-026q2",
@@ -868,24 +400,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-027q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, just this once.\" You are now editing a second, unrelated review for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" You are now editing a second, unrelated review for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-027q2",
    "form": "once",
    "later": "artifact",
@@ -899,24 +413,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-028q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from now on.\" You are now editing a second, unrelated review for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are now editing a second, unrelated review for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-028q2",
@@ -934,24 +430,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-029q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, just this once.\" A new session starts the next day; the same person asks for a comparable review.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A new session starts the next day; the same person asks for a comparable review.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-029q2",
    "form": "once",
    "later": "session",
@@ -965,24 +443,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-030q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from now on.\" A new session starts the next day; the same person asks for a comparable review.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" A new session starts the next day; the same person asks for a comparable review.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-030q2",
@@ -1000,24 +460,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-031q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, just this once.\" A different person, in a different project, asks for a comparable review.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A different person, in a different project, asks for a comparable review.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-031q2",
    "form": "once",
    "later": "user",
@@ -1031,24 +473,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-032q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from now on.\" A different person, in a different project, asks for a comparable review.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" A different person, in a different project, asks for a comparable review.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-032q2",
@@ -1066,24 +490,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-033q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-033q2",
    "form": "once",
    "later": "retry",
@@ -1097,24 +503,6 @@
     "no"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-034q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-034q2",
@@ -1132,24 +520,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-035q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, just this once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-035q2",
    "form": "once",
    "later": "artifact",
@@ -1163,24 +533,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-036q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from now on.\" You are now editing a second, unrelated invoice for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" You are now editing a second, unrelated invoice for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-036q2",
@@ -1198,24 +550,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-037q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, just this once.\" A new session starts the next day; the same person asks for a comparable invoice.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" A new session starts the next day; the same person asks for a comparable invoice.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-037q2",
    "form": "once",
    "later": "session",
@@ -1229,24 +563,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-038q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from now on.\" A new session starts the next day; the same person asks for a comparable invoice.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" A new session starts the next day; the same person asks for a comparable invoice.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-038q2",
@@ -1264,24 +580,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-039q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, just this once.\" A different person, in a different project, asks for a comparable invoice.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" A different person, in a different project, asks for a comparable invoice.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-039q2",
    "form": "once",
    "later": "user",
@@ -1295,24 +593,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-040q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from now on.\" A different person, in a different project, asks for a comparable invoice.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" A different person, in a different project, asks for a comparable invoice.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-040q2",
@@ -1330,24 +610,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-041q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-041q2",
    "form": "once",
    "later": "retry",
@@ -1361,24 +623,6 @@
     "yes"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-042q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-042q2",
@@ -1396,24 +640,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-043q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, just this once.\" You are now editing a second, unrelated module for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" You are now editing a second, unrelated module for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-043q2",
    "form": "once",
    "later": "artifact",
@@ -1427,24 +653,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-044q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from now on.\" You are now editing a second, unrelated module for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" You are now editing a second, unrelated module for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-044q2",
@@ -1462,24 +670,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-045q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, just this once.\" A new session starts the next day; the same person asks for a comparable module.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" A new session starts the next day; the same person asks for a comparable module.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-045q2",
    "form": "once",
    "later": "session",
@@ -1493,24 +683,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-046q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from now on.\" A new session starts the next day; the same person asks for a comparable module.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" A new session starts the next day; the same person asks for a comparable module.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-046q2",
@@ -1528,24 +700,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-047q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, just this once.\" A different person, in a different project, asks for a comparable module.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" A different person, in a different project, asks for a comparable module.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-047q2",
    "form": "once",
    "later": "user",
@@ -1559,24 +713,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-048q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from now on.\" A different person, in a different project, asks for a comparable module.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" A different person, in a different project, asks for a comparable module.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-048q2",
@@ -1594,24 +730,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-049q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-049q2",
    "form": "once",
    "later": "retry",
@@ -1625,24 +743,6 @@
     "cannot tell"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-050q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-050q2",
@@ -1660,24 +760,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-051q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, just this once.\" You are now editing a second, unrelated task for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" You are now editing a second, unrelated task for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-051q2",
    "form": "once",
    "later": "artifact",
@@ -1691,24 +773,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-052q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from now on.\" You are now editing a second, unrelated task for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" You are now editing a second, unrelated task for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-052q2",
@@ -1726,24 +790,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-053q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, just this once.\" A new session starts the next day; the same person asks for a comparable task.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" A new session starts the next day; the same person asks for a comparable task.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-053q2",
    "form": "once",
    "later": "session",
@@ -1757,24 +803,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-054q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from now on.\" A new session starts the next day; the same person asks for a comparable task.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" A new session starts the next day; the same person asks for a comparable task.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-054q2",
@@ -1792,24 +820,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-055q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, just this once.\" A different person, in a different project, asks for a comparable task.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" A different person, in a different project, asks for a comparable task.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-055q2",
    "form": "once",
    "later": "user",
@@ -1823,24 +833,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-056q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from now on.\" A different person, in a different project, asks for a comparable task.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" A different person, in a different project, asks for a comparable task.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-056q2",
@@ -1858,24 +850,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-057q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-057q2",
    "form": "once",
    "later": "retry",
@@ -1889,24 +863,6 @@
     "no"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-058q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-058q2",
@@ -1924,24 +880,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-059q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, just this once.\" You are now editing a second, unrelated report for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are now editing a second, unrelated report for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-059q2",
    "form": "once",
    "later": "artifact",
@@ -1955,24 +893,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-060q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from now on.\" You are now editing a second, unrelated report for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" You are now editing a second, unrelated report for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-060q2",
@@ -1990,24 +910,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-061q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, just this once.\" A new session starts the next day; the same person asks for a comparable report.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" A new session starts the next day; the same person asks for a comparable report.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-061q2",
    "form": "once",
    "later": "session",
@@ -2021,24 +923,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-062q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from now on.\" A new session starts the next day; the same person asks for a comparable report.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" A new session starts the next day; the same person asks for a comparable report.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-062q2",
@@ -2056,24 +940,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-063q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, just this once.\" A different person, in a different project, asks for a comparable report.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" A different person, in a different project, asks for a comparable report.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-063q2",
    "form": "once",
    "later": "user",
@@ -2087,24 +953,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-064q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from now on.\" A different person, in a different project, asks for a comparable report.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" A different person, in a different project, asks for a comparable report.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-064q2",
@@ -2122,24 +970,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-065q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-065q2",
    "form": "once",
    "later": "retry",
@@ -2153,24 +983,6 @@
     "yes"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-066q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-066q2",
@@ -2188,24 +1000,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-067q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, just this once.\" You are now editing a second, unrelated file for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" You are now editing a second, unrelated file for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-067q2",
    "form": "once",
    "later": "artifact",
@@ -2219,24 +1013,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-068q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from now on.\" You are now editing a second, unrelated file for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are now editing a second, unrelated file for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-068q2",
@@ -2254,24 +1030,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-069q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, just this once.\" A new session starts the next day; the same person asks for a comparable file.",
-   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A new session starts the next day; the same person asks for a comparable file.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-069q2",
    "form": "once",
    "later": "session",
@@ -2285,24 +1043,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-070q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from now on.\" A new session starts the next day; the same person asks for a comparable file.",
-   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" A new session starts the next day; the same person asks for a comparable file.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-070q2",
@@ -2320,24 +1060,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-071q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, just this once.\" A different person, in a different project, asks for a comparable file.",
-   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A different person, in a different project, asks for a comparable file.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-071q2",
    "form": "once",
    "later": "user",
@@ -2351,24 +1073,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-072q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from now on.\" A different person, in a different project, asks for a comparable file.",
-   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" A different person, in a different project, asks for a comparable file.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-072q2",
@@ -2386,24 +1090,6 @@
    "answer": "no"
   },
   {
-   "id": "to-car-once-073q1",
-   "form": "once",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, just this once.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-073q2",
    "form": "once",
    "later": "retry",
@@ -2417,24 +1103,6 @@
     "cannot tell"
    ],
    "answer": "yes"
-  },
-  {
-   "id": "to-car-stan-074q1",
-   "form": "standing",
-   "later": "retry",
-   "probe": 1,
-   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from now on.\" You are retrying the same task after a first attempt failed.",
-   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" You are retrying the same task after a first attempt failed.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-074q2",
@@ -2452,24 +1120,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-075q1",
-   "form": "once",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, just this once.\" You are now editing a second, unrelated thread for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are now editing a second, unrelated thread for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-075q2",
    "form": "once",
    "later": "artifact",
@@ -2483,24 +1133,6 @@
     "no"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-076q1",
-   "form": "standing",
-   "later": "artifact",
-   "probe": 1,
-   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from now on.\" You are now editing a second, unrelated thread for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" You are now editing a second, unrelated thread for the same person in the same session.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-076q2",
@@ -2518,24 +1150,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-077q1",
-   "form": "once",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, just this once.\" A new session starts the next day; the same person asks for a comparable thread.",
-   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A new session starts the next day; the same person asks for a comparable thread.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "global preference",
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-077q2",
    "form": "once",
    "later": "session",
@@ -2549,24 +1163,6 @@
     "yes"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-078q1",
-   "form": "standing",
-   "later": "session",
-   "probe": 1,
-   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from now on.\" A new session starts the next day; the same person asks for a comparable thread.",
-   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" A new session starts the next day; the same person asks for a comparable thread.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "nowhere",
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-078q2",
@@ -2584,24 +1180,6 @@
    "answer": "yes"
   },
   {
-   "id": "to-car-once-079q1",
-   "form": "once",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, just this once.\" A different person, in a different project, asks for a comparable thread.",
-   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A different person, in a different project, asks for a comparable thread.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "task-local state",
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere"
-   ],
-   "answer": "task-local state"
-  },
-  {
    "id": "to-car-once-079q2",
    "form": "once",
    "later": "user",
@@ -2615,24 +1193,6 @@
     "cannot tell"
    ],
    "answer": "no"
-  },
-  {
-   "id": "to-car-stan-080q1",
-   "form": "standing",
-   "later": "user",
-   "probe": 1,
-   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from now on.\" A different person, in a different project, asks for a comparable thread.",
-   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" A different person, in a different project, asks for a comparable thread.",
-   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
-   "options": [
-    "artifact record",
-    "session state",
-    "project memory",
-    "global preference",
-    "nowhere",
-    "task-local state"
-   ],
-   "answer": "project memory"
   },
   {
    "id": "to-car-stan-080q2",
@@ -2650,11 +1210,971 @@
    "answer": "no"
   },
   {
+   "id": "to-car-once-s001",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, just this once.\" A new session starts the next day; the same person asks for a comparable document.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" A new session starts the next day; the same person asks for a comparable document.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s002",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from now on.\" A new session starts the next day; the same person asks for a comparable document.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A new session starts the next day; the same person asks for a comparable document.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s003",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, just this once.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s004",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from now on.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s005",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, just this once.\" The same person, in a different project, asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" The same person, in a different project, asks for a comparable document.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s006",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from now on.\" The same person, in a different project, asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" The same person, in a different project, asks for a comparable document.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s007",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, just this once.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s008",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from now on.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s009",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, just this once.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s010",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from now on.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s011",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, just this once.\" The same person, in a different project, asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" The same person, in a different project, asks for a comparable branch.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s012",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from now on.\" The same person, in a different project, asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" The same person, in a different project, asks for a comparable branch.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s013",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, just this once.\" A new session starts the next day; the same person asks for a comparable release.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" A new session starts the next day; the same person asks for a comparable release.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s014",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from now on.\" A new session starts the next day; the same person asks for a comparable release.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" A new session starts the next day; the same person asks for a comparable release.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s015",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, just this once.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s016",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from now on.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s017",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, just this once.\" The same person, in a different project, asks for a comparable release.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" The same person, in a different project, asks for a comparable release.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s018",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from now on.\" The same person, in a different project, asks for a comparable release.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" The same person, in a different project, asks for a comparable release.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s019",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, just this once.\" A new session starts the next day; the same person asks for a comparable review.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A new session starts the next day; the same person asks for a comparable review.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s020",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from now on.\" A new session starts the next day; the same person asks for a comparable review.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" A new session starts the next day; the same person asks for a comparable review.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s021",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, just this once.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s022",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from now on.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s023",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, just this once.\" The same person, in a different project, asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" The same person, in a different project, asks for a comparable review.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s024",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from now on.\" The same person, in a different project, asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" The same person, in a different project, asks for a comparable review.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s025",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, just this once.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s026",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from now on.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s027",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, just this once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s028",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from now on.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s029",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, just this once.\" The same person, in a different project, asks for a comparable invoice.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" The same person, in a different project, asks for a comparable invoice.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s030",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from now on.\" The same person, in a different project, asks for a comparable invoice.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" The same person, in a different project, asks for a comparable invoice.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s031",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, just this once.\" A new session starts the next day; the same person asks for a comparable module.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" A new session starts the next day; the same person asks for a comparable module.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s032",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from now on.\" A new session starts the next day; the same person asks for a comparable module.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" A new session starts the next day; the same person asks for a comparable module.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s033",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, just this once.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s034",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from now on.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s035",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, just this once.\" The same person, in a different project, asks for a comparable module.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" The same person, in a different project, asks for a comparable module.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s036",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from now on.\" The same person, in a different project, asks for a comparable module.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" The same person, in a different project, asks for a comparable module.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s037",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, just this once.\" A new session starts the next day; the same person asks for a comparable task.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" A new session starts the next day; the same person asks for a comparable task.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s038",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from now on.\" A new session starts the next day; the same person asks for a comparable task.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" A new session starts the next day; the same person asks for a comparable task.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s039",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, just this once.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s040",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from now on.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s041",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, just this once.\" The same person, in a different project, asks for a comparable task.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" The same person, in a different project, asks for a comparable task.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s042",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from now on.\" The same person, in a different project, asks for a comparable task.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" The same person, in a different project, asks for a comparable task.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s043",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, just this once.\" A new session starts the next day; the same person asks for a comparable report.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" A new session starts the next day; the same person asks for a comparable report.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s044",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from now on.\" A new session starts the next day; the same person asks for a comparable report.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" A new session starts the next day; the same person asks for a comparable report.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s045",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, just this once.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s046",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from now on.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s047",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, just this once.\" The same person, in a different project, asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" The same person, in a different project, asks for a comparable report.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s048",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from now on.\" The same person, in a different project, asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" The same person, in a different project, asks for a comparable report.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s049",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, just this once.\" A new session starts the next day; the same person asks for a comparable file.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A new session starts the next day; the same person asks for a comparable file.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s050",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from now on.\" A new session starts the next day; the same person asks for a comparable file.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" A new session starts the next day; the same person asks for a comparable file.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s051",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, just this once.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s052",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from now on.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s053",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, just this once.\" The same person, in a different project, asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" The same person, in a different project, asks for a comparable file.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s054",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from now on.\" The same person, in a different project, asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" The same person, in a different project, asks for a comparable file.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s055",
+   "form": "once",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, just this once.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s056",
+   "form": "standing",
+   "later": "session",
+   "stratum": "storage-forbidden",
+   "probe": 2,
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from now on.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s057",
+   "form": "once",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, just this once.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s058",
+   "form": "standing",
+   "later": "artifact",
+   "stratum": "audit-required",
+   "probe": 2,
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from now on.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-s059",
+   "form": "once",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, just this once.\" The same person, in a different project, asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" The same person, in a different project, asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s060",
+   "form": "standing",
+   "later": "project",
+   "stratum": "project-scope",
+   "probe": 2,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from now on.\" The same person, in a different project, asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" The same person, in a different project, asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
    "id": "to-cal-01",
    "form": "once",
    "calibration": true,
-   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" You are now editing a second, unrelated document for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from now on.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, just this once.\" You are now editing a second, unrelated document for the same person in the same session.",
    "question": "Does that instruction apply to the work you are doing now?",
    "options": [
     "yes",
@@ -2667,8 +2187,8 @@
    "id": "to-cal-02",
    "form": "standing",
    "calibration": true,
-   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" A new session starts the next day; the same person asks for a comparable branch.",
-   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, just this once.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from now on.\" A new session starts the next day; the same person asks for a comparable branch.",
    "question": "Does that instruction apply to the work you are doing now?",
    "options": [
     "no",
@@ -2681,8 +2201,8 @@
    "id": "to-cal-03",
    "form": "once",
    "calibration": true,
-   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" A different person, in a different project, asks for a comparable release.",
-   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" A different person, in a different project, asks for a comparable release.",
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from now on.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, just this once.\" You are now editing a second, unrelated release for the same person in the same session.",
    "question": "Does that instruction apply to the work you are doing now?",
    "options": [
     "cannot tell",
@@ -2695,8 +2215,8 @@
    "id": "to-cal-04",
    "form": "standing",
    "calibration": true,
-   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" You are now editing a second, unrelated review for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, just this once.\" A new session starts the next day; the same person asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from now on.\" A new session starts the next day; the same person asks for a comparable review.",
    "question": "Does that instruction apply to the work you are doing now?",
    "options": [
     "yes",
@@ -2709,8 +2229,8 @@
    "id": "to-cal-05",
    "form": "once",
    "calibration": true,
-   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" A new session starts the next day; the same person asks for a comparable invoice.",
-   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from now on.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, just this once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
    "question": "Does that instruction apply to the work you are doing now?",
    "options": [
     "no",
@@ -2723,22 +2243,22 @@
    "id": "to-cal-06",
    "form": "standing",
    "calibration": true,
-   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" A different person, in a different project, asks for a comparable module.",
-   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" A different person, in a different project, asks for a comparable module.",
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, just this once.\" A new session starts the next day; the same person asks for a comparable module.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from now on.\" A new session starts the next day; the same person asks for a comparable module.",
    "question": "Does that instruction apply to the work you are doing now?",
    "options": [
     "cannot tell",
     "yes",
     "no"
    ],
-   "answer": "no"
+   "answer": "yes"
   },
   {
    "id": "to-cal-07",
    "form": "once",
    "calibration": true,
-   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" You are now editing a second, unrelated task for the same person in the same session.",
-   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from now on.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, just this once.\" You are now editing a second, unrelated task for the same person in the same session.",
    "question": "Does that instruction apply to the work you are doing now?",
    "options": [
     "yes",
@@ -2751,8 +2271,8 @@
    "id": "to-cal-08",
    "form": "standing",
    "calibration": true,
-   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" A new session starts the next day; the same person asks for a comparable report.",
-   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" A new session starts the next day; the same person asks for a comparable report.",
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, just this once.\" A new session starts the next day; the same person asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from now on.\" A new session starts the next day; the same person asks for a comparable report.",
    "question": "Does that instruction apply to the work you are doing now?",
    "options": [
     "no",

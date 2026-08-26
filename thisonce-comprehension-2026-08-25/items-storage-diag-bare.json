@@ -1,0 +1,1451 @@
+{
+ "kind": "ainglish.panel.items.v1",
+ "proposal": "this-once-from-now-on-does-this-instruction-apply-to-this-ta",
+ "form": "<DIRECTIVE>, this-once | <DIRECTIVE>, from-now-on",
+ "comparator": "bare",
+ "baseline": "bare_untagged_directive",
+ "scope_note": "DIAGNOSTIC ONLY (never the claim): the six-way storage-target probe over the 80 core frames — where should the receiver keep the directive? Reported beside the applicability claim, not as it.",
+ "sha256": "e3d0d7958ca7c4d425eb1cf0eeeb7d8b7ef2a400a20f897dd29fa8a674d9021f",
+ "items": [
+  {
+   "id": "to-bar-once-001q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-002q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-003q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-004q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-005q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" A new session starts the next day; the same person asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" A new session starts the next day; the same person asks for a comparable document.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-006q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" A new session starts the next day; the same person asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A new session starts the next day; the same person asks for a comparable document.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-007q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" A different person, in a different project, asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" A different person, in a different project, asks for a comparable document.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-008q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling.\" A different person, in a different project, asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A different person, in a different project, asks for a comparable document.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-009q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-010q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-011q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-012q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-013q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-014q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-015q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" A different person, in a different project, asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" A different person, in a different project, asks for a comparable branch.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-016q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit.\" A different person, in a different project, asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A different person, in a different project, asks for a comparable branch.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-017q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-018q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-019q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-020q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-021q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" A new session starts the next day; the same person asks for a comparable release.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" A new session starts the next day; the same person asks for a comparable release.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-022q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" A new session starts the next day; the same person asks for a comparable release.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" A new session starts the next day; the same person asks for a comparable release.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-023q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" A different person, in a different project, asks for a comparable release.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" A different person, in a different project, asks for a comparable release.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-024q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense.\" A different person, in a different project, asks for a comparable release.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" A different person, in a different project, asks for a comparable release.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-025q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-026q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-027q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-028q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-029q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" A new session starts the next day; the same person asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A new session starts the next day; the same person asks for a comparable review.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-030q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" A new session starts the next day; the same person asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" A new session starts the next day; the same person asks for a comparable review.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-031q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" A different person, in a different project, asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A different person, in a different project, asks for a comparable review.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-032q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim.\" A different person, in a different project, asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" A different person, in a different project, asks for a comparable review.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-033q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-034q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-035q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-036q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-037q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-038q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" A new session starts the next day; the same person asks for a comparable invoice.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-039q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" A different person, in a different project, asks for a comparable invoice.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" A different person, in a different project, asks for a comparable invoice.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-040q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros.\" A different person, in a different project, asks for a comparable invoice.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" A different person, in a different project, asks for a comparable invoice.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-041q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-042q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-043q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-044q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-045q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" A new session starts the next day; the same person asks for a comparable module.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" A new session starts the next day; the same person asks for a comparable module.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-046q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" A new session starts the next day; the same person asks for a comparable module.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" A new session starts the next day; the same person asks for a comparable module.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-047q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" A different person, in a different project, asks for a comparable module.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" A different person, in a different project, asks for a comparable module.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-048q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here.\" A different person, in a different project, asks for a comparable module.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" A different person, in a different project, asks for a comparable module.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-049q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-050q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-051q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-052q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-053q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" A new session starts the next day; the same person asks for a comparable task.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" A new session starts the next day; the same person asks for a comparable task.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-054q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" A new session starts the next day; the same person asks for a comparable task.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" A new session starts the next day; the same person asks for a comparable task.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-055q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" A different person, in a different project, asks for a comparable task.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" A different person, in a different project, asks for a comparable task.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-056q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production.\" A different person, in a different project, asks for a comparable task.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" A different person, in a different project, asks for a comparable task.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-057q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-058q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-059q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-060q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-061q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" A new session starts the next day; the same person asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" A new session starts the next day; the same person asks for a comparable report.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-062q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" A new session starts the next day; the same person asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" A new session starts the next day; the same person asks for a comparable report.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-063q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" A different person, in a different project, asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" A different person, in a different project, asks for a comparable report.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-064q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail.\" A different person, in a different project, asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" A different person, in a different project, asks for a comparable report.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-065q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-066q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-067q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-068q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-069q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces.\" A new session starts the next day; the same person asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A new session starts the next day; the same person asks for a comparable file.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-070q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces.\" A new session starts the next day; the same person asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" A new session starts the next day; the same person asks for a comparable file.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-071q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces.\" A different person, in a different project, asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A different person, in a different project, asks for a comparable file.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-072q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces.\" A different person, in a different project, asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" A different person, in a different project, asks for a comparable file.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-073q1",
+   "form": "once",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-074q1",
+   "form": "standing",
+   "later": "retry",
+   "probe": 1,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" You are retrying the same task after a first attempt failed.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-075q1",
+   "form": "once",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-076q1",
+   "form": "standing",
+   "later": "artifact",
+   "probe": 1,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-077q1",
+   "form": "once",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "global preference",
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-078q1",
+   "form": "standing",
+   "later": "session",
+   "probe": 1,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "nowhere",
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference"
+   ],
+   "answer": "project memory"
+  },
+  {
+   "id": "to-bar-once-079q1",
+   "form": "once",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name.\" A different person, in a different project, asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A different person, in a different project, asks for a comparable thread.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "task-local state",
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere"
+   ],
+   "answer": "task-local state"
+  },
+  {
+   "id": "to-bar-stan-080q1",
+   "form": "standing",
+   "later": "user",
+   "probe": 1,
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name.\" A different person, in a different project, asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" A different person, in a different project, asks for a comparable thread.",
+   "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+   "options": [
+    "artifact record",
+    "session state",
+    "project memory",
+    "global preference",
+    "nowhere",
+    "task-local state"
+   ],
+   "answer": "project memory"
+  }
+ ]
+}
