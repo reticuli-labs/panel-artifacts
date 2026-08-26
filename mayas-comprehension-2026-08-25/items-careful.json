@@ -4,10 +4,10 @@
  "form": "may-as-permission / may-as-possibility",
  "comparator": "careful",
  "baseline": "shortest_adequate_careful_control",
- "scope_note": "Saturnia's pre-registered design in a two-arm harness: both marked forms in one set (strata = form, reported separately, never pooled), each marked sentence TRUE under its own force, worlds state the authority record and the live-outcome state; cross-cells per form (permission: permitted-but-blocked; possibility: denied-but-feasible) so a false cross-inference is scoreable; two consequence probes per frame (which record a contradicting fact would be about / what response is licensed), option vocabulary free of permit/possible stems; negated may excluded; comparators run separately: careful = shortest adequate control ('is permitted to' / 'might') [CARRIER]; bare = 'may' [descriptive ambiguity arm]. Calibration: bare English vs marked. CONTROL v2 (2026-08-26): the eight positive-control items carry careful expansions in BOTH arms with opposite forces (planted slot = this form's expansion, other slot = the opposite force's), so the keys differ and the shared world context cannot answer either arm alone; v1's bare 'may' arm was answerable from context (0.75/0.75) or by nobody (0.13/0.13). Real items byte-identical to the 96b71939 freeze.",
+ "scope_note": "Saturnia's pre-registered design in a two-arm harness: both marked forms in one set (strata = form, reported separately, never pooled), each marked sentence TRUE under its own force, worlds state the authority record and the live-outcome state; cross-cells per form (permission: permitted-but-blocked; possibility: denied-but-feasible) so a false cross-inference is scoreable; two consequence probes per frame (which record a contradicting fact would be about / what response is licensed), option vocabulary free of permit/possible stems; negated may excluded; comparators run separately: careful = shortest adequate control ('is permitted to' / 'might') [CARRIER]; bare = 'may' [descriptive ambiguity arm]. Calibration: bare English vs marked. CONTROL v2 (2026-08-26): the eight positive-control items carry careful expansions in BOTH arms with opposite forces (planted slot = this form's expansion, other slot = the opposite force's), so the keys differ and the shared world context cannot answer either arm alone; v1's bare 'may' arm was answerable from context (0.75/0.75) or by nobody (0.13/0.13). Real items byte-identical to the 96b71939 freeze. CONTROL v3 (2026-08-26): the control asks directly which force the final sentence claims (permission / possibility / both / cannot tell) — v2's record question could not be mapped from an explicit careful claim by this roster. Real items unchanged.",
  "real_items": 160,
  "calibration_items": 8,
- "sha256": "984294473651504da96b29bc72f35f3e7930c6cae5a5e3fcf5fba33d86fda38e",
+ "sha256": "9a4a83937ed67c50442f2b30e0f23d1af9f97b2ac96a51cbef511d6b89083d00",
  "items": [
   {
    "id": "ma-car-perm-001q1",
@@ -2895,14 +2895,14 @@
    "calibration": true,
    "english": "The access policy on file grants the export worker the action 'transmit customer data'. Working credentials and a reachable endpoint mean the action can currently go through. The export worker might transmit customer data.",
    "ainglish": "The access policy on file grants the export worker the action 'transmit customer data'. Working credentials and a reachable endpoint mean the action can currently go through. The export worker is permitted to transmit customer data.",
-   "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+   "question": "Going only by the final sentence as written, what does it claim about the action?",
    "options": [
-    "the authority record",
-    "the live-outcome model",
-    "neither",
-    "cannot tell"
+    "permission: the subject is allowed to act",
+    "possibility: the action might happen",
+    "both permission and possibility",
+    "cannot tell from the sentence"
    ],
-   "answer": "the authority record"
+   "answer": "permission: the subject is allowed to act"
   },
   {
    "id": "ma-cal-02",
@@ -2910,14 +2910,14 @@
    "calibration": true,
    "english": "The access policy on file grants the on-call engineer the action 'post to the status page'. Working credentials and a reachable endpoint mean the action can currently go through. The on-call engineer is permitted to post to the status page.",
    "ainglish": "The access policy on file grants the on-call engineer the action 'post to the status page'. Working credentials and a reachable endpoint mean the action can currently go through. The on-call engineer might post to the status page.",
-   "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+   "question": "Going only by the final sentence as written, what does it claim about the action?",
    "options": [
-    "the live-outcome model",
-    "neither",
-    "cannot tell",
-    "the authority record"
+    "possibility: the action might happen",
+    "both permission and possibility",
+    "cannot tell from the sentence",
+    "permission: the subject is allowed to act"
    ],
-   "answer": "the live-outcome model"
+   "answer": "possibility: the action might happen"
   },
   {
    "id": "ma-cal-03",
@@ -2925,14 +2925,14 @@
    "calibration": true,
    "english": "The access policy on file grants the backup job the action 'restart the primary'. A hard technical block (revoked credentials, no route) means the action cannot currently go through. The backup job might restart the primary.",
    "ainglish": "The access policy on file grants the backup job the action 'restart the primary'. A hard technical block (revoked credentials, no route) means the action cannot currently go through. The backup job is permitted to restart the primary.",
-   "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+   "question": "Going only by the final sentence as written, what does it claim about the action?",
    "options": [
-    "neither",
-    "cannot tell",
-    "the authority record",
-    "the live-outcome model"
+    "both permission and possibility",
+    "cannot tell from the sentence",
+    "permission: the subject is allowed to act",
+    "possibility: the action might happen"
    ],
-   "answer": "the authority record"
+   "answer": "permission: the subject is allowed to act"
   },
   {
    "id": "ma-cal-04",
@@ -2940,14 +2940,14 @@
    "calibration": true,
    "english": "The access policy on file denies the auditor the action 'rotate the signing key'. Working credentials and a reachable endpoint mean the action can currently go through. The auditor is permitted to rotate the signing key.",
    "ainglish": "The access policy on file denies the auditor the action 'rotate the signing key'. Working credentials and a reachable endpoint mean the action can currently go through. The auditor might rotate the signing key.",
-   "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+   "question": "Going only by the final sentence as written, what does it claim about the action?",
    "options": [
-    "cannot tell",
-    "the authority record",
-    "the live-outcome model",
-    "neither"
+    "cannot tell from the sentence",
+    "permission: the subject is allowed to act",
+    "possibility: the action might happen",
+    "both permission and possibility"
    ],
-   "answer": "the live-outcome model"
+   "answer": "possibility: the action might happen"
   },
   {
    "id": "ma-cal-05",
@@ -2955,14 +2955,14 @@
    "calibration": true,
    "english": "The access policy on file grants the deploy bot the action 'read the staging logs'. Working credentials and a reachable endpoint mean the action can currently go through. The deploy bot might read the staging logs.",
    "ainglish": "The access policy on file grants the deploy bot the action 'read the staging logs'. Working credentials and a reachable endpoint mean the action can currently go through. The deploy bot is permitted to read the staging logs.",
-   "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+   "question": "Going only by the final sentence as written, what does it claim about the action?",
    "options": [
-    "the authority record",
-    "the live-outcome model",
-    "neither",
-    "cannot tell"
+    "permission: the subject is allowed to act",
+    "possibility: the action might happen",
+    "both permission and possibility",
+    "cannot tell from the sentence"
    ],
-   "answer": "the authority record"
+   "answer": "permission: the subject is allowed to act"
   },
   {
    "id": "ma-cal-06",
@@ -2970,14 +2970,14 @@
    "calibration": true,
    "english": "The access policy on file grants the contractor the action 'transmit customer data'. Working credentials and a reachable endpoint mean the action can currently go through. The contractor is permitted to transmit customer data.",
    "ainglish": "The access policy on file grants the contractor the action 'transmit customer data'. Working credentials and a reachable endpoint mean the action can currently go through. The contractor might transmit customer data.",
-   "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+   "question": "Going only by the final sentence as written, what does it claim about the action?",
    "options": [
-    "the live-outcome model",
-    "neither",
-    "cannot tell",
-    "the authority record"
+    "possibility: the action might happen",
+    "both permission and possibility",
+    "cannot tell from the sentence",
+    "permission: the subject is allowed to act"
    ],
-   "answer": "the live-outcome model"
+   "answer": "possibility: the action might happen"
   },
   {
    "id": "ma-cal-07",
@@ -2985,14 +2985,14 @@
    "calibration": true,
    "english": "The access policy on file grants the ingest pipeline the action 'post to the status page'. A hard technical block (revoked credentials, no route) means the action cannot currently go through. The ingest pipeline might post to the status page.",
    "ainglish": "The access policy on file grants the ingest pipeline the action 'post to the status page'. A hard technical block (revoked credentials, no route) means the action cannot currently go through. The ingest pipeline is permitted to post to the status page.",
-   "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+   "question": "Going only by the final sentence as written, what does it claim about the action?",
    "options": [
-    "neither",
-    "cannot tell",
-    "the authority record",
-    "the live-outcome model"
+    "both permission and possibility",
+    "cannot tell from the sentence",
+    "permission: the subject is allowed to act",
+    "possibility: the action might happen"
    ],
-   "answer": "the authority record"
+   "answer": "permission: the subject is allowed to act"
   },
   {
    "id": "ma-cal-08",
@@ -3000,14 +3000,14 @@
    "calibration": true,
    "english": "The access policy on file denies the reviewer the action 'restart the primary'. Working credentials and a reachable endpoint mean the action can currently go through. The reviewer is permitted to restart the primary.",
    "ainglish": "The access policy on file denies the reviewer the action 'restart the primary'. Working credentials and a reachable endpoint mean the action can currently go through. The reviewer might restart the primary.",
-   "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+   "question": "Going only by the final sentence as written, what does it claim about the action?",
    "options": [
-    "cannot tell",
-    "the authority record",
-    "the live-outcome model",
-    "neither"
+    "cannot tell from the sentence",
+    "permission: the subject is allowed to act",
+    "possibility: the action might happen",
+    "both permission and possibility"
    ],
-   "answer": "the live-outcome model"
+   "answer": "possibility: the action might happen"
   }
  ]
 }

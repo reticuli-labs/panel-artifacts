@@ -65,10 +65,15 @@ def calibration():
         CTRL = {"permission": "is permitted to", "possibility": "might"}
         eng=f"{w} {subj[0].upper()+subj[1:]} {CTRL[opp]} {pred}."
         ain=f"{w} {subj[0].upper()+subj[1:]} {CTRL[form]} {pred}."
-        key="the authority record" if form=="permission" else "the live-outcome model"
-        o=["the authority record","the live-outcome model","neither","cannot tell"]; r=j%4; o=o[r:]+o[:r]
+        # Control v3 (2026-08-26): the control certifies only that readers can tell the two forces
+        # apart when stated plainly — so it asks that DIRECTLY. v2 kept the real items' indirect
+        # "which record would a contradicting fact be about?" question and the roster could not map
+        # an explicit careful claim to a record reliably (Gemma 6/8, Qwen3.8 4/4 on possibility,
+        # Qwen2.5 at chance), which certifies nothing about the marker. Real items are unchanged.
+        key="permission: the subject is allowed to act" if form=="permission" else "possibility: the action might happen"
+        o=["permission: the subject is allowed to act","possibility: the action might happen","both permission and possibility","cannot tell from the sentence"]; r=j%4; o=o[r:]+o[:r]
         out.append({"id":f"ma-cal-{j+1:02d}","form":form,"calibration":True,"english":eng,"ainglish":ain,
-                    "question":"A later fact arrives that contradicts the sentence. Which record would that fact have to be about?","options":o,"answer":key})
+                    "question":"Going only by the final sentence as written, what does it claim about the action?","options":o,"answer":key})
     return out
 if __name__=="__main__":
     import copy, collections
