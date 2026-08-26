@@ -58,8 +58,8 @@ def build(stratum):
         common = dict(ctx=f["ctx"], alabel=alabel, elabel=elabel, E=efmt.format(n=ne).replace(f"{ne} ", f"{ne} "), blabel=blabel, B=bfmt.format(n=nb))
         eng = t.format(A=A_en, **common); ain = t.format(A=A_ai, **common)
         if stratum == "glossed":
-            eng = "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. " + eng
-            ain = "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. " + ain
+            eng = "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. " + eng
+            ain = "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. " + ain
         target, n_true = {"approximate": (alabel, na), "exact": (elabel, ne), "unspecified": (blabel, nb), "cannot tell": (f["absent"], rng.choice(NUMS))}[cls]
         later = off_by_tenth(n_true)
         occ[cls] = occ.get(cls, 0) + 1
@@ -87,8 +87,8 @@ def calibration(stratum):
         eng = f"For {f['ctx']}, {alabel} was exactly {afmt.format(n=n)}."
         ain = f"For {f['ctx']}, {alabel} was approx({n}) {afmt.format(n='').strip()}."
         if stratum == "glossed":
-            eng = "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. " + eng
-            ain = "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. " + ain
+            eng = "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. " + eng
+            ain = "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. " + ain
         rot = j % 4; order = ORDER[rot:] + ORDER[:rot]
         out.append({"id": f"{stratum[:2]}-cal-{j+1:02d}", "stratum": stratum, "calibration": True,
                     "english": eng, "ainglish": ain,

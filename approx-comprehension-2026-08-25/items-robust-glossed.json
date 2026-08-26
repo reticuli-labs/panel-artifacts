@@ -4,17 +4,17 @@
  "form": "approx(<N>)",
  "baseline": "careful_english_approximately_N",
  "stratum": "glossed",
- "scope_note": "Pre-registered design, operationalised for a two-arm harness: four-way commitment key (approximate / exact / unspecified / cannot tell), 12 per class, asked as a held-out CONSEQUENCE (the figure later found ~10% off — was the writer wrong?) so option vocabulary shares no stem with either arm; each sentence carries one approximated figure so arms always differ; the question's target rotates over approximated / 'exactly' / bare / absent figures; key letter balanced 14 per position; calibration = English 'exactly N' vs Ainglish approx(N), key derivable only in the planted arm. Stratum glossed; strata are never pooled.",
+ "scope_note": "Pre-registered design, operationalised for a two-arm harness: four-way commitment key (approximate / exact / unspecified / cannot tell), 12 per class, asked as a held-out CONSEQUENCE (the figure later found ~10% off — was the writer wrong?) so option vocabulary shares no stem with either arm; each sentence carries one approximated figure so arms always differ; the question's target rotates over approximated / 'exactly' / bare / absent figures; key letter balanced 14 per position; calibration = English 'exactly N' vs Ainglish approx(N), key derivable only in the planted arm. Stratum glossed; strata are never pooled. GLOSS v2 (2026-08-26): the gloss now defines BOTH readings ('approximately N' = estimate; 'exactly N' = precise commitment). The one-sided v1 gloss primed three of four readers to treat 'exactly N' as approximate and the positive control failed (0.625–0.72 on the English arm); nothing was measured on v1 glossed items.",
  "metric_note": "robustness_delta artifact: REAL items only (robustness takes calibration_items as a separate manifest list, so flagged rows must not ride in items); the 8 planted-effect calibration items are carried inline in the runspec and therefore in the minted manifest",
  "real_items": 48,
  "calibration_items": 0,
- "sha256": "8b91e149ada4d9b52fcfb037a25aa0bebc7d7aeb3897bfd39cbdb3d699f291e1",
+ "sha256": "8e9db1f0cf43ca18f660f2f8dd3bc03a6d3066eae780291c004dfccb04355f34",
  "items": [
   {
    "id": "gl-01",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the deploy, the deploy time was approximately 1200 minutes; the number of build stages was exactly 150; the worker count was 400.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the deploy, the deploy time was approx(1200) minutes; the number of build stages was exactly 150; the worker count was 400.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the deploy time was approximately 1200 minutes; the number of build stages was exactly 150; the worker count was 400.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the deploy time was approx(1200) minutes; the number of build stages was exactly 150; the worker count was 400.",
    "question": "Later, the number of retries was found to be 83. Going only by the sentence as written, was the writer wrong about the number of retries?",
    "options": [
     "No — the sentence allowed for that",
@@ -28,8 +28,8 @@
   {
    "id": "gl-02",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ingest, the number of sources was exactly 50; the bot share was approximately 3600 percent; the row count was 50.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ingest, the number of sources was exactly 50; the bot share was approx(3600) percent; the row count was 50.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the number of sources was exactly 50; the bot share was approximately 3600 percent; the row count was 50.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the number of sources was exactly 50; the bot share was approx(3600) percent; the row count was 50.",
    "question": "Later, the bot share was found to be 3960. Going only by the sentence as written, was the writer wrong about the bot share?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -43,8 +43,8 @@
   {
    "id": "gl-03",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the latency probe, the probe count was 120; the number of regions was exactly 250; the median latency was approximately 75 milliseconds.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the latency probe, the probe count was 120; the number of regions was exactly 250; the median latency was approx(75) milliseconds.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the probe count was 120; the number of regions was exactly 250; the median latency was approximately 75 milliseconds.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the probe count was 120; the number of regions was exactly 250; the median latency was approx(75) milliseconds.",
    "question": "Later, the number of regions was found to be 275. Going only by the sentence as written, was the writer wrong about the number of regions?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -58,8 +58,8 @@
   {
    "id": "gl-04",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the archive, the archive size was approximately 75 gigabytes; the number of shards was exactly 150; the file count was 40.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the archive, the archive size was approx(75) gigabytes; the number of shards was exactly 150; the file count was 40.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the archive size was approximately 75 gigabytes; the number of shards was exactly 150; the file count was 40.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the archive size was approx(75) gigabytes; the number of shards was exactly 150; the file count was 40.",
    "question": "Later, the number of shards was found to be 165. Going only by the sentence as written, was the writer wrong about the number of shards?",
    "options": [
     "The sentence did not give that figure",
@@ -73,8 +73,8 @@
   {
    "id": "gl-05",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ballot, the closure window was exactly 400 days; the expected turnout was approximately 250 votes; the seconder count was 75.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ballot, the closure window was exactly 400 days; the expected turnout was approx(250) votes; the seconder count was 75.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the closure window was exactly 400 days; the expected turnout was approximately 250 votes; the seconder count was 75.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the closure window was exactly 400 days; the expected turnout was approx(250) votes; the seconder count was 75.",
    "question": "Later, the quorum was found to be 22. Going only by the sentence as written, was the writer wrong about the quorum?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -88,8 +88,8 @@
   {
    "id": "gl-06",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the panel, the arm count was 40; the number of readers was exactly 99; the item count was approximately 80 items.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the panel, the arm count was 40; the number of readers was exactly 99; the item count was approx(80) items.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the arm count was 40; the number of readers was exactly 99; the item count was approximately 80 items.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the arm count was 40; the number of readers was exactly 99; the item count was approx(80) items.",
    "question": "Later, the arm count was found to be 44. Going only by the sentence as written, was the writer wrong about the arm count?",
    "options": [
     "The sentence did not give that figure",
@@ -103,8 +103,8 @@
   {
    "id": "gl-07",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the budget, the token budget was approximately 1200 tokens; the number of calls was exactly 150; the model count was 150.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the budget, the token budget was approx(1200) tokens; the number of calls was exactly 150; the model count was 150.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the token budget was approximately 1200 tokens; the number of calls was exactly 150; the model count was 150.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the token budget was approx(1200) tokens; the number of calls was exactly 150; the model count was 150.",
    "question": "Later, the cost was found to be 132. Going only by the sentence as written, was the writer wrong about the cost?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -118,8 +118,8 @@
   {
    "id": "gl-08",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the restore, the number of copies was exactly 75; the restore time was approximately 3600 hours; the volume count was 3600.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the restore, the number of copies was exactly 75; the restore time was approx(3600) hours; the volume count was 3600.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the number of copies was exactly 75; the restore time was approximately 3600 hours; the volume count was 3600.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the number of copies was exactly 75; the restore time was approx(3600) hours; the volume count was 3600.",
    "question": "Later, the number of copies was found to be 83. Going only by the sentence as written, was the writer wrong about the number of copies?",
    "options": [
     "No — the sentence allowed for that",
@@ -133,8 +133,8 @@
   {
    "id": "gl-09",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the deploy, the worker count was 20; the number of build stages was exactly 400; the deploy time was approximately 40 minutes.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the deploy, the worker count was 20; the number of build stages was exactly 400; the deploy time was approx(40) minutes.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the worker count was 20; the number of build stages was exactly 400; the deploy time was approximately 40 minutes.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the worker count was 20; the number of build stages was exactly 400; the deploy time was approx(40) minutes.",
    "question": "Later, the worker count was found to be 22. Going only by the sentence as written, was the writer wrong about the worker count?",
    "options": [
     "No — the sentence allowed for that",
@@ -148,8 +148,8 @@
   {
    "id": "gl-10",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ingest, the bot share was approximately 75 percent; the number of sources was exactly 1200; the row count was 50.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ingest, the bot share was approx(75) percent; the number of sources was exactly 1200; the row count was 50.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the bot share was approximately 75 percent; the number of sources was exactly 1200; the row count was 50.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the bot share was approx(75) percent; the number of sources was exactly 1200; the row count was 50.",
    "question": "Later, the bot share was found to be 83. Going only by the sentence as written, was the writer wrong about the bot share?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -163,8 +163,8 @@
   {
    "id": "gl-11",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the latency probe, the number of regions was exactly 250; the median latency was approximately 150 milliseconds; the probe count was 40.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the latency probe, the number of regions was exactly 250; the median latency was approx(150) milliseconds; the probe count was 40.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the number of regions was exactly 250; the median latency was approximately 150 milliseconds; the probe count was 40.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the number of regions was exactly 250; the median latency was approx(150) milliseconds; the probe count was 40.",
    "question": "Later, the number of regions was found to be 275. Going only by the sentence as written, was the writer wrong about the number of regions?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -178,8 +178,8 @@
   {
    "id": "gl-12",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the archive, the file count was 80; the number of shards was exactly 75; the archive size was approximately 250 gigabytes.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the archive, the file count was 80; the number of shards was exactly 75; the archive size was approx(250) gigabytes.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the file count was 80; the number of shards was exactly 75; the archive size was approximately 250 gigabytes.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the file count was 80; the number of shards was exactly 75; the archive size was approx(250) gigabytes.",
    "question": "Later, the archive size was found to be 275. Going only by the sentence as written, was the writer wrong about the archive size?",
    "options": [
     "The sentence did not give that figure",
@@ -193,8 +193,8 @@
   {
    "id": "gl-13",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ballot, the expected turnout was approximately 3600 votes; the closure window was exactly 1200 days; the seconder count was 20.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ballot, the expected turnout was approx(3600) votes; the closure window was exactly 1200 days; the seconder count was 20.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the expected turnout was approximately 3600 votes; the closure window was exactly 1200 days; the seconder count was 20.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the expected turnout was approx(3600) votes; the closure window was exactly 1200 days; the seconder count was 20.",
    "question": "Later, the closure window was found to be 1320. Going only by the sentence as written, was the writer wrong about the closure window?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -208,8 +208,8 @@
   {
    "id": "gl-14",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the panel, the number of readers was exactly 50; the item count was approximately 75 items; the arm count was 250.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the panel, the number of readers was exactly 50; the item count was approx(75) items; the arm count was 250.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the number of readers was exactly 50; the item count was approximately 75 items; the arm count was 250.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the number of readers was exactly 50; the item count was approx(75) items; the arm count was 250.",
    "question": "Later, the seed was found to be 275. Going only by the sentence as written, was the writer wrong about the seed?",
    "options": [
     "The sentence did not give that figure",
@@ -223,8 +223,8 @@
   {
    "id": "gl-15",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the budget, the model count was 99; the number of calls was exactly 50; the token budget was approximately 99 tokens.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the budget, the model count was 99; the number of calls was exactly 50; the token budget was approx(99) tokens.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the model count was 99; the number of calls was exactly 50; the token budget was approximately 99 tokens.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the model count was 99; the number of calls was exactly 50; the token budget was approx(99) tokens.",
    "question": "Later, the model count was found to be 109. Going only by the sentence as written, was the writer wrong about the model count?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -238,8 +238,8 @@
   {
    "id": "gl-16",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the restore, the restore time was approximately 1200 hours; the number of copies was exactly 75; the volume count was 99.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the restore, the restore time was approx(1200) hours; the number of copies was exactly 75; the volume count was 99.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the restore time was approximately 1200 hours; the number of copies was exactly 75; the volume count was 99.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the restore time was approx(1200) hours; the number of copies was exactly 75; the volume count was 99.",
    "question": "Later, the checksum length was found to be 132. Going only by the sentence as written, was the writer wrong about the checksum length?",
    "options": [
     "No — the sentence allowed for that",
@@ -253,8 +253,8 @@
   {
    "id": "gl-17",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the deploy, the number of build stages was exactly 120; the deploy time was approximately 400 minutes; the worker count was 20.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the deploy, the number of build stages was exactly 120; the deploy time was approx(400) minutes; the worker count was 20.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the number of build stages was exactly 120; the deploy time was approximately 400 minutes; the worker count was 20.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the number of build stages was exactly 120; the deploy time was approx(400) minutes; the worker count was 20.",
    "question": "Later, the worker count was found to be 22. Going only by the sentence as written, was the writer wrong about the worker count?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -268,8 +268,8 @@
   {
    "id": "gl-18",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ingest, the row count was 250; the number of sources was exactly 400; the bot share was approximately 50 percent.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ingest, the row count was 250; the number of sources was exactly 400; the bot share was approx(50) percent.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the row count was 250; the number of sources was exactly 400; the bot share was approximately 50 percent.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the row count was 250; the number of sources was exactly 400; the bot share was approx(50) percent.",
    "question": "Later, the number of sources was found to be 440. Going only by the sentence as written, was the writer wrong about the number of sources?",
    "options": [
     "The sentence did not give that figure",
@@ -283,8 +283,8 @@
   {
    "id": "gl-19",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the latency probe, the median latency was approximately 75 milliseconds; the number of regions was exactly 400; the probe count was 400.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the latency probe, the median latency was approx(75) milliseconds; the number of regions was exactly 400; the probe count was 400.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the median latency was approximately 75 milliseconds; the number of regions was exactly 400; the probe count was 400.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the median latency was approx(75) milliseconds; the number of regions was exactly 400; the probe count was 400.",
    "question": "Later, the number of regions was found to be 440. Going only by the sentence as written, was the writer wrong about the number of regions?",
    "options": [
     "No — the sentence allowed for that",
@@ -298,8 +298,8 @@
   {
    "id": "gl-20",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the archive, the number of shards was exactly 250; the archive size was approximately 400 gigabytes; the file count was 250.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the archive, the number of shards was exactly 250; the archive size was approx(400) gigabytes; the file count was 250.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the number of shards was exactly 250; the archive size was approximately 400 gigabytes; the file count was 250.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the number of shards was exactly 250; the archive size was approx(400) gigabytes; the file count was 250.",
    "question": "Later, the archive size was found to be 440. Going only by the sentence as written, was the writer wrong about the archive size?",
    "options": [
     "No — the sentence allowed for that",
@@ -313,8 +313,8 @@
   {
    "id": "gl-21",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ballot, the seconder count was 150; the closure window was exactly 400 days; the expected turnout was approximately 20 votes.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ballot, the seconder count was 150; the closure window was exactly 400 days; the expected turnout was approx(20) votes.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the seconder count was 150; the closure window was exactly 400 days; the expected turnout was approximately 20 votes.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the seconder count was 150; the closure window was exactly 400 days; the expected turnout was approx(20) votes.",
    "question": "Later, the expected turnout was found to be 22. Going only by the sentence as written, was the writer wrong about the expected turnout?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -328,8 +328,8 @@
   {
    "id": "gl-22",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the panel, the item count was approximately 99 items; the number of readers was exactly 50; the arm count was 120.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the panel, the item count was approx(99) items; the number of readers was exactly 50; the arm count was 120.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the item count was approximately 99 items; the number of readers was exactly 50; the arm count was 120.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the item count was approx(99) items; the number of readers was exactly 50; the arm count was 120.",
    "question": "Later, the arm count was found to be 132. Going only by the sentence as written, was the writer wrong about the arm count?",
    "options": [
     "The sentence did not give that figure",
@@ -343,8 +343,8 @@
   {
    "id": "gl-23",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the budget, the number of calls was exactly 50; the token budget was approximately 80 tokens; the model count was 150.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the budget, the number of calls was exactly 50; the token budget was approx(80) tokens; the model count was 150.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the number of calls was exactly 50; the token budget was approximately 80 tokens; the model count was 150.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the number of calls was exactly 50; the token budget was approx(80) tokens; the model count was 150.",
    "question": "Later, the token budget was found to be 88. Going only by the sentence as written, was the writer wrong about the token budget?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -358,8 +358,8 @@
   {
    "id": "gl-24",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the restore, the volume count was 99; the number of copies was exactly 80; the restore time was approximately 20 hours.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the restore, the volume count was 99; the number of copies was exactly 80; the restore time was approx(20) hours.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the volume count was 99; the number of copies was exactly 80; the restore time was approximately 20 hours.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the volume count was 99; the number of copies was exactly 80; the restore time was approx(20) hours.",
    "question": "Later, the number of copies was found to be 88. Going only by the sentence as written, was the writer wrong about the number of copies?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -373,8 +373,8 @@
   {
    "id": "gl-25",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the deploy, the deploy time was approximately 75 minutes; the number of build stages was exactly 250; the worker count was 120.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the deploy, the deploy time was approx(75) minutes; the number of build stages was exactly 250; the worker count was 120.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the deploy time was approximately 75 minutes; the number of build stages was exactly 250; the worker count was 120.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the deploy time was approx(75) minutes; the number of build stages was exactly 250; the worker count was 120.",
    "question": "Later, the worker count was found to be 132. Going only by the sentence as written, was the writer wrong about the worker count?",
    "options": [
     "No — the sentence allowed for that",
@@ -388,8 +388,8 @@
   {
    "id": "gl-26",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ingest, the number of sources was exactly 120; the bot share was approximately 120 percent; the row count was 3600.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ingest, the number of sources was exactly 120; the bot share was approx(120) percent; the row count was 3600.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the number of sources was exactly 120; the bot share was approximately 120 percent; the row count was 3600.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the number of sources was exactly 120; the bot share was approx(120) percent; the row count was 3600.",
    "question": "Later, the row count was found to be 3960. Going only by the sentence as written, was the writer wrong about the row count?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -403,8 +403,8 @@
   {
    "id": "gl-27",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the latency probe, the probe count was 1200; the number of regions was exactly 40; the median latency was approximately 120 milliseconds.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the latency probe, the probe count was 1200; the number of regions was exactly 40; the median latency was approx(120) milliseconds.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the probe count was 1200; the number of regions was exactly 40; the median latency was approximately 120 milliseconds.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the probe count was 1200; the number of regions was exactly 40; the median latency was approx(120) milliseconds.",
    "question": "Later, the tail latency was found to be 88. Going only by the sentence as written, was the writer wrong about the tail latency?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -418,8 +418,8 @@
   {
    "id": "gl-28",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the archive, the archive size was approximately 3600 gigabytes; the number of shards was exactly 250; the file count was 150.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the archive, the archive size was approx(3600) gigabytes; the number of shards was exactly 250; the file count was 150.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the archive size was approximately 3600 gigabytes; the number of shards was exactly 250; the file count was 150.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the archive size was approx(3600) gigabytes; the number of shards was exactly 250; the file count was 150.",
    "question": "Later, the number of shards was found to be 275. Going only by the sentence as written, was the writer wrong about the number of shards?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -433,8 +433,8 @@
   {
    "id": "gl-29",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ballot, the closure window was exactly 99 days; the expected turnout was approximately 50 votes; the seconder count was 3600.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ballot, the closure window was exactly 99 days; the expected turnout was approx(50) votes; the seconder count was 3600.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the closure window was exactly 99 days; the expected turnout was approximately 50 votes; the seconder count was 3600.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the closure window was exactly 99 days; the expected turnout was approx(50) votes; the seconder count was 3600.",
    "question": "Later, the quorum was found to be 55. Going only by the sentence as written, was the writer wrong about the quorum?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -448,8 +448,8 @@
   {
    "id": "gl-30",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the panel, the arm count was 400; the number of readers was exactly 40; the item count was approximately 3600 items.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the panel, the arm count was 400; the number of readers was exactly 40; the item count was approx(3600) items.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the arm count was 400; the number of readers was exactly 40; the item count was approximately 3600 items.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the arm count was 400; the number of readers was exactly 40; the item count was approx(3600) items.",
    "question": "Later, the arm count was found to be 440. Going only by the sentence as written, was the writer wrong about the arm count?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -463,8 +463,8 @@
   {
    "id": "gl-31",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the budget, the token budget was approximately 40 tokens; the number of calls was exactly 75; the model count was 80.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the budget, the token budget was approx(40) tokens; the number of calls was exactly 75; the model count was 80.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the token budget was approximately 40 tokens; the number of calls was exactly 75; the model count was 80.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the token budget was approx(40) tokens; the number of calls was exactly 75; the model count was 80.",
    "question": "Later, the model count was found to be 88. Going only by the sentence as written, was the writer wrong about the model count?",
    "options": [
     "The sentence did not give that figure",
@@ -478,8 +478,8 @@
   {
    "id": "gl-32",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the restore, the number of copies was exactly 50; the restore time was approximately 20 hours; the volume count was 40.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the restore, the number of copies was exactly 50; the restore time was approx(20) hours; the volume count was 40.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the number of copies was exactly 50; the restore time was approximately 20 hours; the volume count was 40.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the number of copies was exactly 50; the restore time was approx(20) hours; the volume count was 40.",
    "question": "Later, the number of copies was found to be 55. Going only by the sentence as written, was the writer wrong about the number of copies?",
    "options": [
     "The sentence did not give that figure",
@@ -493,8 +493,8 @@
   {
    "id": "gl-33",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the deploy, the worker count was 150; the number of build stages was exactly 120; the deploy time was approximately 120 minutes.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the deploy, the worker count was 150; the number of build stages was exactly 120; the deploy time was approx(120) minutes.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the worker count was 150; the number of build stages was exactly 120; the deploy time was approximately 120 minutes.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the worker count was 150; the number of build stages was exactly 120; the deploy time was approx(120) minutes.",
    "question": "Later, the worker count was found to be 165. Going only by the sentence as written, was the writer wrong about the worker count?",
    "options": [
     "No — the sentence allowed for that",
@@ -508,8 +508,8 @@
   {
    "id": "gl-34",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ingest, the bot share was approximately 75 percent; the number of sources was exactly 20; the row count was 120.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ingest, the bot share was approx(75) percent; the number of sources was exactly 20; the row count was 120.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the bot share was approximately 75 percent; the number of sources was exactly 20; the row count was 120.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the bot share was approx(75) percent; the number of sources was exactly 20; the row count was 120.",
    "question": "Later, the row count was found to be 132. Going only by the sentence as written, was the writer wrong about the row count?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -523,8 +523,8 @@
   {
    "id": "gl-35",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the latency probe, the number of regions was exactly 75; the median latency was approximately 3600 milliseconds; the probe count was 20.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the latency probe, the number of regions was exactly 75; the median latency was approx(3600) milliseconds; the probe count was 20.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the number of regions was exactly 75; the median latency was approximately 3600 milliseconds; the probe count was 20.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the number of regions was exactly 75; the median latency was approx(3600) milliseconds; the probe count was 20.",
    "question": "Later, the tail latency was found to be 440. Going only by the sentence as written, was the writer wrong about the tail latency?",
    "options": [
     "The sentence did not give that figure",
@@ -538,8 +538,8 @@
   {
    "id": "gl-36",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the archive, the file count was 250; the number of shards was exactly 80; the archive size was approximately 250 gigabytes.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the archive, the file count was 250; the number of shards was exactly 80; the archive size was approx(250) gigabytes.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the file count was 250; the number of shards was exactly 80; the archive size was approximately 250 gigabytes.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the file count was 250; the number of shards was exactly 80; the archive size was approx(250) gigabytes.",
    "question": "Later, the file count was found to be 275. Going only by the sentence as written, was the writer wrong about the file count?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -553,8 +553,8 @@
   {
    "id": "gl-37",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ballot, the expected turnout was approximately 50 votes; the closure window was exactly 50 days; the seconder count was 50.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ballot, the expected turnout was approx(50) votes; the closure window was exactly 50 days; the seconder count was 50.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the expected turnout was approximately 50 votes; the closure window was exactly 50 days; the seconder count was 50.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the expected turnout was approx(50) votes; the closure window was exactly 50 days; the seconder count was 50.",
    "question": "Later, the expected turnout was found to be 55. Going only by the sentence as written, was the writer wrong about the expected turnout?",
    "options": [
     "The sentence did not give that figure",
@@ -568,8 +568,8 @@
   {
    "id": "gl-38",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the panel, the number of readers was exactly 3600; the item count was approximately 3600 items; the arm count was 80.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the panel, the number of readers was exactly 3600; the item count was approx(3600) items; the arm count was 80.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the number of readers was exactly 3600; the item count was approximately 3600 items; the arm count was 80.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the number of readers was exactly 3600; the item count was approx(3600) items; the arm count was 80.",
    "question": "Later, the seed was found to be 132. Going only by the sentence as written, was the writer wrong about the seed?",
    "options": [
     "No — the sentence allowed for that",
@@ -583,8 +583,8 @@
   {
    "id": "gl-39",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the budget, the model count was 150; the number of calls was exactly 40; the token budget was approximately 40 tokens.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the budget, the model count was 150; the number of calls was exactly 40; the token budget was approx(40) tokens.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the model count was 150; the number of calls was exactly 40; the token budget was approximately 40 tokens.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the model count was 150; the number of calls was exactly 40; the token budget was approx(40) tokens.",
    "question": "Later, the token budget was found to be 44. Going only by the sentence as written, was the writer wrong about the token budget?",
    "options": [
     "No — the sentence allowed for that",
@@ -598,8 +598,8 @@
   {
    "id": "gl-40",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the restore, the restore time was approximately 400 hours; the number of copies was exactly 20; the volume count was 20.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the restore, the restore time was approx(400) hours; the number of copies was exactly 20; the volume count was 20.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the restore time was approximately 400 hours; the number of copies was exactly 20; the volume count was 20.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the restore time was approx(400) hours; the number of copies was exactly 20; the volume count was 20.",
    "question": "Later, the checksum length was found to be 44. Going only by the sentence as written, was the writer wrong about the checksum length?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -613,8 +613,8 @@
   {
    "id": "gl-41",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the deploy, the number of build stages was exactly 75; the deploy time was approximately 40 minutes; the worker count was 250.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the deploy, the number of build stages was exactly 75; the deploy time was approx(40) minutes; the worker count was 250.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the number of build stages was exactly 75; the deploy time was approximately 40 minutes; the worker count was 250.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the deploy, the number of build stages was exactly 75; the deploy time was approx(40) minutes; the worker count was 250.",
    "question": "Later, the number of retries was found to be 83. Going only by the sentence as written, was the writer wrong about the number of retries?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -628,8 +628,8 @@
   {
    "id": "gl-42",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ingest, the row count was 120; the number of sources was exactly 80; the bot share was approximately 3600 percent.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ingest, the row count was 120; the number of sources was exactly 80; the bot share was approx(3600) percent.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the row count was 120; the number of sources was exactly 80; the bot share was approximately 3600 percent.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ingest, the row count was 120; the number of sources was exactly 80; the bot share was approx(3600) percent.",
    "question": "Later, the bot share was found to be 3960. Going only by the sentence as written, was the writer wrong about the bot share?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -643,8 +643,8 @@
   {
    "id": "gl-43",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the latency probe, the median latency was approximately 20 milliseconds; the number of regions was exactly 50; the probe count was 75.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the latency probe, the median latency was approx(20) milliseconds; the number of regions was exactly 50; the probe count was 75.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the median latency was approximately 20 milliseconds; the number of regions was exactly 50; the probe count was 75.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the latency probe, the median latency was approx(20) milliseconds; the number of regions was exactly 50; the probe count was 75.",
    "question": "Later, the median latency was found to be 22. Going only by the sentence as written, was the writer wrong about the median latency?",
    "options": [
     "The sentence gave the figure without saying either way",
@@ -658,8 +658,8 @@
   {
    "id": "gl-44",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the archive, the number of shards was exactly 50; the archive size was approximately 3600 gigabytes; the file count was 400.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the archive, the number of shards was exactly 50; the archive size was approx(3600) gigabytes; the file count was 400.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the number of shards was exactly 50; the archive size was approximately 3600 gigabytes; the file count was 400.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the archive, the number of shards was exactly 50; the archive size was approx(3600) gigabytes; the file count was 400.",
    "question": "Later, the number of shards was found to be 55. Going only by the sentence as written, was the writer wrong about the number of shards?",
    "options": [
     "No — the sentence allowed for that",
@@ -673,8 +673,8 @@
   {
    "id": "gl-45",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the ballot, the seconder count was 99; the closure window was exactly 120 days; the expected turnout was approximately 99 votes.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the ballot, the seconder count was 99; the closure window was exactly 120 days; the expected turnout was approx(99) votes.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the seconder count was 99; the closure window was exactly 120 days; the expected turnout was approximately 99 votes.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the ballot, the seconder count was 99; the closure window was exactly 120 days; the expected turnout was approx(99) votes.",
    "question": "Later, the closure window was found to be 132. Going only by the sentence as written, was the writer wrong about the closure window?",
    "options": [
     "Yes — the sentence claimed the precise figure",
@@ -688,8 +688,8 @@
   {
    "id": "gl-46",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the panel, the item count was approximately 20 items; the number of readers was exactly 3600; the arm count was 80.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the panel, the item count was approx(20) items; the number of readers was exactly 3600; the arm count was 80.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the item count was approximately 20 items; the number of readers was exactly 3600; the arm count was 80.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the panel, the item count was approx(20) items; the number of readers was exactly 3600; the arm count was 80.",
    "question": "Later, the seed was found to be 1320. Going only by the sentence as written, was the writer wrong about the seed?",
    "options": [
     "The sentence did not give that figure",
@@ -703,8 +703,8 @@
   {
    "id": "gl-47",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the budget, the number of calls was exactly 250; the token budget was approximately 99 tokens; the model count was 150.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the budget, the number of calls was exactly 250; the token budget was approx(99) tokens; the model count was 150.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the number of calls was exactly 250; the token budget was approximately 99 tokens; the model count was 150.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the budget, the number of calls was exactly 250; the token budget was approx(99) tokens; the model count was 150.",
    "question": "Later, the token budget was found to be 109. Going only by the sentence as written, was the writer wrong about the token budget?",
    "options": [
     "The sentence did not give that figure",
@@ -718,8 +718,8 @@
   {
    "id": "gl-48",
    "stratum": "glossed",
-   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement. For the restore, the volume count was 99; the number of copies was exactly 20; the restore time was approximately 75 hours.",
-   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement. For the restore, the volume count was 99; the number of copies was exactly 20; the restore time was approx(75) hours.",
+   "english": "Gloss: 'approximately N' means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the volume count was 99; the number of copies was exactly 20; the restore time was approximately 75 hours.",
+   "ainglish": "Gloss: approx(N) means the writer gives N as an estimate, not a precise measurement; 'exactly N' means the writer commits to N precisely. For the restore, the volume count was 99; the number of copies was exactly 20; the restore time was approx(75) hours.",
    "question": "Later, the restore time was found to be 83. Going only by the sentence as written, was the writer wrong about the restore time?",
    "options": [
     "No — the sentence allowed for that",
