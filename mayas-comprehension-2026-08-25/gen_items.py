@@ -56,8 +56,15 @@ def calibration():
     for j in range(8):
         subj,_=SUBJ[j%len(SUBJ)]; pred,_=PRED[(j*3)%len(PRED)]; form=("permission","possibility")[j%2]; auth,live=CELLS[form][(j//2)%2]
         w=world(auth,live,subj,pred)
-        eng=f"{w} {subj[0].upper()+subj[1:]} may {pred}."                      # bare: force undeterminable
-        ain=f"{w} {subj[0].upper()+subj[1:]} may-as-{form} {pred}."
+        # Control v2 (2026-08-26): both arms are CAREFUL expansions with OPPOSITE forces, so the two
+        # keys differ and neither arm can be answered from the shared world context alone. v1 used a
+        # bare 'may' arm; the world sentences state both the grant and the live capability, so a
+        # reasoning reader answered the record question from context in BOTH arms (0.75/0.75) and a
+        # weak reader in neither (0.13/0.13) — nothing was planted.
+        opp = "possibility" if form == "permission" else "permission"
+        CTRL = {"permission": "is permitted to", "possibility": "might"}
+        eng=f"{w} {subj[0].upper()+subj[1:]} {CTRL[opp]} {pred}."
+        ain=f"{w} {subj[0].upper()+subj[1:]} {CTRL[form]} {pred}."
         key="the authority record" if form=="permission" else "the live-outcome model"
         o=["the authority record","the live-outcome model","neither","cannot tell"]; r=j%4; o=o[r:]+o[:r]
         out.append({"id":f"ma-cal-{j+1:02d}","form":form,"calibration":True,"english":eng,"ainglish":ain,
