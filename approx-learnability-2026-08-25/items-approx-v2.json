@@ -1,0 +1,635 @@
+{
+ "kind": "ainglish.panel.items.v1",
+ "proposal": "approx-n-approximation-marker-parenthesized-d-1-robust-5",
+ "form": "approx(<N>)",
+ "stratum": "learnability",
+ "baseline": null,
+ "scope_note": "learnability: can a fresh reader infer the construct from the register entry alone? Both arms carry the MARKED message from the frozen approx(N) cold-read set (e2acd80c…): the ainglish arm is prefixed with the row's served register entry (form, meaning, slot, example) fetched at freeze time and frozen here; the english arm is the marked message cold. The value is the entry arm's accuracy in 0..1; the cold arm is the control the calibration gate consumes. Held-out consequence questions unchanged from the source set. DESIGN v2 (2026-08-26, Dexagon's #90 review): ONE bound entry snapshot (runspec entry_snapshot, sha256 0b7551f8fbbe…); every entry arm is exactly snapshot + '\\n\\nMessage:\\n' + cold arm; the positive control is TARGET-INDEPENDENT — a novel marker qbound~N~ with its own synthetic entry, declared in the runspec's calibration_items (calibration-approx-v2.json), never inline; every reader reads both arms of every item, cold first.",
+ "sha256": "22fa1bf8126515cd49d56bbeb856d59688db9bff11abebb1e121d8a5c2e951c9",
+ "items": [
+  {
+   "id": "le-01",
+   "english": "For the deploy, the deploy time was approx(80) minutes; the number of build stages was exactly 99; the worker count was 150.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the deploy, the deploy time was approx(80) minutes; the number of build stages was exactly 99; the worker count was 150.",
+   "question": "Later, the number of retries was found to be 109. Going only by the sentence as written, was the writer wrong about the number of retries?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-02",
+   "english": "For the ingest, the number of sources was exactly 20; the bot share was approx(75) percent; the row count was 250.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ingest, the number of sources was exactly 20; the bot share was approx(75) percent; the row count was 250.",
+   "question": "Later, the error rate was found to be 165. Going only by the sentence as written, was the writer wrong about the error rate?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-03",
+   "english": "For the latency probe, the probe count was 3600; the number of regions was exactly 20; the median latency was approx(400) milliseconds.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the latency probe, the probe count was 3600; the number of regions was exactly 20; the median latency was approx(400) milliseconds.",
+   "question": "Later, the number of regions was found to be 22. Going only by the sentence as written, was the writer wrong about the number of regions?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-04",
+   "english": "For the archive, the archive size was approx(400) gigabytes; the number of shards was exactly 40; the file count was 120.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the archive, the archive size was approx(400) gigabytes; the number of shards was exactly 40; the file count was 120.",
+   "question": "Later, the archive size was found to be 440. Going only by the sentence as written, was the writer wrong about the archive size?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-05",
+   "english": "For the ballot, the closure window was exactly 400 days; the expected turnout was approx(3600) votes; the seconder count was 99.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ballot, the closure window was exactly 400 days; the expected turnout was approx(3600) votes; the seconder count was 99.",
+   "question": "Later, the expected turnout was found to be 3960. Going only by the sentence as written, was the writer wrong about the expected turnout?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-06",
+   "english": "For the panel, the arm count was 120; the number of readers was exactly 3600; the item count was approx(80) items.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the panel, the arm count was 120; the number of readers was exactly 3600; the item count was approx(80) items.",
+   "question": "Later, the seed was found to be 132. Going only by the sentence as written, was the writer wrong about the seed?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-07",
+   "english": "For the budget, the token budget was approx(400) tokens; the number of calls was exactly 150; the model count was 400.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the budget, the token budget was approx(400) tokens; the number of calls was exactly 150; the model count was 400.",
+   "question": "Later, the token budget was found to be 440. Going only by the sentence as written, was the writer wrong about the token budget?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-08",
+   "english": "For the restore, the number of copies was exactly 3600; the restore time was approx(120) hours; the volume count was 400.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the restore, the number of copies was exactly 3600; the restore time was approx(120) hours; the volume count was 400.",
+   "question": "Later, the volume count was found to be 440. Going only by the sentence as written, was the writer wrong about the volume count?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-09",
+   "english": "For the deploy, the worker count was 75; the number of build stages was exactly 3600; the deploy time was approx(250) minutes.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the deploy, the worker count was 75; the number of build stages was exactly 3600; the deploy time was approx(250) minutes.",
+   "question": "Later, the number of build stages was found to be 3960. Going only by the sentence as written, was the writer wrong about the number of build stages?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-10",
+   "english": "For the ingest, the bot share was approx(250) percent; the number of sources was exactly 1200; the row count was 20.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ingest, the bot share was approx(250) percent; the number of sources was exactly 1200; the row count was 20.",
+   "question": "Later, the row count was found to be 22. Going only by the sentence as written, was the writer wrong about the row count?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-11",
+   "english": "For the latency probe, the number of regions was exactly 250; the median latency was approx(75) milliseconds; the probe count was 150.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the latency probe, the number of regions was exactly 250; the median latency was approx(75) milliseconds; the probe count was 150.",
+   "question": "Later, the tail latency was found to be 1320. Going only by the sentence as written, was the writer wrong about the tail latency?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-12",
+   "english": "For the archive, the file count was 120; the number of shards was exactly 40; the archive size was approx(40) gigabytes.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the archive, the file count was 120; the number of shards was exactly 40; the archive size was approx(40) gigabytes.",
+   "question": "Later, the file count was found to be 132. Going only by the sentence as written, was the writer wrong about the file count?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-13",
+   "english": "For the ballot, the expected turnout was approx(250) votes; the closure window was exactly 80 days; the seconder count was 3600.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ballot, the expected turnout was approx(250) votes; the closure window was exactly 80 days; the seconder count was 3600.",
+   "question": "Later, the closure window was found to be 88. Going only by the sentence as written, was the writer wrong about the closure window?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-14",
+   "english": "For the panel, the number of readers was exactly 40; the item count was approx(75) items; the arm count was 75.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the panel, the number of readers was exactly 40; the item count was approx(75) items; the arm count was 75.",
+   "question": "Later, the seed was found to be 3960. Going only by the sentence as written, was the writer wrong about the seed?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-15",
+   "english": "For the budget, the model count was 99; the number of calls was exactly 99; the token budget was approx(1200) tokens.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the budget, the model count was 99; the number of calls was exactly 99; the token budget was approx(1200) tokens.",
+   "question": "Later, the token budget was found to be 1320. Going only by the sentence as written, was the writer wrong about the token budget?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-16",
+   "english": "For the restore, the restore time was approx(250) hours; the number of copies was exactly 80; the volume count was 3600.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the restore, the restore time was approx(250) hours; the number of copies was exactly 80; the volume count was 3600.",
+   "question": "Later, the restore time was found to be 275. Going only by the sentence as written, was the writer wrong about the restore time?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-17",
+   "english": "For the deploy, the number of build stages was exactly 99; the deploy time was approx(150) minutes; the worker count was 75.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the deploy, the number of build stages was exactly 99; the deploy time was approx(150) minutes; the worker count was 75.",
+   "question": "Later, the number of build stages was found to be 109. Going only by the sentence as written, was the writer wrong about the number of build stages?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-18",
+   "english": "For the ingest, the row count was 3600; the number of sources was exactly 400; the bot share was approx(99) percent.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ingest, the row count was 3600; the number of sources was exactly 400; the bot share was approx(99) percent.",
+   "question": "Later, the row count was found to be 3960. Going only by the sentence as written, was the writer wrong about the row count?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-19",
+   "english": "For the latency probe, the median latency was approx(3600) milliseconds; the number of regions was exactly 1200; the probe count was 99.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the latency probe, the median latency was approx(3600) milliseconds; the number of regions was exactly 1200; the probe count was 99.",
+   "question": "Later, the number of regions was found to be 1320. Going only by the sentence as written, was the writer wrong about the number of regions?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-20",
+   "english": "For the archive, the number of shards was exactly 50; the archive size was approx(250) gigabytes; the file count was 99.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the archive, the number of shards was exactly 50; the archive size was approx(250) gigabytes; the file count was 99.",
+   "question": "Later, the number of shards was found to be 55. Going only by the sentence as written, was the writer wrong about the number of shards?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-21",
+   "english": "For the ballot, the seconder count was 400; the closure window was exactly 150 days; the expected turnout was approx(50) votes.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ballot, the seconder count was 400; the closure window was exactly 150 days; the expected turnout was approx(50) votes.",
+   "question": "Later, the quorum was found to be 55. Going only by the sentence as written, was the writer wrong about the quorum?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-22",
+   "english": "For the panel, the item count was approx(80) items; the number of readers was exactly 40; the arm count was 3600.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the panel, the item count was approx(80) items; the number of readers was exactly 40; the arm count was 3600.",
+   "question": "Later, the arm count was found to be 3960. Going only by the sentence as written, was the writer wrong about the arm count?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-23",
+   "english": "For the budget, the number of calls was exactly 3600; the token budget was approx(120) tokens; the model count was 120.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the budget, the number of calls was exactly 3600; the token budget was approx(120) tokens; the model count was 120.",
+   "question": "Later, the cost was found to be 88. Going only by the sentence as written, was the writer wrong about the cost?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-24",
+   "english": "For the restore, the volume count was 40; the number of copies was exactly 120; the restore time was approx(150) hours.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the restore, the volume count was 40; the number of copies was exactly 120; the restore time was approx(150) hours.",
+   "question": "Later, the checksum length was found to be 440. Going only by the sentence as written, was the writer wrong about the checksum length?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-25",
+   "english": "For the deploy, the deploy time was approx(20) minutes; the number of build stages was exactly 40; the worker count was 20.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the deploy, the deploy time was approx(20) minutes; the number of build stages was exactly 40; the worker count was 20.",
+   "question": "Later, the number of build stages was found to be 44. Going only by the sentence as written, was the writer wrong about the number of build stages?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-26",
+   "english": "For the ingest, the number of sources was exactly 75; the bot share was approx(80) percent; the row count was 20.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ingest, the number of sources was exactly 75; the bot share was approx(80) percent; the row count was 20.",
+   "question": "Later, the row count was found to be 22. Going only by the sentence as written, was the writer wrong about the row count?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-27",
+   "english": "For the latency probe, the probe count was 400; the number of regions was exactly 120; the median latency was approx(20) milliseconds.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the latency probe, the probe count was 400; the number of regions was exactly 120; the median latency was approx(20) milliseconds.",
+   "question": "Later, the probe count was found to be 440. Going only by the sentence as written, was the writer wrong about the probe count?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-28",
+   "english": "For the archive, the archive size was approx(50) gigabytes; the number of shards was exactly 99; the file count was 3600.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the archive, the archive size was approx(50) gigabytes; the number of shards was exactly 99; the file count was 3600.",
+   "question": "Later, the number of shards was found to be 109. Going only by the sentence as written, was the writer wrong about the number of shards?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-29",
+   "english": "For the ballot, the closure window was exactly 20 days; the expected turnout was approx(20) votes; the seconder count was 50.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ballot, the closure window was exactly 20 days; the expected turnout was approx(20) votes; the seconder count was 50.",
+   "question": "Later, the expected turnout was found to be 22. Going only by the sentence as written, was the writer wrong about the expected turnout?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-30",
+   "english": "For the panel, the arm count was 40; the number of readers was exactly 1200; the item count was approx(40) items.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the panel, the arm count was 40; the number of readers was exactly 1200; the item count was approx(40) items.",
+   "question": "Later, the number of readers was found to be 1320. Going only by the sentence as written, was the writer wrong about the number of readers?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-31",
+   "english": "For the budget, the token budget was approx(3600) tokens; the number of calls was exactly 99; the model count was 1200.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the budget, the token budget was approx(3600) tokens; the number of calls was exactly 99; the model count was 1200.",
+   "question": "Later, the token budget was found to be 3960. Going only by the sentence as written, was the writer wrong about the token budget?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-32",
+   "english": "For the restore, the number of copies was exactly 20; the restore time was approx(75) hours; the volume count was 120.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the restore, the number of copies was exactly 20; the restore time was approx(75) hours; the volume count was 120.",
+   "question": "Later, the number of copies was found to be 22. Going only by the sentence as written, was the writer wrong about the number of copies?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-33",
+   "english": "For the deploy, the worker count was 20; the number of build stages was exactly 20; the deploy time was approx(120) minutes.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the deploy, the worker count was 20; the number of build stages was exactly 20; the deploy time was approx(120) minutes.",
+   "question": "Later, the worker count was found to be 22. Going only by the sentence as written, was the writer wrong about the worker count?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-34",
+   "english": "For the ingest, the bot share was approx(120) percent; the number of sources was exactly 120; the row count was 150.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ingest, the bot share was approx(120) percent; the number of sources was exactly 120; the row count was 150.",
+   "question": "Later, the row count was found to be 165. Going only by the sentence as written, was the writer wrong about the row count?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-35",
+   "english": "For the latency probe, the number of regions was exactly 20; the median latency was approx(400) milliseconds; the probe count was 250.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the latency probe, the number of regions was exactly 20; the median latency was approx(400) milliseconds; the probe count was 250.",
+   "question": "Later, the probe count was found to be 275. Going only by the sentence as written, was the writer wrong about the probe count?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-36",
+   "english": "For the archive, the file count was 3600; the number of shards was exactly 1200; the archive size was approx(250) gigabytes.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the archive, the file count was 3600; the number of shards was exactly 1200; the archive size was approx(250) gigabytes.",
+   "question": "Later, the replication factor was found to be 165. Going only by the sentence as written, was the writer wrong about the replication factor?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-37",
+   "english": "For the ballot, the expected turnout was approx(40) votes; the closure window was exactly 20 days; the seconder count was 250.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ballot, the expected turnout was approx(40) votes; the closure window was exactly 20 days; the seconder count was 250.",
+   "question": "Later, the seconder count was found to be 275. Going only by the sentence as written, was the writer wrong about the seconder count?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-38",
+   "english": "For the panel, the number of readers was exactly 3600; the item count was approx(150) items; the arm count was 50.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the panel, the number of readers was exactly 3600; the item count was approx(150) items; the arm count was 50.",
+   "question": "Later, the item count was found to be 165. Going only by the sentence as written, was the writer wrong about the item count?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-39",
+   "english": "For the budget, the model count was 3600; the number of calls was exactly 20; the token budget was approx(80) tokens.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the budget, the model count was 3600; the number of calls was exactly 20; the token budget was approx(80) tokens.",
+   "question": "Later, the model count was found to be 3960. Going only by the sentence as written, was the writer wrong about the model count?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "The sentence gave the figure without saying either way"
+  },
+  {
+   "id": "le-40",
+   "english": "For the restore, the restore time was approx(20) hours; the number of copies was exactly 250; the volume count was 20.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the restore, the restore time was approx(20) hours; the number of copies was exactly 250; the volume count was 20.",
+   "question": "Later, the restore time was found to be 22. Going only by the sentence as written, was the writer wrong about the restore time?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-41",
+   "english": "For the deploy, the number of build stages was exactly 120; the deploy time was approx(99) minutes; the worker count was 400.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the deploy, the number of build stages was exactly 120; the deploy time was approx(99) minutes; the worker count was 400.",
+   "question": "Later, the deploy time was found to be 109. Going only by the sentence as written, was the writer wrong about the deploy time?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-42",
+   "english": "For the ingest, the row count was 150; the number of sources was exactly 1200; the bot share was approx(75) percent.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ingest, the row count was 150; the number of sources was exactly 1200; the bot share was approx(75) percent.",
+   "question": "Later, the error rate was found to be 1320. Going only by the sentence as written, was the writer wrong about the error rate?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-43",
+   "english": "For the latency probe, the median latency was approx(75) milliseconds; the number of regions was exactly 400; the probe count was 20.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the latency probe, the median latency was approx(75) milliseconds; the number of regions was exactly 400; the probe count was 20.",
+   "question": "Later, the tail latency was found to be 165. Going only by the sentence as written, was the writer wrong about the tail latency?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-44",
+   "english": "For the archive, the number of shards was exactly 40; the archive size was approx(1200) gigabytes; the file count was 120.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the archive, the number of shards was exactly 40; the archive size was approx(1200) gigabytes; the file count was 120.",
+   "question": "Later, the number of shards was found to be 44. Going only by the sentence as written, was the writer wrong about the number of shards?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-45",
+   "english": "For the ballot, the seconder count was 99; the closure window was exactly 120 days; the expected turnout was approx(120) votes.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the ballot, the seconder count was 99; the closure window was exactly 120 days; the expected turnout was approx(120) votes.",
+   "question": "Later, the quorum was found to be 83. Going only by the sentence as written, was the writer wrong about the quorum?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "The sentence did not give that figure"
+  },
+  {
+   "id": "le-46",
+   "english": "For the panel, the item count was approx(3600) items; the number of readers was exactly 250; the arm count was 120.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the panel, the item count was approx(3600) items; the number of readers was exactly 250; the arm count was 120.",
+   "question": "Later, the item count was found to be 3960. Going only by the sentence as written, was the writer wrong about the item count?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "le-47",
+   "english": "For the budget, the number of calls was exactly 400; the token budget was approx(150) tokens; the model count was 1200.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the budget, the number of calls was exactly 400; the token budget was approx(150) tokens; the model count was 1200.",
+   "question": "Later, the number of calls was found to be 440. Going only by the sentence as written, was the writer wrong about the number of calls?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "Yes — the sentence claimed the precise figure"
+  },
+  {
+   "id": "le-48",
+   "english": "For the restore, the volume count was 75; the number of copies was exactly 20; the restore time was approx(75) hours.",
+   "ainglish": "Register entry for the construct 'approx(<N>)'.\nMeaning: approx(N) = approximately N; the value is an estimate, not an exact measurement.\nSlot: approx( = the enclosed value is an approximation\nExample: deploy takes approx(5) min; approx(99) percent bots; latency was approx(5) ms then approx(10) ms.\nIn careful English: deploy takes approximately 5 minutes; approximately 99 percent bots; latency was approximately 5ms then approximately 10ms.\n\nMessage:\nFor the restore, the volume count was 75; the number of copies was exactly 20; the restore time was approx(75) hours.",
+   "question": "Later, the restore time was found to be 83. Going only by the sentence as written, was the writer wrong about the restore time?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  }
+ ]
+}

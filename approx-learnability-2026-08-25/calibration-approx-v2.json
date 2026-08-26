@@ -1,0 +1,111 @@
+{
+ "kind": "ainglish.panel.calibration.v1",
+ "note": "target-independent learnability control: novel marker qbound~N~ with its own entry; planted arm ainglish; the key is derivable only with the synthetic entry",
+ "sha256": "f3bf4323abfdbe416c7278c3837d5c1de736ea2aeb249c05d1131281b9497203",
+ "items": [
+  {
+   "id": "qb-cal-01",
+   "english": "For the migration, the migration time was qbound~20~ minutes.",
+   "ainglish": "Register entry for the construct 'qbound~N~'.\nMeaning: qbound~N~ = at least N; the value is a lower bound, so any later figure at or above N is consistent with the sentence.\nExample: the batch took qbound~40~ minutes.\n\nMessage:\nFor the migration, the migration time was qbound~20~ minutes.",
+   "question": "Later, the migration time was found to be 23. Going only by the sentence as written, was the writer wrong about the migration time?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "qb-cal-02",
+   "english": "For the ingest, the bot share was qbound~60~ percent.",
+   "ainglish": "Register entry for the construct 'qbound~N~'.\nMeaning: qbound~N~ = at least N; the value is a lower bound, so any later figure at or above N is consistent with the sentence.\nExample: the batch took qbound~40~ minutes.\n\nMessage:\nFor the ingest, the bot share was qbound~60~ percent.",
+   "question": "Later, the bot share was found to be 66. Going only by the sentence as written, was the writer wrong about the bot share?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "qb-cal-03",
+   "english": "For the rollout, the error count was qbound~10~ errors.",
+   "ainglish": "Register entry for the construct 'qbound~N~'.\nMeaning: qbound~N~ = at least N; the value is a lower bound, so any later figure at or above N is consistent with the sentence.\nExample: the batch took qbound~40~ minutes.\n\nMessage:\nFor the rollout, the error count was qbound~10~ errors.",
+   "question": "Later, the error count was found to be 11. Going only by the sentence as written, was the writer wrong about the error count?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "qb-cal-04",
+   "english": "For the audit, the sampled boxes was qbound~30~ boxes.",
+   "ainglish": "Register entry for the construct 'qbound~N~'.\nMeaning: qbound~N~ = at least N; the value is a lower bound, so any later figure at or above N is consistent with the sentence.\nExample: the batch took qbound~40~ minutes.\n\nMessage:\nFor the audit, the sampled boxes was qbound~30~ boxes.",
+   "question": "Later, the sampled boxes was found to be 33. Going only by the sentence as written, was the writer wrong about the sampled boxes?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "qb-cal-05",
+   "english": "For the backup, the transfer size was qbound~50~ gigabytes.",
+   "ainglish": "Register entry for the construct 'qbound~N~'.\nMeaning: qbound~N~ = at least N; the value is a lower bound, so any later figure at or above N is consistent with the sentence.\nExample: the batch took qbound~40~ minutes.\n\nMessage:\nFor the backup, the transfer size was qbound~50~ gigabytes.",
+   "question": "Later, the transfer size was found to be 54. Going only by the sentence as written, was the writer wrong about the transfer size?",
+   "options": [
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "qb-cal-06",
+   "english": "For the drill, the evacuation time was qbound~12~ minutes.",
+   "ainglish": "Register entry for the construct 'qbound~N~'.\nMeaning: qbound~N~ = at least N; the value is a lower bound, so any later figure at or above N is consistent with the sentence.\nExample: the batch took qbound~40~ minutes.\n\nMessage:\nFor the drill, the evacuation time was qbound~12~ minutes.",
+   "question": "Later, the evacuation time was found to be 13. Going only by the sentence as written, was the writer wrong about the evacuation time?",
+   "options": [
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "qb-cal-07",
+   "english": "For the sync, the row count was qbound~400~ rows.",
+   "ainglish": "Register entry for the construct 'qbound~N~'.\nMeaning: qbound~N~ = at least N; the value is a lower bound, so any later figure at or above N is consistent with the sentence.\nExample: the batch took qbound~40~ minutes.\n\nMessage:\nFor the sync, the row count was qbound~400~ rows.",
+   "question": "Later, the row count was found to be 440. Going only by the sentence as written, was the writer wrong about the row count?",
+   "options": [
+    "The sentence gave the figure without saying either way",
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure"
+   ],
+   "answer": "No — the sentence allowed for that"
+  },
+  {
+   "id": "qb-cal-08",
+   "english": "For the survey, the response rate was qbound~70~ percent.",
+   "ainglish": "Register entry for the construct 'qbound~N~'.\nMeaning: qbound~N~ = at least N; the value is a lower bound, so any later figure at or above N is consistent with the sentence.\nExample: the batch took qbound~40~ minutes.\n\nMessage:\nFor the survey, the response rate was qbound~70~ percent.",
+   "question": "Later, the response rate was found to be 77. Going only by the sentence as written, was the writer wrong about the response rate?",
+   "options": [
+    "The sentence did not give that figure",
+    "No — the sentence allowed for that",
+    "Yes — the sentence claimed the precise figure",
+    "The sentence gave the figure without saying either way"
+   ],
+   "answer": "No — the sentence allowed for that"
+  }
+ ]
+}
