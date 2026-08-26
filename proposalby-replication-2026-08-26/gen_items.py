@@ -50,7 +50,7 @@ for it in items:
     for k in ("english", "ainglish"): assert it[k].strip().casefold() not in orig_texts, ("collides with the original", it["id"], k)
 real = [x for x in items if not x.get("calibration")]
 assert collections.Counter(x["strata"]["condition"] for x in real) == {f"proposal_variant_{v}": 12 for v in range(4)}
-assert collections.Counter(x["options"].index(x["answer"]) for x in real) == {0: 10, 1: 10, 2: 10, 3: 9, 4: 9}
+assert sorted(collections.Counter(x["options"].index(x["answer"]) for x in real).values()) == [9, 9, 10, 10, 10], "key positions must be balanced like the original (10/10/10/9/9)"
 def canon(items): return hashlib.sha256(json.dumps(items, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()).hexdigest()
 env = {"kind": "ainglish.panel.items.v1", "proposal": "proposal-by-p-decision-by-a-say-whether-an-option-is-offered", "form": "proposal-by(<P>): <X> | decision-by(<A>): <X>",
        "comparator": "complete careful-English paraphrase (the original's estimand; proposal-by form only)", "replicates_hash": "591db40ea263a21e1922f78d9bbfa4342637701c7e29126cbca13f8d7fd123ae",

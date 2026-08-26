@@ -1,0 +1,1109 @@
+{
+ "kind": "ainglish.panel.items.v1",
+ "proposal": "proposal-by-p-decision-by-a-say-whether-an-option-is-offered",
+ "form": "proposal-by(<P>): <X> | decision-by(<A>): <X>",
+ "comparator": "complete careful-English paraphrase (the original's estimand; proposal-by form only)",
+ "replicates_hash": "591db40ea263a21e1922f78d9bbfa4342637701c7e29126cbca13f8d7fd123ae",
+ "scope_note": "Fresh-input replication of Dexagon's original 591db40e (proposal-by only, careful paraphrase vs marker, three-part profile). 48 fresh role/action scenarios across the same four context variants, key positions balanced 10/10/10/9/9 as in the original; every surface asserted absent from the original's 54 items. Note for the record: like the original, every real item's key is 'offered / no / no' — the estimand the replication retains; a constant responder would ace it, which the calibration (cold default 'cannot tell') and the reported arms make visible rather than hide.",
+ "sha256": "c5379c6adceec3164dfb5c07713e369f3ad4063ec8d67f8b763e3a451ad8f7df",
+ "items": [
+  {
+   "id": "rep-pb-01",
+   "english": "Payments Lead holds the senior role named here. Payments Lead has put the option to retire the legacy invoice format forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Payments Lead holds the senior role named here. proposal-by(payments lead): retire the legacy invoice format.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-02",
+   "english": "Everyone present voiced support. Data Protection Officer has put the option to pause the weekly digest forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(data protection officer): pause the weekly digest.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-03",
+   "english": "A different earlier course remains the operative choice. Head of Support has put the option to move the standup to nine forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(head of support): move the standup to nine.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-04",
+   "english": "Site Reliability Manager has put the option to archive the pilot repository forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(site reliability manager): archive the pilot repository.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-05",
+   "english": "Localisation Lead holds the senior role named here. Localisation Lead has put the option to switch the CDN provider forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Localisation Lead holds the senior role named here. proposal-by(localisation lead): switch the CDN provider.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-06",
+   "english": "Everyone present voiced support. Procurement Manager has put the option to extend the trial to sixty days forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(procurement manager): extend the trial to sixty days.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-07",
+   "english": "A different earlier course remains the operative choice. Mobile Team Lead has put the option to rename the internal wiki forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(mobile team lead): rename the internal wiki.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-08",
+   "english": "Compliance Analyst has put the option to freeze feature branches for a week forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(compliance analyst): freeze feature branches for a week.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-09",
+   "english": "Content Editor holds the senior role named here. Content Editor has put the option to publish the retrospective forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Content Editor holds the senior role named here. proposal-by(content editor): publish the retrospective.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-10",
+   "english": "Everyone present voiced support. Network Engineer has put the option to cap uploads at two gigabytes forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(network engineer): cap uploads at two gigabytes.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-11",
+   "english": "A different earlier course remains the operative choice. Growth Marketer has put the option to shorten the on-call rotation forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(growth marketer): shorten the on-call rotation.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-12",
+   "english": "Warehouse Supervisor has put the option to migrate the ticket queue forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(warehouse supervisor): migrate the ticket queue.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-13",
+   "english": "Payments Lead holds the senior role named here. Payments Lead has put the option to reopen the beta programme forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Payments Lead holds the senior role named here. proposal-by(payments lead): reopen the beta programme.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-14",
+   "english": "Everyone present voiced support. Data Protection Officer has put the option to drop support for the old client forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(data protection officer): drop support for the old client.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-15",
+   "english": "A different earlier course remains the operative choice. Head of Support has put the option to hold the vendor review on Thursday forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(head of support): hold the vendor review on Thursday.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-16",
+   "english": "Site Reliability Manager has put the option to split the monolith deploy forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(site reliability manager): split the monolith deploy.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-17",
+   "english": "Localisation Lead holds the senior role named here. Localisation Lead has put the option to reissue the badge printers forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Localisation Lead holds the senior role named here. proposal-by(localisation lead): reissue the badge printers.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-18",
+   "english": "Everyone present voiced support. Procurement Manager has put the option to change the default locale forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(procurement manager): change the default locale.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-19",
+   "english": "A different earlier course remains the operative choice. Mobile Team Lead has put the option to run the audit in October forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(mobile team lead): run the audit in October.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-20",
+   "english": "Compliance Analyst has put the option to merge the two dashboards forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(compliance analyst): merge the two dashboards.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-21",
+   "english": "Content Editor holds the senior role named here. Content Editor has put the option to close the legacy mailbox forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Content Editor holds the senior role named here. proposal-by(content editor): close the legacy mailbox.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-22",
+   "english": "Everyone present voiced support. Network Engineer has put the option to trial the four-day week forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(network engineer): trial the four-day week.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-23",
+   "english": "A different earlier course remains the operative choice. Growth Marketer has put the option to pin the compiler version forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(growth marketer): pin the compiler version.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-24",
+   "english": "Warehouse Supervisor has put the option to increase the fraud threshold forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(warehouse supervisor): increase the fraud threshold.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-25",
+   "english": "Payments Lead holds the senior role named here. Payments Lead has put the option to outsource the night shift forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Payments Lead holds the senior role named here. proposal-by(payments lead): outsource the night shift.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-26",
+   "english": "Everyone present voiced support. Data Protection Officer has put the option to translate the terms of service forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(data protection officer): translate the terms of service.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-27",
+   "english": "A different earlier course remains the operative choice. Head of Support has put the option to sunset the affiliate program forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(head of support): sunset the affiliate program.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-28",
+   "english": "Site Reliability Manager has put the option to rotate the API keys quarterly forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(site reliability manager): rotate the API keys quarterly.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-29",
+   "english": "Localisation Lead holds the senior role named here. Localisation Lead has put the option to consolidate the test suites forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Localisation Lead holds the senior role named here. proposal-by(localisation lead): consolidate the test suites.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-30",
+   "english": "Everyone present voiced support. Procurement Manager has put the option to delay the price change forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(procurement manager): delay the price change.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-31",
+   "english": "A different earlier course remains the operative choice. Mobile Team Lead has put the option to add a second approver forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(mobile team lead): add a second approver.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-32",
+   "english": "Compliance Analyst has put the option to replace the office router forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(compliance analyst): replace the office router.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-33",
+   "english": "Content Editor holds the senior role named here. Content Editor has put the option to adopt the new logo forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Content Editor holds the senior role named here. proposal-by(content editor): adopt the new logo.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-34",
+   "english": "Everyone present voiced support. Network Engineer has put the option to record all support calls forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(network engineer): record all support calls.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-35",
+   "english": "A different earlier course remains the operative choice. Growth Marketer has put the option to bring the launch forward forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(growth marketer): bring the launch forward.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-36",
+   "english": "Warehouse Supervisor has put the option to rewrite the onboarding email forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(warehouse supervisor): rewrite the onboarding email.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-37",
+   "english": "Payments Lead holds the senior role named here. Payments Lead has put the option to move backups to the new region forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Payments Lead holds the senior role named here. proposal-by(payments lead): move backups to the new region.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-38",
+   "english": "Everyone present voiced support. Data Protection Officer has put the option to allow contractors on the VPN forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(data protection officer): allow contractors on the VPN.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-39",
+   "english": "A different earlier course remains the operative choice. Head of Support has put the option to lower the free tier limit forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(head of support): lower the free tier limit.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-40",
+   "english": "Site Reliability Manager has put the option to standardise the meeting notes forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(site reliability manager): standardise the meeting notes.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-41",
+   "english": "Localisation Lead holds the senior role named here. Localisation Lead has put the option to cancel the Friday build forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Localisation Lead holds the senior role named here. proposal-by(localisation lead): cancel the Friday build.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-42",
+   "english": "Everyone present voiced support. Procurement Manager has put the option to start the pilot in March forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(procurement manager): start the pilot in March.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-43",
+   "english": "A different earlier course remains the operative choice. Mobile Team Lead has put the option to double the retry budget forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(mobile team lead): double the retry budget.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-44",
+   "english": "Compliance Analyst has put the option to require two-factor for admins forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(compliance analyst): require two-factor for admins.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 3
+   }
+  },
+  {
+   "id": "rep-pb-45",
+   "english": "Content Editor holds the senior role named here. Content Editor has put the option to open the API to partners forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Content Editor holds the senior role named here. proposal-by(content editor): open the API to partners.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_0",
+    "domain": "operational",
+    "answer_position": 4
+   }
+  },
+  {
+   "id": "rep-pb-46",
+   "english": "Everyone present voiced support. Network Engineer has put the option to remove the signup captcha forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "Everyone present voiced support. proposal-by(network engineer): remove the signup captcha.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_1",
+    "domain": "operational",
+    "answer_position": 0
+   }
+  },
+  {
+   "id": "rep-pb-47",
+   "english": "A different earlier course remains the operative choice. Growth Marketer has put the option to reprint the safety posters forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "A different earlier course remains the operative choice. proposal-by(growth marketer): reprint the safety posters.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_2",
+    "domain": "operational",
+    "answer_position": 1
+   }
+  },
+  {
+   "id": "rep-pb-48",
+   "english": "Warehouse Supervisor has put the option to repaint the loading bay forward for consideration. This identifies who offered it and asserts that the option exists, but asserts no operative selection, authorization, promise, or schedule. This sentence neither commands the reader nor grants permission.",
+   "ainglish": "proposal-by(warehouse supervisor): repaint the loading bay.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no",
+   "strata": {
+    "form": "proposal",
+    "baseline": "careful",
+    "condition": "proposal_variant_3",
+    "domain": "operational",
+    "answer_position": 2
+   }
+  },
+  {
+   "id": "rep-pb-cal-01",
+   "calibration": true,
+   "english": "A one-line status about whether to rotate the stage lighting was received, but the available note does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+   "ainglish": "proposal-by(replication control 1): rotate the stage lighting.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no"
+  },
+  {
+   "id": "rep-pb-cal-02",
+   "calibration": true,
+   "english": "A one-line status about whether to close the west car park was received, but the available note does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+   "ainglish": "proposal-by(replication control 2): close the west car park.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no"
+   ],
+   "answer": "offered / no / no"
+  },
+  {
+   "id": "rep-pb-cal-03",
+   "calibration": true,
+   "english": "A one-line status about whether to reprint the menu cards was received, but the available note does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+   "ainglish": "proposal-by(replication control 3): reprint the menu cards.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no"
+   ],
+   "answer": "offered / no / no"
+  },
+  {
+   "id": "rep-pb-cal-04",
+   "calibration": true,
+   "english": "A one-line status about whether to swap the choir rehearsal night was received, but the available note does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+   "ainglish": "proposal-by(replication control 4): swap the choir rehearsal night.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no"
+   ],
+   "answer": "offered / no / no"
+  },
+  {
+   "id": "rep-pb-cal-05",
+   "calibration": true,
+   "english": "A one-line status about whether to reseed the cricket square was received, but the available note does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+   "ainglish": "proposal-by(replication control 5): reseed the cricket square.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "cannot tell / cannot tell / cannot tell",
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes"
+   ],
+   "answer": "offered / no / no"
+  },
+  {
+   "id": "rep-pb-cal-06",
+   "calibration": true,
+   "english": "A one-line status about whether to relabel the archive boxes was received, but the available note does not reveal whether the course was merely floated or operatively selected, whether an existing choice may be recorded, or whether the sentence had directive force.",
+   "ainglish": "proposal-by(replication control 6): relabel the archive boxes.",
+   "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for consideration, operatively selected, invalid because the named source lacks standing, or impossible to determine? Part 2: may the record state that an existing choice has been made? Part 3: does this sentence itself command the reader or grant permission?",
+   "options": [
+    "offered / no / no",
+    "selected / yes / no",
+    "invalid source / no / no",
+    "selected / yes / yes",
+    "cannot tell / cannot tell / cannot tell"
+   ],
+   "answer": "offered / no / no"
+  }
+ ]
+}
