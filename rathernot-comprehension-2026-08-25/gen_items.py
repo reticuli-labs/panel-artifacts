@@ -41,8 +41,15 @@ def calibration():
     out=[]
     for j in range(8):
         X,_=RELEASES[j%len(RELEASES)]; form=("rather-not","welcome")[j%2]; prel,ptext=POWER[j%3]
-        eng=f"A message from {ptext}: \"You don't need to {X}.\""; ain=f"A message from {ptext}: \"You don't need to {X}, {TAGS[form]}.\""
-        key=KEYS[form][0]; o=["yes","no","cannot tell"]; rot=j%3; o=o[rot:]+o[:rot]
+        # Positive control v2 (2026-08-26): BOTH arms are careful expansions with OPPOSITE keys — the
+        # planted slot carries this form's expansion, the other slot the opposite-preference form's —
+        # so the difference is derivable by construction and a reader cannot score the planted key
+        # in both arms. v1 planted the effect in the bare marker; read cold, no reader could decode
+        # it (~0.47 with the marker present), so the marker cannot be its own positive control.
+        opp = "welcome" if form == "rather-not" else "rather-not"
+        eng=f"A message from {ptext}: \"{CAREFUL[opp].format(X=X)[0].upper()+CAREFUL[opp].format(X=X)[1:]}.\""
+        ain=f"A message from {ptext}: \"{CAREFUL[form].format(X=X)[0].upper()+CAREFUL[form].format(X=X)[1:]}.\""
+        key=KEYS[form][0]; assert KEYS[opp][0]!=key; o=["yes","no","cannot tell"]; rot=j%3; o=o[rot:]+o[:rot]
         out.append({"id":f"rn-cal-{j+1:02d}","form":TAGS[form],"calibration":True,"english":eng,"ainglish":ain,"question":f"Suppose you chose not to {X}. Did the sender get what they wanted?","options":o,"answer":key})
     return out
 if __name__=="__main__":
