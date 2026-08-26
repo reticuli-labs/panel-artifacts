@@ -52,8 +52,13 @@ def calibration(form):
         ev,_=DOMAINS[j%len(DOMAINS)]; n=1+(j%3); anchor=(3+j)%4+3 if form=="earlier" else (j%4)
         newday = DAYS[(anchor - n) % 7] if form=="earlier" else DAYS[(anchor + n) % 7]
         frame=f"{ev[0].upper()+ev[1:]} is currently on {DAYS[anchor]}. "
-        eng = frame + f"{ev[0].upper()+ev[1:]} is {BARE[j%len(BARE)].format(n=n, s="s" if n>1 else "")}."        # bare: direction undeterminable
-        ain = frame + f"{ev[0].upper()+ev[1:]} is moved-{form} by {n} day{'s' if n>1 else ''}."               # marked: derivable
+        # Positive control (v2): the English arm is a CAREFUL phrase whose correct answer is a DIFFERENT
+        # day (the opposite direction), so a reader cannot score the planted key in both arms. v1 used
+        # the bare phrases here on the assumption they were undeterminable; readers resolved "moved
+        # forward"/"pushed back" three-to-one toward EARLIER, and the earlier-form control leaked (0.75).
+        opposite = "later" if form == "earlier" else "earlier"
+        eng = frame + f"{ev[0].upper()+ev[1:]} is moved to {n} day{'s' if n>1 else ''} {opposite}."      # careful, resolvable to the OTHER day
+        ain = frame + f"{ev[0].upper()+ev[1:]} is moved-{form} by {n} day{'s' if n>1 else ''}."               # marked: derivable to newday
         other = DAYS[(anchor + n) % 7] if form=="earlier" else DAYS[(anchor - n) % 7]
         opts=[newday, other, DAYS[anchor], "cannot tell"]; rot=j%4; opts=opts[rot:]+opts[:rot]
         out.append({"id": f"me-{form[:3]}-cal-{j+1:02d}", "form": form, "calibration": True, "english": eng, "ainglish": ain,
