@@ -1,0 +1,763 @@
+{
+ "kind": "ainglish.panel.items.v1",
+ "proposal": "proxy-m-say-when-the-evidence-you-measured-is-a-proxy-for-th-2",
+ "form": "X proxy(<M>)",
+ "stratum": "learnability",
+ "source_set": "6dfd5e12b61df2b766c1ff05866fa4b2ff3db2360f7e87fc49afce9fbc2dc170",
+ "scope_note": "learnability (SDK 0.2.38 / #92 contract): 48 marked-message items drawn (seed 20260826) from the row's frozen careful comprehension set (items sha 6dfd5e12b61d), the SAME marked message in both arms; the harness composes the one digest-bound register-entry snapshot (runspec entry {text, sha256, source_url, proposal_revision}) into every entry cell; inline target-independent plov~N~ definition control (8); every reader reads every item cold then entry-loaded; the cold arm is the diagnostic the score must be read against.",
+ "sha256": "8e59074204a2c2cac518cdfb378f10518bd39526409622d6e3829b79cfcf06b5",
+ "items": [
+  {
+   "id": "pl-cal-01",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the migration, the migration time was plov~20~ minutes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the migration, the migration time was plov~20~ minutes.",
+   "question": "Going only by the sentence as written, what does the marker say about the migration time?",
+   "options": [
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-02",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the ingest, the bot share was plov~60~ percent.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the ingest, the bot share was plov~60~ percent.",
+   "question": "Going only by the sentence as written, what does the marker say about the bot share?",
+   "options": [
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-03",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the rollout, the error count was plov~10~ errors.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the rollout, the error count was plov~10~ errors.",
+   "question": "Going only by the sentence as written, what does the marker say about the error count?",
+   "options": [
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-04",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the audit, the sampled boxes was plov~30~ boxes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the audit, the sampled boxes was plov~30~ boxes.",
+   "question": "Going only by the sentence as written, what does the marker say about the sampled boxes?",
+   "options": [
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-05",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the backup, the transfer size was plov~50~ gigabytes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the backup, the transfer size was plov~50~ gigabytes.",
+   "question": "Going only by the sentence as written, what does the marker say about the transfer size?",
+   "options": [
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-06",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the drill, the evacuation time was plov~12~ minutes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the drill, the evacuation time was plov~12~ minutes.",
+   "question": "Going only by the sentence as written, what does the marker say about the evacuation time?",
+   "options": [
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-07",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the sync, the row count was plov~400~ rows.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the sync, the row count was plov~400~ rows.",
+   "question": "Going only by the sentence as written, what does the marker say about the row count?",
+   "options": [
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-08",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the survey, the response rate was plov~70~ percent.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the survey, the response rate was plov~70~ percent.",
+   "question": "Going only by the sentence as written, what does the marker say about the response rate?",
+   "options": [
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pr-car-16q1-L",
+   "english": "The document is accurate proxy(<spell-check>); zero spelling errors.",
+   "ainglish": "The document is accurate proxy(<spell-check>); zero spelling errors.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "cannot tell",
+    "the measurement (spell check) only",
+    "the claim itself (that the document is accurate) only",
+    "both the measurement and the claim"
+   ],
+   "answer": "the measurement (spell check) only"
+  },
+  {
+   "id": "pr-car-18q1-L",
+   "english": "Users understood the notice proxy(<click-through>); click-through of 62 percent.",
+   "ainglish": "Users understood the notice proxy(<click-through>); click-through of 62 percent.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the claim itself (that users understood the notice) only",
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (click through) only"
+   ],
+   "answer": "the measurement (click through) only"
+  },
+  {
+   "id": "pr-car-20q1-L",
+   "english": "The argument is sound proxy(<citation-count>); 14 citations.",
+   "ainglish": "The argument is sound proxy(<citation-count>); 14 citations.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "cannot tell",
+    "the measurement (citation count) only",
+    "the claim itself (that the argument is sound) only",
+    "both the measurement and the claim"
+   ],
+   "answer": "the measurement (citation count) only"
+  },
+  {
+   "id": "pr-car-02q1-L",
+   "english": "The link is secure proxy(<padlock-icon>); the padlock icon showing.",
+   "ainglish": "The link is secure proxy(<padlock-icon>); the padlock icon showing.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the claim itself (that the link is secure) only",
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (padlock icon) only"
+   ],
+   "answer": "the measurement (padlock icon) only"
+  },
+  {
+   "id": "pr-car-27q2-L",
+   "english": "The meeting happened proxy(<calendar-entry>); the calendar entry marked done.",
+   "ainglish": "The meeting happened proxy(<calendar-entry>); the calendar entry marked done.",
+   "question": "Suppose it later turns out that it is NOT the case that the meeting happened. Going only by the sentence, what was wrong?",
+   "options": [
+    "cannot tell",
+    "the calendar entry reading itself",
+    "the step from calendar entry to the claim",
+    "nothing — the claim was checked directly"
+   ],
+   "answer": "the step from calendar entry to the claim"
+  },
+  {
+   "id": "pr-car-03q1-L",
+   "english": "The sensor is calibrated proxy(<self-test>); the self-test passing.",
+   "ainglish": "The sensor is calibrated proxy(<self-test>); the self-test passing.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (self test) only",
+    "the claim itself (that the sensor is calibrated) only"
+   ],
+   "answer": "the measurement (self test) only"
+  },
+  {
+   "id": "pr-car-21q1-L",
+   "english": "The vote was representative proxy(<turnout>); turnout of 71 percent.",
+   "ainglish": "The vote was representative proxy(<turnout>); turnout of 71 percent.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the measurement (turnout) only",
+    "the claim itself (that the vote was representative) only",
+    "both the measurement and the claim",
+    "cannot tell"
+   ],
+   "answer": "the measurement (turnout) only"
+  },
+  {
+   "id": "pr-car-10q2-L",
+   "english": "The backup is restorable proxy(<file-count>); all 4,120 files present.",
+   "ainglish": "The backup is restorable proxy(<file-count>); all 4,120 files present.",
+   "question": "Suppose it later turns out that it is NOT the case that the backup is restorable. Going only by the sentence, what was wrong?",
+   "options": [
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the file count reading itself",
+    "the step from file count to the claim"
+   ],
+   "answer": "the step from file count to the claim"
+  },
+  {
+   "id": "pr-car-05q2-L",
+   "english": "The cache is warm proxy(<hit-rate>); a 94 percent hit rate.",
+   "ainglish": "The cache is warm proxy(<hit-rate>); a 94 percent hit rate.",
+   "question": "Suppose it later turns out that it is NOT the case that the cache is warm. Going only by the sentence, what was wrong?",
+   "options": [
+    "the step from hit rate to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the hit rate reading itself"
+   ],
+   "answer": "the step from hit rate to the claim"
+  },
+  {
+   "id": "pr-car-17q1-L",
+   "english": "The service is healthy proxy(<ping-latency>); ping under 5 ms.",
+   "ainglish": "The service is healthy proxy(<ping-latency>); ping under 5 ms.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the measurement (ping latency) only",
+    "the claim itself (that the service is healthy) only",
+    "both the measurement and the claim",
+    "cannot tell"
+   ],
+   "answer": "the measurement (ping latency) only"
+  },
+  {
+   "id": "pr-car-07q2-L",
+   "english": "The key was rotated proxy(<timestamp-change>); a new mtime on the key file.",
+   "ainglish": "The key was rotated proxy(<timestamp-change>); a new mtime on the key file.",
+   "question": "Suppose it later turns out that it is NOT the case that the key was rotated. Going only by the sentence, what was wrong?",
+   "options": [
+    "cannot tell",
+    "the timestamp change reading itself",
+    "the step from timestamp change to the claim",
+    "nothing — the claim was checked directly"
+   ],
+   "answer": "the step from timestamp change to the claim"
+  },
+  {
+   "id": "pr-car-05q1-L",
+   "english": "The cache is warm proxy(<hit-rate>); a 94 percent hit rate.",
+   "ainglish": "The cache is warm proxy(<hit-rate>); a 94 percent hit rate.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the measurement (hit rate) only",
+    "the claim itself (that the cache is warm) only",
+    "both the measurement and the claim",
+    "cannot tell"
+   ],
+   "answer": "the measurement (hit rate) only"
+  },
+  {
+   "id": "pr-car-04q2-L",
+   "english": "The alert was seen proxy(<notification-delivered>); the notification marked delivered.",
+   "ainglish": "The alert was seen proxy(<notification-delivered>); the notification marked delivered.",
+   "question": "Suppose it later turns out that it is NOT the case that the alert was seen. Going only by the sentence, what was wrong?",
+   "options": [
+    "the notification delivered reading itself",
+    "the step from notification delivered to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell"
+   ],
+   "answer": "the step from notification delivered to the claim"
+  },
+  {
+   "id": "pr-car-13q2-L",
+   "english": "The anchor is confirmed proxy(<calendar-ack>); acknowledgements from 4 calendars.",
+   "ainglish": "The anchor is confirmed proxy(<calendar-ack>); acknowledgements from 4 calendars.",
+   "question": "Suppose it later turns out that it is NOT the case that the anchor is confirmed. Going only by the sentence, what was wrong?",
+   "options": [
+    "the step from calendar ack to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the calendar ack reading itself"
+   ],
+   "answer": "the step from calendar ack to the claim"
+  },
+  {
+   "id": "pr-car-28q1-L",
+   "english": "The room is empty proxy(<motion-sensor>); no motion for 10 minutes.",
+   "ainglish": "The room is empty proxy(<motion-sensor>); no motion for 10 minutes.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "cannot tell",
+    "the measurement (motion sensor) only",
+    "the claim itself (that the room is empty) only",
+    "both the measurement and the claim"
+   ],
+   "answer": "the measurement (motion sensor) only"
+  },
+  {
+   "id": "pr-car-06q2-L",
+   "english": "The dataset is deduplicated proxy(<hash-uniqueness>); all row hashes unique.",
+   "ainglish": "The dataset is deduplicated proxy(<hash-uniqueness>); all row hashes unique.",
+   "question": "Suppose it later turns out that it is NOT the case that the dataset is deduplicated. Going only by the sentence, what was wrong?",
+   "options": [
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the hash uniqueness reading itself",
+    "the step from hash uniqueness to the claim"
+   ],
+   "answer": "the step from hash uniqueness to the claim"
+  },
+  {
+   "id": "pr-car-04q1-L",
+   "english": "The alert was seen proxy(<notification-delivered>); the notification marked delivered.",
+   "ainglish": "The alert was seen proxy(<notification-delivered>); the notification marked delivered.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "cannot tell",
+    "the measurement (notification delivered) only",
+    "the claim itself (that the alert was seen) only",
+    "both the measurement and the claim"
+   ],
+   "answer": "the measurement (notification delivered) only"
+  },
+  {
+   "id": "pr-car-29q2-L",
+   "english": "The reviewer read the diff proxy(<time-open>); the tab open for 40 minutes.",
+   "ainglish": "The reviewer read the diff proxy(<time-open>); the tab open for 40 minutes.",
+   "question": "Suppose it later turns out that it is NOT the case that the reviewer read the diff. Going only by the sentence, what was wrong?",
+   "options": [
+    "the step from time open to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the time open reading itself"
+   ],
+   "answer": "the step from time open to the claim"
+  },
+  {
+   "id": "pr-car-29q1-L",
+   "english": "The reviewer read the diff proxy(<time-open>); the tab open for 40 minutes.",
+   "ainglish": "The reviewer read the diff proxy(<time-open>); the tab open for 40 minutes.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the measurement (time open) only",
+    "the claim itself (that the reviewer read the diff) only",
+    "both the measurement and the claim",
+    "cannot tell"
+   ],
+   "answer": "the measurement (time open) only"
+  },
+  {
+   "id": "pr-car-25q2-L",
+   "english": "The agent is idle proxy(<cpu-load>); CPU load under 2 percent.",
+   "ainglish": "The agent is idle proxy(<cpu-load>); CPU load under 2 percent.",
+   "question": "Suppose it later turns out that it is NOT the case that the agent is idle. Going only by the sentence, what was wrong?",
+   "options": [
+    "the step from cpu load to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the cpu load reading itself"
+   ],
+   "answer": "the step from cpu load to the claim"
+  },
+  {
+   "id": "pr-car-24q2-L",
+   "english": "The audience was engaged proxy(<dwell-time>); median dwell of 3 minutes.",
+   "ainglish": "The audience was engaged proxy(<dwell-time>); median dwell of 3 minutes.",
+   "question": "Suppose it later turns out that it is NOT the case that the audience was engaged. Going only by the sentence, what was wrong?",
+   "options": [
+    "the dwell time reading itself",
+    "the step from dwell time to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell"
+   ],
+   "answer": "the step from dwell time to the claim"
+  },
+  {
+   "id": "pr-car-03q2-L",
+   "english": "The sensor is calibrated proxy(<self-test>); the self-test passing.",
+   "ainglish": "The sensor is calibrated proxy(<self-test>); the self-test passing.",
+   "question": "Suppose it later turns out that it is NOT the case that the sensor is calibrated. Going only by the sentence, what was wrong?",
+   "options": [
+    "cannot tell",
+    "the self test reading itself",
+    "the step from self test to the claim",
+    "nothing — the claim was checked directly"
+   ],
+   "answer": "the step from self test to the claim"
+  },
+  {
+   "id": "pr-car-26q2-L",
+   "english": "The model improved proxy(<loss-curve>); training loss down 12 percent.",
+   "ainglish": "The model improved proxy(<loss-curve>); training loss down 12 percent.",
+   "question": "Suppose it later turns out that it is NOT the case that the model improved. Going only by the sentence, what was wrong?",
+   "options": [
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the loss curve reading itself",
+    "the step from loss curve to the claim"
+   ],
+   "answer": "the step from loss curve to the claim"
+  },
+  {
+   "id": "pr-car-21q2-L",
+   "english": "The vote was representative proxy(<turnout>); turnout of 71 percent.",
+   "ainglish": "The vote was representative proxy(<turnout>); turnout of 71 percent.",
+   "question": "Suppose it later turns out that it is NOT the case that the vote was representative. Going only by the sentence, what was wrong?",
+   "options": [
+    "the step from turnout to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the turnout reading itself"
+   ],
+   "answer": "the step from turnout to the claim"
+  },
+  {
+   "id": "pr-car-24q1-L",
+   "english": "The audience was engaged proxy(<dwell-time>); median dwell of 3 minutes.",
+   "ainglish": "The audience was engaged proxy(<dwell-time>); median dwell of 3 minutes.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "cannot tell",
+    "the measurement (dwell time) only",
+    "the claim itself (that the audience was engaged) only",
+    "both the measurement and the claim"
+   ],
+   "answer": "the measurement (dwell time) only"
+  },
+  {
+   "id": "pr-car-16q2-L",
+   "english": "The document is accurate proxy(<spell-check>); zero spelling errors.",
+   "ainglish": "The document is accurate proxy(<spell-check>); zero spelling errors.",
+   "question": "Suppose it later turns out that it is NOT the case that the document is accurate. Going only by the sentence, what was wrong?",
+   "options": [
+    "the spell check reading itself",
+    "the step from spell check to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell"
+   ],
+   "answer": "the step from spell check to the claim"
+  },
+  {
+   "id": "pr-car-08q1-L",
+   "english": "The translation is faithful proxy(<back-translation>); back-translation matching 88 percent.",
+   "ainglish": "The translation is faithful proxy(<back-translation>); back-translation matching 88 percent.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "cannot tell",
+    "the measurement (back translation) only",
+    "the claim itself (that the translation is faithful) only",
+    "both the measurement and the claim"
+   ],
+   "answer": "the measurement (back translation) only"
+  },
+  {
+   "id": "pr-car-20q2-L",
+   "english": "The argument is sound proxy(<citation-count>); 14 citations.",
+   "ainglish": "The argument is sound proxy(<citation-count>); 14 citations.",
+   "question": "Suppose it later turns out that it is NOT the case that the argument is sound. Going only by the sentence, what was wrong?",
+   "options": [
+    "the citation count reading itself",
+    "the step from citation count to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell"
+   ],
+   "answer": "the step from citation count to the claim"
+  },
+  {
+   "id": "pr-car-15q2-L",
+   "english": "The deploy reached every region proxy(<dns-propagation>); DNS answers from all 6 resolvers.",
+   "ainglish": "The deploy reached every region proxy(<dns-propagation>); DNS answers from all 6 resolvers.",
+   "question": "Suppose it later turns out that it is NOT the case that the deploy reached every region. Going only by the sentence, what was wrong?",
+   "options": [
+    "cannot tell",
+    "the dns propagation reading itself",
+    "the step from dns propagation to the claim",
+    "nothing — the claim was checked directly"
+   ],
+   "answer": "the step from dns propagation to the claim"
+  },
+  {
+   "id": "pr-car-08q2-L",
+   "english": "The translation is faithful proxy(<back-translation>); back-translation matching 88 percent.",
+   "ainglish": "The translation is faithful proxy(<back-translation>); back-translation matching 88 percent.",
+   "question": "Suppose it later turns out that it is NOT the case that the translation is faithful. Going only by the sentence, what was wrong?",
+   "options": [
+    "the back translation reading itself",
+    "the step from back translation to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell"
+   ],
+   "answer": "the step from back translation to the claim"
+  },
+  {
+   "id": "pr-car-11q2-L",
+   "english": "The patch fixed the bug proxy(<test-pass>); the regression test passing.",
+   "ainglish": "The patch fixed the bug proxy(<test-pass>); the regression test passing.",
+   "question": "Suppose it later turns out that it is NOT the case that the patch fixed the bug. Going only by the sentence, what was wrong?",
+   "options": [
+    "cannot tell",
+    "the test pass reading itself",
+    "the step from test pass to the claim",
+    "nothing — the claim was checked directly"
+   ],
+   "answer": "the step from test pass to the claim"
+  },
+  {
+   "id": "pr-car-02q2-L",
+   "english": "The link is secure proxy(<padlock-icon>); the padlock icon showing.",
+   "ainglish": "The link is secure proxy(<padlock-icon>); the padlock icon showing.",
+   "question": "Suppose it later turns out that it is NOT the case that the link is secure. Going only by the sentence, what was wrong?",
+   "options": [
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the padlock icon reading itself",
+    "the step from padlock icon to the claim"
+   ],
+   "answer": "the step from padlock icon to the claim"
+  },
+  {
+   "id": "pr-car-27q1-L",
+   "english": "The meeting happened proxy(<calendar-entry>); the calendar entry marked done.",
+   "ainglish": "The meeting happened proxy(<calendar-entry>); the calendar entry marked done.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (calendar entry) only",
+    "the claim itself (that the meeting happened) only"
+   ],
+   "answer": "the measurement (calendar entry) only"
+  },
+  {
+   "id": "pr-car-14q1-L",
+   "english": "The contributor accepted the terms proxy(<checkbox>); the checkbox ticked.",
+   "ainglish": "The contributor accepted the terms proxy(<checkbox>); the checkbox ticked.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the claim itself (that the contributor accepted the terms) only",
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (checkbox) only"
+   ],
+   "answer": "the measurement (checkbox) only"
+  },
+  {
+   "id": "pr-car-25q1-L",
+   "english": "The agent is idle proxy(<cpu-load>); CPU load under 2 percent.",
+   "ainglish": "The agent is idle proxy(<cpu-load>); CPU load under 2 percent.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the measurement (cpu load) only",
+    "the claim itself (that the agent is idle) only",
+    "both the measurement and the claim",
+    "cannot tell"
+   ],
+   "answer": "the measurement (cpu load) only"
+  },
+  {
+   "id": "pr-car-13q1-L",
+   "english": "The anchor is confirmed proxy(<calendar-ack>); acknowledgements from 4 calendars.",
+   "ainglish": "The anchor is confirmed proxy(<calendar-ack>); acknowledgements from 4 calendars.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the measurement (calendar ack) only",
+    "the claim itself (that the anchor is confirmed) only",
+    "both the measurement and the claim",
+    "cannot tell"
+   ],
+   "answer": "the measurement (calendar ack) only"
+  },
+  {
+   "id": "pr-car-09q2-L",
+   "english": "The queue is drained proxy(<queue-length>); queue length 0 at 09:00.",
+   "ainglish": "The queue is drained proxy(<queue-length>); queue length 0 at 09:00.",
+   "question": "Suppose it later turns out that it is NOT the case that the queue is drained. Going only by the sentence, what was wrong?",
+   "options": [
+    "the step from queue length to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the queue length reading itself"
+   ],
+   "answer": "the step from queue length to the claim"
+  },
+  {
+   "id": "pr-car-01q2-L",
+   "english": "The code is tested proxy(<coverage>); coverage of 91 percent.",
+   "ainglish": "The code is tested proxy(<coverage>); coverage of 91 percent.",
+   "question": "Suppose it later turns out that it is NOT the case that the code is tested. Going only by the sentence, what was wrong?",
+   "options": [
+    "the step from coverage to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the coverage reading itself"
+   ],
+   "answer": "the step from coverage to the claim"
+  },
+  {
+   "id": "pr-car-11q1-L",
+   "english": "The patch fixed the bug proxy(<test-pass>); the regression test passing.",
+   "ainglish": "The patch fixed the bug proxy(<test-pass>); the regression test passing.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (test pass) only",
+    "the claim itself (that the patch fixed the bug) only"
+   ],
+   "answer": "the measurement (test pass) only"
+  },
+  {
+   "id": "pr-car-26q1-L",
+   "english": "The model improved proxy(<loss-curve>); training loss down 12 percent.",
+   "ainglish": "The model improved proxy(<loss-curve>); training loss down 12 percent.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the claim itself (that the model improved) only",
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (loss curve) only"
+   ],
+   "answer": "the measurement (loss curve) only"
+  },
+  {
+   "id": "pr-car-10q1-L",
+   "english": "The backup is restorable proxy(<file-count>); all 4,120 files present.",
+   "ainglish": "The backup is restorable proxy(<file-count>); all 4,120 files present.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the claim itself (that the backup is restorable) only",
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (file count) only"
+   ],
+   "answer": "the measurement (file count) only"
+  },
+  {
+   "id": "pr-car-09q1-L",
+   "english": "The queue is drained proxy(<queue-length>); queue length 0 at 09:00.",
+   "ainglish": "The queue is drained proxy(<queue-length>); queue length 0 at 09:00.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "the measurement (queue length) only",
+    "the claim itself (that the queue is drained) only",
+    "both the measurement and the claim",
+    "cannot tell"
+   ],
+   "answer": "the measurement (queue length) only"
+  },
+  {
+   "id": "pr-car-18q2-L",
+   "english": "Users understood the notice proxy(<click-through>); click-through of 62 percent.",
+   "ainglish": "Users understood the notice proxy(<click-through>); click-through of 62 percent.",
+   "question": "Suppose it later turns out that it is NOT the case that users understood the notice. Going only by the sentence, what was wrong?",
+   "options": [
+    "nothing — the claim was checked directly",
+    "cannot tell",
+    "the click through reading itself",
+    "the step from click through to the claim"
+   ],
+   "answer": "the step from click through to the claim"
+  },
+  {
+   "id": "pr-car-15q1-L",
+   "english": "The deploy reached every region proxy(<dns-propagation>); DNS answers from all 6 resolvers.",
+   "ainglish": "The deploy reached every region proxy(<dns-propagation>); DNS answers from all 6 resolvers.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (dns propagation) only",
+    "the claim itself (that the deploy reached every region) only"
+   ],
+   "answer": "the measurement (dns propagation) only"
+  },
+  {
+   "id": "pr-car-19q2-L",
+   "english": "The disk is healthy proxy(<smart-status>); SMART status OK.",
+   "ainglish": "The disk is healthy proxy(<smart-status>); SMART status OK.",
+   "question": "Suppose it later turns out that it is NOT the case that the disk is healthy. Going only by the sentence, what was wrong?",
+   "options": [
+    "cannot tell",
+    "the smart status reading itself",
+    "the step from smart status to the claim",
+    "nothing — the claim was checked directly"
+   ],
+   "answer": "the step from smart status to the claim"
+  },
+  {
+   "id": "pr-car-12q1-L",
+   "english": "The customer is satisfied proxy(<nps-score>); an NPS of 9.",
+   "ainglish": "The customer is satisfied proxy(<nps-score>); an NPS of 9.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "cannot tell",
+    "the measurement (nps score) only",
+    "the claim itself (that the customer is satisfied) only",
+    "both the measurement and the claim"
+   ],
+   "answer": "the measurement (nps score) only"
+  },
+  {
+   "id": "pr-car-12q2-L",
+   "english": "The customer is satisfied proxy(<nps-score>); an NPS of 9.",
+   "ainglish": "The customer is satisfied proxy(<nps-score>); an NPS of 9.",
+   "question": "Suppose it later turns out that it is NOT the case that the customer is satisfied. Going only by the sentence, what was wrong?",
+   "options": [
+    "the nps score reading itself",
+    "the step from nps score to the claim",
+    "nothing — the claim was checked directly",
+    "cannot tell"
+   ],
+   "answer": "the step from nps score to the claim"
+  },
+  {
+   "id": "pr-car-07q1-L",
+   "english": "The key was rotated proxy(<timestamp-change>); a new mtime on the key file.",
+   "ainglish": "The key was rotated proxy(<timestamp-change>); a new mtime on the key file.",
+   "question": "What did the writer directly check?",
+   "options": [
+    "both the measurement and the claim",
+    "cannot tell",
+    "the measurement (timestamp change) only",
+    "the claim itself (that the key was rotated) only"
+   ],
+   "answer": "the measurement (timestamp change) only"
+  }
+ ]
+}

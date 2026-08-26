@@ -1,0 +1,715 @@
+{
+ "kind": "ainglish.panel.items.v1",
+ "proposal": "rather-not-fine-either-way-would-welcome-you-don-t-have-to-s-2",
+ "form": "<NOT-REQUIRED ACTION>, rather-not | <NOT-REQUIRED ACTION>, fine-either-way | <NOT-REQUIRED ACTION>, would-welcome",
+ "stratum": "learnability",
+ "source_set": "2f991f4afa01bc4fd0729c65c0c07423bc77b6ccf05ac166f215596c67eabe80",
+ "scope_note": "learnability (SDK 0.2.38 / #92 contract): 48 marked-message items drawn (seed 20260826) from the row's frozen careful comprehension set (items sha 2f991f4afa01), the SAME marked message in both arms; the harness composes the one digest-bound register-entry snapshot (runspec entry {text, sha256, source_url, proposal_revision}) into every entry cell; inline target-independent plov~N~ definition control (8); every reader reads every item cold then entry-loaded; the cold arm is the diagnostic the score must be read against.",
+ "sha256": "2d061e212e6809496939703c5767a6d5467ad7256c62b95d43d63666754aff42",
+ "items": [
+  {
+   "id": "pl-cal-01",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the migration, the migration time was plov~20~ minutes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the migration, the migration time was plov~20~ minutes.",
+   "question": "Going only by the sentence as written, what does the marker say about the migration time?",
+   "options": [
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-02",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the ingest, the bot share was plov~60~ percent.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the ingest, the bot share was plov~60~ percent.",
+   "question": "Going only by the sentence as written, what does the marker say about the bot share?",
+   "options": [
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-03",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the rollout, the error count was plov~10~ errors.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the rollout, the error count was plov~10~ errors.",
+   "question": "Going only by the sentence as written, what does the marker say about the error count?",
+   "options": [
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-04",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the audit, the sampled boxes was plov~30~ boxes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the audit, the sampled boxes was plov~30~ boxes.",
+   "question": "Going only by the sentence as written, what does the marker say about the sampled boxes?",
+   "options": [
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-05",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the backup, the transfer size was plov~50~ gigabytes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the backup, the transfer size was plov~50~ gigabytes.",
+   "question": "Going only by the sentence as written, what does the marker say about the transfer size?",
+   "options": [
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-06",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the drill, the evacuation time was plov~12~ minutes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the drill, the evacuation time was plov~12~ minutes.",
+   "question": "Going only by the sentence as written, what does the marker say about the evacuation time?",
+   "options": [
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-07",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the sync, the row count was plov~400~ rows.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the sync, the row count was plov~400~ rows.",
+   "question": "Going only by the sentence as written, what does the marker say about the row count?",
+   "options": [
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-08",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the survey, the response rate was plov~70~ percent.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the survey, the response rate was plov~70~ percent.",
+   "question": "Going only by the sentence as written, what does the marker say about the response rate?",
+   "options": [
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "rn-car-rath-061q3-L",
+   "english": "A message from someone whose work you assign: \"You don't need to bring anything, rather-not.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to bring anything, rather-not.\"",
+   "question": "Would choosing to bring anything have gone against the instruction?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-welc-069q1-L",
+   "english": "A message from the person who assigns your work: \"You don't need to pin the dependency, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to pin the dependency, would-welcome.\"",
+   "question": "Suppose you chose not to pin the dependency. Did the sender get what they wanted?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-welc-006q4-L",
+   "english": "A message from the person who assigns your work: \"You don't need to write tests for this, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to write tests for this, would-welcome.\"",
+   "question": "Would choosing not to write tests for this count as failing to do what was asked?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-010q2-L",
+   "english": "A message from a colleague at your level: \"You don't need to update the changelog, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to update the changelog, rather-not.\"",
+   "question": "Suppose you chose to update the changelog. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-040q3-L",
+   "english": "A message from the person who assigns your work: \"You don't need to cite the line numbers, rather-not.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to cite the line numbers, rather-not.\"",
+   "question": "Would choosing to cite the line numbers have gone against the instruction?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-fine-020q3-L",
+   "english": "A message from a colleague at your level: \"You don't need to rerun the full suite, fine-either-way.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to rerun the full suite, fine-either-way.\"",
+   "question": "Would choosing to rerun the full suite have gone against the instruction?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-welc-066q2-L",
+   "english": "A message from a colleague at your level: \"You don't need to pin the dependency, would-welcome.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to pin the dependency, would-welcome.\"",
+   "question": "Suppose you chose to pin the dependency. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-welc-027q2-L",
+   "english": "A message from someone whose work you assign: \"You don't need to rerun the full suite, would-welcome.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to rerun the full suite, would-welcome.\"",
+   "question": "Suppose you chose to rerun the full suite. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-fine-017q1-L",
+   "english": "A message from someone whose work you assign: \"You don't need to update the changelog, fine-either-way.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to update the changelog, fine-either-way.\"",
+   "question": "Suppose you chose not to update the changelog. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-welc-015q4-L",
+   "english": "A message from the person who assigns your work: \"You don't need to update the changelog, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to update the changelog, would-welcome.\"",
+   "question": "Would choosing not to update the changelog count as failing to do what was asked?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-welc-051q3-L",
+   "english": "A message from the person who assigns your work: \"You don't need to notify the channel, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to notify the channel, would-welcome.\"",
+   "question": "Would choosing to notify the channel have gone against the instruction?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-010q1-L",
+   "english": "A message from a colleague at your level: \"You don't need to update the changelog, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to update the changelog, rather-not.\"",
+   "question": "Suppose you chose not to update the changelog. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-fine-023q2-L",
+   "english": "A message from the person who assigns your work: \"You don't need to rerun the full suite, fine-either-way.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to rerun the full suite, fine-either-way.\"",
+   "question": "Suppose you chose to rerun the full suite. Did the sender get what they wanted?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-fine-014q4-L",
+   "english": "A message from the person who assigns your work: \"You don't need to update the changelog, fine-either-way.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to update the changelog, fine-either-way.\"",
+   "question": "Would choosing not to update the changelog count as failing to do what was asked?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-028q2-L",
+   "english": "A message from a colleague at your level: \"You don't need to open an issue first, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to open an issue first, rather-not.\"",
+   "question": "Suppose you chose to open an issue first. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-016q1-L",
+   "english": "A message from someone whose work you assign: \"You don't need to update the changelog, rather-not.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to update the changelog, rather-not.\"",
+   "question": "Suppose you chose not to update the changelog. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-welc-012q4-L",
+   "english": "A message from a colleague at your level: \"You don't need to update the changelog, would-welcome.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to update the changelog, would-welcome.\"",
+   "question": "Would choosing not to update the changelog count as failing to do what was asked?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-019q2-L",
+   "english": "A message from a colleague at your level: \"You don't need to rerun the full suite, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to rerun the full suite, rather-not.\"",
+   "question": "Suppose you chose to rerun the full suite. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-fine-005q1-L",
+   "english": "A message from the person who assigns your work: \"You don't need to write tests for this, fine-either-way.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to write tests for this, fine-either-way.\"",
+   "question": "Suppose you chose not to write tests for this. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-rath-052q1-L",
+   "english": "A message from someone whose work you assign: \"You don't need to notify the channel, rather-not.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to notify the channel, rather-not.\"",
+   "question": "Suppose you chose not to notify the channel. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-welc-063q2-L",
+   "english": "A message from someone whose work you assign: \"You don't need to bring anything, would-welcome.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to bring anything, would-welcome.\"",
+   "question": "Suppose you chose to bring anything. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-welc-030q4-L",
+   "english": "A message from a colleague at your level: \"You don't need to open an issue first, would-welcome.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to open an issue first, would-welcome.\"",
+   "question": "Would choosing not to open an issue first count as failing to do what was asked?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-016q2-L",
+   "english": "A message from someone whose work you assign: \"You don't need to update the changelog, rather-not.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to update the changelog, rather-not.\"",
+   "question": "Suppose you chose to update the changelog. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-welc-069q3-L",
+   "english": "A message from the person who assigns your work: \"You don't need to pin the dependency, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to pin the dependency, would-welcome.\"",
+   "question": "Would choosing to pin the dependency have gone against the instruction?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-fine-059q3-L",
+   "english": "A message from the person who assigns your work: \"You don't need to bring anything, fine-either-way.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to bring anything, fine-either-way.\"",
+   "question": "Would choosing to bring anything have gone against the instruction?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-064q4-L",
+   "english": "A message from a colleague at your level: \"You don't need to pin the dependency, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to pin the dependency, rather-not.\"",
+   "question": "Would choosing not to pin the dependency count as failing to do what was asked?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-016q3-L",
+   "english": "A message from someone whose work you assign: \"You don't need to update the changelog, rather-not.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to update the changelog, rather-not.\"",
+   "question": "Would choosing to update the changelog have gone against the instruction?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-fine-035q3-L",
+   "english": "A message from someone whose work you assign: \"You don't need to open an issue first, fine-either-way.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to open an issue first, fine-either-way.\"",
+   "question": "Would choosing to open an issue first have gone against the instruction?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-070q1-L",
+   "english": "A message from someone whose work you assign: \"You don't need to pin the dependency, rather-not.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to pin the dependency, rather-not.\"",
+   "question": "Suppose you chose not to pin the dependency. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-fine-008q2-L",
+   "english": "A message from someone whose work you assign: \"You don't need to write tests for this, fine-either-way.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to write tests for this, fine-either-way.\"",
+   "question": "Suppose you chose to write tests for this. Did the sender get what they wanted?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-rath-031q4-L",
+   "english": "A message from the person who assigns your work: \"You don't need to open an issue first, rather-not.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to open an issue first, rather-not.\"",
+   "question": "Would choosing not to open an issue first count as failing to do what was asked?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-fine-068q3-L",
+   "english": "A message from the person who assigns your work: \"You don't need to pin the dependency, fine-either-way.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to pin the dependency, fine-either-way.\"",
+   "question": "Would choosing to pin the dependency have gone against the instruction?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-welc-033q4-L",
+   "english": "A message from the person who assigns your work: \"You don't need to open an issue first, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to open an issue first, would-welcome.\"",
+   "question": "Would choosing not to open an issue first count as failing to do what was asked?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-fine-014q1-L",
+   "english": "A message from the person who assigns your work: \"You don't need to update the changelog, fine-either-way.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to update the changelog, fine-either-way.\"",
+   "question": "Suppose you chose not to update the changelog. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-welc-069q4-L",
+   "english": "A message from the person who assigns your work: \"You don't need to pin the dependency, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to pin the dependency, would-welcome.\"",
+   "question": "Would choosing not to pin the dependency count as failing to do what was asked?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-037q2-L",
+   "english": "A message from a colleague at your level: \"You don't need to cite the line numbers, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to cite the line numbers, rather-not.\"",
+   "question": "Suppose you chose to cite the line numbers. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-welc-015q3-L",
+   "english": "A message from the person who assigns your work: \"You don't need to update the changelog, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to update the changelog, would-welcome.\"",
+   "question": "Would choosing to update the changelog have gone against the instruction?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-019q3-L",
+   "english": "A message from a colleague at your level: \"You don't need to rerun the full suite, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to rerun the full suite, rather-not.\"",
+   "question": "Would choosing to rerun the full suite have gone against the instruction?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-fine-038q1-L",
+   "english": "A message from a colleague at your level: \"You don't need to cite the line numbers, fine-either-way.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to cite the line numbers, fine-either-way.\"",
+   "question": "Suppose you chose not to cite the line numbers. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-welc-045q3-L",
+   "english": "A message from someone whose work you assign: \"You don't need to cite the line numbers, would-welcome.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to cite the line numbers, would-welcome.\"",
+   "question": "Would choosing to cite the line numbers have gone against the instruction?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-fine-068q1-L",
+   "english": "A message from the person who assigns your work: \"You don't need to pin the dependency, fine-either-way.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to pin the dependency, fine-either-way.\"",
+   "question": "Suppose you chose not to pin the dependency. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-rath-064q2-L",
+   "english": "A message from a colleague at your level: \"You don't need to pin the dependency, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to pin the dependency, rather-not.\"",
+   "question": "Suppose you chose to pin the dependency. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-welc-060q2-L",
+   "english": "A message from the person who assigns your work: \"You don't need to bring anything, would-welcome.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to bring anything, would-welcome.\"",
+   "question": "Suppose you chose to bring anything. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-welc-048q3-L",
+   "english": "A message from a colleague at your level: \"You don't need to notify the channel, would-welcome.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to notify the channel, would-welcome.\"",
+   "question": "Would choosing to notify the channel have gone against the instruction?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-034q1-L",
+   "english": "A message from someone whose work you assign: \"You don't need to open an issue first, rather-not.\"",
+   "ainglish": "A message from someone whose work you assign: \"You don't need to open an issue first, rather-not.\"",
+   "question": "Suppose you chose not to open an issue first. Did the sender get what they wanted?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "rn-car-rath-022q3-L",
+   "english": "A message from the person who assigns your work: \"You don't need to rerun the full suite, rather-not.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to rerun the full suite, rather-not.\"",
+   "question": "Would choosing to rerun the full suite have gone against the instruction?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-055q3-L",
+   "english": "A message from a colleague at your level: \"You don't need to bring anything, rather-not.\"",
+   "ainglish": "A message from a colleague at your level: \"You don't need to bring anything, rather-not.\"",
+   "question": "Would choosing to bring anything have gone against the instruction?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "rn-car-rath-022q2-L",
+   "english": "A message from the person who assigns your work: \"You don't need to rerun the full suite, rather-not.\"",
+   "ainglish": "A message from the person who assigns your work: \"You don't need to rerun the full suite, rather-not.\"",
+   "question": "Suppose you chose to rerun the full suite. Did the sender get what they wanted?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  }
+ ]
+}

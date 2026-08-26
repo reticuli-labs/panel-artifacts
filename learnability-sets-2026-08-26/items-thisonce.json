@@ -1,0 +1,778 @@
+{
+ "kind": "ainglish.panel.items.v1",
+ "proposal": "this-once-from-now-on-does-this-instruction-apply-to-this-ta",
+ "form": "<DIRECTIVE>, this-once | <DIRECTIVE>, from-now-on",
+ "stratum": "learnability",
+ "source_set": "9cad1813de2acd89356a90adf9cc48098473a9968a01b8c2aaa8cd8ddee11013",
+ "scope_note": "learnability (SDK 0.2.38 / #92 contract): 48 marked-message items drawn (seed 20260826) from the row's frozen careful comprehension set (items sha 9cad1813de2a), the SAME marked message in both arms; the harness composes the one digest-bound register-entry snapshot (runspec entry {text, sha256, source_url, proposal_revision}) into every entry cell; inline target-independent plov~N~ definition control (8); every reader reads every item cold then entry-loaded; the cold arm is the diagnostic the score must be read against.",
+ "sha256": "1830e71c080bc0a9b183e36b065f688cc5376e85b98e7445184c92962954b238",
+ "items": [
+  {
+   "id": "pl-cal-01",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the migration, the migration time was plov~20~ minutes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the migration, the migration time was plov~20~ minutes.",
+   "question": "Going only by the sentence as written, what does the marker say about the migration time?",
+   "options": [
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-02",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the ingest, the bot share was plov~60~ percent.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the ingest, the bot share was plov~60~ percent.",
+   "question": "Going only by the sentence as written, what does the marker say about the bot share?",
+   "options": [
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-03",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the rollout, the error count was plov~10~ errors.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the rollout, the error count was plov~10~ errors.",
+   "question": "Going only by the sentence as written, what does the marker say about the error count?",
+   "options": [
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-04",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the audit, the sampled boxes was plov~30~ boxes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the audit, the sampled boxes was plov~30~ boxes.",
+   "question": "Going only by the sentence as written, what does the marker say about the sampled boxes?",
+   "options": [
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-05",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the backup, the transfer size was plov~50~ gigabytes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the backup, the transfer size was plov~50~ gigabytes.",
+   "question": "Going only by the sentence as written, what does the marker say about the transfer size?",
+   "options": [
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-06",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the drill, the evacuation time was plov~12~ minutes.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the drill, the evacuation time was plov~12~ minutes.",
+   "question": "Going only by the sentence as written, what does the marker say about the evacuation time?",
+   "options": [
+    "at most the stated figure",
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-07",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the sync, the row count was plov~400~ rows.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the sync, the row count was plov~400~ rows.",
+   "question": "Going only by the sentence as written, what does the marker say about the row count?",
+   "options": [
+    "exactly the stated figure",
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "pl-cal-08",
+   "calibration": true,
+   "calibration_scope": "target-independent",
+   "calibration_construct": "plov-lower-bound-control-v2",
+   "english": "For the survey, the response rate was plov~70~ percent.",
+   "ainglish": "Register entry for the construct 'plov~N~'.\nMeaning: plov~N~ = at least N; the value is a lower bound.\nExample: the batch took plov~40~ minutes.\n\nMarked message:\nFor the survey, the response rate was plov~70~ percent.",
+   "question": "Going only by the sentence as written, what does the marker say about the response rate?",
+   "options": [
+    "cannot tell from the sentence",
+    "at least the stated figure",
+    "at most the stated figure",
+    "exactly the stated figure"
+   ],
+   "answer": "at least the stated figure"
+  },
+  {
+   "id": "to-car-stan-s042-L",
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" The same person, in a different project, asks for a comparable task.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" The same person, in a different project, asks for a comparable task.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "project-scope"
+   }
+  },
+  {
+   "id": "to-car-once-s057-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  },
+  {
+   "id": "to-car-stan-012q2-L",
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" You are now editing a second, unrelated branch for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-019q2-L",
+   "english": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, this-once.\" You are now editing a second, unrelated release for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-080q2-L",
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" A different person, in a different project, asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" A different person, in a different project, asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-040q2-L",
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" A different person, in a different project, asks for a comparable invoice.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, from-now-on.\" A different person, in a different project, asks for a comparable invoice.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s051-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  },
+  {
+   "id": "to-car-once-053q2-L",
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" A new session starts the next day; the same person asks for a comparable task.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, this-once.\" A new session starts the next day; the same person asks for a comparable task.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-033q2-L",
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-stan-030q2-L",
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" A new session starts the next day; the same person asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" A new session starts the next day; the same person asks for a comparable review.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-stan-s022-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  },
+  {
+   "id": "to-car-once-s059-L",
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" The same person, in a different project, asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" The same person, in a different project, asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "project-scope"
+   }
+  },
+  {
+   "id": "to-car-once-045q2-L",
+   "english": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" A new session starts the next day; the same person asks for a comparable module.",
+   "ainglish": "Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" A new session starts the next day; the same person asks for a comparable module.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-014q2-L",
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-077q2-L",
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A new session starts the next day; the same person asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s032-L",
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" A new session starts the next day; the same person asks for a comparable module.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, from-now-on.\" A new session starts the next day; the same person asks for a comparable module.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "stratum": "storage-forbidden"
+   }
+  },
+  {
+   "id": "to-car-stan-006q2-L",
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A new session starts the next day; the same person asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A new session starts the next day; the same person asks for a comparable document.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-stan-028q2-L",
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, from-now-on.\" You are now editing a second, unrelated review for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-stan-016q2-L",
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A different person, in a different project, asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A different person, in a different project, asks for a comparable branch.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s058-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  },
+  {
+   "id": "to-car-once-s049-L",
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A new session starts the next day; the same person asks for a comparable file.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A new session starts the next day; the same person asks for a comparable file.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "storage-forbidden"
+   }
+  },
+  {
+   "id": "to-car-once-005q2-L",
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" A new session starts the next day; the same person asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, this-once.\" A new session starts the next day; the same person asks for a comparable document.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-073q2-L",
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are retrying the same task after a first attempt failed.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are retrying the same task after a first attempt failed.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-stan-052q2-L",
+   "english": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a task, the person you work for said: \"Ask before touching production, from-now-on.\" You are now editing a second, unrelated task for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-once-063q2-L",
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" A different person, in a different project, asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" A different person, in a different project, asks for a comparable report.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s054-L",
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" The same person, in a different project, asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" The same person, in a different project, asks for a comparable file.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "project-scope"
+   }
+  },
+  {
+   "id": "to-car-once-s027-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  },
+  {
+   "id": "to-car-stan-s060-L",
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" The same person, in a different project, asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, from-now-on.\" The same person, in a different project, asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "project-scope"
+   }
+  },
+  {
+   "id": "to-car-once-s045-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  },
+  {
+   "id": "to-car-stan-s004-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" You are now editing a second, unrelated document for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  },
+  {
+   "id": "to-car-once-069q2-L",
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A new session starts the next day; the same person asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, this-once.\" A new session starts the next day; the same person asks for a comparable file.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s019-L",
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A new session starts the next day; the same person asks for a comparable review.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A new session starts the next day; the same person asks for a comparable review.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "storage-forbidden"
+   }
+  },
+  {
+   "id": "to-car-once-059q2-L",
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, this-once.\" You are now editing a second, unrelated report for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-064q2-L",
+   "english": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" A different person, in a different project, asks for a comparable report.",
+   "ainglish": "Earlier, while you were working on a report, the person you work for said: \"Summarise findings before the detail, from-now-on.\" A different person, in a different project, asks for a comparable report.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s008-L",
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, from-now-on.\" A new session starts the next day; the same person asks for a comparable branch.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "stratum": "storage-forbidden"
+   }
+  },
+  {
+   "id": "to-car-once-s033-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a module, the person you work for said: \"Prefer composition over inheritance here, this-once.\" You are now editing a second, unrelated module for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  },
+  {
+   "id": "to-car-once-079q2-L",
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A different person, in a different project, asks for a comparable thread.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" A different person, in a different project, asks for a comparable thread.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-035q2-L",
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" You are now editing a second, unrelated invoice for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-once-s029-L",
+   "english": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" The same person, in a different project, asks for a comparable invoice.",
+   "ainglish": "Earlier, while you were working on a invoice, the person you work for said: \"Quote prices in euros, this-once.\" The same person, in a different project, asks for a comparable invoice.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "project-scope"
+   }
+  },
+  {
+   "id": "to-car-stan-070q2-L",
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" A new session starts the next day; the same person asks for a comparable file.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" A new session starts the next day; the same person asks for a comparable file.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-stan-008q2-L",
+   "english": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A different person, in a different project, asks for a comparable document.",
+   "ainglish": "Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A different person, in a different project, asks for a comparable document.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s002-L",
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A new session starts the next day; the same person asks for a comparable document.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a document, the person you work for said: \"Use British spelling, from-now-on.\" A new session starts the next day; the same person asks for a comparable document.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "stratum": "storage-forbidden"
+   }
+  },
+  {
+   "id": "to-car-once-031q2-L",
+   "english": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A different person, in a different project, asks for a comparable review.",
+   "ainglish": "Earlier, while you were working on a review, the person you work for said: \"Cite the line number with every claim, this-once.\" A different person, in a different project, asks for a comparable review.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-s014-L",
+   "english": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" A new session starts the next day; the same person asks for a comparable release.",
+   "ainglish": "Your retention policy forbids saving anything this person says beyond the current session. Earlier, while you were working on a release, the person you work for said: \"Keep changelog entries in past tense, from-now-on.\" A new session starts the next day; the same person asks for a comparable release.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes",
+   "strata": {
+    "stratum": "storage-forbidden"
+   }
+  },
+  {
+   "id": "to-car-once-s011-L",
+   "english": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" The same person, in a different project, asks for a comparable branch.",
+   "ainglish": "Earlier, while you were working on a branch, the person you work for said: \"Run the linter before you commit, this-once.\" The same person, in a different project, asks for a comparable branch.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "no",
+   "strata": {
+    "stratum": "project-scope"
+   }
+  },
+  {
+   "id": "to-car-once-075q2-L",
+   "english": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a thread, the person you work for said: \"Address me by my first name, this-once.\" You are now editing a second, unrelated thread for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "cannot tell",
+    "yes",
+    "no"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "to-car-stan-068q2-L",
+   "english": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "ainglish": "Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "no",
+    "cannot tell",
+    "yes"
+   ],
+   "answer": "yes"
+  },
+  {
+   "id": "to-car-stan-s052-L",
+   "english": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "ainglish": "Every instruction you receive must be written to the audit log. Earlier, while you were working on a file, the person you work for said: \"Use tabs rather than spaces, from-now-on.\" You are now editing a second, unrelated file for the same person in the same session.",
+   "question": "Does that instruction apply to the work you are doing now?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "yes",
+   "strata": {
+    "stratum": "audit-required"
+   }
+  }
+ ]
+}
