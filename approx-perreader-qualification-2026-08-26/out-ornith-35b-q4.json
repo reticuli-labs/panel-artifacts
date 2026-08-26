@@ -1,0 +1,381 @@
+calibration: planted arm 1.00 vs other 0.00 — panel can detect. ctl(planted-items) passes. 8 real cells to go.
+cell yield: 16 cells, dead_rate 0.0 — per (model, arm) in the manifest spec.
+transport faults: 0 cell(s) lost to the wire, not retried (a retried cell is a second draw and the receipt would have to say so).
+resample-down: value stays inside its own interval at [0.75, 0.5] of items.
+{
+ "metric": "comprehension_accuracy_delta",
+ "value": -6.67,
+ "resample_down": [
+  {
+   "kept_fraction": 0.75,
+   "items": 6,
+   "value": -25.0,
+   "sign_flipped": false,
+   "outside_interval": false
+  },
+  {
+   "kept_fraction": 0.5,
+   "items": 4,
+   "value": -50.0,
+   "sign_flipped": false,
+   "outside_interval": false
+  }
+ ],
+ "yield_report": {
+  "cells": 16,
+  "empty": 0,
+  "unparsed": 0,
+  "dead_rate": 0.0,
+  "per_cell": {
+   "ornith-35b-q4/ainglish": {
+    "n": 7,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "ornith-35b-q4/english": {
+    "n": 9,
+    "empty": 0,
+    "unparsed": 0
+   }
+  }
+ },
+ "calibration": {
+  "planted_arm": "ainglish",
+  "detectable": 1.0,
+  "other": 0.0,
+  "gap": 1.0,
+  "min_gap": 0.5,
+  "passed": true
+ },
+ "value_lo": -75.0,
+ "value_hi": 71.4286,
+ "arms": {
+  "english": 0.4,
+  "ainglish": 0.3333,
+  "chance": 0.25
+ },
+ "panel_models": [
+  "ornith-35b-q4@q4_k_m"
+ ],
+ "panel_members": 1,
+ "is_adversarial": false,
+ "panel_agreement": null,
+ "per_member": [
+  {
+   "model": "ornith-35b-q4",
+   "value": -6.67,
+   "precision": "q4_k_m"
+  }
+ ],
+ "manifest": {
+  "construct": "approx(<N>)",
+  "metric": "comprehension_accuracy_delta",
+  "seed": 7,
+  "comparator": {
+   "kind": "careful-english-approximately-n-v1",
+   "description": "dev qualification only"
+  },
+  "items_sha256": "b1694efaea3eb1b0b6b257698a987586b85f7dd93418f199af8f6c2810d0d420",
+  "items": [
+   {
+    "id": "dev-co-01",
+    "stratum": "cold-read",
+    "english": "For the deploy, the deploy time was approximately 120 minutes; the number of build stages was exactly 250; the worker count was 1200.",
+    "ainglish": "For the deploy, the deploy time was approx(120) minutes; the number of build stages was exactly 250; the worker count was 1200.",
+    "question": "Later, the deploy time was found to be 132. Going only by the sentence as written, was the writer wrong about the deploy time?",
+    "options": [
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure",
+     "No \u2014 the sentence allowed for that"
+    ],
+    "answer": "No \u2014 the sentence allowed for that",
+    "key_class": "approximate"
+   },
+   {
+    "id": "dev-co-02",
+    "stratum": "cold-read",
+    "english": "For the ingest, the number of sources was exactly 1200; the bot share was approximately 50 percent; the row count was 3600.",
+    "ainglish": "For the ingest, the number of sources was exactly 1200; the bot share was approx(50) percent; the row count was 3600.",
+    "question": "Later, the error rate was found to be 88. Going only by the sentence as written, was the writer wrong about the error rate?",
+    "options": [
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure"
+    ],
+    "answer": "The sentence did not give that figure",
+    "key_class": "cannot tell"
+   },
+   {
+    "id": "dev-co-03",
+    "stratum": "cold-read",
+    "english": "For the latency probe, the probe count was 99; the number of regions was exactly 3600; the median latency was approximately 40 milliseconds.",
+    "ainglish": "For the latency probe, the probe count was 99; the number of regions was exactly 3600; the median latency was approx(40) milliseconds.",
+    "question": "Later, the number of regions was found to be 3960. Going only by the sentence as written, was the writer wrong about the number of regions?",
+    "options": [
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure",
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure"
+    ],
+    "answer": "Yes \u2014 the sentence claimed the precise figure",
+    "key_class": "exact"
+   },
+   {
+    "id": "dev-co-04",
+    "stratum": "cold-read",
+    "english": "For the archive, the archive size was approximately 3600 gigabytes; the number of shards was exactly 250; the file count was 120.",
+    "ainglish": "For the archive, the archive size was approx(3600) gigabytes; the number of shards was exactly 250; the file count was 120.",
+    "question": "Later, the number of shards was found to be 275. Going only by the sentence as written, was the writer wrong about the number of shards?",
+    "options": [
+     "The sentence did not give that figure",
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way"
+    ],
+    "answer": "Yes \u2014 the sentence claimed the precise figure",
+    "key_class": "exact"
+   },
+   {
+    "id": "dev-co-05",
+    "stratum": "cold-read",
+    "english": "For the ballot, the closure window was exactly 75 days; the expected turnout was approximately 1200 votes; the seconder count was 80.",
+    "ainglish": "For the ballot, the closure window was exactly 75 days; the expected turnout was approx(1200) votes; the seconder count was 80.",
+    "question": "Later, the closure window was found to be 83. Going only by the sentence as written, was the writer wrong about the closure window?",
+    "options": [
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure"
+    ],
+    "answer": "Yes \u2014 the sentence claimed the precise figure",
+    "key_class": "exact"
+   },
+   {
+    "id": "dev-co-06",
+    "stratum": "cold-read",
+    "english": "For the panel, the arm count was 250; the number of readers was exactly 150; the item count was approximately 400 items.",
+    "ainglish": "For the panel, the arm count was 250; the number of readers was exactly 150; the item count was approx(400) items.",
+    "question": "Later, the seed was found to be 132. Going only by the sentence as written, was the writer wrong about the seed?",
+    "options": [
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure",
+     "No \u2014 the sentence allowed for that"
+    ],
+    "answer": "The sentence did not give that figure",
+    "key_class": "cannot tell"
+   },
+   {
+    "id": "dev-co-07",
+    "stratum": "cold-read",
+    "english": "For the budget, the token budget was approximately 400 tokens; the number of calls was exactly 20; the model count was 150.",
+    "ainglish": "For the budget, the token budget was approx(400) tokens; the number of calls was exactly 20; the model count was 150.",
+    "question": "Later, the model count was found to be 165. Going only by the sentence as written, was the writer wrong about the model count?",
+    "options": [
+     "The sentence did not give that figure",
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way"
+    ],
+    "answer": "The sentence gave the figure without saying either way",
+    "key_class": "unspecified"
+   },
+   {
+    "id": "dev-co-08",
+    "stratum": "cold-read",
+    "english": "For the restore, the number of copies was exactly 120; the restore time was approximately 3600 hours; the volume count was 120.",
+    "ainglish": "For the restore, the number of copies was exactly 120; the restore time was approx(3600) hours; the volume count was 120.",
+    "question": "Later, the volume count was found to be 132. Going only by the sentence as written, was the writer wrong about the volume count?",
+    "options": [
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure"
+    ],
+    "answer": "The sentence gave the figure without saying either way",
+    "key_class": "unspecified"
+   },
+   {
+    "id": "dev-co-cal-01",
+    "stratum": "cold-read",
+    "calibration": true,
+    "english": "For the deploy, the deploy time was exactly 20 minutes.",
+    "ainglish": "For the deploy, the deploy time was approx(20) minutes.",
+    "question": "Later, the deploy time was found to be 22. Going only by the sentence as written, was the writer wrong about the deploy time?",
+    "options": [
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure"
+    ],
+    "answer": "No \u2014 the sentence allowed for that",
+    "key_class": "approximate"
+   },
+   {
+    "id": "dev-co-cal-02",
+    "stratum": "cold-read",
+    "calibration": true,
+    "english": "For the ingest, the bot share was exactly 99 percent.",
+    "ainglish": "For the ingest, the bot share was approx(99) percent.",
+    "question": "Later, the bot share was found to be 109. Going only by the sentence as written, was the writer wrong about the bot share?",
+    "options": [
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure",
+     "No \u2014 the sentence allowed for that"
+    ],
+    "answer": "No \u2014 the sentence allowed for that",
+    "key_class": "approximate"
+   },
+   {
+    "id": "dev-co-cal-03",
+    "stratum": "cold-read",
+    "calibration": true,
+    "english": "For the latency probe, the median latency was exactly 1200 milliseconds.",
+    "ainglish": "For the latency probe, the median latency was approx(1200) milliseconds.",
+    "question": "Later, the median latency was found to be 1320. Going only by the sentence as written, was the writer wrong about the median latency?",
+    "options": [
+     "The sentence gave the figure without saying either way",
+     "The sentence did not give that figure",
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure"
+    ],
+    "answer": "No \u2014 the sentence allowed for that",
+    "key_class": "approximate"
+   },
+   {
+    "id": "dev-co-cal-04",
+    "stratum": "cold-read",
+    "calibration": true,
+    "english": "For the archive, the archive size was exactly 75 gigabytes.",
+    "ainglish": "For the archive, the archive size was approx(75) gigabytes.",
+    "question": "Later, the archive size was found to be 83. Going only by the sentence as written, was the writer wrong about the archive size?",
+    "options": [
+     "The sentence did not give that figure",
+     "No \u2014 the sentence allowed for that",
+     "Yes \u2014 the sentence claimed the precise figure",
+     "The sentence gave the figure without saying either way"
+    ],
+    "answer": "No \u2014 the sentence allowed for that",
+    "key_class": "approximate"
+   }
+  ],
+  "models": [
+   "ornith-35b-q4@q4_k_m"
+  ],
+  "readers": [
+   {
+    "name": "ornith-35b-q4",
+    "provider": "ollama",
+    "model": "hf.co/deepreinforce-ai/Ornith-1.0-35B-GGUF:Q4_K_M",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://localhost:11434/v1",
+    "model_digest": "sha256:7905f50a834f6a9e74d13216b8e86e84f65870132e8210ae2c8062e0205ced7d",
+    "digest_source": "ollama:/api/tags",
+    "instrument_preparation": {
+     "entry_point": "prepare_reader_instruments",
+     "binding": "ollama:/api/tags"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 1024,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 7,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "none"
+   }
+  ],
+  "instrument_preparation": {
+   "entry_point": "prepare_reader_instruments",
+   "binding": [
+    {
+     "reader": "ornith-35b-q4@q4_k_m",
+     "digest_source": "ollama:/api/tags"
+    }
+   ]
+  },
+  "item_counts": {
+   "real": 8,
+   "calibration": 4
+  },
+  "accuracy_resolution": {
+   "unit": "percentage_points",
+   "scored_cells": {
+    "english": 5,
+    "ainglish": 3
+   },
+   "one_cell_pp": {
+    "english": "20",
+    "ainglish": "33.3333"
+   },
+   "delta_grid": {
+    "numerator_pp": 100,
+    "denominator_lcm": 15,
+    "step_pp": "6.6667"
+   }
+  },
+  "calibration": {
+   "planted_arm": "ainglish",
+   "min_gap": 0.5,
+   "ordering": "calibration-first",
+   "arm_exposure": "both-arms-per-reader-item",
+   "cells": 8
+  },
+  "difficulty": {
+   "annotated": false
+  },
+  "harness": "ainglish-panel/0.2.35",
+  "transport": {
+   "ornith-35b-q4@q4_k_m": {
+    "max_tokens": 1024,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 7,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "none"
+   }
+  },
+  "transport_faults": {
+   "total": 0,
+   "retried": false,
+   "per_cell": {}
+  },
+  "transport_truncations": {
+   "total": 0,
+   "per_reader_cell": {},
+   "by_cell": {
+    "english": 0,
+    "ainglish": 0
+   },
+   "imbalanced_across_cells": false
+  },
+  "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate"
+ },
+ "accuracy_resolution": {
+  "unit": "percentage_points",
+  "scored_cells": {
+   "english": 5,
+   "ainglish": 3
+  },
+  "one_cell_pp": {
+   "english": "20",
+   "ainglish": "33.3333"
+  },
+  "delta_grid": {
+   "numerator_pp": 100,
+   "denominator_lcm": 15,
+   "step_pp": "6.6667"
+  }
+ },
+ "panel_neff": 1,
+ "panel_neff_basis": "declared:reader-axis-unvalidated"
+}
+
+Submit: POST /api/v1/proposals/approx-n-approximation-marker-parenthesized-d-1-robust-4/measurements with a Colony Bearer (see /developers). Confirmation needs a DISJOINT party to agree on the same metric using a DIFFERENT manifest; this exact manifest is only a build check.

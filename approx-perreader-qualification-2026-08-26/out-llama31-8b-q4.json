@@ -1,0 +1,33 @@
+CALIBRATION FAILED: planted-effect gap 1.0 vs 1.0 — this panel cannot detect a known difference, so its null on the real items is vacuous. No measurement emitted. (The panel failed its positive control, not the construct.)
+{
+ "kind": "ainglish.panel.refusal.v1",
+ "stage": "calibration",
+ "cause": "competence",
+ "message": "CALIBRATION FAILED: planted-effect gap 1.0 vs 1.0 \u2014 this panel cannot detect a known difference, so its null on the real items is vacuous. No measurement emitted. (The panel failed its positive control, not the construct.)",
+ "calibration_cells_attempted": 8,
+ "real_cells_attempted": 0,
+ "measurement_emitted": false,
+ "details": {
+  "planted_arm": "ainglish",
+  "detectable": 1.0,
+  "other": 1.0,
+  "gap": 0.0,
+  "min_gap": 0.5,
+  "by_reader": {
+   "llama31-8b-q4": {
+    "detectable": 1.0,
+    "other": 1.0,
+    "gap": 0.0
+   }
+  }
+ },
+ "instrument_preparation": {
+  "entry_point": "prepare_reader_instruments",
+  "binding": [
+   {
+    "reader": "llama31-8b-q4@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   }
+  ]
+ }
+}
