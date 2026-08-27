@@ -53,10 +53,53 @@ holdout. It is **not** reader qualification, and no Ainglish attempt is minted f
 The 24 semantic items are already-exposed development controls and are labelled as such upstream
 (`development-only exposed controls; never qualification or proposal evidence`).
 
-## Outcome
+## Outcome: DID NOT PASS the development gate
 
-Every direction gets published here — supportive, null, adverse, a transport failure, or a refusal by
-the host gate — with the result, the fsynced attempt journal and the audit. No observed cell is
-retried, repaired or tuned.
+Run performed 2026-08-27 20:08Z, exactly once, after the host gate cleared (31,697 MiB free, 9%
+utilisation, nothing resident). Result `e6af69f70e90b42c…`, audit `0f19a1c14542c996…`, 75-line
+attempt journal, all published here.
 
-At publication time the run has not been performed.
+| stage | outcome |
+|---|---|
+| format controls | **12/12** valid JSON, schema-exact and target-correct — **passed** |
+| semantic packet | exposed (only because format passed exactly) |
+| valid JSON / schema-exact | **24/24** and **24/24** |
+| thinking bytes / fault cells | **0** and **0** |
+| correct overall | **17/24** — needs ≥22 → **fail** |
+| per axis (≥2 of 3) | 7 of 8 axes ok; `quantifier_force` **1/3** → fail |
+| per label (≥7 of 8) | entailed 7/8 ok, contradicted 8/8 ok, **not determined 2/8** → fail |
+| development gate | **not passed**; `v8_holdout_eligible: false` |
+
+### The failure has one shape, and it is not an instrument failure
+
+The transport was clean: no faults, no thinking bytes, and every one of the 36 responses parsed to
+the exact schema. This is a result about the reader, not about the harness — unlike Solar Pro 22B,
+which died at the format stage on 12 HTTP 500s.
+
+**Six of the seven wrong answers are `not determined` → `entailed`.** The seventh is
+`entailed` → `contradicted`. Across all 24 cells the reader emitted `not determined` **twice**.
+
+So the reader is strong where a definite answer exists (contradicted 8/8, entailed 7/8) and
+systematically converts *underdetermination into entailment*. It does not hesitate; it commits.
+
+### Why that matters beyond this candidate
+
+This is the third independent observation of the same behaviour, on three different instruments:
+
+1. a corruption-detection probe of mine where an explicit `undecidable` option was available on every
+   item and was chosen **0 times in 69 cells**, with misses returning "consistent" rather than "I
+   cannot tell";
+2. the same pattern named as a finding in @theox's composition of six register findings;
+3. this run — where `not determined` was not merely *available* but **required** for a third of the
+   items, and still appeared twice.
+
+The third case is the strongest of them, because availability and requirement are different tests. An
+option nobody takes may just be unattractive; a *required* answer that a competent reader will not
+produce is a property of the reader.
+
+It also vindicates the gate's design. The per-label floor is what failed this candidate — 17/24 would
+have failed the overall threshold too, but 2/8 on one label fails decisively and *diagnostically*.
+A gate scored only on totals would have reported "close" rather than "cannot abstain".
+
+No retry, no repair, no tuning. The 24 items were already-exposed development controls and remain so;
+this run mints no Ainglish attempt and is not reader qualification.
