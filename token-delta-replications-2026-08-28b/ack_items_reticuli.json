@@ -1,0 +1,3194 @@
+[
+ {
+  "pair_id": "policy-01",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Compliance",
+  "reference": "retention-policy-v7@4d2e",
+  "context": "retention-policy-v7@4d2e was sent to Compliance. The status line now reads:",
+  "bare": "Compliance acknowledged retention-policy-v7@4d2e.",
+  "ainglish": "Compliance ack-as-receipt(retention-policy-v7@4d2e).",
+  "english": "Compliance explicitly confirmed receipt and identification of retention-policy-v7@4d2e, without expressing agreement or disagreement.",
+  "practical_english": "Compliance confirmed receipt of retention-policy-v7@4d2e.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-01",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Compliance",
+  "reference": "retention-policy-v7@4d2e",
+  "context": "retention-policy-v7@4d2e was sent to Compliance. The status line now reads:",
+  "bare": "Compliance acknowledged retention-policy-v7@4d2e.",
+  "ainglish": "Compliance ack-as-agreement(retention-policy-v7@4d2e).",
+  "english": "Compliance explicitly agreed with the content of retention-policy-v7@4d2e; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Compliance agreed with retention-policy-v7@4d2e.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-02",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "HR",
+  "reference": "travel-policy-2026@b81f",
+  "context": "travel-policy-2026@b81f was sent to HR. The status line now reads:",
+  "bare": "HR acknowledged travel-policy-2026@b81f.",
+  "ainglish": "HR ack-as-receipt(travel-policy-2026@b81f).",
+  "english": "HR explicitly confirmed receipt and identification of travel-policy-2026@b81f, without expressing agreement or disagreement.",
+  "practical_english": "HR confirmed receipt of travel-policy-2026@b81f.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-02",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "HR",
+  "reference": "travel-policy-2026@b81f",
+  "context": "travel-policy-2026@b81f was sent to HR. The status line now reads:",
+  "bare": "HR acknowledged travel-policy-2026@b81f.",
+  "ainglish": "HR ack-as-agreement(travel-policy-2026@b81f).",
+  "english": "HR explicitly agreed with the content of travel-policy-2026@b81f; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "HR agreed with travel-policy-2026@b81f.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-03",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Security",
+  "reference": "key-rotation-policy-v2@0c9a",
+  "context": "key-rotation-policy-v2@0c9a was sent to Security. The status line now reads:",
+  "bare": "Security acknowledged key-rotation-policy-v2@0c9a.",
+  "ainglish": "Security ack-as-receipt(key-rotation-policy-v2@0c9a).",
+  "english": "Security explicitly confirmed receipt and identification of key-rotation-policy-v2@0c9a, without expressing agreement or disagreement.",
+  "practical_english": "Security confirmed receipt of key-rotation-policy-v2@0c9a.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-03",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Security",
+  "reference": "key-rotation-policy-v2@0c9a",
+  "context": "key-rotation-policy-v2@0c9a was sent to Security. The status line now reads:",
+  "bare": "Security acknowledged key-rotation-policy-v2@0c9a.",
+  "ainglish": "Security ack-as-agreement(key-rotation-policy-v2@0c9a).",
+  "english": "Security explicitly agreed with the content of key-rotation-policy-v2@0c9a; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Security agreed with key-rotation-policy-v2@0c9a.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-04",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Finance",
+  "reference": "expense-policy-v12@77aa",
+  "context": "expense-policy-v12@77aa was sent to Finance. The status line now reads:",
+  "bare": "Finance acknowledged expense-policy-v12@77aa.",
+  "ainglish": "Finance ack-as-receipt(expense-policy-v12@77aa).",
+  "english": "Finance explicitly confirmed receipt and identification of expense-policy-v12@77aa, without expressing agreement or disagreement.",
+  "practical_english": "Finance confirmed receipt of expense-policy-v12@77aa.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-04",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Finance",
+  "reference": "expense-policy-v12@77aa",
+  "context": "expense-policy-v12@77aa was sent to Finance. The status line now reads:",
+  "bare": "Finance acknowledged expense-policy-v12@77aa.",
+  "ainglish": "Finance ack-as-agreement(expense-policy-v12@77aa).",
+  "english": "Finance explicitly agreed with the content of expense-policy-v12@77aa; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Finance agreed with expense-policy-v12@77aa.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-05",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "DataProtection",
+  "reference": "dpia-template-v3@e5c1",
+  "context": "dpia-template-v3@e5c1 was sent to DataProtection. The status line now reads:",
+  "bare": "DataProtection acknowledged dpia-template-v3@e5c1.",
+  "ainglish": "DataProtection ack-as-receipt(dpia-template-v3@e5c1).",
+  "english": "DataProtection explicitly confirmed receipt and identification of dpia-template-v3@e5c1, without expressing agreement or disagreement.",
+  "practical_english": "DataProtection confirmed receipt of dpia-template-v3@e5c1.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-05",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "DataProtection",
+  "reference": "dpia-template-v3@e5c1",
+  "context": "dpia-template-v3@e5c1 was sent to DataProtection. The status line now reads:",
+  "bare": "DataProtection acknowledged dpia-template-v3@e5c1.",
+  "ainglish": "DataProtection ack-as-agreement(dpia-template-v3@e5c1).",
+  "english": "DataProtection explicitly agreed with the content of dpia-template-v3@e5c1; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "DataProtection agreed with dpia-template-v3@e5c1.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-06",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Procurement",
+  "reference": "vendor-policy-v4@19f3",
+  "context": "vendor-policy-v4@19f3 was sent to Procurement. The status line now reads:",
+  "bare": "Procurement acknowledged vendor-policy-v4@19f3.",
+  "ainglish": "Procurement ack-as-receipt(vendor-policy-v4@19f3).",
+  "english": "Procurement explicitly confirmed receipt and identification of vendor-policy-v4@19f3, without expressing agreement or disagreement.",
+  "practical_english": "Procurement confirmed receipt of vendor-policy-v4@19f3.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-06",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Procurement",
+  "reference": "vendor-policy-v4@19f3",
+  "context": "vendor-policy-v4@19f3 was sent to Procurement. The status line now reads:",
+  "bare": "Procurement acknowledged vendor-policy-v4@19f3.",
+  "ainglish": "Procurement ack-as-agreement(vendor-policy-v4@19f3).",
+  "english": "Procurement explicitly agreed with the content of vendor-policy-v4@19f3; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Procurement agreed with vendor-policy-v4@19f3.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-07",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Ethics",
+  "reference": "disclosure-policy-v1@a6d8",
+  "context": "disclosure-policy-v1@a6d8 was sent to Ethics. The status line now reads:",
+  "bare": "Ethics acknowledged disclosure-policy-v1@a6d8.",
+  "ainglish": "Ethics ack-as-receipt(disclosure-policy-v1@a6d8).",
+  "english": "Ethics explicitly confirmed receipt and identification of disclosure-policy-v1@a6d8, without expressing agreement or disagreement.",
+  "practical_english": "Ethics confirmed receipt of disclosure-policy-v1@a6d8.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-07",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Ethics",
+  "reference": "disclosure-policy-v1@a6d8",
+  "context": "disclosure-policy-v1@a6d8 was sent to Ethics. The status line now reads:",
+  "bare": "Ethics acknowledged disclosure-policy-v1@a6d8.",
+  "ainglish": "Ethics ack-as-agreement(disclosure-policy-v1@a6d8).",
+  "english": "Ethics explicitly agreed with the content of disclosure-policy-v1@a6d8; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Ethics agreed with disclosure-policy-v1@a6d8.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-08",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Facilities",
+  "reference": "access-policy-v9@3b30",
+  "context": "access-policy-v9@3b30 was sent to Facilities. The status line now reads:",
+  "bare": "Facilities acknowledged access-policy-v9@3b30.",
+  "ainglish": "Facilities ack-as-receipt(access-policy-v9@3b30).",
+  "english": "Facilities explicitly confirmed receipt and identification of access-policy-v9@3b30, without expressing agreement or disagreement.",
+  "practical_english": "Facilities confirmed receipt of access-policy-v9@3b30.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-08",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Facilities",
+  "reference": "access-policy-v9@3b30",
+  "context": "access-policy-v9@3b30 was sent to Facilities. The status line now reads:",
+  "bare": "Facilities acknowledged access-policy-v9@3b30.",
+  "ainglish": "Facilities ack-as-agreement(access-policy-v9@3b30).",
+  "english": "Facilities explicitly agreed with the content of access-policy-v9@3b30; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Facilities agreed with access-policy-v9@3b30.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-09",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Research",
+  "reference": "preregistration-policy-v2@8e07",
+  "context": "preregistration-policy-v2@8e07 was sent to Research. The status line now reads:",
+  "bare": "Research acknowledged preregistration-policy-v2@8e07.",
+  "ainglish": "Research ack-as-receipt(preregistration-policy-v2@8e07).",
+  "english": "Research explicitly confirmed receipt and identification of preregistration-policy-v2@8e07, without expressing agreement or disagreement.",
+  "practical_english": "Research confirmed receipt of preregistration-policy-v2@8e07.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-09",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Research",
+  "reference": "preregistration-policy-v2@8e07",
+  "context": "preregistration-policy-v2@8e07 was sent to Research. The status line now reads:",
+  "bare": "Research acknowledged preregistration-policy-v2@8e07.",
+  "ainglish": "Research ack-as-agreement(preregistration-policy-v2@8e07).",
+  "english": "Research explicitly agreed with the content of preregistration-policy-v2@8e07; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Research agreed with preregistration-policy-v2@8e07.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-10",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Comms",
+  "reference": "embargo-policy-v5@52cd",
+  "context": "embargo-policy-v5@52cd was sent to Comms. The status line now reads:",
+  "bare": "Comms acknowledged embargo-policy-v5@52cd.",
+  "ainglish": "Comms ack-as-receipt(embargo-policy-v5@52cd).",
+  "english": "Comms explicitly confirmed receipt and identification of embargo-policy-v5@52cd, without expressing agreement or disagreement.",
+  "practical_english": "Comms confirmed receipt of embargo-policy-v5@52cd.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-10",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Comms",
+  "reference": "embargo-policy-v5@52cd",
+  "context": "embargo-policy-v5@52cd was sent to Comms. The status line now reads:",
+  "bare": "Comms acknowledged embargo-policy-v5@52cd.",
+  "ainglish": "Comms ack-as-agreement(embargo-policy-v5@52cd).",
+  "english": "Comms explicitly agreed with the content of embargo-policy-v5@52cd; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Comms agreed with embargo-policy-v5@52cd.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-11",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Legal2",
+  "reference": "export-control-policy-v3@c04b",
+  "context": "export-control-policy-v3@c04b was sent to Legal2. The status line now reads:",
+  "bare": "Legal2 acknowledged export-control-policy-v3@c04b.",
+  "ainglish": "Legal2 ack-as-receipt(export-control-policy-v3@c04b).",
+  "english": "Legal2 explicitly confirmed receipt and identification of export-control-policy-v3@c04b, without expressing agreement or disagreement.",
+  "practical_english": "Legal2 confirmed receipt of export-control-policy-v3@c04b.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-11",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Legal2",
+  "reference": "export-control-policy-v3@c04b",
+  "context": "export-control-policy-v3@c04b was sent to Legal2. The status line now reads:",
+  "bare": "Legal2 acknowledged export-control-policy-v3@c04b.",
+  "ainglish": "Legal2 ack-as-agreement(export-control-policy-v3@c04b).",
+  "english": "Legal2 explicitly agreed with the content of export-control-policy-v3@c04b; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Legal2 agreed with export-control-policy-v3@c04b.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-12",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Ops",
+  "reference": "on-call-policy-v6@f1e2",
+  "context": "on-call-policy-v6@f1e2 was sent to Ops. The status line now reads:",
+  "bare": "Ops acknowledged on-call-policy-v6@f1e2.",
+  "ainglish": "Ops ack-as-receipt(on-call-policy-v6@f1e2).",
+  "english": "Ops explicitly confirmed receipt and identification of on-call-policy-v6@f1e2, without expressing agreement or disagreement.",
+  "practical_english": "Ops confirmed receipt of on-call-policy-v6@f1e2.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-12",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Ops",
+  "reference": "on-call-policy-v6@f1e2",
+  "context": "on-call-policy-v6@f1e2 was sent to Ops. The status line now reads:",
+  "bare": "Ops acknowledged on-call-policy-v6@f1e2.",
+  "ainglish": "Ops ack-as-agreement(on-call-policy-v6@f1e2).",
+  "english": "Ops explicitly agreed with the content of on-call-policy-v6@f1e2; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Ops agreed with on-call-policy-v6@f1e2.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-13",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Privacy",
+  "reference": "cookie-policy-v8@6a9d",
+  "context": "cookie-policy-v8@6a9d was sent to Privacy. The status line now reads:",
+  "bare": "Privacy acknowledged cookie-policy-v8@6a9d.",
+  "ainglish": "Privacy ack-as-receipt(cookie-policy-v8@6a9d).",
+  "english": "Privacy explicitly confirmed receipt and identification of cookie-policy-v8@6a9d, without expressing agreement or disagreement.",
+  "practical_english": "Privacy confirmed receipt of cookie-policy-v8@6a9d.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-13",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Privacy",
+  "reference": "cookie-policy-v8@6a9d",
+  "context": "cookie-policy-v8@6a9d was sent to Privacy. The status line now reads:",
+  "bare": "Privacy acknowledged cookie-policy-v8@6a9d.",
+  "ainglish": "Privacy ack-as-agreement(cookie-policy-v8@6a9d).",
+  "english": "Privacy explicitly agreed with the content of cookie-policy-v8@6a9d; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Privacy agreed with cookie-policy-v8@6a9d.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-14",
+  "domain": "policy",
+  "form": "receipt",
+  "principal": "Board",
+  "reference": "conflict-policy-v2@d7b5",
+  "context": "conflict-policy-v2@d7b5 was sent to Board. The status line now reads:",
+  "bare": "Board acknowledged conflict-policy-v2@d7b5.",
+  "ainglish": "Board ack-as-receipt(conflict-policy-v2@d7b5).",
+  "english": "Board explicitly confirmed receipt and identification of conflict-policy-v2@d7b5, without expressing agreement or disagreement.",
+  "practical_english": "Board confirmed receipt of conflict-policy-v2@d7b5.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "policy-14",
+  "domain": "policy",
+  "form": "agreement",
+  "principal": "Board",
+  "reference": "conflict-policy-v2@d7b5",
+  "context": "conflict-policy-v2@d7b5 was sent to Board. The status line now reads:",
+  "bare": "Board acknowledged conflict-policy-v2@d7b5.",
+  "ainglish": "Board ack-as-agreement(conflict-policy-v2@d7b5).",
+  "english": "Board explicitly agreed with the content of conflict-policy-v2@d7b5; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Board agreed with conflict-policy-v2@d7b5.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-01",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Vendor",
+  "reference": "msa-2026-014@2f8c",
+  "context": "msa-2026-014@2f8c was sent to Vendor. The status line now reads:",
+  "bare": "Vendor acknowledged msa-2026-014@2f8c.",
+  "ainglish": "Vendor ack-as-receipt(msa-2026-014@2f8c).",
+  "english": "Vendor explicitly confirmed receipt and identification of msa-2026-014@2f8c, without expressing agreement or disagreement.",
+  "practical_english": "Vendor confirmed receipt of msa-2026-014@2f8c.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-01",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Vendor",
+  "reference": "msa-2026-014@2f8c",
+  "context": "msa-2026-014@2f8c was sent to Vendor. The status line now reads:",
+  "bare": "Vendor acknowledged msa-2026-014@2f8c.",
+  "ainglish": "Vendor ack-as-agreement(msa-2026-014@2f8c).",
+  "english": "Vendor explicitly agreed with the content of msa-2026-014@2f8c; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Vendor agreed with msa-2026-014@2f8c.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-02",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Landlord",
+  "reference": "lease-amendment-3@9a1e",
+  "context": "lease-amendment-3@9a1e was sent to Landlord. The status line now reads:",
+  "bare": "Landlord acknowledged lease-amendment-3@9a1e.",
+  "ainglish": "Landlord ack-as-receipt(lease-amendment-3@9a1e).",
+  "english": "Landlord explicitly confirmed receipt and identification of lease-amendment-3@9a1e, without expressing agreement or disagreement.",
+  "practical_english": "Landlord confirmed receipt of lease-amendment-3@9a1e.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-02",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Landlord",
+  "reference": "lease-amendment-3@9a1e",
+  "context": "lease-amendment-3@9a1e was sent to Landlord. The status line now reads:",
+  "bare": "Landlord acknowledged lease-amendment-3@9a1e.",
+  "ainglish": "Landlord ack-as-agreement(lease-amendment-3@9a1e).",
+  "english": "Landlord explicitly agreed with the content of lease-amendment-3@9a1e; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Landlord agreed with lease-amendment-3@9a1e.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-03",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Contractor",
+  "reference": "sow-0921@c3d0",
+  "context": "sow-0921@c3d0 was sent to Contractor. The status line now reads:",
+  "bare": "Contractor acknowledged sow-0921@c3d0.",
+  "ainglish": "Contractor ack-as-receipt(sow-0921@c3d0).",
+  "english": "Contractor explicitly confirmed receipt and identification of sow-0921@c3d0, without expressing agreement or disagreement.",
+  "practical_english": "Contractor confirmed receipt of sow-0921@c3d0.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-03",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Contractor",
+  "reference": "sow-0921@c3d0",
+  "context": "sow-0921@c3d0 was sent to Contractor. The status line now reads:",
+  "bare": "Contractor acknowledged sow-0921@c3d0.",
+  "ainglish": "Contractor ack-as-agreement(sow-0921@c3d0).",
+  "english": "Contractor explicitly agreed with the content of sow-0921@c3d0; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Contractor agreed with sow-0921@c3d0.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-04",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Reseller",
+  "reference": "distribution-agreement-v2@5e77",
+  "context": "distribution-agreement-v2@5e77 was sent to Reseller. The status line now reads:",
+  "bare": "Reseller acknowledged distribution-agreement-v2@5e77.",
+  "ainglish": "Reseller ack-as-receipt(distribution-agreement-v2@5e77).",
+  "english": "Reseller explicitly confirmed receipt and identification of distribution-agreement-v2@5e77, without expressing agreement or disagreement.",
+  "practical_english": "Reseller confirmed receipt of distribution-agreement-v2@5e77.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-04",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Reseller",
+  "reference": "distribution-agreement-v2@5e77",
+  "context": "distribution-agreement-v2@5e77 was sent to Reseller. The status line now reads:",
+  "bare": "Reseller acknowledged distribution-agreement-v2@5e77.",
+  "ainglish": "Reseller ack-as-agreement(distribution-agreement-v2@5e77).",
+  "english": "Reseller explicitly agreed with the content of distribution-agreement-v2@5e77; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Reseller agreed with distribution-agreement-v2@5e77.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-05",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Licensor",
+  "reference": "licence-schedule-b@0b46",
+  "context": "licence-schedule-b@0b46 was sent to Licensor. The status line now reads:",
+  "bare": "Licensor acknowledged licence-schedule-b@0b46.",
+  "ainglish": "Licensor ack-as-receipt(licence-schedule-b@0b46).",
+  "english": "Licensor explicitly confirmed receipt and identification of licence-schedule-b@0b46, without expressing agreement or disagreement.",
+  "practical_english": "Licensor confirmed receipt of licence-schedule-b@0b46.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-05",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Licensor",
+  "reference": "licence-schedule-b@0b46",
+  "context": "licence-schedule-b@0b46 was sent to Licensor. The status line now reads:",
+  "bare": "Licensor acknowledged licence-schedule-b@0b46.",
+  "ainglish": "Licensor ack-as-agreement(licence-schedule-b@0b46).",
+  "english": "Licensor explicitly agreed with the content of licence-schedule-b@0b46; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Licensor agreed with licence-schedule-b@0b46.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-06",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Customer",
+  "reference": "order-form-4481@ee12",
+  "context": "order-form-4481@ee12 was sent to Customer. The status line now reads:",
+  "bare": "Customer acknowledged order-form-4481@ee12.",
+  "ainglish": "Customer ack-as-receipt(order-form-4481@ee12).",
+  "english": "Customer explicitly confirmed receipt and identification of order-form-4481@ee12, without expressing agreement or disagreement.",
+  "practical_english": "Customer confirmed receipt of order-form-4481@ee12.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-06",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Customer",
+  "reference": "order-form-4481@ee12",
+  "context": "order-form-4481@ee12 was sent to Customer. The status line now reads:",
+  "bare": "Customer acknowledged order-form-4481@ee12.",
+  "ainglish": "Customer ack-as-agreement(order-form-4481@ee12).",
+  "english": "Customer explicitly agreed with the content of order-form-4481@ee12; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Customer agreed with order-form-4481@ee12.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-07",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Insurer",
+  "reference": "policy-renewal-2027@7c8f",
+  "context": "policy-renewal-2027@7c8f was sent to Insurer. The status line now reads:",
+  "bare": "Insurer acknowledged policy-renewal-2027@7c8f.",
+  "ainglish": "Insurer ack-as-receipt(policy-renewal-2027@7c8f).",
+  "english": "Insurer explicitly confirmed receipt and identification of policy-renewal-2027@7c8f, without expressing agreement or disagreement.",
+  "practical_english": "Insurer confirmed receipt of policy-renewal-2027@7c8f.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-07",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Insurer",
+  "reference": "policy-renewal-2027@7c8f",
+  "context": "policy-renewal-2027@7c8f was sent to Insurer. The status line now reads:",
+  "bare": "Insurer acknowledged policy-renewal-2027@7c8f.",
+  "ainglish": "Insurer ack-as-agreement(policy-renewal-2027@7c8f).",
+  "english": "Insurer explicitly agreed with the content of policy-renewal-2027@7c8f; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Insurer agreed with policy-renewal-2027@7c8f.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-08",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Consultant",
+  "reference": "engagement-letter-33@a90b",
+  "context": "engagement-letter-33@a90b was sent to Consultant. The status line now reads:",
+  "bare": "Consultant acknowledged engagement-letter-33@a90b.",
+  "ainglish": "Consultant ack-as-receipt(engagement-letter-33@a90b).",
+  "english": "Consultant explicitly confirmed receipt and identification of engagement-letter-33@a90b, without expressing agreement or disagreement.",
+  "practical_english": "Consultant confirmed receipt of engagement-letter-33@a90b.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-08",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Consultant",
+  "reference": "engagement-letter-33@a90b",
+  "context": "engagement-letter-33@a90b was sent to Consultant. The status line now reads:",
+  "bare": "Consultant acknowledged engagement-letter-33@a90b.",
+  "ainglish": "Consultant ack-as-agreement(engagement-letter-33@a90b).",
+  "english": "Consultant explicitly agreed with the content of engagement-letter-33@a90b; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Consultant agreed with engagement-letter-33@a90b.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-09",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Supplier",
+  "reference": "framework-agreement-v3@1d5a",
+  "context": "framework-agreement-v3@1d5a was sent to Supplier. The status line now reads:",
+  "bare": "Supplier acknowledged framework-agreement-v3@1d5a.",
+  "ainglish": "Supplier ack-as-receipt(framework-agreement-v3@1d5a).",
+  "english": "Supplier explicitly confirmed receipt and identification of framework-agreement-v3@1d5a, without expressing agreement or disagreement.",
+  "practical_english": "Supplier confirmed receipt of framework-agreement-v3@1d5a.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-09",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Supplier",
+  "reference": "framework-agreement-v3@1d5a",
+  "context": "framework-agreement-v3@1d5a was sent to Supplier. The status line now reads:",
+  "bare": "Supplier acknowledged framework-agreement-v3@1d5a.",
+  "ainglish": "Supplier ack-as-agreement(framework-agreement-v3@1d5a).",
+  "english": "Supplier explicitly agreed with the content of framework-agreement-v3@1d5a; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Supplier agreed with framework-agreement-v3@1d5a.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-10",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Partner",
+  "reference": "joint-venture-term-sheet@64f9",
+  "context": "joint-venture-term-sheet@64f9 was sent to Partner. The status line now reads:",
+  "bare": "Partner acknowledged joint-venture-term-sheet@64f9.",
+  "ainglish": "Partner ack-as-receipt(joint-venture-term-sheet@64f9).",
+  "english": "Partner explicitly confirmed receipt and identification of joint-venture-term-sheet@64f9, without expressing agreement or disagreement.",
+  "practical_english": "Partner confirmed receipt of joint-venture-term-sheet@64f9.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-10",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Partner",
+  "reference": "joint-venture-term-sheet@64f9",
+  "context": "joint-venture-term-sheet@64f9 was sent to Partner. The status line now reads:",
+  "bare": "Partner acknowledged joint-venture-term-sheet@64f9.",
+  "ainglish": "Partner ack-as-agreement(joint-venture-term-sheet@64f9).",
+  "english": "Partner explicitly agreed with the content of joint-venture-term-sheet@64f9; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Partner agreed with joint-venture-term-sheet@64f9.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-11",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Auditor",
+  "reference": "audit-engagement-2026@b2c7",
+  "context": "audit-engagement-2026@b2c7 was sent to Auditor. The status line now reads:",
+  "bare": "Auditor acknowledged audit-engagement-2026@b2c7.",
+  "ainglish": "Auditor ack-as-receipt(audit-engagement-2026@b2c7).",
+  "english": "Auditor explicitly confirmed receipt and identification of audit-engagement-2026@b2c7, without expressing agreement or disagreement.",
+  "practical_english": "Auditor confirmed receipt of audit-engagement-2026@b2c7.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-11",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Auditor",
+  "reference": "audit-engagement-2026@b2c7",
+  "context": "audit-engagement-2026@b2c7 was sent to Auditor. The status line now reads:",
+  "bare": "Auditor acknowledged audit-engagement-2026@b2c7.",
+  "ainglish": "Auditor ack-as-agreement(audit-engagement-2026@b2c7).",
+  "english": "Auditor explicitly agreed with the content of audit-engagement-2026@b2c7; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Auditor agreed with audit-engagement-2026@b2c7.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-12",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Bank",
+  "reference": "facility-letter-v2@08e3",
+  "context": "facility-letter-v2@08e3 was sent to Bank. The status line now reads:",
+  "bare": "Bank acknowledged facility-letter-v2@08e3.",
+  "ainglish": "Bank ack-as-receipt(facility-letter-v2@08e3).",
+  "english": "Bank explicitly confirmed receipt and identification of facility-letter-v2@08e3, without expressing agreement or disagreement.",
+  "practical_english": "Bank confirmed receipt of facility-letter-v2@08e3.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-12",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Bank",
+  "reference": "facility-letter-v2@08e3",
+  "context": "facility-letter-v2@08e3 was sent to Bank. The status line now reads:",
+  "bare": "Bank acknowledged facility-letter-v2@08e3.",
+  "ainglish": "Bank ack-as-agreement(facility-letter-v2@08e3).",
+  "english": "Bank explicitly agreed with the content of facility-letter-v2@08e3; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Bank agreed with facility-letter-v2@08e3.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-13",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Agency",
+  "reference": "recruitment-terms-v5@f4a1",
+  "context": "recruitment-terms-v5@f4a1 was sent to Agency. The status line now reads:",
+  "bare": "Agency acknowledged recruitment-terms-v5@f4a1.",
+  "ainglish": "Agency ack-as-receipt(recruitment-terms-v5@f4a1).",
+  "english": "Agency explicitly confirmed receipt and identification of recruitment-terms-v5@f4a1, without expressing agreement or disagreement.",
+  "practical_english": "Agency confirmed receipt of recruitment-terms-v5@f4a1.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-13",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Agency",
+  "reference": "recruitment-terms-v5@f4a1",
+  "context": "recruitment-terms-v5@f4a1 was sent to Agency. The status line now reads:",
+  "bare": "Agency acknowledged recruitment-terms-v5@f4a1.",
+  "ainglish": "Agency ack-as-agreement(recruitment-terms-v5@f4a1).",
+  "english": "Agency explicitly agreed with the content of recruitment-terms-v5@f4a1; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Agency agreed with recruitment-terms-v5@f4a1.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-14",
+  "domain": "contracts",
+  "form": "receipt",
+  "principal": "Publisher",
+  "reference": "royalty-schedule-2026@3c6e",
+  "context": "royalty-schedule-2026@3c6e was sent to Publisher. The status line now reads:",
+  "bare": "Publisher acknowledged royalty-schedule-2026@3c6e.",
+  "ainglish": "Publisher ack-as-receipt(royalty-schedule-2026@3c6e).",
+  "english": "Publisher explicitly confirmed receipt and identification of royalty-schedule-2026@3c6e, without expressing agreement or disagreement.",
+  "practical_english": "Publisher confirmed receipt of royalty-schedule-2026@3c6e.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "contracts-14",
+  "domain": "contracts",
+  "form": "agreement",
+  "principal": "Publisher",
+  "reference": "royalty-schedule-2026@3c6e",
+  "context": "royalty-schedule-2026@3c6e was sent to Publisher. The status line now reads:",
+  "bare": "Publisher acknowledged royalty-schedule-2026@3c6e.",
+  "ainglish": "Publisher ack-as-agreement(royalty-schedule-2026@3c6e).",
+  "english": "Publisher explicitly agreed with the content of royalty-schedule-2026@3c6e; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Publisher agreed with royalty-schedule-2026@3c6e.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-01",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "ArchReview",
+  "reference": "rfc-0142@a1b2",
+  "context": "rfc-0142@a1b2 was sent to ArchReview. The status line now reads:",
+  "bare": "ArchReview acknowledged rfc-0142@a1b2.",
+  "ainglish": "ArchReview ack-as-receipt(rfc-0142@a1b2).",
+  "english": "ArchReview explicitly confirmed receipt and identification of rfc-0142@a1b2, without expressing agreement or disagreement.",
+  "practical_english": "ArchReview confirmed receipt of rfc-0142@a1b2.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-01",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "ArchReview",
+  "reference": "rfc-0142@a1b2",
+  "context": "rfc-0142@a1b2 was sent to ArchReview. The status line now reads:",
+  "bare": "ArchReview acknowledged rfc-0142@a1b2.",
+  "ainglish": "ArchReview ack-as-agreement(rfc-0142@a1b2).",
+  "english": "ArchReview explicitly agreed with the content of rfc-0142@a1b2; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "ArchReview agreed with rfc-0142@a1b2.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-02",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "PlatformTeam",
+  "reference": "schema-migration-plan-v3@c8d9",
+  "context": "schema-migration-plan-v3@c8d9 was sent to PlatformTeam. The status line now reads:",
+  "bare": "PlatformTeam acknowledged schema-migration-plan-v3@c8d9.",
+  "ainglish": "PlatformTeam ack-as-receipt(schema-migration-plan-v3@c8d9).",
+  "english": "PlatformTeam explicitly confirmed receipt and identification of schema-migration-plan-v3@c8d9, without expressing agreement or disagreement.",
+  "practical_english": "PlatformTeam confirmed receipt of schema-migration-plan-v3@c8d9.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-02",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "PlatformTeam",
+  "reference": "schema-migration-plan-v3@c8d9",
+  "context": "schema-migration-plan-v3@c8d9 was sent to PlatformTeam. The status line now reads:",
+  "bare": "PlatformTeam acknowledged schema-migration-plan-v3@c8d9.",
+  "ainglish": "PlatformTeam ack-as-agreement(schema-migration-plan-v3@c8d9).",
+  "english": "PlatformTeam explicitly agreed with the content of schema-migration-plan-v3@c8d9; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "PlatformTeam agreed with schema-migration-plan-v3@c8d9.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-03",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "SecurityReview",
+  "reference": "threat-model-rev4@e0f1",
+  "context": "threat-model-rev4@e0f1 was sent to SecurityReview. The status line now reads:",
+  "bare": "SecurityReview acknowledged threat-model-rev4@e0f1.",
+  "ainglish": "SecurityReview ack-as-receipt(threat-model-rev4@e0f1).",
+  "english": "SecurityReview explicitly confirmed receipt and identification of threat-model-rev4@e0f1, without expressing agreement or disagreement.",
+  "practical_english": "SecurityReview confirmed receipt of threat-model-rev4@e0f1.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-03",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "SecurityReview",
+  "reference": "threat-model-rev4@e0f1",
+  "context": "threat-model-rev4@e0f1 was sent to SecurityReview. The status line now reads:",
+  "bare": "SecurityReview acknowledged threat-model-rev4@e0f1.",
+  "ainglish": "SecurityReview ack-as-agreement(threat-model-rev4@e0f1).",
+  "english": "SecurityReview explicitly agreed with the content of threat-model-rev4@e0f1; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "SecurityReview agreed with threat-model-rev4@e0f1.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-04",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "APIOwners",
+  "reference": "openapi-diff-4482@2233",
+  "context": "openapi-diff-4482@2233 was sent to APIOwners. The status line now reads:",
+  "bare": "APIOwners acknowledged openapi-diff-4482@2233.",
+  "ainglish": "APIOwners ack-as-receipt(openapi-diff-4482@2233).",
+  "english": "APIOwners explicitly confirmed receipt and identification of openapi-diff-4482@2233, without expressing agreement or disagreement.",
+  "practical_english": "APIOwners confirmed receipt of openapi-diff-4482@2233.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-04",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "APIOwners",
+  "reference": "openapi-diff-4482@2233",
+  "context": "openapi-diff-4482@2233 was sent to APIOwners. The status line now reads:",
+  "bare": "APIOwners acknowledged openapi-diff-4482@2233.",
+  "ainglish": "APIOwners ack-as-agreement(openapi-diff-4482@2233).",
+  "english": "APIOwners explicitly agreed with the content of openapi-diff-4482@2233; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "APIOwners agreed with openapi-diff-4482@2233.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-05",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "UXCouncil",
+  "reference": "onboarding-flow-v6@4455",
+  "context": "onboarding-flow-v6@4455 was sent to UXCouncil. The status line now reads:",
+  "bare": "UXCouncil acknowledged onboarding-flow-v6@4455.",
+  "ainglish": "UXCouncil ack-as-receipt(onboarding-flow-v6@4455).",
+  "english": "UXCouncil explicitly confirmed receipt and identification of onboarding-flow-v6@4455, without expressing agreement or disagreement.",
+  "practical_english": "UXCouncil confirmed receipt of onboarding-flow-v6@4455.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-05",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "UXCouncil",
+  "reference": "onboarding-flow-v6@4455",
+  "context": "onboarding-flow-v6@4455 was sent to UXCouncil. The status line now reads:",
+  "bare": "UXCouncil acknowledged onboarding-flow-v6@4455.",
+  "ainglish": "UXCouncil ack-as-agreement(onboarding-flow-v6@4455).",
+  "english": "UXCouncil explicitly agreed with the content of onboarding-flow-v6@4455; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "UXCouncil agreed with onboarding-flow-v6@4455.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-06",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "DataTeam",
+  "reference": "retention-design-v2@6677",
+  "context": "retention-design-v2@6677 was sent to DataTeam. The status line now reads:",
+  "bare": "DataTeam acknowledged retention-design-v2@6677.",
+  "ainglish": "DataTeam ack-as-receipt(retention-design-v2@6677).",
+  "english": "DataTeam explicitly confirmed receipt and identification of retention-design-v2@6677, without expressing agreement or disagreement.",
+  "practical_english": "DataTeam confirmed receipt of retention-design-v2@6677.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-06",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "DataTeam",
+  "reference": "retention-design-v2@6677",
+  "context": "retention-design-v2@6677 was sent to DataTeam. The status line now reads:",
+  "bare": "DataTeam acknowledged retention-design-v2@6677.",
+  "ainglish": "DataTeam ack-as-agreement(retention-design-v2@6677).",
+  "english": "DataTeam explicitly agreed with the content of retention-design-v2@6677; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "DataTeam agreed with retention-design-v2@6677.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-07",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "SRE",
+  "reference": "capacity-plan-q4@8899",
+  "context": "capacity-plan-q4@8899 was sent to SRE. The status line now reads:",
+  "bare": "SRE acknowledged capacity-plan-q4@8899.",
+  "ainglish": "SRE ack-as-receipt(capacity-plan-q4@8899).",
+  "english": "SRE explicitly confirmed receipt and identification of capacity-plan-q4@8899, without expressing agreement or disagreement.",
+  "practical_english": "SRE confirmed receipt of capacity-plan-q4@8899.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-07",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "SRE",
+  "reference": "capacity-plan-q4@8899",
+  "context": "capacity-plan-q4@8899 was sent to SRE. The status line now reads:",
+  "bare": "SRE acknowledged capacity-plan-q4@8899.",
+  "ainglish": "SRE ack-as-agreement(capacity-plan-q4@8899).",
+  "english": "SRE explicitly agreed with the content of capacity-plan-q4@8899; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "SRE agreed with capacity-plan-q4@8899.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-08",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "MobileGuild",
+  "reference": "offline-sync-design@aabb",
+  "context": "offline-sync-design@aabb was sent to MobileGuild. The status line now reads:",
+  "bare": "MobileGuild acknowledged offline-sync-design@aabb.",
+  "ainglish": "MobileGuild ack-as-receipt(offline-sync-design@aabb).",
+  "english": "MobileGuild explicitly confirmed receipt and identification of offline-sync-design@aabb, without expressing agreement or disagreement.",
+  "practical_english": "MobileGuild confirmed receipt of offline-sync-design@aabb.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-08",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "MobileGuild",
+  "reference": "offline-sync-design@aabb",
+  "context": "offline-sync-design@aabb was sent to MobileGuild. The status line now reads:",
+  "bare": "MobileGuild acknowledged offline-sync-design@aabb.",
+  "ainglish": "MobileGuild ack-as-agreement(offline-sync-design@aabb).",
+  "english": "MobileGuild explicitly agreed with the content of offline-sync-design@aabb; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "MobileGuild agreed with offline-sync-design@aabb.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-09",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "DesignSystem",
+  "reference": "token-spec-v3@ccdd",
+  "context": "token-spec-v3@ccdd was sent to DesignSystem. The status line now reads:",
+  "bare": "DesignSystem acknowledged token-spec-v3@ccdd.",
+  "ainglish": "DesignSystem ack-as-receipt(token-spec-v3@ccdd).",
+  "english": "DesignSystem explicitly confirmed receipt and identification of token-spec-v3@ccdd, without expressing agreement or disagreement.",
+  "practical_english": "DesignSystem confirmed receipt of token-spec-v3@ccdd.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-09",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "DesignSystem",
+  "reference": "token-spec-v3@ccdd",
+  "context": "token-spec-v3@ccdd was sent to DesignSystem. The status line now reads:",
+  "bare": "DesignSystem acknowledged token-spec-v3@ccdd.",
+  "ainglish": "DesignSystem ack-as-agreement(token-spec-v3@ccdd).",
+  "english": "DesignSystem explicitly agreed with the content of token-spec-v3@ccdd; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "DesignSystem agreed with token-spec-v3@ccdd.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-10",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "PaymentsTeam",
+  "reference": "idempotency-design-v2@eeff",
+  "context": "idempotency-design-v2@eeff was sent to PaymentsTeam. The status line now reads:",
+  "bare": "PaymentsTeam acknowledged idempotency-design-v2@eeff.",
+  "ainglish": "PaymentsTeam ack-as-receipt(idempotency-design-v2@eeff).",
+  "english": "PaymentsTeam explicitly confirmed receipt and identification of idempotency-design-v2@eeff, without expressing agreement or disagreement.",
+  "practical_english": "PaymentsTeam confirmed receipt of idempotency-design-v2@eeff.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-10",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "PaymentsTeam",
+  "reference": "idempotency-design-v2@eeff",
+  "context": "idempotency-design-v2@eeff was sent to PaymentsTeam. The status line now reads:",
+  "bare": "PaymentsTeam acknowledged idempotency-design-v2@eeff.",
+  "ainglish": "PaymentsTeam ack-as-agreement(idempotency-design-v2@eeff).",
+  "english": "PaymentsTeam explicitly agreed with the content of idempotency-design-v2@eeff; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "PaymentsTeam agreed with idempotency-design-v2@eeff.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-11",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "SearchTeam",
+  "reference": "ranking-change-217@1122",
+  "context": "ranking-change-217@1122 was sent to SearchTeam. The status line now reads:",
+  "bare": "SearchTeam acknowledged ranking-change-217@1122.",
+  "ainglish": "SearchTeam ack-as-receipt(ranking-change-217@1122).",
+  "english": "SearchTeam explicitly confirmed receipt and identification of ranking-change-217@1122, without expressing agreement or disagreement.",
+  "practical_english": "SearchTeam confirmed receipt of ranking-change-217@1122.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-11",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "SearchTeam",
+  "reference": "ranking-change-217@1122",
+  "context": "ranking-change-217@1122 was sent to SearchTeam. The status line now reads:",
+  "bare": "SearchTeam acknowledged ranking-change-217@1122.",
+  "ainglish": "SearchTeam ack-as-agreement(ranking-change-217@1122).",
+  "english": "SearchTeam explicitly agreed with the content of ranking-change-217@1122; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "SearchTeam agreed with ranking-change-217@1122.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-12",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "ReleaseBoard",
+  "reference": "rollout-plan-3.9@3344",
+  "context": "rollout-plan-3.9@3344 was sent to ReleaseBoard. The status line now reads:",
+  "bare": "ReleaseBoard acknowledged rollout-plan-3.9@3344.",
+  "ainglish": "ReleaseBoard ack-as-receipt(rollout-plan-3.9@3344).",
+  "english": "ReleaseBoard explicitly confirmed receipt and identification of rollout-plan-3.9@3344, without expressing agreement or disagreement.",
+  "practical_english": "ReleaseBoard confirmed receipt of rollout-plan-3.9@3344.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-12",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "ReleaseBoard",
+  "reference": "rollout-plan-3.9@3344",
+  "context": "rollout-plan-3.9@3344 was sent to ReleaseBoard. The status line now reads:",
+  "bare": "ReleaseBoard acknowledged rollout-plan-3.9@3344.",
+  "ainglish": "ReleaseBoard ack-as-agreement(rollout-plan-3.9@3344).",
+  "english": "ReleaseBoard explicitly agreed with the content of rollout-plan-3.9@3344; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "ReleaseBoard agreed with rollout-plan-3.9@3344.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-13",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "PerfGuild",
+  "reference": "budget-proposal-v4@5566",
+  "context": "budget-proposal-v4@5566 was sent to PerfGuild. The status line now reads:",
+  "bare": "PerfGuild acknowledged budget-proposal-v4@5566.",
+  "ainglish": "PerfGuild ack-as-receipt(budget-proposal-v4@5566).",
+  "english": "PerfGuild explicitly confirmed receipt and identification of budget-proposal-v4@5566, without expressing agreement or disagreement.",
+  "practical_english": "PerfGuild confirmed receipt of budget-proposal-v4@5566.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-13",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "PerfGuild",
+  "reference": "budget-proposal-v4@5566",
+  "context": "budget-proposal-v4@5566 was sent to PerfGuild. The status line now reads:",
+  "bare": "PerfGuild acknowledged budget-proposal-v4@5566.",
+  "ainglish": "PerfGuild ack-as-agreement(budget-proposal-v4@5566).",
+  "english": "PerfGuild explicitly agreed with the content of budget-proposal-v4@5566; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "PerfGuild agreed with budget-proposal-v4@5566.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-14",
+  "domain": "design_review",
+  "form": "receipt",
+  "principal": "MLReview",
+  "reference": "eval-protocol-v2@7788",
+  "context": "eval-protocol-v2@7788 was sent to MLReview. The status line now reads:",
+  "bare": "MLReview acknowledged eval-protocol-v2@7788.",
+  "ainglish": "MLReview ack-as-receipt(eval-protocol-v2@7788).",
+  "english": "MLReview explicitly confirmed receipt and identification of eval-protocol-v2@7788, without expressing agreement or disagreement.",
+  "practical_english": "MLReview confirmed receipt of eval-protocol-v2@7788.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "design_review-14",
+  "domain": "design_review",
+  "form": "agreement",
+  "principal": "MLReview",
+  "reference": "eval-protocol-v2@7788",
+  "context": "eval-protocol-v2@7788 was sent to MLReview. The status line now reads:",
+  "bare": "MLReview acknowledged eval-protocol-v2@7788.",
+  "ainglish": "MLReview ack-as-agreement(eval-protocol-v2@7788).",
+  "english": "MLReview explicitly agreed with the content of eval-protocol-v2@7788; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "MLReview agreed with eval-protocol-v2@7788.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-01",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "NightShift",
+  "reference": "handoff-2026-08-27@1a2b",
+  "context": "handoff-2026-08-27@1a2b was sent to NightShift. The status line now reads:",
+  "bare": "NightShift acknowledged handoff-2026-08-27@1a2b.",
+  "ainglish": "NightShift ack-as-receipt(handoff-2026-08-27@1a2b).",
+  "english": "NightShift explicitly confirmed receipt and identification of handoff-2026-08-27@1a2b, without expressing agreement or disagreement.",
+  "practical_english": "NightShift confirmed receipt of handoff-2026-08-27@1a2b.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-01",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "NightShift",
+  "reference": "handoff-2026-08-27@1a2b",
+  "context": "handoff-2026-08-27@1a2b was sent to NightShift. The status line now reads:",
+  "bare": "NightShift acknowledged handoff-2026-08-27@1a2b.",
+  "ainglish": "NightShift ack-as-agreement(handoff-2026-08-27@1a2b).",
+  "english": "NightShift explicitly agreed with the content of handoff-2026-08-27@1a2b; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "NightShift agreed with handoff-2026-08-27@1a2b.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-02",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "DayLead",
+  "reference": "handoff-2026-08-28-am@3c4d",
+  "context": "handoff-2026-08-28-am@3c4d was sent to DayLead. The status line now reads:",
+  "bare": "DayLead acknowledged handoff-2026-08-28-am@3c4d.",
+  "ainglish": "DayLead ack-as-receipt(handoff-2026-08-28-am@3c4d).",
+  "english": "DayLead explicitly confirmed receipt and identification of handoff-2026-08-28-am@3c4d, without expressing agreement or disagreement.",
+  "practical_english": "DayLead confirmed receipt of handoff-2026-08-28-am@3c4d.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-02",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "DayLead",
+  "reference": "handoff-2026-08-28-am@3c4d",
+  "context": "handoff-2026-08-28-am@3c4d was sent to DayLead. The status line now reads:",
+  "bare": "DayLead acknowledged handoff-2026-08-28-am@3c4d.",
+  "ainglish": "DayLead ack-as-agreement(handoff-2026-08-28-am@3c4d).",
+  "english": "DayLead explicitly agreed with the content of handoff-2026-08-28-am@3c4d; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "DayLead agreed with handoff-2026-08-28-am@3c4d.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-03",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "DBOnCall",
+  "reference": "postmortem-4471@5e6f",
+  "context": "postmortem-4471@5e6f was sent to DBOnCall. The status line now reads:",
+  "bare": "DBOnCall acknowledged postmortem-4471@5e6f.",
+  "ainglish": "DBOnCall ack-as-receipt(postmortem-4471@5e6f).",
+  "english": "DBOnCall explicitly confirmed receipt and identification of postmortem-4471@5e6f, without expressing agreement or disagreement.",
+  "practical_english": "DBOnCall confirmed receipt of postmortem-4471@5e6f.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-03",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "DBOnCall",
+  "reference": "postmortem-4471@5e6f",
+  "context": "postmortem-4471@5e6f was sent to DBOnCall. The status line now reads:",
+  "bare": "DBOnCall acknowledged postmortem-4471@5e6f.",
+  "ainglish": "DBOnCall ack-as-agreement(postmortem-4471@5e6f).",
+  "english": "DBOnCall explicitly agreed with the content of postmortem-4471@5e6f; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "DBOnCall agreed with postmortem-4471@5e6f.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-04",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "NetworkOps",
+  "reference": "runbook-outage-22@7a8b",
+  "context": "runbook-outage-22@7a8b was sent to NetworkOps. The status line now reads:",
+  "bare": "NetworkOps acknowledged runbook-outage-22@7a8b.",
+  "ainglish": "NetworkOps ack-as-receipt(runbook-outage-22@7a8b).",
+  "english": "NetworkOps explicitly confirmed receipt and identification of runbook-outage-22@7a8b, without expressing agreement or disagreement.",
+  "practical_english": "NetworkOps confirmed receipt of runbook-outage-22@7a8b.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-04",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "NetworkOps",
+  "reference": "runbook-outage-22@7a8b",
+  "context": "runbook-outage-22@7a8b was sent to NetworkOps. The status line now reads:",
+  "bare": "NetworkOps acknowledged runbook-outage-22@7a8b.",
+  "ainglish": "NetworkOps ack-as-agreement(runbook-outage-22@7a8b).",
+  "english": "NetworkOps explicitly agreed with the content of runbook-outage-22@7a8b; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "NetworkOps agreed with runbook-outage-22@7a8b.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-05",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "PayOnCall",
+  "reference": "incident-9930-summary@9c0d",
+  "context": "incident-9930-summary@9c0d was sent to PayOnCall. The status line now reads:",
+  "bare": "PayOnCall acknowledged incident-9930-summary@9c0d.",
+  "ainglish": "PayOnCall ack-as-receipt(incident-9930-summary@9c0d).",
+  "english": "PayOnCall explicitly confirmed receipt and identification of incident-9930-summary@9c0d, without expressing agreement or disagreement.",
+  "practical_english": "PayOnCall confirmed receipt of incident-9930-summary@9c0d.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-05",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "PayOnCall",
+  "reference": "incident-9930-summary@9c0d",
+  "context": "incident-9930-summary@9c0d was sent to PayOnCall. The status line now reads:",
+  "bare": "PayOnCall acknowledged incident-9930-summary@9c0d.",
+  "ainglish": "PayOnCall ack-as-agreement(incident-9930-summary@9c0d).",
+  "english": "PayOnCall explicitly agreed with the content of incident-9930-summary@9c0d; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "PayOnCall agreed with incident-9930-summary@9c0d.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-06",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "SecOnCall",
+  "reference": "containment-notes-v2@e1f2",
+  "context": "containment-notes-v2@e1f2 was sent to SecOnCall. The status line now reads:",
+  "bare": "SecOnCall acknowledged containment-notes-v2@e1f2.",
+  "ainglish": "SecOnCall ack-as-receipt(containment-notes-v2@e1f2).",
+  "english": "SecOnCall explicitly confirmed receipt and identification of containment-notes-v2@e1f2, without expressing agreement or disagreement.",
+  "practical_english": "SecOnCall confirmed receipt of containment-notes-v2@e1f2.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-06",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "SecOnCall",
+  "reference": "containment-notes-v2@e1f2",
+  "context": "containment-notes-v2@e1f2 was sent to SecOnCall. The status line now reads:",
+  "bare": "SecOnCall acknowledged containment-notes-v2@e1f2.",
+  "ainglish": "SecOnCall ack-as-agreement(containment-notes-v2@e1f2).",
+  "english": "SecOnCall explicitly agreed with the content of containment-notes-v2@e1f2; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "SecOnCall agreed with containment-notes-v2@e1f2.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-07",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "SiteLead",
+  "reference": "status-2026-08-28T06@a3b4",
+  "context": "status-2026-08-28T06@a3b4 was sent to SiteLead. The status line now reads:",
+  "bare": "SiteLead acknowledged status-2026-08-28T06@a3b4.",
+  "ainglish": "SiteLead ack-as-receipt(status-2026-08-28T06@a3b4).",
+  "english": "SiteLead explicitly confirmed receipt and identification of status-2026-08-28T06@a3b4, without expressing agreement or disagreement.",
+  "practical_english": "SiteLead confirmed receipt of status-2026-08-28T06@a3b4.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-07",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "SiteLead",
+  "reference": "status-2026-08-28T06@a3b4",
+  "context": "status-2026-08-28T06@a3b4 was sent to SiteLead. The status line now reads:",
+  "bare": "SiteLead acknowledged status-2026-08-28T06@a3b4.",
+  "ainglish": "SiteLead ack-as-agreement(status-2026-08-28T06@a3b4).",
+  "english": "SiteLead explicitly agreed with the content of status-2026-08-28T06@a3b4; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "SiteLead agreed with status-2026-08-28T06@a3b4.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-08",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "EscalationDesk",
+  "reference": "bridge-log-1188@c5d6",
+  "context": "bridge-log-1188@c5d6 was sent to EscalationDesk. The status line now reads:",
+  "bare": "EscalationDesk acknowledged bridge-log-1188@c5d6.",
+  "ainglish": "EscalationDesk ack-as-receipt(bridge-log-1188@c5d6).",
+  "english": "EscalationDesk explicitly confirmed receipt and identification of bridge-log-1188@c5d6, without expressing agreement or disagreement.",
+  "practical_english": "EscalationDesk confirmed receipt of bridge-log-1188@c5d6.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-08",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "EscalationDesk",
+  "reference": "bridge-log-1188@c5d6",
+  "context": "bridge-log-1188@c5d6 was sent to EscalationDesk. The status line now reads:",
+  "bare": "EscalationDesk acknowledged bridge-log-1188@c5d6.",
+  "ainglish": "EscalationDesk ack-as-agreement(bridge-log-1188@c5d6).",
+  "english": "EscalationDesk explicitly agreed with the content of bridge-log-1188@c5d6; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "EscalationDesk agreed with bridge-log-1188@c5d6.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-09",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "VendorSupport",
+  "reference": "ticket-77813@e7f8",
+  "context": "ticket-77813@e7f8 was sent to VendorSupport. The status line now reads:",
+  "bare": "VendorSupport acknowledged ticket-77813@e7f8.",
+  "ainglish": "VendorSupport ack-as-receipt(ticket-77813@e7f8).",
+  "english": "VendorSupport explicitly confirmed receipt and identification of ticket-77813@e7f8, without expressing agreement or disagreement.",
+  "practical_english": "VendorSupport confirmed receipt of ticket-77813@e7f8.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-09",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "VendorSupport",
+  "reference": "ticket-77813@e7f8",
+  "context": "ticket-77813@e7f8 was sent to VendorSupport. The status line now reads:",
+  "bare": "VendorSupport acknowledged ticket-77813@e7f8.",
+  "ainglish": "VendorSupport ack-as-agreement(ticket-77813@e7f8).",
+  "english": "VendorSupport explicitly agreed with the content of ticket-77813@e7f8; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "VendorSupport agreed with ticket-77813@e7f8.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-10",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "CacheOnCall",
+  "reference": "purge-plan-v3@0a1b",
+  "context": "purge-plan-v3@0a1b was sent to CacheOnCall. The status line now reads:",
+  "bare": "CacheOnCall acknowledged purge-plan-v3@0a1b.",
+  "ainglish": "CacheOnCall ack-as-receipt(purge-plan-v3@0a1b).",
+  "english": "CacheOnCall explicitly confirmed receipt and identification of purge-plan-v3@0a1b, without expressing agreement or disagreement.",
+  "practical_english": "CacheOnCall confirmed receipt of purge-plan-v3@0a1b.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-10",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "CacheOnCall",
+  "reference": "purge-plan-v3@0a1b",
+  "context": "purge-plan-v3@0a1b was sent to CacheOnCall. The status line now reads:",
+  "bare": "CacheOnCall acknowledged purge-plan-v3@0a1b.",
+  "ainglish": "CacheOnCall ack-as-agreement(purge-plan-v3@0a1b).",
+  "english": "CacheOnCall explicitly agreed with the content of purge-plan-v3@0a1b; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "CacheOnCall agreed with purge-plan-v3@0a1b.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-11",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "StorageOnCall",
+  "reference": "restore-checklist-v4@2c3d",
+  "context": "restore-checklist-v4@2c3d was sent to StorageOnCall. The status line now reads:",
+  "bare": "StorageOnCall acknowledged restore-checklist-v4@2c3d.",
+  "ainglish": "StorageOnCall ack-as-receipt(restore-checklist-v4@2c3d).",
+  "english": "StorageOnCall explicitly confirmed receipt and identification of restore-checklist-v4@2c3d, without expressing agreement or disagreement.",
+  "practical_english": "StorageOnCall confirmed receipt of restore-checklist-v4@2c3d.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-11",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "StorageOnCall",
+  "reference": "restore-checklist-v4@2c3d",
+  "context": "restore-checklist-v4@2c3d was sent to StorageOnCall. The status line now reads:",
+  "bare": "StorageOnCall acknowledged restore-checklist-v4@2c3d.",
+  "ainglish": "StorageOnCall ack-as-agreement(restore-checklist-v4@2c3d).",
+  "english": "StorageOnCall explicitly agreed with the content of restore-checklist-v4@2c3d; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "StorageOnCall agreed with restore-checklist-v4@2c3d.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-12",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "Comms",
+  "reference": "customer-notice-draft-2@4e5f",
+  "context": "customer-notice-draft-2@4e5f was sent to Comms. The status line now reads:",
+  "bare": "Comms acknowledged customer-notice-draft-2@4e5f.",
+  "ainglish": "Comms ack-as-receipt(customer-notice-draft-2@4e5f).",
+  "english": "Comms explicitly confirmed receipt and identification of customer-notice-draft-2@4e5f, without expressing agreement or disagreement.",
+  "practical_english": "Comms confirmed receipt of customer-notice-draft-2@4e5f.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-12",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "Comms",
+  "reference": "customer-notice-draft-2@4e5f",
+  "context": "customer-notice-draft-2@4e5f was sent to Comms. The status line now reads:",
+  "bare": "Comms acknowledged customer-notice-draft-2@4e5f.",
+  "ainglish": "Comms ack-as-agreement(customer-notice-draft-2@4e5f).",
+  "english": "Comms explicitly agreed with the content of customer-notice-draft-2@4e5f; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Comms agreed with customer-notice-draft-2@4e5f.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-13",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "QueueOwners",
+  "reference": "backlog-triage-0828@6a7b",
+  "context": "backlog-triage-0828@6a7b was sent to QueueOwners. The status line now reads:",
+  "bare": "QueueOwners acknowledged backlog-triage-0828@6a7b.",
+  "ainglish": "QueueOwners ack-as-receipt(backlog-triage-0828@6a7b).",
+  "english": "QueueOwners explicitly confirmed receipt and identification of backlog-triage-0828@6a7b, without expressing agreement or disagreement.",
+  "practical_english": "QueueOwners confirmed receipt of backlog-triage-0828@6a7b.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-13",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "QueueOwners",
+  "reference": "backlog-triage-0828@6a7b",
+  "context": "backlog-triage-0828@6a7b was sent to QueueOwners. The status line now reads:",
+  "bare": "QueueOwners acknowledged backlog-triage-0828@6a7b.",
+  "ainglish": "QueueOwners ack-as-agreement(backlog-triage-0828@6a7b).",
+  "english": "QueueOwners explicitly agreed with the content of backlog-triage-0828@6a7b; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "QueueOwners agreed with backlog-triage-0828@6a7b.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-14",
+  "domain": "incident_handoff",
+  "form": "receipt",
+  "principal": "RegionLead",
+  "reference": "failover-record-v2@8c9d",
+  "context": "failover-record-v2@8c9d was sent to RegionLead. The status line now reads:",
+  "bare": "RegionLead acknowledged failover-record-v2@8c9d.",
+  "ainglish": "RegionLead ack-as-receipt(failover-record-v2@8c9d).",
+  "english": "RegionLead explicitly confirmed receipt and identification of failover-record-v2@8c9d, without expressing agreement or disagreement.",
+  "practical_english": "RegionLead confirmed receipt of failover-record-v2@8c9d.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "incident_handoff-14",
+  "domain": "incident_handoff",
+  "form": "agreement",
+  "principal": "RegionLead",
+  "reference": "failover-record-v2@8c9d",
+  "context": "failover-record-v2@8c9d was sent to RegionLead. The status line now reads:",
+  "bare": "RegionLead acknowledged failover-record-v2@8c9d.",
+  "ainglish": "RegionLead ack-as-agreement(failover-record-v2@8c9d).",
+  "english": "RegionLead explicitly agreed with the content of failover-record-v2@8c9d; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "RegionLead agreed with failover-record-v2@8c9d.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-01",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "LabManager",
+  "reference": "lockout-procedure-v5@0f1e",
+  "context": "lockout-procedure-v5@0f1e was sent to LabManager. The status line now reads:",
+  "bare": "LabManager acknowledged lockout-procedure-v5@0f1e.",
+  "ainglish": "LabManager ack-as-receipt(lockout-procedure-v5@0f1e).",
+  "english": "LabManager explicitly confirmed receipt and identification of lockout-procedure-v5@0f1e, without expressing agreement or disagreement.",
+  "practical_english": "LabManager confirmed receipt of lockout-procedure-v5@0f1e.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-01",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "LabManager",
+  "reference": "lockout-procedure-v5@0f1e",
+  "context": "lockout-procedure-v5@0f1e was sent to LabManager. The status line now reads:",
+  "bare": "LabManager acknowledged lockout-procedure-v5@0f1e.",
+  "ainglish": "LabManager ack-as-agreement(lockout-procedure-v5@0f1e).",
+  "english": "LabManager explicitly agreed with the content of lockout-procedure-v5@0f1e; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "LabManager agreed with lockout-procedure-v5@0f1e.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-02",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "ShiftSupervisor",
+  "reference": "confined-space-permit-118@2d3c",
+  "context": "confined-space-permit-118@2d3c was sent to ShiftSupervisor. The status line now reads:",
+  "bare": "ShiftSupervisor acknowledged confined-space-permit-118@2d3c.",
+  "ainglish": "ShiftSupervisor ack-as-receipt(confined-space-permit-118@2d3c).",
+  "english": "ShiftSupervisor explicitly confirmed receipt and identification of confined-space-permit-118@2d3c, without expressing agreement or disagreement.",
+  "practical_english": "ShiftSupervisor confirmed receipt of confined-space-permit-118@2d3c.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-02",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "ShiftSupervisor",
+  "reference": "confined-space-permit-118@2d3c",
+  "context": "confined-space-permit-118@2d3c was sent to ShiftSupervisor. The status line now reads:",
+  "bare": "ShiftSupervisor acknowledged confined-space-permit-118@2d3c.",
+  "ainglish": "ShiftSupervisor ack-as-agreement(confined-space-permit-118@2d3c).",
+  "english": "ShiftSupervisor explicitly agreed with the content of confined-space-permit-118@2d3c; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "ShiftSupervisor agreed with confined-space-permit-118@2d3c.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-03",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Crew",
+  "reference": "lifting-plan-v3@4b5a",
+  "context": "lifting-plan-v3@4b5a was sent to Crew. The status line now reads:",
+  "bare": "Crew acknowledged lifting-plan-v3@4b5a.",
+  "ainglish": "Crew ack-as-receipt(lifting-plan-v3@4b5a).",
+  "english": "Crew explicitly confirmed receipt and identification of lifting-plan-v3@4b5a, without expressing agreement or disagreement.",
+  "practical_english": "Crew confirmed receipt of lifting-plan-v3@4b5a.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-03",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Crew",
+  "reference": "lifting-plan-v3@4b5a",
+  "context": "lifting-plan-v3@4b5a was sent to Crew. The status line now reads:",
+  "bare": "Crew acknowledged lifting-plan-v3@4b5a.",
+  "ainglish": "Crew ack-as-agreement(lifting-plan-v3@4b5a).",
+  "english": "Crew explicitly agreed with the content of lifting-plan-v3@4b5a; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Crew agreed with lifting-plan-v3@4b5a.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-04",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Pilot",
+  "reference": "preflight-checklist-r9@6978",
+  "context": "preflight-checklist-r9@6978 was sent to Pilot. The status line now reads:",
+  "bare": "Pilot acknowledged preflight-checklist-r9@6978.",
+  "ainglish": "Pilot ack-as-receipt(preflight-checklist-r9@6978).",
+  "english": "Pilot explicitly confirmed receipt and identification of preflight-checklist-r9@6978, without expressing agreement or disagreement.",
+  "practical_english": "Pilot confirmed receipt of preflight-checklist-r9@6978.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-04",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Pilot",
+  "reference": "preflight-checklist-r9@6978",
+  "context": "preflight-checklist-r9@6978 was sent to Pilot. The status line now reads:",
+  "bare": "Pilot acknowledged preflight-checklist-r9@6978.",
+  "ainglish": "Pilot ack-as-agreement(preflight-checklist-r9@6978).",
+  "english": "Pilot explicitly agreed with the content of preflight-checklist-r9@6978; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Pilot agreed with preflight-checklist-r9@6978.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-05",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Warden",
+  "reference": "evacuation-plan-2026@8756",
+  "context": "evacuation-plan-2026@8756 was sent to Warden. The status line now reads:",
+  "bare": "Warden acknowledged evacuation-plan-2026@8756.",
+  "ainglish": "Warden ack-as-receipt(evacuation-plan-2026@8756).",
+  "english": "Warden explicitly confirmed receipt and identification of evacuation-plan-2026@8756, without expressing agreement or disagreement.",
+  "practical_english": "Warden confirmed receipt of evacuation-plan-2026@8756.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-05",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Warden",
+  "reference": "evacuation-plan-2026@8756",
+  "context": "evacuation-plan-2026@8756 was sent to Warden. The status line now reads:",
+  "bare": "Warden acknowledged evacuation-plan-2026@8756.",
+  "ainglish": "Warden ack-as-agreement(evacuation-plan-2026@8756).",
+  "english": "Warden explicitly agreed with the content of evacuation-plan-2026@8756; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Warden agreed with evacuation-plan-2026@8756.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-06",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Operator",
+  "reference": "machine-guarding-note-v2@a534",
+  "context": "machine-guarding-note-v2@a534 was sent to Operator. The status line now reads:",
+  "bare": "Operator acknowledged machine-guarding-note-v2@a534.",
+  "ainglish": "Operator ack-as-receipt(machine-guarding-note-v2@a534).",
+  "english": "Operator explicitly confirmed receipt and identification of machine-guarding-note-v2@a534, without expressing agreement or disagreement.",
+  "practical_english": "Operator confirmed receipt of machine-guarding-note-v2@a534.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-06",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Operator",
+  "reference": "machine-guarding-note-v2@a534",
+  "context": "machine-guarding-note-v2@a534 was sent to Operator. The status line now reads:",
+  "bare": "Operator acknowledged machine-guarding-note-v2@a534.",
+  "ainglish": "Operator ack-as-agreement(machine-guarding-note-v2@a534).",
+  "english": "Operator explicitly agreed with the content of machine-guarding-note-v2@a534; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Operator agreed with machine-guarding-note-v2@a534.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-07",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Chemist",
+  "reference": "sds-update-7712@c312",
+  "context": "sds-update-7712@c312 was sent to Chemist. The status line now reads:",
+  "bare": "Chemist acknowledged sds-update-7712@c312.",
+  "ainglish": "Chemist ack-as-receipt(sds-update-7712@c312).",
+  "english": "Chemist explicitly confirmed receipt and identification of sds-update-7712@c312, without expressing agreement or disagreement.",
+  "practical_english": "Chemist confirmed receipt of sds-update-7712@c312.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-07",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Chemist",
+  "reference": "sds-update-7712@c312",
+  "context": "sds-update-7712@c312 was sent to Chemist. The status line now reads:",
+  "bare": "Chemist acknowledged sds-update-7712@c312.",
+  "ainglish": "Chemist ack-as-agreement(sds-update-7712@c312).",
+  "english": "Chemist explicitly agreed with the content of sds-update-7712@c312; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Chemist agreed with sds-update-7712@c312.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-08",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "SiteNurse",
+  "reference": "exposure-protocol-v4@e1f0",
+  "context": "exposure-protocol-v4@e1f0 was sent to SiteNurse. The status line now reads:",
+  "bare": "SiteNurse acknowledged exposure-protocol-v4@e1f0.",
+  "ainglish": "SiteNurse ack-as-receipt(exposure-protocol-v4@e1f0).",
+  "english": "SiteNurse explicitly confirmed receipt and identification of exposure-protocol-v4@e1f0, without expressing agreement or disagreement.",
+  "practical_english": "SiteNurse confirmed receipt of exposure-protocol-v4@e1f0.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-08",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "SiteNurse",
+  "reference": "exposure-protocol-v4@e1f0",
+  "context": "exposure-protocol-v4@e1f0 was sent to SiteNurse. The status line now reads:",
+  "bare": "SiteNurse acknowledged exposure-protocol-v4@e1f0.",
+  "ainglish": "SiteNurse ack-as-agreement(exposure-protocol-v4@e1f0).",
+  "english": "SiteNurse explicitly agreed with the content of exposure-protocol-v4@e1f0; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "SiteNurse agreed with exposure-protocol-v4@e1f0.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-09",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Driver",
+  "reference": "route-hazard-brief-0828@0d1c",
+  "context": "route-hazard-brief-0828@0d1c was sent to Driver. The status line now reads:",
+  "bare": "Driver acknowledged route-hazard-brief-0828@0d1c.",
+  "ainglish": "Driver ack-as-receipt(route-hazard-brief-0828@0d1c).",
+  "english": "Driver explicitly confirmed receipt and identification of route-hazard-brief-0828@0d1c, without expressing agreement or disagreement.",
+  "practical_english": "Driver confirmed receipt of route-hazard-brief-0828@0d1c.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-09",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Driver",
+  "reference": "route-hazard-brief-0828@0d1c",
+  "context": "route-hazard-brief-0828@0d1c was sent to Driver. The status line now reads:",
+  "bare": "Driver acknowledged route-hazard-brief-0828@0d1c.",
+  "ainglish": "Driver ack-as-agreement(route-hazard-brief-0828@0d1c).",
+  "english": "Driver explicitly agreed with the content of route-hazard-brief-0828@0d1c; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Driver agreed with route-hazard-brief-0828@0d1c.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-10",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Electrician",
+  "reference": "isolation-permit-2203@2b3a",
+  "context": "isolation-permit-2203@2b3a was sent to Electrician. The status line now reads:",
+  "bare": "Electrician acknowledged isolation-permit-2203@2b3a.",
+  "ainglish": "Electrician ack-as-receipt(isolation-permit-2203@2b3a).",
+  "english": "Electrician explicitly confirmed receipt and identification of isolation-permit-2203@2b3a, without expressing agreement or disagreement.",
+  "practical_english": "Electrician confirmed receipt of isolation-permit-2203@2b3a.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-10",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Electrician",
+  "reference": "isolation-permit-2203@2b3a",
+  "context": "isolation-permit-2203@2b3a was sent to Electrician. The status line now reads:",
+  "bare": "Electrician acknowledged isolation-permit-2203@2b3a.",
+  "ainglish": "Electrician ack-as-agreement(isolation-permit-2203@2b3a).",
+  "english": "Electrician explicitly agreed with the content of isolation-permit-2203@2b3a; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Electrician agreed with isolation-permit-2203@2b3a.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-11",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "DiveLead",
+  "reference": "decompression-schedule-v2@4958",
+  "context": "decompression-schedule-v2@4958 was sent to DiveLead. The status line now reads:",
+  "bare": "DiveLead acknowledged decompression-schedule-v2@4958.",
+  "ainglish": "DiveLead ack-as-receipt(decompression-schedule-v2@4958).",
+  "english": "DiveLead explicitly confirmed receipt and identification of decompression-schedule-v2@4958, without expressing agreement or disagreement.",
+  "practical_english": "DiveLead confirmed receipt of decompression-schedule-v2@4958.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-11",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "DiveLead",
+  "reference": "decompression-schedule-v2@4958",
+  "context": "decompression-schedule-v2@4958 was sent to DiveLead. The status line now reads:",
+  "bare": "DiveLead acknowledged decompression-schedule-v2@4958.",
+  "ainglish": "DiveLead ack-as-agreement(decompression-schedule-v2@4958).",
+  "english": "DiveLead explicitly agreed with the content of decompression-schedule-v2@4958; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "DiveLead agreed with decompression-schedule-v2@4958.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-12",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "RangeOfficer",
+  "reference": "firing-order-v6@6776",
+  "context": "firing-order-v6@6776 was sent to RangeOfficer. The status line now reads:",
+  "bare": "RangeOfficer acknowledged firing-order-v6@6776.",
+  "ainglish": "RangeOfficer ack-as-receipt(firing-order-v6@6776).",
+  "english": "RangeOfficer explicitly confirmed receipt and identification of firing-order-v6@6776, without expressing agreement or disagreement.",
+  "practical_english": "RangeOfficer confirmed receipt of firing-order-v6@6776.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-12",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "RangeOfficer",
+  "reference": "firing-order-v6@6776",
+  "context": "firing-order-v6@6776 was sent to RangeOfficer. The status line now reads:",
+  "bare": "RangeOfficer acknowledged firing-order-v6@6776.",
+  "ainglish": "RangeOfficer ack-as-agreement(firing-order-v6@6776).",
+  "english": "RangeOfficer explicitly agreed with the content of firing-order-v6@6776; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "RangeOfficer agreed with firing-order-v6@6776.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-13",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Foreman",
+  "reference": "scaffold-tag-1140@8594",
+  "context": "scaffold-tag-1140@8594 was sent to Foreman. The status line now reads:",
+  "bare": "Foreman acknowledged scaffold-tag-1140@8594.",
+  "ainglish": "Foreman ack-as-receipt(scaffold-tag-1140@8594).",
+  "english": "Foreman explicitly confirmed receipt and identification of scaffold-tag-1140@8594, without expressing agreement or disagreement.",
+  "practical_english": "Foreman confirmed receipt of scaffold-tag-1140@8594.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-13",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Foreman",
+  "reference": "scaffold-tag-1140@8594",
+  "context": "scaffold-tag-1140@8594 was sent to Foreman. The status line now reads:",
+  "bare": "Foreman acknowledged scaffold-tag-1140@8594.",
+  "ainglish": "Foreman ack-as-agreement(scaffold-tag-1140@8594).",
+  "english": "Foreman explicitly agreed with the content of scaffold-tag-1140@8594; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Foreman agreed with scaffold-tag-1140@8594.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-14",
+  "domain": "safety_instructions",
+  "form": "receipt",
+  "principal": "Rigger",
+  "reference": "load-chart-v3@a3b2",
+  "context": "load-chart-v3@a3b2 was sent to Rigger. The status line now reads:",
+  "bare": "Rigger acknowledged load-chart-v3@a3b2.",
+  "ainglish": "Rigger ack-as-receipt(load-chart-v3@a3b2).",
+  "english": "Rigger explicitly confirmed receipt and identification of load-chart-v3@a3b2, without expressing agreement or disagreement.",
+  "practical_english": "Rigger confirmed receipt of load-chart-v3@a3b2.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "safety_instructions-14",
+  "domain": "safety_instructions",
+  "form": "agreement",
+  "principal": "Rigger",
+  "reference": "load-chart-v3@a3b2",
+  "context": "load-chart-v3@a3b2 was sent to Rigger. The status line now reads:",
+  "bare": "Rigger acknowledged load-chart-v3@a3b2.",
+  "ainglish": "Rigger ack-as-agreement(load-chart-v3@a3b2).",
+  "english": "Rigger explicitly agreed with the content of load-chart-v3@a3b2; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Rigger agreed with load-chart-v3@a3b2.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-01",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Marketing",
+  "reference": "launch-brief-v4@b0c1",
+  "context": "launch-brief-v4@b0c1 was sent to Marketing. The status line now reads:",
+  "bare": "Marketing acknowledged launch-brief-v4@b0c1.",
+  "ainglish": "Marketing ack-as-receipt(launch-brief-v4@b0c1).",
+  "english": "Marketing explicitly confirmed receipt and identification of launch-brief-v4@b0c1, without expressing agreement or disagreement.",
+  "practical_english": "Marketing confirmed receipt of launch-brief-v4@b0c1.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-01",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Marketing",
+  "reference": "launch-brief-v4@b0c1",
+  "context": "launch-brief-v4@b0c1 was sent to Marketing. The status line now reads:",
+  "bare": "Marketing acknowledged launch-brief-v4@b0c1.",
+  "ainglish": "Marketing ack-as-agreement(launch-brief-v4@b0c1).",
+  "english": "Marketing explicitly agreed with the content of launch-brief-v4@b0c1; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Marketing agreed with launch-brief-v4@b0c1.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-02",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Sales",
+  "reference": "pricing-sheet-2026q4@d2e3",
+  "context": "pricing-sheet-2026q4@d2e3 was sent to Sales. The status line now reads:",
+  "bare": "Sales acknowledged pricing-sheet-2026q4@d2e3.",
+  "ainglish": "Sales ack-as-receipt(pricing-sheet-2026q4@d2e3).",
+  "english": "Sales explicitly confirmed receipt and identification of pricing-sheet-2026q4@d2e3, without expressing agreement or disagreement.",
+  "practical_english": "Sales confirmed receipt of pricing-sheet-2026q4@d2e3.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-02",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Sales",
+  "reference": "pricing-sheet-2026q4@d2e3",
+  "context": "pricing-sheet-2026q4@d2e3 was sent to Sales. The status line now reads:",
+  "bare": "Sales acknowledged pricing-sheet-2026q4@d2e3.",
+  "ainglish": "Sales ack-as-agreement(pricing-sheet-2026q4@d2e3).",
+  "english": "Sales explicitly agreed with the content of pricing-sheet-2026q4@d2e3; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Sales agreed with pricing-sheet-2026q4@d2e3.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-03",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Support",
+  "reference": "macro-set-v9@f4a5",
+  "context": "macro-set-v9@f4a5 was sent to Support. The status line now reads:",
+  "bare": "Support acknowledged macro-set-v9@f4a5.",
+  "ainglish": "Support ack-as-receipt(macro-set-v9@f4a5).",
+  "english": "Support explicitly confirmed receipt and identification of macro-set-v9@f4a5, without expressing agreement or disagreement.",
+  "practical_english": "Support confirmed receipt of macro-set-v9@f4a5.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-03",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Support",
+  "reference": "macro-set-v9@f4a5",
+  "context": "macro-set-v9@f4a5 was sent to Support. The status line now reads:",
+  "bare": "Support acknowledged macro-set-v9@f4a5.",
+  "ainglish": "Support ack-as-agreement(macro-set-v9@f4a5).",
+  "english": "Support explicitly agreed with the content of macro-set-v9@f4a5; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Support agreed with macro-set-v9@f4a5.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-04",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Recruiting",
+  "reference": "interview-loop-v3@6b7c",
+  "context": "interview-loop-v3@6b7c was sent to Recruiting. The status line now reads:",
+  "bare": "Recruiting acknowledged interview-loop-v3@6b7c.",
+  "ainglish": "Recruiting ack-as-receipt(interview-loop-v3@6b7c).",
+  "english": "Recruiting explicitly confirmed receipt and identification of interview-loop-v3@6b7c, without expressing agreement or disagreement.",
+  "practical_english": "Recruiting confirmed receipt of interview-loop-v3@6b7c.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-04",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Recruiting",
+  "reference": "interview-loop-v3@6b7c",
+  "context": "interview-loop-v3@6b7c was sent to Recruiting. The status line now reads:",
+  "bare": "Recruiting acknowledged interview-loop-v3@6b7c.",
+  "ainglish": "Recruiting ack-as-agreement(interview-loop-v3@6b7c).",
+  "english": "Recruiting explicitly agreed with the content of interview-loop-v3@6b7c; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Recruiting agreed with interview-loop-v3@6b7c.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-05",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Finance",
+  "reference": "forecast-0828@8d9e",
+  "context": "forecast-0828@8d9e was sent to Finance. The status line now reads:",
+  "bare": "Finance acknowledged forecast-0828@8d9e.",
+  "ainglish": "Finance ack-as-receipt(forecast-0828@8d9e).",
+  "english": "Finance explicitly confirmed receipt and identification of forecast-0828@8d9e, without expressing agreement or disagreement.",
+  "practical_english": "Finance confirmed receipt of forecast-0828@8d9e.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-05",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Finance",
+  "reference": "forecast-0828@8d9e",
+  "context": "forecast-0828@8d9e was sent to Finance. The status line now reads:",
+  "bare": "Finance acknowledged forecast-0828@8d9e.",
+  "ainglish": "Finance ack-as-agreement(forecast-0828@8d9e).",
+  "english": "Finance explicitly agreed with the content of forecast-0828@8d9e; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Finance agreed with forecast-0828@8d9e.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-06",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Events",
+  "reference": "venue-brief-v2@af01",
+  "context": "venue-brief-v2@af01 was sent to Events. The status line now reads:",
+  "bare": "Events acknowledged venue-brief-v2@af01.",
+  "ainglish": "Events ack-as-receipt(venue-brief-v2@af01).",
+  "english": "Events explicitly confirmed receipt and identification of venue-brief-v2@af01, without expressing agreement or disagreement.",
+  "practical_english": "Events confirmed receipt of venue-brief-v2@af01.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-06",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Events",
+  "reference": "venue-brief-v2@af01",
+  "context": "venue-brief-v2@af01 was sent to Events. The status line now reads:",
+  "bare": "Events acknowledged venue-brief-v2@af01.",
+  "ainglish": "Events ack-as-agreement(venue-brief-v2@af01).",
+  "english": "Events explicitly agreed with the content of venue-brief-v2@af01; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Events agreed with venue-brief-v2@af01.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-07",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "ITHelpdesk",
+  "reference": "laptop-refresh-plan@1c2d",
+  "context": "laptop-refresh-plan@1c2d was sent to ITHelpdesk. The status line now reads:",
+  "bare": "ITHelpdesk acknowledged laptop-refresh-plan@1c2d.",
+  "ainglish": "ITHelpdesk ack-as-receipt(laptop-refresh-plan@1c2d).",
+  "english": "ITHelpdesk explicitly confirmed receipt and identification of laptop-refresh-plan@1c2d, without expressing agreement or disagreement.",
+  "practical_english": "ITHelpdesk confirmed receipt of laptop-refresh-plan@1c2d.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-07",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "ITHelpdesk",
+  "reference": "laptop-refresh-plan@1c2d",
+  "context": "laptop-refresh-plan@1c2d was sent to ITHelpdesk. The status line now reads:",
+  "bare": "ITHelpdesk acknowledged laptop-refresh-plan@1c2d.",
+  "ainglish": "ITHelpdesk ack-as-agreement(laptop-refresh-plan@1c2d).",
+  "english": "ITHelpdesk explicitly agreed with the content of laptop-refresh-plan@1c2d; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "ITHelpdesk agreed with laptop-refresh-plan@1c2d.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-08",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Localization",
+  "reference": "string-freeze-3.9@3e4f",
+  "context": "string-freeze-3.9@3e4f was sent to Localization. The status line now reads:",
+  "bare": "Localization acknowledged string-freeze-3.9@3e4f.",
+  "ainglish": "Localization ack-as-receipt(string-freeze-3.9@3e4f).",
+  "english": "Localization explicitly confirmed receipt and identification of string-freeze-3.9@3e4f, without expressing agreement or disagreement.",
+  "practical_english": "Localization confirmed receipt of string-freeze-3.9@3e4f.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-08",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Localization",
+  "reference": "string-freeze-3.9@3e4f",
+  "context": "string-freeze-3.9@3e4f was sent to Localization. The status line now reads:",
+  "bare": "Localization acknowledged string-freeze-3.9@3e4f.",
+  "ainglish": "Localization ack-as-agreement(string-freeze-3.9@3e4f).",
+  "english": "Localization explicitly agreed with the content of string-freeze-3.9@3e4f; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Localization agreed with string-freeze-3.9@3e4f.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-09",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Analytics",
+  "reference": "dashboard-spec-v5@5061",
+  "context": "dashboard-spec-v5@5061 was sent to Analytics. The status line now reads:",
+  "bare": "Analytics acknowledged dashboard-spec-v5@5061.",
+  "ainglish": "Analytics ack-as-receipt(dashboard-spec-v5@5061).",
+  "english": "Analytics explicitly confirmed receipt and identification of dashboard-spec-v5@5061, without expressing agreement or disagreement.",
+  "practical_english": "Analytics confirmed receipt of dashboard-spec-v5@5061.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-09",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Analytics",
+  "reference": "dashboard-spec-v5@5061",
+  "context": "dashboard-spec-v5@5061 was sent to Analytics. The status line now reads:",
+  "bare": "Analytics acknowledged dashboard-spec-v5@5061.",
+  "ainglish": "Analytics ack-as-agreement(dashboard-spec-v5@5061).",
+  "english": "Analytics explicitly agreed with the content of dashboard-spec-v5@5061; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Analytics agreed with dashboard-spec-v5@5061.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-10",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Editorial",
+  "reference": "style-guide-v11@7283",
+  "context": "style-guide-v11@7283 was sent to Editorial. The status line now reads:",
+  "bare": "Editorial acknowledged style-guide-v11@7283.",
+  "ainglish": "Editorial ack-as-receipt(style-guide-v11@7283).",
+  "english": "Editorial explicitly confirmed receipt and identification of style-guide-v11@7283, without expressing agreement or disagreement.",
+  "practical_english": "Editorial confirmed receipt of style-guide-v11@7283.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-10",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Editorial",
+  "reference": "style-guide-v11@7283",
+  "context": "style-guide-v11@7283 was sent to Editorial. The status line now reads:",
+  "bare": "Editorial acknowledged style-guide-v11@7283.",
+  "ainglish": "Editorial ack-as-agreement(style-guide-v11@7283).",
+  "english": "Editorial explicitly agreed with the content of style-guide-v11@7283; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Editorial agreed with style-guide-v11@7283.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-11",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Accounts",
+  "reference": "invoice-run-0901@94a5",
+  "context": "invoice-run-0901@94a5 was sent to Accounts. The status line now reads:",
+  "bare": "Accounts acknowledged invoice-run-0901@94a5.",
+  "ainglish": "Accounts ack-as-receipt(invoice-run-0901@94a5).",
+  "english": "Accounts explicitly confirmed receipt and identification of invoice-run-0901@94a5, without expressing agreement or disagreement.",
+  "practical_english": "Accounts confirmed receipt of invoice-run-0901@94a5.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-11",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Accounts",
+  "reference": "invoice-run-0901@94a5",
+  "context": "invoice-run-0901@94a5 was sent to Accounts. The status line now reads:",
+  "bare": "Accounts acknowledged invoice-run-0901@94a5.",
+  "ainglish": "Accounts ack-as-agreement(invoice-run-0901@94a5).",
+  "english": "Accounts explicitly agreed with the content of invoice-run-0901@94a5; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Accounts agreed with invoice-run-0901@94a5.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-12",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Reception",
+  "reference": "visitor-log-policy-v2@b6c7",
+  "context": "visitor-log-policy-v2@b6c7 was sent to Reception. The status line now reads:",
+  "bare": "Reception acknowledged visitor-log-policy-v2@b6c7.",
+  "ainglish": "Reception ack-as-receipt(visitor-log-policy-v2@b6c7).",
+  "english": "Reception explicitly confirmed receipt and identification of visitor-log-policy-v2@b6c7, without expressing agreement or disagreement.",
+  "practical_english": "Reception confirmed receipt of visitor-log-policy-v2@b6c7.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-12",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Reception",
+  "reference": "visitor-log-policy-v2@b6c7",
+  "context": "visitor-log-policy-v2@b6c7 was sent to Reception. The status line now reads:",
+  "bare": "Reception acknowledged visitor-log-policy-v2@b6c7.",
+  "ainglish": "Reception ack-as-agreement(visitor-log-policy-v2@b6c7).",
+  "english": "Reception explicitly agreed with the content of visitor-log-policy-v2@b6c7; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Reception agreed with visitor-log-policy-v2@b6c7.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-13",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Training",
+  "reference": "onboarding-deck-v7@d8e9",
+  "context": "onboarding-deck-v7@d8e9 was sent to Training. The status line now reads:",
+  "bare": "Training acknowledged onboarding-deck-v7@d8e9.",
+  "ainglish": "Training ack-as-receipt(onboarding-deck-v7@d8e9).",
+  "english": "Training explicitly confirmed receipt and identification of onboarding-deck-v7@d8e9, without expressing agreement or disagreement.",
+  "practical_english": "Training confirmed receipt of onboarding-deck-v7@d8e9.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-13",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Training",
+  "reference": "onboarding-deck-v7@d8e9",
+  "context": "onboarding-deck-v7@d8e9 was sent to Training. The status line now reads:",
+  "bare": "Training acknowledged onboarding-deck-v7@d8e9.",
+  "ainglish": "Training ack-as-agreement(onboarding-deck-v7@d8e9).",
+  "english": "Training explicitly agreed with the content of onboarding-deck-v7@d8e9; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Training agreed with onboarding-deck-v7@d8e9.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-14",
+  "domain": "workplace_coordination",
+  "form": "receipt",
+  "principal": "Ops",
+  "reference": "desk-plan-sept@fa0b",
+  "context": "desk-plan-sept@fa0b was sent to Ops. The status line now reads:",
+  "bare": "Ops acknowledged desk-plan-sept@fa0b.",
+  "ainglish": "Ops ack-as-receipt(desk-plan-sept@fa0b).",
+  "english": "Ops explicitly confirmed receipt and identification of desk-plan-sept@fa0b, without expressing agreement or disagreement.",
+  "practical_english": "Ops confirmed receipt of desk-plan-sept@fa0b.",
+  "expected": {
+   "receipt": true,
+   "agreement": null,
+   "disagreement": null,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ },
+ {
+  "pair_id": "workplace_coordination-14",
+  "domain": "workplace_coordination",
+  "form": "agreement",
+  "principal": "Ops",
+  "reference": "desk-plan-sept@fa0b",
+  "context": "desk-plan-sept@fa0b was sent to Ops. The status line now reads:",
+  "bare": "Ops acknowledged desk-plan-sept@fa0b.",
+  "ainglish": "Ops ack-as-agreement(desk-plan-sept@fa0b).",
+  "english": "Ops explicitly agreed with the content of desk-plan-sept@fa0b; receipt is entailed, but authority and compliance are unasserted.",
+  "practical_english": "Ops agreed with desk-plan-sept@fa0b.",
+  "expected": {
+   "receipt": true,
+   "agreement": true,
+   "disagreement": false,
+   "authority": null,
+   "promise_to_comply": null
+  }
+ }
+]
