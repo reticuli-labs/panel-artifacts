@@ -1,0 +1,162 @@
+[
+ {
+  "form": "different-from",
+  "english": "Choice 01: select a dataset whose license-id is unequal to the reference dataset's license-id.",
+  "ainglish": "Choice 01: select a dataset different-from(reference-dataset, by=license-id)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 01: assign a dataset to every reviewer such that distinct reviewers' selected license-id values are pairwise unequal.",
+  "ainglish": "Choice 01: assign a dataset to every reviewer different-across(reviewers, by=license-id)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 02: select a image whose digest is unequal to the reference image's digest.",
+  "ainglish": "Choice 02: select a image different-from(reference-image, by=digest)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 02: assign a image to every reviewer such that distinct reviewers' selected digest values are pairwise unequal.",
+  "ainglish": "Choice 02: assign a image to every reviewer different-across(reviewers, by=digest)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 03: select a wallet whose owner-id is unequal to the reference wallet's owner-id.",
+  "ainglish": "Choice 03: select a wallet different-from(reference-wallet, by=owner-id)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 03: assign a wallet to every reviewer such that distinct reviewers' selected owner-id values are pairwise unequal.",
+  "ainglish": "Choice 03: assign a wallet to every reviewer different-across(reviewers, by=owner-id)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 04: select a compiler whose version is unequal to the reference compiler's version.",
+  "ainglish": "Choice 04: select a compiler different-from(reference-compiler, by=version)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 04: assign a compiler to every reviewer such that distinct reviewers' selected version values are pairwise unequal.",
+  "ainglish": "Choice 04: assign a compiler to every reviewer different-across(reviewers, by=version)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 05: select a font whose family is unequal to the reference font's family.",
+  "ainglish": "Choice 05: select a font different-from(reference-font, by=family)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 05: assign a font to every reviewer such that distinct reviewers' selected family values are pairwise unequal.",
+  "ainglish": "Choice 05: assign a font to every reviewer different-across(reviewers, by=family)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 06: select a mirror whose host is unequal to the reference mirror's host.",
+  "ainglish": "Choice 06: select a mirror different-from(reference-mirror, by=host)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 06: assign a mirror to every reviewer such that distinct reviewers' selected host values are pairwise unequal.",
+  "ainglish": "Choice 06: assign a mirror to every reviewer different-across(reviewers, by=host)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 07: select a prompt whose template-hash is unequal to the reference prompt's template-hash.",
+  "ainglish": "Choice 07: select a prompt different-from(reference-prompt, by=template-hash)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 07: assign a prompt to every reviewer such that distinct reviewers' selected template-hash values are pairwise unequal.",
+  "ainglish": "Choice 07: assign a prompt to every reviewer different-across(reviewers, by=template-hash)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 08: select a voice whose speaker-id is unequal to the reference voice's speaker-id.",
+  "ainglish": "Choice 08: select a voice different-from(reference-voice, by=speaker-id)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 08: assign a voice to every reviewer such that distinct reviewers' selected speaker-id values are pairwise unequal.",
+  "ainglish": "Choice 08: assign a voice to every reviewer different-across(reviewers, by=speaker-id)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 09: select a proxy whose exit-region is unequal to the reference proxy's exit-region.",
+  "ainglish": "Choice 09: select a proxy different-from(reference-proxy, by=exit-region)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 09: assign a proxy to every reviewer such that distinct reviewers' selected exit-region values are pairwise unequal.",
+  "ainglish": "Choice 09: assign a proxy to every reviewer different-across(reviewers, by=exit-region)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 10: select a tokenizer whose vocab-checksum is unequal to the reference tokenizer's vocab-checksum.",
+  "ainglish": "Choice 10: select a tokenizer different-from(reference-tokenizer, by=vocab-checksum)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 10: assign a tokenizer to every reviewer such that distinct reviewers' selected vocab-checksum values are pairwise unequal.",
+  "ainglish": "Choice 10: assign a tokenizer to every reviewer different-across(reviewers, by=vocab-checksum)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 11: select a judge whose operator is unequal to the reference judge's operator.",
+  "ainglish": "Choice 11: select a judge different-from(reference-judge, by=operator)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 11: assign a judge to every reviewer such that distinct reviewers' selected operator values are pairwise unequal.",
+  "ainglish": "Choice 11: assign a judge to every reviewer different-across(reviewers, by=operator)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 12: select a baseline whose commit is unequal to the reference baseline's commit.",
+  "ainglish": "Choice 12: select a baseline different-from(reference-baseline, by=commit)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 12: assign a baseline to every reviewer such that distinct reviewers' selected commit values are pairwise unequal.",
+  "ainglish": "Choice 12: assign a baseline to every reviewer different-across(reviewers, by=commit)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 13: select a microphone whose serial is unequal to the reference microphone's serial.",
+  "ainglish": "Choice 13: select a microphone different-from(reference-microphone, by=serial)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 13: assign a microphone to every reviewer such that distinct reviewers' selected serial values are pairwise unequal.",
+  "ainglish": "Choice 13: assign a microphone to every reviewer different-across(reviewers, by=serial)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 14: select a slice whose sha256 is unequal to the reference slice's sha256.",
+  "ainglish": "Choice 14: select a slice different-from(reference-slice, by=sha256)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 14: assign a slice to every reviewer such that distinct reviewers' selected sha256 values are pairwise unequal.",
+  "ainglish": "Choice 14: assign a slice to every reviewer different-across(reviewers, by=sha256)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 15: select a relay whose region is unequal to the reference relay's region.",
+  "ainglish": "Choice 15: select a relay different-from(reference-relay, by=region)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 15: assign a relay to every reviewer such that distinct reviewers' selected region values are pairwise unequal.",
+  "ainglish": "Choice 15: assign a relay to every reviewer different-across(reviewers, by=region)."
+ },
+ {
+  "form": "different-from",
+  "english": "Choice 16: select a ledger whose chain-id is unequal to the reference ledger's chain-id.",
+  "ainglish": "Choice 16: select a ledger different-from(reference-ledger, by=chain-id)."
+ },
+ {
+  "form": "different-across",
+  "english": "Choice 16: assign a ledger to every reviewer such that distinct reviewers' selected chain-id values are pairwise unequal.",
+  "ainglish": "Choice 16: assign a ledger to every reviewer different-across(reviewers, by=chain-id)."
+ }
+]
