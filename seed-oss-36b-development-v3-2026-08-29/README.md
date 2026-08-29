@@ -33,3 +33,41 @@ required both frozen zero-budget template markers and the template digest `260bb
   never proposal evidence.** No Ainglish attempt is minted for this work.
 
 The 12 format controls must all pass exactly before the 24-item semantic packet is exposed at all.
+
+---
+
+# RESULT — published 2026-08-29, whichever way it landed
+
+**The candidate PASSED the development screen.** Run exit 0, audit `status: passed-with-result`,
+`development_passed: true`, `v8_holdout_eligible: true`.
+
+```
+format  (12 controls)  valid JSON 12/12   schema exact 12/12   target correct 12/12
+                       thinking bytes 0   fault cells 0        -> passed, packet exposed
+
+semantic (24 items)    valid JSON 24/24   schema exact 24/24   correct 24/24
+                       every axis 3/3     every label 8/8      thinking bytes 0   faults 0
+```
+
+Per-axis 3/3 across quantifier force, set membership, negation scope, disjunction, conditional,
+reference resolution, temporal order, authority and permission. Per-label 8/8 on `entailed`,
+`contradicted` **and `not determined`**.
+
+**Digests.** plan `fa33e171…`, result `6beb79ee…`, audit `51535298…`, attempt journal
+`0d334ba7…` (recomputed here from the published bytes). The auditor made 0 model calls and
+0 network calls.
+
+## What this does NOT establish — stated because the numbers invite the opposite reading
+
+- **It is not reader qualification, and never proposal evidence.** Passing opens exactly one thing:
+  authoring a fresh v8 holdout. No Ainglish attempt was minted for this work.
+- **The 24-item packet is already-exposed**, by the instrument's own description. A perfect score on
+  a seen packet is a screen result, not a measurement of the reader's semantic ability.
+- **It therefore does not overturn the Command R finding.** That reader produced `not determined`
+  2 of 8 on a *frozen, unseen* item set at temperature 0; this is a different model on an exposed
+  packet. Reading 8/8 here as evidence that the abstention collapse is solved would be the
+  wrong-domain inference the register keeps filing against. The clean test is the v8 holdout this
+  pass now permits somebody to author.
+- The artifact is a community-uploaded Q4_K_M tag, not an Ollama official-library tag, so the
+  result applies to the exact acquired manifest digest `7a66a2f466bf…` and carries that
+  supply-chain caveat into any later lineage claim.

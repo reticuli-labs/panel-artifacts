@@ -1,0 +1,1408 @@
+{
+  "kind": "ainglish.panel.reticuli-reader-development-result.v3",
+  "evidentiary_status": "reader development only; never qualification or proposal evidence",
+  "plan_sha256": "fa33e1712716fb9a295409516432d4de0fe40776acb03f9f1b492fc75943777a",
+  "candidate": {
+    "lineage": "Seed-OSS 36B Instruct",
+    "producer": "ByteDance Seed Team",
+    "source_model": "milkey/Seed-OSS-36B-Instruct:Q4_K_M",
+    "source_manifest_sha256": "7a66a2f466bf48fdafa7004a7975a7f5fac6e667a6de7d01751aacb98b3f387c",
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking"
+    ],
+    "details": {
+      "family": "seed_oss",
+      "families": [
+        "seed_oss"
+      ],
+      "parameter_size": "36.2B",
+      "quantization_level": "Q4_K_M",
+      "format": "gguf"
+    },
+    "registry_reference": "https://ollama.com/milkey/Seed-OSS-36B-Instruct:Q4_K_M",
+    "official_model_reference": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "independence_caveat": "The full registry manifest is a community-uploaded Q4_K_M artifact rather than an Ollama official-library tag. Any result and later independence statement apply to the exact acquired digest and retain this provenance caveat.",
+    "thinking_control": {
+      "capability_expected": true,
+      "request_value": false,
+      "template_blob_digest_prefix": "260bb0ab1136",
+      "required_template_markers": [
+        "$thinking_budget = 0",
+        "The current thinking budget is 0, so I will directly start answering the question."
+      ],
+      "gate": "The builder refuses before the first call unless /api/show advertises thinking and its manifest-bound template contains both frozen zero-budget markers. Every response still must return zero thinking bytes."
+    },
+    "template_sha256": "260bb0ab1136b500ee639cffc19703df12098b065be34071b20904538c3c26e2"
+  },
+  "started_at": "2026-08-29T08:25:56.468502+00:00",
+  "completed_at": "2026-08-29T08:27:13.799919+00:00",
+  "preflight": {
+    "gpu_sampling": {
+      "samples": [
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23872,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23872,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23872,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23872,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23872,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23872,
+            "utilization": 4
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23862,
+            "utilization": 4
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23855,
+            "utilization": 4
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23855,
+            "utilization": 27
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23855,
+            "utilization": 27
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23855,
+            "utilization": 27
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23855,
+            "utilization": 27
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23855,
+            "utilization": 3
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23858,
+            "utilization": 3
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23858,
+            "utilization": 3
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23858,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23858,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23861,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23861,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23861,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23861,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23861,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23861,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23861,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23861,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23862,
+            "utilization": 0
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23865,
+            "utilization": 3
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23865,
+            "utilization": 3
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23865,
+            "utilization": 3
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ],
+        [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3090",
+            "free_mib": 23865,
+            "utilization": 5
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA GeForce RTX 3070",
+            "free_mib": 7826,
+            "utilization": 0
+          }
+        ]
+      ],
+      "minimum_total_free_mib_observed": 31681,
+      "maximum_device_utilization_median_percent": 0.0,
+      "maximum_device_utilization_p95_percent": 27,
+      "p95_method": "nearest-rank"
+    },
+    "compute_processes": [],
+    "resident_before": [],
+    "ollama_version": "0.32.7"
+  },
+  "attempt_journal": {
+    "file": "seed-oss-36b-development-v3-attempt-journal.jsonl",
+    "sha256": "0d334ba7cdbd37f58738d31d95bd2c94508ae3dfe0188907b2c48a9bce146ee5"
+  },
+  "format": {
+    "observed": {
+      "valid_json_cells": 12,
+      "schema_exact_cells": 12,
+      "target_correct_cells": 12,
+      "thinking_bytes": 0,
+      "fault_cells": 0
+    },
+    "passed": true,
+    "rows": [
+      {
+        "stage": "format",
+        "control_id": "format-01",
+        "target": "A",
+        "raw_output": "{\n  \"answer\": \"A\"\n}",
+        "raw_output_sha256": "bd527fde94be7d9f44666f9b17acd3c6706c9b29144015eb99b16a8fad6ccd19",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 56613513185,
+          "load_duration": 55898423593,
+          "prompt_eval_count": 126,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-02",
+        "target": "B",
+        "raw_output": "{\n  \"answer\": \"B\"\n}",
+        "raw_output_sha256": "4d8c5edacb2a841e610169296be34a77d0c06ada972c64dfca4ae7feba491561",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 709560842,
+          "load_duration": 189330198,
+          "prompt_eval_count": 126,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-03",
+        "target": "C",
+        "raw_output": "{\n  \"answer\": \"C\"\n}",
+        "raw_output_sha256": "ac7f56fe2fcbf719602ec408e613bf409ff402849c8740e5536fcf527569ce4c",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 719042465,
+          "load_duration": 196846329,
+          "prompt_eval_count": 126,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-04",
+        "target": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 497949217,
+          "load_duration": 169063088,
+          "prompt_eval_count": 124,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-05",
+        "target": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 526529116,
+          "load_duration": 190459737,
+          "prompt_eval_count": 124,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-06",
+        "target": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 524880361,
+          "load_duration": 193264806,
+          "prompt_eval_count": 124,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-07",
+        "target": "A",
+        "raw_output": "{\n  \"answer\": \"A\"\n}",
+        "raw_output_sha256": "bd527fde94be7d9f44666f9b17acd3c6706c9b29144015eb99b16a8fad6ccd19",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 698305989,
+          "load_duration": 178841264,
+          "prompt_eval_count": 124,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-08",
+        "target": "B",
+        "raw_output": "{\n  \"answer\": \"B\"\n}",
+        "raw_output_sha256": "4d8c5edacb2a841e610169296be34a77d0c06ada972c64dfca4ae7feba491561",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 711686639,
+          "load_duration": 185463599,
+          "prompt_eval_count": 124,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-09",
+        "target": "C",
+        "raw_output": "{\n  \"answer\": \"C\"\n}",
+        "raw_output_sha256": "ac7f56fe2fcbf719602ec408e613bf409ff402849c8740e5536fcf527569ce4c",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 699836969,
+          "load_duration": 182057271,
+          "prompt_eval_count": 124,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-10",
+        "target": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 634789387,
+          "load_duration": 199205366,
+          "prompt_eval_count": 126,
+          "eval_count": 9
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-11",
+        "target": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 604750507,
+          "load_duration": 169345196,
+          "prompt_eval_count": 126,
+          "eval_count": 9
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-12",
+        "target": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 519589940,
+          "load_duration": 173464972,
+          "prompt_eval_count": 126,
+          "eval_count": 7
+        }
+      }
+    ]
+  },
+  "semantic": {
+    "exposed": true,
+    "observed": {
+      "valid_json_cells": 24,
+      "schema_exact_cells": 24,
+      "correct_cells": 24,
+      "correct_by_axis": {
+        "quantifier_force": 3,
+        "set_membership": 3,
+        "negation_scope": 3,
+        "disjunction": 3,
+        "conditional": 3,
+        "reference_resolution": 3,
+        "temporal_order": 3,
+        "authority_and_permission": 3
+      },
+      "correct_by_label": {
+        "entailed": 8,
+        "contradicted": 8,
+        "not determined": 8
+      },
+      "thinking_bytes": 0,
+      "fault_cells": 0
+    },
+    "passed": true,
+    "rows": [
+      {
+        "stage": "semantic",
+        "item_id": "cal-qf-01",
+        "axis": "quantifier_force",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 628045004,
+          "load_duration": 175259916,
+          "prompt_eval_count": 199,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-qf-02",
+        "axis": "quantifier_force",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 556929065,
+          "load_duration": 185754369,
+          "prompt_eval_count": 197,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-qf-03",
+        "axis": "quantifier_force",
+        "expected_label": "not determined",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 570625590,
+          "load_duration": 200543026,
+          "prompt_eval_count": 198,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-sm-01",
+        "axis": "set_membership",
+        "expected_label": "entailed",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 572862438,
+          "load_duration": 185489789,
+          "prompt_eval_count": 209,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-sm-02",
+        "axis": "set_membership",
+        "expected_label": "not determined",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 553981240,
+          "load_duration": 181077695,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-sm-03",
+        "axis": "set_membership",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 559140263,
+          "load_duration": 184604529,
+          "prompt_eval_count": 201,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-ns-01",
+        "axis": "negation_scope",
+        "expected_label": "entailed",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 565589416,
+          "load_duration": 194648178,
+          "prompt_eval_count": 192,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-ns-02",
+        "axis": "negation_scope",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 575394736,
+          "load_duration": 198810510,
+          "prompt_eval_count": 194,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-ns-03",
+        "axis": "negation_scope",
+        "expected_label": "not determined",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 562457679,
+          "load_duration": 186325027,
+          "prompt_eval_count": 197,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-dj-01",
+        "axis": "disjunction",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 570631835,
+          "load_duration": 181063918,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-dj-02",
+        "axis": "disjunction",
+        "expected_label": "not determined",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 570069437,
+          "load_duration": 191947092,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-dj-03",
+        "axis": "disjunction",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 557715387,
+          "load_duration": 184235257,
+          "prompt_eval_count": 199,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-co-01",
+        "axis": "conditional",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 544036351,
+          "load_duration": 169916504,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-co-02",
+        "axis": "conditional",
+        "expected_label": "contradicted",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 556238164,
+          "load_duration": 170361439,
+          "prompt_eval_count": 206,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-co-03",
+        "axis": "conditional",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 573047501,
+          "load_duration": 200153804,
+          "prompt_eval_count": 201,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-rr-01",
+        "axis": "reference_resolution",
+        "expected_label": "entailed",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 540240936,
+          "load_duration": 169349608,
+          "prompt_eval_count": 201,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-rr-02",
+        "axis": "reference_resolution",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 558959199,
+          "load_duration": 185876785,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-rr-03",
+        "axis": "reference_resolution",
+        "expected_label": "not determined",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 568297143,
+          "load_duration": 193836657,
+          "prompt_eval_count": 198,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-to-01",
+        "axis": "temporal_order",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 561689507,
+          "load_duration": 190309124,
+          "prompt_eval_count": 198,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-to-02",
+        "axis": "temporal_order",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 557475623,
+          "load_duration": 180959016,
+          "prompt_eval_count": 195,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-to-03",
+        "axis": "temporal_order",
+        "expected_label": "not determined",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 543771164,
+          "load_duration": 170118124,
+          "prompt_eval_count": 199,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-ap-01",
+        "axis": "authority_and_permission",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 551649254,
+          "load_duration": 177952632,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-ap-02",
+        "axis": "authority_and_permission",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 564808732,
+          "load_duration": 173016941,
+          "prompt_eval_count": 208,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "cal-ap-03",
+        "axis": "authority_and_permission",
+        "expected_label": "contradicted",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 561955381,
+          "load_duration": 178585019,
+          "prompt_eval_count": 209,
+          "eval_count": 7
+        }
+      }
+    ]
+  },
+  "v8_holdout_eligible": true,
+  "content_sha256": "6beb79ee98231d7f8b8d60bd7363c1d24f31880d7d5f37fb502dfb955b6d6c95"
+}
