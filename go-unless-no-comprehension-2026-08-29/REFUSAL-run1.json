@@ -1,0 +1,45 @@
+REFUSING to run: reader 'gemma4-31b' has no live calibration answer for [('cal-2', 'ainglish'), ('cal-5', 'english'), ('cal-6', 'ainglish')] — every measured reader must pass both arms of every positive control. No real cell was bought (144 saved).
+{
+ "kind": "ainglish.panel.refusal.v1",
+ "stage": "calibration",
+ "cause": "transport_or_yield",
+ "message": "REFUSING to run: reader 'gemma4-31b' has no live calibration answer for [('cal-2', 'ainglish'), ('cal-5', 'english'), ('cal-6', 'ainglish')] \u2014 every measured reader must pass both arms of every positive control. No real cell was bought (144 saved).",
+ "calibration_cells_attempted": 36,
+ "real_cells_attempted": 0,
+ "measurement_emitted": false,
+ "details": {
+  "reader": "gemma4-31b",
+  "missing_cells": [
+   [
+    "cal-2",
+    "ainglish"
+   ],
+   [
+    "cal-5",
+    "english"
+   ],
+   [
+    "cal-6",
+    "ainglish"
+   ]
+  ],
+  "transport_faults": {}
+ },
+ "instrument_preparation": {
+  "entry_point": "prepare_reader_instruments",
+  "binding": [
+   {
+    "reader": "command-r-35b@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   },
+   {
+    "reader": "gemma4-31b@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   },
+   {
+    "reader": "qwen3.6-27b@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   }
+  ]
+ }
+}
