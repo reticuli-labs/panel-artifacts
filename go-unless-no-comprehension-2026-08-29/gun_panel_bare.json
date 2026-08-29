@@ -1,0 +1,674 @@
+[
+ {
+  "id": "gun-01-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “merge PR 330. let me know if you have concerns.” Blake sent nothing before that time. It is now after 17:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “merge PR 330, go-unless-no(17:00 on Friday).” Blake sent nothing before that time. It is now after 17:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "PR 330 is closed and its commits are on master",
+   "PR 330 remains open",
+   "cannot tell from the message"
+  ],
+  "answer": "PR 330 is closed and its commits are on master"
+ },
+ {
+  "id": "gun-02-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “merge PR 330 until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 17:00 on Friday.. please confirm.” Blake replied telling Avery to proceed. It is now after 17:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “merge PR 330, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 17:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "PR 330 is closed and its commits are on master",
+   "PR 330 remains open",
+   "cannot tell from the message"
+  ],
+  "answer": "PR 330 is closed and its commits are on master"
+ },
+ {
+  "id": "gun-03-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “publish the v2 changelog. thoughts?” Blake sent nothing before that time. It is now after 09:00 on Monday.",
+  "ainglish": "Avery wrote to Blake: “publish the v2 changelog, go-unless-no(09:00 on Monday).” Blake sent nothing before that time. It is now after 09:00 on Monday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the v2 changelog is reachable at its live URL",
+   "the v2 changelog exists only as a draft",
+   "cannot tell from the message"
+  ],
+  "answer": "the v2 changelog is reachable at its live URL"
+ },
+ {
+  "id": "gun-04-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “publish the v2 changelog until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 09:00 on Monday.. I'll proceed unless I hear otherwise.” Blake replied telling Avery to proceed. It is now after 09:00 on Monday.",
+  "ainglish": "Avery wrote to Blake: “publish the v2 changelog, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 09:00 on Monday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the v2 changelog is reachable at its live URL",
+   "the v2 changelog exists only as a draft",
+   "cannot tell from the message"
+  ],
+  "answer": "the v2 changelog is reachable at its live URL"
+ },
+ {
+  "id": "gun-05-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “rotate the signing key. shout if this is wrong.” Blake sent nothing before that time. It is now after noon on Wednesday.",
+  "ainglish": "Avery wrote to Blake: “rotate the signing key, go-unless-no(noon on Wednesday).” Blake sent nothing before that time. It is now after noon on Wednesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the registry lists a fresh fingerprint",
+   "the registry lists the previous fingerprint",
+   "cannot tell from the message"
+  ],
+  "answer": "the registry lists a fresh fingerprint"
+ },
+ {
+  "id": "gun-06-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “rotate the signing key until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after noon on Wednesday.. waiting on your go-ahead.” Blake replied telling Avery to proceed. It is now after noon on Wednesday.",
+  "ainglish": "Avery wrote to Blake: “rotate the signing key, hold-until-yes.” Blake replied telling Avery to proceed. It is now after noon on Wednesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the registry lists a fresh fingerprint",
+   "the registry lists the previous fingerprint",
+   "cannot tell from the message"
+  ],
+  "answer": "the registry lists a fresh fingerprint"
+ },
+ {
+  "id": "gun-07-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “archive the Q3 dataset. let me know if you have concerns.” Blake sent nothing before that time. It is now after 18:30 on Thursday.",
+  "ainglish": "Avery wrote to Blake: “archive the Q3 dataset, go-unless-no(18:30 on Thursday).” Blake sent nothing before that time. It is now after 18:30 on Thursday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the Q3 dataset sits in cold storage",
+   "the Q3 dataset sits in the working bucket",
+   "cannot tell from the message"
+  ],
+  "answer": "the Q3 dataset sits in cold storage"
+ },
+ {
+  "id": "gun-08-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “archive the Q3 dataset until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 18:30 on Thursday.. please confirm.” Blake replied telling Avery to proceed. It is now after 18:30 on Thursday.",
+  "ainglish": "Avery wrote to Blake: “archive the Q3 dataset, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 18:30 on Thursday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the Q3 dataset sits in cold storage",
+   "the Q3 dataset sits in the working bucket",
+   "cannot tell from the message"
+  ],
+  "answer": "the Q3 dataset sits in cold storage"
+ },
+ {
+  "id": "gun-09-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “cancel the vendor contract. thoughts?” Blake sent nothing before that time. It is now after 08:00 on Tuesday.",
+  "ainglish": "Avery wrote to Blake: “cancel the vendor contract, go-unless-no(08:00 on Tuesday).” Blake sent nothing before that time. It is now after 08:00 on Tuesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the vendor relationship has ended",
+   "the vendor relationship continues",
+   "cannot tell from the message"
+  ],
+  "answer": "the vendor relationship has ended"
+ },
+ {
+  "id": "gun-10-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “cancel the vendor contract until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 08:00 on Tuesday.. I'll proceed unless I hear otherwise.” Blake replied telling Avery to proceed. It is now after 08:00 on Tuesday.",
+  "ainglish": "Avery wrote to Blake: “cancel the vendor contract, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 08:00 on Tuesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the vendor relationship has ended",
+   "the vendor relationship continues",
+   "cannot tell from the message"
+  ],
+  "answer": "the vendor relationship has ended"
+ },
+ {
+  "id": "gun-11-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “deploy build 41. shout if this is wrong.” Blake sent nothing before that time. It is now after 15:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “deploy build 41, go-unless-no(15:00 on Friday).” Blake sent nothing before that time. It is now after 15:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the production host answers as build 41",
+   "the production host answers as build 40",
+   "cannot tell from the message"
+  ],
+  "answer": "the production host answers as build 41"
+ },
+ {
+  "id": "gun-12-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “deploy build 41 until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 15:00 on Friday.. waiting on your go-ahead.” Blake replied telling Avery to proceed. It is now after 15:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “deploy build 41, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 15:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the production host answers as build 41",
+   "the production host answers as build 40",
+   "cannot tell from the message"
+  ],
+  "answer": "the production host answers as build 41"
+ },
+ {
+  "id": "gun-13-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “delete the stale branch. let me know if you have concerns.” Blake sent nothing before that time. It is now after 17:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “delete the stale branch, go-unless-no(17:00 on Friday).” Blake sent nothing before that time. It is now after 17:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the branch is absent from the remote",
+   "the branch is present on the remote",
+   "cannot tell from the message"
+  ],
+  "answer": "the branch is absent from the remote"
+ },
+ {
+  "id": "gun-14-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “delete the stale branch until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 17:00 on Friday.. please confirm.” Blake replied telling Avery to proceed. It is now after 17:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “delete the stale branch, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 17:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the branch is absent from the remote",
+   "the branch is present on the remote",
+   "cannot tell from the message"
+  ],
+  "answer": "the branch is absent from the remote"
+ },
+ {
+  "id": "gun-15-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “send the investor update. thoughts?” Blake sent nothing before that time. It is now after 09:00 on Monday.",
+  "ainglish": "Avery wrote to Blake: “send the investor update, go-unless-no(09:00 on Monday).” Blake sent nothing before that time. It is now after 09:00 on Monday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the update sits in the investors' inboxes",
+   "the update sits in the drafts folder",
+   "cannot tell from the message"
+  ],
+  "answer": "the update sits in the investors' inboxes"
+ },
+ {
+  "id": "gun-16-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “send the investor update until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 09:00 on Monday.. I'll proceed unless I hear otherwise.” Blake replied telling Avery to proceed. It is now after 09:00 on Monday.",
+  "ainglish": "Avery wrote to Blake: “send the investor update, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 09:00 on Monday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the update sits in the investors' inboxes",
+   "the update sits in the drafts folder",
+   "cannot tell from the message"
+  ],
+  "answer": "the update sits in the investors' inboxes"
+ },
+ {
+  "id": "gun-17-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “lock the pricing page. shout if this is wrong.” Blake sent nothing before that time. It is now after noon on Wednesday.",
+  "ainglish": "Avery wrote to Blake: “lock the pricing page, go-unless-no(noon on Wednesday).” Blake sent nothing before that time. It is now after noon on Wednesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the pricing page rejects edits",
+   "the pricing page accepts edits",
+   "cannot tell from the message"
+  ],
+  "answer": "the pricing page rejects edits"
+ },
+ {
+  "id": "gun-18-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “lock the pricing page until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after noon on Wednesday.. waiting on your go-ahead.” Blake replied telling Avery to proceed. It is now after noon on Wednesday.",
+  "ainglish": "Avery wrote to Blake: “lock the pricing page, hold-until-yes.” Blake replied telling Avery to proceed. It is now after noon on Wednesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the pricing page rejects edits",
+   "the pricing page accepts edits",
+   "cannot tell from the message"
+  ],
+  "answer": "the pricing page rejects edits"
+ },
+ {
+  "id": "gun-19-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “restore the 02:00 snapshot. let me know if you have concerns.” Blake sent nothing before that time. It is now after 18:30 on Thursday.",
+  "ainglish": "Avery wrote to Blake: “restore the 02:00 snapshot, go-unless-no(18:30 on Thursday).” Blake sent nothing before that time. It is now after 18:30 on Thursday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the database contents match the 02:00 state",
+   "the database contents match this morning's state",
+   "cannot tell from the message"
+  ],
+  "answer": "the database contents match the 02:00 state"
+ },
+ {
+  "id": "gun-20-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “restore the 02:00 snapshot until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 18:30 on Thursday.. please confirm.” Blake replied telling Avery to proceed. It is now after 18:30 on Thursday.",
+  "ainglish": "Avery wrote to Blake: “restore the 02:00 snapshot, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 18:30 on Thursday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the database contents match the 02:00 state",
+   "the database contents match this morning's state",
+   "cannot tell from the message"
+  ],
+  "answer": "the database contents match the 02:00 state"
+ },
+ {
+  "id": "gun-21-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “revoke Dana's token. thoughts?” Blake sent nothing before that time. It is now after 08:00 on Tuesday.",
+  "ainglish": "Avery wrote to Blake: “revoke Dana's token, go-unless-no(08:00 on Tuesday).” Blake sent nothing before that time. It is now after 08:00 on Tuesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "Dana's token fails authentication",
+   "Dana's token still authenticates",
+   "cannot tell from the message"
+  ],
+  "answer": "Dana's token fails authentication"
+ },
+ {
+  "id": "gun-22-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “revoke Dana's token until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 08:00 on Tuesday.. I'll proceed unless I hear otherwise.” Blake replied telling Avery to proceed. It is now after 08:00 on Tuesday.",
+  "ainglish": "Avery wrote to Blake: “revoke Dana's token, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 08:00 on Tuesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "Dana's token fails authentication",
+   "Dana's token still authenticates",
+   "cannot tell from the message"
+  ],
+  "answer": "Dana's token fails authentication"
+ },
+ {
+  "id": "gun-23-bare",
+  "form": "go-unless-no",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “mint the release tag. shout if this is wrong.” Blake sent nothing before that time. It is now after 15:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “mint the release tag, go-unless-no(15:00 on Friday).” Blake sent nothing before that time. It is now after 15:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the tag resolves on the remote",
+   "the remote lacks that tag",
+   "cannot tell from the message"
+  ],
+  "answer": "the tag resolves on the remote"
+ },
+ {
+  "id": "gun-24-bare",
+  "form": "hold-until-yes",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “mint the release tag until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake replied telling Avery to proceed. It is now after 15:00 on Friday.. waiting on your go-ahead.” Blake replied telling Avery to proceed. It is now after 15:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “mint the release tag, hold-until-yes.” Blake replied telling Avery to proceed. It is now after 15:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the tag resolves on the remote",
+   "the remote lacks that tag",
+   "cannot tell from the message"
+  ],
+  "answer": "the tag resolves on the remote"
+ },
+ {
+  "id": "gun-25-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “transfer the domain. let me know if you have concerns.” Blake replied well before 17:00 on Friday asking Avery not to. It is now after 17:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “transfer the domain, go-unless-no(17:00 on Friday).” Blake replied well before 17:00 on Friday asking Avery not to. It is now after 17:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the domain sits in the new registrar account",
+   "the domain sits in the former registrar account",
+   "cannot tell from the message"
+  ],
+  "answer": "the domain sits in the former registrar account"
+ },
+ {
+  "id": "gun-26-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “transfer the domain until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. please confirm.” Blake sent nothing at all. It is now after 17:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “transfer the domain, hold-until-yes.” Blake sent nothing at all. It is now after 17:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the domain sits in the new registrar account",
+   "the domain sits in the former registrar account",
+   "cannot tell from the message"
+  ],
+  "answer": "the domain sits in the former registrar account"
+ },
+ {
+  "id": "gun-27-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “purge the CDN cache. thoughts?” Blake replied well before 09:00 on Monday asking Avery not to. It is now after 09:00 on Monday.",
+  "ainglish": "Avery wrote to Blake: “purge the CDN cache, go-unless-no(09:00 on Monday).” Blake replied well before 09:00 on Monday asking Avery not to. It is now after 09:00 on Monday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "visitors receive freshly generated pages",
+   "visitors receive stored copies",
+   "cannot tell from the message"
+  ],
+  "answer": "visitors receive stored copies"
+ },
+ {
+  "id": "gun-28-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “purge the CDN cache until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. I'll proceed unless I hear otherwise.” Blake sent nothing at all. It is now after 09:00 on Monday.",
+  "ainglish": "Avery wrote to Blake: “purge the CDN cache, hold-until-yes.” Blake sent nothing at all. It is now after 09:00 on Monday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "visitors receive freshly generated pages",
+   "visitors receive stored copies",
+   "cannot tell from the message"
+  ],
+  "answer": "visitors receive stored copies"
+ },
+ {
+  "id": "gun-29-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “close the funding round. shout if this is wrong.” Blake replied well before noon on Wednesday asking Avery not to. It is now after noon on Wednesday.",
+  "ainglish": "Avery wrote to Blake: “close the funding round, go-unless-no(noon on Wednesday).” Blake replied well before noon on Wednesday asking Avery not to. It is now after noon on Wednesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the cap table marks the round final",
+   "the cap table marks the round open",
+   "cannot tell from the message"
+  ],
+  "answer": "the cap table marks the round open"
+ },
+ {
+  "id": "gun-30-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “close the funding round until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. waiting on your go-ahead.” Blake sent nothing at all. It is now after noon on Wednesday.",
+  "ainglish": "Avery wrote to Blake: “close the funding round, hold-until-yes.” Blake sent nothing at all. It is now after noon on Wednesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the cap table marks the round final",
+   "the cap table marks the round open",
+   "cannot tell from the message"
+  ],
+  "answer": "the cap table marks the round open"
+ },
+ {
+  "id": "gun-31-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “disable the legacy endpoint. let me know if you have concerns.” Blake replied well before 18:30 on Thursday asking Avery not to. It is now after 18:30 on Thursday.",
+  "ainglish": "Avery wrote to Blake: “disable the legacy endpoint, go-unless-no(18:30 on Thursday).” Blake replied well before 18:30 on Thursday asking Avery not to. It is now after 18:30 on Thursday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "requests to the legacy path receive an error",
+   "requests to the legacy path receive data",
+   "cannot tell from the message"
+  ],
+  "answer": "requests to the legacy path receive data"
+ },
+ {
+  "id": "gun-32-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “disable the legacy endpoint until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. please confirm.” Blake sent nothing at all. It is now after 18:30 on Thursday.",
+  "ainglish": "Avery wrote to Blake: “disable the legacy endpoint, hold-until-yes.” Blake sent nothing at all. It is now after 18:30 on Thursday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "requests to the legacy path receive an error",
+   "requests to the legacy path receive data",
+   "cannot tell from the message"
+  ],
+  "answer": "requests to the legacy path receive data"
+ },
+ {
+  "id": "gun-33-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “hand the pager to Wren. thoughts?” Blake replied well before 08:00 on Tuesday asking Avery not to. It is now after 08:00 on Tuesday.",
+  "ainglish": "Avery wrote to Blake: “hand the pager to Wren, go-unless-no(08:00 on Tuesday).” Blake replied well before 08:00 on Tuesday asking Avery not to. It is now after 08:00 on Tuesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the alerts reach Wren",
+   "the alerts continue reaching Rafi",
+   "cannot tell from the message"
+  ],
+  "answer": "the alerts continue reaching Rafi"
+ },
+ {
+  "id": "gun-34-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “hand the pager to Wren until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. I'll proceed unless I hear otherwise.” Blake sent nothing at all. It is now after 08:00 on Tuesday.",
+  "ainglish": "Avery wrote to Blake: “hand the pager to Wren, hold-until-yes.” Blake sent nothing at all. It is now after 08:00 on Tuesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the alerts reach Wren",
+   "the alerts continue reaching Rafi",
+   "cannot tell from the message"
+  ],
+  "answer": "the alerts continue reaching Rafi"
+ },
+ {
+  "id": "gun-35-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “freeze the item set. shout if this is wrong.” Blake replied well before 15:00 on Friday asking Avery not to. It is now after 15:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “freeze the item set, go-unless-no(15:00 on Friday).” Blake replied well before 15:00 on Friday asking Avery not to. It is now after 15:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the item set carries an immutable digest",
+   "the item set remains editable",
+   "cannot tell from the message"
+  ],
+  "answer": "the item set remains editable"
+ },
+ {
+  "id": "gun-36-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “freeze the item set until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. waiting on your go-ahead.” Blake sent nothing at all. It is now after 15:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “freeze the item set, hold-until-yes.” Blake sent nothing at all. It is now after 15:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the item set carries an immutable digest",
+   "the item set remains editable",
+   "cannot tell from the message"
+  ],
+  "answer": "the item set remains editable"
+ },
+ {
+  "id": "gun-37-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “anonymise the survey export. let me know if you have concerns.” Blake replied well before 17:00 on Friday asking Avery not to. It is now after 17:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “anonymise the survey export, go-unless-no(17:00 on Friday).” Blake replied well before 17:00 on Friday asking Avery not to. It is now after 17:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the export omits participant names",
+   "the export includes participant names",
+   "cannot tell from the message"
+  ],
+  "answer": "the export includes participant names"
+ },
+ {
+  "id": "gun-38-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “anonymise the survey export until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. please confirm.” Blake sent nothing at all. It is now after 17:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “anonymise the survey export, hold-until-yes.” Blake sent nothing at all. It is now after 17:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the export omits participant names",
+   "the export includes participant names",
+   "cannot tell from the message"
+  ],
+  "answer": "the export includes participant names"
+ },
+ {
+  "id": "gun-39-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “block out the maintenance window. thoughts?” Blake replied well before 09:00 on Monday asking Avery not to. It is now after 09:00 on Monday.",
+  "ainglish": "Avery wrote to Blake: “block out the maintenance window, go-unless-no(09:00 on Monday).” Blake replied well before 09:00 on Monday asking Avery not to. It is now after 09:00 on Monday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the calendar shows that hour unavailable",
+   "the calendar shows that hour free",
+   "cannot tell from the message"
+  ],
+  "answer": "the calendar shows that hour free"
+ },
+ {
+  "id": "gun-40-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “block out the maintenance window until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. I'll proceed unless I hear otherwise.” Blake sent nothing at all. It is now after 09:00 on Monday.",
+  "ainglish": "Avery wrote to Blake: “block out the maintenance window, hold-until-yes.” Blake sent nothing at all. It is now after 09:00 on Monday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the calendar shows that hour unavailable",
+   "the calendar shows that hour free",
+   "cannot tell from the message"
+  ],
+  "answer": "the calendar shows that hour free"
+ },
+ {
+  "id": "gun-41-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “escalate the incident to sev-1. shout if this is wrong.” Blake replied well before noon on Wednesday asking Avery not to. It is now after noon on Wednesday.",
+  "ainglish": "Avery wrote to Blake: “escalate the incident to sev-1, go-unless-no(noon on Wednesday).” Blake replied well before noon on Wednesday asking Avery not to. It is now after noon on Wednesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the incident carries a sev-1 label",
+   "the incident carries a sev-2 label",
+   "cannot tell from the message"
+  ],
+  "answer": "the incident carries a sev-2 label"
+ },
+ {
+  "id": "gun-42-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “escalate the incident to sev-1 until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. waiting on your go-ahead.” Blake sent nothing at all. It is now after noon on Wednesday.",
+  "ainglish": "Avery wrote to Blake: “escalate the incident to sev-1, hold-until-yes.” Blake sent nothing at all. It is now after noon on Wednesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the incident carries a sev-1 label",
+   "the incident carries a sev-2 label",
+   "cannot tell from the message"
+  ],
+  "answer": "the incident carries a sev-2 label"
+ },
+ {
+  "id": "gun-43-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “execute the partnership letter. let me know if you have concerns.” Blake replied well before 18:30 on Thursday asking Avery not to. It is now after 18:30 on Thursday.",
+  "ainglish": "Avery wrote to Blake: “execute the partnership letter, go-unless-no(18:30 on Thursday).” Blake replied well before 18:30 on Thursday asking Avery not to. It is now after 18:30 on Thursday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the letter bears both parties' marks",
+   "the letter bears one party's mark",
+   "cannot tell from the message"
+  ],
+  "answer": "the letter bears one party's mark"
+ },
+ {
+  "id": "gun-44-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “execute the partnership letter until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. please confirm.” Blake sent nothing at all. It is now after 18:30 on Thursday.",
+  "ainglish": "Avery wrote to Blake: “execute the partnership letter, hold-until-yes.” Blake sent nothing at all. It is now after 18:30 on Thursday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the letter bears both parties' marks",
+   "the letter bears one party's mark",
+   "cannot tell from the message"
+  ],
+  "answer": "the letter bears one party's mark"
+ },
+ {
+  "id": "gun-45-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “retire the beta flag. thoughts?” Blake replied well before 08:00 on Tuesday asking Avery not to. It is now after 08:00 on Tuesday.",
+  "ainglish": "Avery wrote to Blake: “retire the beta flag, go-unless-no(08:00 on Tuesday).” Blake replied well before 08:00 on Tuesday asking Avery not to. It is now after 08:00 on Tuesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "every user receives the new behaviour",
+   "only opted-in users receive the new behaviour",
+   "cannot tell from the message"
+  ],
+  "answer": "only opted-in users receive the new behaviour"
+ },
+ {
+  "id": "gun-46-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “retire the beta flag until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. I'll proceed unless I hear otherwise.” Blake sent nothing at all. It is now after 08:00 on Tuesday.",
+  "ainglish": "Avery wrote to Blake: “retire the beta flag, hold-until-yes.” Blake sent nothing at all. It is now after 08:00 on Tuesday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "every user receives the new behaviour",
+   "only opted-in users receive the new behaviour",
+   "cannot tell from the message"
+  ],
+  "answer": "only opted-in users receive the new behaviour"
+ },
+ {
+  "id": "gun-47-bare",
+  "form": "go-unless-no",
+  "behaviour": "replying",
+  "english": "Avery wrote to Blake: “wipe the test tenant. shout if this is wrong.” Blake replied well before 15:00 on Friday asking Avery not to. It is now after 15:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “wipe the test tenant, go-unless-no(15:00 on Friday).” Blake replied well before 15:00 on Friday asking Avery not to. It is now after 15:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the test tenant is empty",
+   "the test tenant keeps its previous records",
+   "cannot tell from the message"
+  ],
+  "answer": "the test tenant keeps its previous records"
+ },
+ {
+  "id": "gun-48-bare",
+  "form": "hold-until-yes",
+  "behaviour": "silent",
+  "english": "Avery wrote to Blake: “wipe the test tenant until you explicitly tell me to go ahead; if I hear nothing from you, proceed.” Blake sent nothing. waiting on your go-ahead.” Blake sent nothing at all. It is now after 15:00 on Friday.",
+  "ainglish": "Avery wrote to Blake: “wipe the test tenant, hold-until-yes.” Blake sent nothing at all. It is now after 15:00 on Friday.",
+  "question": "What is the state of the world now?",
+  "options": [
+   "the test tenant is empty",
+   "the test tenant keeps its previous records",
+   "cannot tell from the message"
+  ],
+  "answer": "the test tenant keeps its previous records"
+ }
+]
