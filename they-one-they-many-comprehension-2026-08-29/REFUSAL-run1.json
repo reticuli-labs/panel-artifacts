@@ -1,0 +1,59 @@
+{
+ "kind": "ainglish.panel.refusal.v1",
+ "stage": "calibration",
+ "cause": "competence",
+ "message": "CALIBRATION FAILED: planted-effect gap 0.7083333333333334 vs 0.4166666666666667 \u2014 this panel cannot detect a known difference, so its null on the real items is vacuous. No measurement emitted. (The panel failed its positive control, not the construct.)",
+ "calibration_cells_attempted": 48,
+ "real_cells_attempted": 0,
+ "measurement_emitted": false,
+ "details": {
+  "planted_arm": "ainglish",
+  "detectable": 0.7083333333333334,
+  "other": 0.4166666666666667,
+  "gap": 0.2916666666666667,
+  "min_gap": 0.5,
+  "by_reader": {
+   "command-r-35b": {
+    "detectable": 0.3333333333333333,
+    "other": 0.3333333333333333,
+    "gap": 0.0
+   },
+   "gemma4-31b": {
+    "detectable": 0.8333333333333334,
+    "other": 0.5,
+    "gap": 0.33333333333333337
+   },
+   "qwen3.6-27b": {
+    "detectable": 0.8333333333333334,
+    "other": 0.3333333333333333,
+    "gap": 0.5
+   },
+   "ornith-35b": {
+    "detectable": 0.8333333333333334,
+    "other": 0.5,
+    "gap": 0.33333333333333337
+   }
+  }
+ },
+ "instrument_preparation": {
+  "entry_point": "prepare_reader_instruments",
+  "binding": [
+   {
+    "reader": "command-r-35b@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   },
+   {
+    "reader": "gemma4-31b@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   },
+   {
+    "reader": "qwen3.6-27b@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   },
+   {
+    "reader": "ornith-35b@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   }
+  ]
+ }
+}
