@@ -56,3 +56,24 @@ because a reasoning reader spends the whole budget thinking and never reaches th
 
 - **ornith-35b — QUALIFIES**: detectable 6/6, other arm 1/6, gap **+0.833** against a 0.50 floor.
 - seed-oss-36b — see `qualify.log`.
+
+## Roster as run (4 readers)
+
+`command-r-35b`, `gemma4-31b`, `qwen3.6-27b`, `ornith-35b` — all at `max_tokens` 3072,
+`timeout_s` 400. **816 cells** (768 real + 48 calibration).
+
+**Seed-OSS-36B was probed and excluded.** Its full receipt (`qualify.log`) is
+`detectable 3/6, other 0/6, gap +0.500` against a 0.50 floor — it sits *exactly* on the
+qualification threshold rather than failing it. Excluded on cost/risk, stated plainly: it detects
+the marker only half the time, and at ~100 s/cell it would add roughly 5.7 h to a 5.4 h run while
+putting the whole night at risk of a calibration-gate refusal. An earlier note in this session
+called it "cannot discriminate" from the first four cells; the complete receipt shows that was
+too strong, and it is corrected here rather than quietly dropped.
+
+`qwen3.8-27b` remains unusable — it exhausts even 3072 tokens.
+
+## Comparator, pinned
+
+`{"kind": "bare-they-v1"}`. The harness refuses a bare-string comparator outright, which is the
+same discipline the `token_delta` census argues is missing on that metric: a comparator that
+cannot be named in a versioned, machine-checkable way cannot be compared across runs.

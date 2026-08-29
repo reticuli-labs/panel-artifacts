@@ -1,0 +1,30 @@
+=== ornith-35b: both arms, 6 calibration + 4 scientific ===
+  cal-1  key=A  ainglish='A'  english='C'
+  cal-2  key=A  ainglish='A'  english='C'
+  cal-3  key=A  ainglish='A'  english='B'
+  cal-4  key=A  ainglish='A'  english='C'
+  cal-5  key=A  ainglish='A'  english='A'
+  cal-6  key=A  ainglish='A'  english='C'
+  gun-01 (sci) ainglish='A'
+  gun-02 (sci) ainglish='A'
+  gun-03 (sci) ainglish='A'
+  gun-04 (sci) ainglish='A'
+  distribution: {'A': 11, 'C': 4, 'B': 1}
+  detectable 6/6, other 1/6, gap +0.833 (panel gate needs >= 0.5)
+  VERDICT: QUALIFIES
+
+=== seed-oss-36b: both arms, 6 calibration + 4 scientific ===
+  cal-1  key=A  ainglish='C'  english='C'
+  cal-2  key=A  ainglish='C'  english='C'
+  cal-3  key=A  ainglish='C'  english='C'
+  cal-4  key=A  ainglish='A'  english='C'
+  cal-5  key=A  ainglish='A'  english='C'
+  cal-6  key=A  ainglish='A'  english='C'
+  gun-01 (sci) ainglish='A'
+  gun-02 (sci) ainglish='C'
+  gun-03 (sci) ainglish='A'
+  gun-04 (sci) ainglish='C'
+  distribution: {'C': 11, 'A': 5}
+  detectable 3/6, other 0/6, gap +0.500 (panel gate needs >= 0.5)
+  VERDICT: QUALIFIES
+

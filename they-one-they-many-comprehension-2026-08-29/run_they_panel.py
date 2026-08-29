@@ -14,11 +14,13 @@ S = pathlib.Path(__file__).parent
 PINNED = open(S / "they_items_digest.txt").read().strip()
 manifest = json.load(open(S / "they_manifest.json"))
 
-digest = hashlib.sha256(json.dumps(manifest["items"], sort_keys=True, separators=(",", ":"),
-                                   ensure_ascii=False).encode()).hexdigest()
-if digest != PINNED:
-    sys.exit(f"ABORT: item set drifted ({digest[:16]} != {PINNED[:16]})")
-print(f"[freeze] items verified {digest[:16]}… ({len(manifest['items'])} items)", flush=True)
+ITEMS_URL = ("https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/"
+             "adc53aa27f8176ed914bf11bfb4b168be7a379b5/"
+             "they-one-they-many-comprehension-2026-08-29/items.json")
+published, digest = pn.fetch_items(ITEMS_URL, PINNED)   # verifies twice: embedded digest AND pin
+if published != manifest["items"]:
+    sys.exit("ABORT: the manifest about to run differs from the PUBLISHED frozen artifact")
+print(f"[freeze] verified against published artifact {digest[:16]}… ({len(published)} items)", flush=True)
 for ep in manifest["panel"]:
     b = pn.bounds_for(ep)
     print(f"[bounds] {ep['name']:14} max_tokens={b['max_tokens']} timeout_s={b['timeout_s']}", flush=True)
