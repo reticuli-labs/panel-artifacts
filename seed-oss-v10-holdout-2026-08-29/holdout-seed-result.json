@@ -1,0 +1,2025 @@
+{
+  "kind": "ainglish.panel.reader-qualification-result.v8",
+  "evidentiary_status": "instrument qualification only; never proposal evidence",
+  "plan_sha256": "f2e3de2f421edbd892778cfd75e7921491d2f567e4e16a688cbbd22ade2f3c95",
+  "candidate": {
+    "lineage": "Seed-OSS 36B Instruct",
+    "producer": "ByteDance Seed Team",
+    "source_model": "milkey/Seed-OSS-36B-Instruct:Q4_K_M",
+    "source_manifest_sha256": "7a66a2f466bf48fdafa7004a7975a7f5fac6e667a6de7d01751aacb98b3f387c",
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking"
+    ],
+    "details": {
+      "family": "seed_oss",
+      "families": [
+        "seed_oss"
+      ],
+      "parameter_size": "36.2B",
+      "quantization_level": "Q4_K_M",
+      "format": "gguf"
+    },
+    "registry_reference": "https://ollama.com/milkey/Seed-OSS-36B-Instruct:Q4_K_M",
+    "official_model_reference": "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "eligibility_record": "https://github.com/reticuli-labs/panel-artifacts/commit/495c75f0; development passed 24/24",
+    "independence_caveat": "Community-uploaded Q4_K_M artifact; all claims bind only the exact acquired digest.",
+    "advertised_thinking_policy": "capability allowed only with transmitted think:false, the manifest-bound zero-budget template, and zero returned thinking bytes",
+    "template_sha256": "260bb0ab1136b500ee639cffc19703df12098b065be34071b20904538c3c26e2"
+  },
+  "started_at": "2026-08-29T19:14:50.896532+00:00",
+  "completed_at": "2026-08-29T19:16:26.382173+00:00",
+  "preflight": {
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 3090",
+        "free_mib": 23655,
+        "utilization": 23
+      },
+      {
+        "index": 1,
+        "name": "NVIDIA GeForce RTX 3070",
+        "free_mib": 7826,
+        "utilization": 0
+      }
+    ],
+    "resident_before": [],
+    "ollama_version": "0.32.7"
+  },
+  "attempt_journal": {
+    "file": "holdout-seed-attempt-journal.jsonl",
+    "sha256": "0fe69a9d1ae15e06ef0af48a85937299a144380b012b248fcaf31ac497d5b247"
+  },
+  "format": {
+    "observed": {
+      "valid_json_cells": 12,
+      "schema_exact_cells": 12,
+      "target_correct_cells": 12,
+      "thinking_bytes": 0,
+      "fault_cells": 0
+    },
+    "passed": true,
+    "rows": [
+      {
+        "stage": "format",
+        "control_id": "format-01",
+        "target": "A",
+        "raw_output": "{\n  \"answer\": \"A\"\n}",
+        "raw_output_sha256": "bd527fde94be7d9f44666f9b17acd3c6706c9b29144015eb99b16a8fad6ccd19",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 48959596961,
+          "load_duration": 48235388970,
+          "prompt_eval_count": 126,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-02",
+        "target": "B",
+        "raw_output": "{\n  \"answer\": \"B\"\n}",
+        "raw_output_sha256": "4d8c5edacb2a841e610169296be34a77d0c06ada972c64dfca4ae7feba491561",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 769786987,
+          "load_duration": 210515212,
+          "prompt_eval_count": 126,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-03",
+        "target": "C",
+        "raw_output": "{\n  \"answer\": \"C\"\n}",
+        "raw_output_sha256": "ac7f56fe2fcbf719602ec408e613bf409ff402849c8740e5536fcf527569ce4c",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 744267194,
+          "load_duration": 188317572,
+          "prompt_eval_count": 126,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-04",
+        "target": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 550124051,
+          "load_duration": 191072632,
+          "prompt_eval_count": 124,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-05",
+        "target": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 535193238,
+          "load_duration": 178300027,
+          "prompt_eval_count": 124,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-06",
+        "target": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 539891063,
+          "load_duration": 190774349,
+          "prompt_eval_count": 124,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-07",
+        "target": "A",
+        "raw_output": "{\n  \"answer\": \"A\"\n}",
+        "raw_output_sha256": "bd527fde94be7d9f44666f9b17acd3c6706c9b29144015eb99b16a8fad6ccd19",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 734251219,
+          "load_duration": 182176431,
+          "prompt_eval_count": 124,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-08",
+        "target": "B",
+        "raw_output": "{\n  \"answer\": \"B\"\n}",
+        "raw_output_sha256": "4d8c5edacb2a841e610169296be34a77d0c06ada972c64dfca4ae7feba491561",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 753788054,
+          "load_duration": 190218900,
+          "prompt_eval_count": 124,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-09",
+        "target": "C",
+        "raw_output": "{\n  \"answer\": \"C\"\n}",
+        "raw_output_sha256": "ac7f56fe2fcbf719602ec408e613bf409ff402849c8740e5536fcf527569ce4c",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 773198462,
+          "load_duration": 216126505,
+          "prompt_eval_count": 124,
+          "eval_count": 12
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-10",
+        "target": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 681973778,
+          "load_duration": 207885864,
+          "prompt_eval_count": 126,
+          "eval_count": 9
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-11",
+        "target": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 658501325,
+          "load_duration": 192507853,
+          "prompt_eval_count": 126,
+          "eval_count": 9
+        }
+      },
+      {
+        "stage": "format",
+        "control_id": "format-12",
+        "target": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "target_correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 574346860,
+          "load_duration": 198292789,
+          "prompt_eval_count": 126,
+          "eval_count": 7
+        }
+      }
+    ]
+  },
+  "semantic": {
+    "exposed": true,
+    "observed": {
+      "valid_json_cells": 64,
+      "schema_exact_cells": 64,
+      "correct_cells": 59,
+      "correct_by_axis": {
+        "quantifier_force": 7,
+        "set_membership": 8,
+        "negation_scope": 8,
+        "disjunction": 8,
+        "conditional": 7,
+        "reference_resolution": 5,
+        "temporal_order": 8,
+        "authority_and_permission": 8
+      },
+      "correct_by_label": {
+        "entailed": 22,
+        "contradicted": 22,
+        "not determined": 15
+      },
+      "thinking_bytes": 0,
+      "fault_cells": 0
+    },
+    "passed": false,
+    "rows": [
+      {
+        "stage": "semantic",
+        "item_id": "v10g-qu-01",
+        "axis": "quantifier_force",
+        "expected_label": "entailed",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 674060416,
+          "load_duration": 187909687,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-qu-02",
+        "axis": "quantifier_force",
+        "expected_label": "not determined",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 586941166,
+          "load_duration": 183605261,
+          "prompt_eval_count": 199,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-qu-03",
+        "axis": "quantifier_force",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 626420030,
+          "load_duration": 215459365,
+          "prompt_eval_count": 198,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-qu-04",
+        "axis": "quantifier_force",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 598140673,
+          "load_duration": 185745053,
+          "prompt_eval_count": 209,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-qu-05",
+        "axis": "quantifier_force",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 597900871,
+          "load_duration": 178437329,
+          "prompt_eval_count": 205,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-qu-06",
+        "axis": "quantifier_force",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 589926615,
+          "load_duration": 191456083,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-qu-07",
+        "axis": "quantifier_force",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 590520760,
+          "load_duration": 188873603,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-qu-08",
+        "axis": "quantifier_force",
+        "expected_label": "contradicted",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "not determined",
+        "correct": false,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 600046131,
+          "load_duration": 198195817,
+          "prompt_eval_count": 201,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-se-01",
+        "axis": "set_membership",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 589881822,
+          "load_duration": 185052797,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-se-02",
+        "axis": "set_membership",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 610944154,
+          "load_duration": 206265488,
+          "prompt_eval_count": 201,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-se-03",
+        "axis": "set_membership",
+        "expected_label": "contradicted",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 583643601,
+          "load_duration": 187176000,
+          "prompt_eval_count": 199,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-se-04",
+        "axis": "set_membership",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 609439683,
+          "load_duration": 214004842,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-se-05",
+        "axis": "set_membership",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 595926240,
+          "load_duration": 185590676,
+          "prompt_eval_count": 209,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-se-06",
+        "axis": "set_membership",
+        "expected_label": "not determined",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 594704633,
+          "load_duration": 184729720,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-se-07",
+        "axis": "set_membership",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 599625157,
+          "load_duration": 191034780,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-se-08",
+        "axis": "set_membership",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 632813209,
+          "load_duration": 224189861,
+          "prompt_eval_count": 211,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-ne-01",
+        "axis": "negation_scope",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 616718517,
+          "load_duration": 183743329,
+          "prompt_eval_count": 202,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-ne-02",
+        "axis": "negation_scope",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 580319761,
+          "load_duration": 185943235,
+          "prompt_eval_count": 200,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-ne-03",
+        "axis": "negation_scope",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 610683777,
+          "load_duration": 214244219,
+          "prompt_eval_count": 198,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-ne-04",
+        "axis": "negation_scope",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 600726795,
+          "load_duration": 202897763,
+          "prompt_eval_count": 202,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-ne-05",
+        "axis": "negation_scope",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 587385057,
+          "load_duration": 187431573,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-ne-06",
+        "axis": "negation_scope",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 597012541,
+          "load_duration": 194228586,
+          "prompt_eval_count": 201,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-ne-07",
+        "axis": "negation_scope",
+        "expected_label": "not determined",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 603066684,
+          "load_duration": 186902052,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-ne-08",
+        "axis": "negation_scope",
+        "expected_label": "not determined",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 604646123,
+          "load_duration": 191042026,
+          "prompt_eval_count": 206,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-di-01",
+        "axis": "disjunction",
+        "expected_label": "entailed",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 592534881,
+          "load_duration": 175693961,
+          "prompt_eval_count": 208,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-di-02",
+        "axis": "disjunction",
+        "expected_label": "contradicted",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 578573251,
+          "load_duration": 176324180,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-di-03",
+        "axis": "disjunction",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 589544300,
+          "load_duration": 175746313,
+          "prompt_eval_count": 208,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-di-04",
+        "axis": "disjunction",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 583991453,
+          "load_duration": 175631258,
+          "prompt_eval_count": 205,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-di-05",
+        "axis": "disjunction",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 589541963,
+          "load_duration": 188928656,
+          "prompt_eval_count": 198,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-di-06",
+        "axis": "disjunction",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 593536494,
+          "load_duration": 179653318,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-di-07",
+        "axis": "disjunction",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 611706251,
+          "load_duration": 210918751,
+          "prompt_eval_count": 200,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-di-08",
+        "axis": "disjunction",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 600254263,
+          "load_duration": 202171015,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-co-01",
+        "axis": "conditional",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 632785851,
+          "load_duration": 221606404,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-co-02",
+        "axis": "conditional",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 585536078,
+          "load_duration": 188982068,
+          "prompt_eval_count": 202,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-co-03",
+        "axis": "conditional",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 598673579,
+          "load_duration": 185604524,
+          "prompt_eval_count": 206,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-co-04",
+        "axis": "conditional",
+        "expected_label": "not determined",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 607520899,
+          "load_duration": 198574608,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-co-05",
+        "axis": "conditional",
+        "expected_label": "entailed",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 605308693,
+          "load_duration": 194557147,
+          "prompt_eval_count": 205,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-co-06",
+        "axis": "conditional",
+        "expected_label": "contradicted",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 586879048,
+          "load_duration": 186621829,
+          "prompt_eval_count": 205,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-co-07",
+        "axis": "conditional",
+        "expected_label": "not determined",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": false,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 607220488,
+          "load_duration": 194120626,
+          "prompt_eval_count": 208,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-co-08",
+        "axis": "conditional",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 602708745,
+          "load_duration": 189496505,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-re-01",
+        "axis": "reference_resolution",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 615008003,
+          "load_duration": 200482893,
+          "prompt_eval_count": 212,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-re-02",
+        "axis": "reference_resolution",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 637125480,
+          "load_duration": 186254732,
+          "prompt_eval_count": 212,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-re-03",
+        "axis": "reference_resolution",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 629825369,
+          "load_duration": 177442535,
+          "prompt_eval_count": 213,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-re-04",
+        "axis": "reference_resolution",
+        "expected_label": "not determined",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": false,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 608086861,
+          "load_duration": 176492039,
+          "prompt_eval_count": 199,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-re-05",
+        "axis": "reference_resolution",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "not determined",
+        "correct": false,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 607747561,
+          "load_duration": 192994071,
+          "prompt_eval_count": 206,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-re-06",
+        "axis": "reference_resolution",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": false,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 577974320,
+          "load_duration": 180475177,
+          "prompt_eval_count": 200,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-re-07",
+        "axis": "reference_resolution",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 616010658,
+          "load_duration": 199764365,
+          "prompt_eval_count": 210,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-re-08",
+        "axis": "reference_resolution",
+        "expected_label": "not determined",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 588864273,
+          "load_duration": 189143409,
+          "prompt_eval_count": 202,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-te-01",
+        "axis": "temporal_order",
+        "expected_label": "entailed",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 608561081,
+          "load_duration": 198810959,
+          "prompt_eval_count": 216,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-te-02",
+        "axis": "temporal_order",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 723717785,
+          "load_duration": 194486509,
+          "prompt_eval_count": 201,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-te-03",
+        "axis": "temporal_order",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 591226246,
+          "load_duration": 196681681,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-te-04",
+        "axis": "temporal_order",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 591117949,
+          "load_duration": 192633892,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-te-05",
+        "axis": "temporal_order",
+        "expected_label": "not determined",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 591388803,
+          "load_duration": 191254978,
+          "prompt_eval_count": 202,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-te-06",
+        "axis": "temporal_order",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 588674548,
+          "load_duration": 192883445,
+          "prompt_eval_count": 200,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-te-07",
+        "axis": "temporal_order",
+        "expected_label": "entailed",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 605914961,
+          "load_duration": 207047925,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-te-08",
+        "axis": "temporal_order",
+        "expected_label": "contradicted",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 579372787,
+          "load_duration": 182771861,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-au-01",
+        "axis": "authority_and_permission",
+        "expected_label": "entailed",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 622690346,
+          "load_duration": 221759100,
+          "prompt_eval_count": 204,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-au-02",
+        "axis": "authority_and_permission",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 588465751,
+          "load_duration": 184974954,
+          "prompt_eval_count": 209,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-au-03",
+        "axis": "authority_and_permission",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 597168377,
+          "load_duration": 201555523,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-au-04",
+        "axis": "authority_and_permission",
+        "expected_label": "contradicted",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 581752600,
+          "load_duration": 184330966,
+          "prompt_eval_count": 203,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-au-05",
+        "axis": "authority_and_permission",
+        "expected_label": "contradicted",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "contradicted",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 616475414,
+          "load_duration": 205838166,
+          "prompt_eval_count": 211,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-au-06",
+        "axis": "authority_and_permission",
+        "expected_label": "entailed",
+        "expected_code": "B",
+        "raw_output": "{\"answer\": \"B\"}",
+        "raw_output_sha256": "0dc4a54d26c60713393325f0707bc0137ebc618ee2a9bb5e37a6cfe34261eed7",
+        "parsed": {
+          "answer": "B"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "B",
+        "parsed_label": "entailed",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 647978767,
+          "load_duration": 193353399,
+          "prompt_eval_count": 207,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-au-07",
+        "axis": "authority_and_permission",
+        "expected_label": "not determined",
+        "expected_code": "C",
+        "raw_output": "{\"answer\": \"C\"}",
+        "raw_output_sha256": "b85369f942e856f88783080e2a773018030ac3092299685bf25311e2525c7b8f",
+        "parsed": {
+          "answer": "C"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "C",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 584791274,
+          "load_duration": 177731634,
+          "prompt_eval_count": 209,
+          "eval_count": 7
+        }
+      },
+      {
+        "stage": "semantic",
+        "item_id": "v10g-au-08",
+        "axis": "authority_and_permission",
+        "expected_label": "not determined",
+        "expected_code": "A",
+        "raw_output": "{\"answer\": \"A\"}",
+        "raw_output_sha256": "6ed067e5a026651b1172a0fde32c0e12be7e448ef78786f37c6896994ee4d5b6",
+        "parsed": {
+          "answer": "A"
+        },
+        "parse_error": null,
+        "valid_json": true,
+        "schema_exact": true,
+        "parsed_code": "A",
+        "parsed_label": "not determined",
+        "correct": true,
+        "thinking_bytes": 0,
+        "fault": null,
+        "timing": {
+          "total_duration": 598760200,
+          "load_duration": 191530548,
+          "prompt_eval_count": 211,
+          "eval_count": 7
+        }
+      }
+    ]
+  },
+  "v8_holdout_eligible": false,
+  "content_sha256": "4547685bd0757b9d4b81cf995e75913aa9432da092960cee284f4dc6fe2b0d49"
+}
