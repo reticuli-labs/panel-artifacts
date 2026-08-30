@@ -1,0 +1,80 @@
+FALSE ADMIT — gate admits a panel whose two arms are driven by the SAME rate
+items  opts  mechanism                                        old     new
+    4     2  uniform guessing (chance both arms)            0.143   0.256
+    4     2  skewed guessing (biased, both arms)            0.139   0.310
+    4     2  context fully recoverable (both arms high)     0.011   0.148
+    4     3  uniform guessing (chance both arms)            0.130   0.161
+    4     3  skewed guessing (biased, both arms)            0.137   0.319
+    4     3  context fully recoverable (both arms high)     0.010   0.147
+    4     4  uniform guessing (chance both arms)            0.103   0.112
+    4     4  skewed guessing (biased, both arms)            0.129   0.314
+    4     4  context fully recoverable (both arms high)     0.013   0.154
+    8     2  uniform guessing (chance both arms)            0.034   0.127
+    8     2  skewed guessing (biased, both arms)            0.034   0.207
+    8     2  context fully recoverable (both arms high)     0.000   0.240
+    8     3  uniform guessing (chance both arms)            0.031   0.057
+    8     3  skewed guessing (biased, both arms)            0.034   0.204
+    8     3  context fully recoverable (both arms high)     0.000   0.239
+    8     4  uniform guessing (chance both arms)            0.017   0.027
+    8     4  skewed guessing (biased, both arms)            0.036   0.208
+    8     4  context fully recoverable (both arms high)     0.001   0.236
+   12     2  uniform guessing (chance both arms)            0.009   0.072
+   12     2  skewed guessing (biased, both arms)            0.006   0.141
+   12     2  context fully recoverable (both arms high)     0.000   0.069
+   12     3  uniform guessing (chance both arms)            0.006   0.023
+   12     3  skewed guessing (biased, both arms)            0.005   0.139
+   12     3  context fully recoverable (both arms high)     0.000   0.077
+   12     4  uniform guessing (chance both arms)            0.007   0.011
+   12     4  skewed guessing (biased, both arms)            0.009   0.137
+   12     4  context fully recoverable (both arms high)     0.000   0.073
+   24     2  uniform guessing (chance both arms)            0.000   0.019
+   24     2  skewed guessing (biased, both arms)            0.000   0.049
+   24     2  context fully recoverable (both arms high)     0.000   0.043
+   24     3  uniform guessing (chance both arms)            0.000   0.002
+   24     3  skewed guessing (biased, both arms)            0.000   0.047
+   24     3  context fully recoverable (both arms high)     0.000   0.053
+   24     4  uniform guessing (chance both arms)            0.000   0.000
+   24     4  skewed guessing (biased, both arms)            0.000   0.049
+   24     4  context fully recoverable (both arms high)     0.000   0.045
+
+FALSE REFUSE — gate refuses a panel whose marker carries the reader to ~1.0
+items  opts  mechanism                                        old     new
+    4     2  true detector off a chance floor               0.344   0.085
+    4     2  true detector off a leaky floor                0.328   0.073
+    4     2  true detector off a high floor                 0.837   0.452
+    4     3  true detector off a chance floor               0.128   0.020
+    4     3  true detector off a leaky floor                0.336   0.082
+    4     3  true detector off a high floor                 0.840   0.453
+    4     4  true detector off a chance floor               0.067   0.009
+    4     4  true detector off a leaky floor                0.329   0.084
+    4     4  true detector off a high floor                 0.830   0.449
+    8     2  true detector off a chance floor               0.406   0.013
+    8     2  true detector off a leaky floor                0.406   0.013
+    8     2  true detector off a high floor                 0.960   0.217
+    8     3  true detector off a chance floor               0.119   0.002
+    8     3  true detector off a leaky floor                0.400   0.013
+    8     3  true detector off a high floor                 0.948   0.231
+    8     4  true detector off a chance floor               0.042   0.001
+    8     4  true detector off a leaky floor                0.417   0.013
+    8     4  true detector off a high floor                 0.948   0.218
+   12     2  true detector off a chance floor               0.481   0.009
+   12     2  true detector off a leaky floor                0.473   0.006
+   12     2  true detector off a high floor                 0.986   0.348
+   12     3  true detector off a chance floor               0.134   0.000
+   12     3  true detector off a leaky floor                0.470   0.007
+   12     3  true detector off a high floor                 0.983   0.341
+   12     4  true detector off a chance floor               0.049   0.000
+   12     4  true detector off a leaky floor                0.471   0.007
+   12     4  true detector off a high floor                 0.988   0.345
+   24     2  true detector off a chance floor               0.491   0.000
+   24     2  true detector off a leaky floor                0.499   0.000
+   24     2  true detector off a high floor                 0.999   0.196
+   24     3  true detector off a chance floor               0.059   0.000
+   24     3  true detector off a leaky floor                0.494   0.000
+   24     3  true detector off a high floor                 1.000   0.186
+   24     4  true detector off a chance floor               0.007   0.000
+   24     4  true detector off a leaky floor                0.494   0.000
+   24     4  true detector off a high floor                 0.999   0.185
+
+ old gate: false-admit mean 0.0291 (max 0.1435)   false-refuse mean 0.5211 (max 1.0000)
+ new gate: false-admit mean 0.1254 (max 0.3185)   false-refuse mean 0.1128 (max 0.4525)

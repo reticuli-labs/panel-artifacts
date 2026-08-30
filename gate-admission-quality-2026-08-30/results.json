@@ -1,0 +1,675 @@
+{
+ "kind": "ainglish.gate-admission-quality.v1",
+ "trials_per_cell": 4000,
+ "seed": 20260830,
+ "old_gate": {
+  "rule": "gap >= 0.5"
+ },
+ "new_gate": {
+  "rule": "gap >= 0.125 and recovered >= 0.5"
+ },
+ "summary": {
+  "old": {
+   "false_admit_mean": 0.0291,
+   "false_admit_max": 0.1435,
+   "false_refuse_mean": 0.5211,
+   "false_refuse_max": 1.0
+  },
+  "new": {
+   "false_admit_mean": 0.1254,
+   "false_admit_max": 0.3185,
+   "false_refuse_mean": 0.1128,
+   "false_refuse_max": 0.4525
+  }
+ },
+ "cells": [
+  {
+   "items": 4,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.1435,
+   "new_admit_rate": 0.25575
+  },
+  {
+   "items": 4,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.13925,
+   "new_admit_rate": 0.30975
+  },
+  {
+   "items": 4,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0115,
+   "new_admit_rate": 0.1485
+  },
+  {
+   "items": 4,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.6565,
+   "new_admit_rate": 0.91475
+  },
+  {
+   "items": 4,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.6725,
+   "new_admit_rate": 0.9275
+  },
+  {
+   "items": 4,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.163,
+   "new_admit_rate": 0.54775
+  },
+  {
+   "items": 4,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.12975,
+   "new_admit_rate": 0.16125
+  },
+  {
+   "items": 4,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.137,
+   "new_admit_rate": 0.3185
+  },
+  {
+   "items": 4,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.01,
+   "new_admit_rate": 0.14675
+  },
+  {
+   "items": 4,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.87175,
+   "new_admit_rate": 0.9795
+  },
+  {
+   "items": 4,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.66425,
+   "new_admit_rate": 0.91825
+  },
+  {
+   "items": 4,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.15975,
+   "new_admit_rate": 0.5475
+  },
+  {
+   "items": 4,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.1035,
+   "new_admit_rate": 0.11225
+  },
+  {
+   "items": 4,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.12925,
+   "new_admit_rate": 0.314
+  },
+  {
+   "items": 4,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0125,
+   "new_admit_rate": 0.15375
+  },
+  {
+   "items": 4,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.9335,
+   "new_admit_rate": 0.991
+  },
+  {
+   "items": 4,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.6715,
+   "new_admit_rate": 0.91575
+  },
+  {
+   "items": 4,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.17,
+   "new_admit_rate": 0.551
+  },
+  {
+   "items": 8,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.03425,
+   "new_admit_rate": 0.1265
+  },
+  {
+   "items": 8,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.034,
+   "new_admit_rate": 0.20675
+  },
+  {
+   "items": 8,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.2405
+  },
+  {
+   "items": 8,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.594,
+   "new_admit_rate": 0.987
+  },
+  {
+   "items": 8,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.59375,
+   "new_admit_rate": 0.9865
+  },
+  {
+   "items": 8,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.04025,
+   "new_admit_rate": 0.783
+  },
+  {
+   "items": 8,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.031,
+   "new_admit_rate": 0.05725
+  },
+  {
+   "items": 8,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.03425,
+   "new_admit_rate": 0.204
+  },
+  {
+   "items": 8,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.2395
+  },
+  {
+   "items": 8,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.881,
+   "new_admit_rate": 0.99825
+  },
+  {
+   "items": 8,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.60025,
+   "new_admit_rate": 0.98675
+  },
+  {
+   "items": 8,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.05225,
+   "new_admit_rate": 0.7695
+  },
+  {
+   "items": 8,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.017,
+   "new_admit_rate": 0.02675
+  },
+  {
+   "items": 8,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.03575,
+   "new_admit_rate": 0.20775
+  },
+  {
+   "items": 8,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.00075,
+   "new_admit_rate": 0.236
+  },
+  {
+   "items": 8,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.9575,
+   "new_admit_rate": 0.999
+  },
+  {
+   "items": 8,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.58275,
+   "new_admit_rate": 0.98725
+  },
+  {
+   "items": 8,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.052,
+   "new_admit_rate": 0.78225
+  },
+  {
+   "items": 12,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0085,
+   "new_admit_rate": 0.072
+  },
+  {
+   "items": 12,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0065,
+   "new_admit_rate": 0.14125
+  },
+  {
+   "items": 12,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.0685
+  },
+  {
+   "items": 12,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.519,
+   "new_admit_rate": 0.99075
+  },
+  {
+   "items": 12,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.527,
+   "new_admit_rate": 0.994
+  },
+  {
+   "items": 12,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.01375,
+   "new_admit_rate": 0.65225
+  },
+  {
+   "items": 12,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0065,
+   "new_admit_rate": 0.023
+  },
+  {
+   "items": 12,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0055,
+   "new_admit_rate": 0.1385
+  },
+  {
+   "items": 12,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.077
+  },
+  {
+   "items": 12,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.86625,
+   "new_admit_rate": 0.9995
+  },
+  {
+   "items": 12,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.53,
+   "new_admit_rate": 0.9925
+  },
+  {
+   "items": 12,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.01725,
+   "new_admit_rate": 0.659
+  },
+  {
+   "items": 12,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.00675,
+   "new_admit_rate": 0.011
+  },
+  {
+   "items": 12,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0095,
+   "new_admit_rate": 0.13675
+  },
+  {
+   "items": 12,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.073
+  },
+  {
+   "items": 12,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.95075,
+   "new_admit_rate": 1.0
+  },
+  {
+   "items": 12,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.529,
+   "new_admit_rate": 0.993
+  },
+  {
+   "items": 12,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.012,
+   "new_admit_rate": 0.65525
+  },
+  {
+   "items": 24,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.01925
+  },
+  {
+   "items": 24,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.00025,
+   "new_admit_rate": 0.0485
+  },
+  {
+   "items": 24,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.0435
+  },
+  {
+   "items": 24,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.5095,
+   "new_admit_rate": 0.99975
+  },
+  {
+   "items": 24,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.50125,
+   "new_admit_rate": 1.0
+  },
+  {
+   "items": 24,
+   "options": 2,
+   "chance": 0.5,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.00075,
+   "new_admit_rate": 0.804
+  },
+  {
+   "items": 24,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.002
+  },
+  {
+   "items": 24,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.04725
+  },
+  {
+   "items": 24,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.05325
+  },
+  {
+   "items": 24,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.94125,
+   "new_admit_rate": 1.0
+  },
+  {
+   "items": 24,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.506,
+   "new_admit_rate": 0.99975
+  },
+  {
+   "items": 24,
+   "options": 3,
+   "chance": 0.3333,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.81375
+  },
+  {
+   "items": 24,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "uniform guessing (chance both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.0
+  },
+  {
+   "items": 24,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "skewed guessing (biased, both arms)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.00025,
+   "new_admit_rate": 0.04925
+  },
+  {
+   "items": 24,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "context fully recoverable (both arms high)",
+   "deserves_admission": false,
+   "old_admit_rate": 0.0,
+   "new_admit_rate": 0.045
+  },
+  {
+   "items": 24,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a chance floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.99325,
+   "new_admit_rate": 1.0
+  },
+  {
+   "items": 24,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a leaky floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.5065,
+   "new_admit_rate": 1.0
+  },
+  {
+   "items": 24,
+   "options": 4,
+   "chance": 0.25,
+   "mechanism": "true detector off a high floor",
+   "deserves_admission": true,
+   "old_admit_rate": 0.00125,
+   "new_admit_rate": 0.8145
+  }
+ ]
+}
