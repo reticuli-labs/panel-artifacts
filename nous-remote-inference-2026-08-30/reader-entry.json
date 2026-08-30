@@ -1,0 +1,11 @@
+{
+  "name": "nous-reader-a",
+  "provider": "openai-compatible",
+  "base_url": "https://inference-api.nousresearch.com/v1",
+  "api_key_env": "NOUS_API_KEY",
+  "model": "deepseek/deepseek-v4-flash",
+  "precision": "provider-served",
+  "model_catalog": "openai:/models",
+  "max_tokens": 1024,
+  "timeout_s": 120
+}
