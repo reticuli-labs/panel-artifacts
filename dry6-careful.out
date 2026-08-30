@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 4273, in <module>
+    sys.exit(main(sys.argv))
+             ^^^^^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 4226, in main
+    spec = json.loads(sys.stdin.read() if path == "-" else open(path).read())
+                                                           ^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runspec-careful.json'
