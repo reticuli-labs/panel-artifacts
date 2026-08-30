@@ -77,6 +77,35 @@ FAMILIES = {
     },
 }
 
+# Calibration scenarios, deliberately DISJOINT from the real families above so a calibration cell
+# can never leak a real item's answer. The planted effect is the construct itself: the Ainglish arm
+# names the scope and is answerable; the byte-identical English arm is the ambiguous "All ... did
+# not ..." and is not. Every item offers "cannot tell from the message", so a careful reader has a
+# live honest option on the ambiguous arm -- it answers rather than refusing, which is what keeps
+# the calibration cell LIVE instead of a dead cell the yield guard aborts on.
+CALIBRATION = {
+    "signoff": {
+        "scene": "The duty manager paged {L} about the overnight batch.",
+        "verb": "acknowledged the page", "verb_base": "acknowledge the page",
+        "gate": "The batch is signed off only if every on-call engineer acknowledged, and the "
+                "wake-up call is warranted only once you know that none of them did.",
+        "none": "hold the sign-off and place the wake-up call",
+        "notall": "hold the sign-off, and count how many acknowledged before calling anyone",
+        "lists": {"human": "the on-call engineers", "system": "the on-call pagers",
+                  "mixed": "the on-call engineers and their pagers"},
+    },
+    "intake": {
+        "scene": "The triage nurse reviewed {L} at the shift change.",
+        "verb": "returned a completed form", "verb_base": "return a completed form",
+        "gate": "Intake closes only if every referring clinic returned a completed form, and the "
+                "chase-up round is warranted only once you know that none of them did.",
+        "none": "hold intake and start the chase-up round",
+        "notall": "hold intake, and count how many returned before chasing anyone",
+        "lists": {"human": "the referring clinics", "system": "the referral inboxes",
+                  "mixed": "the referring clinics and their inboxes"},
+    },
+}
+
 # The referent class the list denotes. Kept as a stratum because a scope error over people and a
 # scope error over machines have different downstream costs, and a set that mixes them without
 # recording which is which cannot tell the two apart afterwards.
@@ -154,8 +183,59 @@ def build():
     return items
 
 
+def build_calibration():
+    """Sixteen calibration items, 8/8 across scope, flagged for the harness.
+
+    The register refuses a comprehension run with no calibration items -- "a panel that was never
+    shown a detectable difference proves nothing when it detects none" -- and for this metric they
+    must live INSIDE the items array. The first freeze of this set had none: the audit checked
+    every balance axis and never asked whether the set could run at all. Caught by @rosetta before
+    she spent a cell, not by me.
+    """
+    items, n = [], 0
+    for family, f in sorted(CALIBRATION.items()):
+        for scope in ("none", "not_all"):
+            for kind in ("human", "system", "mixed"):
+                listing = f["lists"][kind]
+                n += 1
+                scene = f["scene"].format(L=listing)
+                op = "none-of" if scope == "none" else "not-all-of"
+                claim_ain = f"{op}(<{listing}>) {f['verb']}."
+                claim_eng = f"All of {listing} did not {f['verb_base']}."
+                correct = f["none"] if scope == "none" else f["notall"]
+                other = f["notall"] if scope == "none" else f["none"]
+                options = [correct, other, UNKNOWN] if n % 3 == 0 else (
+                    [other, correct, UNKNOWN] if n % 3 == 1 else [UNKNOWN, correct, other])
+                items.append({
+                    "id": f"n-cal-{n:03d}",
+                    "calibration": True,
+                    "ainglish": f"{scene} {claim_ain}",
+                    "english": f"{scene} {claim_eng}",
+                    "careful": f"{scene} " + (
+                        f"Not a single one of {listing} {f['verb']}." if scope == "none"
+                        else f"At least one of {listing} did not {f['verb_base']}."),
+                    "question": f["gate"] + " What follows?",
+                    "options": options,
+                    "answer": correct,
+                    "scope": scope, "kind": kind, "order": "context_first", "family": family,
+                    "settlement_stratum": scope,
+                })
+    return items
+
+
 def audit(items):
-    print(f"items: {len(items)}")
+    calib = [i for i in items if i.get("calibration")]
+    real = [i for i in items if not i.get("calibration")]
+    print(f"items: {len(items)}  ({len(real)} real + {len(calib)} calibration)")
+    # THE CHECK THE FIRST FREEZE LACKED. Every balance axis was asserted and nobody asked whether
+    # the harness would run the set at all; it refuses a comprehension panel with no calibration.
+    assert calib, "a comprehension item set with no calibration items cannot pass the register gate"
+    assert len(calib) >= 12, f"too few calibration items ({len(calib)}): gap resolution is 1/n"
+    assert collections.Counter(i["scope"] for i in calib)["none"] == len(calib) // 2, \
+        "calibration must be balanced across scope or the gap measures the imbalance"
+    assert not ({i["ainglish"] for i in calib} & {i["ainglish"] for i in real}), \
+        "a calibration item must never share an answer-bearing string with a real item"
+    items = real
     for axis in ("scope", "kind", "order", "family", "settlement_stratum"):
         c = collections.Counter(i[axis] for i in items)
         print(f"  {axis:20} {dict(sorted(c.items()))}")
@@ -198,7 +278,7 @@ def audit(items):
 
 
 if __name__ == "__main__":
-    items = build()
+    items = build() + build_calibration()
     audit(items)
     blob = json.dumps(items, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
     open("items.json", "w", encoding="utf-8").write(blob)

@@ -1,6 +1,24 @@
 # none-of(<L>) / not-all-of(<L>) — comprehension item set (frozen 2026-08-30)
 
-**192 items. `items.json` sha256 `bce44c496978e6a229e45824b6fa2f7828b1380873b6944c0102f0f5d447813b`.**
+**204 items — 192 real + 12 calibration. `items.json` sha256
+`bc2168d64ae0fcc6e71cbdbd9b4ddf6fc10ded8ec85a8660c556f6e6265234c6`.**
+
+> **RE-FROZEN 2026-08-30. The earlier pin `bce44c49…` is superseded and must not be run.**
+> That freeze had **zero calibration items**, so the register refuses it outright — *"a panel that
+> was never shown a detectable difference proves nothing when it detects none"* — and for
+> `comprehension_accuracy_delta` the calibration items must live inside the items array. The set as
+> first frozen could not pass its own register's gate.
+>
+> My audit asserted every balance axis — scope, kind, order, family, answer position — and never
+> asked whether the set could **run at all**. Caught by @rosetta before she spent a cell on it, not
+> by me. The generator now emits calibration items and the audit asserts their presence, count and
+> balance; that new assertion failed on its own first draft (8 items where 12 were required), which
+> is the only reason I trust it.
+>
+> **The 192 real items are byte-identical to the first freeze** — digest `bce44c49…` over the real
+> subset — so every balance below still holds and the design is unchanged. Only calibration was
+> added. Verified through the real harness: `calibration.passed: true`, gap 1.0 against `min_gap`
+> 0.5, panel emits.
 
 Frozen before any reader was run. Re-derive with `python3 author_none.py` — the generator is
 deterministic and takes no seed, so the digest above is reproducible from this file alone.
@@ -46,6 +64,7 @@ are built on that asymmetry, not on a false contradiction.
 | order | context_first 96 / claim_first 96 |
 | family | 4 x 48 |
 | answer position, within each stratum | 32 / 32 / 32 |
+| calibration items | 12, balanced 6 / 6 across scope |
 
 Position is balanced *within* stratum so answer placement cannot carry the scope signal. Every item
 offers "cannot tell from the message" as a live third option.
