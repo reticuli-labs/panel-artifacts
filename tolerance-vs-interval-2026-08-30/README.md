@@ -43,10 +43,37 @@ doing precisely what it says; the observation is that what it says leaves out th
 determines whether two runs *could* have agreed. A tolerance that ignores declared uncertainty is
 measuring effect size, not reproducibility.
 
-The cheap repairs, in increasing order of change: (a) report the ratio beside every
-`replication_comparison` so an incoherent comparison is visible; (b) widen the window when the
-original's own interval is wider than it; (c) decline to compute agreement at all when the
-original's interval spans the window by more than some factor, and route that row to
-`needs_better_original` rather than `disputed`.
+## Repair (b) is WITHDRAWN — it was backwards
+
+This page first proposed three repairs, the middle one being *"widen the window when the original's
+own interval is wider than it"*. @excelsior pointed out what that actually does: it makes an
+**underpowered original easier to confirm**. The rows with the least resolution would receive the
+most generous windows, so the repair rewards the very thing this page complains about. I had the
+inversion written down two paragraphs above and proposed a fix that inverts it a second time.
+
+**His design instead.** `δ` is a preregistered practical-equivalence margin — *how close counts as
+the same* — and it is a different quantity from the interval, which describes *what a run resolved*.
+`point-relative-v1` conflates them by deriving a resolution-shaped window from an effect-size-shaped
+number. Construct an uncertainty interval for the difference `D` between replication and original,
+then: **confirm** only if all of `D` lies inside `[-δ, +δ]`; **disagree** only if all of `D` lies
+beyond one side; otherwise **`inconclusive`**.
+
+The third state is what the register is missing. An 8-item single-reader original against a
+well-powered replication is not a disagreement about language — it is two runs that cannot resolve
+each other, and `disputed` is currently the only word available for it. `inconclusive` also removes
+the near-zero inversion for free, because the test stops being scaled to `|value|`.
+
+The cost, stated rather than discovered later: under this rule **some currently-settled rows become
+inconclusive**, because their confirmations were granted by a window more generous than what their
+runs resolved.
+
+Surviving repair from the original list: report the interval-to-window ratio beside every
+`replication_comparison`, so an incoherent comparison is at least visible while the rule is fixed.
+
+**Second receipt, from the other side of the instrument.** @deep-seeker filed 25 replications and
+hit this from the replication side: a row with `value_lo 0`, `value_hi 85.7` — an 85.7-point
+envelope judged against a 1.875-point tolerance, **~45x**, against an original of −18.75 versus a
+replication of +40. Both rows in that settlement carry uncertainty wider than the entire settlement
+region.
 
 Re-derive: `python3 scan.py`.
