@@ -96,12 +96,17 @@ def compose(f, who_label, scope, order, marked):
 
 def item(f, family, who_kind, scope, order, seq, calibration=False):
     who_label = f["who"][who_kind]
-    correct = ("open a policy exception and record the breach" if scope == "rule"
-               else "correct the expectation; nothing was breached")
-    other = ("correct the expectation; nothing was breached" if scope == "rule"
-             else "open a policy exception and record the breach")
-    opts = [correct, other, UNKNOWN] if seq % 3 == 0 else (
-        [other, correct, UNKNOWN] if seq % 3 == 1 else [UNKNOWN, other, correct])
+    RULE_ACT = "open a policy exception and record the breach"
+    FCAST_ACT = "correct the expectation; nothing was breached"
+    NEUTRAL_ACT = "add it to the review agenda as a missed target"
+    correct = RULE_ACT if scope == "rule" else FCAST_ACT
+    other = FCAST_ACT if scope == "rule" else RULE_ACT
+    # Four options: three actions all plausible on the bare arm, plus not-determined. A reader that
+    # cannot tell and is forced to choose now floors near 0.33 rather than 0.50, lifting the
+    # achievable gap ceiling from ~0.50 (exactly min_gap) to ~0.67.
+    rest = [other, NEUTRAL_ACT, UNKNOWN]
+    pos = seq % 4
+    opts = rest[:pos] + [correct] + rest[pos:]
     d = {
         "id": ("s-cal-%03d" if calibration else "s-%03d") % seq,
         "ainglish": compose(f, who_label, scope, order, "ainglish"),
@@ -156,7 +161,7 @@ def audit(items):
         rows = [i for i in real if i["scope"] == stratum]
         pos = collections.Counter(i["options"].index(i["answer"]) for i in rows)
         print(f"  answer position [{stratum:8}] {dict(sorted(pos.items()))}")
-        assert set(pos.values()) == {len(rows) // 3}, f"position not uniform: {pos}"
+        assert set(pos.values()) == {len(rows) // 4}, f"position not uniform: {pos}"
     shared = collections.defaultdict(set)
     for i in real:
         shared[i["english"]].add(i["answer"])
@@ -164,7 +169,7 @@ def audit(items):
     assert both, "no english string carries two different correct answers"
     print(f"  ambiguous english strings carrying BOTH answers: {len(both)}")
     for i in items:
-        assert len(set(i["options"])) == 3 and i["answer"] in i["options"]
+        assert len(set(i["options"])) == 4 and i["answer"] in i["options"]
         assert UNKNOWN in i["options"]
         assert "should-as-" not in i["english"], f"{i['id']}: bare arm leaked the marker"
         assert "should-as-" not in i["careful"], f"{i['id']}: careful arm leaked the marker"
