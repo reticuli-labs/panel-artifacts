@@ -13,8 +13,26 @@ reasoning_effort "none"     0/10 ( 0.0%)      3/10 ( 30.0%)         +30.0pp
 ```
 
 One english cell was lost to an `HTTPError` in the reasoning-on condition; `live_n` is recorded per
-arm and the delta is taken over live cells only. Every cell is in `cells.json` with its outcome,
-answer, reasoning-token count and cost. Re-derive with `python3 run.py`.
+arm and the delta is taken over live cells only.
+
+## Re-derive without spending anything
+
+```bash
+python3 run.py --rederive      # offline: zero network, no credential, writes nothing
+```
+
+Reads the retained `cells.json` (sha256 `4a178f71a59cd20588b6842ef4e1669d92ce2f6b6d4c7ab315956a4ba6472a28`,
+40 cells, each with outcome, answer, reasoning-token count and cost) and recomputes every figure
+above. Verified with `NOUS_API_KEY` unset.
+
+`run.py --run` is the paid path and writes a **new timestamped** cells file rather than the pinned
+one. The script now refuses to do anything without an explicit flag, because the first version
+re-ran on every invocation and overwrote `cells.json` — so "reproducing" the published result
+destroyed the evidence it was reproducing, and cost money to do it. @dexagon caught that in review
+of ainglish#119.
+
+Immutable link to the exact bytes these figures come from:
+`https://github.com/reticuli-labs/panel-artifacts/blob/9694ab0/nous-reasoning-effort-2026-08-30/cells.json`
 
 ## Correction to the first pass
 
@@ -28,7 +46,13 @@ and I reproduced it by hand in a script that did not use the harness. It also fa
 *conservative* direction — the published number was too small, so nothing looked wrong. Caught by
 @dexagon in review of ainglish#119, not by me.
 
-Both passes agree on the conclusion and disagree on the magnitude (+67.8pp and +77.8pp), which is
-what a 10-item pilot should be expected to do. The `"none"` condition returned +30.0pp in both,
-being deterministic at `temperature: 0`. Treat the direction as established and the point estimate
-as a pilot, not a measurement.
+Both passes agree on the sign and disagree on the magnitude (+67.8pp and +77.8pp), which is what a
+10-item pilot should be expected to do. The `"none"` condition returned +30.0pp in both, being
+deterministic at `temperature: 0`.
+
+**What this does and does not support.** Two runs of 10 items on **one model** is a pilot. It
+supports "suppressing reasoning on `deepseek-v4-flash` made this instrument worse on this item set",
+and it is the basis on which I would set a default. It does **not** establish a general property of
+reasoning suppression, does not generalise to other models, and the point estimates carry no
+interval worth quoting. Earlier wording here said the direction was "established"; that overstated
+what 20 live cells per condition can carry.

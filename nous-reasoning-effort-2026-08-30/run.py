@@ -6,9 +6,17 @@ transport fault had killed one ainglish cell — a censored denominator, which i
 the panel harness's yield guard exists to prevent. Live n is now recorded per arm and every cell is
 written out, so the arithmetic is re-derivable rather than asserted.
 """
-import json, os, urllib.request, random, collections, concurrent.futures as cf, time
+import hashlib, json, os, sys, urllib.request, random, collections, concurrent.futures as cf, time
 
-KEY = os.environ["NOUS_API_KEY"]
+REDERIVE = "--rederive" in sys.argv[1:]
+if not REDERIVE and "--run" not in sys.argv[1:]:
+    sys.exit("usage: run.py --rederive   (offline, zero network, reads the retained cells.json)\n"
+             "       run.py --run        (SPENDS paid inference and writes a NEW cells file)\n\n"
+             "Defaulting to neither on purpose: the first version of this script re-ran on every\n"
+             "invocation and overwrote cells.json, so 'reproducing' the published result destroyed\n"
+             "the evidence it was reproducing and cost money to do it.")
+
+KEY = os.environ["NOUS_API_KEY"] if not REDERIVE else None
 MODEL = "deepseek/deepseek-v4-flash"
 ITEMS = json.load(open("../none-of-not-all-of-comprehension-2026-08-30/items.json"))
 random.Random(11).shuffle(ITEMS)
@@ -57,11 +65,20 @@ def call(job):
     return rec
 
 
-jobs = [(i, arm, eff) for eff in (None, "none") for i in SAMPLE for arm in ("english", "ainglish")]
-t0 = time.time()
-with cf.ThreadPoolExecutor(max_workers=10) as ex:
-    records = list(ex.map(call, jobs))
-print("%d planned cells in %.0fs\n" % (len(records), time.time() - t0))
+if REDERIVE:
+    # Offline: recompute every published figure from the retained immutable cells. No key, no
+    # network, no writes. This is what "re-derive" has to mean for a paid experiment -- otherwise
+    # the only way to check a number is to buy it again, and checking it destroys it.
+    blob = open("cells.json", "rb").read()
+    print("cells.json sha256: %s" % hashlib.sha256(blob).hexdigest())
+    records = json.load(open("cells.json"))["cells"]
+    print("%d retained cells, zero network calls, nothing written\n" % len(records))
+else:
+    jobs = [(i, arm, eff) for eff in (None, "none") for i in SAMPLE for arm in ("english", "ainglish")]
+    t0 = time.time()
+    with cf.ThreadPoolExecutor(max_workers=10) as ex:
+        records = list(ex.map(call, jobs))
+    print("%d planned cells in %.0fs\n" % (len(records), time.time() - t0))
 
 summary = {}
 for effort in (None, "none"):
@@ -90,8 +107,10 @@ for effort in (None, "none"):
                                    for kk, vv in v.items()} for k, v in arm_stats.items()},
                       "delta_pp": delta}
 
+if REDERIVE:
+    sys.exit(0)          # never write over the retained artifact
 json.dump({"model": MODEL, "items_source": "none-of-not-all-of-comprehension-2026-08-30/items.json",
            "items_sha256": "bce44c496978e6a229e45824b6fa2f7828b1380873b6944c0102f0f5d447813b",
            "sample_seed": 11, "sample_n": len(SAMPLE), "summary": summary, "cells": records},
-          open("cells.json", "w"), indent=1, sort_keys=True)
+          open("cells-%s.json" % time.strftime("%Y%m%dT%H%M%SZ", time.gmtime()), "w"), indent=1, sort_keys=True)
 print("per-cell records written to cells.json")
