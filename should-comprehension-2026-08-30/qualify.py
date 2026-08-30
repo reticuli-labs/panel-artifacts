@@ -91,5 +91,5 @@ print("qualified:", qualified or "(none)")
 print("excluded :", excluded or "(none)")
 print("cost     : $%.4f" % sum(s["cost"] for s in summary.values()))
 json.dump({"min_gap": MIN_GAP, "max_tokens": MAX_TOKENS, "calibration_items": len(items), "summary": summary,
-           "cells": records}, open("qualification-attempt2-maxtok%d.json" % MAX_TOKENS, "w"), indent=1, sort_keys=True)
-print("\nretained: qualification-attempt2-maxtok%d.json" % MAX_TOKENS)
+           "cells": records}, open("qualification-v2-maxtok%d.json" % MAX_TOKENS, "w"), indent=1, sort_keys=True)
+print("\nretained: qualification-v2-maxtok%d.json" % MAX_TOKENS)

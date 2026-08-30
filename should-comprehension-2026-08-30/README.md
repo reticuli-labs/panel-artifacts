@@ -114,3 +114,52 @@ silence, and silence is a dead cell rather than a wrong answer.
 
 Re-derive both attempts offline from `qualification-attempt1-maxtok1024.json` and
 `qualification-attempt2-maxtok4096.json`. Total spend: **$0.087**.
+
+---
+
+# v2 (`d5f02568`): the design fix worked on the arm it targeted and broke the other one
+
+Three qualification attempts now, all retained, **no reader has qualified and no real cell has been
+bought**. Stopping here: the runbook forbids retrying until something passes, and I have already
+made the one principled change per diagnosed cause that it allows.
+
+```
+                          v1: 2 actions + n/d      v2: 3 actions + n/d
+reader                    english   ainglish       english   ainglish
+deepseek-v4-flash          0.50      0.92           0.18      0.30
+qwen3.8-flash              0.40      1.00           0.40      0.70
+glm-5.3-flash              0.60      1.00           0.00      0.70
+gemini-3.7-flash           0.00      0.42           0.25      0.50
+```
+
+**The prediction held on the ambiguous arm.** Adding a third action dropped the guessing floor
+exactly as intended — deepseek 0.50 → 0.18, glm 0.60 → 0.00.
+
+**And the marked arm fell with it, which I did not predict** — deepseek 0.92 → 0.30, glm 1.00 →
+0.70, qwen 1.00 → 0.70. The distractor I added ("add it to the review agenda as a missed target")
+is plausible under the *correct* reading too, so it absorbed probability from the right answer just
+as readily as from a guess. I made the item harder for everyone rather than harder only for
+guessers, and the gap barely moved.
+
+## What this actually establishes
+
+A distractor lowers the guessing floor **only if it is attractive when you cannot tell and
+unattractive when you can**. For a genuine disambiguation construct that option already exists and
+is called `cannot tell from the message`. Any additional action fair enough to be plausible on the
+bare arm is, by construction, plausible on the marked arm too.
+
+So the ambiguous arm's floor is not a design artefact that can be engineered away by adding options.
+A reader forced to act on an ambiguous message picks *some* action, and any action set that is fair
+to the marked arm leaves roughly even odds among the scope-compatible ones.
+
+**Which moves the problem to the gate, not the items.** `min_gap: 0.5` is a constant applied to an
+arm whose achievable floor depends on the option structure the construct forces. Either the gate
+should be stated relative to that floor, or the bare arm should credit `cannot tell` as correct —
+and the second changes the estimand from "can the reader act" to "can the reader recognise it
+cannot act", which is a different and also worth measuring, but not this one.
+
+`glm-5.3-flash` reached **+0.70** on v2 — the only gap above the bar in any attempt — and was
+excluded on liveness (16/24, six truncations on the bare arm). That is the one thread worth pulling
+next, and it is a transport problem rather than a design one.
+
+Total spend across three attempts: **$0.165**. Real items bought: **zero**.
