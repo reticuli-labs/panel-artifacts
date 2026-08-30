@@ -55,3 +55,62 @@ is a set a reader can partly game without reading.
 calibration items and could not pass the register's gate at all; @rosetta found that before spending
 a cell. The audit now asserts calibration exists, is balanced, and shares no answer-bearing string
 with a real item.
+
+---
+
+# Reader qualification: ALL FOUR CANDIDATES EXCLUDED (2026-08-30)
+
+No panel was run on the real items. Two attempts, both retained, no reader qualified.
+
+```
+attempt 1 (max_tokens 1024)          english  ainglish   gap    live
+  deepseek/deepseek-v4-flash          0.45     0.83     +0.38   23/24
+  qwen/qwen3.8-flash                  1.00     1.00     +0.00   10/24
+  z-ai/glm-5.3-flash                  0.50     1.00     +0.50   13/24
+  google/gemini-3.7-flash             0.00     0.25     +0.25   24/24
+
+attempt 2 (max_tokens 4096)          english  ainglish   gap    live
+  deepseek/deepseek-v4-flash          0.50     0.92     +0.42   24/24
+  qwen/qwen3.8-flash                  0.40     1.00     +0.60   15/24
+  z-ai/glm-5.3-flash                  0.60     1.00     +0.40   17/24
+  google/gemini-3.7-flash             0.00     0.42     +0.42   24/24
+```
+
+Exactly one configuration change was made, for a diagnosed cause, and both attempts are retained.
+The runbook forbids retrying configurations until one passes, and none did.
+
+## Cause 1 — the empties are truncations, not refusals
+
+`finish_reason: length` on 9 of 10 empty cells, with up to **4,634 reasoning tokens** spent before
+the budget ran out. Raising 1024 → 4096 improved liveness everywhere (deepseek 23→24, qwen 10→15,
+glm 13→17) and still did not clear it. These readers think expensively and some need far more
+headroom than a classifier ever would.
+
+## Cause 2 — the item design fights the gate, and this is the useful finding
+
+What the readers actually chose on the **ambiguous** english arm:
+
+```
+deepseek   6 lucky / 4 wrong / 2 not-determined
+glm        6 lucky / 4 wrong
+qwen       2 lucky / 3 wrong
+gemini    12 not-determined
+```
+
+Three of four **coin-flip between the two action options**, scoring ~0.50 on an arm that carries no
+information. With two actions plus a not-determined option, a forced choice floors at about 0.50,
+not at 0 — so the achievable gap is roughly `1.00 − 0.50 = 0.50`, which **is** `min_gap`. A reader
+behaving correctly lands exactly on the threshold and fails it.
+
+And note gemini, the one reader that answers the ambiguous arm **honestly** — 12/12 not-determined,
+scoring 0.00 — fails for the opposite reason: only 0.42 on the marked arm, so it does not read the
+construct at all. The two failure modes are not on a spectrum; they are different readers.
+
+**The design fix is more action options, not a lower bar.** With four distractor actions plus
+not-determined, a coin-flipper floors near 0.25 and the gap ceiling rises to ~0.75, leaving room for
+the gate to discriminate. This also explains @rosetta's `next-you` refusal from the other direction:
+her four options carried **no** not-determined choice, so a careful reader's only honest move was
+silence, and silence is a dead cell rather than a wrong answer.
+
+Re-derive both attempts offline from `qualification-attempt1-maxtok1024.json` and
+`qualification-attempt2-maxtok4096.json`. Total spend: **$0.087**.
