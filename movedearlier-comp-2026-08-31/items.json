@@ -1,0 +1,940 @@
+{
+ "items": [
+  {
+   "ainglish": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the architecture review is moved-earlier.",
+   "answer": "before it",
+   "english": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the architecture review is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-000",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 15:00 slot, when is the architecture review now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the architecture review is moved-later.",
+   "answer": "after it",
+   "english": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the architecture review is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-001",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 15:00 slot, when is the architecture review now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the deploy window is moved-earlier.",
+   "answer": "before it",
+   "english": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the deploy window is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-002",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 21:00 slot, when is the deploy window now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the deploy window is moved-later.",
+   "answer": "after it",
+   "english": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the deploy window is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-003",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 21:00 slot, when is the deploy window now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 10:30. A new notice goes out: the standup is moved-earlier.",
+   "answer": "before it",
+   "english": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 10:30. A new notice goes out: the standup is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-004",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 10:30 slot, when is the standup now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 10:30. A new notice goes out: the standup is moved-later.",
+   "answer": "after it",
+   "english": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 10:30. A new notice goes out: the standup is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-005",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 10:30 slot, when is the standup now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 10:00. A new notice goes out: the vendor call is moved-earlier.",
+   "answer": "before it",
+   "english": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 10:00. A new notice goes out: the vendor call is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-006",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 10:00 slot, when is the vendor call now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 10:00. A new notice goes out: the vendor call is moved-later.",
+   "answer": "after it",
+   "english": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 10:00. A new notice goes out: the vendor call is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-007",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 10:00 slot, when is the vendor call now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 03:00. A new notice goes out: the backup job is moved-earlier.",
+   "answer": "before it",
+   "english": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 03:00. A new notice goes out: the backup job is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-008",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 03:00 slot, when is the backup job now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 03:00. A new notice goes out: the backup job is moved-later.",
+   "answer": "after it",
+   "english": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 03:00. A new notice goes out: the backup job is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-009",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 03:00 slot, when is the backup job now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the board briefing is moved-earlier.",
+   "answer": "before it",
+   "english": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the board briefing is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-010",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 15:00 slot, when is the board briefing now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the board briefing is moved-later.",
+   "answer": "after it",
+   "english": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the board briefing is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-011",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 15:00 slot, when is the board briefing now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A new notice goes out: the penetration test is moved-earlier.",
+   "answer": "before it",
+   "english": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A new notice goes out: the penetration test is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-012",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 14:00 slot, when is the penetration test now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A new notice goes out: the penetration test is moved-later.",
+   "answer": "after it",
+   "english": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A new notice goes out: the penetration test is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-013",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 14:00 slot, when is the penetration test now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the release rehearsal is moved-earlier.",
+   "answer": "before it",
+   "english": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the release rehearsal is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-014",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 17:00 slot, when is the release rehearsal now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the release rehearsal is moved-later.",
+   "answer": "after it",
+   "english": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the release rehearsal is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-015",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 17:00 slot, when is the release rehearsal now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 11:00. A new notice goes out: the audit walkthrough is moved-earlier.",
+   "answer": "before it",
+   "english": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 11:00. A new notice goes out: the audit walkthrough is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-016",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 11:00 slot, when is the audit walkthrough now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 11:00. A new notice goes out: the audit walkthrough is moved-later.",
+   "answer": "after it",
+   "english": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 11:00. A new notice goes out: the audit walkthrough is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-017",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 11:00 slot, when is the audit walkthrough now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 19:00. A new notice goes out: the data migration is moved-earlier.",
+   "answer": "before it",
+   "english": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 19:00. A new notice goes out: the data migration is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-018",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 19:00 slot, when is the data migration now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 19:00. A new notice goes out: the data migration is moved-later.",
+   "answer": "after it",
+   "english": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 19:00. A new notice goes out: the data migration is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-019",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 19:00 slot, when is the data migration now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 16:30. A new notice goes out: the incident drill is moved-earlier.",
+   "answer": "before it",
+   "english": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 16:30. A new notice goes out: the incident drill is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-020",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 16:30 slot, when is the incident drill now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 16:30. A new notice goes out: the incident drill is moved-later.",
+   "answer": "after it",
+   "english": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 16:30. A new notice goes out: the incident drill is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-021",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 16:30 slot, when is the incident drill now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A new notice goes out: the quarterly planning is moved-earlier.",
+   "answer": "before it",
+   "english": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A new notice goes out: the quarterly planning is moved to an earlier time than its current schedule.",
+   "id": "mv-me-cur-022",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 11:30 slot, when is the quarterly planning now due to happen?",
+   "settlement_stratum": "me:cur"
+  },
+  {
+   "ainglish": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A new notice goes out: the quarterly planning is moved-later.",
+   "answer": "after it",
+   "english": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A new notice goes out: the quarterly planning is moved to a later time than its current schedule.",
+   "id": "mv-ml-cur-023",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 11:30 slot, when is the quarterly planning now due to happen?",
+   "settlement_stratum": "ml:cur"
+  },
+  {
+   "ainglish": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 13:00. A new notice goes out: the architecture review is moved-earlier.",
+   "answer": "before it",
+   "english": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 13:00. A new notice goes out: the architecture review is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-inf-024",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 14:00 slot, when is the architecture review now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the deploy window is moved-earlier.",
+   "answer": "before it",
+   "english": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the deploy window is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-inf-025",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 22:00 slot, when is the deploy window now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 08:30. A new notice goes out: the standup is moved-earlier.",
+   "answer": "before it",
+   "english": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 08:30. A new notice goes out: the standup is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-inf-026",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 09:30 slot, when is the standup now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 10:00. A new notice goes out: the vendor call is moved-earlier.",
+   "answer": "before it",
+   "english": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 10:00. A new notice goes out: the vendor call is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-inf-027",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 11:00 slot, when is the vendor call now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 01:00. A new notice goes out: the backup job is moved-earlier.",
+   "answer": "before it",
+   "english": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 01:00. A new notice goes out: the backup job is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-inf-028",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 02:00 slot, when is the backup job now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the board briefing is moved-earlier.",
+   "answer": "before it",
+   "english": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the board briefing is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-inf-029",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 16:00 slot, when is the board briefing now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A new notice goes out: the penetration test is moved-later.",
+   "answer": "after it",
+   "english": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A new notice goes out: the penetration test is moved to a later time than its current schedule.",
+   "id": "mv-orig-inf-030",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 13:00 slot, when is the penetration test now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 19:00. A new notice goes out: the release rehearsal is moved-later.",
+   "answer": "after it",
+   "english": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 19:00. A new notice goes out: the release rehearsal is moved to a later time than its current schedule.",
+   "id": "mv-orig-inf-031",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 18:00 slot, when is the release rehearsal now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 11:00. A new notice goes out: the audit walkthrough is moved-later.",
+   "answer": "after it",
+   "english": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 11:00. A new notice goes out: the audit walkthrough is moved to a later time than its current schedule.",
+   "id": "mv-orig-inf-032",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 10:00 slot, when is the audit walkthrough now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the data migration is moved-later.",
+   "answer": "after it",
+   "english": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the data migration is moved to a later time than its current schedule.",
+   "id": "mv-orig-inf-033",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 20:00 slot, when is the data migration now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 16:30. A new notice goes out: the incident drill is moved-later.",
+   "answer": "after it",
+   "english": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 16:30. A new notice goes out: the incident drill is moved to a later time than its current schedule.",
+   "id": "mv-orig-inf-034",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 15:30 slot, when is the incident drill now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 13:30. A new notice goes out: the quarterly planning is moved-later.",
+   "answer": "after it",
+   "english": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 13:30. A new notice goes out: the quarterly planning is moved to a later time than its current schedule.",
+   "id": "mv-orig-inf-035",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 12:30 slot, when is the quarterly planning now due to happen?",
+   "settlement_stratum": "orig:inf"
+  },
+  {
+   "ainglish": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the architecture review is moved-earlier.",
+   "answer": "not fixed by what was said",
+   "english": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the architecture review is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-undet-036",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 14:00 slot, when is the architecture review now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 23:00. A new notice goes out: the deploy window is moved-earlier.",
+   "answer": "not fixed by what was said",
+   "english": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 23:00. A new notice goes out: the deploy window is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-undet-037",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 22:00 slot, when is the deploy window now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 10:30. A new notice goes out: the standup is moved-earlier.",
+   "answer": "not fixed by what was said",
+   "english": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 10:30. A new notice goes out: the standup is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-undet-038",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 09:30 slot, when is the standup now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 12:00. A new notice goes out: the vendor call is moved-earlier.",
+   "answer": "not fixed by what was said",
+   "english": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 12:00. A new notice goes out: the vendor call is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-undet-039",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 11:00 slot, when is the vendor call now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 03:00. A new notice goes out: the backup job is moved-earlier.",
+   "answer": "not fixed by what was said",
+   "english": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 03:00. A new notice goes out: the backup job is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-undet-040",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 02:00 slot, when is the backup job now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the board briefing is moved-earlier.",
+   "answer": "not fixed by what was said",
+   "english": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the board briefing is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-undet-041",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 16:00 slot, when is the board briefing now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 12:00. A new notice goes out: the penetration test is moved-later.",
+   "answer": "not fixed by what was said",
+   "english": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 12:00. A new notice goes out: the penetration test is moved to a later time than its current schedule.",
+   "id": "mv-orig-undet-042",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 13:00 slot, when is the penetration test now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the release rehearsal is moved-later.",
+   "answer": "not fixed by what was said",
+   "english": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the release rehearsal is moved to a later time than its current schedule.",
+   "id": "mv-orig-undet-043",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 18:00 slot, when is the release rehearsal now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 09:00. A new notice goes out: the audit walkthrough is moved-later.",
+   "answer": "not fixed by what was said",
+   "english": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 09:00. A new notice goes out: the audit walkthrough is moved to a later time than its current schedule.",
+   "id": "mv-orig-undet-044",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 10:00 slot, when is the audit walkthrough now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 19:00. A new notice goes out: the data migration is moved-later.",
+   "answer": "not fixed by what was said",
+   "english": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 19:00. A new notice goes out: the data migration is moved to a later time than its current schedule.",
+   "id": "mv-orig-undet-045",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 20:00 slot, when is the data migration now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 14:30. A new notice goes out: the incident drill is moved-later.",
+   "answer": "not fixed by what was said",
+   "english": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 14:30. A new notice goes out: the incident drill is moved to a later time than its current schedule.",
+   "id": "mv-orig-undet-046",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 15:30 slot, when is the incident drill now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A new notice goes out: the quarterly planning is moved-later.",
+   "answer": "not fixed by what was said",
+   "english": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A new notice goes out: the quarterly planning is moved to a later time than its current schedule.",
+   "id": "mv-orig-undet-047",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 12:30 slot, when is the quarterly planning now due to happen?",
+   "settlement_stratum": "orig:undet"
+  },
+  {
+   "ainglish": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A follow-up note pins the new time: 12:30. A new notice goes out: the architecture review is moved-earlier.",
+   "answer": "before it",
+   "english": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A follow-up note pins the new time: 12:30. A new notice goes out: the architecture review is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-det-048",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 14:00 slot, when is the architecture review now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A follow-up note pins the new time: 23:30. A new notice goes out: the deploy window is moved-later.",
+   "answer": "after it",
+   "english": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A follow-up note pins the new time: 23:30. A new notice goes out: the deploy window is moved to a later time than its current schedule.",
+   "id": "mv-orig-det-049",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 22:00 slot, when is the deploy window now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 10:30. A follow-up note pins the new time: 08:00. A new notice goes out: the standup is moved-earlier.",
+   "answer": "before it",
+   "english": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 10:30. A follow-up note pins the new time: 08:00. A new notice goes out: the standup is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-det-050",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 09:30 slot, when is the standup now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 10:00. A follow-up note pins the new time: 12:45. A new notice goes out: the vendor call is moved-later.",
+   "answer": "after it",
+   "english": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 10:00. A follow-up note pins the new time: 12:45. A new notice goes out: the vendor call is moved to a later time than its current schedule.",
+   "id": "mv-orig-det-051",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 11:00 slot, when is the vendor call now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 03:00. A follow-up note pins the new time: 00:30. A new notice goes out: the backup job is moved-earlier.",
+   "answer": "before it",
+   "english": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 03:00. A follow-up note pins the new time: 00:30. A new notice goes out: the backup job is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-det-052",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 02:00 slot, when is the backup job now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A follow-up note pins the new time: 17:45. A new notice goes out: the board briefing is moved-later.",
+   "answer": "after it",
+   "english": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A follow-up note pins the new time: 17:45. A new notice goes out: the board briefing is moved to a later time than its current schedule.",
+   "id": "mv-orig-det-053",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 16:00 slot, when is the board briefing now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A follow-up note pins the new time: 11:30. A new notice goes out: the penetration test is moved-earlier.",
+   "answer": "before it",
+   "english": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A follow-up note pins the new time: 11:30. A new notice goes out: the penetration test is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-det-054",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 13:00 slot, when is the penetration test now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A follow-up note pins the new time: 19:15. A new notice goes out: the release rehearsal is moved-later.",
+   "answer": "after it",
+   "english": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A follow-up note pins the new time: 19:15. A new notice goes out: the release rehearsal is moved to a later time than its current schedule.",
+   "id": "mv-orig-det-055",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 18:00 slot, when is the release rehearsal now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 11:00. A follow-up note pins the new time: 08:45. A new notice goes out: the audit walkthrough is moved-earlier.",
+   "answer": "before it",
+   "english": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 11:00. A follow-up note pins the new time: 08:45. A new notice goes out: the audit walkthrough is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-det-056",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 10:00 slot, when is the audit walkthrough now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 19:00. A follow-up note pins the new time: 21:30. A new notice goes out: the data migration is moved-later.",
+   "answer": "after it",
+   "english": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 19:00. A follow-up note pins the new time: 21:30. A new notice goes out: the data migration is moved to a later time than its current schedule.",
+   "id": "mv-orig-det-057",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the original 20:00 slot, when is the data migration now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 16:30. A follow-up note pins the new time: 14:00. A new notice goes out: the incident drill is moved-earlier.",
+   "answer": "before it",
+   "english": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 16:30. A follow-up note pins the new time: 14:00. A new notice goes out: the incident drill is moved to an earlier time than its current schedule.",
+   "id": "mv-orig-det-058",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the original 15:30 slot, when is the incident drill now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A follow-up note pins the new time: 14:00. A new notice goes out: the quarterly planning is moved-later.",
+   "answer": "after it",
+   "english": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A follow-up note pins the new time: 14:00. A new notice goes out: the quarterly planning is moved to a later time than its current schedule.",
+   "id": "mv-orig-det-059",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the original 12:30 slot, when is the quarterly planning now due to happen?",
+   "settlement_stratum": "orig:det"
+  },
+  {
+   "ainglish": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the architecture review is moved-earlier.",
+   "answer": "before it",
+   "calibration": true,
+   "english": "The architecture review was originally set for 14:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the architecture review is moved forward.",
+   "id": "c00",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 15:00 slot, when is the architecture review now due to happen?"
+  },
+  {
+   "ainglish": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the deploy window is moved-later.",
+   "answer": "after it",
+   "calibration": true,
+   "english": "The deploy window was originally set for 22:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the deploy window is moved forward.",
+   "id": "c01",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 21:00 slot, when is the deploy window now due to happen?"
+  },
+  {
+   "ainglish": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 08:30. A new notice goes out: the standup is moved-earlier.",
+   "answer": "before it",
+   "calibration": true,
+   "english": "The standup was originally set for 09:30; it was rescheduled once and currently sits at 08:30. A new notice goes out: the standup is moved forward.",
+   "id": "c02",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 08:30 slot, when is the standup now due to happen?"
+  },
+  {
+   "ainglish": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 12:00. A new notice goes out: the vendor call is moved-later.",
+   "answer": "after it",
+   "calibration": true,
+   "english": "The vendor call was originally set for 11:00; it was rescheduled once and currently sits at 12:00. A new notice goes out: the vendor call is moved forward.",
+   "id": "c03",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 12:00 slot, when is the vendor call now due to happen?"
+  },
+  {
+   "ainglish": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 01:00. A new notice goes out: the backup job is moved-earlier.",
+   "answer": "before it",
+   "calibration": true,
+   "english": "The backup job was originally set for 02:00; it was rescheduled once and currently sits at 01:00. A new notice goes out: the backup job is moved forward.",
+   "id": "c04",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 01:00 slot, when is the backup job now due to happen?"
+  },
+  {
+   "ainglish": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the board briefing is moved-later.",
+   "answer": "after it",
+   "calibration": true,
+   "english": "The board briefing was originally set for 16:00; it was rescheduled once and currently sits at 15:00. A new notice goes out: the board briefing is moved forward.",
+   "id": "c05",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 15:00 slot, when is the board briefing now due to happen?"
+  },
+  {
+   "ainglish": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A new notice goes out: the penetration test is moved-earlier.",
+   "answer": "before it",
+   "calibration": true,
+   "english": "The penetration test was originally set for 13:00; it was rescheduled once and currently sits at 14:00. A new notice goes out: the penetration test is moved forward.",
+   "id": "c06",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 14:00 slot, when is the penetration test now due to happen?"
+  },
+  {
+   "ainglish": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the release rehearsal is moved-later.",
+   "answer": "after it",
+   "calibration": true,
+   "english": "The release rehearsal was originally set for 18:00; it was rescheduled once and currently sits at 17:00. A new notice goes out: the release rehearsal is moved forward.",
+   "id": "c07",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 17:00 slot, when is the release rehearsal now due to happen?"
+  },
+  {
+   "ainglish": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 09:00. A new notice goes out: the audit walkthrough is moved-earlier.",
+   "answer": "before it",
+   "calibration": true,
+   "english": "The audit walkthrough was originally set for 10:00; it was rescheduled once and currently sits at 09:00. A new notice goes out: the audit walkthrough is moved forward.",
+   "id": "c08",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 09:00 slot, when is the audit walkthrough now due to happen?"
+  },
+  {
+   "ainglish": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the data migration is moved-later.",
+   "answer": "after it",
+   "calibration": true,
+   "english": "The data migration was originally set for 20:00; it was rescheduled once and currently sits at 21:00. A new notice goes out: the data migration is moved forward.",
+   "id": "c09",
+   "options": [
+    "before it",
+    "after it",
+    "not fixed by what was said"
+   ],
+   "question": "Relative to the current 21:00 slot, when is the data migration now due to happen?"
+  },
+  {
+   "ainglish": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 14:30. A new notice goes out: the incident drill is moved-earlier.",
+   "answer": "before it",
+   "calibration": true,
+   "english": "The incident drill was originally set for 15:30; it was rescheduled once and currently sits at 14:30. A new notice goes out: the incident drill is moved forward.",
+   "id": "c10",
+   "options": [
+    "after it",
+    "not fixed by what was said",
+    "before it"
+   ],
+   "question": "Relative to the current 14:30 slot, when is the incident drill now due to happen?"
+  },
+  {
+   "ainglish": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A new notice goes out: the quarterly planning is moved-later.",
+   "answer": "after it",
+   "calibration": true,
+   "english": "The quarterly planning was originally set for 12:30; it was rescheduled once and currently sits at 11:30. A new notice goes out: the quarterly planning is moved forward.",
+   "id": "c11",
+   "options": [
+    "not fixed by what was said",
+    "before it",
+    "after it"
+   ],
+   "question": "Relative to the current 11:30 slot, when is the quarterly planning now due to happen?"
+  }
+ ]
+}

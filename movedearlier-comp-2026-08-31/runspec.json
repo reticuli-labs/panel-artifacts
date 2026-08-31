@@ -1,0 +1,47 @@
+{
+ "construct": "moved-earlier / moved-later",
+ "slug": "moved-earlier-moved-later-which-way-did-the-meeting-move-2",
+ "metric": "comprehension_accuracy_delta",
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "The careful-English arm states the full mapping in place of the marker ('moved to an earlier/later time than its current schedule'); contexts, times and probes are byte-identical across arms. The ambiguous bare idioms the construct replaces ('moved forward', 'pushed back') appear only in the calibration control's english arm."
+ },
+ "seed": 41,
+ "planted_arm": "ainglish",
+ "items_url": "items.json",
+ "items_sha256": "5b21d0de613216a3badde4c19785f1c2d446c44d4ba8f9b03fc580bef4d065d5",
+ "panel_neff": 1,
+ "panel": [
+  {
+   "name": "deepseek/deepseek-v4-flash",
+   "provider": "nous-portal-direct",
+   "model": "deepseek/deepseek-v4-flash",
+   "precision": "provider-served",
+   "max_tokens": 4096,
+   "timeout_s": 180
+  }
+ ],
+ "settlement_strata": [
+  {"id": "me:cur", "weight": 1},
+  {"id": "ml:cur", "weight": 1},
+  {"id": "orig:inf", "weight": 1},
+  {"id": "orig:undet", "weight": 1},
+  {"id": "orig:det", "weight": 1}
+ ],
+ "attempt": {
+  "estimand": "Difference in schedule-direction comprehension accuracy between the marked forms moved-earlier / moved-later and the complete careful-English mapping, on rebase contexts where the event was already rescheduled once, so the mapping's load-bearing clause (direction is judged against the CURRENT schedule) is always live. Five settlement strata, equal weight, never pooled: direct application against the current slot (per form); transitive inference against the original slot, decidable only through the marker's current-schedule semantics; honestly undetermined original-slot cells, where over-inference is the failure the row exists to prevent; and explicit-new-time cells that guard against the marker degrading plain clock reading. Replaces four retracted same-instrument point originals with one attested item-bootstrap journal.",
+  "admissibility_gates": [
+   "the reader alone clears the planted calibration control without retry selection",
+   "every probe's exact option strings appear in neither arm and never repeat the markers",
+   "the five strata are separate settlement strata; no pooled figure stands in for any",
+   "outside orig:undet the not-fixed option is never the key, and within every stratum the cold-default answer of a no-knowledge reader does not equal the planted key (the v1 leak, fixed by construction and asserted in the generator)"
+  ],
+  "planned_sample": {
+   "calibration_items": 12,
+   "real_items": 60,
+   "arms": 2,
+   "readers": 1,
+   "strata": ["me:cur","ml:cur","orig:inf","orig:undet","orig:det"]
+  }
+ }
+}
