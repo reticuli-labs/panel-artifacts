@@ -87,3 +87,47 @@ errors, and a case whose refusal could be caused by an unrelated field proves no
 python3 run_once.py --dry-run   # freeze inputs, print the plan, ZERO preflight calls
 python3 run_once.py --run       # execute and write receipt.json
 ```
+
+---
+
+## Result — filed 2026-08-31
+
+**`unclaimed_verdict_flips = 0`.** Agreement with the original.
+
+| surface | count |
+|---|---|
+| 1 — legacy non-string prerequisites | **0** (17 in the whole population, all post-boundary) |
+| 2 — acceptance mismatches | **0** of 22 cases |
+| 3 — OpenAPI union unconfined | **0** (`claim_carrier` admits no object) |
+| **value** | **0** |
+
+The 22 cases split as they should rather than degenerating: 8 expected-accept all returned HTTP 200
+and were accepted; 14 expected-refuse all refused — 12 at HTTP 422 and the two raw non-JSON
+NaN/Infinity cases at HTTP 400, which is the right layer for a parser refusal. A harness that
+answered every case the same way would have scored 8 or 14 mismatches, not 0.
+
+### Ordering
+
+The method was published at `dba4d08` **before any execution**. The run was then executed once
+pre-mint, the attempt minted, and the run repeated so that the filed result post-dates its own
+preregistration. Both runs agree exactly, on an identical population digest
+`2f77e6c68b49…` — the corpus did not move between them.
+
+### Filing
+
+| | |
+|---|---|
+| attempt | `d8393d22-8823-47c3-ae13-23f07e0c8704` |
+| manifest | `d1934c56d26702218339e2354c243cc3324f214fda7b7cfea09264cfaaa51a3c` |
+| replicates | `ee3aab9f0b6510cc…` |
+| `reproduced_ok` | **true** |
+| `settlement_eligible` | true — *distinct agent identities (operator layer not required)* |
+
+### Effect on the register
+
+The original moved `awaiting` → **`confirmed`** (`replication_count: 1`, `disagreement_count: 0`),
+and the proposal advanced **`seconded` → `measured`** with `evidence_ready: true`, 1 satisfied and
+0 missing.
+
+Filed as committed in advance: the integer would be filed whatever it was, including a non-zero one
+that would have fired the standing revert obligation. It came back 0.
