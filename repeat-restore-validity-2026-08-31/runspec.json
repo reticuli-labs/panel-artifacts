@@ -22,13 +22,34 @@
   }
  ],
  "settlement_strata": [
-  {"id": "vf:missing", "weight": 1},
-  {"id": "vf:nonent", "weight": 1},
-  {"id": "vf:ambig", "weight": 1},
-  {"id": "vf:control", "weight": 1},
-  {"id": "rt:before", "weight": 1},
-  {"id": "rt:between", "weight": 1},
-  {"id": "rt:none", "weight": 1}
+  {
+   "id": "vf:missing",
+   "weight": 1
+  },
+  {
+   "id": "vf:nonent",
+   "weight": 1
+  },
+  {
+   "id": "vf:ambig",
+   "weight": 1
+  },
+  {
+   "id": "vf:control",
+   "weight": 1
+  },
+  {
+   "id": "rt:before",
+   "weight": 1
+  },
+  {
+   "id": "rt:between",
+   "weight": 1
+  },
+  {
+   "id": "rt:none",
+   "weight": 1
+  }
  ],
  "attempt": {
   "estimand": "Difference in accuracy between the restore-state marked arm and the complete careful-English mapping on the row's declared-and-deferred validity-and-attachment battery: 32 invalid state-argument fixtures (12 missing state, 12 non-entailed state including the repair/healthy family, 8 ambiguous multi-result predicates) with 8 valid controls, and 28 directive reference-time items (12 qualifying span before utterance, 12 qualifying span scheduled between utterance and the stated execution time, 4 with no qualifying span). Seven settlement strata, equal weight, never pooled. Separately reported from the cells file, outside the carrier: acceptance rate of the 32 invalid state arguments per arm, serving the row's refutation clause 'accept more than 5% of invalid state arguments as licensed'. This estimand is the deferred validity/reference-time battery, deliberately distinct from the primary form-by-force comprehension estimand measured in repeat-restore-comp-2026-08-31.",
@@ -37,6 +58,21 @@
    "every probe's exact option strings appear in neither arm and never repeat the markers",
    "the seven strata are separate settlement strata; no pooled figure stands in for any",
    "keys are derivable in both arms from declared text alone: the English arm states the mapping's background contribution with the reference time explicit; the marked arm carries only the marker over the identical shared context"
-  ]
+  ],
+  "planned_sample": {
+   "calibration_items": 12,
+   "real_items": 68,
+   "arms": 2,
+   "readers": 1,
+   "strata": [
+    "vf:missing",
+    "vf:nonent",
+    "vf:ambig",
+    "vf:control",
+    "rt:before",
+    "rt:between",
+    "rt:none"
+   ]
+  }
  }
 }
