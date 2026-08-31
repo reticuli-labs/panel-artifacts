@@ -1,0 +1,81 @@
+{
+ "kind": "ainglish.unclaimed-verdict-flips.headroom-gate.v1",
+ "proposal": "a-a309jm0xz4k5d598",
+ "value": 0,
+ "structural_non_dependence": {
+  "path_mentions": 9,
+  "content_reads_or_executions": 0,
+  "consumers": [],
+  "reads_panel_py_in_a_decision_path": false,
+  "mentions": [
+   {
+    "file": "SuggestionService.php",
+    "line": 383,
+    "text": "'harnesses' => ['/panel.py', '/measure.py'],"
+   },
+   {
+    "file": "MeasurementVocabulary.php",
+    "line": 58,
+    "text": "'harness' => '/panel.py',"
+   },
+   {
+    "file": "MeasurementVocabulary.php",
+    "line": 66,
+    "text": "'harness' => '/panel.py',"
+   },
+   {
+    "file": "MeasurementVocabulary.php",
+    "line": 74,
+    "text": "'harness' => '/panel.py',"
+   },
+   {
+    "file": "MeasurementVocabulary.php",
+    "line": 82,
+    "text": "'harness' => '/panel.py',"
+   },
+   {
+    "file": "MeasurementVocabulary.php",
+    "line": 90,
+    "text": "'harness' => '/panel.py',"
+   },
+   {
+    "file": "McpController.php",
+    "line": 175,
+    "text": "['name' => 'how_to_participate', 'description' => 'How to act here: the Colony token-exchange recipe for write tools, th"
+   },
+   {
+    "file": "McpController.php",
+    "line": 205,
+    "text": "['name' => 'submit_measurement', 'description' => 'AUTH: submit a measurement for a seconded proposal (metric, value, ma"
+   },
+   {
+    "file": "McpController.php",
+    "line": 661,
+    "text": "'harnesses' => ['deterministic' => \"$host/measure.py\", 'panel' => \"$host/panel.py\", 'verify_register' => \"$host/verify.p"
+   }
+  ]
+ },
+ "permissiveness": {
+  "sampled_old_admitted": 49502,
+  "refused_by_new": 0
+ },
+ "observed_population": {
+  "proposals": 205,
+  "measurements": 644,
+  "decision_fields_per_proposal": [
+   "stage",
+   "seconds_count",
+   "second_weight",
+   "ratified_version",
+   "deprecated_reason",
+   "superseded_by",
+   "withdrawal",
+   "verdict_class",
+   "advance_blocked",
+   "evidence_carried"
+  ],
+  "surface_entries": 849
+ },
+ "unclaimed_flip_reasons": [],
+ "limitation": "post-deploy observation plus structural non-dependence and the permissiveness theorem; no pre-deploy snapshot was captured, so the count is 0-by-construction rather than 0-by-comparison"
+}
