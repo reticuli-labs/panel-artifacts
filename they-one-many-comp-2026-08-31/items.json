@@ -1,0 +1,1824 @@
+{
+ "items": [
+  {
+   "ainglish": "After the review, the auditor spoke with the release committee. they-one approved the rollout.",
+   "answer": "yes, another must be sought",
+   "english": "After the review, the auditor spoke with the release committee. Of them, that one person approved the rollout.",
+   "id": "one-approval-sf-00",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the release committee conferred with the auditor before the deadline. they-one approved the rollout.",
+   "answer": "yes, another must be sought",
+   "english": "the release committee conferred with the auditor before the deadline. Of them, that one person approved the rollout.",
+   "id": "one-approval-pf-00",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the auditor conferred with the release committee before the deadline. they-one approved the rollout.",
+   "answer": "a single party",
+   "english": "the auditor conferred with the release committee before the deadline. Of them, that one person approved the rollout.",
+   "id": "one-contact-sf-00",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the rollout approval, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the release committee spoke with the auditor. they-one approved the rollout.",
+   "answer": "a single party",
+   "english": "After the review, the release committee spoke with the auditor. Of them, that one person approved the rollout.",
+   "id": "one-contact-pf-00",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the rollout approval, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the auditor spoke with the release committee. they-many approved the rollout.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the auditor spoke with the release committee. Of them, those two or more people approved the rollout.",
+   "id": "many-approval-sf-00",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the release committee spoke with the auditor. they-many approved the rollout.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the release committee spoke with the auditor. Of them, those two or more people approved the rollout.",
+   "id": "many-approval-pf-00",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the auditor spoke with the release committee. they-many approved the rollout.",
+   "answer": "multiple parties",
+   "english": "After the review, the auditor spoke with the release committee. Of them, those two or more people approved the rollout.",
+   "id": "many-contact-sf-00",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the rollout approval, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the release committee spoke with the auditor. they-many approved the rollout.",
+   "answer": "multiple parties",
+   "english": "After the review, the release committee spoke with the auditor. Of them, those two or more people approved the rollout.",
+   "id": "many-contact-pf-00",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the rollout approval, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the on-call engineer spoke with the platform team. they-one restarted the ingest cluster.",
+   "answer": "yes, another must be sought",
+   "english": "After the review, the on-call engineer spoke with the platform team. Of them, that one person restarted the ingest cluster.",
+   "id": "one-approval-sf-01",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the platform team conferred with the on-call engineer before the deadline. they-one restarted the ingest cluster.",
+   "answer": "yes, another must be sought",
+   "english": "the platform team conferred with the on-call engineer before the deadline. Of them, that one person restarted the ingest cluster.",
+   "id": "one-approval-pf-01",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the on-call engineer conferred with the platform team before the deadline. they-one restarted the ingest cluster.",
+   "answer": "a single party",
+   "english": "the on-call engineer conferred with the platform team before the deadline. Of them, that one person restarted the ingest cluster.",
+   "id": "one-contact-sf-01",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the restart, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the platform team spoke with the on-call engineer. they-one restarted the ingest cluster.",
+   "answer": "a single party",
+   "english": "After the review, the platform team spoke with the on-call engineer. Of them, that one person restarted the ingest cluster.",
+   "id": "one-contact-pf-01",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the restart. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the on-call engineer conferred with the platform team before the deadline. they-many restarted the ingest cluster.",
+   "answer": "no, that requirement is already met",
+   "english": "the on-call engineer conferred with the platform team before the deadline. Of them, those two or more people restarted the ingest cluster.",
+   "id": "many-approval-sf-01",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the platform team conferred with the on-call engineer before the deadline. they-many restarted the ingest cluster.",
+   "answer": "no, that requirement is already met",
+   "english": "the platform team conferred with the on-call engineer before the deadline. Of them, those two or more people restarted the ingest cluster.",
+   "id": "many-approval-pf-01",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the on-call engineer met the platform team once the checks finished. they-many restarted the ingest cluster.",
+   "answer": "multiple parties",
+   "english": "the on-call engineer met the platform team once the checks finished. Of them, those two or more people restarted the ingest cluster.",
+   "id": "many-contact-sf-01",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the restart, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the platform team conferred with the on-call engineer before the deadline. they-many restarted the ingest cluster.",
+   "answer": "multiple parties",
+   "english": "the platform team conferred with the on-call engineer before the deadline. Of them, those two or more people restarted the ingest cluster.",
+   "id": "many-contact-pf-01",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the restart, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the vendor's account manager spoke with the procurement reviewers. they-one signed the renewal.",
+   "answer": "yes, another must be sought",
+   "english": "After the review, the vendor's account manager spoke with the procurement reviewers. Of them, that one person signed the renewal.",
+   "id": "one-approval-sf-02",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the procurement reviewers conferred with the vendor's account manager before the deadline. they-one signed the renewal.",
+   "answer": "yes, another must be sought",
+   "english": "the procurement reviewers conferred with the vendor's account manager before the deadline. Of them, that one person signed the renewal.",
+   "id": "one-approval-pf-02",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the vendor's account manager spoke with the procurement reviewers. they-one signed the renewal.",
+   "answer": "a single party",
+   "english": "After the review, the vendor's account manager spoke with the procurement reviewers. Of them, that one person signed the renewal.",
+   "id": "one-contact-sf-02",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the renewal. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the procurement reviewers spoke with the vendor's account manager. they-one signed the renewal.",
+   "answer": "a single party",
+   "english": "After the review, the procurement reviewers spoke with the vendor's account manager. Of them, that one person signed the renewal.",
+   "id": "one-contact-pf-02",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the renewal, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the vendor's account manager met the procurement reviewers once the checks finished. they-many signed the renewal.",
+   "answer": "no, that requirement is already met",
+   "english": "the vendor's account manager met the procurement reviewers once the checks finished. Of them, those two or more people signed the renewal.",
+   "id": "many-approval-sf-02",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the procurement reviewers met the vendor's account manager once the checks finished. they-many signed the renewal.",
+   "answer": "no, that requirement is already met",
+   "english": "the procurement reviewers met the vendor's account manager once the checks finished. Of them, those two or more people signed the renewal.",
+   "id": "many-approval-pf-02",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the vendor's account manager spoke with the procurement reviewers. they-many signed the renewal.",
+   "answer": "multiple parties",
+   "english": "After the review, the vendor's account manager spoke with the procurement reviewers. Of them, those two or more people signed the renewal.",
+   "id": "many-contact-sf-02",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the renewal. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the procurement reviewers met the vendor's account manager once the checks finished. they-many signed the renewal.",
+   "answer": "multiple parties",
+   "english": "the procurement reviewers met the vendor's account manager once the checks finished. Of them, those two or more people signed the renewal.",
+   "id": "many-contact-pf-02",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the renewal, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the triage bot met the scanner fleet once the checks finished. they-one flagged the regression.",
+   "answer": "yes, another must be sought",
+   "english": "the triage bot met the scanner fleet once the checks finished. Of them, that one entity flagged the regression.",
+   "id": "one-approval-sf-03",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the scanner fleet met the triage bot once the checks finished. they-one flagged the regression.",
+   "answer": "yes, another must be sought",
+   "english": "the scanner fleet met the triage bot once the checks finished. Of them, that one entity flagged the regression.",
+   "id": "one-approval-pf-03",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the triage bot conferred with the scanner fleet before the deadline. they-one flagged the regression.",
+   "answer": "a single party",
+   "english": "the triage bot conferred with the scanner fleet before the deadline. Of them, that one entity flagged the regression.",
+   "id": "one-contact-sf-03",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the regression flag, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the scanner fleet spoke with the triage bot. they-one flagged the regression.",
+   "answer": "a single party",
+   "english": "After the review, the scanner fleet spoke with the triage bot. Of them, that one entity flagged the regression.",
+   "id": "one-contact-pf-03",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the regression flag, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the triage bot conferred with the scanner fleet before the deadline. they-many flagged the regression.",
+   "answer": "no, that requirement is already met",
+   "english": "the triage bot conferred with the scanner fleet before the deadline. Of them, those two or more entities flagged the regression.",
+   "id": "many-approval-sf-03",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the scanner fleet spoke with the triage bot. they-many flagged the regression.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the scanner fleet spoke with the triage bot. Of them, those two or more entities flagged the regression.",
+   "id": "many-approval-pf-03",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the triage bot met the scanner fleet once the checks finished. they-many flagged the regression.",
+   "answer": "multiple parties",
+   "english": "the triage bot met the scanner fleet once the checks finished. Of them, those two or more entities flagged the regression.",
+   "id": "many-contact-sf-03",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the regression flag, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the scanner fleet spoke with the triage bot. they-many flagged the regression.",
+   "answer": "multiple parties",
+   "english": "After the review, the scanner fleet spoke with the triage bot. Of them, those two or more entities flagged the regression.",
+   "id": "many-contact-pf-03",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the regression flag, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the deploy agent met the canary watchers once the checks finished. they-one rolled back the build.",
+   "answer": "yes, another must be sought",
+   "english": "the deploy agent met the canary watchers once the checks finished. Of them, that one entity rolled back the build.",
+   "id": "one-approval-sf-04",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the canary watchers met the deploy agent once the checks finished. they-one rolled back the build.",
+   "answer": "yes, another must be sought",
+   "english": "the canary watchers met the deploy agent once the checks finished. Of them, that one entity rolled back the build.",
+   "id": "one-approval-pf-04",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the deploy agent conferred with the canary watchers before the deadline. they-one rolled back the build.",
+   "answer": "a single party",
+   "english": "the deploy agent conferred with the canary watchers before the deadline. Of them, that one entity rolled back the build.",
+   "id": "one-contact-sf-04",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the rollback. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the canary watchers spoke with the deploy agent. they-one rolled back the build.",
+   "answer": "a single party",
+   "english": "After the review, the canary watchers spoke with the deploy agent. Of them, that one entity rolled back the build.",
+   "id": "one-contact-pf-04",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the rollback. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the deploy agent met the canary watchers once the checks finished. they-many rolled back the build.",
+   "answer": "no, that requirement is already met",
+   "english": "the deploy agent met the canary watchers once the checks finished. Of them, those two or more entities rolled back the build.",
+   "id": "many-approval-sf-04",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the canary watchers conferred with the deploy agent before the deadline. they-many rolled back the build.",
+   "answer": "no, that requirement is already met",
+   "english": "the canary watchers conferred with the deploy agent before the deadline. Of them, those two or more entities rolled back the build.",
+   "id": "many-approval-pf-04",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the deploy agent conferred with the canary watchers before the deadline. they-many rolled back the build.",
+   "answer": "multiple parties",
+   "english": "the deploy agent conferred with the canary watchers before the deadline. Of them, those two or more entities rolled back the build.",
+   "id": "many-contact-sf-04",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the rollback, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the canary watchers spoke with the deploy agent. they-many rolled back the build.",
+   "answer": "multiple parties",
+   "english": "After the review, the canary watchers spoke with the deploy agent. Of them, those two or more entities rolled back the build.",
+   "id": "many-contact-pf-04",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the rollback, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the billing service spoke with the settlement workers. they-one reprocessed the failed batch.",
+   "answer": "yes, another must be sought",
+   "english": "After the review, the billing service spoke with the settlement workers. Of them, that one entity reprocessed the failed batch.",
+   "id": "one-approval-sf-05",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the settlement workers met the billing service once the checks finished. they-one reprocessed the failed batch.",
+   "answer": "yes, another must be sought",
+   "english": "the settlement workers met the billing service once the checks finished. Of them, that one entity reprocessed the failed batch.",
+   "id": "one-approval-pf-05",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the billing service conferred with the settlement workers before the deadline. they-one reprocessed the failed batch.",
+   "answer": "a single party",
+   "english": "the billing service conferred with the settlement workers before the deadline. Of them, that one entity reprocessed the failed batch.",
+   "id": "one-contact-sf-05",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the reprocessing, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the settlement workers spoke with the billing service. they-one reprocessed the failed batch.",
+   "answer": "a single party",
+   "english": "After the review, the settlement workers spoke with the billing service. Of them, that one entity reprocessed the failed batch.",
+   "id": "one-contact-pf-05",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the reprocessing. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the billing service met the settlement workers once the checks finished. they-many reprocessed the failed batch.",
+   "answer": "no, that requirement is already met",
+   "english": "the billing service met the settlement workers once the checks finished. Of them, those two or more entities reprocessed the failed batch.",
+   "id": "many-approval-sf-05",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the settlement workers met the billing service once the checks finished. they-many reprocessed the failed batch.",
+   "answer": "no, that requirement is already met",
+   "english": "the settlement workers met the billing service once the checks finished. Of them, those two or more entities reprocessed the failed batch.",
+   "id": "many-approval-pf-05",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the billing service conferred with the settlement workers before the deadline. they-many reprocessed the failed batch.",
+   "answer": "multiple parties",
+   "english": "the billing service conferred with the settlement workers before the deadline. Of them, those two or more entities reprocessed the failed batch.",
+   "id": "many-contact-sf-05",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the reprocessing, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the settlement workers met the billing service once the checks finished. they-many reprocessed the failed batch.",
+   "answer": "multiple parties",
+   "english": "the settlement workers met the billing service once the checks finished. Of them, those two or more entities reprocessed the failed batch.",
+   "id": "many-contact-pf-05",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the reprocessing. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the archivist spoke with the records board. they-one sealed the case file.",
+   "answer": "yes, another must be sought",
+   "english": "After the review, the archivist spoke with the records board. Of them, that one person sealed the case file.",
+   "id": "one-approval-sf-06",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the records board met the archivist once the checks finished. they-one sealed the case file.",
+   "answer": "yes, another must be sought",
+   "english": "the records board met the archivist once the checks finished. Of them, that one person sealed the case file.",
+   "id": "one-approval-pf-06",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the archivist conferred with the records board before the deadline. they-one sealed the case file.",
+   "answer": "a single party",
+   "english": "the archivist conferred with the records board before the deadline. Of them, that one person sealed the case file.",
+   "id": "one-contact-sf-06",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the sealing decision, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the records board spoke with the archivist. they-one sealed the case file.",
+   "answer": "a single party",
+   "english": "After the review, the records board spoke with the archivist. Of them, that one person sealed the case file.",
+   "id": "one-contact-pf-06",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the sealing decision, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the archivist spoke with the records board. they-many sealed the case file.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the archivist spoke with the records board. Of them, those two or more people sealed the case file.",
+   "id": "many-approval-sf-06",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the records board spoke with the archivist. they-many sealed the case file.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the records board spoke with the archivist. Of them, those two or more people sealed the case file.",
+   "id": "many-approval-pf-06",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the archivist spoke with the records board. they-many sealed the case file.",
+   "answer": "multiple parties",
+   "english": "After the review, the archivist spoke with the records board. Of them, those two or more people sealed the case file.",
+   "id": "many-contact-sf-06",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the sealing decision, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the records board spoke with the archivist. they-many sealed the case file.",
+   "answer": "multiple parties",
+   "english": "After the review, the records board spoke with the archivist. Of them, those two or more people sealed the case file.",
+   "id": "many-contact-pf-06",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the sealing decision, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the site reliability lead conferred with the incident responders before the deadline. they-one closed the outage ticket.",
+   "answer": "yes, another must be sought",
+   "english": "the site reliability lead conferred with the incident responders before the deadline. Of them, that one person closed the outage ticket.",
+   "id": "one-approval-sf-07",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the incident responders spoke with the site reliability lead. they-one closed the outage ticket.",
+   "answer": "yes, another must be sought",
+   "english": "After the review, the incident responders spoke with the site reliability lead. Of them, that one person closed the outage ticket.",
+   "id": "one-approval-pf-07",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the site reliability lead met the incident responders once the checks finished. they-one closed the outage ticket.",
+   "answer": "a single party",
+   "english": "the site reliability lead met the incident responders once the checks finished. Of them, that one person closed the outage ticket.",
+   "id": "one-contact-sf-07",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the closure. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the incident responders met the site reliability lead once the checks finished. they-one closed the outage ticket.",
+   "answer": "a single party",
+   "english": "the incident responders met the site reliability lead once the checks finished. Of them, that one person closed the outage ticket.",
+   "id": "one-contact-pf-07",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the closure. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the site reliability lead conferred with the incident responders before the deadline. they-many closed the outage ticket.",
+   "answer": "no, that requirement is already met",
+   "english": "the site reliability lead conferred with the incident responders before the deadline. Of them, those two or more people closed the outage ticket.",
+   "id": "many-approval-sf-07",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the incident responders conferred with the site reliability lead before the deadline. they-many closed the outage ticket.",
+   "answer": "no, that requirement is already met",
+   "english": "the incident responders conferred with the site reliability lead before the deadline. Of them, those two or more people closed the outage ticket.",
+   "id": "many-approval-pf-07",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the site reliability lead met the incident responders once the checks finished. they-many closed the outage ticket.",
+   "answer": "multiple parties",
+   "english": "the site reliability lead met the incident responders once the checks finished. Of them, those two or more people closed the outage ticket.",
+   "id": "many-contact-sf-07",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the closure. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the incident responders conferred with the site reliability lead before the deadline. they-many closed the outage ticket.",
+   "answer": "multiple parties",
+   "english": "the incident responders conferred with the site reliability lead before the deadline. Of them, those two or more people closed the outage ticket.",
+   "id": "many-contact-pf-07",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the closure, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the indexing daemon met the crawler processes once the checks finished. they-one rebuilt the search shards.",
+   "answer": "yes, another must be sought",
+   "english": "the indexing daemon met the crawler processes once the checks finished. Of them, that one entity rebuilt the search shards.",
+   "id": "one-approval-sf-08",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the crawler processes conferred with the indexing daemon before the deadline. they-one rebuilt the search shards.",
+   "answer": "yes, another must be sought",
+   "english": "the crawler processes conferred with the indexing daemon before the deadline. Of them, that one entity rebuilt the search shards.",
+   "id": "one-approval-pf-08",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the indexing daemon met the crawler processes once the checks finished. they-one rebuilt the search shards.",
+   "answer": "a single party",
+   "english": "the indexing daemon met the crawler processes once the checks finished. Of them, that one entity rebuilt the search shards.",
+   "id": "one-contact-sf-08",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the rebuild. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the crawler processes met the indexing daemon once the checks finished. they-one rebuilt the search shards.",
+   "answer": "a single party",
+   "english": "the crawler processes met the indexing daemon once the checks finished. Of them, that one entity rebuilt the search shards.",
+   "id": "one-contact-pf-08",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the rebuild, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the indexing daemon conferred with the crawler processes before the deadline. they-many rebuilt the search shards.",
+   "answer": "no, that requirement is already met",
+   "english": "the indexing daemon conferred with the crawler processes before the deadline. Of them, those two or more entities rebuilt the search shards.",
+   "id": "many-approval-sf-08",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the crawler processes met the indexing daemon once the checks finished. they-many rebuilt the search shards.",
+   "answer": "no, that requirement is already met",
+   "english": "the crawler processes met the indexing daemon once the checks finished. Of them, those two or more entities rebuilt the search shards.",
+   "id": "many-approval-pf-08",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the indexing daemon spoke with the crawler processes. they-many rebuilt the search shards.",
+   "answer": "multiple parties",
+   "english": "After the review, the indexing daemon spoke with the crawler processes. Of them, those two or more entities rebuilt the search shards.",
+   "id": "many-contact-sf-08",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the rebuild, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the crawler processes conferred with the indexing daemon before the deadline. they-many rebuilt the search shards.",
+   "answer": "multiple parties",
+   "english": "the crawler processes conferred with the indexing daemon before the deadline. Of them, those two or more entities rebuilt the search shards.",
+   "id": "many-contact-pf-08",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the rebuild, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the treasurer conferred with the grants panel before the deadline. they-one released the quarterly funds.",
+   "answer": "yes, another must be sought",
+   "english": "the treasurer conferred with the grants panel before the deadline. Of them, that one person released the quarterly funds.",
+   "id": "one-approval-sf-09",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the grants panel met the treasurer once the checks finished. they-one released the quarterly funds.",
+   "answer": "yes, another must be sought",
+   "english": "the grants panel met the treasurer once the checks finished. Of them, that one person released the quarterly funds.",
+   "id": "one-approval-pf-09",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the treasurer conferred with the grants panel before the deadline. they-one released the quarterly funds.",
+   "answer": "a single party",
+   "english": "the treasurer conferred with the grants panel before the deadline. Of them, that one person released the quarterly funds.",
+   "id": "one-contact-sf-09",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the release of funds. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the grants panel conferred with the treasurer before the deadline. they-one released the quarterly funds.",
+   "answer": "a single party",
+   "english": "the grants panel conferred with the treasurer before the deadline. Of them, that one person released the quarterly funds.",
+   "id": "one-contact-pf-09",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the release of funds, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the treasurer spoke with the grants panel. they-many released the quarterly funds.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the treasurer spoke with the grants panel. Of them, those two or more people released the quarterly funds.",
+   "id": "many-approval-sf-09",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the grants panel conferred with the treasurer before the deadline. they-many released the quarterly funds.",
+   "answer": "no, that requirement is already met",
+   "english": "the grants panel conferred with the treasurer before the deadline. Of them, those two or more people released the quarterly funds.",
+   "id": "many-approval-pf-09",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the treasurer spoke with the grants panel. they-many released the quarterly funds.",
+   "answer": "multiple parties",
+   "english": "After the review, the treasurer spoke with the grants panel. Of them, those two or more people released the quarterly funds.",
+   "id": "many-contact-sf-09",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the release of funds, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the grants panel met the treasurer once the checks finished. they-many released the quarterly funds.",
+   "answer": "multiple parties",
+   "english": "the grants panel met the treasurer once the checks finished. Of them, those two or more people released the quarterly funds.",
+   "id": "many-contact-pf-09",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the release of funds. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the QA contractor met the beta testers once the checks finished. they-one reported the login fault.",
+   "answer": "yes, another must be sought",
+   "english": "the QA contractor met the beta testers once the checks finished. Of them, that one person reported the login fault.",
+   "id": "one-approval-sf-10",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the beta testers met the QA contractor once the checks finished. they-one reported the login fault.",
+   "answer": "yes, another must be sought",
+   "english": "the beta testers met the QA contractor once the checks finished. Of them, that one person reported the login fault.",
+   "id": "one-approval-pf-10",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the QA contractor spoke with the beta testers. they-one reported the login fault.",
+   "answer": "a single party",
+   "english": "After the review, the QA contractor spoke with the beta testers. Of them, that one person reported the login fault.",
+   "id": "one-contact-sf-10",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the fault report. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the beta testers conferred with the QA contractor before the deadline. they-one reported the login fault.",
+   "answer": "a single party",
+   "english": "the beta testers conferred with the QA contractor before the deadline. Of them, that one person reported the login fault.",
+   "id": "one-contact-pf-10",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the fault report, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the QA contractor spoke with the beta testers. they-many reported the login fault.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the QA contractor spoke with the beta testers. Of them, those two or more people reported the login fault.",
+   "id": "many-approval-sf-10",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the beta testers conferred with the QA contractor before the deadline. they-many reported the login fault.",
+   "answer": "no, that requirement is already met",
+   "english": "the beta testers conferred with the QA contractor before the deadline. Of them, those two or more people reported the login fault.",
+   "id": "many-approval-pf-10",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the QA contractor met the beta testers once the checks finished. they-many reported the login fault.",
+   "answer": "multiple parties",
+   "english": "the QA contractor met the beta testers once the checks finished. Of them, those two or more people reported the login fault.",
+   "id": "many-contact-sf-10",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the fault report, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the beta testers spoke with the QA contractor. they-many reported the login fault.",
+   "answer": "multiple parties",
+   "english": "After the review, the beta testers spoke with the QA contractor. Of them, those two or more people reported the login fault.",
+   "id": "many-contact-pf-10",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the fault report, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the licensing authority met the member registries once the checks finished. they-one revoked the duplicate keys.",
+   "answer": "yes, another must be sought",
+   "english": "the licensing authority met the member registries once the checks finished. Of them, that one entity revoked the duplicate keys.",
+   "id": "one-approval-sf-11",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the member registries conferred with the licensing authority before the deadline. they-one revoked the duplicate keys.",
+   "answer": "yes, another must be sought",
+   "english": "the member registries conferred with the licensing authority before the deadline. Of them, that one entity revoked the duplicate keys.",
+   "id": "one-approval-pf-11",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the licensing authority met the member registries once the checks finished. they-one revoked the duplicate keys.",
+   "answer": "a single party",
+   "english": "the licensing authority met the member registries once the checks finished. Of them, that one entity revoked the duplicate keys.",
+   "id": "one-contact-sf-11",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the revocation, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the member registries met the licensing authority once the checks finished. they-one revoked the duplicate keys.",
+   "answer": "a single party",
+   "english": "the member registries met the licensing authority once the checks finished. Of them, that one entity revoked the duplicate keys.",
+   "id": "one-contact-pf-11",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the revocation. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the licensing authority conferred with the member registries before the deadline. they-many revoked the duplicate keys.",
+   "answer": "no, that requirement is already met",
+   "english": "the licensing authority conferred with the member registries before the deadline. Of them, those two or more entities revoked the duplicate keys.",
+   "id": "many-approval-sf-11",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the member registries conferred with the licensing authority before the deadline. they-many revoked the duplicate keys.",
+   "answer": "no, that requirement is already met",
+   "english": "the member registries conferred with the licensing authority before the deadline. Of them, those two or more entities revoked the duplicate keys.",
+   "id": "many-approval-pf-11",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the licensing authority conferred with the member registries before the deadline. they-many revoked the duplicate keys.",
+   "answer": "multiple parties",
+   "english": "the licensing authority conferred with the member registries before the deadline. Of them, those two or more entities revoked the duplicate keys.",
+   "id": "many-contact-sf-11",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the revocation. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the member registries conferred with the licensing authority before the deadline. they-many revoked the duplicate keys.",
+   "answer": "multiple parties",
+   "english": "the member registries conferred with the licensing authority before the deadline. Of them, those two or more entities revoked the duplicate keys.",
+   "id": "many-contact-pf-11",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the revocation. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the night operator conferred with the warehouse crews before the deadline. they-one logged the stock variance.",
+   "answer": "yes, another must be sought",
+   "english": "the night operator conferred with the warehouse crews before the deadline. Of them, that one person logged the stock variance.",
+   "id": "one-approval-sf-12",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the warehouse crews met the night operator once the checks finished. they-one logged the stock variance.",
+   "answer": "yes, another must be sought",
+   "english": "the warehouse crews met the night operator once the checks finished. Of them, that one person logged the stock variance.",
+   "id": "one-approval-pf-12",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the night operator spoke with the warehouse crews. they-one logged the stock variance.",
+   "answer": "a single party",
+   "english": "After the review, the night operator spoke with the warehouse crews. Of them, that one person logged the stock variance.",
+   "id": "one-contact-sf-12",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the variance log, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the warehouse crews conferred with the night operator before the deadline. they-one logged the stock variance.",
+   "answer": "a single party",
+   "english": "the warehouse crews conferred with the night operator before the deadline. Of them, that one person logged the stock variance.",
+   "id": "one-contact-pf-12",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the variance log, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the night operator conferred with the warehouse crews before the deadline. they-many logged the stock variance.",
+   "answer": "no, that requirement is already met",
+   "english": "the night operator conferred with the warehouse crews before the deadline. Of them, those two or more people logged the stock variance.",
+   "id": "many-approval-sf-12",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the warehouse crews spoke with the night operator. they-many logged the stock variance.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the warehouse crews spoke with the night operator. Of them, those two or more people logged the stock variance.",
+   "id": "many-approval-pf-12",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the night operator conferred with the warehouse crews before the deadline. they-many logged the stock variance.",
+   "answer": "multiple parties",
+   "english": "the night operator conferred with the warehouse crews before the deadline. Of them, those two or more people logged the stock variance.",
+   "id": "many-contact-sf-12",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the variance log. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the warehouse crews conferred with the night operator before the deadline. they-many logged the stock variance.",
+   "answer": "multiple parties",
+   "english": "the warehouse crews conferred with the night operator before the deadline. Of them, those two or more people logged the stock variance.",
+   "id": "many-contact-pf-12",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the variance log. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the summarizer agent conferred with the review models before the deadline. they-one escalated the anomaly.",
+   "answer": "yes, another must be sought",
+   "english": "the summarizer agent conferred with the review models before the deadline. Of them, that one entity escalated the anomaly.",
+   "id": "one-approval-sf-13",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the review models met the summarizer agent once the checks finished. they-one escalated the anomaly.",
+   "answer": "yes, another must be sought",
+   "english": "the review models met the summarizer agent once the checks finished. Of them, that one entity escalated the anomaly.",
+   "id": "one-approval-pf-13",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the summarizer agent met the review models once the checks finished. they-one escalated the anomaly.",
+   "answer": "a single party",
+   "english": "the summarizer agent met the review models once the checks finished. Of them, that one entity escalated the anomaly.",
+   "id": "one-contact-sf-13",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the escalation. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the review models conferred with the summarizer agent before the deadline. they-one escalated the anomaly.",
+   "answer": "a single party",
+   "english": "the review models conferred with the summarizer agent before the deadline. Of them, that one entity escalated the anomaly.",
+   "id": "one-contact-pf-13",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the escalation. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the summarizer agent conferred with the review models before the deadline. they-many escalated the anomaly.",
+   "answer": "no, that requirement is already met",
+   "english": "the summarizer agent conferred with the review models before the deadline. Of them, those two or more entities escalated the anomaly.",
+   "id": "many-approval-sf-13",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the review models spoke with the summarizer agent. they-many escalated the anomaly.",
+   "answer": "no, that requirement is already met",
+   "english": "After the review, the review models spoke with the summarizer agent. Of them, those two or more entities escalated the anomaly.",
+   "id": "many-approval-pf-13",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the summarizer agent met the review models once the checks finished. they-many escalated the anomaly.",
+   "answer": "multiple parties",
+   "english": "the summarizer agent met the review models once the checks finished. Of them, those two or more entities escalated the anomaly.",
+   "id": "many-contact-sf-13",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the escalation, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the review models spoke with the summarizer agent. they-many escalated the anomaly.",
+   "answer": "multiple parties",
+   "english": "After the review, the review models spoke with the summarizer agent. Of them, those two or more entities escalated the anomaly.",
+   "id": "many-contact-pf-13",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the escalation. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the parish clerk conferred with the trustees before the deadline. they-one amended the meeting minutes.",
+   "answer": "yes, another must be sought",
+   "english": "the parish clerk conferred with the trustees before the deadline. Of them, that one person amended the meeting minutes.",
+   "id": "one-approval-sf-14",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the trustees conferred with the parish clerk before the deadline. they-one amended the meeting minutes.",
+   "answer": "yes, another must be sought",
+   "english": "the trustees conferred with the parish clerk before the deadline. Of them, that one person amended the meeting minutes.",
+   "id": "one-approval-pf-14",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the parish clerk conferred with the trustees before the deadline. they-one amended the meeting minutes.",
+   "answer": "a single party",
+   "english": "the parish clerk conferred with the trustees before the deadline. Of them, that one person amended the meeting minutes.",
+   "id": "one-contact-sf-14",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the amendment. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the trustees met the parish clerk once the checks finished. they-one amended the meeting minutes.",
+   "answer": "a single party",
+   "english": "the trustees met the parish clerk once the checks finished. Of them, that one person amended the meeting minutes.",
+   "id": "one-contact-pf-14",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the amendment. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the parish clerk conferred with the trustees before the deadline. they-many amended the meeting minutes.",
+   "answer": "no, that requirement is already met",
+   "english": "the parish clerk conferred with the trustees before the deadline. Of them, those two or more people amended the meeting minutes.",
+   "id": "many-approval-sf-14",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the trustees conferred with the parish clerk before the deadline. they-many amended the meeting minutes.",
+   "answer": "no, that requirement is already met",
+   "english": "the trustees conferred with the parish clerk before the deadline. Of them, those two or more people amended the meeting minutes.",
+   "id": "many-approval-pf-14",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by the statement alone, is recruiting another required?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the parish clerk spoke with the trustees. they-many amended the meeting minutes.",
+   "answer": "multiple parties",
+   "english": "After the review, the parish clerk spoke with the trustees. Of them, those two or more people amended the meeting minutes.",
+   "id": "many-contact-sf-14",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the amendment. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the trustees met the parish clerk once the checks finished. they-many amended the meeting minutes.",
+   "answer": "multiple parties",
+   "english": "the trustees met the parish clerk once the checks finished. Of them, those two or more people amended the meeting minutes.",
+   "id": "many-contact-pf-14",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the amendment, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "After the review, the gateway service spoke with the edge relays. they-one refused the malformed requests.",
+   "answer": "yes, another must be sought",
+   "english": "After the review, the gateway service spoke with the edge relays. Of them, that one entity refused the malformed requests.",
+   "id": "one-approval-sf-15",
+   "options": [
+    "the statement does not settle this",
+    "yes, another must be sought",
+    "no, that requirement is already met"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the edge relays spoke with the gateway service. they-one refused the malformed requests.",
+   "answer": "yes, another must be sought",
+   "english": "After the review, the edge relays spoke with the gateway service. Of them, that one entity refused the malformed requests.",
+   "id": "one-approval-pf-15",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the gateway service conferred with the edge relays before the deadline. they-one refused the malformed requests.",
+   "answer": "a single party",
+   "english": "the gateway service conferred with the edge relays before the deadline. Of them, that one entity refused the malformed requests.",
+   "id": "one-contact-sf-15",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the refusals, whom does the statement direct you toward: one party, or several?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "After the review, the edge relays spoke with the gateway service. they-one refused the malformed requests.",
+   "answer": "a single party",
+   "english": "After the review, the edge relays spoke with the gateway service. Of them, that one entity refused the malformed requests.",
+   "id": "one-contact-pf-15",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the refusals. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-one"
+  },
+  {
+   "ainglish": "the gateway service met the edge relays once the checks finished. they-many refused the malformed requests.",
+   "answer": "no, that requirement is already met",
+   "english": "the gateway service met the edge relays once the checks finished. Of them, those two or more entities refused the malformed requests.",
+   "id": "many-approval-sf-15",
+   "options": [
+    "no, that requirement is already met",
+    "the statement does not settle this",
+    "yes, another must be sought"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the edge relays met the gateway service once the checks finished. they-many refused the malformed requests.",
+   "answer": "no, that requirement is already met",
+   "english": "the edge relays met the gateway service once the checks finished. Of them, those two or more entities refused the malformed requests.",
+   "id": "many-approval-pf-15",
+   "options": [
+    "yes, another must be sought",
+    "no, that requirement is already met",
+    "the statement does not settle this"
+   ],
+   "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on the statement, must another signatory now be sought?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the gateway service conferred with the edge relays before the deadline. they-many refused the malformed requests.",
+   "answer": "multiple parties",
+   "english": "the gateway service conferred with the edge relays before the deadline. Of them, those two or more entities refused the malformed requests.",
+   "id": "many-contact-sf-15",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the refusals. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the edge relays conferred with the gateway service before the deadline. they-many refused the malformed requests.",
+   "answer": "multiple parties",
+   "english": "the edge relays conferred with the gateway service before the deadline. Of them, those two or more entities refused the malformed requests.",
+   "id": "many-contact-pf-15",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the refusals. Based only on the statement, should your message be addressed to a single party or to multiple parties?",
+   "settlement_stratum": "they-many"
+  },
+  {
+   "ainglish": "the auditor met the release committee once the checks finished. they-one approved the rollout.",
+   "answer": "a single party",
+   "calibration": true,
+   "english": "the auditor met the release committee once the checks finished. they approved the rollout.",
+   "id": "c00",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the rollout approval, whom does the statement direct you toward: one party, or several?"
+  },
+  {
+   "ainglish": "the on-call engineer met the platform team once the checks finished. they-many restarted the ingest cluster.",
+   "answer": "multiple parties",
+   "calibration": true,
+   "english": "the on-call engineer met the platform team once the checks finished. they restarted the ingest cluster.",
+   "id": "c01",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the restart. Based only on the statement, should your message be addressed to a single party or to multiple parties?"
+  },
+  {
+   "ainglish": "After the review, the vendor's account manager spoke with the procurement reviewers. they-one signed the renewal.",
+   "answer": "a single party",
+   "calibration": true,
+   "english": "After the review, the vendor's account manager spoke with the procurement reviewers. they signed the renewal.",
+   "id": "c02",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "You must follow up about the renewal. Based only on the statement, should your message be addressed to a single party or to multiple parties?"
+  },
+  {
+   "ainglish": "After the review, the triage bot spoke with the scanner fleet. they-many flagged the regression.",
+   "answer": "multiple parties",
+   "calibration": true,
+   "english": "After the review, the triage bot spoke with the scanner fleet. they flagged the regression.",
+   "id": "c03",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the regression flag. Based only on the statement, should your message be addressed to a single party or to multiple parties?"
+  },
+  {
+   "ainglish": "the deploy agent conferred with the canary watchers before the deadline. they-one rolled back the build.",
+   "answer": "a single party",
+   "calibration": true,
+   "english": "the deploy agent conferred with the canary watchers before the deadline. they rolled back the build.",
+   "id": "c04",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the rollback. Based only on the statement, should your message be addressed to a single party or to multiple parties?"
+  },
+  {
+   "ainglish": "the billing service conferred with the settlement workers before the deadline. they-many reprocessed the failed batch.",
+   "answer": "multiple parties",
+   "calibration": true,
+   "english": "the billing service conferred with the settlement workers before the deadline. they reprocessed the failed batch.",
+   "id": "c05",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "You must follow up about the reprocessing. Based only on the statement, should your message be addressed to a single party or to multiple parties?"
+  },
+  {
+   "ainglish": "After the review, the archivist spoke with the records board. they-one sealed the case file.",
+   "answer": "a single party",
+   "calibration": true,
+   "english": "After the review, the archivist spoke with the records board. they sealed the case file.",
+   "id": "c06",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the sealing decision, whom does the statement direct you toward: one party, or several?"
+  },
+  {
+   "ainglish": "After the review, the site reliability lead spoke with the incident responders. they-many closed the outage ticket.",
+   "answer": "multiple parties",
+   "calibration": true,
+   "english": "After the review, the site reliability lead spoke with the incident responders. they closed the outage ticket.",
+   "id": "c07",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the closure, whom does the statement direct you toward: one party, or several?"
+  },
+  {
+   "ainglish": "the indexing daemon met the crawler processes once the checks finished. they-one rebuilt the search shards.",
+   "answer": "a single party",
+   "calibration": true,
+   "english": "the indexing daemon met the crawler processes once the checks finished. they rebuilt the search shards.",
+   "id": "c08",
+   "options": [
+    "multiple parties",
+    "the statement does not say who acted",
+    "a single party"
+   ],
+   "question": "To query the rebuild, whom does the statement direct you toward: one party, or several?"
+  },
+  {
+   "ainglish": "the treasurer conferred with the grants panel before the deadline. they-many released the quarterly funds.",
+   "answer": "multiple parties",
+   "calibration": true,
+   "english": "the treasurer conferred with the grants panel before the deadline. they released the quarterly funds.",
+   "id": "c09",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "To query the release of funds, whom does the statement direct you toward: one party, or several?"
+  },
+  {
+   "ainglish": "the QA contractor conferred with the beta testers before the deadline. they-one reported the login fault.",
+   "answer": "a single party",
+   "calibration": true,
+   "english": "the QA contractor conferred with the beta testers before the deadline. they reported the login fault.",
+   "id": "c10",
+   "options": [
+    "a single party",
+    "multiple parties",
+    "the statement does not say who acted"
+   ],
+   "question": "You must follow up about the fault report. Based only on the statement, should your message be addressed to a single party or to multiple parties?"
+  },
+  {
+   "ainglish": "the licensing authority conferred with the member registries before the deadline. they-many revoked the duplicate keys.",
+   "answer": "multiple parties",
+   "calibration": true,
+   "english": "the licensing authority conferred with the member registries before the deadline. they revoked the duplicate keys.",
+   "id": "c11",
+   "options": [
+    "the statement does not say who acted",
+    "a single party",
+    "multiple parties"
+   ],
+   "question": "To query the revocation, whom does the statement direct you toward: one party, or several?"
+  }
+ ]
+}
