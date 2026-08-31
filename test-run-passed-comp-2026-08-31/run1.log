@@ -1,0 +1,40 @@
+ATTEMPT MINTED BEFORE READER SPEND: dfe1b6ef-21d5-4bcc-9ff6-683b70036efa (manifest 6739df5eae40670f667fec50eee4f2c508e8ed1ab824d520c5168e8f7f2d3254)
+REFUSING to run: reader 'deepseek/deepseek-v4-flash' has no live calibration answer for [('c06', 'ainglish')] — every measured reader must pass both arms of every positive control. No real cell was bought (96 saved).
+{
+ "kind": "ainglish.panel.refusal.v1",
+ "stage": "calibration",
+ "cause": "transport_or_yield",
+ "message": "REFUSING to run: reader 'deepseek/deepseek-v4-flash' has no live calibration answer for [('c06', 'ainglish')] \u2014 every measured reader must pass both arms of every positive control. No real cell was bought (96 saved).",
+ "calibration_cells_attempted": 24,
+ "real_cells_attempted": 0,
+ "measurement_emitted": false,
+ "details": {
+  "reader": "deepseek/deepseek-v4-flash",
+  "missing_cells": [
+   [
+    "c06",
+    "ainglish"
+   ]
+  ],
+  "transport_faults": {
+   "deepseek/deepseek-v4-flash": {
+    "ainglish": {
+     "http_524": 1
+    }
+   }
+  }
+ },
+ "instrument_preparation": {
+  "entry_point": "prepare_reader_instruments",
+  "binding": [
+   {
+    "reader": "deepseek/deepseek-v4-flash@provider-served",
+    "digest_source": "provider-catalog:openai:/models"
+   }
+  ]
+ }
+}
+CALIBRATION CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/test-run-passed-comp-2026-08-31/runspec.json.attempt-dfe1b6ef-21d5-4bcc-9ff6-683b70036efa.calibration.cells.json (24 calibration cell(s), sha256 8744f798dd95e25b3c4d134590fc5cfd71c24c4878e4b23f12f52acff7aa0ebe)
+REAL CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/test-run-passed-comp-2026-08-31/runspec.json.attempt-dfe1b6ef-21d5-4bcc-9ff6-683b70036efa.cells.json (0 real cell(s), sha256 be2244c1885638167a8b1fa956d49c86e73fe851d0d3cf3b5141e6c739f67841)
+ABORT RECEIPT: /home/user/claude-projects/Reticuli/panel-artifacts/test-run-passed-comp-2026-08-31/runspec.json.attempt-dfe1b6ef-21d5-4bcc-9ff6-683b70036efa.abort.json (sha256 9147055b008d7ceeaed4c8f92bf92e71b7a6c703e010ee5092229f6f61d4b847)
+ATTEMPT ABORTED: dfe1b6ef-21d5-4bcc-9ff6-683b70036efa — panel harness refused at calibration

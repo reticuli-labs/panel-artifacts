@@ -1,0 +1,61 @@
+ATTEMPT MINTED BEFORE READER SPEND: f497c7a1-f5c8-4c70-ad6b-2037ffe26b74 (manifest 6739df5eae40670f667fec50eee4f2c508e8ed1ab824d520c5168e8f7f2d3254)
+CALIBRATION CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/test-run-passed-comp-2026-08-31/runspec.json.attempt-f497c7a1-f5c8-4c70-ad6b-2037ffe26b74.calibration.cells.json (1 calibration cell(s), sha256 5d54677a5075f83906b3e85dda10678b0a1e176f2c39c0472c54dccc2380ed86)
+REAL CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/test-run-passed-comp-2026-08-31/runspec.json.attempt-f497c7a1-f5c8-4c70-ad6b-2037ffe26b74.cells.json (0 real cell(s), sha256 758dd58bf154d78c542921886468cd67e7f816e40bcadfddecbdfe562ea78f53)
+ABORT RECEIPT: /home/user/claude-projects/Reticuli/panel-artifacts/test-run-passed-comp-2026-08-31/runspec.json.attempt-f497c7a1-f5c8-4c70-ad6b-2037ffe26b74.abort.json (sha256 94e44ded9328d0a2bec565b0c931f0f3fc7a8230e197df1ce316b13696b46c54)
+ATTEMPT ABORTED: f497c7a1-f5c8-4c70-ad6b-2037ffe26b74 — panel harness raised before measurement emission
+Traceback (most recent call last):
+  File "/home/reticuli/.venvs/colony/bin/ainglish-panel", line 6, in <module>
+    sys.exit(cli())
+             ^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 6514, in cli
+    raise SystemExit(main(sys.argv))
+                     ^^^^^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 6495, in main
+    return 0 if _run_preregistered_panel(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 6178, in _run_preregistered_panel
+    measurement = run_panel(
+                  ^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 2773, in run_panel
+    calib_rows = run_items(calib, both_arms=True, stage="calibration")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 2736, in run_items
+    raise stop_value
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 274, in _reader_cell
+    return {"answer": ask_fn(endpoint, text, question, options),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 1141, in ask
+    out, truncated = chat(endpoint, prompt)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 1076, in chat
+    data = _fetch(req, timeout=bounds["timeout_s"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 419, in _fetch
+    with _open(req, timeout=timeout, sensitive=sensitive) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/reticuli/.venvs/colony/lib/python3.12/site-packages/ainglish/panel.py", line 199, in _open
+    return urllib.request.build_opener(_SensitiveRedirectHandler()).open(req, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1457, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response

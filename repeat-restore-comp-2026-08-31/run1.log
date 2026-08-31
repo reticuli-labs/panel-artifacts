@@ -1,0 +1,2903 @@
+ATTEMPT MINTED BEFORE READER SPEND: 26f2f557-a8e7-417f-9cff-8afd7f385620 (manifest 6402298c595e40c70709bfb1aa4c16a24aed9f0effd939fad17b336a91eae05c)
+calibration: planted arm 1.00 vs other 0.67 — recovered 1.00 of 0.33 headroom; panel can detect. ctl(planted-items) passes. 256 real cells to go.
+cell yield: 280 cells, dead_rate 0.0 — per (model, arm) in the manifest spec.
+transport faults: 0 cell(s) lost to the wire, not retried (a retried cell is a second draw and the receipt would have to say so).
+resample-down: value stays inside its own interval at [0.75, 0.5] of items.
+{
+ "metric": "comprehension_accuracy_delta",
+ "value": -5.2637,
+ "resample_down": [
+  {
+   "kept_fraction": 0.75,
+   "items": 192,
+   "value": -4.8613,
+   "sign_flipped": false,
+   "outside_interval": false
+  },
+  {
+   "kept_fraction": 0.5,
+   "items": 128,
+   "value": -3.75,
+   "sign_flipped": false,
+   "outside_interval": false
+  }
+ ],
+ "yield_report": {
+  "cells": 280,
+  "empty": 0,
+  "unparsed": 0,
+  "dead_rate": 0.0,
+  "per_cell": {
+   "deepseek/deepseek-v4-flash/ainglish": {
+    "n": 126,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "deepseek/deepseek-v4-flash/english": {
+    "n": 154,
+    "empty": 0,
+    "unparsed": 0
+   }
+  }
+ },
+ "calibration": {
+  "planted_arm": "ainglish",
+  "detectable": 1.0,
+  "other": 0.6667,
+  "gap": 0.3333,
+  "headroom": 0.3333,
+  "recovered": 1.0,
+  "min_gap": 0.125,
+  "min_recovered": 0.5,
+  "rule": "headroom-relative-v1",
+  "passed": true
+ },
+ "value_lo": -10.6259,
+ "value_hi": -0.1402,
+ "arms": {
+  "english": 0.9792,
+  "ainglish": 0.9265,
+  "chance": 0.2917
+ },
+ "panel_models": [
+  "deepseek/deepseek-v4-flash@provider-served"
+ ],
+ "panel_members": 1,
+ "is_adversarial": false,
+ "panel_agreement": null,
+ "per_member": [
+  {
+   "model": "deepseek/deepseek-v4-flash",
+   "value": -5.2637,
+   "precision": "provider-served"
+  }
+ ],
+ "manifest": {
+  "construct": "repeat-event / restore-state",
+  "metric": "comprehension_accuracy_delta",
+  "seed": 23,
+  "comparator": {
+   "kind": "complete-careful-english-v1",
+   "description": "The careful-English arm states the scoped clause plus the marker's full background contribution as declared by the mapping (earlier matching event with stated participants, or earlier interval of the result state, agent unspecified). The marked arm varies only the marker prefix. Directive repeat-event cells prepend one shared context sentence to both arms and probe fit-against-context."
+  },
+  "items_sha256": "00b095dcdead7a457ef254879b16063a0109c38228f246f1a40c22117d03f1ff",
+  "items_url": "items.json",
+  "models": [
+   "deepseek/deepseek-v4-flash@provider-served"
+  ],
+  "readers": [
+   {
+    "name": "deepseek/deepseek-v4-flash",
+    "provider": "nous-portal-direct",
+    "model": "deepseek/deepseek-v4-flash",
+    "precision": "provider-served",
+    "api": "openai",
+    "base_url": "https://inference-api.nousresearch.com/v1",
+    "model_digest": null,
+    "digest_source": "provider-catalog:openai:/models",
+    "model_catalog": "openai:/models",
+    "model_catalog_binding": {
+     "source": "openai:/models",
+     "requested_model": "deepseek/deepseek-v4-flash",
+     "entry_sha256": "sha256:df3ed0ac3a629918237837ed372e77f1db91f1613543084dba35f0b50a1c49ca",
+     "weight_identity": "provider-opaque"
+    },
+    "instrument_preparation": {
+     "entry_point": "prepare_reader_instruments",
+     "binding": "provider-catalog:openai:/models"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 4096,
+    "timeout_s": 180,
+    "temperature": 0,
+    "seed": "provider-default",
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   }
+  ],
+  "instrument_preparation": {
+   "entry_point": "prepare_reader_instruments",
+   "binding": [
+    {
+     "reader": "deepseek/deepseek-v4-flash@provider-served",
+     "digest_source": "provider-catalog:openai:/models"
+    }
+   ]
+  },
+  "item_counts": {
+   "real": 256,
+   "calibration": 12
+  },
+  "interval_kind": "bootstrap_items",
+  "interval_estimator": {
+   "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+   "algorithm": "sha256-counter-modulo-v1",
+   "draws": 2000,
+   "sampling_unit": "item",
+   "quantiles": [
+    "0.025",
+    "0.975"
+   ],
+   "items_index_sha256": "41556161d59ed475c16f89c82dc21230bb22ad8447f5daf99d8430032de87351"
+  },
+  "settlement_strata": [
+   {
+    "id": "re:aff",
+    "weight": 1
+   },
+   {
+    "id": "re:neg",
+    "weight": 1
+   },
+   {
+    "id": "re:pq",
+    "weight": 1
+   },
+   {
+    "id": "re:dir",
+    "weight": 1
+   },
+   {
+    "id": "rs:aff",
+    "weight": 1
+   },
+   {
+    "id": "rs:neg",
+    "weight": 1
+   },
+   {
+    "id": "rs:pq",
+    "weight": 1
+   },
+   {
+    "id": "rs:dir",
+    "weight": 1
+   }
+  ],
+  "settlement_item_field": "settlement_stratum",
+  "settlement_rule": "manifest-weighted arms and value; every stratum load-bearing",
+  "calibration": {
+   "planted_arm": "ainglish",
+   "min_gap": 0.125,
+   "min_recovered": 0.5,
+   "rule": "headroom-relative-v1",
+   "ordering": "calibration-first",
+   "arm_exposure": "both-arms-per-reader-item",
+   "cells": 24
+  },
+  "difficulty": {
+   "annotated": false
+  },
+  "harness": "ainglish-panel/0.2.47",
+  "transport": {
+   "deepseek/deepseek-v4-flash@provider-served": {
+    "max_tokens": 4096,
+    "timeout_s": 180,
+    "temperature": 0,
+    "seed": "provider-default",
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   }
+  },
+  "concurrency": {
+   "max_in_flight": 1,
+   "per_reader_max_in_flight": {
+    "deepseek/deepseek-v4-flash": 1
+   },
+   "result_order": "deterministic-plan-order",
+   "calibration_barrier": true,
+   "automatic_retries": false
+  },
+  "transport_faults": {
+   "total": 0,
+   "retried": false,
+   "per_cell": {}
+  },
+  "transport_truncations": {
+   "total": 0,
+   "per_reader_cell": {},
+   "by_cell": {
+    "english": 0,
+    "ainglish": 0
+   },
+   "imbalanced_across_cells": false
+  },
+  "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate"
+ },
+ "interval_provenance": {
+  "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+  "metric": "comprehension_accuracy_delta",
+  "estimator": "manifest_weighted_stratum_accuracy_delta_pp",
+  "algorithm": {
+   "name": "sha256-counter-modulo-v1",
+   "draws": 2000,
+   "accepted_draws": 1999,
+   "sampling_unit": "item",
+   "lower_quantile": {
+    "numerator": 25,
+    "denominator": 1000,
+    "index_rule": "floor"
+   },
+   "upper_quantile": {
+    "numerator": 975,
+    "denominator": 1000,
+    "index_rule": "floor"
+   }
+  },
+  "seed": 23,
+  "items": [
+   {
+    "id": "re-aff-00-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-00-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-01-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-01-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-02-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-02-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-03-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-03-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-04-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-04-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-05-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-05-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-06-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-06-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-07-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-07-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-08-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-08-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-09-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-09-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-10-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-10-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-11-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-11-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-12-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-12-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-13-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-13-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-14-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-14-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-15-pa",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-aff-15-pb",
+    "stratum": "re:aff"
+   },
+   {
+    "id": "re-dir-00-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-00-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-01-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-01-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-02-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-02-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-03-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-03-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-04-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-04-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-05-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-05-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-06-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-06-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-07-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-07-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-08-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-08-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-09-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-09-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-10-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-10-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-11-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-11-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-12-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-12-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-13-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-13-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-14-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-14-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-15-pa",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-dir-15-pb",
+    "stratum": "re:dir"
+   },
+   {
+    "id": "re-neg-00-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-00-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-01-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-01-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-02-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-02-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-03-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-03-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-04-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-04-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-05-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-05-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-06-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-06-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-07-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-07-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-08-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-08-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-09-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-09-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-10-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-10-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-11-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-11-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-12-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-12-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-13-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-13-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-14-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-14-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-15-pa",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-neg-15-pb",
+    "stratum": "re:neg"
+   },
+   {
+    "id": "re-pq-00-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-00-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-01-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-01-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-02-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-02-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-03-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-03-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-04-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-04-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-05-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-05-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-06-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-06-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-07-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-07-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-08-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-08-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-09-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-09-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-10-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-10-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-11-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-11-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-12-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-12-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-13-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-13-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-14-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-14-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-15-pa",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "re-pq-15-pb",
+    "stratum": "re:pq"
+   },
+   {
+    "id": "rs-aff-00-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-00-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-01-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-01-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-02-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-02-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-03-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-03-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-04-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-04-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-05-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-05-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-06-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-06-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-07-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-07-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-08-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-08-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-09-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-09-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-10-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-10-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-11-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-11-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-12-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-12-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-13-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-13-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-14-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-14-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-15-pa",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-aff-15-pb",
+    "stratum": "rs:aff"
+   },
+   {
+    "id": "rs-dir-00-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-00-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-01-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-01-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-02-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-02-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-03-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-03-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-04-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-04-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-05-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-05-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-06-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-06-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-07-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-07-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-08-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-08-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-09-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-09-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-10-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-10-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-11-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-11-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-12-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-12-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-13-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-13-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-14-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-14-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-15-pa",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-dir-15-pb",
+    "stratum": "rs:dir"
+   },
+   {
+    "id": "rs-neg-00-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-00-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-01-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-01-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-02-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-02-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-03-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-03-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-04-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-04-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-05-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-05-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-06-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-06-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-07-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-07-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-08-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-08-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-09-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-09-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-10-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-10-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-11-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-11-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-12-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-12-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-13-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-13-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-14-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-14-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-15-pa",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-neg-15-pb",
+    "stratum": "rs:neg"
+   },
+   {
+    "id": "rs-pq-00-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-00-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-01-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-01-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-02-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-02-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-03-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-03-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-04-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-04-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-05-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-05-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-06-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-06-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-07-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-07-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-08-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-08-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-09-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-09-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-10-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-10-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-11-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-11-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-12-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-12-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-13-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-13-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-14-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-14-pb",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-15-pa",
+    "stratum": "rs:pq"
+   },
+   {
+    "id": "rs-pq-15-pb",
+    "stratum": "rs:pq"
+   }
+  ],
+  "readers": [
+   "deepseek/deepseek-v4-flash"
+  ],
+  "cells": [
+   {
+    "item_id": "re-aff-00-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-00-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-01-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-01-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-02-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-02-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-03-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-03-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-04-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-04-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-05-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-05-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-06-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-06-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-07-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-07-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-08-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-08-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-09-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-09-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-10-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-10-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-11-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-11-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-12-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-12-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-13-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-13-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-14-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-14-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-15-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-aff-15-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-00-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-00-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-01-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-01-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-02-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-02-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-03-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-03-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-04-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "re-dir-04-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-05-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-05-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-06-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-06-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-07-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-07-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-08-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "re-dir-08-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-09-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-09-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-10-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-10-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-11-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "re-dir-11-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-12-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "re-dir-12-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-13-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "re-dir-13-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-14-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-14-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-15-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-dir-15-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-00-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-00-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-01-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-01-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-02-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-02-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-03-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-03-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-04-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-04-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-05-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-05-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-06-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-06-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-07-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-07-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-08-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-08-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-09-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-09-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-10-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-10-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-11-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-11-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-12-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-12-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-13-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-13-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-14-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-14-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-15-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-neg-15-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-00-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-00-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-01-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-01-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-02-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-02-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-03-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-03-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-04-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-04-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-05-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-05-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-06-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-06-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-07-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-07-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-08-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-08-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-09-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-09-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-10-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-10-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-11-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-11-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-12-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-12-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-13-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-13-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-14-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-14-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-15-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "re-pq-15-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-00-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-00-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-01-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-01-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-02-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-02-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-03-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-03-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-04-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-04-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-05-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-05-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-06-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-06-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-07-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-07-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-08-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-08-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "rs-aff-09-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-09-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-10-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-10-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-11-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-11-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-12-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-12-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-13-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-13-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-14-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-14-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-15-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-aff-15-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-00-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-00-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-01-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-01-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-02-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-02-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-03-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-03-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-04-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-04-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-05-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-05-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-06-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-06-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-07-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "rs-dir-07-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-08-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-08-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-09-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-09-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-10-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-10-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-11-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-11-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-12-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-12-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-13-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-13-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-14-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "rs-dir-14-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-15-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-dir-15-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-00-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-00-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-01-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-01-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "rs-neg-02-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-02-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-03-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-03-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-04-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-04-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-05-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-05-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-06-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-06-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-07-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-07-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-08-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-08-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-09-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-09-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-10-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-10-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "rs-neg-11-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-11-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-12-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-12-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-13-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-13-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-14-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-14-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-15-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-neg-15-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-00-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-00-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-01-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-01-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-02-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-02-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-03-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-03-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-04-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-04-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-05-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-05-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-06-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-06-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-07-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-07-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-08-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-08-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-09-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-09-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-10-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-10-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-11-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-11-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-12-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-12-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-13-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-13-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-14-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-14-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-15-pa",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "rs-pq-15-pb",
+    "reader": "deepseek/deepseek-v4-flash",
+    "arm": "ainglish",
+    "correct": true
+   }
+  ],
+  "content_sha256": "c783db6fea28887b40e0ddfc54aaf68d327a13da57d1f6b997d0e3bdb2e697ec"
+ },
+ "stratum_results": [
+  {
+   "id": "re:aff",
+   "value": 0.0,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 1.0,
+    "chance": 0.2917
+   }
+  },
+  {
+   "id": "re:neg",
+   "value": 0.0,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 1.0,
+    "chance": 0.2917
+   }
+  },
+  {
+   "id": "re:pq",
+   "value": 0.0,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 1.0,
+    "chance": 0.2917
+   }
+  },
+  {
+   "id": "re:dir",
+   "value": -35.71,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 0.6429,
+    "chance": 0.2917
+   }
+  },
+  {
+   "id": "rs:aff",
+   "value": -7.69,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 0.9231,
+    "chance": 0.2917
+   }
+  },
+  {
+   "id": "rs:neg",
+   "value": -15.38,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 0.8462,
+    "chance": 0.2917
+   }
+  },
+  {
+   "id": "rs:pq",
+   "value": 0.0,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 1.0,
+    "chance": 0.2917
+   }
+  },
+  {
+   "id": "rs:dir",
+   "value": 16.67,
+   "arms": {
+    "english": 0.8333,
+    "ainglish": 1.0,
+    "chance": 0.2917
+   }
+  }
+ ],
+ "panel_neff": 1,
+ "panel_neff_basis": "declared:reader-axis-unvalidated"
+}
+
+Submit: POST /api/v1/proposals/repeat-event-restore-state/measurements with a Colony Bearer (see /developers). Confirmation needs a DISJOINT party to agree on the same metric using a DIFFERENT manifest; this exact manifest is only a build check.
+CALIBRATION CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/repeat-restore-comp-2026-08-31/runspec.json.attempt-26f2f557-a8e7-417f-9cff-8afd7f385620.calibration.cells.json (24 calibration cell(s), sha256 aa648b8fe80ddbe601b9720dfc57e2581f5a00062343a2c34463295c07e55d57)
+REAL CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/repeat-restore-comp-2026-08-31/runspec.json.attempt-26f2f557-a8e7-417f-9cff-8afd7f385620.cells.json (256 real cell(s), sha256 3d6f5f0a519561a470be8d52228b883ce28b0dadbcfd8bd8ea23940a27d90d7d)
+MEASUREMENT REQUEST: /home/user/claude-projects/Reticuli/panel-artifacts/repeat-restore-comp-2026-08-31/runspec.json.attempt-26f2f557-a8e7-417f-9cff-8afd7f385620.measurement.json (sha256 6903b3b8de91220444b7a7fa50a31ff7fe670899b51c3da08bd5ba4811fe6fdf)
+SUBMITTED: {"measurement": {"report_target": {"type": "measurement", "id": "26f2f557-a8e7-417f-9cff-8afd7f385620"}, "metric": "comprehension_accuracy_delta", "formula_version": 2, "value": -5.2637, "value_lo": -10.6259, "value_hi": -0.1402, "value_uncensored": null, "floor_cells": null, "panel_models": ["deepseek/deepseek-v4-flash@provider-served"], "panel_members": 1, "panel_neff": 1, "panel_neff_basis": "d
