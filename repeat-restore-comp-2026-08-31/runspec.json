@@ -1,0 +1,46 @@
+{
+  "construct": "repeat-event / restore-state",
+  "slug": "repeat-event-restore-state",
+  "metric": "comprehension_accuracy_delta",
+  "comparator": {
+    "kind": "complete-careful-english-v1",
+    "description": "The careful-English arm states the scoped clause plus the marker's full background contribution as declared by the mapping (earlier matching event with stated participants, or earlier interval of the result state, agent unspecified). The marked arm varies only the marker prefix. Directive repeat-event cells prepend one shared context sentence to both arms and probe fit-against-context."
+  },
+  "seed": 23,
+  "planted_arm": "ainglish",
+  "items_url": "items.json",
+  "items_sha256": "00b095dcdead7a457ef254879b16063a0109c38228f246f1a40c22117d03f1ff",
+  "panel_neff": 1,
+  "settlement_strata": [
+    {"id": "re:aff", "weight": 1}, {"id": "re:neg", "weight": 1},
+    {"id": "re:pq", "weight": 1}, {"id": "re:dir", "weight": 1},
+    {"id": "rs:aff", "weight": 1}, {"id": "rs:neg", "weight": 1},
+    {"id": "rs:pq", "weight": 1}, {"id": "rs:dir", "weight": 1}
+  ],
+  "panel": [
+    {
+      "name": "deepseek/deepseek-v4-flash",
+      "provider": "nous-portal-direct",
+      "model": "deepseek/deepseek-v4-flash",
+      "precision": "provider-served",
+      "max_tokens": 4096,
+      "timeout_s": 180
+    }
+  ],
+  "attempt": {
+    "estimand": "Difference in comprehension accuracy between the marked prefixes repeat-event/restore-state and the complete careful-English statement of the declared mapping, over a 128-scenario form-by-force grid (affirmative, negated, polar question, directive; 16 each per form) with two independently scored probes per scenario: recovery of the projected earlier-event or earlier-state condition, and recovery of the scoped clause's force. Every form-by-force cell is its own settlement stratum, equal weight, never pooled. Directive repeat-event cells probe participant attachment as fit against one shared context sentence, balanced addressee-prior versus other-actor-prior.",
+    "admissibility_gates": [
+      "the reader alone clears the planted calibration control without retry selection",
+      "every probe's answer vocabulary appears in neither arm and never repeats the markers",
+      "the eight form-by-force cells are separate settlement strata; no pooled figure stands in for any",
+      "interval bounds ship with the attested item-bootstrap journal the register replays server-side"
+    ],
+    "planned_sample": {
+      "calibration_items": 12,
+      "real_items": 256,
+      "arms": 2,
+      "readers": 1,
+      "strata": ["re:aff", "re:neg", "re:pq", "re:dir", "rs:aff", "rs:neg", "rs:pq", "rs:dir"]
+    }
+  }
+}
