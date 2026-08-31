@@ -1,0 +1,1408 @@
+{
+ "items": [
+  {
+   "ainglish": "build 4f19c2 \u2014 test-run(checkout-e2e-v7@run 512); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "checkout-e2e-v7 (run 512) was executed on build 4f19c2; whether its acceptance criteria were met is not reported.",
+   "id": "r001-software-run",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "build 88aa31: test-run(login-smoke-v3@run 209).",
+   "answer": "it leaves this open",
+   "english": "build 88aa31 underwent login-smoke-v3 in run 209; the record confirms the execution and says nothing about the result.",
+   "id": "r002-software-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status release 2.9.1: test-run(upgrade-path-v2@run 77).",
+   "answer": "it leaves this open",
+   "english": "upgrade-path-v2 (run 77) was executed on release 2.9.1; whether its acceptance criteria were met is not reported.",
+   "id": "r003-software-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "service image swan-1.4: test-run(api-contract-v9@run 3021).",
+   "answer": "it leaves this open",
+   "english": "The named procedure api-contract-v9 (run 3021) ran against service image swan-1.4. Its outcome was not recorded.",
+   "id": "r004-software-run",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "build 7c0d9e: test-run(cart-regression-v5@run 640).",
+   "answer": "it leaves this open",
+   "english": "The named procedure cart-regression-v5 (run 640) ran against build 7c0d9e. Its outcome was not recorded.",
+   "id": "r005-software-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "hotfix 1.8.4: test-run(session-expiry-v2@run 41).",
+   "answer": "it leaves this open",
+   "english": "hotfix 1.8.4 underwent session-expiry-v2 in run 41; the record confirms the execution and says nothing about the result.",
+   "id": "r006-software-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "build 3e2b77 \u2014 test-run(search-index-v6@run 128); nothing further reported.",
+   "answer": "it took place",
+   "english": "On build 3e2b77, search-index-v6 (run 128) did take place. The report stops there: no result is given.",
+   "id": "r007-software-run",
+   "options": [
+    "it took place",
+    "it did not take place",
+    "the statement leaves this open"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status candidate 5.0-rc2: test-run(billing-cycle-v4@run 902).",
+   "answer": "no, only what the named procedure checks",
+   "english": "billing-cycle-v4 (run 902) was executed on candidate 5.0-rc2; whether its acceptance criteria were met is not reported.",
+   "id": "r008-software-run",
+   "options": [
+    "yes, broader fitness follows",
+    "no, only what the named procedure checks",
+    "only when the run happened recently"
+   ],
+   "question": "Based only on the statement, may a reader conclude the item is fit for purposes beyond what the named procedure checks?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "build 4f19c2 \u2014 test-passed(checkout-e2e-v7@run 512).",
+   "answer": "it establishes this",
+   "english": "In run 512, checkout-e2e-v7 was carried out on build 4f19c2 and each of its declared acceptance criteria was met.",
+   "id": "r009-software-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "build 88aa31 \u2014 test-passed(login-smoke-v3@run 209).",
+   "answer": "it establishes this",
+   "english": "In run 209, login-smoke-v3 was carried out on build 88aa31 and each of its declared acceptance criteria was met.",
+   "id": "r010-software-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "release 2.9.1: test-passed(upgrade-path-v2@run 77).",
+   "answer": "it establishes this",
+   "english": "In run 77, upgrade-path-v2 was carried out on release 2.9.1 and each of its declared acceptance criteria was met.",
+   "id": "r011-software-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status service image swan-1.4: test-passed(api-contract-v9@run 3021).",
+   "answer": "it establishes this",
+   "english": "The record shows api-contract-v9 executing against service image swan-1.4 in run 3021 with every declared criterion satisfied.",
+   "id": "r012-software-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "build 7c0d9e \u2014 test-passed(cart-regression-v5@run 640).",
+   "answer": "it establishes this",
+   "english": "The record shows cart-regression-v5 executing against build 7c0d9e in run 640 with every declared criterion satisfied.",
+   "id": "r013-software-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "hotfix 1.8.4 \u2014 test-passed(session-expiry-v2@run 41).",
+   "answer": "it establishes this",
+   "english": "hotfix 1.8.4 met every acceptance criterion declared by session-expiry-v2 for run 41; the procedure did execute in that run.",
+   "id": "r014-software-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status build 3e2b77: test-passed(search-index-v6@run 128).",
+   "answer": "it took place",
+   "english": "build 3e2b77 met every acceptance criterion declared by search-index-v6 for run 128; the procedure did execute in that run.",
+   "id": "r015-software-passed",
+   "options": [
+    "it took place",
+    "it did not take place",
+    "the statement leaves this open"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status candidate 5.0-rc2: test-passed(billing-cycle-v4@run 902).",
+   "answer": "no, only what the named procedure checks",
+   "english": "candidate 5.0-rc2 met every acceptance criterion declared by billing-cycle-v4 for run 902; the procedure did execute in that run.",
+   "id": "r016-software-passed",
+   "options": [
+    "only when the run happened recently",
+    "yes, broader fitness follows",
+    "no, only what the named procedure checks"
+   ],
+   "question": "Does the statement, by itself, license conclusions about qualities the named procedure does not check?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "backup B17 \u2014 test-run(restore-v4@run 817); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "The named procedure restore-v4 (run 817) ran against backup B17. Its outcome was not recorded.",
+   "id": "r017-backups-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "backup W03: test-run(restore-v4@run 244).",
+   "answer": "it leaves this open",
+   "english": "restore-v4 (run 244) was executed on backup W03; whether its acceptance criteria were met is not reported.",
+   "id": "r018-backups-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "snapshot S-2211 \u2014 test-run(integrity-scan-v2@run 66); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "On snapshot S-2211, integrity-scan-v2 (run 66) did take place. The report stops there: no result is given.",
+   "id": "r019-backups-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "archive AR-91 \u2014 test-run(media-verify-v1@run 5); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "On archive AR-91, media-verify-v1 (run 5) did take place. The report stops there: no result is given.",
+   "id": "r020-backups-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status backup Q88: test-run(restore-partial-v3@run 431).",
+   "answer": "it leaves this open",
+   "english": "The named procedure restore-partial-v3 (run 431) ran against backup Q88. Its outcome was not recorded.",
+   "id": "r021-backups-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "snapshot S-0409: test-run(catalog-check-v2@run 19).",
+   "answer": "it leaves this open",
+   "english": "catalog-check-v2 (run 19) was executed on snapshot S-0409; whether its acceptance criteria were met is not reported.",
+   "id": "r022-backups-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "vault copy V-12: test-run(offsite-read-v1@run 88).",
+   "answer": "it took place",
+   "english": "vault copy V-12 underwent offsite-read-v1 in run 88; the record confirms the execution and says nothing about the result.",
+   "id": "r023-backups-run",
+   "options": [
+    "it did not take place",
+    "the statement leaves this open",
+    "it took place"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status backup B44: test-run(restore-v5@run 1203).",
+   "answer": "no, only what the named procedure checks",
+   "english": "On backup B44, restore-v5 (run 1203) did take place. The report stops there: no result is given.",
+   "id": "r024-backups-run",
+   "options": [
+    "yes, broader fitness follows",
+    "no, only what the named procedure checks",
+    "only when the run happened recently"
+   ],
+   "question": "Does the statement, by itself, license conclusions about qualities the named procedure does not check?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "backup B17 \u2014 test-passed(restore-v4@run 817).",
+   "answer": "it establishes this",
+   "english": "The record shows restore-v4 executing against backup B17 in run 817 with every declared criterion satisfied.",
+   "id": "r025-backups-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "backup W03: test-passed(restore-v4@run 244).",
+   "answer": "it establishes this",
+   "english": "backup W03 met every acceptance criterion declared by restore-v4 for run 244; the procedure did execute in that run.",
+   "id": "r026-backups-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status snapshot S-2211: test-passed(integrity-scan-v2@run 66).",
+   "answer": "it establishes this",
+   "english": "integrity-scan-v2 (run 66) ran on snapshot S-2211, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r027-backups-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "archive AR-91 \u2014 test-passed(media-verify-v1@run 5).",
+   "answer": "it establishes this",
+   "english": "The record shows media-verify-v1 executing against archive AR-91 in run 5 with every declared criterion satisfied.",
+   "id": "r028-backups-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "backup Q88: test-passed(restore-partial-v3@run 431).",
+   "answer": "it establishes this",
+   "english": "In run 431, restore-partial-v3 was carried out on backup Q88 and each of its declared acceptance criteria was met.",
+   "id": "r029-backups-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "snapshot S-0409 \u2014 test-passed(catalog-check-v2@run 19).",
+   "answer": "it establishes this",
+   "english": "snapshot S-0409 met every acceptance criterion declared by catalog-check-v2 for run 19; the procedure did execute in that run.",
+   "id": "r030-backups-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "vault copy V-12: test-passed(offsite-read-v1@run 88).",
+   "answer": "it took place",
+   "english": "offsite-read-v1 (run 88) ran on vault copy V-12, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r031-backups-passed",
+   "options": [
+    "it took place",
+    "it did not take place",
+    "the statement leaves this open"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "backup B44 \u2014 test-passed(restore-v5@run 1203).",
+   "answer": "no, only what the named procedure checks",
+   "english": "backup B44 met every acceptance criterion declared by restore-v5 for run 1203; the procedure did execute in that run.",
+   "id": "r032-backups-passed",
+   "options": [
+    "yes, broader fitness follows",
+    "no, only what the named procedure checks",
+    "only when the run happened recently"
+   ],
+   "question": "Based only on the statement, may a reader conclude the item is fit for purposes beyond what the named procedure checks?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "nightly load L-77: test-run(row-count-recon-v3@run 2210).",
+   "answer": "it leaves this open",
+   "english": "nightly load L-77 underwent row-count-recon-v3 in run 2210; the record confirms the execution and says nothing about the result.",
+   "id": "r033-pipelines-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status feed F-metrics: test-run(schema-drift-v2@run 431).",
+   "answer": "it leaves this open",
+   "english": "feed F-metrics underwent schema-drift-v2 in run 431; the record confirms the execution and says nothing about the result.",
+   "id": "r034-pipelines-run",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status join job J-19: test-run(dedupe-audit-v1@run 87).",
+   "answer": "it leaves this open",
+   "english": "dedupe-audit-v1 (run 87) was executed on join job J-19; whether its acceptance criteria were met is not reported.",
+   "id": "r035-pipelines-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "export E-52 \u2014 test-run(checksum-recon-v4@run 664); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "The named procedure checksum-recon-v4 (run 664) ran against export E-52. Its outcome was not recorded.",
+   "id": "r036-pipelines-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "ingest I-08 \u2014 test-run(late-arrival-v2@run 190); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "late-arrival-v2 (run 190) was executed on ingest I-08; whether its acceptance criteria were met is not reported.",
+   "id": "r037-pipelines-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status rollup R-3: test-run(totals-recon-v5@run 771).",
+   "answer": "it leaves this open",
+   "english": "On rollup R-3, totals-recon-v5 (run 771) did take place. The report stops there: no result is given.",
+   "id": "r038-pipelines-run",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status stream S-billing: test-run(gap-detect-v3@run 42).",
+   "answer": "it took place",
+   "english": "On stream S-billing, gap-detect-v3 (run 42) did take place. The report stops there: no result is given.",
+   "id": "r039-pipelines-run",
+   "options": [
+    "it took place",
+    "it did not take place",
+    "the statement leaves this open"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "load L-83 \u2014 test-run(null-rate-v2@run 355); nothing further reported.",
+   "answer": "no, only what the named procedure checks",
+   "english": "null-rate-v2 (run 355) was executed on load L-83; whether its acceptance criteria were met is not reported.",
+   "id": "r040-pipelines-run",
+   "options": [
+    "yes, broader fitness follows",
+    "no, only what the named procedure checks",
+    "only when the run happened recently"
+   ],
+   "question": "Does the statement, by itself, license conclusions about qualities the named procedure does not check?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "nightly load L-77 \u2014 test-passed(row-count-recon-v3@run 2210).",
+   "answer": "it establishes this",
+   "english": "row-count-recon-v3 (run 2210) ran on nightly load L-77, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r041-pipelines-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "feed F-metrics \u2014 test-passed(schema-drift-v2@run 431).",
+   "answer": "it establishes this",
+   "english": "schema-drift-v2 (run 431) ran on feed F-metrics, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r042-pipelines-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "join job J-19 \u2014 test-passed(dedupe-audit-v1@run 87).",
+   "answer": "it establishes this",
+   "english": "The record shows dedupe-audit-v1 executing against join job J-19 in run 87 with every declared criterion satisfied.",
+   "id": "r043-pipelines-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "export E-52 \u2014 test-passed(checksum-recon-v4@run 664).",
+   "answer": "it establishes this",
+   "english": "checksum-recon-v4 (run 664) ran on export E-52, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r044-pipelines-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status ingest I-08: test-passed(late-arrival-v2@run 190).",
+   "answer": "it establishes this",
+   "english": "late-arrival-v2 (run 190) ran on ingest I-08, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r045-pipelines-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "rollup R-3 \u2014 test-passed(totals-recon-v5@run 771).",
+   "answer": "it establishes this",
+   "english": "In run 771, totals-recon-v5 was carried out on rollup R-3 and each of its declared acceptance criteria was met.",
+   "id": "r046-pipelines-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "stream S-billing \u2014 test-passed(gap-detect-v3@run 42).",
+   "answer": "it took place",
+   "english": "The record shows gap-detect-v3 executing against stream S-billing in run 42 with every declared criterion satisfied.",
+   "id": "r047-pipelines-passed",
+   "options": [
+    "it took place",
+    "it did not take place",
+    "the statement leaves this open"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "load L-83: test-passed(null-rate-v2@run 355).",
+   "answer": "no, only what the named procedure checks",
+   "english": "load L-83 met every acceptance criterion declared by null-rate-v2 for run 355; the procedure did execute in that run.",
+   "id": "r048-pipelines-passed",
+   "options": [
+    "only when the run happened recently",
+    "yes, broader fitness follows",
+    "no, only what the named procedure checks"
+   ],
+   "question": "Based only on the statement, may a reader conclude the item is fit for purposes beyond what the named procedure checks?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "fire door FD-12: test-run(closure-latch-v2@check 31).",
+   "answer": "it leaves this open",
+   "english": "fire door FD-12 underwent closure-latch-v2 in check 31; the record confirms the execution and says nothing about the result.",
+   "id": "r049-inspections-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "pressure vessel PV-4: test-run(hydro-test-v6@check 9).",
+   "answer": "it leaves this open",
+   "english": "On pressure vessel PV-4, hydro-test-v6 (check 9) did take place. The report stops there: no result is given.",
+   "id": "r050-inspections-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "hoist H-2: test-run(load-brake-v3@check 118).",
+   "answer": "it leaves this open",
+   "english": "hoist H-2 underwent load-brake-v3 in check 118; the record confirms the execution and says nothing about the result.",
+   "id": "r051-inspections-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status valve V-771: test-run(seat-leak-v2@check 47).",
+   "answer": "it leaves this open",
+   "english": "On valve V-771, seat-leak-v2 (check 47) did take place. The report stops there: no result is given.",
+   "id": "r052-inspections-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status ladder L-9: test-run(rung-integrity-v1@check 6).",
+   "answer": "it leaves this open",
+   "english": "The named procedure rung-integrity-v1 (check 6) ran against ladder L-9. Its outcome was not recorded.",
+   "id": "r053-inspections-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status extinguisher X-33: test-run(gauge-charge-v2@check 210).",
+   "answer": "it leaves this open",
+   "english": "The named procedure gauge-charge-v2 (check 210) ran against extinguisher X-33. Its outcome was not recorded.",
+   "id": "r054-inspections-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "scaffold S-5: test-run(tie-in-v3@check 74).",
+   "answer": "it took place",
+   "english": "scaffold S-5 underwent tie-in-v3 in check 74; the record confirms the execution and says nothing about the result.",
+   "id": "r055-inspections-run",
+   "options": [
+    "it did not take place",
+    "the statement leaves this open",
+    "it took place"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "crane C-1: test-run(limit-switch-v4@check 380).",
+   "answer": "no, only what the named procedure checks",
+   "english": "On crane C-1, limit-switch-v4 (check 380) did take place. The report stops there: no result is given.",
+   "id": "r056-inspections-run",
+   "options": [
+    "no, only what the named procedure checks",
+    "only when the run happened recently",
+    "yes, broader fitness follows"
+   ],
+   "question": "Based only on the statement, may a reader conclude the item is fit for purposes beyond what the named procedure checks?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "fire door FD-12: test-passed(closure-latch-v2@check 31).",
+   "answer": "it establishes this",
+   "english": "The record shows closure-latch-v2 executing against fire door FD-12 in check 31 with every declared criterion satisfied.",
+   "id": "r057-inspections-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "pressure vessel PV-4: test-passed(hydro-test-v6@check 9).",
+   "answer": "it establishes this",
+   "english": "The record shows hydro-test-v6 executing against pressure vessel PV-4 in check 9 with every declared criterion satisfied.",
+   "id": "r058-inspections-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "hoist H-2: test-passed(load-brake-v3@check 118).",
+   "answer": "it establishes this",
+   "english": "In check 118, load-brake-v3 was carried out on hoist H-2 and each of its declared acceptance criteria was met.",
+   "id": "r059-inspections-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status valve V-771: test-passed(seat-leak-v2@check 47).",
+   "answer": "it establishes this",
+   "english": "seat-leak-v2 (check 47) ran on valve V-771, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r060-inspections-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status ladder L-9: test-passed(rung-integrity-v1@check 6).",
+   "answer": "it establishes this",
+   "english": "The record shows rung-integrity-v1 executing against ladder L-9 in check 6 with every declared criterion satisfied.",
+   "id": "r061-inspections-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "extinguisher X-33 \u2014 test-passed(gauge-charge-v2@check 210).",
+   "answer": "it establishes this",
+   "english": "In check 210, gauge-charge-v2 was carried out on extinguisher X-33 and each of its declared acceptance criteria was met.",
+   "id": "r062-inspections-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "scaffold S-5 \u2014 test-passed(tie-in-v3@check 74).",
+   "answer": "it took place",
+   "english": "The record shows tie-in-v3 executing against scaffold S-5 in check 74 with every declared criterion satisfied.",
+   "id": "r063-inspections-passed",
+   "options": [
+    "it did not take place",
+    "the statement leaves this open",
+    "it took place"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "crane C-1: test-passed(limit-switch-v4@check 380).",
+   "answer": "no, only what the named procedure checks",
+   "english": "The record shows limit-switch-v4 executing against crane C-1 in check 380 with every declared criterion satisfied.",
+   "id": "r064-inspections-passed",
+   "options": [
+    "no, only what the named procedure checks",
+    "only when the run happened recently",
+    "yes, broader fitness follows"
+   ],
+   "question": "Does the statement, by itself, license conclusions about qualities the named procedure does not check?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "vendor ledger VL-9: test-run(three-way-match-v2@cycle 14).",
+   "answer": "it leaves this open",
+   "english": "vendor ledger VL-9 underwent three-way-match-v2 in cycle 14; the record confirms the execution and says nothing about the result.",
+   "id": "r065-audits-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "access list AL-ops: test-run(leaver-removal-v3@cycle 8).",
+   "answer": "it leaves this open",
+   "english": "leaver-removal-v3 (cycle 8) was executed on access list AL-ops; whether its acceptance criteria were met is not reported.",
+   "id": "r066-audits-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "expense batch EB-207 \u2014 test-run(receipt-match-v1@cycle 22); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "On expense batch EB-207, receipt-match-v1 (cycle 22) did take place. The report stops there: no result is given.",
+   "id": "r067-audits-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status privilege set PS-db: test-run(least-priv-v2@cycle 5).",
+   "answer": "it leaves this open",
+   "english": "privilege set PS-db underwent least-priv-v2 in cycle 5; the record confirms the execution and says nothing about the result.",
+   "id": "r068-audits-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "payroll run PR-06: test-run(variance-band-v4@cycle 61).",
+   "answer": "it leaves this open",
+   "english": "On payroll run PR-06, variance-band-v4 (cycle 61) did take place. The report stops there: no result is given.",
+   "id": "r069-audits-run",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "grant register GR-2 \u2014 test-run(dual-sign-v1@cycle 17); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "grant register GR-2 underwent dual-sign-v1 in cycle 17; the record confirms the execution and says nothing about the result.",
+   "id": "r070-audits-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "card program CP-1 \u2014 test-run(limit-policy-v2@cycle 33); nothing further reported.",
+   "answer": "it took place",
+   "english": "On card program CP-1, limit-policy-v2 (cycle 33) did take place. The report stops there: no result is given.",
+   "id": "r071-audits-run",
+   "options": [
+    "it took place",
+    "it did not take place",
+    "the statement leaves this open"
+   ],
+   "question": "Going by the statement alone: did that specific procedure execute?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "treasury desk TD \u2014 test-run(counterparty-cap-v3@cycle 9); nothing further reported.",
+   "answer": "no, only what the named procedure checks",
+   "english": "treasury desk TD underwent counterparty-cap-v3 in cycle 9; the record confirms the execution and says nothing about the result.",
+   "id": "r072-audits-run",
+   "options": [
+    "yes, broader fitness follows",
+    "no, only what the named procedure checks",
+    "only when the run happened recently"
+   ],
+   "question": "Does the statement, by itself, license conclusions about qualities the named procedure does not check?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "vendor ledger VL-9 \u2014 test-passed(three-way-match-v2@cycle 14).",
+   "answer": "it establishes this",
+   "english": "vendor ledger VL-9 met every acceptance criterion declared by three-way-match-v2 for cycle 14; the procedure did execute in that run.",
+   "id": "r073-audits-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "access list AL-ops \u2014 test-passed(leaver-removal-v3@cycle 8).",
+   "answer": "it establishes this",
+   "english": "The record shows leaver-removal-v3 executing against access list AL-ops in cycle 8 with every declared criterion satisfied.",
+   "id": "r074-audits-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "expense batch EB-207: test-passed(receipt-match-v1@cycle 22).",
+   "answer": "it establishes this",
+   "english": "In cycle 22, receipt-match-v1 was carried out on expense batch EB-207 and each of its declared acceptance criteria was met.",
+   "id": "r075-audits-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "privilege set PS-db: test-passed(least-priv-v2@cycle 5).",
+   "answer": "it establishes this",
+   "english": "privilege set PS-db met every acceptance criterion declared by least-priv-v2 for cycle 5; the procedure did execute in that run.",
+   "id": "r076-audits-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "payroll run PR-06 \u2014 test-passed(variance-band-v4@cycle 61).",
+   "answer": "it establishes this",
+   "english": "variance-band-v4 (cycle 61) ran on payroll run PR-06, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r077-audits-passed",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "grant register GR-2 \u2014 test-passed(dual-sign-v1@cycle 17).",
+   "answer": "it establishes this",
+   "english": "The record shows dual-sign-v1 executing against grant register GR-2 in cycle 17 with every declared criterion satisfied.",
+   "id": "r078-audits-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "card program CP-1 \u2014 test-passed(limit-policy-v2@cycle 33).",
+   "answer": "it took place",
+   "english": "In cycle 33, limit-policy-v2 was carried out on card program CP-1 and each of its declared acceptance criteria was met.",
+   "id": "r079-audits-passed",
+   "options": [
+    "it took place",
+    "it did not take place",
+    "the statement leaves this open"
+   ],
+   "question": "Based only on the statement, did the named procedure actually take place on the item described?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "treasury desk TD: test-passed(counterparty-cap-v3@cycle 9).",
+   "answer": "no, only what the named procedure checks",
+   "english": "counterparty-cap-v3 (cycle 9) ran on treasury desk TD, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r080-audits-passed",
+   "options": [
+    "only when the run happened recently",
+    "yes, broader fitness follows",
+    "no, only what the named procedure checks"
+   ],
+   "question": "Does the statement, by itself, license conclusions about qualities the named procedure does not check?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status model m-2409: test-run(toxicity-suite-v5@eval 88).",
+   "answer": "it leaves this open",
+   "english": "On model m-2409, toxicity-suite-v5 (eval 88) did take place. The report stops there: no result is given.",
+   "id": "r081-modelevals-run",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "checkpoint ck-771: test-run(holdout-accuracy-v3@eval 12).",
+   "answer": "it leaves this open",
+   "english": "On checkpoint ck-771, holdout-accuracy-v3 (eval 12) did take place. The report stops there: no result is given.",
+   "id": "r082-modelevals-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "adapter ad-3 \u2014 test-run(regression-set-v7@eval 301); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "On adapter ad-3, regression-set-v7 (eval 301) did take place. The report stops there: no result is given.",
+   "id": "r083-modelevals-run",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "model m-3001: test-run(jailbreak-probe-v2@eval 55).",
+   "answer": "it leaves this open",
+   "english": "The named procedure jailbreak-probe-v2 (eval 55) ran against model m-3001. Its outcome was not recorded.",
+   "id": "r084-modelevals-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status ranker r-88: test-run(ndcg-floor-v2@eval 140).",
+   "answer": "it leaves this open",
+   "english": "On ranker r-88, ndcg-floor-v2 (eval 140) did take place. The report stops there: no result is given.",
+   "id": "r085-modelevals-run",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "classifier c-19 \u2014 test-run(drift-battery-v4@eval 23); nothing further reported.",
+   "answer": "it leaves this open",
+   "english": "The named procedure drift-battery-v4 (eval 23) ran against classifier c-19. Its outcome was not recorded.",
+   "id": "r086-modelevals-run",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "extractor x-6: test-run(field-recall-v3@eval 77).",
+   "answer": "it took place",
+   "english": "field-recall-v3 (eval 77) was executed on extractor x-6; whether its acceptance criteria were met is not reported.",
+   "id": "r087-modelevals-run",
+   "options": [
+    "it did not take place",
+    "the statement leaves this open",
+    "it took place"
+   ],
+   "question": "Based only on the statement, did the named procedure actually take place on the item described?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "model m-2811: test-run(latency-budget-v2@eval 9).",
+   "answer": "no, only what the named procedure checks",
+   "english": "model m-2811 underwent latency-budget-v2 in eval 9; the record confirms the execution and says nothing about the result.",
+   "id": "r088-modelevals-run",
+   "options": [
+    "no, only what the named procedure checks",
+    "only when the run happened recently",
+    "yes, broader fitness follows"
+   ],
+   "question": "Does the statement, by itself, license conclusions about qualities the named procedure does not check?",
+   "settlement_stratum": "marker:test-run"
+  },
+  {
+   "ainglish": "status model m-2409: test-passed(toxicity-suite-v5@eval 88).",
+   "answer": "it establishes this",
+   "english": "toxicity-suite-v5 (eval 88) ran on model m-2409, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r089-modelevals-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status checkpoint ck-771: test-passed(holdout-accuracy-v3@eval 12).",
+   "answer": "it establishes this",
+   "english": "checkpoint ck-771 met every acceptance criterion declared by holdout-accuracy-v3 for eval 12; the procedure did execute in that run.",
+   "id": "r090-modelevals-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "adapter ad-3 \u2014 test-passed(regression-set-v7@eval 301).",
+   "answer": "it establishes this",
+   "english": "regression-set-v7 (eval 301) ran on adapter ad-3, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r091-modelevals-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "model m-3001: test-passed(jailbreak-probe-v2@eval 55).",
+   "answer": "it establishes this",
+   "english": "The record shows jailbreak-probe-v2 executing against model m-3001 in eval 55 with every declared criterion satisfied.",
+   "id": "r092-modelevals-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "ranker r-88: test-passed(ndcg-floor-v2@eval 140).",
+   "answer": "it establishes this",
+   "english": "ndcg-floor-v2 (eval 140) ran on ranker r-88, and all of the criteria that procedure declares were satisfied in that run.",
+   "id": "r093-modelevals-passed",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "classifier c-19 \u2014 test-passed(drift-battery-v4@eval 23).",
+   "answer": "it establishes this",
+   "english": "classifier c-19 met every acceptance criterion declared by drift-battery-v4 for eval 23; the procedure did execute in that run.",
+   "id": "r094-modelevals-passed",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "status extractor x-6: test-passed(field-recall-v3@eval 77).",
+   "answer": "it took place",
+   "english": "extractor x-6 met every acceptance criterion declared by field-recall-v3 for eval 77; the procedure did execute in that run.",
+   "id": "r095-modelevals-passed",
+   "options": [
+    "it took place",
+    "it did not take place",
+    "the statement leaves this open"
+   ],
+   "question": "Based only on the statement, did the named procedure actually take place on the item described?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "model m-2811: test-passed(latency-budget-v2@eval 9).",
+   "answer": "no, only what the named procedure checks",
+   "english": "The record shows latency-budget-v2 executing against model m-2811 in eval 9 with every declared criterion satisfied.",
+   "id": "r096-modelevals-passed",
+   "options": [
+    "no, only what the named procedure checks",
+    "only when the run happened recently",
+    "yes, broader fitness follows"
+   ],
+   "question": "Based only on the statement, may a reader conclude the item is fit for purposes beyond what the named procedure checks?",
+   "settlement_stratum": "marker:test-passed"
+  },
+  {
+   "ainglish": "the staging database \u2014 test-passed(failover-drill-v2@run 18).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "failover-drill-v2 testing of the staging database took place (run 18).",
+   "id": "c01",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?"
+  },
+  {
+   "ainglish": "gateway G-7: test-passed(tls-rotation-v1@run 4).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "gateway G-7 was tested with tls-rotation-v1 in run 4.",
+   "id": "c02",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?"
+  },
+  {
+   "ainglish": "status backup N-51: test-passed(restore-v4@run 121).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "backup N-51 was tested with restore-v4 in run 121.",
+   "id": "c03",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?"
+  },
+  {
+   "ainglish": "model m-1901: test-passed(holdout-accuracy-v3@eval 61).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "holdout-accuracy-v3 testing of model m-1901 took place (eval 61).",
+   "id": "c04",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?"
+  },
+  {
+   "ainglish": "fire pump FP-1 \u2014 test-passed(flow-test-v5@check 12).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "flow-test-v5 testing of fire pump FP-1 took place (check 12).",
+   "id": "c05",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?"
+  },
+  {
+   "ainglish": "status ledger L-ops: test-passed(three-way-match-v2@cycle 3).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "ledger L-ops was tested with three-way-match-v2 in cycle 3.",
+   "id": "c06",
+   "options": [
+    "it establishes the opposite",
+    "it leaves this open",
+    "it establishes this"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?"
+  },
+  {
+   "ainglish": "status feed F-orders: test-passed(schema-drift-v2@run 210).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "feed F-orders was tested with schema-drift-v2 in run 210.",
+   "id": "c07",
+   "options": [
+    "it leaves this open",
+    "it establishes this",
+    "it establishes the opposite"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?"
+  },
+  {
+   "ainglish": "build 9a1c44: test-passed(checkout-e2e-v7@run 733).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "build 9a1c44 was tested with checkout-e2e-v7 in run 733.",
+   "id": "c08",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?"
+  },
+  {
+   "ainglish": "status snapshot S-118: test-passed(integrity-scan-v2@run 40).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "integrity-scan-v2 testing of snapshot S-118 took place (run 40).",
+   "id": "c09",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?"
+  },
+  {
+   "ainglish": "status valve V-208: test-passed(seat-leak-v2@check 91).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "valve V-208 was tested with seat-leak-v2 in check 91.",
+   "id": "c10",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?"
+  },
+  {
+   "ainglish": "card program CP-4 \u2014 test-passed(limit-policy-v2@cycle 11).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "limit-policy-v2 testing of card program CP-4 took place (cycle 11).",
+   "id": "c11",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied?"
+  },
+  {
+   "ainglish": "extractor x-9 \u2014 test-passed(field-recall-v3@eval 30).",
+   "answer": "it establishes this",
+   "calibration": true,
+   "english": "field-recall-v3 testing of extractor x-9 took place (eval 30).",
+   "id": "c12",
+   "options": [
+    "it establishes this",
+    "it establishes the opposite",
+    "it leaves this open"
+   ],
+   "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure was met in that run?"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+  "construct": "test-run(<T>) / test-passed(<T>)",
+  "slug": "test-run-t-test-passed-t-did-tested-mean-the-check-happened-",
+  "metric": "comprehension_accuracy_delta",
+  "comparator": {
+    "kind": "complete-careful-english-v1",
+    "description": "The shortest careful-English statement of the full declared mapping: for test-run, execution asserted with the outcome expressly unreported; for test-passed, execution plus every declared acceptance criterion met. The marked arm varies only the marker form."
+  },
+  "seed": 17,
+  "planted_arm": "ainglish",
+  "items_url": "items.json",
+  "items_sha256": "784eceb075dd0ca55b352d11d30cc9cc3db1254f57c9e81173a0ff827135b992",
+  "panel_neff": 1,
+  "settlement_strata": [
+    {"id": "marker:test-run", "weight": 1},
+    {"id": "marker:test-passed", "weight": 1}
+  ],
+  "panel": [
+    {
+      "name": "deepseek/deepseek-v4-flash",
+      "provider": "nous-portal-direct",
+      "model": "deepseek/deepseek-v4-flash",
+      "precision": "provider-served",
+      "max_tokens": 4096,
+      "timeout_s": 180
+    }
+  ],
+  "attempt": {
+    "estimand": "Difference in comprehension accuracy between the marked forms test-run(T)/test-passed(T) and the shortest careful-English statement of the full declared mapping, on held-out consequence questions (did the procedure execute; does the statement establish every declared criterion was met; is broader fitness licensed), over 96 form-balanced items across six domains, the two markers reported as separate settlement strata and never pooled. The row predicts non-inferiority within 5 percentage points, so a small negative delta is a predicted outcome, not a surprise.",
+    "admissibility_gates": [
+      "the reader alone clears the planted calibration control without retry selection",
+      "every real question asks a held-out consequence whose answer vocabulary appears in neither arm and never repeats the markers",
+      "the two markers are separate settlement strata; no pooled figure stands in for either",
+      "interval bounds ship with the attested item-bootstrap journal the register replays server-side"
+    ],
+    "planned_sample": {
+      "calibration_items": 12,
+      "real_items": 96,
+      "arms": 2,
+      "readers": 1,
+      "strata": ["marker:test-run", "marker:test-passed"]
+    }
+  }
+}
