@@ -1,7 +1,12 @@
 # should-as-rule / should-as-forecast — comprehension item set (frozen 2026-08-30)
 
 **204 items — 192 real + 12 calibration. `items.json` sha256
-`d86b7845b06ec227a9e4dea62fe3050677af7d606a7cf341bcbbaa64cc5b2e3e`.**
+`d5f025682eb4bd02f56d9da765e5538fe00c366d94dda76acb3de5607e7d395e`.**
+
+> **This header was stale.** It cited `d86b7845…`, the first freeze (`4c41625`), after the set was
+> deliberately re-cut with a third plausible action (`a03b131`). The live set is `d5f02568…` and the
+> generator reproduces it. I found this while about to run a reader against "the frozen set" and
+> hitting a hash that did not match the document describing it.
 
 Frozen and committed before any reader ran. Re-derive with `python3 author_should_comp.py`; the
 generator is deterministic and takes no seed.
@@ -163,3 +168,58 @@ excluded on liveness (16/24, six truncations on the bare arm). That is the one t
 next, and it is a transport problem rather than a design one.
 
 Total spend across three attempts: **$0.165**. Real items bought: **zero**.
+
+
+## 2026-08-31 — the v2 qualification was measuring the harness, not the readers
+
+`qualify.py` had `CODES = "ABC"`. Every item in the v2 set carries **four** options, and option
+order is shuffled per item, so `zip(CODES, options)` silently dropped whichever option landed
+fourth:
+
+```
+items whose CORRECT ANSWER was never offered : 51 of 204
+of which CALIBRATION items                   :  3 of 12
+```
+
+Three unanswerable calibration items cap the marked arm at 9/12 = 0.75 no matter how well a reader
+reads. glm scored 0.70 there — near-perfect on the answerable subset — and was recorded as failing.
+**Every number in `qualification-v2-maxtok4096.json` is a measurement of the choice-set bug.**
+
+`CODES` is now `"ABCDEFGH"`, and `prompt()` refuses outright if an item has more options than there
+are codes, rather than offering a partial choice set. Zero items now have an unreachable answer.
+
+### Re-qualified with the fixed harness, and the truncation fix worked
+
+`qualification-v2-codesfixed-maxtok8192.json`, 96 cells, $0.0452. Raising `max_tokens` from 4096
+to 8192 was the openly-declared third configuration change, and it did what it was meant to:
+
+```
+finish_reason=length   4096 -> 8192
+  glm-5.3-flash          8  ->  2
+  qwen3.8-flash          5  ->  1
+```
+
+Under the **released** gate (`headroom-relative-v1`, ainglish 0.2.46) three of four readers now
+clear it:
+
+| reader | english | ainglish | gap | recovered | released gate |
+|---|---|---|---|---|---|
+| z-ai/glm-5.3-flash | 0.29 | 1.00 | 0.71 | **1.000** | PASS |
+| qwen/qwen3.8-flash | 0.40 | 0.90 | 0.50 | **0.833** | PASS |
+| deepseek/deepseek-v4-flash | 0.14 | 0.60 | 0.46 | **0.533** | PASS |
+| google/gemini-3.7-flash | 0.00 | 0.33 | 0.33 | 0.333 | fail |
+
+`qualify.py` still hardcodes `MIN_GAP = 0.5` and excluded all four; that is the script's own
+constant, not the register's rule, and it is exactly the arithmetic the released gate replaces.
+
+### What now blocks, and it is a different thing
+
+```
+remaining deaths across 96 cells: {'error:HTTPError': 20, 'empty': 3}   = 24%
+```
+
+Not comprehension, not the gate, not truncation — **transport**. And `qualify.py` is a standalone
+script with none of the SDK harness's fault typing, retry policy, cell-yield guard or
+mint-before-spend. The real panel should run through `run_panel`, which types a far-side failure as
+one dead cell with a stated cause instead of losing the run — which is precisely what
+ai-nglish/ainglish#119 added.

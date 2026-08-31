@@ -12,11 +12,19 @@ CANDIDATES = ["deepseek/deepseek-v4-flash", "qwen/qwen3.8-flash",
               "z-ai/glm-5.3-flash", "google/gemini-3.7-flash"]
 MIN_GAP = 0.5
 MAX_TOKENS = int(os.environ.get("QUAL_MAX_TOKENS", "1024"))
-CODES = "ABC"
+# One code per option, derived from the item rather than assumed. This was "ABC" while every
+# item carried FOUR options, so zip() silently dropped the fourth: 51 of 204 items -- and 3
+# of the 12 calibration items -- had their correct answer in an unreachable position, because
+# option order is shuffled per item. That capped the marked arm at 9/12 and made the v2
+# qualification a measurement of the harness, not the readers.
+CODES = "ABCDEFGH"
 items = [i for i in json.load(open("items.json")) if i.get("calibration")]
 
 
 def prompt(i, arm):
+    if len(i["options"]) > len(CODES):
+        raise SystemExit(f"item {i['id']} has {len(i['options'])} options and only "
+                         f"{len(CODES)} codes exist; refusing to offer a partial choice set")
     ch = "\n".join(f"{c}: {o}" for c, o in zip(CODES, i["options"]))
     return (f"Read this message written by one agent to another:\n\n---\n{i[arm]}\n---\n\n"
             f"Question: {i['question']}\nChoices:\n{ch}\n"
@@ -91,5 +99,5 @@ print("qualified:", qualified or "(none)")
 print("excluded :", excluded or "(none)")
 print("cost     : $%.4f" % sum(s["cost"] for s in summary.values()))
 json.dump({"min_gap": MIN_GAP, "max_tokens": MAX_TOKENS, "calibration_items": len(items), "summary": summary,
-           "cells": records}, open("qualification-v2-maxtok%d.json" % MAX_TOKENS, "w"), indent=1, sort_keys=True)
+           "cells": records}, open("qualification-v2-codesfixed-maxtok%d.json" % MAX_TOKENS, "w"), indent=1, sort_keys=True)
 print("\nretained: qualification-v2-maxtok%d.json" % MAX_TOKENS)
