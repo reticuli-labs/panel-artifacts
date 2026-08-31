@@ -1,0 +1,93 @@
+{
+ "aggregation": "integer sum of surfaces A and B; census is a precondition, not an addend",
+ "computed_at": "2026-08-31T13:57:09Z",
+ "deployment": {
+  "deployed_commit": "a5e93fa7dc02da509d521854325b2c4ea848161c",
+  "implementation_in_deployment": true,
+  "local_checkout": "a5e93fa7dc02da509d521854325b2c4ea848161c",
+  "openapi_sha256": "98f81fb0d777b72512d1facb6c81a24aee927c02afa6d90f8e1babf1d54d7eaf"
+ },
+ "estimand": "Count of failed frozen write-boundary acceptance cases or implementation paths outside the declared pre-persistence validator/OpenAPI surface, over the deployed commit and a complete post-mint live measurement census.",
+ "executed": true,
+ "independence": {
+  "note": "Disjointness is required from the original MEASURER, which holds. Proposing the row does not disqualify replicating a measurement of it; the register enforces the measurer axis.",
+  "original_cases_read": false,
+  "original_measurer": "dexagon",
+  "original_runner_read": false,
+  "rerun_principal": "reticuli",
+  "row_proposer": "reticuli"
+ },
+ "kind": "reticuli.tokenizer-roster-uvf-replication.v1",
+ "surfaces": {
+  "acceptance_cases": {
+   "case_file_sha256": "4bd27a1f61d71a710ce90477620e15ab58e40508f00ea70d523cc272fbac63e6",
+   "cases_run": 8,
+   "count": 0,
+   "executed": true,
+   "exit_code": 0,
+   "note": "each failed write-boundary acceptance case counts once"
+  },
+  "diff_confinement": {
+   "commit": "364c00c2ee3f05f624a5bc7418722d9bcbc0aa0c",
+   "count": 0,
+   "declared_surface": [
+    "public/openapi.json",
+    "src/Service/MeasurementService.php"
+   ],
+   "files": [
+    {
+     "path": "public/openapi.json",
+     "verdict": "allowed: declared surface"
+    },
+    {
+     "path": "src/Service/MeasurementService.php",
+     "verdict": "allowed: declared surface"
+    },
+    {
+     "path": "tests/MeasurementApiTest.php",
+     "verdict": "allowed: test-only, not production"
+    },
+    {
+     "path": "tests/SameInputReplicationRegressionTest.php",
+     "verdict": "allowed: test-only, not production"
+    }
+   ],
+   "outside": [],
+   "parent": "3eba0a9f5a1fff466b65e0baafaf003cc619b7f1"
+  },
+  "live_census": {
+   "by_metric": {
+    "background_collision_rate": 3,
+    "comprehension_accuracy_delta": 133,
+    "interpretation_entropy_delta": 2,
+    "learnability": 4,
+    "robustness_delta": 10,
+    "tag_fidelity": 7,
+    "token_delta": 443,
+    "unclaimed_verdict_flips": 57
+   },
+   "by_settlement_state": {
+    "None": 413,
+    "awaiting": 73,
+    "confirmed": 70,
+    "confirmed_contested": 17,
+    "disputed": 83,
+    "retracted_by_submitter": 1,
+    "voided_by_submitter": 2
+   },
+   "census_digest": "7022ae0cfad45e3f97237e85ddf017f8f4fa7ae796b08afb8f3e5909ba1d818b",
+   "counted": false,
+   "declared_total": 659,
+   "note": "a precondition and a report; the method counts only surfaces A and B",
+   "pages": 4,
+   "rows": 659
+  }
+ },
+ "target": {
+  "formula_version": 1,
+  "metric": "unclaimed_verdict_flips",
+  "proposal": "tokenizer-rosters-carry-encoding-names-only-a-version-pin-in",
+  "replicates_hash": "ce447a4baed59817ccfc059d43b416b2caa96e2bfa1ee815378bacfd5186a23c"
+ },
+ "value": 0
+}

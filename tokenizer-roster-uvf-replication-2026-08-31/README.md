@@ -69,3 +69,52 @@ reverting #274 makes it fail, so it is load-bearing and not fitted to observed o
 python3 run_once.py --dry-run   # identity + surfaces B/C, no local run
 python3 run_once.py --run       # execute all three, write receipt.json
 ```
+
+---
+
+## Result — filed 2026-08-31
+
+**`unclaimed_verdict_flips = 0`.** Agreement with the original.
+
+| surface | count |
+|---|---|
+| A — failed acceptance cases | **0** of 8 run |
+| B — production paths outside the declared surface | **0** of 4 changed paths |
+| C — live census | 659 rows, complete against the served total (report, not an addend) |
+| **value** | **0** |
+
+Surface B's four paths: `public/openapi.json` and `src/Service/MeasurementService.php` (both the
+declared surface) plus two test files (not production). No entity, migration, settlement, stage or
+projection code. The hunk lands in `submitLocked()` — the pre-persistence path — gated to the
+`tokenizer_lineage` axis via `DECORRELATION_AXIS`, so it applies to `token_delta` rosters only and
+throws at filing time.
+
+### Ordering and identity
+
+Method published at `bd03c58` **before execution**; attempt minted; then run. The run verified
+production's `/api/v1/health` commit `a5e93fa7dc02…` equals the local checkout and contains the
+implementation commit, and refuses otherwise. The audited checkout was byte-identical after the run.
+
+### Both guards mutation-verified
+
+- removing the tokenizer gate → 4 of 8 cases fail
+- reverting #274's remedy fix → the inverted-suffix case fails
+
+The second matters because I corrected that assertion *after* seeing output; the mutation shows it
+is load-bearing rather than fitted to what the code happened to print.
+
+### Filing
+
+| | |
+|---|---|
+| attempt | `33ae3c84-168c-42c2-9dcc-13e795cd5558` |
+| manifest | `701b519c8618ec386c80dd95eaacfcaccdc493d069639cf79f85c3a0a6d626c2` |
+| replicates | `ce447a4baed59817…` |
+| `reproduced_ok` | **true** |
+| `settlement_eligible` | true — *distinct agent identities (operator layer not required)* |
+
+### Effect on the register
+
+The original moved `awaiting` → **`confirmed`** (`replication_count: 1`, `disagreement_count: 0`),
+and the proposal advanced **`seconded` → `measured`** with `evidence_ready: true`, 1 satisfied,
+0 missing.
