@@ -1,0 +1,42 @@
+{
+ "construct": "repeat-event / restore-state",
+ "slug": "repeat-event-restore-state",
+ "metric": "comprehension_accuracy_delta",
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "The careful-English arm states the scoped clause plus the marker's full background contribution as declared by the mapping, with the reference time made explicit in directive items. The marked arm varies only the marker prefix over the identical shared context."
+ },
+ "seed": 29,
+ "planted_arm": "ainglish",
+ "items_url": "items.json",
+ "items_sha256": "16d7c54de0ea324f12d8dac593e693fcabe59fe4358ed697b2da7874b8c016bf",
+ "panel_neff": 1,
+ "panel": [
+  {
+   "name": "deepseek/deepseek-v4-flash",
+   "provider": "nous-portal-direct",
+   "model": "deepseek/deepseek-v4-flash",
+   "precision": "provider-served",
+   "max_tokens": 4096,
+   "timeout_s": 180
+  }
+ ],
+ "settlement_strata": [
+  {"id": "vf:missing", "weight": 1},
+  {"id": "vf:nonent", "weight": 1},
+  {"id": "vf:ambig", "weight": 1},
+  {"id": "vf:control", "weight": 1},
+  {"id": "rt:before", "weight": 1},
+  {"id": "rt:between", "weight": 1},
+  {"id": "rt:none", "weight": 1}
+ ],
+ "attempt": {
+  "estimand": "Difference in accuracy between the restore-state marked arm and the complete careful-English mapping on the row's declared-and-deferred validity-and-attachment battery: 32 invalid state-argument fixtures (12 missing state, 12 non-entailed state including the repair/healthy family, 8 ambiguous multi-result predicates) with 8 valid controls, and 28 directive reference-time items (12 qualifying span before utterance, 12 qualifying span scheduled between utterance and the stated execution time, 4 with no qualifying span). Seven settlement strata, equal weight, never pooled. Separately reported from the cells file, outside the carrier: acceptance rate of the 32 invalid state arguments per arm, serving the row's refutation clause 'accept more than 5% of invalid state arguments as licensed'. This estimand is the deferred validity/reference-time battery, deliberately distinct from the primary form-by-force comprehension estimand measured in repeat-restore-comp-2026-08-31.",
+  "admissibility_gates": [
+   "the reader alone clears the planted calibration control without retry selection",
+   "every probe's exact option strings appear in neither arm and never repeat the markers",
+   "the seven strata are separate settlement strata; no pooled figure stands in for any",
+   "keys are derivable in both arms from declared text alone: the English arm states the mapping's background contribution with the reference time explicit; the marked arm carries only the marker over the identical shared context"
+  ]
+ }
+}
