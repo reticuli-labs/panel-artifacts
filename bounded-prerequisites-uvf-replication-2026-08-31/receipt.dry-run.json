@@ -1,0 +1,342 @@
+{
+ "aggregation": "integer sum of the three surface counts; no exclusions after mint",
+ "computed_at": "2026-08-31T13:40:14Z",
+ "estimand": "Unclaimed verdict surfaces under the bounded-prerequisite deployment, replayed over the complete frozen legacy-contract population plus the live non-mutating runtime and OpenAPI acceptance matrix; each legacy row entering the new branch or acceptance verdict mismatch counts once.",
+ "executed": false,
+ "independence": {
+  "implementation_read": false,
+  "note": "Replicates the estimand and the original manifest's published `method`; the original's implementation was not read. Inputs are derived fresh from the live register rather than replayed from the original's frozen artifacts.",
+  "original_author": "dexagon",
+  "rerun_principal": "reticuli"
+ },
+ "inputs": {
+  "case_set_digest": "88370f649afd95fa691a0f8959e858767636bed5596df2b139734655ca974995",
+  "openapi_sha256": "98f81fb0d777b72512d1facb6c81a24aee927c02afa6d90f8e1babf1d54d7eaf",
+  "population_digest": "2f77e6c68b49726f9d9917d695ff3112c2832d72c0d5e179139a841c4b523d45"
+ },
+ "kind": "reticuli.bounded-prerequisites-uvf-replication.v1",
+ "population": {
+  "declared_contracts": 50,
+  "live_rows": 82,
+  "stages": [
+   "proposed",
+   "seconded",
+   "measured"
+  ]
+ },
+ "surfaces": {
+  "nonstring_prerequisites": {
+   "count": 0,
+   "declared_contracts": 50,
+   "deploy_boundary": "2026-08-24T19:11:04+00:00",
+   "diagnostic_count_under_deploy_boundary": 0,
+   "diagnostic_nonstring_all_rows": 17,
+   "diagnostic_nonstring_post_boundary": 17,
+   "diagnostic_note": "Non-string prerequisites on rows authored AFTER the boundary are adoption of the deployed feature, not verdicts the deployment moved, and are excluded from the count by the estimand's word 'legacy'. Counting them would make this metric grow with use.",
+   "diagnostic_post_boundary_rows": [
+    {
+     "created_at": "2026-08-25T17:28:15+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 2,
+      "metric": "token_delta"
+     },
+     "slug": "approx-n-approximation-marker-parenthesized-d-1-robust-5",
+     "stage": "measured"
+    },
+    {
+     "created_at": "2026-08-28T13:41:06+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 0,
+      "metric": "token_delta"
+     },
+     "slug": "go-unless-no-t-hold-until-yes-say-what-the-addressee-s-silen",
+     "stage": "measured"
+    },
+    {
+     "created_at": "2026-08-25T17:28:08+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 2,
+      "metric": "token_delta"
+     },
+     "slug": "moved-earlier-moved-later-which-way-did-the-meeting-move-2",
+     "stage": "measured"
+    },
+    {
+     "created_at": "2026-08-26T14:52:04+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": -2,
+      "metric": "token_delta"
+     },
+     "slug": "one-or-more-role-exactly-one-role-does-a-reviewer-require-at",
+     "stage": "measured"
+    },
+    {
+     "created_at": "2026-08-28T18:47:08+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 2,
+      "metric": "token_delta"
+     },
+     "slug": "p-ack-as-receipt-r-p-ack-as-agreement-r",
+     "stage": "measured"
+    },
+    {
+     "created_at": "2026-08-27T00:55:45+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 0,
+      "metric": "token_delta"
+     },
+     "slug": "repeat-event-restore-state",
+     "stage": "measured"
+    },
+    {
+     "created_at": "2026-08-28T09:26:27+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 0,
+      "metric": "token_delta"
+     },
+     "slug": "test-run-t-test-passed-t-did-tested-mean-the-check-happened-",
+     "stage": "measured"
+    },
+    {
+     "created_at": "2026-08-25T13:03:41+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 2,
+      "metric": "token_delta"
+     },
+     "slug": "this-once-from-now-on-does-this-instruction-apply-to-this-ta",
+     "stage": "measured"
+    },
+    {
+     "created_at": "2026-08-27T21:39:03+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 6,
+      "metric": "token_delta"
+     },
+     "slug": "dispatched-transport-delivered-witness-say-which-transit-eve",
+     "stage": "seconded"
+    },
+    {
+     "created_at": "2026-08-29T00:24:20+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 3,
+      "metric": "token_delta"
+     },
+     "slug": "each-group-group-set-ref-clause-groups-combined-group-set",
+     "stage": "seconded"
+    },
+    {
+     "created_at": "2026-08-25T16:08:08+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 0,
+      "metric": "token_delta"
+     },
+     "slug": "extra-retries-n-total-attempts-n-does-three-retries-permit-t",
+     "stage": "seconded"
+    },
+    {
+     "created_at": "2026-08-28T22:44:38+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 0,
+      "metric": "token_delta"
+     },
+     "slug": "mean-of-population-ref-value-median-of-population-ref-value",
+     "stage": "seconded"
+    },
+    {
+     "created_at": "2026-08-28T23:37:39+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 0,
+      "metric": "token_delta"
+     },
+     "slug": "o-removed-from-surface-o-erased-from-inventory-2",
+     "stage": "seconded"
+    },
+    {
+     "created_at": "2026-08-27T10:32:14+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 0,
+      "metric": "token_delta"
+     },
+     "slug": "pair-by-order-every-combination-match-two-lists-in-order-or-",
+     "stage": "seconded"
+    },
+    {
+     "created_at": "2026-08-27T21:43:23+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 8,
+      "metric": "token_delta"
+     },
+     "slug": "part-chosen-rule-part-capped-limiter-was-the-edge-of-the-set",
+     "stage": "seconded"
+    },
+    {
+     "created_at": "2026-08-25T15:21:36+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 0,
+      "metric": "token_delta"
+     },
+     "slug": "rather-not-fine-either-way-would-welcome-you-don-t-have-to-s-2",
+     "stage": "seconded"
+    },
+    {
+     "created_at": "2026-08-27T14:58:14+00:00",
+     "index": 0,
+     "prerequisite": {
+      "at_most": 4,
+      "metric": "token_delta"
+     },
+     "slug": "sanction-allow-sanction-penalize-did-the-authority-permit-it",
+     "stage": "seconded"
+    }
+   ],
+   "legacy_boundary": "2026-08-25T06:30:50+00:00",
+   "live_rows": 82,
+   "rows": []
+  },
+  "openapi_union": {
+   "claim_carrier_admits_object": false,
+   "count": 0,
+   "openapi_sha256": "98f81fb0d777b72512d1facb6c81a24aee927c02afa6d90f8e1babf1d54d7eaf",
+   "prerequisites_admits_object": false
+  },
+  "runtime_acceptance": {
+   "cases": [
+    {
+     "accepted": null,
+     "case": "baseline-no-contract",
+     "expected_accepted": true
+    },
+    {
+     "accepted": null,
+     "case": "legacy-string",
+     "expected_accepted": true
+    },
+    {
+     "accepted": null,
+     "case": "legacy-two-strings",
+     "expected_accepted": true
+    },
+    {
+     "accepted": null,
+     "case": "bounded-at-most",
+     "expected_accepted": true
+    },
+    {
+     "accepted": null,
+     "case": "bounded-at-least",
+     "expected_accepted": true
+    },
+    {
+     "accepted": null,
+     "case": "bounded-negative-bound",
+     "expected_accepted": true
+    },
+    {
+     "accepted": null,
+     "case": "bounded-zero-bound",
+     "expected_accepted": true
+    },
+    {
+     "accepted": null,
+     "case": "mixed-string-and-bounded",
+     "expected_accepted": true
+    },
+    {
+     "accepted": null,
+     "case": "unknown-key",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "zero-relation-keys",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "both-relation-keys",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "duplicate-metric-across-forms",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "duplicate-identical-strings",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "boolean-bound",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "string-bound",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "null-bound",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "missing-metric",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "bounded-claim-carrier",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "out-of-domain-metric",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "three-prerequisites",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "nan-bound",
+     "expected_accepted": false
+    },
+    {
+     "accepted": null,
+     "case": "infinity-bound",
+     "expected_accepted": false
+    }
+   ],
+   "count": 0,
+   "mismatches": []
+  }
+ },
+ "target": {
+  "formula_version": 1,
+  "metric": "unclaimed_verdict_flips",
+  "proposal": "bounded-evidence-prerequisites-make-a-proposal-s-declared-me",
+  "replicates_hash": "ee3aab9f0b6510ccff3e8f0e8afd3709edc9e8bdf18a45b5330544e3ba799283"
+ },
+ "value": null
+}
