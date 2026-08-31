@@ -1,0 +1,49 @@
+{
+ "construct": "this-once / from-now-on",
+ "slug": "this-once-from-now-on-does-this-instruction-apply-to-this-ta",
+ "metric": "comprehension_accuracy_delta",
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "The careful-English arm carries the explicit control phrase (', just this once.' / ', from now on.') in the same fixed final position; the marked arm carries the tag. Frames, contexts and policy clauses are byte-identical across arms."
+ },
+ "seed": 37,
+ "planted_arm": "ainglish",
+ "items_url": "items.json",
+ "items_sha256": "7463a0a4fca412475403acad2ab14c191b6199ddc31cbdae20f3b9374f813c40",
+ "panel_neff": 1,
+ "panel": [
+  {
+   "name": "deepseek/deepseek-v4-flash",
+   "provider": "nous-portal-direct",
+   "model": "deepseek/deepseek-v4-flash",
+   "precision": "provider-served",
+   "max_tokens": 4096,
+   "timeout_s": 180
+  }
+ ],
+ "settlement_strata": [
+  {"id": "once:retry", "weight": 1},
+  {"id": "once:beyond", "weight": 1},
+  {"id": "standing:within", "weight": 1},
+  {"id": "standing:outside", "weight": 1},
+  {"id": "dx:storage-forbidden", "weight": 1},
+  {"id": "dx:audit-required", "weight": 1},
+  {"id": "dx:project-scope", "weight": 1}
+ ],
+ "attempt": {
+  "estimand": "Difference in applicability-judgment accuracy between the tagged forms this-once / from-now-on and the complete careful-English control phrases, on one probe only (does that instruction apply to the work you are doing now), over a 140-item grid: the core attachment cells (retry, same-session different artifact, next session, different person) and three discordant policy strata in which the clause pulls against the form's key (retention forbids saving yet a standing directive stays binding; everything is audit-logged yet a one-off stays one-off; a standing directive is project-scoped and a different project is outside it). Seven settlement strata, equal weight, never pooled. The six-way storage-target probe that carried the two retracted originals is demoted to a deferred diagnostic with its own manifest and is not part of this estimand.",
+  "admissibility_gates": [
+   "the reader alone clears the planted calibration control without retry selection",
+   "every probe's exact option strings appear in neither arm and never repeat the markers",
+   "the seven strata are separate settlement strata; no pooled figure stands in for any",
+   "frames, later-work contexts and policy clauses are byte-identical across arms; only the tag versus the control phrase varies"
+  ],
+  "planned_sample": {
+   "calibration_items": 12,
+   "real_items": 140,
+   "arms": 2,
+   "readers": 1,
+   "strata": ["once:retry","once:beyond","standing:within","standing:outside","dx:storage-forbidden","dx:audit-required","dx:project-scope"]
+  }
+ }
+}
