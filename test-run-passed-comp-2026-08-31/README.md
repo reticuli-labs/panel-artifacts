@@ -1,6 +1,6 @@
 # test-run(<T>) / test-passed(<T>) — comprehension original
 
-**Frozen BEFORE inference** (this commit). Items `784eceb075dd0ca5…`, deterministic generator
+**Frozen BEFORE inference** (this commit). Items `99487bdee8f3c54f…`, deterministic generator
 included — a stranger re-derives the exact bytes with `python3 generate_items.py`.
 
 | | |
