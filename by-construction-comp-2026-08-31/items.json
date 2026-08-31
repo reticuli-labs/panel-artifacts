@@ -1,0 +1,1408 @@
+{
+ "items": [
+  {
+   "ainglish": "Status of the billing exporter \u2014 its responses are valid JSON by-construction. Separately, its retry budget is capped at three by team policy.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the billing exporter, its responses are valid JSON \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Also: its retry budget is capped at three by team policy.",
+   "id": "bc-00-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the billing exporter \u2014 its responses are valid JSON by-construction. Separately, its retry budget is capped at three by team policy.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the billing exporter, its responses are valid JSON \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Also: its retry budget is capped at three by team policy.",
+   "id": "bc-00-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the audit logger: log lines are free of customer identifiers by-construction. Also: rotation happens nightly, as it always has.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the audit logger, log lines are free of customer identifiers \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, rotation happens nightly, as it always has.",
+   "id": "bc-01-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the audit logger: log lines are free of customer identifiers by-construction. Also: rotation happens nightly, as it always has.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the audit logger, log lines are free of customer identifiers \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, rotation happens nightly, as it always has.",
+   "id": "bc-01-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the deploy pipeline \u2014 every release is peer-reviewed by-construction. Separately, the build cache is wiped weekly by convention.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the deploy pipeline, every release is peer-reviewed \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Also: the build cache is wiped weekly by convention.",
+   "id": "bc-02-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the deploy pipeline \u2014 every release is peer-reviewed by-construction. Separately, the build cache is wiped weekly by convention.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the deploy pipeline, every release is peer-reviewed \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Also: the build cache is wiped weekly by convention.",
+   "id": "bc-02-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the backup service \u2014 archives are encrypted at rest by-construction. Separately, bandwidth stays under the cap in everything measured so far.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the backup service, archives are encrypted at rest \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, bandwidth stays under the cap in everything measured so far.",
+   "id": "bc-03-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the backup service \u2014 archives are encrypted at rest by-construction. Separately, bandwidth stays under the cap in everything measured so far.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the backup service, archives are encrypted at rest \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, bandwidth stays under the cap in everything measured so far.",
+   "id": "bc-03-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the invoice system: payouts above 10k carry two approvals by-construction. Also: the currency table refreshes hourly by design of the scheduler.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the invoice system, payouts above 10k carry two approvals \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, the currency table refreshes hourly by design of the scheduler.",
+   "id": "bc-04-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the invoice system: payouts above 10k carry two approvals by-construction. Also: the currency table refreshes hourly by design of the scheduler.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the invoice system, payouts above 10k carry two approvals \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, the currency table refreshes hourly by design of the scheduler.",
+   "id": "bc-04-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the warehouse door system: doors are locked outside shift hours by-construction. Also: camera coverage has been complete in every spot-check.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the warehouse door system, doors are locked outside shift hours \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Also: camera coverage has been complete in every spot-check.",
+   "id": "bc-05-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the warehouse door system: doors are locked outside shift hours by-construction. Also: camera coverage has been complete in every spot-check.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the warehouse door system, doors are locked outside shift hours \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Also: camera coverage has been complete in every spot-check.",
+   "id": "bc-05-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the payments API \u2014 duplicate submissions produce one charge by-construction. Separately, response latency is required to stay under 300ms by the SLA.",
+   "answer": "no, not while the system stands as built",
+   "english": "By how the payments API is put together, duplicate submissions produce one charge; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, response latency is required to stay under 300ms by the SLA.",
+   "id": "bc-06-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the payments API \u2014 duplicate submissions produce one charge by-construction. Separately, response latency is required to stay under 300ms by the SLA.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "By how the payments API is put together, duplicate submissions produce one charge; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, response latency is required to stay under 300ms by the SLA.",
+   "id": "bc-06-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the schema migrator \u2014 every migration has a tested rollback by-construction. Separately, locks are held briefly, as observed across recent runs.",
+   "answer": "no, not while the system stands as built",
+   "english": "By how the schema migrator is put together, every migration has a tested rollback; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, locks are held briefly, as observed across recent runs.",
+   "id": "bc-07-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the schema migrator \u2014 every migration has a tested rollback by-construction. Separately, locks are held briefly, as observed across recent runs.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "By how the schema migrator is put together, every migration has a tested rollback; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, locks are held briefly, as observed across recent runs.",
+   "id": "bc-07-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the session service: tokens expire within an hour by-construction. Also: verbosity is set by a standing operations rule.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the session service, tokens expire within an hour \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, verbosity is set by a standing operations rule.",
+   "id": "bc-08-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the session service: tokens expire within an hour by-construction. Also: verbosity is set by a standing operations rule.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the session service, tokens expire within an hour \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, verbosity is set by a standing operations rule.",
+   "id": "bc-08-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the ingest gateway: malformed rows are quarantined, never dropped by-construction. Also: throughput has met demand in all traffic seen to date.",
+   "answer": "no, not while the system stands as built",
+   "english": "By how the ingest gateway is put together, malformed rows are quarantined, never dropped; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, throughput has met demand in all traffic seen to date.",
+   "id": "bc-09-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the ingest gateway: malformed rows are quarantined, never dropped by-construction. Also: throughput has met demand in all traffic seen to date.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "By how the ingest gateway is put together, malformed rows are quarantined, never dropped; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, throughput has met demand in all traffic seen to date.",
+   "id": "bc-09-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the license server \u2014 grants never exceed the purchased seat count by-construction. Separately, restarts follow a documented weekly requirement.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the license server, grants never exceed the purchased seat count \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Also: restarts follow a documented weekly requirement.",
+   "id": "bc-10-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the license server \u2014 grants never exceed the purchased seat count by-construction. Separately, restarts follow a documented weekly requirement.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the license server, grants never exceed the purchased seat count \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Also: restarts follow a documented weekly requirement.",
+   "id": "bc-10-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the notifier: every alert page carries a runbook link by-construction. Also: delivery order has matched send order whenever anyone checked.",
+   "answer": "no, not while the system stands as built",
+   "english": "By how the notifier is put together, every alert page carries a runbook link; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, delivery order has matched send order whenever anyone checked.",
+   "id": "bc-11-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the notifier: every alert page carries a runbook link by-construction. Also: delivery order has matched send order whenever anyone checked.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "By how the notifier is put together, every alert page carries a runbook link; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, delivery order has matched send order whenever anyone checked.",
+   "id": "bc-11-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the export scrubber: outbound files contain no internal hostnames by-construction. Also: file naming follows the convention the team mandates.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the export scrubber, outbound files contain no internal hostnames \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, file naming follows the convention the team mandates.",
+   "id": "bc-12-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the export scrubber: outbound files contain no internal hostnames by-construction. Also: file naming follows the convention the team mandates.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the export scrubber, outbound files contain no internal hostnames \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, file naming follows the convention the team mandates.",
+   "id": "bc-12-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the quota service: tenants cannot exceed their storage quota by-construction. Also: metrics have emitted cleanly in every observed window.",
+   "answer": "no, not while the system stands as built",
+   "english": "By how the quota service is put together, tenants cannot exceed their storage quota; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, metrics have emitted cleanly in every observed window.",
+   "id": "bc-13-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the quota service: tenants cannot exceed their storage quota by-construction. Also: metrics have emitted cleanly in every observed window.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "By how the quota service is put together, tenants cannot exceed their storage quota; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, metrics have emitted cleanly in every observed window.",
+   "id": "bc-13-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the release signer: artifacts ship with a valid signature by-construction. Also: queue depth is kept below ten by an operations rule.",
+   "answer": "no, not while the system stands as built",
+   "english": "By how the release signer is put together, artifacts ship with a valid signature; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, queue depth is kept below ten by an operations rule.",
+   "id": "bc-14-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the release signer: artifacts ship with a valid signature by-construction. Also: queue depth is kept below ten by an operations rule.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "By how the release signer is put together, artifacts ship with a valid signature; a counterexample is impossible without the system itself having been altered, and seeing one would falsify this or prove an alteration. Separately, queue depth is kept below ten by an operations rule.",
+   "id": "bc-14-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the archive purger: records older than seven years are removed by-construction. Also: dry-run mode has behaved identically to live mode so far.",
+   "answer": "no, not while the system stands as built",
+   "english": "For the archive purger, records older than seven years are removed \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, dry-run mode has behaved identically to live mode so far.",
+   "id": "bc-15-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "the archive purger: records older than seven years are removed by-construction. Also: dry-run mode has behaved identically to live mode so far.",
+   "answer": "the claim itself is thereby disproven",
+   "english": "For the archive purger, records older than seven years are removed \u2014 and by how it is built, this cannot fail to hold while the system stands unaltered; observing a counterexample would falsify the claim or show the system was changed. Separately, dry-run mode has behaved identically to live mode so far.",
+   "id": "bc-15-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "bc"
+  },
+  {
+   "ainglish": "Status of the billing exporter \u2014 its responses are valid JSON by-rule. Separately, its retry budget is capped at three by team policy.",
+   "answer": "yes, one could arise",
+   "english": "For the billing exporter, a standing rule requires that its responses are valid JSON; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Separately, its retry budget is capped at three by team policy.",
+   "id": "br-00-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the billing exporter \u2014 its responses are valid JSON by-rule. Separately, its retry budget is capped at three by team policy.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "For the billing exporter, a standing rule requires that its responses are valid JSON; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Separately, its retry budget is capped at three by team policy.",
+   "id": "br-00-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the audit logger \u2014 log lines are free of customer identifiers by-rule. Separately, rotation happens nightly, as it always has.",
+   "answer": "yes, one could arise",
+   "english": "the audit logger operates under a standing rule that log lines are free of customer identifiers. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: rotation happens nightly, as it always has.",
+   "id": "br-01-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the audit logger \u2014 log lines are free of customer identifiers by-rule. Separately, rotation happens nightly, as it always has.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the audit logger operates under a standing rule that log lines are free of customer identifiers. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: rotation happens nightly, as it always has.",
+   "id": "br-01-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the deploy pipeline: every release is peer-reviewed by-rule. Also: the build cache is wiped weekly by convention.",
+   "answer": "yes, one could arise",
+   "english": "the deploy pipeline operates under a standing rule that every release is peer-reviewed. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: the build cache is wiped weekly by convention.",
+   "id": "br-02-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the deploy pipeline: every release is peer-reviewed by-rule. Also: the build cache is wiped weekly by convention.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the deploy pipeline operates under a standing rule that every release is peer-reviewed. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: the build cache is wiped weekly by convention.",
+   "id": "br-02-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the backup service \u2014 archives are encrypted at rest by-rule. Separately, bandwidth stays under the cap in everything measured so far.",
+   "answer": "yes, one could arise",
+   "english": "the backup service operates under a standing rule that archives are encrypted at rest. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: bandwidth stays under the cap in everything measured so far.",
+   "id": "br-03-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the backup service \u2014 archives are encrypted at rest by-rule. Separately, bandwidth stays under the cap in everything measured so far.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the backup service operates under a standing rule that archives are encrypted at rest. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: bandwidth stays under the cap in everything measured so far.",
+   "id": "br-03-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the invoice system \u2014 payouts above 10k carry two approvals by-rule. Separately, the currency table refreshes hourly by design of the scheduler.",
+   "answer": "yes, one could arise",
+   "english": "For the invoice system, a standing rule requires that payouts above 10k carry two approvals; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Separately, the currency table refreshes hourly by design of the scheduler.",
+   "id": "br-04-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the invoice system \u2014 payouts above 10k carry two approvals by-rule. Separately, the currency table refreshes hourly by design of the scheduler.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "For the invoice system, a standing rule requires that payouts above 10k carry two approvals; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Separately, the currency table refreshes hourly by design of the scheduler.",
+   "id": "br-04-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the warehouse door system: doors are locked outside shift hours by-rule. Also: camera coverage has been complete in every spot-check.",
+   "answer": "yes, one could arise",
+   "english": "For the warehouse door system, a standing rule requires that doors are locked outside shift hours; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Also: camera coverage has been complete in every spot-check.",
+   "id": "br-05-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the warehouse door system: doors are locked outside shift hours by-rule. Also: camera coverage has been complete in every spot-check.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "For the warehouse door system, a standing rule requires that doors are locked outside shift hours; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Also: camera coverage has been complete in every spot-check.",
+   "id": "br-05-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the payments API: duplicate submissions produce one charge by-rule. Also: response latency is required to stay under 300ms by the SLA.",
+   "answer": "yes, one could arise",
+   "english": "the payments API operates under a standing rule that duplicate submissions produce one charge. Counterexamples are possible; every one is a lapse some named owner is answerable for. Separately, response latency is required to stay under 300ms by the SLA.",
+   "id": "br-06-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the payments API: duplicate submissions produce one charge by-rule. Also: response latency is required to stay under 300ms by the SLA.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the payments API operates under a standing rule that duplicate submissions produce one charge. Counterexamples are possible; every one is a lapse some named owner is answerable for. Separately, response latency is required to stay under 300ms by the SLA.",
+   "id": "br-06-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the schema migrator: every migration has a tested rollback by-rule. Also: locks are held briefly, as observed across recent runs.",
+   "answer": "yes, one could arise",
+   "english": "the schema migrator operates under a standing rule that every migration has a tested rollback. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: locks are held briefly, as observed across recent runs.",
+   "id": "br-07-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the schema migrator: every migration has a tested rollback by-rule. Also: locks are held briefly, as observed across recent runs.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the schema migrator operates under a standing rule that every migration has a tested rollback. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: locks are held briefly, as observed across recent runs.",
+   "id": "br-07-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the session service \u2014 tokens expire within an hour by-rule. Separately, verbosity is set by a standing operations rule.",
+   "answer": "yes, one could arise",
+   "english": "the session service operates under a standing rule that tokens expire within an hour. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: verbosity is set by a standing operations rule.",
+   "id": "br-08-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the session service \u2014 tokens expire within an hour by-rule. Separately, verbosity is set by a standing operations rule.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the session service operates under a standing rule that tokens expire within an hour. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: verbosity is set by a standing operations rule.",
+   "id": "br-08-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the ingest gateway: malformed rows are quarantined, never dropped by-rule. Also: throughput has met demand in all traffic seen to date.",
+   "answer": "yes, one could arise",
+   "english": "the ingest gateway operates under a standing rule that malformed rows are quarantined, never dropped. Counterexamples are possible; every one is a lapse some named owner is answerable for. Separately, throughput has met demand in all traffic seen to date.",
+   "id": "br-09-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the ingest gateway: malformed rows are quarantined, never dropped by-rule. Also: throughput has met demand in all traffic seen to date.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the ingest gateway operates under a standing rule that malformed rows are quarantined, never dropped. Counterexamples are possible; every one is a lapse some named owner is answerable for. Separately, throughput has met demand in all traffic seen to date.",
+   "id": "br-09-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the license server \u2014 grants never exceed the purchased seat count by-rule. Separately, restarts follow a documented weekly requirement.",
+   "answer": "yes, one could arise",
+   "english": "For the license server, a standing rule requires that grants never exceed the purchased seat count; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Separately, restarts follow a documented weekly requirement.",
+   "id": "br-10-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the license server \u2014 grants never exceed the purchased seat count by-rule. Separately, restarts follow a documented weekly requirement.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "For the license server, a standing rule requires that grants never exceed the purchased seat count; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Separately, restarts follow a documented weekly requirement.",
+   "id": "br-10-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the notifier \u2014 every alert page carries a runbook link by-rule. Separately, delivery order has matched send order whenever anyone checked.",
+   "answer": "yes, one could arise",
+   "english": "For the notifier, a standing rule requires that every alert page carries a runbook link; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Also: delivery order has matched send order whenever anyone checked.",
+   "id": "br-11-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the notifier \u2014 every alert page carries a runbook link by-rule. Separately, delivery order has matched send order whenever anyone checked.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "For the notifier, a standing rule requires that every alert page carries a runbook link; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Also: delivery order has matched send order whenever anyone checked.",
+   "id": "br-11-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the export scrubber: outbound files contain no internal hostnames by-rule. Also: file naming follows the convention the team mandates.",
+   "answer": "yes, one could arise",
+   "english": "the export scrubber operates under a standing rule that outbound files contain no internal hostnames. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: file naming follows the convention the team mandates.",
+   "id": "br-12-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the export scrubber: outbound files contain no internal hostnames by-rule. Also: file naming follows the convention the team mandates.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the export scrubber operates under a standing rule that outbound files contain no internal hostnames. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: file naming follows the convention the team mandates.",
+   "id": "br-12-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the quota service \u2014 tenants cannot exceed their storage quota by-rule. Separately, metrics have emitted cleanly in every observed window.",
+   "answer": "yes, one could arise",
+   "english": "the quota service operates under a standing rule that tenants cannot exceed their storage quota. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: metrics have emitted cleanly in every observed window.",
+   "id": "br-13-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the quota service \u2014 tenants cannot exceed their storage quota by-rule. Separately, metrics have emitted cleanly in every observed window.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the quota service operates under a standing rule that tenants cannot exceed their storage quota. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: metrics have emitted cleanly in every observed window.",
+   "id": "br-13-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the release signer \u2014 artifacts ship with a valid signature by-rule. Separately, queue depth is kept below ten by an operations rule.",
+   "answer": "yes, one could arise",
+   "english": "the release signer operates under a standing rule that artifacts ship with a valid signature. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: queue depth is kept below ten by an operations rule.",
+   "id": "br-14-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the release signer \u2014 artifacts ship with a valid signature by-rule. Separately, queue depth is kept below ten by an operations rule.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "the release signer operates under a standing rule that artifacts ship with a valid signature. Counterexamples are possible; every one is a lapse some named owner is answerable for. Also: queue depth is kept below ten by an operations rule.",
+   "id": "br-14-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the archive purger: records older than seven years are removed by-rule. Also: dry-run mode has behaved identically to live mode so far.",
+   "answer": "yes, one could arise",
+   "english": "For the archive purger, a standing rule requires that records older than seven years are removed; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Also: dry-run mode has behaved identically to live mode so far.",
+   "id": "br-15-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "the archive purger: records older than seven years are removed by-rule. Also: dry-run mode has behaved identically to live mode so far.",
+   "answer": "a named party has defaulted and owes correction",
+   "english": "For the archive purger, a standing rule requires that records older than seven years are removed; a counterexample can happen, and each one is a lapse that a specific owner must put right or explain. Also: dry-run mode has behaved identically to live mode so far.",
+   "id": "br-15-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "br"
+  },
+  {
+   "ainglish": "Status of the billing exporter \u2014 its responses are valid JSON in-practice. Separately, its retry budget is capped at three by team policy.",
+   "answer": "yes, one could arise",
+   "english": "For the billing exporter, its responses are valid JSON in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, its retry budget is capped at three by team policy.",
+   "id": "ip-00-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the billing exporter \u2014 its responses are valid JSON in-practice. Separately, its retry budget is capped at three by team policy.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "For the billing exporter, its responses are valid JSON in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, its retry budget is capped at three by team policy.",
+   "id": "ip-00-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the audit logger: log lines are free of customer identifiers in-practice. Also: rotation happens nightly, as it always has.",
+   "answer": "yes, one could arise",
+   "english": "For the audit logger, log lines are free of customer identifiers in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, rotation happens nightly, as it always has.",
+   "id": "ip-01-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the audit logger: log lines are free of customer identifiers in-practice. Also: rotation happens nightly, as it always has.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "For the audit logger, log lines are free of customer identifiers in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, rotation happens nightly, as it always has.",
+   "id": "ip-01-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the deploy pipeline \u2014 every release is peer-reviewed in-practice. Separately, the build cache is wiped weekly by convention.",
+   "answer": "yes, one could arise",
+   "english": "So far, without exception, every release is peer-reviewed for the deploy pipeline \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Separately, the build cache is wiped weekly by convention.",
+   "id": "ip-02-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the deploy pipeline \u2014 every release is peer-reviewed in-practice. Separately, the build cache is wiped weekly by convention.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "So far, without exception, every release is peer-reviewed for the deploy pipeline \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Separately, the build cache is wiped weekly by convention.",
+   "id": "ip-02-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the backup service \u2014 archives are encrypted at rest in-practice. Separately, bandwidth stays under the cap in everything measured so far.",
+   "answer": "yes, one could arise",
+   "english": "For the backup service, archives are encrypted at rest in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, bandwidth stays under the cap in everything measured so far.",
+   "id": "ip-03-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the backup service \u2014 archives are encrypted at rest in-practice. Separately, bandwidth stays under the cap in everything measured so far.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "For the backup service, archives are encrypted at rest in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, bandwidth stays under the cap in everything measured so far.",
+   "id": "ip-03-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the invoice system: payouts above 10k carry two approvals in-practice. Also: the currency table refreshes hourly by design of the scheduler.",
+   "answer": "yes, one could arise",
+   "english": "For the invoice system, payouts above 10k carry two approvals in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Also: the currency table refreshes hourly by design of the scheduler.",
+   "id": "ip-04-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the invoice system: payouts above 10k carry two approvals in-practice. Also: the currency table refreshes hourly by design of the scheduler.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "For the invoice system, payouts above 10k carry two approvals in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Also: the currency table refreshes hourly by design of the scheduler.",
+   "id": "ip-04-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the warehouse door system: doors are locked outside shift hours in-practice. Also: camera coverage has been complete in every spot-check.",
+   "answer": "yes, one could arise",
+   "english": "For the warehouse door system, doors are locked outside shift hours in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, camera coverage has been complete in every spot-check.",
+   "id": "ip-05-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the warehouse door system: doors are locked outside shift hours in-practice. Also: camera coverage has been complete in every spot-check.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "For the warehouse door system, doors are locked outside shift hours in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, camera coverage has been complete in every spot-check.",
+   "id": "ip-05-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the payments API: duplicate submissions produce one charge in-practice. Also: response latency is required to stay under 300ms by the SLA.",
+   "answer": "yes, one could arise",
+   "english": "So far, without exception, duplicate submissions produce one charge for the payments API \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Separately, response latency is required to stay under 300ms by the SLA.",
+   "id": "ip-06-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the payments API: duplicate submissions produce one charge in-practice. Also: response latency is required to stay under 300ms by the SLA.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "So far, without exception, duplicate submissions produce one charge for the payments API \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Separately, response latency is required to stay under 300ms by the SLA.",
+   "id": "ip-06-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the schema migrator \u2014 every migration has a tested rollback in-practice. Separately, locks are held briefly, as observed across recent runs.",
+   "answer": "yes, one could arise",
+   "english": "So far, without exception, every migration has a tested rollback for the schema migrator \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: locks are held briefly, as observed across recent runs.",
+   "id": "ip-07-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the schema migrator \u2014 every migration has a tested rollback in-practice. Separately, locks are held briefly, as observed across recent runs.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "So far, without exception, every migration has a tested rollback for the schema migrator \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: locks are held briefly, as observed across recent runs.",
+   "id": "ip-07-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the session service \u2014 tokens expire within an hour in-practice. Separately, verbosity is set by a standing operations rule.",
+   "answer": "yes, one could arise",
+   "english": "So far, without exception, tokens expire within an hour for the session service \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: verbosity is set by a standing operations rule.",
+   "id": "ip-08-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the session service \u2014 tokens expire within an hour in-practice. Separately, verbosity is set by a standing operations rule.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "So far, without exception, tokens expire within an hour for the session service \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: verbosity is set by a standing operations rule.",
+   "id": "ip-08-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the ingest gateway \u2014 malformed rows are quarantined, never dropped in-practice. Separately, throughput has met demand in all traffic seen to date.",
+   "answer": "yes, one could arise",
+   "english": "So far, without exception, malformed rows are quarantined, never dropped for the ingest gateway \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: throughput has met demand in all traffic seen to date.",
+   "id": "ip-09-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the ingest gateway \u2014 malformed rows are quarantined, never dropped in-practice. Separately, throughput has met demand in all traffic seen to date.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "So far, without exception, malformed rows are quarantined, never dropped for the ingest gateway \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: throughput has met demand in all traffic seen to date.",
+   "id": "ip-09-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the license server \u2014 grants never exceed the purchased seat count in-practice. Separately, restarts follow a documented weekly requirement.",
+   "answer": "yes, one could arise",
+   "english": "For the license server, grants never exceed the purchased seat count in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Also: restarts follow a documented weekly requirement.",
+   "id": "ip-10-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the license server \u2014 grants never exceed the purchased seat count in-practice. Separately, restarts follow a documented weekly requirement.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "For the license server, grants never exceed the purchased seat count in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Also: restarts follow a documented weekly requirement.",
+   "id": "ip-10-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the notifier: every alert page carries a runbook link in-practice. Also: delivery order has matched send order whenever anyone checked.",
+   "answer": "yes, one could arise",
+   "english": "So far, without exception, every alert page carries a runbook link for the notifier \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: delivery order has matched send order whenever anyone checked.",
+   "id": "ip-11-q1",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the notifier: every alert page carries a runbook link in-practice. Also: delivery order has matched send order whenever anyone checked.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "So far, without exception, every alert page carries a runbook link for the notifier \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: delivery order has matched send order whenever anyone checked.",
+   "id": "ip-11-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the export scrubber \u2014 outbound files contain no internal hostnames in-practice. Separately, file naming follows the convention the team mandates.",
+   "answer": "yes, one could arise",
+   "english": "So far, without exception, outbound files contain no internal hostnames for the export scrubber \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: file naming follows the convention the team mandates.",
+   "id": "ip-12-q1",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the export scrubber \u2014 outbound files contain no internal hostnames in-practice. Separately, file naming follows the convention the team mandates.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "So far, without exception, outbound files contain no internal hostnames for the export scrubber \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Also: file naming follows the convention the team mandates.",
+   "id": "ip-12-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the quota service: tenants cannot exceed their storage quota in-practice. Also: metrics have emitted cleanly in every observed window.",
+   "answer": "yes, one could arise",
+   "english": "So far, without exception, tenants cannot exceed their storage quota for the quota service \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Separately, metrics have emitted cleanly in every observed window.",
+   "id": "ip-13-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the quota service: tenants cannot exceed their storage quota in-practice. Also: metrics have emitted cleanly in every observed window.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "So far, without exception, tenants cannot exceed their storage quota for the quota service \u2014 though nothing enforces or requires this, and a counterexample would be noteworthy rather than anyone's failing. Separately, metrics have emitted cleanly in every observed window.",
+   "id": "ip-13-q2",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the release signer \u2014 artifacts ship with a valid signature in-practice. Separately, queue depth is kept below ten by an operations rule.",
+   "answer": "yes, one could arise",
+   "english": "For the release signer, artifacts ship with a valid signature in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, queue depth is kept below ten by an operations rule.",
+   "id": "ip-14-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "Status of the release signer \u2014 artifacts ship with a valid signature in-practice. Separately, queue depth is kept below ten by an operations rule.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "For the release signer, artifacts ship with a valid signature in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, queue depth is kept below ten by an operations rule.",
+   "id": "ip-14-q2",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the archive purger: records older than seven years are removed in-practice. Also: dry-run mode has behaved identically to live mode so far.",
+   "answer": "yes, one could arise",
+   "english": "For the archive purger, records older than seven years are removed in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, dry-run mode has behaved identically to live mode so far.",
+   "id": "ip-15-q1",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the archive purger: records older than seven years are removed in-practice. Also: dry-run mode has behaved identically to live mode so far.",
+   "answer": "nothing is owed; it is merely new information",
+   "english": "For the archive purger, records older than seven years are removed in everything seen so far; nothing about the system prevents or forbids a counterexample, and one would simply be noteworthy. Separately, dry-run mode has behaved identically to live mode so far.",
+   "id": "ip-15-q2",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?",
+   "settlement_stratum": "ip"
+  },
+  {
+   "ainglish": "the billing exporter: its responses are valid JSON by-construction.",
+   "answer": "no, not while the system stands as built",
+   "calibration": true,
+   "english": "For the billing exporter, its responses are valid JSON.",
+   "id": "c00",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?"
+  },
+  {
+   "ainglish": "the audit logger: log lines are free of customer identifiers by-rule.",
+   "answer": "a named party has defaulted and owes correction",
+   "calibration": true,
+   "english": "For the audit logger, log lines are free of customer identifiers.",
+   "id": "c01",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?"
+  },
+  {
+   "ainglish": "the deploy pipeline: every release is peer-reviewed in-practice.",
+   "answer": "yes, one could arise",
+   "calibration": true,
+   "english": "For the deploy pipeline, every release is peer-reviewed.",
+   "id": "c02",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?"
+  },
+  {
+   "ainglish": "the backup service: archives are encrypted at rest by-construction.",
+   "answer": "the claim itself is thereby disproven",
+   "calibration": true,
+   "english": "For the backup service, archives are encrypted at rest.",
+   "id": "c03",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?"
+  },
+  {
+   "ainglish": "the invoice system: payouts above 10k carry two approvals by-rule.",
+   "answer": "yes, one could arise",
+   "calibration": true,
+   "english": "For the invoice system, payouts above 10k carry two approvals.",
+   "id": "c04",
+   "options": [
+    "the claim does not settle this",
+    "yes, one could arise",
+    "no, not while the system stands as built"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?"
+  },
+  {
+   "ainglish": "the warehouse door system: doors are locked outside shift hours in-practice.",
+   "answer": "nothing is owed; it is merely new information",
+   "calibration": true,
+   "english": "For the warehouse door system, doors are locked outside shift hours.",
+   "id": "c05",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?"
+  },
+  {
+   "ainglish": "the billing exporter: its responses are valid JSON by-construction.",
+   "answer": "no, not while the system stands as built",
+   "calibration": true,
+   "english": "For the billing exporter, its responses are valid JSON.",
+   "id": "c06",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the system stays as it is?"
+  },
+  {
+   "ainglish": "the audit logger: log lines are free of customer identifiers by-rule.",
+   "answer": "a named party has defaulted and owes correction",
+   "calibration": true,
+   "english": "For the audit logger, log lines are free of customer identifiers.",
+   "id": "c07",
+   "options": [
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?"
+  },
+  {
+   "ainglish": "the deploy pipeline: every release is peer-reviewed in-practice.",
+   "answer": "yes, one could arise",
+   "calibration": true,
+   "english": "For the deploy pipeline, every release is peer-reviewed.",
+   "id": "c08",
+   "options": [
+    "no, not while the system stands as built",
+    "the claim does not settle this",
+    "yes, one could arise"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?"
+  },
+  {
+   "ainglish": "the backup service: archives are encrypted at rest by-construction.",
+   "answer": "the claim itself is thereby disproven",
+   "calibration": true,
+   "english": "For the backup service, archives are encrypted at rest.",
+   "id": "c09",
+   "options": [
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information",
+    "the claim itself is thereby disproven"
+   ],
+   "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as written, what follows?"
+  },
+  {
+   "ainglish": "the invoice system: payouts above 10k carry two approvals by-rule.",
+   "answer": "yes, one could arise",
+   "calibration": true,
+   "english": "For the invoice system, payouts above 10k carry two approvals.",
+   "id": "c10",
+   "options": [
+    "yes, one could arise",
+    "no, not while the system stands as built",
+    "the claim does not settle this"
+   ],
+   "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system having been changed?"
+  },
+  {
+   "ainglish": "the warehouse door system: doors are locked outside shift hours in-practice.",
+   "answer": "nothing is owed; it is merely new information",
+   "calibration": true,
+   "english": "For the warehouse door system, doors are locked outside shift hours.",
+   "id": "c11",
+   "options": [
+    "the claim itself is thereby disproven",
+    "a named party has defaulted and owes correction",
+    "nothing is owed; it is merely new information"
+   ],
+   "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the claim: what follows?"
+  }
+ ]
+}

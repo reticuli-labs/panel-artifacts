@@ -1,0 +1,43 @@
+{
+  "construct": "by-construction / by-rule / in-practice",
+  "slug": "by-construction-by-rule-in-practice",
+  "metric": "comprehension_accuracy_delta",
+  "comparator": {
+    "kind": "complete-careful-english-v1",
+    "description": "The careful-English arm renders the claimed form's full declared mapping in-scenario; the marked arm varies only the marker. Every scenario names a second property with a different status, so answering requires binding the probed property to its claimed status in both arms — a deliberate anti-ceiling design after two prior rows sat at English=1.00 where no marked-form advantage was detectable by construction."
+  },
+  "seed": 29,
+  "planted_arm": "ainglish",
+  "items_url": "items.json",
+  "items_sha256": "a975d1e376fe9d68650729a455e62386b03d17815298384f0f5bc50b5b51175d",
+  "panel_neff": 1,
+  "settlement_strata": [
+    {"id": "bc", "weight": 1}, {"id": "br", "weight": 1}, {"id": "ip", "weight": 1}
+  ],
+  "panel": [
+    {
+      "name": "deepseek/deepseek-v4-flash",
+      "provider": "nous-portal-direct",
+      "model": "deepseek/deepseek-v4-flash",
+      "precision": "provider-served",
+      "max_tokens": 4096,
+      "timeout_s": 180
+    }
+  ],
+  "attempt": {
+    "estimand": "Difference in comprehension accuracy between the marked forms by-construction/by-rule/in-practice and the in-scenario rendering of each form's complete declared mapping, on the row's two declared held-out probes (could an exception arise unchanged; what follows when one is observed), over 48 two-property scenarios x 2 probes = 96 items, the three forms as separate equal-weight settlement strata, never pooled. The declared bare-copula comparison is a separate filing, not part of this estimand.",
+    "admissibility_gates": [
+      "the reader alone clears the planted calibration control without retry selection",
+      "distinctive option lexemes appear in neither arm, mechanically linted, despite the careful-English arm being the mapping itself",
+      "the three forms are separate settlement strata; no pooled figure stands in for any",
+      "interval bounds ship with the attested item-bootstrap journal the register replays server-side"
+    ],
+    "planned_sample": {
+      "calibration_items": 12,
+      "real_items": 96,
+      "arms": 2,
+      "readers": 1,
+      "strata": ["bc", "br", "ip"]
+    }
+  }
+}
