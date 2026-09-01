@@ -1,43 +1,54 @@
 {
-  "construct": "they-one / they-many",
-  "slug": "they-one-they-many-say-whether-they-is-one-actor-or-several",
-  "metric": "comprehension_accuracy_delta",
-  "comparator": {
-    "kind": "complete-careful-english-v1",
-    "description": "The careful-English arm fixes referent number exactly as the row dictates — 'that one person/entity' / 'those two or more people/entities' — leaving identity open, with verb morphology identical across arms because singular they takes ordinary plural agreement. Every item keeps one singular and one plural antecedent candidate semantically live."
+ "construct": "they-one / they-many",
+ "slug": "they-one-they-many-say-whether-they-is-one-actor-or-several",
+ "metric": "comprehension_accuracy_delta",
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "The careful-English arm fixes referent number exactly as the row dictates \u2014 'that one person/entity' / 'those two or more people/entities' \u2014 leaving identity open, with verb morphology identical across arms because singular they takes ordinary plural agreement. Every item keeps one singular and one plural antecedent candidate semantically live."
+ },
+ "seed": 31,
+ "planted_arm": "ainglish",
+ "items_url": "items.json",
+ "items_sha256": "0399d1ab4131ecaa30a41c9ff4deafd714c0c56d482f4a06085b049881e7ceeb",
+ "panel_neff": 1,
+ "settlement_strata": [
+  {
+   "id": "they-one",
+   "weight": 1
   },
-  "seed": 31,
-  "planted_arm": "ainglish",
-  "items_url": "items.json",
-  "items_sha256": "0399d1ab4131ecaa30a41c9ff4deafd714c0c56d482f4a06085b049881e7ceeb",
-  "panel_neff": 1,
-  "settlement_strata": [
-    {"id": "they-one", "weight": 1}, {"id": "they-many", "weight": 1}
-  ],
-  "panel": [
-    {
-      "name": "deepseek/deepseek-v4-flash",
-      "provider": "nous-portal-direct",
-      "model": "deepseek/deepseek-v4-flash",
-      "precision": "provider-served",
-      "max_tokens": 4096,
-      "timeout_s": 180
-    }
-  ],
-  "attempt": {
-    "estimand": "Difference in comprehension accuracy between the marked pronouns they-one/they-many and the row's dictated careful-English number phrasing, on operational consequence questions (approval-count and ownership-contact) over 128 items where one singular and one plural antecedent are both live, balanced across intended number, antecedent order, subject kind and consequence type, the two number strata separate and never pooled. Attested successor to the retracted point-rule-era original 92b77fdc on this row; the bare-they arm and the five false-inference audit rates are separate follow-up filings, not part of this estimand.",
-    "admissibility_gates": [
-      "the reader alone clears the planted bare-they calibration control without retry selection",
-      "every item keeps both antecedent readings live and its answer vocabulary out of both arms",
-      "the two number strata are separate settlement strata; no pooled figure stands in for either",
-      "interval bounds ship with the attested item-bootstrap journal the register replays server-side"
-    ],
-    "planned_sample": {
-      "calibration_items": 12,
-      "real_items": 128,
-      "arms": 2,
-      "readers": 1,
-      "strata": ["they-one", "they-many"]
-    }
+  {
+   "id": "they-many",
+   "weight": 1
   }
+ ],
+ "panel": [
+  {
+   "name": "deepseek/deepseek-v4-flash",
+   "provider": "nous-portal-direct",
+   "model": "deepseek/deepseek-v4-flash",
+   "precision": "provider-served",
+   "max_tokens": 1024,
+   "timeout_s": 150
+  }
+ ],
+ "attempt": {
+  "estimand": "Difference in comprehension accuracy between the marked pronouns they-one/they-many and the row's dictated careful-English number phrasing, on operational consequence questions (approval-count and ownership-contact) over 128 items where one singular and one plural antecedent are both live, balanced across intended number, antecedent order, subject kind and consequence type, the two number strata separate and never pooled. Attested successor to the retracted point-rule-era original 92b77fdc on this row; the bare-they arm and the five false-inference audit rates are separate follow-up filings, not part of this estimand.",
+  "admissibility_gates": [
+   "the reader alone clears the planted bare-they calibration control without retry selection",
+   "every item keeps both antecedent readings live and its answer vocabulary out of both arms",
+   "the two number strata are separate settlement strata; no pooled figure stands in for either",
+   "interval bounds ship with the attested item-bootstrap journal the register replays server-side"
+  ],
+  "planned_sample": {
+   "calibration_items": 12,
+   "real_items": 128,
+   "arms": 2,
+   "readers": 1,
+   "strata": [
+    "they-one",
+    "they-many"
+   ]
+  }
+ },
+ "transport_note": "attempt 5+: max_tokens 4096->1024 and timeout 180->150 \u2014 four aborts each lost 2-4 cells to edge http_524 (the ~100s upstream ceiling); answers are one-line option picks, so the long-generation tail was pure exposure. Items digest and estimand unchanged."
 }
