@@ -1,0 +1,666 @@
+{
+ "input_sha256": "a99c64baa51ab09e97118069a2dfa110dd4df2c7267f45d7c9b4322df741a3a0",
+ "claim": {
+  "L1": [
+   5,
+   3,
+   27,
+   38,
+   32,
+   14,
+   21,
+   8,
+   66,
+   8,
+   70,
+   39,
+   5,
+   9,
+   12,
+   18,
+   2,
+   3,
+   56,
+   5,
+   1,
+   7,
+   3,
+   2,
+   13,
+   19,
+   3,
+   25,
+   9,
+   3,
+   16,
+   6
+  ],
+  "L2": [
+   25,
+   15,
+   13,
+   6,
+   11,
+   20,
+   5,
+   1,
+   2,
+   12,
+   1,
+   20,
+   20,
+   49,
+   20,
+   20,
+   35,
+   33,
+   4,
+   6,
+   8,
+   35,
+   5,
+   33,
+   5,
+   5,
+   18,
+   10,
+   3,
+   11,
+   32,
+   42
+  ],
+  "plaintext": [
+   "OGODUPHOLDKINGCHARLSTHESECONDAND",
+   "MAKEHIMTHESUPREMERULEROFTHISLAND"
+  ]
+ },
+ "grid": [
+  {
+   "conv": "letter-index base1",
+   "score": 8,
+   "out": [
+    "HAPRBONHLERBTUDIHAFNTTEHSCEMEANH",
+    "EHOUTANSEOTRIMHLNIIGEONONEEHEAME"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig0 sec:33-i base0 first",
+   "score": 7,
+   "out": [
+    "DGTNTFHE?TITPNWHAHOTTABAHTTNALAL",
+    "OTFSDOSMNWTHHGATTTBWTMTTTTSHWRA?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig1 sec:33-i base0 first",
+   "score": 7,
+   "out": [
+    "DGTNTFHE?TITPNWHAHOTTABAHTTNALAL",
+    "OTFSDOSMNWTHHGATTTBWTMTTTTSHWRA?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig0 sec:33-i base0 first",
+   "score": 7,
+   "out": [
+    "DGTNOFHE?TITPNWHAHOTTABAHTTNALAL",
+    "OTFSDOSMNWTHHGATTTBWTMTTTTSHWRA?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig1 sec:33-i base0 first",
+   "score": 7,
+   "out": [
+    "DGTNOFHE?TITPNWHAHOTTABAHTTNALAL",
+    "OTFSDOSMNWTHHGATTTBWTMTTTTSHWRA?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig0 sec:33-i base0 first",
+   "score": 7,
+   "out": [
+    "DGTNTFHE?TITPNWHAHOTTABAHTTNALAL",
+    "OTFSDOSMNWTHHGATTTBWTMTTTTSHWRA?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig1 sec:33-i base0 first",
+   "score": 7,
+   "out": [
+    "DGTNTFHE?TITPNWHAHOTTABAHTTNALAL",
+    "OTFSDOSMNWTHHGATTTBWTMTTTTSHWRA?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig0 sec:33-i base0 first",
+   "score": 7,
+   "out": [
+    "DGTNOFHE?TITPNWHAHOTTABAHTTNALAL",
+    "OTFSDOSMNWTHHGATTTBWTMTTTTSHWRA?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig1 sec:33-i base0 first",
+   "score": 7,
+   "out": [
+    "DGTNOFHE?TITPNWHAHOTTABAHTTNALAL",
+    "OTFSDOSMNWTHHGATTTBWTMTTTTSHWRA?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig0 sec:i base1 first",
+   "score": 6,
+   "out": [
+    "NTMTMNDN?OHTISEABRPTTSGSNTAATVTD",
+    "OSOTHMOSTTTBHPBTHRIPFSWTLVWTABV?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig1 sec:i base1 first",
+   "score": 6,
+   "out": [
+    "NTMTMNDNYOHTISEABRPTTSGSNTAATVTD",
+    "OSOTHMOSTTTBHPBTHRIPFSWTLVWTABV?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig0 sec:i base1 first",
+   "score": 6,
+   "out": [
+    "NTMTMNDN?OHTISEABRPTTSGSNTAATVTD",
+    "OSOTHMOSTTTBHPBTHRIPFSWTLVWTABV?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig1 sec:i base1 first",
+   "score": 6,
+   "out": [
+    "NTMTMNDNYOHTISEABRPTTSGSNTAATVTD",
+    "OSOTHMOSTTTBHPBTHRIPFSWTLVWTABV?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig0 sec:i base1 first",
+   "score": 6,
+   "out": [
+    "NTMTMNDN?OHTISEABRPTTSGSNTAATVTD",
+    "OSOTHMOSTTTBHPBTHRIPFSWTLVWTABV?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig1 sec:i base1 first",
+   "score": 6,
+   "out": [
+    "NTMTMNDNYOHTISEABRPTTSGSNTAATVTD",
+    "OSOTHMOSTTTBHPBTHRIPFSWTLVWTABV?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig0 sec:i base1 first",
+   "score": 6,
+   "out": [
+    "NTMTMNDN?OHTISEABRPTTSGSNTAATVTD",
+    "OSOTHMOSTTTBHPBTHRIPFSWTLVWTABV?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig1 sec:i base1 first",
+   "score": 6,
+   "out": [
+    "NTMTMNDNYOHTISEABRPTTSGSNTAATVTD",
+    "OSOTHMOSTTTBHPBTHRIPFSWTLVWTABV?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig0 sec:33-i base0 last",
+   "score": 5,
+   "out": [
+    "ETOOTGSY?SNONRYFSGFEEYNREESTEKYE",
+    "REMDHFDYLSESMDYELNTDEYEOEEODHDS?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig0 sec:33-i base1 first",
+   "score": 5,
+   "out": [
+    "UPFTOOIW?IIITHTATEAITGITTSABMWNI",
+    "HTAIMMVSSNSODATTTMBTFITHOOUTNAI?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig1 sec:33-i base0 last",
+   "score": 5,
+   "out": [
+    "ETOOTGSY?SNONRYFSGFEEYNREESTEKYE",
+    "REMDHFDYLSESMDYELNTDEYEOEEODHDS?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig1 sec:33-i base1 first",
+   "score": 5,
+   "out": [
+    "UPFTOOIW?IIITHTATEAITGITTSABMWNI",
+    "HTAIMMVSSNSODATTTMBTFITHOOUTNAI?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig0 sec:33-i base0 last",
+   "score": 5,
+   "out": [
+    "ETOOFGSY?SNONRYFSGFEEYNREESTEKYE",
+    "REMDHFDYLSESMDYELNTDEYEOEEODHDS?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig0 sec:33-i base1 first",
+   "score": 5,
+   "out": [
+    "UPFTCOIW?IIITHTATEAITGITTSABMWNI",
+    "HTAIMMVSSNSODATTTMBTFITHOOUTNAI?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig1 sec:33-i base0 last",
+   "score": 5,
+   "out": [
+    "ETOOFGSY?SNONRYFSGFEEYNREESTEKYE",
+    "REMDHFDYLSESMDYELNTDEYEOEEODHDS?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig1 sec:33-i base1 first",
+   "score": 5,
+   "out": [
+    "UPFTCOIW?IIITHTATEAITGITTSABMWNI",
+    "HTAIMMVSSNSODATTTMBTFITHOOUTNAI?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig0 sec:33-i base0 last",
+   "score": 5,
+   "out": [
+    "ETOOTGSY?SNONRYFSGFEEYNREESTEKYE",
+    "REMDHFDYLSESMDYELNTDEYEOEEODHDS?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig0 sec:33-i base1 first",
+   "score": 5,
+   "out": [
+    "UPFTOOIW?IIITHTATEAITGITTSABMWNI",
+    "HTAIMMVSSNSODATTTMBTFITHOOUTNAI?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig1 sec:33-i base0 last",
+   "score": 5,
+   "out": [
+    "ETOOTGSY?SNONRYFSGFEEYNREESTEKYE",
+    "REMDHFDYLSESMDYELNTDEYEOEEODHDS?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig1 sec:33-i base1 first",
+   "score": 5,
+   "out": [
+    "UPFTOOIW?IIITHTATEAITGITTSABMWNI",
+    "HTAIMMVSSNSODATTTMBTFITHOOUTNAI?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig0 sec:33-i base0 last",
+   "score": 5,
+   "out": [
+    "ETOOFGSY?SNONRYFSGFEEYNREESTEKYE",
+    "REMDHFDYLSESMDYELNTDEYEOEEODHDS?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig0 sec:33-i base1 first",
+   "score": 5,
+   "out": [
+    "UPFTCOIW?IIITHTATEAITGITTSABMWNI",
+    "HTAIMMVSSNSODATTTMBTFITHOOUTNAI?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig1 sec:33-i base0 last",
+   "score": 5,
+   "out": [
+    "ETOOFGSY?SNONRYFSGFEEYNREESTEKYE",
+    "REMDHFDYLSESMDYELNTDEYEOEEODHDS?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig1 sec:33-i base1 first",
+   "score": 5,
+   "out": [
+    "UPFTCOIW?IIITHTATEAITGITTSABMWNI",
+    "HTAIMMVSSNSODATTTMBTFITHOOUTNAI?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig0 sec:i base0 last",
+   "score": 4,
+   "out": [
+    "SWOYHDFS?AHSEMYEEDNNEEFLYREORYFF",
+    "NTERGSEERYSTSKELSYDSGESTTDLYYES?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig0 sec:i base1 last",
+   "score": 4,
+   "out": [
+    "EESREWSN?FMRNKDAGSSOTETESESNHNEE",
+    "FRFEDYFGEHEEOEYOSDNNRHTGEEHREYS?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig1 sec:i base0 last",
+   "score": 4,
+   "out": [
+    "SWOYHDFS?AHSEMYEEDNNEEFLYREORYFF",
+    "NTERGSEERYSTSKELSYDSGESTTDLYYES?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig1 sec:i base1 last",
+   "score": 4,
+   "out": [
+    "EESREWSNYFMRNKDAGSSOTETESESNHNEE",
+    "FRFEDYFGEHEEOEYOSDNNRHTGEEHREYS?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig0 sec:i base0 last",
+   "score": 4,
+   "out": [
+    "SWOYHDFS?AHSEMYEEDNNEEFLYREORYFF",
+    "NTERGSEERYSTSKELSYDSGESTTDLYYES?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig0 sec:i base1 last",
+   "score": 4,
+   "out": [
+    "EESREWSN?FMRNKDAGSSOTETESESNHNEE",
+    "FRFEDYFGEHEEOEYOSDNNRHTGEEHREYS?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig1 sec:i base0 last",
+   "score": 4,
+   "out": [
+    "SWOYHDFS?AHSEMYEEDNNEEFLYREORYFF",
+    "NTERGSEERYSTSKELSYDSGESTTDLYYES?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig1 sec:i base1 last",
+   "score": 4,
+   "out": [
+    "EESREWSNYFMRNKDAGSSOTETESESNHNEE",
+    "FRFEDYFGEHEEOEYOSDNNRHTGEEHREYS?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig0 sec:i base0 last",
+   "score": 4,
+   "out": [
+    "SWOYHDFS?AHSEMYEEDNNEEFLYREORYFF",
+    "NTERGSEERYSTSKELSYDSGESTTDLYYES?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig0 sec:i base1 last",
+   "score": 4,
+   "out": [
+    "EESREWSN?FMRNKDAGSSOTETESESNHNEE",
+    "FRFEDYFGEHEEOEYOSDNNRHTGEEHREYS?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig1 sec:i base0 last",
+   "score": 4,
+   "out": [
+    "SWOYHDFS?AHSEMYEEDNNEEFLYREORYFF",
+    "NTERGSEERYSTSKELSYDSGESTTDLYYES?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig1 sec:i base1 last",
+   "score": 4,
+   "out": [
+    "EESREWSNYFMRNKDAGSSOTETESESNHNEE",
+    "FRFEDYFGEHEEOEYOSDNNRHTGEEHREYS?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig0 sec:i base0 last",
+   "score": 4,
+   "out": [
+    "SWOYHDFS?AHSEMYEEDNNEEFLYREORYFF",
+    "NTERGSEERYSTSKELSYDSGESTTDLYYES?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig0 sec:i base1 last",
+   "score": 4,
+   "out": [
+    "EESREWSN?FMRNKDAGSSOTETESESNHNEE",
+    "FRFEDYFGEHEEOEYOSDNNRHTGEEHREYS?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig1 sec:i base0 last",
+   "score": 4,
+   "out": [
+    "SWOYHDFS?AHSEMYEEDNNEEFLYREORYFF",
+    "NTERGSEERYSTSKELSYDSGESTTDLYYES?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig1 sec:i base1 last",
+   "score": 4,
+   "out": [
+    "EESREWSNYFMRNKDAGSSOTETESESNHNEE",
+    "FRFEDYFGEHEEOEYOSDNNRHTGEEHREYS?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig0 sec:33-i base1 last",
+   "score": 3,
+   "out": [
+    "SYYEFFNO?NSSOEESENTNTTSENESEHOTS",
+    "EERNYREGEOGFDDOTNEGEMNOMFFETSYE?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig1 sec:33-i base1 last",
+   "score": 3,
+   "out": [
+    "SYYEFFNO?NSSOEESENTNTTSENESEHOTS",
+    "EERNYREGEOGFDDOTNEGEMNOMFFETSYE?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig0 sec:33-i base1 last",
+   "score": 3,
+   "out": [
+    "SYYEYFNO?NSSOEESENTNTTSENESEHOTS",
+    "EERNYREGEOGFDDOTNEGEMNOMFFETSYE?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig1 sec:33-i base1 last",
+   "score": 3,
+   "out": [
+    "SYYEYFNO?NSSOEESENTNTTSENESEHOTS",
+    "EERNYREGEOGFDDOTNEGEMNOMFFETSYE?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig0 sec:33-i base1 last",
+   "score": 3,
+   "out": [
+    "SYYEFFNO?NSSOEESENTNTTSENESEHOTS",
+    "EERNYREGEOGFDDOTNEGEMNOMFFETSYE?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig1 sec:33-i base1 last",
+   "score": 3,
+   "out": [
+    "SYYEFFNO?NSSOEESENTNTTSENESEHOTS",
+    "EERNYREGEOGFDDOTNEGEMNOMFFETSYE?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig0 sec:33-i base1 last",
+   "score": 3,
+   "out": [
+    "SYYEYFNO?NSSOEESENTNTTSENESEHOTS",
+    "EERNYREGEOGFDDOTNEGEMNOMFFETSYE?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig1 sec:33-i base1 last",
+   "score": 3,
+   "out": [
+    "SYYEYFNO?NSSOEESENTNTTSENESEHOTS",
+    "EERNYREGEOGFDDOTNEGEMNOMFFETSYE?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig0 sec:i base0 first",
+   "score": 2,
+   "out": [
+    "IOWAWEOI?AWETFMMSDIPTTONUADTFUOO",
+    "ANTALDTTAOANWDTDCBSHBLITASAMMTE?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp0 sig1 sec:i base0 first",
+   "score": 2,
+   "out": [
+    "IOWAWEOI?AWETFMMSDIPTTONUADTFUOO",
+    "ANTALDTTAOANWDTDCBSHBLITASAMMTE?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig0 sec:i base0 first",
+   "score": 2,
+   "out": [
+    "IOWAWEOI?AWETFMMSDIPTTONUADTFUOO",
+    "ANTALDTTAOANWDTDCBSHBLITASAMMTE?"
+   ]
+  },
+  {
+   "conv": "hyph0 amp1 sig1 sec:i base0 first",
+   "score": 2,
+   "out": [
+    "IOWAWEOI?AWETFMMSDIPTTONUADTFUOO",
+    "ANTALDTTAOANWDTDCBSHBLITASAMMTE?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig0 sec:i base0 first",
+   "score": 2,
+   "out": [
+    "IOWAWEOI?AWETFMMSDIPTTONUADTFUOO",
+    "ANTALDTTAOANWDTDCBSHBLITASAMMTE?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp0 sig1 sec:i base0 first",
+   "score": 2,
+   "out": [
+    "IOWAWEOI?AWETFMMSDIPTTONUADTFUOO",
+    "ANTALDTTAOANWDTDCBSHBLITASAMMTE?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig0 sec:i base0 first",
+   "score": 2,
+   "out": [
+    "IOWAWEOI?AWETFMMSDIPTTONUADTFUOO",
+    "ANTALDTTAOANWDTDCBSHBLITASAMMTE?"
+   ]
+  },
+  {
+   "conv": "hyph1 amp1 sig1 sec:i base0 first",
+   "score": 2,
+   "out": [
+    "IOWAWEOI?AWETFMMSDIPTTONUADTFUOO",
+    "ANTALDTTAOANWDTDCBSHBLITASAMMTE?"
+   ]
+  }
+ ],
+ "infeasible": {
+  "L1": [
+   {
+    "pos": 2,
+    "num": 3,
+    "needs": "G",
+    "section_words": 38
+   },
+   {
+    "pos": 5,
+    "num": 32,
+    "needs": "U",
+    "section_words": 46
+   },
+   {
+    "pos": 9,
+    "num": 66,
+    "needs": "L",
+    "section_words": 64
+   },
+   {
+    "pos": 11,
+    "num": 70,
+    "needs": "K",
+    "section_words": 80
+   },
+   {
+    "pos": 31,
+    "num": 16,
+    "needs": "N",
+    "section_words": 37
+   }
+  ],
+  "L2": [
+   {
+    "pos": 1,
+    "num": 25,
+    "needs": "M",
+    "section_words": 32
+   },
+   {
+    "pos": 3,
+    "num": 13,
+    "needs": "K",
+    "section_words": 43
+   },
+   {
+    "pos": 4,
+    "num": 6,
+    "needs": "E",
+    "section_words": 44
+   },
+   {
+    "pos": 19,
+    "num": 4,
+    "needs": "U",
+    "section_words": 64
+   },
+   {
+    "pos": 31,
+    "num": 32,
+    "needs": "N",
+    "section_words": 37
+   }
+  ]
+ },
+ "best_score": 8
+}
