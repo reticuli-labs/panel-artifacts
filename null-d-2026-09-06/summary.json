@@ -1,0 +1,91 @@
+{
+  "cases": [
+    {
+      "N": "1099507433251",
+      "algorithm_version": "pgs_rsa_endpoint_resolver_v3.1",
+      "bits": 40,
+      "case_id": "rsa_v2_40bit_static_001",
+      "center": "1048573",
+      "closure_status": "endpoint_class_by_reciprocal_deadline_signature_correction",
+      "corrected_lower_certificate_present": true,
+      "elapsed_ms": 239.000541,
+      "endpoint_chain_steps": null,
+      "endpoint_class_emitted": true,
+      "git_commit": "unknown",
+      "lower_certificate_present": true,
+      "max_steps": 10000,
+      "residual_code": null,
+      "rule_id": "reciprocal_pgs_gwr_carrier_transport_v3",
+      "upper_certificate_present": true
+    },
+    {
+      "N": "1027435935526951",
+      "algorithm_version": "pgs_rsa_endpoint_resolver_v3.1",
+      "bits": 50,
+      "case_id": "rsa_v2_50bit_static_001",
+      "center": "32053641",
+      "closure_status": "joint_cell_C1T2L1",
+      "corrected_lower_certificate_present": true,
+      "elapsed_ms": 73814.420069,
+      "endpoint_chain_steps": 350,
+      "endpoint_class_emitted": false,
+      "git_commit": "unknown",
+      "lower_certificate_present": true,
+      "max_steps": 10000,
+      "residual_code": "joint_cell_C1T2L1",
+      "rule_id": "reciprocal_pgs_gwr_carrier_transport_v3",
+      "upper_certificate_present": true
+    },
+    {
+      "N": "10376454699372036973",
+      "algorithm_version": "pgs_rsa_endpoint_resolver_v3.1",
+      "bits": 64,
+      "case_id": "rsa_v2_64bit_static_001",
+      "center": "3221250486",
+      "closure_status": "unresolved_by_profile_count_mismatch",
+      "corrected_lower_certificate_present": true,
+      "elapsed_ms": 368575.636769,
+      "endpoint_chain_steps": 1162,
+      "endpoint_class_emitted": false,
+      "git_commit": "unknown",
+      "lower_certificate_present": true,
+      "max_steps": 10000,
+      "residual_code": "unresolved_by_profile_count_mismatch",
+      "rule_id": "reciprocal_pgs_gwr_carrier_transport_v3",
+      "upper_certificate_present": true
+    },
+    {
+      "N": "85070591730234615902737140005361155371",
+      "algorithm_version": "pgs_rsa_endpoint_resolver_v3.1",
+      "bits": 127,
+      "case_id": "rsa_v2_128bit_static_001",
+      "center": "9223372036854775809",
+      "closure_status": "unresolved_by_instrumentation_limit",
+      "corrected_lower_certificate_present": false,
+      "elapsed_ms": 0.001514,
+      "endpoint_chain_steps": 0,
+      "endpoint_class_emitted": false,
+      "git_commit": "unknown",
+      "lower_certificate_present": false,
+      "max_steps": 64,
+      "residual_code": "unresolved_by_instrumentation_limit",
+      "rule_id": "reciprocal_pgs_gwr_carrier_transport_v3",
+      "upper_certificate_present": false
+    }
+  ],
+  "measured": {
+    "algorithm_version": "pgs_rsa_endpoint_resolver_v3.1",
+    "case_count": 4,
+    "git_commit": "unknown",
+    "note": "resolution_rate is measured only and is not a pass criterion",
+    "residual_histogram_measured_only": {
+      "joint_cell_C1T2L1": 1,
+      "unresolved_by_instrumentation_limit": 1,
+      "unresolved_by_profile_count_mismatch": 1
+    },
+    "resolution_rate_measured_only": 0.25,
+    "resolved_count": 1,
+    "rule_id": "reciprocal_pgs_gwr_carrier_transport_v3",
+    "unresolved_count": 3
+  }
+}
