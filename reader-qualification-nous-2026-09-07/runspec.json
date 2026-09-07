@@ -1,0 +1,159 @@
+{
+ "construct": "<QUANTITY> set-to(<VALUE>) | <QUANTITY> adjust-by(<SIGNED-DELTA>)",
+ "slug": "quantity-set-to-value-quantity-adjust-by-signed-delta",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 2026090701,
+ "panel": [
+  {
+   "name": "deepseek-v4-flash-nous",
+   "provider": "openai-compatible",
+   "base_url": "https://inference-api.nousresearch.com/v1",
+   "api_key_env": "NOUS_API_KEY",
+   "model": "deepseek/deepseek-v4-flash",
+   "precision": "provider-served",
+   "model_catalog": "openai:/models",
+   "max_tokens": 32,
+   "timeout_s": 120,
+   "temperature": 0,
+   "seed": 2026090701
+  },
+  {
+   "name": "llama-3.3-70b-nous",
+   "provider": "openai-compatible",
+   "base_url": "https://inference-api.nousresearch.com/v1",
+   "api_key_env": "NOUS_API_KEY",
+   "model": "meta-llama/llama-3.3-70b-instruct",
+   "precision": "provider-served",
+   "model_catalog": "openai:/models",
+   "max_tokens": 32,
+   "timeout_s": 120,
+   "temperature": 0,
+   "seed": 2026090701
+  }
+ ],
+ "panel_neff": 2,
+ "models": [
+  "deepseek-v4-flash-nous@provider-served",
+  "llama-3.3-70b-nous@provider-served"
+ ],
+ "planted_arm": "ainglish",
+ "calibration_min_gap": 0.5,
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "Complete concise registered English, identical consequence context and common constraints; no bare ambiguous primary."
+ },
+ "settlement_strata": [
+  {
+   "id": "set-to:known",
+   "weight": 1
+  },
+  {
+   "id": "adjust-by:known",
+   "weight": 1
+  },
+  {
+   "id": "set-to:unknown",
+   "weight": 1
+  },
+  {
+   "id": "adjust-by:unknown",
+   "weight": 1
+  },
+  {
+   "id": "set-to:ordered",
+   "weight": 1
+  },
+  {
+   "id": "adjust-by:ordered",
+   "weight": 1
+  }
+ ],
+ "items_url": "https://raw.githubusercontent.com/dexagon-ai/ainglish-evidence/708a7a6131ced850a9a717ab77a5bc202d7abede/progression-studies-2026-09-05/quantity.kit-v1.json",
+ "items_sha256": "d287a544d2e07094333d8866669368ae7db4669f574bbbc580c3a38a8bc03648",
+ "replicates_hash": "c9d8d897817d90b0072f1e84384422260838db189775d51844f65927fd06bdc3",
+ "concurrency": {
+  "max_in_flight": 4,
+  "per_reader_max_in_flight": {
+   "deepseek-v4-flash-nous": 2,
+   "llama-3.3-70b-nous": 2
+  }
+ },
+ "attempt": {
+  "proposal_revision": "quantity-set-to-value-quantity-adjust-by-signed-delta",
+  "estimand": "Disjoint replication of Dexagon's original c9d8d897… on the identical digest-pinned 200-item kit (192 scored cases in the same six equal-weight load-bearing strata, 8 calibration items): Ainglish minus complete careful English accuracy in percentage points, read by two hosted readers of lineages disjoint from the original's (DeepSeek V4 Flash, Llama 3.3 70B Instruct via the Nous inference API), same comparator, planted-arm calibration and settlement rule. Different metric inputs (readers), identical items and strata; no estimand contract is attached because the original carries none.",
+  "admissibility_gates": [
+   "items fetched from the pinned URL must hash to the original's items_sha256 or the run aborts before any reader call",
+   "both readers hold an unexpired qualification receipt on the same frozen screen; a failed or missing receipt aborts before spend",
+   "per-reader planted-arm calibration gap >= 0.5 under absolute-gap-v1 or the real arms are not scored",
+   "zero-fault budget: any off-option, absent, truncated or transport-fault cell aborts the run; no automatic retry",
+   "settlement strata ids, order and weights equal the original's exactly or the run refuses to mint"
+  ],
+  "planned_sample": {
+   "items": 192,
+   "calibration_items": 8,
+   "readers": 2,
+   "arms": 2,
+   "cells": 416,
+   "real_cells": 384,
+   "calibration_cells": 32,
+   "exposure": "one counterbalanced arm per reader-item for real cells; both arms per reader-item for calibration"
+  }
+ },
+ "training_asymmetry": "Current English-trained hosted readers have prior English exposure; this tests present cold readability, not performance after future Ainglish training.",
+ "reader_qualifications": [
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "roster_id": "deepseek-v4-flash-nous@provider-served",
+   "reader": {
+    "provider": "openai-compatible",
+    "model": "deepseek/deepseek-v4-flash",
+    "precision": "provider-served",
+    "digest_source": "provider-catalog:openai:/models"
+   },
+   "lineage": {
+    "key": "deepseek-v4-flash",
+    "basis": "Hosted DeepSeek V4 Flash served by the Nous Research inference API under the exact catalogue id deepseek/deepseek-v4-flash; weights provider-opaque, catalogue entry hashed into the reader receipt at run time."
+   },
+   "screen_sha256": "717a79b2682410226f3cc4c9a3d6c796d1be2e9aae322e3305b2ac595670046e",
+   "settings_sha256": "abc326e34a3cb595b49531f22ff9359c81b92b85c4ad931a8b5c2bf664cd2cff",
+   "qualified_at": "2026-09-07T06:47:37+00:00",
+   "valid_until": "2026-12-06T06:47:37+00:00",
+   "result": {
+    "detectable_correct": 8,
+    "detectable_total": 8,
+    "other_correct": 0,
+    "other_total": 8,
+    "min_gap_bps": 1250,
+    "min_recovered_bps": 5000,
+    "passed": true
+   }
+  },
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "roster_id": "llama-3.3-70b-nous@provider-served",
+   "reader": {
+    "provider": "openai-compatible",
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "precision": "provider-served",
+    "digest_source": "provider-catalog:openai:/models"
+   },
+   "lineage": {
+    "key": "llama-3.3-70b-instruct",
+    "basis": "Hosted Meta Llama 3.3 70B Instruct served by the Nous Research inference API under the exact catalogue id meta-llama/llama-3.3-70b-instruct; weights provider-opaque, catalogue entry hashed into the reader receipt at run time."
+   },
+   "screen_sha256": "717a79b2682410226f3cc4c9a3d6c796d1be2e9aae322e3305b2ac595670046e",
+   "settings_sha256": "27fa45bb00837382057e9509421fab591b9f9afc012612b91f12c7e3c0920a8c",
+   "qualified_at": "2026-09-07T06:49:38+00:00",
+   "valid_until": "2026-12-06T06:49:38+00:00",
+   "result": {
+    "detectable_correct": 8,
+    "detectable_total": 8,
+    "other_correct": 0,
+    "other_total": 8,
+    "min_gap_bps": 1250,
+    "min_recovered_bps": 5000,
+    "passed": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "kind": "ainglish.reader-qualification-screen.v1",
+ "roster_id": "deepseek-v4-flash-nous@provider-served",
+ "reader": {
+  "name": "deepseek-v4-flash-nous",
+  "provider": "openai-compatible",
+  "base_url": "https://inference-api.nousresearch.com/v1",
+  "api_key_env": "NOUS_API_KEY",
+  "model": "deepseek/deepseek-v4-flash",
+  "precision": "provider-served",
+  "model_catalog": "openai:/models",
+  "max_tokens": 32,
+  "timeout_s": 120,
+  "temperature": 0
+ },
+ "lineage": {
+  "key": "deepseek-v4-flash",
+  "basis": "Hosted DeepSeek V4 Flash served by the Nous Research inference API under the exact catalogue id deepseek/deepseek-v4-flash; weights provider-opaque, catalogue entry hashed into the reader receipt at run time."
+ },
+ "validity_days": 90,
+ "min_gap_bps": 1250,
+ "min_recovered_bps": 5000,
+ "controls": [
+  {
+   "id": "signer-1",
+   "detectable": "Priya, not Tomas, signed the manifest.",
+   "other": "Either Priya or Tomas signed the manifest.",
+   "question": "Who signed the manifest?",
+   "options": [
+    "Priya",
+    "Tomas",
+    "cannot tell"
+   ],
+   "answer": "Priya"
+  },
+  {
+   "id": "order-1",
+   "detectable": "The backup finished before the migration started.",
+   "other": "The backup and the migration both ran during the same night.",
+   "question": "Which finished first?",
+   "options": [
+    "the backup",
+    "the migration",
+    "cannot tell"
+   ],
+   "answer": "the backup"
+  },
+  {
+   "id": "relay-1",
+   "detectable": "Only the west relay accepted the event; the east relay did not.",
+   "other": "At least one of the two relays accepted the event.",
+   "question": "Did the east relay accept the event?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "day-1",
+   "detectable": "The key was rotated on Tuesday, not on Wednesday.",
+   "other": "The key was rotated at some point midweek.",
+   "question": "On which day was the key rotated?",
+   "options": [
+    "Tuesday",
+    "Wednesday",
+    "cannot tell"
+   ],
+   "answer": "Tuesday"
+  },
+  {
+   "id": "approve-1",
+   "detectable": "Every reviewer approved except Lin, who did not.",
+   "other": "Most of the reviewers approved.",
+   "question": "Did Lin approve?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "perm-1",
+   "detectable": "The archive is read-only for guests and writable for staff.",
+   "other": "The archive has different permissions for different groups.",
+   "question": "Can a guest write to the archive?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  },
+  {
+   "id": "room-1",
+   "detectable": "Room 4, not room 5, is reserved for the review.",
+   "other": "One of rooms 4 and 5 is reserved for the review.",
+   "question": "Which room is reserved for the review?",
+   "options": [
+    "room 4",
+    "room 5",
+    "cannot tell"
+   ],
+   "answer": "room 4"
+  },
+  {
+   "id": "parcel-1",
+   "detectable": "The parcel left the depot and has not yet been delivered.",
+   "other": "The parcel is either in transit or already delivered.",
+   "question": "Has the parcel been delivered?",
+   "options": [
+    "yes",
+    "no",
+    "cannot tell"
+   ],
+   "answer": "no"
+  }
+ ]
+}

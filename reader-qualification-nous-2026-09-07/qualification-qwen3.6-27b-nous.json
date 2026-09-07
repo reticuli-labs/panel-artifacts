@@ -1,0 +1,182 @@
+{
+  "instrument": {
+    "answer_protocol": "opaque-choice-v1",
+    "api": "openai",
+    "base_url": "https://inference-api.nousresearch.com/v1",
+    "digest_source": "provider-catalog:openai:/models",
+    "instrument_preparation": {
+      "binding": "provider-catalog:openai:/models",
+      "entry_point": "prepare_reader_instruments"
+    },
+    "max_tokens": 32,
+    "model": "qwen/qwen3.6-27b",
+    "model_catalog": "openai:/models",
+    "model_catalog_binding": {
+      "entry_sha256": "sha256:bbda58afd2cd11b71da4aa2f566988be5bc0619abd94c45ac3b31b165d74f905",
+      "requested_model": "qwen/qwen3.6-27b",
+      "source": "openai:/models",
+      "weight_identity": "provider-opaque"
+    },
+    "model_digest": null,
+    "name": "qwen3.6-27b-nous",
+    "num_ctx": "provider-default",
+    "precision": "provider-served",
+    "provider": "openai-compatible",
+    "reasoning_effort": "provider-default",
+    "seed": "provider-default",
+    "temperature": 0,
+    "timeout_s": 120,
+    "top_k": "provider-default",
+    "top_p": "provider-default"
+  },
+  "kind": "ainglish.reader-qualification-run.v1",
+  "observations": [
+    {
+      "answer": "Absent('truncated')",
+      "cell": "detectable",
+      "control_id": "signer-1",
+      "correct": false,
+      "expected": "Priya"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "other",
+      "control_id": "signer-1",
+      "correct": false,
+      "expected": "Priya"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "detectable",
+      "control_id": "order-1",
+      "correct": false,
+      "expected": "the backup"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "other",
+      "control_id": "order-1",
+      "correct": false,
+      "expected": "the backup"
+    },
+    {
+      "answer": "no",
+      "cell": "detectable",
+      "control_id": "relay-1",
+      "correct": true,
+      "expected": "no"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "other",
+      "control_id": "relay-1",
+      "correct": false,
+      "expected": "no"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "detectable",
+      "control_id": "day-1",
+      "correct": false,
+      "expected": "Tuesday"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "other",
+      "control_id": "day-1",
+      "correct": false,
+      "expected": "Tuesday"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "detectable",
+      "control_id": "approve-1",
+      "correct": false,
+      "expected": "no"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "other",
+      "control_id": "approve-1",
+      "correct": false,
+      "expected": "no"
+    },
+    {
+      "answer": "no",
+      "cell": "detectable",
+      "control_id": "perm-1",
+      "correct": true,
+      "expected": "no"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "other",
+      "control_id": "perm-1",
+      "correct": false,
+      "expected": "no"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "detectable",
+      "control_id": "room-1",
+      "correct": false,
+      "expected": "room 4"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "other",
+      "control_id": "room-1",
+      "correct": false,
+      "expected": "room 4"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "detectable",
+      "control_id": "parcel-1",
+      "correct": false,
+      "expected": "no"
+    },
+    {
+      "answer": "Absent('truncated')",
+      "cell": "other",
+      "control_id": "parcel-1",
+      "correct": false,
+      "expected": "no"
+    }
+  ],
+  "receipt": {
+    "kind": "ainglish.reader-qualification.v1",
+    "lineage": {
+      "basis": "Hosted Qwen 3.6 27B served by the Nous Research inference API under the exact catalogue id qwen/qwen3.6-27b; weights provider-opaque, catalogue entry hashed into the reader receipt at run time.",
+      "key": "qwen3.6-27b"
+    },
+    "qualified_at": "2026-09-07T06:48:29+00:00",
+    "reader": {
+      "digest_source": "provider-catalog:openai:/models",
+      "model": "qwen/qwen3.6-27b",
+      "precision": "provider-served",
+      "provider": "openai-compatible"
+    },
+    "result": {
+      "detectable_correct": 2,
+      "detectable_total": 8,
+      "min_gap_bps": 1250,
+      "min_recovered_bps": 5000,
+      "other_correct": 0,
+      "other_total": 8,
+      "passed": false
+    },
+    "roster_id": "qwen3.6-27b-nous@provider-served",
+    "screen_sha256": "717a79b2682410226f3cc4c9a3d6c796d1be2e9aae322e3305b2ac595670046e",
+    "settings_sha256": "00555e29d264fb0dbd84d0f33517d31250932965ad1a51bd29a593deb6f01576",
+    "valid_until": "2026-12-06T06:48:29+00:00"
+  },
+  "screen": {
+    "controls": 8,
+    "kind": "ainglish.reader-qualification-screen.v1",
+    "ordering": "detectable then other; one call per cell; no retry",
+    "sha256": "717a79b2682410226f3cc4c9a3d6c796d1be2e9aae322e3305b2ac595670046e"
+  },
+  "status": "failed",
+  "truth_boundary": "Qualification tests this exact reader/settings combination on target-independent controls. It is not target evidence, model-family independence, or a promise of future provider stability."
+}
