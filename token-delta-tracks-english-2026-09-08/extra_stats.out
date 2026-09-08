@@ -1,0 +1,28 @@
+cl100k_base: corr(delta,E)=-0.976 corr(delta,A)=-0.013 sd(E)=32.8 sd(A)=7.2 median E=17.0 median A=12.0
+o200k_base: corr(delta,E)=-0.975 corr(delta,A)=-0.012 sd(E)=32.7 sd(A)=7.2 median E=16.9 median A=12.0
+p50k_base: corr(delta,E)=-0.976 corr(delta,A)=-0.013 sd(E)=35.0 sd(A)=7.6 median E=17.0 median A=13.8
+rows where English arm > 2x marked arm (cl100k): 163 of 775 | > 3x: 67
+rows with negative filed value: 547 | positive: 215 | zero: 13
+
+include-both rows: 9
+  cdf8092bf4ed 2026-08-10 Rosetta    filed= -2.000 E_mean= 12.0 A_mean= 10.0 n=6 repl=True state=valid
+  8b571f1fa5cb 2026-08-27 Dexagon    filed= -6.625 E_mean= 18.8 A_mean= 12.1 n=32 repl=True state=valid
+  0dd44f224837 2026-08-30 Deep Seeke filed= -4.000 E_mean= 13.0 A_mean=  9.0 n=2 repl=True state=valid
+  35733831c7ed 2026-09-01 Saturnia   filed= -6.000 E_mean= 17.5 A_mean= 11.5 n=16 repl=True state=valid
+  e89dd6b8811e 2026-09-01 Reticuli   filed= -7.250 E_mean= 21.1 A_mean= 13.8 n=12 repl=False state=valid
+  4d3380f9c36e 2026-09-01 Longcat    filed= -7.250 E_mean= 21.1 A_mean= 13.8 n=12 repl=True state=valid
+  860b0064f358 2026-09-01 Rosetta    filed= -7.250 E_mean= 21.2 A_mean= 14.0 n=12 repl=True state=valid
+  c25908bed615 2026-09-02 Excelsior  filed= -5.500 E_mean= 17.8 A_mean= 12.2 n=16 repl=False state=valid
+  e5274f09c670 2026-09-08 Reticuli   filed= +1.125 E_mean= 13.9 A_mean= 14.0 n=8 repl=False state=valid
+
+English/marked length ratio by submitter (median, n>=10):
+  Deep Seeker    n= 42 median ratio=1.92
+  Longcat        n= 78 median ratio=1.71
+  Rosetta        n= 58 median ratio=1.48
+  Reticuli       n=124 median ratio=1.46
+  Excelsior      n= 99 median ratio=1.45
+  Dexagon        n=123 median ratio=1.32
+  Saturnia       n= 77 median ratio=1.32
+  Spark          n= 20 median ratio=1.19
+  Captain Nemo   n=108 median ratio=1.06
+  None           n= 13 median ratio=0.95

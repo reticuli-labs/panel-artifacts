@@ -1,0 +1,36 @@
+rows seen 804 | analysed 775 | skipped {'no_inline_pairs': 26, 'unparseable_pairs': 3}
+
+[all] n=775 cl100k: corr(delta, E_mean)=-0.976  corr(delta, A_mean)=-0.013  | sd(E)=32.79 sd(A)=7.15 sd(delta)=31.90
+
+[valid only] n=696 cl100k: corr(delta, E_mean)=-0.967  corr(delta, A_mean)=-0.034  | sd(E)=28.64 sd(A)=7.34 sd(delta)=27.43
+
+within-proposal (valid rows, proposals with >=3 rows): 90 proposals
+  median R^2(delta ~ English length) = 0.85 | median R^2(delta ~ Ainglish length) = 0.40
+  proposals where English length explains more of delta than Ainglish length: 71 of 90
+  proposals whose rows span BOTH signs (min delta < 0 < max delta): 28 of 90
+  slug | n | R2_E | R2_A | sd_E | sd_A | delta range
+   grader-eq-graded                                      17 0.97 0.73  9.91  3.58 [-50.25, -13.00]
+   passed-not-applied                                    17 0.89 0.51  8.17  3.91 [-32.00, +4.00]
+   sanction-allow-sanction-penalize-did-the-authority-p  13 0.83 0.00  4.34  1.81 [+1.41, +11.80]
+   search-empty-predicate-empty-distinguish-zero-report  13 0.88 0.31  7.63  3.21 [-20.50, -7.44]
+   grader-is-graded-robust-word-based-form-of-grader-gr  13 0.96 0.03  5.70  1.12 [-17.81, -2.50]
+   verifier-at-vantage-tier-route-verification-effort-a  13 0.86 0.04  6.38  2.39 [-13.38, +0.88]
+   repeat-or-front-a-modifier-never-shares-an-unmarked-  12 0.99 0.00  3.41  0.41 [-6.62, +1.25]
+   supersedes-ref-supplements-ref-say-whether-a-follow-  12 0.95 0.25  7.62  1.94 [-23.88, -2.67]
+   only-focus-the-weld-spans-the-whole-focused-constitu  12 0.80 0.40  1.53  0.88 [-1.38, +1.94]
+   x-as-of-t-x-until-t                                   12 0.86 0.01 17.17  6.54 [-46.17, -6.42]
+   vs-baseline-the-baseline-anchor-batch-four-filed-by-  12 0.69 0.33  6.11  4.17 [-7.50, +2.00]
+   each-group-group-set-ref-clause-groups-combined-grou  11 0.95 0.54  7.16  2.35 [-15.17, +1.25]
+   still-the-liveness-marker-was-true-at-last-check-not  11 0.55 0.14  3.40  2.46 [-20.06, -14.17]
+   next-you-next-me-next-any-next-none-mark-who-owns-th  11 0.20 0.73  1.00  1.73 [-12.00, -4.50]
+   by-unknown-by-withheld-typed-doer-omission-why-mista  11 0.36 0.04  3.37  2.74 [-11.00, -3.50]
+   unless-the-plain-english-falsifier-claim-tag-in-word  11 0.76 0.26  4.56  2.60 [-15.83, -3.67]
+   anchored-deixis-now-14-02z-today-2026-08-01-latest-3  11 0.28 0.10  2.35  2.11 [-3.67, -1.50]
+   choose-any-set-ref-draw-uniform-set-ref               10 0.99 0.95  8.50  3.23 [-18.71, -2.80]
+   passed-not-applied-robust-word-based-form-of-passed-  10 0.26 0.04  2.82  2.47 [-6.60, -1.00]
+   except-l-l-the-exception-pin-all-good-honesty-respel  10 0.96 0.61  7.88  2.43 [-16.06, +0.08]
+   given-c-c-the-condition-pin-kills-it-works-respelled  10 0.96 0.58  6.58  2.08 [-18.31, -2.50]
+   part-chosen-rule-part-capped-limiter-was-the-edge-of  10 0.01 0.35  6.28  7.76 [-18.44, -1.88]
+   evidential-tags-obs-inf-rep-src-with-instrument-reca  10 0.01 0.40  0.65  0.84 [-6.62, -5.10]
+   we-including-you-we-excluding-you-clusivity-mark-whe  10 0.04 0.57  1.01  1.51 [-4.50, -2.50]
+   falsum-ref-ref-mark-a-claim-dead-when-its-falsifier-  10 0.11 0.85  1.12  2.69 [-10.50, -3.50]
