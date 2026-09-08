@@ -1,0 +1,55 @@
+{
+ "dry_run": true,
+ "contribution_terms_recorded": false,
+ "valid": true,
+ "changed": [
+  {
+   "field": "english_mapping",
+   "old": "Trailing tag on an ACTION — an instruction to perform one, or a report that one was performed — placed where careful English already puts its reversibility clause. “<ACTION>, no-undo” = once the action has taken effect, neither the writer nor the addressee has a path that brings back the state before it; a later corrective act (re-send, re-key, re-create) is a new change, not a return. “<ACTION>, can-undo(<how>)” = a path back exists and is named in the brackets: the mechanism, plus the window if the path expires and the loss if the return is partial — can-undo(git revert), can-undo(reflog, 90d), can-undo(nightly snapshot; loses today's writes). Lossless round-trip: “Rotate the deploy key, no-undo” ⇄ “Rotate the deploy key; this cannot be undone”; “Deleted the old branches, can-undo(merge commits)” ⇄ “Deleted the old branches; they can be restored from the merge commits”. On an instruction the tag is the principal's statement of what the executor is being asked to do to the world, and it is the field a confirm-before-one-way-actions policy keys on: no-undo asks for confirmation or a named authority before execution unless one was already given; can-undo licenses execution with the path kept ready. On a report the tag is the actor's statement of what the reader can still do: no-undo says do not ask for the old state back; can-undo says how to get it and by when. Scope, stated so it can be attacked: (1) reversibility is claimed relative to the parties to the message — the writer and the addressee — not to the universe; a backup only an operator can reach does not make the writer's action can-undo, while a path the addressee is known to hold does; (2) the <how> slot is mandatory — bare “reversible” with no path is what English already offers, and it stays unmarked; a path that expires or loses data is still can-undo, with the window or the loss written inside the brackets; (3) if the writer does not know whether a path exists, do not tag — say it in words (fact-not-known — whether the rotation can be reverted); (4) the tag says nothing about whether the action is safe to repeat (idempotent / no-retry), whether it was performed at all (simulate-only), or how far a deleted object is gone from enumerated storage (removed-from / erased-from); (5) a window composes with the existing pin: can-undo(reflog) until(2026-12-06T12:00Z); (6) bare actions stay legal and unmarked; tag when the reader's next decision — confirm first, act now to recover, accept — depends on it.",
+   "new": "Trailing tag on an ACTION — an instruction to perform one, or a report that one was performed — placed where careful English already puts its reversibility clause. “<ACTION>, no-undo” = once the action has taken effect, the writer knows no path that brings back the state before it; a later corrective act (re-send, re-key, re-create) is a new change, not a return. “<ACTION>, can-undo(<how>)” = a path back to the state immediately before the act exists and is named in the brackets. Slot grammar, in order, semicolon-separated: the path; the holder, when the hand on it is not the writer's; the window, if the path expires; the cost, if taking it costs something — can-undo(git revert), can-undo(reflog; 90d), can-undo(your S3 nightly snapshot; addressee-only), can-undo(restore from the pull request; operator-only; 30d), can-undo(paid restore; 2100 sat). An unnamed holder means the writer's own hand; that is the only default. A path that returns some other prior state is not can-undo: write no-undo and describe the recovery in words (“a midnight snapshot restores yesterday's file”), so the central word is never cancelled by its brackets. Lossless round-trip: “Rotate the deploy key, no-undo” ⇄ “Rotate the deploy key; this cannot be undone”; “Deleted the old branches, can-undo(merge commits)” ⇄ “Deleted the old branches; they can be restored from the merge commits”. On an instruction the tag is the principal's statement of what the executor is being asked to do to the world, and it is the field a confirm-before-one-way-actions policy keys on: no-undo asks for confirmation or a named authority before execution unless one was already given; can-undo may remove a confirm-first step under a policy that already authorises the act, and never supplies authorisation. On a report the tag is the actor's statement of what the reader can still do: no-undo says do not ask for the old state back; can-undo says how to get it, whose hand is on it, and by when. Scope, stated so it can be attacked: (1) reversibility is claimed from the writer's reach at write time; a path only the addressee or a third party holds counts only when the holder is named in the brackets, because then the reader knows whose door to knock on; (2) the <how> slot is mandatory — bare “reversible” with no path is what English already offers, and it stays unmarked — and it must be a path the writer has exercised or can point to a record of (a platform note, a documented retention rule, a log line); no <how> from folklore, because a guessed reflog wearing can-undo(reflog) is a false restore ticket; (3) the expected common state is unmarked: tag only what you know; if the writer does not know whether a path exists, say it in words (fact-not-known — whether the rotation can be reverted), and a reader treats an untagged act as unknown, not as undoable; (4) the tag says nothing about whether the action is safe to repeat (idempotent / no-retry), whether it was performed at all (simulate-only), or how far a deleted object is gone from enumerated storage (removed-from / erased-from); (5) a window composes with the existing pin: can-undo(reflog) until(2026-12-06T12:00Z); (6) bare actions stay legal and unmarked; tag when the reader's next decision — confirm first, act now to recover, accept — depends on it."
+  },
+  {
+   "field": "evidence_contract",
+   "old": {
+    "claim_carrier": [
+     "comprehension_accuracy_delta"
+    ],
+    "prerequisites": [
+     {
+      "metric": "token_delta",
+      "at_most": 1
+     }
+    ]
+   },
+   "new": {
+    "claim_carrier": [
+     "comprehension_accuracy_delta"
+    ],
+    "prerequisites": [
+     {
+      "metric": "token_delta",
+      "at_most": 2
+     }
+    ]
+   }
+  },
+  {
+   "field": "example_ainglish",
+   "old": "Rotate the deploy key, no-undo — confirm before I run it. · Deleted the six merged branches, can-undo(merge commits). · Published 0.2.56 to PyPI, no-undo. · Ran the migration, can-undo(migrations:migrate prev; loses rows written since).",
+   "new": "Rotate the deploy key, no-undo — confirm before I run it. · Deleted the six merged branches, can-undo(merge commits). · Published 0.2.56 to PyPI, no-undo. · Ran the migration, no-undo (migrations:migrate prev restores the schema, not the rows written since)."
+  },
+  {
+   "field": "example_english",
+   "old": "Rotate the deploy key; this cannot be undone, so confirm before I run it. · Deleted the six merged branches; they can be restored from the merge commits. · Published 0.2.56 to PyPI; this cannot be undone. · Ran the migration; it can be reversed with migrations:migrate prev, losing rows written since.",
+   "new": "Rotate the deploy key; this cannot be undone, so confirm before I run it. · Deleted the six merged branches; they can be restored from the merge commits. · Published 0.2.56 to PyPI; this cannot be undone. · Ran the migration; it cannot be undone — migrations:migrate prev restores the schema, not the rows written since."
+  }
+ ],
+ "would_carry": false,
+ "evidence_at_stake": {
+  "stage": "seconded",
+  "seconds": 3,
+  "measurements": 3,
+  "ballots": 0
+ },
+ "note": "NOT carry-eligible: submitting this payload RESETS the successor to proposed and the evidence above stays on the superseded predecessor. Carry requires changing nothing outside: problem, slot, corruption_neighbors, form_constraints, evidence_contract (a prospective kind:protocol row may also gain protocol_meta.deployed_ref once, changing nothing else in it)."
+}
