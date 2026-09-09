@@ -1,0 +1,547 @@
+{
+ "kind": "ainglish.token-measurement-result.v1",
+ "state": "computed_not_submitted",
+ "payload": {
+  "metric": "token_delta",
+  "value": -0.5,
+  "value_lo": -2.125,
+  "value_hi": -0.5,
+  "panel_models": [
+   "cl100k_base",
+   "o200k_base",
+   "p50k_base"
+  ],
+  "per_member": [
+   {
+    "model": "cl100k_base",
+    "value": -2.125
+   },
+   {
+    "model": "o200k_base",
+    "value": -1.875
+   },
+   {
+    "model": "p50k_base",
+    "value": -0.5
+   }
+  ],
+  "manifest": {
+   "metric": "token_delta",
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "replicates_hash": "e2ff808e72df863f2c403344843ac1f8e81cd6ae3b55ed3150e05ff922de5842",
+   "settlement_strata": [
+    {
+     "id": "request",
+     "weight": 1
+    },
+    {
+     "id": "report",
+     "weight": 1
+    },
+    {
+     "id": "proposal",
+     "weight": 1
+    },
+    {
+     "id": "simulation",
+     "weight": 1
+    }
+   ],
+   "estimand_contract": {
+    "kind": "ainglish.estimand-shadow.v1",
+    "unit_span": "one complete meaning-matched utterance pair including all shared contextual text",
+    "contrast": "Ainglish minus complete careful English in current tokenizer units; negative is fewer tokens, positive is a premium",
+    "population": "Prospectively authored complete replacement mappings: 8 declared domains, 2 distinct old/new reference tuples per domain, each in request/report/proposal/simulation. Both arms share exact slot context, force prefix, and old/new reference bytes.",
+    "aggregation": {
+     "reducer": "least_favourable",
+     "rule": "Equal-weight form/force strata, equal domain/reference cells within each stratum; maximum tokenizer mean is the least-favourable headline. No rounding."
+    },
+    "governance_effect": "report_only"
+   },
+   "design": "Fresh-input replication of e2ff808e: same 8 declared domains, 16 fresh slot/old/new tuples (2 per domain), the four source force templates byte-for-byte, same strata and tokenizer roster. Pre-mint diff vs all 10 token rows on this proposal: 0 pair, 0 arm, 0 label overlap.",
+   "test_set": [
+    {
+     "english": "For the ingress TLS-certificate slot, please do this: remove cert-oak from that slot and put cert-pine there instead.",
+     "ainglish": "For the ingress TLS-certificate slot, please do this: replace(old=cert-oak, new=cert-pine).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the ingress TLS-certificate slot, the completed change was: remove cert-oak from that slot and put cert-pine there instead.",
+     "ainglish": "For the ingress TLS-certificate slot, the completed change was: replace(old=cert-oak, new=cert-pine).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the ingress TLS-certificate slot, the proposed change is: remove cert-oak from that slot and put cert-pine there instead.",
+     "ainglish": "For the ingress TLS-certificate slot, the proposed change is: replace(old=cert-oak, new=cert-pine).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the ingress TLS-certificate slot, simulate this change: remove cert-oak from that slot and put cert-pine there instead.",
+     "ainglish": "For the ingress TLS-certificate slot, simulate this change: replace(old=cert-oak, new=cert-pine).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the backup encryption-secret slot, please do this: remove secret-fern from that slot and put secret-moss there instead.",
+     "ainglish": "For the backup encryption-secret slot, please do this: replace(old=secret-fern, new=secret-moss).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the backup encryption-secret slot, the completed change was: remove secret-fern from that slot and put secret-moss there instead.",
+     "ainglish": "For the backup encryption-secret slot, the completed change was: replace(old=secret-fern, new=secret-moss).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the backup encryption-secret slot, the proposed change is: remove secret-fern from that slot and put secret-moss there instead.",
+     "ainglish": "For the backup encryption-secret slot, the proposed change is: replace(old=secret-fern, new=secret-moss).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the backup encryption-secret slot, simulate this change: remove secret-fern from that slot and put secret-moss there instead.",
+     "ainglish": "For the backup encryption-secret slot, simulate this change: replace(old=secret-fern, new=secret-moss).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the compiler dependency slot, please do this: remove compiler-nickel from that slot and put compiler-cobalt there instead.",
+     "ainglish": "For the compiler dependency slot, please do this: replace(old=compiler-nickel, new=compiler-cobalt).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the compiler dependency slot, the completed change was: remove compiler-nickel from that slot and put compiler-cobalt there instead.",
+     "ainglish": "For the compiler dependency slot, the completed change was: replace(old=compiler-nickel, new=compiler-cobalt).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the compiler dependency slot, the proposed change is: remove compiler-nickel from that slot and put compiler-cobalt there instead.",
+     "ainglish": "For the compiler dependency slot, the proposed change is: replace(old=compiler-nickel, new=compiler-cobalt).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the compiler dependency slot, simulate this change: remove compiler-nickel from that slot and put compiler-cobalt there instead.",
+     "ainglish": "For the compiler dependency slot, simulate this change: replace(old=compiler-nickel, new=compiler-cobalt).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the linter dependency slot, please do this: remove linter-ruby from that slot and put linter-opal there instead.",
+     "ainglish": "For the linter dependency slot, please do this: replace(old=linter-ruby, new=linter-opal).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the linter dependency slot, the completed change was: remove linter-ruby from that slot and put linter-opal there instead.",
+     "ainglish": "For the linter dependency slot, the completed change was: replace(old=linter-ruby, new=linter-opal).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the linter dependency slot, the proposed change is: remove linter-ruby from that slot and put linter-opal there instead.",
+     "ainglish": "For the linter dependency slot, the proposed change is: replace(old=linter-ruby, new=linter-opal).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the linter dependency slot, simulate this change: remove linter-ruby from that slot and put linter-opal there instead.",
+     "ainglish": "For the linter dependency slot, simulate this change: replace(old=linter-ruby, new=linter-opal).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the rate-limit slot, please do this: remove limit-tide from that slot and put limit-surf there instead.",
+     "ainglish": "For the rate-limit slot, please do this: replace(old=limit-tide, new=limit-surf).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the rate-limit slot, the completed change was: remove limit-tide from that slot and put limit-surf there instead.",
+     "ainglish": "For the rate-limit slot, the completed change was: replace(old=limit-tide, new=limit-surf).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the rate-limit slot, the proposed change is: remove limit-tide from that slot and put limit-surf there instead.",
+     "ainglish": "For the rate-limit slot, the proposed change is: replace(old=limit-tide, new=limit-surf).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the rate-limit slot, simulate this change: remove limit-tide from that slot and put limit-surf there instead.",
+     "ainglish": "For the rate-limit slot, simulate this change: replace(old=limit-tide, new=limit-surf).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the maintenance-window slot, please do this: remove window-frost from that slot and put window-thaw there instead.",
+     "ainglish": "For the maintenance-window slot, please do this: replace(old=window-frost, new=window-thaw).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the maintenance-window slot, the completed change was: remove window-frost from that slot and put window-thaw there instead.",
+     "ainglish": "For the maintenance-window slot, the completed change was: replace(old=window-frost, new=window-thaw).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the maintenance-window slot, the proposed change is: remove window-frost from that slot and put window-thaw there instead.",
+     "ainglish": "For the maintenance-window slot, the proposed change is: replace(old=window-frost, new=window-thaw).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the maintenance-window slot, simulate this change: remove window-frost from that slot and put window-thaw there instead.",
+     "ainglish": "For the maintenance-window slot, simulate this change: replace(old=window-frost, new=window-thaw).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the conveyor drive-belt slot, please do this: remove belt-falcon from that slot and put belt-osprey there instead.",
+     "ainglish": "For the conveyor drive-belt slot, please do this: replace(old=belt-falcon, new=belt-osprey).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the conveyor drive-belt slot, the completed change was: remove belt-falcon from that slot and put belt-osprey there instead.",
+     "ainglish": "For the conveyor drive-belt slot, the completed change was: replace(old=belt-falcon, new=belt-osprey).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the conveyor drive-belt slot, the proposed change is: remove belt-falcon from that slot and put belt-osprey there instead.",
+     "ainglish": "For the conveyor drive-belt slot, the proposed change is: replace(old=belt-falcon, new=belt-osprey).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the conveyor drive-belt slot, simulate this change: remove belt-falcon from that slot and put belt-osprey there instead.",
+     "ainglish": "For the conveyor drive-belt slot, simulate this change: replace(old=belt-falcon, new=belt-osprey).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the boiler relief-valve slot, please do this: remove valve-tulip from that slot and put valve-lily there instead.",
+     "ainglish": "For the boiler relief-valve slot, please do this: replace(old=valve-tulip, new=valve-lily).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the boiler relief-valve slot, the completed change was: remove valve-tulip from that slot and put valve-lily there instead.",
+     "ainglish": "For the boiler relief-valve slot, the completed change was: replace(old=valve-tulip, new=valve-lily).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the boiler relief-valve slot, the proposed change is: remove valve-tulip from that slot and put valve-lily there instead.",
+     "ainglish": "For the boiler relief-valve slot, the proposed change is: replace(old=valve-tulip, new=valve-lily).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the boiler relief-valve slot, simulate this change: remove valve-tulip from that slot and put valve-lily there instead.",
+     "ainglish": "For the boiler relief-valve slot, simulate this change: replace(old=valve-tulip, new=valve-lily).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the Monday on-call-lead slot, please do this: remove person-Mara from that slot and put person-Idris there instead.",
+     "ainglish": "For the Monday on-call-lead slot, please do this: replace(old=person-Mara, new=person-Idris).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the Monday on-call-lead slot, the completed change was: remove person-Mara from that slot and put person-Idris there instead.",
+     "ainglish": "For the Monday on-call-lead slot, the completed change was: replace(old=person-Mara, new=person-Idris).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the Monday on-call-lead slot, the proposed change is: remove person-Mara from that slot and put person-Idris there instead.",
+     "ainglish": "For the Monday on-call-lead slot, the proposed change is: replace(old=person-Mara, new=person-Idris).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the Monday on-call-lead slot, simulate this change: remove person-Mara from that slot and put person-Idris there instead.",
+     "ainglish": "For the Monday on-call-lead slot, simulate this change: replace(old=person-Mara, new=person-Idris).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the Thursday release-captain slot, please do this: remove person-Noor from that slot and put person-Bela there instead.",
+     "ainglish": "For the Thursday release-captain slot, please do this: replace(old=person-Noor, new=person-Bela).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the Thursday release-captain slot, the completed change was: remove person-Noor from that slot and put person-Bela there instead.",
+     "ainglish": "For the Thursday release-captain slot, the completed change was: replace(old=person-Noor, new=person-Bela).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the Thursday release-captain slot, the proposed change is: remove person-Noor from that slot and put person-Bela there instead.",
+     "ainglish": "For the Thursday release-captain slot, the proposed change is: replace(old=person-Noor, new=person-Bela).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the Thursday release-captain slot, simulate this change: remove person-Noor from that slot and put person-Bela there instead.",
+     "ainglish": "For the Thursday release-captain slot, simulate this change: replace(old=person-Noor, new=person-Bela).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the handbook-appendix slot, please do this: remove appendix-fen from that slot and put appendix-glen there instead.",
+     "ainglish": "For the handbook-appendix slot, please do this: replace(old=appendix-fen, new=appendix-glen).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the handbook-appendix slot, the completed change was: remove appendix-fen from that slot and put appendix-glen there instead.",
+     "ainglish": "For the handbook-appendix slot, the completed change was: replace(old=appendix-fen, new=appendix-glen).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the handbook-appendix slot, the proposed change is: remove appendix-fen from that slot and put appendix-glen there instead.",
+     "ainglish": "For the handbook-appendix slot, the proposed change is: replace(old=appendix-fen, new=appendix-glen).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the handbook-appendix slot, simulate this change: remove appendix-fen from that slot and put appendix-glen there instead.",
+     "ainglish": "For the handbook-appendix slot, simulate this change: replace(old=appendix-fen, new=appendix-glen).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the lease-clause slot, please do this: remove clause-ridge from that slot and put clause-vale there instead.",
+     "ainglish": "For the lease-clause slot, please do this: replace(old=clause-ridge, new=clause-vale).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the lease-clause slot, the completed change was: remove clause-ridge from that slot and put clause-vale there instead.",
+     "ainglish": "For the lease-clause slot, the completed change was: replace(old=clause-ridge, new=clause-vale).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the lease-clause slot, the proposed change is: remove clause-ridge from that slot and put clause-vale there instead.",
+     "ainglish": "For the lease-clause slot, the proposed change is: replace(old=clause-ridge, new=clause-vale).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the lease-clause slot, simulate this change: remove clause-ridge from that slot and put clause-vale there instead.",
+     "ainglish": "For the lease-clause slot, simulate this change: replace(old=clause-ridge, new=clause-vale).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the roster home-address-record slot, please do this: remove entry-harbor from that slot and put entry-summit there instead.",
+     "ainglish": "For the roster home-address-record slot, please do this: replace(old=entry-harbor, new=entry-summit).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the roster home-address-record slot, the completed change was: remove entry-harbor from that slot and put entry-summit there instead.",
+     "ainglish": "For the roster home-address-record slot, the completed change was: replace(old=entry-harbor, new=entry-summit).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the roster home-address-record slot, the proposed change is: remove entry-harbor from that slot and put entry-summit there instead.",
+     "ainglish": "For the roster home-address-record slot, the proposed change is: replace(old=entry-harbor, new=entry-summit).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the roster home-address-record slot, simulate this change: remove entry-harbor from that slot and put entry-summit there instead.",
+     "ainglish": "For the roster home-address-record slot, simulate this change: replace(old=entry-harbor, new=entry-summit).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the catalog default-supplier slot, please do this: remove row-canyon from that slot and put row-mesa there instead.",
+     "ainglish": "For the catalog default-supplier slot, please do this: replace(old=row-canyon, new=row-mesa).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the catalog default-supplier slot, the completed change was: remove row-canyon from that slot and put row-mesa there instead.",
+     "ainglish": "For the catalog default-supplier slot, the completed change was: replace(old=row-canyon, new=row-mesa).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the catalog default-supplier slot, the proposed change is: remove row-canyon from that slot and put row-mesa there instead.",
+     "ainglish": "For the catalog default-supplier slot, the proposed change is: replace(old=row-canyon, new=row-mesa).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the catalog default-supplier slot, simulate this change: remove row-canyon from that slot and put row-mesa there instead.",
+     "ainglish": "For the catalog default-supplier slot, simulate this change: replace(old=row-canyon, new=row-mesa).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the synthetic dosage-card slot, please do this: remove card-alder from that slot and put card-rowan there instead.",
+     "ainglish": "For the synthetic dosage-card slot, please do this: replace(old=card-alder, new=card-rowan).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the synthetic dosage-card slot, the completed change was: remove card-alder from that slot and put card-rowan there instead.",
+     "ainglish": "For the synthetic dosage-card slot, the completed change was: replace(old=card-alder, new=card-rowan).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the synthetic dosage-card slot, the proposed change is: remove card-alder from that slot and put card-rowan there instead.",
+     "ainglish": "For the synthetic dosage-card slot, the proposed change is: replace(old=card-alder, new=card-rowan).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the synthetic dosage-card slot, simulate this change: remove card-alder from that slot and put card-rowan there instead.",
+     "ainglish": "For the synthetic dosage-card slot, simulate this change: replace(old=card-alder, new=card-rowan).",
+     "stratum": "simulation"
+    },
+    {
+     "english": "For the synthetic wristband-tag slot, please do this: remove tag-flint from that slot and put tag-slate there instead.",
+     "ainglish": "For the synthetic wristband-tag slot, please do this: replace(old=tag-flint, new=tag-slate).",
+     "stratum": "request"
+    },
+    {
+     "english": "For the synthetic wristband-tag slot, the completed change was: remove tag-flint from that slot and put tag-slate there instead.",
+     "ainglish": "For the synthetic wristband-tag slot, the completed change was: replace(old=tag-flint, new=tag-slate).",
+     "stratum": "report"
+    },
+    {
+     "english": "For the synthetic wristband-tag slot, the proposed change is: remove tag-flint from that slot and put tag-slate there instead.",
+     "ainglish": "For the synthetic wristband-tag slot, the proposed change is: replace(old=tag-flint, new=tag-slate).",
+     "stratum": "proposal"
+    },
+    {
+     "english": "For the synthetic wristband-tag slot, simulate this change: remove tag-flint from that slot and put tag-slate there instead.",
+     "ainglish": "For the synthetic wristband-tag slot, simulate this change: replace(old=tag-flint, new=tag-slate).",
+     "stratum": "simulation"
+    }
+   ],
+   "items_sha256": "b71712d4466ec97db32371f68d20bbb62a70cc97aabaac623a60057b277cddf5",
+   "comparison_identity": {
+    "kind": "ainglish.token-comparison-identity.v2",
+    "item_count": 64,
+    "tokenizer_roster": [
+     "cl100k_base",
+     "o200k_base",
+     "p50k_base"
+    ],
+    "comparator": "Ainglish minus complete careful English in current tokenizer units; negative is fewer tokens, positive is a premium",
+    "population": "Prospectively authored complete replacement mappings: 8 declared domains, 2 distinct old/new reference tuples per domain, each in request/report/proposal/simulation. Both arms share exact slot context, force prefix, and old/new reference bytes.",
+    "aggregation": "Equal-weight form/force strata, equal domain/reference cells within each stratum; maximum tokenizer mean is the least-favourable headline. No rounding.",
+    "unit_span": "one complete meaning-matched utterance pair including all shared contextual text"
+   },
+   "interval_kind": "member_span",
+   "tokenizer_provenance": {
+    "kind": "ainglish.tiktoken-provenance.v1",
+    "library": "tiktoken",
+    "library_version": "0.14.0",
+    "encodings": [
+     "cl100k_base",
+     "o200k_base",
+     "p50k_base"
+    ]
+   }
+  },
+  "attempt_id": "de25462b-6e40-48b6-ac27-4840f17bebec",
+  "replicates_hash": "e2ff808e72df863f2c403344843ac1f8e81cd6ae3b55ed3150e05ff922de5842",
+  "stratum_results": [
+   {
+    "id": "request",
+    "value": -0.5
+   },
+   {
+    "id": "report",
+    "value": -0.5
+   },
+   {
+    "id": "proposal",
+    "value": -0.5
+   },
+   {
+    "id": "simulation",
+    "value": -0.5
+   }
+  ]
+ },
+ "audit": {
+  "manifest_commitment": "a8fd5fc27114b7d7b36d1baa0e01178c5b5ba60fe2115ef428006a711a6150c5",
+  "items_sha256": "b71712d4466ec97db32371f68d20bbb62a70cc97aabaac623a60057b277cddf5",
+  "pair_count": 64,
+  "by_tokenizer": [
+   {
+    "model": "cl100k_base",
+    "mean": -2.125,
+    "strata": [
+     {
+      "id": "request",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -2.125
+     },
+     {
+      "id": "report",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -2.125
+     },
+     {
+      "id": "proposal",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -2.125
+     },
+     {
+      "id": "simulation",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -2.125
+     }
+    ]
+   },
+   {
+    "model": "o200k_base",
+    "mean": -1.875,
+    "strata": [
+     {
+      "id": "request",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -1.875
+     },
+     {
+      "id": "report",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -1.875
+     },
+     {
+      "id": "proposal",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -1.875
+     },
+     {
+      "id": "simulation",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -1.875
+     }
+    ]
+   },
+   {
+    "model": "p50k_base",
+    "mean": -0.5,
+    "strata": [
+     {
+      "id": "request",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -0.5
+     },
+     {
+      "id": "report",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -0.5
+     },
+     {
+      "id": "proposal",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -0.5
+     },
+     {
+      "id": "simulation",
+      "weight": 1.0,
+      "share": 0.25,
+      "item_count": 16,
+      "value": -0.5
+     }
+    ]
+   }
+  ],
+  "headline_rule": "maximum tokenizer mean (least favourable)",
+  "headline_model": "p50k_base"
+ },
+ "next": "Submit result.payload unchanged with client.measure(slug, result['payload'])."
+}
