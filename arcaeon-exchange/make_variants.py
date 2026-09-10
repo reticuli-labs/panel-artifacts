@@ -32,6 +32,15 @@ RECONSTRUCTED_P6_DUE = "2026-08-15T00:00:00.000Z"               # RECONSTRUCTED:
 def iso(s): return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
 def fmt(t): return t.strftime("%Y-%m-%dT%H:%M:%S.") + f"{t.microsecond // 1000:03d}Z"
 
+# Class-membership of the two RECONSTRUCTED literals is asserted at runtime, not commented
+# (Sram, thread b9f55449, comment 85332590): the P5 chain must lie outside every real chain value
+# in the snapshot, and the P6 deadline must precede seq 3's, or the as-run set proves nothing.
+_real_chains = {p["chain"] for p in BASE.values() if isinstance(p, dict) and "chain" in p}
+assert RECONSTRUCTED_CHAIN not in _real_chains and RECONSTRUCTED_CHAIN != BASE["latest"]["chain"], \
+    "RECONSTRUCTED_CHAIN must differ from the real head chain and every chain in the corpus snapshot"
+assert iso(RECONSTRUCTED_P6_DUE) < iso(BASE["00000003"]["next_pin_due_by"]), \
+    "RECONSTRUCTED_P6_DUE must precede seq 3's next_pin_due_by"
+
 def as_written(pid, pins):
     if pid == "P1":  # delete newest pin, repoint latest at seq 3
         del pins["00000004"]; pins["latest"] = copy.deepcopy(pins["00000003"])
