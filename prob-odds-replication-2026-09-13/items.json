@@ -1,0 +1,2378 @@
+[
+ {
+  "id": "prob-repl-r13-01-prob-probability",
+  "english": "In the Tuesday forecast, rain before noon and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of rain before noon is 10%.",
+  "ainglish": "In the Tuesday forecast, rain before noon and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(rain before noon)=10%.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = not determined. B = 1/20. C = 9/10. D = 1/10.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "prob",
+  "probe": "probability",
+  "settlement_stratum": "prob:probability",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "1/20",
+    "C": "9/10",
+    "D": "1/10"
+   },
+   "semantic_gold": "1/10",
+   "domain": "weather"
+  }
+ },
+ {
+  "id": "prob-repl-r13-02-prob-probability",
+  "english": "In the trial's outcome model, remission at 12 weeks and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of remission at 12 weeks is 30%.",
+  "ainglish": "In the trial's outcome model, remission at 12 weeks and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(remission at 12 weeks)=30%.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 3/10. B = 7/10. C = 1/20. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "prob",
+  "probe": "probability",
+  "settlement_stratum": "prob:probability",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "3/10",
+    "B": "7/10",
+    "C": "1/20",
+    "D": "not determined"
+   },
+   "semantic_gold": "3/10",
+   "domain": "medicine"
+  }
+ },
+ {
+  "id": "prob-repl-r13-03-prob-probability",
+  "english": "In the poll aggregate, the incumbent keeping the seat and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the incumbent keeping the seat is 70%.",
+  "ainglish": "In the poll aggregate, the incumbent keeping the seat and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the incumbent keeping the seat)=70%.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 3/10. B = 7/10. C = not determined. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "prob",
+  "probe": "probability",
+  "settlement_stratum": "prob:probability",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "3/10",
+    "B": "7/10",
+    "C": "not determined",
+    "D": "1/20"
+   },
+   "semantic_gold": "7/10",
+   "domain": "elections"
+  }
+ },
+ {
+  "id": "prob-repl-r13-04-prob-probability",
+  "english": "In the maintenance model, the pump failing this quarter and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the pump failing this quarter is 90%.",
+  "ainglish": "In the maintenance model, the pump failing this quarter and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the pump failing this quarter)=90%.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = 9/10. C = not determined. D = 1/10.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "prob",
+  "probe": "probability",
+  "settlement_stratum": "prob:probability",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "9/10",
+    "C": "not determined",
+    "D": "1/10"
+   },
+   "semantic_gold": "9/10",
+   "domain": "reliability"
+  }
+ },
+ {
+  "id": "prob-repl-r13-05-prob-probability",
+  "english": "In the site risk register, a near miss on the gantry and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of a near miss on the gantry is 12.5%.",
+  "ainglish": "In the site risk register, a near miss on the gantry and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(a near miss on the gantry)=12.5%.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = 1/8. C = 7/8. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "prob",
+  "probe": "probability",
+  "settlement_stratum": "prob:probability",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "1/8",
+    "C": "7/8",
+    "D": "not determined"
+   },
+   "semantic_gold": "1/8",
+   "domain": "safety"
+  }
+ },
+ {
+  "id": "prob-repl-r13-06-prob-probability",
+  "english": "In the desk's pricing model, the bond being called early and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the bond being called early is 37.5%.",
+  "ainglish": "In the desk's pricing model, the bond being called early and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the bond being called early)=37.5%.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = 5/8. C = not determined. D = 3/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "prob",
+  "probe": "probability",
+  "settlement_stratum": "prob:probability",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "5/8",
+    "C": "not determined",
+    "D": "3/8"
+   },
+   "semantic_gold": "3/8",
+   "domain": "finance"
+  }
+ },
+ {
+  "id": "prob-repl-r13-07-prob-probability",
+  "english": "In the routing model, the container clearing customs today and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the container clearing customs today is 62.5%.",
+  "ainglish": "In the routing model, the container clearing customs today and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the container clearing customs today)=62.5%.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 5/8. B = 3/8. C = 1/20. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "prob",
+  "probe": "probability",
+  "settlement_stratum": "prob:probability",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "5/8",
+    "B": "3/8",
+    "C": "1/20",
+    "D": "not determined"
+   },
+   "semantic_gold": "5/8",
+   "domain": "logistics"
+  }
+ },
+ {
+  "id": "prob-repl-r13-08-prob-probability",
+  "english": "In the bookmaker's model, the home side winning and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the home side winning is 87.5%.",
+  "ainglish": "In the bookmaker's model, the home side winning and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the home side winning)=87.5%.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/8. B = not determined. C = 7/8. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "prob",
+  "probe": "probability",
+  "settlement_stratum": "prob:probability",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1/8",
+    "B": "not determined",
+    "C": "7/8",
+    "D": "1/20"
+   },
+   "semantic_gold": "7/8",
+   "domain": "sports"
+  }
+ },
+ {
+  "id": "prob-repl-r13-09-prob-complement",
+  "english": "In the household plan, the bus being on time and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the bus being on time is 30%.",
+  "ainglish": "In the household plan, the bus being on time and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the bus being on time)=30%.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 1/20. B = not determined. C = 3/10. D = 7/10.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "prob",
+  "probe": "complement",
+  "settlement_stratum": "prob:complement",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "not determined",
+    "C": "3/10",
+    "D": "7/10"
+   },
+   "semantic_gold": "7/10",
+   "domain": "everyday"
+  }
+ },
+ {
+  "id": "prob-repl-r13-10-prob-complement",
+  "english": "In the Tuesday forecast, fog on the coast road and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of fog on the coast road is 70%.",
+  "ainglish": "In the Tuesday forecast, fog on the coast road and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(fog on the coast road)=70%.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = not determined. B = 3/10. C = 1/20. D = 7/10.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "prob",
+  "probe": "complement",
+  "settlement_stratum": "prob:complement",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "3/10",
+    "C": "1/20",
+    "D": "7/10"
+   },
+   "semantic_gold": "3/10",
+   "domain": "weather"
+  }
+ },
+ {
+  "id": "prob-repl-r13-11-prob-complement",
+  "english": "In the trial's outcome model, a grade-3 side effect and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of a grade-3 side effect is 90%.",
+  "ainglish": "In the trial's outcome model, a grade-3 side effect and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(a grade-3 side effect)=90%.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = not determined. B = 9/10. C = 1/10. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "prob",
+  "probe": "complement",
+  "settlement_stratum": "prob:complement",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "9/10",
+    "C": "1/10",
+    "D": "1/20"
+   },
+   "semantic_gold": "1/10",
+   "domain": "medicine"
+  }
+ },
+ {
+  "id": "prob-repl-r13-12-prob-complement",
+  "english": "In the poll aggregate, turnout above 60% and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of turnout above 60% is 12.5%.",
+  "ainglish": "In the poll aggregate, turnout above 60% and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(turnout above 60%)=12.5%.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 7/8. B = 1/20. C = not determined. D = 1/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "prob",
+  "probe": "complement",
+  "settlement_stratum": "prob:complement",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "7/8",
+    "B": "1/20",
+    "C": "not determined",
+    "D": "1/8"
+   },
+   "semantic_gold": "7/8",
+   "domain": "elections"
+  }
+ },
+ {
+  "id": "prob-repl-r13-13-prob-complement",
+  "english": "In the maintenance model, the backup generator starting and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the backup generator starting is 37.5%.",
+  "ainglish": "In the maintenance model, the backup generator starting and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the backup generator starting)=37.5%.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 5/8. B = 3/8. C = not determined. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "prob",
+  "probe": "complement",
+  "settlement_stratum": "prob:complement",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "5/8",
+    "B": "3/8",
+    "C": "not determined",
+    "D": "1/20"
+   },
+   "semantic_gold": "5/8",
+   "domain": "reliability"
+  }
+ },
+ {
+  "id": "prob-repl-r13-14-prob-complement",
+  "english": "In the site risk register, the alarm being a false trigger and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the alarm being a false trigger is 62.5%.",
+  "ainglish": "In the site risk register, the alarm being a false trigger and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the alarm being a false trigger)=62.5%.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = not determined. B = 1/20. C = 5/8. D = 3/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "prob",
+  "probe": "complement",
+  "settlement_stratum": "prob:complement",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "1/20",
+    "C": "5/8",
+    "D": "3/8"
+   },
+   "semantic_gold": "3/8",
+   "domain": "safety"
+  }
+ },
+ {
+  "id": "prob-repl-r13-15-prob-complement",
+  "english": "In the desk's pricing model, the loan defaulting and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the loan defaulting is 87.5%.",
+  "ainglish": "In the desk's pricing model, the loan defaulting and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the loan defaulting)=87.5%.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = not determined. B = 1/8. C = 1/20. D = 7/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "prob",
+  "probe": "complement",
+  "settlement_stratum": "prob:complement",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "1/8",
+    "C": "1/20",
+    "D": "7/8"
+   },
+   "semantic_gold": "1/8",
+   "domain": "finance"
+  }
+ },
+ {
+  "id": "prob-repl-r13-16-prob-complement",
+  "english": "In the routing model, the driver arriving before the window and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the driver arriving before the window is 10%.",
+  "ainglish": "In the routing model, the driver arriving before the window and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the driver arriving before the window)=10%.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 1/10. B = 9/10. C = not determined. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "prob",
+  "probe": "complement",
+  "settlement_stratum": "prob:complement",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "1/10",
+    "B": "9/10",
+    "C": "not determined",
+    "D": "1/20"
+   },
+   "semantic_gold": "9/10",
+   "domain": "logistics"
+  }
+ },
+ {
+  "id": "prob-repl-r13-17-prob-odds-orientation",
+  "english": "In the bookmaker's model, a red card before half time and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of a red card before half time is 70%.",
+  "ainglish": "In the bookmaker's model, a red card before half time and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(a red card before half time)=70%.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = not determined. B = 3:17. C = 3:7. D = 7:3.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "prob",
+  "probe": "odds-orientation",
+  "settlement_stratum": "prob:odds-orientation",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "3:17",
+    "C": "3:7",
+    "D": "7:3"
+   },
+   "semantic_gold": "3:7",
+   "domain": "sports"
+  }
+ },
+ {
+  "id": "prob-repl-r13-18-prob-odds-orientation",
+  "english": "In the household plan, the parcel arriving on Saturday and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the parcel arriving on Saturday is 90%.",
+  "ainglish": "In the household plan, the parcel arriving on Saturday and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the parcel arriving on Saturday)=90%.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = not determined. B = 3:17. C = 1:9. D = 9:1.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "prob",
+  "probe": "odds-orientation",
+  "settlement_stratum": "prob:odds-orientation",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "3:17",
+    "C": "1:9",
+    "D": "9:1"
+   },
+   "semantic_gold": "1:9",
+   "domain": "everyday"
+  }
+ },
+ {
+  "id": "prob-repl-r13-19-prob-odds-orientation",
+  "english": "In the Tuesday forecast, a frost overnight and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of a frost overnight is 12.5%.",
+  "ainglish": "In the Tuesday forecast, a frost overnight and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(a frost overnight)=12.5%.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 7:1. B = 1:7. C = 3:17. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "prob",
+  "probe": "odds-orientation",
+  "settlement_stratum": "prob:odds-orientation",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "7:1",
+    "B": "1:7",
+    "C": "3:17",
+    "D": "not determined"
+   },
+   "semantic_gold": "7:1",
+   "domain": "weather"
+  }
+ },
+ {
+  "id": "prob-repl-r13-20-prob-odds-orientation",
+  "english": "In the trial's outcome model, readmission within 30 days and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of readmission within 30 days is 37.5%.",
+  "ainglish": "In the trial's outcome model, readmission within 30 days and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(readmission within 30 days)=37.5%.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 5:3. B = 3:17. C = 3:5. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "prob",
+  "probe": "odds-orientation",
+  "settlement_stratum": "prob:odds-orientation",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "5:3",
+    "B": "3:17",
+    "C": "3:5",
+    "D": "not determined"
+   },
+   "semantic_gold": "5:3",
+   "domain": "medicine"
+  }
+ },
+ {
+  "id": "prob-repl-r13-21-prob-odds-orientation",
+  "english": "In the poll aggregate, a recount being ordered and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of a recount being ordered is 62.5%.",
+  "ainglish": "In the poll aggregate, a recount being ordered and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(a recount being ordered)=62.5%.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:17. B = 5:3. C = not determined. D = 3:5.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "prob",
+  "probe": "odds-orientation",
+  "settlement_stratum": "prob:odds-orientation",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "3:17",
+    "B": "5:3",
+    "C": "not determined",
+    "D": "3:5"
+   },
+   "semantic_gold": "3:5",
+   "domain": "elections"
+  }
+ },
+ {
+  "id": "prob-repl-r13-22-prob-odds-orientation",
+  "english": "In the maintenance model, a disk error before the swap and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of a disk error before the swap is 87.5%.",
+  "ainglish": "In the maintenance model, a disk error before the swap and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(a disk error before the swap)=87.5%.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = not determined. B = 3:17. C = 7:1. D = 1:7.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "prob",
+  "probe": "odds-orientation",
+  "settlement_stratum": "prob:odds-orientation",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "3:17",
+    "C": "7:1",
+    "D": "1:7"
+   },
+   "semantic_gold": "1:7",
+   "domain": "reliability"
+  }
+ },
+ {
+  "id": "prob-repl-r13-23-prob-odds-orientation",
+  "english": "In the site risk register, an evacuation during the shift and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of an evacuation during the shift is 10%.",
+  "ainglish": "In the site risk register, an evacuation during the shift and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(an evacuation during the shift)=10%.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:17. B = 1:9. C = 9:1. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "prob",
+  "probe": "odds-orientation",
+  "settlement_stratum": "prob:odds-orientation",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "3:17",
+    "B": "1:9",
+    "C": "9:1",
+    "D": "not determined"
+   },
+   "semantic_gold": "9:1",
+   "domain": "safety"
+  }
+ },
+ {
+  "id": "prob-repl-r13-24-prob-odds-orientation",
+  "english": "In the desk's pricing model, the option finishing in the money and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability of the option finishing in the money is 30%.",
+  "ainglish": "In the desk's pricing model, the option finishing in the money and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. prob(the option finishing in the money)=30%.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:7. B = 7:3. C = not determined. D = 3:17.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "prob",
+  "probe": "odds-orientation",
+  "settlement_stratum": "prob:odds-orientation",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "3:7",
+    "B": "7:3",
+    "C": "not determined",
+    "D": "3:17"
+   },
+   "semantic_gold": "7:3",
+   "domain": "finance"
+  }
+ },
+ {
+  "id": "prob-repl-r13-25-odds-for-probability",
+  "english": "In the routing model, a pallet being damaged in transit and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of a pallet being damaged in transit are 9:1.",
+  "ainglish": "In the routing model, a pallet being damaged in transit and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(a pallet being damaged in transit)=9:1.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = 9/10. C = 1/10. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-for",
+  "probe": "probability",
+  "settlement_stratum": "odds-for:probability",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "9/10",
+    "C": "1/10",
+    "D": "not determined"
+   },
+   "semantic_gold": "9/10",
+   "domain": "logistics"
+  }
+ },
+ {
+  "id": "prob-repl-r13-26-odds-for-probability",
+  "english": "In the bookmaker's model, the match going to extra time and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the match going to extra time are 1:7.",
+  "ainglish": "In the bookmaker's model, the match going to extra time and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the match going to extra time)=1:7.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = 7/8. C = not determined. D = 1/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "odds-for",
+  "probe": "probability",
+  "settlement_stratum": "odds-for:probability",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "7/8",
+    "C": "not determined",
+    "D": "1/8"
+   },
+   "semantic_gold": "1/8",
+   "domain": "sports"
+  }
+ },
+ {
+  "id": "prob-repl-r13-27-odds-for-probability",
+  "english": "In the household plan, the bread rising and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the bread rising are 3:5.",
+  "ainglish": "In the household plan, the bread rising and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the bread rising)=3:5.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = not determined. B = 5/8. C = 3/8. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "probability",
+  "settlement_stratum": "odds-for:probability",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "5/8",
+    "C": "3/8",
+    "D": "1/20"
+   },
+   "semantic_gold": "3/8",
+   "domain": "everyday"
+  }
+ },
+ {
+  "id": "prob-repl-r13-28-odds-for-probability",
+  "english": "In the Tuesday forecast, gusts above 50 km/h and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of gusts above 50 km/h are 5:3.",
+  "ainglish": "In the Tuesday forecast, gusts above 50 km/h and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(gusts above 50 km/h)=5:3.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 3/8. B = not determined. C = 5/8. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "probability",
+  "settlement_stratum": "odds-for:probability",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "3/8",
+    "B": "not determined",
+    "C": "5/8",
+    "D": "1/20"
+   },
+   "semantic_gold": "5/8",
+   "domain": "weather"
+  }
+ },
+ {
+  "id": "prob-repl-r13-29-odds-for-probability",
+  "english": "In the trial's outcome model, a positive culture and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of a positive culture are 7:1.",
+  "ainglish": "In the trial's outcome model, a positive culture and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(a positive culture)=7:1.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = not determined. C = 7/8. D = 1/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "probability",
+  "settlement_stratum": "odds-for:probability",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "not determined",
+    "C": "7/8",
+    "D": "1/8"
+   },
+   "semantic_gold": "7/8",
+   "domain": "medicine"
+  }
+ },
+ {
+  "id": "prob-repl-r13-30-odds-for-probability",
+  "english": "In the poll aggregate, the referendum passing and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the referendum passing are 1:9.",
+  "ainglish": "In the poll aggregate, the referendum passing and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the referendum passing)=1:9.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = not determined. B = 9/10. C = 1/20. D = 1/10.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "odds-for",
+  "probe": "probability",
+  "settlement_stratum": "odds-for:probability",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "9/10",
+    "C": "1/20",
+    "D": "1/10"
+   },
+   "semantic_gold": "1/10",
+   "domain": "elections"
+  }
+ },
+ {
+  "id": "prob-repl-r13-31-odds-for-probability",
+  "english": "In the maintenance model, the bridge sensor drifting and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the bridge sensor drifting are 3:7.",
+  "ainglish": "In the maintenance model, the bridge sensor drifting and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the bridge sensor drifting)=3:7.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = not determined. B = 1/20. C = 7/10. D = 3/10.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "odds-for",
+  "probe": "probability",
+  "settlement_stratum": "odds-for:probability",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "1/20",
+    "C": "7/10",
+    "D": "3/10"
+   },
+   "semantic_gold": "3/10",
+   "domain": "reliability"
+  }
+ },
+ {
+  "id": "prob-repl-r13-32-odds-for-probability",
+  "english": "In the site risk register, the harness inspection failing and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the harness inspection failing are 7:3.",
+  "ainglish": "In the site risk register, the harness inspection failing and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the harness inspection failing)=7:3.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = 3/10. C = 7/10. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "probability",
+  "settlement_stratum": "odds-for:probability",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "3/10",
+    "C": "7/10",
+    "D": "not determined"
+   },
+   "semantic_gold": "7/10",
+   "domain": "safety"
+  }
+ },
+ {
+  "id": "prob-repl-r13-33-odds-for-complement",
+  "english": "In the desk's pricing model, the merger completing and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the merger completing are 1:7.",
+  "ainglish": "In the desk's pricing model, the merger completing and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the merger completing)=1:7.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 1/20. B = 1/8. C = not determined. D = 7/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "odds-for",
+  "probe": "complement",
+  "settlement_stratum": "odds-for:complement",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "1/8",
+    "C": "not determined",
+    "D": "7/8"
+   },
+   "semantic_gold": "7/8",
+   "domain": "finance"
+  }
+ },
+ {
+  "id": "prob-repl-r13-34-odds-for-complement",
+  "english": "In the routing model, the ferry sailing on schedule and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the ferry sailing on schedule are 3:5.",
+  "ainglish": "In the routing model, the ferry sailing on schedule and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the ferry sailing on schedule)=3:5.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 1/20. B = 5/8. C = 3/8. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-for",
+  "probe": "complement",
+  "settlement_stratum": "odds-for:complement",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "5/8",
+    "C": "3/8",
+    "D": "not determined"
+   },
+   "semantic_gold": "5/8",
+   "domain": "logistics"
+  }
+ },
+ {
+  "id": "prob-repl-r13-35-odds-for-complement",
+  "english": "In the bookmaker's model, the favourite finishing on the podium and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the favourite finishing on the podium are 5:3.",
+  "ainglish": "In the bookmaker's model, the favourite finishing on the podium and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the favourite finishing on the podium)=5:3.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 3/8. B = 1/20. C = 5/8. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-for",
+  "probe": "complement",
+  "settlement_stratum": "odds-for:complement",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "3/8",
+    "B": "1/20",
+    "C": "5/8",
+    "D": "not determined"
+   },
+   "semantic_gold": "3/8",
+   "domain": "sports"
+  }
+ },
+ {
+  "id": "prob-repl-r13-36-odds-for-complement",
+  "english": "In the household plan, the cat coming in before ten and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the cat coming in before ten are 7:1.",
+  "ainglish": "In the household plan, the cat coming in before ten and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the cat coming in before ten)=7:1.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 1/20. B = 7/8. C = not determined. D = 1/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "odds-for",
+  "probe": "complement",
+  "settlement_stratum": "odds-for:complement",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "7/8",
+    "C": "not determined",
+    "D": "1/8"
+   },
+   "semantic_gold": "1/8",
+   "domain": "everyday"
+  }
+ },
+ {
+  "id": "prob-repl-r13-37-odds-for-complement",
+  "english": "In the Tuesday forecast, hail at the airport and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of hail at the airport are 1:9.",
+  "ainglish": "In the Tuesday forecast, hail at the airport and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(hail at the airport)=1:9.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = not determined. B = 1/10. C = 9/10. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "complement",
+  "settlement_stratum": "odds-for:complement",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "1/10",
+    "C": "9/10",
+    "D": "1/20"
+   },
+   "semantic_gold": "9/10",
+   "domain": "weather"
+  }
+ },
+ {
+  "id": "prob-repl-r13-38-odds-for-complement",
+  "english": "In the trial's outcome model, the screen returning a false alarm and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the screen returning a false alarm are 3:7.",
+  "ainglish": "In the trial's outcome model, the screen returning a false alarm and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the screen returning a false alarm)=3:7.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 3/10. B = 1/20. C = 7/10. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "complement",
+  "settlement_stratum": "odds-for:complement",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "3/10",
+    "B": "1/20",
+    "C": "7/10",
+    "D": "not determined"
+   },
+   "semantic_gold": "7/10",
+   "domain": "medicine"
+  }
+ },
+ {
+  "id": "prob-repl-r13-39-odds-for-complement",
+  "english": "In the poll aggregate, the third party clearing 5% and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the third party clearing 5% are 7:3.",
+  "ainglish": "In the poll aggregate, the third party clearing 5% and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the third party clearing 5%)=7:3.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 3/10. B = 1/20. C = 7/10. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-for",
+  "probe": "complement",
+  "settlement_stratum": "odds-for:complement",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "3/10",
+    "B": "1/20",
+    "C": "7/10",
+    "D": "not determined"
+   },
+   "semantic_gold": "3/10",
+   "domain": "elections"
+  }
+ },
+ {
+  "id": "prob-repl-r13-40-odds-for-complement",
+  "english": "In the maintenance model, the batch job finishing on time and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the batch job finishing on time are 9:1.",
+  "ainglish": "In the maintenance model, the batch job finishing on time and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the batch job finishing on time)=9:1.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 1/10. B = 9/10. C = not determined. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-for",
+  "probe": "complement",
+  "settlement_stratum": "odds-for:complement",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1/10",
+    "B": "9/10",
+    "C": "not determined",
+    "D": "1/20"
+   },
+   "semantic_gold": "1/10",
+   "domain": "reliability"
+  }
+ },
+ {
+  "id": "prob-repl-r13-41-odds-for-odds-orientation",
+  "english": "In the site risk register, a chemical spill in bay 3 and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of a chemical spill in bay 3 are 3:5.",
+  "ainglish": "In the site risk register, a chemical spill in bay 3 and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(a chemical spill in bay 3)=3:5.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:5. B = 3:17. C = 5:3. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-for:odds-orientation",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "3:5",
+    "B": "3:17",
+    "C": "5:3",
+    "D": "not determined"
+   },
+   "semantic_gold": "5:3",
+   "domain": "safety"
+  }
+ },
+ {
+  "id": "prob-repl-r13-42-odds-for-odds-orientation",
+  "english": "In the desk's pricing model, the rate cut in March and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the rate cut in March are 5:3.",
+  "ainglish": "In the desk's pricing model, the rate cut in March and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the rate cut in March)=5:3.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:5. B = not determined. C = 3:17. D = 5:3.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-for",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-for:odds-orientation",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "3:5",
+    "B": "not determined",
+    "C": "3:17",
+    "D": "5:3"
+   },
+   "semantic_gold": "3:5",
+   "domain": "finance"
+  }
+ },
+ {
+  "id": "prob-repl-r13-43-odds-for-odds-orientation",
+  "english": "In the routing model, the warehouse running out of slot 7 and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the warehouse running out of slot 7 are 7:1.",
+  "ainglish": "In the routing model, the warehouse running out of slot 7 and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the warehouse running out of slot 7)=7:1.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:17. B = 1:7. C = 7:1. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-for",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-for:odds-orientation",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "3:17",
+    "B": "1:7",
+    "C": "7:1",
+    "D": "not determined"
+   },
+   "semantic_gold": "1:7",
+   "domain": "logistics"
+  }
+ },
+ {
+  "id": "prob-repl-r13-44-odds-for-odds-orientation",
+  "english": "In the bookmaker's model, the keeper saving the penalty and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the keeper saving the penalty are 1:9.",
+  "ainglish": "In the bookmaker's model, the keeper saving the penalty and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the keeper saving the penalty)=1:9.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:17. B = 9:1. C = 1:9. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-for",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-for:odds-orientation",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "3:17",
+    "B": "9:1",
+    "C": "1:9",
+    "D": "not determined"
+   },
+   "semantic_gold": "9:1",
+   "domain": "sports"
+  }
+ },
+ {
+  "id": "prob-repl-r13-45-odds-for-odds-orientation",
+  "english": "In the household plan, the dentist running late and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the dentist running late are 3:7.",
+  "ainglish": "In the household plan, the dentist running late and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the dentist running late)=3:7.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:17. B = 7:3. C = not determined. D = 3:7.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-for",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-for:odds-orientation",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "3:17",
+    "B": "7:3",
+    "C": "not determined",
+    "D": "3:7"
+   },
+   "semantic_gold": "7:3",
+   "domain": "everyday"
+  }
+ },
+ {
+  "id": "prob-repl-r13-46-odds-for-odds-orientation",
+  "english": "In the Tuesday forecast, snow settling on the pass and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of snow settling on the pass are 7:3.",
+  "ainglish": "In the Tuesday forecast, snow settling on the pass and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(snow settling on the pass)=7:3.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 7:3. B = 3:17. C = not determined. D = 3:7.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "odds-for",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-for:odds-orientation",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "7:3",
+    "B": "3:17",
+    "C": "not determined",
+    "D": "3:7"
+   },
+   "semantic_gold": "3:7",
+   "domain": "weather"
+  }
+ },
+ {
+  "id": "prob-repl-r13-47-odds-for-odds-orientation",
+  "english": "In the trial's outcome model, full recovery without surgery and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of full recovery without surgery are 9:1.",
+  "ainglish": "In the trial's outcome model, full recovery without surgery and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(full recovery without surgery)=9:1.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:17. B = not determined. C = 1:9. D = 9:1.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-for:odds-orientation",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "3:17",
+    "B": "not determined",
+    "C": "1:9",
+    "D": "9:1"
+   },
+   "semantic_gold": "1:9",
+   "domain": "medicine"
+  }
+ },
+ {
+  "id": "prob-repl-r13-48-odds-for-odds-orientation",
+  "english": "In the poll aggregate, the result being called by midnight and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds in favour of the result being called by midnight are 1:7.",
+  "ainglish": "In the poll aggregate, the result being called by midnight and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-for(the result being called by midnight)=1:7.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 1:7. B = not determined. C = 7:1. D = 3:17.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-for",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-for:odds-orientation",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "1:7",
+    "B": "not determined",
+    "C": "7:1",
+    "D": "3:17"
+   },
+   "semantic_gold": "7:1",
+   "domain": "elections"
+  }
+ },
+ {
+  "id": "prob-repl-r13-49-odds-against-probability",
+  "english": "In the maintenance model, the valve sticking open and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the valve sticking open are 3:5.",
+  "ainglish": "In the maintenance model, the valve sticking open and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the valve sticking open)=3:5.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 5/8. B = 3/8. C = 1/20. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-against",
+  "probe": "probability",
+  "settlement_stratum": "odds-against:probability",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "5/8",
+    "B": "3/8",
+    "C": "1/20",
+    "D": "not determined"
+   },
+   "semantic_gold": "5/8",
+   "domain": "reliability"
+  }
+ },
+ {
+  "id": "prob-repl-r13-50-odds-against-probability",
+  "english": "In the site risk register, the fire door being found propped and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the fire door being found propped are 1:7.",
+  "ainglish": "In the site risk register, the fire door being found propped and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the fire door being found propped)=1:7.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/8. B = 7/8. C = not determined. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "probability",
+  "settlement_stratum": "odds-against:probability",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1/8",
+    "B": "7/8",
+    "C": "not determined",
+    "D": "1/20"
+   },
+   "semantic_gold": "7/8",
+   "domain": "safety"
+  }
+ },
+ {
+  "id": "prob-repl-r13-51-odds-against-probability",
+  "english": "In the desk's pricing model, the invoice being paid late and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the invoice being paid late are 9:1.",
+  "ainglish": "In the desk's pricing model, the invoice being paid late and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the invoice being paid late)=9:1.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 9/10. B = 1/20. C = 1/10. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-against",
+  "probe": "probability",
+  "settlement_stratum": "odds-against:probability",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "9/10",
+    "B": "1/20",
+    "C": "1/10",
+    "D": "not determined"
+   },
+   "semantic_gold": "1/10",
+   "domain": "finance"
+  }
+ },
+ {
+  "id": "prob-repl-r13-52-odds-against-probability",
+  "english": "In the routing model, the parcel needing a second attempt and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the parcel needing a second attempt are 7:3.",
+  "ainglish": "In the routing model, the parcel needing a second attempt and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the parcel needing a second attempt)=7:3.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 7/10. B = not determined. C = 3/10. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-against",
+  "probe": "probability",
+  "settlement_stratum": "odds-against:probability",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "7/10",
+    "B": "not determined",
+    "C": "3/10",
+    "D": "1/20"
+   },
+   "semantic_gold": "3/10",
+   "domain": "logistics"
+  }
+ },
+ {
+  "id": "prob-repl-r13-53-odds-against-probability",
+  "english": "In the bookmaker's model, rain stopping play and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against rain stopping play are 3:7.",
+  "ainglish": "In the bookmaker's model, rain stopping play and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(rain stopping play)=3:7.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = 7/10. C = 3/10. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "probability",
+  "settlement_stratum": "odds-against:probability",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "7/10",
+    "C": "3/10",
+    "D": "not determined"
+   },
+   "semantic_gold": "7/10",
+   "domain": "sports"
+  }
+ },
+ {
+  "id": "prob-repl-r13-54-odds-against-probability",
+  "english": "In the household plan, the library book being available and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the library book being available are 1:9.",
+  "ainglish": "In the household plan, the library book being available and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the library book being available)=1:9.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = not determined. B = 9/10. C = 1/10. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "probability",
+  "settlement_stratum": "odds-against:probability",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "9/10",
+    "C": "1/10",
+    "D": "1/20"
+   },
+   "semantic_gold": "9/10",
+   "domain": "everyday"
+  }
+ },
+ {
+  "id": "prob-repl-r13-55-odds-against-probability",
+  "english": "In the Tuesday forecast, a thunderstorm after 4 pm and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against a thunderstorm after 4 pm are 7:1.",
+  "ainglish": "In the Tuesday forecast, a thunderstorm after 4 pm and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(a thunderstorm after 4 pm)=7:1.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 1/20. B = not determined. C = 7/8. D = 1/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "form": "odds-against",
+  "probe": "probability",
+  "settlement_stratum": "odds-against:probability",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "not determined",
+    "C": "7/8",
+    "D": "1/8"
+   },
+   "semantic_gold": "1/8",
+   "domain": "weather"
+  }
+ },
+ {
+  "id": "prob-repl-r13-56-odds-against-probability",
+  "english": "In the trial's outcome model, an allergic reaction to the contrast and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against an allergic reaction to the contrast are 5:3.",
+  "ainglish": "In the trial's outcome model, an allergic reaction to the contrast and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(an allergic reaction to the contrast)=5:3.",
+  "question": "What probability share is assigned to the event? Answer with one option letter. A = 3/8. B = 1/20. C = not determined. D = 5/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-against",
+  "probe": "probability",
+  "settlement_stratum": "odds-against:probability",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "3/8",
+    "B": "1/20",
+    "C": "not determined",
+    "D": "5/8"
+   },
+   "semantic_gold": "3/8",
+   "domain": "medicine"
+  }
+ },
+ {
+  "id": "prob-repl-r13-57-odds-against-complement",
+  "english": "In the poll aggregate, a coalition forming within a week and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against a coalition forming within a week are 1:7.",
+  "ainglish": "In the poll aggregate, a coalition forming within a week and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(a coalition forming within a week)=1:7.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = not determined. B = 1/8. C = 7/8. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "complement",
+  "settlement_stratum": "odds-against:complement",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "1/8",
+    "C": "7/8",
+    "D": "1/20"
+   },
+   "semantic_gold": "1/8",
+   "domain": "elections"
+  }
+ },
+ {
+  "id": "prob-repl-r13-58-odds-against-complement",
+  "english": "In the maintenance model, a transformer trip in the heatwave and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against a transformer trip in the heatwave are 9:1.",
+  "ainglish": "In the maintenance model, a transformer trip in the heatwave and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(a transformer trip in the heatwave)=9:1.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 9/10. B = 1/10. C = not determined. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-against",
+  "probe": "complement",
+  "settlement_stratum": "odds-against:complement",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "9/10",
+    "B": "1/10",
+    "C": "not determined",
+    "D": "1/20"
+   },
+   "semantic_gold": "9/10",
+   "domain": "reliability"
+  }
+ },
+ {
+  "id": "prob-repl-r13-59-odds-against-complement",
+  "english": "In the site risk register, a vehicle entering the exclusion zone and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against a vehicle entering the exclusion zone are 7:3.",
+  "ainglish": "In the site risk register, a vehicle entering the exclusion zone and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(a vehicle entering the exclusion zone)=7:3.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 3/10. B = 7/10. C = 1/20. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "complement",
+  "settlement_stratum": "odds-against:complement",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "3/10",
+    "B": "7/10",
+    "C": "1/20",
+    "D": "not determined"
+   },
+   "semantic_gold": "7/10",
+   "domain": "safety"
+  }
+ },
+ {
+  "id": "prob-repl-r13-60-odds-against-complement",
+  "english": "In the desk's pricing model, the fund closing above the mark and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the fund closing above the mark are 3:7.",
+  "ainglish": "In the desk's pricing model, the fund closing above the mark and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the fund closing above the mark)=3:7.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = not determined. B = 1/20. C = 3/10. D = 7/10.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-against",
+  "probe": "complement",
+  "settlement_stratum": "odds-against:complement",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "1/20",
+    "C": "3/10",
+    "D": "7/10"
+   },
+   "semantic_gold": "3/10",
+   "domain": "finance"
+  }
+ },
+ {
+  "id": "prob-repl-r13-61-odds-against-complement",
+  "english": "In the routing model, the cold chain breaking and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the cold chain breaking are 1:9.",
+  "ainglish": "In the routing model, the cold chain breaking and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the cold chain breaking)=1:9.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 1/10. B = 9/10. C = not determined. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-against",
+  "probe": "complement",
+  "settlement_stratum": "odds-against:complement",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1/10",
+    "B": "9/10",
+    "C": "not determined",
+    "D": "1/20"
+   },
+   "semantic_gold": "1/10",
+   "domain": "logistics"
+  }
+ },
+ {
+  "id": "prob-repl-r13-62-odds-against-complement",
+  "english": "In the bookmaker's model, the underdog taking the first set and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the underdog taking the first set are 7:1.",
+  "ainglish": "In the bookmaker's model, the underdog taking the first set and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the underdog taking the first set)=7:1.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 7/8. B = 1/8. C = not determined. D = 1/20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-against",
+  "probe": "complement",
+  "settlement_stratum": "odds-against:complement",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "7/8",
+    "B": "1/8",
+    "C": "not determined",
+    "D": "1/20"
+   },
+   "semantic_gold": "7/8",
+   "domain": "sports"
+  }
+ },
+ {
+  "id": "prob-repl-r13-63-odds-against-complement",
+  "english": "In the household plan, the car starting on the first turn and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the car starting on the first turn are 5:3.",
+  "ainglish": "In the household plan, the car starting on the first turn and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the car starting on the first turn)=5:3.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 5/8. B = 1/20. C = 3/8. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-against",
+  "probe": "complement",
+  "settlement_stratum": "odds-against:complement",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "5/8",
+    "B": "1/20",
+    "C": "3/8",
+    "D": "not determined"
+   },
+   "semantic_gold": "5/8",
+   "domain": "everyday"
+  }
+ },
+ {
+  "id": "prob-repl-r13-64-odds-against-complement",
+  "english": "In the Tuesday forecast, clear skies at dusk and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against clear skies at dusk are 3:5.",
+  "ainglish": "In the Tuesday forecast, clear skies at dusk and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(clear skies at dusk)=3:5.",
+  "question": "What probability share is assigned to its complement? Answer with one option letter. A = 1/20. B = not determined. C = 3/8. D = 5/8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-against",
+  "probe": "complement",
+  "settlement_stratum": "odds-against:complement",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "1/20",
+    "B": "not determined",
+    "C": "3/8",
+    "D": "5/8"
+   },
+   "semantic_gold": "3/8",
+   "domain": "weather"
+  }
+ },
+ {
+  "id": "prob-repl-r13-65-odds-against-odds-orientation",
+  "english": "In the trial's outcome model, the biopsy confirming the scan and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the biopsy confirming the scan are 9:1.",
+  "ainglish": "In the trial's outcome model, the biopsy confirming the scan and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the biopsy confirming the scan)=9:1.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 1:9. B = 9:1. C = not determined. D = 3:17.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-against:odds-orientation",
+  "audit": {
+   "probability": "1/10",
+   "complement": "9/10",
+   "favourable": 1,
+   "unfavourable": 9,
+   "answer_meanings": {
+    "A": "1:9",
+    "B": "9:1",
+    "C": "not determined",
+    "D": "3:17"
+   },
+   "semantic_gold": "9:1",
+   "domain": "medicine"
+  }
+ },
+ {
+  "id": "prob-repl-r13-66-odds-against-odds-orientation",
+  "english": "In the poll aggregate, the district flipping and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the district flipping are 7:3.",
+  "ainglish": "In the poll aggregate, the district flipping and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the district flipping)=7:3.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:17. B = 7:3. C = not determined. D = 3:7.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-against:odds-orientation",
+  "audit": {
+   "probability": "3/10",
+   "complement": "7/10",
+   "favourable": 3,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "3:17",
+    "B": "7:3",
+    "C": "not determined",
+    "D": "3:7"
+   },
+   "semantic_gold": "7:3",
+   "domain": "elections"
+  }
+ },
+ {
+  "id": "prob-repl-r13-67-odds-against-odds-orientation",
+  "english": "In the maintenance model, the firmware update rolling back and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the firmware update rolling back are 3:7.",
+  "ainglish": "In the maintenance model, the firmware update rolling back and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the firmware update rolling back)=3:7.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = not determined. B = 7:3. C = 3:7. D = 3:17.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-against",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-against:odds-orientation",
+  "audit": {
+   "probability": "7/10",
+   "complement": "3/10",
+   "favourable": 7,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "7:3",
+    "C": "3:7",
+    "D": "3:17"
+   },
+   "semantic_gold": "3:7",
+   "domain": "reliability"
+  }
+ },
+ {
+  "id": "prob-repl-r13-68-odds-against-odds-orientation",
+  "english": "In the site risk register, the audit finding a lockout breach and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the audit finding a lockout breach are 1:9.",
+  "ainglish": "In the site risk register, the audit finding a lockout breach and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the audit finding a lockout breach)=1:9.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 1:9. B = 9:1. C = 3:17. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "form": "odds-against",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-against:odds-orientation",
+  "audit": {
+   "probability": "9/10",
+   "complement": "1/10",
+   "favourable": 9,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "1:9",
+    "B": "9:1",
+    "C": "3:17",
+    "D": "not determined"
+   },
+   "semantic_gold": "1:9",
+   "domain": "safety"
+  }
+ },
+ {
+  "id": "prob-repl-r13-69-odds-against-odds-orientation",
+  "english": "In the desk's pricing model, the currency peg holding and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the currency peg holding are 7:1.",
+  "ainglish": "In the desk's pricing model, the currency peg holding and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the currency peg holding)=7:1.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = not determined. B = 7:1. C = 3:17. D = 1:7.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-against:odds-orientation",
+  "audit": {
+   "probability": "1/8",
+   "complement": "7/8",
+   "favourable": 1,
+   "unfavourable": 7,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "7:1",
+    "C": "3:17",
+    "D": "1:7"
+   },
+   "semantic_gold": "7:1",
+   "domain": "finance"
+  }
+ },
+ {
+  "id": "prob-repl-r13-70-odds-against-odds-orientation",
+  "english": "In the routing model, the crane being booked and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the crane being booked are 5:3.",
+  "ainglish": "In the routing model, the crane being booked and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the crane being booked)=5:3.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = not determined. B = 5:3. C = 3:5. D = 3:17.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-against:odds-orientation",
+  "audit": {
+   "probability": "3/8",
+   "complement": "5/8",
+   "favourable": 3,
+   "unfavourable": 5,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "5:3",
+    "C": "3:5",
+    "D": "3:17"
+   },
+   "semantic_gold": "5:3",
+   "domain": "logistics"
+  }
+ },
+ {
+  "id": "prob-repl-r13-71-odds-against-odds-orientation",
+  "english": "In the bookmaker's model, the record being broken and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the record being broken are 3:5.",
+  "ainglish": "In the bookmaker's model, the record being broken and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the record being broken)=3:5.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = 3:17. B = 3:5. C = not determined. D = 5:3.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "form": "odds-against",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-against:odds-orientation",
+  "audit": {
+   "probability": "5/8",
+   "complement": "3/8",
+   "favourable": 5,
+   "unfavourable": 3,
+   "answer_meanings": {
+    "A": "3:17",
+    "B": "3:5",
+    "C": "not determined",
+    "D": "5:3"
+   },
+   "semantic_gold": "3:5",
+   "domain": "sports"
+  }
+ },
+ {
+  "id": "prob-repl-r13-72-odds-against-odds-orientation",
+  "english": "In the household plan, the neighbour's party ending by midnight and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. The probability odds against the neighbour's party ending by midnight are 1:7.",
+  "ainglish": "In the household plan, the neighbour's party ending by midnight and its non-occurrence are mutually exclusive and exhaustive. The following is a reported probability claim, not a statement of observed outcomes. odds-against(the neighbour's party ending by midnight)=1:7.",
+  "question": "Which probability odds against the event express the same reported quantity? Answer with one option letter. A = not determined. B = 7:1. C = 1:7. D = 3:17.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "form": "odds-against",
+  "probe": "odds-orientation",
+  "settlement_stratum": "odds-against:odds-orientation",
+  "audit": {
+   "probability": "7/8",
+   "complement": "1/8",
+   "favourable": 7,
+   "unfavourable": 1,
+   "answer_meanings": {
+    "A": "not determined",
+    "B": "7:1",
+    "C": "1:7",
+    "D": "3:17"
+   },
+   "semantic_gold": "1:7",
+   "domain": "everyday"
+  }
+ },
+ {
+  "id": "cal-custody-r13-00",
+  "english": "Exactly one of Corin, Beatrix, Anselm holds parcel P-113. The record does not identify its holder.",
+  "ainglish": "Exactly one of Corin, Beatrix, Anselm holds parcel P-113. The record identifies Anselm as its holder.",
+  "question": "Who holds parcel P-113, according to this record? A = Corin. B = Anselm. C = not determined from the record. D = Beatrix.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "B",
+   "other": "C"
+  }
+ },
+ {
+  "id": "cal-custody-r13-01",
+  "english": "Exactly one of Fenna, Dalia, Emrys holds parcel P-120. The record does not identify its holder.",
+  "ainglish": "Exactly one of Fenna, Dalia, Emrys holds parcel P-120. The record identifies Emrys as its holder.",
+  "question": "Who holds parcel P-120, according to this record? A = Fenna. B = not determined from the record. C = Dalia. D = Emrys.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "D",
+   "other": "B"
+  }
+ },
+ {
+  "id": "cal-custody-r13-02",
+  "english": "Exactly one of Gideon, Halle, Ivo holds parcel P-127. The record does not identify its holder.",
+  "ainglish": "Exactly one of Gideon, Halle, Ivo holds parcel P-127. The record identifies Ivo as its holder.",
+  "question": "Who holds parcel P-127, according to this record? A = not determined from the record. B = Ivo. C = Gideon. D = Halle.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "B",
+   "other": "A"
+  }
+ },
+ {
+  "id": "cal-custody-r13-03",
+  "english": "Exactly one of Jorun, Liesl, Kasimir holds parcel P-134. The record does not identify its holder.",
+  "ainglish": "Exactly one of Jorun, Liesl, Kasimir holds parcel P-134. The record identifies Jorun as its holder.",
+  "question": "Who holds parcel P-134, according to this record? A = Jorun. B = Kasimir. C = Liesl. D = not determined from the record.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "A",
+   "other": "D"
+  }
+ },
+ {
+  "id": "cal-custody-r13-04",
+  "english": "Exactly one of Oona, Maren, Nikolai holds parcel P-141. The record does not identify its holder.",
+  "ainglish": "Exactly one of Oona, Maren, Nikolai holds parcel P-141. The record identifies Nikolai as its holder.",
+  "question": "Who holds parcel P-141, according to this record? A = Oona. B = Nikolai. C = Maren. D = not determined from the record.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "B",
+   "other": "D"
+  }
+ },
+ {
+  "id": "cal-custody-r13-05",
+  "english": "Exactly one of Pieter, Quilla, Rasmus holds parcel P-148. The record does not identify its holder.",
+  "ainglish": "Exactly one of Pieter, Quilla, Rasmus holds parcel P-148. The record identifies Rasmus as its holder.",
+  "question": "Who holds parcel P-148, according to this record? A = Pieter. B = not determined from the record. C = Quilla. D = Rasmus.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "D",
+   "other": "B"
+  }
+ },
+ {
+  "id": "cal-custody-r13-06",
+  "english": "Exactly one of Tobiah, Sunniva, Ulla holds parcel P-155. The record does not identify its holder.",
+  "ainglish": "Exactly one of Tobiah, Sunniva, Ulla holds parcel P-155. The record identifies Sunniva as its holder.",
+  "question": "Who holds parcel P-155, according to this record? A = Sunniva. B = not determined from the record. C = Tobiah. D = Ulla.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "A",
+   "other": "B"
+  }
+ },
+ {
+  "id": "cal-custody-r13-07",
+  "english": "Exactly one of Wren, Xanthe, Viggo holds parcel P-162. The record does not identify its holder.",
+  "ainglish": "Exactly one of Wren, Xanthe, Viggo holds parcel P-162. The record identifies Wren as its holder.",
+  "question": "Who holds parcel P-162, according to this record? A = Viggo. B = not determined from the record. C = Wren. D = Xanthe.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "C",
+   "other": "B"
+  }
+ },
+ {
+  "id": "cal-custody-r13-08",
+  "english": "Exactly one of Aurel, Zev, Yara holds parcel P-169. The record does not identify its holder.",
+  "ainglish": "Exactly one of Aurel, Zev, Yara holds parcel P-169. The record identifies Aurel as its holder.",
+  "question": "Who holds parcel P-169, according to this record? A = not determined from the record. B = Zev. C = Yara. D = Aurel.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "D",
+   "other": "A"
+  }
+ },
+ {
+  "id": "cal-custody-r13-09",
+  "english": "Exactly one of Brisa, Callum, Delphine holds parcel P-176. The record does not identify its holder.",
+  "ainglish": "Exactly one of Brisa, Callum, Delphine holds parcel P-176. The record identifies Brisa as its holder.",
+  "question": "Who holds parcel P-176, according to this record? A = Callum. B = Delphine. C = Brisa. D = not determined from the record.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "C",
+   "other": "D"
+  }
+ },
+ {
+  "id": "cal-custody-r13-10",
+  "english": "Exactly one of Eskil, Gunnar, Freja holds parcel P-183. The record does not identify its holder.",
+  "ainglish": "Exactly one of Eskil, Gunnar, Freja holds parcel P-183. The record identifies Freja as its holder.",
+  "question": "Who holds parcel P-183, according to this record? A = Eskil. B = not determined from the record. C = Freja. D = Gunnar.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "C",
+   "other": "B"
+  }
+ },
+ {
+  "id": "cal-custody-r13-11",
+  "english": "Exactly one of Jolanda, Hedda, Idris holds parcel P-190. The record does not identify its holder.",
+  "ainglish": "Exactly one of Jolanda, Hedda, Idris holds parcel P-190. The record identifies Jolanda as its holder.",
+  "question": "Who holds parcel P-190, according to this record? A = not determined from the record. B = Hedda. C = Idris. D = Jolanda.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "calibration_truth": {
+   "detectable": "D",
+   "other": "A"
+  }
+ }
+]
