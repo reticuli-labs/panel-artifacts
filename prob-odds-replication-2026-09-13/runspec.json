@@ -1,0 +1,35 @@
+{
+  "construct": "prob / odds-for / odds-against",
+  "slug": "prob-event-p-odds-for-event-favourable-unfavourable-odds",
+  "metric": "comprehension_accuracy_delta",
+  "replicates_hash": "342303a33f6f6a7bc89a5ddf9362103e7a67b5c50c4a6cb14b0f7493ba8834bd",
+  "comparator": {
+    "kind": "complete-careful-english-v1",
+    "description": "Identical contextual facts in both arms; direct complete English for the question asked. Scope and omitted dimensions are explicit in DESIGN.md."
+  },
+  "seed": 130913,
+  "planted_arm": "ainglish",
+  "calibration_min_gap": 0.5,
+  "items_url": "items.json",
+  "items_sha256": "7ce1fec8493e6bc4a390b9ee6944a8ac5367c212d8ae91657eb197cd348afc28",
+  "settlement_strata": [
+    {"id": "prob:probability", "weight": 1}, {"id": "prob:complement", "weight": 1}, {"id": "prob:odds-orientation", "weight": 1},
+    {"id": "odds-for:probability", "weight": 1}, {"id": "odds-for:complement", "weight": 1}, {"id": "odds-for:odds-orientation", "weight": 1},
+    {"id": "odds-against:probability", "weight": 1}, {"id": "odds-against:complement", "weight": 1}, {"id": "odds-against:odds-orientation", "weight": 1}
+  ],
+  "panel_neff": 2,
+  "panel": [
+    {"name": "qwen3.8-27b-opaque-choice-q4_k_m", "provider": "ollama", "model": "qwen3.8:27b", "precision": "q4_k_m", "api": "openai", "base_url": "http://127.0.0.1:11434/v1", "max_tokens": 512, "timeout_s": 300, "temperature": 0, "seed": 2026091301, "reasoning_effort": "none"},
+    {"name": "gemma4-31b-opaque-choice-q4_k_m", "provider": "ollama", "model": "gemma4:31b-it-q4_K_M", "precision": "q4_k_m", "api": "openai", "base_url": "http://127.0.0.1:11434/v1", "max_tokens": 512, "timeout_s": 300, "temperature": 0, "seed": 2026091302, "reasoning_effort": "none"}
+  ],
+  "attempt": {
+    "estimand": "Difference in comprehension accuracy (percentage points) between the marked forms prob(E)=p / odds-for(E)=a:b / odds-against(E)=b:a and the complete careful-English statement of the same reported probability claim, on the source's three held-out probes (event probability share, complement share, equivalent odds-against orientation), over 72 wholly fresh items = the source's nine equal-weight settlement strata x 8, never pooled across strata for settlement; a fresh-input settlement replication of Dexagon's original 342303a33f… on a different two-lineage local reader class.",
+    "admissibility_gates": [
+      "each reader alone clears the planted calibration control (absolute-gap-v1, min_gap 0.5) without retry selection",
+      "every real item is fresh for this principal: new events, model labels and numeric values; zero pair or arm overlap with the source kit",
+      "the nine settlement strata are the source's, equal weight, every one load-bearing; no pooled figure stands in for any",
+      "no reader cell is retried; a transport fault or bound truncation is a typed dead cell, and the yield guard decides whether the run may emit"
+    ],
+    "planned_sample": {"calibration_items": 12, "real_items": 72, "arms": 2, "readers": 2, "settlement_strata": 9}
+  }
+}

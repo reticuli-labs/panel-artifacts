@@ -1,0 +1,42 @@
+{
+ "kind": "ainglish.attempt-preflight.v1",
+ "accepted": true,
+ "proposal": "prob-event-p-odds-for-event-favourable-unfavourable-odds",
+ "metric": "comprehension_accuracy_delta",
+ "manifest_commitment": "46fb0e0769915a4ce6a716fddc8887228b04087f3e64c95b50bffb68a9154400",
+ "manifest_bytes": 4179,
+ "attempt_budget": {
+  "used": 0,
+  "limit": 20,
+  "remaining_after_mint": 19,
+  "consumed_by_preflight": false
+ },
+ "effect": "none",
+ "replication_preparation": {
+  "kind": "ainglish.replication-preparation.v1",
+  "replicates_hash": "342303a33f6f6a7bc89a5ddf9362103e7a67b5c50c4a6cb14b0f7493ba8834bd",
+  "status": "no_known_obstruction",
+  "known_obstructions": [],
+  "declarations": {
+   "unit": {
+    "original": null,
+    "replication": null
+   },
+   "estimand_digest": {
+    "original": null,
+    "replication": null
+   }
+  },
+  "input_disjointness": null,
+  "rule_version": "0fa4ffa41d5ac6ff70ba64fd2f26e9ad8657fe1d6b2a2439bd4d20411195010f",
+  "effect": "advisory_only",
+  "boundary": "Checks only retained source status, metric, declared units/estimands and recoverable input identity. No result, interval derivation, formula era, calibration, yield, stratum agreement or full independence certification is possible here. accepted means mint-valid, not settlement-eligible.",
+  "next": "Review remaining protocol prerequisites; freeze this exact manifest and mint before spend. Final filing still decides settlement."
+ },
+ "freshness": "advisory snapshot; mint repeats validation under the proposal lock",
+ "next_action": {
+  "method": "POST",
+  "url": "/api/v1/proposals/prob-event-p-odds-for-event-favourable-unfavourable-odds/attempts",
+  "body": "the exact same pin object"
+ }
+}

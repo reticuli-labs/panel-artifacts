@@ -1,0 +1,193 @@
+{
+ "construct": "prob / odds-for / odds-against",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 130913,
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "Identical contextual facts in both arms; direct complete English for the question asked. Scope and omitted dimensions are explicit in DESIGN.md."
+ },
+ "items_sha256": "7ce1fec8493e6bc4a390b9ee6944a8ac5367c212d8ae91657eb197cd348afc28",
+ "items_url": "items.json",
+ "models": [
+  "qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m",
+  "gemma4-31b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "readers": [
+  {
+   "name": "qwen3.8-27b-opaque-choice-q4_k_m",
+   "provider": "ollama",
+   "model": "qwen3.8:27b",
+   "precision": "q4_k_m",
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "model_digest": "sha256:2226824d099e20746957039c845a90474c5718cec8e7b0cf28420363afdb6e01",
+   "digest_source": "ollama:/api/tags",
+   "instrument_preparation": {
+    "entry_point": "prepare_reader_instruments",
+    "binding": "ollama:/api/tags"
+   },
+   "answer_protocol": "opaque-choice-v1",
+   "max_tokens": 512,
+   "timeout_s": 300,
+   "temperature": 0,
+   "seed": 2026091301,
+   "top_p": "provider-default",
+   "top_k": "provider-default",
+   "num_ctx": "provider-default",
+   "reasoning_effort": "none"
+  },
+  {
+   "name": "gemma4-31b-opaque-choice-q4_k_m",
+   "provider": "ollama",
+   "model": "gemma4:31b-it-q4_K_M",
+   "precision": "q4_k_m",
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "model_digest": "sha256:6316f0629137b426c9d9b853ffc4c8209589f30ee39aebede6285096c0ff47e7",
+   "digest_source": "ollama:/api/tags",
+   "instrument_preparation": {
+    "entry_point": "prepare_reader_instruments",
+    "binding": "ollama:/api/tags"
+   },
+   "answer_protocol": "opaque-choice-v1",
+   "max_tokens": 512,
+   "timeout_s": 300,
+   "temperature": 0,
+   "seed": 2026091302,
+   "top_p": "provider-default",
+   "top_k": "provider-default",
+   "num_ctx": "provider-default",
+   "reasoning_effort": "none"
+  }
+ ],
+ "instrument_preparation": {
+  "entry_point": "prepare_reader_instruments",
+  "binding": [
+   {
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   },
+   {
+    "reader": "gemma4-31b-opaque-choice-q4_k_m@q4_k_m",
+    "digest_source": "ollama:/api/tags"
+   }
+  ]
+ },
+ "item_counts": {
+  "real": 72,
+  "calibration": 12
+ },
+ "interval_kind": "bootstrap_items",
+ "interval_estimator": {
+  "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+  "algorithm": "sha256-counter-modulo-v1",
+  "draws": 2000,
+  "sampling_unit": "item",
+  "quantiles": [
+   "0.025",
+   "0.975"
+  ],
+  "items_index_sha256": "8f83c89d9e9963aa4aa520cc4a51a4e1635e7c959fdf28e41c955d3a9deea077"
+ },
+ "settlement_strata": [
+  {
+   "id": "prob:probability",
+   "weight": 1
+  },
+  {
+   "id": "prob:complement",
+   "weight": 1
+  },
+  {
+   "id": "prob:odds-orientation",
+   "weight": 1
+  },
+  {
+   "id": "odds-for:probability",
+   "weight": 1
+  },
+  {
+   "id": "odds-for:complement",
+   "weight": 1
+  },
+  {
+   "id": "odds-for:odds-orientation",
+   "weight": 1
+  },
+  {
+   "id": "odds-against:probability",
+   "weight": 1
+  },
+  {
+   "id": "odds-against:complement",
+   "weight": 1
+  },
+  {
+   "id": "odds-against:odds-orientation",
+   "weight": 1
+  }
+ ],
+ "settlement_item_field": "settlement_stratum",
+ "settlement_rule": "manifest-weighted arms and value; every stratum load-bearing",
+ "calibration": {
+  "planted_arm": "ainglish",
+  "min_gap": 0.5,
+  "min_recovered": null,
+  "rule": "absolute-gap-v1",
+  "ordering": "calibration-first",
+  "arm_exposure": "both-arms-per-reader-item",
+  "cells": 48
+ },
+ "difficulty": {
+  "annotated": false
+ },
+ "harness": "ainglish-panel/0.2.60",
+ "transport": {
+  "qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m": {
+   "max_tokens": 512,
+   "timeout_s": 300,
+   "temperature": 0,
+   "seed": 2026091301,
+   "top_p": "provider-default",
+   "top_k": "provider-default",
+   "num_ctx": "provider-default",
+   "reasoning_effort": "none"
+  },
+  "gemma4-31b-opaque-choice-q4_k_m@q4_k_m": {
+   "max_tokens": 512,
+   "timeout_s": 300,
+   "temperature": 0,
+   "seed": 2026091302,
+   "top_p": "provider-default",
+   "top_k": "provider-default",
+   "num_ctx": "provider-default",
+   "reasoning_effort": "none"
+  }
+ },
+ "concurrency": {
+  "max_in_flight": 1,
+  "per_reader_max_in_flight": {
+   "qwen3.8-27b-opaque-choice-q4_k_m": 1,
+   "gemma4-31b-opaque-choice-q4_k_m": 1
+  },
+  "result_order": "deterministic-plan-order",
+  "calibration_barrier": true,
+  "automatic_retries": false
+ },
+ "transport_faults": {
+  "total": 0,
+  "retried": false,
+  "per_cell": {}
+ },
+ "transport_truncations": {
+  "total": 0,
+  "per_reader_cell": {},
+  "by_cell": {
+   "english": 0,
+   "ainglish": 0
+  },
+  "imbalanced_across_cells": false
+ },
+ "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate",
+ "replicates_hash": "342303a33f6f6a7bc89a5ddf9362103e7a67b5c50c4a6cb14b0f7493ba8834bd"
+}
