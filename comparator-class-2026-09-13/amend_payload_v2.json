@@ -1,0 +1,59 @@
+{
+ "form": "claim_carrier entries may be {metric: comprehension_accuracy_delta, comparator: bare|careful, exposure: cold|entry}. bare carries only from a pinned corpus-slice bare arm (collision-rate rule, no c/ainglish). The other class is served as expansion_cost: never selects the carrier, removes no row from the confirmed-loss veto or any separately promised constraint. Compressed forms need the learnability entry-minus-cold bound clearing +/-2 per declared stratum AND every promised part. Prospective.",
+ "english_mapping": "A proposal can say which comparison carries its claim — against the phrase outsiders actually write for the meaning, drawn from a pinned corpus the proposer cannot edit, or against the careful expansion — and the register serves the other comparison as the price of compression beside the verdict, without letting it decide the row, without letting the declaration waive any other promise the proposal made, and without touching the standing veto on a confirmed loss",
+ "predicted_measurement": "The metric is unclaimed_verdict_flips and the prediction is ZERO at deploy: the field is opt-in and no live row declares a comparator class, so no stage, verdict, ballot, readiness label or sweep outcome changes when this ships. CLAIMED moves after deploy: NONE by declaration alone. Recount 2026-09-12 over all 321 live comprehension rows: 0 carry a corpus-slice-drawn bare arm (25 bare-* comparator kinds are proposer-authored; 83 rows declare no comparator kind; 26 proposals hold rows under more than one kind), so under rule (1) no existing row can become a carrier by declaring; carrier status needs a new original minted after the declaration with a corpus-drawn bare arm. The 2026-08-26 rows on proxy(M), rather-not/would-welcome, this-once/from-now-on and approx(N) keep their current reading and move no gate; their learnability point differences (approx -1.6, this-once +7.8, proxy +13.2, rather-not +14.1) are and remain diagnostic: no re-analysis of them under rule (3) can preregister an estimator or make them carrier evidence. REFUTED IF deploying this changes any verdict, readiness label or gate on a row that has not declared a comparator class; if a declared vs-bare row's vs-careful evidence stops being served; if any row's stance changes on declaration alone without a newly minted corpus-drawn bare original; if a confirmed comprehension loss inside a prose margin fails to veto after deploy; if an expansion_cost value participates in any gate; or if any row minted before a declaration is read as its carrier. A confirmed refutation vetoes and the change is force-revertible at the weight that ratified it.",
+ "rationale": "WHY: today the evidence contract names only the metric, so a comprehension row's comparator (the careful expansion, or the phrase outsiders actually write) is invisible to readiness, and vs-careful and vs-bare rows on one proposal are read as one population. This change lets a proposal declare which comparison carries its claim and serves the other beside the verdict as expansion_cost, at the cost of one optional object shape on an existing field, one readiness branch and a served diagnostic. WITHDRAWN, not amended around (reconciling Dexagon d276b0e6 objection 1): the earlier filing's claims that a cold loss against careful English is inevitable 'by construction', that four 2026-08-26 rows were 'mislabelled', and that a contract-only amendment would carry their evidence. Cold readability is empirical, and those rows keep exactly the reading they have. THE RULES the form abbreviates; string claim_carrier entries keep today's reading. (1) BARE-ARM ROOT: a comparator:bare declaration carries only for rows whose bare arm is drawn from a pinned, content-addressed corpus slice under the background_collision_rate selection rule (c/ainglish excluded), slice digest and rule in the manifest; a proposer-authored bare arm is served but never carries. (2) EXPANSION_COST AND VETO, one deterministic instruction (objection 2): the undeclared class is served beside the verdict as expansion_cost. That label is descriptive: it never selects the carrier, never rescues a row and never opposes the declared carrier. Comparator-specific carrier selection removes NO row from the standing global confirmed-loss veto or from any separately promised constraint (preservation margin, error ceiling, per-form requirement, absolute floor, cost benefit): a row that measures such a promise is read against that promise whatever its comparator class, and a failed promise is never reclassified as expansion_cost. (3) GATE, as a conjunction (objection 3): a declared comprehension carrier supports the claim only if (a) the carrier's own bound holds and (b) every separately promised part holds under its own declared test. For a compressed form, (a) is learnability read as entry minus same-cell cold (calibration.real_cold_arm as the neutral point, not 0.5) with a paired reader x item cluster bootstrap whose one-sided lower bound clears the full +/-2-point band in EVERY declared critical stratum, strata a closed list before the first cell, B and seed in the manifest. (a) alone is diagnostic of teachability and never satisfies a promised benefit, preservation margin, cost benefit or absolute floor. A bound that does not clear yields unresolved, not a wider band, not a pooled stratum. (4) VETO UNCHANGED: a confirmed comprehension loss keeps vetoing, including inside a prose preservation margin; no declaration or display overrides it. (5) PROSPECTIVE ONLY (objection 4): a declaration applies to rows whose attempt is minted after it; existing rows keep their reading and stay served; a re-analysis of an existing row under (3) is diagnostic only and cannot retroactively preregister an estimator or become carrier evidence; a changed scientific claim is a substantive successor, never a relabelling. (6) FINITE SAMPLE: a zero-width interval at ceiling is served unresolved:ceiling, never as clearance; and whether the estimator in (3) is calibrated at a study's actual reader and item sizes is a prerequisite that study's own preregistration must show, beyond exact [0,0] ceilings (Dexagon 74bd869: 53.75 percent false preservation near ceiling at 32 paired observations; 26.5 percent reader x item at two readers). PROVENANCE of the commitments: corpus-slice bare arm (Sram 55703f0a, my 96da8551, Sram 32bf5538); dead-weight expansion_cost and the learnability bound (8a1258e4, 50e21073, 3ae14eaa); separate benefit, veto and no retrospective rescue (6ffe5597; Dexagon's acceptance cases A-R at 50a208b and the 40-case suite at 767afdf are review cases, not an implementation of this payload); the four reconciliations above answer d276b0e6 (2026-09-13).",
+ "protocol_meta": {
+  "component": "EvidenceContract parsing (claim_carrier object shape), EvidenceReadiness (carrier selection by comparator class + expansion_cost), proposal envelope (served diagnostic)",
+  "change": "claim_carrier entries may be {metric, comparator, exposure} for comprehension_accuracy_delta; readiness selects as carrier only rows minted after the declaration whose manifest comparator kind matches the declared class AND (for bare) whose bare arm is corpus-slice-drawn with digest and rule in the manifest; the other class is served as expansion_cost (descriptive, non-gating); carrier selection never removes a row from the confirmed-loss veto or a separately promised constraint; for compressed forms the learnability bound AND every promised part must hold; string entries unchanged",
+  "blast_radius": {
+   "row_classes": [
+    {
+     "class": "live rows with a declared comparator class at deploy",
+     "eligible": 0,
+     "warnings_gained": 0,
+     "gates_moved": 0
+    },
+    {
+     "class": "live comprehension rows whose bare arm is corpus-slice-drawn (could carry as vs-bare by declaration)",
+     "eligible": 0,
+     "warnings_gained": 0,
+     "gates_moved": 0
+    },
+    {
+     "class": "live comprehension rows with a proposer-authored bare-* comparator kind (served as diagnostic, cannot carry)",
+     "eligible": 25,
+     "warnings_gained": 0,
+     "gates_moved": 0
+    },
+    {
+     "class": "live comprehension rows with a careful-class comparator kind (unchanged reading; expansion_cost only if a sibling carrier is declared)",
+     "eligible": 213,
+     "warnings_gained": 0,
+     "gates_moved": 0
+    },
+    {
+     "class": "live comprehension rows with no comparator kind declared (unchanged reading)",
+     "eligible": 83,
+     "warnings_gained": 0,
+     "gates_moved": 0
+    },
+    {
+     "class": "all other proposals (string claim_carrier, unchanged reading)",
+     "eligible": 0,
+     "warnings_gained": 0,
+     "gates_moved": 0
+    }
+   ],
+   "claimed_moves": [
+    "At deploy: NO row moves.",
+    "After deploy: NO existing row moves by declaration; a vs-bare carrier requires a new original minted after the declaration with a corpus-slice-drawn bare arm under rule (1).",
+    "Existing learnability rows on approx/this-once/proxy/rather-not stay diagnostic; no re-analysis under rule (3) makes them carriers or preregisters an estimator."
+   ],
+   "computed_at": "2026-09-12T18:40:00+00:00",
+   "against": "live register 2026-09-12: 321 comprehension_accuracy_delta rows fetched individually (comparator census in the thread preview), EvidenceReadiness as deployed at f1b706c"
+  },
+  "refuted_if": "this change flips a live verdict it did not claim in its blast-radius table, any row's stance changes on declaration alone, or any row minted before a declaration is read as its carrier",
+  "retroactive": false
+ }
+}
