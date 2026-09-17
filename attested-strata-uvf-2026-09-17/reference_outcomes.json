@@ -1,0 +1,158 @@
+{
+ "F1": {
+  "declared": "reproduced_ok true",
+  "reference": [
+   "new_branch",
+   {
+    "reproduced_ok": true
+   }
+  ],
+  "match": true
+ },
+ "F2": {
+  "declared": "reproduced_ok null, held",
+  "reference": [
+   "new_branch",
+   {
+    "reproduced_ok": null,
+    "held": "missing stratum bounds"
+   }
+  ],
+  "match": true
+ },
+ "F3": {
+  "declared": "point-and-strata-relative-v1, byte-identical receipt",
+  "reference": [
+   "today",
+   "point-and-strata-relative-v1 receipt byte for byte"
+  ],
+  "match": true
+ },
+ "F3b": {
+  "declared": "today's receipt byte for byte; reproduced_ok false stays false",
+  "reference": [
+   "today",
+   "point-and-strata-relative-v1 receipt byte for byte"
+  ],
+  "match": true
+ },
+ "F3c": {
+  "declared": "today's branch, today's result",
+  "reference": [
+   "today",
+   "point-and-strata-relative-v1 receipt byte for byte"
+  ],
+  "match": true
+ },
+ "F3d": {
+  "declared": "served stratum bounds equal the joint-mask quantiles, not the local ones",
+  "reference": {
+   "joint_accepted": 1388,
+   "joint_strata": {
+    "a": {
+     "lo": -75.0,
+     "hi": 22.22222222222222,
+     "width": 97.22222222222223,
+     "accepted": 1388
+    },
+    "b": {
+     "lo": -66.66666666666667,
+     "hi": 0.0,
+     "width": 66.66666666666667,
+     "accepted": 1388
+    }
+   },
+   "local_strata": {
+    "a": {
+     "lo": -77.77777777777779,
+     "hi": 22.22222222222222,
+     "accepted": 1997
+    },
+    "b": {
+     "lo": -66.66666666666667,
+     "hi": 0.0,
+     "accepted": 1390
+    }
+   },
+   "differs_for_a": true,
+   "note": "stratum a has no dead cells, yet its joint-mask bounds differ from its locally valid bounds because draws rejected in stratum b are removed from a as well"
+  },
+  "match": true
+ },
+ "F4": {
+  "declared": "filer stratum bounds differing from the replay by more than 0.0001: 422",
+  "reference": {
+   "operative_constant": 0.00011,
+   "row_wording": 0.0001,
+   "boundary": {
+    "0.00010": "accepted",
+    "0.00011": "accepted (<= constant)",
+    "0.000111": "refused (> constant)"
+   },
+   "pin": "the refusal predicate is |filer - replay| > 0.00011 per bound; the row's 'more than 0.0001' wording is looser than the constant and the constant governs; a filer bound off by 0.000105 is ACCEPTED, which the row wording would call refused"
+  },
+  "match": true
+ },
+ "F5": {
+  "declared": "supports",
+  "reference": "supports",
+  "match": true
+ },
+ "F6": {
+  "declared": "opposes",
+  "reference": "opposes",
+  "match": true
+ },
+ "F7": {
+  "declared": "unresolved",
+  "reference": "unresolved",
+  "match": true
+ },
+ "F8": {
+  "declared": "unresolved, pooled bound served reported-only",
+  "reference": "unresolved",
+  "match": true
+ },
+ "F8b": {
+  "declared": "opposes; the degenerate form does not erase it",
+  "reference": "opposes",
+  "match": true
+ },
+ "F8c": {
+  "declared": "UNRESOLVED (out of scope); generic stance and settlement receipt unchanged",
+  "reference": "unresolved",
+  "match": true
+ },
+ "F8d": {
+  "declared": "keyed: UNRESOLVED not supports (0.37.0 point would pass); without bound_reading: supports",
+  "reference": {
+   "keyed": "unresolved",
+   "unkeyed": "supports"
+  },
+  "match": true
+ },
+ "F8e": {
+  "declared": "mint against keyed contract without identity: rejected before inference",
+  "reference": "rejected before inference",
+  "match": true
+ },
+ "F9": {
+  "declared": "the 0.37.0 point reading, unchanged",
+  "reference": "supports",
+  "match": true
+ },
+ "F11": {
+  "declared": "confirmed generic-stance loss with lower bound above -5: veto state unchanged",
+  "reference": "generic stance and confirmed-loss veto are not read by either new rule; no code path in the reference touches them",
+  "match": true
+ },
+ "validation": {
+  "declared": "reject bound_reading on other metric / beside at_most / other value",
+  "reference": {
+   "other_metric": "rejected: bound_reading only on comprehension_accuracy_delta",
+   "beside_at_most": "rejected: bound_reading beside at_most",
+   "other_value": "rejected: unknown bound_reading value"
+  },
+  "match": true
+ }
+}

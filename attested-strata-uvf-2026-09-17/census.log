@@ -1,0 +1,163 @@
+rows 1370 props 273 pop {'computed_at': '2026-09-17T20:48:08Z', 'measurements': 1374, 'proposals': 273, 'digest_concat': '8e45671151f56a0636dddda33aba508bf4d79ea04fc812a1f9caffb7bb4df31c', 'digest_newline': 'ca6d679b1b4305ee9bc5c887608b6e034827e80df56e54cb1811acd691e6aad4'}
+manifests with settlement_analysis: 0 == attested-strata-v1: 0 | contracts with bound_reading: 0
+{
+ "interval_rule_pairs": 60,
+ "stratified_pairs_any_rule": 111,
+ "interval_rule_stratified_pairs": 53,
+ "cell_failed_pairs": 42,
+ "cell_pass_pairs": 30,
+ "legacy_strata_pairs": 58,
+ "attested_rows": 205,
+ "attested_stratified_rows": 137,
+ "rows_with_filer_stratum_bounds": 8,
+ "legacy_cad_at_least_contracts": 2,
+ "cad_at_least_list": [
+  [
+   "stop-s-finish-started-stop-s-interrupt-started-a-stop",
+   {
+    "metric": "comprehension_accuracy_delta",
+    "at_least": 0
+   }
+  ],
+  [
+   "action-resume-from-checkpoint-action-redo-from-start-retain",
+   {
+    "metric": "comprehension_accuracy_delta",
+    "at_least": 0
+   }
+  ]
+ ]
+}
+reusing cached widths for 205 rows; replaying 0 new
+positive control failures: []
+{
+ "stratum_intervals": 562,
+ "width_median": 29.166666666666668,
+ "width_q1": 0.0,
+ "width_q3": 49.34571061893044,
+ "width_min": 0.0,
+ "width_max": 166.66666666666669,
+ "zero_width": 154,
+ "by_items_per_stratum": {
+  "2": {
+   "n": 20,
+   "median_width": 0.0
+  },
+  "4": {
+   "n": 18,
+   "median_width": 0.0
+  },
+  "6": {
+   "n": 10,
+   "median_width": 0.0
+  },
+  "8": {
+   "n": 101,
+   "median_width": 37.5
+  },
+  "9": {
+   "n": 2,
+   "median_width": 53.57142857142857
+  },
+  "10": {
+   "n": 2,
+   "median_width": 79.36507936507937
+  },
+  "12": {
+   "n": 25,
+   "median_width": 51.470588235294116
+  },
+  "16": {
+   "n": 99,
+   "median_width": 44.11764705882353
+  },
+  "20": {
+   "n": 3,
+   "median_width": 49.03846153846154
+  },
+  "24": {
+   "n": 73,
+   "median_width": 40.84057971014493
+  },
+  "30": {
+   "n": 2,
+   "median_width": 9.999999999999998
+  },
+  "32": {
+   "n": 73,
+   "median_width": 33.16608916608917
+  },
+  "40": {
+   "n": 20,
+   "median_width": 20.838251751467865
+  },
+  "48": {
+   "n": 9,
+   "median_width": 28.000000000000004
+  },
+  "50": {
+   "n": 6,
+   "median_width": 17.217987306157173
+  },
+  "60": {
+   "n": 12,
+   "median_width": 27.919560989163656
+  },
+  "64": {
+   "n": 27,
+   "median_width": 28.295180141021934
+  },
+  "72": {
+   "n": 12,
+   "median_width": 31.386341698841704
+  },
+  "80": {
+   "n": 4,
+   "median_width": 10.182039073780624
+  },
+  "96": {
+   "n": 2,
+   "median_width": 3.57142857142857
+  },
+  "100": {
+   "n": 4,
+   "median_width": 11.936825885978429
+  },
+  "120": {
+   "n": 8,
+   "median_width": 15.65217353577966
+  },
+  "128": {
+   "n": 18,
+   "median_width": 17.188128780799353
+  },
+  "196": {
+   "n": 2,
+   "median_width": 19.796054930972787
+  },
+  "224": {
+   "n": 6,
+   "median_width": 10.830239546814255
+  },
+  "1120": {
+   "n": 4,
+   "median_width": 8.153588054174925
+  }
+ }
+}
+counterfactual-if-opted: Counter({'unresolved_degenerate_arm': 25, 'oppose': 24, 'agree': 4})
+  among currently cell-failed: Counter({'unresolved_degenerate_arm': 22, 'oppose': 11, 'agree': 4})
+{
+ "population_digest_newline": "ca6d679b1b4305ee9bc5c887608b6e034827e80df56e54cb1811acd691e6aad4",
+ "computed_at": "2026-09-17T20:48:08Z",
+ "measurements": 1370,
+ "proposals": 273,
+ "verdict_surfaces_counted": 3013,
+ "surfaces_before_sha256": "8d706f8fce420c52d9368d793b789ee2036cfab6ac5fb163d93cd10cbc8beb73",
+ "branch_selected_pairs": [],
+ "keyed_contracts": [],
+ "surfaces_after_sha256": "8d706f8fce420c52d9368d793b789ee2036cfab6ac5fb163d93cd10cbc8beb73",
+ "unclaimed_verdict_flips": 0,
+ "note": "The proposed branch runs only for pairs whose BOTH manifests declare settlement_analysis: attested-strata-v1 and the keyed reading only for contracts carrying bound_reading. With both selection sets empty on this frozen population, every counted verdict surface is byte-identical before and after by construction of the branch predicate; the count is the size of the symmetric difference, 0. This is the applicability projection, not a run of the candidate code."
+}
+CENSUS_DONE

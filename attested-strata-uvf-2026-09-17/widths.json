@@ -1,0 +1,7893 @@
+{
+ "13d19d90366a789667e34c859f06a12e25a48d910d217343d82ae0bd6d30a359": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "verdict-fail": {
+    "lo": -19.999999999999996,
+    "hi": -8.461538461538465,
+    "width": 11.538461538461531,
+    "accepted": 2000
+   },
+   "no-verdict": {
+    "lo": -4.754901960784319,
+    "hi": 6.323628151132265,
+    "width": 11.078530111916585,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "verdict-fail": {
+    "english": 1,
+    "ainglish": 0.8605,
+    "chance": 0.3333
+   },
+   "no-verdict": {
+    "english": 0.9449,
+    "ainglish": 0.9535,
+    "chance": 0.3333
+   }
+  }
+ },
+ "f5784305509da1a6523b94e1cbd04f06ef86bbdeb996ac44e20509d20eced72d": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "must-as-rule": {
+    "lo": -18.75,
+    "hi": 0.0,
+    "width": 18.75,
+    "accepted": 2000
+   },
+   "must-as-inference": {
+    "lo": -27.972027972027973,
+    "hi": 28.888888888888893,
+    "width": 56.860916860916866,
+    "accepted": 2000
+   }
+  },
+  "n_items": 24,
+  "arms_by_stratum": {
+   "must-as-rule": {
+    "english": 1,
+    "ainglish": 0.9375,
+    "chance": 0.25
+   },
+   "must-as-inference": {
+    "english": 0.3333,
+    "ainglish": 0.3333,
+    "chance": 0.25
+   }
+  }
+ },
+ "d79991ed252b5cc983f25a90338507aad13a0c7700b262327f55b4a30c7c4e8d": {
+  "pooled_match": true,
+  "accepted": 1504,
+  "strata": {
+   "mean-of": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1504
+   },
+   "median-of": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1504
+   }
+  },
+  "n_items": 8,
+  "arms_by_stratum": {
+   "mean-of": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "median-of": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   }
+  }
+ },
+ "fed36198b6df49c10017a79762832545640bcd170a56113a61e35c96edf730e5": {
+  "pooled_match": true,
+  "accepted": 1825,
+  "strata": null,
+  "n_items": 5,
+  "arms_by_stratum": {}
+ },
+ "ec5644488eb1074a4dd6e94981b7448e382bbb8e5a55ccbdea0ee0d9b4b7537d": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "same-one": {
+    "lo": -13.294232649071368,
+    "hi": 21.871921182266007,
+    "width": 35.166153831337375,
+    "accepted": 2000
+   },
+   "same-kind": {
+    "lo": 38.03921568627452,
+    "hi": 76.92307692307693,
+    "width": 38.88386123680242,
+    "accepted": 2000
+   },
+   "same-name": {
+    "lo": 5.705705705705705,
+    "hi": 38.871794871794876,
+    "width": 33.16608916608917,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "same-one": {
+    "english": 0.8571,
+    "ainglish": 0.8966,
+    "chance": 0.3333
+   },
+   "same-kind": {
+    "english": 0.1071,
+    "ainglish": 0.6944,
+    "chance": 0.3333
+   },
+   "same-name": {
+    "english": 0.0571,
+    "ainglish": 0.2759,
+    "chance": 0.3333
+   }
+  }
+ },
+ "d02307a5970cab77985aca852f41938a119b0a5e5f0882ac438dfd2ef54531cc": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "no-delegation": {
+    "lo": -12.060918693195767,
+    "hi": 4.549618320610693,
+    "width": 16.61053701380646,
+    "accepted": 2000
+   },
+   "one-hop-delegation-allowed": {
+    "lo": -12.785556374355188,
+    "hi": 2.103907256333193,
+    "width": 14.88946363068838,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "no-delegation": {
+    "english": 0.8943,
+    "ainglish": 0.8571,
+    "chance": 0.125
+   },
+   "one-hop-delegation-allowed": {
+    "english": 0.9024,
+    "ainglish": 0.8496,
+    "chance": 0.125
+   }
+  }
+ },
+ "4a0b90c7a6eeac6f4443c003b07ba604df38eff1c1a8e4c16d4d1a4720519c69": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 60,
+  "arms_by_stratum": {}
+ },
+ "6a1b5a27b23957c2830f718974c5fcc5533701161d8b482a93bc1eaeb16f210b": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "fact-not-known": {
+    "lo": -25.0,
+    "hi": -12.781954887218049,
+    "width": 12.218045112781951,
+    "accepted": 2000
+   },
+   "choice-not-made": {
+    "lo": -41.37341153470186,
+    "hi": -21.068702290076335,
+    "width": 20.304709244625524,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "fact-not-known": {
+    "english": 1,
+    "ainglish": 0.811,
+    "chance": 0.1667
+   },
+   "choice-not-made": {
+    "english": 0.6822,
+    "ainglish": 0.3701,
+    "chance": 0.1667
+   }
+  }
+ },
+ "ba2012c19c2745f13566e9f9d40f53e82abe4ad8328bb15b78e0909a61436ac6": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "no-charge": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "available-now": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "no-charge": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "available-now": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "031ef2276aca94b619fb876bfbfd77a75e394bf245c7cd501761d343304d66c7": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": -46.27450980392157,
+    "hi": 2.3809523809523725,
+    "width": 48.65546218487394,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -15.789473684210531,
+    "hi": 44.44444444444444,
+    "width": 60.23391812865498,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.8824,
+    "ainglish": 0.6667,
+    "chance": 0.5
+   },
+   "likeliest-outcome": {
+    "english": 0.6875,
+    "ainglish": 0.8125,
+    "chance": 0.5
+   }
+  }
+ },
+ "9772616720eb54968d2b81503c3c8116b99b552f7252861ad7034c7e1a357010": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "extra-retries": {
+    "lo": -56.00000000000001,
+    "hi": -17.24137931034483,
+    "width": 38.758620689655174,
+    "accepted": 2000
+   },
+   "total-attempts": {
+    "lo": -87.5,
+    "hi": -62.7906976744186,
+    "width": 24.709302325581397,
+    "accepted": 2000
+   }
+  },
+  "n_items": 64,
+  "arms_by_stratum": {
+   "extra-retries": {
+    "english": 1,
+    "ainglish": 0.6429,
+    "chance": 0.25
+   },
+   "total-attempts": {
+    "english": 1,
+    "ainglish": 0.25,
+    "chance": 0.25
+   }
+  }
+ },
+ "80c13a53f04453b995d7c6dae773a4341acf4f7423aca305ae592d3eb7a4db6b": {
+  "pooled_match": true,
+  "accepted": 1403,
+  "strata": null,
+  "n_items": 4,
+  "arms_by_stratum": {}
+ },
+ "cb682d32caed72afbdec0bed67f99982d65811156de9f2f757056162f0be4a02": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 160,
+  "arms_by_stratum": {}
+ },
+ "4dd94d85b0787623d6f19e4031269216c881a388dee84fd260b3aaff8c6fd7c6": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 160,
+  "arms_by_stratum": {}
+ },
+ "352387aeea09af369100e700a37a85ee158a977dc31012ac693e719642f8ed8a": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "parallel": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "sequence": {
+    "lo": -54.23728813559322,
+    "hi": -36.36363636363637,
+    "width": 17.87365177195685,
+    "accepted": 2000
+   }
+  },
+  "n_items": 200,
+  "arms_by_stratum": {
+   "parallel": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "sequence": {
+    "english": 1,
+    "ainglish": 0.5446,
+    "chance": 0.3333
+   }
+  }
+ },
+ "277e69a28f0910a6625121bad767dd64c3870f27d94e8769fd11d85afcd1a8c4": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "by-construction": {
+    "lo": -61.211057481351475,
+    "hi": -29.830655666521928,
+    "width": 31.380401814829547,
+    "accepted": 2000
+   },
+   "by-rule": {
+    "lo": -45.72297003907946,
+    "hi": 0.39215686274509665,
+    "width": 46.11512690182456,
+    "accepted": 2000
+   },
+   "in-practice": {
+    "lo": -68.18181818181819,
+    "hi": -41.30434782608695,
+    "width": 26.877470355731234,
+    "accepted": 2000
+   }
+  },
+  "n_items": 144,
+  "arms_by_stratum": {
+   "by-construction": {
+    "english": 0.6304,
+    "ainglish": 0.18,
+    "chance": 0.1667
+   },
+   "by-rule": {
+    "english": 0.58,
+    "ainglish": 0.3478,
+    "chance": 0.1667
+   },
+   "in-practice": {
+    "english": 1,
+    "ainglish": 0.4583,
+    "chance": 0.1667
+   }
+  }
+ },
+ "8bd05be90d581b895ef422fbf52b0e786d1326151c956bc243df2ef3ce64041f": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "subject-intended": {
+    "lo": -16.666666666666664,
+    "hi": 50.0,
+    "width": 66.66666666666666,
+    "accepted": 2000
+   },
+   "subject-orthogonal": {
+    "lo": 0.0,
+    "hi": 12.5,
+    "width": 12.5,
+    "accepted": 2000
+   },
+   "verb-intended": {
+    "lo": -8.333333333333337,
+    "hi": 37.5,
+    "width": 45.833333333333336,
+    "accepted": 2000
+   },
+   "verb-orthogonal": {
+    "lo": -33.333333333333336,
+    "hi": 4.1666666666666625,
+    "width": 37.5,
+    "accepted": 2000
+   },
+   "nominal-intended": {
+    "lo": 8.333333333333325,
+    "hi": 58.33333333333333,
+    "width": 50.0,
+    "accepted": 2000
+   },
+   "nominal-orthogonal": {
+    "lo": 0.0,
+    "hi": 12.5,
+    "width": 12.5,
+    "accepted": 2000
+   },
+   "adjunct-intended": {
+    "lo": -83.33333333333334,
+    "hi": -45.833333333333336,
+    "width": 37.50000000000001,
+    "accepted": 2000
+   },
+   "adjunct-orthogonal": {
+    "lo": -16.666666666666664,
+    "hi": 25.0,
+    "width": 41.666666666666664,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "subject-intended": {
+    "english": 0.5417,
+    "ainglish": 0.7083,
+    "chance": 0.3333
+   },
+   "subject-orthogonal": {
+    "english": 0.9583,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "verb-intended": {
+    "english": 0.5,
+    "ainglish": 0.625,
+    "chance": 0.3333
+   },
+   "verb-orthogonal": {
+    "english": 0.9583,
+    "ainglish": 0.7917,
+    "chance": 0.3333
+   },
+   "nominal-intended": {
+    "english": 0.5,
+    "ainglish": 0.8333,
+    "chance": 0.3333
+   },
+   "nominal-orthogonal": {
+    "english": 0.9167,
+    "ainglish": 0.9583,
+    "chance": 0.3333
+   },
+   "adjunct-intended": {
+    "english": 0.9583,
+    "ainglish": 0.2917,
+    "chance": 0.3333
+   },
+   "adjunct-orthogonal": {
+    "english": 0.75,
+    "ainglish": 0.7917,
+    "chance": 0.3333
+   }
+  }
+ },
+ "08e0abb2caf9f0e28c951a2a89527a52731bc9cc469544ecef979472a46cebb6": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "set-to:known": {
+    "lo": -82.35294117647058,
+    "hi": -26.274509803921564,
+    "width": 56.07843137254902,
+    "accepted": 2000
+   },
+   "adjust-by:known": {
+    "lo": -25.0,
+    "hi": 0.0,
+    "width": 25.0,
+    "accepted": 2000
+   },
+   "set-to:unknown": {
+    "lo": -38.888888888888886,
+    "hi": 6.666666666666665,
+    "width": 45.55555555555555,
+    "accepted": 2000
+   },
+   "adjust-by:unknown": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "set-to:ordered": {
+    "lo": -80.15873015873017,
+    "hi": -21.457489878542514,
+    "width": 58.70124028018765,
+    "accepted": 2000
+   },
+   "adjust-by:ordered": {
+    "lo": -40.48582995951417,
+    "hi": 17.272727272727273,
+    "width": 57.758557232241444,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "set-to:known": {
+    "english": 0.875,
+    "ainglish": 0.3125,
+    "chance": 0.25
+   },
+   "adjust-by:known": {
+    "english": 1,
+    "ainglish": 0.9286,
+    "chance": 0.25
+   },
+   "set-to:unknown": {
+    "english": 0.9286,
+    "ainglish": 0.7778,
+    "chance": 0.25
+   },
+   "adjust-by:unknown": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "set-to:ordered": {
+    "english": 0.8,
+    "ainglish": 0.2941,
+    "chance": 0.25
+   },
+   "adjust-by:ordered": {
+    "english": 0.7333,
+    "ainglish": 0.5882,
+    "chance": 0.25
+   }
+  }
+ },
+ "94aab0bbaca635d24d1386da4921b00da62f78c68033ed335fcfd47a26f5abe5": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 60,
+  "arms_by_stratum": {}
+ },
+ "160593e52d23be44804906f07dd7c732756e20452f85747f162afd1fc84c0975": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "dispatched": {
+    "lo": -9.523809523809524,
+    "hi": 45.748987854251006,
+    "width": 55.27279737806053,
+    "accepted": 2000
+   },
+   "delivered": {
+    "lo": -88.23529411764706,
+    "hi": -45.45454545454546,
+    "width": 42.7807486631016,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "dispatched": {
+    "english": 0.625,
+    "ainglish": 0.8125,
+    "chance": 0.25
+   },
+   "delivered": {
+    "english": 1,
+    "ainglish": 0.3125,
+    "chance": 0.25
+   }
+  }
+ },
+ "99e6c801731432db0a7a0e4d71fdae43d4899015cf94f0059f64ff3f078cfeb1": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "per-clock": {
+    "lo": -15.702075702075707,
+    "hi": 17.857142857142854,
+    "width": 33.559218559218564,
+    "accepted": 2000
+   },
+   "per-any": {
+    "lo": -9.909469048201613,
+    "hi": 27.429149797570844,
+    "width": 37.33861884577246,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "per-clock": {
+    "english": 0.4407,
+    "ainglish": 0.4493,
+    "chance": 0.3333
+   },
+   "per-any": {
+    "english": 0.4247,
+    "ainglish": 0.5091,
+    "chance": 0.3333
+   }
+  }
+ },
+ "82b711bc06f2a7d775b53b48a4ca02526ddf91843bbb09c0e5e1efc4f8096158": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 100,
+  "arms_by_stratum": {}
+ },
+ "79ab95f6f373cac289fddcbeea9700b253ccdf073af3a6e866eac401b9968487": {
+  "pooled_match": true,
+  "accepted": 1311,
+  "strata": {
+   "stable-causal": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1311
+   },
+   "stable-coincident": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1311
+   },
+   "oscillating": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1311
+   },
+   "nonexecutable-gloss": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1311
+   },
+   "instrument-not-run": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1311
+   },
+   "wrong-claim": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1311
+   }
+  },
+  "n_items": 48,
+  "arms_by_stratum": {
+   "stable-causal": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "stable-coincident": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "oscillating": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "nonexecutable-gloss": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "instrument-not-run": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "wrong-claim": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "b1b85296b22cfdde273acec2cc1372efd921fe1dd3aa541469cb9017626ead70": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "subject-intended": {
+    "lo": -14.28571428571429,
+    "hi": 0.0,
+    "width": 14.28571428571429,
+    "accepted": 2000
+   },
+   "subject-orthogonal": {
+    "lo": -17.604355716878406,
+    "hi": 11.111111111111116,
+    "width": 28.715466827989523,
+    "accepted": 2000
+   },
+   "verb-intended": {
+    "lo": -38.11188811188811,
+    "hi": 7.130434782608697,
+    "width": 45.24232289449681,
+    "accepted": 2000
+   },
+   "verb-orthogonal": {
+    "lo": -4.895104895104896,
+    "hi": 42.14285714285714,
+    "width": 47.03796203796203,
+    "accepted": 2000
+   },
+   "nominal-intended": {
+    "lo": -11.111111111111116,
+    "hi": 0.0,
+    "width": 11.111111111111116,
+    "accepted": 2000
+   },
+   "nominal-orthogonal": {
+    "lo": 0.0,
+    "hi": 19.047619047619047,
+    "width": 19.047619047619047,
+    "accepted": 2000
+   },
+   "adjunct-intended": {
+    "lo": -29.02097902097902,
+    "hi": 32.14285714285714,
+    "width": 61.16383616383616,
+    "accepted": 2000
+   },
+   "adjunct-orthogonal": {
+    "lo": -29.166666666666668,
+    "hi": 37.38656987295826,
+    "width": 66.55323653962493,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "subject-intended": {
+    "english": 1,
+    "ainglish": 0.9583,
+    "chance": 0.3333
+   },
+   "subject-orthogonal": {
+    "english": 0.9565,
+    "ainglish": 0.92,
+    "chance": 0.3333
+   },
+   "verb-intended": {
+    "english": 0.5833,
+    "ainglish": 0.4167,
+    "chance": 0.3333
+   },
+   "verb-orthogonal": {
+    "english": 0.1905,
+    "ainglish": 0.3704,
+    "chance": 0.3333
+   },
+   "nominal-intended": {
+    "english": 1,
+    "ainglish": 0.9643,
+    "chance": 0.3333
+   },
+   "nominal-orthogonal": {
+    "english": 0.9444,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "adjunct-intended": {
+    "english": 0.55,
+    "ainglish": 0.5714,
+    "chance": 0.3333
+   },
+   "adjunct-orthogonal": {
+    "english": 0.4643,
+    "ainglish": 0.5,
+    "chance": 0.3333
+   }
+  }
+ },
+ "93c8fbd86344bc3753e56d4e76be4bda7cb37c0c4cb72210c8257e247431a252": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "extra-retries": {
+    "lo": -62.5,
+    "hi": -12.5,
+    "width": 50.0,
+    "accepted": 2000
+   },
+   "total-attempts": {
+    "lo": -81.25,
+    "hi": -37.5,
+    "width": 43.75,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "extra-retries": {
+    "english": 1,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "total-attempts": {
+    "english": 1,
+    "ainglish": 0.375,
+    "chance": 0.25
+   }
+  }
+ },
+ "a2427de72a591043e4f1036a88676d66f09b4501524ae958616b61031ab53c68": {
+  "pooled_match": true,
+  "accepted": 1977,
+  "strata": null,
+  "n_items": 8,
+  "arms_by_stratum": {}
+ },
+ "fa2b44363b1f6dbf6bf578387a551ec3790517e319bef8241c08234a2439f896": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "pair-by-order": {
+    "lo": -29.655172413793107,
+    "hi": 4.251012145748989,
+    "width": 33.9061845595421,
+    "accepted": 2000
+   },
+   "every-combination": {
+    "lo": -31.707317073170728,
+    "hi": -3.4482758620689613,
+    "width": 28.259041211101767,
+    "accepted": 2000
+   }
+  },
+  "n_items": 64,
+  "arms_by_stratum": {
+   "pair-by-order": {
+    "english": 0.875,
+    "ainglish": 0.75,
+    "chance": 0.25
+   },
+   "every-combination": {
+    "english": 1,
+    "ainglish": 0.8333,
+    "chance": 0.25
+   }
+  }
+ },
+ "fa10a69200a49d993f82da7871741b4c3bb3cf6e32cd090322cb3a39f3f0f50d": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "must-as-rule": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "must-as-inference": {
+    "lo": -64.71163245356794,
+    "hi": -30.3921568627451,
+    "width": 34.31947559082285,
+    "accepted": 2000
+   }
+  },
+  "n_items": 64,
+  "arms_by_stratum": {
+   "must-as-rule": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "must-as-inference": {
+    "english": 0.9355,
+    "ainglish": 0.4545,
+    "chance": 0.25
+   }
+  }
+ },
+ "acf09cd6e0565044712929be4ecc9fed599f0064a2e7aedb236d243125757777": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "increase": {
+    "lo": -13.636363636363635,
+    "hi": 52.156862745098046,
+    "width": 65.79322638146168,
+    "accepted": 2000
+   },
+   "decrease": {
+    "lo": -41.666666666666664,
+    "hi": 0.0,
+    "width": 41.666666666666664,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "increase": {
+    "english": 0.5,
+    "ainglish": 0.7143,
+    "chance": 0.25
+   },
+   "decrease": {
+    "english": 1,
+    "ainglish": 0.8,
+    "chance": 0.25
+   }
+  }
+ },
+ "94a8c06e4879dd143acda377a44c669dbf5d405ffc651a75436cb04ff3c745f9": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 160,
+  "arms_by_stratum": {}
+ },
+ "a6015e69255426f56e9315bf0e27d5ef4b0f0ad6975e4a0ace23e2fb90a2463c": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "borrow:named": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "borrow:unnamed": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "lend:named": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "lend:unnamed": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "borrow:named": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "borrow:unnamed": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "lend:named": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "lend:unnamed": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   }
+  }
+ },
+ "661e6e54c2ac0a2a40d48690b4b1534ba90e3c1f076778f4abc13602667edad6": {
+  "pooled_match": true,
+  "accepted": 1955,
+  "strata": null,
+  "n_items": 8,
+  "arms_by_stratum": {}
+ },
+ "dfbe63f7a7ccadbbc80af2e285db698c44f8c17a0cc0bd2be0d3c91d04bdb009": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 48,
+  "arms_by_stratum": {}
+ },
+ "ea668628a7c21cd4fa82f2b2fa7a1eaa6d9d63fb4a17bb7a3d128cee5e5cfdd4": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "clock-rule": {
+    "lo": -17.61133603238867,
+    "hi": 22.857142857142854,
+    "width": 40.468478889531525,
+    "accepted": 2000
+   },
+   "any-rule": {
+    "lo": -29.912023460410552,
+    "hi": 11.011011011011018,
+    "width": 40.92303447142157,
+    "accepted": 2000
+   },
+   "clock-counter": {
+    "lo": -28.431372549019606,
+    "hi": 15.589743589743588,
+    "width": 44.02111613876319,
+    "accepted": 2000
+   },
+   "any-counter": {
+    "lo": -8.993157380254157,
+    "hi": 32.9064039408867,
+    "width": 41.89956132114085,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "clock-rule": {
+    "english": 0.7879,
+    "ainglish": 0.8065,
+    "chance": 0.3333
+   },
+   "any-rule": {
+    "english": 0.7333,
+    "ainglish": 0.6471,
+    "chance": 0.3333
+   },
+   "clock-counter": {
+    "english": 0.5806,
+    "ainglish": 0.5152,
+    "chance": 0.3333
+   },
+   "any-counter": {
+    "english": 0.4194,
+    "ainglish": 0.5455,
+    "chance": 0.3333
+   }
+  }
+ },
+ "9dc1846c58dfd75384c4d08b9852a80e4dc27d3d74cf0cf56c39014de9f7331a": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 160,
+  "arms_by_stratum": {}
+ },
+ "561b22eaa660d6255829baadfaa231362518f3190869b7a831a209605c77e04a": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "among-others": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "and-no-others": {
+    "lo": -35.08771929824561,
+    "hi": -17.55244755244756,
+    "width": 17.53527174579805,
+    "accepted": 2000
+   }
+  },
+  "n_items": 240,
+  "arms_by_stratum": {
+   "among-others": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "and-no-others": {
+    "english": 0.9913,
+    "ainglish": 0.728,
+    "chance": 0.3333
+   }
+  }
+ },
+ "94c5ced1101b691c52138e67668bfeb5973d2fcb0d3bc69744c7f4d23d4e6337": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "value-unknown": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "value-none": {
+    "lo": -21.888680425265793,
+    "hi": 17.13554987212276,
+    "width": 39.024230297388556,
+    "accepted": 2000
+   },
+   "value-redacted": {
+    "lo": -60.86956521739131,
+    "hi": -25.0,
+    "width": 35.86956521739131,
+    "accepted": 2000
+   },
+   "value-inapplicable": {
+    "lo": -52.49999999999999,
+    "hi": -26.39149468417761,
+    "width": 26.108505315822384,
+    "accepted": 2000
+   }
+  },
+  "n_items": 160,
+  "arms_by_stratum": {
+   "value-unknown": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "value-none": {
+    "english": 0.7,
+    "ainglish": 0.675,
+    "chance": 0.25
+   },
+   "value-redacted": {
+    "english": 1,
+    "ainglish": 0.575,
+    "chance": 0.25
+   },
+   "value-inapplicable": {
+    "english": 0.925,
+    "ainglish": 0.525,
+    "chance": 0.25
+   }
+  }
+ },
+ "a1f6acbd5034d83cc6919f986a6de158fc26607e6693d4e727021bffce5b468c": {
+  "pooled_match": true,
+  "accepted": 1293,
+  "strata": {
+   "no-charge": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1293
+   },
+   "available-now": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1293
+   }
+  },
+  "n_items": 12,
+  "arms_by_stratum": {
+   "no-charge": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "available-now": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "b54cf1ccc054419876e2b94d0b47a45efba0c6f3b0bbf0f266f8ef804ab19e5f": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "next-up": {
+    "lo": -7.14285714285714,
+    "hi": 0.0,
+    "width": 7.14285714285714,
+    "accepted": 2000
+   },
+   "next-week": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "next-up": {
+    "english": 1,
+    "ainglish": 0.9792,
+    "chance": 0.25
+   },
+   "next-week": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "23ff7e2b8f09567db668a4fe852d58c82a97da0afd4536f6e18a583795abe860": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "subject-intended": {
+    "lo": 66.26086956521739,
+    "hi": 96.15384615384616,
+    "width": 29.89297658862877,
+    "accepted": 2000
+   },
+   "subject-orthogonal": {
+    "lo": -15.034965034965042,
+    "hi": 17.05989110707804,
+    "width": 32.094856142043085,
+    "accepted": 2000
+   },
+   "verb-intended": {
+    "lo": -45.91304347826086,
+    "hi": -2.8571428571428523,
+    "width": 43.055900621118006,
+    "accepted": 2000
+   },
+   "verb-orthogonal": {
+    "lo": -11.385199240986719,
+    "hi": 41.60839160839161,
+    "width": 52.99359084937832,
+    "accepted": 2000
+   },
+   "nominal-intended": {
+    "lo": -31.57894736842105,
+    "hi": 0.0,
+    "width": 31.57894736842105,
+    "accepted": 2000
+   },
+   "nominal-orthogonal": {
+    "lo": 0.0,
+    "hi": 14.28571428571429,
+    "width": 14.28571428571429,
+    "accepted": 2000
+   },
+   "adjunct-intended": {
+    "lo": -50.664136622390885,
+    "hi": 3.57142857142857,
+    "width": 54.235565193819454,
+    "accepted": 2000
+   },
+   "adjunct-orthogonal": {
+    "lo": -40.98671726755217,
+    "hi": 16.783216783216776,
+    "width": 57.76993405076895,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "subject-intended": {
+    "english": 0.0833,
+    "ainglish": 0.9167,
+    "chance": 0.3333
+   },
+   "subject-orthogonal": {
+    "english": 0.8889,
+    "ainglish": 0.9048,
+    "chance": 0.3333
+   },
+   "verb-intended": {
+    "english": 0.6087,
+    "ainglish": 0.36,
+    "chance": 0.3333
+   },
+   "verb-orthogonal": {
+    "english": 0.1852,
+    "ainglish": 0.3333,
+    "chance": 0.3333
+   },
+   "nominal-intended": {
+    "english": 1,
+    "ainglish": 0.8636,
+    "chance": 0.3333
+   },
+   "nominal-orthogonal": {
+    "english": 0.9524,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "adjunct-intended": {
+    "english": 0.6364,
+    "ainglish": 0.3846,
+    "chance": 0.3333
+   },
+   "adjunct-orthogonal": {
+    "english": 0.5789,
+    "ainglish": 0.4483,
+    "chance": 0.3333
+   }
+  }
+ },
+ "be64416163569278abb5f38ce50e20cc01c38ad964fa6b1cdd06fba7c771b2e6": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "none-of": {
+    "lo": -9.375,
+    "hi": -1.6129032258064502,
+    "width": 7.76209677419355,
+    "accepted": 2000
+   },
+   "not-all-of": {
+    "lo": -45.55335968379447,
+    "hi": -25.24720893141945,
+    "width": 20.306150752375018,
+    "accepted": 2000
+   }
+  },
+  "n_items": 448,
+  "arms_by_stratum": {
+   "none-of": {
+    "english": 1,
+    "ainglish": 0.95,
+    "chance": 0.2
+   },
+   "not-all-of": {
+    "english": 0.968,
+    "ainglish": 0.6162,
+    "chance": 0.2
+   }
+  }
+ },
+ "4c90793b0dac00fb8ac214057ade4e5f80552cf484dad1829ed239331e9b1586": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "cause-question-careful": {
+    "lo": -36.58536585365854,
+    "hi": -13.513513513513509,
+    "width": 23.07185234014503,
+    "accepted": 2000
+   },
+   "cause-question-bare": {
+    "lo": -19.999999999999996,
+    "hi": -2.2222222222222254,
+    "width": 17.77777777777777,
+    "accepted": 2000
+   },
+   "justification-question-careful": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "justification-question-bare": {
+    "lo": -29.52380952380953,
+    "hi": 5.454545454545457,
+    "width": 34.978354978354986,
+    "accepted": 2000
+   }
+  },
+  "n_items": 160,
+  "arms_by_stratum": {
+   "cause-question-careful": {
+    "english": 1,
+    "ainglish": 0.7561,
+    "chance": 0.25
+   },
+   "cause-question-bare": {
+    "english": 1,
+    "ainglish": 0.9024,
+    "chance": 0.25
+   },
+   "justification-question-careful": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "justification-question-bare": {
+    "english": 0.8333,
+    "ainglish": 0.7105,
+    "chance": 0.25
+   }
+  }
+ },
+ "48eb9efde1b65dc3d0ecb7af5f5bf0ed6260659b0e323592bc2394d5b6b5cb37": {
+  "pooled_match": true,
+  "accepted": 1990,
+  "strata": null,
+  "n_items": 11,
+  "arms_by_stratum": {}
+ },
+ "740d5cb47a3d563da9ca887feb5c3525bbf97b5024dc67d1e40ee1ad00fc5403": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 192,
+  "arms_by_stratum": {}
+ },
+ "e243d2cce4d00102f988d8f83d57708b5d3a26b62fb802de6a55ee8a8e619731": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 128,
+  "arms_by_stratum": {}
+ },
+ "03604fc182efb10175bb4598b1cff40fd606708e7a0fb8aba66e94800af92d43": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "none-of": {
+    "lo": -46.594348415115725,
+    "hi": -39.25062282012954,
+    "width": 7.343725594986182,
+    "accepted": 2000
+   },
+   "not-all-of": {
+    "lo": -29.60043507418828,
+    "hi": -23.866807929534385,
+    "width": 5.7336271446538944,
+    "accepted": 2000
+   }
+  },
+  "n_items": 2240,
+  "arms_by_stratum": {
+   "none-of": {
+    "english": 0.7818,
+    "ainglish": 0.3528,
+    "chance": 0.5
+   },
+   "not-all-of": {
+    "english": 0.9649,
+    "ainglish": 0.6977,
+    "chance": 0.5
+   }
+  }
+ },
+ "47db07e886e33604fe1aa84cebc24f33667b7bcd7c0a44be65d064271b3f45e8": {
+  "pooled_match": true,
+  "accepted": 1186,
+  "strata": {
+   "increase": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1186
+   },
+   "decrease": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1186
+   }
+  },
+  "n_items": 12,
+  "arms_by_stratum": {
+   "increase": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "decrease": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "3e28fafdfb6c04ab0f02b123b1be2bd8d5b540bbd4cb716f684645390cc8287e": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "re:aff": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "re:neg": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "re:pq": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "re:dir": {
+    "lo": -33.333333333333336,
+    "hi": 0.0,
+    "width": 33.333333333333336,
+    "accepted": 2000
+   },
+   "rs:aff": {
+    "lo": -19.999999999999996,
+    "hi": 0.0,
+    "width": 19.999999999999996,
+    "accepted": 2000
+   },
+   "rs:neg": {
+    "lo": -36.8421052631579,
+    "hi": 0.0,
+    "width": 36.8421052631579,
+    "accepted": 2000
+   },
+   "rs:pq": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "rs:dir": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "re:aff": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "re:neg": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "re:pq": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "re:dir": {
+    "english": 1,
+    "ainglish": 0.875,
+    "chance": 0.25
+   },
+   "rs:aff": {
+    "english": 1,
+    "ainglish": 0.9412,
+    "chance": 0.25
+   },
+   "rs:neg": {
+    "english": 1,
+    "ainglish": 0.8235,
+    "chance": 0.25
+   },
+   "rs:pq": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "rs:dir": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "09cd9ef348ca0fef9d0a63e4362dbbe75765fc94237d05915b40b1c58e1664a8": {
+  "pooled_match": true,
+  "accepted": 1999,
+  "strata": {
+   "grant-live-view-1": {
+    "lo": -76.47058823529412,
+    "hi": -25.0,
+    "width": 51.470588235294116,
+    "accepted": 1999
+   },
+   "grant-live-view-2": {
+    "lo": -73.6842105263158,
+    "hi": -19.999999999999996,
+    "width": 53.684210526315795,
+    "accepted": 1999
+   },
+   "grant-live-view-3": {
+    "lo": -90.0,
+    "hi": -27.27272727272727,
+    "width": 62.727272727272734,
+    "accepted": 1999
+   },
+   "grant-live-view-4": {
+    "lo": -72.72727272727273,
+    "hi": -9.999999999999998,
+    "width": 62.727272727272734,
+    "accepted": 1999
+   },
+   "grant-live-view-5": {
+    "lo": -86.66666666666667,
+    "hi": -33.333333333333336,
+    "width": 53.333333333333336,
+    "accepted": 1999
+   },
+   "grant-live-view-6": {
+    "lo": -90.0,
+    "hi": -25.0,
+    "width": 65.0,
+    "accepted": 1999
+   },
+   "send-snapshot-1": {
+    "lo": -25.0,
+    "hi": 0.0,
+    "width": 25.0,
+    "accepted": 1999
+   },
+   "send-snapshot-2": {
+    "lo": -18.75,
+    "hi": 0.0,
+    "width": 18.75,
+    "accepted": 1999
+   },
+   "send-snapshot-3": {
+    "lo": -50.0,
+    "hi": 0.0,
+    "width": 50.0,
+    "accepted": 1999
+   },
+   "send-snapshot-4": {
+    "lo": 0.0,
+    "hi": 25.0,
+    "width": 25.0,
+    "accepted": 1999
+   },
+   "send-snapshot-5": {
+    "lo": -15.789473684210531,
+    "hi": 50.0,
+    "width": 65.78947368421053,
+    "accepted": 1999
+   },
+   "send-snapshot-6": {
+    "lo": -22.22222222222222,
+    "hi": 23.076923076923073,
+    "width": 45.299145299145295,
+    "accepted": 1999
+   }
+  },
+  "n_items": 144,
+  "arms_by_stratum": {
+   "grant-live-view-1": {
+    "english": 1,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "grant-live-view-2": {
+    "english": 1,
+    "ainglish": 0.5294,
+    "chance": 0.25
+   },
+   "grant-live-view-3": {
+    "english": 1,
+    "ainglish": 0.4167,
+    "chance": 0.25
+   },
+   "grant-live-view-4": {
+    "english": 1,
+    "ainglish": 0.5833,
+    "chance": 0.25
+   },
+   "grant-live-view-5": {
+    "english": 1,
+    "ainglish": 0.4,
+    "chance": 0.25
+   },
+   "grant-live-view-6": {
+    "english": 1,
+    "ainglish": 0.4,
+    "chance": 0.25
+   },
+   "send-snapshot-1": {
+    "english": 1,
+    "ainglish": 0.9091,
+    "chance": 0.25
+   },
+   "send-snapshot-2": {
+    "english": 1,
+    "ainglish": 0.9375,
+    "chance": 0.25
+   },
+   "send-snapshot-3": {
+    "english": 1,
+    "ainglish": 0.7857,
+    "chance": 0.25
+   },
+   "send-snapshot-4": {
+    "english": 0.9231,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "send-snapshot-5": {
+    "english": 0.8333,
+    "ainglish": 0.9444,
+    "chance": 0.25
+   },
+   "send-snapshot-6": {
+    "english": 0.9167,
+    "ainglish": 0.9167,
+    "chance": 0.25
+   }
+  }
+ },
+ "30e61aaadeac6a69dbf7d37cec6385e6bad1a4c07d75b2c2c08ccbac0497aef6": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "same-for-all:admissibility": {
+    "lo": -41.17647058823529,
+    "hi": 10.526315789473683,
+    "width": 51.702786377708975,
+    "accepted": 2000
+   },
+   "may-vary-across:admissibility": {
+    "lo": -33.816425120772955,
+    "hi": 37.5,
+    "width": 71.31642512077295,
+    "accepted": 2000
+   },
+   "same-for-all:feasibility": {
+    "lo": 18.75,
+    "hi": 48.582995951417,
+    "width": 29.832995951416997,
+    "accepted": 2000
+   },
+   "may-vary-across:feasibility": {
+    "lo": 0.0,
+    "hi": 57.14285714285714,
+    "width": 57.14285714285714,
+    "accepted": 2000
+   },
+   "same-for-all:consequence": {
+    "lo": -80.95238095238095,
+    "hi": -16.666666666666664,
+    "width": 64.28571428571428,
+    "accepted": 2000
+   },
+   "may-vary-across:consequence": {
+    "lo": -29.01960784313725,
+    "hi": 33.33333333333333,
+    "width": 62.35294117647058,
+    "accepted": 2000
+   },
+   "same-for-all:capacity": {
+    "lo": -25.0,
+    "hi": 33.19838056680161,
+    "width": 58.19838056680161,
+    "accepted": 2000
+   },
+   "may-vary-across:capacity": {
+    "lo": -8.730158730158733,
+    "hi": 50.20242914979758,
+    "width": 58.932587879956316,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "same-for-all:admissibility": {
+    "english": 0.9412,
+    "ainglish": 0.8,
+    "chance": 0.5
+   },
+   "may-vary-across:admissibility": {
+    "english": 0.6471,
+    "ainglish": 0.6667,
+    "chance": 0.5
+   },
+   "same-for-all:feasibility": {
+    "english": 0.5882,
+    "ainglish": 0.9333,
+    "chance": 0.5
+   },
+   "may-vary-across:feasibility": {
+    "english": 0.7333,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "same-for-all:consequence": {
+    "english": 0.7368,
+    "ainglish": 0.2308,
+    "chance": 0.5
+   },
+   "may-vary-across:consequence": {
+    "english": 0.6471,
+    "ainglish": 0.6667,
+    "chance": 0.5
+   },
+   "same-for-all:capacity": {
+    "english": 0.7333,
+    "ainglish": 0.7647,
+    "chance": 0.5
+   },
+   "may-vary-across:capacity": {
+    "english": 0.5333,
+    "ainglish": 0.7647,
+    "chance": 0.5
+   }
+  }
+ },
+ "f270857d598a65b32d12b172773219e48e5c71950dc0dd4940f8bfddd081b4ee": {
+  "pooled_match": true,
+  "accepted": 1782,
+  "strata": {
+   "prob:payout": {
+    "lo": -8.333333333333337,
+    "hi": 75.0,
+    "width": 83.33333333333334,
+    "accepted": 1782
+   },
+   "prob:calibration": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1782
+   },
+   "prob:frequency": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1782
+   },
+   "prob:causation": {
+    "lo": -60.0,
+    "hi": 0.0,
+    "width": 60.0,
+    "accepted": 1782
+   },
+   "prob:rounding": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1782
+   },
+   "odds-for:payout": {
+    "lo": -77.77777777777779,
+    "hi": -16.666666666666664,
+    "width": 61.11111111111112,
+    "accepted": 1782
+   },
+   "odds-for:calibration": {
+    "lo": -37.5,
+    "hi": 0.0,
+    "width": 37.5,
+    "accepted": 1782
+   },
+   "odds-for:frequency": {
+    "lo": 0.0,
+    "hi": 30.000000000000004,
+    "width": 30.000000000000004,
+    "accepted": 1782
+   },
+   "odds-for:causation": {
+    "lo": -66.66666666666667,
+    "hi": 0.0,
+    "width": 66.66666666666667,
+    "accepted": 1782
+   },
+   "odds-for:rounding": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1782
+   },
+   "odds-against:payout": {
+    "lo": -55.55555555555556,
+    "hi": 23.33333333333334,
+    "width": 78.8888888888889,
+    "accepted": 1782
+   },
+   "odds-against:calibration": {
+    "lo": -40.0,
+    "hi": 30.000000000000004,
+    "width": 70.0,
+    "accepted": 1782
+   },
+   "odds-against:frequency": {
+    "lo": 0.0,
+    "hi": 60.0,
+    "width": 60.0,
+    "accepted": 1782
+   },
+   "odds-against:causation": {
+    "lo": -80.0,
+    "hi": 0.0,
+    "width": 80.0,
+    "accepted": 1782
+   },
+   "odds-against:rounding": {
+    "lo": 0.0,
+    "hi": 25.0,
+    "width": 25.0,
+    "accepted": 1782
+   }
+  },
+  "n_items": 120,
+  "arms_by_stratum": {
+   "prob:payout": {
+    "english": 0.4545,
+    "ainglish": 0.8,
+    "chance": 0.5
+   },
+   "prob:calibration": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "prob:frequency": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "prob:causation": {
+    "english": 0.875,
+    "ainglish": 0.625,
+    "chance": 0.5
+   },
+   "prob:rounding": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-for:payout": {
+    "english": 1,
+    "ainglish": 0.5,
+    "chance": 0.5
+   },
+   "odds-for:calibration": {
+    "english": 1,
+    "ainglish": 0.8889,
+    "chance": 0.5
+   },
+   "odds-for:frequency": {
+    "english": 0.8889,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-for:causation": {
+    "english": 1,
+    "ainglish": 0.6923,
+    "chance": 0.5
+   },
+   "odds-for:rounding": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-against:payout": {
+    "english": 0.7143,
+    "ainglish": 0.5556,
+    "chance": 0.5
+   },
+   "odds-against:calibration": {
+    "english": 0.875,
+    "ainglish": 0.875,
+    "chance": 0.5
+   },
+   "odds-against:frequency": {
+    "english": 0.8333,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-against:causation": {
+    "english": 1,
+    "ainglish": 0.625,
+    "chance": 0.5
+   },
+   "odds-against:rounding": {
+    "english": 0.9091,
+    "ainglish": 1,
+    "chance": 0.5
+   }
+  }
+ },
+ "2a9933dc10ec9d53f0c3f749d29c2a1673813ce5d408814ff621c8ecacf5fe00": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "next-up": {
+    "lo": -30.0,
+    "hi": 52.38095238095237,
+    "width": 82.38095238095238,
+    "accepted": 2000
+   },
+   "next-week": {
+    "lo": -9.090909090909092,
+    "hi": 91.66666666666666,
+    "width": 100.75757575757575,
+    "accepted": 2000
+   }
+  },
+  "n_items": 16,
+  "arms_by_stratum": {
+   "next-up": {
+    "english": 0.125,
+    "ainglish": 0.25,
+    "chance": 0.25
+   },
+   "next-week": {
+    "english": 0.25,
+    "ainglish": 0.75,
+    "chance": 0.25
+   }
+  }
+ },
+ "84d2e0e690eb298da5ff9bb0e134867dd16cc1e42f27b7aa594526cfdc3e80c0": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 12,
+  "arms_by_stratum": {}
+ },
+ "45042d23ae763bdc8978d9a20a7d97128e34ae768ce2c81d01891b5dd55e7434": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": -16.07142857142857,
+    "hi": 13.70629370629371,
+    "width": 29.77772227772228,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -20.839121978327313,
+    "hi": 7.589285714285715,
+    "width": 28.42840769261303,
+    "accepted": 2000
+   }
+  },
+  "n_items": 120,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.1818,
+    "ainglish": 0.1692,
+    "chance": 0.0625
+   },
+   "likeliest-outcome": {
+    "english": 0.2419,
+    "ainglish": 0.1724,
+    "chance": 0.0625
+   }
+  }
+ },
+ "8660b574a7830a644214ebf41767e46f057909739ba579f8e62cce7b6d42ff62": {
+  "pooled_match": true,
+  "accepted": 1999,
+  "strata": null,
+  "n_items": 12,
+  "arms_by_stratum": {}
+ },
+ "78041bf527b60a115afdc8b3d214252ceaeaceb09af4723437ba0c700dcdb139": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "prob:payout": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "prob:calibration": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "prob:frequency": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "prob:causation": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "prob:rounding": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-for:payout": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-for:calibration": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-for:frequency": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-for:causation": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-for:rounding": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-against:payout": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-against:calibration": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-against:frequency": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-against:causation": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "odds-against:rounding": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 30,
+  "arms_by_stratum": {
+   "prob:payout": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "prob:calibration": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "prob:frequency": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "prob:causation": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "prob:rounding": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-for:payout": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-for:calibration": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-for:frequency": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-for:causation": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-for:rounding": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-against:payout": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-against:calibration": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-against:frequency": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-against:causation": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "odds-against:rounding": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   }
+  }
+ },
+ "97faef5337c2b90fad33b4dd4e4945bb44a557661c4959fb68712a035f252635": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "proposal-by": {
+    "lo": -41.078431372549026,
+    "hi": -6.617826617826622,
+    "width": 34.460604754722404,
+    "accepted": 2000
+   },
+   "decision-by": {
+    "lo": -70.76885286170474,
+    "hi": -49.60899315738025,
+    "width": 21.159859704324496,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "proposal-by": {
+    "english": 0.5082,
+    "ainglish": 0.2687,
+    "chance": 0.125
+   },
+   "decision-by": {
+    "english": 0.6377,
+    "ainglish": 0.0339,
+    "chance": 0.125
+   }
+  }
+ },
+ "4fc68707ea47c304bf1bdb56a54d2354616c65a24f58cff65dc7932a377af5a2": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "rule": {
+    "lo": -21.56862745098039,
+    "hi": 21.321321321321324,
+    "width": 42.889948772301715,
+    "accepted": 2000
+   },
+   "forecast": {
+    "lo": -32.14285714285714,
+    "hi": -6.25,
+    "width": 25.89285714285714,
+    "accepted": 2000
+   }
+  },
+  "n_items": 64,
+  "arms_by_stratum": {
+   "rule": {
+    "english": 0.25,
+    "ainglish": 0.25,
+    "chance": 0.5
+   },
+   "forecast": {
+    "english": 1,
+    "ainglish": 0.8125,
+    "chance": 0.5
+   }
+  }
+ },
+ "b72bc1a26957199c3f28151c64775276530973a11cc81ee0ac6384fe7f1c773f": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "rule": {
+    "lo": -13.33333333333333,
+    "hi": 0.0,
+    "width": 13.33333333333333,
+    "accepted": 2000
+   },
+   "forecast": {
+    "lo": -23.529411764705888,
+    "hi": -5.000000000000004,
+    "width": 18.529411764705884,
+    "accepted": 2000
+   }
+  },
+  "n_items": 100,
+  "arms_by_stratum": {
+   "rule": {
+    "english": 1,
+    "ainglish": 0.94,
+    "chance": 0.5
+   },
+   "forecast": {
+    "english": 1,
+    "ainglish": 0.86,
+    "chance": 0.5
+   }
+  }
+ },
+ "a6142c5c7e675bd290d7150c98615b21794673fa7fb9711015257b4ca2052568": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "342303a33f6f6a7bc89a5ddf9362103e7a67b5c50c4a6cb14b0f7493ba8834bd": {
+  "pooled_match": true,
+  "accepted": 1971,
+  "strata": {
+   "prob:probability": {
+    "lo": -1.8181818181818188,
+    "hi": 66.66666666666666,
+    "width": 68.48484848484847,
+    "accepted": 1971
+   },
+   "prob:complement": {
+    "lo": -42.857142857142854,
+    "hi": 61.53846153846154,
+    "width": 104.3956043956044,
+    "accepted": 1971
+   },
+   "prob:odds-orientation": {
+    "lo": -46.666666666666664,
+    "hi": 16.666666666666664,
+    "width": 63.33333333333333,
+    "accepted": 1971
+   },
+   "odds-for:probability": {
+    "lo": -19.999999999999996,
+    "hi": 57.14285714285714,
+    "width": 77.14285714285714,
+    "accepted": 1971
+   },
+   "odds-for:complement": {
+    "lo": -30.76923076923077,
+    "hi": 78.57142857142857,
+    "width": 109.34065934065934,
+    "accepted": 1971
+   },
+   "odds-for:odds-orientation": {
+    "lo": -66.66666666666667,
+    "hi": 13.33333333333333,
+    "width": 80.0,
+    "accepted": 1971
+   },
+   "odds-against:probability": {
+    "lo": -61.53846153846154,
+    "hi": 6.6666666666666705,
+    "width": 68.2051282051282,
+    "accepted": 1971
+   },
+   "odds-against:complement": {
+    "lo": -75.0,
+    "hi": -4.761904761904762,
+    "width": 70.23809523809524,
+    "accepted": 1971
+   },
+   "odds-against:odds-orientation": {
+    "lo": 0.0,
+    "hi": 37.5,
+    "width": 37.5,
+    "accepted": 1971
+   }
+  },
+  "n_items": 72,
+  "arms_by_stratum": {
+   "prob:probability": {
+    "english": 0.6667,
+    "ainglish": 0.9,
+    "chance": 0.25
+   },
+   "prob:complement": {
+    "english": 0.6364,
+    "ainglish": 0.8,
+    "chance": 0.25
+   },
+   "prob:odds-orientation": {
+    "english": 0.5,
+    "ainglish": 0.3333,
+    "chance": 0.25
+   },
+   "odds-for:probability": {
+    "english": 0.7143,
+    "ainglish": 0.8889,
+    "chance": 0.25
+   },
+   "odds-for:complement": {
+    "english": 0.6,
+    "ainglish": 0.8182,
+    "chance": 0.25
+   },
+   "odds-for:odds-orientation": {
+    "english": 0.875,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "odds-against:probability": {
+    "english": 0.625,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "odds-against:complement": {
+    "english": 0.625,
+    "ainglish": 0.25,
+    "chance": 0.25
+   },
+   "odds-against:odds-orientation": {
+    "english": 0.8571,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "c6d3e3bd47a72207a4d2df223adb14791428107ae793d2aea79720a0440d25b6": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 120,
+  "arms_by_stratum": {}
+ },
+ "f39fd41e655f0083c4c33ebb3a1b49ea12b09c08e4a8b7baf673d6ef0d3ac9b9": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "ack-as-receipt-careful": {
+    "lo": -21.212121212121204,
+    "hi": 22.823984526112184,
+    "width": 44.03610573823339,
+    "accepted": 2000
+   },
+   "ack-as-receipt-bare": {
+    "lo": -18.949343339587244,
+    "hi": 22.499999999999996,
+    "width": 41.449343339587244,
+    "accepted": 2000
+   },
+   "ack-as-agreement-careful": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "ack-as-agreement-bare": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 160,
+  "arms_by_stratum": {
+   "ack-as-receipt-careful": {
+    "english": 0.7442,
+    "ainglish": 0.7568,
+    "chance": 0.25
+   },
+   "ack-as-receipt-bare": {
+    "english": 0.7436,
+    "ainglish": 0.7561,
+    "chance": 0.25
+   },
+   "ack-as-agreement-careful": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "ack-as-agreement-bare": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "8c6953fa5d274262333bf587556ef152aa9e140d78a820bd305b767c855740bd": {
+  "pooled_match": true,
+  "accepted": 1961,
+  "strata": {
+   "this-once:current": {
+    "lo": 0.0,
+    "hi": 100.0,
+    "width": 100.0,
+    "accepted": 1961
+   },
+   "from-now-on:current": {
+    "lo": -60.0,
+    "hi": -9.090909090909093,
+    "width": 50.90909090909091,
+    "accepted": 1961
+   },
+   "this-once:later-same-project": {
+    "lo": -100.0,
+    "hi": -100.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "from-now-on:later-same-project": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "this-once:later-other-project": {
+    "lo": -100.0,
+    "hi": -100.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "from-now-on:later-other-project": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "this-once:unrelated-kind": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "from-now-on:unrelated-kind": {
+    "lo": 0.0,
+    "hi": 38.46153846153846,
+    "width": 38.46153846153846,
+    "accepted": 1961
+   },
+   "this-once:revoked": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "from-now-on:revoked": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "this-once:storage-forbidden": {
+    "lo": -100.0,
+    "hi": -40.0,
+    "width": 60.0,
+    "accepted": 1961
+   },
+   "from-now-on:storage-forbidden": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "this-once:audit-required": {
+    "lo": -100.0,
+    "hi": -66.66666666666667,
+    "width": 33.33333333333333,
+    "accepted": 1961
+   },
+   "from-now-on:audit-required": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "this-once:explicit-project-limit": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1961
+   },
+   "from-now-on:explicit-project-limit": {
+    "lo": -53.84615384615385,
+    "hi": 53.33333333333334,
+    "width": 107.17948717948718,
+    "accepted": 1961
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "this-once:current": {
+    "english": 0.125,
+    "ainglish": 0.75,
+    "chance": 0.5
+   },
+   "from-now-on:current": {
+    "english": 1,
+    "ainglish": 0.6667,
+    "chance": 0.5
+   },
+   "this-once:later-same-project": {
+    "english": 1,
+    "ainglish": 0,
+    "chance": 0.5
+   },
+   "from-now-on:later-same-project": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "this-once:later-other-project": {
+    "english": 1,
+    "ainglish": 0,
+    "chance": 0.5
+   },
+   "from-now-on:later-other-project": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "this-once:unrelated-kind": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "from-now-on:unrelated-kind": {
+    "english": 0.8,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "this-once:revoked": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "from-now-on:revoked": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "this-once:storage-forbidden": {
+    "english": 1,
+    "ainglish": 0.2727,
+    "chance": 0.5
+   },
+   "from-now-on:storage-forbidden": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "this-once:audit-required": {
+    "english": 1,
+    "ainglish": 0.1,
+    "chance": 0.5
+   },
+   "from-now-on:audit-required": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "this-once:explicit-project-limit": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "from-now-on:explicit-project-limit": {
+    "english": 0.5,
+    "ainglish": 0.5,
+    "chance": 0.5
+   }
+  }
+ },
+ "e7b399a86856b1e31f5c9afdb92fea761a150698c8acab24c24c224d6a8d1b44": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "set-to:known": {
+    "lo": -93.33333333333333,
+    "hi": -57.14285714285714,
+    "width": 36.19047619047619,
+    "accepted": 2000
+   },
+   "adjust-by:known": {
+    "lo": -25.0,
+    "hi": 0.0,
+    "width": 25.0,
+    "accepted": 2000
+   },
+   "set-to:unknown": {
+    "lo": -85.71428571428572,
+    "hi": -36.36363636363637,
+    "width": 49.350649350649356,
+    "accepted": 2000
+   },
+   "adjust-by:unknown": {
+    "lo": 0.0,
+    "hi": 33.333333333333336,
+    "width": 33.333333333333336,
+    "accepted": 2000
+   },
+   "set-to:ordered": {
+    "lo": -88.23529411764706,
+    "hi": -38.888888888888886,
+    "width": 49.34640522875817,
+    "accepted": 2000
+   },
+   "adjust-by:ordered": {
+    "lo": -35.714285714285715,
+    "hi": 38.03921568627452,
+    "width": 73.75350140056022,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "set-to:known": {
+    "english": 1,
+    "ainglish": 0.25,
+    "chance": 0.25
+   },
+   "adjust-by:known": {
+    "english": 1,
+    "ainglish": 0.9286,
+    "chance": 0.25
+   },
+   "set-to:unknown": {
+    "english": 1,
+    "ainglish": 0.3889,
+    "chance": 0.25
+   },
+   "adjust-by:unknown": {
+    "english": 0.9167,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "set-to:ordered": {
+    "english": 1,
+    "ainglish": 0.3529,
+    "chance": 0.25
+   },
+   "adjust-by:ordered": {
+    "english": 0.6,
+    "ainglish": 0.5882,
+    "chance": 0.25
+   }
+  }
+ },
+ "c2fd379289d137863a82107a78ccc95a2bc9a683d8729a0323756ec68bfcfd62": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 120,
+  "arms_by_stratum": {}
+ },
+ "44b2526c4d736b24e1c3c6d2bfd2238639b67935f10ce9e2fa6d4b4e11298e5c": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": 0.0,
+    "hi": 4.6875,
+    "width": 4.6875,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -7.631653055477328,
+    "hi": 13.392857142857139,
+    "width": 21.024510198334468,
+    "accepted": 2000
+   }
+  },
+  "n_items": 120,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.9855,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "likeliest-outcome": {
+    "english": 0.8125,
+    "ainglish": 0.8393,
+    "chance": 0.5
+   }
+  }
+ },
+ "6402298c595e40c70709bfb1aa4c16a24aed9f0effd939fad17b336a91eae05c": {
+  "pooled_match": true,
+  "accepted": 1999,
+  "strata": {
+   "re:aff": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1999
+   },
+   "re:neg": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1999
+   },
+   "re:pq": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1999
+   },
+   "re:dir": {
+    "lo": -63.63636363636363,
+    "hi": -11.111111111111116,
+    "width": 52.52525252525252,
+    "accepted": 1999
+   },
+   "rs:aff": {
+    "lo": -25.0,
+    "hi": 0.0,
+    "width": 25.0,
+    "accepted": 1999
+   },
+   "rs:neg": {
+    "lo": -38.46153846153846,
+    "hi": 0.0,
+    "width": 38.46153846153846,
+    "accepted": 1999
+   },
+   "rs:pq": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1999
+   },
+   "rs:dir": {
+    "lo": 0.0,
+    "hi": 40.0,
+    "width": 40.0,
+    "accepted": 1999
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "re:aff": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.2917
+   },
+   "re:neg": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.2917
+   },
+   "re:pq": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.2917
+   },
+   "re:dir": {
+    "english": 1,
+    "ainglish": 0.6429,
+    "chance": 0.2917
+   },
+   "rs:aff": {
+    "english": 1,
+    "ainglish": 0.9231,
+    "chance": 0.2917
+   },
+   "rs:neg": {
+    "english": 1,
+    "ainglish": 0.8462,
+    "chance": 0.2917
+   },
+   "rs:pq": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.2917
+   },
+   "rs:dir": {
+    "english": 0.8333,
+    "ainglish": 1,
+    "chance": 0.2917
+   }
+  }
+ },
+ "b30f547a1a78dcab78863c38580b898f4c4b42adedb8de0b7ccfef9a00a566a7": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "verdict-fail": {
+    "lo": -7.145924063055887,
+    "hi": 10.619796484736355,
+    "width": 17.76572054779224,
+    "accepted": 2000
+   },
+   "no-verdict": {
+    "lo": 9.456814289209692,
+    "hi": 25.709923664122137,
+    "width": 16.253109374912444,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "verdict-fail": {
+    "english": 0.8425,
+    "ainglish": 0.8605,
+    "chance": 0.3333
+   },
+   "no-verdict": {
+    "english": 0.7795,
+    "ainglish": 0.9535,
+    "chance": 0.3333
+   }
+  }
+ },
+ "a974529ec9ae133019a421f5b6b7fc1e0a93d7c771db4db3f458f19b32e2f122": {
+  "pooled_match": true,
+  "accepted": 1304,
+  "strata": {
+   "no-charge": {
+    "lo": 0.0,
+    "hi": 100.0,
+    "width": 100.0,
+    "accepted": 1304
+   },
+   "available-now": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1304
+   }
+  },
+  "n_items": 16,
+  "arms_by_stratum": {
+   "no-charge": {
+    "english": 0.5,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "available-now": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "921717f2a794f292b6f21f987f532f749a05ab0ca7a5627b29d7f57b39da3436": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 12,
+  "arms_by_stratum": {}
+ },
+ "a37a40d04532ef90366f92dadc5a80d6175f53f6777d681223a5d72926823cf0": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "each-alone-action-count": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "as-one-action-count": {
+    "lo": -45.833333333333336,
+    "hi": -12.5,
+    "width": 33.333333333333336,
+    "accepted": 2000
+   },
+   "each-alone-amount-total": {
+    "lo": -41.666666666666664,
+    "hi": -8.333333333333337,
+    "width": 33.33333333333333,
+    "accepted": 2000
+   },
+   "as-one-amount-total": {
+    "lo": -20.833333333333336,
+    "hi": 8.333333333333337,
+    "width": 29.16666666666667,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "each-alone-action-count": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "as-one-action-count": {
+    "english": 1,
+    "ainglish": 0.7083,
+    "chance": 0.25
+   },
+   "each-alone-amount-total": {
+    "english": 1,
+    "ainglish": 0.75,
+    "chance": 0.25
+   },
+   "as-one-amount-total": {
+    "english": 0.9583,
+    "ainglish": 0.9167,
+    "chance": 0.25
+   }
+  }
+ },
+ "11eb10d1d620345b747b6d995beb56a04b2e3396e12243744946e15189b33e2e": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "must-as-rule": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "must-as-inference": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 48,
+  "arms_by_stratum": {
+   "must-as-rule": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "must-as-inference": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "d342f4fb2d535920f9e4d7fbb316b147cc55f072945234f2714413cc49287439": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "some-or-all": {
+    "lo": -6.964536409692979,
+    "hi": 1.8300171947924326,
+    "width": 8.794553604485412,
+    "accepted": 2000
+   },
+   "some-but-not-all": {
+    "lo": -9.236603865916326,
+    "hi": 0.836232680217297,
+    "width": 10.072836546133622,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "some-or-all": {
+    "english": 0.9688,
+    "ainglish": 0.9453,
+    "chance": 0.25
+   },
+   "some-but-not-all": {
+    "english": 0.9688,
+    "ainglish": 0.9297,
+    "chance": 0.25
+   }
+  }
+ },
+ "05c2fbbefb585c2fafbe09c024e839ee1f8596060de5a958cce793ef2920d49d": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "choose-any": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "draw-uniform": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "choose-any": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "draw-uniform": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "d02686c1f2aa0ad5f9a8d3c082d926af7e49ae5bfe1f18e0a457f070f5b412ed": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-of": {
+    "lo": -4.782538918311674,
+    "hi": 10.025141420490257,
+    "width": 14.807680338801932,
+    "accepted": 2000
+   },
+   "median-of": {
+    "lo": -5.000000000000004,
+    "hi": 4.938271604938271,
+    "width": 9.938271604938276,
+    "accepted": 2000
+   }
+  },
+  "n_items": 160,
+  "arms_by_stratum": {
+   "mean-of": {
+    "english": 0.9241,
+    "ainglish": 0.9506,
+    "chance": 0.5
+   },
+   "median-of": {
+    "english": 0.9753,
+    "ainglish": 0.9747,
+    "chance": 0.5
+   }
+  }
+ },
+ "d246c98217b24a20537af312a0bcac3afd67b547336d4851c0b5b390ca8be719": {
+  "pooled_match": true,
+  "accepted": 68,
+  "strata": {
+   "set-to:known": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 68
+   },
+   "adjust-by:known": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 68
+   },
+   "set-to:unknown": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 68
+   },
+   "adjust-by:unknown": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 68
+   },
+   "set-to:ordered": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 68
+   },
+   "adjust-by:ordered": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 68
+   }
+  },
+  "n_items": 16,
+  "arms_by_stratum": {
+   "set-to:known": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "adjust-by:known": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "set-to:unknown": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "adjust-by:unknown": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "set-to:ordered": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "adjust-by:ordered": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "785d96761cf4156530c91c7feabca6fe9778de4c8f11861372e0420367e7d22a": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": -2.6618354121663996,
+    "hi": 11.107239913594873,
+    "width": 13.769075325761271,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -18.882091212458285,
+    "hi": 1.0558488469019163,
+    "width": 19.9379400593602,
+    "accepted": 2000
+   }
+  },
+  "n_items": 240,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.0394,
+    "ainglish": 0.0796,
+    "chance": 0.0625
+   },
+   "likeliest-outcome": {
+    "english": 0.2124,
+    "ainglish": 0.1181,
+    "chance": 0.0625
+   }
+  }
+ },
+ "53387330268be4a9721563f2e5693f11562419343aef1ecedffe4fe79a805827": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "no-charge": {
+    "lo": -25.506072874493924,
+    "hi": 9.890109890109894,
+    "width": 35.39618276460382,
+    "accepted": 2000
+   },
+   "available-now": {
+    "lo": -17.261904761904763,
+    "hi": 14.957375355205372,
+    "width": 32.21928011711013,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "no-charge": {
+    "english": 0.3867,
+    "ainglish": 0.3019,
+    "chance": 0.1111
+   },
+   "available-now": {
+    "english": 0.4074,
+    "ainglish": 0.3919,
+    "chance": 0.1111
+   }
+  }
+ },
+ "b58eb13f41d114ba1e55a26226acb5b9a437733c47a5568dbbf17b081ba8e3be": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "attempt-unintroduced": {
+    "lo": -41.55449413808076,
+    "hi": 2.1592442645074206,
+    "width": 43.713738402588184,
+    "accepted": 2000
+   },
+   "attempt-shared-definition": {
+    "lo": -7.400379506641375,
+    "hi": 30.913348946135837,
+    "width": 38.31372845277721,
+    "accepted": 2000
+   },
+   "ensure-unintroduced": {
+    "lo": -37.2093023255814,
+    "hi": -10.416666666666663,
+    "width": 26.792635658914733,
+    "accepted": 2000
+   },
+   "ensure-shared-definition": {
+    "lo": -24.133391838525675,
+    "hi": 3.4965034965035002,
+    "width": 27.629895335029175,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "attempt-unintroduced": {
+    "english": 0.5962,
+    "ainglish": 0.4091,
+    "chance": 0.25
+   },
+   "attempt-shared-definition": {
+    "english": 0.5714,
+    "ainglish": 0.6852,
+    "chance": 0.25
+   },
+   "ensure-unintroduced": {
+    "english": 1,
+    "ainglish": 0.7647,
+    "chance": 0.25
+   },
+   "ensure-shared-definition": {
+    "english": 0.88,
+    "ainglish": 0.7826,
+    "chance": 0.25
+   }
+  }
+ },
+ "539b22fd864eda75fba8d768c5ddc21d2024f83e4c02f306921547f8636261fe": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "verdict-fail": {
+    "lo": -7.936507936507942,
+    "hi": 0.0,
+    "width": 7.936507936507942,
+    "accepted": 2000
+   },
+   "no-verdict": {
+    "lo": -31.526251526251524,
+    "hi": 4.6875,
+    "width": 36.21375152625153,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "verdict-fail": {
+    "english": 1,
+    "ainglish": 0.9688,
+    "chance": 0.3333
+   },
+   "no-verdict": {
+    "english": 0.5238,
+    "ainglish": 0.3846,
+    "chance": 0.3333
+   }
+  }
+ },
+ "9e8fc118b04710fcdffd8e00874f36ab0c3eb44d607b9c39dc3a633d07691266": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "dispatched": {
+    "lo": -21.42857142857143,
+    "hi": 0.0,
+    "width": 21.42857142857143,
+    "accepted": 2000
+   },
+   "delivered": {
+    "lo": -88.88888888888889,
+    "hi": -33.333333333333336,
+    "width": 55.55555555555555,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "dispatched": {
+    "english": 1,
+    "ainglish": 0.9375,
+    "chance": 0.25
+   },
+   "delivered": {
+    "english": 1,
+    "ainglish": 0.375,
+    "chance": 0.25
+   }
+  }
+ },
+ "ac6bb7c60d7338568cee1c9f7560877d7861e0c870a4016698ec7f2cb4f61263": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 120,
+  "arms_by_stratum": {}
+ },
+ "d300b285cd7d639215d31031585f9aed2c983bed5dc86569ecc2cb7b4c50ca14": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "no-charge": {
+    "lo": 21.875,
+    "hi": 46.875,
+    "width": 25.0,
+    "accepted": 2000
+   },
+   "available-now": {
+    "lo": 25.0,
+    "hi": 50.0,
+    "width": 25.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "no-charge": {
+    "english": 0.1563,
+    "ainglish": 0.5,
+    "chance": 0.1111
+   },
+   "available-now": {
+    "english": 0.1875,
+    "ainglish": 0.5625,
+    "chance": 0.1111
+   }
+  }
+ },
+ "5d6a3198451da27eae84734ad897c0dd0bb0d721a483d0d97627d17f6fee37c9": {
+  "pooled_match": true,
+  "accepted": 1997,
+  "strata": null,
+  "n_items": 11,
+  "arms_by_stratum": {}
+ },
+ "cd635958c0346dfb589b032ede66da64b84642f0a76e4a545cf56ca6e9d4f593": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "693aff8c74799b673533496c4d4ed3aa4ea4177cce7433623227bbe53a38ebd8": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "verdict-fail": {
+    "lo": -22.058823529411764,
+    "hi": 10.29411764705882,
+    "width": 32.35294117647059,
+    "accepted": 2000
+   },
+   "no-verdict": {
+    "lo": -20.039100684261967,
+    "hi": 7.2039072039072005,
+    "width": 27.243007888169167,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "verdict-fail": {
+    "english": 0.7188,
+    "ainglish": 0.6563,
+    "chance": 0.3333
+   },
+   "no-verdict": {
+    "english": 0.8438,
+    "ainglish": 0.7813,
+    "chance": 0.3333
+   }
+  }
+ },
+ "243ab77e31a80bc0c4426c3f236762d64be2d0b1dd7c8255973bd5bcfd0d0d2f": {
+  "pooled_match": true,
+  "accepted": 1955,
+  "strata": null,
+  "n_items": 8,
+  "arms_by_stratum": {}
+ },
+ "5dc27800d64f0e4a74ac291b1833e4cc05a8e71c91428e3ab963b02afda47e33": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "cause-question-careful": {
+    "lo": -100.0,
+    "hi": -100.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "cause-question-bare": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "justification-question-careful": {
+    "lo": -60.0,
+    "hi": 0.0,
+    "width": 60.0,
+    "accepted": 2000
+   },
+   "justification-question-bare": {
+    "lo": -42.85714285714286,
+    "hi": 66.66666666666667,
+    "width": 109.52380952380953,
+    "accepted": 2000
+   }
+  },
+  "n_items": 24,
+  "arms_by_stratum": {
+   "cause-question-careful": {
+    "english": 1,
+    "ainglish": 0,
+    "chance": 0.25
+   },
+   "cause-question-bare": {
+    "english": 0,
+    "ainglish": 0,
+    "chance": 0.25
+   },
+   "justification-question-careful": {
+    "english": 1,
+    "ainglish": 0.8333,
+    "chance": 0.25
+   },
+   "justification-question-bare": {
+    "english": 0.6667,
+    "ainglish": 0.8333,
+    "chance": 0.25
+   }
+  }
+ },
+ "6608fe7254e83e066d08dadb5a721b94594e9d7e7fff5112df45601a79e008d5": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 12,
+  "arms_by_stratum": {}
+ },
+ "cc3824df60d500a42636d7fa169f654e37843fdc848bb2d2cd011202b7997ea0": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "fact-not-known": {
+    "lo": -82.43664122137405,
+    "hi": -67.88856304985337,
+    "width": 14.548078171520672,
+    "accepted": 2000
+   },
+   "choice-not-made": {
+    "lo": -45.372405372405375,
+    "hi": -20.50342130987292,
+    "width": 24.868984062532455,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "fact-not-known": {
+    "english": 0.9845,
+    "ainglish": 0.2283,
+    "chance": 0.1667
+   },
+   "choice-not-made": {
+    "english": 0.6512,
+    "ainglish": 0.315,
+    "chance": 0.1667
+   }
+  }
+ },
+ "0e6c9982afbea01dbd1e8ed9751a070fc0f22be24969c1a48e16afab1bda1898": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 18,
+  "arms_by_stratum": {}
+ },
+ "ce61ba8b9182a5b072a8dc8734f3b92f3b76829e0aff1108cd6e7086c398aaa0": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "attempt-retry-allowed": {
+    "lo": -9.514170040485826,
+    "hi": 32.35581622678397,
+    "width": 41.869986267269795,
+    "accepted": 2000
+   },
+   "attempt-retry-forbidden": {
+    "lo": -8.333333333333337,
+    "hi": 30.75291622481442,
+    "width": 39.086249558147756,
+    "accepted": 2000
+   },
+   "attempt-budget-exhausted": {
+    "lo": -27.935222672064775,
+    "hi": 19.480519480519476,
+    "width": 47.41574215258425,
+    "accepted": 2000
+   },
+   "attempt-irreversible": {
+    "lo": -17.61133603238867,
+    "hi": 11.921182266009843,
+    "width": 29.532518298398514,
+    "accepted": 2000
+   },
+   "ensure-retry-allowed": {
+    "lo": -9.756097560975608,
+    "hi": 15.151515151515149,
+    "width": 24.907612712490756,
+    "accepted": 2000
+   },
+   "ensure-retry-forbidden": {
+    "lo": -9.375,
+    "hi": 0.0,
+    "width": 9.375,
+    "accepted": 2000
+   },
+   "ensure-budget-exhausted": {
+    "lo": 0.0,
+    "hi": 13.043478260869568,
+    "width": 13.043478260869568,
+    "accepted": 2000
+   },
+   "ensure-irreversible": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "attempt-retry-allowed": {
+    "english": 0.7143,
+    "ainglish": 0.8276,
+    "chance": 0.3333
+   },
+   "attempt-retry-forbidden": {
+    "english": 0.7407,
+    "ainglish": 0.8378,
+    "chance": 0.3333
+   },
+   "attempt-budget-exhausted": {
+    "english": 0.7838,
+    "ainglish": 0.7407,
+    "chance": 0.3333
+   },
+   "attempt-irreversible": {
+    "english": 0.7742,
+    "ainglish": 0.7576,
+    "chance": 0.3333
+   },
+   "ensure-retry-allowed": {
+    "english": 0.9259,
+    "ainglish": 0.9459,
+    "chance": 0.3333
+   },
+   "ensure-retry-forbidden": {
+    "english": 1,
+    "ainglish": 0.9697,
+    "chance": 0.3333
+   },
+   "ensure-budget-exhausted": {
+    "english": 0.963,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "ensure-irreversible": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   }
+  }
+ },
+ "31b5db3dc0a4cde2cff904bf96f76894471d5c165aa6eb742e9db7aa27ead10b": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 120,
+  "arms_by_stratum": {}
+ },
+ "46fb0e0769915a4ce6a716fddc8887228b04087f3e64c95b50bffb68a9154400": {
+  "pooled_match": true,
+  "accepted": 1943,
+  "strata": {
+   "prob:probability": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1943
+   },
+   "prob:complement": {
+    "lo": -37.5,
+    "hi": 0.0,
+    "width": 37.5,
+    "accepted": 1943
+   },
+   "prob:odds-orientation": {
+    "lo": -91.66666666666666,
+    "hi": -26.666666666666668,
+    "width": 64.99999999999999,
+    "accepted": 1943
+   },
+   "odds-for:probability": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1943
+   },
+   "odds-for:complement": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1943
+   },
+   "odds-for:odds-orientation": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1943
+   },
+   "odds-against:probability": {
+    "lo": -33.333333333333336,
+    "hi": 49.20634920634921,
+    "width": 82.53968253968254,
+    "accepted": 1943
+   },
+   "odds-against:complement": {
+    "lo": -50.0,
+    "hi": 46.666666666666664,
+    "width": 96.66666666666666,
+    "accepted": 1943
+   },
+   "odds-against:odds-orientation": {
+    "lo": 0.0,
+    "hi": 50.0,
+    "width": 50.0,
+    "accepted": 1943
+   }
+  },
+  "n_items": 72,
+  "arms_by_stratum": {
+   "prob:probability": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "prob:complement": {
+    "english": 1,
+    "ainglish": 0.8571,
+    "chance": 0.25
+   },
+   "prob:odds-orientation": {
+    "english": 0.8,
+    "ainglish": 0.1667,
+    "chance": 0.25
+   },
+   "odds-for:probability": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "odds-for:complement": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "odds-for:odds-orientation": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "odds-against:probability": {
+    "english": 0.7143,
+    "ainglish": 0.7778,
+    "chance": 0.25
+   },
+   "odds-against:complement": {
+    "english": 0.4,
+    "ainglish": 0.3333,
+    "chance": 0.25
+   },
+   "odds-against:odds-orientation": {
+    "english": 0.7143,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "e0b30e34a49c6fc062e692f849fb6b5f3a8064e1c205ddd9ed3f449e32449b5b": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 288,
+  "arms_by_stratum": {}
+ },
+ "7fa32b599e4a1fd8ef41e19c98190a8a79e2d36d33371355214b8bbaf01b0327": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "on-purpose": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "by-accident": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "on-purpose": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "by-accident": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "f6933569f810bbbc58670dd1a89cffca1f258002abd42154abe57d9c368ecd81": {
+  "pooled_match": true,
+  "accepted": 1333,
+  "strata": {
+   "pair-by-order": {
+    "lo": -50.0,
+    "hi": 0.0,
+    "width": 50.0,
+    "accepted": 1333
+   },
+   "every-combination": {
+    "lo": 0.0,
+    "hi": 57.14285714285714,
+    "width": 57.14285714285714,
+    "accepted": 1333
+   }
+  },
+  "n_items": 18,
+  "arms_by_stratum": {
+   "pair-by-order": {
+    "english": 1,
+    "ainglish": 0.8333,
+    "chance": 0.25
+   },
+   "every-combination": {
+    "english": 0.75,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "290e45ab3d6ef94c949a6997b93dfda2bec285636be5af6d756758f7099a40bc": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "verdict-fail": {
+    "lo": -23.041021861950373,
+    "hi": 6.862745098039225,
+    "width": 29.903766959989596,
+    "accepted": 2000
+   },
+   "no-verdict": {
+    "lo": 23.921568627450977,
+    "hi": 52.21674876847291,
+    "width": 28.295180141021934,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "verdict-fail": {
+    "english": 0.8261,
+    "ainglish": 0.7458,
+    "chance": 0.3333
+   },
+   "no-verdict": {
+    "english": 0.1746,
+    "ainglish": 0.5538,
+    "chance": 0.3333
+   }
+  }
+ },
+ "a9d3a18007710d8701f083efe1db268c15f1aefddba53296e3e63e844838c4ec": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "resume-core": {
+    "lo": -14.117647058823529,
+    "hi": 30.58823529411765,
+    "width": 44.705882352941174,
+    "accepted": 2000
+   },
+   "redo-core": {
+    "lo": -21.875,
+    "hi": 14.77732793522267,
+    "width": 36.65232793522267,
+    "accepted": 2000
+   },
+   "boundary": {
+    "lo": -32.15686274509804,
+    "hi": 43.921568627450974,
+    "width": 76.078431372549,
+    "accepted": 2000
+   }
+  },
+  "n_items": 80,
+  "arms_by_stratum": {
+   "resume-core": {
+    "english": 0.4118,
+    "ainglish": 0.5,
+    "chance": 0.5
+   },
+   "redo-core": {
+    "english": 0.2069,
+    "ainglish": 0.1714,
+    "chance": 0.5
+   },
+   "boundary": {
+    "english": 0.4706,
+    "ainglish": 0.5333,
+    "chance": 0.5
+   }
+  }
+ },
+ "85a36ba6b6deb7982e7ffd8627b343f3a08b099116d8ae9a0827cb1cc87748f6": {
+  "pooled_match": true,
+  "accepted": 1779,
+  "strata": {
+   "once:retry": {
+    "lo": 0.0,
+    "hi": 42.85714285714286,
+    "width": 42.85714285714286,
+    "accepted": 1779
+   },
+   "once:beyond": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1779
+   },
+   "standing:within": {
+    "lo": -19.999999999999996,
+    "hi": 0.0,
+    "width": 19.999999999999996,
+    "accepted": 1779
+   },
+   "standing:outside": {
+    "lo": -77.77777777777779,
+    "hi": 38.095238095238095,
+    "width": 115.87301587301587,
+    "accepted": 1779
+   },
+   "dx:storage-forbidden": {
+    "lo": 12.5,
+    "hi": 61.53846153846154,
+    "width": 49.03846153846154,
+    "accepted": 1779
+   },
+   "dx:audit-required": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1779
+   },
+   "dx:project-scope": {
+    "lo": -81.81818181818181,
+    "hi": 0.0,
+    "width": 81.81818181818181,
+    "accepted": 1779
+   }
+  },
+  "n_items": 140,
+  "arms_by_stratum": {
+   "once:retry": {
+    "english": 0.875,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "once:beyond": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "standing:within": {
+    "english": 1,
+    "ainglish": 0.9375,
+    "chance": 0.3333
+   },
+   "standing:outside": {
+    "english": 0.4,
+    "ainglish": 0.2,
+    "chance": 0.3333
+   },
+   "dx:storage-forbidden": {
+    "english": 0.6429,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "dx:audit-required": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "dx:project-scope": {
+    "english": 0.8333,
+    "ainglish": 0.3571,
+    "chance": 0.3333
+   }
+  }
+ },
+ "ed377c939f6f0ee57f5fe3390d991b759e3362ec527e0e13d8104f08180e54a8": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "can-undo": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "no-undo": {
+    "lo": -50.90909090909091,
+    "hi": 25.0,
+    "width": 75.9090909090909,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "can-undo": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "no-undo": {
+    "english": 0.875,
+    "ainglish": 0.75,
+    "chance": 0.3333
+   }
+  }
+ },
+ "87c1cc92c8652410a9966a53c819aa62feeb403571790735c13e8972de2c0a05": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 48,
+  "arms_by_stratum": {}
+ },
+ "167e155ad4ab253a61e65dba0a02191c83572a6ec3d0c35d8398b4062da6cc9b": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 128,
+  "arms_by_stratum": {}
+ },
+ "3a9ba36bb620471ea31eecf2b5987c4cef0e9675538a089c6ec32a077f53b27e": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "same-for-all:admissibility": {
+    "lo": -57.14285714285714,
+    "hi": 0.0,
+    "width": 57.14285714285714,
+    "accepted": 2000
+   },
+   "may-vary-across:admissibility": {
+    "lo": -30.364372469635626,
+    "hi": 35.686274509803916,
+    "width": 66.05064697943953,
+    "accepted": 2000
+   },
+   "same-for-all:feasibility": {
+    "lo": -33.333333333333336,
+    "hi": 37.24696356275304,
+    "width": 70.58029689608637,
+    "accepted": 2000
+   },
+   "may-vary-across:feasibility": {
+    "lo": 0.0,
+    "hi": 57.14285714285714,
+    "width": 57.14285714285714,
+    "accepted": 2000
+   },
+   "same-for-all:consequence": {
+    "lo": -87.04453441295547,
+    "hi": -43.75,
+    "width": 43.29453441295547,
+    "accepted": 2000
+   },
+   "may-vary-across:consequence": {
+    "lo": -29.01960784313725,
+    "hi": 33.33333333333333,
+    "width": 62.35294117647058,
+    "accepted": 2000
+   },
+   "same-for-all:capacity": {
+    "lo": -54.90196078431373,
+    "hi": 15.000000000000002,
+    "width": 69.90196078431373,
+    "accepted": 2000
+   },
+   "may-vary-across:capacity": {
+    "lo": -43.75,
+    "hi": 26.83982683982684,
+    "width": 70.58982683982684,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "same-for-all:admissibility": {
+    "english": 0.9412,
+    "ainglish": 0.6667,
+    "chance": 0.5
+   },
+   "may-vary-across:admissibility": {
+    "english": 0.7059,
+    "ainglish": 0.7333,
+    "chance": 0.5
+   },
+   "same-for-all:feasibility": {
+    "english": 0.7647,
+    "ainglish": 0.8,
+    "chance": 0.5
+   },
+   "may-vary-across:feasibility": {
+    "english": 0.7333,
+    "ainglish": 1,
+    "chance": 0.5
+   },
+   "same-for-all:consequence": {
+    "english": 0.7368,
+    "ainglish": 0.0769,
+    "chance": 0.5
+   },
+   "may-vary-across:consequence": {
+    "english": 0.6471,
+    "ainglish": 0.6667,
+    "chance": 0.5
+   },
+   "same-for-all:capacity": {
+    "english": 0.7333,
+    "ainglish": 0.5294,
+    "chance": 0.5
+   },
+   "may-vary-across:capacity": {
+    "english": 0.7333,
+    "ainglish": 0.6471,
+    "chance": 0.5
+   }
+  }
+ },
+ "3f2878a865eef9b6290fe98015cbf4ea1ee477cf3282c557579d12ce814c1d77": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "none-of": {
+    "lo": 0.0,
+    "hi": 3.2786885245901676,
+    "width": 3.2786885245901676,
+    "accepted": 2000
+   },
+   "not-all-of": {
+    "lo": 0.0,
+    "hi": 2.8301886792452824,
+    "width": 2.8301886792452824,
+    "accepted": 2000
+   }
+  },
+  "n_items": 448,
+  "arms_by_stratum": {
+   "none-of": {
+    "english": 0.9909,
+    "ainglish": 1,
+    "chance": 0.2
+   },
+   "not-all-of": {
+    "english": 0.9912,
+    "ainglish": 1,
+    "chance": 0.2
+   }
+  }
+ },
+ "abdb20658d870dc38340e12cc02a0725f77c2ed40651114899b655a55b0bf1d1": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "rule": {
+    "lo": -17.12685074029612,
+    "hi": 17.95185638514892,
+    "width": 35.078707125445035,
+    "accepted": 2000
+   },
+   "forecast": {
+    "lo": -19.354838709677423,
+    "hi": -3.4482758620689613,
+    "width": 15.906562847608463,
+    "accepted": 2000
+   }
+  },
+  "n_items": 100,
+  "arms_by_stratum": {
+   "rule": {
+    "english": 0.25,
+    "ainglish": 0.25,
+    "chance": 0.5
+   },
+   "forecast": {
+    "english": 1,
+    "ainglish": 0.8929,
+    "chance": 0.5
+   }
+  }
+ },
+ "234095c30c7939552525a946f5fc102c5c6dcf6561ba97061f8b6a3aaae1614f": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "same-for-all:admissibility": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "same-for-all:feasibility": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "same-for-all:consequence": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "may-vary-across:admissibility": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "may-vary-across:feasibility": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "may-vary-across:consequence": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "same-for-all:admissibility": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "same-for-all:feasibility": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "same-for-all:consequence": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "may-vary-across:admissibility": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "may-vary-across:feasibility": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "may-vary-across:consequence": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "934d36f84d58104c163d9383d9592428074d4247cc8c624ddae3ee199df73f43": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "98da79292807521f5c0cf0409c7a273ca5b152b0c2da8d9ab7d38f52b636314a": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "subject-intended": {
+    "lo": -33.333333333333336,
+    "hi": -4.1666666666666625,
+    "width": 29.16666666666667,
+    "accepted": 2000
+   },
+   "subject-orthogonal": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "verb-intended": {
+    "lo": -16.666666666666664,
+    "hi": 33.33333333333333,
+    "width": 49.99999999999999,
+    "accepted": 2000
+   },
+   "verb-orthogonal": {
+    "lo": 4.1666666666666625,
+    "hi": 49.99999999999999,
+    "width": 45.83333333333333,
+    "accepted": 2000
+   },
+   "nominal-intended": {
+    "lo": -29.166666666666675,
+    "hi": 4.166666666666674,
+    "width": 33.33333333333335,
+    "accepted": 2000
+   },
+   "nominal-orthogonal": {
+    "lo": -12.5,
+    "hi": 0.0,
+    "width": 12.5,
+    "accepted": 2000
+   },
+   "adjunct-intended": {
+    "lo": 8.333333333333332,
+    "hi": 50.0,
+    "width": 41.66666666666667,
+    "accepted": 2000
+   },
+   "adjunct-orthogonal": {
+    "lo": -8.333333333333337,
+    "hi": 41.666666666666664,
+    "width": 50.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "subject-intended": {
+    "english": 1,
+    "ainglish": 0.8333,
+    "chance": 0.3333
+   },
+   "subject-orthogonal": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "verb-intended": {
+    "english": 0.4167,
+    "ainglish": 0.5,
+    "chance": 0.3333
+   },
+   "verb-orthogonal": {
+    "english": 0.625,
+    "ainglish": 0.875,
+    "chance": 0.3333
+   },
+   "nominal-intended": {
+    "english": 0.9583,
+    "ainglish": 0.8333,
+    "chance": 0.3333
+   },
+   "nominal-orthogonal": {
+    "english": 0.9583,
+    "ainglish": 0.9167,
+    "chance": 0.3333
+   },
+   "adjunct-intended": {
+    "english": 0.0417,
+    "ainglish": 0.3333,
+    "chance": 0.3333
+   },
+   "adjunct-orthogonal": {
+    "english": 0.625,
+    "ainglish": 0.7917,
+    "chance": 0.3333
+   }
+  }
+ },
+ "396935c2d016578572bc4f2ff4caecf1d0b9a17b740eca050df0a347085b301a": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 48,
+  "arms_by_stratum": {}
+ },
+ "04eb391ddfc4e788724e2b65a9aebc2ca61f8f4b02a50bb3b933b6f9a3b48977": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "choose-any": {
+    "lo": -29.166666666666668,
+    "hi": -1.256231306081751,
+    "width": 27.910435360584916,
+    "accepted": 2000
+   },
+   "draw-uniform": {
+    "lo": -47.61904761904762,
+    "hi": -16.9047619047619,
+    "width": 30.71428571428572,
+    "accepted": 2000
+   }
+  },
+  "n_items": 144,
+  "arms_by_stratum": {
+   "choose-any": {
+    "english": 0.3375,
+    "ainglish": 0.1875,
+    "chance": 0.125
+   },
+   "draw-uniform": {
+    "english": 0.7703,
+    "ainglish": 0.4429,
+    "chance": 0.125
+   }
+  }
+ },
+ "11a58c590048ddb6617545fccee3180307bbcf1b706b82a4b9b925e57aa17e32": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "e3c46da6206e4d7a1950a5571404c9e36507951d8ab00db97d1efb15bc18b853": {
+  "pooled_match": true,
+  "accepted": 1984,
+  "strata": null,
+  "n_items": 10,
+  "arms_by_stratum": {}
+ },
+ "422b3540b59289277d0e23982f7264973e692da750670601ffbcaafc8a0ab175": {
+  "pooled_match": true,
+  "accepted": 1968,
+  "strata": {
+   "doer-live": {
+    "lo": 0.0,
+    "hi": 100.0,
+    "width": 100.0,
+    "accepted": 1968
+   },
+   "doer-clash": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1968
+   },
+   "done-to-live": {
+    "lo": 60.0,
+    "hi": 100.0,
+    "width": 40.0,
+    "accepted": 1968
+   },
+   "done-to-clash": {
+    "lo": 0.0,
+    "hi": 50.0,
+    "width": 50.0,
+    "accepted": 1968
+   },
+   "full-live": {
+    "lo": 0.0,
+    "hi": 60.0,
+    "width": 60.0,
+    "accepted": 1968
+   },
+   "full-clash": {
+    "lo": 100.0,
+    "hi": 100.0,
+    "width": 0.0,
+    "accepted": 1968
+   }
+  },
+  "n_items": 72,
+  "arms_by_stratum": {
+   "doer-live": {
+    "english": 0.4,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "doer-clash": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "done-to-live": {
+    "english": 0.125,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "done-to-clash": {
+    "english": 0.8571,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "full-live": {
+    "english": 0.8,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "full-clash": {
+    "english": 0,
+    "ainglish": 1,
+    "chance": 0.3333
+   }
+  }
+ },
+ "d138dffd1551b35b67f1e784f82fec8b21af7c26bba3a5981bcb0d2530773aff": {
+  "pooled_match": true,
+  "accepted": 1997,
+  "strata": null,
+  "n_items": 12,
+  "arms_by_stratum": {}
+ },
+ "6739df5eae40670f667fec50eee4f2c508e8ed1ab824d520c5168e8f7f2d3254": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "marker:test-run": {
+    "lo": -16.666666666666664,
+    "hi": 0.0,
+    "width": 16.666666666666664,
+    "accepted": 2000
+   },
+   "marker:test-passed": {
+    "lo": -28.000000000000004,
+    "hi": 0.0,
+    "width": 28.000000000000004,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "marker:test-run": {
+    "english": 1,
+    "ainglish": 0.95,
+    "chance": 0.3333
+   },
+   "marker:test-passed": {
+    "english": 1,
+    "ainglish": 0.8696,
+    "chance": 0.3333
+   }
+  }
+ },
+ "a5d0216e88f589dca58febf9b346f0688ef6f8659051280559d44f66870f66f4": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "fdaf2c92761bbdd75b3c5f67c121c361813f2a73e34d78b5a075c76edd8143e9": {
+  "pooled_match": true,
+  "accepted": 1081,
+  "strata": {
+   "start-by-acknowledged-only": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1081
+   },
+   "start-by-started-unfinished": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1081
+   },
+   "start-by-successful": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1081
+   },
+   "start-by-failed": {
+    "lo": -100.0,
+    "hi": -100.0,
+    "width": 0.0,
+    "accepted": 1081
+   },
+   "complete-by-acknowledged-only": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1081
+   },
+   "complete-by-started-unfinished": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1081
+   },
+   "complete-by-successful": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1081
+   },
+   "complete-by-failed": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1081
+   }
+  },
+  "n_items": 64,
+  "arms_by_stratum": {
+   "start-by-acknowledged-only": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "start-by-started-unfinished": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "start-by-successful": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "start-by-failed": {
+    "english": 1,
+    "ainglish": 0,
+    "chance": 0.25
+   },
+   "complete-by-acknowledged-only": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "complete-by-started-unfinished": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "complete-by-successful": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "complete-by-failed": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "a6f513d15c774e31364b22ac5bc68457b3c37453ae5f6d1aa92151ce04387ce2": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "none-of": {
+    "lo": -12.023324546689029,
+    "hi": -3.0598740333253605,
+    "width": 8.963450513363668,
+    "accepted": 2000
+   },
+   "not-all-of": {
+    "lo": -22.555164694595465,
+    "hi": -12.324136787459016,
+    "width": 10.231027907136449,
+    "accepted": 2000
+   }
+  },
+  "n_items": 2240,
+  "arms_by_stratum": {
+   "none-of": {
+    "english": 0.8503,
+    "ainglish": 0.7755,
+    "chance": 0.5
+   },
+   "not-all-of": {
+    "english": 0.8358,
+    "ainglish": 0.661,
+    "chance": 0.5
+   }
+  }
+ },
+ "3689e7d1cb139ef5ce16ea038042a001e8ac210fbd541154ad7af89dfaf74b6f": {
+  "pooled_match": true,
+  "accepted": 1872,
+  "strata": {
+   "dispatched": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1872
+   },
+   "delivered": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1872
+   }
+  },
+  "n_items": 12,
+  "arms_by_stratum": {
+   "dispatched": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "delivered": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "8cfcaac4ef93b6a97cde6c95e8181c6cee949e16e33518762b7fa070996acd77": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 160,
+  "arms_by_stratum": {}
+ },
+ "72846daeffe37fa95f8044073226f0971fdd0b7a92c10b06b5803bbe4a5fefb6": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 18,
+  "arms_by_stratum": {}
+ },
+ "348b455b6a023f81436d4b354fd331ebfcbcc883149ae766611d550859f370dc": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": -45.63575958924797,
+    "hi": -8.857142857142852,
+    "width": 36.778616732105114,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -20.326185442464517,
+    "hi": 8.888888888888891,
+    "width": 29.215074331353406,
+    "accepted": 2000
+   }
+  },
+  "n_items": 120,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.697,
+    "ainglish": 0.4259,
+    "chance": 0.5
+   },
+   "likeliest-outcome": {
+    "english": 0.7,
+    "ainglish": 0.64,
+    "chance": 0.5
+   }
+  }
+ },
+ "5e31752a8bdede2597e825b2c253d4383033b94953724d76b6c1edb8bb7f4c85": {
+  "pooled_match": true,
+  "accepted": 1982,
+  "strata": null,
+  "n_items": 8,
+  "arms_by_stratum": {}
+ },
+ "d51a48920270be3ce349122fa27e7a6983a4d97cda0c38872301a1c89028c1c9": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "f3857f4a2f36f9da5fd9b78e6be49da43447772244dcbba95a1cd5965e0ebcc6": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "must-as-rule": {
+    "lo": -5.714285714285716,
+    "hi": 33.75,
+    "width": 39.464285714285715,
+    "accepted": 2000
+   },
+   "must-as-inference": {
+    "lo": -64.76190476190476,
+    "hi": -3.7151702786377747,
+    "width": 61.04673448326699,
+    "accepted": 2000
+   }
+  },
+  "n_items": 24,
+  "arms_by_stratum": {
+   "must-as-rule": {
+    "english": 0.7647,
+    "ainglish": 0.8947,
+    "chance": 0.25
+   },
+   "must-as-inference": {
+    "english": 0.5789,
+    "ainglish": 0.2353,
+    "chance": 0.25
+   }
+  }
+ },
+ "18b5b75cfb4304df76384f986f7e3167425fde147d3a5a74cf911c80be625766": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 192,
+  "arms_by_stratum": {}
+ },
+ "cba951d749ea72d39703a3703e6c966962fb6890f3ed006970a15df21a781e05": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": -7.392283863700366,
+    "hi": 2.663200056215304,
+    "width": 10.05548391991567,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -11.763070077864294,
+    "hi": 6.229143492769743,
+    "width": 17.992213570634036,
+    "accepted": 2000
+   }
+  },
+  "n_items": 240,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.0696,
+    "ainglish": 0.048,
+    "chance": 0.0625
+   },
+   "likeliest-outcome": {
+    "english": 0.1639,
+    "ainglish": 0.1356,
+    "chance": 0.0625
+   }
+  }
+ },
+ "dc56839fa7f60c39b5a08a8e79926eedc4fcbbd0a7ff6378ddc58727f2ff1bfd": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "choose-any": {
+    "lo": -8.333333333333337,
+    "hi": 0.0,
+    "width": 8.333333333333337,
+    "accepted": 2000
+   },
+   "draw-uniform": {
+    "lo": -40.27777777777778,
+    "hi": -13.888888888888893,
+    "width": 26.388888888888886,
+    "accepted": 2000
+   }
+  },
+  "n_items": 144,
+  "arms_by_stratum": {
+   "choose-any": {
+    "english": 1,
+    "ainglish": 0.9583,
+    "chance": 0.125
+   },
+   "draw-uniform": {
+    "english": 0.3889,
+    "ainglish": 0.1111,
+    "chance": 0.125
+   }
+  }
+ },
+ "2fb560cb4598a4f98f0bb177aa52d05419bc7d397569869e1cd7fdc067315b45": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "no-delegation": {
+    "lo": -22.157114081670027,
+    "hi": 0.29704808465871313,
+    "width": 22.45416216632874,
+    "accepted": 2000
+   },
+   "one-hop-delegation-allowed": {
+    "lo": -28.687572590011616,
+    "hi": -4.761904761904767,
+    "width": 23.92566782810685,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "no-delegation": {
+    "english": 0.8374,
+    "ainglish": 0.7293,
+    "chance": 0.125
+   },
+   "one-hop-delegation-allowed": {
+    "english": 0.6504,
+    "ainglish": 0.4812,
+    "chance": 0.125
+   }
+  }
+ },
+ "9bea1edb12ad1460886b644397e7a9f171ea001c57bd479c4b29dc031f6ce460": {
+  "pooled_match": true,
+  "accepted": 1985,
+  "strata": null,
+  "n_items": 8,
+  "arms_by_stratum": {}
+ },
+ "36c449b70650b3bb3af9f0fff86605f919e643b3e14cbe3d82db7a7f5ac333c2": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 150,
+  "arms_by_stratum": {}
+ },
+ "14855b576934f78f2d9d6a7b99c34fc3916c18c9c54b66b483b40fdbfc8b6e94": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "some-or-all": {
+    "lo": -30.46875,
+    "hi": -6.317855609397044,
+    "width": 24.150894390602957,
+    "accepted": 2000
+   },
+   "some-but-not-all": {
+    "lo": -36.22470811174277,
+    "hi": -12.806856443220077,
+    "width": 23.417851668522694,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "some-or-all": {
+    "english": 0.4844,
+    "ainglish": 0.2969,
+    "chance": 0.25
+   },
+   "some-but-not-all": {
+    "english": 0.6953,
+    "ainglish": 0.4453,
+    "chance": 0.25
+   }
+  }
+ },
+ "b8237f69f3e30b7e2fb8605a92403e79057cbb6ca1db87ed76e32d1207053ae9": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "value-unknown": {
+    "lo": -23.25581395348837,
+    "hi": -4.651162790697672,
+    "width": 18.6046511627907,
+    "accepted": 2000
+   },
+   "value-none": {
+    "lo": -56.64160401002506,
+    "hi": -15.925209542230823,
+    "width": 40.71639446779424,
+    "accepted": 2000
+   },
+   "value-redacted": {
+    "lo": -66.66666666666667,
+    "hi": -25.0,
+    "width": 41.66666666666667,
+    "accepted": 2000
+   },
+   "value-inapplicable": {
+    "lo": -76.92307692307692,
+    "hi": -53.333333333333336,
+    "width": 23.589743589743584,
+    "accepted": 2000
+   }
+  },
+  "n_items": 160,
+  "arms_by_stratum": {
+   "value-unknown": {
+    "english": 1,
+    "ainglish": 0.8667,
+    "chance": 0.25
+   },
+   "value-none": {
+    "english": 0.8108,
+    "ainglish": 0.4419,
+    "chance": 0.25
+   },
+   "value-redacted": {
+    "english": 1,
+    "ainglish": 0.5455,
+    "chance": 0.25
+   },
+   "value-inapplicable": {
+    "english": 1,
+    "ainglish": 0.3529,
+    "chance": 0.25
+   }
+  }
+ },
+ "2421c651d3beda762841c10b0bfc486e5bc43393172ef4472cd374f234ce20c7": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "set-to:known": {
+    "lo": -23.725490196078436,
+    "hi": 4.820512820512823,
+    "width": 28.546003016591257,
+    "accepted": 2000
+   },
+   "adjust-by:known": {
+    "lo": -35.82995951417004,
+    "hi": 8.23529411764705,
+    "width": 44.06525363181709,
+    "accepted": 2000
+   },
+   "set-to:unknown": {
+    "lo": -21.016617790811342,
+    "hi": 4.36507936507936,
+    "width": 25.381697155890702,
+    "accepted": 2000
+   },
+   "adjust-by:unknown": {
+    "lo": -23.589743589743595,
+    "hi": 13.137254901960782,
+    "width": 36.72699849170438,
+    "accepted": 2000
+   },
+   "set-to:ordered": {
+    "lo": -4.761904761904767,
+    "hi": 17.14285714285714,
+    "width": 21.904761904761905,
+    "accepted": 2000
+   },
+   "adjust-by:ordered": {
+    "lo": -16.470588235294116,
+    "hi": 21.875,
+    "width": 38.345588235294116,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "set-to:known": {
+    "english": 0.9444,
+    "ainglish": 0.8571,
+    "chance": 0.25
+   },
+   "adjust-by:known": {
+    "english": 0.8788,
+    "ainglish": 0.7419,
+    "chance": 0.25
+   },
+   "set-to:unknown": {
+    "english": 0.9667,
+    "ainglish": 0.8824,
+    "chance": 0.25
+   },
+   "adjust-by:unknown": {
+    "english": 0.75,
+    "ainglish": 0.6944,
+    "chance": 0.25
+   },
+   "set-to:ordered": {
+    "english": 0.9091,
+    "ainglish": 0.9677,
+    "chance": 0.25
+   },
+   "adjust-by:ordered": {
+    "english": 0.8,
+    "ainglish": 0.8235,
+    "chance": 0.25
+   }
+  }
+ },
+ "5059f05dbcc2087ef360abfa393a326e88b5f179ebe0dbf874e79c6af8c66408": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 64,
+  "arms_by_stratum": {}
+ },
+ "bacb9d4ab57a95aae9fb6d9d4764ef930a3dabaac94f5c9fbf0f5e9f4a1c3621": {
+  "pooled_match": true,
+  "accepted": 1995,
+  "strata": null,
+  "n_items": 10,
+  "arms_by_stratum": {}
+ },
+ "80ae728bb9e308e9eeaeca0580e58dd53eb825baef5e2ed67059ca52e46c0e5d": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 48,
+  "arms_by_stratum": {}
+ },
+ "6f1ad7f2a033db5fcc203a31aea980b4fc1fba2840ab6cc5e968af2a628e53ce": {
+  "pooled_match": true,
+  "accepted": 1184,
+  "strata": {
+   "choose-any": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1184
+   },
+   "draw-uniform": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1184
+   }
+  },
+  "n_items": 8,
+  "arms_by_stratum": {
+   "choose-any": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "draw-uniform": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "6093aa64649e454e365698a341858c938fcb2434fa24dc2ff3f1b0d4cd458b22": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 160,
+  "arms_by_stratum": {}
+ },
+ "3ce6e06b081df949a1710342a097a3633d77fc913d84344b81964b4f9d2899db": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "no-charge-positive": {
+    "lo": -33.24329538877099,
+    "hi": 0.29075402209730594,
+    "width": 33.53404941086829,
+    "accepted": 2000
+   },
+   "no-charge-negated": {
+    "lo": -17.938630999213217,
+    "hi": 14.444444444444443,
+    "width": 32.38307544365766,
+    "accepted": 2000
+   },
+   "available-now-positive": {
+    "lo": -19.65944272445821,
+    "hi": 15.871470301850044,
+    "width": 35.530913026308255,
+    "accepted": 2000
+   },
+   "available-now-negated": {
+    "lo": -56.23130608175474,
+    "hi": -29.93311036789298,
+    "width": 26.29819571386176,
+    "accepted": 2000
+   }
+  },
+  "n_items": 288,
+  "arms_by_stratum": {
+   "no-charge-positive": {
+    "english": 0.5571,
+    "ainglish": 0.3919,
+    "chance": 0.1111
+   },
+   "no-charge-negated": {
+    "english": 0.3968,
+    "ainglish": 0.3827,
+    "chance": 0.1111
+   },
+   "available-now-positive": {
+    "english": 0.4684,
+    "ainglish": 0.4462,
+    "chance": 0.1111
+   },
+   "available-now-negated": {
+    "english": 0.525,
+    "ainglish": 0.0938,
+    "chance": 0.1111
+   }
+  }
+ },
+ "fb5835e0a0ebfa02d06c8ab49868083808ccdb82596b6642113ee8de78bc2bd4": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "among-others": {
+    "lo": -5.343511450381677,
+    "hi": 0.0,
+    "width": 5.343511450381677,
+    "accepted": 2000
+   },
+   "and-no-others": {
+    "lo": -22.43386243386244,
+    "hi": 0.31746031746031633,
+    "width": 22.751322751322757,
+    "accepted": 2000
+   }
+  },
+  "n_items": 240,
+  "arms_by_stratum": {
+   "among-others": {
+    "english": 1,
+    "ainglish": 0.9773,
+    "chance": 0.3333
+   },
+   "and-no-others": {
+    "english": 0.8231,
+    "ainglish": 0.7091,
+    "chance": 0.3333
+   }
+  }
+ },
+ "c9d8d897817d90b0072f1e84384422260838db189775d51844f65927fd06bdc3": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "set-to:known": {
+    "lo": -42.417815482502654,
+    "hi": -0.782013685239491,
+    "width": 41.63580179726316,
+    "accepted": 2000
+   },
+   "adjust-by:known": {
+    "lo": -9.920634920634924,
+    "hi": 37.44939271255061,
+    "width": 47.370027633185536,
+    "accepted": 2000
+   },
+   "set-to:unknown": {
+    "lo": -20.625610948191586,
+    "hi": 18.23529411764706,
+    "width": 38.86090506583865,
+    "accepted": 2000
+   },
+   "adjust-by:unknown": {
+    "lo": -26.026026026026017,
+    "hi": 22.72272272272272,
+    "width": 48.74874874874874,
+    "accepted": 2000
+   },
+   "set-to:ordered": {
+    "lo": -18.718718718718723,
+    "hi": 37.5,
+    "width": 56.21871871871872,
+    "accepted": 2000
+   },
+   "adjust-by:ordered": {
+    "lo": 0.0,
+    "hi": 47.78325123152709,
+    "width": 47.78325123152709,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "set-to:known": {
+    "english": 0.8857,
+    "ainglish": 0.6897,
+    "chance": 0.25
+   },
+   "adjust-by:known": {
+    "english": 0.4706,
+    "ainglish": 0.6,
+    "chance": 0.25
+   },
+   "set-to:unknown": {
+    "english": 0.7879,
+    "ainglish": 0.7742,
+    "chance": 0.25
+   },
+   "adjust-by:unknown": {
+    "english": 0.697,
+    "ainglish": 0.6774,
+    "chance": 0.25
+   },
+   "set-to:ordered": {
+    "english": 0.4474,
+    "ainglish": 0.5385,
+    "chance": 0.25
+   },
+   "adjust-by:ordered": {
+    "english": 0.4516,
+    "ainglish": 0.697,
+    "chance": 0.25
+   }
+  }
+ },
+ "0f38624d4ddb93af78583e9b995c0dfea461ae2555a993137a678569f4fc293f": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 160,
+  "arms_by_stratum": {}
+ },
+ "b9097f0d5c8ad0f1804422f981f22aa42755fdcb7194c3ba31a3c1716d43ee60": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 96,
+  "arms_by_stratum": {}
+ },
+ "d5282b724660ae7939ab66db02cc92d754882fe4ecfe6eb172271cfb7f050146": {
+  "pooled_match": true,
+  "accepted": 1180,
+  "strata": {
+   "parallel": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1180
+   },
+   "sequence": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1180
+   }
+  },
+  "n_items": 8,
+  "arms_by_stratum": {
+   "parallel": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "sequence": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   }
+  }
+ },
+ "2f85f08ca361de1353bc8cc8f5e7cbf2f2b75e6f703148092963029674de8aa4": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "verdict-fail": {
+    "lo": -34.375,
+    "hi": -14.66666666666666,
+    "width": 19.70833333333334,
+    "accepted": 2000
+   },
+   "no-verdict": {
+    "lo": -25.0,
+    "hi": 12.380952380952381,
+    "width": 37.38095238095238,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "verdict-fail": {
+    "english": 0.9818,
+    "ainglish": 0.7397,
+    "chance": 0.3333
+   },
+   "no-verdict": {
+    "english": 0.6,
+    "ainglish": 0.5294,
+    "chance": 0.3333
+   }
+  }
+ },
+ "7c8ef02f9ff1d85ef0ea832a7c0213462375126a5bf440dabd0e137a4ee10b44": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 160,
+  "arms_by_stratum": {}
+ },
+ "895db45af0bdca7dafbc152ef7f34a6ef62e261d6d097e5885d3bfedef3fce52": {
+  "pooled_match": true,
+  "accepted": 667,
+  "strata": {
+   "among-others": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 667
+   },
+   "and-no-others": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 667
+   }
+  },
+  "n_items": 6,
+  "arms_by_stratum": {
+   "among-others": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "and-no-others": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   }
+  }
+ },
+ "2ceba38e55d9e93ff59879d6e1f2593b49bb005488f276297607e26867e41684": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 18,
+  "arms_by_stratum": {}
+ },
+ "1cfb814d3ad562441cb2065d7ec98ee5e3354a20c7033fc521eaee6146c606b2": {
+  "pooled_match": true,
+  "accepted": 1947,
+  "strata": null,
+  "n_items": 8,
+  "arms_by_stratum": {}
+ },
+ "622ad565fbc23737af648007c8030224306f034ca8d7557371ae8bcbafb77767": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "cause-question-careful": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "cause-question-bare": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "justification-question-careful": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "justification-question-bare": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 160,
+  "arms_by_stratum": {
+   "cause-question-careful": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "cause-question-bare": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "justification-question-careful": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "justification-question-bare": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "f4bdb950188e837423f2806b944b4c80c77603612b6bb6ac67eb0e6855a23dcb": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "b2d2e231ec71a2fcd17b07e467e5213a09ab61aa40033fdd3167aec1e259c31f": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "next-up": {
+    "lo": 2.6455026455026456,
+    "hi": 22.053872053872052,
+    "width": 19.408369408369406,
+    "accepted": 2000
+   },
+   "next-week": {
+    "lo": 7.0283665506696185,
+    "hi": 27.212107004245787,
+    "width": 20.18374045357617,
+    "accepted": 2000
+   }
+  },
+  "n_items": 392,
+  "arms_by_stratum": {
+   "next-up": {
+    "english": 0.3587,
+    "ainglish": 0.4808,
+    "chance": 0.25
+   },
+   "next-week": {
+    "english": 0.3022,
+    "ainglish": 0.4714,
+    "chance": 0.25
+   }
+  }
+ },
+ "839bcc36c8a7259cb1f9c22eb57086f28574708ac6997b49c00b342d0193eae4": {
+  "pooled_match": true,
+  "accepted": 1998,
+  "strata": null,
+  "n_items": 12,
+  "arms_by_stratum": {}
+ },
+ "4148c356d53b4aac7244e33b0d7622b6aa8e4409e786373e852a19a547fe3639": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "utc": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "civil": {
+    "lo": -24.675324675324674,
+    "hi": 36.66666666666667,
+    "width": 61.341991341991346,
+    "accepted": 2000
+   },
+   "missing-date-utc": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "missing-date-civil": {
+    "lo": -42.85714285714286,
+    "hi": 5.098039215686279,
+    "width": 47.95518207282914,
+    "accepted": 2000
+   },
+   "fold": {
+    "lo": -39.67611336032388,
+    "hi": 25.541125541125542,
+    "width": 65.21723890144942,
+    "accepted": 2000
+   },
+   "gap": {
+    "lo": -22.22222222222222,
+    "hi": 22.67206477732794,
+    "width": 44.89428699955016,
+    "accepted": 2000
+   },
+   "recurring-civil": {
+    "lo": -49.019607843137244,
+    "hi": 23.809523809523807,
+    "width": 72.82913165266105,
+    "accepted": 2000
+   },
+   "recurring-utc": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "utc": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "civil": {
+    "english": 0.1875,
+    "ainglish": 0.25,
+    "chance": 0.25
+   },
+   "missing-date-utc": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "missing-date-civil": {
+    "english": 0.9375,
+    "ainglish": 0.75,
+    "chance": 0.25
+   },
+   "fold": {
+    "english": 0.4375,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "gap": {
+    "english": 0.125,
+    "ainglish": 0.125,
+    "chance": 0.25
+   },
+   "recurring-civil": {
+    "english": 0.5,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "recurring-utc": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "3940048334a3bd6861c7cbc1ec1bb7372f2a3de1d556db89a1ebfe9ec9f7b758": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "utc": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "civil": {
+    "lo": 29.55465587044535,
+    "hi": 81.81818181818181,
+    "width": 52.26352594773646,
+    "accepted": 2000
+   },
+   "missing-date-utc": {
+    "lo": -34.63203463203464,
+    "hi": 48.48484848484848,
+    "width": 83.11688311688312,
+    "accepted": 2000
+   },
+   "missing-date-civil": {
+    "lo": -50.0,
+    "hi": 37.5,
+    "width": 87.5,
+    "accepted": 2000
+   },
+   "fold": {
+    "lo": -20.77922077922078,
+    "hi": 40.08097165991902,
+    "width": 60.8601924391398,
+    "accepted": 2000
+   },
+   "gap": {
+    "lo": 0.0,
+    "hi": 40.0,
+    "width": 40.0,
+    "accepted": 2000
+   },
+   "recurring-civil": {
+    "lo": -32.53968253968254,
+    "hi": 29.14979757085021,
+    "width": 61.68948011053275,
+    "accepted": 2000
+   },
+   "recurring-utc": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "utc": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "civil": {
+    "english": 0.3529,
+    "ainglish": 0.9333,
+    "chance": 0.25
+   },
+   "missing-date-utc": {
+    "english": 0.4545,
+    "ainglish": 0.5238,
+    "chance": 0.25
+   },
+   "missing-date-civil": {
+    "english": 0.5294,
+    "ainglish": 0.4667,
+    "chance": 0.25
+   },
+   "fold": {
+    "english": 0.4167,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "gap": {
+    "english": 0,
+    "ainglish": 0.1875,
+    "chance": 0.25
+   },
+   "recurring-civil": {
+    "english": 0.625,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "recurring-utc": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "69d9964bac3d33ff3004d0a0af3a31d153ee3eb6343e0b9db26ae9d055924c84": {
+  "pooled_match": true,
+  "accepted": 1871,
+  "strata": {
+   "prob:probability": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1871
+   },
+   "prob:complement": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 1871
+   },
+   "prob:odds-orientation": {
+    "lo": -66.66666666666666,
+    "hi": 100.0,
+    "width": 166.66666666666666,
+    "accepted": 1871
+   },
+   "odds-for:probability": {
+    "lo": -100.0,
+    "hi": 0.0,
+    "width": 100.0,
+    "accepted": 1871
+   },
+   "odds-for:complement": {
+    "lo": -42.85714285714286,
+    "hi": 42.85714285714286,
+    "width": 85.71428571428572,
+    "accepted": 1871
+   },
+   "odds-for:odds-orientation": {
+    "lo": -80.0,
+    "hi": 80.0,
+    "width": 160.0,
+    "accepted": 1871
+   },
+   "odds-against:probability": {
+    "lo": -66.66666666666667,
+    "hi": 100.0,
+    "width": 166.66666666666669,
+    "accepted": 1871
+   },
+   "odds-against:complement": {
+    "lo": -33.333333333333336,
+    "hi": 80.0,
+    "width": 113.33333333333334,
+    "accepted": 1871
+   },
+   "odds-against:odds-orientation": {
+    "lo": -66.66666666666666,
+    "hi": 100.0,
+    "width": 166.66666666666666,
+    "accepted": 1871
+   }
+  },
+  "n_items": 36,
+  "arms_by_stratum": {
+   "prob:probability": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "prob:complement": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "prob:odds-orientation": {
+    "english": 0.5,
+    "ainglish": 0.75,
+    "chance": 0.25
+   },
+   "odds-for:probability": {
+    "english": 1,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "odds-for:complement": {
+    "english": 0.75,
+    "ainglish": 0.75,
+    "chance": 0.25
+   },
+   "odds-for:odds-orientation": {
+    "english": 0.5,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "odds-against:probability": {
+    "english": 0.25,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "odds-against:complement": {
+    "english": 0.5,
+    "ainglish": 0.75,
+    "chance": 0.25
+   },
+   "odds-against:odds-orientation": {
+    "english": 0.5,
+    "ainglish": 0.75,
+    "chance": 0.25
+   }
+  }
+ },
+ "aa145ceec71d126aefe1ce2e9fb83bf2be9cefa361b714d0a85d0cbb289a9581": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "paid-missing-receipt": {
+    "lo": -44.173913043478265,
+    "hi": -3.3333333333333326,
+    "width": 40.84057971014493,
+    "accepted": 2000
+   },
+   "unpaid-invoice": {
+    "lo": -83.33333333333334,
+    "hi": -48.67724867724868,
+    "width": 34.656084656084666,
+    "accepted": 2000
+   },
+   "stale-check": {
+    "lo": -34.920634920634924,
+    "hi": 18.181818181818176,
+    "width": 53.1024531024531,
+    "accepted": 2000
+   },
+   "normal-settled": {
+    "lo": -33.33333333333333,
+    "hi": 24.999999999999996,
+    "width": 58.33333333333333,
+    "accepted": 2000
+   },
+   "ledger-refuted": {
+    "lo": -52.222222222222214,
+    "hi": 4.173913043478262,
+    "width": 56.39613526570048,
+    "accepted": 2000
+   },
+   "verified-settled-coexistence": {
+    "lo": -93.93939393939394,
+    "hi": -69.6969696969697,
+    "width": 24.242424242424235,
+    "accepted": 2000
+   }
+  },
+  "n_items": 144,
+  "arms_by_stratum": {
+   "paid-missing-receipt": {
+    "english": 0.8333,
+    "ainglish": 0.5833,
+    "chance": 0.25
+   },
+   "unpaid-invoice": {
+    "english": 0.9583,
+    "ainglish": 0.2917,
+    "chance": 0.25
+   },
+   "stale-check": {
+    "english": 0.625,
+    "ainglish": 0.5417,
+    "chance": 0.25
+   },
+   "normal-settled": {
+    "english": 0.2917,
+    "ainglish": 0.25,
+    "chance": 0.25
+   },
+   "ledger-refuted": {
+    "english": 0.5217,
+    "ainglish": 0.28,
+    "chance": 0.25
+   },
+   "verified-settled-coexistence": {
+    "english": 1,
+    "ainglish": 0.1724,
+    "chance": 0.25
+   }
+  }
+ },
+ "6fbb99e385c7bb5ea17f0e4e27386f631bfdeaa4dfce713930da4a0fbd6ffa15": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "8fe64c3dfdf8a6e58ff8a7935e15658bb18be289d4b7f31f93a5fb96ecd9bd52": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "doer-live": {
+    "lo": 22.22222222222222,
+    "hi": 61.111111111111114,
+    "width": 38.88888888888889,
+    "accepted": 2000
+   },
+   "doer-clash": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "done-to-live": {
+    "lo": 40.0,
+    "hi": 85.71428571428572,
+    "width": 45.71428571428572,
+    "accepted": 2000
+   },
+   "done-to-clash": {
+    "lo": -15.384615384615385,
+    "hi": 15.000000000000002,
+    "width": 30.384615384615387,
+    "accepted": 2000
+   },
+   "full-live": {
+    "lo": 13.33333333333333,
+    "hi": 57.14285714285714,
+    "width": 43.80952380952381,
+    "accepted": 2000
+   },
+   "full-clash": {
+    "lo": -22.22222222222222,
+    "hi": 0.0,
+    "width": 22.22222222222222,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "doer-live": {
+    "english": 0.5789,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "doer-clash": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "done-to-live": {
+    "english": 0.3571,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "done-to-clash": {
+    "english": 0.9375,
+    "ainglish": 0.9375,
+    "chance": 0.3333
+   },
+   "full-live": {
+    "english": 0.6471,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "full-clash": {
+    "english": 1,
+    "ainglish": 0.9231,
+    "chance": 0.3333
+   }
+  }
+ },
+ "9f0c0bcdf2b497d43c0f416ee930b1431c8fc4059ba13fdbdc9df8af4f777394": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "noun-miss": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "verb-miss": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "oversight-supervision": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "mixed-two-sense": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 64,
+  "arms_by_stratum": {
+   "noun-miss": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "verb-miss": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "oversight-supervision": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "mixed-two-sense": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "93cbb70a7b274b44a02ce9e45115444f4750b49b23e3635bca0df79a979e0fdd": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "by-construction": {
+    "lo": -62.686202686202684,
+    "hi": -34.11534701857283,
+    "width": 28.570855667629857,
+    "accepted": 2000
+   },
+   "by-rule": {
+    "lo": -64.01960784313725,
+    "hi": -33.743842364532014,
+    "width": 30.275765478605237,
+    "accepted": 2000
+   },
+   "in-practice": {
+    "lo": -36.125525080306396,
+    "hi": -14.1871921182266,
+    "width": 21.938332962079798,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "by-construction": {
+    "english": 0.7627,
+    "ainglish": 0.2754,
+    "chance": 0.1667
+   },
+   "by-rule": {
+    "english": 0.7879,
+    "ainglish": 0.2903,
+    "chance": 0.1667
+   },
+   "in-practice": {
+    "english": 0.3175,
+    "ainglish": 0.0615,
+    "chance": 0.1667
+   }
+  }
+ },
+ "035e451ff3f3f51d82c99b106f124275280d060d9962dd1c301e0e7e75cd1a41": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 60,
+  "arms_by_stratum": {}
+ },
+ "00b213a5dd7fcff5c3889decc2c8670848f9def651fac4dfae25b19e1ecc0579": {
+  "pooled_match": true,
+  "accepted": 1942,
+  "strata": null,
+  "n_items": 10,
+  "arms_by_stratum": {}
+ },
+ "6d4aeaa77d2c488a97bc50ce06f9551438afb92329d2280347fbe0c836230789": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "same-for-all:admissibility": {
+    "lo": -43.89051808406648,
+    "hi": -7.093596059113305,
+    "width": 36.796922024953176,
+    "accepted": 2000
+   },
+   "same-for-all:feasibility": {
+    "lo": -16.617790811339194,
+    "hi": 35.317460317460316,
+    "width": 51.93525112879951,
+    "accepted": 2000
+   },
+   "same-for-all:consequence": {
+    "lo": -54.761904761904766,
+    "hi": -6.769230769230772,
+    "width": 47.99267399267399,
+    "accepted": 2000
+   },
+   "may-vary-across:admissibility": {
+    "lo": -10.144927536231885,
+    "hi": 40.196078431372555,
+    "width": 50.34100596760444,
+    "accepted": 2000
+   },
+   "may-vary-across:feasibility": {
+    "lo": -16.8327796234773,
+    "hi": 16.666666666666664,
+    "width": 33.499446290143965,
+    "accepted": 2000
+   },
+   "may-vary-across:consequence": {
+    "lo": -18.52216748768473,
+    "hi": 19.58974358974359,
+    "width": 38.11191107742832,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "same-for-all:admissibility": {
+    "english": 0.6563,
+    "ainglish": 0.4063,
+    "chance": 0.25
+   },
+   "same-for-all:feasibility": {
+    "english": 0.5455,
+    "ainglish": 0.6452,
+    "chance": 0.25
+   },
+   "same-for-all:consequence": {
+    "english": 0.4857,
+    "ainglish": 0.1724,
+    "chance": 0.25
+   },
+   "may-vary-across:admissibility": {
+    "english": 0.4615,
+    "ainglish": 0.6053,
+    "chance": 0.25
+   },
+   "may-vary-across:feasibility": {
+    "english": 0.8462,
+    "ainglish": 0.84,
+    "chance": 0.25
+   },
+   "may-vary-across:consequence": {
+    "english": 0.3103,
+    "ainglish": 0.3143,
+    "chance": 0.25
+   }
+  }
+ },
+ "159b975a092ac4d05f9967817f7897c58a33b4e9d07e74127137361422132b7c": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "by-construction": {
+    "lo": -33.47447073474471,
+    "hi": -0.8823529411764675,
+    "width": 32.59211779356825,
+    "accepted": 2000
+   },
+   "by-rule": {
+    "lo": -91.13300492610837,
+    "hi": -73.31356560415122,
+    "width": 17.819439321957148,
+    "accepted": 2000
+   },
+   "in-practice": {
+    "lo": -20.689655172413794,
+    "hi": -5.172413793103448,
+    "width": 15.517241379310345,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "by-construction": {
+    "english": 0.6094,
+    "ainglish": 0.4375,
+    "chance": 0.1667
+   },
+   "by-rule": {
+    "english": 0.9688,
+    "ainglish": 0.1406,
+    "chance": 0.1667
+   },
+   "in-practice": {
+    "english": 0.125,
+    "ainglish": 0,
+    "chance": 0.1667
+   }
+  }
+ },
+ "3647d1ab6435e6dcb71325ec09ac7d6b3120b97d7efa6acb1fd365cfdf6af9ce": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "parallel": {
+    "lo": -6.000000000000005,
+    "hi": 0.0,
+    "width": 6.000000000000005,
+    "accepted": 2000
+   },
+   "sequence": {
+    "lo": -44.99999999999999,
+    "hi": -25.0,
+    "width": 19.999999999999993,
+    "accepted": 2000
+   }
+  },
+  "n_items": 200,
+  "arms_by_stratum": {
+   "parallel": {
+    "english": 1,
+    "ainglish": 0.9735,
+    "chance": 0.3333
+   },
+   "sequence": {
+    "english": 1,
+    "ainglish": 0.6563,
+    "chance": 0.3333
+   }
+  }
+ },
+ "40702354347269f4230a1e2964522d8da3081fc7a188229204a00b833dba0d0e": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "b": {
+    "lo": 0.0,
+    "hi": 16.666666666666664,
+    "width": 16.666666666666664,
+    "accepted": 2000
+   },
+   "r": {
+    "lo": -44.15584415584416,
+    "hi": 33.92857142857143,
+    "width": 78.08441558441558,
+    "accepted": 2000
+   },
+   "i": {
+    "lo": -33.33333333333333,
+    "hi": 18.394648829431436,
+    "width": 51.72798216276476,
+    "accepted": 2000
+   }
+  },
+  "n_items": 36,
+  "arms_by_stratum": {
+   "b": {
+    "english": 0,
+    "ainglish": 0.0526,
+    "chance": 0.2
+   },
+   "r": {
+    "english": 0.6,
+    "ainglish": 0.5625,
+    "chance": 0.2
+   },
+   "i": {
+    "english": 0.2353,
+    "ainglish": 0.1579,
+    "chance": 0.2
+   }
+  }
+ },
+ "415552aa6812ef5bd51cb44f238792098a0ba6a65e920ae4fa5c56d11e2713ed": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "reason": {
+    "lo": -53.333333333333336,
+    "hi": -29.101449275362324,
+    "width": 24.231884057971012,
+    "accepted": 2000
+   },
+   "interval": {
+    "lo": -10.656370656370651,
+    "hi": 24.338624338624342,
+    "width": 34.994994994995,
+    "accepted": 2000
+   },
+   "both": {
+    "lo": -16.650513665439036,
+    "hi": 15.78115741655145,
+    "width": 32.43167108199049,
+    "accepted": 2000
+   },
+   "neither": {
+    "lo": -24.375000000000004,
+    "hi": 7.683397683397686,
+    "width": 32.058397683397686,
+    "accepted": 2000
+   }
+  },
+  "n_items": 288,
+  "arms_by_stratum": {
+   "reason": {
+    "english": 0.4225,
+    "ainglish": 0.0137,
+    "chance": 0.25
+   },
+   "interval": {
+    "english": 0.5606,
+    "ainglish": 0.6282,
+    "chance": 0.25
+   },
+   "both": {
+    "english": 0.527,
+    "ainglish": 0.5286,
+    "chance": 0.25
+   },
+   "neither": {
+    "english": 0.4857,
+    "ainglish": 0.4054,
+    "chance": 0.25
+   }
+  }
+ },
+ "864f2c2bd76b99c4da31a80e4d01775b83128f9b9264dea654be5fa50bc8edd9": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "none-of": {
+    "lo": -58.87445887445888,
+    "hi": -44.97607655502392,
+    "width": 13.898382319434958,
+    "accepted": 2000
+   },
+   "not-all-of": {
+    "lo": -16.657027183342972,
+    "hi": 1.2969310642051035,
+    "width": 17.953958247548076,
+    "accepted": 2000
+   }
+  },
+  "n_items": 448,
+  "arms_by_stratum": {
+   "none-of": {
+    "english": 1,
+    "ainglish": 0.482,
+    "chance": 0.2
+   },
+   "not-all-of": {
+    "english": 0.4653,
+    "ainglish": 0.3892,
+    "chance": 0.2
+   }
+  }
+ },
+ "7a06fc70f56a260494e11c85891b60cf2d9097d01b630444c6d8dbf0b441ed40": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-of": {
+    "lo": -15.789473684210531,
+    "hi": -2.182539682539686,
+    "width": 13.606934001670846,
+    "accepted": 2000
+   },
+   "median-of": {
+    "lo": -10.769230769230765,
+    "hi": 0.0,
+    "width": 10.769230769230765,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "mean-of": {
+    "english": 0.9851,
+    "ainglish": 0.9016,
+    "chance": 0.25
+   },
+   "median-of": {
+    "english": 1,
+    "ainglish": 0.9524,
+    "chance": 0.25
+   }
+  }
+ },
+ "393a7653cbd158f0c726c5ec0756e6188bf624fa46c9fdd5810744490b7d7f7e": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 64,
+  "arms_by_stratum": {}
+ },
+ "e0530e7a0a0d559a7ae01406760d0ddedb967bce35cb3f9922b13f838955c8ca": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 120,
+  "arms_by_stratum": {}
+ },
+ "c9ba4fa7c387eaf7b907f816a6ac603eb3b2241b7a65836c35b6c4ca25f311ef": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "set-to:known": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "adjust-by:known": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "set-to:unknown": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "adjust-by:unknown": {
+    "lo": -29.032258064516125,
+    "hi": 11.511511511511507,
+    "width": 40.54376957602763,
+    "accepted": 2000
+   },
+   "set-to:ordered": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "adjust-by:ordered": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "set-to:known": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "adjust-by:known": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "set-to:unknown": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "adjust-by:unknown": {
+    "english": 0.871,
+    "ainglish": 0.7879,
+    "chance": 0.25
+   },
+   "set-to:ordered": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "adjust-by:ordered": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "2eb8d54e3a399d8370dcebb2c83d41bcb80d285cd2132265e9871534449c0d0a": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "same-one": {
+    "lo": -11.428571428571432,
+    "hi": 10.526315789473683,
+    "width": 21.954887218045116,
+    "accepted": 2000
+   },
+   "same-kind": {
+    "lo": -17.604355716878406,
+    "hi": 8.52994555353902,
+    "width": 26.134301270417424,
+    "accepted": 2000
+   },
+   "same-name": {
+    "lo": -32.3049001814882,
+    "hi": 21.415607985480946,
+    "width": 53.72050816696915,
+    "accepted": 2000
+   }
+  },
+  "n_items": 72,
+  "arms_by_stratum": {
+   "same-one": {
+    "english": 0.9583,
+    "ainglish": 0.9583,
+    "chance": 0.3333
+   },
+   "same-kind": {
+    "english": 0.9583,
+    "ainglish": 0.9167,
+    "chance": 0.3333
+   },
+   "same-name": {
+    "english": 0.6667,
+    "ainglish": 0.625,
+    "chance": 0.3333
+   }
+  }
+ },
+ "ee200d57b422c52663bcdb3a276e98f9f26d38ef7abd1133820869e43a6f8051": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": -14.322250639386189,
+    "hi": 12.285714285714286,
+    "width": 26.607964925100475,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -10.0,
+    "hi": 17.410714285714285,
+    "width": 27.410714285714285,
+    "accepted": 2000
+   }
+  },
+  "n_items": 120,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.2881,
+    "ainglish": 0.2787,
+    "chance": 0.0625
+   },
+   "likeliest-outcome": {
+    "english": 0.2321,
+    "ainglish": 0.2656,
+    "chance": 0.0625
+   }
+  }
+ },
+ "c47a059802762116d33daea290b3ab6f61fb2f49812d11c080ff35ed19c9fb38": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 16,
+  "arms_by_stratum": {}
+ },
+ "019eb15a656cca1fdf0eb46be70ac50cfe4d1210918f5c5020c57bd75ed76436": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 100,
+  "arms_by_stratum": {}
+ },
+ "39a511cf82362e44c1ebb56eb945f615c245d50e1f65a0aa62dc0c91c45e5ff3": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "dispatched": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "delivered": {
+    "lo": -69.23076923076923,
+    "hi": -14.28571428571429,
+    "width": 54.945054945054935,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "dispatched": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "delivered": {
+    "english": 1,
+    "ainglish": 0.6,
+    "chance": 0.25
+   }
+  }
+ },
+ "206069826bf9a35ff321d42610698482712768cc3262c4e2c76eb7dacf083928": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-of": {
+    "lo": -3.470919324577859,
+    "hi": 6.954887218045114,
+    "width": 10.425806542622972,
+    "accepted": 2000
+   },
+   "median-of": {
+    "lo": -8.333333333333337,
+    "hi": 0.0,
+    "width": 8.333333333333337,
+    "accepted": 2000
+   }
+  },
+  "n_items": 160,
+  "arms_by_stratum": {
+   "mean-of": {
+    "english": 0.9359,
+    "ainglish": 0.9512,
+    "chance": 0.5
+   },
+   "median-of": {
+    "english": 1,
+    "ainglish": 0.9615,
+    "chance": 0.5
+   }
+  }
+ },
+ "0fe5e94c7afa47dd009b25eb9e96b7bd946b79bad42736e0ff6a3e24df2f2b5e": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "increase": {
+    "lo": -37.5,
+    "hi": 14.50980392156862,
+    "width": 52.00980392156862,
+    "accepted": 2000
+   },
+   "decrease": {
+    "lo": -29.166666666666664,
+    "hi": 9.80392156862745,
+    "width": 38.970588235294116,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "increase": {
+    "english": 0.7059,
+    "ainglish": 0.6,
+    "chance": 0.25
+   },
+   "decrease": {
+    "english": 0.8667,
+    "ainglish": 0.7647,
+    "chance": 0.25
+   }
+  }
+ },
+ "f49ceee7e0e7c4c119641c0320d6a6b626fa2743aeffcd0ffc30bb16c78c80df": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 48,
+  "arms_by_stratum": {}
+ },
+ "fdffbc61a7c411ace219500c141321f535466996bb6f8abb57f487ac96379163": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": -4.671857619577313,
+    "hi": 29.25812725757154,
+    "width": 33.929984877148854,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -12.307692307692308,
+    "hi": 13.28320802005013,
+    "width": 25.59090032774244,
+    "accepted": 2000
+   }
+  },
+  "n_items": 120,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.6393,
+    "ainglish": 0.7627,
+    "chance": 0.25
+   },
+   "likeliest-outcome": {
+    "english": 0.7636,
+    "ainglish": 0.7692,
+    "chance": 0.25
+   }
+  }
+ },
+ "89a9557e4bc4d9928cefeb7ee9114821e7228cb557099e1b0a5a7a9e27408f3d": {
+  "pooled_match": true,
+  "accepted": 1987,
+  "strata": null,
+  "n_items": 8,
+  "arms_by_stratum": {}
+ },
+ "17e39d2b675bcb44f2a3679acc207f21b91b5bf4181df2505ee83140c6a14fbd": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "will-as-promise": {
+    "lo": -20.371785077667436,
+    "hi": 12.352941176470589,
+    "width": 32.72472625413803,
+    "accepted": 2000
+   },
+   "will-as-plan": {
+    "lo": -36.27378304917222,
+    "hi": -10.97529921059333,
+    "width": 25.298483838578896,
+    "accepted": 2000
+   },
+   "will-as-forecast": {
+    "lo": -95.44544544544544,
+    "hi": -79.81427174975562,
+    "width": 15.631173695689824,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "will-as-promise": {
+    "english": 0.7463,
+    "ainglish": 0.7049,
+    "chance": 0.1667
+   },
+   "will-as-plan": {
+    "english": 0.2917,
+    "ainglish": 0.0536,
+    "chance": 0.1667
+   },
+   "will-as-forecast": {
+    "english": 0.9298,
+    "ainglish": 0.0423,
+    "chance": 0.1667
+   }
+  }
+ },
+ "4a928d0df73a9ff52660354302765eb9288fd110b4cadc726fdb853dddf45b12": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "paid-missing-receipt": {
+    "lo": -62.5,
+    "hi": -4.1666666666666625,
+    "width": 58.333333333333336,
+    "accepted": 2000
+   },
+   "unpaid-invoice": {
+    "lo": -54.16666666666667,
+    "hi": -4.1666666666666625,
+    "width": 50.00000000000001,
+    "accepted": 2000
+   },
+   "stale-check": {
+    "lo": -58.333333333333336,
+    "hi": 12.5,
+    "width": 70.83333333333334,
+    "accepted": 2000
+   },
+   "normal-settled": {
+    "lo": -54.166666666666664,
+    "hi": -16.666666666666664,
+    "width": 37.5,
+    "accepted": 2000
+   },
+   "ledger-refuted": {
+    "lo": -54.16666666666667,
+    "hi": -12.5,
+    "width": 41.66666666666667,
+    "accepted": 2000
+   },
+   "verified-settled-coexistence": {
+    "lo": -75.0,
+    "hi": -33.333333333333336,
+    "width": 41.666666666666664,
+    "accepted": 2000
+   }
+  },
+  "n_items": 144,
+  "arms_by_stratum": {
+   "paid-missing-receipt": {
+    "english": 0.75,
+    "ainglish": 0.4167,
+    "chance": 0.25
+   },
+   "unpaid-invoice": {
+    "english": 0.8333,
+    "ainglish": 0.5417,
+    "chance": 0.25
+   },
+   "stale-check": {
+    "english": 0.6667,
+    "ainglish": 0.4167,
+    "chance": 0.25
+   },
+   "normal-settled": {
+    "english": 0.75,
+    "ainglish": 0.4167,
+    "chance": 0.25
+   },
+   "ledger-refuted": {
+    "english": 0.9167,
+    "ainglish": 0.5833,
+    "chance": 0.25
+   },
+   "verified-settled-coexistence": {
+    "english": 0.75,
+    "ainglish": 0.2083,
+    "chance": 0.25
+   }
+  }
+ },
+ "cc39194cab0b6b4405e4ca33e319f96e1e91001c2a5b186423a3e1da7e7679d1": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "doer-live": {
+    "lo": 5.882352941176472,
+    "hi": 50.0,
+    "width": 44.11764705882353,
+    "accepted": 2000
+   },
+   "doer-clash": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "done-to-live": {
+    "lo": 1.6666666666666607,
+    "hi": 51.01214574898785,
+    "width": 49.34547908232119,
+    "accepted": 2000
+   },
+   "done-to-clash": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "full-live": {
+    "lo": 12.5,
+    "hi": 72.22222222222221,
+    "width": 59.722222222222214,
+    "accepted": 2000
+   },
+   "full-clash": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "doer-live": {
+    "english": 0.75,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "doer-clash": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "done-to-live": {
+    "english": 0.6875,
+    "ainglish": 0.9375,
+    "chance": 0.3333
+   },
+   "done-to-clash": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "full-live": {
+    "english": 0.5,
+    "ainglish": 0.9375,
+    "chance": 0.3333
+   },
+   "full-clash": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.3333
+   }
+  }
+ },
+ "158383ee7346428911d758236b395697ee0afc9ee74db2b9f692b97cb83a72a1": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "utc": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "civil": {
+    "lo": 31.57894736842105,
+    "hi": 80.0,
+    "width": 48.421052631578945,
+    "accepted": 2000
+   },
+   "missing-date-utc": {
+    "lo": -14.28571428571429,
+    "hi": 50.79365079365079,
+    "width": 65.07936507936508,
+    "accepted": 2000
+   },
+   "missing-date-civil": {
+    "lo": -28.2051282051282,
+    "hi": 48.148148148148145,
+    "width": 76.35327635327634,
+    "accepted": 2000
+   },
+   "fold": {
+    "lo": -35.686274509803916,
+    "hi": 40.0,
+    "width": 75.68627450980392,
+    "accepted": 2000
+   },
+   "gap": {
+    "lo": -9.090909090909092,
+    "hi": 38.857142857142854,
+    "width": 47.94805194805195,
+    "accepted": 2000
+   },
+   "recurring-civil": {
+    "lo": 42.10526315789473,
+    "hi": 75.0,
+    "width": 32.89473684210527,
+    "accepted": 2000
+   },
+   "recurring-utc": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "utc": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "civil": {
+    "english": 0.4211,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "missing-date-utc": {
+    "english": 0.4286,
+    "ainglish": 0.6111,
+    "chance": 0.25
+   },
+   "missing-date-civil": {
+    "english": 0.4545,
+    "ainglish": 0.5238,
+    "chance": 0.25
+   },
+   "fold": {
+    "english": 0.5556,
+    "ainglish": 0.5714,
+    "chance": 0.25
+   },
+   "gap": {
+    "english": 0.0476,
+    "ainglish": 0.1818,
+    "chance": 0.25
+   },
+   "recurring-civil": {
+    "english": 0.4286,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "recurring-utc": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "ac6bdebf304bc0373a8bb0b1b362891e1c15ac240917201e8d79ab06c815cb4c": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 48,
+  "arms_by_stratum": {}
+ },
+ "f6ea7793b22c101c1d3ada038db24ec58518e7a145c428e01081e827b2feead1": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "remain-in-staffing": {
+    "lo": 0.0,
+    "hi": 37.5,
+    "width": 37.5,
+    "accepted": 2000
+   },
+   "departed-from-staffing": {
+    "lo": -50.0,
+    "hi": 0.0,
+    "width": 50.0,
+    "accepted": 2000
+   },
+   "remain-in-rooms": {
+    "lo": 12.5,
+    "hi": 75.0,
+    "width": 62.5,
+    "accepted": 2000
+   },
+   "departed-from-rooms": {
+    "lo": -37.5,
+    "hi": 37.5,
+    "width": 75.0,
+    "accepted": 2000
+   },
+   "remain-in-evacuation": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "departed-from-evacuation": {
+    "lo": -62.5,
+    "hi": 37.5,
+    "width": 100.0,
+    "accepted": 2000
+   },
+   "remain-in-queues": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "departed-from-queues": {
+    "lo": -75.0,
+    "hi": 0.0,
+    "width": 75.0,
+    "accepted": 2000
+   },
+   "remain-in-inventory": {
+    "lo": 0.0,
+    "hi": 37.5,
+    "width": 37.5,
+    "accepted": 2000
+   },
+   "departed-from-inventory": {
+    "lo": -75.0,
+    "hi": 25.0,
+    "width": 100.0,
+    "accepted": 2000
+   },
+   "remain-in-replicas": {
+    "lo": 0.0,
+    "hi": 37.5,
+    "width": 37.5,
+    "accepted": 2000
+   },
+   "departed-from-replicas": {
+    "lo": -50.0,
+    "hi": 50.0,
+    "width": 100.0,
+    "accepted": 2000
+   },
+   "remain-in-subscriptions": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "departed-from-subscriptions": {
+    "lo": -62.5,
+    "hi": 0.0,
+    "width": 62.5,
+    "accepted": 2000
+   },
+   "remain-in-fleets": {
+    "lo": 0.0,
+    "hi": 50.0,
+    "width": 50.0,
+    "accepted": 2000
+   },
+   "departed-from-fleets": {
+    "lo": -62.5,
+    "hi": 50.0,
+    "width": 112.5,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "remain-in-staffing": {
+    "english": 0.25,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "departed-from-staffing": {
+    "english": 0.625,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "remain-in-rooms": {
+    "english": 0.25,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "departed-from-rooms": {
+    "english": 0.625,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "remain-in-evacuation": {
+    "english": 0.375,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "departed-from-evacuation": {
+    "english": 0.625,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "remain-in-queues": {
+    "english": 0.25,
+    "ainglish": 0.25,
+    "chance": 0.25
+   },
+   "departed-from-queues": {
+    "english": 0.75,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "remain-in-inventory": {
+    "english": 0.25,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "departed-from-inventory": {
+    "english": 0.625,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "remain-in-replicas": {
+    "english": 0.375,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "departed-from-replicas": {
+    "english": 0.5,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "remain-in-subscriptions": {
+    "english": 0.25,
+    "ainglish": 0.25,
+    "chance": 0.25
+   },
+   "departed-from-subscriptions": {
+    "english": 0.625,
+    "ainglish": 0.375,
+    "chance": 0.25
+   },
+   "remain-in-fleets": {
+    "english": 0.25,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "departed-from-fleets": {
+    "english": 0.625,
+    "ainglish": 0.5,
+    "chance": 0.25
+   }
+  }
+ },
+ "1a0c7d59f1dcbcb6a3c1ebf4a70b877451e9a4f82bb6cf4a2c308bc3f9a40a6a": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 12,
+  "arms_by_stratum": {}
+ },
+ "c0a5df1f6cd0ff63c4e3b23a79ffe24c70f6e42c9be805a857b4a142faadcde8": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "caused-by-healthcare": {
+    "lo": -87.5,
+    "hi": -12.5,
+    "width": 75.0,
+    "accepted": 2000
+   },
+   "co-occurring-healthcare": {
+    "lo": -37.5,
+    "hi": 0.0,
+    "width": 37.5,
+    "accepted": 2000
+   },
+   "caused-by-aviation": {
+    "lo": -87.5,
+    "hi": -12.5,
+    "width": 75.0,
+    "accepted": 2000
+   },
+   "co-occurring-aviation": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "caused-by-agriculture": {
+    "lo": -87.5,
+    "hi": -12.5,
+    "width": 75.0,
+    "accepted": 2000
+   },
+   "co-occurring-agriculture": {
+    "lo": -37.5,
+    "hi": 0.0,
+    "width": 37.5,
+    "accepted": 2000
+   },
+   "caused-by-broadcasting": {
+    "lo": -75.0,
+    "hi": -12.5,
+    "width": 62.5,
+    "accepted": 2000
+   },
+   "co-occurring-broadcasting": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "caused-by-municipal": {
+    "lo": -75.0,
+    "hi": 0.0,
+    "width": 75.0,
+    "accepted": 2000
+   },
+   "co-occurring-municipal": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "caused-by-astronomy": {
+    "lo": -75.0,
+    "hi": 0.0,
+    "width": 75.0,
+    "accepted": 2000
+   },
+   "co-occurring-astronomy": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "caused-by-education": {
+    "lo": -75.0,
+    "hi": -12.5,
+    "width": 62.5,
+    "accepted": 2000
+   },
+   "co-occurring-education": {
+    "lo": -37.5,
+    "hi": 0.0,
+    "width": 37.5,
+    "accepted": 2000
+   },
+   "caused-by-shipping": {
+    "lo": -75.0,
+    "hi": 0.0,
+    "width": 75.0,
+    "accepted": 2000
+   },
+   "co-occurring-shipping": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 128,
+  "arms_by_stratum": {
+   "caused-by-healthcare": {
+    "english": 1,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "co-occurring-healthcare": {
+    "english": 1,
+    "ainglish": 0.875,
+    "chance": 0.25
+   },
+   "caused-by-aviation": {
+    "english": 1,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "co-occurring-aviation": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "caused-by-agriculture": {
+    "english": 1,
+    "ainglish": 0.5,
+    "chance": 0.25
+   },
+   "co-occurring-agriculture": {
+    "english": 1,
+    "ainglish": 0.875,
+    "chance": 0.25
+   },
+   "caused-by-broadcasting": {
+    "english": 1,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "co-occurring-broadcasting": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "caused-by-municipal": {
+    "english": 1,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "co-occurring-municipal": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "caused-by-astronomy": {
+    "english": 1,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "co-occurring-astronomy": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "caused-by-education": {
+    "english": 1,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "co-occurring-education": {
+    "english": 1,
+    "ainglish": 0.875,
+    "chance": 0.25
+   },
+   "caused-by-shipping": {
+    "english": 1,
+    "ainglish": 0.625,
+    "chance": 0.25
+   },
+   "co-occurring-shipping": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "c43ed0b19e3b852a167854dd644672a33c1d8abb03e2649cbd1bb4fd25531a6d": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "incoming-reference": {
+    "lo": -18.75,
+    "hi": 0.0,
+    "width": 18.75,
+    "accepted": 2000
+   },
+   "departing-reference": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 32,
+  "arms_by_stratum": {
+   "incoming-reference": {
+    "english": 1,
+    "ainglish": 0.9412,
+    "chance": 0.25
+   },
+   "departing-reference": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   }
+  }
+ },
+ "8b3b90535e0f2422353e7e058d2a0b0118433df34459a348b45b0b06f064c5a5": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "mean-outcome": {
+    "lo": -23.895526535148647,
+    "hi": 2.44512364545707,
+    "width": 26.340650180605717,
+    "accepted": 2000
+   },
+   "likeliest-outcome": {
+    "lo": -30.81345214141995,
+    "hi": -0.694444444444442,
+    "width": 30.11900769697551,
+    "accepted": 2000
+   }
+  },
+  "n_items": 120,
+  "arms_by_stratum": {
+   "mean-outcome": {
+    "english": 0.7778,
+    "ainglish": 0.6667,
+    "chance": 0.25
+   },
+   "likeliest-outcome": {
+    "english": 0.8235,
+    "ainglish": 0.6731,
+    "chance": 0.25
+   }
+  }
+ },
+ "9fc36a6792d1d69be1ac066d71164d09039c79f8759d7468974cbc67d8693b9e": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "all-or-nothing": {
+    "lo": -22.22222222222222,
+    "hi": -3.2258064516129004,
+    "width": 18.99641577060932,
+    "accepted": 2000
+   },
+   "keep-successes": {
+    "lo": -9.999999999999998,
+    "hi": 0.0,
+    "width": 9.999999999999998,
+    "accepted": 2000
+   }
+  },
+  "n_items": 64,
+  "arms_by_stratum": {
+   "all-or-nothing": {
+    "english": 1,
+    "ainglish": 0.875,
+    "chance": 0.25
+   },
+   "keep-successes": {
+    "english": 1,
+    "ainglish": 0.9688,
+    "chance": 0.25
+   }
+  }
+ },
+ "eb9044ee9f2686c774df16b2c428e72a44f49796196899a097f2c6a549591580": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "some-or-all": {
+    "lo": -28.358208955223883,
+    "hi": -6.01953601953602,
+    "width": 22.338672935687864,
+    "accepted": 2000
+   },
+   "some-but-not-all": {
+    "lo": -56.71870217324763,
+    "hi": -33.01797540208137,
+    "width": 23.70072677116626,
+    "accepted": 2000
+   }
+  },
+  "n_items": 256,
+  "arms_by_stratum": {
+   "some-or-all": {
+    "english": 0.4385,
+    "ainglish": 0.2698,
+    "chance": 0.25
+   },
+   "some-but-not-all": {
+    "english": 0.6906,
+    "ainglish": 0.2393,
+    "chance": 0.25
+   }
+  }
+ },
+ "6060f206c1fcf7598bb7d2e02bd7b8c015a63c589c9a519e97ca3ef0d8a7fe1f": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "pair-by-order": {
+    "lo": -83.33333333333334,
+    "hi": -12.5,
+    "width": 70.83333333333334,
+    "accepted": 2000
+   },
+   "every-combination": {
+    "lo": -83.33333333333334,
+    "hi": 13.333333333333341,
+    "width": 96.66666666666669,
+    "accepted": 2000
+   }
+  },
+  "n_items": 16,
+  "arms_by_stratum": {
+   "pair-by-order": {
+    "english": 0.8,
+    "ainglish": 0.3333,
+    "chance": 0.1667
+   },
+   "every-combination": {
+    "english": 0.75,
+    "ainglish": 0.375,
+    "chance": 0.1667
+   }
+  }
+ },
+ "5f2eb1f51aaa715ba51a35182a2bb94284e88e759c34cefd3b518200ab667fff": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "attempt-mapping-neutral": {
+    "lo": -21.875,
+    "hi": 30.36053130929791,
+    "width": 52.23553130929791,
+    "accepted": 2000
+   },
+   "attempt-mapping-outcome-salient": {
+    "lo": 7.272727272727275,
+    "hi": 53.125,
+    "width": 45.85227272727273,
+    "accepted": 2000
+   },
+   "attempt-discharge-explicit-neutral": {
+    "lo": 7.130434782608697,
+    "hi": 67.36242884250474,
+    "width": 60.231994059896046,
+    "accepted": 2000
+   },
+   "attempt-discharge-explicit-outcome-salient": {
+    "lo": -56.666666666666664,
+    "hi": -14.882032667876583,
+    "width": 41.784633998790085,
+    "accepted": 2000
+   },
+   "ensure-mapping-neutral": {
+    "lo": -21.678321678321677,
+    "hi": 25.87412587412587,
+    "width": 47.552447552447546,
+    "accepted": 2000
+   },
+   "ensure-mapping-outcome-salient": {
+    "lo": -19.999999999999996,
+    "hi": 28.57142857142857,
+    "width": 48.57142857142857,
+    "accepted": 2000
+   },
+   "ensure-discharge-explicit-neutral": {
+    "lo": -41.111111111111114,
+    "hi": 15.343915343915338,
+    "width": 56.455026455026456,
+    "accepted": 2000
+   },
+   "ensure-discharge-explicit-outcome-salient": {
+    "lo": -9.375,
+    "hi": 33.333333333333336,
+    "width": 42.708333333333336,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "attempt-mapping-neutral": {
+    "english": 0.5789,
+    "ainglish": 0.6207,
+    "chance": 0.25
+   },
+   "attempt-mapping-outcome-salient": {
+    "english": 0.4211,
+    "ainglish": 0.7241,
+    "chance": 0.25
+   },
+   "attempt-discharge-explicit-neutral": {
+    "english": 0.4762,
+    "ainglish": 0.8519,
+    "chance": 0.25
+   },
+   "attempt-discharge-explicit-outcome-salient": {
+    "english": 0.8,
+    "ainglish": 0.4286,
+    "chance": 0.25
+   },
+   "ensure-mapping-neutral": {
+    "english": 0.68,
+    "ainglish": 0.6957,
+    "chance": 0.25
+   },
+   "ensure-mapping-outcome-salient": {
+    "english": 0.6923,
+    "ainglish": 0.7273,
+    "chance": 0.25
+   },
+   "ensure-discharge-explicit-neutral": {
+    "english": 0.7407,
+    "ainglish": 0.619,
+    "chance": 0.25
+   },
+   "ensure-discharge-explicit-outcome-salient": {
+    "english": 0.6667,
+    "ainglish": 0.7778,
+    "chance": 0.25
+   }
+  }
+ },
+ "00414a7cb7899e327949b09cd0695bdf21c8ca763b0d20e036522d8813f6e63d": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "subject-intended": {
+    "lo": 14.337568058076222,
+    "hi": 53.939393939393945,
+    "width": 39.60182588131772,
+    "accepted": 2000
+   },
+   "subject-orthogonal": {
+    "lo": -29.166666666666664,
+    "hi": 0.0,
+    "width": 29.166666666666664,
+    "accepted": 2000
+   },
+   "verb-intended": {
+    "lo": -15.343915343915349,
+    "hi": 30.0,
+    "width": 45.34391534391535,
+    "accepted": 2000
+   },
+   "verb-orthogonal": {
+    "lo": -68.78306878306879,
+    "hi": -15.625,
+    "width": 53.158068783068785,
+    "accepted": 2000
+   },
+   "nominal-intended": {
+    "lo": 10.71428571428571,
+    "hi": 51.17967332123412,
+    "width": 40.46538760694841,
+    "accepted": 2000
+   },
+   "nominal-orthogonal": {
+    "lo": 0.0,
+    "hi": 20.833333333333336,
+    "width": 20.833333333333336,
+    "accepted": 2000
+   },
+   "adjunct-intended": {
+    "lo": -70.9090909090909,
+    "hi": -28.125,
+    "width": 42.78409090909091,
+    "accepted": 2000
+   },
+   "adjunct-orthogonal": {
+    "lo": -47.22222222222222,
+    "hi": -14.28571428571429,
+    "width": 32.93650793650793,
+    "accepted": 2000
+   }
+  },
+  "n_items": 192,
+  "arms_by_stratum": {
+   "subject-intended": {
+    "english": 0.5882,
+    "ainglish": 0.9355,
+    "chance": 0.3333
+   },
+   "subject-orthogonal": {
+    "english": 1,
+    "ainglish": 0.8636,
+    "chance": 0.3333
+   },
+   "verb-intended": {
+    "english": 0.4,
+    "ainglish": 0.4783,
+    "chance": 0.3333
+   },
+   "verb-orthogonal": {
+    "english": 0.8519,
+    "ainglish": 0.4286,
+    "chance": 0.3333
+   },
+   "nominal-intended": {
+    "english": 0.619,
+    "ainglish": 0.9259,
+    "chance": 0.3333
+   },
+   "nominal-orthogonal": {
+    "english": 0.9231,
+    "ainglish": 1,
+    "chance": 0.3333
+   },
+   "adjunct-intended": {
+    "english": 0.9333,
+    "ainglish": 0.4444,
+    "chance": 0.3333
+   },
+   "adjunct-orthogonal": {
+    "english": 0.8235,
+    "ainglish": 0.5161,
+    "chance": 0.3333
+   }
+  }
+ },
+ "89ef63075fc40e139422106ec7124681d380b95ba991320891d386ecda7dfa05": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "set-to:known": {
+    "lo": -19.999999999999996,
+    "hi": 0.0,
+    "width": 19.999999999999996,
+    "accepted": 2000
+   },
+   "adjust-by:known": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "set-to:unknown": {
+    "lo": -19.047619047619047,
+    "hi": 0.0,
+    "width": 19.047619047619047,
+    "accepted": 2000
+   },
+   "adjust-by:unknown": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "set-to:ordered": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   },
+   "adjust-by:ordered": {
+    "lo": -23.076923076923073,
+    "hi": 0.0,
+    "width": 23.076923076923073,
+    "accepted": 2000
+   }
+  },
+  "n_items": 96,
+  "arms_by_stratum": {
+   "set-to:known": {
+    "english": 1,
+    "ainglish": 0.9412,
+    "chance": 0.25
+   },
+   "adjust-by:known": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "set-to:unknown": {
+    "english": 1,
+    "ainglish": 0.9375,
+    "chance": 0.25
+   },
+   "adjust-by:unknown": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "set-to:ordered": {
+    "english": 1,
+    "ainglish": 1,
+    "chance": 0.25
+   },
+   "adjust-by:ordered": {
+    "english": 1,
+    "ainglish": 0.9375,
+    "chance": 0.25
+   }
+  }
+ },
+ "68b8d272251b0cd5fdfbd86692db3ffae442fdf5a3047f51cb07dbd8305b5537": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": {
+   "should-as-rule": {
+    "lo": -44.18604651162791,
+    "hi": -19.565217391304344,
+    "width": 24.620829120323563,
+    "accepted": 2000
+   },
+   "should-as-forecast": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "width": 0.0,
+    "accepted": 2000
+   }
+  },
+  "n_items": 100,
+  "arms_by_stratum": {
+   "should-as-rule": {
+    "english": 1,
+    "ainglish": 0.6875,
+    "chance": 0.3333
+   },
+   "should-as-forecast": {
+    "english": 0,
+    "ainglish": 0,
+    "chance": 0.3333
+   }
+  }
+ },
+ "d4c3d08e4533cc2fda6cc1e5b5636e5d795175a390d51994e2d98f1cf179d22c": {
+  "pooled_match": true,
+  "accepted": 2000,
+  "strata": null,
+  "n_items": 12,
+  "arms_by_stratum": {}
+ },
+ "e323bb067cac4661a893859e506b9cfa7f6803714dc672661537395e39d23018": {
+  "pooled_match": true,
+  "accepted": 1999,
+  "strata": null,
+  "n_items": 18,
+  "arms_by_stratum": {}
+ }
+}
