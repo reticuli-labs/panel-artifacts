@@ -1,0 +1,288 @@
+{
+ "applicability": {
+  "attested_strata_v1_manifests": 0,
+  "bound_reading_contracts": 0,
+  "settlement_analysis_manifests": 0
+ },
+ "classes": {
+  "attested_rows": 208,
+  "attested_stratified_rows": 139,
+  "cad_at_least_list": [
+   [
+    "stop-s-finish-started-stop-s-interrupt-started-a-stop",
+    {
+     "at_least": 0,
+     "metric": "comprehension_accuracy_delta"
+    }
+   ],
+   [
+    "action-resume-from-checkpoint-action-redo-from-start-retain",
+    {
+     "at_least": 0,
+     "metric": "comprehension_accuracy_delta"
+    }
+   ]
+  ],
+  "cell_failed_pairs": 43,
+  "cell_pass_pairs": 31,
+  "interval_rule_pairs": 62,
+  "interval_rule_stratified_pairs": 54,
+  "legacy_cad_at_least_contracts": 2,
+  "legacy_strata_pairs": 59,
+  "rows_with_filer_stratum_bounds": 8,
+  "stratified_pairs_any_rule": 113
+ },
+ "counterfactual": {
+  "agreements_with_degenerate_arm_present": 25,
+  "cell_failed_subset": {
+   "counts": {
+    "agree": 26,
+    "oppose": 12
+   },
+   "pairs": 38
+  },
+  "counts": {
+   "agree": 29,
+   "oppose": 25
+  },
+  "named_pairs": {
+   "moved-earlier-placebo": {
+    "counterfactual": "pair_not_in_interval_stratified_class",
+    "orig": "82b711bc",
+    "rep": "69b82d4a"
+   },
+   "verified-how": {
+    "counterfactual": "agree",
+    "current_aggregate": true,
+    "current_reproduced_ok": false,
+    "current_rule": "interval-overlap-commensurable-v1",
+    "degenerate_arm_present": true,
+    "failing_stratum": null,
+    "orig": "4a928d0d",
+    "orig_hash": "4a928d0df73a9ff52660354302765eb9288fd110b4cadc726fdb853dddf45b12",
+    "rep": "aa145cee",
+    "rep_hash": "aa145ceec71d126aefe1ce2e9fb83bf2be9cefa361b714d0a85d0cbb289a9581",
+    "strata": {
+     "ledger-refuted": {
+      "orig": [
+       -54.16666666666667,
+       -12.5
+      ],
+      "rep": [
+       -52.222222222222214,
+       4.173913043478262
+      ]
+     },
+     "normal-settled": {
+      "orig": [
+       -54.166666666666664,
+       -16.666666666666664
+      ],
+      "rep": [
+       -33.33333333333333,
+       24.999999999999996
+      ]
+     },
+     "paid-missing-receipt": {
+      "orig": [
+       -62.5,
+       -4.1666666666666625
+      ],
+      "rep": [
+       -44.173913043478265,
+       -3.3333333333333326
+      ]
+     },
+     "stale-check": {
+      "orig": [
+       -58.333333333333336,
+       12.5
+      ],
+      "rep": [
+       -34.920634920634924,
+       18.181818181818176
+      ]
+     },
+     "unpaid-invoice": {
+      "orig": [
+       -54.16666666666667,
+       -4.1666666666666625
+      ],
+      "rep": [
+       -83.33333333333334,
+       -48.67724867724868
+      ]
+     },
+     "verified-settled-coexistence": {
+      "orig": [
+       -75.0,
+       -33.333333333333336
+      ],
+      "rep": [
+       -93.93939393939394,
+       -69.6969696969697
+      ]
+     }
+    }
+   }
+  },
+  "pairs": 54,
+  "prior_pair_list": {
+   "corrected": {
+    "agree": 29,
+    "oppose": 24
+   },
+   "pairs": 53,
+   "prior": {
+    "agree": 4,
+    "oppose": 24,
+    "unresolved_degenerate_arm": 25
+   },
+   "source": "counterfactual_if_opted.json",
+   "transitions": {
+    "agree -> agree": 4,
+    "oppose -> oppose": 24,
+    "unresolved_degenerate_arm -> agree": 25
+   }
+  },
+  "rule": "reference.settle_pair: per-stratum attested-interval intersection, missing bounds hold, no degenerate hold at pair level"
+ },
+ "population": {
+  "computed_at": "2026-09-18T16:05:55Z",
+  "digest_newline": "ca44554fdc637c814f4d306d1e4ca56e093e206318c2895ea4d3c10159a42108",
+  "digest_rule": "sha256 over sorted unique manifest hashes joined by \\n (preimage: population_manifest_hashes.txt)",
+  "listed_rows": 1386,
+  "measurements": 1382,
+  "proposals": 274
+ },
+ "uvf": {
+  "branch_selected_pairs": [],
+  "computed_at": "2026-09-18T16:05:55Z",
+  "keyed_contracts": [],
+  "measurements": 1382,
+  "note": "Applicability projection only: the proposed branch runs for pairs whose BOTH manifests declare settlement_analysis: attested-strata-v1 and the keyed reading for contracts carrying bound_reading. Both selection sets are empty on this snapshot, so the branch predicate selects nothing; this is not a run of candidate code and does not by itself prove a not-yet-written implementation has no side effects.",
+  "population_digest_newline": "ca44554fdc637c814f4d306d1e4ca56e093e206318c2895ea4d3c10159a42108",
+  "proposals": 274,
+  "surfaces_after_sha256": "a252c16293318ce32caef24e5c61098ecb41aeb8cfa91cdeea8936f97c1ab3a5",
+  "surfaces_before_sha256": "a252c16293318ce32caef24e5c61098ecb41aeb8cfa91cdeea8936f97c1ab3a5",
+  "unclaimed_verdict_flips_projection": 0,
+  "verdict_surfaces_counted": 3038
+ },
+ "width_summary": {
+  "attested_rows_replayed": 208,
+  "by_items_per_stratum": {
+   "10": {
+    "median_width": 79.36507936507937,
+    "n": 2
+   },
+   "100": {
+    "median_width": 11.936825885978429,
+    "n": 4
+   },
+   "1120": {
+    "median_width": 8.153588054174925,
+    "n": 4
+   },
+   "12": {
+    "median_width": 51.470588235294116,
+    "n": 25
+   },
+   "120": {
+    "median_width": 15.65217353577966,
+    "n": 8
+   },
+   "128": {
+    "median_width": 17.188128780799353,
+    "n": 18
+   },
+   "16": {
+    "median_width": 44.11764705882353,
+    "n": 99
+   },
+   "196": {
+    "median_width": 19.796054930972787,
+    "n": 2
+   },
+   "2": {
+    "median_width": 0.0,
+    "n": 20
+   },
+   "20": {
+    "median_width": 49.03846153846154,
+    "n": 3
+   },
+   "224": {
+    "median_width": 10.830239546814255,
+    "n": 6
+   },
+   "24": {
+    "median_width": 37.50000000000001,
+    "n": 81
+   },
+   "30": {
+    "median_width": 9.999999999999998,
+    "n": 2
+   },
+   "32": {
+    "median_width": 33.333333333333336,
+    "n": 75
+   },
+   "4": {
+    "median_width": 0.0,
+    "n": 18
+   },
+   "40": {
+    "median_width": 20.838251751467865,
+    "n": 20
+   },
+   "48": {
+    "median_width": 28.000000000000004,
+    "n": 9
+   },
+   "50": {
+    "median_width": 17.217987306157173,
+    "n": 6
+   },
+   "6": {
+    "median_width": 0.0,
+    "n": 10
+   },
+   "60": {
+    "median_width": 27.919560989163656,
+    "n": 12
+   },
+   "64": {
+    "median_width": 28.295180141021934,
+    "n": 27
+   },
+   "72": {
+    "median_width": 31.386341698841704,
+    "n": 12
+   },
+   "8": {
+    "median_width": 37.5,
+    "n": 101
+   },
+   "80": {
+    "median_width": 10.182039073780624,
+    "n": 4
+   },
+   "9": {
+    "median_width": 53.57142857142857,
+    "n": 2
+   },
+   "96": {
+    "median_width": 3.57142857142857,
+    "n": 2
+   }
+  },
+  "positive_control_failures": [],
+  "stratum_intervals": 572,
+  "width_max": 166.66666666666669,
+  "width_median": 28.64316124780969,
+  "width_min": 0.0,
+  "width_q1": 0.0,
+  "width_q3": 49.13797840090945,
+  "zero_width": 161
+ }
+}

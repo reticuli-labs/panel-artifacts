@@ -1,0 +1,162 @@
+rows 1382 props 274 pop {'computed_at': '2026-09-18T16:05:55Z', 'measurements': 1382, 'proposals': 274, 'digest_newline': 'ca44554fdc637c814f4d306d1e4ca56e093e206318c2895ea4d3c10159a42108'}
+{
+ "interval_rule_pairs": 62,
+ "stratified_pairs_any_rule": 113,
+ "interval_rule_stratified_pairs": 54,
+ "cell_failed_pairs": 43,
+ "cell_pass_pairs": 31,
+ "legacy_strata_pairs": 59,
+ "attested_rows": 208,
+ "attested_stratified_rows": 139,
+ "rows_with_filer_stratum_bounds": 8,
+ "legacy_cad_at_least_contracts": 2,
+ "cad_at_least_list": [
+  [
+   "stop-s-finish-started-stop-s-interrupt-started-a-stop",
+   {
+    "metric": "comprehension_accuracy_delta",
+    "at_least": 0
+   }
+  ],
+  [
+   "action-resume-from-checkpoint-action-redo-from-start-retain",
+   {
+    "metric": "comprehension_accuracy_delta",
+    "at_least": 0
+   }
+  ]
+ ]
+}
+replayed 0 of 208 1s
+replayed 20 of 208 8s
+replayed 40 of 208 15s
+replayed 60 of 208 32s
+replayed 80 of 208 41s
+replayed 100 of 208 48s
+replayed 120 of 208 55s
+replayed 140 of 208 70s
+replayed 160 of 208 79s
+replayed 180 of 208 89s
+replayed 200 of 208 96s
+positive control failures: []
+{
+ "attested_rows_replayed": 208,
+ "positive_control_failures": [],
+ "stratum_intervals": 572,
+ "width_median": 28.64316124780969,
+ "width_q1": 0.0,
+ "width_q3": 49.13797840090945,
+ "width_min": 0.0,
+ "width_max": 166.66666666666669,
+ "zero_width": 161,
+ "by_items_per_stratum": {
+  "2": {
+   "n": 20,
+   "median_width": 0.0
+  },
+  "4": {
+   "n": 18,
+   "median_width": 0.0
+  },
+  "6": {
+   "n": 10,
+   "median_width": 0.0
+  },
+  "8": {
+   "n": 101,
+   "median_width": 37.5
+  },
+  "9": {
+   "n": 2,
+   "median_width": 53.57142857142857
+  },
+  "10": {
+   "n": 2,
+   "median_width": 79.36507936507937
+  },
+  "12": {
+   "n": 25,
+   "median_width": 51.470588235294116
+  },
+  "16": {
+   "n": 99,
+   "median_width": 44.11764705882353
+  },
+  "20": {
+   "n": 3,
+   "median_width": 49.03846153846154
+  },
+  "24": {
+   "n": 81,
+   "median_width": 37.50000000000001
+  },
+  "30": {
+   "n": 2,
+   "median_width": 9.999999999999998
+  },
+  "32": {
+   "n": 75,
+   "median_width": 33.333333333333336
+  },
+  "40": {
+   "n": 20,
+   "median_width": 20.838251751467865
+  },
+  "48": {
+   "n": 9,
+   "median_width": 28.000000000000004
+  },
+  "50": {
+   "n": 6,
+   "median_width": 17.217987306157173
+  },
+  "60": {
+   "n": 12,
+   "median_width": 27.919560989163656
+  },
+  "64": {
+   "n": 27,
+   "median_width": 28.295180141021934
+  },
+  "72": {
+   "n": 12,
+   "median_width": 31.386341698841704
+  },
+  "80": {
+   "n": 4,
+   "median_width": 10.182039073780624
+  },
+  "96": {
+   "n": 2,
+   "median_width": 3.57142857142857
+  },
+  "100": {
+   "n": 4,
+   "median_width": 11.936825885978429
+  },
+  "120": {
+   "n": 8,
+   "median_width": 15.65217353577966
+  },
+  "128": {
+   "n": 18,
+   "median_width": 17.188128780799353
+  },
+  "196": {
+   "n": 2,
+   "median_width": 19.796054930972787
+  },
+  "224": {
+   "n": 6,
+   "median_width": 10.830239546814255
+  },
+  "1120": {
+   "n": 4,
+   "median_width": 8.153588054174925
+  }
+ }
+}
+counterfactual-if-opted: {'agree': 29, 'oppose': 25} | among currently cell-failed: {'agree': 26, 'oppose': 12} | agreements resting on a degenerate arm: 25
+prior pair list re-settled: {"source": "counterfactual_if_opted.json", "pairs": 53, "corrected": {"oppose": 24, "agree": 29}, "prior": {"oppose": 24, "unresolved_degenerate_arm": 25, "agree": 4}, "transitions": {"oppose -> oppose": 24, "unresolved_degenerate_arm -> agree": 25, "agree -> agree": 4}}
+named: {"verified-how": {"counterfactual": "agree", "failing_stratum": null, "degenerate_arm_present": true, "current_reproduced_ok": false, "current_aggregate": true}, "moved-earlier-placebo": {"counterfactual": "pair_not_in_interval_stratified_class", "failing_stratum": null, "degenerate_arm_present": null, "current_reproduced_ok": null, "current_aggregate": null}}
+CENSUS_DONE

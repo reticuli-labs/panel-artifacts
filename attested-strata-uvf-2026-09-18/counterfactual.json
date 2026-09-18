@@ -1,0 +1,2868 @@
+[
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "acf09cd6",
+  "orig_hash": "acf09cd6e0565044712929be4ecc9fed599f0064a2e7aedb236d243125757777",
+  "rep": "0fe5e94c",
+  "rep_hash": "0fe5e94c7afa47dd009b25eb9e96b7bd946b79bad42736e0ff6a3e24df2f2b5e",
+  "strata": {
+   "decrease": {
+    "orig": [
+     -41.666666666666664,
+     0.0
+    ],
+    "rep": [
+     -29.166666666666664,
+     9.80392156862745
+    ]
+   },
+   "increase": {
+    "orig": [
+     -13.636363636363635,
+     52.156862745098046
+    ],
+    "rep": [
+     -37.5,
+     14.50980392156862
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "must-as-inference",
+  "orig": "fa10a692",
+  "orig_hash": "fa10a69200a49d993f82da7871741b4c3bb3cf6e32cd090322cb3a39f3f0f50d",
+  "rep": "11eb10d1",
+  "rep_hash": "11eb10d1d620345b747b6d995beb56a04b2e3396e12243744946e15189b33e2e",
+  "strata": {
+   "must-as-inference": {
+    "orig": [
+     -64.71163245356794,
+     -30.3921568627451
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "must-as-rule": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": false,
+  "failing_stratum": null,
+  "orig": "eb9044ee",
+  "orig_hash": "eb9044ee9f2686c774df16b2c428e72a44f49796196899a097f2c6a549591580",
+  "rep": "14855b57",
+  "rep_hash": "14855b576934f78f2d9d6a7b99c34fc3916c18c9c54b66b483b40fdbfc8b6e94",
+  "strata": {
+   "some-but-not-all": {
+    "orig": [
+     -56.71870217324763,
+     -33.01797540208137
+    ],
+    "rep": [
+     -36.22470811174277,
+     -12.806856443220077
+    ]
+   },
+   "some-or-all": {
+    "orig": [
+     -28.358208955223883,
+     -6.01953601953602
+    ],
+    "rep": [
+     -30.46875,
+     -6.317855609397044
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "recurring-civil",
+  "orig": "39400483",
+  "orig_hash": "3940048334a3bd6861c7cbc1ec1bb7372f2a3de1d556db89a1ebfe9ec9f7b758",
+  "rep": "158383ee",
+  "rep_hash": "158383ee7346428911d758236b395697ee0afc9ee74db2b9f692b97cb83a72a1",
+  "strata": {
+   "civil": {
+    "orig": [
+     29.55465587044535,
+     81.81818181818181
+    ],
+    "rep": [
+     31.57894736842105,
+     80.0
+    ]
+   },
+   "fold": {
+    "orig": [
+     -20.77922077922078,
+     40.08097165991902
+    ],
+    "rep": [
+     -35.686274509803916,
+     40.0
+    ]
+   },
+   "gap": {
+    "orig": [
+     0.0,
+     40.0
+    ],
+    "rep": [
+     -9.090909090909092,
+     38.857142857142854
+    ]
+   },
+   "missing-date-civil": {
+    "orig": [
+     -50.0,
+     37.5
+    ],
+    "rep": [
+     -28.2051282051282,
+     48.148148148148145
+    ]
+   },
+   "missing-date-utc": {
+    "orig": [
+     -34.63203463203464,
+     48.48484848484848
+    ],
+    "rep": [
+     -14.28571428571429,
+     50.79365079365079
+    ]
+   },
+   "recurring-civil": {
+    "orig": [
+     -32.53968253968254,
+     29.14979757085021
+    ],
+    "rep": [
+     42.10526315789473,
+     75.0
+    ]
+   },
+   "recurring-utc": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "utc": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "by-construction",
+  "orig": "93cbb70a",
+  "orig_hash": "93cbb70a7b274b44a02ce9e45115444f4750b49b23e3635bca0df79a979e0fdd",
+  "rep": "159b975a",
+  "rep_hash": "159b975a092ac4d05f9967817f7897c58a33b4e9d07e74127137361422132b7c",
+  "strata": {
+   "by-construction": {
+    "orig": [
+     -62.686202686202684,
+     -34.11534701857283
+    ],
+    "rep": [
+     -33.47447073474471,
+     -0.8823529411764675
+    ]
+   },
+   "by-rule": {
+    "orig": [
+     -64.01960784313725,
+     -33.743842364532014
+    ],
+    "rep": [
+     -91.13300492610837,
+     -73.31356560415122
+    ]
+   },
+   "in-practice": {
+    "orig": [
+     -36.125525080306396,
+     -14.1871921182266
+    ],
+    "rep": [
+     -20.689655172413794,
+     -5.172413793103448
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "39a511cf",
+  "orig_hash": "39a511cf82362e44c1ebb56eb945f615c245d50e1f65a0aa62dc0c91c45e5ff3",
+  "rep": "160593e5",
+  "rep_hash": "160593e52d23be44804906f07dd7c732756e20452f85747f162afd1fc84c0975",
+  "strata": {
+   "delivered": {
+    "orig": [
+     -69.23076923076923,
+     -14.28571428571429
+    ],
+    "rep": [
+     -88.23529411764706,
+     -45.45454545454546
+    ]
+   },
+   "dispatched": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     -9.523809523809524,
+     45.748987854251006
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "same-for-all:admissibility",
+  "orig": "6d4aeaa7",
+  "orig_hash": "6d4aeaa77d2c488a97bc50ce06f9551438afb92329d2280347fbe0c836230789",
+  "rep": "234095c3",
+  "rep_hash": "234095c30c7939552525a946f5fc102c5c6dcf6561ba97061f8b6a3aaae1614f",
+  "strata": {
+   "may-vary-across:admissibility": {
+    "orig": [
+     -10.144927536231885,
+     40.196078431372555
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "may-vary-across:consequence": {
+    "orig": [
+     -18.52216748768473,
+     19.58974358974359
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "may-vary-across:feasibility": {
+    "orig": [
+     -16.8327796234773,
+     16.666666666666664
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "same-for-all:admissibility": {
+    "orig": [
+     -43.89051808406648,
+     -7.093596059113305
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "same-for-all:consequence": {
+    "orig": [
+     -54.761904761904766,
+     -6.769230769230772
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "same-for-all:feasibility": {
+    "orig": [
+     -16.617790811339194,
+     35.317460317460316
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": false,
+  "failing_stratum": null,
+  "orig": "c9d8d897",
+  "orig_hash": "c9d8d897817d90b0072f1e84384422260838db189775d51844f65927fd06bdc3",
+  "rep": "2421c651",
+  "rep_hash": "2421c651d3beda762841c10b0bfc486e5bc43393172ef4472cd374f234ce20c7",
+  "strata": {
+   "adjust-by:known": {
+    "orig": [
+     -9.920634920634924,
+     37.44939271255061
+    ],
+    "rep": [
+     -35.82995951417004,
+     8.23529411764705
+    ]
+   },
+   "adjust-by:ordered": {
+    "orig": [
+     0.0,
+     47.78325123152709
+    ],
+    "rep": [
+     -16.470588235294116,
+     21.875
+    ]
+   },
+   "adjust-by:unknown": {
+    "orig": [
+     -26.026026026026017,
+     22.72272272272272
+    ],
+    "rep": [
+     -23.589743589743595,
+     13.137254901960782
+    ]
+   },
+   "set-to:known": {
+    "orig": [
+     -42.417815482502654,
+     -0.782013685239491
+    ],
+    "rep": [
+     -23.725490196078436,
+     4.820512820512823
+    ]
+   },
+   "set-to:ordered": {
+    "orig": [
+     -18.718718718718723,
+     37.5
+    ],
+    "rep": [
+     -4.761904761904767,
+     17.14285714285714
+    ]
+   },
+   "set-to:unknown": {
+    "orig": [
+     -20.625610948191586,
+     18.23529411764706
+    ],
+    "rep": [
+     -21.016617790811342,
+     4.36507936507936
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "in-practice",
+  "orig": "93cbb70a",
+  "orig_hash": "93cbb70a7b274b44a02ce9e45115444f4750b49b23e3635bca0df79a979e0fdd",
+  "rep": "277e69a2",
+  "rep_hash": "277e69a28f0910a6625121bad767dd64c3870f27d94e8769fd11d85afcd1a8c4",
+  "strata": {
+   "by-construction": {
+    "orig": [
+     -62.686202686202684,
+     -34.11534701857283
+    ],
+    "rep": [
+     -61.211057481351475,
+     -29.830655666521928
+    ]
+   },
+   "by-rule": {
+    "orig": [
+     -64.01960784313725,
+     -33.743842364532014
+    ],
+    "rep": [
+     -45.72297003907946,
+     0.39215686274509665
+    ]
+   },
+   "in-practice": {
+    "orig": [
+     -36.125525080306396,
+     -14.1871921182266
+    ],
+    "rep": [
+     -68.18181818181819,
+     -41.30434782608695
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": false,
+  "failing_stratum": null,
+  "orig": "b2d2e231",
+  "orig_hash": "b2d2e231ec71a2fcd17b07e467e5213a09ab61aa40033fdd3167aec1e259c31f",
+  "rep": "2a9933dc",
+  "rep_hash": "2a9933dc10ec9d53f0c3f749d29c2a1673813ce5d408814ff621c8ecacf5fe00",
+  "strata": {
+   "next-up": {
+    "orig": [
+     2.6455026455026456,
+     22.053872053872052
+    ],
+    "rep": [
+     -30.0,
+     52.38095238095237
+    ]
+   },
+   "next-week": {
+    "orig": [
+     7.0283665506696185,
+     27.212107004245787
+    ],
+    "rep": [
+     -9.090909090909092,
+     91.66666666666666
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "3647d1ab",
+  "orig_hash": "3647d1ab6435e6dcb71325ec09ac7d6b3120b97d7efa6acb1fd365cfdf6af9ce",
+  "rep": "352387ae",
+  "rep_hash": "352387aeea09af369100e700a37a85ee158a977dc31012ac693e719642f8ed8a",
+  "strata": {
+   "parallel": {
+    "orig": [
+     -6.000000000000005,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "sequence": {
+    "orig": [
+     -44.99999999999999,
+     -25.0
+    ],
+    "rep": [
+     -54.23728813559322,
+     -36.36363636363637
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "delivered",
+  "orig": "39a511cf",
+  "orig_hash": "39a511cf82362e44c1ebb56eb945f615c245d50e1f65a0aa62dc0c91c45e5ff3",
+  "rep": "3689e7d1",
+  "rep_hash": "3689e7d1cb139ef5ce16ea038042a001e8ac210fbd541154ad7af89dfaf74b6f",
+  "strata": {
+   "delivered": {
+    "orig": [
+     -69.23076923076923,
+     -14.28571428571429
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "dispatched": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "6402298c",
+  "orig_hash": "6402298c595e40c70709bfb1aa4c16a24aed9f0effd939fad17b336a91eae05c",
+  "rep": "3e28fafd",
+  "rep_hash": "3e28fafdfb6c04ab0f02b123b1be2bd8d5b540bbd4cb716f684645390cc8287e",
+  "strata": {
+   "re:aff": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "re:dir": {
+    "orig": [
+     -63.63636363636363,
+     -11.111111111111116
+    ],
+    "rep": [
+     -33.333333333333336,
+     0.0
+    ]
+   },
+   "re:neg": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "re:pq": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "rs:aff": {
+    "orig": [
+     -25.0,
+     0.0
+    ],
+    "rep": [
+     -19.999999999999996,
+     0.0
+    ]
+   },
+   "rs:dir": {
+    "orig": [
+     0.0,
+     40.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "rs:neg": {
+    "orig": [
+     -38.46153846153846,
+     0.0
+    ],
+    "rep": [
+     -36.8421052631579,
+     0.0
+    ]
+   },
+   "rs:pq": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "none-of",
+  "orig": "864f2c2b",
+  "orig_hash": "864f2c2bd76b99c4da31a80e4d01775b83128f9b9264dea654be5fa50bc8edd9",
+  "rep": "3f2878a8",
+  "rep_hash": "3f2878a865eef9b6290fe98015cbf4ea1ee477cf3282c557579d12ce814c1d77",
+  "strata": {
+   "none-of": {
+    "orig": [
+     -58.87445887445888,
+     -44.97607655502392
+    ],
+    "rep": [
+     0.0,
+     3.2786885245901676
+    ]
+   },
+   "not-all-of": {
+    "orig": [
+     -16.657027183342972,
+     1.2969310642051035
+    ],
+    "rep": [
+     0.0,
+     2.8301886792452824
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "39400483",
+  "orig_hash": "3940048334a3bd6861c7cbc1ec1bb7372f2a3de1d556db89a1ebfe9ec9f7b758",
+  "rep": "4148c356",
+  "rep_hash": "4148c356d53b4aac7244e33b0d7622b6aa8e4409e786373e852a19a547fe3639",
+  "strata": {
+   "civil": {
+    "orig": [
+     29.55465587044535,
+     81.81818181818181
+    ],
+    "rep": [
+     -24.675324675324674,
+     36.66666666666667
+    ]
+   },
+   "fold": {
+    "orig": [
+     -20.77922077922078,
+     40.08097165991902
+    ],
+    "rep": [
+     -39.67611336032388,
+     25.541125541125542
+    ]
+   },
+   "gap": {
+    "orig": [
+     0.0,
+     40.0
+    ],
+    "rep": [
+     -22.22222222222222,
+     22.67206477732794
+    ]
+   },
+   "missing-date-civil": {
+    "orig": [
+     -50.0,
+     37.5
+    ],
+    "rep": [
+     -42.85714285714286,
+     5.098039215686279
+    ]
+   },
+   "missing-date-utc": {
+    "orig": [
+     -34.63203463203464,
+     48.48484848484848
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "recurring-civil": {
+    "orig": [
+     -32.53968253968254,
+     29.14979757085021
+    ],
+    "rep": [
+     -49.019607843137244,
+     23.809523809523807
+    ]
+   },
+   "recurring-utc": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "utc": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "full-clash",
+  "orig": "8fe64c3d",
+  "orig_hash": "8fe64c3dfdf8a6e58ff8a7935e15658bb18be289d4b7f31f93a5fb96ecd9bd52",
+  "rep": "422b3540",
+  "rep_hash": "422b3540b59289277d0e23982f7264973e692da750670601ffbcaafc8a0ab175",
+  "strata": {
+   "doer-clash": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "doer-live": {
+    "orig": [
+     22.22222222222222,
+     61.111111111111114
+    ],
+    "rep": [
+     0.0,
+     100.0
+    ]
+   },
+   "done-to-clash": {
+    "orig": [
+     -15.384615384615385,
+     15.000000000000002
+    ],
+    "rep": [
+     0.0,
+     50.0
+    ]
+   },
+   "done-to-live": {
+    "orig": [
+     40.0,
+     85.71428571428572
+    ],
+    "rep": [
+     60.0,
+     100.0
+    ]
+   },
+   "full-clash": {
+    "orig": [
+     -22.22222222222222,
+     0.0
+    ],
+    "rep": [
+     100.0,
+     100.0
+    ]
+   },
+   "full-live": {
+    "orig": [
+     13.33333333333333,
+     57.14285714285714
+    ],
+    "rep": [
+     0.0,
+     60.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "342303a3",
+  "orig_hash": "342303a33f6f6a7bc89a5ddf9362103e7a67b5c50c4a6cb14b0f7493ba8834bd",
+  "rep": "46fb0e07",
+  "rep_hash": "46fb0e0769915a4ce6a716fddc8887228b04087f3e64c95b50bffb68a9154400",
+  "strata": {
+   "odds-against:complement": {
+    "orig": [
+     -75.0,
+     -4.761904761904762
+    ],
+    "rep": [
+     -50.0,
+     46.666666666666664
+    ]
+   },
+   "odds-against:odds-orientation": {
+    "orig": [
+     0.0,
+     37.5
+    ],
+    "rep": [
+     0.0,
+     50.0
+    ]
+   },
+   "odds-against:probability": {
+    "orig": [
+     -61.53846153846154,
+     6.6666666666666705
+    ],
+    "rep": [
+     -33.333333333333336,
+     49.20634920634921
+    ]
+   },
+   "odds-for:complement": {
+    "orig": [
+     -30.76923076923077,
+     78.57142857142857
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-for:odds-orientation": {
+    "orig": [
+     -66.66666666666667,
+     13.33333333333333
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-for:probability": {
+    "orig": [
+     -19.999999999999996,
+     57.14285714285714
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "prob:complement": {
+    "orig": [
+     -42.857142857142854,
+     61.53846153846154
+    ],
+    "rep": [
+     -37.5,
+     0.0
+    ]
+   },
+   "prob:odds-orientation": {
+    "orig": [
+     -46.666666666666664,
+     16.666666666666664
+    ],
+    "rep": [
+     -91.66666666666666,
+     -26.666666666666668
+    ]
+   },
+   "prob:probability": {
+    "orig": [
+     -1.8181818181818188,
+     66.66666666666666
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "acf09cd6",
+  "orig_hash": "acf09cd6e0565044712929be4ecc9fed599f0064a2e7aedb236d243125757777",
+  "rep": "47db07e8",
+  "rep_hash": "47db07e886e33604fe1aa84cebc24f33667b7bcd7c0a44be65d064271b3f45e8",
+  "strata": {
+   "decrease": {
+    "orig": [
+     -41.666666666666664,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "increase": {
+    "orig": [
+     -13.636363636363635,
+     52.156862745098046
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "abdb2065",
+  "orig_hash": "abdb20658d870dc38340e12cc02a0725f77c2ed40651114899b655a55b0bf1d1",
+  "rep": "4fc68707",
+  "rep_hash": "4fc68707ea47c304bf1bdb56a54d2354616c65a24f58cff65dc7932a377af5a2",
+  "strata": {
+   "forecast": {
+    "orig": [
+     -19.354838709677423,
+     -3.4482758620689613
+    ],
+    "rep": [
+     -32.14285714285714,
+     -6.25
+    ]
+   },
+   "rule": {
+    "orig": [
+     -17.12685074029612,
+     17.95185638514892
+    ],
+    "rep": [
+     -21.56862745098039,
+     21.321321321321324
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "verdict-fail",
+  "orig": "2f85f08c",
+  "orig_hash": "2f85f08ca361de1353bc8cc8f5e7cbf2f2b75e6f703148092963029674de8aa4",
+  "rep": "539b22fd",
+  "rep_hash": "539b22fd864eda75fba8d768c5ddc21d2024f83e4c02f306921547f8636261fe",
+  "strata": {
+   "no-verdict": {
+    "orig": [
+     -25.0,
+     12.380952380952381
+    ],
+    "rep": [
+     -31.526251526251524,
+     4.6875
+    ]
+   },
+   "verdict-fail": {
+    "orig": [
+     -34.375,
+     -14.66666666666666
+    ],
+    "rep": [
+     -7.936507936507942,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "fb5835e0",
+  "orig_hash": "fb5835e0a0ebfa02d06c8ab49868083808ccdb82596b6642113ee8de78bc2bd4",
+  "rep": "561b22ea",
+  "rep_hash": "561b22eaa660d6255829baadfaa231362518f3190869b7a831a209605c77e04a",
+  "strata": {
+   "among-others": {
+    "orig": [
+     -5.343511450381677,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "and-no-others": {
+    "orig": [
+     -22.43386243386244,
+     0.31746031746031633
+    ],
+    "rep": [
+     -35.08771929824561,
+     -17.55244755244756
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "cause-question-careful",
+  "orig": "4c90793b",
+  "orig_hash": "4c90793b0dac00fb8ac214057ade4e5f80552cf484dad1829ed239331e9b1586",
+  "rep": "5dc27800",
+  "rep_hash": "5dc27800d64f0e4a74ac291b1833e4cc05a8e71c91428e3ab963b02afda47e33",
+  "strata": {
+   "cause-question-bare": {
+    "orig": [
+     -19.999999999999996,
+     -2.2222222222222254
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "cause-question-careful": {
+    "orig": [
+     -36.58536585365854,
+     -13.513513513513509
+    ],
+    "rep": [
+     -100.0,
+     -100.0
+    ]
+   },
+   "justification-question-bare": {
+    "orig": [
+     -29.52380952380953,
+     5.454545454545457
+    ],
+    "rep": [
+     -42.85714285714286,
+     66.66666666666667
+    ]
+   },
+   "justification-question-careful": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     -60.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "fa2b4436",
+  "orig_hash": "fa2b44363b1f6dbf6bf578387a551ec3790517e319bef8241c08234a2439f896",
+  "rep": "6060f206",
+  "rep_hash": "6060f206c1fcf7598bb7d2e02bd7b8c015a63c589c9a519e97ca3ef0d8a7fe1f",
+  "strata": {
+   "every-combination": {
+    "orig": [
+     -31.707317073170728,
+     -3.4482758620689613
+    ],
+    "rep": [
+     -83.33333333333334,
+     13.333333333333341
+    ]
+   },
+   "pair-by-order": {
+    "orig": [
+     -29.655172413793107,
+     4.251012145748989
+    ],
+    "rep": [
+     -83.33333333333334,
+     -12.5
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "cause-question-careful",
+  "orig": "4c90793b",
+  "orig_hash": "4c90793b0dac00fb8ac214057ade4e5f80552cf484dad1829ed239331e9b1586",
+  "rep": "622ad565",
+  "rep_hash": "622ad565fbc23737af648007c8030224306f034ca8d7557371ae8bcbafb77767",
+  "strata": {
+   "cause-question-bare": {
+    "orig": [
+     -19.999999999999996,
+     -2.2222222222222254
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "cause-question-careful": {
+    "orig": [
+     -36.58536585365854,
+     -13.513513513513509
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "justification-question-bare": {
+    "orig": [
+     -29.52380952380953,
+     5.454545454545457
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "justification-question-careful": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": false,
+  "failing_stratum": null,
+  "orig": "2f85f08c",
+  "orig_hash": "2f85f08ca361de1353bc8cc8f5e7cbf2f2b75e6f703148092963029674de8aa4",
+  "rep": "693aff8c",
+  "rep_hash": "693aff8c74799b673533496c4d4ed3aa4ea4177cce7433623227bbe53a38ebd8",
+  "strata": {
+   "no-verdict": {
+    "orig": [
+     -25.0,
+     12.380952380952381
+    ],
+    "rep": [
+     -20.039100684261967,
+     7.2039072039072005
+    ]
+   },
+   "verdict-fail": {
+    "orig": [
+     -34.375,
+     -14.66666666666666
+    ],
+    "rep": [
+     -22.058823529411764,
+     10.29411764705882
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "342303a3",
+  "orig_hash": "342303a33f6f6a7bc89a5ddf9362103e7a67b5c50c4a6cb14b0f7493ba8834bd",
+  "rep": "69d9964b",
+  "rep_hash": "69d9964bac3d33ff3004d0a0af3a31d153ee3eb6343e0b9db26ae9d055924c84",
+  "strata": {
+   "odds-against:complement": {
+    "orig": [
+     -75.0,
+     -4.761904761904762
+    ],
+    "rep": [
+     -33.333333333333336,
+     80.0
+    ]
+   },
+   "odds-against:odds-orientation": {
+    "orig": [
+     0.0,
+     37.5
+    ],
+    "rep": [
+     -66.66666666666666,
+     100.0
+    ]
+   },
+   "odds-against:probability": {
+    "orig": [
+     -61.53846153846154,
+     6.6666666666666705
+    ],
+    "rep": [
+     -66.66666666666667,
+     100.0
+    ]
+   },
+   "odds-for:complement": {
+    "orig": [
+     -30.76923076923077,
+     78.57142857142857
+    ],
+    "rep": [
+     -42.85714285714286,
+     42.85714285714286
+    ]
+   },
+   "odds-for:odds-orientation": {
+    "orig": [
+     -66.66666666666667,
+     13.33333333333333
+    ],
+    "rep": [
+     -80.0,
+     80.0
+    ]
+   },
+   "odds-for:probability": {
+    "orig": [
+     -19.999999999999996,
+     57.14285714285714
+    ],
+    "rep": [
+     -100.0,
+     0.0
+    ]
+   },
+   "prob:complement": {
+    "orig": [
+     -42.857142857142854,
+     61.53846153846154
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "prob:odds-orientation": {
+    "orig": [
+     -46.666666666666664,
+     16.666666666666664
+    ],
+    "rep": [
+     -66.66666666666666,
+     100.0
+    ]
+   },
+   "prob:probability": {
+    "orig": [
+     -1.8181818181818188,
+     66.66666666666666
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": true,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "05c2fbbe",
+  "orig_hash": "05c2fbbefb585c2fafbe09c024e839ee1f8596060de5a958cce793ef2920d49d",
+  "rep": "6f1ad7f2",
+  "rep_hash": "6f1ad7f2a033db5fcc203a31aea980b4fc1fba2840ab6cc5e968af2a628e53ce",
+  "strata": {
+   "choose-any": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "draw-uniform": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "odds-for:payout",
+  "orig": "f270857d",
+  "orig_hash": "f270857d598a65b32d12b172773219e48e5c71950dc0dd4940f8bfddd081b4ee",
+  "rep": "78041bf5",
+  "rep_hash": "78041bf527b60a115afdc8b3d214252ceaeaceb09af4723437ba0c700dcdb139",
+  "strata": {
+   "odds-against:calibration": {
+    "orig": [
+     -40.0,
+     30.000000000000004
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-against:causation": {
+    "orig": [
+     -80.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-against:frequency": {
+    "orig": [
+     0.0,
+     60.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-against:payout": {
+    "orig": [
+     -55.55555555555556,
+     23.33333333333334
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-against:rounding": {
+    "orig": [
+     0.0,
+     25.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-for:calibration": {
+    "orig": [
+     -37.5,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-for:causation": {
+    "orig": [
+     -66.66666666666667,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-for:frequency": {
+    "orig": [
+     0.0,
+     30.000000000000004
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-for:payout": {
+    "orig": [
+     -77.77777777777779,
+     -16.666666666666664
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "odds-for:rounding": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "prob:calibration": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "prob:causation": {
+    "orig": [
+     -60.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "prob:frequency": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "prob:payout": {
+    "orig": [
+     -8.333333333333337,
+     75.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "prob:rounding": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "fb5835e0",
+  "orig_hash": "fb5835e0a0ebfa02d06c8ab49868083808ccdb82596b6642113ee8de78bc2bd4",
+  "rep": "895db45a",
+  "rep_hash": "895db45af0bdca7dafbc152ef7f34a6ef62e261d6d097e5885d3bfedef3fce52",
+  "strata": {
+   "among-others": {
+    "orig": [
+     -5.343511450381677,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "and-no-others": {
+    "orig": [
+     -22.43386243386244,
+     0.31746031746031633
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "set-to:known",
+  "orig": "e7b399a8",
+  "orig_hash": "e7b399a86856b1e31f5c9afdb92fea761a150698c8acab24c24c224d6a8d1b44",
+  "rep": "89ef6307",
+  "rep_hash": "89ef63075fc40e139422106ec7124681d380b95ba991320891d386ecda7dfa05",
+  "strata": {
+   "adjust-by:known": {
+    "orig": [
+     -25.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "adjust-by:ordered": {
+    "orig": [
+     -35.714285714285715,
+     38.03921568627452
+    ],
+    "rep": [
+     -23.076923076923073,
+     0.0
+    ]
+   },
+   "adjust-by:unknown": {
+    "orig": [
+     0.0,
+     33.333333333333336
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "set-to:known": {
+    "orig": [
+     -93.33333333333333,
+     -57.14285714285714
+    ],
+    "rep": [
+     -19.999999999999996,
+     0.0
+    ]
+   },
+   "set-to:ordered": {
+    "orig": [
+     -88.23529411764706,
+     -38.888888888888886
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "set-to:unknown": {
+    "orig": [
+     -85.71428571428572,
+     -36.36363636363637
+    ],
+    "rep": [
+     -19.047619047619047,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "00414a7c",
+  "orig_hash": "00414a7cb7899e327949b09cd0695bdf21c8ca763b0d20e036522d8813f6e63d",
+  "rep": "8bd05be9",
+  "rep_hash": "8bd05be90d581b895ef422fbf52b0e786d1326151c956bc243df2ef3ce64041f",
+  "strata": {
+   "adjunct-intended": {
+    "orig": [
+     -70.9090909090909,
+     -28.125
+    ],
+    "rep": [
+     -83.33333333333334,
+     -45.833333333333336
+    ]
+   },
+   "adjunct-orthogonal": {
+    "orig": [
+     -47.22222222222222,
+     -14.28571428571429
+    ],
+    "rep": [
+     -16.666666666666664,
+     25.0
+    ]
+   },
+   "nominal-intended": {
+    "orig": [
+     10.71428571428571,
+     51.17967332123412
+    ],
+    "rep": [
+     8.333333333333325,
+     58.33333333333333
+    ]
+   },
+   "nominal-orthogonal": {
+    "orig": [
+     0.0,
+     20.833333333333336
+    ],
+    "rep": [
+     0.0,
+     12.5
+    ]
+   },
+   "subject-intended": {
+    "orig": [
+     14.337568058076222,
+     53.939393939393945
+    ],
+    "rep": [
+     -16.666666666666664,
+     50.0
+    ]
+   },
+   "subject-orthogonal": {
+    "orig": [
+     -29.166666666666664,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     12.5
+    ]
+   },
+   "verb-intended": {
+    "orig": [
+     -15.343915343915349,
+     30.0
+    ],
+    "rep": [
+     -8.333333333333337,
+     37.5
+    ]
+   },
+   "verb-orthogonal": {
+    "orig": [
+     -68.78306878306879,
+     -15.625
+    ],
+    "rep": [
+     -33.333333333333336,
+     4.1666666666666625
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "97726167",
+  "orig_hash": "9772616720eb54968d2b81503c3c8116b99b552f7252861ad7034c7e1a357010",
+  "rep": "93c8fbd8",
+  "rep_hash": "93c8fbd86344bc3753e56d4e76be4bda7cb37c0c4cb72210c8257e247431a252",
+  "strata": {
+   "extra-retries": {
+    "orig": [
+     -56.00000000000001,
+     -17.24137931034483
+    ],
+    "rep": [
+     -62.5,
+     -12.5
+    ]
+   },
+   "total-attempts": {
+    "orig": [
+     -87.5,
+     -62.7906976744186
+    ],
+    "rep": [
+     -81.25,
+     -37.5
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "value-unknown",
+  "orig": "b8237f69",
+  "orig_hash": "b8237f69f3e30b7e2fb8605a92403e79057cbb6ca1db87ed76e32d1207053ae9",
+  "rep": "94c5ced1",
+  "rep_hash": "94c5ced1101b691c52138e67668bfeb5973d2fcb0d3bc69744c7f4d23d4e6337",
+  "strata": {
+   "value-inapplicable": {
+    "orig": [
+     -76.92307692307692,
+     -53.333333333333336
+    ],
+    "rep": [
+     -52.49999999999999,
+     -26.39149468417761
+    ]
+   },
+   "value-none": {
+    "orig": [
+     -56.64160401002506,
+     -15.925209542230823
+    ],
+    "rep": [
+     -21.888680425265793,
+     17.13554987212276
+    ]
+   },
+   "value-redacted": {
+    "orig": [
+     -66.66666666666667,
+     -25.0
+    ],
+    "rep": [
+     -60.86956521739131,
+     -25.0
+    ]
+   },
+   "value-unknown": {
+    "orig": [
+     -23.25581395348837,
+     -4.651162790697672
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "b1b85296",
+  "orig_hash": "b1b85296b22cfdde273acec2cc1372efd921fe1dd3aa541469cb9017626ead70",
+  "rep": "98da7929",
+  "rep_hash": "98da79292807521f5c0cf0409c7a273ca5b152b0c2da8d9ab7d38f52b636314a",
+  "strata": {
+   "adjunct-intended": {
+    "orig": [
+     -29.02097902097902,
+     32.14285714285714
+    ],
+    "rep": [
+     8.333333333333332,
+     50.0
+    ]
+   },
+   "adjunct-orthogonal": {
+    "orig": [
+     -29.166666666666668,
+     37.38656987295826
+    ],
+    "rep": [
+     -8.333333333333337,
+     41.666666666666664
+    ]
+   },
+   "nominal-intended": {
+    "orig": [
+     -11.111111111111116,
+     0.0
+    ],
+    "rep": [
+     -29.166666666666675,
+     4.166666666666674
+    ]
+   },
+   "nominal-orthogonal": {
+    "orig": [
+     0.0,
+     19.047619047619047
+    ],
+    "rep": [
+     -12.5,
+     0.0
+    ]
+   },
+   "subject-intended": {
+    "orig": [
+     -14.28571428571429,
+     0.0
+    ],
+    "rep": [
+     -33.333333333333336,
+     -4.1666666666666625
+    ]
+   },
+   "subject-orthogonal": {
+    "orig": [
+     -17.604355716878406,
+     11.111111111111116
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "verb-intended": {
+    "orig": [
+     -38.11188811188811,
+     7.130434782608697
+    ],
+    "rep": [
+     -16.666666666666664,
+     33.33333333333333
+    ]
+   },
+   "verb-orthogonal": {
+    "orig": [
+     -4.895104895104896,
+     42.14285714285714
+    ],
+    "rep": [
+     4.1666666666666625,
+     49.99999999999999
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "39a511cf",
+  "orig_hash": "39a511cf82362e44c1ebb56eb945f615c245d50e1f65a0aa62dc0c91c45e5ff3",
+  "rep": "9e8fc118",
+  "rep_hash": "9e8fc118b04710fcdffd8e00874f36ab0c3eb44d607b9c39dc3a633d07691266",
+  "strata": {
+   "delivered": {
+    "orig": [
+     -69.23076923076923,
+     -14.28571428571429
+    ],
+    "rep": [
+     -88.88888888888889,
+     -33.333333333333336
+    ]
+   },
+   "dispatched": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     -21.42857142857143,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": true,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "ba2012c1",
+  "orig_hash": "ba2012c19c2745f13566e9f9d40f53e82abe4ad8328bb15b78e0909a61436ac6",
+  "rep": "a1f6acbd",
+  "rep_hash": "a1f6acbd5034d83cc6919f986a6de158fc26607e6693d4e727021bffce5b468c",
+  "strata": {
+   "available-now": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "no-charge": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": false,
+  "failing_stratum": "none-of",
+  "orig": "03604fc1",
+  "orig_hash": "03604fc182efb10175bb4598b1cff40fd606708e7a0fb8aba66e94800af92d43",
+  "rep": "a6f513d1",
+  "rep_hash": "a6f513d15c774e31364b22ac5bc68457b3c37453ae5f6d1aa92151ce04387ce2",
+  "strata": {
+   "none-of": {
+    "orig": [
+     -46.594348415115725,
+     -39.25062282012954
+    ],
+    "rep": [
+     -12.023324546689029,
+     -3.0598740333253605
+    ]
+   },
+   "not-all-of": {
+    "orig": [
+     -29.60043507418828,
+     -23.866807929534385
+    ],
+    "rep": [
+     -22.555164694595465,
+     -12.324136787459016
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "4a928d0d",
+  "orig_hash": "4a928d0df73a9ff52660354302765eb9288fd110b4cadc726fdb853dddf45b12",
+  "rep": "aa145cee",
+  "rep_hash": "aa145ceec71d126aefe1ce2e9fb83bf2be9cefa361b714d0a85d0cbb289a9581",
+  "strata": {
+   "ledger-refuted": {
+    "orig": [
+     -54.16666666666667,
+     -12.5
+    ],
+    "rep": [
+     -52.222222222222214,
+     4.173913043478262
+    ]
+   },
+   "normal-settled": {
+    "orig": [
+     -54.166666666666664,
+     -16.666666666666664
+    ],
+    "rep": [
+     -33.33333333333333,
+     24.999999999999996
+    ]
+   },
+   "paid-missing-receipt": {
+    "orig": [
+     -62.5,
+     -4.1666666666666625
+    ],
+    "rep": [
+     -44.173913043478265,
+     -3.3333333333333326
+    ]
+   },
+   "stale-check": {
+    "orig": [
+     -58.333333333333336,
+     12.5
+    ],
+    "rep": [
+     -34.920634920634924,
+     18.181818181818176
+    ]
+   },
+   "unpaid-invoice": {
+    "orig": [
+     -54.16666666666667,
+     -4.1666666666666625
+    ],
+    "rep": [
+     -83.33333333333334,
+     -48.67724867724868
+    ]
+   },
+   "verified-settled-coexistence": {
+    "orig": [
+     -75.0,
+     -33.333333333333336
+    ],
+    "rep": [
+     -93.93939393939394,
+     -69.6969696969697
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "next-up",
+  "orig": "b2d2e231",
+  "orig_hash": "b2d2e231ec71a2fcd17b07e467e5213a09ab61aa40033fdd3167aec1e259c31f",
+  "rep": "b54cf1cc",
+  "rep_hash": "b54cf1ccc054419876e2b94d0b47a45efba0c6f3b0bbf0f266f8ef804ab19e5f",
+  "strata": {
+   "next-up": {
+    "orig": [
+     2.6455026455026456,
+     22.053872053872052
+    ],
+    "rep": [
+     -7.14285714285714,
+     0.0
+    ]
+   },
+   "next-week": {
+    "orig": [
+     7.0283665506696185,
+     27.212107004245787
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "abdb2065",
+  "orig_hash": "abdb20658d870dc38340e12cc02a0725f77c2ed40651114899b655a55b0bf1d1",
+  "rep": "b72bc1a2",
+  "rep_hash": "b72bc1a26957199c3f28151c64775276530973a11cc81ee0ac6384fe7f1c773f",
+  "strata": {
+   "forecast": {
+    "orig": [
+     -19.354838709677423,
+     -3.4482758620689613
+    ],
+    "rep": [
+     -23.529411764705888,
+     -5.000000000000004
+    ]
+   },
+   "rule": {
+    "orig": [
+     -17.12685074029612,
+     17.95185638514892
+    ],
+    "rep": [
+     -13.33333333333333,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "none-of",
+  "orig": "864f2c2b",
+  "orig_hash": "864f2c2bd76b99c4da31a80e4d01775b83128f9b9264dea654be5fa50bc8edd9",
+  "rep": "be644161",
+  "rep_hash": "be64416163569278abb5f38ce50e20cc01c38ad964fa6b1cdd06fba7c771b2e6",
+  "strata": {
+   "none-of": {
+    "orig": [
+     -58.87445887445888,
+     -44.97607655502392
+    ],
+    "rep": [
+     -9.375,
+     -1.6129032258064502
+    ]
+   },
+   "not-all-of": {
+    "orig": [
+     -16.657027183342972,
+     1.2969310642051035
+    ],
+    "rep": [
+     -45.55335968379447,
+     -25.24720893141945
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "set-to:known",
+  "orig": "c9d8d897",
+  "orig_hash": "c9d8d897817d90b0072f1e84384422260838db189775d51844f65927fd06bdc3",
+  "rep": "c9ba4fa7",
+  "rep_hash": "c9ba4fa7c387eaf7b907f816a6ac603eb3b2241b7a65836c35b6c4ca25f311ef",
+  "strata": {
+   "adjust-by:known": {
+    "orig": [
+     -9.920634920634924,
+     37.44939271255061
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "adjust-by:ordered": {
+    "orig": [
+     0.0,
+     47.78325123152709
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "adjust-by:unknown": {
+    "orig": [
+     -26.026026026026017,
+     22.72272272272272
+    ],
+    "rep": [
+     -29.032258064516125,
+     11.511511511511507
+    ]
+   },
+   "set-to:known": {
+    "orig": [
+     -42.417815482502654,
+     -0.782013685239491
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "set-to:ordered": {
+    "orig": [
+     -18.718718718718723,
+     37.5
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "set-to:unknown": {
+    "orig": [
+     -20.625610948191586,
+     18.23529411764706
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "8fe64c3d",
+  "orig_hash": "8fe64c3dfdf8a6e58ff8a7935e15658bb18be289d4b7f31f93a5fb96ecd9bd52",
+  "rep": "cc39194c",
+  "rep_hash": "cc39194cab0b6b4405e4ca33e319f96e1e91001c2a5b186423a3e1da7e7679d1",
+  "strata": {
+   "doer-clash": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "doer-live": {
+    "orig": [
+     22.22222222222222,
+     61.111111111111114
+    ],
+    "rep": [
+     5.882352941176472,
+     50.0
+    ]
+   },
+   "done-to-clash": {
+    "orig": [
+     -15.384615384615385,
+     15.000000000000002
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "done-to-live": {
+    "orig": [
+     40.0,
+     85.71428571428572
+    ],
+    "rep": [
+     1.6666666666666607,
+     51.01214574898785
+    ]
+   },
+   "full-clash": {
+    "orig": [
+     -22.22222222222222,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "full-live": {
+    "orig": [
+     13.33333333333333,
+     57.14285714285714
+    ],
+    "rep": [
+     12.5,
+     72.22222222222221
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "20606982",
+  "orig_hash": "206069826bf9a35ff321d42610698482712768cc3262c4e2c76eb7dacf083928",
+  "rep": "d02686c1",
+  "rep_hash": "d02686c1f2aa0ad5f9a8d3c082d926af7e49ae5bfe1f18e0a457f070f5b412ed",
+  "strata": {
+   "mean-of": {
+    "orig": [
+     -3.470919324577859,
+     6.954887218045114
+    ],
+    "rep": [
+     -4.782538918311674,
+     10.025141420490257
+    ]
+   },
+   "median-of": {
+    "orig": [
+     -8.333333333333337,
+     0.0
+    ],
+    "rep": [
+     -5.000000000000004,
+     4.938271604938271
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "set-to:known",
+  "orig": "e7b399a8",
+  "orig_hash": "e7b399a86856b1e31f5c9afdb92fea761a150698c8acab24c24c224d6a8d1b44",
+  "rep": "d246c982",
+  "rep_hash": "d246c98217b24a20537af312a0bcac3afd67b547336d4851c0b5b390ca8be719",
+  "strata": {
+   "adjust-by:known": {
+    "orig": [
+     -25.0,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "adjust-by:ordered": {
+    "orig": [
+     -35.714285714285715,
+     38.03921568627452
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "adjust-by:unknown": {
+    "orig": [
+     0.0,
+     33.333333333333336
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "set-to:known": {
+    "orig": [
+     -93.33333333333333,
+     -57.14285714285714
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "set-to:ordered": {
+    "orig": [
+     -88.23529411764706,
+     -38.888888888888886
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "set-to:unknown": {
+    "orig": [
+     -85.71428571428572,
+     -36.36363636363637
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": false,
+  "failing_stratum": "no-charge",
+  "orig": "53387330",
+  "orig_hash": "53387330268be4a9721563f2e5693f11562419343aef1ecedffe4fe79a805827",
+  "rep": "d300b285",
+  "rep_hash": "d300b285cd7d639215d31031585f9aed2c983bed5dc86569ecc2cb7b4c50ca14",
+  "strata": {
+   "available-now": {
+    "orig": [
+     -17.261904761904763,
+     14.957375355205372
+    ],
+    "rep": [
+     25.0,
+     50.0
+    ]
+   },
+   "no-charge": {
+    "orig": [
+     -25.506072874493924,
+     9.890109890109894
+    ],
+    "rep": [
+     21.875,
+     46.875
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": false,
+  "failing_stratum": "some-but-not-all",
+  "orig": "eb9044ee",
+  "orig_hash": "eb9044ee9f2686c774df16b2c428e72a44f49796196899a097f2c6a549591580",
+  "rep": "d342f4fb",
+  "rep_hash": "d342f4fb2d535920f9e4d7fbb316b147cc55f072945234f2714413cc49287439",
+  "strata": {
+   "some-but-not-all": {
+    "orig": [
+     -56.71870217324763,
+     -33.01797540208137
+    ],
+    "rep": [
+     -9.236603865916326,
+     0.836232680217297
+    ]
+   },
+   "some-or-all": {
+    "orig": [
+     -28.358208955223883,
+     -6.01953601953602
+    ],
+    "rep": [
+     -6.964536409692979,
+     1.8300171947924326
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": false,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "sequence",
+  "orig": "3647d1ab",
+  "orig_hash": "3647d1ab6435e6dcb71325ec09ac7d6b3120b97d7efa6acb1fd365cfdf6af9ce",
+  "rep": "d5282b72",
+  "rep_hash": "d5282b724660ae7939ab66db02cc92d754882fe4ecfe6eb172271cfb7f050146",
+  "strata": {
+   "parallel": {
+    "orig": [
+     -6.000000000000005,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "sequence": {
+    "orig": [
+     -44.99999999999999,
+     -25.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "20606982",
+  "orig_hash": "206069826bf9a35ff321d42610698482712768cc3262c4e2c76eb7dacf083928",
+  "rep": "d79991ed",
+  "rep_hash": "d79991ed252b5cc983f25a90338507aad13a0c7700b262327f55b4a30c7c4e8d",
+  "strata": {
+   "mean-of": {
+    "orig": [
+     -3.470919324577859,
+     6.954887218045114
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "median-of": {
+    "orig": [
+     -8.333333333333337,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "04eb391d",
+  "orig_hash": "04eb391ddfc4e788724e2b65a9aebc2ca61f8f4b02a50bb3b933b6f9a3b48977",
+  "rep": "dc56839f",
+  "rep_hash": "dc56839fa7f60c39b5a08a8e79926eedc4fcbbd0a7ff6378ddc58727f2ff1bfd",
+  "strata": {
+   "choose-any": {
+    "orig": [
+     -29.166666666666668,
+     -1.256231306081751
+    ],
+    "rep": [
+     -8.333333333333337,
+     0.0
+    ]
+   },
+   "draw-uniform": {
+    "orig": [
+     -47.61904761904762,
+     -16.9047619047619
+    ],
+    "rep": [
+     -40.27777777777778,
+     -13.888888888888893
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "agree",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": null,
+  "orig": "fa10a692",
+  "orig_hash": "fa10a69200a49d993f82da7871741b4c3bb3cf6e32cd090322cb3a39f3f0f50d",
+  "rep": "f3857f4a",
+  "rep_hash": "f3857f4a2f36f9da5fd9b78e6be49da43447772244dcbba95a1cd5965e0ebcc6",
+  "strata": {
+   "must-as-inference": {
+    "orig": [
+     -64.71163245356794,
+     -30.3921568627451
+    ],
+    "rep": [
+     -64.76190476190476,
+     -3.7151702786377747
+    ]
+   },
+   "must-as-rule": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     -5.714285714285716,
+     33.75
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "must-as-inference",
+  "orig": "fa10a692",
+  "orig_hash": "fa10a69200a49d993f82da7871741b4c3bb3cf6e32cd090322cb3a39f3f0f50d",
+  "rep": "f5784305",
+  "rep_hash": "f5784305509da1a6523b94e1cbd04f06ef86bbdeb996ac44e20509d20eced72d",
+  "strata": {
+   "must-as-inference": {
+    "orig": [
+     -64.71163245356794,
+     -30.3921568627451
+    ],
+    "rep": [
+     -27.972027972027973,
+     28.888888888888893
+    ]
+   },
+   "must-as-rule": {
+    "orig": [
+     0.0,
+     0.0
+    ],
+    "rep": [
+     -18.75,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "every-combination",
+  "orig": "fa2b4436",
+  "orig_hash": "fa2b44363b1f6dbf6bf578387a551ec3790517e319bef8241c08234a2439f896",
+  "rep": "f6933569",
+  "rep_hash": "f6933569f810bbbc58670dd1a89cffca1f258002abd42154abe57d9c368ecd81",
+  "strata": {
+   "every-combination": {
+    "orig": [
+     -31.707317073170728,
+     -3.4482758620689613
+    ],
+    "rep": [
+     0.0,
+     57.14285714285714
+    ]
+   },
+   "pair-by-order": {
+    "orig": [
+     -29.655172413793107,
+     4.251012145748989
+    ],
+    "rep": [
+     -50.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "counterfactual": "oppose",
+  "current_aggregate": true,
+  "current_reproduced_ok": false,
+  "current_rule": "interval-overlap-commensurable-v1",
+  "degenerate_arm_present": true,
+  "failing_stratum": "subject-intended",
+  "orig": "00414a7c",
+  "orig_hash": "00414a7cb7899e327949b09cd0695bdf21c8ca763b0d20e036522d8813f6e63d",
+  "rep": "ff5200d5",
+  "rep_hash": "ff5200d5ea42f63ae91c2dcb2f910e1f1b82bb2c1b483f7e39e5dbc4fbd3ebf2",
+  "strata": {
+   "adjunct-intended": {
+    "orig": [
+     -70.9090909090909,
+     -28.125
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "adjunct-orthogonal": {
+    "orig": [
+     -47.22222222222222,
+     -14.28571428571429
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "nominal-intended": {
+    "orig": [
+     10.71428571428571,
+     51.17967332123412
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "nominal-orthogonal": {
+    "orig": [
+     0.0,
+     20.833333333333336
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "subject-intended": {
+    "orig": [
+     14.337568058076222,
+     53.939393939393945
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "subject-orthogonal": {
+    "orig": [
+     -29.166666666666664,
+     0.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "verb-intended": {
+    "orig": [
+     -15.343915343915349,
+     30.0
+    ],
+    "rep": [
+     0.0,
+     0.0
+    ]
+   },
+   "verb-orthogonal": {
+    "orig": [
+     -68.78306878306879,
+     -15.625
+    ],
+    "rep": [
+     -55.94405594405594,
+     25.0
+    ]
+   }
+  }
+ }
+]
