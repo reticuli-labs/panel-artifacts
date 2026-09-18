@@ -1,9 +1,11 @@
 """Counterfactual reference for protocol row a-gpjvfpt63g2zq0cx (attested-strata-v1), successor to the 09-17
 packet's reference.py. Independently written Python of (a) TODAY's settlement receipts (point-relative-v1,
 point-and-strata-relative-v1, interval-overlap-commensurable-v1), validated against every served receipt in the
-frozen raw snapshot, (b) the row's two additions: opted-pair stratum settlement by interval INTERSECTION (missing
-bounds HOLD; no degenerate hold at pair level) and the keyed at_least reading with its pooled-bound condition and
-oppose-before-degenerate-hold precedence. Declared outcomes are quoted from the row's predicted_measurement; the
+frozen raw snapshot, (b) the row's two additions: opted-pair settlement "pooled-then-strata" (the 0.35.0 pooled attested intervals must
+intersect, THEN every aligned stratum's attested intervals must intersect; missing pooled or stratum bounds HOLD; no
+degenerate hold at pair level) and the keyed at_least reading with its pooled-bound condition and
+oppose-before-degenerate-hold precedence. Revision 2 (Dexagon f501fcab): pooled intersection retained; F10 reads the
+legacy branch from an INDEPENDENT baseline (served row metadata + Dexagon's PHP oracle receipt), not stance() vs itself. Declared outcomes are quoted from the row's predicted_measurement; the
 script exits non-zero on any mismatch. No register code imported.
 Usage: python3 reference.py --raw raw/ [--out reference_outcomes.json]"""
 import json, hashlib, os, sys, glob, argparse
@@ -67,9 +69,16 @@ def positive_control(rows):
 
 # ---------------- the row's additions ----------------
 def settle_pair(orig, rep, rule_applied="point-and-strata-relative-v1"):
-    """Branch keyed by the mint-time identity on BOTH rows. Today's branch returns today's receipt (recomputed)."""
+    """Branch keyed by the mint-time identity on BOTH rows. Today's branch returns today's receipt (recomputed).
+    New branch = pooled-then-strata: (1) both rows carry attested pooled bounds, else HOLD; (2) the pooled intervals
+    intersect (the 0.35.0 gate the row names as precondition), else reproduced_ok False with failing "pooled";
+    (3) every aligned stratum carries bounds, else HOLD; (4) every aligned stratum's intervals intersect, else False."""
     if not (opted(orig) and opted(rep)):
         return "today", today_receipt(orig, rep, rule_applied)
+    if any(x.get("value_lo") is None or x.get("value_hi") is None for x in (orig, rep)):
+        return "new_branch", {"reproduced_ok": None, "held": "missing pooled bounds"}
+    if orig["value_hi"] < rep["value_lo"] or rep["value_hi"] < orig["value_lo"]:
+        return "new_branch", {"reproduced_ok": False, "failing_stratum": "pooled"}
     if not (has_bounds(orig) and has_bounds(rep)):
         return "new_branch", {"reproduced_ok": None, "held": "missing stratum bounds"}
     by = {s["id"]: s for s in rep["strata"]}
@@ -85,7 +94,7 @@ def stance(prereq, row):
     assert prereq["metric"] == "comprehension_accuracy_delta" and "at_least" in prereq
     L = prereq["at_least"]
     if prereq.get("bound_reading") is None:
-        return "supports" if row["value"] >= L else "opposes"   # 0.37.0 point reading, unchanged
+        return legacy_unkeyed_stance(row, L)   # 0.37.0 reading, unchanged: generic unresolved first, then point
     assert prereq["bound_reading"] == "attested_interval_v1"
     if not (opted(row) and row.get("attested")):
         return "unresolved"   # out of scope: identity AND attestation required; never point-satisfied
@@ -99,6 +108,16 @@ def stance(prereq, row):
     if not any_degenerate and pooled_lo is not None and pooled_lo >= L and all(s["value_lo"] >= L for s in strata):
         return "supports"
     return "unresolved"
+
+UNRESOLVED_BOUNDS = ("ceiling", "floor", "strata_unresolved")
+
+def legacy_unkeyed_stance(row, L):
+    """The register's existing unkeyed at_least reading, written from the SERVED row fields only:
+    a row whose served resolution_bound is ceiling/floor/strata_unresolved has generic stance unresolved and the
+    prerequisite reads unresolved; an inactive row reads unresolved; otherwise value >= at_least decides."""
+    if row.get("resolution_bound") in UNRESOLVED_BOUNDS or row.get("generic_stance") == "unresolved": return "unresolved"
+    if row.get("evidence_state") not in (None, "valid"): return "unresolved"
+    return "supports" if row["value"] >= L else "opposes"
 
 def veto_state(row):
     """The confirmed-loss veto reads only the generic stance and confirmation; neither new rule touches it."""
@@ -143,10 +162,19 @@ def main():
        {"pairs_checked": n, "mismatches": mism[:20], "mismatch_count": len(mism)}, n > 0 and not mism)
 
     # F1 opted/opted, per-form 0 vs +0.1, [-1,+1] vs [-0.9,+1.1]
-    o = {"manifest": OPT, "value": 0.05, "strata": [st("a", -1, 1), st("b", -1, 1)]}; r = {"manifest": OPT, "value": 0.05, "strata": [st("a", -0.9, 1.1), st("b", -0.9, 1.1)]}
+    o = {"manifest": OPT, "value": 0.05, "value_lo": -1, "value_hi": 1, "strata": [st("a", -1, 1), st("b", -1, 1)]}; r = {"manifest": OPT, "value": 0.05, "value_lo": -0.9, "value_hi": 1.1, "strata": [st("a", -0.9, 1.1), st("b", -0.9, 1.1)]}
     g = settle_pair(o, r); fx("F1", "reproduced_ok true", g, g[0] == "new_branch" and g[1]["reproduced_ok"] is True)
-    r2 = {"manifest": OPT, "value": 0.05, "strata": [{"id": "a", "value_lo": None, "value_hi": None, "value": 0}, {"id": "b", "value_lo": None, "value_hi": None, "value": 0.1}]}
+    # F1b pooled-then-strata: pooled intervals DISJOINT while every stratum touches (Dexagon's witness fb5835e0/895db45a shape: [-12.5478,-0.9502] vs [0,0])
+    o1b = {"manifest": OPT, "value": -6.835, "value_lo": -12.5478, "value_hi": -0.9502, "strata": [st("x", -5.34, 0.0), st("y", -22.43, 0.32)]}
+    r1b = {"manifest": OPT, "value": 0, "value_lo": 0, "value_hi": 0, "strata": [st("x", 0, 0), st("y", 0, 0)]}
+    g = settle_pair(o1b, r1b); fx("F1b", "pooled intervals disjoint, all strata touch: reproduced_ok false, failing 'pooled' (pooled-then-strata)", g, g[0] == "new_branch" and g[1]["reproduced_ok"] is False and g[1].get("failing_stratum") == "pooled")
+    # F1c pooled intersects, one stratum disjoint
+    r1c = {"manifest": OPT, "value": 0.05, "value_lo": -0.9, "value_hi": 1.1, "strata": [st("a", -0.9, 1.1), st("b", 1.5, 3)]}
+    g = settle_pair(o, r1c); fx("F1c", "pooled intervals intersect, one stratum disjoint: reproduced_ok false, failing stratum b", g, g[0] == "new_branch" and g[1]["reproduced_ok"] is False and g[1].get("failing_stratum") == "b")
+    r2 = {"manifest": OPT, "value": 0.05, "value_lo": -0.9, "value_hi": 1.1, "strata": [{"id": "a", "value_lo": None, "value_hi": None, "value": 0}, {"id": "b", "value_lo": None, "value_hi": None, "value": 0.1}]}
     g = settle_pair(o, r2); fx("F2", "reproduced_ok null, held", g, g[0] == "new_branch" and g[1]["reproduced_ok"] is None)
+    r2p = {"manifest": OPT, "value": 0.05, "value_lo": None, "value_hi": None, "strata": [st("a", -0.9, 1.1), st("b", -0.9, 1.1)]}
+    g = settle_pair(o, r2p); fx("F2p", "replication lacking attested POOLED bounds: reproduced_ok null, held (missing pooled bounds)", g, g[0] == "new_branch" and g[1]["reproduced_ok"] is None and g[1].get("held") == "missing pooled bounds")
     # F3 a pair with no intervals on either side, no identity: point-and-strata receipt, byte-identical
     o3 = {"manifest": NOOPT, "value": -10, "value_lo": -10, "value_hi": -10, "strata": [{"id": "a", "value": -12}, {"id": "b", "value": -8}]}
     r3 = {"manifest": NOOPT, "value": -9.5, "value_lo": -9.5, "value_hi": -9.5, "strata": [{"id": "a", "value": -11}, {"id": "b", "value": -8}]}
@@ -198,7 +226,7 @@ def main():
         "implementation_note": "IntervalProvenance::TOLERANCE must move from 0.00011 to 0.0001 when the row is implemented; the row's wording is the falsifier and is not amended"},
        b["0.0001"] is False and b["0.000105"] is True and b["0.00011"] is True and b["0.000111"] is True)
     # F5..F8 keyed reading with pooled bounds
-    r5 = {"manifest": OPT, "attested": True, "value": -0.5, "value_lo": -2, "value_hi": 1, "strata": [st("a", -3, 2), st("b", -4, 1)]}
+    r5 = {"manifest": OPT, "attested": True, "value": -0.5, "value_lo": -2, "value_hi": 1, "resolution_bound": "resolvable", "evidence_state": "valid", "strata": [st("a", -3, 2), st("b", -4, 1)]}
     fx("F5", "supports", stance(P5, r5), stance(P5, r5) == "supports")
     r6 = {"manifest": OPT, "attested": True, "value": -3, "value_lo": -6, "value_hi": -1, "strata": [st("a", -3, 2), st("b", -7, -6)]}
     fx("F6", "opposes", stance(P5, r6), stance(P5, r6) == "opposes")
@@ -211,7 +239,7 @@ def main():
     fx("F8b", "opposes; the degenerate form does not erase it", stance(P5, r8b), stance(P5, r8b) == "opposes")
     fx("F8c", "UNRESOLVED (out of scope); generic stance and settlement receipt unchanged", stance(P5, {"manifest": NOOPT, "attested": True, "value": -1, "value_lo": -3, "value_hi": 2, "strata": [st("a", -3, 2)]}),
        stance(P5, {"manifest": NOOPT, "attested": True, "value": -1, "value_lo": -3, "value_hi": 2, "strata": [st("a", -3, 2)]}) == "unresolved")
-    r8d = {"manifest": NOOPT, "attested": True, "value": -1, "value_lo": -20, "value_hi": 18, "strata": [st("a", -20, 18)]}
+    r8d = {"manifest": NOOPT, "attested": True, "value": -1, "value_lo": -20, "value_hi": 18, "resolution_bound": "resolvable", "evidence_state": "valid", "strata": [st("a", -20, 18)]}
     g = {"keyed": stance(P5, r8d), "unkeyed": stance(P9, r8d)}
     fx("F8d", "keyed: UNRESOLVED not supports (0.37.0 point would pass); without bound_reading: supports", g, g["keyed"] == "unresolved" and g["unkeyed"] == "supports")
     fx("F8e", "mint against keyed contract without identity: rejected before inference", mint_check([P5], NOOPT), mint_check([P5], NOOPT).startswith("rejected"))
@@ -225,18 +253,42 @@ def main():
     fx("F5r", "two real attested stratified rows read under the keyed contract at -5, with replayed pooled and stratum bounds (support and opposition)", real,
        real.get("supports") is not None and real.get("opposes") is not None and real["supports"]["stance"] == "supports" and real["opposes"]["stance"] == "opposes")
     fx("F9", "the 0.37.0 point reading, unchanged", stance(P9, r5), stance(P9, r5) == "supports")
-    # F10 the two live typed comprehension at_least contracts read identically before and after
-    live_c = []
+    # F10 the live typed comprehension at_least contracts: legacy label from an INDEPENDENT baseline (served metadata, and
+    # Dexagon's read-only PHP oracle receipt pinned under audit_inputs/), compared with the candidate's legacy branch.
+    oracle_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "audit_inputs", "dexagon-legacy-stance-oracle.json")
+    oracle = json.load(open(oracle_path)); oracle_sha = hashlib.sha256(open(oracle_path, "rb").read()).hexdigest()
+    oracle_by = {o_["hash"]: o_ for o_ in oracle["observations"]}
+    live_c = []; oracle_rows_seen = 0
     for s, p in sorted(props.items()):
         for pre in ((p.get("evidence_contract") or {}).get("prerequisites") or []):
             if isinstance(pre, dict) and pre.get("metric") == "comprehension_accuracy_delta" and "at_least" in pre:
-                cad = [m for m in (p.get("measurements") or []) if m.get("metric") == "comprehension_accuracy_delta" and m.get("evidence_state") == "valid"]
+                cad = sorted([m for m in (p.get("measurements") or []) if m.get("metric") == "comprehension_accuracy_delta" and m.get("evidence_state") == "valid"], key=lambda m: m.get("manifest_hash") or "")
                 reads = []
                 for m in cad:
-                    row = {"manifest": {}, "attested": bool(m.get("interval_provenance")), "value": m["value"], "value_lo": m.get("value_lo"), "value_hi": m.get("value_hi"), "strata": []}
-                    reads.append({"hash": (m.get("manifest_hash") or m.get("url", ""))[-64:][:8], "value": m["value"], "before_0_37_0": stance(pre, row), "after": stance(pre, row)})
-                live_c.append({"slug": s, "prerequisite": pre, "rows": reads, "identical": all(x["before_0_37_0"] == x["after"] for x in reads)})
-    fx("F10", "the two live typed comprehension at_least contracts read identically before and after", live_c, len(live_c) >= 1 and all(c["identical"] for c in live_c))
+                    h = m.get("manifest_hash"); L = pre["at_least"]
+                    # baseline (i): served fields only, no candidate code
+                    served_generic = "unresolved" if m.get("resolution_bound") in UNRESOLVED_BOUNDS else ("supports" if m["value"] >= L else "opposes")
+                    # baseline (ii): the PHP oracle receipt, if it covers this row
+                    orc = oracle_by.get(h); oracle_rows_seen += 1 if orc else 0
+                    row = {"manifest": {}, "attested": bool(m.get("interval_provenance")), "value": m["value"], "value_lo": m.get("value_lo"), "value_hi": m.get("value_hi"),
+                           "resolution_bound": m.get("resolution_bound"), "evidence_state": m.get("evidence_state"), "strata": []}
+                    after = stance(pre, row)   # the candidate's legacy branch (no bound_reading on this contract)
+                    reads.append({"hash": (h or "")[:8], "value": m["value"], "resolution_bound": m.get("resolution_bound"),
+                                  "legacy_from_served_fields": served_generic, "legacy_from_php_oracle": orc["legacy_prerequisite_stance"] if orc else None,
+                                  "candidate_legacy_branch": after,
+                                  "identical": served_generic == after and (orc is None or orc["legacy_prerequisite_stance"] == after)})
+                live_c.append({"slug": s, "prerequisite": pre, "rows": reads, "row_count": len(reads), "vacuous": len(reads) == 0, "identical": all(x["identical"] for x in reads)})
+    # synthetic nondegenerate rows that actually exercise the point comparator on the legacy branch
+    synth = [{"value": 1.0, "resolution_bound": "resolvable", "evidence_state": "valid"}, {"value": -1.0, "resolution_bound": "resolvable", "evidence_state": "valid"}]
+    synth_reads = [{"value": r_["value"], "legacy_from_served_fields": ("supports" if r_["value"] >= 0 else "opposes"), "candidate_legacy_branch": stance({"metric": "comprehension_accuracy_delta", "at_least": 0}, r_ | {"manifest": {}, "strata": []})} for r_ in synth]
+    populated = [c_ for c_ in live_c if not c_["vacuous"]]
+    f10 = {"oracle_receipt_sha256": oracle_sha, "oracle_source_sha256": oracle.get("source_sha256"), "oracle_rows_matched": oracle_rows_seen, "contracts": live_c,
+           "populated_contracts": len(populated), "vacuous_contracts": [c_["slug"] for c_ in live_c if c_["vacuous"]], "synthetic_point_cases": synth_reads}
+    fx("F10", "the live typed comprehension at_least contracts read identically before and after; the two populated frozen rows a9d3a180/763f2a41 read UNRESOLVED on both baselines; the empty contract is counted as vacuous",
+       f10, len(live_c) >= 1 and all(c_["identical"] for c_ in live_c) and len(populated) >= 1
+           and all(x["legacy_from_served_fields"] == "unresolved" and x["legacy_from_php_oracle"] == "unresolved" and x["candidate_legacy_branch"] == "unresolved" for c_ in populated for x in c_["rows"])
+           and oracle_rows_seen == sum(len(c_["rows"]) for c_ in populated)
+           and all(x["legacy_from_served_fields"] == x["candidate_legacy_branch"] for x in synth_reads) and synth_reads[0]["candidate_legacy_branch"] == "supports" and synth_reads[1]["candidate_legacy_branch"] == "opposes")
     # F11 confirmed generic-stance loss whose lower bound is above -5: veto state unchanged
     r11 = {"manifest": OPT, "attested": True, "confirmed": True, "generic_stance": "opposes", "value": -3, "value_lo": -4.5, "value_hi": -1.5, "strata": [st("a", -4.5, -1.5)]}
     before = veto_state(r11); keyed_read = stance(P5, r11); after = veto_state(r11)
@@ -246,6 +298,13 @@ def main():
          "beside_at_most": contract_validation({"metric": "comprehension_accuracy_delta", "at_most": 0, "bound_reading": "attested_interval_v1"}),
          "other_value": contract_validation({"metric": "comprehension_accuracy_delta", "at_least": -5, "bound_reading": "v2"})}
     fx("validation", "reject bound_reading on other metric / beside at_most / other value", v, all(x.startswith("rejected") for x in v.values()))
+    # before/after oracle (candidate.py transforms the snapshot; oracle.py, which imports nothing from candidate.py, diffs surfaces)
+    op = os.path.join(os.path.dirname(os.path.abspath(__file__)), "oracle_result.json")
+    if os.path.exists(op):
+        orr = json.load(open(op))
+        fx("uvf_before_after_oracle", "candidate transformation of the frozen snapshot changes zero verdict surfaces and selects zero pairs/contracts for the new branch; the positive control (one synthetic opted pair injected) changes exactly one surface and the oracle reports it",
+           orr, orr.get("snapshot", {}).get("changed_surfaces") == 0 and orr.get("snapshot", {}).get("new_branch_pairs") == 0 and orr.get("snapshot", {}).get("keyed_contracts") == 0
+               and orr.get("positive_control", {}).get("changed_surfaces") == 1 and orr.get("positive_control", {}).get("new_branch_pairs") == 1)
     allm = all(x["match"] for x in out.values())
     json.dump(out, open(a.out, "w"), indent=1, default=str, sort_keys=True)
     print(json.dumps({k: {"match": x["match"], "declared": x["declared"]} for k, x in out.items()}, indent=1))

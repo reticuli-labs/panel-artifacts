@@ -1,7 +1,8 @@
 """Frozen-population census for protocol row a-gpjvfpt63g2zq0cx (attested-strata-v1), successor to the 09-17 census.
 Reads ONLY a frozen raw snapshot (raw/measurements/*.json, raw/proposals/*.json, raw/population.json).
-Pair settlement in the counterfactual uses EXACTLY reference.settle_pair (per-stratum interval intersection; missing
-bounds hold; no degenerate-arm hold at pair level). A descriptive degenerate_arm_present flag is reported per pair.
+Pair settlement in the counterfactual uses EXACTLY reference.settle_pair, policy "pooled-then-strata" (revision 2):
+the replayed POOLED attested intervals must intersect, then every aligned stratum's replayed intervals must intersect;
+missing pooled or stratum bounds hold; no degenerate-arm hold at pair level. A descriptive degenerate_arm_present flag is reported per pair.
 Usage: python3 census.py --raw raw/ --out . [--pairs old_counterfactual.json]   (REUSE_WIDTHS=1 reuses <out>/widths.json)"""
 import json, glob, os, sys, hashlib, time, statistics, argparse
 from collections import Counter
@@ -69,7 +70,7 @@ print(json.dumps(summary, indent=1), flush=True)
 # 4. counterfactual-if-opted, settled by reference.settle_pair (the SAME function the fixtures use)
 def row_for(m, w):
     arms = w["arms_by_stratum"]
-    return {"manifest": {"settlement_analysis": IDENTITY}, "value": m["value"], "strata": [{"id": k, "value_lo": v["lo"], "value_hi": v["hi"], "value": None, "arms": arms.get(k) or {}} for k, v in w["strata"].items()]}
+    return {"manifest": {"settlement_analysis": IDENTITY}, "value": m["value"], "value_lo": w["pooled"][0], "value_hi": w["pooled"][1], "strata": [{"id": k, "value_lo": v["lo"], "value_hi": v["hi"], "value": None, "arms": arms.get(k) or {}} for k, v in w["strata"].items()]}
 def settle(m, o):
     wo, wr = widths.get(o["manifest_hash"]), widths.get(m["manifest_hash"])
     base = {"rep": m["manifest_hash"][:8], "orig": o["manifest_hash"][:8], "rep_hash": m["manifest_hash"], "orig_hash": o["manifest_hash"],
@@ -83,6 +84,7 @@ def settle(m, o):
     verdict = "agree" if res["reproduced_ok"] is True else ("oppose" if res["reproduced_ok"] is False else "hold_missing_bounds")
     deg = any(degenerate(s) for s in ro["strata"] + rr["strata"])
     return base | {"counterfactual": verdict, "failing_stratum": res.get("failing_stratum"), "degenerate_arm_present": deg,
+                   "pooled": {"orig": list(wo["pooled"]), "rep": list(wr["pooled"])},
                    "strata": {s["id"]: {"orig": [s["value_lo"], s["value_hi"]], "rep": [t["value_lo"], t["value_hi"]]} for s in ro["strata"] for t in rr["strata"] if t["id"] == s["id"]}}
 cf = []
 for m in interval_strat:
@@ -109,7 +111,7 @@ if a.pairs:
     json.dump(re_, open(f"{OUT}/counterfactual_prior_pairs.json", "w"), indent=1, sort_keys=True)
     print("prior pair list re-settled:", json.dumps(prior), flush=True)
 named = {}
-for tag, rp, op in (("verified-how", "aa145cee", "4a928d0d"), ("moved-earlier-placebo", "69b82d4a", "82b711bc")):
+for tag, rp, op in (("verified-how", "aa145cee", "4a928d0d"), ("moved-earlier-placebo", "69b82d4a", "82b711bc"), ("pooled-witness-among-others", "895db45a", "fb5835e0")):
     hit = [x for x in cf if x["rep"] == rp and x["orig"] == op]
     named[tag] = hit[0] if hit else {"rep": rp, "orig": op, "counterfactual": "pair_not_in_interval_stratified_class"}
 # 5. uvf projection: surfaces before; branch selection set S; after == before iff S empty and no keyed contract
@@ -127,7 +129,8 @@ uvf = {"population_digest_newline": pop["digest_newline"], "computed_at": pop["c
   "surfaces_after_sha256": sd if not S and not keyed else None, "unclaimed_verdict_flips_projection": 0 if not S and not keyed else None,
   "note": "Applicability projection only: the proposed branch runs for pairs whose BOTH manifests declare settlement_analysis: attested-strata-v1 and the keyed reading for contracts carrying bound_reading. Both selection sets are empty on this snapshot, so the branch predicate selects nothing; this is not a run of candidate code and does not by itself prove a not-yet-written implementation has no side effects."}
 json.dump({"population": pop, "classes": classes, "applicability": {"settlement_analysis_manifests": len(ident), "attested_strata_v1_manifests": len(ident_v1), "bound_reading_contracts": len(keyed)},
-           "width_summary": summary, "counterfactual": {"rule": "reference.settle_pair: per-stratum attested-interval intersection, missing bounds hold, no degenerate hold at pair level", "pairs": len(cf), "counts": dict(counts),
+           "width_summary": summary, "counterfactual": {"rule": "reference.settle_pair pooled-then-strata: replayed pooled attested intervals intersect, then every aligned stratum's replayed intervals intersect; missing bounds hold; no degenerate hold at pair level",
+           "pooled_failures": sum(1 for x in cf if x.get("failing_stratum") == "pooled"), "pairs": len(cf), "counts": dict(counts),
            "cell_failed_subset": {"pairs": len(cf_failed), "counts": dict(counts_failed)}, "agreements_with_degenerate_arm_present": deg_agree, "named_pairs": named, "prior_pair_list": prior}, "uvf": uvf},
           open(f"{OUT}/census.json", "w"), indent=1, default=str, sort_keys=True)
 json.dump(surfaces, open(f"{OUT}/surfaces_before.json", "w"), sort_keys=True, indent=0, default=str)

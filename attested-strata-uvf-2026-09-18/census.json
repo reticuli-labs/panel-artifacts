@@ -33,7 +33,7 @@
   "stratified_pairs_any_rule": 113
  },
  "counterfactual": {
-  "agreements_with_degenerate_arm_present": 25,
+  "agreements_with_degenerate_arm_present": 24,
   "cell_failed_subset": {
    "counts": {
     "agree": 26,
@@ -42,14 +42,58 @@
    "pairs": 38
   },
   "counts": {
-   "agree": 29,
-   "oppose": 25
+   "agree": 28,
+   "oppose": 26
   },
   "named_pairs": {
    "moved-earlier-placebo": {
     "counterfactual": "pair_not_in_interval_stratified_class",
     "orig": "82b711bc",
     "rep": "69b82d4a"
+   },
+   "pooled-witness-among-others": {
+    "counterfactual": "oppose",
+    "current_aggregate": false,
+    "current_reproduced_ok": false,
+    "current_rule": "interval-overlap-commensurable-v1",
+    "degenerate_arm_present": true,
+    "failing_stratum": "pooled",
+    "orig": "fb5835e0",
+    "orig_hash": "fb5835e0a0ebfa02d06c8ab49868083808ccdb82596b6642113ee8de78bc2bd4",
+    "pooled": {
+     "orig": [
+      -12.547826086956519,
+      -0.9502164502164512
+     ],
+     "rep": [
+      0.0,
+      0.0
+     ]
+    },
+    "rep": "895db45a",
+    "rep_hash": "895db45af0bdca7dafbc152ef7f34a6ef62e261d6d097e5885d3bfedef3fce52",
+    "strata": {
+     "among-others": {
+      "orig": [
+       -5.343511450381677,
+       0.0
+      ],
+      "rep": [
+       0.0,
+       0.0
+      ]
+     },
+     "and-no-others": {
+      "orig": [
+       -22.43386243386244,
+       0.31746031746031633
+      ],
+      "rep": [
+       0.0,
+       0.0
+      ]
+     }
+    }
    },
    "verified-how": {
     "counterfactual": "agree",
@@ -60,6 +104,16 @@
     "failing_stratum": null,
     "orig": "4a928d0d",
     "orig_hash": "4a928d0df73a9ff52660354302765eb9288fd110b4cadc726fdb853dddf45b12",
+    "pooled": {
+     "orig": [
+      -45.138888888888886,
+      -23.61111111111111
+     ],
+     "rep": [
+      -44.846434429767754,
+      -26.099960471256793
+     ]
+    },
     "rep": "aa145cee",
     "rep_hash": "aa145ceec71d126aefe1ce2e9fb83bf2be9cefa361b714d0a85d0cbb289a9581",
     "strata": {
@@ -127,10 +181,11 @@
    }
   },
   "pairs": 54,
+  "pooled_failures": 14,
   "prior_pair_list": {
    "corrected": {
-    "agree": 29,
-    "oppose": 24
+    "agree": 28,
+    "oppose": 25
    },
    "pairs": 53,
    "prior": {
@@ -142,10 +197,11 @@
    "transitions": {
     "agree -> agree": 4,
     "oppose -> oppose": 24,
-    "unresolved_degenerate_arm -> agree": 25
+    "unresolved_degenerate_arm -> agree": 24,
+    "unresolved_degenerate_arm -> oppose": 1
    }
   },
-  "rule": "reference.settle_pair: per-stratum attested-interval intersection, missing bounds hold, no degenerate hold at pair level"
+  "rule": "reference.settle_pair pooled-then-strata: replayed pooled attested intervals intersect, then every aligned stratum's replayed intervals intersect; missing bounds hold; no degenerate hold at pair level"
  },
  "population": {
   "computed_at": "2026-09-18T16:05:55Z",
