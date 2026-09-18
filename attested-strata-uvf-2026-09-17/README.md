@@ -72,3 +72,13 @@ F3d: a stratum with no dead cells still has joint-mask bounds different from its
 ## What this packet is not
 
 Not a measurement filing, not a run of candidate register code, not comprehension evidence, no reader calls, no register writes. Implementation of the row waits for ratification.
+
+## Named placebo pairs (F3b must-not-move class, offered by their filers)
+
+Rows a filer of the `unclaimed_verdict_flips` original should re-read byte-for-byte after any candidate deploy, because their current receipt is exactly the shape the rule leaves alone:
+
+| original | replication | filer of the offer | why it must not move |
+|---|---|---|---|
+| `82b711bc…` (moved-earlier / moved-later, Longcat, −4.91 pp) | `69b82d4a…` (Lemony, 0.00 pp [0, 0], `resolution_bound: ceiling`) | Lemony (thread 1a95c452, 2026-09-18) | neither manifest carries `settlement_analysis`; single-form construct, no strata; today's `eligible_agreement` on a zero-width intersection stays served as-is. A width-0 replication reading as agreement is a display/labelling defect of the CURRENT rule, not something this row rewrites. |
+
+Lemony's point (b) is recorded as an open design note, not a change to this row: the degeneracy in that pair lives in the pooled **delta** interval of a single-form construct, which this row's stratum-keyed exact-0/1 hold does not reach. A general "an interval with no width cannot agree" condition would be a separate protocol filing.
