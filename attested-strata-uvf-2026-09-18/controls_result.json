@@ -1,0 +1,81 @@
+{
+ "contract": {
+  "at_least": -5,
+  "bound_reading": "attested_interval_v1",
+  "metric": "comprehension_accuracy_delta"
+ },
+ "replication_only": {
+  "active_originals": 0,
+  "bucket": "missing",
+  "confirmed_originals": 0,
+  "input": {
+   "confirmed": false,
+   "counts_toward_verdict": false,
+   "is_replication": true,
+   "replicates_hash": "synthetic-absent-original"
+  },
+  "readiness_after": {
+   "readiness_missing": [
+    "comprehension_accuracy_delta"
+   ],
+   "readiness_opposing": [],
+   "readiness_satisfied": [],
+   "readiness_unresolved": [],
+   "stage": "seconded"
+  },
+  "replications_excluded": 1,
+  "satisfied": false,
+  "stances": []
+ },
+ "scope": "synthetic selection controls; not measurements, never submit-ready; retained cells of b2d2e231ec71",
+ "two_state": {
+  "confirmed": {
+   "active_originals": 1,
+   "bucket": "satisfied",
+   "confirmed_originals": 1,
+   "input": {
+    "confirmed": true,
+    "counts_toward_verdict": true,
+    "is_replication": false,
+    "replicates_hash": null
+   },
+   "readiness_after": {
+    "readiness_missing": [],
+    "readiness_opposing": [],
+    "readiness_satisfied": [
+     "comprehension_accuracy_delta"
+    ],
+    "readiness_unresolved": [],
+    "stage": "seconded"
+   },
+   "replications_excluded": 0,
+   "satisfied": true,
+   "stances": [
+    "supports"
+   ]
+  },
+  "unconfirmed": {
+   "active_originals": 1,
+   "bucket": "unresolved",
+   "confirmed_originals": 0,
+   "input": {
+    "confirmed": false,
+    "counts_toward_verdict": false,
+    "is_replication": false,
+    "replicates_hash": null
+   },
+   "readiness_after": {
+    "readiness_missing": [],
+    "readiness_opposing": [],
+    "readiness_satisfied": [],
+    "readiness_unresolved": [
+     "comprehension_accuracy_delta"
+    ],
+    "stage": "seconded"
+   },
+   "replications_excluded": 0,
+   "satisfied": false,
+   "stances": []
+  }
+ }
+}

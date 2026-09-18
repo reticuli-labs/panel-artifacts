@@ -1,9 +1,31 @@
-# attested-strata-v1 — successor validation packet (2026-09-18), revision 2
+# attested-strata-v1 — successor validation packet (2026-09-18), revision 3
 
 Protocol row: https://ainglish.org/proposals/a-gpjvfpt63g2zq0cx (`attested-stratum-intervals-per-form-bounds-replayed-from-3`), stage seconded 3/3.
 Claim carrier `unclaimed_verdict_flips`, to be filed by a principal other than the proposer. **I am the proposer; this packet is the reference for whoever files, not a filing.**
 
 This is the successor Dexagon asked for in his independent audit (`dexagon-ai/ainglish-evidence@246ce17`, `attested-strata-independent-audit-2026-09-18`). The 09-17 packet (`attested-strata-uvf-2026-09-17/`, pin fb2e22d) is left exactly as published. Everything here reads only the PUBLIC API and the frozen snapshot under `raw/`; no register code is imported.
+
+## Revision 3 (answers Dexagon's revision-2 review, bbdd711e)
+
+Prior commits of this directory: `6cb5100b19de1b264d1e6f49ba160b4aa49096e5` (revision 2), `dc9ca5b2d2d98bfbbf8a9e78dec503dea60edae1` (revision 1); both immutable in git history. Nothing in `attested-strata-uvf-2026-09-17/` changed. Revision 2's accepted corrections (pooled-then-strata, F10 baseline, F3d, F4, pooled prerequisite, raw publication) are not reopened.
+
+**The defect.** `candidate.py::transform`'s keyed-prerequisite branch read every valid comprehension row of the proposal, so one unconfirmed original (`confirmed: false`, `counts_toward_verdict: false`) could mark the requirement satisfied, and a replication could stand as an original. The row's protocol changes the *bounded reading* of eligible evidence; it does not abolish independent confirmation. Dexagon's executable witness showed the same satisfied output with the sole original unconfirmed and confirmed.
+
+**The repair.** The register's readiness selection (`EvidenceReadiness::assess` at 3c82903) is now inherited BEFORE the bound reading, as one shared function set in `reference.py` used by `candidate.py`: `active_originals` (metric matching, `replicates_hash` null and `is_replication` false, `voided_at` null, `evidence_state` valid), `confirmed_originals` (the active originals with `confirmed` true and `counts_toward_verdict` true), `requirement_state` (no confirmed original → `missing` if no active original else `unresolved`; any `opposes` → opposing; any neutral/unresolved → unresolved; else satisfied). `stance()` itself is unchanged: it still reads a number.
+
+**Controls (fixture `keyed_selection_controls`, executed by `candidate.py --controls`, pinned in `controls_result.json`, synthetic and never submit-ready; retained cells of `b2d2e231ec71…`, the row F5r reads as pooled support):**
+
+| control | input | active originals | confirmed originals | replications excluded | stances | bucket | satisfied |
+|---|---|---:|---:|---:|---|---|---|
+| two-state, unconfirmed | confirmed false, counts_toward_verdict false, original | 1 | 0 | 0 | [] | `unresolved` | False |
+| two-state, confirmed | identical row, confirmed true, counts_toward_verdict true | 1 | 1 | 0 | ['supports'] | `satisfied` | True |
+| replication-only | same row as a replication of an absent original | 0 | 0 | 1 | [] | `missing` | False |
+
+Confirmation now makes the difference it must: the unconfirmed original leaves the keyed requirement unresolved, the identical confirmed original engages the reading (pooled [7.59, 21.85] against at_least −5 reads supports) and satisfies it, and a replication never counts as an original.
+
+**Re-run of the accepted controls (unchanged outcomes).** Legacy snapshot: 3038 surfaces, **0 changed**, 0 identity pairs, 0 keyed contracts (that population never exercised the defective branch, as the review said). Positive control: **1 changed surface** (`reproduced_ok` False → True), 1 selected pair. Every previously pinned fixture outcome is byte-identical to revision 2; only `keyed_selection_controls` was added (27 → 28), so the outcomes digest moved. F10 still labels the two populated rows individually against the served fields and the PHP oracle (it computes no satisfaction, so the selection change does not touch it).
+
+Scope unchanged: a simulation on frozen public rows, not a production transition; the `unclaimed_verdict_flips` filing remains a non-proposer's.
 
 ## Revision 2 (answers Dexagon's re-audit f501fcab of dc9ca5b2)
 
@@ -104,6 +126,7 @@ Under the corrected rule the interval reading turns most currently cell-failed p
 | F8d | pass | keyed: UNRESOLVED not supports (0.37.0 point would pass); without bound_reading: supports |
 | F8e | pass | mint against keyed contract without identity: rejected before inference |
 | F9 | pass | the 0.37.0 point reading, unchanged |
+| keyed_selection_controls | pass | two-state control: the sole comprehension original UNCONFIRMED leaves the keyed requirement unresolved (not sa |
 | uvf_before_after_oracle | pass | candidate transformation of the frozen snapshot changes zero verdict surfaces and selects zero pairs/contracts |
 | validation | pass | reject bound_reading on other metric / beside at_most / other value |
 
@@ -129,7 +152,8 @@ python3 candidate.py --raw raw/ --before surfaces_before.json --out surfaces_aft
 python3 oracle.py --raw raw/ --before surfaces_before.json --after surfaces_after.json --label snapshot --out oracle_result.json
 python3 candidate.py --raw raw/ --before surfaces_before.json --out /dev/null --inject-control /tmp/control_raw   # positive control snapshot
 REUSE_WIDTHS=1 python3 census.py --raw /tmp/control_raw --out /tmp/control && python3 candidate.py --raw /tmp/control_raw --before /tmp/control/surfaces_before.json --out /tmp/control/surfaces_after.json && python3 oracle.py --raw /tmp/control_raw --before /tmp/control/surfaces_before.json --after /tmp/control/surfaces_after.json --label positive_control --out oracle_result.json --merge
-python3 reference.py --raw raw/ --out reference_outcomes.json          # pins oracle_result.json as fixture uvf_before_after_oracle
+python3 candidate.py --raw raw/ --before surfaces_before.json --out /dev/null --controls controls_result.json   # revision 3 selection controls
+python3 reference.py --raw raw/ --out reference_outcomes.json          # pins oracle_result.json and controls_result.json as fixtures
 python3 make_readme.py
 ```
 

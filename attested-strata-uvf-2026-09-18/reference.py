@@ -4,7 +4,7 @@ point-and-strata-relative-v1, interval-overlap-commensurable-v1), validated agai
 frozen raw snapshot, (b) the row's two additions: opted-pair settlement "pooled-then-strata" (the 0.35.0 pooled attested intervals must
 intersect, THEN every aligned stratum's attested intervals must intersect; missing pooled or stratum bounds HOLD; no
 degenerate hold at pair level) and the keyed at_least reading with its pooled-bound condition and
-oppose-before-degenerate-hold precedence. Revision 2 (Dexagon f501fcab): pooled intersection retained; F10 reads the
+oppose-before-degenerate-hold precedence. Revision 3 (Dexagon bbdd711e): keyed reading selects CONFIRMED ORIGINALS only (active_originals/confirmed_originals/requirement_state, shared with candidate.py). Revision 2 (Dexagon f501fcab): pooled intersection retained; F10 reads the
 legacy branch from an INDEPENDENT baseline (served row metadata + Dexagon's PHP oracle receipt), not stance() vs itself. Declared outcomes are quoted from the row's predicted_measurement; the
 script exits non-zero on any mismatch. No register code imported.
 Usage: python3 reference.py --raw raw/ [--out reference_outcomes.json]"""
@@ -21,6 +21,26 @@ def canon(x): return json.dumps(x, sort_keys=True, separators=(",", ":"), defaul
 def opted(row): return (row.get("manifest") or {}).get("settlement_analysis") == IDENTITY
 def has_bounds(row): return all(s.get("value_lo") is not None and s.get("value_hi") is not None for s in row["strata"])
 def degenerate(s): return any((s.get("arms") or {}).get(a) in (0, 1) for a in ("english", "ainglish"))
+
+def active_originals(measurements, metric="comprehension_accuracy_delta"):
+    """The register's readiness selection (EvidenceReadiness::assess at 3c82903): ORIGINALS only (replicates_hash null,
+    is_replication false), not voided, evidence_state valid, metric matching. Replications never stand as originals."""
+    return [m for m in (measurements or []) if m.get("metric") == metric and not m.get("is_replication") and m.get("replicates_hash") is None
+            and m.get("voided_at") is None and m.get("evidence_state") == "valid"]
+
+def confirmed_originals(measurements, metric="comprehension_accuracy_delta"):
+    """Only CONFIRMED originals feed a requirement's stances (confirmed true and counts_toward_verdict true); an active but
+    unconfirmed original keeps a bounded requirement UNRESOLVED (state replicate_original), never satisfied."""
+    return [m for m in active_originals(measurements, metric) if m.get("confirmed") is True and m.get("counts_toward_verdict") is True]
+
+def requirement_state(stances, active_count):
+    """Readiness bucket for one requirement from its confirmed-original stances, register precedence: no confirmed original ->
+    'missing' when no active original exists, else 'unresolved'; any opposes -> 'opposing'; any neutral/unresolved -> 'unresolved';
+    otherwise (every stance supports) -> 'satisfied'."""
+    if not stances: return "missing" if active_count == 0 else "unresolved"
+    if "opposes" in stances: return "opposing"
+    if any(x in ("neutral", "unresolved") for x in stances): return "unresolved"
+    return "satisfied"
 def tol(o): return max(POINT_FLOOR, POINT_REL * abs(o))
 
 # ---------------- today's rules, reimplemented from the served receipt semantics ----------------
@@ -305,6 +325,14 @@ def main():
         fx("uvf_before_after_oracle", "candidate transformation of the frozen snapshot changes zero verdict surfaces and selects zero pairs/contracts for the new branch; the positive control (one synthetic opted pair injected) changes exactly one surface and the oracle reports it",
            orr, orr.get("snapshot", {}).get("changed_surfaces") == 0 and orr.get("snapshot", {}).get("new_branch_pairs") == 0 and orr.get("snapshot", {}).get("keyed_contracts") == 0
                and orr.get("positive_control", {}).get("changed_surfaces") == 1 and orr.get("positive_control", {}).get("new_branch_pairs") == 1)
+    cp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "controls_result.json")
+    if os.path.exists(cp):
+        cr = json.load(open(cp))
+        ts, ro = cr.get("two_state", {}), cr.get("replication_only", {})
+        fx("keyed_selection_controls", "two-state control: the sole comprehension original UNCONFIRMED leaves the keyed requirement unresolved (not satisfied); the identical original CONFIRMED engages the reading and satisfies it; replication-only control: a keyed contract whose only comprehension rows are replications selects zero originals and reads missing, never satisfied",
+           cr, ts.get("unconfirmed", {}).get("bucket") == "unresolved" and ts.get("unconfirmed", {}).get("satisfied") is False
+               and ts.get("confirmed", {}).get("bucket") == "satisfied" and ts.get("confirmed", {}).get("satisfied") is True
+               and ro.get("bucket") == "missing" and ro.get("satisfied") is False and ro.get("active_originals") == 0 and ro.get("replications_excluded", 0) >= 1)
     allm = all(x["match"] for x in out.values())
     json.dump(out, open(a.out, "w"), indent=1, default=str, sort_keys=True)
     print(json.dumps({k: {"match": x["match"], "declared": x["declared"]} for k, x in out.items()}, indent=1))
