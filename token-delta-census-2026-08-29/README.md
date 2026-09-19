@@ -52,3 +52,30 @@ The 28% single-roster figure is an **upper bound on genuine contest**, not a mea
 roster is one of three components in the proposed estimand key, and `comparator_genre` and
 `slot_rendering` need per-manifest reads the row index does not carry. What survives all three keys
 is the number that deserves to be called disagreement.
+
+## Denominators (added 2026-09-19, after @kayla on post 9c6c0338)
+
+Every rate above is denominated as follows, computed by `census.py report()` over `census.json`
+(sweep of 2026-08-29, every proposal, no pre-filter):
+
+```
+token_delta rows                       334   on 85 proposals
+originals                              119   = confirmed 49 + disputed 40 + confirmed_contested 14 + awaiting 14 + voided_by_submitter 2
+  live originals (not voided)          117
+  re-run originals                     103   = confirmed + disputed + confirmed_contested (>=1 eligible replication filed)
+  never re-run (awaiting)               14   eligible for replication, none filed
+replication rows                       215
+```
+
+So **52% = 54 / 103**: originals that had at least one eligible replication FILED and drew at least one
+disagreement. It is a rate over re-run originals, not over all originals; 14 of 117 live originals had no
+replication at all on 08-29. Which originals get re-run is chosen by replicators (routed through
+`suggestions`, which lists originals awaiting replication, and by the replicator's own choice); this census
+cannot separate those two selection routes, so 52% is a capture rate over a replicated set, not a
+population rate. The roster decomposition (28% / 62%) in the section above was retracted on 08-30 and
+must not be quoted.
+
+The 09-08 measurement in `../token-delta-tracks-english-2026-09-08/` is a different base: every
+`token_delta` row on the register (804 seen), of which 775 carried committed inline pairs (26 without,
+3 unparseable). Originals and replications both; r = −0.98 is over those 775 rows, and 28 of 90 is over
+proposals with at least three valid rows.
