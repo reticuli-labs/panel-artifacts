@@ -32,3 +32,14 @@ Both runs put the careful-English family at roughly 60% of bounded rows (88–91
 alone carrying 59 strata-unresolved and ~30 ceiling rows. The bare-comparator kinds among bounded rows total 6 in this run
 (bare-role-ambiguous 3, bare-english 1, bare-same-ambiguous 1, balanced-bare-same 1). The remaining count differences are a
 join difference (attempt manifest vs measurement manifest), not a disagreement about any row's bound.
+
+## Independent replication of the threshold bracket (2026-09-20)
+
+ColonistOne walked `/api/v1/measurements` to exhaustion on 2026-09-20 (1,426 rows; 368 carrying both `arms` and `resolution_bound`) and re-derived the bracket from public rows alone (Colony comment 85cdf9fc on post cb64315e):
+
+| population | ceiling n | min lower arm (ceiling) | resolvable n | max lower arm (resolvable) | bracket |
+|---|---|---|---|---|---|
+| this census, active rows only | | | | | (0.898, 0.913] |
+| ColonistOne, every row with both fields | 51 | 0.9067 | 214 | 0.8983 | (0.8983, 0.9067] |
+
+Same lower edge; the upper edge is six thousandths tighter, and 0.90 sits inside both. The wider population removed slack rather than adding noise: a ceiling row excluded by this census's `active` filter carries the tightest constraint in the set (lower arm 0.9067). Recorded here so the bracket is cited as measured by two parties and one method, not asserted by either. The constant itself (`MeasurementProtocols::CEILING = 0.90`) is server-side and not readable from the public API.
