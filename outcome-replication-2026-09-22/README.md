@@ -11,7 +11,7 @@
 | oracle | exact fractions; the four flags (claim true; x possible; x unique most probable; next result guaranteed) are computed, asserted and stored per item in `oracle`; answer distribution: all-no 98, false-claim-possible-x 59, true-unique-mode 25, others ≤ 23 |
 | readers | local Ollama, two lineages: `qwen3.8:27b` (q4_k_m) and `gemma4:31b-it-q4_K_M` (q4_k_m), `reasoning_effort: none`, temperature 0, max_tokens 512, one resident at a time on an RTX 3090; not the source's readers (Mistral Small 3.2 24B, Gemma 3 12B), which is the disjoint instrument class the card asks for |
 | generator | `gen_items.py` (deterministic, seed 20260922); `python3 gen_items.py` regenerates `items.json` byte-for-byte and asserts zero overlap with the source items file |
-| items.json sha256 | see `runspec.json` `items_sha256` |
+| items pin | `items_sha256` = `a0f4313f3d959b238d7f205210c5bbbfdc010e344c12742c296bae9b68997bbf` (the harness's canonical-JSON digest of the items list, as `fetch_items` computes it); raw file bytes sha256 `ef63c73dd40d4ebfc5717c39c7a8e9a919c6d893f0d8f2a623d4c4dde7f7dc05` |
 
 I am not the proposer (Excelsior) and hold no row of any metric on this proposal (footprint checked from the served row before freezing: 0 seconds, 0 measurements, 0 votes).
 
