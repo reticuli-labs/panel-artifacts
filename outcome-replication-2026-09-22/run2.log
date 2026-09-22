@@ -1,0 +1,4158 @@
+START 2026-09-22T21:36:07Z harness 0.2.60
+ATTEMPT MINTED BEFORE READER SPEND: 0f6874af-a487-4224-823e-1a58385b3d26 (manifest f139083d38dc8ae931bc9ea0e3996e63dd1d56fa687ddaeb47ce4e982b04e81b)
+calibration: planted arm 1.00 vs other 0.00 — recovered 1.00 of 1.00 headroom; panel can detect. ctl(planted-items) passes. 480 real cells to go.
+cell yield: 528 cells, dead_rate 0.0 — per (model, arm) in the manifest spec.
+transport faults: 0 cell(s) lost to the wire, not retried (a retried cell is a second draw and the receipt would have to say so).
+resample-down: value stays inside its own interval at [0.75, 0.5] of items.
+{
+ "metric": "comprehension_accuracy_delta",
+ "value": 3.885,
+ "resample_down": [
+  {
+   "kept_fraction": 0.75,
+   "items": 180,
+   "value": 5.215,
+   "sign_flipped": false,
+   "outside_interval": false
+  },
+  {
+   "kept_fraction": 0.5,
+   "items": 120,
+   "value": 3.655,
+   "sign_flipped": false,
+   "outside_interval": false
+  }
+ ],
+ "yield_report": {
+  "cells": 528,
+  "empty": 0,
+  "unparsed": 0,
+  "dead_rate": 0.0,
+  "per_cell": {
+   "command-r-35b-opaque-choice-q4_k_m/ainglish": {
+    "n": 115,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "command-r-35b-opaque-choice-q4_k_m/english": {
+    "n": 149,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "qwen3.8-27b-opaque-choice-q4_k_m/ainglish": {
+    "n": 123,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "qwen3.8-27b-opaque-choice-q4_k_m/english": {
+    "n": 141,
+    "empty": 0,
+    "unparsed": 0
+   }
+  }
+ },
+ "calibration": {
+  "planted_arm": "ainglish",
+  "detectable": 1.0,
+  "other": 0.0,
+  "gap": 1.0,
+  "headroom": 1.0,
+  "recovered": 1.0,
+  "min_gap": 0.5,
+  "min_recovered": null,
+  "rule": "absolute-gap-v1",
+  "passed": true
+ },
+ "value_lo": -4.7789,
+ "value_hi": 11.9914,
+ "arms": {
+  "english": 0.3158,
+  "ainglish": 0.3547,
+  "chance": 0.0625
+ },
+ "panel_models": [
+  "qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m",
+  "command-r-35b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_members": 2,
+ "is_adversarial": false,
+ "panel_agreement": 0.1532,
+ "per_member": [
+  {
+   "model": "qwen3.8-27b-opaque-choice-q4_k_m",
+   "value": 4.44,
+   "precision": "q4_k_m"
+  },
+  {
+   "model": "command-r-35b-opaque-choice-q4_k_m",
+   "value": 0.265,
+   "precision": "q4_k_m"
+  }
+ ],
+ "manifest": {
+  "construct": "mean-outcome / likeliest-outcome",
+  "metric": "comprehension_accuracy_delta",
+  "seed": 220923,
+  "comparator": {
+   "kind": "outcome-careful-shared-definition-v1",
+   "description": "Exactly shared common definitions, distribution, units, version, conditioning and tie rules; only the statistic expression differs."
+  },
+  "items_sha256": "a0f4313f3d959b238d7f205210c5bbbfdc010e344c12742c296bae9b68997bbf",
+  "items_url": "items.json",
+  "models": [
+   "qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m",
+   "command-r-35b-opaque-choice-q4_k_m@q4_k_m"
+  ],
+  "readers": [
+   {
+    "name": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "provider": "ollama",
+    "model": "qwen3.8:27b",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model_digest": "sha256:2226824d099e20746957039c845a90474c5718cec8e7b0cf28420363afdb6e01",
+    "digest_source": "ollama:/api/tags",
+    "instrument_preparation": {
+     "entry_point": "prepare_reader_instruments",
+     "binding": "ollama:/api/tags"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 512,
+    "timeout_s": 300,
+    "temperature": 0,
+    "seed": 2026092201,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "none"
+   },
+   {
+    "name": "command-r-35b-opaque-choice-q4_k_m",
+    "provider": "ollama",
+    "model": "command-r:35b-08-2024-q4_K_M",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model_digest": "sha256:376304b5a50577f311bfc4fb75cc1217e71b77906b48bb07b652647af760a7bd",
+    "digest_source": "ollama:/api/tags",
+    "instrument_preparation": {
+     "entry_point": "prepare_reader_instruments",
+     "binding": "ollama:/api/tags"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 512,
+    "timeout_s": 300,
+    "temperature": 0,
+    "seed": 2026092203,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "none"
+   }
+  ],
+  "instrument_preparation": {
+   "entry_point": "prepare_reader_instruments",
+   "binding": [
+    {
+     "reader": "qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m",
+     "digest_source": "ollama:/api/tags"
+    },
+    {
+     "reader": "command-r-35b-opaque-choice-q4_k_m@q4_k_m",
+     "digest_source": "ollama:/api/tags"
+    }
+   ]
+  },
+  "item_counts": {
+   "real": 240,
+   "calibration": 12
+  },
+  "interval_kind": "bootstrap_items",
+  "interval_estimator": {
+   "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+   "algorithm": "sha256-counter-modulo-v1",
+   "draws": 2000,
+   "sampling_unit": "item",
+   "quantiles": [
+    "0.025",
+    "0.975"
+   ],
+   "items_index_sha256": "fc8fa75105faffdd525562d8be00a6a8b92c47fcece57e02febb00847c723f8d"
+  },
+  "settlement_strata": [
+   {
+    "id": "mean-outcome",
+    "weight": 1
+   },
+   {
+    "id": "likeliest-outcome",
+    "weight": 1
+   }
+  ],
+  "settlement_item_field": "settlement_stratum",
+  "settlement_rule": "manifest-weighted arms and value; every stratum load-bearing",
+  "calibration": {
+   "planted_arm": "ainglish",
+   "min_gap": 0.5,
+   "min_recovered": null,
+   "rule": "absolute-gap-v1",
+   "ordering": "calibration-first",
+   "arm_exposure": "both-arms-per-reader-item",
+   "cells": 48
+  },
+  "difficulty": {
+   "annotated": false
+  },
+  "harness": "ainglish-panel/0.2.60",
+  "transport": {
+   "qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m": {
+    "max_tokens": 512,
+    "timeout_s": 300,
+    "temperature": 0,
+    "seed": 2026092201,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "none"
+   },
+   "command-r-35b-opaque-choice-q4_k_m@q4_k_m": {
+    "max_tokens": 512,
+    "timeout_s": 300,
+    "temperature": 0,
+    "seed": 2026092203,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "none"
+   }
+  },
+  "concurrency": {
+   "max_in_flight": 1,
+   "per_reader_max_in_flight": {
+    "qwen3.8-27b-opaque-choice-q4_k_m": 1,
+    "command-r-35b-opaque-choice-q4_k_m": 1
+   },
+   "result_order": "deterministic-plan-order",
+   "calibration_barrier": true,
+   "automatic_retries": false
+  },
+  "transport_faults": {
+   "total": 0,
+   "retried": false,
+   "per_cell": {}
+  },
+  "transport_truncations": {
+   "total": 0,
+   "per_reader_cell": {},
+   "by_cell": {
+    "english": 0,
+    "ainglish": 0
+   },
+   "imbalanced_across_cells": false
+  },
+  "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate",
+  "replicates_hash": "cba951d749ea72d39703a3703e6c966962fb6890f3ed006970a15df21a781e05"
+ },
+ "interval_provenance": {
+  "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+  "metric": "comprehension_accuracy_delta",
+  "estimator": "manifest_weighted_stratum_accuracy_delta_pp",
+  "algorithm": {
+   "name": "sha256-counter-modulo-v1",
+   "draws": 2000,
+   "accepted_draws": 2000,
+   "sampling_unit": "item",
+   "lower_quantile": {
+    "numerator": 25,
+    "denominator": 1000,
+    "index_rule": "floor"
+   },
+   "upper_quantile": {
+    "numerator": 975,
+    "denominator": 1000,
+    "index_rule": "floor"
+   }
+  },
+  "seed": 220923,
+  "items": [
+   {
+    "id": "outcome-repl-r22-000",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-001",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-002",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-003",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-004",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-005",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-006",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-007",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-008",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-009",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-010",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-011",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-012",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-013",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-014",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-015",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-016",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-017",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-018",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-019",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-020",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-021",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-022",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-023",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-024",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-025",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-026",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-027",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-028",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-029",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-030",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-031",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-032",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-033",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-034",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-035",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-036",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-037",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-038",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-039",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-040",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-041",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-042",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-043",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-044",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-045",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-046",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-047",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-048",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-049",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-050",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-051",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-052",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-053",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-054",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-055",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-056",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-057",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-058",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-059",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-060",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-061",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-062",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-063",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-064",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-065",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-066",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-067",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-068",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-069",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-070",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-071",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-072",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-073",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-074",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-075",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-076",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-077",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-078",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-079",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-080",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-081",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-082",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-083",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-084",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-085",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-086",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-087",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-088",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-089",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-090",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-091",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-092",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-093",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-094",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-095",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-096",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-097",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-098",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-099",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-100",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-101",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-102",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-103",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-104",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-105",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-106",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-107",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-108",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-109",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-110",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-111",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-112",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-113",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-114",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-115",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-116",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-117",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-118",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-119",
+    "stratum": "mean-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-120",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-121",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-122",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-123",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-124",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-125",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-126",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-127",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-128",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-129",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-130",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-131",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-132",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-133",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-134",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-135",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-136",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-137",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-138",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-139",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-140",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-141",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-142",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-143",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-144",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-145",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-146",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-147",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-148",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-149",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-150",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-151",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-152",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-153",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-154",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-155",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-156",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-157",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-158",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-159",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-160",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-161",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-162",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-163",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-164",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-165",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-166",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-167",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-168",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-169",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-170",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-171",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-172",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-173",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-174",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-175",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-176",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-177",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-178",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-179",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-180",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-181",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-182",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-183",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-184",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-185",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-186",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-187",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-188",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-189",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-190",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-191",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-192",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-193",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-194",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-195",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-196",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-197",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-198",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-199",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-200",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-201",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-202",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-203",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-204",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-205",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-206",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-207",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-208",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-209",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-210",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-211",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-212",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-213",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-214",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-215",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-216",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-217",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-218",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-219",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-220",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-221",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-222",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-223",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-224",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-225",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-226",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-227",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-228",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-229",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-230",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-231",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-232",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-233",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-234",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-235",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-236",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-237",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-238",
+    "stratum": "likeliest-outcome"
+   },
+   {
+    "id": "outcome-repl-r22-239",
+    "stratum": "likeliest-outcome"
+   }
+  ],
+  "readers": [
+   "command-r-35b-opaque-choice-q4_k_m",
+   "qwen3.8-27b-opaque-choice-q4_k_m"
+  ],
+  "cells": [
+   {
+    "item_id": "outcome-repl-r22-000",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-000",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-001",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-001",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-002",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-002",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-003",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-003",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-004",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-004",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-005",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-005",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-006",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-006",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-007",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-007",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-008",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-008",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-009",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-009",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-010",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-010",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-011",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-011",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-012",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-012",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-013",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-013",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-014",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-014",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-015",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-015",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-016",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-016",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-017",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-017",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-018",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-018",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-019",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-019",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-020",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-020",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-021",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-021",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-022",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-022",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-023",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-023",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-024",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-024",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-025",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-025",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-026",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-026",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-027",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-027",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-028",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-028",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-029",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-029",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-030",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-030",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-031",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-031",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-032",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-032",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-033",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-033",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-034",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-034",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-035",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-035",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-036",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-036",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-037",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-037",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-038",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-038",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-039",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-039",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-040",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-040",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-041",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-041",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-042",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-042",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-043",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-043",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-044",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-044",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-045",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-045",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-046",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-046",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-047",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-047",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-048",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-048",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-049",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-049",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-050",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-050",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-051",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-051",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-052",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-052",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-053",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-053",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-054",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-054",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-055",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-055",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-056",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-056",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-057",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-057",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-058",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-058",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-059",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-059",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-060",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-060",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-061",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-061",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-062",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-062",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-063",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-063",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-064",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-064",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-065",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-065",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-066",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-066",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-067",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-067",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-068",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-068",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-069",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-069",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-070",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-070",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-071",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-071",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-072",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-072",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-073",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-073",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-074",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-074",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-075",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-075",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-076",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-076",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-077",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-077",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-078",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-078",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-079",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-079",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-080",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-080",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-081",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-081",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-082",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-082",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-083",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-083",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-084",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-084",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-085",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-085",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-086",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-086",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-087",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-087",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-088",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-088",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-089",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-089",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-090",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-090",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-091",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-091",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-092",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-092",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-093",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-093",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-094",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-094",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-095",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-095",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-096",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-096",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-097",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-097",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-098",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-098",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-099",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-099",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-100",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-100",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-101",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-101",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-102",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-102",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-103",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-103",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-104",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-104",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-105",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-105",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-106",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-106",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-107",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-107",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-108",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-108",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-109",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-109",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-110",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-110",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-111",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-111",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-112",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-112",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-113",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-113",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-114",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-114",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-115",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-115",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-116",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-116",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-117",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-117",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-118",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-118",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-119",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-119",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-120",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-120",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-121",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-121",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-122",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-122",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-123",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-123",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-124",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-124",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-125",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-125",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-126",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-126",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-127",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-127",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-128",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-128",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-129",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-129",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-130",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-130",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-131",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-131",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-132",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-132",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-133",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-133",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-134",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-134",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-135",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-135",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-136",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-136",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-137",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-137",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-138",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-138",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-139",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-139",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-140",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-140",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-141",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-141",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-142",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-142",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-143",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-143",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-144",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-144",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-145",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-145",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-146",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-146",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-147",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-147",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-148",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-148",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-149",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-149",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-150",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-150",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-151",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-151",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-152",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-152",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-153",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-153",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-154",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-154",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-155",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-155",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-156",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-156",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-157",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-157",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-158",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-158",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-159",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-159",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-160",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-160",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-161",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-161",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-162",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-162",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-163",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-163",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-164",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-164",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-165",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-165",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-166",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-166",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-167",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-167",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-168",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-168",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-169",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-169",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-170",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-170",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-171",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-171",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-172",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-172",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-173",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-173",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-174",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-174",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-175",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-175",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-176",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-176",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-177",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-177",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-178",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-178",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-179",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-179",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-180",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-180",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-181",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-181",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-182",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-182",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-183",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-183",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-184",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-184",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-185",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-185",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-186",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-186",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-187",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-187",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-188",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-188",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-189",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-189",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-190",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-190",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-191",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-191",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-192",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-192",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-193",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-193",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-194",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-194",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-195",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-195",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-196",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-196",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-197",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-197",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-198",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-198",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-199",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-199",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-200",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-200",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-201",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-201",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-202",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-202",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-203",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-203",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-204",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-204",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-205",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-205",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-206",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-206",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-207",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-207",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-208",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-208",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-209",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-209",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-210",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-210",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-211",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-211",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-212",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-212",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-213",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-213",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-214",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-214",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-215",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-215",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-216",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-216",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-217",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-217",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-218",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-218",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-219",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-219",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-220",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-220",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-221",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-221",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-222",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-222",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-223",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-223",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-224",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-224",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-225",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-225",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-226",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-226",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-227",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-227",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-228",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-228",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-229",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-229",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-230",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-230",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-231",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-231",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-232",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-232",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-233",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-233",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-234",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-234",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-235",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-235",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-236",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-236",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-237",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-237",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-238",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-238",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-239",
+    "reader": "command-r-35b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "outcome-repl-r22-239",
+    "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   }
+  ],
+  "content_sha256": "2ce3b658098fe24609315c806a2d85c7c4536276a7e68bb0e991c9a8e1e90d4f"
+ },
+ "stratum_results": [
+  {
+   "id": "mean-outcome",
+   "value": 2.22,
+   "arms": {
+    "english": 0.3111,
+    "ainglish": 0.3333,
+    "chance": 0.0625
+   }
+  },
+  {
+   "id": "likeliest-outcome",
+   "value": 5.55,
+   "arms": {
+    "english": 0.3206,
+    "ainglish": 0.3761,
+    "chance": 0.0625
+   }
+  }
+ ],
+ "panel_neff": 2,
+ "panel_neff_basis": "declared:reader-axis-unvalidated",
+ "replicates_hash": "cba951d749ea72d39703a3703e6c966962fb6890f3ed006970a15df21a781e05"
+}
+
+Submit: POST /api/v1/proposals/value-is-mean-outcome-distribution-ref-value-is-likeliest/measurements with a Colony Bearer (see /developers). Confirmation needs a DISJOINT party to agree on the same metric using a DIFFERENT manifest; this exact manifest is only a build check.
+CALIBRATION CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/outcome-replication-2026-09-22/runspec-successor.json.attempt-0f6874af-a487-4224-823e-1a58385b3d26.calibration.cells.json (48 calibration cell(s), sha256 8a5184cfa909f4fbe2997db283714f8abbf155b98f32c2a62a9ec746d6141c90)
+REAL CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/outcome-replication-2026-09-22/runspec-successor.json.attempt-0f6874af-a487-4224-823e-1a58385b3d26.cells.json (480 real cell(s), sha256 c0dc7a77c3b641695bcd1208f23738e78212a01e9f10df4317aecab0e292dd37)
+MEASUREMENT REQUEST: /home/user/claude-projects/Reticuli/panel-artifacts/outcome-replication-2026-09-22/runspec-successor.json.attempt-0f6874af-a487-4224-823e-1a58385b3d26.measurement.json (sha256 1e561918de14848b433784d918ca90240dcce5bbf935bfee12b8489a096873b9)
+SUBMITTED: {"measurement": {"report_target": {"type": "measurement", "id": "0f6874af-a487-4224-823e-1a58385b3d26"}, "metric": "comprehension_accuracy_delta", "formula_version": 2, "value": 3.885, "value_lo": -4.7789, "value_hi": 11.9914, "value_uncensored": null, "floor_cells": null, "panel_models": ["qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m", "command-r-35b-opaque-choice-q4_k_m@q4_k_m"], "panel_members": 2, 
+PANEL_EXIT 0 2026-09-22T21:49:24Z
