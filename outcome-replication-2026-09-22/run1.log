@@ -1,40 +1,42 @@
+START 2026-09-22T20:10:19Z harness 0.2.60
+ATTEMPT MINTED BEFORE READER SPEND: 296b536b-c049-46e5-9469-7cfea2119a1e (manifest 7600f51c24296511876afe496615d698135a8a7ecdd709b7348434b1083acd54)
 calibration: planted arm 1.00 vs other 0.00 — recovered 1.00 of 1.00 headroom; panel can detect. ctl(planted-items) passes. 480 real cells to go.
-cell yield: 528 cells, dead_rate 0.0 — per (model, arm) in the manifest spec.
+cell yield: 528 cells, dead_rate 0.0189 — per (model, arm) in the manifest spec.
 transport faults: 0 cell(s) lost to the wire, not retried (a retried cell is a second draw and the receipt would have to say so).
-resample-down: value stays inside its own interval at [0.75, 0.5] of items.
+RESAMPLE-DOWN WARNING: thinning moves this value outside what the run claimed ([{'kept_fraction': 0.75, 'items': 180, 'value': -0.65, 'sign_flipped': True, 'outside_interval': False}]) — it is reading the item SELECTION, not the construct. Report unresolved.
 {
  "metric": "comprehension_accuracy_delta",
- "value": 100.0,
+ "value": 0.915,
  "resample_down": [
   {
    "kept_fraction": 0.75,
    "items": 180,
-   "value": 100.0,
-   "sign_flipped": false,
+   "value": -0.65,
+   "sign_flipped": true,
    "outside_interval": false
   },
   {
    "kept_fraction": 0.5,
    "items": 120,
-   "value": 100.0,
+   "value": 2.94,
    "sign_flipped": false,
    "outside_interval": false
   }
  ],
  "yield_report": {
   "cells": 528,
-  "empty": 0,
+  "empty": 10,
   "unparsed": 0,
-  "dead_rate": 0.0,
+  "dead_rate": 0.0189,
   "per_cell": {
    "gemma4-31b-opaque-choice-q4_k_m/ainglish": {
     "n": 139,
-    "empty": 0,
+    "empty": 5,
     "unparsed": 0
    },
    "gemma4-31b-opaque-choice-q4_k_m/english": {
     "n": 125,
-    "empty": 0,
+    "empty": 5,
     "unparsed": 0
    },
    "qwen3.8-27b-opaque-choice-q4_k_m/ainglish": {
@@ -61,11 +63,11 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
   "rule": "absolute-gap-v1",
   "passed": true
  },
- "value_lo": 100.0,
- "value_hi": 100.0,
+ "value_lo": -6.6656,
+ "value_hi": 8.5877,
  "arms": {
-  "english": 0.0,
-  "ainglish": 1.0,
+  "english": 0.2829,
+  "ainglish": 0.2921,
   "chance": 0.0625
  },
  "panel_models": [
@@ -74,16 +76,16 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
  ],
  "panel_members": 2,
  "is_adversarial": false,
- "panel_agreement": 1.0,
+ "panel_agreement": 0.0,
  "per_member": [
   {
    "model": "qwen3.8-27b-opaque-choice-q4_k_m",
-   "value": 100.0,
+   "value": 7.14,
    "precision": "q4_k_m"
   },
   {
    "model": "gemma4-31b-opaque-choice-q4_k_m",
-   "value": 100.0,
+   "value": 0.0,
    "precision": "q4_k_m"
   }
  ],
@@ -109,11 +111,11 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "precision": "q4_k_m",
     "api": "openai",
     "base_url": "http://127.0.0.1:11434/v1",
-    "model_digest": null,
-    "digest_source": "unbound",
+    "model_digest": "sha256:2226824d099e20746957039c845a90474c5718cec8e7b0cf28420363afdb6e01",
+    "digest_source": "ollama:/api/tags",
     "instrument_preparation": {
-     "entry_point": "not-prepared",
-     "binding": "unbound"
+     "entry_point": "prepare_reader_instruments",
+     "binding": "ollama:/api/tags"
     },
     "answer_protocol": "opaque-choice-v1",
     "max_tokens": 512,
@@ -132,11 +134,11 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "precision": "q4_k_m",
     "api": "openai",
     "base_url": "http://127.0.0.1:11434/v1",
-    "model_digest": null,
-    "digest_source": "unbound",
+    "model_digest": "sha256:6316f0629137b426c9d9b853ffc4c8209589f30ee39aebede6285096c0ff47e7",
+    "digest_source": "ollama:/api/tags",
     "instrument_preparation": {
-     "entry_point": "not-prepared",
-     "binding": "unbound"
+     "entry_point": "prepare_reader_instruments",
+     "binding": "ollama:/api/tags"
     },
     "answer_protocol": "opaque-choice-v1",
     "max_tokens": 512,
@@ -150,8 +152,17 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
    }
   ],
   "instrument_preparation": {
-   "entry_point": "dry-run",
-   "binding": "unbound"
+   "entry_point": "prepare_reader_instruments",
+   "binding": [
+    {
+     "reader": "qwen3.8-27b-opaque-choice-q4_k_m@q4_k_m",
+     "digest_source": "ollama:/api/tags"
+    },
+    {
+     "reader": "gemma4-31b-opaque-choice-q4_k_m@q4_k_m",
+     "digest_source": "ollama:/api/tags"
+    }
+   ]
   },
   "item_counts": {
    "real": 240,
@@ -232,15 +243,20 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
    "per_cell": {}
   },
   "transport_truncations": {
-   "total": 0,
-   "per_reader_cell": {},
+   "total": 10,
+   "per_reader_cell": {
+    "gemma4-31b-opaque-choice-q4_k_m": {
+     "english": 5,
+     "ainglish": 5
+    }
+   },
    "by_cell": {
-    "english": 0,
-    "ainglish": 0
+    "english": 5,
+    "ainglish": 5
    },
    "imbalanced_across_cells": false
   },
-  "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate [DRY-RUN: mock oracle readers \u2014 plumbing verification, NOT a measurement]",
+  "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate",
   "replicates_hash": "cba951d749ea72d39703a3703e6c966962fb6890f3ed006970a15df21a781e05"
  },
  "interval_provenance": {
@@ -1241,13 +1257,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-000",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-001",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-001",
@@ -1259,7 +1275,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-002",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-002",
@@ -1271,13 +1287,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-003",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-003",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-004",
@@ -1295,7 +1311,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-005",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-005",
@@ -1307,7 +1323,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-006",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-006",
@@ -1319,7 +1335,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-007",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-007",
@@ -1331,7 +1347,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-008",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-008",
@@ -1343,7 +1359,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-009",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-009",
@@ -1373,37 +1389,37 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-011",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-012",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-012",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-013",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-013",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-014",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-014",
@@ -1421,13 +1437,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-015",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-016",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-016",
@@ -1439,37 +1455,37 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-017",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-017",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-018",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-018",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-019",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-019",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-020",
@@ -1481,13 +1497,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-020",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-021",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-021",
@@ -1499,7 +1515,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-022",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-022",
@@ -1511,13 +1527,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-023",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-023",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-024",
@@ -1529,7 +1545,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-024",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-025",
@@ -1547,7 +1563,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-026",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-026",
@@ -1559,34 +1575,34 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-027",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-027",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-028",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-028",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "outcome-repl-r22-029",
+    "reader": "gemma4-31b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
     "correct": false
    },
    {
     "item_id": "outcome-repl-r22-029",
-    "reader": "gemma4-31b-opaque-choice-q4_k_m",
-    "arm": "ainglish",
-    "correct": true
-   },
-   {
-    "item_id": "outcome-repl-r22-029",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
     "correct": true
@@ -1595,19 +1611,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-030",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-030",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-031",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-031",
@@ -1631,13 +1647,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-033",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-033",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-034",
@@ -1667,13 +1683,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-036",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-036",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-037",
@@ -1685,7 +1701,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-037",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-038",
@@ -1697,7 +1713,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-038",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-039",
@@ -1715,7 +1731,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-040",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-040",
@@ -1727,7 +1743,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-041",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-041",
@@ -1751,31 +1767,31 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-043",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-043",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-044",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-044",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-045",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-045",
@@ -1793,37 +1809,37 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-046",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-047",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-047",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-048",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-048",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-049",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-049",
@@ -1835,19 +1851,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-050",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-050",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-051",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-051",
@@ -1865,31 +1881,31 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-052",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-053",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-053",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-054",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-054",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-055",
@@ -1901,7 +1917,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-055",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-056",
@@ -1913,13 +1929,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-056",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-057",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-057",
@@ -1937,7 +1953,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-058",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-059",
@@ -1961,13 +1977,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-060",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-061",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-061",
@@ -2003,13 +2019,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-064",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-064",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-065",
@@ -2039,7 +2055,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-067",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-067",
@@ -2051,25 +2067,25 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-068",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-068",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-069",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-069",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-070",
@@ -2093,7 +2109,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-071",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-072",
@@ -2111,7 +2127,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-073",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-073",
@@ -2135,7 +2151,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-075",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-075",
@@ -2159,13 +2175,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-077",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-077",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-078",
@@ -2177,7 +2193,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-078",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-079",
@@ -2201,13 +2217,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-080",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-081",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-081",
@@ -2219,37 +2235,37 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-082",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-082",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-083",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-083",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-084",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-084",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-085",
@@ -2261,19 +2277,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-085",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-086",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-086",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-087",
@@ -2285,7 +2301,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-087",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-088",
@@ -2297,7 +2313,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-088",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-089",
@@ -2315,7 +2331,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-090",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-090",
@@ -2327,7 +2343,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-091",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-091",
@@ -2339,7 +2355,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-092",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-092",
@@ -2351,7 +2367,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-093",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-093",
@@ -2369,13 +2385,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-094",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-095",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-095",
@@ -2393,7 +2409,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-096",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-097",
@@ -2405,7 +2421,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-097",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-098",
@@ -2435,25 +2451,25 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-100",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-100",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-101",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-101",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-102",
@@ -2465,7 +2481,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-102",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-103",
@@ -2477,7 +2493,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-103",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-104",
@@ -2489,13 +2505,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-104",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-105",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-105",
@@ -2507,19 +2523,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-106",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-106",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-107",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-107",
@@ -2531,19 +2547,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-108",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-108",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-109",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-109",
@@ -2567,7 +2583,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-111",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-111",
@@ -2579,31 +2595,31 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-112",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-112",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-113",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-113",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-114",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-114",
@@ -2615,7 +2631,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-115",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-115",
@@ -2633,7 +2649,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-116",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-117",
@@ -2669,7 +2685,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-119",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-120",
@@ -2693,19 +2709,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-121",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-122",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-122",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-123",
@@ -2723,7 +2739,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-124",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-124",
@@ -2747,7 +2763,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-126",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-126",
@@ -2759,19 +2775,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-127",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-127",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-128",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-128",
@@ -2783,25 +2799,25 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-129",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-129",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-130",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-130",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-131",
@@ -2831,13 +2847,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-133",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-133",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-134",
@@ -2861,13 +2877,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-135",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-136",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-136",
@@ -2879,7 +2895,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-137",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-137",
@@ -2897,7 +2913,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-138",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-139",
@@ -2909,13 +2925,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-139",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-140",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-140",
@@ -2933,7 +2949,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-141",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-142",
@@ -2975,13 +2991,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-145",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-145",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-146",
@@ -2993,25 +3009,25 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-146",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-147",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-147",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-148",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-148",
@@ -3029,7 +3045,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-149",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-150",
@@ -3047,13 +3063,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-151",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-151",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-152",
@@ -3071,7 +3087,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-153",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-153",
@@ -3089,37 +3105,37 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-154",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-155",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-155",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-156",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-156",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-157",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-157",
@@ -3131,19 +3147,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-158",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-158",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-159",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-159",
@@ -3155,13 +3171,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-160",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-160",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-161",
@@ -3179,7 +3195,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-162",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-162",
@@ -3191,7 +3207,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-163",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-163",
@@ -3215,7 +3231,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-165",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-165",
@@ -3239,7 +3255,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-167",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-167",
@@ -3251,7 +3267,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-168",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-168",
@@ -3281,13 +3297,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-170",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-171",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-171",
@@ -3305,7 +3321,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-172",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-173",
@@ -3329,7 +3345,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-174",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-175",
@@ -3347,7 +3363,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-176",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-176",
@@ -3365,7 +3381,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-177",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-178",
@@ -3383,7 +3399,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-179",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-179",
@@ -3401,7 +3417,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-180",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-181",
@@ -3413,7 +3429,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-181",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-182",
@@ -3431,7 +3447,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-183",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-183",
@@ -3443,7 +3459,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-184",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-184",
@@ -3455,7 +3471,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-185",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-185",
@@ -3473,13 +3489,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-186",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-187",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-187",
@@ -3491,13 +3507,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-188",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-188",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-189",
@@ -3509,13 +3525,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-189",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-190",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-190",
@@ -3533,13 +3549,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-191",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-192",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-192",
@@ -3551,19 +3567,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-193",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-193",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-194",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-194",
@@ -3575,7 +3591,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-195",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-195",
@@ -3587,7 +3603,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-196",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-196",
@@ -3611,7 +3627,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-198",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-198",
@@ -3629,19 +3645,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-199",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-200",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-200",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-201",
@@ -3653,13 +3669,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-201",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-202",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-202",
@@ -3677,13 +3693,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-203",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-204",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-204",
@@ -3695,7 +3711,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-205",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-205",
@@ -3713,7 +3729,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-206",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-207",
@@ -3737,13 +3753,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-208",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-209",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-209",
@@ -3755,25 +3771,25 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-210",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-210",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-211",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-211",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-212",
@@ -3785,13 +3801,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-212",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-213",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-213",
@@ -3803,13 +3819,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-214",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-214",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-215",
@@ -3821,7 +3837,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-215",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-216",
@@ -3839,7 +3855,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-217",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-217",
@@ -3869,7 +3885,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-219",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-220",
@@ -3893,31 +3909,31 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-221",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-222",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-222",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-223",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-223",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-224",
@@ -3935,7 +3951,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-225",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-225",
@@ -3953,13 +3969,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-226",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-227",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-227",
@@ -3989,7 +4005,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-229",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-230",
@@ -4007,31 +4023,31 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-231",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-231",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "english",
-    "correct": false
+    "correct": true
    },
    {
     "item_id": "outcome-repl-r22-232",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-232",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-233",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-233",
@@ -4043,19 +4059,19 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-234",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-234",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-235",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": null
    },
    {
     "item_id": "outcome-repl-r22-235",
@@ -4085,13 +4101,13 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-237",
     "reader": "qwen3.8-27b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-238",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-238",
@@ -4103,7 +4119,7 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "item_id": "outcome-repl-r22-239",
     "reader": "gemma4-31b-opaque-choice-q4_k_m",
     "arm": "ainglish",
-    "correct": true
+    "correct": false
    },
    {
     "item_id": "outcome-repl-r22-239",
@@ -4112,24 +4128,24 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
     "correct": false
    }
   ],
-  "content_sha256": "40e6e3db1d5a2e9c635048f5544d5aa1eaccc4699a5696fd6f6aa5f9ac307516"
+  "content_sha256": "824ac62fcf5b7a2e7b642e3a7e99f1dfb59846b0eef84d80ffee12416f301bf5"
  },
  "stratum_results": [
   {
    "id": "mean-outcome",
-   "value": 100.0,
+   "value": -6.57,
    "arms": {
-    "english": 0.0,
-    "ainglish": 1.0,
+    "english": 0.3136,
+    "ainglish": 0.2479,
     "chance": 0.0625
    }
   },
   {
    "id": "likeliest-outcome",
-   "value": 100.0,
+   "value": 8.4,
    "arms": {
-    "english": 0.0,
-    "ainglish": 1.0,
+    "english": 0.2522,
+    "ainglish": 0.3362,
     "chance": 0.0625
    }
   }
@@ -4140,5 +4156,8 @@ resample-down: value stays inside its own interval at [0.75, 0.5] of items.
 }
 
 Submit: POST /api/v1/proposals/value-is-mean-outcome-distribution-ref-value-is-likeliest/measurements with a Colony Bearer (see /developers). Confirmation needs a DISJOINT party to agree on the same metric using a DIFFERENT manifest; this exact manifest is only a build check.
-
-DRY RUN complete: pipeline + payload verified, zero API calls. The payload above is stamped DRY-RUN inside its own manifest — not submittable as evidence.
+CALIBRATION CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/outcome-replication-2026-09-22/runspec.json.attempt-296b536b-c049-46e5-9469-7cfea2119a1e.calibration.cells.json (48 calibration cell(s), sha256 d01c6af8cf4802e98de9a69a051163b04d0510bdbdfa3b10b9d5c2be7b277128)
+REAL CELL RESULTS: /home/user/claude-projects/Reticuli/panel-artifacts/outcome-replication-2026-09-22/runspec.json.attempt-296b536b-c049-46e5-9469-7cfea2119a1e.cells.json (480 real cell(s), sha256 13fe743a6d6a5ceb5b6decc059ce955e0f3dc9608b57474cfeef8bf004da5a87)
+ABORT RECEIPT: /home/user/claude-projects/Reticuli/panel-artifacts/outcome-replication-2026-09-22/runspec.json.attempt-296b536b-c049-46e5-9469-7cfea2119a1e.abort.json (sha256 d5d0bb10e87b22d4aedda591d90b22b8101325bbcb7f0b26f5e8d4258e818d8f)
+ATTEMPT ABORTED: 296b536b-c049-46e5-9469-7cfea2119a1e — filed manifest diverged from preregistered clean-run manifest
+PANEL_EXIT 1 2026-09-22T21:30:08Z

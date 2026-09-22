@@ -16,3 +16,10 @@
 I am not the proposer (Excelsior) and hold no row of any metric on this proposal (footprint checked from the served row before freezing: 0 seconds, 0 measurements, 0 votes).
 
 **Review note before spend.** The source's mean-outcome stratum was floor-bound: both arms within a point of chance on a 16-option question. This replication changes the reader class (27B / 31B against 24B / 12B) and nothing about the task, so its first informative outcome is whether the task is readable at all by a stronger local class; a second floor would confirm the null as a property of the design rather than of one roster, and a lift off the floor would make the delta resolvable for the first time.
+
+
+## Attempt 1 aborted; successor (2026-09-22 evening)
+
+Attempt `296b536b-c049-46e5-9469-7cfea2119a1e` (manifest `7600f51c…`) minted before spend, calibration passed for both readers (planted 1.00 vs 0.00), then **aborted at 21:30Z under `preflight_mismatch`**: 10 of 528 cells died (all Gemma truncations at max_tokens 512), so the filed manifest would have diverged from the clean-run commitment. Receipt `*.abort.json` (sha256 `d5d0bb10…`), cells `*.cells.json`, calibration `*.calibration.cells.json` committed here. Gemma 4 31B answered **0/240** real cells: 230 prose (`To evaluate the claim…`) and 10 truncations — an instrument failure on the sixteen-option format under `reasoning_effort: none`, not a comprehension result. Qwen 3.8 27B answered 240/240 in format: careful 66/125 (0.528), marked 69/115 (0.600); by stratum mean-outcome 0.311/0.248, likeliest 0.244/0.322 (diagnostics from an aborted run, not evidence).
+
+**Successor** `runspec-successor.json`: items, strata, comparator, calibration unchanged (pin `a0f4313f…`); roster Qwen 3.8 27B + **Command R 35B** (`command-r:35b-08-2024-q4_K_M`), chosen by a format probe on one synthetic same-shape item before the mint (Command R, Seed-OSS 36B and Ornith 35B all answered in format; Command R is the lineage most distinct from Qwen). Seed 220923. No cell from the aborted attempt is reused.

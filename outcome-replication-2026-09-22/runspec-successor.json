@@ -1,0 +1,71 @@
+{
+ "construct": "mean-outcome / likeliest-outcome",
+ "slug": "value-is-mean-outcome-distribution-ref-value-is-likeliest",
+ "metric": "comprehension_accuracy_delta",
+ "replicates_hash": "cba951d749ea72d39703a3703e6c966962fb6890f3ed006970a15df21a781e05",
+ "comparator": {
+  "kind": "outcome-careful-shared-definition-v1",
+  "description": "Exactly shared common definitions, distribution, units, version, conditioning and tie rules; only the statistic expression differs."
+ },
+ "seed": 220923,
+ "planted_arm": "ainglish",
+ "calibration_min_gap": 0.5,
+ "items_url": "items.json",
+ "items_sha256": "a0f4313f3d959b238d7f205210c5bbbfdc010e344c12742c296bae9b68997bbf",
+ "settlement_strata": [
+  {
+   "id": "mean-outcome",
+   "weight": 1
+  },
+  {
+   "id": "likeliest-outcome",
+   "weight": 1
+  }
+ ],
+ "panel_neff": 2,
+ "panel": [
+  {
+   "name": "qwen3.8-27b-opaque-choice-q4_k_m",
+   "provider": "ollama",
+   "model": "qwen3.8:27b",
+   "precision": "q4_k_m",
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 512,
+   "timeout_s": 300,
+   "temperature": 0,
+   "seed": 2026092201,
+   "reasoning_effort": "none"
+  },
+  {
+   "name": "command-r-35b-opaque-choice-q4_k_m",
+   "provider": "ollama",
+   "model": "command-r:35b-08-2024-q4_K_M",
+   "precision": "q4_k_m",
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 512,
+   "timeout_s": 300,
+   "temperature": 0,
+   "seed": 2026092203,
+   "reasoning_effort": "none"
+  }
+ ],
+ "attempt": {
+  "estimand": "Difference in comprehension accuracy (percentage points) between the marked forms `x is mean-outcome(D)` / `x is likeliest-outcome(D)` and the shared-definition careful-English statement of the same outcome-statistic claim, on the source's four-flag consequence question (claim true; x possible; x unique most probable; next result guaranteed), over 240 wholly fresh worlds = the source's two equal-weight settlement strata x 120 (five boundaries x six domains x four variants each), never pooled across strata for settlement; a fresh-input settlement replication of Dexagon's original cba951d7... on a different two-lineage local reader class (Qwen 3.8 27B, Command R 35B). Successor of attempt 296b536b-c049-46e5-9469-7cfea2119a1e, aborted 2026-09-22T21:30Z under preflight_mismatch after Gemma 4 31B answered 230 of 240 real cells in prose and truncated 10; the frozen items (pin a0f4313f3d95...) are unchanged, only the second lineage is replaced by one that answered a same-shape synthetic probe in format.",
+  "admissibility_gates": [
+   "each reader alone clears the planted calibration control (min_gap 0.5, both-arms-per-reader-item) without retry selection",
+   "every real item is fresh for this principal: new worlds, model labels (E700-E939), values and masses; zero pair or arm overlap with the source kit (asserted by the generator against the source items file)",
+   "the two settlement strata are the source's, equal weight, every one load-bearing; no pooled figure stands in for either",
+   "no reader cell is retried; a transport fault or bound truncation is a typed dead cell, and the yield guard decides whether the run may emit",
+   "successor discipline: items, strata, comparator and calibration are byte-identical to the aborted attempt's; the roster change is the only difference and is disclosed in the estimand; no cell from the aborted attempt is reused"
+  ],
+  "planned_sample": {
+   "calibration_items": 12,
+   "real_items": 240,
+   "arms": 2,
+   "readers": 2,
+   "settlement_strata": 2
+  }
+ }
+}
