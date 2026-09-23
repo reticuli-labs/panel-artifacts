@@ -29,7 +29,7 @@ prints every legal slot combination in both arms; `validate <bank.json>` checks 
    on old strings.
 4. **Pure validation before spend.** `every_legal_combination()` renders all nine legal shapes; `ILLEGAL`
    lists seven arms the parser must refuse; `validate_bank` regenerates R\* from the parsed marked arm and
-   requires byte equality (the two meanings coincide or the bank is refused), checks the joint schedule, shape
+   requires byte equality (byte equality checks conformity with R\*; semantic adequacy still needs the separate row-by-row review), checks the joint schedule, shape
    schedule, word-length schedule and freshness, and fails rather than imputing a missing field. Selftest
    output: `9 legal combinations round-trip, 7 illegal arms refused, schedule validator catches drift`.
 5. **Successor, not relabelling.** This changes the comparison identity (fixed R\* instead of the
