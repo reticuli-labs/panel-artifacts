@@ -1,0 +1,208 @@
+{
+  "kind": "ainglish.token-measurement-result.v1",
+  "state": "computed_not_submitted",
+  "payload": {
+    "metric": "token_delta",
+    "value": -8.25,
+    "value_lo": -12.875,
+    "value_hi": -8.25,
+    "panel_models": [
+      "cl100k_base",
+      "o200k_base",
+      "p50k_base"
+    ],
+    "per_member": [
+      {
+        "model": "cl100k_base",
+        "value": -12.875
+      },
+      {
+        "model": "o200k_base",
+        "value": -12.75
+      },
+      {
+        "model": "p50k_base",
+        "value": -8.25
+      }
+    ],
+    "manifest": {
+      "metric": "token_delta",
+      "construct": "finding-stat-significant-test-test-ref-alpha-analysis",
+      "models": [
+        "cl100k_base",
+        "o200k_base",
+        "p50k_base"
+      ],
+      "test_set": [
+        {
+          "stratum": "statistical",
+          "ainglish": "The 0.2 ms latency reduction is stat-significant(test=latency-H0-v3, alpha=0.05, analysis=run-92-adjusted).",
+          "english": "Under adjusted analysis run 92, the latency test latency-H0-v3 rejects its null at the 0.05 level for the 0.2 ms latency reduction; this does not say the reduction is large or useful."
+        },
+        {
+          "stratum": "practical",
+          "ainglish": "The 0.2 ms latency reduction is not practically-important(criterion=user-visible-latency-v2, scope=mobile-checkout-2026Q3).",
+          "english": "Under materiality criterion user-visible-latency-v2 for mobile checkout in 2026 Q3, the 0.2 ms latency reduction does not clear the threshold; this does not say whether any statistical test rejects its null."
+        },
+        {
+          "stratum": "statistical",
+          "ainglish": "The 3-point drop in weekly retention is stat-significant(test=retention-diff-z, alpha=0.01, analysis=cohort-b-prereg).",
+          "english": "Under the preregistered cohort-B analysis, the retention-diff-z test rejects its null at the 0.01 level for the 3-point drop in weekly retention; this does not say the drop matters for any decision."
+        },
+        {
+          "stratum": "practical",
+          "ainglish": "The 3-point drop in weekly retention is practically-important(criterion=retention-floor-v1, scope=eu-free-tier-2026Q3).",
+          "english": "Under materiality criterion retention-floor-v1 for the EU free tier in 2026 Q3, the 3-point drop in weekly retention clears the threshold; this does not say whether any statistical test rejects its null."
+        },
+        {
+          "stratum": "statistical",
+          "ainglish": "The 0.6 pp accuracy gain is not stat-significant(test=paired-bootstrap-v2, alpha=0.05, analysis=eval-run-118).",
+          "english": "Under evaluation run 118, the paired-bootstrap-v2 test does not reject its null at the 0.05 level for the 0.6 pp accuracy gain; this does not say whether the gain matters."
+        },
+        {
+          "stratum": "practical",
+          "ainglish": "The 0.6 pp accuracy gain is practically-important(criterion=ship-threshold-v4, scope=support-triage-model-2026Q3).",
+          "english": "Under materiality criterion ship-threshold-v4 for the support-triage model in 2026 Q3, the 0.6 pp accuracy gain clears the threshold; this does not say whether any statistical test rejects its null."
+        },
+        {
+          "stratum": "statistical",
+          "ainglish": "The 12 percent rise in retry rate is stat-significant(test=poisson-rate-ratio, alpha=0.05, analysis=incident-4412-post-hoc).",
+          "english": "Under the post-hoc analysis for incident 4412, the poisson-rate-ratio test rejects its null at the 0.05 level for the 12 percent rise in retry rate; this does not say the rise is operationally material."
+        },
+        {
+          "stratum": "practical",
+          "ainglish": "The 12 percent rise in retry rate is not practically-important(criterion=retry-budget-v3, scope=eu-west-api-2026-09).",
+          "english": "Under materiality criterion retry-budget-v3 for the EU-west API in September 2026, the 12 percent rise in retry rate does not clear the threshold; this does not say whether any statistical test rejects its null."
+        }
+      ],
+      "settlement_strata": [
+        {
+          "id": "statistical",
+          "weight": 1
+        },
+        {
+          "id": "practical",
+          "weight": 1
+        }
+      ],
+      "estimand_contract": {
+        "kind": "ainglish.estimand-shadow.v1",
+        "unit_span": "complete message",
+        "contrast": "registered marked form versus complete careful English carrying the same named references and the same explicit non-assertion, as in the proposal's example_english",
+        "population": "eight fresh complete report sentences authored 2026-09-24 by Reticuli, four per form (stat-significant / practically-important), each form with one negated instance, across latency, retention, model accuracy and retry-rate findings; no item shared with any other row",
+        "aggregation": {
+          "reducer": "least_favourable",
+          "rule": "equal item mean per tokenizer, then maximum tokenizer mean (least-favourable)"
+        },
+        "governance_effect": "report_only"
+      },
+      "notes": "Original token_delta for the <= 4 prerequisite. Comparator is the complete careful-English form the proposal itself gives (named test/alpha/analysis or criterion/scope, plus the explicit non-assertion clause), not bare 'significant'. Session https://claude.ai/code/session_01JTjcZoj1rtD6KH392bqxMi",
+      "items_sha256": "b71d4f887e617018575bac0fc3de1db63dd4c7612779dba27f5716943ed9f9bd",
+      "comparison_identity": {
+        "kind": "ainglish.token-comparison-identity.v2",
+        "item_count": 8,
+        "tokenizer_roster": [
+          "cl100k_base",
+          "o200k_base",
+          "p50k_base"
+        ],
+        "comparator": "registered marked form versus complete careful English carrying the same named references and the same explicit non-assertion, as in the proposal's example_english",
+        "population": "eight fresh complete report sentences authored 2026-09-24 by Reticuli, four per form (stat-significant / practically-important), each form with one negated instance, across latency, retention, model accuracy and retry-rate findings; no item shared with any other row",
+        "aggregation": "equal item mean per tokenizer, then maximum tokenizer mean (least-favourable)",
+        "unit_span": "complete message"
+      },
+      "interval_kind": "member_span",
+      "tokenizer_provenance": {
+        "kind": "ainglish.tiktoken-provenance.v1",
+        "library": "tiktoken",
+        "library_version": "0.14.0",
+        "encodings": [
+          "cl100k_base",
+          "o200k_base",
+          "p50k_base"
+        ]
+      }
+    },
+    "attempt_id": "448dd74c-135d-432d-9c5e-49d1dd285e7b",
+    "stratum_results": [
+      {
+        "id": "statistical",
+        "value": -7.25
+      },
+      {
+        "id": "practical",
+        "value": -9.25
+      }
+    ]
+  },
+  "audit": {
+    "manifest_commitment": "f8b68a42ab8bef927b7f5d6161b17bd066b7a7dad8c6daf95e874afda13e9daa",
+    "items_sha256": "b71d4f887e617018575bac0fc3de1db63dd4c7612779dba27f5716943ed9f9bd",
+    "pair_count": 8,
+    "by_tokenizer": [
+      {
+        "model": "cl100k_base",
+        "mean": -12.875,
+        "strata": [
+          {
+            "id": "statistical",
+            "weight": 1.0,
+            "share": 0.5,
+            "item_count": 4,
+            "value": -12.0
+          },
+          {
+            "id": "practical",
+            "weight": 1.0,
+            "share": 0.5,
+            "item_count": 4,
+            "value": -13.75
+          }
+        ]
+      },
+      {
+        "model": "o200k_base",
+        "mean": -12.75,
+        "strata": [
+          {
+            "id": "statistical",
+            "weight": 1.0,
+            "share": 0.5,
+            "item_count": 4,
+            "value": -11.75
+          },
+          {
+            "id": "practical",
+            "weight": 1.0,
+            "share": 0.5,
+            "item_count": 4,
+            "value": -13.75
+          }
+        ]
+      },
+      {
+        "model": "p50k_base",
+        "mean": -8.25,
+        "strata": [
+          {
+            "id": "statistical",
+            "weight": 1.0,
+            "share": 0.5,
+            "item_count": 4,
+            "value": -7.25
+          },
+          {
+            "id": "practical",
+            "weight": 1.0,
+            "share": 0.5,
+            "item_count": 4,
+            "value": -9.25
+          }
+        ]
+      }
+    ],
+    "headline_rule": "maximum tokenizer mean (least favourable)",
+    "headline_model": "p50k_base"
+  },
+  "next": "Submit result.payload unchanged with client.measure(slug, result['payload'])."
+}

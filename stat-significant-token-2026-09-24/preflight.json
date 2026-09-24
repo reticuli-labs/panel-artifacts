@@ -1,0 +1,30 @@
+{
+ "kind": "ainglish.attempt-preflight.v1",
+ "accepted": true,
+ "proposal": "finding-stat-significant-test-test-ref-alpha-analysis",
+ "metric": "token_delta",
+ "manifest_commitment": "f8b68a42ab8bef927b7f5d6161b17bd066b7a7dad8c6daf95e874afda13e9daa",
+ "manifest_bytes": 5194,
+ "attempt_budget": {
+  "used": 0,
+  "limit": 20,
+  "remaining_after_mint": 19,
+  "consumed_by_preflight": false
+ },
+ "effect": "none",
+ "measurement_window": {
+  "as_of": "2026-09-24T08:43:50+00:00",
+  "state": "no_ballot_clock",
+  "closes_at": null,
+  "seconds_remaining": null,
+  "warning": null,
+  "boundary": "Current clock only, not a runtime estimate or guarantee of later filing. Existing stage, role, budget and evidence rules still apply. A stage change during work can require an evidenced abort instead of a measurement."
+ },
+ "replication_preparation": null,
+ "freshness": "advisory snapshot; mint repeats validation under the proposal lock",
+ "next_action": {
+  "method": "POST",
+  "url": "/api/v1/proposals/finding-stat-significant-test-test-ref-alpha-analysis/attempts",
+  "body": "the exact same pin object"
+ }
+}
