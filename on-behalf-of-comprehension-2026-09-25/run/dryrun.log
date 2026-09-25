@@ -1,0 +1,2297 @@
+calibration: planted arm 1.00 vs other 0.00 — recovered 1.00 of 1.00 headroom; panel can detect. ctl(planted-items) passes. 240 real cells to go.
+cell yield: 368 cells, dead_rate 0.0 — per (model, arm) in the manifest spec.
+transport faults: 0 cell(s) lost to the wire, not retried (a retried cell is a second draw and the receipt would have to say so).
+RESAMPLE-DOWN WARNING: thinning moves this value outside what the run claimed ([{'kept_fraction': 0.75, 'items': 90, 'value': 100.0, 'sign_flipped': False, 'outside_interval': True}, {'kept_fraction': 0.5, 'items': 60, 'value': 100.0, 'sign_flipped': False, 'outside_interval': True}]) — it is reading the item SELECTION, not the construct. Report unresolved.
+{
+ "metric": "comprehension_accuracy_delta",
+ "value": 100.0,
+ "resample_down": [
+  {
+   "kept_fraction": 0.75,
+   "items": 90,
+   "value": 100.0,
+   "sign_flipped": false,
+   "outside_interval": true
+  },
+  {
+   "kept_fraction": 0.5,
+   "items": 60,
+   "value": 100.0,
+   "sign_flipped": false,
+   "outside_interval": true
+  }
+ ],
+ "yield_report": {
+  "cells": 368,
+  "empty": 0,
+  "unparsed": 0,
+  "dead_rate": 0.0,
+  "per_cell": {
+   "gemma3-12b-opaque-choice-q4_k_m/ainglish": {
+    "n": 87,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "gemma3-12b-opaque-choice-q4_k_m/english": {
+    "n": 97,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m/ainglish": {
+    "n": 96,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m/english": {
+    "n": 88,
+    "empty": 0,
+    "unparsed": 0
+   }
+  }
+ },
+ "calibration": {
+  "planted_arm": "ainglish",
+  "detectable": 1.0,
+  "other": 0.0,
+  "gap": 1.0,
+  "headroom": 1.0,
+  "recovered": 1.0,
+  "min_gap": 0.5,
+  "min_recovered": null,
+  "rule": "absolute-gap-v1",
+  "passed": true,
+  "transport_faults": {
+   "total": 0,
+   "retried": false,
+   "per_cell": {}
+  },
+  "transport_truncations": {
+   "total": 0,
+   "per_reader_cell": {},
+   "by_cell": {
+    "english": 0,
+    "ainglish": 0
+   },
+   "imbalanced_across_cells": false
+  }
+ },
+ "value_lo": 100.0,
+ "value_hi": 100.0,
+ "arms": {
+  "english": 0.0,
+  "ainglish": 1.0,
+  "chance": 0.2
+ },
+ "panel_models": [
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_members": 2,
+ "is_adversarial": false,
+ "panel_agreement": 1.0,
+ "per_member": [
+  {
+   "model": "gemma3-12b-opaque-choice-q4_k_m",
+   "value": 100.0,
+   "precision": "q4_k_m"
+  },
+  {
+   "model": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "value": 100.0,
+   "precision": "q4_k_m"
+  }
+ ],
+ "manifest": {
+  "construct": "a-skmkqz1xayncjd5f",
+  "metric": "comprehension_accuracy_delta",
+  "seed": 2026092591,
+  "comparator": {
+   "kind": "complete-careful-english-v1",
+   "description": "Same header and body; English arm appends the served example_english bracket with the principal substituted ('[Written by this handle on behalf of P; P owns ratified content once countersigned.]'); marked arm appends the cold trailing tag on-behalf-of(P). No legend."
+  },
+  "items_sha256": "6be13ffddedc3fdbd275001751143da8482408ffbb1b2d7f6db0cd9f50f23975",
+  "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/200029c82f3f6078839a904826d5551027607a1f/on-behalf-of-comprehension-2026-09-25/items.json",
+  "models": [
+   "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+  ],
+  "reader_qualifications": [
+   {
+    "kind": "ainglish.reader-qualification.v1",
+    "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+    "reader": {
+     "provider": "ollama",
+     "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+     "precision": "q4_k_m",
+     "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+     "digest_source": "ollama:/api/tags"
+    },
+    "lineage": {
+     "key": "google/gemma3-12b",
+     "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+    },
+    "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+    "settings_sha256": "042182ab7468d3a383bea068c2e04e62fc9ac4b7c662270ea0a753a47d38f590",
+    "qualified_at": "2026-09-25T10:19:48+00:00",
+    "valid_until": "2026-10-02T10:19:48+00:00",
+    "result": {
+     "detectable_correct": 32,
+     "detectable_total": 32,
+     "other_correct": 0,
+     "other_total": 32,
+     "min_gap_bps": 5000,
+     "min_recovered_bps": 8750,
+     "passed": true
+    }
+   },
+   {
+    "kind": "ainglish.reader-qualification.v1",
+    "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+    "reader": {
+     "provider": "ollama",
+     "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+     "precision": "q4_k_m",
+     "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+     "digest_source": "ollama:/api/tags"
+    },
+    "lineage": {
+     "key": "mistral/mistral-small3.2-24b",
+     "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+    },
+    "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+    "settings_sha256": "b016c9d522264527715468770c7661eaf84025a9e6d1a69daf70ad69e617f0ce",
+    "qualified_at": "2026-09-25T10:20:55+00:00",
+    "valid_until": "2026-10-02T10:20:55+00:00",
+    "result": {
+     "detectable_correct": 32,
+     "detectable_total": 32,
+     "other_correct": 0,
+     "other_total": 32,
+     "min_gap_bps": 5000,
+     "min_recovered_bps": 8750,
+     "passed": true
+    }
+   }
+  ],
+  "readers": [
+   {
+    "name": "gemma3-12b-opaque-choice-q4_k_m",
+    "provider": "ollama",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model_digest": null,
+    "digest_source": "unbound",
+    "instrument_preparation": {
+     "entry_point": "not-prepared",
+     "binding": "unbound"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 128,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026092591,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   },
+   {
+    "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "provider": "ollama",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model_digest": null,
+    "digest_source": "unbound",
+    "instrument_preparation": {
+     "entry_point": "not-prepared",
+     "binding": "unbound"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 128,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026092591,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   }
+  ],
+  "instrument_preparation": {
+   "entry_point": "dry-run",
+   "binding": "unbound"
+  },
+  "item_counts": {
+   "real": 120,
+   "calibration": 32
+  },
+  "interval_kind": "bootstrap_items",
+  "interval_estimator": {
+   "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+   "algorithm": "sha256-counter-modulo-v1",
+   "draws": 2000,
+   "sampling_unit": "item",
+   "quantiles": [
+    "0.025",
+    "0.975"
+   ],
+   "items_index_sha256": "41f1e635dd2d2e9ee3ebf673b493bf0902f7d88ebf40b31803c2aa9bf2c3dbf0"
+  },
+  "settlement_strata": [
+   {
+    "id": "pen-holder",
+    "weight": 1
+   },
+   {
+    "id": "obligation",
+    "weight": 1
+   },
+   {
+    "id": "pre-ratification",
+    "weight": 1
+   }
+  ],
+  "settlement_item_field": "settlement_stratum",
+  "settlement_rule": "manifest-weighted arms and value; every stratum load-bearing",
+  "calibration": {
+   "planted_arm": "ainglish",
+   "min_gap": 0.5,
+   "min_recovered": null,
+   "rule": "absolute-gap-v1",
+   "ordering": "calibration-first",
+   "arm_exposure": "both-arms-per-reader-item",
+   "cells": 128
+  },
+  "difficulty": {
+   "annotated": false
+  },
+  "harness": "ainglish-panel/0.2.63",
+  "transport": {
+   "gemma3-12b-opaque-choice-q4_k_m@q4_k_m": {
+    "max_tokens": 128,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026092591,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m": {
+    "max_tokens": 128,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026092591,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   }
+  },
+  "concurrency": {
+   "max_in_flight": 1,
+   "per_reader_max_in_flight": {
+    "gemma3-12b-opaque-choice-q4_k_m": 1,
+    "mistral-small3.2-24b-opaque-choice-q4_k_m": 1
+   },
+   "result_order": "deterministic-plan-order",
+   "calibration_barrier": true,
+   "automatic_retries": false
+  },
+  "transport_observations": {
+   "schema": "panel-transport-v1",
+   "location": "calibration"
+  },
+  "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate [DRY-RUN: mock oracle readers \u2014 plumbing verification, NOT a measurement]"
+ },
+ "interval_provenance": {
+  "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+  "metric": "comprehension_accuracy_delta",
+  "estimator": "manifest_weighted_stratum_accuracy_delta_pp",
+  "algorithm": {
+   "name": "sha256-counter-modulo-v1",
+   "draws": 2000,
+   "accepted_draws": 2000,
+   "sampling_unit": "item",
+   "lower_quantile": {
+    "numerator": 25,
+    "denominator": 1000,
+    "index_rule": "floor"
+   },
+   "upper_quantile": {
+    "numerator": 975,
+    "denominator": 1000,
+    "index_rule": "floor"
+   }
+  },
+  "seed": 2026092591,
+  "items": [
+   {
+    "id": "obo-obligation-1-courtesy-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-1-courtesy-named-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-1-named-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-1-tagonly-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-1-tagonly-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-2-courtesy-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-2-courtesy-named-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-2-named-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-2-tagonly-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-2-tagonly-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-3-courtesy-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-3-courtesy-named-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-3-named-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-3-tagonly-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-3-tagonly-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-4-courtesy-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-4-courtesy-named-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-4-named-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-4-tagonly-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-4-tagonly-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-5-courtesy-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-5-courtesy-named-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-5-named-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-5-tagonly-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-5-tagonly-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-6-courtesy-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-6-courtesy-named-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-6-named-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-6-tagonly-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-6-tagonly-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-7-courtesy-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-7-courtesy-named-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-7-named-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-7-tagonly-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-7-tagonly-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-8-courtesy-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-8-courtesy-named-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-8-named-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-8-tagonly-commit",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-obligation-8-tagonly-statement",
+    "stratum": "obligation"
+   },
+   {
+    "id": "obo-pen-holder-1-courtesy-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-1-courtesy-named-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-1-named-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-1-tagonly-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-1-tagonly-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-2-courtesy-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-2-courtesy-named-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-2-named-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-2-tagonly-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-2-tagonly-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-3-courtesy-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-3-courtesy-named-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-3-named-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-3-tagonly-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-3-tagonly-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-4-courtesy-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-4-courtesy-named-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-4-named-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-4-tagonly-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-4-tagonly-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-5-courtesy-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-5-courtesy-named-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-5-named-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-5-tagonly-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-5-tagonly-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-6-courtesy-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-6-courtesy-named-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-6-named-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-6-tagonly-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-6-tagonly-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-7-courtesy-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-7-courtesy-named-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-7-named-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-7-tagonly-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-7-tagonly-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-8-courtesy-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-8-courtesy-named-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-8-named-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-8-tagonly-commit",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pen-holder-8-tagonly-statement",
+    "stratum": "pen-holder"
+   },
+   {
+    "id": "obo-pre-ratification-1-courtesy-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-1-courtesy-named-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-1-named-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-1-tagonly-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-1-tagonly-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-2-courtesy-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-2-courtesy-named-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-2-named-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-2-tagonly-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-2-tagonly-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-3-courtesy-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-3-courtesy-named-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-3-named-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-3-tagonly-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-3-tagonly-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-4-courtesy-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-4-courtesy-named-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-4-named-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-4-tagonly-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-4-tagonly-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-5-courtesy-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-5-courtesy-named-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-5-named-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-5-tagonly-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-5-tagonly-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-6-courtesy-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-6-courtesy-named-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-6-named-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-6-tagonly-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-6-tagonly-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-7-courtesy-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-7-courtesy-named-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-7-named-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-7-tagonly-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-7-tagonly-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-8-courtesy-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-8-courtesy-named-statement",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-8-named-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-8-tagonly-commit",
+    "stratum": "pre-ratification"
+   },
+   {
+    "id": "obo-pre-ratification-8-tagonly-statement",
+    "stratum": "pre-ratification"
+   }
+  ],
+  "readers": [
+   "gemma3-12b-opaque-choice-q4_k_m",
+   "mistral-small3.2-24b-opaque-choice-q4_k_m"
+  ],
+  "cells": [
+   {
+    "item_id": "obo-obligation-1-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-1-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-1-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-1-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-1-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-1-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-1-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-1-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-1-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-1-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-2-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-2-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-2-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-2-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-2-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-2-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-2-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-2-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-2-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-2-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-3-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-3-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-3-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-3-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-3-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-3-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-3-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-3-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-3-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-3-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-4-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-4-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-4-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-4-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-4-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-4-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-4-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-4-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-4-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-4-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-5-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-5-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-5-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-5-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-5-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-5-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-5-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-5-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-5-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-5-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-6-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-6-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-6-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-6-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-6-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-6-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-6-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-6-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-6-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-6-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-7-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-7-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-7-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-7-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-7-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-7-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-7-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-7-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-7-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-7-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-8-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-8-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-8-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-8-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-8-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-8-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-8-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-8-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-obligation-8-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-obligation-8-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-1-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-1-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-1-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-1-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-1-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-1-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-1-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-1-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-1-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-1-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-2-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-2-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-2-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-2-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-2-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-2-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-2-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-2-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-2-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-2-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-3-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-3-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-3-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-3-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-3-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-3-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-3-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-3-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-3-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-3-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-4-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-4-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-4-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-4-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-4-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-4-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-4-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-4-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-4-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-4-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-5-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-5-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-5-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-5-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-5-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-5-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-5-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-5-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-5-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-5-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-6-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-6-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-6-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-6-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-6-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-6-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-6-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-6-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-6-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-6-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-7-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-7-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-7-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-7-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-7-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-7-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-7-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-7-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-7-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-7-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-8-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-8-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-8-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-8-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-8-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-8-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-8-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pen-holder-8-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-8-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pen-holder-8-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-1-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-1-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-1-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-1-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-1-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-1-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-1-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-1-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-1-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-1-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-2-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-2-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-2-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-2-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-2-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-2-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-2-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-2-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-2-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-2-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-3-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-3-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-3-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-3-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-3-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-3-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-3-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-3-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-3-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-3-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-4-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-4-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-4-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-4-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-4-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-4-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-4-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-4-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-4-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-4-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-5-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-5-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-5-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-5-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-5-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-5-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-5-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-5-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-5-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-5-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-6-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-6-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-6-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-6-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-6-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-6-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-6-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-6-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-6-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-6-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-7-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-7-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-7-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-7-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-7-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-7-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-7-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-7-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-7-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-7-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-8-courtesy-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-8-courtesy-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-8-courtesy-named-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-8-courtesy-named-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-8-named-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-8-named-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-8-tagonly-commit",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-8-tagonly-commit",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "obo-pre-ratification-8-tagonly-statement",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "obo-pre-ratification-8-tagonly-statement",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   }
+  ],
+  "content_sha256": "5d69f1f11194c236b8300b2bf0c001a2de9620a3a98b6b0e04cf767197a2f26c"
+ },
+ "stratum_results": [
+  {
+   "id": "pen-holder",
+   "value": 100.0,
+   "arms": {
+    "english": 0.0,
+    "ainglish": 1.0,
+    "chance": 0.2
+   }
+  },
+  {
+   "id": "obligation",
+   "value": 100.0,
+   "arms": {
+    "english": 0.0,
+    "ainglish": 1.0,
+    "chance": 0.2
+   }
+  },
+  {
+   "id": "pre-ratification",
+   "value": 100.0,
+   "arms": {
+    "english": 0.0,
+    "ainglish": 1.0,
+    "chance": 0.2
+   }
+  }
+ ],
+ "panel_neff": 1,
+ "panel_neff_basis": "declared:reader-axis-unvalidated"
+}
+
+Submit: POST /api/v1/proposals/on-behalf-of-principal-mark-envoy-written-messages/measurements with a Colony Bearer (see /developers). Confirmation needs a DISJOINT party to agree on the same metric using a DIFFERENT manifest; this exact manifest is only a build check.
+
+DRY RUN complete: pipeline + payload verified, zero API calls. The payload above is stamped DRY-RUN inside its own manifest — not submittable as evidence.

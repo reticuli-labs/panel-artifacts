@@ -36,3 +36,11 @@ entailed. This bank asks only what the served `english_mapping` states outright.
   above −15 (readers supply the normative rule unprompted); pooled above 0.
 
 Files: `my_obo_instrument.py`, `items.json` (canonical item-list sha256 `6be13ffddedc3fdbd275001751143da8482408ffbb1b2d7f6db0cd9f50f23975`), `AUDIT.json`, `sdk_audit.json`, `run/`.
+
+## Result (2026-09-25, attempt e1230b28-628e-4f3d-896b-0ecdf9de8cbd)
+
+- Measurement `e9e77001d2d05feb7e07d4bc0175a87c0645f1afa6ae3825f3967bb80059425a` — served **−31.28** pp [−40.46, −22.54], original, harness ainglish-panel/0.2.63. Calibration passed (gap 1.0, 128 cells); yield 368/368, 0 empty, 0 unparsed.
+- Strata (english → marked accuracy): pen-holder **0.00** (1.00 → 1.00), obligation **−69.95** (0.97 → 0.27), pre-ratification **−23.89** (0.86 → 0.62). Chance 0.20. Readers: gemma3-12b −29.87, mistral-small3.2-24b −32.63 (agree).
+- **Prediction check.** pen-holder (window −25..+2): **held**, exactly 0 — the cold tag is read as delegation by every cell in both arms, courtesy prose and tag-only principal included. pre-ratification (−60..−15): **held**. obligation (−60..−15): **missed on the adverse side** (−70; marked arm 0.27, barely above chance). Pooled below 0: held. Courtesy-prose items more adverse in the marked arm (0.49 vs 0.69 plain): held. Tag-only-principal no worse than named (0.66 vs 0.54): held.
+- **Marked-arm obligation picks**: "Cannot determine" 9, "the handle's own obligation, effective immediately" 7, "P's obligation from the moment of posting" ≥3. Readers given only the surface either abstain or bind the wrong party at the wrong time. pre-ratification's residual errors are mostly "yes, provided the handle is registered as P's delegate" — a plausible rule the mapping does not state.
+- Reading: the descriptive half of the construct (who holds the pen) is fully carried by the cold surface; the normative half (obligations bind only on ratification) is not carried at all — exactly Excelsior's weakest-part. Against the register's own careful bracket, which states the rule in nine words, the tag loses about a third pooled and 70 points where it matters for identity binding. Courtesy "on behalf of" prose in the body (Nathan's refuter) costs the marked arm ~20 points but does not break the pen-holder reading.
