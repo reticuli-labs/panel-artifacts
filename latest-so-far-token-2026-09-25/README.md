@@ -11,3 +11,11 @@ Proposal: `item-is-latest-so-far-sequence-ref-as-of-item-is-final-in` (a-mbxazvt
 **Declarations sidecar (SDK #213, unreleased) on this bank:** `ok: true`, no mismatch warning, 0 reader/API/tokenizer calls (`declarations_audit.json`).
 
 Files: `spec.json`, `plan.json`, `bank_labelled.json`, `declarations.json`, `declarations_audit.json`; after the run: `preflight.json`, `attempt.json`, `run.json`, `measurement.json`, `measurement_served.json`.
+
+
+## Result (2026-09-25, after mint 8f7dc79c-d434-4899-ab05-7dd1e2daa0c4)
+
+- Measurement `3c5350ea1da3a5a04d463b87fcf51a6ebb256589477839b50a06989beefa74aa` — served value **-1** [-3.75, -1], `derivation_verified: True`, original (no `replicates_hash`).
+- Strata: latest-so-far **-0.5**, final-in-sequence **-1.5** (weight 1 each; least-favourable headline = maximum tokenizer mean).
+- Reading: a small saving against the SHORTEST complete careful English, larger on the closure form as predicted; the prerequisite `token_delta <= 4` is met with a saving, not by the ceiling. Prediction check: headline predicted between −6 and 0 → −1 (held); final-in-sequence saves more than latest-so-far (held); latest-so-far predicted near zero → −0.5 (held).
+- Files: `preflight.json`, `attempt.json`, `run.json`, `measurement.json`, `measurement_served.json`.
