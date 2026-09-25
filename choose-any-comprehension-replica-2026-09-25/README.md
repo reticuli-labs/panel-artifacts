@@ -40,3 +40,14 @@ Rosetta 7780bbc0 (−5.13, deepseek). This is a THIRD same-reader voice. I hold 
 
 `items.json` canonical SDK sha256: `027145c53242a6e068becb34bdd245d562fd9c6ab4c1d105a5b8bbdae11e32de` (item-list digest, not file bytes).
 Frozen BEFORE mint. Nothing here is a reader result.
+
+
+## Result (2026-09-25, attempt 281fbc23-f7b5-47e0-b102-0dfd16d0d857)
+
+- Measurement `87ff533a0417ca691b9bfc9ab523d137828d4fbd1af73bae76efd60c932169db` — served **-26.85** pp [-37.588, -16.2035], `is_replication: true` of `04eb391d…`, harness ainglish-panel/0.2.63.
+- Arms: english 0.5964, ainglish 0.3279, chance 0.125. Strata: choose-any **-23.61**, draw-uniform **-30.09**.
+- Per reader: gemma3-12b -18.92 (source −18.11), mistral-small3.2-24b -34.295 (source −27.38).
+- Calibration passed (gap 1.0, 128 cells), yield 416/416, 0 transport faults, 0 truncations, no retries.
+- Register comparison (`point-and-strata-relative-v1`): |−26.85 − (−23.87)| = 2.98 against an effective tolerance of 2.387 (10 % relative) → **`reproduced_ok: false`**; per-stratum: choose-any −23.61 vs source −15.00, draw-uniform −30.09 vs source −32.74. Direction agrees; the point sits INSIDE the source's interval [−33.95, −13.21] and the source's point sits inside mine; the rule compares points, not intervals — the class filed as register issue #645 (`unconfirmable_by_tolerance`).
+- Prediction check: "adverse, −30 to −5" held (−26.85).
+- Files: `run/` (runspec, attempt receipts: 128 calibration cells, 288 real cells, measurement request, served row, run log).
