@@ -1,0 +1,136 @@
+{
+ "construct": "a-0nqvf9999wvtvnxm",
+ "slug": "counted-n-estimated-n-quoted-n-source-placeholder-n-2",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 2026092571,
+ "panel": [
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+   "name": "gemma3-12b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026092571,
+   "temperature": 0,
+   "timeout_s": 120
+  },
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+   "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026092571,
+   "temperature": 0,
+   "timeout_s": 120
+  }
+ ],
+ "models": [
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_neff": 1,
+ "settlement_strata": [
+  {
+   "id": "counted",
+   "weight": 1
+  },
+  {
+   "id": "estimated",
+   "weight": 1
+  },
+  {
+   "id": "quoted",
+   "weight": 1
+  },
+  {
+   "id": "placeholder",
+   "weight": 1
+  }
+ ],
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "Exact per-form span of the served english_mapping (N and <source> substituted; for counted, 'the source I name' replaced by the named source), identical header line in both arms. Cold marked form in the other arm, no teaching, no legend."
+ },
+ "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/8b78f24f129fea47a4a44e167bec08f070cd4c1e/counted-n-comprehension-2026-09-25/items.json",
+ "items_sha256": "80525ad76b94ef849a50487cb77aa208c8078e5d260edb1cc8a42c993a1e7035",
+ "calibration_min_gap": 0.5,
+ "attempt": {
+  "estimand": "ORIGINAL comprehension_accuracy_delta on a-0nqvf9999wvtvnxm: marked cold form (the four slot markers as served, quoted carrying its source) minus complete careful English (the exact served english_mapping span per form, same header line), on 160 fresh single-number record items authored 2026-09-25 by Reticuli (8 domains x 4 forms x 5 targets; 8 zero-valued per form; five fixed options incl. 'Cannot determine from this record', gold position exactly balanced), read by two qualified readers (gemma3-12b and mistral-small3.2-24b opaque-choice q4_k_m), counterbalanced one arm per reader per item, both-arms-per-reader-item planted calibration first; manifest-weighted strata counted / estimated / quoted / placeholder, weight 1 each, every stratum load-bearing. Prediction stated before any read: pooled between -10 and +5 pp; placeholder within +/-8 pp of zero; quoted the most adverse stratum. This does not test the served +15 pp prediction against provenance-omitting English.",
+  "admissibility_gates": [
+   "calibration-first absolute-gap rule: panel planted-arm gap >= 0.5 on the 32 construct-free controls before any real cell, else abort with the calibration receipt",
+   "reader digests bound from /api/tags at run time must equal the qualified digests sha256:de1f65ea... and sha256:6629ee92..., else refuse before spend",
+   "no automatic retries; any transport fault or truncated answer on a real cell is recorded and the run aborts if the yield guard fires",
+   "items fetched from the commit-pinned URL must hash to the frozen items_sha256, else refuse"
+  ],
+  "planned_sample": {
+   "real_items": 160,
+   "calibration_items": 32,
+   "readers": 2,
+   "target_cells": 320,
+   "calibration_cells": 128
+  }
+ },
+ "reader_qualifications": [
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "reader": {
+    "provider": "ollama",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+    "digest_source": "ollama:/api/tags"
+   },
+   "lineage": {
+    "key": "google/gemma3-12b",
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+   },
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "042182ab7468d3a383bea068c2e04e62fc9ac4b7c662270ea0a753a47d38f590",
+   "qualified_at": "2026-09-25T10:19:48+00:00",
+   "valid_until": "2026-10-02T10:19:48+00:00",
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "other_correct": 0,
+    "other_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "passed": true
+   }
+  },
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+   "reader": {
+    "provider": "ollama",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+    "digest_source": "ollama:/api/tags"
+   },
+   "lineage": {
+    "key": "mistral/mistral-small3.2-24b",
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+   },
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "b016c9d522264527715468770c7661eaf84025a9e6d1a69daf70ad69e617f0ce",
+   "qualified_at": "2026-09-25T10:20:55+00:00",
+   "valid_until": "2026-10-02T10:20:55+00:00",
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "other_correct": 0,
+    "other_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "passed": true
+   }
+  }
+ ]
+}

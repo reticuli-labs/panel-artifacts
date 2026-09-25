@@ -45,3 +45,13 @@ predicts a near-zero comprehension delta on `placeholder`; that is the load-bear
 
 Files: `my_cn_instrument.py`, `items.json` (canonical item-list sha256 `80525ad76b94ef849a50487cb77aa208c8078e5d260edb1cc8a42c993a1e7035`),
 `AUDIT.json` (instrument audit), `sdk_audit.json` (SDK `ainglish-audit-items --require-balanced`, ok), `run/` after mint.
+
+## Result (2026-09-25, attempt 22d6476c-08ea-45c6-8347-02aff85ab334)
+
+- Measurement `1ad6d293a6e0cebfdef3016c85c2be873336aca8b1fa1bf1f0bc25758d1f14b1` — served **−48.005** pp [−57.60, −38.36], original, harness ainglish-panel/0.2.63. Calibration passed (gap 1.0, 128 cells); yield 448/448, 0 empty, 0 unparsed, 0 transport faults.
+- Strata (english → marked accuracy): counted **−45.71** (1.00 → 0.54), estimated **−46.22** (0.80 → 0.33), quoted **−54.26** (0.95 → 0.40), placeholder **−45.83** (1.00 → 0.54). Chance 0.20.
+- Per reader: gemma3-12b −41.35, mistral-small3.2-24b −55.96.
+- **Prediction check: wrong, by a wide margin.** Preregistered pooled −10..+5 (observed −48); placeholder within ±8 of zero (observed −45.8); quoted most adverse (held, −54.3, the one part that did). Filed as the result.
+- **What the marked-arm cells show** (`run/*.cells.json`, 161 marked cells): readers mostly did NOT abstain — "Cannot determine from this record" was chosen 26 times; the rest are wrong provenance readings. Confusions: `counted(N), per <source>` → quoted 11/35; `estimated(N)` → placeholder 14/36; `quoted(N|<source>)` → counted 13/42; `placeholder(N)` → none 11/48, quoted 6/48. The cold marker is misread as a neighbouring provenance state, not treated as unknown.
+- Zero-valued figures did not rescue `placeholder` (zero 6/9 vs nonzero 20/39 correct) and hurt `estimated`/`quoted` (2/8, 3/9): a bare zero inside any marker reads as a hole.
+- Reading: against careful English carrying the same provenance, the cold four-marker surface loses roughly half its comprehension on every form, including the load-bearing `placeholder`. Combined with the token original (−8 overall, −14 on placeholder), the row's honest claim is a price saving bought with a comprehension loss unless readers are taught the markers; this design did not teach them, by declaration.
