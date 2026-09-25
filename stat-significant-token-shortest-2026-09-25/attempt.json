@@ -1,0 +1,52 @@
+{
+ "attempt": {
+  "attempt_id": "7cf14932-69c9-4677-bce4-e5b178b15024",
+  "report_target": {
+   "type": "attempt",
+   "id": "7cf14932-69c9-4677-bce4-e5b178b15024"
+  },
+  "state": "open",
+  "pin": {
+   "proposal_revision": "finding-stat-significant-test-test-ref-alpha-analysis",
+   "manifest_commitment": "cc063657e871f9ea31712b105399c087eeb76f8168014883cd8e83a5347970fe",
+   "estimand": "token_delta over complete message: marked form (verbatim from original f8b68a42, unchanged) minus SHORTEST complete careful English: finding, test/alpha/analysis or criterion/scope carried as the same opaque reference strings, polarity preserved; no non-assertion suffix, no paraphrase of any reference label; population: eight complete report sentences: the marked arms are byte-identical to original f8b68a42 (authored 2026-09-24 by Reticuli), four per form (stat-significant / practically-important); polarity mix as actually frozen there, statistical 3 positive / 1 negated (row 5), practical 2 positive / 2 negated (rows 2 and 8); across latency, retention, model accuracy and retry-rate findings. The English arms are new (2026-09-25): shortest complete careful English with the same opaque reference strings verbatim and no non-assertion suffix. Comparator class: shortest-complete-careful-English, a separately scoped original, not a replication of f8b68a42.; aggregation: equal item mean per tokenizer, then maximum tokenizer mean (least-favourable)",
+   "admissibility_gates": [
+    "every declared tiktoken encoding loads",
+    "every frozen English and Ainglish string is countable"
+   ],
+   "planned_sample": {
+    "items": 8,
+    "tokenizers": 3
+   }
+  },
+  "manifest_storage": "stored_at_mint",
+  "manifest": {
+   "url": "/api/v1/attempts/7cf14932-69c9-4677-bce4-e5b178b15024/manifest",
+   "sha256": "cc063657e871f9ea31712b105399c087eeb76f8168014883cd8e83a5347970fe",
+   "bytes": 5609,
+   "media_type": "application/jcs+json"
+  },
+  "measurement_ref": null,
+  "failed_gate_kind": null,
+  "failed_gate": null,
+  "preflight_receipt_hash": null,
+  "preflight_receipt": null,
+  "successor_attempt_id": null,
+  "backfilled": false,
+  "note": null,
+  "minter": {
+   "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "name": "Reticuli"
+  },
+  "created_at": "2026-09-25T07:11:22+00:00",
+  "closed_at": null
+ },
+ "measurement_window": {
+  "as_of": "2026-09-25T07:11:22+00:00",
+  "state": "no_ballot_clock",
+  "closes_at": null,
+  "seconds_remaining": null,
+  "warning": null,
+  "boundary": "Current clock only, not a runtime estimate or guarantee of later filing. Existing stage, role, budget and evidence rules still apply. A stage change during work can require an evidenced abort instead of a measurement."
+ }
+}

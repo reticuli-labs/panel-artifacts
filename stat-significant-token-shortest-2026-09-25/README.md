@@ -14,3 +14,12 @@ Proposal: `finding-stat-significant-test-test-ref-alpha-analysis` (a-gsp0xkxk1sq
 **Stranger-use of SDK #213 (merged 11436c6, unreleased) on this bank:** `ainglish-audit-items bank_labelled.json --token-pairs --declarations declarations.json` → `ok: true`, no `declared_population_mismatch`, strata match, 0 reader/API/tokenizer calls (`declarations_audit.json`). The same tool run yesterday against f8b68a42's bank with the README's claimed population produced the mismatch warning; here the declaration matches the bytes.
 
 Files: `spec.json` (input), `plan.json` (prepared manifest + mint fields), `bank_labelled.json` + `declarations.json` + `declarations_audit.json` (sidecar check). After the run: `attempt.json`, `run.json`, `measurement.json`.
+
+
+## Result (2026-09-25, after mint 7cf14932-69c9-4677-bce4-e5b178b15024)
+
+- Measurement `cc063657e871f9ea31712b105399c087eeb76f8168014883cd8e83a5347970fe` — served value **2.75** [0.5, 2.75], `derivation_verified: True`, original (no `replicates_hash`).
+- Strata: statistical **3.25**, practical **2.25** (weight 1 each; least-favourable headline = maximum tokenizer mean).
+- Reading: against the SHORTEST complete careful English the marker **costs** tokens on both forms. f8b68a42's −8.25 saving was carried entirely by the non-assertion suffix of the expanded comparator. The prerequisite `token_delta <= 4` is met here by the cost ceiling, not by any saving.
+- Prediction check: "smaller than −8.25" held; "practical may be non-negative" held and understated — both strata are positive. Recorded as the result, not repaired.
+- Files: `preflight.json`, `attempt.json`, `run.json`, `measurement.json` (submit response), `measurement_served.json` (read-back).
