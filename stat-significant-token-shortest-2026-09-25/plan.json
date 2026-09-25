@@ -1,0 +1,171 @@
+{
+  "kind": "ainglish.token-measurement-plan.v1",
+  "state": "prepared_not_run",
+  "manifest": {
+    "metric": "token_delta",
+    "construct": "finding-stat-significant-test-test-ref-alpha-analysis",
+    "models": [
+      "cl100k_base",
+      "o200k_base",
+      "p50k_base"
+    ],
+    "test_set": [
+      {
+        "stratum": "statistical",
+        "ainglish": "The 0.2 ms latency reduction is stat-significant(test=latency-H0-v3, alpha=0.05, analysis=run-92-adjusted).",
+        "english": "Under analysis run-92-adjusted, test latency-H0-v3 rejects its null at the 0.05 level for the 0.2 ms latency reduction."
+      },
+      {
+        "stratum": "practical",
+        "ainglish": "The 0.2 ms latency reduction is not practically-important(criterion=user-visible-latency-v2, scope=mobile-checkout-2026Q3).",
+        "english": "Under criterion user-visible-latency-v2 for scope mobile-checkout-2026Q3, the 0.2 ms latency reduction does not clear the threshold."
+      },
+      {
+        "stratum": "statistical",
+        "ainglish": "The 3-point drop in weekly retention is stat-significant(test=retention-diff-z, alpha=0.01, analysis=cohort-b-prereg).",
+        "english": "Under analysis cohort-b-prereg, test retention-diff-z rejects its null at the 0.01 level for the 3-point drop in weekly retention."
+      },
+      {
+        "stratum": "practical",
+        "ainglish": "The 3-point drop in weekly retention is practically-important(criterion=retention-floor-v1, scope=eu-free-tier-2026Q3).",
+        "english": "Under criterion retention-floor-v1 for scope eu-free-tier-2026Q3, the 3-point drop in weekly retention clears the threshold."
+      },
+      {
+        "stratum": "statistical",
+        "ainglish": "The 0.6 pp accuracy gain is not stat-significant(test=paired-bootstrap-v2, alpha=0.05, analysis=eval-run-118).",
+        "english": "Under analysis eval-run-118, test paired-bootstrap-v2 does not reject its null at the 0.05 level for the 0.6 pp accuracy gain."
+      },
+      {
+        "stratum": "practical",
+        "ainglish": "The 0.6 pp accuracy gain is practically-important(criterion=ship-threshold-v4, scope=support-triage-model-2026Q3).",
+        "english": "Under criterion ship-threshold-v4 for scope support-triage-model-2026Q3, the 0.6 pp accuracy gain clears the threshold."
+      },
+      {
+        "stratum": "statistical",
+        "ainglish": "The 12 percent rise in retry rate is stat-significant(test=poisson-rate-ratio, alpha=0.05, analysis=incident-4412-post-hoc).",
+        "english": "Under analysis incident-4412-post-hoc, test poisson-rate-ratio rejects its null at the 0.05 level for the 12 percent rise in retry rate."
+      },
+      {
+        "stratum": "practical",
+        "ainglish": "The 12 percent rise in retry rate is not practically-important(criterion=retry-budget-v3, scope=eu-west-api-2026-09).",
+        "english": "Under criterion retry-budget-v3 for scope eu-west-api-2026-09, the 12 percent rise in retry rate does not clear the threshold."
+      }
+    ],
+    "settlement_strata": [
+      {
+        "id": "statistical",
+        "weight": 1
+      },
+      {
+        "id": "practical",
+        "weight": 1
+      }
+    ],
+    "estimand_contract": {
+      "kind": "ainglish.estimand-shadow.v1",
+      "unit_span": "complete message",
+      "contrast": "marked form (verbatim from original f8b68a42, unchanged) minus SHORTEST complete careful English: finding, test/alpha/analysis or criterion/scope carried as the same opaque reference strings, polarity preserved; no non-assertion suffix, no paraphrase of any reference label",
+      "population": "eight complete report sentences: the marked arms are byte-identical to original f8b68a42 (authored 2026-09-24 by Reticuli), four per form (stat-significant / practically-important); polarity mix as actually frozen there, statistical 3 positive / 1 negated (row 5), practical 2 positive / 2 negated (rows 2 and 8); across latency, retention, model accuracy and retry-rate findings. The English arms are new (2026-09-25): shortest complete careful English with the same opaque reference strings verbatim and no non-assertion suffix. Comparator class: shortest-complete-careful-English, a separately scoped original, not a replication of f8b68a42.",
+      "aggregation": {
+        "reducer": "least_favourable",
+        "rule": "equal item mean per tokenizer, then maximum tokenizer mean (least-favourable)"
+      },
+      "governance_effect": "report_only"
+    },
+    "notes": "Original token_delta for the <= 4 prerequisite. Comparator is the complete careful-English form the proposal itself gives (named test/alpha/analysis or criterion/scope, plus the explicit non-assertion clause), not bare 'significant'. Session https://claude.ai/code/session_01JTjcZoj1rtD6KH392bqxMi",
+    "items_sha256": "e036f01bc3517fc8b6bd60eff7f98b9211917e5427a7cfe2113ca513606d2bc8",
+    "comparison_identity": {
+      "kind": "ainglish.token-comparison-identity.v2",
+      "item_count": 8,
+      "tokenizer_roster": [
+        "cl100k_base",
+        "o200k_base",
+        "p50k_base"
+      ],
+      "comparator": "marked form (verbatim from original f8b68a42, unchanged) minus SHORTEST complete careful English: finding, test/alpha/analysis or criterion/scope carried as the same opaque reference strings, polarity preserved; no non-assertion suffix, no paraphrase of any reference label",
+      "population": "eight complete report sentences: the marked arms are byte-identical to original f8b68a42 (authored 2026-09-24 by Reticuli), four per form (stat-significant / practically-important); polarity mix as actually frozen there, statistical 3 positive / 1 negated (row 5), practical 2 positive / 2 negated (rows 2 and 8); across latency, retention, model accuracy and retry-rate findings. The English arms are new (2026-09-25): shortest complete careful English with the same opaque reference strings verbatim and no non-assertion suffix. Comparator class: shortest-complete-careful-English, a separately scoped original, not a replication of f8b68a42.",
+      "aggregation": "equal item mean per tokenizer, then maximum tokenizer mean (least-favourable)",
+      "unit_span": "complete message"
+    },
+    "interval_kind": "member_span",
+    "tokenizer_provenance": {
+      "kind": "ainglish.tiktoken-provenance.v1",
+      "library": "tiktoken",
+      "library_version": "0.14.0",
+      "encodings": [
+        "cl100k_base",
+        "o200k_base",
+        "p50k_base"
+      ]
+    }
+  },
+  "manifest_commitment": "cc063657e871f9ea31712b105399c087eeb76f8168014883cd8e83a5347970fe",
+  "intent": {
+    "role": "original",
+    "replicates_hash": null,
+    "meaning": "New original: this row does not confirm or settle another measurement."
+  },
+  "comparison_identity_status": {
+    "state": "original",
+    "target_kind": null,
+    "prepared_kind": "ainglish.token-comparison-identity.v2",
+    "note": "Exact shared declaration only, not proof of comparator fairness or settlement eligibility. Historical v1 identities remain different; consult live eligibility before mint. Never copy a stale sample digest to manufacture a match."
+  },
+  "estimand_contract_policy": {
+    "attached": true,
+    "reason": "original study: the declaration is this row's own estimand_contract"
+  },
+  "design_declaration": {
+    "kind": "ainglish.estimand-shadow.v1",
+    "unit_span": "complete message",
+    "contrast": "marked form (verbatim from original f8b68a42, unchanged) minus SHORTEST complete careful English: finding, test/alpha/analysis or criterion/scope carried as the same opaque reference strings, polarity preserved; no non-assertion suffix, no paraphrase of any reference label",
+    "population": "eight complete report sentences: the marked arms are byte-identical to original f8b68a42 (authored 2026-09-24 by Reticuli), four per form (stat-significant / practically-important); polarity mix as actually frozen there, statistical 3 positive / 1 negated (row 5), practical 2 positive / 2 negated (rows 2 and 8); across latency, retention, model accuracy and retry-rate findings. The English arms are new (2026-09-25): shortest complete careful English with the same opaque reference strings verbatim and no non-assertion suffix. Comparator class: shortest-complete-careful-English, a separately scoped original, not a replication of f8b68a42.",
+    "aggregation": {
+      "reducer": "least_favourable",
+      "rule": "equal item mean per tokenizer, then maximum tokenizer mean (least-favourable)"
+    },
+    "governance_effect": "report_only"
+  },
+  "replication_target": null,
+  "items_sha256": "e036f01bc3517fc8b6bd60eff7f98b9211917e5427a7cfe2113ca513606d2bc8",
+  "pair_count": 8,
+  "transport_budget": {
+    "kind": "ainglish.token-manifest-budget.v1",
+    "canonical_bytes": 5609,
+    "max_canonical_bytes": 20000,
+    "limit_source": "offline_compatibility_default",
+    "scope": "final enriched manifest only; server preflight also checks pair, arm, tokenizer-work and whole-request limits",
+    "run_requires_fresh_explicit_limits": false
+  },
+  "settlement_strata": [
+    {
+      "id": "statistical",
+      "weight": 1.0,
+      "share": 0.5,
+      "item_count": 4
+    },
+    {
+      "id": "practical",
+      "weight": 1.0,
+      "share": 0.5,
+      "item_count": 4
+    }
+  ],
+  "sample_size_rule": {
+    "kind": "power-of-two-v1",
+    "item_count": 8,
+    "passed": true
+  },
+  "mint": {
+    "estimand": "token_delta over complete message: marked form (verbatim from original f8b68a42, unchanged) minus SHORTEST complete careful English: finding, test/alpha/analysis or criterion/scope carried as the same opaque reference strings, polarity preserved; no non-assertion suffix, no paraphrase of any reference label; population: eight complete report sentences: the marked arms are byte-identical to original f8b68a42 (authored 2026-09-24 by Reticuli), four per form (stat-significant / practically-important); polarity mix as actually frozen there, statistical 3 positive / 1 negated (row 5), practical 2 positive / 2 negated (rows 2 and 8); across latency, retention, model accuracy and retry-rate findings. The English arms are new (2026-09-25): shortest complete careful English with the same opaque reference strings verbatim and no non-assertion suffix. Comparator class: shortest-complete-careful-English, a separately scoped original, not a replication of f8b68a42.; aggregation: equal item mean per tokenizer, then maximum tokenizer mean (least-favourable)",
+    "admissibility_gates": [
+      "every declared tiktoken encoding loads",
+      "every frozen English and Ainglish string is countable"
+    ],
+    "planned_sample": {
+      "items": 8,
+      "tokenizers": 3
+    }
+  },
+  "next": "Mint plan.manifest with client.mint_attempt(...) before running this plan."
+}

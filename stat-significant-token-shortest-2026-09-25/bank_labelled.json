@@ -1,0 +1,66 @@
+[
+ {
+  "id": "1",
+  "ainglish": "The 0.2 ms latency reduction is stat-significant(test=latency-H0-v3, alpha=0.05, analysis=run-92-adjusted).",
+  "english": "Under analysis run-92-adjusted, test latency-H0-v3 rejects its null at the 0.05 level for the 0.2 ms latency reduction.",
+  "settlement_stratum": "statistical",
+  "population_cell": "statistical-positive",
+  "reference_ids": []
+ },
+ {
+  "id": "2",
+  "ainglish": "The 0.2 ms latency reduction is not practically-important(criterion=user-visible-latency-v2, scope=mobile-checkout-2026Q3).",
+  "english": "Under criterion user-visible-latency-v2 for scope mobile-checkout-2026Q3, the 0.2 ms latency reduction does not clear the threshold.",
+  "settlement_stratum": "practical",
+  "population_cell": "practical-negative",
+  "reference_ids": []
+ },
+ {
+  "id": "3",
+  "ainglish": "The 3-point drop in weekly retention is stat-significant(test=retention-diff-z, alpha=0.01, analysis=cohort-b-prereg).",
+  "english": "Under analysis cohort-b-prereg, test retention-diff-z rejects its null at the 0.01 level for the 3-point drop in weekly retention.",
+  "settlement_stratum": "statistical",
+  "population_cell": "statistical-positive",
+  "reference_ids": []
+ },
+ {
+  "id": "4",
+  "ainglish": "The 3-point drop in weekly retention is practically-important(criterion=retention-floor-v1, scope=eu-free-tier-2026Q3).",
+  "english": "Under criterion retention-floor-v1 for scope eu-free-tier-2026Q3, the 3-point drop in weekly retention clears the threshold.",
+  "settlement_stratum": "practical",
+  "population_cell": "practical-positive",
+  "reference_ids": []
+ },
+ {
+  "id": "5",
+  "ainglish": "The 0.6 pp accuracy gain is not stat-significant(test=paired-bootstrap-v2, alpha=0.05, analysis=eval-run-118).",
+  "english": "Under analysis eval-run-118, test paired-bootstrap-v2 does not reject its null at the 0.05 level for the 0.6 pp accuracy gain.",
+  "settlement_stratum": "statistical",
+  "population_cell": "statistical-negative",
+  "reference_ids": []
+ },
+ {
+  "id": "6",
+  "ainglish": "The 0.6 pp accuracy gain is practically-important(criterion=ship-threshold-v4, scope=support-triage-model-2026Q3).",
+  "english": "Under criterion ship-threshold-v4 for scope support-triage-model-2026Q3, the 0.6 pp accuracy gain clears the threshold.",
+  "settlement_stratum": "practical",
+  "population_cell": "practical-positive",
+  "reference_ids": []
+ },
+ {
+  "id": "7",
+  "ainglish": "The 12 percent rise in retry rate is stat-significant(test=poisson-rate-ratio, alpha=0.05, analysis=incident-4412-post-hoc).",
+  "english": "Under analysis incident-4412-post-hoc, test poisson-rate-ratio rejects its null at the 0.05 level for the 12 percent rise in retry rate.",
+  "settlement_stratum": "statistical",
+  "population_cell": "statistical-positive",
+  "reference_ids": []
+ },
+ {
+  "id": "8",
+  "ainglish": "The 12 percent rise in retry rate is not practically-important(criterion=retry-budget-v3, scope=eu-west-api-2026-09).",
+  "english": "Under criterion retry-budget-v3 for scope eu-west-api-2026-09, the 12 percent rise in retry rate does not clear the threshold.",
+  "settlement_stratum": "practical",
+  "population_cell": "practical-negative",
+  "reference_ids": []
+ }
+]
