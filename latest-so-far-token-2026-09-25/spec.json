@@ -1,0 +1,75 @@
+{
+ "manifest": {
+  "metric": "token_delta",
+  "construct": "item-is-latest-so-far-sequence-ref-as-of-item-is-final-in",
+  "models": [
+   "cl100k_base",
+   "o200k_base",
+   "p50k_base"
+  ],
+  "test_set": [
+   {
+    "stratum": "latest-so-far",
+    "ainglish": "Invoice INV-2291 is latest-so-far(customer-8812-invoices, 2026-09-25T06:00Z).",
+    "english": "At 2026-09-25T06:00Z, invoice INV-2291 is the highest-ranked admitted member of customer-8812-invoices."
+   },
+   {
+    "stratum": "latest-so-far",
+    "ainglish": "Snapshot snap-0419 is latest-so-far(vault-nightly, 2026-09-24T23:59Z).",
+    "english": "At 2026-09-24T23:59Z, snapshot snap-0419 is the highest-ranked admitted member of vault-nightly."
+   },
+   {
+    "stratum": "latest-so-far",
+    "ainglish": "Revision r17 is latest-so-far(policy-doc-HR-4, 2026-09-25T09:00Z).",
+    "english": "At 2026-09-25T09:00Z, revision r17 is the highest-ranked admitted member of policy-doc-HR-4."
+   },
+   {
+    "stratum": "latest-so-far",
+    "ainglish": "Reading 1042 is latest-so-far(sensor-B7-readings, 2026-09-25T07:30Z).",
+    "english": "At 2026-09-25T07:30Z, reading 1042 is the highest-ranked admitted member of sensor-B7-readings."
+   },
+   {
+    "stratum": "final-in-sequence",
+    "ainglish": "Invoice INV-2291 is final-in-sequence(customer-8812-invoices, account-closure-553).",
+    "english": "Under operative closure record account-closure-553, invoice INV-2291 is the terminal admitted member of customer-8812-invoices."
+   },
+   {
+    "stratum": "final-in-sequence",
+    "ainglish": "Snapshot snap-0419 is final-in-sequence(vault-nightly, decommission-order-12).",
+    "english": "Under operative closure record decommission-order-12, snapshot snap-0419 is the terminal admitted member of vault-nightly."
+   },
+   {
+    "stratum": "final-in-sequence",
+    "ainglish": "Revision r17 is final-in-sequence(policy-doc-HR-4, ratification-minute-88).",
+    "english": "Under operative closure record ratification-minute-88, revision r17 is the terminal admitted member of policy-doc-HR-4."
+   },
+   {
+    "stratum": "final-in-sequence",
+    "ainglish": "Reading 1042 is final-in-sequence(sensor-B7-readings, retirement-ticket-2201).",
+    "english": "Under operative closure record retirement-ticket-2201, reading 1042 is the terminal admitted member of sensor-B7-readings."
+   }
+  ],
+  "settlement_strata": [
+   {
+    "id": "latest-so-far",
+    "weight": 1
+   },
+   {
+    "id": "final-in-sequence",
+    "weight": 1
+   }
+  ],
+  "estimand_contract": {
+   "kind": "ainglish.estimand-shadow.v1",
+   "unit_span": "complete message",
+   "contrast": "complete marked sentence minus SHORTEST complete careful English carrying the identical item, sequence reference, and as-of time (latest-so-far) or operative closure reference (final-in-sequence), all references verbatim on both sides; no non-assertion suffix; comparator class: shortest-complete-careful-English, declared here",
+   "population": "eight fresh complete sentences authored 2026-09-25 by Reticuli, four semantic cells (invoice, snapshot, policy revision, sensor reading) each rendered once under latest-so-far with an anchored as-of time and once under final-in-sequence with an operative closure reference; strata latest-so-far / final-in-sequence, weight 1 each; no item shared with the proposal's examples (release-7 builds) or any served row",
+   "aggregation": {
+    "reducer": "least_favourable",
+    "rule": "equal item mean per tokenizer, then maximum tokenizer mean (least-favourable)"
+   },
+   "governance_effect": "report_only"
+  },
+  "notes": "Original token_delta for the <= 4 prerequisite. Comparator is the complete careful-English form the proposal itself gives (named test/alpha/analysis or criterion/scope, plus the explicit non-assertion clause), not bare 'significant'. Session https://claude.ai/code/session_01JTjcZoj1rtD6KH392bqxMi"
+ }
+}

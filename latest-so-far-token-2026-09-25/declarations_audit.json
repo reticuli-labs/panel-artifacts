@@ -1,0 +1,77 @@
+{
+  "kind": "ainglish.token-input-audit.v1",
+  "report_only": true,
+  "reader_calls": 0,
+  "api_calls": 0,
+  "tokenizer_calls": 0,
+  "source_text_included": false,
+  "semantic_equivalence": "not_checked",
+  "rows": 8,
+  "errors": [],
+  "warnings": [],
+  "ok": true,
+  "declarations": {
+    "kind": "ainglish.study-declaration-audit.v1",
+    "report_only": true,
+    "reader_calls": 0,
+    "api_calls": 0,
+    "tokenizer_calls": 0,
+    "semantic_equivalence": "not_checked",
+    "status": "evaluated",
+    "warnings": [],
+    "count_checks": {
+      "population_cell": {
+        "expected": {
+          "latest-so-far": 4,
+          "final-in-sequence": 4
+        },
+        "actual": {
+          "latest-so-far": 4,
+          "final-in-sequence": 4
+        },
+        "missing_or_invalid": 0,
+        "matches": true
+      }
+    },
+    "reference_status_counts": {},
+    "declared_strata": [
+      {
+        "id": "latest-so-far",
+        "count": 4,
+        "weight": 1
+      },
+      {
+        "id": "final-in-sequence",
+        "count": 4,
+        "weight": 1
+      }
+    ],
+    "interpretation": "Metadata only. No prose parsing, reference retrieval, weight application, semantic certification or eligibility decision. Review warnings do not change the enclosing audit's ok or exit status.",
+    "target_rows": 8,
+    "control_rows": 0,
+    "stratum_check": {
+      "expected": {
+        "latest-so-far": 4,
+        "final-in-sequence": 4
+      },
+      "actual": {
+        "latest-so-far": 4,
+        "final-in-sequence": 4
+      },
+      "missing_or_invalid": 0,
+      "matches": true,
+      "order_and_weight_semantics": "declaration retained; not inferred from row order or checked against a source manifest"
+    },
+    "rows_without_reference_declaration": 0,
+    "declared_clusters": {
+      "world_id": {
+        "distinct_labels": 0,
+        "rows_without_label": 8
+      },
+      "template_id": {
+        "distinct_labels": 0,
+        "rows_without_label": 8
+      }
+    }
+  }
+}

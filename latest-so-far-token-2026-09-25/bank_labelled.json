@@ -1,0 +1,66 @@
+[
+ {
+  "id": "1",
+  "ainglish": "Invoice INV-2291 is latest-so-far(customer-8812-invoices, 2026-09-25T06:00Z).",
+  "english": "At 2026-09-25T06:00Z, invoice INV-2291 is the highest-ranked admitted member of customer-8812-invoices.",
+  "settlement_stratum": "latest-so-far",
+  "population_cell": "latest-so-far",
+  "reference_ids": []
+ },
+ {
+  "id": "2",
+  "ainglish": "Snapshot snap-0419 is latest-so-far(vault-nightly, 2026-09-24T23:59Z).",
+  "english": "At 2026-09-24T23:59Z, snapshot snap-0419 is the highest-ranked admitted member of vault-nightly.",
+  "settlement_stratum": "latest-so-far",
+  "population_cell": "latest-so-far",
+  "reference_ids": []
+ },
+ {
+  "id": "3",
+  "ainglish": "Revision r17 is latest-so-far(policy-doc-HR-4, 2026-09-25T09:00Z).",
+  "english": "At 2026-09-25T09:00Z, revision r17 is the highest-ranked admitted member of policy-doc-HR-4.",
+  "settlement_stratum": "latest-so-far",
+  "population_cell": "latest-so-far",
+  "reference_ids": []
+ },
+ {
+  "id": "4",
+  "ainglish": "Reading 1042 is latest-so-far(sensor-B7-readings, 2026-09-25T07:30Z).",
+  "english": "At 2026-09-25T07:30Z, reading 1042 is the highest-ranked admitted member of sensor-B7-readings.",
+  "settlement_stratum": "latest-so-far",
+  "population_cell": "latest-so-far",
+  "reference_ids": []
+ },
+ {
+  "id": "5",
+  "ainglish": "Invoice INV-2291 is final-in-sequence(customer-8812-invoices, account-closure-553).",
+  "english": "Under operative closure record account-closure-553, invoice INV-2291 is the terminal admitted member of customer-8812-invoices.",
+  "settlement_stratum": "final-in-sequence",
+  "population_cell": "final-in-sequence",
+  "reference_ids": []
+ },
+ {
+  "id": "6",
+  "ainglish": "Snapshot snap-0419 is final-in-sequence(vault-nightly, decommission-order-12).",
+  "english": "Under operative closure record decommission-order-12, snapshot snap-0419 is the terminal admitted member of vault-nightly.",
+  "settlement_stratum": "final-in-sequence",
+  "population_cell": "final-in-sequence",
+  "reference_ids": []
+ },
+ {
+  "id": "7",
+  "ainglish": "Revision r17 is final-in-sequence(policy-doc-HR-4, ratification-minute-88).",
+  "english": "Under operative closure record ratification-minute-88, revision r17 is the terminal admitted member of policy-doc-HR-4.",
+  "settlement_stratum": "final-in-sequence",
+  "population_cell": "final-in-sequence",
+  "reference_ids": []
+ },
+ {
+  "id": "8",
+  "ainglish": "Reading 1042 is final-in-sequence(sensor-B7-readings, retirement-ticket-2201).",
+  "english": "Under operative closure record retirement-ticket-2201, reading 1042 is the terminal admitted member of sensor-B7-readings.",
+  "settlement_stratum": "final-in-sequence",
+  "population_cell": "final-in-sequence",
+  "reference_ids": []
+ }
+]
