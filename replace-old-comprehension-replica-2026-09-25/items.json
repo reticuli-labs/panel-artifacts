@@ -1,0 +1,754 @@
+[
+ {
+  "id": "rt-replacement-incoming-01",
+  "english": "Remove departing cert-7c1d from the active slot and put incoming cert-2f9a in its place.",
+  "ainglish": "replace(old=cert-7c1d, new=cert-2f9a).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "cert-2f9a",
+   "cert-7c1d",
+   "both references",
+   "the active reference is not specified"
+  ],
+  "answer": "cert-2f9a",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "credential"
+ },
+ {
+  "id": "rt-replacement-departing-01",
+  "english": "Remove departing cert-7c1d from the active slot and put incoming cert-2f9a in its place.",
+  "ainglish": "replace(old=cert-7c1d, new=cert-2f9a).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "cert-2f9a",
+   "both references",
+   "the departing reference is not specified",
+   "cert-7c1d"
+  ],
+  "answer": "cert-7c1d",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "credential"
+ },
+ {
+  "id": "rt-replacement-incoming-02",
+  "english": "Remove departing token-b7e2 from the active slot and put incoming token-a1f3 in its place.",
+  "ainglish": "replace(old=token-b7e2, new=token-a1f3).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "token-b7e2",
+   "both references",
+   "the active reference is not specified",
+   "token-a1f3"
+  ],
+  "answer": "token-a1f3",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "credential"
+ },
+ {
+  "id": "rt-replacement-departing-02",
+  "english": "Remove departing token-b7e2 from the active slot and put incoming token-a1f3 in its place.",
+  "ainglish": "replace(old=token-b7e2, new=token-a1f3).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "both references",
+   "the departing reference is not specified",
+   "token-b7e2",
+   "token-a1f3"
+  ],
+  "answer": "token-b7e2",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "credential"
+ },
+ {
+  "id": "rt-replacement-incoming-03",
+  "english": "Remove departing libparse-q from the active slot and put incoming libparse-k in its place.",
+  "ainglish": "replace(old=libparse-q, new=libparse-k).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "both references",
+   "the active reference is not specified",
+   "libparse-k",
+   "libparse-q"
+  ],
+  "answer": "libparse-k",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "dependency"
+ },
+ {
+  "id": "rt-replacement-departing-03",
+  "english": "Remove departing libparse-q from the active slot and put incoming libparse-k in its place.",
+  "ainglish": "replace(old=libparse-q, new=libparse-k).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "the departing reference is not specified",
+   "libparse-q",
+   "libparse-k",
+   "both references"
+  ],
+  "answer": "libparse-q",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "dependency"
+ },
+ {
+  "id": "rt-replacement-incoming-04",
+  "english": "Remove departing tzdata-m9 from the active slot and put incoming tzdata-r4 in its place.",
+  "ainglish": "replace(old=tzdata-m9, new=tzdata-r4).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "the active reference is not specified",
+   "tzdata-r4",
+   "tzdata-m9",
+   "both references"
+  ],
+  "answer": "tzdata-r4",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "dependency"
+ },
+ {
+  "id": "rt-replacement-departing-04",
+  "english": "Remove departing tzdata-m9 from the active slot and put incoming tzdata-r4 in its place.",
+  "ainglish": "replace(old=tzdata-m9, new=tzdata-r4).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "tzdata-m9",
+   "tzdata-r4",
+   "both references",
+   "the departing reference is not specified"
+  ],
+  "answer": "tzdata-m9",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "dependency"
+ },
+ {
+  "id": "rt-replacement-incoming-05",
+  "english": "Remove departing timeout-profile-east from the active slot and put incoming timeout-profile-west in its place.",
+  "ainglish": "replace(old=timeout-profile-east, new=timeout-profile-west).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "timeout-profile-west",
+   "timeout-profile-east",
+   "both references",
+   "the active reference is not specified"
+  ],
+  "answer": "timeout-profile-west",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "configuration value"
+ },
+ {
+  "id": "rt-replacement-departing-05",
+  "english": "Remove departing timeout-profile-east from the active slot and put incoming timeout-profile-west in its place.",
+  "ainglish": "replace(old=timeout-profile-east, new=timeout-profile-west).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "timeout-profile-west",
+   "both references",
+   "the departing reference is not specified",
+   "timeout-profile-east"
+  ],
+  "answer": "timeout-profile-east",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "configuration value"
+ },
+ {
+  "id": "rt-replacement-incoming-06",
+  "english": "Remove departing quota-plan-cedar from the active slot and put incoming quota-plan-birch in its place.",
+  "ainglish": "replace(old=quota-plan-cedar, new=quota-plan-birch).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "quota-plan-cedar",
+   "both references",
+   "the active reference is not specified",
+   "quota-plan-birch"
+  ],
+  "answer": "quota-plan-birch",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "configuration value"
+ },
+ {
+  "id": "rt-replacement-departing-06",
+  "english": "Remove departing quota-plan-cedar from the active slot and put incoming quota-plan-birch in its place.",
+  "ainglish": "replace(old=quota-plan-cedar, new=quota-plan-birch).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "both references",
+   "the departing reference is not specified",
+   "quota-plan-cedar",
+   "quota-plan-birch"
+  ],
+  "answer": "quota-plan-cedar",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "configuration value"
+ },
+ {
+  "id": "rt-replacement-incoming-07",
+  "english": "Remove departing impeller-K from the active slot and put incoming impeller-D in its place.",
+  "ainglish": "replace(old=impeller-K, new=impeller-D).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "both references",
+   "the active reference is not specified",
+   "impeller-D",
+   "impeller-K"
+  ],
+  "answer": "impeller-D",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "physical part"
+ },
+ {
+  "id": "rt-replacement-departing-07",
+  "english": "Remove departing impeller-K from the active slot and put incoming impeller-D in its place.",
+  "ainglish": "replace(old=impeller-K, new=impeller-D).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "the departing reference is not specified",
+   "impeller-K",
+   "impeller-D",
+   "both references"
+  ],
+  "answer": "impeller-K",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "physical part"
+ },
+ {
+  "id": "rt-replacement-incoming-08",
+  "english": "Remove departing gasket-lot-38 from the active slot and put incoming gasket-lot-52 in its place.",
+  "ainglish": "replace(old=gasket-lot-38, new=gasket-lot-52).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "the active reference is not specified",
+   "gasket-lot-52",
+   "gasket-lot-38",
+   "both references"
+  ],
+  "answer": "gasket-lot-52",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "physical part"
+ },
+ {
+  "id": "rt-replacement-departing-08",
+  "english": "Remove departing gasket-lot-38 from the active slot and put incoming gasket-lot-52 in its place.",
+  "ainglish": "replace(old=gasket-lot-38, new=gasket-lot-52).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "gasket-lot-38",
+   "gasket-lot-52",
+   "both references",
+   "the departing reference is not specified"
+  ],
+  "answer": "gasket-lot-38",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "physical part"
+ },
+ {
+  "id": "rt-replacement-incoming-09",
+  "english": "Remove departing Priya from the active slot and put incoming Tomas in its place.",
+  "ainglish": "replace(old=Priya, new=Tomas).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "Tomas",
+   "Priya",
+   "both references",
+   "the active reference is not specified"
+  ],
+  "answer": "Tomas",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "assigned person"
+ },
+ {
+  "id": "rt-replacement-departing-09",
+  "english": "Remove departing Priya from the active slot and put incoming Tomas in its place.",
+  "ainglish": "replace(old=Priya, new=Tomas).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "Tomas",
+   "both references",
+   "the departing reference is not specified",
+   "Priya"
+  ],
+  "answer": "Priya",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "assigned person"
+ },
+ {
+  "id": "rt-replacement-incoming-10",
+  "english": "Remove departing Halvard from the active slot and put incoming Nkechi in its place.",
+  "ainglish": "replace(old=Halvard, new=Nkechi).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "Halvard",
+   "both references",
+   "the active reference is not specified",
+   "Nkechi"
+  ],
+  "answer": "Nkechi",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "assigned person"
+ },
+ {
+  "id": "rt-replacement-departing-10",
+  "english": "Remove departing Halvard from the active slot and put incoming Nkechi in its place.",
+  "ainglish": "replace(old=Halvard, new=Nkechi).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "both references",
+   "the departing reference is not specified",
+   "Halvard",
+   "Nkechi"
+  ],
+  "answer": "Halvard",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "assigned person"
+ },
+ {
+  "id": "rt-replacement-incoming-11",
+  "english": "Remove departing charter-draft-blue from the active slot and put incoming charter-draft-green in its place.",
+  "ainglish": "replace(old=charter-draft-blue, new=charter-draft-green).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "both references",
+   "the active reference is not specified",
+   "charter-draft-green",
+   "charter-draft-blue"
+  ],
+  "answer": "charter-draft-green",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "document"
+ },
+ {
+  "id": "rt-replacement-departing-11",
+  "english": "Remove departing charter-draft-blue from the active slot and put incoming charter-draft-green in its place.",
+  "ainglish": "replace(old=charter-draft-blue, new=charter-draft-green).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "the departing reference is not specified",
+   "charter-draft-blue",
+   "charter-draft-green",
+   "both references"
+  ],
+  "answer": "charter-draft-blue",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "document"
+ },
+ {
+  "id": "rt-replacement-incoming-12",
+  "english": "Remove departing runbook-copy-ash from the active slot and put incoming runbook-copy-fern in its place.",
+  "ainglish": "replace(old=runbook-copy-ash, new=runbook-copy-fern).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "the active reference is not specified",
+   "runbook-copy-fern",
+   "runbook-copy-ash",
+   "both references"
+  ],
+  "answer": "runbook-copy-fern",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "document"
+ },
+ {
+  "id": "rt-replacement-departing-12",
+  "english": "Remove departing runbook-copy-ash from the active slot and put incoming runbook-copy-fern in its place.",
+  "ainglish": "replace(old=runbook-copy-ash, new=runbook-copy-fern).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "runbook-copy-ash",
+   "runbook-copy-fern",
+   "both references",
+   "the departing reference is not specified"
+  ],
+  "answer": "runbook-copy-ash",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "document"
+ },
+ {
+  "id": "rt-replacement-incoming-13",
+  "english": "Remove departing row-9f31 from the active slot and put incoming row-c04e in its place.",
+  "ainglish": "replace(old=row-9f31, new=row-c04e).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "row-c04e",
+   "row-9f31",
+   "both references",
+   "the active reference is not specified"
+  ],
+  "answer": "row-c04e",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "data record"
+ },
+ {
+  "id": "rt-replacement-departing-13",
+  "english": "Remove departing row-9f31 from the active slot and put incoming row-c04e in its place.",
+  "ainglish": "replace(old=row-9f31, new=row-c04e).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "row-c04e",
+   "both references",
+   "the departing reference is not specified",
+   "row-9f31"
+  ],
+  "answer": "row-9f31",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "data record"
+ },
+ {
+  "id": "rt-replacement-incoming-14",
+  "english": "Remove departing ledger-entry-tau from the active slot and put incoming ledger-entry-rho in its place.",
+  "ainglish": "replace(old=ledger-entry-tau, new=ledger-entry-rho).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "ledger-entry-tau",
+   "both references",
+   "the active reference is not specified",
+   "ledger-entry-rho"
+  ],
+  "answer": "ledger-entry-rho",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "data record"
+ },
+ {
+  "id": "rt-replacement-departing-14",
+  "english": "Remove departing ledger-entry-tau from the active slot and put incoming ledger-entry-rho in its place.",
+  "ainglish": "replace(old=ledger-entry-tau, new=ledger-entry-rho).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "both references",
+   "the departing reference is not specified",
+   "ledger-entry-tau",
+   "ledger-entry-rho"
+  ],
+  "answer": "ledger-entry-tau",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "data record"
+ },
+ {
+  "id": "rt-replacement-incoming-15",
+  "english": "Remove departing regimen-orchid from the active slot and put incoming regimen-heron in its place.",
+  "ainglish": "replace(old=regimen-orchid, new=regimen-heron).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "both references",
+   "the active reference is not specified",
+   "regimen-heron",
+   "regimen-orchid"
+  ],
+  "answer": "regimen-heron",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "clinical instruction"
+ },
+ {
+  "id": "rt-replacement-departing-15",
+  "english": "Remove departing regimen-orchid from the active slot and put incoming regimen-heron in its place.",
+  "ainglish": "replace(old=regimen-orchid, new=regimen-heron).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "the departing reference is not specified",
+   "regimen-orchid",
+   "regimen-heron",
+   "both references"
+  ],
+  "answer": "regimen-orchid",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "clinical instruction"
+ },
+ {
+  "id": "rt-replacement-incoming-16",
+  "english": "Remove departing dose-card-P from the active slot and put incoming dose-card-L in its place.",
+  "ainglish": "replace(old=dose-card-P, new=dose-card-L).",
+  "question": "Which reference occupies the active slot after the replacement?",
+  "options": [
+   "the active reference is not specified",
+   "dose-card-L",
+   "dose-card-P",
+   "both references"
+  ],
+  "answer": "dose-card-L",
+  "form": "replace-old-new",
+  "settlement_stratum": "incoming-reference",
+  "domain": "clinical instruction"
+ },
+ {
+  "id": "rt-replacement-departing-16",
+  "english": "Remove departing dose-card-P from the active slot and put incoming dose-card-L in its place.",
+  "ainglish": "replace(old=dose-card-P, new=dose-card-L).",
+  "question": "Which reference is the departing value removed from the active slot?",
+  "options": [
+   "dose-card-P",
+   "dose-card-L",
+   "both references",
+   "the departing reference is not specified"
+  ],
+  "answer": "dose-card-P",
+  "form": "replace-old-new",
+  "settlement_stratum": "departing-reference",
+  "domain": "clinical instruction"
+ },
+ {
+  "id": "rt-replacement-cal-01",
+  "calibration": true,
+  "english": "An inventory message names the saffron ticket, but does not state its location.",
+  "ainglish": "An inventory message states that the saffron ticket is in shelf 21.",
+  "question": "Where does the message state that the saffron ticket is?",
+  "options": [
+   "shelf 21",
+   "the dispatch desk",
+   "the archive room",
+   "no location is stated"
+  ],
+  "answer": "shelf 21",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-02",
+  "calibration": true,
+  "english": "An inventory message names the basalt fob, but does not state its location.",
+  "ainglish": "An inventory message states that the basalt fob is in bin 6.",
+  "question": "Where does the message state that the basalt fob is?",
+  "options": [
+   "the dispatch desk",
+   "the archive room",
+   "no location is stated",
+   "bin 6"
+  ],
+  "answer": "bin 6",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-03",
+  "calibration": true,
+  "english": "An inventory message names the copper stub, but does not state its location.",
+  "ainglish": "An inventory message states that the copper stub is in tray 17.",
+  "question": "Where does the message state that the copper stub is?",
+  "options": [
+   "the archive room",
+   "no location is stated",
+   "tray 17",
+   "the dispatch desk"
+  ],
+  "answer": "tray 17",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-04",
+  "calibration": true,
+  "english": "An inventory message names the dusk voucher, but does not state its location.",
+  "ainglish": "An inventory message states that the dusk voucher is in cage 3.",
+  "question": "Where does the message state that the dusk voucher is?",
+  "options": [
+   "no location is stated",
+   "cage 3",
+   "the dispatch desk",
+   "the archive room"
+  ],
+  "answer": "cage 3",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-05",
+  "calibration": true,
+  "english": "An inventory message names the ember tag, but does not state its location.",
+  "ainglish": "An inventory message states that the ember tag is in shelf 9.",
+  "question": "Where does the message state that the ember tag is?",
+  "options": [
+   "shelf 9",
+   "the dispatch desk",
+   "the archive room",
+   "no location is stated"
+  ],
+  "answer": "shelf 9",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-06",
+  "calibration": true,
+  "english": "An inventory message names the fjord chip, but does not state its location.",
+  "ainglish": "An inventory message states that the fjord chip is in bin 14.",
+  "question": "Where does the message state that the fjord chip is?",
+  "options": [
+   "the dispatch desk",
+   "the archive room",
+   "no location is stated",
+   "bin 14"
+  ],
+  "answer": "bin 14",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-07",
+  "calibration": true,
+  "english": "An inventory message names the gale slip, but does not state its location.",
+  "ainglish": "An inventory message states that the gale slip is in tray 2.",
+  "question": "Where does the message state that the gale slip is?",
+  "options": [
+   "the archive room",
+   "no location is stated",
+   "tray 2",
+   "the dispatch desk"
+  ],
+  "answer": "tray 2",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-08",
+  "calibration": true,
+  "english": "An inventory message names the heath medal, but does not state its location.",
+  "ainglish": "An inventory message states that the heath medal is in cage 18.",
+  "question": "Where does the message state that the heath medal is?",
+  "options": [
+   "no location is stated",
+   "cage 18",
+   "the dispatch desk",
+   "the archive room"
+  ],
+  "answer": "cage 18",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-09",
+  "calibration": true,
+  "english": "An inventory message names the iris coupon, but does not state its location.",
+  "ainglish": "An inventory message states that the iris coupon is in shelf 5.",
+  "question": "Where does the message state that the iris coupon is?",
+  "options": [
+   "shelf 5",
+   "the dispatch desk",
+   "the archive room",
+   "no location is stated"
+  ],
+  "answer": "shelf 5",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-10",
+  "calibration": true,
+  "english": "An inventory message names the jute label, but does not state its location.",
+  "ainglish": "An inventory message states that the jute label is in bin 11.",
+  "question": "Where does the message state that the jute label is?",
+  "options": [
+   "the dispatch desk",
+   "the archive room",
+   "no location is stated",
+   "bin 11"
+  ],
+  "answer": "bin 11",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-11",
+  "calibration": true,
+  "english": "An inventory message names the kite marker, but does not state its location.",
+  "ainglish": "An inventory message states that the kite marker is in tray 20.",
+  "question": "Where does the message state that the kite marker is?",
+  "options": [
+   "the archive room",
+   "no location is stated",
+   "tray 20",
+   "the dispatch desk"
+  ],
+  "answer": "tray 20",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-12",
+  "calibration": true,
+  "english": "An inventory message names the lotus stamp, but does not state its location.",
+  "ainglish": "An inventory message states that the lotus stamp is in cage 8.",
+  "question": "Where does the message state that the lotus stamp is?",
+  "options": [
+   "no location is stated",
+   "cage 8",
+   "the dispatch desk",
+   "the archive room"
+  ],
+  "answer": "cage 8",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-13",
+  "calibration": true,
+  "english": "An inventory message names the moss token, but does not state its location.",
+  "ainglish": "An inventory message states that the moss token is in shelf 13.",
+  "question": "Where does the message state that the moss token is?",
+  "options": [
+   "shelf 13",
+   "the dispatch desk",
+   "the archive room",
+   "no location is stated"
+  ],
+  "answer": "shelf 13",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-14",
+  "calibration": true,
+  "english": "An inventory message names the nectar chit, but does not state its location.",
+  "ainglish": "An inventory message states that the nectar chit is in bin 1.",
+  "question": "Where does the message state that the nectar chit is?",
+  "options": [
+   "the dispatch desk",
+   "the archive room",
+   "no location is stated",
+   "bin 1"
+  ],
+  "answer": "bin 1",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-15",
+  "calibration": true,
+  "english": "An inventory message names the orchid pin, but does not state its location.",
+  "ainglish": "An inventory message states that the orchid pin is in tray 16.",
+  "question": "Where does the message state that the orchid pin is?",
+  "options": [
+   "the archive room",
+   "no location is stated",
+   "tray 16",
+   "the dispatch desk"
+  ],
+  "answer": "tray 16",
+  "probe": "construct-free explicit-location planted effect"
+ },
+ {
+  "id": "rt-replacement-cal-16",
+  "calibration": true,
+  "english": "An inventory message names the plume docket, but does not state its location.",
+  "ainglish": "An inventory message states that the plume docket is in cage 10.",
+  "question": "Where does the message state that the plume docket is?",
+  "options": [
+   "no location is stated",
+   "cage 10",
+   "the dispatch desk",
+   "the archive room"
+  ],
+  "answer": "cage 10",
+  "probe": "construct-free explicit-location planted effect"
+ }
+]
