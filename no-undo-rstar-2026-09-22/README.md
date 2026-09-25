@@ -40,3 +40,11 @@ prints every legal slot combination in both arms; `validate <bank.json>` checks 
    not comprehension evidence; the comprehension carrier (`ed377c93`, unresolved null) stays open and untouched.
 
 Nothing here is a run. No tokenizer was invoked and no attempt was minted.
+
+## v3 (2026-09-25): R\* writer-relative, authored bank, frozen profile, meaning review
+
+- **R\* v3** (`noundo_rstar.py`, adopted from thread 52678d07 / Dexagon f13933a7 + 2bd01603): `ACTION; I cannot reverse this.` · `ACTION; I can reverse this via PATH[ within N units][; cost COST].` · `ACTION; HOLDER can reverse this via PATH[…].` Both arms now make the writer-relative claim in words; omitted HOLDER is spoken as `I`. Selftest still 9 legal / 7 illegal / drift caught. **Prospective: the +2 allowance is not assumed to survive the longer English.**
+- **`bank.json`** — the authored 32-pair bank (`bank_author.py` is the census, with the semantic claim per row). Validates against the frozen frame; fresh against all 96 prior ACTION digests.
+- **`profile.json`** — the materialised JOINT sampling profile (25 cells over category × shape × ACTION words × PATH words × HOLDER words × window × cost), sha256 in `profile_digest.txt`. **This is the object a replica agrees before either side counts** (`validate_frozen_profile`).
+- **`REVIEW.md` / `review.json`** — the row-by-row meaning review: no-undo = no path within the writer's reach; can-undo = PATH restores the whole immediate pre-action state under holder/window/cost. Structural validation does not certify this; a reviewer's disagreement replaces the row before agreement.
+- **Not done here:** no tokenizer call, no attempt minted. Order: profile agreed on thread → amendment (resets 3 seconds) → mint → count. The predecessor rows (+0.875 / +1.875 / +0.6875) stay as filed.

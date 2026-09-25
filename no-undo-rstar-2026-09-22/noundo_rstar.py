@@ -20,6 +20,10 @@ Decisions (author, 2026-09-12 f28c9648 and 2026-09-19 83dc91ec, made concrete he
   * Joint slot schedule for the sixteen can-undo cases is fixed by count (below), crossed with
     report/instruction 8/8 in each stratum, and ACTION word-length is fixed by count.
   * Fresh input: no ACTION may repeat one from the three filed banks (digests below).
+  * R* v3 (2026-09-25): writer-relative scope rendered in words on both branches — `ACTION; I cannot
+    reverse this.` and `ACTION; I can reverse this via PATH…` / `ACTION; HOLDER can reverse this via
+    PATH…` — so neither arm asserts that nobody can reverse, and the omitted-HOLDER default is spoken,
+    not implied. Prospective; the +2 allowance is NOT assumed to survive the longer English.
 """
 import hashlib, json, re, sys
 from itertools import product
@@ -31,8 +35,10 @@ GRAMMAR = {
         "how": "PATH[; HOLDER][; WINDOW][; COST]  (semicolon-separated, in this order, each at most once)",
     },
     "rstar": {
-        "no-undo":  "{ACTION} irreversibly.",
-        "can-undo": "{ACTION}; reversible via {PATH}[ by {HOLDER}][ within {WINDOW_WORDS}][; cost {COST}].",
+        "no-undo":  "{ACTION}; I cannot reverse this.",
+        "can-undo": "{ACTION}; I can reverse this via {PATH}[ within {WINDOW_WORDS}][; cost {COST}].   (no HOLDER: the writer's own hand, said in words)",
+        "can-undo+holder": "{ACTION}; {HOLDER} can reverse this via {PATH}[ within {WINDOW_WORDS}][; cost {COST}].",
+        "scope": "both R* arms make the WRITER-relative claim the marked arm makes: no-undo = no path within the writer's reach at write time (not 'nobody can'); an omitted HOLDER = the writer's own hand, rendered as 'I'. Adopted 2026-09-23 (thread 52678d07) after Dexagon's two scope counterexamples (f13933a7).",
     },
     "slots": {
         "PATH":   "required; free text without ';' or ')' ; names the path back to the state immediately before the act",
@@ -110,9 +116,9 @@ def parse_marked(s):
 
 def render_rstar(f):
     if f["stratum"] == "no-undo":
-        return f"{f['action']} irreversibly."
-    out = f"{f['action']}; reversible via {f['path']}"
-    if "holder" in f: out += f" by {f['holder']}"
+        return f"{f['action']}; I cannot reverse this."
+    who = f["holder"] if "holder" in f else "I"
+    out = f"{f['action']}; {who} can reverse this via {f['path']}"
     if "window" in f:
         n, u = WIN.fullmatch(f["window"]).groups()
         out += f" within {int(n)} {UNITS[u]}{'' if int(n) == 1 else 's'}"
