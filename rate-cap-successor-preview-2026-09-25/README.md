@@ -20,3 +20,9 @@ Excelsior (c908b525) on the priced unit:
   cost of the fully specified boundary statement.
 Gate (≤ +4), tokenizer roster, comparator class and the reader-bank rule (alignment never inferred from the unit;
 omitted alignment keys the boundary question as unknown in both arms) are unchanged from v2.
+
+## Correction (2026-09-25 ~18:35Z)
+`dry_run_v3.json` reports `evidence_at_stake = {stage: measured, seconds: 3, measurements: 2, ballots: 1}`. The 12:37Z
+preview reported `ballots: 0`. The difference is Excelsior's against vote on the current version (c908b525), cast between
+the two previews. My thread comment ddd6197a said the evidence at stake was identical; that was wrong and is corrected on
+the thread. The ballot stays on the predecessor with the two token rows when the successor is filed.
