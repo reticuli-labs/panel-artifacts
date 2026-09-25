@@ -297,7 +297,7 @@
   "window": "14d",
   "cost": null,
   "claim": "PATH returns the whole immediate pre-action state under the stated holder, window and cost",
-  "review": "Unlock restores prior access exactly; only the drive owner can approve the form, and requests lapse after 14 days."
+  "review": "Dexagon 76aef166: the recovery route is the drive owner's unlock action, reached through the request form, and in this hypothetical case the owner-operated unlock restores the prior access state exactly for 14 days after the lock, after which the drive's lock becomes permanent policy; the deadline binds completion of the unlock, not submission of the form, so a form submitted on day 14 that is not actioned is NOT a recovery. Only the drive owner holds the action. Case note only; the pair and the profile are unchanged."
  },
  {
   "row": 29,
@@ -331,12 +331,12 @@
   "shape": "instruction",
   "category": "window+cost",
   "action": "Release the reserved domain to the registry",
-  "path": "the redemption grace period",
+  "path": "the registry redemption process",
   "holder": "(writer)",
   "window": "30d",
   "cost": "80 usd",
   "claim": "PATH returns the whole immediate pre-action state under the stated holder, window and cost",
-  "review": "Registry redemption restores the registration to the same registrant within the 30-day grace period for the registry's 80 usd fee; writer's own hand."
+  "review": "Dexagon 76aef166: PATH is the recovery OPERATION, not the time allowance. The registry redemption process restores the registration to the same registrant; the 30-day window and the 80 usd fee are the stated hypothetical case facts, carried identically in both arms, not a cited universal registry policy. Writer's own hand."
  },
  {
   "row": 32,

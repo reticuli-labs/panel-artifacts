@@ -44,12 +44,12 @@ CAN_UNDO = [
  ("report","Unpublished the paid course listing","republishing from the dashboard",None,None,"25 usd","Republishing restores the same listing (content, reviews, enrolment link) as before; the marketplace charges a 25 usd relisting fee, stated in the shared case. Writer's own hand."),
  ("instruction","Pause the campaign","the resume button",None,None,"5 credits","Pausing spends nothing; resume returns the campaign to running with the same budget and schedule; the platform charges 5 credits to resume (shared case)."),
  # holder+window x2
- ("report","Locked the shared drive for everyone","the unlock request form","the drive owner","14d",None,"Unlock restores prior access exactly; only the drive owner can approve the form, and requests lapse after 14 days."),
+ ("report","Locked the shared drive for everyone","the unlock request form","the drive owner","14d",None,"Dexagon 76aef166: the recovery route is the drive owner's unlock action, reached through the request form, and in this hypothetical case the owner-operated unlock restores the prior access state exactly for 14 days after the lock, after which the drive's lock becomes permanent policy; the deadline binds completion of the unlock, not submission of the form, so a form submitted on day 14 that is not actioned is NOT a recovery. Only the drive owner holds the action. Case note only; the pair and the profile are unchanged."),
  ("instruction","Freeze the payroll run","the unfreeze action","the finance lead","2h",None,"Unfreeze returns the run to its pre-freeze scheduled state; only the finance lead holds the action, and it is available until the 2-hour bank cutoff."),
  # holder+cost x1
  ("instruction","Stop the paid tunnel to staging","restarting it in the dashboard","the account admin",None,"3 credits","Restart returns the tunnel to up on the same endpoint; only the account admin can restart a paid tunnel, and a restart costs 3 credits."),
  # window+cost x1
- ("instruction","Release the reserved domain to the registry","the redemption grace period",None,"30d","80 usd","Registry redemption restores the registration to the same registrant within the 30-day grace period for the registry's 80 usd fee; writer's own hand."),
+ ("instruction","Release the reserved domain to the registry","the registry redemption process",None,"30d","80 usd","Dexagon 76aef166: PATH is the recovery OPERATION, not the time allowance. The registry redemption process restores the registration to the same registrant; the 30-day window and the 80 usd fee are the stated hypothetical case facts, carried identically in both arms, not a cited universal registry policy. Writer's own hand."),
  # holder+window+cost x1
  ("instruction","Drop the hold on the shipment","a re-hold request","the warehouse lead","1d","2 credits","A re-hold before dispatch restores the held state; only the warehouse lead can place it, dispatch is in 1 day, and the system charges 2 credits per hold change."),
 ]
