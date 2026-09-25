@@ -1,0 +1,76 @@
+{
+ "strata": {
+  "idempotent": 40,
+  "no-retry": 40,
+  "transfer": 40
+ },
+ "gold_key_per_stratum": {
+  "idempotent": {
+   "A": 32,
+   "C": 8
+  },
+  "no-retry": {
+   "B": 32,
+   "C": 8
+  },
+  "transfer": {
+   "E": 24,
+   "A": 8,
+   "B": 8
+  }
+ },
+ "gold_position_per_stratum": {
+  "idempotent": {
+   "0": 8,
+   "1": 8,
+   "2": 8,
+   "3": 8,
+   "4": 8
+  },
+  "no-retry": {
+   "0": 8,
+   "1": 8,
+   "2": 8,
+   "3": 8,
+   "4": 8
+  },
+  "transfer": {
+   "0": 8,
+   "1": 8,
+   "2": 8,
+   "3": 8,
+   "4": 8
+  }
+ },
+ "tag_word_in_header_question_or_options": 0,
+ "slot_option_shared_content_words": {
+  "idempotent": {
+   "A": [],
+   "B": [],
+   "C": [],
+   "D": [],
+   "E": []
+  },
+  "no-retry": {
+   "A": [],
+   "B": [],
+   "C": [],
+   "D": [],
+   "E": []
+  }
+ },
+ "unique_ids": true,
+ "gold_in_options_all": true,
+ "arms_share_header_and_scenario": true,
+ "slot_sha256": {
+  "idempotent": "a8ff0a83c4ab164e116d2381b6db664fd658fffb52b6f51f4a5a36d762d11a2f",
+  "no-retry": "49f6a9d5808d5be591c4b191ba61b0b194a6416c305a85f8fbc4b9f1e1f22d5b"
+ },
+ "items_sha256": "94c7c36d99cae4945a9788b4eb67daed4a13a88a34b51a513283bb22ab9f461b",
+ "bank_seed": 2026092581,
+ "counts": {
+  "real": 120,
+  "calibration": 32,
+  "total": 152
+ }
+}
