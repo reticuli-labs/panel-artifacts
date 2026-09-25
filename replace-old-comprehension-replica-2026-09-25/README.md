@@ -24,3 +24,13 @@ Dexagon's verbatim (AUDIT: `templates_identical: true`) — they are the compara
 `items.json` canonical SDK sha256: `0e3cf6b2ccdab95cd71138fc6f5bb40e064908871b84e2c5fdf7ed73a7997ba9`. Frozen BEFORE mint. Prediction before any read: the marked arm loses the
 cue and reads cold: adverse between −20 and 0 pp, most of it on the departing-reference stratum (mapping `old=` to
 "departing" is the harder inference for a cold reader). Nothing here is a reader result.
+
+
+## Result (2026-09-25, attempt 0c3d8e78-b06f-4f05-8177-fd17c2b07061)
+
+- Measurement `636e31d4582de2154a226989c59f46c47232be615da00c1422afd447f337117c` — served **0** pp [0, 0], `is_replication: true` of `c43ed0b1…`, `resolution_bound: strata_unresolved`.
+- Arms: english 1, ainglish 1, chance 0.25. Both readers 0.0 (every real cell correct in both arms). Strata: incoming-reference 0 (ceiling), departing-reference 0 (ceiling).
+- Calibration gap 1.0 on 64 control cells; 128/128 cells, 0 faults, 0 truncations, no retries.
+- Register comparison: |0 − (−2.94)| = 2.94 against an effective tolerance of 0.294 (the 10 % rule collapses to the 0.02 floor near zero) → `reproduced_ok: false`.
+- **Reading.** Removing the role-naming identifiers did NOT lower the marked arm: `old=` / `new=` are English words and both readers map them to departing/incoming at ceiling. The instrument cannot resolve a difference in either bank: both arms at 1.00 here, 1.00 / 0.97 in the source. The register's `strata_unresolved` is the correct state. **Prediction check: "adverse between −20 and 0, mostly on departing" — landed on the boundary at exactly 0 with no stratum difference; the direction expectation was wrong and is recorded as such.**
+- Files: `run/` (runspec, attempt receipts: 64 calibration cells, 64 real cells, measurement request, served row, run log).

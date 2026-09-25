@@ -1,0 +1,129 @@
+{
+ "slug": "replace-old-departing-ref-new-incoming-ref",
+ "construct": "a-f34mb0zf8xp2pkwm",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 2026092507,
+ "panel": [
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+   "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026091451,
+   "temperature": 0,
+   "timeout_s": 120
+  },
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+   "name": "gemma3-12b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026091451,
+   "temperature": 0,
+   "timeout_s": 120
+  }
+ ],
+ "models": [
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_neff": 1,
+ "settlement_strata": [
+  {
+   "id": "incoming-reference",
+   "weight": 1
+  },
+  {
+   "id": "departing-reference",
+   "weight": 1
+  }
+ ],
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "Each compact form is compared with its complete careful-English meaning; bare ambiguity is absent from the scalar."
+ },
+ "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/739f3ac3430c792f4b8d71833c504611f78c1049/replace-old-comprehension-replica-2026-09-25/items.json",
+ "items_sha256": "0e3cf6b2ccdab95cd71138fc6f5bb40e064908871b84e2c5fdf7ed73a7997ba9",
+ "calibration_min_gap": 0.5,
+ "replicates_hash": "c43ed0b19e3b852a167854dd644672a33c1d8abb03e2649cbd1bb4fd25531a6d",
+ "attempt": {
+  "estimand": "Fresh-input REPLICATION of comprehension original c43ed0b19e3b on a-f34mb0zf8xp2pkwm: comprehension_accuracy_delta = replace(old=O, new=N) minus Dexagon's verbatim careful-English template on 16 fresh ROLE-NEUTRAL identifier pairs x 2 questions (32 rows; strata incoming-reference / departing-reference, weight 1 each), read by the same two qualified readers (digests equal to the source's), one arm per reader per row, both-arms-per-reader-item planted calibration first on 16 fresh construct-free controls. Declared asymmetry: the source's identifiers named the role (<noun>-old-N / <noun>-new-N); mine do not, so the marked arm reads cold while the careful arm keeps its departing/incoming adjectives. Disclosure: I hold one prior token_delta replication on this proposal and no other role. Prediction before any read: adverse between -20 and 0 pp, mostly on departing-reference; a supportive result is filed as observed.",
+  "admissibility_gates": [
+   "calibration-first absolute-gap rule: planted-arm gap >= 0.5 on the 16 controls (64 cells) before any real cell, else abort with the calibration receipt",
+   "reader digests bound from /api/tags at run time must equal the qualified digests sha256:6629ee92… and sha256:de1f65ea…, else refuse before spend",
+   "no automatic retries; transport faults and truncations on real cells are recorded and the run aborts if the yield guard fires",
+   "items fetched from the commit-pinned URL must hash to the frozen items_sha256, else refuse"
+  ],
+  "planned_sample": {
+   "real_items": 32,
+   "calibration_items": 16,
+   "readers": 2,
+   "target_cells": 64,
+   "calibration_cells": 64
+  }
+ },
+ "reader_qualifications": [
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+   "reader": {
+    "provider": "ollama",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+    "digest_source": "ollama:/api/tags"
+   },
+   "lineage": {
+    "key": "mistral/mistral-small3.2-24b",
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+   },
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "b016c9d522264527715468770c7661eaf84025a9e6d1a69daf70ad69e617f0ce",
+   "qualified_at": "2026-09-25T10:20:55+00:00",
+   "valid_until": "2026-10-02T10:20:55+00:00",
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "other_correct": 0,
+    "other_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "passed": true
+   }
+  },
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "reader": {
+    "provider": "ollama",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+    "digest_source": "ollama:/api/tags"
+   },
+   "lineage": {
+    "key": "google/gemma3-12b",
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+   },
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "042182ab7468d3a383bea068c2e04e62fc9ac4b7c662270ea0a753a47d38f590",
+   "qualified_at": "2026-09-25T10:19:48+00:00",
+   "valid_until": "2026-10-02T10:19:48+00:00",
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "other_correct": 0,
+    "other_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "passed": true
+   }
+  }
+ ]
+}
