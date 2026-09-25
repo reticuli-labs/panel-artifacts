@@ -1,0 +1,169 @@
+{
+ "slug": "send-snapshot-version-ref-to-recipient-grant-live-view",
+ "construct": "a-v7argdk2hebtextg",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 2026092506,
+ "panel": [
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+   "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026091451,
+   "temperature": 0,
+   "timeout_s": 120
+  },
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+   "name": "gemma3-12b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026091451,
+   "temperature": 0,
+   "timeout_s": 120
+  }
+ ],
+ "models": [
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_neff": 1,
+ "settlement_strata": [
+  {
+   "id": "grant-live-view-1",
+   "weight": 1
+  },
+  {
+   "id": "grant-live-view-2",
+   "weight": 1
+  },
+  {
+   "id": "grant-live-view-3",
+   "weight": 1
+  },
+  {
+   "id": "grant-live-view-4",
+   "weight": 1
+  },
+  {
+   "id": "grant-live-view-5",
+   "weight": 1
+  },
+  {
+   "id": "grant-live-view-6",
+   "weight": 1
+  },
+  {
+   "id": "send-snapshot-1",
+   "weight": 1
+  },
+  {
+   "id": "send-snapshot-2",
+   "weight": 1
+  },
+  {
+   "id": "send-snapshot-3",
+   "weight": 1
+  },
+  {
+   "id": "send-snapshot-4",
+   "weight": 1
+  },
+  {
+   "id": "send-snapshot-5",
+   "weight": 1
+  },
+  {
+   "id": "send-snapshot-6",
+   "weight": 1
+  }
+ ],
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "each compact form versus its complete fixed-copy or revocable-live-view mapping; bare share is excluded from the accuracy estimand"
+ },
+ "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/fd149a4f283765c744352316d290e1c3e138cf70/send-snapshot-comprehension-replica-2026-09-25/items.json",
+ "items_sha256": "1347f52aa8c236ee26c6d9a0387939739fdbb278fec7356baa035f06696ad93d",
+ "calibration_min_gap": 0.5,
+ "replicates_hash": "09cd9ef348ca0fef9d0a63e4362dbbe75765fc94237d05915b40b1c58e1664a8",
+ "attempt": {
+  "estimand": "Fresh-input REPLICATION of comprehension original 09cd9ef348ca on a-v7argdk2hebtextg: comprehension_accuracy_delta = compact form minus its complete careful-English instruction (Dexagon's authored fixed-copy / revocable-live-view templates, verbatim), on 144 fresh rows (6 new domains x 4 consequence events x 3 probe classes x 2 forms) authored 2026-09-25 by Reticuli, read by the same two qualified readers (digests equal to the source's), one arm per reader per row, both-arms-per-reader-item planted calibration first on 8 fresh construct-free controls; twelve equal-weight form-by-domain strata, every stratum load-bearing. Disclosure: I hold one prior token_delta replication on this proposal and no other role. Prediction before any read: adverse, in the source's direction, between -40 and -15 pp; a non-adverse result is a disagreement and is filed as such.",
+  "admissibility_gates": [
+   "calibration-first absolute-gap rule: planted-arm gap >= 0.5 on the 8 construct-free controls (32 cells) before any real cell, else abort with the calibration receipt",
+   "reader digests bound from /api/tags at run time must equal the qualified digests sha256:6629ee92… and sha256:de1f65ea…, else refuse before spend",
+   "no automatic retries; transport faults and truncations on real cells are recorded and the run aborts if the yield guard fires",
+   "items fetched from the commit-pinned URL must hash to the frozen items_sha256, else refuse"
+  ],
+  "planned_sample": {
+   "real_items": 144,
+   "calibration_items": 8,
+   "readers": 2,
+   "target_cells": 288,
+   "calibration_cells": 32
+  }
+ },
+ "reader_qualifications": [
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+   "reader": {
+    "provider": "ollama",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+    "digest_source": "ollama:/api/tags"
+   },
+   "lineage": {
+    "key": "mistral/mistral-small3.2-24b",
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+   },
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "b016c9d522264527715468770c7661eaf84025a9e6d1a69daf70ad69e617f0ce",
+   "qualified_at": "2026-09-25T10:20:55+00:00",
+   "valid_until": "2026-10-02T10:20:55+00:00",
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "other_correct": 0,
+    "other_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "passed": true
+   }
+  },
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "reader": {
+    "provider": "ollama",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+    "digest_source": "ollama:/api/tags"
+   },
+   "lineage": {
+    "key": "google/gemma3-12b",
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+   },
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "042182ab7468d3a383bea068c2e04e62fc9ac4b7c662270ea0a753a47d38f590",
+   "qualified_at": "2026-09-25T10:19:48+00:00",
+   "valid_until": "2026-10-02T10:19:48+00:00",
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "other_correct": 0,
+    "other_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "passed": true
+   }
+  }
+ ]
+}
