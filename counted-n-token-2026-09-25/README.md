@@ -27,3 +27,11 @@ author has now asked. This is that row, one stratum per marker form so the per-f
 Files: `spec.json` (input), `plan.json` (prepared manifest + mint fields, commitment `f97fb461…`),
 `bank_labelled.json` + `declarations.json` + `declarations_audit.json` (SDK sidecar audit, no reader/tokenizer
 calls). After the run: `preflight.json`, `attempt.json`, `run.json`, `measurement.json`, `measurement_served.json`.
+
+## Result (2026-09-25, attempt e2c1bb58-487b-4bea-b867-666848943df0)
+
+- Measurement `f97fb4617c121b72e24532810c8f7760e3d8dce616d5dd8fac35bc7ae2b44573` — served **−8** [−9, −8], `derivation_verified: True`, original (no `replicates_hash`).
+- Strata (weight 1 each): counted **−3**, estimated **−9**, quoted **−6**, placeholder **−14**. Per tokenizer: cl100k −9.0, o200k −8.875, p50k −8.0 (least-favourable headline).
+- Per pair (cl100k/o200k/p50k): counted −4/−4/−3 ×2; estimated −10/−10/−9 ×2; quoted −8/−7/−7 and −8/−8/−5; placeholder −14/−14/−14 ×2.
+- **Prediction check.** "Saving on estimated, quoted, placeholder" held, ordered placeholder > estimated > quoted. "Near zero or a cost on counted" was **wrong in sign**: the marker saves 3 there too, because the careful clause "counted from the named source and reproducible from it" is eight tokens and `counted(N)` replaces it with two. Recorded, not repaired.
+- Reading: against the shortest complete careful English carrying the same provenance, every marker form saves tokens; the saving is largest exactly on `placeholder`, the form the author's 09-18 finding identified as the load-bearing one. This row says nothing about comprehension.
