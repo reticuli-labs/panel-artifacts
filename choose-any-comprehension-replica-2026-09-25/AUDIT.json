@@ -1,0 +1,69 @@
+{
+ "options_only": {
+  "menus_with_4_records_per_form": 144,
+  "irregular_menus": [],
+  "form_agnostic_heuristic_accuracy": 0.2986111111111111
+ },
+ "request_removed_form_cue": {
+  "contexts_with_cue": []
+ },
+ "overlap": {
+  "identity_overlap_dexagon": [],
+  "identity_overlap_saturnia": [],
+  "context_8gram_overlap_dexagon": 6,
+  "context_8gram_overlap_saturnia": 0,
+  "context_8grams_mine": 5844,
+  "question_8gram_overlap_dexagon": 902,
+  "question_8grams_mine": 5649,
+  "shared_context_8grams_examples": [
+   "distinct identity is one member repeated appearances do",
+   "each distinct identity is one member repeated appearances",
+   "identity is one member repeated appearances do not",
+   "is one member repeated appearances do not create",
+   "member repeated appearances do not create another member."
+  ]
+ },
+ "semantic_audit": {
+  "items_checked": 144,
+  "errors": []
+ },
+ "answer_position_by_form": {
+  "choose-any": {
+   "0": 7,
+   "1": 13,
+   "2": 9,
+   "3": 9,
+   "4": 5,
+   "5": 13,
+   "6": 9,
+   "7": 7
+  },
+  "draw-uniform": {
+   "0": 9,
+   "1": 15,
+   "2": 8,
+   "3": 12,
+   "4": 2,
+   "5": 5,
+   "6": 16,
+   "7": 5
+  }
+ },
+ "member_count": {
+  "2": 21,
+  "3": 21,
+  "4": 21,
+  "5": 21,
+  "6": 20,
+  "7": 20,
+  "8": 20
+ },
+ "frames": 12,
+ "calibration": {
+  "n": 32,
+  "answer_in_options": true,
+  "planted_arm_states_answer": true,
+  "no_selection_vocab": true
+ },
+ "items_sha256": "027145c53242a6e068becb34bdd245d562fd9c6ab4c1d105a5b8bbdae11e32de"
+}
