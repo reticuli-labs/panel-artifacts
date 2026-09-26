@@ -1,0 +1,3990 @@
+[
+ {
+  "id": "pool-utc-C-0",
+  "english": "The auction close AC-C000 is run by the Sydney team. Its date is 2026-12-19. It is scheduled at 19:45 UTC.",
+  "ainglish": "The auction close AC-C000 is run by the Sydney team. Its date is 2026-12-19. It is scheduled at 19:45Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-12-19 08:45 UTC. B = not determined. C = 2026-12-19 19:45 UTC. D = 2026-12-20 06:45 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-0",
+   "date": "2026-12-19",
+   "zone": "Australia/Sydney",
+   "clock": "19:45",
+   "utc_instant": "2026-12-19 19:45 UTC",
+   "semantic_gold": "2026-12-19 19:45 UTC",
+   "answer_options": {
+    "C": "2026-12-19 19:45 UTC",
+    "A": "2026-12-19 08:45 UTC",
+    "B": "not determined",
+    "D": "2026-12-20 06:45 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-1",
+  "english": "The exam start EX-C001 is run by the Sydney team. Its date is 2026-01-07. It is scheduled at 10:20 UTC.",
+  "ainglish": "The exam start EX-C001 is run by the Sydney team. Its date is 2026-01-07. It is scheduled at 10:20Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-01-07 10:20 UTC. B = 2026-01-06 23:20 UTC. C = not determined. D = 2026-01-07 21:20 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-1",
+   "date": "2026-01-07",
+   "zone": "Australia/Sydney",
+   "clock": "10:20",
+   "utc_instant": "2026-01-07 10:20 UTC",
+   "semantic_gold": "2026-01-07 10:20 UTC",
+   "answer_options": {
+    "A": "2026-01-07 10:20 UTC",
+    "B": "2026-01-06 23:20 UTC",
+    "C": "not determined",
+    "D": "2026-01-07 21:20 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-2",
+  "english": "The broadcast BC-C002 is run by the London team. Its date is 2026-06-15. It is scheduled at 11:05 UTC.",
+  "ainglish": "The broadcast BC-C002 is run by the London team. Its date is 2026-06-15. It is scheduled at 11:05Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-06-15 12:05 UTC. B = not determined. C = 2026-06-15 11:05 UTC. D = 2026-06-15 10:05 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-2",
+   "date": "2026-06-15",
+   "zone": "Europe/London",
+   "clock": "11:05",
+   "utc_instant": "2026-06-15 11:05 UTC",
+   "semantic_gold": "2026-06-15 11:05 UTC",
+   "answer_options": {
+    "C": "2026-06-15 11:05 UTC",
+    "A": "2026-06-15 12:05 UTC",
+    "B": "not determined",
+    "D": "2026-06-15 10:05 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-3",
+  "english": "The invoice cut-off IC-C003 is run by the Kolkata team. Its date is 2026-04-08. It is scheduled at 05:30 UTC.",
+  "ainglish": "The invoice cut-off IC-C003 is run by the Kolkata team. Its date is 2026-04-08. It is scheduled at 05:30Z.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-04-08 05:30 UTC. C = 2026-04-08 11:00 UTC. D = 2026-04-08 00:00 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-3",
+   "date": "2026-04-08",
+   "zone": "Asia/Kolkata",
+   "clock": "05:30",
+   "utc_instant": "2026-04-08 05:30 UTC",
+   "semantic_gold": "2026-04-08 05:30 UTC",
+   "answer_options": {
+    "B": "2026-04-08 05:30 UTC",
+    "A": "not determined",
+    "C": "2026-04-08 11:00 UTC",
+    "D": "2026-04-08 00:00 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-4",
+  "english": "The release freeze RF-C004 is run by the Kolkata team. Its date is 2026-05-27. It is scheduled at 21:50 UTC.",
+  "ainglish": "The release freeze RF-C004 is run by the Kolkata team. Its date is 2026-05-27. It is scheduled at 21:50Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-05-27 21:50 UTC. B = 2026-05-27 16:20 UTC. C = not determined. D = 2026-05-28 03:20 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-4",
+   "date": "2026-05-27",
+   "zone": "Asia/Kolkata",
+   "clock": "21:50",
+   "utc_instant": "2026-05-27 21:50 UTC",
+   "semantic_gold": "2026-05-27 21:50 UTC",
+   "answer_options": {
+    "A": "2026-05-27 21:50 UTC",
+    "B": "2026-05-27 16:20 UTC",
+    "C": "not determined",
+    "D": "2026-05-28 03:20 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-5",
+  "english": "The key rotation KR-C005 is run by the London team. Its date is 2026-04-28. It is scheduled at 10:20 UTC.",
+  "ainglish": "The key rotation KR-C005 is run by the London team. Its date is 2026-04-28. It is scheduled at 10:20Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-04-28 11:20 UTC. B = not determined. C = 2026-04-28 09:20 UTC. D = 2026-04-28 10:20 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-5",
+   "date": "2026-04-28",
+   "zone": "Europe/London",
+   "clock": "10:20",
+   "utc_instant": "2026-04-28 10:20 UTC",
+   "semantic_gold": "2026-04-28 10:20 UTC",
+   "answer_options": {
+    "D": "2026-04-28 10:20 UTC",
+    "A": "2026-04-28 11:20 UTC",
+    "B": "not determined",
+    "C": "2026-04-28 09:20 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-6",
+  "english": "The cache flush CF-C006 is run by the Kolkata team. Its date is 2026-09-14. It is scheduled at 16:30 UTC.",
+  "ainglish": "The cache flush CF-C006 is run by the Kolkata team. Its date is 2026-09-14. It is scheduled at 16:30Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-09-14 11:00 UTC. B = 2026-09-14 16:30 UTC. C = 2026-09-14 22:00 UTC. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-6",
+   "date": "2026-09-14",
+   "zone": "Asia/Kolkata",
+   "clock": "16:30",
+   "utc_instant": "2026-09-14 16:30 UTC",
+   "semantic_gold": "2026-09-14 16:30 UTC",
+   "answer_options": {
+    "B": "2026-09-14 16:30 UTC",
+    "A": "2026-09-14 11:00 UTC",
+    "C": "2026-09-14 22:00 UTC",
+    "D": "not determined"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-7",
+  "english": "The status call SC-C007 is run by the London team. Its date is 2026-10-21. It is scheduled at 09:30 UTC.",
+  "ainglish": "The status call SC-C007 is run by the London team. Its date is 2026-10-21. It is scheduled at 09:30Z.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-10-21 09:30 UTC. C = 2026-10-21 10:30 UTC. D = 2026-10-21 08:30 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-7",
+   "date": "2026-10-21",
+   "zone": "Europe/London",
+   "clock": "09:30",
+   "utc_instant": "2026-10-21 09:30 UTC",
+   "semantic_gold": "2026-10-21 09:30 UTC",
+   "answer_options": {
+    "B": "2026-10-21 09:30 UTC",
+    "A": "not determined",
+    "C": "2026-10-21 10:30 UTC",
+    "D": "2026-10-21 08:30 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-8",
+  "english": "The rate reset RR-C008 is run by the Sydney team. Its date is 2026-04-15. It is scheduled at 10:20 UTC.",
+  "ainglish": "The rate reset RR-C008 is run by the Sydney team. Its date is 2026-04-15. It is scheduled at 10:20Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-04-15 20:20 UTC. B = not determined. C = 2026-04-15 00:20 UTC. D = 2026-04-15 10:20 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-8",
+   "date": "2026-04-15",
+   "zone": "Australia/Sydney",
+   "clock": "10:20",
+   "utc_instant": "2026-04-15 10:20 UTC",
+   "semantic_gold": "2026-04-15 10:20 UTC",
+   "answer_options": {
+    "D": "2026-04-15 10:20 UTC",
+    "A": "2026-04-15 20:20 UTC",
+    "B": "not determined",
+    "C": "2026-04-15 00:20 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-9",
+  "english": "The ledger close LC-C009 is run by the São Paulo team. Its date is 2026-08-17. It is scheduled at 20:15 UTC.",
+  "ainglish": "The ledger close LC-C009 is run by the São Paulo team. Its date is 2026-08-17. It is scheduled at 20:15Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-08-17 23:15 UTC. B = not determined. C = 2026-08-17 17:15 UTC. D = 2026-08-17 20:15 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-9",
+   "date": "2026-08-17",
+   "zone": "America/Sao_Paulo",
+   "clock": "20:15",
+   "utc_instant": "2026-08-17 20:15 UTC",
+   "semantic_gold": "2026-08-17 20:15 UTC",
+   "answer_options": {
+    "D": "2026-08-17 20:15 UTC",
+    "A": "2026-08-17 23:15 UTC",
+    "B": "not determined",
+    "C": "2026-08-17 17:15 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-10",
+  "english": "The deploy window DW-C010 is run by the Los Angeles team. Its date is 2026-10-03. It is scheduled at 07:15 UTC.",
+  "ainglish": "The deploy window DW-C010 is run by the Los Angeles team. Its date is 2026-10-03. It is scheduled at 07:15Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-10-03 07:15 UTC. B = 2026-10-03 00:15 UTC. C = not determined. D = 2026-10-03 14:15 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-10",
+   "date": "2026-10-03",
+   "zone": "America/Los_Angeles",
+   "clock": "07:15",
+   "utc_instant": "2026-10-03 07:15 UTC",
+   "semantic_gold": "2026-10-03 07:15 UTC",
+   "answer_options": {
+    "A": "2026-10-03 07:15 UTC",
+    "B": "2026-10-03 00:15 UTC",
+    "C": "not determined",
+    "D": "2026-10-03 14:15 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-11",
+  "english": "The market open MO-C011 is run by the Tokyo team. Its date is 2026-10-18. It is scheduled at 19:45 UTC.",
+  "ainglish": "The market open MO-C011 is run by the Tokyo team. Its date is 2026-10-18. It is scheduled at 19:45Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-10-18 19:45 UTC. B = not determined. C = 2026-10-19 04:45 UTC. D = 2026-10-18 10:45 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-11",
+   "date": "2026-10-18",
+   "zone": "Asia/Tokyo",
+   "clock": "19:45",
+   "utc_instant": "2026-10-18 19:45 UTC",
+   "semantic_gold": "2026-10-18 19:45 UTC",
+   "answer_options": {
+    "A": "2026-10-18 19:45 UTC",
+    "B": "not determined",
+    "C": "2026-10-19 04:45 UTC",
+    "D": "2026-10-18 10:45 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-12",
+  "english": "The team standup ST-C012 is run by the London team. Its date is 2026-01-25. It is scheduled at 00:40 UTC.",
+  "ainglish": "The team standup ST-C012 is run by the London team. Its date is 2026-01-25. It is scheduled at 00:40Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-01-25 01:40 UTC. B = not determined. C = 2026-01-25 00:40 UTC. D = 2026-01-24 23:40 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-12",
+   "date": "2026-01-25",
+   "zone": "Europe/London",
+   "clock": "00:40",
+   "utc_instant": "2026-01-25 00:40 UTC",
+   "semantic_gold": "2026-01-25 00:40 UTC",
+   "answer_options": {
+    "C": "2026-01-25 00:40 UTC",
+    "A": "2026-01-25 01:40 UTC",
+    "B": "not determined",
+    "D": "2026-01-24 23:40 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-13",
+  "english": "The poll close PC-C013 is run by the New York team. Its date is 2026-08-18. It is scheduled at 19:45 UTC.",
+  "ainglish": "The poll close PC-C013 is run by the New York team. Its date is 2026-08-18. It is scheduled at 19:45Z.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-08-18 15:45 UTC. C = 2026-08-18 19:45 UTC. D = 2026-08-18 23:45 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-13",
+   "date": "2026-08-18",
+   "zone": "America/New_York",
+   "clock": "19:45",
+   "utc_instant": "2026-08-18 19:45 UTC",
+   "semantic_gold": "2026-08-18 19:45 UTC",
+   "answer_options": {
+    "C": "2026-08-18 19:45 UTC",
+    "A": "not determined",
+    "B": "2026-08-18 15:45 UTC",
+    "D": "2026-08-18 23:45 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-14",
+  "english": "The nightly backup NB-C014 is run by the London team. Its date is 2026-08-19. It is scheduled at 04:50 UTC.",
+  "ainglish": "The nightly backup NB-C014 is run by the London team. Its date is 2026-08-19. It is scheduled at 04:50Z.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-08-19 03:50 UTC. C = 2026-08-19 05:50 UTC. D = 2026-08-19 04:50 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-14",
+   "date": "2026-08-19",
+   "zone": "Europe/London",
+   "clock": "04:50",
+   "utc_instant": "2026-08-19 04:50 UTC",
+   "semantic_gold": "2026-08-19 04:50 UTC",
+   "answer_options": {
+    "D": "2026-08-19 04:50 UTC",
+    "A": "not determined",
+    "B": "2026-08-19 03:50 UTC",
+    "C": "2026-08-19 05:50 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-utc-C-15",
+  "english": "The maintenance window MW-C015 is run by the New York team. Its date is 2026-09-06. It is scheduled at 03:15 UTC.",
+  "ainglish": "The maintenance window MW-C015 is run by the New York team. Its date is 2026-09-06. It is scheduled at 03:15Z.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-09-05 23:15 UTC. B = 2026-09-06 03:15 UTC. C = not determined. D = 2026-09-06 07:15 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "utc",
+  "strata": {
+   "condition": "utc",
+   "seat": "C",
+   "frame_cluster": "pool-utc-C-15",
+   "date": "2026-09-06",
+   "zone": "America/New_York",
+   "clock": "03:15",
+   "utc_instant": "2026-09-06 03:15 UTC",
+   "semantic_gold": "2026-09-06 03:15 UTC",
+   "answer_options": {
+    "B": "2026-09-06 03:15 UTC",
+    "A": "2026-09-05 23:15 UTC",
+    "C": "not determined",
+    "D": "2026-09-06 07:15 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-0",
+  "english": "The auction close AC-C100 is run by the São Paulo team. Its date is 2026-10-26. It is scheduled at 10:20 civil time in America/Sao_Paulo, using the offset applicable on that date.",
+  "ainglish": "The auction close AC-C100 is run by the São Paulo team. Its date is 2026-10-26. It is scheduled at 10:20@America/Sao_Paulo.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-10-26 07:20 UTC. B = not determined. C = 2026-10-26 10:20 UTC. D = 2026-10-26 13:20 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-0",
+   "date": "2026-10-26",
+   "zone": "America/Sao_Paulo",
+   "clock": "10:20",
+   "utc_instant": "2026-10-26 13:20 UTC",
+   "semantic_gold": "2026-10-26 13:20 UTC",
+   "answer_options": {
+    "D": "2026-10-26 13:20 UTC",
+    "A": "2026-10-26 07:20 UTC",
+    "B": "not determined",
+    "C": "2026-10-26 10:20 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-1",
+  "english": "The exam start EX-C101 is run by the Los Angeles team. Its date is 2026-07-28. It is scheduled at 21:50 civil time in America/Los_Angeles, using the offset applicable on that date.",
+  "ainglish": "The exam start EX-C101 is run by the Los Angeles team. Its date is 2026-07-28. It is scheduled at 21:50@America/Los_Angeles.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-07-28 21:50 UTC. B = 2026-07-29 04:50 UTC. C = 2026-07-28 14:50 UTC. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-1",
+   "date": "2026-07-28",
+   "zone": "America/Los_Angeles",
+   "clock": "21:50",
+   "utc_instant": "2026-07-29 04:50 UTC",
+   "semantic_gold": "2026-07-29 04:50 UTC",
+   "answer_options": {
+    "B": "2026-07-29 04:50 UTC",
+    "A": "2026-07-28 21:50 UTC",
+    "C": "2026-07-28 14:50 UTC",
+    "D": "not determined"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-2",
+  "english": "The broadcast BC-C102 is run by the Kolkata team. Its date is 2026-07-20. It is scheduled at 04:50 civil time in Asia/Kolkata, using the offset applicable on that date.",
+  "ainglish": "The broadcast BC-C102 is run by the Kolkata team. Its date is 2026-07-20. It is scheduled at 04:50@Asia/Kolkata.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-07-19 23:20 UTC. C = 2026-07-20 04:50 UTC. D = 2026-07-20 10:20 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-2",
+   "date": "2026-07-20",
+   "zone": "Asia/Kolkata",
+   "clock": "04:50",
+   "utc_instant": "2026-07-19 23:20 UTC",
+   "semantic_gold": "2026-07-19 23:20 UTC",
+   "answer_options": {
+    "B": "2026-07-19 23:20 UTC",
+    "A": "not determined",
+    "C": "2026-07-20 04:50 UTC",
+    "D": "2026-07-20 10:20 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-3",
+  "english": "The invoice cut-off IC-C103 is run by the Sydney team. Its date is 2026-11-23. It is scheduled at 23:05 civil time in Australia/Sydney, using the offset applicable on that date.",
+  "ainglish": "The invoice cut-off IC-C103 is run by the Sydney team. Its date is 2026-11-23. It is scheduled at 23:05@Australia/Sydney.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-11-23 23:05 UTC. B = not determined. C = 2026-11-24 10:05 UTC. D = 2026-11-23 12:05 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-3",
+   "date": "2026-11-23",
+   "zone": "Australia/Sydney",
+   "clock": "23:05",
+   "utc_instant": "2026-11-23 12:05 UTC",
+   "semantic_gold": "2026-11-23 12:05 UTC",
+   "answer_options": {
+    "D": "2026-11-23 12:05 UTC",
+    "A": "2026-11-23 23:05 UTC",
+    "B": "not determined",
+    "C": "2026-11-24 10:05 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-4",
+  "english": "The release freeze RF-C104 is run by the London team. Its date is 2026-08-08. It is scheduled at 22:10 civil time in Europe/London, using the offset applicable on that date.",
+  "ainglish": "The release freeze RF-C104 is run by the London team. Its date is 2026-08-08. It is scheduled at 22:10@Europe/London.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-08-08 21:10 UTC. C = 2026-08-08 23:10 UTC. D = 2026-08-08 22:10 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-4",
+   "date": "2026-08-08",
+   "zone": "Europe/London",
+   "clock": "22:10",
+   "utc_instant": "2026-08-08 21:10 UTC",
+   "semantic_gold": "2026-08-08 21:10 UTC",
+   "answer_options": {
+    "B": "2026-08-08 21:10 UTC",
+    "A": "not determined",
+    "C": "2026-08-08 23:10 UTC",
+    "D": "2026-08-08 22:10 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-5",
+  "english": "The key rotation KR-C105 is run by the Kolkata team. Its date is 2026-09-09. It is scheduled at 20:15 civil time in Asia/Kolkata, using the offset applicable on that date.",
+  "ainglish": "The key rotation KR-C105 is run by the Kolkata team. Its date is 2026-09-09. It is scheduled at 20:15@Asia/Kolkata.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-09-09 14:45 UTC. B = 2026-09-09 20:15 UTC. C = not determined. D = 2026-09-10 01:45 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-5",
+   "date": "2026-09-09",
+   "zone": "Asia/Kolkata",
+   "clock": "20:15",
+   "utc_instant": "2026-09-09 14:45 UTC",
+   "semantic_gold": "2026-09-09 14:45 UTC",
+   "answer_options": {
+    "A": "2026-09-09 14:45 UTC",
+    "B": "2026-09-09 20:15 UTC",
+    "C": "not determined",
+    "D": "2026-09-10 01:45 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-6",
+  "english": "The cache flush CF-C106 is run by the Berlin team. Its date is 2026-05-17. It is scheduled at 06:45 civil time in Europe/Berlin, using the offset applicable on that date.",
+  "ainglish": "The cache flush CF-C106 is run by the Berlin team. Its date is 2026-05-17. It is scheduled at 06:45@Europe/Berlin.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-05-17 08:45 UTC. B = 2026-05-17 06:45 UTC. C = 2026-05-17 04:45 UTC. D = not determined.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-6",
+   "date": "2026-05-17",
+   "zone": "Europe/Berlin",
+   "clock": "06:45",
+   "utc_instant": "2026-05-17 04:45 UTC",
+   "semantic_gold": "2026-05-17 04:45 UTC",
+   "answer_options": {
+    "C": "2026-05-17 04:45 UTC",
+    "A": "2026-05-17 08:45 UTC",
+    "B": "2026-05-17 06:45 UTC",
+    "D": "not determined"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-7",
+  "english": "The status call SC-C107 is run by the Tokyo team. Its date is 2026-06-03. It is scheduled at 18:00 civil time in Asia/Tokyo, using the offset applicable on that date.",
+  "ainglish": "The status call SC-C107 is run by the Tokyo team. Its date is 2026-06-03. It is scheduled at 18:00@Asia/Tokyo.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-06-04 03:00 UTC. B = 2026-06-03 09:00 UTC. C = not determined. D = 2026-06-03 18:00 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-7",
+   "date": "2026-06-03",
+   "zone": "Asia/Tokyo",
+   "clock": "18:00",
+   "utc_instant": "2026-06-03 09:00 UTC",
+   "semantic_gold": "2026-06-03 09:00 UTC",
+   "answer_options": {
+    "B": "2026-06-03 09:00 UTC",
+    "A": "2026-06-04 03:00 UTC",
+    "C": "not determined",
+    "D": "2026-06-03 18:00 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-8",
+  "english": "The rate reset RR-C108 is run by the New York team. Its date is 2026-02-14. It is scheduled at 08:00 civil time in America/New_York, using the offset applicable on that date.",
+  "ainglish": "The rate reset RR-C108 is run by the New York team. Its date is 2026-02-14. It is scheduled at 08:00@America/New_York.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-02-14 08:00 UTC. C = 2026-02-14 13:00 UTC. D = 2026-02-14 03:00 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-8",
+   "date": "2026-02-14",
+   "zone": "America/New_York",
+   "clock": "08:00",
+   "utc_instant": "2026-02-14 13:00 UTC",
+   "semantic_gold": "2026-02-14 13:00 UTC",
+   "answer_options": {
+    "C": "2026-02-14 13:00 UTC",
+    "A": "not determined",
+    "B": "2026-02-14 08:00 UTC",
+    "D": "2026-02-14 03:00 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-9",
+  "english": "The ledger close LC-C109 is run by the London team. Its date is 2026-03-28. It is scheduled at 18:00 civil time in Europe/London, using the offset applicable on that date.",
+  "ainglish": "The ledger close LC-C109 is run by the London team. Its date is 2026-03-28. It is scheduled at 18:00@Europe/London.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-03-28 19:00 UTC. B = 2026-03-28 17:00 UTC. C = not determined. D = 2026-03-28 18:00 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-9",
+   "date": "2026-03-28",
+   "zone": "Europe/London",
+   "clock": "18:00",
+   "utc_instant": "2026-03-28 18:00 UTC",
+   "semantic_gold": "2026-03-28 18:00 UTC",
+   "answer_options": {
+    "D": "2026-03-28 18:00 UTC",
+    "A": "2026-03-28 19:00 UTC",
+    "B": "2026-03-28 17:00 UTC",
+    "C": "not determined"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-10",
+  "english": "The deploy window DW-C110 is run by the Berlin team. Its date is 2026-02-01. It is scheduled at 10:20 civil time in Europe/Berlin, using the offset applicable on that date.",
+  "ainglish": "The deploy window DW-C110 is run by the Berlin team. Its date is 2026-02-01. It is scheduled at 10:20@Europe/Berlin.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-02-01 09:20 UTC. B = 2026-02-01 10:20 UTC. C = not determined. D = 2026-02-01 11:20 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-10",
+   "date": "2026-02-01",
+   "zone": "Europe/Berlin",
+   "clock": "10:20",
+   "utc_instant": "2026-02-01 09:20 UTC",
+   "semantic_gold": "2026-02-01 09:20 UTC",
+   "answer_options": {
+    "A": "2026-02-01 09:20 UTC",
+    "B": "2026-02-01 10:20 UTC",
+    "C": "not determined",
+    "D": "2026-02-01 11:20 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-11",
+  "english": "The market open MO-C111 is run by the Berlin team. Its date is 2026-01-20. It is scheduled at 05:30 civil time in Europe/Berlin, using the offset applicable on that date.",
+  "ainglish": "The market open MO-C111 is run by the Berlin team. Its date is 2026-01-20. It is scheduled at 05:30@Europe/Berlin.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-01-20 04:30 UTC. B = 2026-01-20 05:30 UTC. C = not determined. D = 2026-01-20 06:30 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-11",
+   "date": "2026-01-20",
+   "zone": "Europe/Berlin",
+   "clock": "05:30",
+   "utc_instant": "2026-01-20 04:30 UTC",
+   "semantic_gold": "2026-01-20 04:30 UTC",
+   "answer_options": {
+    "A": "2026-01-20 04:30 UTC",
+    "B": "2026-01-20 05:30 UTC",
+    "C": "not determined",
+    "D": "2026-01-20 06:30 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-12",
+  "english": "The team standup ST-C112 is run by the Tokyo team. Its date is 2026-09-19. It is scheduled at 11:05 civil time in Asia/Tokyo, using the offset applicable on that date.",
+  "ainglish": "The team standup ST-C112 is run by the Tokyo team. Its date is 2026-09-19. It is scheduled at 11:05@Asia/Tokyo.",
+  "question": "Which UTC instant is the event scheduled for? A = 2026-09-19 02:05 UTC. B = 2026-09-19 11:05 UTC. C = not determined. D = 2026-09-19 20:05 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-12",
+   "date": "2026-09-19",
+   "zone": "Asia/Tokyo",
+   "clock": "11:05",
+   "utc_instant": "2026-09-19 02:05 UTC",
+   "semantic_gold": "2026-09-19 02:05 UTC",
+   "answer_options": {
+    "A": "2026-09-19 02:05 UTC",
+    "B": "2026-09-19 11:05 UTC",
+    "C": "not determined",
+    "D": "2026-09-19 20:05 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-13",
+  "english": "The poll close PC-C113 is run by the New York team. Its date is 2026-09-21. It is scheduled at 00:40 civil time in America/New_York, using the offset applicable on that date.",
+  "ainglish": "The poll close PC-C113 is run by the New York team. Its date is 2026-09-21. It is scheduled at 00:40@America/New_York.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-09-21 00:40 UTC. C = 2026-09-20 20:40 UTC. D = 2026-09-21 04:40 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-13",
+   "date": "2026-09-21",
+   "zone": "America/New_York",
+   "clock": "00:40",
+   "utc_instant": "2026-09-21 04:40 UTC",
+   "semantic_gold": "2026-09-21 04:40 UTC",
+   "answer_options": {
+    "D": "2026-09-21 04:40 UTC",
+    "A": "not determined",
+    "B": "2026-09-21 00:40 UTC",
+    "C": "2026-09-20 20:40 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-14",
+  "english": "The nightly backup NB-C114 is run by the Tokyo team. Its date is 2026-12-23. It is scheduled at 13:40 civil time in Asia/Tokyo, using the offset applicable on that date.",
+  "ainglish": "The nightly backup NB-C114 is run by the Tokyo team. Its date is 2026-12-23. It is scheduled at 13:40@Asia/Tokyo.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-12-23 22:40 UTC. C = 2026-12-23 04:40 UTC. D = 2026-12-23 13:40 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-14",
+   "date": "2026-12-23",
+   "zone": "Asia/Tokyo",
+   "clock": "13:40",
+   "utc_instant": "2026-12-23 04:40 UTC",
+   "semantic_gold": "2026-12-23 04:40 UTC",
+   "answer_options": {
+    "C": "2026-12-23 04:40 UTC",
+    "A": "not determined",
+    "B": "2026-12-23 22:40 UTC",
+    "D": "2026-12-23 13:40 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-civil-C-15",
+  "english": "The maintenance window MW-C115 is run by the São Paulo team. Its date is 2026-12-15. It is scheduled at 09:30 civil time in America/Sao_Paulo, using the offset applicable on that date.",
+  "ainglish": "The maintenance window MW-C115 is run by the São Paulo team. Its date is 2026-12-15. It is scheduled at 09:30@America/Sao_Paulo.",
+  "question": "Which UTC instant is the event scheduled for? A = not determined. B = 2026-12-15 09:30 UTC. C = 2026-12-15 12:30 UTC. D = 2026-12-15 06:30 UTC.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "civil",
+  "strata": {
+   "condition": "civil",
+   "seat": "C",
+   "frame_cluster": "pool-civil-C-15",
+   "date": "2026-12-15",
+   "zone": "America/Sao_Paulo",
+   "clock": "09:30",
+   "utc_instant": "2026-12-15 12:30 UTC",
+   "semantic_gold": "2026-12-15 12:30 UTC",
+   "answer_options": {
+    "C": "2026-12-15 12:30 UTC",
+    "A": "not determined",
+    "B": "2026-12-15 09:30 UTC",
+    "D": "2026-12-15 06:30 UTC"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-0",
+  "english": "A single future auction close AC-C200 is mentioned. No date, recurrence or other dating context is supplied. Time: 08:00 UTC.",
+  "ainglish": "A single future auction close AC-C200 is mentioned. No date, recurrence or other dating context is supplied. Time: 08:00Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always today. B = no unique dated instant. C = yes, exactly one instant. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-0",
+   "zone": "Asia/Tokyo",
+   "clock": "08:00",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "B": "no unique dated instant",
+    "A": "yes, always today",
+    "C": "yes, exactly one instant",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-1",
+  "english": "A single future exam start EX-C201 is mentioned. No date, recurrence or other dating context is supplied. Time: 12:00 UTC.",
+  "ainglish": "A single future exam start EX-C201 is mentioned. No date, recurrence or other dating context is supplied. Time: 12:00Z.",
+  "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, always today. C = yes, always tomorrow. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-1",
+   "zone": "America/Los_Angeles",
+   "clock": "12:00",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "A": "no unique dated instant",
+    "B": "yes, always today",
+    "C": "yes, always tomorrow",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-2",
+  "english": "A single future broadcast BC-C202 is mentioned. No date, recurrence or other dating context is supplied. Time: 21:50 UTC.",
+  "ainglish": "A single future broadcast BC-C202 is mentioned. No date, recurrence or other dating context is supplied. Time: 21:50Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = yes, always today. C = no unique dated instant. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-2",
+   "zone": "Asia/Kolkata",
+   "clock": "21:50",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "C": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "B": "yes, always today",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-3",
+  "english": "A single future invoice cut-off IC-C203 is mentioned. No date, recurrence or other dating context is supplied. Time: 12:00 UTC.",
+  "ainglish": "A single future invoice cut-off IC-C203 is mentioned. No date, recurrence or other dating context is supplied. Time: 12:00Z.",
+  "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, always today. C = yes, always tomorrow. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-3",
+   "zone": "Asia/Tokyo",
+   "clock": "12:00",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "A": "no unique dated instant",
+    "B": "yes, always today",
+    "C": "yes, always tomorrow",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-4",
+  "english": "A single future release freeze RF-C204 is mentioned. No date, recurrence or other dating context is supplied. Time: 14:10 UTC.",
+  "ainglish": "A single future release freeze RF-C204 is mentioned. No date, recurrence or other dating context is supplied. Time: 14:10Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = yes, always today. C = yes, exactly one instant. D = no unique dated instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-4",
+   "zone": "Australia/Sydney",
+   "clock": "14:10",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "D": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "B": "yes, always today",
+    "C": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-5",
+  "english": "A single future key rotation KR-C205 is mentioned. No date, recurrence or other dating context is supplied. Time: 15:55 UTC.",
+  "ainglish": "A single future key rotation KR-C205 is mentioned. No date, recurrence or other dating context is supplied. Time: 15:55Z.",
+  "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, always tomorrow. C = yes, always today. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-5",
+   "zone": "Asia/Tokyo",
+   "clock": "15:55",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "A": "no unique dated instant",
+    "B": "yes, always tomorrow",
+    "C": "yes, always today",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-6",
+  "english": "A single future cache flush CF-C206 is mentioned. No date, recurrence or other dating context is supplied. Time: 08:00 UTC.",
+  "ainglish": "A single future cache flush CF-C206 is mentioned. No date, recurrence or other dating context is supplied. Time: 08:00Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always today. B = no unique dated instant. C = yes, always tomorrow. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-6",
+   "zone": "Europe/Berlin",
+   "clock": "08:00",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "B": "no unique dated instant",
+    "A": "yes, always today",
+    "C": "yes, always tomorrow",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-7",
+  "english": "A single future status call SC-C207 is mentioned. No date, recurrence or other dating context is supplied. Time: 11:05 UTC.",
+  "ainglish": "A single future status call SC-C207 is mentioned. No date, recurrence or other dating context is supplied. Time: 11:05Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = yes, always today. C = no unique dated instant. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-7",
+   "zone": "America/Sao_Paulo",
+   "clock": "11:05",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "C": "no unique dated instant",
+    "A": "yes, exactly one instant",
+    "B": "yes, always today",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-8",
+  "english": "A single future rate reset RR-C208 is mentioned. No date, recurrence or other dating context is supplied. Time: 06:45 UTC.",
+  "ainglish": "A single future rate reset RR-C208 is mentioned. No date, recurrence or other dating context is supplied. Time: 06:45Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = yes, exactly one instant. C = yes, always today. D = no unique dated instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-8",
+   "zone": "Asia/Kolkata",
+   "clock": "06:45",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "D": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "B": "yes, exactly one instant",
+    "C": "yes, always today"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-9",
+  "english": "A single future ledger close LC-C209 is mentioned. No date, recurrence or other dating context is supplied. Time: 14:10 UTC.",
+  "ainglish": "A single future ledger close LC-C209 is mentioned. No date, recurrence or other dating context is supplied. Time: 14:10Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always today. B = no unique dated instant. C = yes, exactly one instant. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-9",
+   "zone": "Europe/Berlin",
+   "clock": "14:10",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "B": "no unique dated instant",
+    "A": "yes, always today",
+    "C": "yes, exactly one instant",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-10",
+  "english": "A single future deploy window DW-C210 is mentioned. No date, recurrence or other dating context is supplied. Time: 22:10 UTC.",
+  "ainglish": "A single future deploy window DW-C210 is mentioned. No date, recurrence or other dating context is supplied. Time: 22:10Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = no unique dated instant. C = yes, exactly one instant. D = yes, always today.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-10",
+   "zone": "America/Los_Angeles",
+   "clock": "22:10",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "B": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "C": "yes, exactly one instant",
+    "D": "yes, always today"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-11",
+  "english": "A single future market open MO-C211 is mentioned. No date, recurrence or other dating context is supplied. Time: 09:30 UTC.",
+  "ainglish": "A single future market open MO-C211 is mentioned. No date, recurrence or other dating context is supplied. Time: 09:30Z.",
+  "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, always tomorrow. C = yes, always today. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-11",
+   "zone": "Asia/Kolkata",
+   "clock": "09:30",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "A": "no unique dated instant",
+    "B": "yes, always tomorrow",
+    "C": "yes, always today",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-12",
+  "english": "A single future team standup ST-C212 is mentioned. No date, recurrence or other dating context is supplied. Time: 17:25 UTC.",
+  "ainglish": "A single future team standup ST-C212 is mentioned. No date, recurrence or other dating context is supplied. Time: 17:25Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always today. B = yes, always tomorrow. C = no unique dated instant. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-12",
+   "zone": "Australia/Sydney",
+   "clock": "17:25",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "C": "no unique dated instant",
+    "A": "yes, always today",
+    "B": "yes, always tomorrow",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-13",
+  "english": "A single future poll close PC-C213 is mentioned. No date, recurrence or other dating context is supplied. Time: 15:55 UTC.",
+  "ainglish": "A single future poll close PC-C213 is mentioned. No date, recurrence or other dating context is supplied. Time: 15:55Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = yes, always today. C = yes, exactly one instant. D = no unique dated instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-13",
+   "zone": "Europe/Berlin",
+   "clock": "15:55",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "D": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "B": "yes, always today",
+    "C": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-14",
+  "english": "A single future nightly backup NB-C214 is mentioned. No date, recurrence or other dating context is supplied. Time: 03:15 UTC.",
+  "ainglish": "A single future nightly backup NB-C214 is mentioned. No date, recurrence or other dating context is supplied. Time: 03:15Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = yes, always today. C = no unique dated instant. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-14",
+   "zone": "Asia/Tokyo",
+   "clock": "03:15",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "C": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "B": "yes, always today",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-utc-C-15",
+  "english": "A single future maintenance window MW-C215 is mentioned. No date, recurrence or other dating context is supplied. Time: 04:50 UTC.",
+  "ainglish": "A single future maintenance window MW-C215 is mentioned. No date, recurrence or other dating context is supplied. Time: 04:50Z.",
+  "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = yes, always tomorrow. C = yes, always today. D = no unique dated instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "missing-date-utc",
+  "strata": {
+   "condition": "missing-date-utc",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-utc-C-15",
+   "zone": "America/Sao_Paulo",
+   "clock": "04:50",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "D": "no unique dated instant",
+    "A": "yes, exactly one instant",
+    "B": "yes, always tomorrow",
+    "C": "yes, always today"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-0",
+  "english": "A single future auction close AC-C300 is mentioned. No date, recurrence or other dating context is supplied. Time: 20:15 civil time in Australia/Sydney.",
+  "ainglish": "A single future auction close AC-C300 is mentioned. No date, recurrence or other dating context is supplied. Time: 20:15@Australia/Sydney.",
+  "question": "Does this message identify one unique dated instant? A = yes, always today. B = no unique dated instant. C = yes, always tomorrow. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-0",
+   "zone": "Australia/Sydney",
+   "clock": "20:15",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "B": "no unique dated instant",
+    "A": "yes, always today",
+    "C": "yes, always tomorrow",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-1",
+  "english": "A single future exam start EX-C301 is mentioned. No date, recurrence or other dating context is supplied. Time: 08:00 civil time in Australia/Sydney.",
+  "ainglish": "A single future exam start EX-C301 is mentioned. No date, recurrence or other dating context is supplied. Time: 08:00@Australia/Sydney.",
+  "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, always today. C = yes, exactly one instant. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-1",
+   "zone": "Australia/Sydney",
+   "clock": "08:00",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "A": "no unique dated instant",
+    "B": "yes, always today",
+    "C": "yes, exactly one instant",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-2",
+  "english": "A single future broadcast BC-C302 is mentioned. No date, recurrence or other dating context is supplied. Time: 15:55 civil time in America/Sao_Paulo.",
+  "ainglish": "A single future broadcast BC-C302 is mentioned. No date, recurrence or other dating context is supplied. Time: 15:55@America/Sao_Paulo.",
+  "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = yes, always today. C = yes, always tomorrow. D = no unique dated instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-2",
+   "zone": "America/Sao_Paulo",
+   "clock": "15:55",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "D": "no unique dated instant",
+    "A": "yes, exactly one instant",
+    "B": "yes, always today",
+    "C": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-3",
+  "english": "A single future invoice cut-off IC-C303 is mentioned. No date, recurrence or other dating context is supplied. Time: 00:40 civil time in America/Los_Angeles.",
+  "ainglish": "A single future invoice cut-off IC-C303 is mentioned. No date, recurrence or other dating context is supplied. Time: 00:40@America/Los_Angeles.",
+  "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, always today. C = yes, exactly one instant. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-3",
+   "zone": "America/Los_Angeles",
+   "clock": "00:40",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "A": "no unique dated instant",
+    "B": "yes, always today",
+    "C": "yes, exactly one instant",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-4",
+  "english": "A single future release freeze RF-C304 is mentioned. No date, recurrence or other dating context is supplied. Time: 03:15 civil time in America/Sao_Paulo.",
+  "ainglish": "A single future release freeze RF-C304 is mentioned. No date, recurrence or other dating context is supplied. Time: 03:15@America/Sao_Paulo.",
+  "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = yes, always today. C = yes, always tomorrow. D = no unique dated instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-4",
+   "zone": "America/Sao_Paulo",
+   "clock": "03:15",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "D": "no unique dated instant",
+    "A": "yes, exactly one instant",
+    "B": "yes, always today",
+    "C": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-5",
+  "english": "A single future key rotation KR-C305 is mentioned. No date, recurrence or other dating context is supplied. Time: 07:15 civil time in Asia/Tokyo.",
+  "ainglish": "A single future key rotation KR-C305 is mentioned. No date, recurrence or other dating context is supplied. Time: 07:15@Asia/Tokyo.",
+  "question": "Does this message identify one unique dated instant? A = yes, always today. B = yes, exactly one instant. C = no unique dated instant. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-5",
+   "zone": "Asia/Tokyo",
+   "clock": "07:15",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "C": "no unique dated instant",
+    "A": "yes, always today",
+    "B": "yes, exactly one instant",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-6",
+  "english": "A single future cache flush CF-C306 is mentioned. No date, recurrence or other dating context is supplied. Time: 17:25 civil time in Asia/Tokyo.",
+  "ainglish": "A single future cache flush CF-C306 is mentioned. No date, recurrence or other dating context is supplied. Time: 17:25@Asia/Tokyo.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = no unique dated instant. C = yes, always today. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-6",
+   "zone": "Asia/Tokyo",
+   "clock": "17:25",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "B": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "C": "yes, always today",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-7",
+  "english": "A single future status call SC-C307 is mentioned. No date, recurrence or other dating context is supplied. Time: 18:00 civil time in America/Los_Angeles.",
+  "ainglish": "A single future status call SC-C307 is mentioned. No date, recurrence or other dating context is supplied. Time: 18:00@America/Los_Angeles.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = yes, exactly one instant. C = no unique dated instant. D = yes, always today.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-7",
+   "zone": "America/Los_Angeles",
+   "clock": "18:00",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "C": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "B": "yes, exactly one instant",
+    "D": "yes, always today"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-8",
+  "english": "A single future rate reset RR-C308 is mentioned. No date, recurrence or other dating context is supplied. Time: 15:55 civil time in Australia/Sydney.",
+  "ainglish": "A single future rate reset RR-C308 is mentioned. No date, recurrence or other dating context is supplied. Time: 15:55@Australia/Sydney.",
+  "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = no unique dated instant. C = yes, always today. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-8",
+   "zone": "Australia/Sydney",
+   "clock": "15:55",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "B": "no unique dated instant",
+    "A": "yes, exactly one instant",
+    "C": "yes, always today",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-9",
+  "english": "A single future ledger close LC-C309 is mentioned. No date, recurrence or other dating context is supplied. Time: 19:45 civil time in America/Los_Angeles.",
+  "ainglish": "A single future ledger close LC-C309 is mentioned. No date, recurrence or other dating context is supplied. Time: 19:45@America/Los_Angeles.",
+  "question": "Does this message identify one unique dated instant? A = yes, always today. B = yes, exactly one instant. C = yes, always tomorrow. D = no unique dated instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-9",
+   "zone": "America/Los_Angeles",
+   "clock": "19:45",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "D": "no unique dated instant",
+    "A": "yes, always today",
+    "B": "yes, exactly one instant",
+    "C": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-10",
+  "english": "A single future deploy window DW-C310 is mentioned. No date, recurrence or other dating context is supplied. Time: 03:15 civil time in America/Los_Angeles.",
+  "ainglish": "A single future deploy window DW-C310 is mentioned. No date, recurrence or other dating context is supplied. Time: 03:15@America/Los_Angeles.",
+  "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = yes, always today. C = no unique dated instant. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-10",
+   "zone": "America/Los_Angeles",
+   "clock": "03:15",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "C": "no unique dated instant",
+    "A": "yes, exactly one instant",
+    "B": "yes, always today",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-11",
+  "english": "A single future market open MO-C311 is mentioned. No date, recurrence or other dating context is supplied. Time: 03:15 civil time in America/Los_Angeles.",
+  "ainglish": "A single future market open MO-C311 is mentioned. No date, recurrence or other dating context is supplied. Time: 03:15@America/Los_Angeles.",
+  "question": "Does this message identify one unique dated instant? A = yes, always today. B = yes, exactly one instant. C = no unique dated instant. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-11",
+   "zone": "America/Los_Angeles",
+   "clock": "03:15",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "C": "no unique dated instant",
+    "A": "yes, always today",
+    "B": "yes, exactly one instant",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-12",
+  "english": "A single future team standup ST-C312 is mentioned. No date, recurrence or other dating context is supplied. Time: 22:10 civil time in America/Los_Angeles.",
+  "ainglish": "A single future team standup ST-C312 is mentioned. No date, recurrence or other dating context is supplied. Time: 22:10@America/Los_Angeles.",
+  "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = no unique dated instant. C = yes, always today. D = yes, always tomorrow.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-12",
+   "zone": "America/Los_Angeles",
+   "clock": "22:10",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "B": "no unique dated instant",
+    "A": "yes, exactly one instant",
+    "C": "yes, always today",
+    "D": "yes, always tomorrow"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-13",
+  "english": "A single future poll close PC-C313 is mentioned. No date, recurrence or other dating context is supplied. Time: 06:45 civil time in Asia/Kolkata.",
+  "ainglish": "A single future poll close PC-C313 is mentioned. No date, recurrence or other dating context is supplied. Time: 06:45@Asia/Kolkata.",
+  "question": "Does this message identify one unique dated instant? A = yes, always tomorrow. B = yes, always today. C = yes, exactly one instant. D = no unique dated instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-13",
+   "zone": "Asia/Kolkata",
+   "clock": "06:45",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "D": "no unique dated instant",
+    "A": "yes, always tomorrow",
+    "B": "yes, always today",
+    "C": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-14",
+  "english": "A single future nightly backup NB-C314 is mentioned. No date, recurrence or other dating context is supplied. Time: 17:25 civil time in America/Sao_Paulo.",
+  "ainglish": "A single future nightly backup NB-C314 is mentioned. No date, recurrence or other dating context is supplied. Time: 17:25@America/Sao_Paulo.",
+  "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, always tomorrow. C = yes, always today. D = yes, exactly one instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-14",
+   "zone": "America/Sao_Paulo",
+   "clock": "17:25",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "A": "no unique dated instant",
+    "B": "yes, always tomorrow",
+    "C": "yes, always today",
+    "D": "yes, exactly one instant"
+   }
+  }
+ },
+ {
+  "id": "pool-missing-date-civil-C-15",
+  "english": "A single future maintenance window MW-C315 is mentioned. No date, recurrence or other dating context is supplied. Time: 05:30 civil time in Asia/Tokyo.",
+  "ainglish": "A single future maintenance window MW-C315 is mentioned. No date, recurrence or other dating context is supplied. Time: 05:30@Asia/Tokyo.",
+  "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, exactly one instant. C = yes, always tomorrow. D = yes, always today.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "missing-date-civil",
+  "strata": {
+   "condition": "missing-date-civil",
+   "seat": "C",
+   "frame_cluster": "pool-missing-date-civil-C-15",
+   "zone": "Asia/Tokyo",
+   "clock": "05:30",
+   "semantic_gold": "no unique dated instant",
+   "answer_options": {
+    "A": "no unique dated instant",
+    "B": "yes, exactly one instant",
+    "C": "yes, always tomorrow",
+    "D": "yes, always today"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-0",
+  "english": "The date of auction close AC-C400 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30 civil time in Europe/London.",
+  "ainglish": "The date of auction close AC-C400 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30@Europe/London.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a duration. B = no matching instant. C = two matching instants. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-0",
+   "date": "2026-10-25",
+   "zone": "Europe/London",
+   "clock": "01:30",
+   "matching_instants": [
+    "2026-10-25T00:30:00+00:00",
+    "2026-10-25T01:30:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "C": "two matching instants",
+    "A": "the message guarantees a duration",
+    "B": "no matching instant",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-1",
+  "english": "The date of exam start EX-C401 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00 civil time in America/New_York.",
+  "ainglish": "The date of exam start EX-C401 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00@America/New_York.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = one matching instant. B = the message guarantees a duration. C = no matching instant. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-1",
+   "date": "2026-11-01",
+   "zone": "America/New_York",
+   "clock": "01:00",
+   "matching_instants": [
+    "2026-11-01T05:00:00+00:00",
+    "2026-11-01T06:00:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "D": "two matching instants",
+    "A": "one matching instant",
+    "B": "the message guarantees a duration",
+    "C": "no matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-2",
+  "english": "The date of broadcast BC-C402 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30 civil time in Europe/Berlin.",
+  "ainglish": "The date of broadcast BC-C402 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30@Europe/Berlin.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = the message guarantees a duration. C = no matching instant. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-2",
+   "date": "2026-10-25",
+   "zone": "Europe/Berlin",
+   "clock": "02:30",
+   "matching_instants": [
+    "2026-10-25T00:30:00+00:00",
+    "2026-10-25T01:30:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "A": "two matching instants",
+    "B": "the message guarantees a duration",
+    "C": "no matching instant",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-3",
+  "english": "The date of invoice cut-off IC-C403 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00 civil time in America/Los_Angeles.",
+  "ainglish": "The date of invoice cut-off IC-C403 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00@America/Los_Angeles.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = the message guarantees a duration. C = two matching instants. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-3",
+   "date": "2026-11-01",
+   "zone": "America/Los_Angeles",
+   "clock": "01:00",
+   "matching_instants": [
+    "2026-11-01T08:00:00+00:00",
+    "2026-11-01T09:00:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "C": "two matching instants",
+    "A": "no matching instant",
+    "B": "the message guarantees a duration",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-4",
+  "english": "The date of release freeze RF-C404 is 2026-04-05. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in Australia/Sydney.",
+  "ainglish": "The date of release freeze RF-C404 is 2026-04-05. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@Australia/Sydney.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = the message guarantees a duration. C = no matching instant. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-4",
+   "date": "2026-04-05",
+   "zone": "Australia/Sydney",
+   "clock": "02:00",
+   "matching_instants": [
+    "2026-04-04T15:00:00+00:00",
+    "2026-04-04T16:00:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "A": "two matching instants",
+    "B": "the message guarantees a duration",
+    "C": "no matching instant",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-5",
+  "english": "The date of key rotation KR-C405 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30 civil time in Europe/London.",
+  "ainglish": "The date of key rotation KR-C405 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30@Europe/London.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = one matching instant. C = the message guarantees a duration. D = no matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-5",
+   "date": "2026-10-25",
+   "zone": "Europe/London",
+   "clock": "01:30",
+   "matching_instants": [
+    "2026-10-25T00:30:00+00:00",
+    "2026-10-25T01:30:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "A": "two matching instants",
+    "B": "one matching instant",
+    "C": "the message guarantees a duration",
+    "D": "no matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-6",
+  "english": "The date of cache flush CF-C406 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30 civil time in America/New_York.",
+  "ainglish": "The date of cache flush CF-C406 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30@America/New_York.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a duration. B = two matching instants. C = no matching instant. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-6",
+   "date": "2026-11-01",
+   "zone": "America/New_York",
+   "clock": "01:30",
+   "matching_instants": [
+    "2026-11-01T05:30:00+00:00",
+    "2026-11-01T06:30:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "B": "two matching instants",
+    "A": "the message guarantees a duration",
+    "C": "no matching instant",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-7",
+  "english": "The date of status call SC-C407 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30 civil time in Europe/Berlin.",
+  "ainglish": "The date of status call SC-C407 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30@Europe/Berlin.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = one matching instant. B = the message guarantees a duration. C = two matching instants. D = no matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-7",
+   "date": "2026-10-25",
+   "zone": "Europe/Berlin",
+   "clock": "02:30",
+   "matching_instants": [
+    "2026-10-25T00:30:00+00:00",
+    "2026-10-25T01:30:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "C": "two matching instants",
+    "A": "one matching instant",
+    "B": "the message guarantees a duration",
+    "D": "no matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-8",
+  "english": "The date of rate reset RR-C408 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30 civil time in America/Los_Angeles.",
+  "ainglish": "The date of rate reset RR-C408 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30@America/Los_Angeles.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a duration. B = no matching instant. C = one matching instant. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-8",
+   "date": "2026-11-01",
+   "zone": "America/Los_Angeles",
+   "clock": "01:30",
+   "matching_instants": [
+    "2026-11-01T08:30:00+00:00",
+    "2026-11-01T09:30:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "D": "two matching instants",
+    "A": "the message guarantees a duration",
+    "B": "no matching instant",
+    "C": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-9",
+  "english": "The date of ledger close LC-C409 is 2026-04-05. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30 civil time in Australia/Sydney.",
+  "ainglish": "The date of ledger close LC-C409 is 2026-04-05. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30@Australia/Sydney.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = one matching instant. B = no matching instant. C = the message guarantees a duration. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-9",
+   "date": "2026-04-05",
+   "zone": "Australia/Sydney",
+   "clock": "02:30",
+   "matching_instants": [
+    "2026-04-04T15:30:00+00:00",
+    "2026-04-04T16:30:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "D": "two matching instants",
+    "A": "one matching instant",
+    "B": "no matching instant",
+    "C": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-10",
+  "english": "The date of deploy window DW-C410 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00 civil time in Europe/London.",
+  "ainglish": "The date of deploy window DW-C410 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00@Europe/London.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = two matching instants. C = the message guarantees a duration. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-10",
+   "date": "2026-10-25",
+   "zone": "Europe/London",
+   "clock": "01:00",
+   "matching_instants": [
+    "2026-10-25T00:00:00+00:00",
+    "2026-10-25T01:00:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "B": "two matching instants",
+    "A": "no matching instant",
+    "C": "the message guarantees a duration",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-11",
+  "english": "The date of market open MO-C411 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00 civil time in America/New_York.",
+  "ainglish": "The date of market open MO-C411 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00@America/New_York.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = one matching instant. B = two matching instants. C = the message guarantees a duration. D = no matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-11",
+   "date": "2026-11-01",
+   "zone": "America/New_York",
+   "clock": "01:00",
+   "matching_instants": [
+    "2026-11-01T05:00:00+00:00",
+    "2026-11-01T06:00:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "B": "two matching instants",
+    "A": "one matching instant",
+    "C": "the message guarantees a duration",
+    "D": "no matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-12",
+  "english": "The date of team standup ST-C412 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in Europe/Berlin.",
+  "ainglish": "The date of team standup ST-C412 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@Europe/Berlin.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = two matching instants. C = the message guarantees a duration. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-12",
+   "date": "2026-10-25",
+   "zone": "Europe/Berlin",
+   "clock": "02:00",
+   "matching_instants": [
+    "2026-10-25T00:00:00+00:00",
+    "2026-10-25T01:00:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "B": "two matching instants",
+    "A": "no matching instant",
+    "C": "the message guarantees a duration",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-13",
+  "english": "The date of poll close PC-C413 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30 civil time in America/Los_Angeles.",
+  "ainglish": "The date of poll close PC-C413 is 2026-11-01. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30@America/Los_Angeles.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = no matching instant. C = one matching instant. D = the message guarantees a duration.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-13",
+   "date": "2026-11-01",
+   "zone": "America/Los_Angeles",
+   "clock": "01:30",
+   "matching_instants": [
+    "2026-11-01T08:30:00+00:00",
+    "2026-11-01T09:30:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "A": "two matching instants",
+    "B": "no matching instant",
+    "C": "one matching instant",
+    "D": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-14",
+  "english": "The date of nightly backup NB-C414 is 2026-04-05. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in Australia/Sydney.",
+  "ainglish": "The date of nightly backup NB-C414 is 2026-04-05. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@Australia/Sydney.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = the message guarantees a duration. C = two matching instants. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-14",
+   "date": "2026-04-05",
+   "zone": "Australia/Sydney",
+   "clock": "02:00",
+   "matching_instants": [
+    "2026-04-04T15:00:00+00:00",
+    "2026-04-04T16:00:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "C": "two matching instants",
+    "A": "no matching instant",
+    "B": "the message guarantees a duration",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-fold-C-15",
+  "english": "The date of maintenance window MW-C415 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00 civil time in Europe/London.",
+  "ainglish": "The date of maintenance window MW-C415 is 2026-10-25. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00@Europe/London.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = the message guarantees a duration. C = one matching instant. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "fold",
+  "strata": {
+   "condition": "fold",
+   "seat": "C",
+   "frame_cluster": "pool-fold-C-15",
+   "date": "2026-10-25",
+   "zone": "Europe/London",
+   "clock": "01:00",
+   "matching_instants": [
+    "2026-10-25T00:00:00+00:00",
+    "2026-10-25T01:00:00+00:00"
+   ],
+   "semantic_gold": "two matching instants",
+   "answer_options": {
+    "D": "two matching instants",
+    "A": "no matching instant",
+    "B": "the message guarantees a duration",
+    "C": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-0",
+  "english": "The date of auction close AC-C500 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00 civil time in Europe/London.",
+  "ainglish": "The date of auction close AC-C500 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00@Europe/London.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a duration. B = one matching instant. C = no matching instant. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-0",
+   "date": "2026-03-29",
+   "zone": "Europe/London",
+   "clock": "01:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "C": "no matching instant",
+    "A": "the message guarantees a duration",
+    "B": "one matching instant",
+    "D": "two matching instants"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-1",
+  "english": "The date of exam start EX-C501 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in America/New_York.",
+  "ainglish": "The date of exam start EX-C501 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@America/New_York.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = one matching instant. B = no matching instant. C = two matching instants. D = the message guarantees a duration.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-1",
+   "date": "2026-03-08",
+   "zone": "America/New_York",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "B": "no matching instant",
+    "A": "one matching instant",
+    "C": "two matching instants",
+    "D": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-2",
+  "english": "The date of broadcast BC-C502 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30 civil time in Europe/Berlin.",
+  "ainglish": "The date of broadcast BC-C502 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30@Europe/Berlin.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = one matching instant. C = the message guarantees a duration. D = no matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-2",
+   "date": "2026-03-29",
+   "zone": "Europe/Berlin",
+   "clock": "02:30",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "D": "no matching instant",
+    "A": "two matching instants",
+    "B": "one matching instant",
+    "C": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-3",
+  "english": "The date of invoice cut-off IC-C503 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in America/Los_Angeles.",
+  "ainglish": "The date of invoice cut-off IC-C503 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@America/Los_Angeles.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = two matching instants. C = one matching instant. D = the message guarantees a duration.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-3",
+   "date": "2026-03-08",
+   "zone": "America/Los_Angeles",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "A": "no matching instant",
+    "B": "two matching instants",
+    "C": "one matching instant",
+    "D": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-4",
+  "english": "The date of release freeze RF-C504 is 2026-10-04. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in Australia/Sydney.",
+  "ainglish": "The date of release freeze RF-C504 is 2026-10-04. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@Australia/Sydney.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = the message guarantees a duration. C = one matching instant. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-4",
+   "date": "2026-10-04",
+   "zone": "Australia/Sydney",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "A": "no matching instant",
+    "B": "the message guarantees a duration",
+    "C": "one matching instant",
+    "D": "two matching instants"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-5",
+  "english": "The date of key rotation KR-C505 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00 civil time in Europe/London.",
+  "ainglish": "The date of key rotation KR-C505 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00@Europe/London.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = one matching instant. B = two matching instants. C = no matching instant. D = the message guarantees a duration.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-5",
+   "date": "2026-03-29",
+   "zone": "Europe/London",
+   "clock": "01:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "C": "no matching instant",
+    "A": "one matching instant",
+    "B": "two matching instants",
+    "D": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-6",
+  "english": "The date of cache flush CF-C506 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in America/New_York.",
+  "ainglish": "The date of cache flush CF-C506 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@America/New_York.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = one matching instant. B = two matching instants. C = the message guarantees a duration. D = no matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-6",
+   "date": "2026-03-08",
+   "zone": "America/New_York",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "D": "no matching instant",
+    "A": "one matching instant",
+    "B": "two matching instants",
+    "C": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-7",
+  "english": "The date of status call SC-C507 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in Europe/Berlin.",
+  "ainglish": "The date of status call SC-C507 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@Europe/Berlin.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = two matching instants. C = one matching instant. D = the message guarantees a duration.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-7",
+   "date": "2026-03-29",
+   "zone": "Europe/Berlin",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "A": "no matching instant",
+    "B": "two matching instants",
+    "C": "one matching instant",
+    "D": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-8",
+  "english": "The date of rate reset RR-C508 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in America/Los_Angeles.",
+  "ainglish": "The date of rate reset RR-C508 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@America/Los_Angeles.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a duration. B = two matching instants. C = one matching instant. D = no matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-8",
+   "date": "2026-03-08",
+   "zone": "America/Los_Angeles",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "D": "no matching instant",
+    "A": "the message guarantees a duration",
+    "B": "two matching instants",
+    "C": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-9",
+  "english": "The date of ledger close LC-C509 is 2026-10-04. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30 civil time in Australia/Sydney.",
+  "ainglish": "The date of ledger close LC-C509 is 2026-10-04. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30@Australia/Sydney.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a duration. B = one matching instant. C = no matching instant. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-9",
+   "date": "2026-10-04",
+   "zone": "Australia/Sydney",
+   "clock": "02:30",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "C": "no matching instant",
+    "A": "the message guarantees a duration",
+    "B": "one matching instant",
+    "D": "two matching instants"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-10",
+  "english": "The date of deploy window DW-C510 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00 civil time in Europe/London.",
+  "ainglish": "The date of deploy window DW-C510 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:00@Europe/London.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a duration. B = no matching instant. C = one matching instant. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-10",
+   "date": "2026-03-29",
+   "zone": "Europe/London",
+   "clock": "01:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "B": "no matching instant",
+    "A": "the message guarantees a duration",
+    "C": "one matching instant",
+    "D": "two matching instants"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-11",
+  "english": "The date of market open MO-C511 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in America/New_York.",
+  "ainglish": "The date of market open MO-C511 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@America/New_York.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = one matching instant. C = the message guarantees a duration. D = no matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-11",
+   "date": "2026-03-08",
+   "zone": "America/New_York",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "D": "no matching instant",
+    "A": "two matching instants",
+    "B": "one matching instant",
+    "C": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-12",
+  "english": "The date of team standup ST-C512 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in Europe/Berlin.",
+  "ainglish": "The date of team standup ST-C512 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@Europe/Berlin.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = no matching instant. C = the message guarantees a duration. D = one matching instant.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-12",
+   "date": "2026-03-29",
+   "zone": "Europe/Berlin",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "B": "no matching instant",
+    "A": "two matching instants",
+    "C": "the message guarantees a duration",
+    "D": "one matching instant"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-13",
+  "english": "The date of poll close PC-C513 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30 civil time in America/Los_Angeles.",
+  "ainglish": "The date of poll close PC-C513 is 2026-03-08. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:30@America/Los_Angeles.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = one matching instant. B = no matching instant. C = the message guarantees a duration. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-13",
+   "date": "2026-03-08",
+   "zone": "America/Los_Angeles",
+   "clock": "02:30",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "B": "no matching instant",
+    "A": "one matching instant",
+    "C": "the message guarantees a duration",
+    "D": "two matching instants"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-14",
+  "english": "The date of nightly backup NB-C514 is 2026-10-04. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00 civil time in Australia/Sydney.",
+  "ainglish": "The date of nightly backup NB-C514 is 2026-10-04. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 02:00@Australia/Sydney.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = one matching instant. C = the message guarantees a duration. D = two matching instants.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-14",
+   "date": "2026-10-04",
+   "zone": "Australia/Sydney",
+   "clock": "02:00",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "A": "no matching instant",
+    "B": "one matching instant",
+    "C": "the message guarantees a duration",
+    "D": "two matching instants"
+   }
+  }
+ },
+ {
+  "id": "pool-gap-C-15",
+  "english": "The date of maintenance window MW-C515 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30 civil time in Europe/London.",
+  "ainglish": "The date of maintenance window MW-C515 is 2026-03-29. No UTC offset, fold selector or gap-adjustment policy is supplied. Time: 01:30@Europe/London.",
+  "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = one matching instant. C = no matching instant. D = the message guarantees a duration.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "gap",
+  "strata": {
+   "condition": "gap",
+   "seat": "C",
+   "frame_cluster": "pool-gap-C-15",
+   "date": "2026-03-29",
+   "zone": "Europe/London",
+   "clock": "01:30",
+   "matching_instants": [],
+   "semantic_gold": "no matching instant",
+   "answer_options": {
+    "C": "no matching instant",
+    "A": "two matching instants",
+    "B": "one matching instant",
+    "D": "the message guarantees a duration"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-0",
+  "english": "The auction close AC-C600 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 21:50 London civil time, using the offset applicable on each date.",
+  "ainglish": "The auction close AC-C600 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 21:50@Europe/London.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = neither is constrained. C = both clock readings stay fixed. D = the London clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-0",
+   "zone": "Europe/London",
+   "clock": "21:50",
+   "semantic_gold": "the London clock reading stays fixed",
+   "answer_options": {
+    "D": "the London clock reading stays fixed",
+    "A": "the UTC clock reading stays fixed",
+    "B": "neither is constrained",
+    "C": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-1",
+  "english": "The exam start EX-C601 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 22:10 New York civil time, using the offset applicable on each date.",
+  "ainglish": "The exam start EX-C601 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 22:10@America/New_York.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = both clock readings stay fixed. C = the UTC clock reading stays fixed. D = the New York clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-1",
+   "zone": "America/New_York",
+   "clock": "22:10",
+   "semantic_gold": "the New York clock reading stays fixed",
+   "answer_options": {
+    "D": "the New York clock reading stays fixed",
+    "A": "neither is constrained",
+    "B": "both clock readings stay fixed",
+    "C": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-2",
+  "english": "The broadcast BC-C602 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 07:15 Berlin civil time, using the offset applicable on each date.",
+  "ainglish": "The broadcast BC-C602 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 07:15@Europe/Berlin.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = both clock readings stay fixed. B = neither is constrained. C = the Berlin clock reading stays fixed. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-2",
+   "zone": "Europe/Berlin",
+   "clock": "07:15",
+   "semantic_gold": "the Berlin clock reading stays fixed",
+   "answer_options": {
+    "C": "the Berlin clock reading stays fixed",
+    "A": "both clock readings stay fixed",
+    "B": "neither is constrained",
+    "D": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-3",
+  "english": "The invoice cut-off IC-C603 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 03:15 Los Angeles civil time, using the offset applicable on each date.",
+  "ainglish": "The invoice cut-off IC-C603 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 03:15@America/Los_Angeles.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = the Los Angeles clock reading stays fixed. C = both clock readings stay fixed. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-3",
+   "zone": "America/Los_Angeles",
+   "clock": "03:15",
+   "semantic_gold": "the Los Angeles clock reading stays fixed",
+   "answer_options": {
+    "B": "the Los Angeles clock reading stays fixed",
+    "A": "neither is constrained",
+    "C": "both clock readings stay fixed",
+    "D": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-4",
+  "english": "The release freeze RF-C604 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 23:05 Sydney civil time, using the offset applicable on each date.",
+  "ainglish": "The release freeze RF-C604 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 23:05@Australia/Sydney.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = neither is constrained. C = the Sydney clock reading stays fixed. D = both clock readings stay fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-4",
+   "zone": "Australia/Sydney",
+   "clock": "23:05",
+   "semantic_gold": "the Sydney clock reading stays fixed",
+   "answer_options": {
+    "C": "the Sydney clock reading stays fixed",
+    "A": "the UTC clock reading stays fixed",
+    "B": "neither is constrained",
+    "D": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-5",
+  "english": "The key rotation KR-C605 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 09:30 London civil time, using the offset applicable on each date.",
+  "ainglish": "The key rotation KR-C605 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 09:30@Europe/London.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = both clock readings stay fixed. C = the London clock reading stays fixed. D = neither is constrained.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-5",
+   "zone": "Europe/London",
+   "clock": "09:30",
+   "semantic_gold": "the London clock reading stays fixed",
+   "answer_options": {
+    "C": "the London clock reading stays fixed",
+    "A": "the UTC clock reading stays fixed",
+    "B": "both clock readings stay fixed",
+    "D": "neither is constrained"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-6",
+  "english": "The cache flush CF-C606 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 18:00 New York civil time, using the offset applicable on each date.",
+  "ainglish": "The cache flush CF-C606 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 18:00@America/New_York.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the New York clock reading stays fixed. B = the UTC clock reading stays fixed. C = both clock readings stay fixed. D = neither is constrained.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-6",
+   "zone": "America/New_York",
+   "clock": "18:00",
+   "semantic_gold": "the New York clock reading stays fixed",
+   "answer_options": {
+    "A": "the New York clock reading stays fixed",
+    "B": "the UTC clock reading stays fixed",
+    "C": "both clock readings stay fixed",
+    "D": "neither is constrained"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-7",
+  "english": "The status call SC-C607 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 07:15 Berlin civil time, using the offset applicable on each date.",
+  "ainglish": "The status call SC-C607 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 07:15@Europe/Berlin.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = both clock readings stay fixed. B = the Berlin clock reading stays fixed. C = neither is constrained. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-7",
+   "zone": "Europe/Berlin",
+   "clock": "07:15",
+   "semantic_gold": "the Berlin clock reading stays fixed",
+   "answer_options": {
+    "B": "the Berlin clock reading stays fixed",
+    "A": "both clock readings stay fixed",
+    "C": "neither is constrained",
+    "D": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-8",
+  "english": "The rate reset RR-C608 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 12:00 Los Angeles civil time, using the offset applicable on each date.",
+  "ainglish": "The rate reset RR-C608 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 12:00@America/Los_Angeles.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = neither is constrained. C = both clock readings stay fixed. D = the Los Angeles clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-8",
+   "zone": "America/Los_Angeles",
+   "clock": "12:00",
+   "semantic_gold": "the Los Angeles clock reading stays fixed",
+   "answer_options": {
+    "D": "the Los Angeles clock reading stays fixed",
+    "A": "the UTC clock reading stays fixed",
+    "B": "neither is constrained",
+    "C": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-9",
+  "english": "The ledger close LC-C609 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 16:30 Sydney civil time, using the offset applicable on each date.",
+  "ainglish": "The ledger close LC-C609 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 16:30@Australia/Sydney.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = the UTC clock reading stays fixed. C = both clock readings stay fixed. D = the Sydney clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-9",
+   "zone": "Australia/Sydney",
+   "clock": "16:30",
+   "semantic_gold": "the Sydney clock reading stays fixed",
+   "answer_options": {
+    "D": "the Sydney clock reading stays fixed",
+    "A": "neither is constrained",
+    "B": "the UTC clock reading stays fixed",
+    "C": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-10",
+  "english": "The deploy window DW-C610 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 09:30 London civil time, using the offset applicable on each date.",
+  "ainglish": "The deploy window DW-C610 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 09:30@Europe/London.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = the London clock reading stays fixed. C = neither is constrained. D = both clock readings stay fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-10",
+   "zone": "Europe/London",
+   "clock": "09:30",
+   "semantic_gold": "the London clock reading stays fixed",
+   "answer_options": {
+    "B": "the London clock reading stays fixed",
+    "A": "the UTC clock reading stays fixed",
+    "C": "neither is constrained",
+    "D": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-11",
+  "english": "The market open MO-C611 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 16:30 New York civil time, using the offset applicable on each date.",
+  "ainglish": "The market open MO-C611 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 16:30@America/New_York.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = the New York clock reading stays fixed. C = both clock readings stay fixed. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-11",
+   "zone": "America/New_York",
+   "clock": "16:30",
+   "semantic_gold": "the New York clock reading stays fixed",
+   "answer_options": {
+    "B": "the New York clock reading stays fixed",
+    "A": "neither is constrained",
+    "C": "both clock readings stay fixed",
+    "D": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-12",
+  "english": "The team standup ST-C612 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 20:15 Berlin civil time, using the offset applicable on each date.",
+  "ainglish": "The team standup ST-C612 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 20:15@Europe/Berlin.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the Berlin clock reading stays fixed. B = neither is constrained. C = both clock readings stay fixed. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-12",
+   "zone": "Europe/Berlin",
+   "clock": "20:15",
+   "semantic_gold": "the Berlin clock reading stays fixed",
+   "answer_options": {
+    "A": "the Berlin clock reading stays fixed",
+    "B": "neither is constrained",
+    "C": "both clock readings stay fixed",
+    "D": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-13",
+  "english": "The poll close PC-C613 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 12:00 Los Angeles civil time, using the offset applicable on each date.",
+  "ainglish": "The poll close PC-C613 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 12:00@America/Los_Angeles.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the Los Angeles clock reading stays fixed. B = neither is constrained. C = both clock readings stay fixed. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-13",
+   "zone": "America/Los_Angeles",
+   "clock": "12:00",
+   "semantic_gold": "the Los Angeles clock reading stays fixed",
+   "answer_options": {
+    "A": "the Los Angeles clock reading stays fixed",
+    "B": "neither is constrained",
+    "C": "both clock readings stay fixed",
+    "D": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-14",
+  "english": "The nightly backup NB-C614 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 22:10 Sydney civil time, using the offset applicable on each date.",
+  "ainglish": "The nightly backup NB-C614 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 22:10@Australia/Sydney.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the Sydney clock reading stays fixed. B = both clock readings stay fixed. C = neither is constrained. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-14",
+   "zone": "Australia/Sydney",
+   "clock": "22:10",
+   "semantic_gold": "the Sydney clock reading stays fixed",
+   "answer_options": {
+    "A": "the Sydney clock reading stays fixed",
+    "B": "both clock readings stay fixed",
+    "C": "neither is constrained",
+    "D": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-civil-C-15",
+  "english": "The maintenance window MW-C615 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 04:50 London civil time, using the offset applicable on each date.",
+  "ainglish": "The maintenance window MW-C615 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 04:50@Europe/London.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = both clock readings stay fixed. C = the London clock reading stays fixed. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "recurring-civil",
+  "strata": {
+   "condition": "recurring-civil",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-civil-C-15",
+   "zone": "Europe/London",
+   "clock": "04:50",
+   "semantic_gold": "the London clock reading stays fixed",
+   "answer_options": {
+    "C": "the London clock reading stays fixed",
+    "A": "neither is constrained",
+    "B": "both clock readings stay fixed",
+    "D": "the UTC clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-0",
+  "english": "The auction close AC-C700 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 06:45 UTC.",
+  "ainglish": "The auction close AC-C700 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 06:45Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = the UTC clock reading stays fixed. C = both clock readings stay fixed. D = the London clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-0",
+   "zone": "Europe/London",
+   "clock": "06:45",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "B": "the UTC clock reading stays fixed",
+    "A": "neither is constrained",
+    "C": "both clock readings stay fixed",
+    "D": "the London clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-1",
+  "english": "The exam start EX-C701 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 17:25 UTC.",
+  "ainglish": "The exam start EX-C701 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 17:25Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the New York clock reading stays fixed. B = both clock readings stay fixed. C = the UTC clock reading stays fixed. D = neither is constrained.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-1",
+   "zone": "America/New_York",
+   "clock": "17:25",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "C": "the UTC clock reading stays fixed",
+    "A": "the New York clock reading stays fixed",
+    "B": "both clock readings stay fixed",
+    "D": "neither is constrained"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-2",
+  "english": "The broadcast BC-C702 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 03:15 UTC.",
+  "ainglish": "The broadcast BC-C702 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 03:15Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = the Berlin clock reading stays fixed. C = neither is constrained. D = both clock readings stay fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-2",
+   "zone": "Europe/Berlin",
+   "clock": "03:15",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "A": "the UTC clock reading stays fixed",
+    "B": "the Berlin clock reading stays fixed",
+    "C": "neither is constrained",
+    "D": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-3",
+  "english": "The invoice cut-off IC-C703 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 15:55 UTC.",
+  "ainglish": "The invoice cut-off IC-C703 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 15:55Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = the UTC clock reading stays fixed. C = the Los Angeles clock reading stays fixed. D = both clock readings stay fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-3",
+   "zone": "America/Los_Angeles",
+   "clock": "15:55",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "B": "the UTC clock reading stays fixed",
+    "A": "neither is constrained",
+    "C": "the Los Angeles clock reading stays fixed",
+    "D": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-4",
+  "english": "The release freeze RF-C704 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 23:05 UTC.",
+  "ainglish": "The release freeze RF-C704 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 23:05Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the Sydney clock reading stays fixed. B = both clock readings stay fixed. C = neither is constrained. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-4",
+   "zone": "Australia/Sydney",
+   "clock": "23:05",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "D": "the UTC clock reading stays fixed",
+    "A": "the Sydney clock reading stays fixed",
+    "B": "both clock readings stay fixed",
+    "C": "neither is constrained"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-5",
+  "english": "The key rotation KR-C705 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 14:10 UTC.",
+  "ainglish": "The key rotation KR-C705 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 14:10Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = the London clock reading stays fixed. C = the UTC clock reading stays fixed. D = both clock readings stay fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-5",
+   "zone": "Europe/London",
+   "clock": "14:10",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "C": "the UTC clock reading stays fixed",
+    "A": "neither is constrained",
+    "B": "the London clock reading stays fixed",
+    "D": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-6",
+  "english": "The cache flush CF-C706 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 14:10 UTC.",
+  "ainglish": "The cache flush CF-C706 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 14:10Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = both clock readings stay fixed. B = the UTC clock reading stays fixed. C = neither is constrained. D = the New York clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-6",
+   "zone": "America/New_York",
+   "clock": "14:10",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "B": "the UTC clock reading stays fixed",
+    "A": "both clock readings stay fixed",
+    "C": "neither is constrained",
+    "D": "the New York clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-7",
+  "english": "The status call SC-C707 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 21:50 UTC.",
+  "ainglish": "The status call SC-C707 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 21:50Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the Berlin clock reading stays fixed. B = both clock readings stay fixed. C = the UTC clock reading stays fixed. D = neither is constrained.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-7",
+   "zone": "Europe/Berlin",
+   "clock": "21:50",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "C": "the UTC clock reading stays fixed",
+    "A": "the Berlin clock reading stays fixed",
+    "B": "both clock readings stay fixed",
+    "D": "neither is constrained"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-8",
+  "english": "The rate reset RR-C708 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 07:15 UTC.",
+  "ainglish": "The rate reset RR-C708 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 07:15Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the Los Angeles clock reading stays fixed. B = neither is constrained. C = both clock readings stay fixed. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-8",
+   "zone": "America/Los_Angeles",
+   "clock": "07:15",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "D": "the UTC clock reading stays fixed",
+    "A": "the Los Angeles clock reading stays fixed",
+    "B": "neither is constrained",
+    "C": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-9",
+  "english": "The ledger close LC-C709 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 07:15 UTC.",
+  "ainglish": "The ledger close LC-C709 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 07:15Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = both clock readings stay fixed. C = the Sydney clock reading stays fixed. D = neither is constrained.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-9",
+   "zone": "Australia/Sydney",
+   "clock": "07:15",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "A": "the UTC clock reading stays fixed",
+    "B": "both clock readings stay fixed",
+    "C": "the Sydney clock reading stays fixed",
+    "D": "neither is constrained"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-10",
+  "english": "The deploy window DW-C710 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 13:40 UTC.",
+  "ainglish": "The deploy window DW-C710 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 13:40Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = both clock readings stay fixed. B = the UTC clock reading stays fixed. C = neither is constrained. D = the London clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-10",
+   "zone": "Europe/London",
+   "clock": "13:40",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "B": "the UTC clock reading stays fixed",
+    "A": "both clock readings stay fixed",
+    "C": "neither is constrained",
+    "D": "the London clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-11",
+  "english": "The market open MO-C711 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 07:15 UTC.",
+  "ainglish": "The market open MO-C711 is a daily recurring event in New York, including 15 January and 15 July 2026. Each occurrence starts at 07:15Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = neither is constrained. B = the New York clock reading stays fixed. C = both clock readings stay fixed. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-11",
+   "zone": "America/New_York",
+   "clock": "07:15",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "D": "the UTC clock reading stays fixed",
+    "A": "neither is constrained",
+    "B": "the New York clock reading stays fixed",
+    "C": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-12",
+  "english": "The team standup ST-C712 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 17:25 UTC.",
+  "ainglish": "The team standup ST-C712 is a daily recurring event in Berlin, including 15 January and 15 July 2026. Each occurrence starts at 17:25Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = neither is constrained. C = the Berlin clock reading stays fixed. D = both clock readings stay fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-12",
+   "zone": "Europe/Berlin",
+   "clock": "17:25",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "A": "the UTC clock reading stays fixed",
+    "B": "neither is constrained",
+    "C": "the Berlin clock reading stays fixed",
+    "D": "both clock readings stay fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-13",
+  "english": "The poll close PC-C713 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 08:00 UTC.",
+  "ainglish": "The poll close PC-C713 is a daily recurring event in Los Angeles, including 15 January and 15 July 2026. Each occurrence starts at 08:00Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = both clock readings stay fixed. B = neither is constrained. C = the UTC clock reading stays fixed. D = the Los Angeles clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-13",
+   "zone": "America/Los_Angeles",
+   "clock": "08:00",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "C": "the UTC clock reading stays fixed",
+    "A": "both clock readings stay fixed",
+    "B": "neither is constrained",
+    "D": "the Los Angeles clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-14",
+  "english": "The nightly backup NB-C714 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 00:40 UTC.",
+  "ainglish": "The nightly backup NB-C714 is a daily recurring event in Sydney, including 15 January and 15 July 2026. Each occurrence starts at 00:40Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = both clock readings stay fixed. B = the Sydney clock reading stays fixed. C = neither is constrained. D = the UTC clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-14",
+   "zone": "Australia/Sydney",
+   "clock": "00:40",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "D": "the UTC clock reading stays fixed",
+    "A": "both clock readings stay fixed",
+    "B": "the Sydney clock reading stays fixed",
+    "C": "neither is constrained"
+   }
+  }
+ },
+ {
+  "id": "pool-recurring-utc-C-15",
+  "english": "The maintenance window MW-C715 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 05:30 UTC.",
+  "ainglish": "The maintenance window MW-C715 is a daily recurring event in London, including 15 January and 15 July 2026. Each occurrence starts at 05:30Z.",
+  "question": "Which clock reading is held fixed across those winter and summer dates? A = the UTC clock reading stays fixed. B = both clock readings stay fixed. C = neither is constrained. D = the London clock reading stays fixed.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "recurring-utc",
+  "strata": {
+   "condition": "recurring-utc",
+   "seat": "C",
+   "frame_cluster": "pool-recurring-utc-C-15",
+   "zone": "Europe/London",
+   "clock": "05:30",
+   "semantic_gold": "the UTC clock reading stays fixed",
+   "answer_options": {
+    "A": "the UTC clock reading stays fixed",
+    "B": "both clock readings stay fixed",
+    "C": "neither is constrained",
+    "D": "the London clock reading stays fixed"
+   }
+  }
+ },
+ {
+  "id": "pool-cal-C-0",
+  "english": "Exactly one of pool-cal-C0-K, pool-cal-C0-L, pool-cal-C0-M holds parcel pool-cal-C-parcel-0. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C0-K, pool-cal-C0-L, pool-cal-C0-M holds parcel pool-cal-C-parcel-0. The record identifies pool-cal-C0-M as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-0, according to this record? A = pool-cal-C0-K. B = pool-cal-C0-L. C = not determined from the record. D = pool-cal-C0-M.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-1",
+  "english": "Exactly one of pool-cal-C1-K, pool-cal-C1-L, pool-cal-C1-M holds parcel pool-cal-C-parcel-1. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C1-K, pool-cal-C1-L, pool-cal-C1-M holds parcel pool-cal-C-parcel-1. The record identifies pool-cal-C1-M as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-1, according to this record? A = not determined from the record. B = pool-cal-C1-L. C = pool-cal-C1-K. D = pool-cal-C1-M.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "A"
+  }
+ },
+ {
+  "id": "pool-cal-C-2",
+  "english": "Exactly one of pool-cal-C2-K, pool-cal-C2-L, pool-cal-C2-M holds parcel pool-cal-C-parcel-2. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C2-K, pool-cal-C2-L, pool-cal-C2-M holds parcel pool-cal-C-parcel-2. The record identifies pool-cal-C2-M as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-2, according to this record? A = not determined from the record. B = pool-cal-C2-M. C = pool-cal-C2-L. D = pool-cal-C2-K.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "A"
+  }
+ },
+ {
+  "id": "pool-cal-C-3",
+  "english": "Exactly one of pool-cal-C3-K, pool-cal-C3-L, pool-cal-C3-M holds parcel pool-cal-C-parcel-3. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C3-K, pool-cal-C3-L, pool-cal-C3-M holds parcel pool-cal-C-parcel-3. The record identifies pool-cal-C3-M as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-3, according to this record? A = pool-cal-C3-M. B = pool-cal-C3-K. C = not determined from the record. D = pool-cal-C3-L.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-4",
+  "english": "Exactly one of pool-cal-C4-K, pool-cal-C4-L, pool-cal-C4-M holds parcel pool-cal-C-parcel-4. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C4-K, pool-cal-C4-L, pool-cal-C4-M holds parcel pool-cal-C-parcel-4. The record identifies pool-cal-C4-L as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-4, according to this record? A = pool-cal-C4-M. B = pool-cal-C4-L. C = pool-cal-C4-K. D = not determined from the record.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-5",
+  "english": "Exactly one of pool-cal-C5-K, pool-cal-C5-L, pool-cal-C5-M holds parcel pool-cal-C-parcel-5. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C5-K, pool-cal-C5-L, pool-cal-C5-M holds parcel pool-cal-C-parcel-5. The record identifies pool-cal-C5-L as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-5, according to this record? A = pool-cal-C5-M. B = pool-cal-C5-K. C = pool-cal-C5-L. D = not determined from the record.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-6",
+  "english": "Exactly one of pool-cal-C6-K, pool-cal-C6-L, pool-cal-C6-M holds parcel pool-cal-C-parcel-6. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C6-K, pool-cal-C6-L, pool-cal-C6-M holds parcel pool-cal-C-parcel-6. The record identifies pool-cal-C6-M as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-6, according to this record? A = pool-cal-C6-M. B = pool-cal-C6-K. C = not determined from the record. D = pool-cal-C6-L.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-7",
+  "english": "Exactly one of pool-cal-C7-K, pool-cal-C7-L, pool-cal-C7-M holds parcel pool-cal-C-parcel-7. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C7-K, pool-cal-C7-L, pool-cal-C7-M holds parcel pool-cal-C-parcel-7. The record identifies pool-cal-C7-M as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-7, according to this record? A = pool-cal-C7-M. B = pool-cal-C7-L. C = not determined from the record. D = pool-cal-C7-K.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-8",
+  "english": "Exactly one of pool-cal-C8-K, pool-cal-C8-L, pool-cal-C8-M holds parcel pool-cal-C-parcel-8. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C8-K, pool-cal-C8-L, pool-cal-C8-M holds parcel pool-cal-C-parcel-8. The record identifies pool-cal-C8-K as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-8, according to this record? A = pool-cal-C8-L. B = pool-cal-C8-M. C = pool-cal-C8-K. D = not determined from the record.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-9",
+  "english": "Exactly one of pool-cal-C9-K, pool-cal-C9-L, pool-cal-C9-M holds parcel pool-cal-C-parcel-9. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C9-K, pool-cal-C9-L, pool-cal-C9-M holds parcel pool-cal-C-parcel-9. The record identifies pool-cal-C9-M as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-9, according to this record? A = pool-cal-C9-L. B = pool-cal-C9-M. C = not determined from the record. D = pool-cal-C9-K.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-10",
+  "english": "Exactly one of pool-cal-C10-K, pool-cal-C10-L, pool-cal-C10-M holds parcel pool-cal-C-parcel-10. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C10-K, pool-cal-C10-L, pool-cal-C10-M holds parcel pool-cal-C-parcel-10. The record identifies pool-cal-C10-M as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-10, according to this record? A = not determined from the record. B = pool-cal-C10-K. C = pool-cal-C10-L. D = pool-cal-C10-M.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "A"
+  }
+ },
+ {
+  "id": "pool-cal-C-11",
+  "english": "Exactly one of pool-cal-C11-K, pool-cal-C11-L, pool-cal-C11-M holds parcel pool-cal-C-parcel-11. The record does not identify its holder.",
+  "ainglish": "Exactly one of pool-cal-C11-K, pool-cal-C11-L, pool-cal-C11-M holds parcel pool-cal-C-parcel-11. The record identifies pool-cal-C11-K as its holder.",
+  "question": "Who holds parcel pool-cal-C-parcel-11, according to this record? A = pool-cal-C11-M. B = pool-cal-C11-L. C = pool-cal-C11-K. D = not determined from the record.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ }
+]
