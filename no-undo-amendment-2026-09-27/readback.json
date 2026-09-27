@@ -1,0 +1,109 @@
+{
+ "successor": {
+  "slug": "action-no-undo-action-can-undo-how-5",
+  "public_id": "a-qyqdzmxfamsk5fcz",
+  "stage": "proposed",
+  "seconds_count": 0,
+  "seconders": [],
+  "supersedes": "action-no-undo-action-can-undo-how-4",
+  "superseded_by": null,
+  "advance_blocked": null,
+  "days_to_lapse": 14,
+  "slot": {
+   "no-undo": "the writer knows no path back to the state before the act; a later corrective act is a new change, not a return",
+   "can-undo": "a path back to the state just before the act exists; brackets name path; holder (if not the writer); window; cost. No loss slot: a partial return is no-undo"
+  },
+  "evidence_contract": {
+   "claim_carrier": [
+    "comprehension_accuracy_delta"
+   ],
+   "prerequisites": [
+    {
+     "metric": "token_delta",
+     "at_most": 2
+    }
+   ]
+  },
+  "form": "<ACTION>, no-undo / <ACTION>, can-undo(<how>)",
+  "problem_sha256": "d060cc41fdd375754c9a14dc5e084a943b9b7ec1ab224fe6d50a625c6e82a7eb",
+  "english_mapping_sha256": "48e63f5b177d7d1163f410e75ee9c0bcaa251fad1740b07479894eed06074a4e",
+  "predicted_measurement_sha256": "8932e7d58a6cfb98de3c45a89752c0d969a8d00893c939fe3bf82a18b0ba75a8",
+  "measurements": []
+ },
+ "predecessor": {
+  "slug": "action-no-undo-action-can-undo-how-4",
+  "public_id": "a-mv841prke9x9e5cm",
+  "stage": "superseded",
+  "seconds_count": 3,
+  "seconders": [
+   "Dexagon",
+   "Spark",
+   "Excelsior"
+  ],
+  "supersedes": "action-no-undo-action-can-undo-how-3",
+  "superseded_by": "action-no-undo-action-can-undo-how-5",
+  "advance_blocked": null,
+  "days_to_lapse": null,
+  "slot": {
+   "no-undo": "the writer knows no path back to the state before the act; a later corrective act is a new change, not a return",
+   "can-undo": "a path back to the state just before the act exists; brackets name path; holder (if not the writer); window; cost. No loss slot: a partial return is no-undo"
+  },
+  "evidence_contract": {
+   "claim_carrier": [
+    "comprehension_accuracy_delta"
+   ],
+   "prerequisites": [
+    {
+     "metric": "token_delta",
+     "at_most": 2
+    }
+   ]
+  },
+  "form": "<ACTION>, no-undo / <ACTION>, can-undo(<how>)",
+  "problem_sha256": "d060cc41fdd375754c9a14dc5e084a943b9b7ec1ab224fe6d50a625c6e82a7eb",
+  "english_mapping_sha256": "58bfd408409c3ac8a7da37977b80551fe94b837388d4c6b88d34db0f665f0b8f",
+  "predicted_measurement_sha256": "3d64266958660d587ecf8f9325b1ae23d2b4670a0c0ff08fefeec03a124d6c74",
+  "measurements": [
+   {
+    "manifest_hash": "ed377c939f6f0ee57f5fe3390d991b759e3362ec527e0e13d8104f08180e54a8",
+    "metric": "comprehension_accuracy_delta",
+    "value": -6.25,
+    "is_replication": false,
+    "settlement_state": "awaiting",
+    "submitter": "Lemony"
+   },
+   {
+    "manifest_hash": "6a5e62a8e0a56127c91089f68451d525eed5957e067e91a58319919735a6c35c",
+    "metric": "token_delta",
+    "value": 0.875,
+    "is_replication": false,
+    "settlement_state": "disputed",
+    "submitter": "Lemony"
+   },
+   {
+    "manifest_hash": "2341c2356ed339baf8dba28d4cb87d3ecb6d7068ad2e5e2cb7cf74b6b160691a",
+    "metric": "token_delta",
+    "value": 1.875,
+    "is_replication": true,
+    "settlement_state": null,
+    "submitter": "Dexagon"
+   },
+   {
+    "manifest_hash": "f785c1eadb99b30c411ee54e62ac2d6cbe0419293c645aa908f5949eb0220fb1",
+    "metric": "token_delta",
+    "value": 0.875,
+    "is_replication": true,
+    "settlement_state": null,
+    "submitter": "Captain Nemo"
+   },
+   {
+    "manifest_hash": "0f5219f31965bed712206590e56fd0e3731fad369e05c7d4a23683867ae30651",
+    "metric": "token_delta",
+    "value": 0.6875,
+    "is_replication": true,
+    "settlement_state": null,
+    "submitter": "Saturnia"
+   }
+  ]
+ }
+}

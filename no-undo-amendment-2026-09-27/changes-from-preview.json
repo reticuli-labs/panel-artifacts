@@ -1,0 +1,14 @@
+{
+ "field": "predicted_measurement",
+ "english_mapping_changed_from_preview": false,
+ "sentence_level_changes": [
+  {
+   "before": "The grammar, renderer, joint slot schedule for the sixteen can-undo cases (path-only 3, window-only 3, holder-only 3, cost-only 2, holder+window 2, holder+cost 1, window+cost 1, holder+window+cost 1), report/instruction 8/8 per stratum, ACTION word-length counts (3:6, 4:8, 5:8, 6:6, 7:4), tokenizer roster (cl100k_base, o200k_base, p50k_base) and a validator that refuses any bank whose English arm is not byte-equal to R* or whose joint counts differ are pinned at panel-artifacts commit ae3bed888ac8396a1c7a765b52cdcd928345973c (no-undo-rstar-2026-09-22/noundo_rstar.py, sha256 b1cd2787af86de587058fb7914e959a66ddaaedbf974f1f6b440f43832dbeed8). The authored 32-pair bank (bank.json, sha256 7226cc7679a6812c926f8ad8558f0fa0f7efd2fd66b2794d83382124e35c8894) and its materialised joint sampling profile (profile.json, sha256 bd684a47ec245f1ff265ae35913bf69b06de75d2a6c28d699cbc2125cc02f79b) are in the same commit with a row-by-row meaning review (REVIEW.md); a replica agrees the profile before either side counts, and validate_frozen_profile refuses a bank whose joint population differs from it",
+   "after": "The grammar, renderer, joint slot schedule for the sixteen can-undo cases (path-only 3, window-only 3, holder-only 3, cost-only 2, holder+window 2, holder+cost 1, window+cost 1, holder+window+cost 1), report/instruction 8/8 per stratum, ACTION word-length counts (3:6, 4:8, 5:8, 6:6, 7:4), tokenizer roster (cl100k_base, o200k_base, p50k_base) and a validator that refuses any bank whose English arm is not byte-equal to R* or whose joint counts differ are pinned at panel-artifacts commit ecab3926b535b8b8ab6326b83b6ed13f24f4687e (no-undo-rstar-2026-09-22/noundo_rstar.py, sha256 b1cd2787af86de587058fb7914e959a66ddaaedbf974f1f6b440f43832dbeed8). The authored 32-pair bank (bank.json, canonical-JSON sha256 f7e05fd81e90786610de559ad3c8ae4d29477180b8051cff20552d1610ef04de) and its materialised joint sampling profile (profile.json, canonical-JSON sha256 bd684a47ec245f1ff265ae35913bf69b06de75d2a6c28d699cbc2125cc02f79b) are in the same commit with a row-by-row meaning review (REVIEW.md); a replica agrees the profile before either side counts, and validate_frozen_profile refuses a bank whose joint population differs from it"
+  },
+  {
+   "before": "The +0.875 original and the +1.875 / +0.6875 replications stay on the predecessor as filed; R* is not attached to them and no rerun seeks +0.875",
+   "after": "All five rows filed on the predecessor stay there as filed: the token_delta original +0.875, its replications +1.875 / +0.875 / +0.6875, and the comprehension_accuracy_delta original −6.25 (one reader, unresolved). R* is not attached to them, none is carried to this successor, and no rerun seeks +0.875"
+  }
+ ]
+}
