@@ -1,0 +1,1314 @@
+[
+ {
+  "id": "pool-increase-C-0",
+  "english": "Delta booked 23 seats last month. Sigma's seat count is Delta's seat count multiplied by 2.",
+  "ainglish": "Delta booked 23 seats last month. Sigma booked 2 times as many seats as Delta.",
+  "bare_english": "Delta booked 23 seats last month. Sigma booked 2 times more seats than Delta.",
+  "question": "How many seats did Sigma book last month? A = 25. B = 46. C = the sentence does not fix a single count. D = 69.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "2",
+   "baseline": 23,
+   "spelling": "times",
+   "attachment": "as",
+   "ratio_value": 46,
+   "additive_value": 69,
+   "semantic_gold": "46",
+   "answer_options": {
+    "B": "46",
+    "A": "25",
+    "C": "the sentence does not fix a single count",
+    "D": "69"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-1",
+  "english": "Harbour shipped 37 parcels during the incident. Ridge's parcel count is Harbour's parcel count multiplied by 3.",
+  "ainglish": "Harbour shipped 37 parcels during the incident. Ridge shipped 3 times the parcels of Harbour.",
+  "bare_english": "Harbour shipped 37 parcels during the incident. Ridge shipped 3 times more parcels than Harbour.",
+  "question": "How many parcels did Ridge ship during the incident? A = the sentence does not fix a single count. B = 111. C = 148. D = 40.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "3",
+   "baseline": 37,
+   "spelling": "times",
+   "attachment": "the",
+   "ratio_value": 111,
+   "additive_value": 148,
+   "semantic_gold": "111",
+   "answer_options": {
+    "B": "111",
+    "A": "the sentence does not fix a single count",
+    "C": "148",
+    "D": "40"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-2",
+  "english": "Maple merged 38 commits on Tuesday. Cedar's commit count is Maple's commit count multiplied by 5.",
+  "ainglish": "Maple merged 38 commits on Tuesday. Cedar merged 5× the commits of Maple.",
+  "bare_english": "Maple merged 38 commits on Tuesday. Cedar merged 5 times more commits than Maple.",
+  "question": "How many commits did Cedar merge on Tuesday? A = 190. B = 228. C = the sentence does not fix a single count. D = 43.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "5",
+   "baseline": 38,
+   "spelling": "times",
+   "attachment": "notation",
+   "ratio_value": 190,
+   "additive_value": 228,
+   "semantic_gold": "190",
+   "answer_options": {
+    "A": "190",
+    "B": "228",
+    "C": "the sentence does not fix a single count",
+    "D": "43"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-3",
+  "english": "Quill answered 12 calls on Tuesday. Slate's call count is Quill's call count multiplied by 10.",
+  "ainglish": "Quill answered 12 calls on Tuesday. Slate answered 10 times as many calls as Quill.",
+  "bare_english": "Quill answered 12 calls on Tuesday. Slate answered 10 times more calls than Quill.",
+  "question": "How many calls did Slate answer on Tuesday? A = 22. B = the sentence does not fix a single count. C = 120. D = 132.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "10",
+   "baseline": 12,
+   "spelling": "times",
+   "attachment": "as",
+   "ratio_value": 120,
+   "additive_value": 132,
+   "semantic_gold": "120",
+   "answer_options": {
+    "C": "120",
+    "A": "22",
+    "B": "the sentence does not fix a single count",
+    "D": "132"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-4",
+  "english": "Orion ran 38 builds on Tuesday. Cygnus's build count is Orion's build count multiplied by 1.5.",
+  "ainglish": "Orion ran 38 builds on Tuesday. Cygnus ran 1.5 times the builds of Orion.",
+  "bare_english": "Orion ran 38 builds on Tuesday. Cygnus ran 1.5 times more builds than Orion.",
+  "question": "How many builds did Cygnus run on Tuesday? A = 95. B = 40. C = 57. D = the sentence does not fix a single count.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "1.5",
+   "baseline": 38,
+   "spelling": "times",
+   "attachment": "the",
+   "ratio_value": 57,
+   "additive_value": 95,
+   "semantic_gold": "57",
+   "answer_options": {
+    "C": "57",
+    "A": "95",
+    "B": "40",
+    "D": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-5",
+  "english": "Basalt filed 30 reports last month. Flint's report count is Basalt's report count multiplied by 2.4.",
+  "ainglish": "Basalt filed 30 reports last month. Flint filed 2.4× the reports of Basalt.",
+  "bare_english": "Basalt filed 30 reports last month. Flint filed 2.4 times more reports than Basalt.",
+  "question": "How many reports did Flint file last month? A = 32. B = 72. C = 102. D = the sentence does not fix a single count.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "2.4",
+   "baseline": 30,
+   "spelling": "times",
+   "attachment": "notation",
+   "ratio_value": 72,
+   "additive_value": 102,
+   "semantic_gold": "72",
+   "answer_options": {
+    "B": "72",
+    "A": "32",
+    "C": "102",
+    "D": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-6",
+  "english": "Willow logged 15 errors overnight. Rowan's error count is Willow's error count multiplied by 2.",
+  "ainglish": "Willow logged 15 errors overnight. Rowan logged 2x as many errors as Willow.",
+  "bare_english": "Willow logged 15 errors overnight. Rowan logged 2x more errors than Willow.",
+  "question": "How many errors did Rowan log overnight? A = 17. B = 45. C = the sentence does not fix a single count. D = 30.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "2",
+   "baseline": 15,
+   "spelling": "x",
+   "attachment": "as",
+   "ratio_value": 30,
+   "additive_value": 45,
+   "semantic_gold": "30",
+   "answer_options": {
+    "D": "30",
+    "A": "17",
+    "B": "45",
+    "C": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-7",
+  "english": "Pike handled 24 requests on Tuesday. Tern's request count is Pike's request count multiplied by 3.",
+  "ainglish": "Pike handled 24 requests on Tuesday. Tern handled 3x the requests of Pike.",
+  "bare_english": "Pike handled 24 requests on Tuesday. Tern handled 3x more requests than Pike.",
+  "question": "How many requests did Tern handle on Tuesday? A = 27. B = 96. C = the sentence does not fix a single count. D = 72.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "3",
+   "baseline": 24,
+   "spelling": "x",
+   "attachment": "the",
+   "ratio_value": 72,
+   "additive_value": 96,
+   "semantic_gold": "72",
+   "answer_options": {
+    "D": "72",
+    "A": "27",
+    "B": "96",
+    "C": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-8",
+  "english": "Ember issued 34 retries in the second quarter. Frost's retry count is Ember's retry count multiplied by 5.",
+  "ainglish": "Ember issued 34 retries in the second quarter. Frost issued 5× the retries of Ember.",
+  "bare_english": "Ember issued 34 retries in the second quarter. Frost issued 5x more retries than Ember.",
+  "question": "How many retries did Frost issue in the second quarter? A = 204. B = 39. C = the sentence does not fix a single count. D = 170.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "5",
+   "baseline": 34,
+   "spelling": "x",
+   "attachment": "notation",
+   "ratio_value": 170,
+   "additive_value": 204,
+   "semantic_gold": "170",
+   "answer_options": {
+    "D": "170",
+    "A": "204",
+    "B": "39",
+    "C": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-9",
+  "english": "Atlas closed 21 tickets in the pilot. Compass's ticket count is Atlas's ticket count multiplied by 10.",
+  "ainglish": "Atlas closed 21 tickets in the pilot. Compass closed 10x as many tickets as Atlas.",
+  "bare_english": "Atlas closed 21 tickets in the pilot. Compass closed 10x more tickets than Atlas.",
+  "question": "How many tickets did Compass close in the pilot? A = 231. B = 210. C = the sentence does not fix a single count. D = 31.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "10",
+   "baseline": 21,
+   "spelling": "x",
+   "attachment": "as",
+   "ratio_value": 210,
+   "additive_value": 231,
+   "semantic_gold": "210",
+   "answer_options": {
+    "B": "210",
+    "A": "231",
+    "C": "the sentence does not fix a single count",
+    "D": "31"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-10",
+  "english": "Kestrel raised 20 alerts in the second quarter. Osprey's alert count is Kestrel's alert count multiplied by 1.5.",
+  "ainglish": "Kestrel raised 20 alerts in the second quarter. Osprey raised 1.5x the alerts of Kestrel.",
+  "bare_english": "Kestrel raised 20 alerts in the second quarter. Osprey raised 1.5x more alerts than Kestrel.",
+  "question": "How many alerts did Osprey raise in the second quarter? A = 30. B = 22. C = 50. D = the sentence does not fix a single count.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "1.5",
+   "baseline": 20,
+   "spelling": "x",
+   "attachment": "the",
+   "ratio_value": 30,
+   "additive_value": 50,
+   "semantic_gold": "30",
+   "answer_options": {
+    "A": "30",
+    "B": "22",
+    "C": "50",
+    "D": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-11",
+  "english": "Alder sent 5 invoices during the incident. Birch's invoice count is Alder's invoice count multiplied by 2.4.",
+  "ainglish": "Alder sent 5 invoices during the incident. Birch sent 2.4× the invoices of Alder.",
+  "bare_english": "Alder sent 5 invoices during the incident. Birch sent 2.4x more invoices than Alder.",
+  "question": "How many invoices did Birch send during the incident? A = 7. B = the sentence does not fix a single count. C = 12. D = 17.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "2.4",
+   "baseline": 5,
+   "spelling": "x",
+   "attachment": "notation",
+   "ratio_value": 12,
+   "additive_value": 17,
+   "semantic_gold": "12",
+   "answer_options": {
+    "C": "12",
+    "A": "7",
+    "B": "the sentence does not fix a single count",
+    "D": "17"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-12",
+  "english": "Cobalt delivered 30 messages in the second quarter. Umber's message count is Cobalt's message count multiplied by 2.",
+  "ainglish": "Cobalt delivered 30 messages in the second quarter. Umber delivered 2× as many messages as Cobalt.",
+  "bare_english": "Cobalt delivered 30 messages in the second quarter. Umber delivered 2-fold more messages than Cobalt.",
+  "question": "How many messages did Umber deliver in the second quarter? A = the sentence does not fix a single count. B = 90. C = 32. D = 60.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "2",
+   "baseline": 30,
+   "spelling": "symbol",
+   "attachment": "as",
+   "ratio_value": 60,
+   "additive_value": 90,
+   "semantic_gold": "60",
+   "answer_options": {
+    "D": "60",
+    "A": "the sentence does not fix a single count",
+    "B": "90",
+    "C": "32"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-13",
+  "english": "North restarted 11 containers in the second quarter. South's container count is North's container count multiplied by 3.",
+  "ainglish": "North restarted 11 containers in the second quarter. South restarted 3× the containers of North.",
+  "bare_english": "North restarted 11 containers in the second quarter. South restarted 3-fold more containers than North.",
+  "question": "How many containers did South restart in the second quarter? A = 33. B = the sentence does not fix a single count. C = 44. D = 14.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "3",
+   "baseline": 11,
+   "spelling": "symbol",
+   "attachment": "the",
+   "ratio_value": 33,
+   "additive_value": 44,
+   "semantic_gold": "33",
+   "answer_options": {
+    "A": "33",
+    "B": "the sentence does not fix a single count",
+    "C": "44",
+    "D": "14"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-14",
+  "english": "Lyra crawled 9 pages during the incident. Vega's page count is Lyra's page count multiplied by 5.",
+  "ainglish": "Lyra crawled 9 pages during the incident. Vega crawled 5× the pages of Lyra.",
+  "bare_english": "Lyra crawled 9 pages during the incident. Vega crawled 5-fold more pages than Lyra.",
+  "question": "How many pages did Vega crawl during the incident? A = 45. B = 54. C = the sentence does not fix a single count. D = 14.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "5",
+   "baseline": 9,
+   "spelling": "symbol",
+   "attachment": "notation",
+   "ratio_value": 45,
+   "additive_value": 54,
+   "semantic_gold": "45",
+   "answer_options": {
+    "A": "45",
+    "B": "54",
+    "C": "the sentence does not fix a single count",
+    "D": "14"
+   }
+  }
+ },
+ {
+  "id": "pool-increase-C-15",
+  "english": "Amber imported 10 rows this week. Jade's row count is Amber's row count multiplied by 10.",
+  "ainglish": "Amber imported 10 rows this week. Jade imported 10× as many rows as Amber.",
+  "bare_english": "Amber imported 10 rows this week. Jade imported 10-fold more rows than Amber.",
+  "question": "How many rows did Jade import this week? A = the sentence does not fix a single count. B = 20. C = 100. D = 110.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "increase",
+  "strata": {
+   "condition": "increase",
+   "seat": "C",
+   "multiplier": "10",
+   "baseline": 10,
+   "spelling": "symbol",
+   "attachment": "as",
+   "ratio_value": 100,
+   "additive_value": 110,
+   "semantic_gold": "100",
+   "answer_options": {
+    "C": "100",
+    "A": "the sentence does not fix a single count",
+    "B": "20",
+    "D": "110"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-0",
+  "english": "Pike closed 14 tickets last month. Tern's ticket count is Pike's ticket count divided by 2.",
+  "ainglish": "Pike closed 14 tickets last month. Tern closed half as many tickets as Pike.",
+  "bare_english": "Pike closed 14 tickets last month. Tern closed 2 times fewer tickets than Pike.",
+  "question": "How many tickets did Tern close last month? A = 7. B = 12. C = the sentence does not fix a single count. D = 28.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "2",
+   "baseline": 14,
+   "spelling": "times",
+   "attachment": "as",
+   "ratio_value": 7,
+   "semantic_gold": "7",
+   "answer_options": {
+    "A": "7",
+    "B": "12",
+    "C": "the sentence does not fix a single count",
+    "D": "28"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-1",
+  "english": "Ember raised 27 alerts in the March run. Frost's alert count is Ember's alert count divided by 3.",
+  "ainglish": "Ember raised 27 alerts in the March run. Frost raised a third the alerts of Ember.",
+  "bare_english": "Ember raised 27 alerts in the March run. Frost raised 3 times fewer alerts than Ember.",
+  "question": "How many alerts did Frost raise in the March run? A = the sentence does not fix a single count. B = 81. C = 24. D = 9.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "3",
+   "baseline": 27,
+   "spelling": "times",
+   "attachment": "the",
+   "ratio_value": 9,
+   "semantic_gold": "9",
+   "answer_options": {
+    "D": "9",
+    "A": "the sentence does not fix a single count",
+    "B": "81",
+    "C": "24"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-2",
+  "english": "Atlas sent 36 invoices on Tuesday. Compass's invoice count is Atlas's invoice count divided by 4.",
+  "ainglish": "Atlas sent 36 invoices on Tuesday. Compass sent a quarter as many invoices as Atlas.",
+  "bare_english": "Atlas sent 36 invoices on Tuesday. Compass sent 4 times fewer invoices than Atlas.",
+  "question": "How many invoices did Compass send on Tuesday? A = 9. B = 32. C = 144. D = the sentence does not fix a single count.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "4",
+   "baseline": 36,
+   "spelling": "times",
+   "attachment": "as",
+   "ratio_value": 9,
+   "semantic_gold": "9",
+   "answer_options": {
+    "A": "9",
+    "B": "32",
+    "C": "144",
+    "D": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-3",
+  "english": "Kestrel delivered 30 messages on Tuesday. Osprey's message count is Kestrel's message count divided by 5.",
+  "ainglish": "Kestrel delivered 30 messages on Tuesday. Osprey delivered a fifth the messages of Kestrel.",
+  "bare_english": "Kestrel delivered 30 messages on Tuesday. Osprey delivered 5 times fewer messages than Kestrel.",
+  "question": "How many messages did Osprey deliver on Tuesday? A = 150. B = the sentence does not fix a single count. C = 6. D = 25.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "5",
+   "baseline": 30,
+   "spelling": "times",
+   "attachment": "the",
+   "ratio_value": 6,
+   "semantic_gold": "6",
+   "answer_options": {
+    "C": "6",
+    "A": "150",
+    "B": "the sentence does not fix a single count",
+    "D": "25"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-4",
+  "english": "Alder restarted 50 containers in the pilot. Birch's container count is Alder's container count divided by 10.",
+  "ainglish": "Alder restarted 50 containers in the pilot. Birch restarted a tenth as many containers as Alder.",
+  "bare_english": "Alder restarted 50 containers in the pilot. Birch restarted 10 times fewer containers than Alder.",
+  "question": "How many containers did Birch restart in the pilot? A = the sentence does not fix a single count. B = 40. C = 500. D = 5.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "10",
+   "baseline": 50,
+   "spelling": "times",
+   "attachment": "as",
+   "ratio_value": 5,
+   "semantic_gold": "5",
+   "answer_options": {
+    "D": "5",
+    "A": "the sentence does not fix a single count",
+    "B": "40",
+    "C": "500"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-5",
+  "english": "Cobalt crawled 16 pages in the March run. Umber's page count is Cobalt's page count divided by 2.",
+  "ainglish": "Cobalt crawled 16 pages in the March run. Umber crawled half the pages of Cobalt.",
+  "bare_english": "Cobalt crawled 16 pages in the March run. Umber crawled 2x fewer pages than Cobalt.",
+  "question": "How many pages did Umber crawl in the March run? A = 14. B = the sentence does not fix a single count. C = 8. D = 32.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "2",
+   "baseline": 16,
+   "spelling": "x",
+   "attachment": "the",
+   "ratio_value": 8,
+   "semantic_gold": "8",
+   "answer_options": {
+    "C": "8",
+    "A": "14",
+    "B": "the sentence does not fix a single count",
+    "D": "32"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-6",
+  "english": "North imported 21 rows overnight. South's row count is North's row count divided by 3.",
+  "ainglish": "North imported 21 rows overnight. South imported a third as many rows as North.",
+  "bare_english": "North imported 21 rows overnight. South imported 3x fewer rows than North.",
+  "question": "How many rows did South import overnight? A = 18. B = 7. C = 63. D = the sentence does not fix a single count.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "3",
+   "baseline": 21,
+   "spelling": "x",
+   "attachment": "as",
+   "ratio_value": 7,
+   "semantic_gold": "7",
+   "answer_options": {
+    "B": "7",
+    "A": "18",
+    "C": "63",
+    "D": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-7",
+  "english": "Lyra booked 48 seats this week. Vega's seat count is Lyra's seat count divided by 4.",
+  "ainglish": "Lyra booked 48 seats this week. Vega booked a quarter the seats of Lyra.",
+  "bare_english": "Lyra booked 48 seats this week. Vega booked 4x fewer seats than Lyra.",
+  "question": "How many seats did Vega book this week? A = 192. B = 12. C = 44. D = the sentence does not fix a single count.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "4",
+   "baseline": 48,
+   "spelling": "x",
+   "attachment": "the",
+   "ratio_value": 12,
+   "semantic_gold": "12",
+   "answer_options": {
+    "B": "12",
+    "A": "192",
+    "C": "44",
+    "D": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-8",
+  "english": "Amber shipped 60 parcels last month. Jade's parcel count is Amber's parcel count divided by 5.",
+  "ainglish": "Amber shipped 60 parcels last month. Jade shipped a fifth as many parcels as Amber.",
+  "bare_english": "Amber shipped 60 parcels last month. Jade shipped 5x fewer parcels than Amber.",
+  "question": "How many parcels did Jade ship last month? A = the sentence does not fix a single count. B = 55. C = 300. D = 12.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "5",
+   "baseline": 60,
+   "spelling": "x",
+   "attachment": "as",
+   "ratio_value": 12,
+   "semantic_gold": "12",
+   "answer_options": {
+    "D": "12",
+    "A": "the sentence does not fix a single count",
+    "B": "55",
+    "C": "300"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-9",
+  "english": "Delta merged 80 commits in the March run. Sigma's commit count is Delta's commit count divided by 10.",
+  "ainglish": "Delta merged 80 commits in the March run. Sigma merged a tenth the commits of Delta.",
+  "bare_english": "Delta merged 80 commits in the March run. Sigma merged 10x fewer commits than Delta.",
+  "question": "How many commits did Sigma merge in the March run? A = the sentence does not fix a single count. B = 70. C = 800. D = 8.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "10",
+   "baseline": 80,
+   "spelling": "x",
+   "attachment": "the",
+   "ratio_value": 8,
+   "semantic_gold": "8",
+   "answer_options": {
+    "D": "8",
+    "A": "the sentence does not fix a single count",
+    "B": "70",
+    "C": "800"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-10",
+  "english": "Harbour answered 6 calls on Tuesday. Ridge's call count is Harbour's call count divided by 2.",
+  "ainglish": "Harbour answered 6 calls on Tuesday. Ridge answered half as many calls as Harbour.",
+  "bare_english": "Harbour answered 6 calls on Tuesday. Ridge answered 2 times less calls than Harbour.",
+  "question": "How many calls did Ridge answer on Tuesday? A = 12. B = 3. C = 4. D = the sentence does not fix a single count.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "2",
+   "baseline": 6,
+   "spelling": "symbol",
+   "attachment": "as",
+   "ratio_value": 3,
+   "semantic_gold": "3",
+   "answer_options": {
+    "B": "3",
+    "A": "12",
+    "C": "4",
+    "D": "the sentence does not fix a single count"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-11",
+  "english": "Maple ran 30 builds this week. Cedar's build count is Maple's build count divided by 3.",
+  "ainglish": "Maple ran 30 builds this week. Cedar ran a third the builds of Maple.",
+  "bare_english": "Maple ran 30 builds this week. Cedar ran 3 times less builds than Maple.",
+  "question": "How many builds did Cedar run this week? A = 90. B = the sentence does not fix a single count. C = 10. D = 27.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "3",
+   "baseline": 30,
+   "spelling": "symbol",
+   "attachment": "the",
+   "ratio_value": 10,
+   "semantic_gold": "10",
+   "answer_options": {
+    "C": "10",
+    "A": "90",
+    "B": "the sentence does not fix a single count",
+    "D": "27"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-12",
+  "english": "Quill filed 20 reports in the pilot. Slate's report count is Quill's report count divided by 4.",
+  "ainglish": "Quill filed 20 reports in the pilot. Slate filed a quarter as many reports as Quill.",
+  "bare_english": "Quill filed 20 reports in the pilot. Slate filed 4 times less reports than Quill.",
+  "question": "How many reports did Slate file in the pilot? A = the sentence does not fix a single count. B = 80. C = 5. D = 16.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "4",
+   "baseline": 20,
+   "spelling": "symbol",
+   "attachment": "as",
+   "ratio_value": 5,
+   "semantic_gold": "5",
+   "answer_options": {
+    "C": "5",
+    "A": "the sentence does not fix a single count",
+    "B": "80",
+    "D": "16"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-13",
+  "english": "Orion logged 50 errors in the March run. Cygnus's error count is Orion's error count divided by 5.",
+  "ainglish": "Orion logged 50 errors in the March run. Cygnus logged a fifth the errors of Orion.",
+  "bare_english": "Orion logged 50 errors in the March run. Cygnus logged 5 times less errors than Orion.",
+  "question": "How many errors did Cygnus log in the March run? A = 10. B = the sentence does not fix a single count. C = 250. D = 45.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "5",
+   "baseline": 50,
+   "spelling": "symbol",
+   "attachment": "the",
+   "ratio_value": 10,
+   "semantic_gold": "10",
+   "answer_options": {
+    "A": "10",
+    "B": "the sentence does not fix a single count",
+    "C": "250",
+    "D": "45"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-14",
+  "english": "Basalt handled 60 requests during the incident. Flint's request count is Basalt's request count divided by 10.",
+  "ainglish": "Basalt handled 60 requests during the incident. Flint handled a tenth as many requests as Basalt.",
+  "bare_english": "Basalt handled 60 requests during the incident. Flint handled 10 times less requests than Basalt.",
+  "question": "How many requests did Flint handle during the incident? A = 6. B = 50. C = the sentence does not fix a single count. D = 600.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "10",
+   "baseline": 60,
+   "spelling": "symbol",
+   "attachment": "as",
+   "ratio_value": 6,
+   "semantic_gold": "6",
+   "answer_options": {
+    "A": "6",
+    "B": "50",
+    "C": "the sentence does not fix a single count",
+    "D": "600"
+   }
+  }
+ },
+ {
+  "id": "pool-decrease-C-15",
+  "english": "Willow issued 22 retries last month. Rowan's retry count is Willow's retry count divided by 2.",
+  "ainglish": "Willow issued 22 retries last month. Rowan issued half the retries of Willow.",
+  "bare_english": "Willow issued 22 retries last month. Rowan issued 2 times fewer retries than Willow.",
+  "question": "How many retries did Rowan issue last month? A = 44. B = 11. C = the sentence does not fix a single count. D = 20.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "settlement_stratum": "decrease",
+  "strata": {
+   "condition": "decrease",
+   "seat": "C",
+   "multiplier": "2",
+   "baseline": 22,
+   "spelling": "times",
+   "attachment": "the",
+   "ratio_value": 11,
+   "semantic_gold": "11",
+   "answer_options": {
+    "B": "11",
+    "A": "44",
+    "C": "the sentence does not fix a single count",
+    "D": "20"
+   }
+  }
+ },
+ {
+  "id": "pool-cal-C-0",
+  "english": "An inventory message names the pool-cal-C-item-0, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-0 is in locker 5.",
+  "question": "Where does the message state that the pool-cal-C-item-0 is? A = not stated in the message. B = drawer 5. C = cabinet 7. D = locker 5.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "A"
+  }
+ },
+ {
+  "id": "pool-cal-C-1",
+  "english": "An inventory message names the pool-cal-C-item-1, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-1 is in drawer 5.",
+  "question": "Where does the message state that the pool-cal-C-item-1 is? A = drawer 5. B = not stated in the message. C = cabinet 4. D = shelf 3.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "B"
+  }
+ },
+ {
+  "id": "pool-cal-C-2",
+  "english": "An inventory message names the pool-cal-C-item-2, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-2 is in cabinet 9.",
+  "question": "Where does the message state that the pool-cal-C-item-2 is? A = bin 7. B = cabinet 9. C = shelf 6. D = not stated in the message.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-3",
+  "english": "An inventory message names the pool-cal-C-item-3, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-3 is in shelf 7.",
+  "question": "Where does the message state that the pool-cal-C-item-3 is? A = shelf 7. B = bin 5. C = tray 7. D = not stated in the message.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-4",
+  "english": "An inventory message names the pool-cal-C-item-4, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-4 is in bin 2.",
+  "question": "Where does the message state that the pool-cal-C-item-4 is? A = tray 5. B = rack 1. C = not stated in the message. D = bin 2.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-5",
+  "english": "An inventory message names the pool-cal-C-item-5, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-5 is in tray 5.",
+  "question": "Where does the message state that the pool-cal-C-item-5 is? A = rack 2. B = tray 5. C = not stated in the message. D = crate 2.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-6",
+  "english": "An inventory message names the pool-cal-C-item-6, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-6 is in rack 8.",
+  "question": "Where does the message state that the pool-cal-C-item-6 is? A = crate 6. B = locker 8. C = rack 8. D = not stated in the message.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-7",
+  "english": "An inventory message names the pool-cal-C-item-7, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-7 is in crate 4.",
+  "question": "Where does the message state that the pool-cal-C-item-7 is? A = drawer 9. B = not stated in the message. C = locker 4. D = crate 4.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "B"
+  }
+ },
+ {
+  "id": "pool-cal-C-8",
+  "english": "An inventory message names the pool-cal-C-item-8, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-8 is in locker 4.",
+  "question": "Where does the message state that the pool-cal-C-item-8 is? A = cabinet 9. B = drawer 4. C = locker 4. D = not stated in the message.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-9",
+  "english": "An inventory message names the pool-cal-C-item-9, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-9 is in drawer 8.",
+  "question": "Where does the message state that the pool-cal-C-item-9 is? A = shelf 6. B = drawer 8. C = cabinet 2. D = not stated in the message.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-10",
+  "english": "An inventory message names the pool-cal-C-item-10, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-10 is in cabinet 5.",
+  "question": "Where does the message state that the pool-cal-C-item-10 is? A = not stated in the message. B = shelf 7. C = cabinet 5. D = bin 9.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "A"
+  }
+ },
+ {
+  "id": "pool-cal-C-11",
+  "english": "An inventory message names the pool-cal-C-item-11, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-11 is in shelf 7.",
+  "question": "Where does the message state that the pool-cal-C-item-11 is? A = shelf 7. B = bin 7. C = not stated in the message. D = tray 9.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-12",
+  "english": "An inventory message names the pool-cal-C-item-12, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-12 is in bin 3.",
+  "question": "Where does the message state that the pool-cal-C-item-12 is? A = rack 3. B = bin 3. C = not stated in the message. D = tray 2.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "C"
+  }
+ },
+ {
+  "id": "pool-cal-C-13",
+  "english": "An inventory message names the pool-cal-C-item-13, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-13 is in tray 7.",
+  "question": "Where does the message state that the pool-cal-C-item-13 is? A = not stated in the message. B = crate 5. C = rack 5. D = tray 7.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "A"
+  }
+ },
+ {
+  "id": "pool-cal-C-14",
+  "english": "An inventory message names the pool-cal-C-item-14, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-14 is in rack 8.",
+  "question": "Where does the message state that the pool-cal-C-item-14 is? A = rack 8. B = locker 2. C = crate 6. D = not stated in the message.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "D"
+  }
+ },
+ {
+  "id": "pool-cal-C-15",
+  "english": "An inventory message names the pool-cal-C-item-15, but does not state its location.",
+  "ainglish": "An inventory message states that the pool-cal-C-item-15 is in crate 1.",
+  "question": "Where does the message state that the pool-cal-C-item-15 is? A = not stated in the message. B = locker 5. C = crate 1. D = drawer 7.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "calibration": true,
+  "strata": {
+   "seat": "C",
+   "planted_arm": "ainglish",
+   "unknown_option": "A"
+  }
+ }
+]

@@ -1,0 +1,116 @@
+{
+  "kind": "ainglish.experiment-input-audit.v1",
+  "report_only": true,
+  "reader_calls": 0,
+  "api_calls": 0,
+  "source_text_included": false,
+  "semantic_equivalence": "not_checked",
+  "evaluation": {
+    "rows": 48,
+    "errors": [],
+    "warnings": [],
+    "visible_arm_conflicts": {
+      "count": 0,
+      "shown": [],
+      "truncated": false
+    },
+    "answer_copy_controls": {
+      "count": 0,
+      "shown": [],
+      "truncated": false
+    },
+    "real_rows": 32,
+    "control_rows": 16,
+    "distinct_complete_cases": 32,
+    "duplicate_cases": {
+      "count": 0,
+      "shown": [],
+      "groups_truncated": false
+    },
+    "declared_option_position_counts": {
+      "0": 8,
+      "1": 8,
+      "2": 8,
+      "3": 8
+    },
+    "declared_positions_balanced": true,
+    "declared_answer_counts": {
+      "c": 8,
+      "d": 8,
+      "b": 8,
+      "a": 8
+    },
+    "declared_majority_answer_baseline": 0.25,
+    "uniform_random_option_baseline": 0.25,
+    "one_common_ordered_option_set": true,
+    "settlement_stratum_counts": {
+      "increase": 16,
+      "decrease": 16
+    },
+    "declared_boundary_rows": 0
+  },
+  "training": null,
+  "exact_train_evaluation_overlap": null,
+  "balance_required": true,
+  "interpretation": "Declared answer geometry, not actual opaque choice-code balance. Distinct literal cases are not proof of independent semantic frames.",
+  "ok": true,
+  "replication_inputs": {
+    "kind": "ainglish.replication-input-audit.v1",
+    "report_only": true,
+    "reader_calls": 0,
+    "api_calls": 0,
+    "tokenizer_calls": 0,
+    "normalisation": "exact-bytes",
+    "scope": "all supplied complete pairs, including controls",
+    "semantic_equivalence": "not_checked",
+    "eligibility": "not_assessed",
+    "status": "evaluated",
+    "source": {
+      "kind": "ainglish.token-input-audit.v1",
+      "report_only": true,
+      "reader_calls": 0,
+      "api_calls": 0,
+      "tokenizer_calls": 0,
+      "source_text_included": false,
+      "semantic_equivalence": "not_checked",
+      "rows": 48,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    "candidate": {
+      "kind": "ainglish.token-input-audit.v1",
+      "report_only": true,
+      "reader_calls": 0,
+      "api_calls": 0,
+      "tokenizer_calls": 0,
+      "source_text_included": false,
+      "semantic_equivalence": "not_checked",
+      "rows": 48,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    "complete_pairs": {
+      "source_total": 48,
+      "candidate_total": 48,
+      "shared_occurrences": 0,
+      "fresh_fraction": 1.0
+    },
+    "side_overlap": {
+      "english_shared": 0,
+      "ainglish_shared": 0,
+      "english_total": 48,
+      "ainglish_total": 48
+    },
+    "bank_digest": {
+      "source": "f5e26a17ba6bd2088130fb96bf9c05215dcad3d2af69bf0d4271dd924968d690",
+      "candidate": "6f90d95cbc6b6d28f2235399c280998225d47aa818733961afdc3cd627f0d547",
+      "relation": "different",
+      "basis": "SHA-256 of parsed items JSON; metadata/order changes can change this digest"
+    },
+    "interpretation": "Report-only inspection of explicitly loaded data. Different digests do not establish pair freshness; different pairs do not establish independent semantic frames or matched estimands.",
+    "source_pin_verified": true,
+    "candidate_pin_verified": false
+  }
+}
