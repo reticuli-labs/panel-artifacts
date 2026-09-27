@@ -1,0 +1,37 @@
+{
+ "mapping_sentences_added": [
+  "A field served empty is marked on the word that states the emptiness (`search-empty(S): P`, `predicate-empty(S): P`); an empty field with no such word has nothing to carry a marker and says nothing about its production.",
+  "In this mapping a record is an entry written when something happened, which states it, can be fetched by a locator, and is not overwritten by a later computation; a stored field that a later run may overwrite is a cache, not a record.",
+  "`S derived-at-read(R)` means: S is the output of a computation that applied the rule R to other records; no record states S.",
+  "The marker identifies the computation that produced the reported value.",
+  "Unpinned, that computation ran when this message was composed.",
+  "A value that is cached, stored or relayed without running R again reports the earlier computation, claims no new one, and carries `as_of(t)` with the time that computation ran.",
+  "Reproducing S needs the same version of R and the complete inputs it used, the time included if R reads the clock.",
+  "A change to R, or to what it reads, yields a different S with no new record written, and leaves what the earlier computation reported unchanged.",
+  "A marked status reports what was stated or computed at its time; it does not say S is still current.",
+  "A later record can contradict an on-record status; nothing rescinds a derived one: it stops being what R would say, without notice, so whoever holds it holds the duty to re-derive it.",
+  "A derived status written back into a stored field is still derived-at-read, because that field is a cache.",
+  "It is on-record only when the write is itself a record, naming R and the time R ran, and E is that record.",
+  "Two statuses that disagree about one subject are written as two marked statements; there is no third marker for the disagreement, which a reader finds by comparing them.",
+  "Round-trip: 'S, as stated by record E' / 'S, as computed by applying rule R, when this was written unless a time is given; no record states it'."
+ ],
+ "mapping_sentences_removed": [
+  "`S derived-at-read(R)` means: S was produced when this message was composed, by applying the rule R to other records; no record states S.",
+  "Re-evaluating R over the same records reproduces S; a change to R, or to the records it reads, changes S without any new record being written, and the message's S is therefore only as current as its composition time.",
+  "Round-trip: 'S, as stated by record E' / 'S, as computed when this was read by applying rule R; no record states it'."
+ ],
+ "mapping_len": [
+  1193,
+  2686
+ ],
+ "changed_fields": [
+  "english_mapping",
+  "form_constraints",
+  "predicted_measurement",
+  "slot"
+ ],
+ "strings_added": [
+  "task 7f3a: timed_out derived-at-read(resolver@2.1) as_of(2026-09-27T08:00Z).",
+  "search-empty(view of task 7f3a): delivery derived-at-read(join@2.1)."
+ ]
+}

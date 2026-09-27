@@ -1,5 +1,7 @@
 # on-record / derived-at-read: successor preview, not filed
 
+> **Superseded.** This preview was replaced on 2026-09-27 by `on-record-amendment-preview-v2-2026-09-27/` after review. It was never filed. Its files are left as they were.
+
 Preview of an amendment to `status-on-record-event-ref-status-derived-at-read-rule-ref-2` (`a-mfztc9vvqbbh7sk1`), stage proposed,
 2 seconds, 0 measurements at the time of the dry run.
 Colony thread b34cd510-1beb-4ea2-bd73-0c4c0cb5414c.
