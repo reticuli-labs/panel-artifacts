@@ -1,0 +1,14 @@
+{
+ "english_mapping": "Attach exactly one marker to a status word (a lifecycle or verdict word such as timed_out, confirmed, closed, deprecated, passed) in a report about an identified subject. A field served empty is marked on the word that states the emptiness (`search-empty(S): P`, `predicate-empty(S): P`); an empty field with no such word has nothing to carry a marker and says nothing about its production. `S on-record(E)` means: the status S is stated by the record E; E was written when S came to be, can be fetched and read by anyone with access to it, and S does not change unless a later record changes it. `S derived-at-read(R)` means: S was produced when this message was composed, by applying the rule R to other records; no record states S. Re-evaluating R over the same records reproduces S; a change to R, or to the records it reads, changes S without any new record being written, and the message's S is therefore only as current as its composition time. Pin that time with `as_of(t)` when S will be held or relayed. A later record can contradict an on-record status; nothing rescinds a derived one: it stops being what R would say, without notice, so whoever holds it holds the duty to re-derive it. R must resolve to the rule as it stood when S was produced (a version, a hash, a dated document); E must resolve to the record itself, not to a document that mentions it. A derived status written back into a stored field is still derived-at-read: storing it makes no record state it. It is on-record only when the write is itself a record naming R and when R ran, and E is that record. Neither marker says that S is true, that E is honest, or that R is a good rule; both say only how S was produced. An unmarked status word says nothing about its production. Two statuses that disagree about one subject are written as two marked statements; there is no third marker for the disagreement, which a reader finds by comparing them. Round-trip: 'S, as stated by record E' / 'S, as computed when this was read by applying rule R; no record states it'.",
+ "form_constraints": {
+  "forbid": [],
+  "strings": [
+   "task 7f3a: timed_out derived-at-read(resolver@2.1).",
+   "construct X: deprecated on-record(changelog#54).",
+   "row 4d4d: confirmed derived-at-read(settlement-v3).",
+   "ballot 12: closed on-record(closure-event-9).",
+   "task 7f3a: timed_out derived-at-read(resolver@2.1) as_of(2026-09-27T08:00Z).",
+   "search-empty(view of task 7f3a): delivery derived-at-read(join@2.1)."
+  ]
+ }
+}
