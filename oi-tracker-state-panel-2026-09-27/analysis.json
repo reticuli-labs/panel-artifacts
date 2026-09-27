@@ -1,0 +1,624 @@
+{
+ "weekdays": {
+  "spend": [
+   6
+  ],
+  "emp": [
+   5
+  ],
+  "ui": [
+   5
+  ],
+  "jobs": [
+   4
+  ]
+ },
+ "rows": 11781,
+ "states": 51,
+ "weeks": 231,
+ "first": "2020-01-19",
+ "last": "2024-06-16",
+ "variance": {
+  "2020-01 to 2021-06": {
+   "spend_all": {
+    "states": 50,
+    "weeks": 76,
+    "week_share": 0.748,
+    "state_share": 0.171,
+    "residual_share": 0.08
+   },
+   "spend_durables": {
+    "states": 50,
+    "weeks": 76,
+    "week_share": 0.58,
+    "state_share": 0.191,
+    "residual_share": 0.23
+   },
+   "spend_hic": {
+    "states": 50,
+    "weeks": 76,
+    "week_share": 0.251,
+    "state_share": 0.289,
+    "residual_share": 0.46
+   },
+   "spend_aer": {
+    "states": 50,
+    "weeks": 76,
+    "week_share": 0.655,
+    "state_share": 0.157,
+    "residual_share": 0.189
+   },
+   "spend_acf": {
+    "states": 50,
+    "weeks": 76,
+    "week_share": 0.824,
+    "state_share": 0.119,
+    "residual_share": 0.057
+   },
+   "spend_grf": {
+    "states": 50,
+    "weeks": 76,
+    "week_share": 0.556,
+    "state_share": 0.232,
+    "residual_share": 0.212
+   },
+   "spend_retail_no_grocery": {
+    "states": 50,
+    "weeks": 76,
+    "week_share": 0.675,
+    "state_share": 0.167,
+    "residual_share": 0.158
+   }
+  },
+  "2021-07 to 2024-06": {
+   "spend_all": {
+    "states": 50,
+    "weeks": 155,
+    "week_share": 0.198,
+    "state_share": 0.696,
+    "residual_share": 0.106
+   },
+   "spend_durables": {
+    "states": 50,
+    "weeks": 155,
+    "week_share": 0.117,
+    "state_share": 0.647,
+    "residual_share": 0.236
+   },
+   "spend_hic": {
+    "states": 50,
+    "weeks": 155,
+    "week_share": 0.095,
+    "state_share": 0.582,
+    "residual_share": 0.322
+   },
+   "spend_aer": {
+    "states": 50,
+    "weeks": 155,
+    "week_share": 0.19,
+    "state_share": 0.576,
+    "residual_share": 0.235
+   },
+   "spend_acf": {
+    "states": 50,
+    "weeks": 155,
+    "week_share": 0.251,
+    "state_share": 0.496,
+    "residual_share": 0.253
+   },
+   "spend_grf": {
+    "states": 50,
+    "weeks": 155,
+    "week_share": 0.215,
+    "state_share": 0.529,
+    "residual_share": 0.256
+   },
+   "spend_retail_no_grocery": {
+    "states": 50,
+    "weeks": 155,
+    "week_share": 0.149,
+    "state_share": 0.616,
+    "residual_share": 0.235
+   }
+  }
+ },
+ "proxy": {
+  "2020-01 to 2021-06": {
+   "spend_all ~ emp": {
+    "label": "employment, all workers",
+    "states": 50,
+    "weeks": 68,
+    "r_at_lead_0": -0.039,
+    "best_lead_weeks": 8,
+    "r_at_best": -0.142,
+    "by_lead": {
+     "0": -0.039,
+     "1": -0.053,
+     "2": -0.078,
+     "3": -0.097,
+     "4": -0.107,
+     "5": -0.116,
+     "6": -0.126,
+     "7": -0.137,
+     "8": -0.142
+    }
+   },
+   "spend_all ~ emp_wage_q1": {
+    "label": "employment, lowest wage quartile",
+    "states": 39,
+    "weeks": 68,
+    "r_at_lead_0": 0.093,
+    "best_lead_weeks": 8,
+    "r_at_best": -0.101,
+    "by_lead": {
+     "0": 0.093,
+     "1": 0.082,
+     "2": 0.049,
+     "3": 0.024,
+     "4": -0.001,
+     "5": -0.028,
+     "6": -0.056,
+     "7": -0.084,
+     "8": -0.101
+    }
+   },
+   "spend_all ~ initclaims_rate_regular": {
+    "label": "initial unemployment claims rate",
+    "states": 50,
+    "weeks": 68,
+    "r_at_lead_0": -0.055,
+    "best_lead_weeks": 1,
+    "r_at_best": -0.07,
+    "by_lead": {
+     "0": -0.055,
+     "1": -0.07,
+     "2": -0.049,
+     "3": -0.036,
+     "4": -0.038,
+     "5": -0.022,
+     "6": -0.009,
+     "7": -0.004,
+     "8": 0.022
+    }
+   },
+   "spend_all ~ contclaims_rate_regular": {
+    "label": "continued unemployment claims rate",
+    "states": 50,
+    "weeks": 68,
+    "r_at_lead_0": 0.048,
+    "best_lead_weeks": 8,
+    "r_at_best": 0.183,
+    "by_lead": {
+     "0": 0.048,
+     "1": 0.07,
+     "2": 0.088,
+     "3": 0.109,
+     "4": 0.134,
+     "5": 0.149,
+     "6": 0.164,
+     "7": 0.174,
+     "8": 0.183
+    }
+   },
+   "spend_all ~ bg_posts": {
+    "label": "job postings",
+    "states": 0,
+    "weeks": 76,
+    "r_at_lead_0": NaN,
+    "best_lead_weeks": 0,
+    "r_at_best": NaN,
+    "by_lead": {
+     "0": NaN,
+     "1": NaN,
+     "2": NaN,
+     "3": NaN,
+     "4": NaN,
+     "5": NaN,
+     "6": NaN,
+     "7": NaN,
+     "8": NaN
+    }
+   },
+   "spend_durables ~ emp": {
+    "label": "employment, all workers",
+    "states": 50,
+    "weeks": 68,
+    "r_at_lead_0": -0.07,
+    "best_lead_weeks": 5,
+    "r_at_best": -0.125,
+    "by_lead": {
+     "0": -0.07,
+     "1": -0.085,
+     "2": -0.102,
+     "3": -0.121,
+     "4": -0.122,
+     "5": -0.125,
+     "6": -0.122,
+     "7": -0.123,
+     "8": -0.109
+    }
+   },
+   "spend_durables ~ emp_wage_q1": {
+    "label": "employment, lowest wage quartile",
+    "states": 39,
+    "weeks": 68,
+    "r_at_lead_0": 0.003,
+    "best_lead_weeks": 8,
+    "r_at_best": -0.137,
+    "by_lead": {
+     "0": 0.003,
+     "1": -0.017,
+     "2": -0.049,
+     "3": -0.078,
+     "4": -0.085,
+     "5": -0.109,
+     "6": -0.118,
+     "7": -0.132,
+     "8": -0.137
+    }
+   },
+   "spend_durables ~ initclaims_rate_regular": {
+    "label": "initial unemployment claims rate",
+    "states": 50,
+    "weeks": 68,
+    "r_at_lead_0": 0.006,
+    "best_lead_weeks": 8,
+    "r_at_best": 0.052,
+    "by_lead": {
+     "0": 0.006,
+     "1": -0.015,
+     "2": 0.008,
+     "3": 0.015,
+     "4": 0.006,
+     "5": 0.006,
+     "6": 0.01,
+     "7": 0.013,
+     "8": 0.052
+    }
+   },
+   "spend_durables ~ contclaims_rate_regular": {
+    "label": "continued unemployment claims rate",
+    "states": 50,
+    "weeks": 68,
+    "r_at_lead_0": 0.084,
+    "best_lead_weeks": 5,
+    "r_at_best": 0.122,
+    "by_lead": {
+     "0": 0.084,
+     "1": 0.094,
+     "2": 0.102,
+     "3": 0.106,
+     "4": 0.115,
+     "5": 0.122,
+     "6": 0.121,
+     "7": 0.117,
+     "8": 0.115
+    }
+   },
+   "spend_durables ~ bg_posts": {
+    "label": "job postings",
+    "states": 0,
+    "weeks": 76,
+    "r_at_lead_0": NaN,
+    "best_lead_weeks": 0,
+    "r_at_best": NaN,
+    "by_lead": {
+     "0": NaN,
+     "1": NaN,
+     "2": NaN,
+     "3": NaN,
+     "4": NaN,
+     "5": NaN,
+     "6": NaN,
+     "7": NaN,
+     "8": NaN
+    }
+   }
+  },
+  "2021-07 to 2024-06": {
+   "spend_all ~ emp": {
+    "label": "employment, all workers",
+    "states": 50,
+    "weeks": 147,
+    "r_at_lead_0": -0.035,
+    "best_lead_weeks": 0,
+    "r_at_best": -0.035,
+    "by_lead": {
+     "0": -0.035,
+     "1": -0.034,
+     "2": -0.03,
+     "3": -0.026,
+     "4": -0.025,
+     "5": -0.025,
+     "6": -0.026,
+     "7": -0.027,
+     "8": -0.029
+    }
+   },
+   "spend_all ~ emp_wage_q1": {
+    "label": "employment, lowest wage quartile",
+    "states": 39,
+    "weeks": 147,
+    "r_at_lead_0": 0.022,
+    "best_lead_weeks": 6,
+    "r_at_best": 0.048,
+    "by_lead": {
+     "0": 0.022,
+     "1": 0.024,
+     "2": 0.032,
+     "3": 0.036,
+     "4": 0.04,
+     "5": 0.04,
+     "6": 0.048,
+     "7": 0.046,
+     "8": 0.04
+    }
+   },
+   "spend_all ~ initclaims_rate_regular": {
+    "label": "initial unemployment claims rate",
+    "states": 50,
+    "weeks": 147,
+    "r_at_lead_0": 0.036,
+    "best_lead_weeks": 0,
+    "r_at_best": 0.036,
+    "by_lead": {
+     "0": 0.036,
+     "1": 0.018,
+     "2": 0.017,
+     "3": 0.008,
+     "4": 0.018,
+     "5": 0.012,
+     "6": 0.003,
+     "7": -0.017,
+     "8": -0.007
+    }
+   },
+   "spend_all ~ contclaims_rate_regular": {
+    "label": "continued unemployment claims rate",
+    "states": 50,
+    "weeks": 147,
+    "r_at_lead_0": 0.022,
+    "best_lead_weeks": 0,
+    "r_at_best": 0.022,
+    "by_lead": {
+     "0": 0.022,
+     "1": 0.018,
+     "2": 0.011,
+     "3": 0.007,
+     "4": 0.004,
+     "5": -0.001,
+     "6": -0.003,
+     "7": -0.005,
+     "8": -0.008
+    }
+   },
+   "spend_all ~ bg_posts": {
+    "label": "job postings",
+    "states": 0,
+    "weeks": 155,
+    "r_at_lead_0": NaN,
+    "best_lead_weeks": 0,
+    "r_at_best": NaN,
+    "by_lead": {
+     "0": NaN,
+     "1": NaN,
+     "2": NaN,
+     "3": NaN,
+     "4": NaN,
+     "5": NaN,
+     "6": NaN,
+     "7": NaN,
+     "8": NaN
+    }
+   },
+   "spend_durables ~ emp": {
+    "label": "employment, all workers",
+    "states": 50,
+    "weeks": 147,
+    "r_at_lead_0": -0.04,
+    "best_lead_weeks": 1,
+    "r_at_best": -0.043,
+    "by_lead": {
+     "0": -0.04,
+     "1": -0.043,
+     "2": -0.042,
+     "3": -0.039,
+     "4": -0.034,
+     "5": -0.028,
+     "6": -0.026,
+     "7": -0.026,
+     "8": -0.027
+    }
+   },
+   "spend_durables ~ emp_wage_q1": {
+    "label": "employment, lowest wage quartile",
+    "states": 39,
+    "weeks": 147,
+    "r_at_lead_0": -0.014,
+    "best_lead_weeks": 7,
+    "r_at_best": 0.029,
+    "by_lead": {
+     "0": -0.014,
+     "1": -0.012,
+     "2": -0.006,
+     "3": -0.0,
+     "4": 0.011,
+     "5": 0.017,
+     "6": 0.024,
+     "7": 0.029,
+     "8": 0.028
+    }
+   },
+   "spend_durables ~ initclaims_rate_regular": {
+    "label": "initial unemployment claims rate",
+    "states": 50,
+    "weeks": 147,
+    "r_at_lead_0": 0.021,
+    "best_lead_weeks": 6,
+    "r_at_best": -0.034,
+    "by_lead": {
+     "0": 0.021,
+     "1": 0.008,
+     "2": 0.009,
+     "3": -0.005,
+     "4": -0.016,
+     "5": -0.002,
+     "6": -0.034,
+     "7": -0.005,
+     "8": 0.007
+    }
+   },
+   "spend_durables ~ contclaims_rate_regular": {
+    "label": "continued unemployment claims rate",
+    "states": 50,
+    "weeks": 147,
+    "r_at_lead_0": 0.038,
+    "best_lead_weeks": 4,
+    "r_at_best": 0.041,
+    "by_lead": {
+     "0": 0.038,
+     "1": 0.04,
+     "2": 0.037,
+     "3": 0.04,
+     "4": 0.041,
+     "5": 0.036,
+     "6": 0.038,
+     "7": 0.036,
+     "8": 0.035
+    }
+   },
+   "spend_durables ~ bg_posts": {
+    "label": "job postings",
+    "states": 0,
+    "weeks": 155,
+    "r_at_lead_0": NaN,
+    "best_lead_weeks": 0,
+    "r_at_best": NaN,
+    "by_lead": {
+     "0": NaN,
+     "1": NaN,
+     "2": NaN,
+     "3": NaN,
+     "4": NaN,
+     "5": NaN,
+     "6": NaN,
+     "7": NaN,
+     "8": NaN
+    }
+   }
+  }
+ },
+ "comovement": {
+  "2020-01 to 2021-06": {
+   "states": 50,
+   "weeks": 76,
+   "cats": [
+    "spend_hic",
+    "spend_aer",
+    "spend_acf",
+    "spend_grf",
+    "spend_durables"
+   ],
+   "corr": [
+    [
+     1.0,
+     -0.043,
+     0.018,
+     0.154,
+     0.639
+    ],
+    [
+     -0.043,
+     1.0,
+     0.25,
+     -0.017,
+     -0.015
+    ],
+    [
+     0.018,
+     0.25,
+     1.0,
+     0.017,
+     0.155
+    ],
+    [
+     0.154,
+     -0.017,
+     0.017,
+     1.0,
+     0.221
+    ],
+    [
+     0.639,
+     -0.015,
+     0.155,
+     0.221,
+     1.0
+    ]
+   ],
+   "negative_pairs": 3,
+   "pairs": 10
+  },
+  "2021-07 to 2024-06": {
+   "states": 50,
+   "weeks": 155,
+   "cats": [
+    "spend_hic",
+    "spend_aer",
+    "spend_acf",
+    "spend_grf",
+    "spend_durables"
+   ],
+   "corr": [
+    [
+     1.0,
+     0.08,
+     0.064,
+     0.106,
+     0.532
+    ],
+    [
+     0.08,
+     1.0,
+     0.189,
+     0.02,
+     0.138
+    ],
+    [
+     0.064,
+     0.189,
+     1.0,
+     -0.154,
+     0.162
+    ],
+    [
+     0.106,
+     0.02,
+     -0.154,
+     1.0,
+     0.103
+    ],
+    [
+     0.532,
+     0.138,
+     0.162,
+     0.103,
+     1.0
+    ]
+   ],
+   "negative_pairs": 1,
+   "pairs": 10
+  }
+ },
+ "smoothing_demo": {
+  "true_lag_days": 3,
+  "peak_lag_unsmoothed": 3,
+  "peak_lag_after_7day_mean": 5,
+  "lags_within_10pct_of_peak_after_smoothing": [
+   3,
+   5,
+   6,
+   7
+  ]
+ }
+}
