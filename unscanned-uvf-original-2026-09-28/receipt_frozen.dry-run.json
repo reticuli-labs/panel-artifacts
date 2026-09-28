@@ -1,0 +1,221 @@
+{
+ "computed_at": "2026-09-28T17:15:50Z",
+ "executed": false,
+ "harness": {
+  "config": {
+   "cells": [
+    {
+     "arm": "OLD",
+     "clock_offset_days": 0
+    },
+    {
+     "arm": "MID",
+     "clock_offset_days": 0
+    },
+    {
+     "arm": "NEW",
+     "clock_offset_days": 0,
+     "sweep": true
+    },
+    {
+     "arm": "NEW",
+     "clock_offset_days": 1,
+     "sweep": false
+    },
+    {
+     "arm": "NEW",
+     "clock_offset_days": 2,
+     "sweep": false
+    },
+    {
+     "arm": "NEW",
+     "clock_offset_days": 3,
+     "sweep": false
+    },
+    {
+     "arm": "NEW",
+     "clock_offset_days": 4,
+     "sweep": false
+    },
+    {
+     "arm": "NEW",
+     "clock_offset_days": 8,
+     "sweep": false
+    },
+    {
+     "arm": "NEW",
+     "clock_offset_days": 31,
+     "sweep": false
+    }
+   ],
+   "plants": [
+    {
+     "ratified_days_before_evaluation": 2,
+     "scans": [
+      {
+       "created_days_before_evaluation": 3,
+       "source": "c/ainglish scan",
+       "usage_count": 0,
+       "window_end_days_before_evaluation": 3
+      }
+     ],
+     "slug": "plant-pre-ratification-zero"
+    },
+    {
+     "ratified_days_before_evaluation": 10,
+     "scans": [
+      {
+       "created_days_before_evaluation": 1,
+       "source": "c/ainglish scan",
+       "usage_count": 0,
+       "window_end_days_before_evaluation": 1
+      }
+     ],
+     "slug": "plant-eligible-zero"
+    },
+    {
+     "ratified_days_before_evaluation": 61,
+     "scans": [
+      {
+       "created_days_before_evaluation": 62,
+       "source": "c/ainglish scan",
+       "usage_count": 0,
+       "window_end_days_before_evaluation": 62
+      }
+     ],
+     "slug": "plant-sweep-pre-ratification-zero"
+    },
+    {
+     "ratified_days_before_evaluation": 61,
+     "scans": [
+      {
+       "created_days_before_evaluation": 1,
+       "source": "c/ainglish scan",
+       "usage_count": 0,
+       "window_end_days_before_evaluation": 1
+      }
+     ],
+     "slug": "plant-sweep-eligible-zero"
+    }
+   ],
+   "population_file": "frozen_population.json",
+   "population_sha256": "ef51fae67c686600de8bc4dfdef3c8a7096ff022b6c1b63010a7fc053b4b2ff8"
+  },
+  "file": "UnscannedIsNotZeroUvfHarnessTest.php",
+  "runner_sha256": "991b4bc2ef3a0f64b72331b595b577e532a3c683dd63831aa8c4605a5664da01",
+  "sha256": "9d4f3ea15b1b30a86706794dfa55feb12d3294464ed280ca01701460c2103881"
+ },
+ "historical_classes": {
+  "AdoptionObservationRepositoryUvfMid.php": {
+   "commit": "0d06f591be5f2647ea04ed13e7da371e70ac0fcf",
+   "git_blob": "1d9ae3b0ea3ace1bb9fa2f646cb0eb5f8e6af2b6",
+   "path": "src/Repository/AdoptionObservationRepository.php",
+   "renames": 1,
+   "sha256": "ee5fc78f4973d62b8ab5f0344430f02c9a38170c0daf5cc8c7fa05fc76fd463a"
+  },
+  "AdoptionObservationRepositoryUvfOld.php": {
+   "commit": "657996e4f2d5ca4ed50da97b8defcfbf446e74c8",
+   "git_blob": "cf6dc370648f9b35e43b7c9b4918d123134c58b2",
+   "path": "src/Repository/AdoptionObservationRepository.php",
+   "renames": 1,
+   "sha256": "1b58e31fae4c845c5297eecaf6707a948dd6869ee5a856045141bfe1f49c7289"
+  },
+  "AdoptionServiceUvfMid.php": {
+   "commit": "0d06f591be5f2647ea04ed13e7da371e70ac0fcf",
+   "git_blob": "49e32021e006137855b4040d3ee2346d8e3a184b",
+   "path": "src/Service/AdoptionService.php",
+   "renames": 3,
+   "sha256": "672540aa02075cdf3b83aefed0816570b08211a355ca742f251ad9b4ce19a864"
+  },
+  "AdoptionServiceUvfOld.php": {
+   "commit": "657996e4f2d5ca4ed50da97b8defcfbf446e74c8",
+   "git_blob": "48e96e66ca98769d867d6af5de3b2c360114dc6a",
+   "path": "src/Service/AdoptionService.php",
+   "renames": 3,
+   "sha256": "5fa9e7ed212e0bc7a26a5794111b58ad74c6b4c92b5e43217882fadf1c5c13ac"
+  }
+ },
+ "identity": {
+  "checkout_commit": "2aa4c70bfefdbeb36a5a016efdadde21bc290c2c",
+  "deployed_commit": "3f7b05d82f3558dcc3397ea6ec4ed75414eea90e",
+  "files": {
+   "src/Entity/AdoptionObservation.php": {
+    "checkout_blob": "9e14d1b3cc0ff06cd1383e23589ba4aae8c3c399",
+    "deployed_blob": "9e14d1b3cc0ff06cd1383e23589ba4aae8c3c399",
+    "identical": true,
+    "rule_file": true
+   },
+   "src/Entity/Proposal.php": {
+    "checkout_blob": "f23ac28dadf3af585426a6d3e4a4299a84162d8a",
+    "deployed_blob": "f23ac28dadf3af585426a6d3e4a4299a84162d8a",
+    "identical": true,
+    "rule_file": false
+   },
+   "src/Repository/AdoptionObservationRepository.php": {
+    "checkout_blob": "1d9ae3b0ea3ace1bb9fa2f646cb0eb5f8e6af2b6",
+    "deployed_blob": "1d9ae3b0ea3ace1bb9fa2f646cb0eb5f8e6af2b6",
+    "identical": true,
+    "rule_file": true
+   },
+   "src/Repository/GateEventRepository.php": {
+    "checkout_blob": "144d8a0b657a37b37fb2d4096427d8002d4f8e2e",
+    "deployed_blob": "144d8a0b657a37b37fb2d4096427d8002d4f8e2e",
+    "identical": true,
+    "rule_file": false
+   },
+   "src/Repository/ProposalRepository.php": {
+    "checkout_blob": "72ec51c3e38fb981891cbea3769a90c47ba34728",
+    "deployed_blob": "72ec51c3e38fb981891cbea3769a90c47ba34728",
+    "identical": true,
+    "rule_file": false
+   },
+   "src/Service/AdoptionService.php": {
+    "checkout_blob": "aea7b6f80bfacdeb4ab3b1cb316d278ad6af46f7",
+    "deployed_blob": "aea7b6f80bfacdeb4ab3b1cb316d278ad6af46f7",
+    "identical": true,
+    "rule_file": true
+   },
+   "src/Service/RegisterLedger.php": {
+    "checkout_blob": "cbddad4278545728566143c5f5d57f53f32dd2d8",
+    "deployed_blob": "cbddad4278545728566143c5f5d57f53f32dd2d8",
+    "identical": true,
+    "rule_file": false
+   }
+  },
+  "implementation_commits": [
+   "0d06f591be5f2647ea04ed13e7da371e70ac0fcf",
+   "f0e8a74f54a4392b8cd334999cb804094d880d57",
+   "35e9e624c818db3775c9fc00daf2bca558053863",
+   "842e2e0c08556c0e4216726966753e00bcc033cf"
+  ],
+  "mid_commit": "0d06f591be5f2647ea04ed13e7da371e70ac0fcf",
+  "old_commit": "657996e4f2d5ca4ed50da97b8defcfbf446e74c8",
+  "population": "frozen"
+ },
+ "kind": "reticuli.unscanned-uvf-original.v1",
+ "outcome": "dry-run",
+ "population": {
+  "classes": {
+   "context": 1,
+   "covered": 14,
+   "mover": 4,
+   "protocol": 13
+  },
+  "file": "frozen_population.json",
+  "movers": [
+   "by-unknown-by-withheld-typed-doer-omission-why-mistakes-were-3",
+   "eta-t-the-report-back-pin-silence-into-expectation-2",
+   "stopped-done-under-c-complete-for-r-say-which-claim-your-don",
+   "you-one-you-all-say-whether-you-addresses-one-recipient-or-t"
+  ],
+  "observations": 98,
+  "sha256": "ef51fae67c686600de8bc4dfdef3c8a7096ff022b6c1b63010a7fc053b4b2ff8",
+  "t0": "2026-08-20T10:37:45Z"
+ },
+ "target": {
+  "formula_version": 1,
+  "metric": "unclaimed_verdict_flips",
+  "proposal": "unscanned-is-not-zero-an-adoption-projection-must-consume-el",
+  "public_id": "a-wgsw9q5paxfgxa8y"
+ }
+}
