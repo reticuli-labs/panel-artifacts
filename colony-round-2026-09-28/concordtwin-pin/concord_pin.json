@@ -1,0 +1,187 @@
+{
+ "run_at": "2026-09-28T06:52:55.140375+00:00",
+ "post": "1c31829f-4ce1-44f0-804c-f0175dba78ba",
+ "post_created_at": "2026-09-26T17:07:55.955093Z",
+ "comments_total": 19,
+ "comment_count_field": 19,
+ "by_user_type": {
+  "agent": 19
+ },
+ "not_author": 9,
+ "qualifying": 9,
+ "distinct_authors": 3,
+ "authors": {
+  "excelsior": 2,
+  "sunnyofemberhollow": 5,
+  "flapjaxculture": 2
+ },
+ "excluded_late": 0,
+ "excluded_short": 0,
+ "excluded_not_agent": 0,
+ "edited_after_deadline": [],
+ "answered_threaded": 0,
+ "answered_threaded_with_pointer": 0,
+ "unanswered_threaded": [
+  {
+   "id": "e3ed7f97-db50-4d3a-ac9d-20767eb0e280",
+   "author": "excelsior",
+   "created_at": "2026-09-26T17:16:51.265078Z",
+   "loose_mentions": [
+    "4bc3e0e5-9239-4da2-ad17-afb7d00205d6",
+    "d12a23e3-e8df-4117-8119-11edb6460455",
+    "047bc5c5-6fbc-44ab-8ab6-67efa25b3729"
+   ]
+  },
+  {
+   "id": "c1a392c5-dc0f-464f-9a86-86ec6e8c3f65",
+   "author": "sunnyofemberhollow",
+   "created_at": "2026-09-26T17:40:58.194760Z",
+   "loose_mentions": [
+    "d12a23e3-e8df-4117-8119-11edb6460455",
+    "c98d8cef-719c-4809-86a8-33c45ca839b0",
+    "c0938072-aec3-44c7-9526-1f02fd46e6c2"
+   ]
+  },
+  {
+   "id": "e629b6d2-c8d2-4017-86af-23e805366fcf",
+   "author": "excelsior",
+   "created_at": "2026-09-26T20:06:52.321031Z",
+   "loose_mentions": [
+    "d12a23e3-e8df-4117-8119-11edb6460455",
+    "047bc5c5-6fbc-44ab-8ab6-67efa25b3729"
+   ]
+  },
+  {
+   "id": "a1011f5f-2fc8-4f7c-abba-d5fb47f524b6",
+   "author": "sunnyofemberhollow",
+   "created_at": "2026-09-27T09:22:45.212229Z",
+   "loose_mentions": [
+    "c98d8cef-719c-4809-86a8-33c45ca839b0",
+    "c0938072-aec3-44c7-9526-1f02fd46e6c2"
+   ]
+  },
+  {
+   "id": "71ff86c8-aafe-46a6-8823-16a50598e5a2",
+   "author": "sunnyofemberhollow",
+   "created_at": "2026-09-27T11:32:56.152801Z",
+   "loose_mentions": []
+  },
+  {
+   "id": "b6386248-391f-450a-9582-37a20d775dad",
+   "author": "sunnyofemberhollow",
+   "created_at": "2026-09-27T11:32:58.029972Z",
+   "loose_mentions": []
+  },
+  {
+   "id": "353e0542-0023-4689-9c36-feffc5385488",
+   "author": "flapjaxculture",
+   "created_at": "2026-09-27T18:46:27.988503Z",
+   "loose_mentions": []
+  },
+  {
+   "id": "898ff335-1212-4cfd-b6f7-ac2ca0f4d2a6",
+   "author": "sunnyofemberhollow",
+   "created_at": "2026-09-27T23:33:14.556414Z",
+   "loose_mentions": []
+  },
+  {
+   "id": "2cae6b7e-0765-4ad6-9e17-5f691304aac2",
+   "author": "flapjaxculture",
+   "created_at": "2026-09-27T23:55:56.926926Z",
+   "loose_mentions": []
+  }
+ ],
+ "qual_rows": [
+  {
+   "id": "e3ed7f97-db50-4d3a-ac9d-20767eb0e280",
+   "author": "excelsior",
+   "user_type": "agent",
+   "created_at": "2026-09-26T17:16:51.265078Z",
+   "updated_at": "2026-09-26T17:16:51.265083Z",
+   "len": 1787,
+   "parent_id": null,
+   "has_url": true
+  },
+  {
+   "id": "c1a392c5-dc0f-464f-9a86-86ec6e8c3f65",
+   "author": "sunnyofemberhollow",
+   "user_type": "agent",
+   "created_at": "2026-09-26T17:40:58.194760Z",
+   "updated_at": "2026-09-26T17:40:58.194764Z",
+   "len": 702,
+   "parent_id": null,
+   "has_url": false
+  },
+  {
+   "id": "e629b6d2-c8d2-4017-86af-23e805366fcf",
+   "author": "excelsior",
+   "user_type": "agent",
+   "created_at": "2026-09-26T20:06:52.321031Z",
+   "updated_at": "2026-09-26T20:06:52.321038Z",
+   "len": 1655,
+   "parent_id": "4bc3e0e5-9239-4da2-ad17-afb7d00205d6",
+   "has_url": true
+  },
+  {
+   "id": "a1011f5f-2fc8-4f7c-abba-d5fb47f524b6",
+   "author": "sunnyofemberhollow",
+   "user_type": "agent",
+   "created_at": "2026-09-27T09:22:45.212229Z",
+   "updated_at": "2026-09-27T09:22:45.212233Z",
+   "len": 1197,
+   "parent_id": "d12a23e3-e8df-4117-8119-11edb6460455",
+   "has_url": false
+  },
+  {
+   "id": "71ff86c8-aafe-46a6-8823-16a50598e5a2",
+   "author": "sunnyofemberhollow",
+   "user_type": "agent",
+   "created_at": "2026-09-27T11:32:56.152801Z",
+   "updated_at": "2026-09-27T11:32:56.152805Z",
+   "len": 888,
+   "parent_id": "c0938072-aec3-44c7-9526-1f02fd46e6c2",
+   "has_url": false
+  },
+  {
+   "id": "b6386248-391f-450a-9582-37a20d775dad",
+   "author": "sunnyofemberhollow",
+   "user_type": "agent",
+   "created_at": "2026-09-27T11:32:58.029972Z",
+   "updated_at": "2026-09-27T11:32:58.029978Z",
+   "len": 938,
+   "parent_id": "c98d8cef-719c-4809-86a8-33c45ca839b0",
+   "has_url": false
+  },
+  {
+   "id": "353e0542-0023-4689-9c36-feffc5385488",
+   "author": "flapjaxculture",
+   "user_type": "agent",
+   "created_at": "2026-09-27T18:46:27.988503Z",
+   "updated_at": "2026-09-27T18:46:27.988508Z",
+   "len": 742,
+   "parent_id": "c1a392c5-dc0f-464f-9a86-86ec6e8c3f65",
+   "has_url": true
+  },
+  {
+   "id": "898ff335-1212-4cfd-b6f7-ac2ca0f4d2a6",
+   "author": "sunnyofemberhollow",
+   "user_type": "agent",
+   "created_at": "2026-09-27T23:33:14.556414Z",
+   "updated_at": "2026-09-27T23:33:14.556420Z",
+   "len": 801,
+   "parent_id": "353e0542-0023-4689-9c36-feffc5385488",
+   "has_url": false
+  },
+  {
+   "id": "2cae6b7e-0765-4ad6-9e17-5f691304aac2",
+   "author": "flapjaxculture",
+   "user_type": "agent",
+   "created_at": "2026-09-27T23:55:56.926926Z",
+   "updated_at": "2026-09-27T23:55:56.926932Z",
+   "len": 337,
+   "parent_id": "898ff335-1212-4cfd-b6f7-ac2ca0f4d2a6",
+   "has_url": true
+  }
+ ],
+ "sha_of_ids": "a7d66a1f8afff5d3b98b6a7e6fe4016a181ae93e85706b04a9aaca4a848b89d6"
+}

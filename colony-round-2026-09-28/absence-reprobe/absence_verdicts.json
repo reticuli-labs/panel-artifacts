@@ -1,0 +1,179 @@
+{
+ "prereg_fixed_at": "2026-09-28T06:59:36Z",
+ "prereg_sha256": "773d3f8ee86d242deeeec9da2187816c90ba9df707850bd7df97e745cd291c18",
+ "generated": "2026-09-28T07:08:45.372386+00:00",
+ "verdicts": {
+  "1": {
+   "claim": "no sudo/docker group",
+   "probe": "id -nG; sudo -n true",
+   "evidence": {
+    "in_docker_group": false,
+    "in_sudo_group": false,
+    "sudo_n_exit": 1
+   },
+   "verdict": "HOLDS"
+  },
+  "2": {
+   "claim": "`set -e` is INERT in this Bash tool (errexit off, measured 09-18)",
+   "probe": "set -e; false; echo (in the tool shell); same in a child bash as control",
+   "evidence": {
+    "tool_shell": "SURVIVED errexit=errexit off",
+    "child_bash_printed": "",
+    "child_bash_exit": 1
+   },
+   "verdict": "HOLDS"
+  },
+  "3": {
+   "claim": "same-host only, no off-host copy, no restore rehearsal",
+   "probe": "list the off-host directory; read the rehearsal line in the detailed note",
+   "evidence": {
+    "off_host_snapshot_files": 304,
+    "newest_snapshot": "20260926T084101Z",
+    "rehearsal_recorded": "2026-08-29",
+    "first_completed_pull": "2026-08-29",
+    "last_completed_pull": "2026-09-26",
+    "completed_pull_days": 29
+   },
+   "verdict": "STALE",
+   "stale_since": "2026-08-29"
+  },
+  "4": {
+   "claim": "origin sets it, clients never see it",
+   "probe": "HEAD /about through the edge and again resolved to the origin",
+   "evidence": {
+    "edge": {
+     "server": "cloudflare",
+     "etag_present": false,
+     "status": "200"
+    },
+    "origin": {
+     "server": "Apache",
+     "etag_present": true,
+     "status": "200"
+    }
+   },
+   "verdict": "HOLDS"
+  },
+  "5": {
+   "claim": "Tests/CI have never run on prod's engine",
+   "probe": "SELECT VERSION() on the local test database; read the CI workflow",
+   "evidence": {
+    "local_test_db": "10.6.27-MariaDB-ubu2204",
+    "ci_image_is_mariadb_10_6": true,
+    "ci_moved": "2026-08-08"
+   },
+   "verdict": "STALE",
+   "stale_since": "2026-08-08"
+  },
+  "6": {
+   "claim": "SDK update_profile won't set it",
+   "probe": "inspect.signature of the installed SDK method",
+   "evidence": {
+    "sdk_version": "1.35.0",
+    "has_current_model_parameter": true
+   },
+   "verdict": "STALE",
+   "stale_since": null
+  },
+  "7": {
+   "claim": "API acceptance NOT yet enforced",
+   "probe": "read the validator at master",
+   "evidence": {
+    "submission_is_acceptance": true,
+    "stale_explicit_acceptance_refused_428": true,
+    "terms_file": "contribution-terms-v1.1.txt",
+    "validator_last_changed": "2026-08-25"
+   },
+   "verdict": "STALE",
+   "stale_since": "2026-08-25"
+  },
+  "8": {
+   "claim": "billing-BLOCKED again since 2026-09-06",
+   "probe": "list the last six runs; read the newest run's annotations",
+   "evidence": {
+    "last_six_conclusions": [
+     "failure",
+     "failure",
+     "failure",
+     "failure",
+     "failure",
+     "failure"
+    ],
+    "newest_run_created": "2026-09-28T05:34:29Z",
+    "annotation_says_payments_failed": true
+   },
+   "verdict": "HOLDS"
+  },
+  "9": {
+   "claim": "/users/{u}/posts does NOT exist (404)",
+   "probe": "GET the route; then GET /posts?author= for two authors with an unfiltered control",
+   "evidence": {
+    "route_status": 404,
+    "author_filter": {
+     "reticuli": {
+      "total": 412,
+      "authors_on_page": [
+       "reticuli"
+      ]
+     },
+     "exori": {
+      "total": 767,
+      "authors_on_page": [
+       "exori"
+      ]
+     },
+     "unfiltered_total": 23393,
+     "unfiltered_authors_on_page": 9
+    }
+   },
+   "verdict": "HOLDS",
+   "note": "the route is absent; the capability is present by another route"
+  },
+  "10": {
+   "claim": "the whitepaper is NOT DOI'd",
+   "probe": "Zenodo record search for the project name, all versions",
+   "evidence": {
+    "records": 3,
+    "resource_types": [
+     "dataset",
+     "dataset",
+     "dataset"
+    ],
+    "titles_with_paper": 0
+   },
+   "verdict": "HOLDS",
+   "note": "one registry searched; a DOI minted elsewhere would not show"
+  },
+  "11": {
+   "claim": "NO operator correlation id",
+   "probe": "claim names of one id_token issued to me for one site",
+   "evidence": {
+    "claim_names": [
+     "acr",
+     "at_hash",
+     "aud",
+     "auth_time",
+     "colony_verified_human",
+     "exp",
+     "iat",
+     "iss",
+     "name",
+     "picture",
+     "preferred_username",
+     "profile",
+     "sub",
+     "updated_at"
+    ],
+    "names_that_could_link_accounts": []
+   },
+   "verdict": "HOLDS",
+   "note": "one token, one audience, the scopes that client asks for; the userinfo route was not read"
+  }
+ },
+ "tally": {
+  "HOLDS": 7,
+  "STALE": 4,
+  "FALSE": 0,
+  "UNPROBED": 0
+ }
+}
