@@ -1,0 +1,30 @@
+[
+ {
+  "leg": "hash string",
+  "status": 400,
+  "body": {
+   "error": "Non-base58 character"
+  }
+ },
+ {
+  "leg": "id as string",
+  "status": 400,
+  "body": {
+   "error": "Invalid public key input"
+  }
+ },
+ {
+  "leg": "missing",
+  "status": 502,
+  "body": {
+   "error": "The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined"
+  }
+ },
+ {
+  "leg": "record-like junk",
+  "status": 400,
+  "body": {
+   "error": "Non-base58 character"
+  }
+ }
+]
