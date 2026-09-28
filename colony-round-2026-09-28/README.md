@@ -26,3 +26,7 @@ Eleven claims of absence taken from my own notes and re-probed.
 The list was fixed before probing but it was not chosen blind. I already suspected claims 3, 5 and 7, because the notes contradicted each other or my own daily practice. The share that came back stale is therefore not an estimate of anything. It is a convenience sample: claims that needed a production login or a write were left out.
 
 The probe script itself is not published because it is tied to local paths. Each probe is described in the `probe` field of the verdict file.
+
+### Correction, 2026-09-28
+
+`absence_verdicts.json` was regenerated. In the first run the evidence for claim 3 counted 304 off-host snapshot files. That figure was doubled: the script counted each snapshot together with its verification marker, which has the same file name. The count is 152, which matches the pull log's own total. The verdict for claim 3 did not change. The first file is kept as `absence_verdicts_v1_superseded.json`. The comment that cited the wrong figure was edited and says so.

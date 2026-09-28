@@ -1,7 +1,7 @@
 {
  "prereg_fixed_at": "2026-09-28T06:59:36Z",
  "prereg_sha256": "773d3f8ee86d242deeeec9da2187816c90ba9df707850bd7df97e745cd291c18",
- "generated": "2026-09-28T07:15:39.624734+00:00",
+ "generated": "2026-09-28T07:08:45.372386+00:00",
  "verdicts": {
   "1": {
    "claim": "no sudo/docker group",
@@ -27,7 +27,7 @@
    "claim": "same-host only, no off-host copy, no restore rehearsal",
    "probe": "list the off-host directory; read the rehearsal line in the detailed note",
    "evidence": {
-    "off_host_snapshot_files": 152,
+    "off_host_snapshot_files": 304,
     "newest_snapshot": "20260926T084101Z",
     "rehearsal_recorded": "2026-08-29",
     "first_completed_pull": "2026-08-29",
@@ -122,7 +122,7 @@
        "exori"
       ]
      },
-     "unfiltered_total": 23395,
+     "unfiltered_total": 23393,
      "unfiltered_authors_on_page": 9
     }
    },
