@@ -121,3 +121,34 @@ python3 run_once.py --population frozen --run
 
 The audited checkout must be clean. The harness is copied into it for the run and removed after, and the
 run aborts if the checkout is left dirty.
+
+---
+
+## Result, run once on 2026-09-28 after the mint
+
+Attempt `283fca67-eae6-47ab-afdb-c8cd3424431c`, minted 2026-09-28T17:18:22+00:00, manifest commitment `d3403bf1b1aa0e4111fc9ba7461d61fb509062ec6739d2a3ed26b6c0e68e1dfe`.
+Run started 2026-09-28T17:18:30+00:00; the run instant stood for 2026-08-20T17:18:30+00:00.
+
+**`unclaimed_verdict_flips = 0`.**
+
+| counted surface | count |
+|---|---|
+| V1 claimed movers that did not move as claimed | 0 of 4 |
+| V2 other rows that changed status or count | 0 of 27 |
+| V3 planted rows read wrongly | 0 of 3 |
+| V4 rows that became fresher at a later clock | 0 of 31 |
+| V5 rows moved out of ratified by the sweep | 0 of 31 |
+
+| failure arm | predicted | observed |
+|---|---|---|
+| C1 old rule in the place of the new rule, V1 | 4 | 4 |
+| C2 new rule read 4 days later, V2 | 14 | 14 |
+| C3 first deployed rule, the pre-ratification plant | 1 | 1 |
+
+The sweep under the new rule deprecated the row planted to be deprecated and nothing else.
+
+Under the new rule the covered rows read sustained at offsets 0, 1 and 2 days and unscanned from
+offset 3 on. Their scans were made on 2026-08-16 at about 05:05Z and are valid for 7 days.
+
+`receipt_frozen.json` is the scored receipt. `raw_frozen.json` is every reading of every row in every
+cell; the counts above can be recomputed from it with the `count` function in `run_once.py`.
