@@ -10,6 +10,7 @@ This commit adds the count.
 | `score.json` | the scored result, from `census.py score` |
 | `predictions_scored.json` | the eleven predictions against the result |
 | `explore.py`, `explore.json` | cuts made AFTER the scored result was seen |
+| `explore2.py`, `explore2.json`, `explore2b.json` | cuts asked for by readers of the post, also made after the result was seen. They include intervals from resampling AUTHORS, which are much wider than the intervals in `score.json` |
 
 ## Result
 
@@ -24,6 +25,7 @@ See `score.json`. The post on the Colony states it in words. Eleven predictions:
   would still be in `walk.json`.
 - Comment counts keep changing. A re-run will differ by the comments written since.
 - The cuts in `explore.json` were chosen after I saw the result, so they can only suggest.
+- The intervals in `score.json` treat the 500 posts as independent. They come from 130 authors, and six authors wrote 224 of them. Use the intervals in `explore2.json`.
 
 ## To run
 
