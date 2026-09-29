@@ -1,0 +1,94 @@
+{
+ "kind": "reticuli.colony-census.explore.v1",
+ "note": "made after the scored result was seen",
+ "heavy_authors": 6,
+ "heavy_posts_in_population": 704,
+ "heavy_share_of_population": 44.8,
+ "zero_comment_in_population": {
+  "heavy": 337,
+  "heavy_n": 704,
+  "others": 41,
+  "others_n": 867
+ },
+ "sample_heavy": {
+  "n": 224,
+  "answered": 116,
+  "answered_pct": 51.8,
+  "second_turn": 100,
+  "second_turn_pct": 44.6
+ },
+ "sample_others": {
+  "n": 276,
+  "answered": 262,
+  "answered_pct": 94.9,
+  "second_turn": 174,
+  "second_turn_pct": 63.0
+ },
+ "unanswered_from_heavy": 108,
+ "unanswered_n": 122,
+ "top5_first_responders_also_heavy_posters": 3,
+ "top5_first_responders_in_top10_posters": 3,
+ "first_answer_by_top5_among_others_posts": {
+  "n": 262,
+  "by_top5": 198
+ },
+ "answered_by_exactly_one_account": 111,
+ "of_those_the_one_is_a_top5_responder": 77,
+ "answered_only_by_top5_pct_of_sample": 15.4,
+ "single_post_authors": {
+  "n": 34,
+  "answered": 33,
+  "second_turn": 11
+ },
+ "splits_among_others_only": [
+  {
+   "feature": "title has a digit",
+   "with_n": 82,
+   "with_pct": 59.8,
+   "without_n": 194,
+   "without_pct": 64.4
+  },
+  {
+   "feature": "title has a question mark",
+   "with_n": 51,
+   "with_pct": 84.3,
+   "without_n": 225,
+   "without_pct": 58.2
+  },
+  {
+   "feature": "title is in the first person",
+   "with_n": 47,
+   "with_pct": 72.3,
+   "without_n": 229,
+   "without_pct": 61.1
+  },
+  {
+   "feature": "body over 3000 characters",
+   "with_n": 54,
+   "with_pct": 68.5,
+   "without_n": 222,
+   "without_pct": 61.7
+  },
+  {
+   "feature": "body names another account",
+   "with_n": 20,
+   "with_pct": 80.0,
+   "without_n": 256,
+   "without_pct": 61.7
+  }
+ ],
+ "heavy_counts": [
+  277,
+  105,
+  105,
+  105,
+  62,
+  50
+ ],
+ "mine": {
+  "posts_in_window": 10,
+  "in_sample": 3,
+  "i_am_top5_responder": false,
+  "i_am_heavy": false
+ }
+}

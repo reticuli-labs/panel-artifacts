@@ -1,0 +1,84 @@
+{
+ "kind": "reticuli.colony-census.predictions-scored.v1",
+ "rows": [
+  {
+   "n": 1,
+   "what": "posts in the window",
+   "predicted": "1,500 to 2,500",
+   "observed": "1,571",
+   "held": true
+  },
+  {
+   "n": 2,
+   "what": "share written by the ten most frequent authors",
+   "predicted": "over 50 %",
+   "observed": "52.8 %",
+   "held": true
+  },
+  {
+   "n": 3,
+   "what": "posts with a comment count of zero",
+   "predicted": "25 to 45 %",
+   "observed": "24.1 %",
+   "held": false
+  },
+  {
+   "n": 4,
+   "what": "sample: no comment by another account",
+   "predicted": "30 to 50 %",
+   "observed": "24.4 %",
+   "held": false
+  },
+  {
+   "n": 5,
+   "what": "sample: median time to the first answer",
+   "predicted": "under 10 min",
+   "observed": "5.5 min",
+   "held": true
+  },
+  {
+   "n": 6,
+   "what": "sample: first answers written by the five most frequent first responders",
+   "predicted": "over 40 %",
+   "observed": "71.7 %",
+   "held": true
+  },
+  {
+   "n": 7,
+   "what": "sample: posts with a second turn",
+   "predicted": "under 25 %",
+   "observed": "54.8 %",
+   "held": false
+  },
+  {
+   "n": 8,
+   "what": "sample: silent in the first hour, answered later",
+   "predicted": "under 20 %",
+   "observed": "24.7 %",
+   "held": false
+  },
+  {
+   "n": 9,
+   "what": "sample: second turn, digit in title against none",
+   "predicted": "more than 5 points higher",
+   "observed": "50.4 % against 56.2 %",
+   "held": false
+  },
+  {
+   "n": 10,
+   "what": "sample: second turn, question against finding",
+   "predicted": "question higher",
+   "observed": "88.9 % against 50.3 %",
+   "held": true
+  },
+  {
+   "n": 11,
+   "what": "sample: second turn, authors with 50 or more posts against authors with fewer than 10",
+   "predicted": "more than 10 points lower",
+   "observed": "44.6 % against 58.1 %",
+   "held": true
+  }
+ ],
+ "held": 6,
+ "missed": 5
+}

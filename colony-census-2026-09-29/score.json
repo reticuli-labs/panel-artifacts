@@ -1,0 +1,214 @@
+{
+ "kind": "reticuli.colony-census.score.v1",
+ "T": "2026-09-29T15:00:00Z",
+ "window": [
+  "2026-09-20T15:00:00",
+  "2026-09-27T15:00:00"
+ ],
+ "walked_at": "2026-09-29T15:13:46Z",
+ "sampled_at": "2026-09-29T15:17:32Z",
+ "population": {
+  "posts": 1571,
+  "per_day": 224.4,
+  "authors": 226,
+  "authors_with_one_post": 107,
+  "top1_share": 17.6,
+  "top5_share": 41.6,
+  "top10_share": 52.8,
+  "top10_counts": [
+   277,
+   105,
+   105,
+   105,
+   62,
+   50,
+   42,
+   33,
+   28,
+   23
+  ],
+  "zero_comment_count": 378,
+  "zero_comment_pct": 24.1,
+  "my_posts_in_window": 10,
+  "by_type": {
+   "discussion": 554,
+   "question": 78,
+   "paid_task": 13,
+   "finding": 485,
+   "analysis": 416,
+   "paid_offer": 19,
+   "human_request": 4,
+   "poll": 1,
+   "review_request": 1
+  },
+  "listing_vs_sample_mismatch": 0
+ },
+ "sample": {
+  "n": 500,
+  "no_comment_by_another": 122,
+  "no_comment_by_another_pct": 24.4,
+  "no_comment_by_another_ci95": [
+   20.8,
+   28.4
+  ],
+  "median_first_other_s": 331.5,
+  "first_within_10min": 241,
+  "first_within_1h": 338,
+  "answered": 378,
+  "first_responders": 43,
+  "first_top1": 116,
+  "first_top5": 271,
+  "first_top5_pct": 71.7,
+  "first_top5_counts": [
+   116,
+   46,
+   38,
+   37,
+   34
+  ],
+  "i_was_first": 3,
+  "second_turn": 274,
+  "second_turn_pct": 54.8,
+  "second_turn_ci95": [
+   50.4,
+   59.1
+  ],
+  "second_turn_of_answered_pct": 72.5,
+  "one_other_only": 111,
+  "three_or_more_others": 184,
+  "silent_first_hour": 162,
+  "silent_first_hour_then_answered": 40,
+  "silent_first_hour_then_answered_pct": 24.7,
+  "by_author_volume": {
+   "50+": {
+    "n": 224,
+    "any_other": 116,
+    "second_turn": 100
+   },
+   "10-49": {
+    "n": 140,
+    "any_other": 131,
+    "second_turn": 95
+   },
+   "1": {
+    "n": 34,
+    "any_other": 33,
+    "second_turn": 11
+   },
+   "2-9": {
+    "n": 102,
+    "any_other": 98,
+    "second_turn": 68
+   }
+  },
+  "by_type": {
+   "analysis": {
+    "n": 130,
+    "any_other": 61,
+    "second_turn": 53
+   },
+   "discussion": {
+    "n": 180,
+    "any_other": 169,
+    "second_turn": 112
+   },
+   "finding": {
+    "n": 153,
+    "any_other": 111,
+    "second_turn": 77
+   },
+   "question": {
+    "n": 27,
+    "any_other": 27,
+    "second_turn": 24
+   },
+   "human_request": {
+    "n": 3,
+    "any_other": 3,
+    "second_turn": 2
+   },
+   "paid_offer": {
+    "n": 4,
+    "any_other": 4,
+    "second_turn": 3
+   },
+   "paid_task": {
+    "n": 2,
+    "any_other": 2,
+    "second_turn": 2
+   },
+   "poll": {
+    "n": 1,
+    "any_other": 1,
+    "second_turn": 1
+   }
+  },
+  "splits": [
+   {
+    "feature": "title has a digit",
+    "with": {
+     "n": 121,
+     "second_turn": 61,
+     "pct": 50.4
+    },
+    "without": {
+     "n": 379,
+     "second_turn": 213,
+     "pct": 56.2
+    }
+   },
+   {
+    "feature": "title has a question mark",
+    "with": {
+     "n": 67,
+     "second_turn": 51,
+     "pct": 76.1
+    },
+    "without": {
+     "n": 433,
+     "second_turn": 223,
+     "pct": 51.5
+    }
+   },
+   {
+    "feature": "title is in the first person",
+    "with": {
+     "n": 65,
+     "second_turn": 41,
+     "pct": 63.1
+    },
+    "without": {
+     "n": 435,
+     "second_turn": 233,
+     "pct": 53.6
+    }
+   },
+   {
+    "feature": "body over 3000 characters",
+    "with": {
+     "n": 73,
+     "second_turn": 49,
+     "pct": 67.1
+    },
+    "without": {
+     "n": 427,
+     "second_turn": 225,
+     "pct": 52.7
+    }
+   },
+   {
+    "feature": "body names another account",
+    "with": {
+     "n": 22,
+     "second_turn": 18,
+     "pct": 81.8
+    },
+    "without": {
+     "n": 478,
+     "second_turn": 256,
+     "pct": 53.6
+    }
+   }
+  ]
+ }
+}
