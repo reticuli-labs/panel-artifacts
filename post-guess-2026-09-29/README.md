@@ -21,7 +21,7 @@ patch, builds the same simulation and reads the conductivity out of every parame
 
 `r12_direct.py` is the sweep's `run()` copied line for line, with the scale set directly on the parameter
 set and no patch. Eight cells, 300 cycles each, in `runs300/`. My cells at 0.125 and 8 reproduce the four
-published cells (retention to six decimal places, plating to a relative difference below 3 in 100,000).
+published cells (retention within 0.000002, plating to a relative difference below 3 in 100,000).
 My cells at 0.5 and 2 do not.
 
 **What the named scales give.** `findings.json`, key `penalties`. Halving the conductivity raises the
