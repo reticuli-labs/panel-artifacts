@@ -1,0 +1,329 @@
+{
+ "kind": "reticuli.cm-bat-r12.findings.v1",
+ "their_repo_head": "171c53bea7e40780c286b0f693b481469856e9df",
+ "pybamm_wheel_sha256": "b5977b7867f7159d2a3fe84fe1669ef9ae36312cfe234daf4681569a5c960289",
+ "scale_probe": {
+  "0.5": {
+   "intended_scale": 0.5,
+   "scale_after_run_copy": 0.5,
+   "copy_calls_until_built": 10,
+   "scale_seen_by_process_model": [
+    0.125
+   ],
+   "process_model_calls": 4,
+   "power_of_scale": [
+    3.0
+   ]
+  },
+  "2.0": {
+   "intended_scale": 2.0,
+   "scale_after_run_copy": 2.0,
+   "copy_calls_until_built": 10,
+   "scale_seen_by_process_model": [
+    8.0
+   ],
+   "process_model_calls": 4,
+   "power_of_scale": [
+    3.0
+   ]
+  }
+ },
+ "reproduction": {
+  "kappa0.5_tau1.2": {
+   "their_retention": 0.9436439528066487,
+   "their_plating_Ah": 0.12196756010729097,
+   "their_sei_Ah": 0.04346725820670889,
+   "mine_at_x0.125": {
+    "retention": 0.9436439753806733,
+    "plating_Ah": 0.12196782440854075,
+    "sei_Ah": 0.0434672701416236
+   },
+   "mine_at_x0.5": {
+    "retention": 0.9749532365646774,
+    "plating_Ah": 0.06529048256537855,
+    "sei_Ah": 0.040173958615742765
+   },
+   "rel_diff_plating_at_scale_that_ran": 2.1669798882788827e-06,
+   "abs_diff_retention_at_scale_that_ran": 2.25740246495576e-08
+  },
+  "kappa0.5_tau1.8": {
+   "their_retention": 0.871019398635054,
+   "their_plating_Ah": 0.20226742940492662,
+   "their_sei_Ah": 0.04472878687390214,
+   "mine_at_x0.125": {
+    "retention": 0.871018472324296,
+    "plating_Ah": 0.20226786456022344,
+    "sei_Ah": 0.04472879204599458
+   },
+   "mine_at_x0.5": {
+    "retention": 0.9627970853123097,
+    "plating_Ah": 0.10387412860128797,
+    "sei_Ah": 0.04181795249182361
+   },
+   "rel_diff_plating_at_scale_that_ran": 2.15138590579938e-06,
+   "abs_diff_retention_at_scale_that_ran": 9.263107579871033e-07
+  },
+  "kappa2_tau1.2": {
+   "their_retention": 0.9812596330456963,
+   "their_plating_Ah": 0.0557459379109952,
+   "their_sei_Ah": 0.03907621342275835,
+   "mine_at_x8": {
+    "retention": 0.9812585042772117,
+    "plating_Ah": 0.05574715073823418,
+    "sei_Ah": 0.03907619482767229
+   },
+   "mine_at_x2": {
+    "retention": 0.9798500984955388,
+    "plating_Ah": 0.05751538186755492,
+    "sei_Ah": 0.03928725277373261
+   },
+   "rel_diff_plating_at_scale_that_ran": 2.1756333903926057e-05,
+   "abs_diff_retention_at_scale_that_ran": 1.1287684845706636e-06
+  },
+  "kappa2_tau1.8": {
+   "their_retention": 0.9752493131681192,
+   "their_plating_Ah": 0.07062483054087683,
+   "their_sei_Ah": 0.040152664153062935,
+   "mine_at_x8": {
+    "retention": 0.9752474179749755,
+    "plating_Ah": 0.07062527258460471,
+    "sei_Ah": 0.04015265591925756
+   },
+   "mine_at_x2": {
+    "retention": 0.9731001470791635,
+    "plating_Ah": 0.07621711781778896,
+    "sei_Ah": 0.04049173429074403
+   },
+   "rel_diff_plating_at_scale_that_ran": 6.259041253626081e-06,
+   "abs_diff_retention_at_scale_that_ran": 1.8951931437527492e-06
+  }
+ },
+ "cells": {
+  "x0.125_tau1.2": {
+   "cap1_Ah": 9.81722591993262,
+   "cap300_Ah": 9.263966094295405,
+   "loss_Ah": 0.5532598256372143,
+   "retention_pct": 94.36439753806734,
+   "plating_Ah": 0.12196782440854075,
+   "sei_Ah": 0.0434672701416236,
+   "sei_on_cracks_Ah": 0.09997157254730961,
+   "side_reactions_total_Ah": 0.265406667097474,
+   "lli_pct": 1.743638882827213,
+   "lam_neg_pct": 2.842170943040401e-14,
+   "theoretical_capacity_end_Ah": 9.986632476347586
+  },
+  "x0.125_tau1.8": {
+   "cap1_Ah": 8.978403275022522,
+   "cap300_Ah": 7.820355104521573,
+   "loss_Ah": 1.1580481705009493,
+   "retention_pct": 87.10184723242959,
+   "plating_Ah": 0.20226786456022344,
+   "sei_Ah": 0.04472879204599458,
+   "sei_on_cracks_Ah": 0.10253446900908712,
+   "side_reactions_total_Ah": 0.34953112561530514,
+   "lli_pct": 2.296310292602385,
+   "lam_neg_pct": 2.842170943040401e-14,
+   "theoretical_capacity_end_Ah": 9.905561627519075
+  },
+  "x0.5_tau1.2": {
+   "cap1_Ah": 9.95715578590099,
+   "cap300_Ah": 9.707761260442874,
+   "loss_Ah": 0.2493945254581167,
+   "retention_pct": 97.49532365646773,
+   "plating_Ah": 0.06529048256537855,
+   "sei_Ah": 0.040173958615742765,
+   "sei_on_cracks_Ah": 0.09333493587853786,
+   "side_reactions_total_Ah": 0.1987993770596592,
+   "lli_pct": 1.306049797143018,
+   "lam_neg_pct": 2.842170943040401e-14,
+   "theoretical_capacity_end_Ah": 10.047513370371808
+  },
+  "x0.5_tau1.8": {
+   "cap1_Ah": 9.919083599022624,
+   "cap300_Ah": 9.550064778108117,
+   "loss_Ah": 0.36901882091450666,
+   "retention_pct": 96.27970853123097,
+   "plating_Ah": 0.10387412860128797,
+   "sei_Ah": 0.04181795249182361,
+   "sei_on_cracks_Ah": 0.09660840709354014,
+   "side_reactions_total_Ah": 0.24230048818665176,
+   "lli_pct": 1.591838506358755,
+   "lam_neg_pct": 2.842170943040401e-14,
+   "theoretical_capacity_end_Ah": 10.007831134357163
+  },
+  "x2_tau1.2": {
+   "cap1_Ah": 9.974872029752474,
+   "cap300_Ah": 9.773879340833357,
+   "loss_Ah": 0.2009926889191167,
+   "retention_pct": 97.98500984955389,
+   "plating_Ah": 0.05751538186755492,
+   "sei_Ah": 0.03928725277373261,
+   "sei_on_cracks_Ah": 0.09156623066543218,
+   "side_reactions_total_Ah": 0.1883688653067197,
+   "lli_pct": 1.2375245936902957,
+   "lam_neg_pct": 2.842170943040401e-14,
+   "theoretical_capacity_end_Ah": 10.056568419666853
+  },
+  "x2_tau1.8": {
+   "cap1_Ah": 9.955633017573488,
+   "cap300_Ah": 9.687827953666938,
+   "loss_Ah": 0.26780506390655034,
+   "retention_pct": 97.31001470791635,
+   "plating_Ah": 0.07621711781778896,
+   "sei_Ah": 0.04049173429074403,
+   "sei_on_cracks_Ah": 0.0939433107215731,
+   "side_reactions_total_Ah": 0.21065216283010604,
+   "lli_pct": 1.3839188965335438,
+   "lam_neg_pct": 2.842170943040401e-14,
+   "theoretical_capacity_end_Ah": 10.037120435749348
+  },
+  "x8_tau1.2": {
+   "cap1_Ah": 9.97945442951397,
+   "cap300_Ah": 9.792424527007473,
+   "loss_Ah": 0.18702990250649698,
+   "retention_pct": 98.12585042772118,
+   "plating_Ah": 0.05574715073823418,
+   "sei_Ah": 0.03907619482767229,
+   "sei_on_cracks_Ah": 0.09114776310881312,
+   "side_reactions_total_Ah": 0.18597110867471955,
+   "lli_pct": 1.2217720817411362,
+   "lam_neg_pct": 2.842170943040401e-14,
+   "theoretical_capacity_end_Ah": 10.05865274397136
+  },
+  "x8_tau1.8": {
+   "cap1_Ah": 9.963201662868256,
+   "cap300_Ah": 9.716586696476249,
+   "loss_Ah": 0.24661496639200742,
+   "retention_pct": 97.52474179749754,
+   "plating_Ah": 0.07062527258460471,
+   "sei_Ah": 0.04015265591925756,
+   "sei_on_cracks_Ah": 0.09326761611835407,
+   "side_reactions_total_Ah": 0.20404554462221638,
+   "lli_pct": 1.340515478989147,
+   "lam_neg_pct": 2.842170943040401e-14,
+   "theoretical_capacity_end_Ah": 10.04293776324082
+  }
+ },
+ "penalties": {
+  "x0.125": {
+   "plating_penalty_mAh": 80.3000401516827,
+   "retention_penalty_pt": 7.262550305637745,
+   "plating_ratio": 1.658370685392497
+  },
+  "x0.5": {
+   "plating_penalty_mAh": 38.583646035909425,
+   "retention_penalty_pt": 1.2156151252367664,
+   "plating_ratio": 1.5909536048730186
+  },
+  "x2": {
+   "plating_penalty_mAh": 18.701735950234042,
+   "retention_penalty_pt": 0.6749951416375382,
+   "plating_ratio": 1.325160597791039
+  },
+  "x8": {
+   "plating_penalty_mAh": 14.878121846370536,
+   "retention_penalty_pt": 0.601108630223635,
+   "plating_ratio": 1.2668857806963465
+  },
+  "x1_their_R12b": {
+   "plating_penalty_mAh": 25.308871342507768,
+   "retention_penalty_pt": 0.8563089184441566,
+   "plating_ratio": 1.4242992872935034
+  }
+ },
+ "budget": {
+  "x0.125_tau1.2": {
+   "loss_Ah": 0.5532598256372143,
+   "plating_share": 0.2204530651905999,
+   "sei_share": 0.07856574456957972,
+   "sei_on_cracks_share": 0.18069552119055063,
+   "side_reactions_share": 0.4797143309507304
+  },
+  "x0.125_tau1.8": {
+   "loss_Ah": 1.1580481705009493,
+   "plating_share": 0.1746627383148719,
+   "sei_share": 0.03862429317309466,
+   "sei_on_cracks_share": 0.08854076334729037,
+   "side_reactions_share": 0.3018277948352569
+  },
+  "x0.5_tau1.2": {
+   "loss_Ah": 0.2493945254581167,
+   "plating_share": 0.26179597344988004,
+   "sei_share": 0.16108596827435004,
+   "sei_on_cracks_share": 0.3742461295294653,
+   "side_reactions_share": 0.7971280712536954
+  },
+  "x0.5_tau1.8": {
+   "loss_Ah": 0.36901882091450666,
+   "plating_share": 0.2814873462114098,
+   "sei_share": 0.11332200452050083,
+   "sei_on_cracks_share": 0.26179804827874115,
+   "side_reactions_share": 0.6566073990106519
+  },
+  "x2_tau1.2": {
+   "loss_Ah": 0.2009926889191167,
+   "plating_share": 0.2861565869726745,
+   "sei_share": 0.19546607881614314,
+   "sei_on_cracks_share": 0.45556995708575343,
+   "side_reactions_share": 0.937192622874571
+  },
+  "x2_tau1.8": {
+   "loss_Ah": 0.26780506390655034,
+   "plating_share": 0.28459924060429515,
+   "sei_share": 0.15119853859400315,
+   "sei_on_cracks_share": 0.3507898967674274,
+   "side_reactions_share": 0.7865876759657255
+  },
+  "x8_tau1.2": {
+   "loss_Ah": 0.18702990250649698,
+   "plating_share": 0.2980654429646492,
+   "sei_share": 0.20893019941725563,
+   "sei_on_cracks_share": 0.48734326376311327,
+   "side_reactions_share": 0.994338906145018
+  },
+  "x8_tau1.8": {
+   "loss_Ah": 0.24661496639200742,
+   "plating_share": 0.2863786963859369,
+   "sei_share": 0.16281516286985118,
+   "sei_on_cracks_share": 0.3781912244940573,
+   "side_reactions_share": 0.8273850837498454
+  }
+ },
+ "seconds_per_run": {
+  "x0.125_tau1.2": 1273.3,
+  "x0.125_tau1.8": 1313.2,
+  "x0.5_tau1.2": 1157.7,
+  "x0.5_tau1.8": 1219.7,
+  "x2_tau1.2": 1134.7,
+  "x2_tau1.8": 1181.8,
+  "x8_tau1.2": 1103.8,
+  "x8_tau1.8": 1173.7
+ },
+ "scale_probe_r17": {
+  "0.1": {
+   "intended_scale": 0.1,
+   "scale_after_run_copy": 0.1,
+   "scale_seen_by_process_model": [
+    0.001
+   ],
+   "power_of_scale": [
+    3.0
+   ]
+  },
+  "10.0": {
+   "intended_scale": 10.0,
+   "scale_after_run_copy": 10.0,
+   "scale_seen_by_process_model": [
+    1000.0
+   ],
+   "power_of_scale": [
+    3.0
+   ]
+  }
+ },
+ "other_wrappers": {
+  "cm_bat_r08_tplus.py": "same patch, sets a constant: a repeated copy cannot compound it",
+  "cm_bat_r10_tplus_1c.py": "same patch, sets a constant: a repeated copy cannot compound it",
+  "cm_bat_r17_plating_k.py": "same patch, multiplies: probe reads the cube of the named scale; cells NOT re-run by me"
+ }
+}

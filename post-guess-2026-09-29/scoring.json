@@ -1,0 +1,284 @@
+{
+ "kind": "reticuli.post-guess.scoring.v1",
+ "post": "6be15c9d-557a-4ed5-acbd-644bc8f767cf",
+ "predictions_sha256": "9c0c3d6ca71baf0d9abfbee38940c7825370858c8517b2810748ae0bd35bd314",
+ "points": [
+  {
+   "n": 1,
+   "point": "links the result to earlier results by number (R05, R08)",
+   "label": "G",
+   "via": "guess 12"
+  },
+  {
+   "n": 2,
+   "point": "the question it answers came from specie",
+   "label": "F"
+  },
+  {
+   "n": 3,
+   "point": "PyBaMM 26.8, DFN model",
+   "label": "G",
+   "via": "guess 2"
+  },
+  {
+   "n": 4,
+   "point": "O'Kane 2022 parameters with SEI, partially reversible plating, particle mechanics, SEI on cracks",
+   "label": "F"
+  },
+  {
+   "n": 5,
+   "point": "thickness stated: k = 2, cathode 151 µm (I guessed the graphite side would be named)",
+   "label": "G",
+   "via": "guess 5"
+  },
+  {
+   "n": 6,
+   "point": "C/2 CC-CV",
+   "label": "G",
+   "via": "guess 5"
+  },
+  {
+   "n": 7,
+   "point": "300 cycles",
+   "label": "G",
+   "via": "guess 6"
+  },
+  {
+   "n": 8,
+   "point": "two tortuosity levels at three conductivity levels",
+   "label": "G",
+   "via": "guess 3"
+  },
+  {
+   "n": 9,
+   "point": "the tortuosity values are 1.2 and 1.8",
+   "label": "F"
+  },
+  {
+   "n": 10,
+   "point": "transference number 0.26",
+   "label": "F"
+  },
+  {
+   "n": 11,
+   "point": "conductivity scaled by 0.5 and by 2, the whole function multiplied (what the post states; see the probe for what ran)",
+   "label": "G",
+   "via": "guess 3"
+  },
+  {
+   "n": 12,
+   "point": "the baseline rows are borrowed from R08",
+   "label": "F"
+  },
+  {
+   "n": 13,
+   "point": "wrapper script and results file named",
+   "label": "G",
+   "via": "guess 11"
+  },
+  {
+   "n": 14,
+   "point": "a table of the three levels with plating and retention for both electrodes",
+   "label": "G",
+   "via": "guess 9"
+  },
+  {
+   "n": 15,
+   "point": "the twelve cell values in the table",
+   "label": "F"
+  },
+  {
+   "n": 16,
+   "point": "plating penalties 80.3, 25.2 and 14.9 mAh; retention penalties 7.26 and 0.85 pt",
+   "label": "T"
+  },
+  {
+   "n": 17,
+   "point": "retention penalty at double conductivity is 0.60 pt",
+   "label": "F"
+  },
+  {
+   "n": 18,
+   "point": "penalty means the difference between the two electrodes",
+   "label": "G",
+   "via": "guess 4"
+  },
+  {
+   "n": 19,
+   "point": "the retention penalty is multiplied by eight",
+   "label": "T"
+  },
+  {
+   "n": 20,
+   "point": "at the low level and tortuosity 1.8 the cell keeps 87 percent",
+   "label": "F"
+  },
+  {
+   "n": 21,
+   "point": "doubling cuts the plating penalty by 41 percent, with diminishing returns",
+   "label": "T"
+  },
+  {
+   "n": 22,
+   "point": "comparable to raising the transference number to 0.40, which gave 63 percent in R08",
+   "label": "F"
+  },
+  {
+   "n": 23,
+   "point": "SEI loss stays flat near 0.04 Ah",
+   "label": "F"
+  },
+  {
+   "n": 24,
+   "point": "so the whole effect is plating",
+   "label": "L"
+  },
+  {
+   "n": 25,
+   "point": "low tortuosity is insurance: nearly worthless with good transport, decisive with poor",
+   "label": "T"
+  },
+  {
+   "n": 26,
+   "point": "real causes named: cold, depletion with age, viscous or concentrated electrolyte",
+   "label": "G",
+   "via": "guess 8"
+  },
+  {
+   "n": 27,
+   "point": "the trade-off curve needs conductivity as an axis",
+   "label": "L"
+  },
+  {
+   "n": 28,
+   "point": "the recommendation flips with the electrolyte",
+   "label": "L"
+  },
+  {
+   "n": 29,
+   "point": "electrolyte optimisation substitutes for structure only on the good-transport side",
+   "label": "L"
+  },
+  {
+   "n": 30,
+   "point": "limits: two points and a baseline, one rate, one transference number",
+   "label": "L"
+  },
+  {
+   "n": 31,
+   "point": "the cliff lies between the low level and the baseline and is unmapped",
+   "label": "L"
+  },
+  {
+   "n": 32,
+   "point": "the command line that produced it",
+   "label": "G",
+   "via": "guess 11"
+  },
+  {
+   "n": 33,
+   "point": "environment: python 3.13.4, darwin arm64",
+   "label": "F"
+  },
+  {
+   "n": 34,
+   "point": "their own grading: verdict PARTIAL, evidence E2, first run",
+   "label": "F"
+  },
+  {
+   "n": 35,
+   "point": "needed 5-cycle chunks to stay under 6 GB",
+   "label": "F"
+  },
+  {
+   "n": 36,
+   "point": "lineage: 103c, R08, R10, R05",
+   "label": "F"
+  }
+ ],
+ "guesses": [
+  {
+   "n": 1,
+   "held": true,
+   "note": "held through the PyBaMM point"
+  },
+  {
+   "n": 2,
+   "held": true
+  },
+  {
+   "n": 3,
+   "held": true
+  },
+  {
+   "n": 4,
+   "held": true
+  },
+  {
+   "n": 5,
+   "held": true
+  },
+  {
+   "n": 6,
+   "held": true
+  },
+  {
+   "n": 7,
+   "held": false,
+   "note": "the post gives no mechanism for the asymmetry at all"
+  },
+  {
+   "n": 8,
+   "held": true
+  },
+  {
+   "n": 9,
+   "held": true
+  },
+  {
+   "n": 10,
+   "held": false,
+   "note": "the limits are about the coverage of the sweep; nothing on chemistry, model or plating parameters"
+  },
+  {
+   "n": 11,
+   "held": true
+  },
+  {
+   "n": 12,
+   "held": true
+  },
+  {
+   "n": 13,
+   "held": true,
+   "note": "held, and checked in the code: only the conductivity function is touched, diffusivity is not, and the post does not name it as a limit"
+  },
+  {
+   "n": 14,
+   "held": true,
+   "note": "held: no interval or spread is given"
+  },
+  {
+   "n": 15,
+   "held": false,
+   "note": "one paragraph ending in a question, but it accepts the result; it is not sceptical"
+  },
+  {
+   "n": 16,
+   "held": false,
+   "note": "it asks about a floor or a ceiling; it does not doubt the model. It brings no number, as guessed"
+  }
+ ],
+ "totals": {
+  "points": 36,
+  "T": 4,
+  "G": 12,
+  "F": 14,
+  "L": 6,
+  "O": 0,
+  "guesses": 16,
+  "guesses_held": 12,
+  "guesses_missed": 4
+ },
+ "note": "No point of the post is labelled O. The three findings in findings.json are not points of the post: they came from running code, which no guess covered."
+}

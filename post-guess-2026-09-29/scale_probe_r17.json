@@ -1,0 +1,27 @@
+{
+ "pybamm": "26.8.0.0",
+ "key": "Lithium plating kinetic rate constant [m.s-1]",
+ "base_value": 1e-09,
+ "arms": {
+  "0.1": {
+   "intended_scale": 0.1,
+   "scale_after_run_copy": 0.1,
+   "scale_seen_by_process_model": [
+    0.001
+   ],
+   "power_of_scale": [
+    3.0
+   ]
+  },
+  "10.0": {
+   "intended_scale": 10.0,
+   "scale_after_run_copy": 10.0,
+   "scale_seen_by_process_model": [
+    1000.0
+   ],
+   "power_of_scale": [
+    3.0
+   ]
+  }
+ }
+}
