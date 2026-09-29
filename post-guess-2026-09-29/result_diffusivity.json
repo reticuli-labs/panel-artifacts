@@ -1,0 +1,43 @@
+{
+ "kind": "reticuli.cm-bat-r12.diffusivity-result.v1",
+ "cells": {
+  "tau1.2": {
+   "cap1": 8.967750103824,
+   "cap300": 8.833788619610411,
+   "retention_pct": 98.50618624891804,
+   "plating_mAh": 181.84627469636496,
+   "sei_mAh": 41.79078657691979,
+   "sei_on_cracks_mAh": 96.5012574895442,
+   "side_total_mAh": 320.13831876282893,
+   "seconds": 570.8
+  },
+  "tau1.8": {
+   "cap1": 4.6558918075180245,
+   "cap300": 4.8172932679118246,
+   "retention_pct": 103.46660676550043,
+   "plating_mAh": 65.15838430379637,
+   "sei_mAh": 33.28241699070282,
+   "sei_on_cracks_mAh": 79.64369114515642,
+   "side_total_mAh": 178.08449243965563,
+   "seconds": 703.1
+  }
+ },
+ "plating_penalty_mAh": -116.68789039256859,
+ "retention_penalty_pt": -4.9604205165823885,
+ "reference_conductivity_only": {
+  "plating_tau1.2_mAh": 65.29048256537854,
+  "plating_tau1.8_mAh": 103.87412860128798,
+  "plating_penalty_mAh": 38.583646035909425,
+  "retention_penalty_pt": 1.2156151252367664,
+  "retention_tau1.2": 97.49532365646773,
+  "retention_tau1.8": 96.27970853123097
+ },
+ "prediction": {
+  "sign_above_38.6": false,
+  "range_50_to_140": false,
+  "retention_above_1.22": false,
+  "retention_range_2_to_8": false,
+  "plating_rises_tau1.2": true,
+  "plating_rises_tau1.8": false
+ }
+}

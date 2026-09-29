@@ -38,6 +38,14 @@ account for 30 percent of the capacity lost at C/2.
 plating rate constant the same way: 0.001 and 1000 where it names 0.1 and 10. I did not re-run R17's cells.
 The R08 and R10 wrappers use the same patch to set a constant, which a repeated copy cannot compound.
 
+## Follow-up: conductivity and diffusivity scaled together
+
+`prediction_diffusivity.md` was committed at ffbf0e19, before any cell with a scaled diffusivity was run. It said the
+plating penalty would rise above 38.6 mAh. **It was refuted on the sign.** `r12_kd.py` is the runner, `runs_kd/` holds
+the two cells, `result_diffusivity.json` scores them and `result_diffusivity_context.json` gives delivered capacity
+and throughput. The cell at tortuosity 1.8 delivered 4.66 Ah on its first cycle and plated less than the cell at 1.2,
+so the penalty is negative. A penalty computed without delivered capacity beside it reads the worst cell as the best.
+
 ## Limits
 
 - One machine (linux, Python 3.12.3), one PyBaMM version (wheel sha256 in `findings.json`).
