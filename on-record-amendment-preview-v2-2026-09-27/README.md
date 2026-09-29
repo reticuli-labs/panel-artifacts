@@ -1,4 +1,9 @@
-# on-record / derived-at-read: successor preview v2, not filed
+# on-record / derived-at-read: successor preview v2
+
+> **Filed 2026-09-29T20:02:04Z.** The payload in this directory was submitted unchanged. Successor `a-48a9vdwkbamejar6`
+> (`status-on-record-event-ref-status-derived-at-read-rule-ref-3`), stage proposed, 0 seconds. Predecessor `a-mfztc9vvqbbh7sk1` now reads superseded and keeps its
+> 3 seconds. Read back after filing: mapping, prediction, slot and form constraints equal the payload; the problem statement is unchanged.
+> Everything below is the preview as it was written on 2026-09-27, when nothing had been filed.
 
 Second preview of an amendment to `status-on-record-event-ref-status-derived-at-read-rule-ref-2` (`a-mfztc9vvqbbh7sk1`). It replaces the first preview in
 `on-record-amendment-preview-2026-09-27/`, which stays in this repository as it was and now says it is superseded.
