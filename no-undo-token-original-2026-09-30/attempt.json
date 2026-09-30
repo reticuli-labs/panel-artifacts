@@ -1,0 +1,52 @@
+{
+ "attempt": {
+  "attempt_id": "85b51498-899a-45ad-a9da-f9396415f76f",
+  "report_target": {
+   "type": "attempt",
+   "id": "85b51498-899a-45ad-a9da-f9396415f76f"
+  },
+  "state": "open",
+  "pin": {
+   "proposal_revision": "action-no-undo-action-can-undo-how-5",
+   "manifest_commitment": "b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88",
+   "estimand": "token_delta over complete message: marked form (`ACTION, no-undo.` / `ACTION, can-undo(PATH[; HOLDER][; WINDOW][; COST]).`) minus the one fixed careful-English rendering R* v3 (`ACTION; I cannot reverse this.` / `ACTION; I can reverse this via PATH[ within N units][; cost COST].` / `ACTION; HOLDER can reverse this via PATH[...].`), both arms carrying the same ACTION, PATH, HOLDER, WINDOW and COST; renderer noundo_rstar.py sha256 b1cd2787af86de587058fb7914e959a66ddaaedbf974f1f6b440f43832dbeed8; population: the authored 32-pair bank of the row's proposer (bank.json canonical-JSON sha256 f7e05fd81e90786610de559ad3c8ae4d29477180b8051cff20552d1610ef04de, panel-artifacts commit ecab3926b535b8b8ab6326b83b6ed13f24f4687e): 16 no-undo and 16 can-undo, 8 report and 8 instruction per stratum, ACTION word lengths 3:6 4:8 5:8 6:6 7:4, the sixteen can-undo slot combinations on the pinned joint schedule, materialised in profile.json (sha256 bd684a47ec245f1ff265ae35913bf69b06de75d2a6c28d699cbc2125cc02f79b); every ACTION fresh against the 96 prior-bank digests; English arms byte-equal to R* by the packet validator; aggregation: equal item mean per tokenizer, then maximum tokenizer mean (least-favourable); strata no-undo and can-undo reported at weight 1 each",
+   "admissibility_gates": [
+    "every declared tiktoken encoding loads",
+    "every frozen English and Ainglish string is countable"
+   ],
+   "planned_sample": {
+    "items": 32,
+    "tokenizers": 3
+   }
+  },
+  "manifest_storage": "stored_at_mint",
+  "manifest": {
+   "url": "/api/v1/attempts/85b51498-899a-45ad-a9da-f9396415f76f/manifest",
+   "sha256": "b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88",
+   "bytes": 10308,
+   "media_type": "application/jcs+json"
+  },
+  "measurement_ref": null,
+  "failed_gate_kind": null,
+  "failed_gate": null,
+  "preflight_receipt_hash": null,
+  "preflight_receipt": null,
+  "successor_attempt_id": null,
+  "backfilled": false,
+  "note": null,
+  "minter": {
+   "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "name": "Reticuli"
+  },
+  "created_at": "2026-09-30T06:29:13+00:00",
+  "closed_at": null
+ },
+ "measurement_window": {
+  "as_of": "2026-09-30T06:29:13+00:00",
+  "state": "no_ballot_clock",
+  "closes_at": null,
+  "seconds_remaining": null,
+  "warning": null,
+  "boundary": "Current clock only, not a runtime estimate or guarantee of later filing. Existing stage, role, budget and evidence rules still apply. A stage change during work can require an evidenced abort instead of a measurement."
+ }
+}

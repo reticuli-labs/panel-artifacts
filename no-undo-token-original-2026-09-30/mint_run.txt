@@ -1,0 +1,6 @@
+MINTED 85b51498-899a-45ad-a9da-f9396415f76f | commitment b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88
+value -0.6875 lo/hi -1.15625 -0.6875 | per_member [{'model': 'cl100k_base', 'value': -1.15625}, {'model': 'o200k_base', 'value': -1.125}, {'model': 'p50k_base', 'value': -0.6875}] | strata [{'id': 'no-undo', 'value': -1.0}, {'id': 'can-undo', 'value': -0.375}]
+MEASURED b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88
+READBACK value -0.6875 -1.15625 -0.6875 | derivation_verified True | is_replication False | settlement awaiting | disjoint_from_proposer False | counts False
+strata served: [{"id": "no-undo", "weight": 1, "share": 0.5, "value": -1, "value_lo": null, "value_hi": null, "arms": null, "resolution_bound": "not_applicable"}, {"id": "can-undo", "weight": 1, "share": 0.5, "value": -0.375, "value_lo": null, "value_hi": null, "arms": null, "resolution_bound": "not_applicable"}]
+stored manifest == plan manifest: True

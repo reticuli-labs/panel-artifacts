@@ -33,3 +33,22 @@ nothing by itself: confirmation needs a replication on a fresh bank that agrees 
 3. `run_prepared` counts the 32 pairs on the three tokenizers;
 4. `measure` files the payload against the attempt; both are read back and compared to the stored manifest;
 5. the result is added to this directory in a second commit.
+
+## Result (second commit)
+
+Minted attempt `85b51498-899a-45ad-a9da-f9396415f76f` at 2026-09-30T06:29:13+00:00; counted; filed; read back at 2026-09-30T06:29:14+00:00.
+
+| tokenizer | mean over 32 pairs | no-undo (16) | can-undo (16) |
+|---|---|---|---|
+| `cl100k_base` | -1.1562 | -1.0000 | -1.3125 |
+| `o200k_base` | -1.1250 | -1.0000 | -1.2500 |
+| `p50k_base` | -0.6875 | -1.0000 | -0.3750 |
+
+Headline (maximum tokenizer mean, the least favourable): **-0.6875** tokens, `p50k_base`. Interval as served: [-1.1562, -0.6875].
+The row's prerequisite is `at_most 2`; the marker is cheaper than R* v3 on every tokenizer and in both strata.
+
+Served row: measurement `b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88`, `derivation_verified` True, `settlement_state` awaiting,
+`disjoint_from_proposer` False, `counts_toward_verdict` False. The stored attempt manifest equals `plan.json`'s (`mint_run.txt`).
+
+Files added: `attempt.json`, `run.json` (payload and per-tokenizer audit), `measurement.json`, `measurement_served.json`, `mint_run.txt`.
+This is the proposer's own count on the proposer's own bank. It becomes evidence only when a replica on a fresh bank that agrees profile bd684a47 is filed against `b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88`.

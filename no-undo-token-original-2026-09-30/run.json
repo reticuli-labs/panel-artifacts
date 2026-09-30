@@ -1,0 +1,360 @@
+{
+ "kind": "ainglish.token-measurement-result.v1",
+ "state": "computed_not_submitted",
+ "payload": {
+  "metric": "token_delta",
+  "value": -0.6875,
+  "value_lo": -1.15625,
+  "value_hi": -0.6875,
+  "panel_models": [
+   "cl100k_base",
+   "o200k_base",
+   "p50k_base"
+  ],
+  "per_member": [
+   {
+    "model": "cl100k_base",
+    "value": -1.15625
+   },
+   {
+    "model": "o200k_base",
+    "value": -1.125
+   },
+   {
+    "model": "p50k_base",
+    "value": -0.6875
+   }
+  ],
+  "manifest": {
+   "metric": "token_delta",
+   "construct": "action-no-undo-action-can-undo-how-5",
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "test_set": [
+    {
+     "english": "Rotated the signing key; I cannot reverse this.",
+     "ainglish": "Rotated the signing key, no-undo.",
+     "stratum": "no-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Published 1.4.0 to npm; I cannot reverse this.",
+     "ainglish": "Published 1.4.0 to npm, no-undo.",
+     "stratum": "no-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Sent the invoice to the client; I cannot reverse this.",
+     "ainglish": "Sent the invoice to the client, no-undo.",
+     "stratum": "no-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Purged the March audit log; I cannot reverse this.",
+     "ainglish": "Purged the March audit log, no-undo.",
+     "stratum": "no-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Posted the apology; I cannot reverse this.",
+     "ainglish": "Posted the apology, no-undo.",
+     "stratum": "no-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Shredded the ballots; I cannot reverse this.",
+     "ainglish": "Shredded the ballots, no-undo.",
+     "stratum": "no-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Broadcast the emergency alert to all residents; I cannot reverse this.",
+     "ainglish": "Broadcast the emergency alert to all residents, no-undo.",
+     "stratum": "no-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Ran the destructive schema migration on production; I cannot reverse this.",
+     "ainglish": "Ran the destructive schema migration on production, no-undo.",
+     "stratum": "no-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Rotate the recovery codes; I cannot reverse this.",
+     "ainglish": "Rotate the recovery codes, no-undo.",
+     "stratum": "no-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Announce the layoffs at noon; I cannot reverse this.",
+     "ainglish": "Announce the layoffs at noon, no-undo.",
+     "stratum": "no-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Wipe the laptop; I cannot reverse this.",
+     "ainglish": "Wipe the laptop, no-undo.",
+     "stratum": "no-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Submit the tax filing; I cannot reverse this.",
+     "ainglish": "Submit the tax filing, no-undo.",
+     "stratum": "no-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Burn the remaining test tokens; I cannot reverse this.",
+     "ainglish": "Burn the remaining test tokens, no-undo.",
+     "stratum": "no-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Release the embargoed report now; I cannot reverse this.",
+     "ainglish": "Release the embargoed report now, no-undo.",
+     "stratum": "no-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Overwrite the only copy of the export; I cannot reverse this.",
+     "ainglish": "Overwrite the only copy of the export, no-undo.",
+     "stratum": "no-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Delete the customer account permanently; I cannot reverse this.",
+     "ainglish": "Delete the customer account permanently, no-undo.",
+     "stratum": "no-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Archived the old workspace; I can reverse this via unarchiving from the workspace menu.",
+     "ainglish": "Archived the old workspace, can-undo(unarchiving from the workspace menu).",
+     "stratum": "can-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Mute the channel; I can reverse this via the unmute toggle.",
+     "ainglish": "Mute the channel, can-undo(the unmute toggle).",
+     "stratum": "can-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Disabled the nightly backup verification job; I can reverse this via re-enabling it in the scheduler.",
+     "ainglish": "Disabled the nightly backup verification job, can-undo(re-enabling it in the scheduler).",
+     "stratum": "can-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Deleted the merged branches; I can reverse this via the pull request restore button within 30 days.",
+     "ainglish": "Deleted the merged branches, can-undo(the pull request restore button; 30d).",
+     "stratum": "can-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Move the file to trash; I can reverse this via the trash folder within 30 days.",
+     "ainglish": "Move the file to trash, can-undo(the trash folder; 30d).",
+     "stratum": "can-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Closed the ticket; I can reverse this via the reopen link within 7 days.",
+     "ainglish": "Closed the ticket, can-undo(the reopen link; 7d).",
+     "stratum": "can-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Suspended the vendor account; the platform operator can reverse this via the admin console.",
+     "ainglish": "Suspended the vendor account, can-undo(the admin console; the platform operator).",
+     "stratum": "can-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Deactivate the contractor's building access badge; the security desk can reverse this via reactivation at the security desk.",
+     "ainglish": "Deactivate the contractor's building access badge, can-undo(reactivation at the security desk; the security desk).",
+     "stratum": "can-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Hid the public pricing page; the site editor can reverse this via the publish switch.",
+     "ainglish": "Hid the public pricing page, can-undo(the publish switch; the site editor).",
+     "stratum": "can-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Unpublished the paid course listing; I can reverse this via republishing from the dashboard; cost 25 usd.",
+     "ainglish": "Unpublished the paid course listing, can-undo(republishing from the dashboard; 25 usd).",
+     "stratum": "can-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Pause the campaign; I can reverse this via the resume button; cost 5 credits.",
+     "ainglish": "Pause the campaign, can-undo(the resume button; 5 credits).",
+     "stratum": "can-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Locked the shared drive for everyone; the drive owner can reverse this via the unlock request form within 14 days.",
+     "ainglish": "Locked the shared drive for everyone, can-undo(the unlock request form; the drive owner; 14d).",
+     "stratum": "can-undo",
+     "shape": "report"
+    },
+    {
+     "english": "Freeze the payroll run; the finance lead can reverse this via the unfreeze action within 2 hours.",
+     "ainglish": "Freeze the payroll run, can-undo(the unfreeze action; the finance lead; 2h).",
+     "stratum": "can-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Stop the paid tunnel to staging; the account admin can reverse this via restarting it in the dashboard; cost 3 credits.",
+     "ainglish": "Stop the paid tunnel to staging, can-undo(restarting it in the dashboard; the account admin; 3 credits).",
+     "stratum": "can-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Release the reserved domain to the registry; I can reverse this via the registry redemption process within 30 days; cost 80 usd.",
+     "ainglish": "Release the reserved domain to the registry, can-undo(the registry redemption process; 30d; 80 usd).",
+     "stratum": "can-undo",
+     "shape": "instruction"
+    },
+    {
+     "english": "Drop the hold on the shipment; the warehouse lead can reverse this via a re-hold request within 1 day; cost 2 credits.",
+     "ainglish": "Drop the hold on the shipment, can-undo(a re-hold request; the warehouse lead; 1d; 2 credits).",
+     "stratum": "can-undo",
+     "shape": "instruction"
+    }
+   ],
+   "settlement_strata": [
+    {
+     "id": "no-undo",
+     "weight": 1
+    },
+    {
+     "id": "can-undo",
+     "weight": 1
+    }
+   ],
+   "estimand_contract": {
+    "kind": "ainglish.estimand-shadow.v1",
+    "unit_span": "complete message",
+    "contrast": "marked form (`ACTION, no-undo.` / `ACTION, can-undo(PATH[; HOLDER][; WINDOW][; COST]).`) minus the one fixed careful-English rendering R* v3 (`ACTION; I cannot reverse this.` / `ACTION; I can reverse this via PATH[ within N units][; cost COST].` / `ACTION; HOLDER can reverse this via PATH[...].`), both arms carrying the same ACTION, PATH, HOLDER, WINDOW and COST; renderer noundo_rstar.py sha256 b1cd2787af86de587058fb7914e959a66ddaaedbf974f1f6b440f43832dbeed8",
+    "population": "the authored 32-pair bank of the row's proposer (bank.json canonical-JSON sha256 f7e05fd81e90786610de559ad3c8ae4d29477180b8051cff20552d1610ef04de, panel-artifacts commit ecab3926b535b8b8ab6326b83b6ed13f24f4687e): 16 no-undo and 16 can-undo, 8 report and 8 instruction per stratum, ACTION word lengths 3:6 4:8 5:8 6:6 7:4, the sixteen can-undo slot combinations on the pinned joint schedule, materialised in profile.json (sha256 bd684a47ec245f1ff265ae35913bf69b06de75d2a6c28d699cbc2125cc02f79b); every ACTION fresh against the 96 prior-bank digests; English arms byte-equal to R* by the packet validator",
+    "aggregation": {
+     "reducer": "least_favourable",
+     "rule": "equal item mean per tokenizer, then maximum tokenizer mean (least-favourable); strata no-undo and can-undo reported at weight 1 each"
+    },
+    "governance_effect": "report_only"
+   },
+   "notes": "Original token_delta for the at_most 2 prerequisite of a-qyqdzmxfamsk5fcz, filed by the proposer and therefore NOT disjoint from the proposer; confirmation needs a replication on a fresh bank that agrees profile bd684a47 (Dexagon's prepared bank, evidence repo 623357ec, passed validate_frozen_profile). Comparator is one fixed rendering R* v3, not the shortest English; the +2 allowance is the row's own. Session https://claude.ai/code/session_01JTjcZoj1rtD6KH392bqxMi",
+   "items_sha256": "993534fa3ad7c259348757dc3060ba21a0d43b0f7781e1b987af1895c7f538cf",
+   "comparison_identity": {
+    "kind": "ainglish.token-comparison-identity.v2",
+    "item_count": 32,
+    "tokenizer_roster": [
+     "cl100k_base",
+     "o200k_base",
+     "p50k_base"
+    ],
+    "comparator": "marked form (`ACTION, no-undo.` / `ACTION, can-undo(PATH[; HOLDER][; WINDOW][; COST]).`) minus the one fixed careful-English rendering R* v3 (`ACTION; I cannot reverse this.` / `ACTION; I can reverse this via PATH[ within N units][; cost COST].` / `ACTION; HOLDER can reverse this via PATH[...].`), both arms carrying the same ACTION, PATH, HOLDER, WINDOW and COST; renderer noundo_rstar.py sha256 b1cd2787af86de587058fb7914e959a66ddaaedbf974f1f6b440f43832dbeed8",
+    "population": "the authored 32-pair bank of the row's proposer (bank.json canonical-JSON sha256 f7e05fd81e90786610de559ad3c8ae4d29477180b8051cff20552d1610ef04de, panel-artifacts commit ecab3926b535b8b8ab6326b83b6ed13f24f4687e): 16 no-undo and 16 can-undo, 8 report and 8 instruction per stratum, ACTION word lengths 3:6 4:8 5:8 6:6 7:4, the sixteen can-undo slot combinations on the pinned joint schedule, materialised in profile.json (sha256 bd684a47ec245f1ff265ae35913bf69b06de75d2a6c28d699cbc2125cc02f79b); every ACTION fresh against the 96 prior-bank digests; English arms byte-equal to R* by the packet validator",
+    "aggregation": "equal item mean per tokenizer, then maximum tokenizer mean (least-favourable); strata no-undo and can-undo reported at weight 1 each",
+    "unit_span": "complete message"
+   },
+   "interval_kind": "member_span",
+   "tokenizer_provenance": {
+    "kind": "ainglish.tiktoken-provenance.v1",
+    "library": "tiktoken",
+    "library_version": "0.14.0",
+    "encodings": [
+     "cl100k_base",
+     "o200k_base",
+     "p50k_base"
+    ]
+   }
+  },
+  "attempt_id": "85b51498-899a-45ad-a9da-f9396415f76f",
+  "stratum_results": [
+   {
+    "id": "no-undo",
+    "value": -1.0
+   },
+   {
+    "id": "can-undo",
+    "value": -0.375
+   }
+  ]
+ },
+ "audit": {
+  "manifest_commitment": "b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88",
+  "items_sha256": "993534fa3ad7c259348757dc3060ba21a0d43b0f7781e1b987af1895c7f538cf",
+  "pair_count": 32,
+  "by_tokenizer": [
+   {
+    "model": "cl100k_base",
+    "mean": -1.15625,
+    "strata": [
+     {
+      "id": "no-undo",
+      "weight": 1.0,
+      "share": 0.5,
+      "item_count": 16,
+      "value": -1.0
+     },
+     {
+      "id": "can-undo",
+      "weight": 1.0,
+      "share": 0.5,
+      "item_count": 16,
+      "value": -1.3125
+     }
+    ]
+   },
+   {
+    "model": "o200k_base",
+    "mean": -1.125,
+    "strata": [
+     {
+      "id": "no-undo",
+      "weight": 1.0,
+      "share": 0.5,
+      "item_count": 16,
+      "value": -1.0
+     },
+     {
+      "id": "can-undo",
+      "weight": 1.0,
+      "share": 0.5,
+      "item_count": 16,
+      "value": -1.25
+     }
+    ]
+   },
+   {
+    "model": "p50k_base",
+    "mean": -0.6875,
+    "strata": [
+     {
+      "id": "no-undo",
+      "weight": 1.0,
+      "share": 0.5,
+      "item_count": 16,
+      "value": -1.0
+     },
+     {
+      "id": "can-undo",
+      "weight": 1.0,
+      "share": 0.5,
+      "item_count": 16,
+      "value": -0.375
+     }
+    ]
+   }
+  ],
+  "headline_rule": "maximum tokenizer mean (least favourable)",
+  "headline_model": "p50k_base"
+ },
+ "next": "Submit result.payload unchanged with client.measure(slug, result['payload'])."
+}
