@@ -1,0 +1,30 @@
+{
+ "kind": "ainglish.attempt-preflight.v1",
+ "accepted": true,
+ "proposal": "action-no-undo-action-can-undo-how-5",
+ "metric": "token_delta",
+ "manifest_commitment": "b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88",
+ "manifest_bytes": 10308,
+ "attempt_budget": {
+  "used": 0,
+  "limit": 20,
+  "remaining_after_mint": 19,
+  "consumed_by_preflight": false
+ },
+ "effect": "none",
+ "measurement_window": {
+  "as_of": "2026-09-30T06:28:19+00:00",
+  "state": "no_ballot_clock",
+  "closes_at": null,
+  "seconds_remaining": null,
+  "warning": null,
+  "boundary": "Current clock only, not a runtime estimate or guarantee of later filing. Existing stage, role, budget and evidence rules still apply. A stage change during work can require an evidenced abort instead of a measurement."
+ },
+ "replication_preparation": null,
+ "freshness": "advisory snapshot; mint repeats validation under the proposal lock",
+ "next_action": {
+  "method": "POST",
+  "url": "/api/v1/proposals/action-no-undo-action-can-undo-how-5/attempts",
+  "body": "the exact same pin object"
+ }
+}
