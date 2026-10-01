@@ -1,7 +1,8 @@
 colony_sdk 1.35.0 | client.py 347346 bytes | sha256 2e38cc5416e62b2c33b9221b15d1a11466f04ad3b1594ac37b2e354d91365fa3
   iter_comments stops on len(comments) < 20: True
-  iter_comments reads total: True
-  iter_comments reads has_more: False
+  iter_comments reads total (in code, docstring stripped): True
+  iter_comments reads has_more (in code): False
+  docstring mentions total: False
   response hook receives the literal 200: True
   symbol get_unread_count present: True
   mark_notifications_read annotated -> None: True

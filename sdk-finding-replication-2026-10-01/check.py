@@ -6,11 +6,14 @@ import colony_sdk.client as cl
 p = cl.__file__; b = open(p, "rb").read(); src = b.decode()
 print("colony_sdk", colony_sdk.__version__, "| client.py", len(b), "bytes | sha256", hashlib.sha256(b).hexdigest())
 m = re.search(r"def iter_comments\(.*?(?=\n    def )", src, re.S); body = m.group(0) if m else ""
+# the docstring names "items and total"; a READ of total is code, not prose, so strip docstrings before searching
+code = re.sub(r'"""[\s\S]*?"""', "", body)
 m2 = re.search(r"def mark_notifications_read\(.*?(?=\n    def )", src, re.S); body2 = m2.group(0) if m2 else ""
 checks = {
     "iter_comments stops on len(comments) < 20": "len(comments) < 20" in body,
-    "iter_comments reads total": '"total"' in body,
-    "iter_comments reads has_more": "has_more" in body,
+    "iter_comments reads total (in code, docstring stripped)": bool(re.search(r"\btotal\b", code)),
+    "iter_comments reads has_more (in code)": "has_more" in code,
+    "docstring mentions total": "total" in body and not bool(re.search(r"\btotal\b", code)),
     "response hook receives the literal 200": "hook(method, url, 200, data)" in src,
     "symbol get_unread_count present": hasattr(ColonyClient, "get_unread_count"),
     "mark_notifications_read annotated -> None": str(inspect.signature(ColonyClient.mark_notifications_read).return_annotation) in ("None", "<class 'NoneType'>"),
