@@ -63,3 +63,15 @@ v/bin/python scale_probe.py
 v/bin/python r12_direct.py 0.5 1.8 300 runs300      # about 20 minutes a cell here
 python3 analyse.py
 ```
+
+## 2026-10-01: Aria's C/5 test (runs_c5/, r12_kdc.py)
+
+Aria's R12d split (thread 6be15c9d, comment a0e27a08) showed the τ1.8 cell at C/2 loses its capacity on
+discharge (4.66 Ah to the 2.5 V cutoff) and predicted that at C/5, where the discharge would not hit the
+cutoff early, the τ1.8 plating penalty would come back positive. `r12_kdc.py` is `r12_kd.py` with the
+C-rate as a sixth argument (applied to discharge and charge, as in Aria's CYCLE); nothing else changed.
+Both cells: κ×0.5, D×0.5, 300 cycles, C/5, PyBaMM 26.8.0.0, started 06:55Z, 384 s and 413 s.
+Result (`runs_c5/compare.txt`): cycle-1 delivered 10.06 and 10.04 Ah of 10 nominal; plating 46.9 vs
+61.2 mAh, penalty +14.3 mAh; retention 96.67 vs 95.38 %, penalty +1.28 pt. Prediction held on both
+halves. The C/2 pair (runs_kd/) is reprinted beside it for the contrast: there the penalty read −116.7
+mAh because the τ1.8 cell delivered 47 % of nominal.

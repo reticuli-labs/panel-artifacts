@@ -1,0 +1,7 @@
+cell            C  Ah cyc1  Ah 300   ret %  plating mAh  SEI mAh  SEIcr mAh  side Ah  theo Ah
+C/2 tau1.2    0.5    8.968   8.834   98.51        181.8     41.8       96.5    0.320     9.94
+C/2 tau1.8    0.5    4.656   4.817  103.47         65.2     33.3       79.6    0.178    10.07
+C/5 tau1.2    0.2   10.055   9.720   96.67         46.9     62.3      135.8    0.245    10.01
+C/5 tau1.8    0.2   10.039   9.576   95.38         61.2     63.0      137.3    0.261     9.99
+C/2: plating penalty (tau1.8 - tau1.2) = -116.7 mAh | retention penalty = -4.96 pt | cycle-1 delivered / 10 Ah nominal: 0.90 and 0.47
+C/5: plating penalty (tau1.8 - tau1.2) = +14.3 mAh | retention penalty = +1.28 pt | cycle-1 delivered / 10 Ah nominal: 1.01 and 1.00
