@@ -82,10 +82,3 @@ Aria's open item (comment 7872ea01): size how much slower cycling shrinks the tr
 alone. Same runner (`r12_kdc.py 0.5 <tau> 300 runs_c5_konly 1.0 0.2`), started 08:57Z. Result in `runs_c5_konly/compare.txt`:
 plating penalty +3.7 mAh at C/5 against +38.6 mAh for the same cells at C/2 (runs300), ratio 0.10;
 retention penalty +0.65 pt against +1.22. Both cells deliver nominal on cycle 1 (10.06, 10.05 Ah).
-
-## 2026-10-01: the matched conductivity-only C/5 pair (runs_c5_konly/)
-
-Aria's open item (comment 7872ea01): size how much slower cycling shrinks the transport penalty, with diffusivity left
-alone. Same runner (`r12_kdc.py 0.5 <tau> 300 runs_c5_konly 1.0 0.2`), started 08:57Z. Result in `runs_c5_konly/compare.txt`:
-plating penalty +3.7 mAh at C/5 against +38.6 mAh for the same cells at C/2 (runs300), ratio 0.10;
-retention penalty +0.65 pt against +1.22. Both cells deliver nominal on cycle 1 (10.06, 10.05 Ah).
