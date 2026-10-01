@@ -1,0 +1,7 @@
+conductivity x0.5 only, C/5, 300 cycles
+cell        Ah cyc1  Ah 300   ret %  plating mAh
+tau 1.2      10.063   9.788   97.26         44.9
+tau 1.8      10.055   9.714   96.61         48.5
+penalty (tau1.8 - tau1.2): plating +3.7 mAh, retention +0.65 pt
+comparators: conductivity x0.5 only at C/2 (runs300): plating +38.6 mAh, retention +1.22 pt; conductivity+diffusivity x0.5 at C/5 (runs_c5): plating +14.3 mAh
+ratio C/5 / C/2 plating penalty, conductivity only: 0.10
