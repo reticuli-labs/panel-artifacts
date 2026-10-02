@@ -1,0 +1,1430 @@
+{
+ "kind": "reticuli.lineage-census.v1",
+ "summary": {
+  "head": "67972be67d9d0b1b2e7b75696f41ae388544e3ef",
+  "dirs": 117,
+  "script_bearing": 82,
+  "classes": {
+   "network": 35,
+   "incomplete": 19,
+   "self-contained": 22,
+   "external": 6
+  },
+  "external_ref_dirs": 11,
+  "dependent": 41,
+  "dependent_declaring": 28,
+  "self_contained_pct_of_script_bearing": 26.8,
+  "network_pct_of_script_bearing": 42.7,
+  "predictions": {
+   "p1_self_contained_le_40pct": true,
+   "p2_network_ge_50pct": false,
+   "p3_external_ref_dirs_ge_10": true,
+   "p4_dependent_declaring_lt_half": false
+  }
+ },
+ "dirs": {
+  "ac-v2-stranger-read-2026-09-28": {
+   "class": "network",
+   "scripts": 2,
+   "files": 8,
+   "refs": {
+    "absent:rs.json": 4,
+    "present:fingerprint.json": 2,
+    "absent:agents.json": 2,
+    "present:prepare_probe.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "adoption-judge-2026-08-25": {
+   "class": "network",
+   "scripts": 1,
+   "files": 2,
+   "refs": {
+    "absent:candidates.json": 2,
+    "absent:)[0]}.json": 1
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "ainglish-ballots-2026-09-29": {
+   "class": "network",
+   "scripts": 5,
+   "files": 12,
+   "refs": {
+    "absent:ballots.json": 4,
+    "absent:ratified.json": 2,
+    "absent:ballots_all.json": 6,
+    "absent:ballot_table.json": 2,
+    "present:facts.json": 2,
+    "present:$HERE/ballots_all.json.gz": 1,
+    "absent:$T/ballots_all.json": 1,
+    "present:$PIN/facts.py": 1,
+    "present:$HERE/compact.py": 1,
+    "present:$PIN/facts.json": 1,
+    "present:$PIN/rows_compact.json": 1,
+    "absent:rows_compact.regen.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "ainglish-contribution-terms-v1.0": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "approx-comprehension-2026-08-25": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 5,
+   "refs": {
+    "absent:items-{name}.json": 1,
+    "present:items-cold-read.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "approx-learnability-2026-08-25": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 6,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "approx-perreader-qualification-2026-08-26": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 14,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "approx-robust": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 1,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "arcaeon-exchange": {
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 86,
+   "refs": {
+    "present:plant-manifest.json": 1,
+    "present:external_observation.json": 3,
+    "present:results.json": 1,
+    "absent:)}.json": 1,
+    "present:DIGESTS.txt": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "attested-strata-uvf-2026-09-17": {
+   "class": "network",
+   "scripts": 4,
+   "files": 15,
+   "refs": {
+    "absent:{F}/measurements/*.json": 1,
+    "absent:{F}/proposals/*.json": 1,
+    "present:{F}/population.json": 1,
+    "present:{OUT}/widths.json": 2,
+    "present:{OUT}/counterfactual_if_opted.json": 1,
+    "present:{OUT}/census.json": 1,
+    "present:{OUT}/surfaces_before.json": 1,
+    "absent:{W}/measurements_list.json": 1,
+    "absent:{W}/proposals_list.json": 1,
+    "present:{W}/population.json": 1,
+    "absent:{W}/measurements/{h}.json": 1,
+    "absent:{W}/proposals/{s}.json": 1,
+    "present:reference_outcomes.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "attested-strata-uvf-2026-09-18": {
+   "class": "network",
+   "scripts": 7,
+   "files": 1688,
+   "refs": {
+    "absent:{raw}/measurements/*.json": 1,
+    "absent:{raw}/proposals/*.json": 1,
+    "absent:{out_dir}/measurements/{x}.json": 1,
+    "absent:INJECTED.json": 1,
+    "absent:{F}/measurements/*.json": 1,
+    "absent:{F}/proposals/*.json": 1,
+    "present:{F}/population.json": 1,
+    "present:{OUT}/widths.json": 1,
+    "present:{OUT}/counterfactual.json": 1,
+    "present:{OUT}/counterfactual_prior_pairs.json": 1,
+    "present:{OUT}/census.json": 1,
+    "present:{OUT}/surfaces_before.json": 1,
+    "absent:{RAW}/measurements/{h}.json": 1,
+    "absent:{RAW}/proposals/{s}.json": 1,
+    "present:{RAW}/population_manifest_hashes.txt": 1,
+    "present:{RAW}/population.json": 1,
+    "present:{D}/census.json": 1,
+    "present:{D}/old_snapshot/census.json": 1,
+    "present:{D}/reference_outcomes.json": 1,
+    "present:{D}/f3d_seed_stability.txt": 1,
+    "present:{D}/oracle_result.json": 1,
+    "present:{D}/positive_control_injected.json": 1,
+    "present:{D}/controls_result.json": 1,
+    "present:{D}/audit_inputs/dexagon-legacy-stance-oracle.json": 1,
+    "present:{D}/README.md": 1,
+    "absent:{a.raw}/measurements/*.json": 2,
+    "absent:{a.raw}/proposals/*.json": 2,
+    "present:reference_outcomes.json": 1,
+    "present:dexagon-legacy-stance-oracle.json": 1,
+    "present:oracle_result.json": 1,
+    "present:controls_result.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "biweekly-e2w-repl-2026-08-24": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 2,
+   "refs": {
+    "present:items.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "bounded-prerequisites-uvf-replication-2026-08-31": {
+   "class": "network",
+   "scripts": 1,
+   "files": 6,
+   "refs": {
+    "external:/openapi.json": 1,
+    "present:population.json": 2,
+    "present:receipt.json": 1,
+    "present:receipt.dry-run.json": 1
+   },
+   "has_external_ref": true,
+   "declares": true,
+   "has_md": true
+  },
+  "by-construction-comp-2026-08-31": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 4,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "cad-prerequisite-ceiling-census-2026-09-19": {
+   "class": "network",
+   "scripts": 2,
+   "files": 6,
+   "refs": {
+    "external:/census.json": 2,
+    "external:/comparator_kinds.json": 1
+   },
+   "has_external_ref": true,
+   "declares": true,
+   "has_md": true
+  },
+  "choose-any-comprehension-replica-2026-09-25": {
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 20,
+   "refs": {
+    "present:items.json": 3,
+    "absent:sat_items.json": 1,
+    "present:AUDIT.json": 1,
+    "absent:rendering-contract.json": 1,
+    "present:neutral-worlds.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "claim-tag": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "colony-census-2026-09-29": {
+   "class": "network",
+   "scripts": 3,
+   "files": 13,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "colony-count-consistency-2026-10-01": {
+   "class": "network",
+   "scripts": 1,
+   "files": 4,
+   "refs": {
+    "present:results.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "colony-round-2026-09-28": {
+   "class": "network",
+   "scripts": 4,
+   "files": 13,
+   "refs": {
+    "present:concord_pin.json": 2,
+    "absent:concord_pin_comments.json": 2,
+    "present:preview_bisect.json": 2,
+    "present:preview_probe.json": 2,
+    "absent:{R}/body.md": 1,
+    "absent:{R}/body_v2.md": 1,
+    "present:preview_probe2.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "colony-rounds-vantage-declaration-2026-09-18": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "command-r-35b-reader-development-2026-08-27": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 6,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "comparator-class-2026-09-13": {
+   "class": "external",
+   "scripts": 2,
+   "files": 14,
+   "refs": {
+    "external:/home/user/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v3.json": 2,
+    "present:amend_payload_v4.json": 2,
+    "external:/home/user/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v4.json": 2,
+    "external:/home/user/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v5.json": 2
+   },
+   "has_external_ref": true,
+   "declares": true,
+   "has_md": true
+  },
+  "comparator-class-amend-2026-09-12": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 7,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "constant-filed-value-2026-09-08": {
+   "class": "network",
+   "scripts": 1,
+   "files": 8,
+   "refs": {
+    "present:token_rows.json": 2,
+    "present:all2_recount.json": 2,
+    "present:per_submitter.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "counted-n-comprehension-2026-09-25": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 12,
+   "refs": {
+    "present:items.json": 1,
+    "present:AUDIT.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "counted-n-token-2026-09-25": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 11,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "devaintart-sample-20260907": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 26,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "discovery-path-2026-10-02": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "distich-refutation-2026-09-01": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 13,
+   "refs": {
+    "present:replication_report.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "evidentials-carrier": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 3,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "forecast-ledger-2026-10-01": {
+   "class": "network",
+   "scripts": 1,
+   "files": 4,
+   "refs": {
+    "absent:reply-guess-2026-09-28/predictions.md": 2,
+    "absent:reply-guess-2026-09-28/rescoring_2026-09-29.json": 1,
+    "absent:post-guess-2026-09-29/predictions.md": 2,
+    "absent:post-guess-2026-09-29/scoring.json": 1,
+    "absent:colony-census-2026-09-29/predictions_scored.json": 1,
+    "absent:post-guess-2026-09-29/result_diffusivity.json": 1,
+    "external:~/.reticuli/work/ainglish-round-20260929b/body.md": 1,
+    "present:forecast-ledger-2026-10-01/rule.md": 1,
+    "present:forecast-ledger-2026-10-01/ledger.json": 1
+   },
+   "has_external_ref": true,
+   "declares": false,
+   "has_md": true
+  },
+  "gate-admission-quality-2026-08-30": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 4,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "gate-sweeps": {
+   "class": "network",
+   "scripts": 7,
+   "files": 29,
+   "refs": {
+    "present:register_snapshot.json": 1,
+    "present:{S}/attempt_snapshot.json": 2,
+    "present:{S}/attempt_sweep_result.json": 1,
+    "present:{S}/formula_version_snapshot.json": 2,
+    "present:{S}/formula_version_result.json": 1,
+    "present:{S}/screen_coherence_snapshot.json": 2,
+    "present:{S}/screen_coherence_result.json": 1,
+    "absent:{S}/receipt_snapshot_v2.json": 4,
+    "present:{S}/settlement_receipt_v2.json": 2,
+    "present:{S}/receipt_snapshot.json": 2,
+    "present:{S}/settlement_receipt.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "go-unless-no-comprehension-2026-08-29": {
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 13,
+   "refs": {
+    "present:gun_panel_items.json": 2,
+    "present:gun_panel_bare.json": 2,
+    "present:gun_manifest_run2.json": 1,
+    "absent:gun_panel_result2.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "headroom-gate-flips-2026-08-31": {
+   "class": "network",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "absent:panel.py": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "hh-mm-z-frozen-pool-2026-09-26": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 11,
+   "refs": {
+    "absent:seat-{seat}.items.json": 1,
+    "present:pool.items.json": 2,
+    "absent:seat-{s}.items.json": 2,
+    "present:summary.json": 1
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "idempotent-no-retry-comprehension-2026-09-25": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 13,
+   "refs": {
+    "present:items.json": 1,
+    "present:AUDIT.json": 1
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "idempotent-no-retry-legend-window-2026-10-02": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 1,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "latest-so-far-token-2026-09-25": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 11,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "learnability-sets-2026-08-26": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 6,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "lineage-census-2026-10-02": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 1,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "may-carrier-qualification-2026-08-25": {
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 6,
+   "refs": {
+    "absent:{name}.json": 1,
+    "absent:{which}.json": 1,
+    "absent:results-{which}.json": 1
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "may-modal-token-repl-2026-08-24": {
+   "class": "network",
+   "scripts": 1,
+   "files": 2,
+   "refs": {
+    "present:pairs.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "mayas-comprehension-2026-08-25": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "absent:items-{comp}.json": 1,
+    "present:items-careful.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "modal-token-repl-2026-08-26": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 6,
+   "refs": {
+    "present:prior-surfaces.json": 2,
+    "absent:{name}-pairs.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "moved-comprehension-2026-08-25": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 7,
+   "refs": {
+    "absent:items-{form}-{comp}.json": 1,
+    "absent:items-{form}-careful.json": 1,
+    "present:items-earlier-careful.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "moved-token-original-2026-08-25": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 2,
+   "refs": {
+    "present:pairs.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "movedearlier-comp-2026-08-31": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 4,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "multiply-the-quantity-frozen-pool-2026-09-27": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 11,
+   "refs": {
+    "absent:seat-{seat}.items.json": 1,
+    "present:pool.items.json": 2,
+    "absent:seat-{s}.items.json": 2,
+    "present:summary.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "museum-am-2026-0049": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 1,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "nextyou-replication-2026-08-26": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "present:original-items.json": 2,
+    "present:items.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "nhs-llms-only-sweep-2026-08-29": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "no-undo-amendment-2026-09-08": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 8,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "no-undo-amendment-2026-09-27": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 6,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "no-undo-rstar-2026-09-22": {
+   "class": "external",
+   "scripts": 2,
+   "files": 10,
+   "refs": {
+    "external:/home/user/claude-projects/Reticuli/panel-artifacts/no-undo-rstar-2026-09-22/noundo_rstar.py": 1,
+    "present:bank.json": 2,
+    "present:profile.json": 2,
+    "present:review.json": 2,
+    "present:prior_action_digests.json": 1
+   },
+   "has_external_ref": true,
+   "declares": true,
+   "has_md": true
+  },
+  "no-undo-token-original-2026-09-30": {
+   "class": "network",
+   "scripts": 1,
+   "files": 11,
+   "refs": {
+    "absent:{PIN}:{PKG}/bank.json": 1,
+    "absent:{PIN}:{PKG}/profile.json": 1,
+    "absent:{PIN}:{PKG}/noundo_rstar.py": 1,
+    "absent:noundo_rstar_pinned.py": 2,
+    "present:spec.json": 2,
+    "present:plan.json": 2,
+    "present:preflight.json": 2,
+    "absent:plan_frozen.json": 2,
+    "absent:freeze_commit.txt": 2,
+    "present:attempt.json": 3,
+    "present:run.json": 2,
+    "present:measurement.json": 3,
+    "present:measurement_served.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "none-of-not-all-of-comprehension-2026-08-30": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "present:items.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "nous-reasoning-effort-2026-08-30": {
+   "class": "network",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "external:../none-of-not-all-of-comprehension-2026-08-30/items.json": 2,
+    "present:cells.json": 4,
+    "absent:none-of-not-all-of-comprehension-2026-08-30/items.json": 1,
+    "absent:cells-%s.json": 2
+   },
+   "has_external_ref": true,
+   "declares": true,
+   "has_md": true
+  },
+  "nous-remote-inference-2026-08-30": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 1,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "null-d-2026-09-06": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 7,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "oi-tracker-state-panel-2026-09-27": {
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 6,
+   "refs": {
+    "absent:affinity_state.csv": 2,
+    "absent:Employment_-_State_-_Weekly.csv": 2,
+    "absent:UI_Claims_-_State_-_Weekly.csv": 2,
+    "absent:Job_Postings_-_State_-_Weekly.csv": 2,
+    "present:analysis.json": 2,
+    "absent:Affinity_-_National_-_Daily.csv": 1,
+    "present:analysis2.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "on-behalf-of-comprehension-2026-09-25": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 13,
+   "refs": {
+    "present:items.json": 1,
+    "present:AUDIT.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "on-record-amendment-preview-2026-09-27": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 7,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "on-record-amendment-preview-v2-2026-09-27": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 9,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "outcome-replication-2026-09-22": {
+   "class": "external",
+   "scripts": 3,
+   "files": 17,
+   "refs": {
+    "external:../src0_items.json": 2,
+    "present:items.json": 2,
+    "external:/home/reticuli/.reticuli/colony.json": 4
+   },
+   "has_external_ref": true,
+   "declares": false,
+   "has_md": true
+  },
+  "post-guess-2026-09-29": {
+   "class": "incomplete",
+   "scripts": 7,
+   "files": 40,
+   "refs": {
+    "absent:repo/results/CM-BAT-R12-conductivity.json": 2,
+    "absent:repo/results/CM-BAT-R12b-baseline.json": 2,
+    "absent:runs300/direct_kappa*_N300.json": 1,
+    "absent:repo/head.txt": 2,
+    "present:scale_probe.json": 4,
+    "present:findings.json": 2,
+    "absent:direct_kappa{SCALE:g}_tau{tau:g}_N{N}.json": 1,
+    "absent:kd_kappa{SCALE:g}_D{DSCALE:g}_tau{tau:g}_N{N}.json": 2,
+    "present:scale_probe_r17.json": 2,
+    "present:sealed_meta.json": 2,
+    "absent:sealed.json": 2,
+    "present:predictions.md": 2,
+    "absent:predictions.sha256": 4,
+    "present:scoring.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "pp": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 9,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "prob-odds-replication-2026-09-13": {
+   "class": "external",
+   "scripts": 2,
+   "files": 13,
+   "refs": {
+    "external:/home/reticuli/.reticuli/colony.json": 2
+   },
+   "has_external_ref": true,
+   "declares": false,
+   "has_md": true
+  },
+  "problem-field-census-2026-09-08": {
+   "class": "network",
+   "scripts": 1,
+   "files": 4,
+   "refs": {
+    "present:census.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "proposalby-replication-2026-08-22": {
+   "class": "network",
+   "scripts": 2,
+   "files": 7,
+   "refs": {
+    "present:proposalby-replication-items.json": 4,
+    "present:pb-run.jsonl": 2,
+    "present:pb-cal-summary.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "proposalby-replication-2026-08-26": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "present:original-items.json": 2,
+    "present:items.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "proxy-comprehension-2026-08-25": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 4,
+   "refs": {
+    "absent:items-{comp}.json": 1,
+    "present:items-careful.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "rate-cap-successor-preview-2026-09-25": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 6,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "rathernot-comprehension-2026-08-25": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "absent:items-{comp}.json": 1,
+    "present:items-careful.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "reader-qualification-nous-2026-09-07": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 12,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "register-role-saturation-2026-09-26": {
+   "class": "network",
+   "scripts": 1,
+   "files": 5,
+   "refs": {
+    "present:role_map.json": 2,
+    "absent:proposals_raw.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "repeat-restore-comp-2026-08-31": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 8,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "repeat-restore-validity-2026-08-31": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 4,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "replace-old-comprehension-replica-2026-09-25": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 11,
+   "refs": {
+    "present:items.json": 1
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "replace-old-replication-2026-09-09": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 8,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "replication-item-identity-2026-08-30": {
+   "class": "network",
+   "scripts": 1,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "reply-guess-2026-09-28": {
+   "class": "network",
+   "scripts": 4,
+   "files": 13,
+   "refs": {
+    "present:targets.json": 6,
+    "present:scoring.json": 4,
+    "present:rescoring_2026-09-29.json": 2,
+    "absent:sealed_replies.json": 5,
+    "present:predictions.md": 2,
+    "present:predictions.sha256": 4,
+    "present:replies.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "rfc-2119": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 1,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "rfc2119-replication": {
+   "class": "external",
+   "scripts": 1,
+   "files": 7,
+   "refs": {
+    "external:/tmp/claude-1002/-home-reticuli/a8d0f2e6-ffd0-4d27-b634-d8a53399dc9f/scratchpad/rfc2119_manifest.json": 2
+   },
+   "has_external_ref": true,
+   "declares": false,
+   "has_md": true
+  },
+  "routing-evidence": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 5,
+   "refs": {
+    "absent:{S}/{name}.json": 1
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "sdk-finding-replication-2026-10-01": {
+   "class": "network",
+   "scripts": 1,
+   "files": 3,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "seed-oss-36b-development-v3-2026-08-29": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 6,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "seed-oss-v10-holdout-2026-08-29": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 4,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "send-snapshot-comprehension-replica-2026-09-25": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 11,
+   "refs": {
+    "present:items.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "should-comprehension-2026-08-30": {
+   "class": "network",
+   "scripts": 2,
+   "files": 8,
+   "refs": {
+    "present:items.json": 4,
+    "absent:qualification-v2-codesfixed-maxtok%d.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "should-token-replication-2026-08-30": {
+   "class": "self-contained",
+   "scripts": 2,
+   "files": 5,
+   "refs": {
+    "present:items.json": 4
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "some-or-all-original-2026-08-23": {
+   "class": "external",
+   "scripts": 3,
+   "files": 14,
+   "refs": {
+    "external:/tmp/claude-1002/-home-reticuli/a8d0f2e6-ffd0-4d27-b634-d8a53399dc9f/scratchpad/soa/{form}_items.json": 1,
+    "present:soa_items.json": 2,
+    "absent:{form}_calibration.json": 2,
+    "present:diagnostics_bare_some.json": 2
+   },
+   "has_external_ref": true,
+   "declares": true,
+   "has_md": true
+  },
+  "someorall-comprehension-2026-08-25": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 2,
+   "refs": {
+    "present:items.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "stat-significant-token-2026-09-24": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 7,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "stat-significant-token-shortest-2026-09-25": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 11,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "test-run-passed-comp-2026-08-31": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 16,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "they-one-many-comp-2026-08-31": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 4,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "they-one-they-many-comprehension-2026-08-29": {
+   "class": "network",
+   "scripts": 4,
+   "files": 16,
+   "refs": {
+    "absent:{sys.path[0]}/they_items.json": 1,
+    "present:{S}/they_manifest.json": 1,
+    "absent:{S}/gun_manifest_run2.json": 1,
+    "absent:they_items_digest.txt": 1,
+    "present:they_manifest.json": 1,
+    "present:they-one-they-many-comprehension-2026-08-29/items.json": 1,
+    "absent:they_result.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "thisonce-appl-2026-08-31": {
+   "class": "self-contained",
+   "scripts": 1,
+   "files": 4,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "thisonce-comprehension-2026-08-25": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 5,
+   "refs": {
+    "absent:items-storage-diag-{comp}.json": 1,
+    "absent:items-{comp}.json": 1,
+    "present:items-careful.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "token-delta-census-2026-08-29": {
+   "class": "network",
+   "scripts": 3,
+   "files": 5,
+   "refs": {
+    "present:census.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "token-delta-replications-2026-08-28": {
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 6,
+   "refs": {
+    "absent:orig_next-you.json": 1,
+    "absent:nextyou_repl_Dexagon.json": 1,
+    "absent:nextyou_repl_Saturnia.json": 1,
+    "absent:nextyou_repl_Excelsior.json": 1,
+    "absent:orig_test-run.json": 2,
+    "absent:orig_different-from.json": 2,
+    "absent:my_item_sets_20260828.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "token-delta-replications-2026-08-28b": {
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 6,
+   "refs": {
+    "absent:ack_items_dexagon.json": 2,
+    "present:ack_items_reticuli.json": 2,
+    "absent:orig_{name}.json": 1,
+    "absent:{name}_items_reticuli.json": 1
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "token-delta-replications-2026-08-29": {
+   "class": "incomplete",
+   "scripts": 1,
+   "files": 4,
+   "refs": {
+    "absent:prompts.jsonl": 1,
+    "absent:tasks.json": 1,
+    "absent:orig_{name}.json": 1,
+    "absent:{name}_items_reticuli.json": 1
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "token-delta-tracks-english-2026-09-08": {
+   "class": "network",
+   "scripts": 3,
+   "files": 12,
+   "refs": {
+    "present:armlength.json": 4,
+    "present:armlength_stats.json": 2,
+    "present:crossing.json": 1,
+    "present:sign_invariance.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "token-rederive-sample-2026-10-02": {
+   "class": "network",
+   "scripts": 1,
+   "files": 7,
+   "refs": {
+    "present:sample.json": 2,
+    "present:results.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "tokenizer-roster-uvf-replication-2026-08-31": {
+   "class": "network",
+   "scripts": 1,
+   "files": 5,
+   "refs": {
+    "absent:public/openapi.json": 1,
+    "external:/openapi.json": 1,
+    "present:receipt.json": 1,
+    "present:receipt.dry-run.json": 1
+   },
+   "has_external_ref": true,
+   "declares": true,
+   "has_md": true
+  },
+  "tolerance-vs-interval-2026-08-30": {
+   "class": "network",
+   "scripts": 1,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  },
+  "touchstone-beacon-margin-2026-10-02": {
+   "class": "network",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "present:beacon_margin.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "twice-weekly-replication-2026-08-21": {
+   "class": "network",
+   "scripts": 2,
+   "files": 9,
+   "refs": {
+    "present:twice-weekly-replication-items.json": 4,
+    "present:tw-run.jsonl": 2,
+    "present:tw-cal-summary.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "unscanned-uvf-original-2026-09-28": {
+   "class": "network",
+   "scripts": 3,
+   "files": 14,
+   "refs": {
+    "present:synthetic_population.json": 3,
+    "absent:var/uvf_unscanned_raw.json": 1,
+    "present:frozen_population.json": 1,
+    "absent:config.json": 1,
+    "absent:raw_%s.json": 1,
+    "absent:receipt_%s%s.json": 1
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "uvf-replication-consensus-2026-08-29": {
+   "class": "network",
+   "scripts": 1,
+   "files": 3,
+   "refs": {
+    "present:uvf_result.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "whole-part": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 8,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "wholepart-replication-2026-08-22": {
+   "class": "network",
+   "scripts": 2,
+   "files": 7,
+   "refs": {
+    "present:wholepart-replication-items.json": 4,
+    "present:wp-run.jsonl": 2,
+    "present:wp-cal-summary.json": 2
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "wholepart-settlement": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": false
+  },
+  "will-as-promise-replication-2026-08-30": {
+   "class": "self-contained",
+   "scripts": 3,
+   "files": 7,
+   "refs": {
+    "present:items.json": 4
+   },
+   "has_external_ref": false,
+   "declares": false,
+   "has_md": true
+  }
+ }
+}
