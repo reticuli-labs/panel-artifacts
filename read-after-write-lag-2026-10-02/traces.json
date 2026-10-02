@@ -1,0 +1,1425 @@
+{
+ "summary": {
+  "kind": "reticuli.read-after-write-lag.v1",
+  "writes": 38,
+  "all_present_at_first_poll": true,
+  "present_at_s": {
+   "min": 0.9,
+   "median": 2.7,
+   "max": 23.0
+  },
+  "agreed_at_s": {
+   "min": 0.9,
+   "median": 2.7,
+   "max": 61.8
+  },
+  "never_agreed_within_90s": 0,
+  "disagreements": 3,
+  "disagreement_kinds": [
+   "count<walk;total=walk"
+  ],
+  "disagreement_clear_s": [
+   61.3,
+   33.2,
+   61.8
+  ],
+  "disagreements_that_were_a_repeat_write_to_the_same_post_in_the_round": 3,
+  "repeat_writes_total": 3,
+  "repeat_writes_without_disagreement": 0,
+  "poll_step_s": 2,
+  "poll_limit_s": 90,
+  "rounds": [
+   "round-20261001e",
+   "round-20261001f",
+   "round-20261001g",
+   "round-20261002a",
+   "round-20261002b",
+   "round-20261002c",
+   "round-20261002d"
+  ]
+ },
+ "rows": [
+  {
+   "round": "round-20261001e",
+   "key": "X",
+   "post": "fd9d7d4d-b40f-4191-a3b1-367be03599d1",
+   "comment": "ba6bace4-0625-46ef-9c42-fe38fc92840d",
+   "created_at": "2026-10-01T12:14:27",
+   "present_at": 3.1,
+   "agreed_at": 3.1,
+   "polls": 1,
+   "first_poll": {
+    "t": 3.1,
+    "count": 25,
+    "total": 25,
+    "walked": 25,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 3.1,
+     "count": 25,
+     "total": 25,
+     "walked": 25,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261001e",
+   "key": "L",
+   "post": "d9e12ec4-7e9e-4873-ab25-f55d64659036",
+   "comment": "646ae396-c5a4-425b-bfb6-faae2b2e3056",
+   "created_at": "2026-10-01T12:14:29",
+   "present_at": 2.0,
+   "agreed_at": 2.0,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.0,
+    "count": 12,
+    "total": 12,
+    "walked": 12,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.0,
+     "count": 12,
+     "total": 12,
+     "walked": 12,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261001e",
+   "key": "R",
+   "post": "5de99ded-4ec5-4c2d-99a9-5fed028b32df",
+   "comment": "3e82c068-abb4-4c4d-a87e-d2b7dd12369d",
+   "created_at": "2026-10-01T12:15:04",
+   "present_at": 5.5,
+   "agreed_at": 5.5,
+   "polls": 1,
+   "first_poll": {
+    "t": 5.5,
+    "count": 3,
+    "total": 3,
+    "walked": 3,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 5.5,
+     "count": 3,
+     "total": 3,
+     "walked": 3,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261001f",
+   "key": "A",
+   "post": "8783478e-fbca-4c75-a02e-9ce368420b46",
+   "comment": "6af653d2-ca98-4285-9858-9f45ef35e216",
+   "created_at": "2026-10-01T14:41:54",
+   "present_at": 2.1,
+   "agreed_at": 2.1,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.1,
+    "count": 24,
+    "total": 24,
+    "walked": 24,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.1,
+     "count": 24,
+     "total": 24,
+     "walked": 24,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261001f",
+   "key": "B",
+   "post": "23ef819d-314a-49ff-a726-187e4cf7fdcc",
+   "comment": "cad95017-46c9-4f33-a0df-23e41dd1a78f",
+   "created_at": "2026-10-01T14:41:57",
+   "present_at": 2.1,
+   "agreed_at": 2.1,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.1,
+    "count": 20,
+    "total": 20,
+    "walked": 20,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.1,
+     "count": 20,
+     "total": 20,
+     "walked": 20,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261001g",
+   "key": "A",
+   "post": "5de99ded-4ec5-4c2d-99a9-5fed028b32df",
+   "comment": "a8d433e5-58e0-4ed4-88a3-2eb650aae071",
+   "created_at": "2026-10-01T16:09:32",
+   "present_at": 2.4,
+   "agreed_at": 2.4,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.4,
+    "count": 8,
+    "total": 8,
+    "walked": 8,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.4,
+     "count": 8,
+     "total": 8,
+     "walked": 8,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261001g",
+   "key": "B",
+   "post": "e200e028-72e9-4414-9ad9-af11ebc04270",
+   "comment": "36acd6f5-ade3-4614-8a14-95c4c494d401",
+   "created_at": "2026-10-01T16:09:35",
+   "present_at": 2.2,
+   "agreed_at": 2.2,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.2,
+    "count": 1,
+    "total": 1,
+    "walked": 1,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.2,
+     "count": 1,
+     "total": 1,
+     "walked": 1,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261001g",
+   "key": "C",
+   "post": "80ffd0fd-6c2f-4364-9888-6f7af86ed2f2",
+   "comment": "4c9de411-92a3-49ab-8390-e5d86722f70a",
+   "created_at": "2026-10-01T16:09:38",
+   "present_at": 1.9,
+   "agreed_at": 1.9,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.9,
+    "count": 2,
+    "total": 2,
+    "walked": 2,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.9,
+     "count": 2,
+     "total": 2,
+     "walked": 2,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002a",
+   "key": "B",
+   "post": "3db6e361-ba5c-4599-8fed-0892958bc98f",
+   "comment": "97b1f88f-8fde-4d6e-b42d-cbacc01df3a7",
+   "created_at": "2026-10-02T00:00:34",
+   "present_at": 2.2,
+   "agreed_at": 2.2,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.2,
+    "count": 19,
+    "total": 19,
+    "walked": 19,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.2,
+     "count": 19,
+     "total": 19,
+     "walked": 19,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002a",
+   "key": "C",
+   "post": "f581882b-4366-47bb-946f-64e4dcda14c5",
+   "comment": "a8e6a317-a5ce-46bf-aa46-495955b23e52",
+   "created_at": "2026-10-02T00:00:37",
+   "present_at": 2.7,
+   "agreed_at": 2.7,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.7,
+    "count": 23,
+    "total": 23,
+    "walked": 23,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.7,
+     "count": 23,
+     "total": 23,
+     "walked": 23,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002a",
+   "key": "R",
+   "post": "6b98a71b-3234-442d-8caf-ba3d83be014f",
+   "comment": "a3361fa2-480a-424a-b9d3-a38c739ef1fb",
+   "created_at": "2026-10-02T00:00:40",
+   "present_at": 2.7,
+   "agreed_at": 2.7,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.7,
+    "count": 72,
+    "total": 72,
+    "walked": 72,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.7,
+     "count": 72,
+     "total": 72,
+     "walked": 72,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002a",
+   "key": "W",
+   "post": "a6dc2a1d-b7ea-4db3-98ad-c1025bca728e",
+   "comment": "9e5c491d-d4c3-4c15-9068-4b248ab56957",
+   "created_at": "2026-10-02T00:00:43",
+   "present_at": 4.6,
+   "agreed_at": 4.6,
+   "polls": 1,
+   "first_poll": {
+    "t": 4.6,
+    "count": 24,
+    "total": 24,
+    "walked": 24,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 4.6,
+     "count": 24,
+     "total": 24,
+     "walked": 24,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002a",
+   "key": "E",
+   "post": "e200e028-72e9-4414-9ad9-af11ebc04270",
+   "comment": "9bccf782-ebea-45ac-8f02-7f2f4e73648a",
+   "created_at": "2026-10-02T00:00:49",
+   "present_at": 4.3,
+   "agreed_at": 4.3,
+   "polls": 1,
+   "first_poll": {
+    "t": 4.3,
+    "count": 8,
+    "total": 8,
+    "walked": 8,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 4.3,
+     "count": 8,
+     "total": 8,
+     "walked": 8,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002a",
+   "key": "X",
+   "post": "0f21a300-709f-4377-ad7b-5eedf51ba8ad",
+   "comment": "c07c4d11-464a-4edc-8cc1-9d0786b117c3",
+   "created_at": "2026-10-02T00:00:58",
+   "present_at": 2.3,
+   "agreed_at": 2.3,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.3,
+    "count": 13,
+    "total": 13,
+    "walked": 13,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.3,
+     "count": 13,
+     "total": 13,
+     "walked": 13,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002a",
+   "key": "N",
+   "post": "f7536548-cd7f-443c-bc86-4deb8fa57de6",
+   "comment": "ab6bf6c2-eed9-4613-af59-9df83a7fdb67",
+   "created_at": "2026-10-02T00:01:03",
+   "present_at": 5.4,
+   "agreed_at": 5.4,
+   "polls": 1,
+   "first_poll": {
+    "t": 5.4,
+    "count": 3,
+    "total": 3,
+    "walked": 3,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 5.4,
+     "count": 3,
+     "total": 3,
+     "walked": 3,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002b",
+   "key": "B",
+   "post": "3db6e361-ba5c-4599-8fed-0892958bc98f",
+   "comment": "55eed8fe-3123-42c4-9b84-f79bb8ae2729",
+   "created_at": "2026-10-02T06:04:13",
+   "present_at": 1.1,
+   "agreed_at": 1.1,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.1,
+    "count": 21,
+    "total": 21,
+    "walked": 21,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.1,
+     "count": 21,
+     "total": 21,
+     "walked": 21,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002b",
+   "key": "C",
+   "post": "f581882b-4366-47bb-946f-64e4dcda14c5",
+   "comment": "1ddba219-e78e-4eb8-a191-c9c74a6cea0f",
+   "created_at": "2026-10-02T06:04:14",
+   "present_at": 1.1,
+   "agreed_at": 1.1,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.1,
+    "count": 27,
+    "total": 27,
+    "walked": 27,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.1,
+     "count": 27,
+     "total": 27,
+     "walked": 27,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002b",
+   "key": "T",
+   "post": "0b3a24b6-96fb-4039-9089-849d55bac7ed",
+   "comment": "b29b5466-d41e-49fd-8b92-a42563624cc6",
+   "created_at": "2026-10-02T06:04:16",
+   "present_at": 1.7,
+   "agreed_at": 1.7,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.7,
+    "count": 7,
+    "total": 7,
+    "walked": 7,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.7,
+     "count": 7,
+     "total": 7,
+     "walked": 7,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002b",
+   "key": "F",
+   "post": "228a4597-314a-43e8-aa5f-cba85b64fe6d",
+   "comment": "d97c19a7-8d15-4e3e-8b04-f2ad6448cc30",
+   "created_at": "2026-10-02T06:04:18",
+   "present_at": 0.9,
+   "agreed_at": 0.9,
+   "polls": 1,
+   "first_poll": {
+    "t": 0.9,
+    "count": 2,
+    "total": 2,
+    "walked": 2,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 0.9,
+     "count": 2,
+     "total": 2,
+     "walked": 2,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002b",
+   "key": "N",
+   "post": "f7536548-cd7f-443c-bc86-4deb8fa57de6",
+   "comment": "83b2455d-111d-48e4-9ebb-7656dd14506e",
+   "created_at": "2026-10-02T06:04:19",
+   "present_at": 1.4,
+   "agreed_at": 1.4,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.4,
+    "count": 7,
+    "total": 7,
+    "walked": 7,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.4,
+     "count": 7,
+     "total": 7,
+     "walked": 7,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002b",
+   "key": "E",
+   "post": "f6a7f85d-ff1f-4506-8f60-6dfdbb4148fe",
+   "comment": "0aa6906b-5e38-4fa0-aafd-4409a681c90a",
+   "created_at": "2026-10-02T06:04:21",
+   "present_at": 1.0,
+   "agreed_at": 1.0,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.0,
+    "count": 17,
+    "total": 17,
+    "walked": 17,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.0,
+     "count": 17,
+     "total": 17,
+     "walked": 17,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002b",
+   "key": "L",
+   "post": "69446906-6000-5ff2-b569-cac0878e8219",
+   "comment": "e4e7c71f-2885-42cf-b73b-44bd84103f86",
+   "created_at": "2026-10-02T06:04:23",
+   "present_at": 1.9,
+   "agreed_at": 1.9,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.9,
+    "count": 13,
+    "total": 13,
+    "walked": 13,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.9,
+     "count": 13,
+     "total": 13,
+     "walked": 13,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002c",
+   "key": "J",
+   "post": "f6a7f85d-ff1f-4506-8f60-6dfdbb4148fe",
+   "comment": "19b73d3c-77ef-4cb2-bdf4-69d443516b51",
+   "created_at": "2026-10-02T08:03:16",
+   "present_at": 11.0,
+   "agreed_at": 11.0,
+   "polls": 1,
+   "first_poll": {
+    "t": 11.0,
+    "count": 19,
+    "total": 19,
+    "walked": 19,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 11.0,
+     "count": 19,
+     "total": 19,
+     "walked": 19,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002c",
+   "key": "R",
+   "post": "c43dd1e5-8ec3-47b1-be0f-127fd88ac16a",
+   "comment": "122d5f7e-f78c-4c38-80e6-b09100341c71",
+   "created_at": "2026-10-02T08:03:24",
+   "present_at": 9.2,
+   "agreed_at": 9.2,
+   "polls": 1,
+   "first_poll": {
+    "t": 9.2,
+    "count": 18,
+    "total": 18,
+    "walked": 18,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 9.2,
+     "count": 18,
+     "total": 18,
+     "walked": 18,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002c",
+   "key": "N",
+   "post": "f7536548-cd7f-443c-bc86-4deb8fa57de6",
+   "comment": "b025653d-4523-4b75-8eb4-df9a4109bda6",
+   "created_at": "2026-10-02T08:03:33",
+   "present_at": 2.4,
+   "agreed_at": 2.4,
+   "polls": 1,
+   "first_poll": {
+    "t": 2.4,
+    "count": 10,
+    "total": 10,
+    "walked": 10,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 2.4,
+     "count": 10,
+     "total": 10,
+     "walked": 10,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002c",
+   "key": "D",
+   "post": "8a7f2889-45b6-4dbd-b028-c7595b4bcd3e",
+   "comment": "99e2b704-cf69-4aea-9e1d-031fe7dfa491",
+   "created_at": "2026-10-02T08:03:36",
+   "present_at": 1.9,
+   "agreed_at": 1.9,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.9,
+    "count": 19,
+    "total": 19,
+    "walked": 19,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.9,
+     "count": 19,
+     "total": 19,
+     "walked": 19,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002c",
+   "key": "S",
+   "post": "95833d60-ebd6-40af-a003-84118febbd81",
+   "comment": "6b484efc-f2f3-469d-98ed-8ab4a5d593ee",
+   "created_at": "2026-10-02T08:03:38",
+   "present_at": 1.8,
+   "agreed_at": 1.8,
+   "polls": 1,
+   "first_poll": {
+    "t": 1.8,
+    "count": 4,
+    "total": 4,
+    "walked": 4,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 1.8,
+     "count": 4,
+     "total": 4,
+     "walked": 4,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "A",
+   "post": "c5b04bc2-f2db-4a48-a1c1-562e501760f9",
+   "comment": "b3a541f9-81a1-49f7-a51a-82118c1b132d",
+   "created_at": "2026-10-02T11:05:03",
+   "present_at": 12.2,
+   "agreed_at": 12.2,
+   "polls": 1,
+   "first_poll": {
+    "t": 12.2,
+    "count": 19,
+    "total": 19,
+    "walked": 19,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 12.2,
+     "count": 19,
+     "total": 19,
+     "walked": 19,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "B",
+   "post": "f6a7f85d-ff1f-4506-8f60-6dfdbb4148fe",
+   "comment": "04536600-7779-49a4-9c88-b289755bcd26",
+   "created_at": "2026-10-02T11:05:15",
+   "present_at": 4.2,
+   "agreed_at": 4.2,
+   "polls": 1,
+   "first_poll": {
+    "t": 4.2,
+    "count": 28,
+    "total": 28,
+    "walked": 28,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 4.2,
+     "count": 28,
+     "total": 28,
+     "walked": 28,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "C",
+   "post": "f6a7f85d-ff1f-4506-8f60-6dfdbb4148fe",
+   "comment": "85c76989-cd9a-49d6-83be-f42ebb858358",
+   "created_at": "2026-10-02T11:05:20",
+   "present_at": 3.8,
+   "agreed_at": 61.3,
+   "polls": 24,
+   "first_poll": {
+    "t": 3.8,
+    "count": 28,
+    "total": 29,
+    "walked": 29,
+    "present": true
+   },
+   "disagreement_kinds": [
+    "count<walk;total=walk"
+   ],
+   "trace": [
+    {
+     "t": 3.8,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 6.2,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 8.5,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 11.0,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 13.3,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 15.7,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 18.1,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 20.4,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 22.8,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 25.1,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 27.5,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 30.0,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 32.5,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 35.2,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 38.0,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 40.3,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 43.0,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 45.9,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 48.3,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 51.1,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 54.0,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 56.4,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 58.8,
+     "count": 28,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    },
+    {
+     "t": 61.3,
+     "count": 29,
+     "total": 29,
+     "walked": 29,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "D",
+   "post": "b0c3a8ff-2f4d-442e-b34e-c08136f63ca6",
+   "comment": "3c9c66b4-2965-408d-9d58-6609e60dab50",
+   "created_at": "2026-10-02T11:06:21",
+   "present_at": 4.1,
+   "agreed_at": 4.1,
+   "polls": 1,
+   "first_poll": {
+    "t": 4.1,
+    "count": 4,
+    "total": 4,
+    "walked": 4,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 4.1,
+     "count": 4,
+     "total": 4,
+     "walked": 4,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "E",
+   "post": "0b3a24b6-96fb-4039-9089-849d55bac7ed",
+   "comment": "572e47f2-2a52-465d-b44d-10b6dcd253ea",
+   "created_at": "2026-10-02T11:06:26",
+   "present_at": 4.2,
+   "agreed_at": 4.2,
+   "polls": 1,
+   "first_poll": {
+    "t": 4.2,
+    "count": 9,
+    "total": 9,
+    "walked": 9,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 4.2,
+     "count": 9,
+     "total": 9,
+     "walked": 9,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "F",
+   "post": "c43dd1e5-8ec3-47b1-be0f-127fd88ac16a",
+   "comment": "92d9e544-d269-4b5c-afbf-9827c6088698",
+   "created_at": "2026-10-02T11:06:42",
+   "present_at": 23.0,
+   "agreed_at": 23.0,
+   "polls": 1,
+   "first_poll": {
+    "t": 23.0,
+    "count": 20,
+    "total": 20,
+    "walked": 20,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 23.0,
+     "count": 20,
+     "total": 20,
+     "walked": 20,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "G",
+   "post": "b0c3a8ff-2f4d-442e-b34e-c08136f63ca6",
+   "comment": "a9205864-f80c-474c-be00-609fc0e005c1",
+   "created_at": "2026-10-02T11:06:55",
+   "present_at": 4.5,
+   "agreed_at": 33.2,
+   "polls": 13,
+   "first_poll": {
+    "t": 4.5,
+    "count": 4,
+    "total": 5,
+    "walked": 5,
+    "present": true
+   },
+   "disagreement_kinds": [
+    "count<walk;total=walk"
+   ],
+   "trace": [
+    {
+     "t": 4.5,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 6.8,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 9.3,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 11.7,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 14.0,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 16.8,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 19.2,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 21.4,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 23.8,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 26.1,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 28.6,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 30.9,
+     "count": 4,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    },
+    {
+     "t": 33.2,
+     "count": 5,
+     "total": 5,
+     "walked": 5,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "H",
+   "post": "b0c3a8ff-2f4d-442e-b34e-c08136f63ca6",
+   "comment": "b114c014-0340-47fa-b067-0e8f4116d2a3",
+   "created_at": "2026-10-02T11:07:29",
+   "present_at": 8.4,
+   "agreed_at": 61.8,
+   "polls": 16,
+   "first_poll": {
+    "t": 8.4,
+    "count": 5,
+    "total": 6,
+    "walked": 6,
+    "present": true
+   },
+   "disagreement_kinds": [
+    "count<walk;total=walk"
+   ],
+   "trace": [
+    {
+     "t": 8.4,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 11.1,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 13.4,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 15.7,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 18.2,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 20.8,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 23.2,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 25.8,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 40.9,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 44.0,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 46.6,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 49.7,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 52.5,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 55.6,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 58.9,
+     "count": 5,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    },
+    {
+     "t": 61.8,
+     "count": 6,
+     "total": 6,
+     "walked": 6,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "I",
+   "post": "3b77dd77-7657-41e4-ba8b-fc63433eb050",
+   "comment": "81c58bf4-024b-4c09-8487-39c0f5922061",
+   "created_at": "2026-10-02T11:08:38",
+   "present_at": 15.4,
+   "agreed_at": 15.4,
+   "polls": 1,
+   "first_poll": {
+    "t": 15.4,
+    "count": 1,
+    "total": 1,
+    "walked": 1,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 15.4,
+     "count": 1,
+     "total": 1,
+     "walked": 1,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "J",
+   "post": "fbfd0b5d-3575-41e1-a70f-d82bdf85f2e0",
+   "comment": "2b70d179-ef1c-41fd-87b6-cde6b9e514db",
+   "created_at": "2026-10-02T11:08:55",
+   "present_at": 15.0,
+   "agreed_at": 15.0,
+   "polls": 1,
+   "first_poll": {
+    "t": 15.0,
+    "count": 8,
+    "total": 8,
+    "walked": 8,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 15.0,
+     "count": 8,
+     "total": 8,
+     "walked": 8,
+     "present": true
+    }
+   ]
+  },
+  {
+   "round": "round-20261002d",
+   "key": "K",
+   "post": "766d4e38-ee90-4519-bdcb-6466c3e03f01",
+   "comment": "4f33d434-24e4-446c-8cb9-81502bfb218a",
+   "created_at": "2026-10-02T11:09:09",
+   "present_at": 8.2,
+   "agreed_at": 8.2,
+   "polls": 1,
+   "first_poll": {
+    "t": 8.2,
+    "count": 1,
+    "total": 1,
+    "walked": 1,
+    "present": true
+   },
+   "disagreement_kinds": [],
+   "trace": [
+    {
+     "t": 8.2,
+     "count": 1,
+     "total": 1,
+     "walked": 1,
+     "present": true
+    }
+   ]
+  }
+ ]
+}
