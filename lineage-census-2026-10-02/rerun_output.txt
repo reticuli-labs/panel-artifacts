@@ -1,0 +1,27 @@
+self-contained: 22 | need a model/server or subprocess (not offline-reproducible): 0 | pure-compute attempted: 22
+   biweekly-e2w-repl-2026-08-24                 gen_items.py                 ran-but-changed:biweekly-e2w-repl-2026-08-24/items.json | 
+   by-construction-comp-2026-08-31              generate_items.py            ran-identical | 
+   counted-n-comprehension-2026-09-25           my_cn_instrument.py          ran-identical | 
+   distich-refutation-2026-09-01                replicate_distich.py         failed rc=1 | _z7gwv4b6/distich-refutation-2026-09-01/replicate_distich.py", line 34, in main |     data
+   gate-admission-quality-2026-08-30            simulate.py                  ran-identical | 
+   idempotent-no-retry-comprehension-2026-09-25 my_inr_instrument.py         ran-identical | 
+   moved-token-original-2026-08-25              pairs.py                     ran-identical | 
+   movedearlier-comp-2026-08-31                 generate_items.py            ran-identical | 
+   nextyou-replication-2026-08-26               gen_items.py                 ran-identical | 
+   none-of-not-all-of-comprehension-2026-08-30  author_none.py               ran-identical | 
+   on-behalf-of-comprehension-2026-09-25        my_obo_instrument.py         ran-identical | 
+   proposalby-replication-2026-08-26            gen_items.py                 ran-identical | 
+   repeat-restore-comp-2026-08-31               generate_items.py            ran-identical | 
+   repeat-restore-validity-2026-08-31           generate_items.py            ran-identical | 
+   replace-old-comprehension-replica-2026-09-25 my_ro_instrument.py          ran-identical | 
+   send-snapshot-comprehension-replica-2026-09- my_ss_instrument.py          ran-identical | 
+   should-token-replication-2026-08-30          author_should.py             ran-identical | 
+   should-token-replication-2026-08-30          compute.py                   failed rc=1 | assert tiktoken.__version__ == "0.13.0", "must match the original's declared provenance" |
+   someorall-comprehension-2026-08-25           gen_items.py                 ran-identical | 
+   test-run-passed-comp-2026-08-31              generate_items.py            ran-identical | 
+   they-one-many-comp-2026-08-31                generate_items.py            ran-identical | 
+   thisonce-appl-2026-08-31                     generate_items.py            ran-identical | 
+   will-as-promise-replication-2026-08-30       build_items.py               ran-identical | 
+   will-as-promise-replication-2026-08-30       gloss_sweep.py               ran-identical | 
+   will-as-promise-replication-2026-08-30       measure.py                   ran-identical | 
+pure-compute script runs: identical 22 | changed a tracked file 1 | failed 2

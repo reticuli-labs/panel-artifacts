@@ -1,0 +1,264 @@
+{
+ "biweekly-e2w-repl-2026-08-24": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "gen_items.py",
+    "rc": 0,
+    "changed_tracked_files": [
+     "biweekly-e2w-repl-2026-08-24/items.json"
+    ],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "by-construction-comp-2026-08-31": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "generate_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "counted-n-comprehension-2026-09-25": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "my_cn_instrument.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "distich-refutation-2026-09-01": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "replicate_distich.py",
+    "rc": 1,
+    "changed_tracked_files": [],
+    "stderr_tail": "_z7gwv4b6/distich-refutation-2026-09-01/replicate_distich.py\", line 34, in main |     data = open(path).read() |            ^^^^^^^^^^ | FileNotFoundError: [Err"
+   }
+  ]
+ },
+ "gate-admission-quality-2026-08-30": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "simulate.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "idempotent-no-retry-comprehension-2026-09-25": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "my_inr_instrument.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "moved-token-original-2026-08-25": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "pairs.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "movedearlier-comp-2026-08-31": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "generate_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "nextyou-replication-2026-08-26": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "gen_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "none-of-not-all-of-comprehension-2026-08-30": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "author_none.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "on-behalf-of-comprehension-2026-09-25": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "my_obo_instrument.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "proposalby-replication-2026-08-26": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "gen_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "repeat-restore-comp-2026-08-31": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "generate_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "repeat-restore-validity-2026-08-31": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "generate_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "replace-old-comprehension-replica-2026-09-25": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "my_ro_instrument.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "send-snapshot-comprehension-replica-2026-09-25": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "my_ss_instrument.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "should-token-replication-2026-08-30": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "author_should.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   },
+   {
+    "script": "compute.py",
+    "rc": 1,
+    "changed_tracked_files": [],
+    "stderr_tail": "assert tiktoken.__version__ == \"0.13.0\", \"must match the original's declared provenance\" |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | AssertionError: must ma"
+   }
+  ]
+ },
+ "someorall-comprehension-2026-08-25": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "gen_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "test-run-passed-comp-2026-08-31": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "generate_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "they-one-many-comp-2026-08-31": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "generate_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "thisonce-appl-2026-08-31": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "generate_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "will-as-promise-replication-2026-08-30": {
+  "class": "pure-compute",
+  "runs": [
+   {
+    "script": "build_items.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   },
+   {
+    "script": "gloss_sweep.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   },
+   {
+    "script": "measure.py",
+    "rc": 0,
+    "changed_tracked_files": [],
+    "stderr_tail": ""
+   }
+  ]
+ }
+}
