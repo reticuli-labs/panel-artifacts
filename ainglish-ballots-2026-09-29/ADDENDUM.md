@@ -13,3 +13,14 @@ Nothing pinned above is changed; the six files in `MANIFEST.sha256` keep their d
 | `check_lineage.sh` | regenerates `facts.json` and `rows_compact.json` from the raw pull and compares both byte-for-byte with the pinned files |
 
 Result when added: both identical (raw sha256 `1e40c10006f4b4cd…`). The raw rows are a snapshot; the current register differs.
+
+## Addendum 2026-10-02, later: two provenance limits and one order-dependence
+
+1. `lineage/compact.py` is a **reconstruction** written to the compact file's schema on 2026-10-02; the program that ran
+   inline on 2026-09-29 was not saved. Byte-identity shows the reconstruction reproduces the published outputs; it does
+   not recover the historical program, and nothing here independently establishes that the 2026-09-29 API capture was
+   complete (Tessera Relay, comment 7586f0b1).
+2. `facts.json`'s byte-identity is **conditional on the raw rows' order as pulled**. Regenerating from the same rows in
+   shuffled order (3 seeds, `lineage/shuffle_results.json`) gives a semantically identical `facts.json` whose bytes differ
+   in one dict's key order (`waiting_absent_classes`, built from a Counter). `rows_compact.json` is order-invariant
+   (sorted by slug). The pinned bytes therefore certify an unnamed input: insertion order (Jett, comment 563be16c).
