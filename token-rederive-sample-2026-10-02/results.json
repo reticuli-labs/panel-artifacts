@@ -1,0 +1,830 @@
+{
+ "kind": "reticuli.token-rederive-sample.results.v1",
+ "ran_at": "2026-10-02T08:00:07Z",
+ "summary": {
+  "match": 31,
+  "not-derivable": 1
+ },
+ "rows": [
+  {
+   "manifest_hash": "05ca7bd970c095a3cb7be5e13f2a5c958dbe025dcfec09199f04e74efefd0f26",
+   "filed": -2.667,
+   "proposal": "anchored-deixis-now-14-02z-today-2026-08-01-latest-3f2a",
+   "submitter": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+   "at": "2026-08-09T02:24:22+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "raw-api-tiktoken@cl100k_base",
+    "raw-api-tiktoken@o200k_base"
+   ],
+   "derived": -2.6666666666666665,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 6,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0003333333333332966
+  },
+  {
+   "manifest_hash": "0629e675ef88cc9e9396d2d67da3d77ce17d4d9f7a0a6c82e182c5f75f7e0db3",
+   "filed": -4,
+   "proposal": "by-unknown-by-withheld-typed-doer-omission-why-mistakes-were-3",
+   "submitter": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+   "at": "2026-08-15T21:36:54+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -4.0,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 24,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "13f54b1c0829fbfc78a35ca13beee9bec692cf01b1fbb2f42f06082be0fee98b",
+   "filed": -3.5,
+   "proposal": "grader-is-graded-robust-word-based-form-of-grader-graded-2",
+   "submitter": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+   "at": "2026-08-06T08:31:10+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "tiktoken/cl100k_base@vocab",
+    "tiktoken/o200k_base@vocab"
+   ],
+   "derived": -3.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 6,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "213aae4159f02df2cfcc18e4e0b501653f42ed582418bd9220429fa570c4a802",
+   "filed": 6,
+   "proposal": "may-not-as-prohibition-may-not-as-possibility",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-09-02T20:37:47+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "derived": 6.0,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 16,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "244b5b132d95be1973490a90a8ea4aa54f011703a6a6d583dcfd807f99381c45",
+   "filed": -2.5,
+   "proposal": "they-one-they-many",
+   "submitter": "ab818aed-fa0b-4573-8c8d-c83e2f62cdf4",
+   "at": "2026-09-02T23:56:50+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "tiktoken/cl100k_base",
+    "tiktoken/o200k_base",
+    "tiktoken/p50k_base"
+   ],
+   "derived": -2.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 32,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "289924987ba4c317d302e6af65ed715e2f3f927f52036f58fe6fcbe58ee433e4",
+   "filed": -6.375,
+   "proposal": "evidential-tags-obs-inf-rep-src-with-instrument-recall-and-p-2",
+   "submitter": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "at": "2026-09-02T21:54:33+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -6.375,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 8,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "2cf05685d30675c1ee342fc35e9c7af93a8b63a2d9f66b34efbcd5ec9d6c112a",
+   "filed": -6.625,
+   "proposal": "evidential-tags-obs-inf-rep-src-with-instrument-recall-and-p-2",
+   "submitter": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+   "at": "2026-08-16T23:25:38+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -6.625,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 8,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "2f61d3d594cc6c342eed46c6e6df0ddaaa4ab96403d636c9ec6773bbed31fab5",
+   "filed": -5.667,
+   "proposal": "evidential-tags-obs-inf-rep-src-with-instrument-recall-and-p-2",
+   "submitter": "ab818aed-fa0b-4573-8c8d-c83e2f62cdf4",
+   "at": "2026-08-17T11:39:19+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "tiktoken/cl100k_base@0.13.0",
+    "tiktoken/o200k_base@0.13.0"
+   ],
+   "derived": -5.666666666666667,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 12,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.00033333333333285253
+  },
+  {
+   "manifest_hash": "370e485e83d74e41d129c5321558c1b84f6279135139b5ef597522d859f60ec3",
+   "filed": -4.5,
+   "proposal": "vs-baseline-the-baseline-anchor-batch-four-filed-by-rosetta-3",
+   "submitter": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+   "at": "2026-09-01T12:31:59+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -4.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 12,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "3a722ac44a321e70c7aa46ccd738a188d8fa6434313195a3312509504a870b13",
+   "filed": -15,
+   "proposal": "attempt-ensure-say-whether-the-instruction-tolerates-failure",
+   "submitter": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+   "at": "2026-08-30T11:34:28+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "derived": -15.0,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 24,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "3aa4872dfa896b29c28d9b39ade0c62b8471ea4634224c0672b2ec6069485650",
+   "filed": 0.5,
+   "proposal": "because-clause-ever-since-time-or-event-interval-compatible",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-09-04T13:56:21+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "derived": 0.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 10,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "414c2729d4a50b946deab48a3579c7e592ccff1f6e7fad9e7446ca0cec007886",
+   "filed": -1,
+   "proposal": "they-one-they-many",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-08-26T14:38:09+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "tiktoken/cl100k_base",
+    "tiktoken/o200k_base",
+    "tiktoken/p50k_base"
+   ],
+   "derived": -1.0,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 32,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "538647f2ff6bc44213a639411a30228b668ac12af1469541dcff4673ed84facc",
+   "filed": -13.333333333333,
+   "proposal": "except-l-l-the-exception-pin-all-good-honesty-respelled-off-",
+   "submitter": "ef69d72d-4e39-4e2a-a586-66c524aceca2",
+   "at": "2026-09-01T08:36:08+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "tiktoken/cl100k_base"
+   ],
+   "derived": -13.333333333333334,
+   "models": [
+    "cl100k_base"
+   ],
+   "pairs": 12,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 3.339550858072471e-13
+  },
+  {
+   "manifest_hash": "574fc190e1ed5a09cf0f5e9fd311dd463fe04877d2a669ac0bde02b1e6faa71e",
+   "filed": 1,
+   "proposal": "this-once-from-now-on-does-this-instruction-apply-to-this-ta",
+   "submitter": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "at": "2026-08-29T07:11:05+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "tiktoken/cl100k_base",
+    "tiktoken/o200k_base",
+    "tiktoken/p50k_base"
+   ],
+   "derived": 1.0,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 16,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "6c17f9fa8df92d4e516b587fc7e1fa98133951afee374873dfec25efdad510cf",
+   "filed": -17.25,
+   "proposal": "choose-any-set-ref-draw-uniform-set-ref",
+   "submitter": "ab818aed-fa0b-4573-8c8d-c83e2f62cdf4",
+   "at": "2026-09-02T16:20:58+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "derived": -17.25,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 48,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "6e5ee0110cd8c68f519aa19215ef390344371c89d801e3bfaa00ea20cc10c7d8",
+   "filed": -10.5,
+   "proposal": "falsum-ref-ref-mark-a-claim-dead-when-its-falsifier-fires-3",
+   "submitter": "761fdc0b-39df-48ae-a375-99bdd3858e3e",
+   "at": "2026-08-30T09:09:43+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -10.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 2,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "700397ca3f8c36317582911c9ecd445a75f502c77188c8d505b1533cf84e2d2c",
+   "filed": -1,
+   "proposal": "able-to-allowed-to-splitting-can-capability-is-not-permissio",
+   "submitter": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "at": "2026-08-09T13:08:20+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -1.0,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 6,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "7938f613743ce02882385adb3ca98f9141313da2b68b57074ed46e0de6d3cf95",
+   "filed": -22.667,
+   "proposal": "ctl-control-declare-whether-a-null-result-could-have-been-ot-3",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-08-07T11:18:56+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "tiktoken/cl100k_base@vocab",
+    "tiktoken/o200k_base@vocab"
+   ],
+   "derived": -22.666666666666668,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 12,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0003333333333337407
+  },
+  {
+   "manifest_hash": "8668a9e30716062c54614fec4cc6d6977ecd6a6bd0ac344ea2ea4d169caf6d11",
+   "filed": -13.1667,
+   "proposal": "no-delegation-one-hop-delegation-allowed-state-whether-a-tas",
+   "submitter": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "at": "2026-08-05T19:26:28+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -13.166666666666666,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 6,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 3.3333333334439885e-05
+  },
+  {
+   "manifest_hash": "8ccb2cfa361097f2b620ec5407dc9af3f0a3e270903401723d88f0016701aa61",
+   "filed": 13.333,
+   "proposal": "sanction-allow-authority-clause-sanction-penalize-authority",
+   "submitter": "08a036ce-13fb-4331-905f-08c5f1187a43",
+   "at": "2026-09-03T07:02:16+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "derived": 13.333333333333334,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 6,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0003333333333337407
+  },
+  {
+   "manifest_hash": "934ecdebeb6c703d5aad5767676072f7d8301c5bf21bb4337e5b0f7472a9c7cc",
+   "filed": -6,
+   "proposal": "evidential-tags-obs-inf-rep-src-with-instrument-recall-and-p",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-08-10T13:13:10+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -6.0,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 12,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "9a221180179c6f76534a5303d492ef32daba177c94e3008528b701f8bf166e51",
+   "filed": -7,
+   "proposal": "p-ack-as-receipt-r-p-ack-as-agreement-r",
+   "submitter": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "at": "2026-08-28T20:27:32+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "tiktoken/cl100k_base",
+    "tiktoken/o200k_base",
+    "tiktoken/p50k_base"
+   ],
+   "cls": "not-derivable",
+   "why": "no usable test_set",
+   "manifest_keys": [
+    "construct",
+    "environment",
+    "estimand",
+    "formula_version",
+    "item_counts",
+    "items_sha256",
+    "items_url",
+    "method",
+    "metric",
+    "models",
+    "seed",
+    "settlement_strata",
+    "source",
+    "test_set_note"
+   ]
+  },
+  {
+   "manifest_hash": "9d0771f384154b4ce341a9c33869a0035de2e29911a14c1f7b2c753ef87afe8a",
+   "filed": 0.5,
+   "proposal": "or-both-not-both-english-or-never-says-whether-both-is-allow",
+   "submitter": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "at": "2026-08-16T18:38:24+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": 0.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 10,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "a8a90a442c500c52ee4cee8a63e370e0b9daefe8c4abee91388194316ff5edfc",
+   "filed": -101,
+   "proposal": "observed-reported-by-inferred-from-mark-where-a-claim-came-f",
+   "submitter": "ef69d72d-4e39-4e2a-a586-66c524aceca2",
+   "at": "2026-09-01T10:07:03+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "tiktoken/cl100k_base"
+   ],
+   "derived": -101.0,
+   "models": [
+    "cl100k_base"
+   ],
+   "pairs": 1,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "b1ac55730fc7407b14920df9340e3351221af6d29654032797b0dec6f6687201",
+   "filed": 2.5,
+   "proposal": "among-others-and-no-others-is-the-list-the-whole-list-2",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-08-26T13:39:16+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "tiktoken/cl100k_base",
+    "tiktoken/o200k_base",
+    "tiktoken/p50k_base"
+   ],
+   "derived": 2.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base",
+    "p50k_base"
+   ],
+   "pairs": 32,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "bc067539a9a46b5654243627405ad566c96a0e10d5e4c555e007834f66274b7f",
+   "filed": -4.5,
+   "proposal": "we-including-you-we-excluding-you-clusivity-mark-whether-we--4",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-08-24T18:45:16+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "tiktoken/cl100k_base@0.13.0",
+    "tiktoken/o200k_base@0.13.0"
+   ],
+   "derived": -4.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 16,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "be13a925802e8b9bad16a409d35b04130a51d2a5a6ad9e42b5890166c0c87547",
+   "filed": -15.8,
+   "proposal": "still-the-liveness-marker-was-true-at-last-check-not-re-chec",
+   "submitter": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "at": "2026-08-16T13:48:09+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -15.8,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 10,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "c896700f1fa8d35d4723787eced80f3c5c275fa6e9abb93ff226544d66afec4f",
+   "filed": -19.5,
+   "proposal": "idempotent-no-retry-say-whether-re-running-an-action-is-safe",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-08-30T07:44:43+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -19.5,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 16,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "d17eeb80a9320ec5699299480126bd10b88f2459d72a31cabbc8087a6bf36944",
+   "filed": -18.625,
+   "proposal": "ctl-control-declare-whether-a-null-result-could-have-been-ot-3",
+   "submitter": "fed5c864-1663-48ae-953a-9b1b4db56413",
+   "at": "2026-09-03T07:36:40+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -18.625,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 8,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "d7ac4aab45e9322796db6cd6282166ec89f7f06fdd7a169ada5213269485dd64",
+   "filed": -2.375,
+   "proposal": "vs-baseline-the-baseline-anchor-batch-four-filed-by-rosetta-3",
+   "submitter": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "at": "2026-08-21T11:50:41+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "tiktoken/cl100k_base@0.13.0",
+    "tiktoken/o200k_base@0.13.0"
+   ],
+   "derived": -2.375,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 8,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  },
+  {
+   "manifest_hash": "d9f98069bbfd05d42003974d7b948d12a14ffc2a9803c57e3ed75297d24a957f",
+   "filed": -14.667,
+   "proposal": "given-c-c-the-condition-pin-kills-it-works-respelled-off-the",
+   "submitter": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+   "at": "2026-09-01T08:59:06+00:00",
+   "backfilled": true,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -14.666666666666666,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 12,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0003333333333337407
+  },
+  {
+   "manifest_hash": "e610afc6521bff22a268c813a5aeee85740d96868c1ef99280d25be9de6d2161",
+   "filed": -14.75,
+   "proposal": "grader-eq-graded",
+   "submitter": "52b1883a-464e-403c-9059-d57afe91a13c",
+   "at": "2026-08-21T17:24:58+00:00",
+   "backfilled": false,
+   "models_raw": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "derived": -14.75,
+   "models": [
+    "cl100k_base",
+    "o200k_base"
+   ],
+   "pairs": 8,
+   "raw_keys": [
+    "by_tokenizer",
+    "floor",
+    "floor_tokenizer"
+   ],
+   "cls": "match",
+   "diff": 0.0
+  }
+ ]
+}
