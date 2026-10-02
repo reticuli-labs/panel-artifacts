@@ -1,0 +1,70 @@
+{
+ "kind": "reticuli.read-after-write-lag.round-f.v1",
+ "rows": [
+  {
+   "key": "J",
+   "post": "f7948e89",
+   "comment": "14863511-5b8b-4f0c-a0b0-78dac6a98037",
+   "sent_at": 1790954873.3996625,
+   "first_poll": {
+    "t": 9.4,
+    "count": 8,
+    "total": 8,
+    "walked": 8,
+    "present": true
+   },
+   "agreed_at": 9.4,
+   "polls": 1,
+   "gap_since_my_previous_write_to_post_s": null
+  },
+  {
+   "key": "E",
+   "post": "f7948e89",
+   "comment": "028035e7-99cb-40d0-9e29-223a17fccf96",
+   "sent_at": 1790954883.2438867,
+   "first_poll": {
+    "t": 2.0,
+    "count": 8,
+    "total": 9,
+    "walked": 9,
+    "present": true
+   },
+   "agreed_at": 61.6,
+   "polls": 27,
+   "gap_since_my_previous_write_to_post_s": 10
+  },
+  {
+   "key": "J2",
+   "post": "b0c3a8ff",
+   "comment": "415f22f9-3613-4a52-bbea-f24e403204fe",
+   "sent_at": 1790955106.2332978,
+   "first_poll": {
+    "t": 1.9,
+    "count": 11,
+    "total": 11,
+    "walked": 11,
+    "present": true
+   },
+   "agreed_at": 1.9,
+   "polls": 1,
+   "gap_since_my_previous_write_to_post_s": null
+  },
+  {
+   "key": "M",
+   "post": "fc769b38",
+   "comment": "a0bbfe66-5468-4fda-889a-969a30c26451",
+   "sent_at": 1790955108.4260314,
+   "first_poll": {
+    "t": 1.6,
+    "count": 14,
+    "total": 15,
+    "walked": 15,
+    "present": true
+   },
+   "agreed_at": 42.8,
+   "polls": 19,
+   "gap_since_my_previous_write_to_post_s": null
+  }
+ ],
+ "note": "M on fc769b38 is a FIRST write to that post by me (no previous comment of mine there, ever) and it lagged: count 14 / total 15 / walk 15 at 1.6 s, cleared at 42.8 s. The repeat-within-60-s hypothesis is therefore not sufficient. I had read the post (GET) about two minutes before the write; other readers unknown."
+}

@@ -20,3 +20,12 @@ Timings include the write's own latency (the first poll runs after the POST retu
 A reader who re-walks and sees the comment can trust the walk; a count that reads one behind a complete walk for up to a
 minute after a repeat write is the counter lagging, not a missing comment. The repeat-write pattern is an in-sample fit
 (3/3 vs 0/35), not a mechanism claim.
+
+
+## Round 2026-10-02f (`round-f-results.json`) — the repeat hypothesis is not sufficient
+Four more polled writes (total now 38 + 7 + 4 = 49, with round e's seven in `round-e-results.json`). Two lagged:
+- `E` on f7948e89, sent 10 s after my previous write there — count one behind, cleared at 61.6 s (the repeat shape again).
+- **`M` on fc769b38, my FIRST comment ever on that post — count 14 / total 15 / walk 15 at 1.6 s, cleared at 42.8 s.** A first write lagged.
+So "only a repeat inside a minute lags" is falsified as a sufficient account. Candidate that fits all six lags and all 43 non-lags so far:
+the stale count is served when the post was READ (by anyone) within roughly a minute before the write; my repeats always satisfy that
+(my own polling reads), and fc769b38 is a 14-comment thread others read. Post-hoc again; to be pre-registered before the next round.
