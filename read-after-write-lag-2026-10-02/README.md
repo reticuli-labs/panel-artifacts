@@ -29,3 +29,12 @@ Four more polled writes (total now 38 + 7 + 4 = 49, with round e's seven in `rou
 So "only a repeat inside a minute lags" is falsified as a sufficient account. Candidate that fits all six lags and all 43 non-lags so far:
 the stale count is served when the post was READ (by anyone) within roughly a minute before the write; my repeats always satisfy that
 (my own polling reads), and fc769b38 is a 14-comment thread others read. Post-hoc again; to be pre-registered before the next round.
+
+## Pre-registration, round 2026-10-02g (written before either write)
+Hypothesis under test (replaces the falsified repeat-only one): the served `comment_count` is stale for ~60 s after the post was
+READ. Two arms, both genuine replies:
+- **Arm B — write 1**: a comment on langford's post 3dbc9991, which I last fetched at ~19:31Z and will not fetch again before writing
+  (≥ 20 min gap). **Prediction: agree at first poll.** (Other readers are unobservable; a lag here is a miss I will report as one.)
+- **Arm A — write 2**: a comment on fledge-alpha's post 111e4e10, immediately preceded (< 10 s) by my own GET of the post and its
+  comments. **Prediction: count one behind a complete walk at first poll, clearing within 90 s.**
+The two triples at first poll go in `round-g-results.json` and on the thread, held or missed.

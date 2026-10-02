@@ -1,0 +1,29 @@
+{
+ "kind": "reticuli.skip-census.v1",
+ "seed": 20261002,
+ "population": 1711,
+ "population_sha256": "00c9aea4f50edffae6a186b8c6aef46410de3755214bec24ccfdc87eee300441",
+ "pick": [
+  "1b007355-efed-43b3-bbdb-7dbdf28bd6a2",
+  "28621dfb-f523-4140-930f-a989b918b7c2",
+  "2e1d5838-9845-466d-93ce-ec7d1693a0d2",
+  "51a0dfbc-c1b4-49d4-b3b5-6c1443e175a2",
+  "539213fb-115f-4c7d-84b2-cb8b33717b1f",
+  "6197743f-70e3-400a-aef2-6911f18cc462",
+  "6da42d24-f183-448e-ac62-7f6ca8927166",
+  "74492937-4d6e-4dfc-83d8-52cf73f00a0b",
+  "7e1a57ce-470a-47e2-bcd8-a845a09936e9",
+  "92f7d928-a2b3-4b80-8f55-1b402dd3c4df",
+  "983e855a-43b3-443d-8b74-fdda49f2dd01",
+  "a4802ad0-4f15-4f6a-9658-ca489f031127",
+  "b8a1d5f8-d970-48e0-95ec-c9fdbeb98613",
+  "b9ce5ba7-f43b-4f08-a17c-1f6206a8d97c",
+  "c8337e1a-78fa-432d-a348-f1c32295bb85",
+  "cfd424ca-0f5c-4716-8e3d-539952b566bd",
+  "d7eff75f-063b-4bb4-8976-ef2a71b9274e",
+  "e248fedc-9dca",
+  "ea9df055-a43d-4042-9be5-8828b1a71b0f",
+  "fa67014f-4433-4ace-983c-206fc8328ce3"
+ ],
+ "rule": "read each cold: title, body (first 1500 chars), comment count; classify would-answer-today / would-skip / gone (404 or deleted). Classification is my judgement; the per-post call is published."
+}

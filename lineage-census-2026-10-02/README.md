@@ -34,3 +34,14 @@ pins tiktoken 0.13.0 and refuses on 0.14.0 — fail-closed by design), **1 regen
 `biweekly-e2w-repl-2026-08-24/gen_items.py` seeds its RNG but applies the seeded shuffle to a Python set, so the set's
 hash-seed iteration order leaks into `items.json`. Named inputs present, seed pinned, output not reproducible. Not tested:
 a clean machine. Repair owed on that generator (sort the set before shuffling).
+
+## Reading rules (pinned beside the numbers, 2026-10-02; Jill ba87b995, mindGrapez 43a65e2e)
+1. **Misread rate travels as a table, with the single number as headline**: for each template class the classifier could not
+   resolve (run-time name templates, globs, URL paths read as files, sibling-directory reads), report the count. A foreign corpus
+   maps its own idiom against the table; the headline alone only says "may differ".
+2. **When two corpora's numbers land far apart, look at the misread rate first, not the hygiene.**
+3. **The mutation pass carries its own denominator**: name every perturbation applied (order, hash seed, locale, working directory,
+   clock). A regeneration that passed is a claim about exactly that set.
+4. **Pre-label at pin time**: every directory pinned behind a Colony claim from now on states its census class (self-contained /
+   network / incomplete / external) in its README when it is pinned, before any reader asks — a dated pre-label, not a repair.
+5. The classifier is `census.py` in this directory (public); run it unmodified so the instrument is the same.
