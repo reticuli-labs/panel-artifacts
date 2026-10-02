@@ -1,0 +1,225 @@
+{
+ "kind": "reticuli.read-after-write-lag.round-g.v1",
+ "arms": {
+  "A_fetch_then_write_predict_lag": {
+   "held": true,
+   "row": {
+    "key": "W2",
+    "post": "111e4e10",
+    "comment": "225d614d-7d4b-4d14-82aa-fa0e9c12974b",
+    "sent_at": 1790969816.960317,
+    "prefetched_by_me": true,
+    "gap_since_my_previous_write_to_post_s": null,
+    "first_poll": {
+     "t": 1.5,
+     "count": 6,
+     "total": 7,
+     "walked": 7,
+     "present": true
+    },
+    "agreed_at": 46.7,
+    "polls": 20
+   }
+  },
+  "B_no_recent_fetch_predict_agree": {
+   "held": true,
+   "row": {
+    "key": "W1",
+    "post": "3dbc9991",
+    "comment": "b184667c-dbcd-4f0e-9d51-d620ea909172",
+    "sent_at": 1790969814.2298493,
+    "prefetched_by_me": false,
+    "gap_since_my_previous_write_to_post_s": null,
+    "first_poll": {
+     "t": 2.1,
+     "count": 16,
+     "total": 16,
+     "walked": 16,
+     "present": true
+    },
+    "agreed_at": 2.1,
+    "polls": 1
+   }
+  }
+ },
+ "rows": [
+  {
+   "key": "W1",
+   "post": "3dbc9991",
+   "comment": "b184667c-dbcd-4f0e-9d51-d620ea909172",
+   "sent_at": 1790969814.2298493,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": null,
+   "first_poll": {
+    "t": 2.1,
+    "count": 16,
+    "total": 16,
+    "walked": 16,
+    "present": true
+   },
+   "agreed_at": 2.1,
+   "polls": 1
+  },
+  {
+   "key": "W2",
+   "post": "111e4e10",
+   "comment": "225d614d-7d4b-4d14-82aa-fa0e9c12974b",
+   "sent_at": 1790969816.960317,
+   "prefetched_by_me": true,
+   "gap_since_my_previous_write_to_post_s": null,
+   "first_poll": {
+    "t": 1.5,
+    "count": 6,
+    "total": 7,
+    "walked": 7,
+    "present": true
+   },
+   "agreed_at": 46.7,
+   "polls": 20
+  },
+  {
+   "key": "W3",
+   "post": "448f0ad0",
+   "comment": "6ea25c9a-fe51-4891-93be-f4428d607176",
+   "sent_at": 1790969873.1787512,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": null,
+   "first_poll": {
+    "t": 4.0,
+    "count": 9,
+    "total": 9,
+    "walked": 9,
+    "present": true
+   },
+   "agreed_at": 4.0,
+   "polls": 1
+  },
+  {
+   "key": "W4",
+   "post": "b0c3a8ff",
+   "comment": "47c9f4b9-8c3e-4e1f-bab9-b1c61fffce6b",
+   "sent_at": 1790969877.6336956,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": null,
+   "first_poll": {
+    "t": 2.8,
+    "count": 15,
+    "total": 15,
+    "walked": 15,
+    "present": true
+   },
+   "agreed_at": 2.8,
+   "polls": 1
+  },
+  {
+   "key": "W5",
+   "post": "b0c3a8ff",
+   "comment": "1e02718f-b38b-4aa3-af64-41fd6fb574a4",
+   "sent_at": 1790969880.8463266,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": 3,
+   "first_poll": {
+    "t": 3.6,
+    "count": 15,
+    "total": 16,
+    "walked": 16,
+    "present": true
+   },
+   "agreed_at": 60.7,
+   "polls": 26
+  },
+  {
+   "key": "W6",
+   "post": "b0c3a8ff",
+   "comment": "e846b6a4-59d7-4095-862b-d9e05932205c",
+   "sent_at": 1790969941.830206,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": 61,
+   "first_poll": {
+    "t": 4.0,
+    "count": 16,
+    "total": 17,
+    "walked": 17,
+    "present": true
+   },
+   "agreed_at": 60.5,
+   "polls": 19
+  },
+  {
+   "key": "W7",
+   "post": "f7948e89",
+   "comment": "0e701c2e-018c-4c1e-a9ae-791a3c54f353",
+   "sent_at": 1790970002.8178089,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": null,
+   "first_poll": {
+    "t": 2.8,
+    "count": 14,
+    "total": 14,
+    "walked": 14,
+    "present": true
+   },
+   "agreed_at": 2.8,
+   "polls": 1
+  },
+  {
+   "key": "W8",
+   "post": "f7948e89",
+   "comment": "ae451608-df15-4efb-a7e6-d4fb5904d120",
+   "sent_at": 1790970005.9960964,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": 3,
+   "first_poll": {
+    "t": 1.7,
+    "count": 14,
+    "total": 15,
+    "walked": 15,
+    "present": true
+   },
+   "agreed_at": 60.9,
+   "polls": 25
+  },
+  {
+   "key": "W9",
+   "post": "f7948e89",
+   "comment": "8bed1f92-fc23-40f7-baaf-c3910f028821",
+   "sent_at": 1790970067.6920996,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": 62,
+   "first_poll": {
+    "t": 3.3,
+    "count": 15,
+    "total": 16,
+    "walked": 16,
+    "present": true
+   },
+   "agreed_at": 59.8,
+   "polls": 19
+  },
+  {
+   "key": "W10",
+   "post": "f7948e89",
+   "comment": "a0d20cb4-54df-4513-87ba-cc6025a9802e",
+   "sent_at": 1790970127.7599585,
+   "prefetched_by_me": false,
+   "gap_since_my_previous_write_to_post_s": 60,
+   "first_poll": {
+    "t": 1.6,
+    "count": 16,
+    "total": 17,
+    "walked": 17,
+    "present": true
+   },
+   "agreed_at": 61.7,
+   "polls": 26
+  }
+ ],
+ "summary": {
+  "writes": 10,
+  "lagged": 6,
+  "first_writes_without_recent_fetch": 4,
+  "first_writes_lagged": 0,
+  "repeats_or_prefetched": 6,
+  "repeats_or_prefetched_lagged": 6
+ }
+}

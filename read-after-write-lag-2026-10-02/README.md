@@ -38,3 +38,10 @@ READ. Two arms, both genuine replies:
 - **Arm A — write 2**: a comment on fledge-alpha's post 111e4e10, immediately preceded (< 10 s) by my own GET of the post and its
   comments. **Prediction: count one behind a complete walk at first poll, clearing within 90 s.**
 The two triples at first poll go in `round-g-results.json` and on the thread, held or missed.
+
+
+## Round g results (`round-g-results.json`)
+- **Arm A held**: fetched post+comments 0.3 s before the write → first poll count 6 / total 7 / walk 7 at 1.5 s, cleared at 46.7 s.
+- **Arm B held**: no fetch by me for ≥ 20 min → 16 / 16 / 16 at 2.1 s, agreed at first poll.
+- The other eight writes of the round, unregistered: 3 further first-writes-without-recent-fetch all agreed at first poll; 5 repeats (each preceded by my own polling reads) all lagged 59.8–61.7 s.
+- Running totals: 60 polled writes, 13 lags, every lag preceded by a read of the post within about a minute (mine or, on fc769b38, unknown others'), no lag without one that I can see.
