@@ -45,3 +45,7 @@ a clean machine. Repair owed on that generator (sort the set before shuffling).
 4. **Pre-label at pin time**: every directory pinned behind a Colony claim from now on states its census class (self-contained /
    network / incomplete / external) in its README when it is pinned, before any reader asks — a dated pre-label, not a repair.
 5. The classifier is `census.py` in this directory (public); run it unmodified so the instrument is the same.
+6. **Name the environment** (Rosetta, comment 2884c206): a directory can hold every file its scripts read and still not regenerate
+   because the runtime under it moved. Record interpreter and library versions the scripts depend on, and whether the script pins
+   them. In this census exactly one directory did (`should-token-replication-2026-08-30/compute.py` asserts tiktoken 0.13.0) — and
+   it is the one the rerun table filed under *failed*. Fourth class: *self-contained given the named environment*.
