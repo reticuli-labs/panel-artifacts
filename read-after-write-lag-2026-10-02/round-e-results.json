@@ -1,0 +1,119 @@
+{
+ "kind": "reticuli.read-after-write-lag.prereg-results.v1",
+ "round": "2026-10-02e",
+ "writes": [
+  {
+   "write": 1,
+   "post": "5de99ded",
+   "comment": "06ee85c6-e58f-42db-a79d-8bd68d32fa6c",
+   "sent_at": 1790949068.6482935,
+   "first_poll": {
+    "t": 4.2,
+    "count": 11,
+    "total": 11,
+    "walked": 11,
+    "present": true
+   },
+   "agreed_at": 4.2,
+   "polls": 1
+  },
+  {
+   "write": 2,
+   "post": "f7948e89",
+   "comment": "5deed8db-42ee-42d2-8dfb-79da74b6a2e3",
+   "sent_at": 1790949075.9175715,
+   "first_poll": {
+    "t": 3.0,
+    "count": 4,
+    "total": 4,
+    "walked": 4,
+    "present": true
+   },
+   "agreed_at": 3.0,
+   "polls": 1
+  },
+  {
+   "write": 3,
+   "post": "f7948e89",
+   "comment": "a3a06575-5049-4a5e-baa2-5938fca71080",
+   "sent_at": 1790949079.7093058,
+   "first_poll": {
+    "t": 4.5,
+    "count": 4,
+    "total": 5,
+    "walked": 5,
+    "present": true
+   },
+   "agreed_at": 59.4,
+   "polls": 25
+  },
+  {
+   "write": 4,
+   "post": "b0c3a8ff",
+   "comment": "d7f20882-0151-412e-8ecc-ae45f53c4936",
+   "sent_at": 1790949148.0912848,
+   "first_poll": {
+    "t": 3.6,
+    "count": 9,
+    "total": 9,
+    "walked": 9,
+    "present": true
+   },
+   "agreed_at": 3.6,
+   "polls": 1
+  },
+  {
+   "write": 5,
+   "post": "12dc47ed",
+   "comment": "317b05ac-64f2-495c-9993-ab15f7a000f0",
+   "sent_at": 1790949152.8189602,
+   "first_poll": {
+    "t": 4.7,
+    "count": 11,
+    "total": 11,
+    "walked": 11,
+    "present": true
+   },
+   "agreed_at": 4.7,
+   "polls": 1
+  },
+  {
+   "write": 6,
+   "post": "e7cf8015",
+   "comment": "d33f61b6-3b5c-4353-8124-d74382e0a8e6",
+   "sent_at": 1790949158.3708155,
+   "first_poll": {
+    "t": 3.8,
+    "count": 7,
+    "total": 7,
+    "walked": 7,
+    "present": true
+   },
+   "agreed_at": 3.8,
+   "polls": 1
+  },
+  {
+   "write": 7,
+   "post": "5de99ded",
+   "comment": "f81f6d2c-60a9-44d3-a916-37f2b4a17fdb",
+   "sent_at": 1790949205.8104453,
+   "first_poll": {
+    "t": 2.0,
+    "count": 12,
+    "total": 12,
+    "walked": 12,
+    "present": true
+   },
+   "agreed_at": 2.0,
+   "polls": 1,
+   "gap_since_write1_s": 137
+  }
+ ],
+ "gap_write2_to_write3_s": 4,
+ "predictions": {
+  "P1": true,
+  "P2": true,
+  "P3": true,
+  "P4": true
+ }
+}

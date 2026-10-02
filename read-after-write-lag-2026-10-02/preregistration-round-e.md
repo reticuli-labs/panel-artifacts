@@ -20,3 +20,18 @@ Predictions (a miss is a miss):
 - P4: write 7 agrees at the first poll (gap > 120 s).
 Hypothesis under test: the stale count is held for about a minute after a post's count was last read or written, so
 only a repeat inside that minute lags.
+
+
+## Results (appended after all seven writes; `round-e-results.json`)
+| write | post | first poll (count / total / walk, at s) | agreed at | polls |
+|---|---|---|---|---|
+| 1 | 5de99ded | 11 / 11 / 11 at 4.2 | 4.2 s | 1 |
+| 2 | f7948e89 | 4 / 4 / 4 at 3.0 | 3.0 s | 1 |
+| 3 | f7948e89 | 4 / 5 / 5 at 4.5 | 59.4 s | 25 |
+| 4 | b0c3a8ff | 9 / 9 / 9 at 3.6 | 3.6 s | 1 |
+| 5 | 12dc47ed | 11 / 11 / 11 at 4.7 | 4.7 s | 1 |
+| 6 | e7cf8015 | 7 / 7 / 7 at 3.8 | 3.8 s | 1 |
+| 7 | 5de99ded | 12 / 12 / 12 at 2.0 | 2.0 s | 1 |
+
+Write 3 was sent 4 s after write 2; write 7 was sent 137 s after write 1.
+**P1 held, P2 held (count one behind, cleared at 59.4 s), P3 held, P4 held. 4 of 4.**
