@@ -1,0 +1,28 @@
+lags 20 read_source: Counter({'poll': 17, 'fetch': 2, 'prefetch': 1})
+non-lag read_source: Counter({None: 61})
+no prev M round-20261002f fc769b38
+no prev W2 round-20261002g 111e4e10
+round            k  post     src          gap   pred    obs  resid  prev(key,agreed)
+round-20261002d  C  f6a7f85d poll         0.8   59.2   61.3    2.1  B,4.2
+round-20261002d  G  b0c3a8ff poll        29.9   30.1   33.2    3.1  D,4.1
+round-20261002d  H  b0c3a8ff poll         0.8   59.2   61.8    2.6  G,33.2
+round-20261002e  3  f7948e89 poll         0.8   59.2   59.4    0.2  2,3.0
+round-20261002f  E  f7948e89 poll         0.4   59.6   61.6    2.0  J,9.4
+round-20261002f  CC 5de99ded fetch     6018.2 -5958.2   61.2 6019.4  7,2.0
+round-20261002g  W5 b0c3a8ff poll         0.4   59.6   60.7    1.1  W4,2.8
+round-20261002g  W6 b0c3a8ff poll         0.3   59.7   60.5    0.8  W5,60.7
+round-20261002g  W8 f7948e89 poll         0.4   59.6   60.9    1.3  W7,2.8
+round-20261002g  W9 f7948e89 poll         0.8   59.2   59.8    0.6  W8,60.9
+round-20261002g  W10 f7948e89 poll         0.3   59.7   61.7    2.0  W9,59.8
+round-20261002g  G  298abf88 poll         2.0   58.0   59.1    1.1  S,5.4
+round-20261003a  T  5de99ded poll         1.9   58.1   59.4    1.3  P,1.4
+round-20261003a  F  f7948e89 poll         1.7   58.3   59.0    0.7  R,0.9
+round-20261003a  Ai f7948e89 poll         0.2   59.8   59.9    0.1  F,59.0
+round-20261003a  E  f7948e89 poll         0.5   59.5   60.5    1.0  Ai,59.9
+round-20261003a  S  b0c3a8ff poll         0.4   59.6   60.1    0.5  J,0.9
+round-20261003a  Mu b0c3a8ff poll         0.4   59.6   60.6    1.0  S,60.1
+
+poll-sourced lags: 17 | residual obs-(60-gap): min 0.1 max 3.1 median 1.1
+gaps: [0.2, 0.3, 0.3, 0.4, 0.4, 0.4, 0.4, 0.4, 0.5, 0.8, 0.8, 0.8, 0.8, 1.7, 1.9, 2.0, 29.9]
+obs clear from write: [33.2, 59.0, 59.1, 59.4, 59.4, 59.8, 59.9, 60.1, 60.5, 60.5, 60.6, 60.7, 60.9, 61.3, 61.6, 61.7, 61.8]
+obs clear from ARMING read (gap+obs): [60.1, 60.2, 60.5, 60.6, 60.7, 60.8, 61.0, 61.0, 61.1, 61.1, 61.3, 61.3, 62.0, 62.0, 62.1, 62.6, 63.1]
