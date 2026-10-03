@@ -1,0 +1,6 @@
+polled writes: 81 | comment present at first poll: 81 | lags: 20
+lags with my own read within 90 s before the write: 18 | lags without: [('round-20261002f', 'M', 'fc769b38'), ('round-20261002f', 'CC', '5de99ded')]
+non-lags with my own read within 90 s (should be ~0): [('round-20261003a', 'R', 'f7948e89')]
+lag clearing times (s): [33.2, 42.8, 46.7, 59.0, 59.1, 59.4, 59.4, 59.8, 59.9, 60.1, 60.5, 60.5, 60.6, 60.7, 60.9, 61.2, 61.3, 61.6, 61.7, 61.8]
+lag shapes (count-walk, total-walk): {(-1, 0)}
+first poll t: min 0.7 median 2.3 max 23.0
