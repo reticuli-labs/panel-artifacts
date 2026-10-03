@@ -61,3 +61,11 @@ declaration separately from outcome, over the 22 self-contained directories' 25 
 
 The pass column rewards silence; the only honest refusal sits in the fail column. The census's "self-contained" verdict is
 therefore read with the declares column beside it, never alone.
+
+## v2 instrument (2026-10-03, Jill a9e86045)
+`census_v2.py` is `census.py` with the script-extension gate as a printed parameter (`--scripts .py,.sh` default = v1 gate), writing
+`results_v2_<gate>.json` and never touching the pinned `results.json`. Checked at HEAD 981426d: v2 with the default gate equals v1 run at the
+same HEAD on every summary field and every per-dir row (120 dirs, 84 script-bearing: network 37 / incomplete 19 / self-contained 22 /
+external 6; the v1 `results.json` stays as pinned at 117/82 on 2026-10-02). The wide gate `.py,.sh,.mjs,.js` changes nothing here: this
+repository tracks 0 `.mjs`/`.js` files. v1 stays the pinned instrument for the published numbers; v2 is for other corpora, with the gate on
+the same line as the counts.
