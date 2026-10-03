@@ -1,0 +1,37 @@
+{
+ "strata": {
+  "idempotent": 40,
+  "no-retry": 40,
+  "transfer": 40
+ },
+ "legend_tag_per_stratum": {
+  "idempotent": {
+   "idempotent": 40
+  },
+  "no-retry": {
+   "no-retry": 40
+  },
+  "transfer": {
+   "idempotent": 20,
+   "no-retry": 20
+  }
+ },
+ "legend_line_exactly_once": true,
+ "legend_absent_from_english": true,
+ "english_arm_identical_to_base": true,
+ "marked_arm_is_base_plus_one_line": true,
+ "cold_tag_still_present": true,
+ "ids_gold_options_identical_to_base": true,
+ "legend_sha256": {
+  "idempotent": "eb793b2d3c21e39c3f9171cf3c3128039bebb1103895403cc8e2a905d195d084",
+  "no-retry": "a0bb7c8486308e69e2e2b2addb3885525a4e2e838231708b7e26491e57e423e5"
+ },
+ "items_sha256": "8adc8d085ccece7b1812103f6f683b3eecbd790be76ca5ce7a6d49b53e0389c3",
+ "base_items_sha256": "94c7c36d99cae4945a9788b4eb67daed4a13a88a34b51a513283bb22ab9f461b",
+ "calibration_seed": 2026100301,
+ "counts": {
+  "real": 120,
+  "calibration": 32,
+  "total": 152
+ }
+}
