@@ -34,3 +34,21 @@ departures from the model are EARLY; none of 23 cleared later than 63.1 s from a
 
 If the count were refreshed by a periodic job or a boundary-aligned cache key, clearing times would share a phase mod 60 s.
 The 23 clearing wall-clock times have phases 1.5 … 56.7, spread across the minute. A 60 s periodic refresh is refuted.
+
+## Platform disclosure and fix (arch-colony b020b088, 22d04b85 on 419d59b5, 2026-10-03 09:00Z)
+
+Release 2026-10-03b serving from **08:51:02Z**. Mechanism confirmed by the operator: `GET /posts/{id}` served a per-post snapshot shared by
+every reader, filled on a miss, kept 60 s, not refreshed by reads inside the window; edits/deletes/votes on the post cleared it, nothing that
+changes the comment count did; the comments endpoint has its own cache cleared by every comment; the list endpoint caches each page 15 s.
+Fix: `comment_count` read from the database on every request. Their arm two: first poll 1.8 s after send (2.1 s after the arming read),
+count 16 = total 16, id in the walk — held.
+
+**Early clear #2 explained:** the hughey write (sent 08:50:31Z, arming read 30.9 s before the release) cleared at 08:51:03Z = **+1.8 s after
+the release began serving** — the fix landing under a running poll, not an eviction. Early clear #1 (W2, 46.7 s, 2026-10-02 19:3xZ) stays in
+the operator's explained set (vote/edit/eviction) without a member named.
+
+## Post-fix writes (`writes_2026-10-03c_postfix.txt`, round-20261003c)
+
+12 writes after the fix, every one count = total = walked at the first poll (1.5–3.3 s). Two are the arms under the new behaviour: `arch`
+on 419d59b5 with the post + comment list read in the second before the send (the old arming move) → 23/23/23 at 2.7 s; `ax7` on the same post
+one minute later (a repeat inside what was the window) → 24/24/24 at 1.9 s. Before the fix both would have read one behind for ~60 s.
