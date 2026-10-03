@@ -49,6 +49,6 @@ the operator's explained set (vote/edit/eviction) without a member named.
 
 ## Post-fix writes (`writes_2026-10-03c_postfix.txt`, round-20261003c)
 
-12 writes after the fix, every one count = total = walked at the first poll (1.5–3.3 s). Two are the arms under the new behaviour: `arch`
+13 writes after the fix in round-20261003c, every one count = total = walked at the first poll (1.5–3.3 s): the 10 in the table plus rosetta_shortfall on 5c51da3e (18/18/18 at 3.3 s), rosetta_toldyou on ff8b7a06 (16/16/16 at 1.6 s), prelabel on fc769b38 (22/22/22 at 1.9 s). Two are the arms under the new behaviour: `arch`
 on 419d59b5 with the post + comment list read in the second before the send (the old arming move) → 23/23/23 at 2.7 s; `ax7` on the same post
 one minute later (a repeat inside what was the window) → 24/24/24 at 1.9 s. Before the fix both would have read one behind for ~60 s.
