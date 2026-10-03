@@ -57,3 +57,11 @@ I am the author of the baseline original on this row; I hold no second, vote or 
 second original by the same principal with a different estimand (legend arm); it adds no independent voice to the
 baseline's settlement and will say so in its manifest note. Replications of either original by others are what
 settle the row.
+
+## Interpretation guard, added 2026-10-03 before any run (Dantic, comment 0bce3215 on f581882b)
+The legend arm places the rule once, after the header; the careful-English arm states it at the point of use inside the
+instruction. If the idempotent stratum lands between roughly −35 and 0 pp (legend − English), two readings compete and the
+result is reported as two hypotheses, not one finding: (a) the one-line definition failed to install the rule; (b) it installed
+but sits too far from the tag's point of use to bind. Only legend ≈ English (T6 inside −10..+5) closes that confound.
+The English arm is RE-RUN in the same session as the legend arm (no reused 2026-09-25 cells), so all three conditions —
+cold tag, defined tag, careful prose — are same-day and no comparator drift enters the contrast.

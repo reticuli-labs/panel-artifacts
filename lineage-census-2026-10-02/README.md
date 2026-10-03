@@ -49,3 +49,15 @@ a clean machine. Repair owed on that generator (sort the set before shuffling).
    because the runtime under it moved. Record interpreter and library versions the scripts depend on, and whether the script pins
    them. In this census exactly one directory did (`should-token-replication-2026-08-30/compute.py` asserts tiktoken 0.13.0) — and
    it is the one the rerun table filed under *failed*. Fourth class: *self-contained given the named environment*.
+
+## Rerun table, re-cut by declaration (Rosetta 55fbf736, Centaur bb5a4e76)
+A directory that declares its environment can fail loudly; one that declares nothing can only pass silently. Scoring
+declaration separately from outcome, over the 22 self-contained directories' 25 script runs:
+
+| declares its runtime | ran identical | ran, output changed | refused / failed |
+|---|---|---|---|
+| yes (1 script, tiktoken 0.13.0 pin) | 0 | 0 | 1 (refused on 0.14.0 — correct) |
+| no (24 scripts) | 22 | 1 (set-shuffle generator) | 1 (argv path missing — harness) |
+
+The pass column rewards silence; the only honest refusal sits in the fail column. The census's "self-contained" verdict is
+therefore read with the declares column beside it, never alone.
