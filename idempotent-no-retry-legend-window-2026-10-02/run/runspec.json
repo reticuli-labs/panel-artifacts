@@ -1,0 +1,133 @@
+{
+ "construct": "a-twm7d6nc54tccvkn",
+ "slug": "idempotent-no-retry-say-whether-re-running-an-action-is-safe",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 2026100301,
+ "panel": [
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+   "name": "gemma3-12b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026100301,
+   "temperature": 0,
+   "timeout_s": 120
+  },
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+   "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026100301,
+   "temperature": 0,
+   "timeout_s": 120
+  }
+ ],
+ "models": [
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_neff": 1,
+ "settlement_strata": [
+  {
+   "id": "idempotent",
+   "weight": 1
+  },
+  {
+   "id": "no-retry",
+   "weight": 1
+  },
+  {
+   "id": "transfer",
+   "weight": 1
+  }
+ ],
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "Same instruction (action + idempotency key) followed by the exact served slot span for the tag, '<ACTION>' rendered as 'it'; identical header and scenario lines in both arms; byte-identical to the 2026-09-25 English arm. The marked arm is the 2026-09-25 cold trailing tag PLUS one legend line after the header: 'Legend — <ACTION>, <tag>: <served slot span>.' stated once per record."
+ },
+ "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/6036150fc44193678e4562f76331cb9efdc48fd2/idempotent-no-retry-legend-window-2026-10-02/items.json",
+ "items_sha256": "8adc8d085ccece7b1812103f6f683b3eecbd790be76ca5ce7a6d49b53e0389c3",
+ "calibration_min_gap": 0.5,
+ "attempt": {
+  "estimand": "SECOND ORIGINAL comprehension_accuracy_delta on a-twm7d6nc54tccvkn by the same principal as the 2026-09-25 cold-read original (attempt 0e391c4a), with a different estimand and NO settlement voice on that original: legend arm (the 2026-09-25 marked arm with the tag's served slot span stated ONCE as a 'Legend —' line after the header; cold trailing tag unchanged inline) minus complete careful English (identical to the 2026-09-25 English arm), on the same 120 items (strata idempotent 40, no-retry 40, transfer 40; same options, gold and ids) with 32 fresh construct-free calibration controls; read by the same two local readers, re-qualified 2026-10-03, counterbalanced one arm per reader per item, seed 2026100301. Question: does a legend transfer the rule to the cue states where the cold tag was discounted (failed-mid, timeout-late) and nowhere else? Eight per-reader/per-state targets are frozen in plan.md (commit 91bfccb, guard 4f809ac): T1 12B cue >= 0.75; T2 24B cue >= 0.67; T3 clean states >= 0.75 each; T4 24B verified-none <= 0.67; T5 12B verified-none <= 0.75; T6 idempotent delta in [-10, +5] pp; T7 no-retry delta in [-10, +5]; T8 transfer delta in [-15, 0]. Interpretation guard: an idempotent delta between -35 and 0 is reported as two hypotheses (definition failed / definition too far from point of use), not one finding. The English arm is re-run in this session; no 2026-09-25 cells are reused.",
+  "admissibility_gates": [
+   "calibration-first absolute-gap rule: panel planted-arm gap >= 0.5 on the 32 construct-free controls before any real cell, else abort with the calibration receipt",
+   "reader digests bound from /api/tags at run time must equal the re-qualified digests sha256:de1f65ea... and sha256:6629ee92... (receipts 2026-10-03, valid to 2026-10-10), else refuse before spend",
+   "legend instrument check: every marked-arm real item carries its legend line exactly once as line 2 and the English arm is byte-identical to the 2026-09-25 bank (AUDIT.json legend_line_exactly_once and english_arm_identical_to_base both true), else refuse before mint",
+   "no automatic retries; any transport fault or truncated answer on a real cell is recorded and the run aborts if dead cells exceed 2 percent of planned",
+   "items fetched from the commit-pinned URL must hash to the frozen items_sha256, else refuse"
+  ],
+  "planned_sample": {
+   "real_items": 120,
+   "calibration_items": 32,
+   "readers": 2,
+   "target_cells": 240,
+   "calibration_cells": 128
+  }
+ },
+ "reader_qualifications": [
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "lineage": {
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data.",
+    "key": "google/gemma3-12b"
+   },
+   "qualified_at": "2026-10-03T19:34:30+00:00",
+   "reader": {
+    "digest_source": "ollama:/api/tags",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+    "precision": "q4_k_m",
+    "provider": "ollama"
+   },
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "other_correct": 0,
+    "other_total": 32,
+    "passed": true
+   },
+   "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "042182ab7468d3a383bea068c2e04e62fc9ac4b7c662270ea0a753a47d38f590",
+   "valid_until": "2026-10-10T19:34:30+00:00"
+  },
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "lineage": {
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data.",
+    "key": "mistral/mistral-small3.2-24b"
+   },
+   "qualified_at": "2026-10-03T19:35:52+00:00",
+   "reader": {
+    "digest_source": "ollama:/api/tags",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+    "precision": "q4_k_m",
+    "provider": "ollama"
+   },
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "other_correct": 0,
+    "other_total": 32,
+    "passed": true
+   },
+   "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "b016c9d522264527715468770c7661eaf84025a9e6d1a69daf70ad69e617f0ce",
+   "valid_until": "2026-10-10T19:35:52+00:00"
+  }
+ ]
+}

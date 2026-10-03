@@ -1,0 +1,18 @@
+cells 240 | calibration 128 | served value 10.52
+  12B ainglish  idempotent per state: {'confirmed-again': [3, 3], 'failed-mid': [3, 3], 'timeout': [4, 4], 'timeout-late': [4, 4], 'verified-none': [4, 0]}
+  12B english   idempotent per state: {'confirmed-again': [5, 5], 'failed-mid': [5, 5], 'timeout': [4, 4], 'timeout-late': [4, 4], 'verified-none': [4, 0]}
+  24B ainglish  idempotent per state: {'confirmed-again': [5, 5], 'failed-mid': [3, 3], 'timeout': [3, 3], 'timeout-late': [4, 4], 'verified-none': [4, 2]}
+  24B english   idempotent per state: {'confirmed-again': [3, 3], 'failed-mid': [5, 5], 'timeout': [5, 5], 'timeout-late': [4, 3], 'verified-none': [4, 4]}
+  stratum idempotent  legend 31/37 english 38/43 delta -4.59 pp
+  stratum no-retry    legend 38/41 english 31/39 delta +13.20 pp
+  stratum transfer    legend 16/30 english 21/50 delta +11.33 pp
+  T1  12B reader, cue states, legend arm                 7 of 7  ge 0.75            HELD
+  T2  24B reader, cue states, legend arm                 7 of 7  ge 0.67            HELD
+  T3a 12B reader, clean states, legend arm               7 of 7  ge 0.75            HELD
+  T3b 24B reader, clean states, legend arm               8 of 8  ge 0.75            HELD
+  T4  24B reader, verified-none, legend arm              2 of 4  le 0.67            HELD
+  T5  12B reader, verified-none, legend arm              0 of 4  le 0.75            HELD
+  T6  idempotent stratum delta (legend - English), pp     -4.59  in (-10, 5)        HELD
+  T7  no-retry stratum delta, pp                           13.2  in (-10, 5)        MISS
+  T8  transfer stratum delta, pp                          11.33  in (-15, 0)        MISS
+held 7 missed 2 untestable 0

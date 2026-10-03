@@ -1,0 +1,243 @@
+calibration: planted arm 1.00 vs other 0.00 — panel can detect. ctl(planted-items) passes. 240 real cells to go.
+cell yield: 368 cells, dead_rate 0.0 — per (model, arm) in the manifest spec.
+transport faults: 0 cell(s) lost to the wire, not retried (a retried cell is a second draw and the receipt would have to say so).
+resample-down: value stays inside its own interval at [0.75, 0.5] of items.
+{
+ "metric": "comprehension_accuracy_delta",
+ "value": 100.0,
+ "resample_down": [
+  {
+   "kept_fraction": 0.75,
+   "items": 90,
+   "value": 100.0,
+   "sign_flipped": false,
+   "outside_interval": false
+  },
+  {
+   "kept_fraction": 0.5,
+   "items": 60,
+   "value": 100.0,
+   "sign_flipped": false,
+   "outside_interval": false
+  }
+ ],
+ "yield_report": {
+  "cells": 368,
+  "empty": 0,
+  "unparsed": 0,
+  "dead_rate": 0.0,
+  "per_cell": {
+   "gemma3-12b-opaque-choice-q4_k_m/ainglish": {
+    "n": 85,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "gemma3-12b-opaque-choice-q4_k_m/english": {
+    "n": 99,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m/ainglish": {
+    "n": 87,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m/english": {
+    "n": 97,
+    "empty": 0,
+    "unparsed": 0
+   }
+  }
+ },
+ "calibration": {
+  "planted_arm": "ainglish",
+  "detectable": 1.0,
+  "other": 0.0,
+  "gap": 1.0,
+  "min_gap": 0.5,
+  "passed": true
+ },
+ "value_lo": 100.0,
+ "value_hi": 100.0,
+ "arms": {
+  "english": 0.0,
+  "ainglish": 1.0,
+  "chance": 0.2
+ },
+ "panel_models": [
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_members": 2,
+ "is_adversarial": false,
+ "panel_agreement": 1.0,
+ "per_member": [
+  {
+   "model": "gemma3-12b-opaque-choice-q4_k_m",
+   "value": 100.0,
+   "precision": "q4_k_m"
+  },
+  {
+   "model": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "value": 100.0,
+   "precision": "q4_k_m"
+  }
+ ],
+ "manifest": {
+  "construct": "a-twm7d6nc54tccvkn",
+  "metric": "comprehension_accuracy_delta",
+  "seed": 2026100301,
+  "comparator": {
+   "kind": "complete-careful-english-v1",
+   "description": "Same instruction (action + idempotency key) followed by the exact served slot span for the tag, '<ACTION>' rendered as 'it'; identical header and scenario lines in both arms; byte-identical to the 2026-09-25 English arm. The marked arm is the 2026-09-25 cold trailing tag PLUS one legend line after the header: 'Legend \u2014 <ACTION>, <tag>: <served slot span>.' stated once per record."
+  },
+  "items_sha256": "8adc8d085ccece7b1812103f6f683b3eecbd790be76ca5ce7a6d49b53e0389c3",
+  "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/6036150fc44193678e4562f76331cb9efdc48fd2/idempotent-no-retry-legend-window-2026-10-02/items.json",
+  "models": [
+   "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+  ],
+  "readers": [
+   {
+    "name": "gemma3-12b-opaque-choice-q4_k_m",
+    "provider": "ollama",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model_digest": null,
+    "digest_source": "unbound",
+    "instrument_preparation": {
+     "entry_point": "not-prepared",
+     "binding": "unbound"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 128,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026100301,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   },
+   {
+    "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "provider": "ollama",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model_digest": null,
+    "digest_source": "unbound",
+    "instrument_preparation": {
+     "entry_point": "not-prepared",
+     "binding": "unbound"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 128,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026100301,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   }
+  ],
+  "instrument_preparation": {
+   "entry_point": "dry-run",
+   "binding": "unbound"
+  },
+  "item_counts": {
+   "real": 120,
+   "calibration": 32
+  },
+  "accuracy_resolution": {
+   "unit": "percentage_points",
+   "scored_cells": {
+    "english": 132,
+    "ainglish": 108
+   },
+   "one_cell_pp": {
+    "english": "0.7576",
+    "ainglish": "0.9259"
+   },
+   "delta_grid": {
+    "numerator_pp": 100,
+    "denominator_lcm": 1188,
+    "step_pp": "0.0842"
+   }
+  },
+  "calibration": {
+   "planted_arm": "ainglish",
+   "min_gap": 0.5,
+   "ordering": "calibration-first",
+   "arm_exposure": "both-arms-per-reader-item",
+   "cells": 128
+  },
+  "difficulty": {
+   "annotated": false
+  },
+  "harness": "ainglish-panel/0.2.63",
+  "transport": {
+   "gemma3-12b-opaque-choice-q4_k_m@q4_k_m": {
+    "max_tokens": 128,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026100301,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m": {
+    "max_tokens": 128,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026100301,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   }
+  },
+  "transport_faults": {
+   "total": 0,
+   "retried": false,
+   "per_cell": {}
+  },
+  "transport_truncations": {
+   "total": 0,
+   "per_reader_cell": {},
+   "by_cell": {
+    "english": 0,
+    "ainglish": 0
+   },
+   "imbalanced_across_cells": false
+  },
+  "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate [DRY-RUN: mock oracle readers \u2014 plumbing verification, NOT a measurement]"
+ },
+ "accuracy_resolution": {
+  "unit": "percentage_points",
+  "scored_cells": {
+   "english": 132,
+   "ainglish": 108
+  },
+  "one_cell_pp": {
+   "english": "0.7576",
+   "ainglish": "0.9259"
+  },
+  "delta_grid": {
+   "numerator_pp": 100,
+   "denominator_lcm": 1188,
+   "step_pp": "0.0842"
+  }
+ },
+ "panel_neff": 1,
+ "panel_neff_basis": "declared:reader-axis-unvalidated"
+}
+
+Submit: POST /api/v1/proposals/idempotent-no-retry-say-whether-re-running-an-action-is-safe/measurements with a Colony Bearer (see /developers). Confirmation needs a DISJOINT party to agree on the same metric using a DIFFERENT manifest; this exact manifest is only a build check.
+
+DRY RUN complete: pipeline + payload verified, zero API calls. The payload above is stamped DRY-RUN inside its own manifest — not submittable as evidence.

@@ -1,0 +1,210 @@
+{
+ "kind": "reticuli.legend-window.score.v1",
+ "attempt": "c0835b47-6420-41a1-9515-4744adc8dc46",
+ "cells": 240,
+ "calibration_cells": 128,
+ "per_reader_arm_state_idempotent": {
+  "12B-ainglish": {
+   "timeout": [
+    4,
+    4
+   ],
+   "verified-none": [
+    4,
+    0
+   ],
+   "confirmed-again": [
+    3,
+    3
+   ],
+   "timeout-late": [
+    4,
+    4
+   ],
+   "failed-mid": [
+    3,
+    3
+   ]
+  },
+  "12B-english": {
+   "failed-mid": [
+    5,
+    5
+   ],
+   "timeout-late": [
+    4,
+    4
+   ],
+   "verified-none": [
+    4,
+    0
+   ],
+   "confirmed-again": [
+    5,
+    5
+   ],
+   "timeout": [
+    4,
+    4
+   ]
+  },
+  "24B-ainglish": {
+   "timeout": [
+    3,
+    3
+   ],
+   "verified-none": [
+    4,
+    2
+   ],
+   "failed-mid": [
+    3,
+    3
+   ],
+   "timeout-late": [
+    4,
+    4
+   ],
+   "confirmed-again": [
+    5,
+    5
+   ]
+  },
+  "24B-english": {
+   "confirmed-again": [
+    3,
+    3
+   ],
+   "timeout-late": [
+    4,
+    3
+   ],
+   "timeout": [
+    5,
+    5
+   ],
+   "verified-none": [
+    4,
+    4
+   ],
+   "failed-mid": [
+    5,
+    5
+   ]
+  }
+ },
+ "strata": {
+  "idempotent": {
+   "legend": [
+    31,
+    37
+   ],
+   "english": [
+    38,
+    43
+   ],
+   "delta_pp": -4.59
+  },
+  "no-retry": {
+   "legend": [
+    38,
+    41
+   ],
+   "english": [
+    31,
+    39
+   ],
+   "delta_pp": 13.2
+  },
+  "transfer": {
+   "legend": [
+    16,
+    30
+   ],
+   "english": [
+    21,
+    50
+   ],
+   "delta_pp": 11.33
+  }
+ },
+ "targets": [
+  {
+   "target": "T1",
+   "what": "12B reader, cue states, legend arm",
+   "observed": "7 of 7",
+   "value": 1.0,
+   "rule": "ge 0.75",
+   "held": true
+  },
+  {
+   "target": "T2",
+   "what": "24B reader, cue states, legend arm",
+   "observed": "7 of 7",
+   "value": 1.0,
+   "rule": "ge 0.67",
+   "held": true
+  },
+  {
+   "target": "T3a",
+   "what": "12B reader, clean states, legend arm",
+   "observed": "7 of 7",
+   "value": 1.0,
+   "rule": "ge 0.75",
+   "held": true
+  },
+  {
+   "target": "T3b",
+   "what": "24B reader, clean states, legend arm",
+   "observed": "8 of 8",
+   "value": 1.0,
+   "rule": "ge 0.75",
+   "held": true
+  },
+  {
+   "target": "T4",
+   "what": "24B reader, verified-none, legend arm",
+   "observed": "2 of 4",
+   "value": 0.5,
+   "rule": "le 0.67",
+   "held": true
+  },
+  {
+   "target": "T5",
+   "what": "12B reader, verified-none, legend arm",
+   "observed": "0 of 4",
+   "value": 0.0,
+   "rule": "le 0.75",
+   "held": true
+  },
+  {
+   "target": "T6",
+   "what": "idempotent stratum delta (legend - English), pp",
+   "observed": "-4.59",
+   "value": -4.59,
+   "rule": "in (-10, 5)",
+   "held": true
+  },
+  {
+   "target": "T7",
+   "what": "no-retry stratum delta, pp",
+   "observed": "13.2",
+   "value": 13.2,
+   "rule": "in (-10, 5)",
+   "held": false
+  },
+  {
+   "target": "T8",
+   "what": "transfer stratum delta, pp",
+   "observed": "11.33",
+   "value": 11.33,
+   "rule": "in (-15, 0)",
+   "held": false
+  }
+ ],
+ "held": 7,
+ "missed": 2,
+ "untestable": 0,
+ "served_value": 10.52,
+ "served_strata": null
+}

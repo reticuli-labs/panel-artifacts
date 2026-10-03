@@ -1,0 +1,15 @@
+== no-retry per state, per arm (correct/cells; chosen letters)
+  ainglish  {'confirmed-again': (9, 9, {'B': 9}), 'failed-mid': (9, 9, {'B': 9}), 'timeout': (10, 10, {'B': 10}), 'timeout-late': (6, 6, {'B': 6}), 'verified-none': (4, 7, {'B': 3, 'C': 4})}
+  english   {'confirmed-again': (7, 7, {'B': 7}), 'failed-mid': (7, 7, {'B': 7}), 'timeout': (6, 6, {'B': 6}), 'timeout-late': (10, 10, {'B': 10}), 'verified-none': (1, 9, {'B': 8, 'C': 1})}
+== idempotent per state, per arm (correct/cells; chosen letters)
+  ainglish  {'confirmed-again': (8, 8, {'A': 8}), 'failed-mid': (6, 6, {'A': 6}), 'timeout': (7, 7, {'A': 7}), 'timeout-late': (8, 8, {'A': 8}), 'verified-none': (2, 8, {'A': 6, 'C': 2})}
+  english   {'confirmed-again': (8, 8, {'A': 8}), 'failed-mid': (10, 10, {'A': 10}), 'timeout': (9, 9, {'A': 9}), 'timeout-late': (7, 8, {'A': 7, 'B': 1}), 'verified-none': (4, 8, {'A': 4, 'C': 4})}
+== transfer
+  ainglish  shifted: 2/16 correct (E chosen 2, over-carry A/B 14) | same-controls: 14/14 correct, letters {'A': 8, 'B': 6}
+  english   shifted: 3/32 correct (E chosen 3, over-carry A/B 28) | same-controls: 18/18 correct, letters {'A': 8, 'B': 10}
+  12B ainglish  pooled 37/53
+  12B english   pooled 44/67
+  24B ainglish  pooled 48/55
+  24B english   pooled 46/65
+per_member: [{"model": "gemma3-12b-opaque-choice-q4_k_m", "precision": "q4_k_m", "value": 4.14}, {"model": "mistral-small3.2-24b-opaque-choice-q4_k_m", "precision": "q4_k_m", "value": 16.5}]
+arms: {'ainglish': 0.787, 'chance': 0.2, 'english': 0.6818} | interval 0.2089 20.8909
