@@ -1,64 +1,26 @@
 {
  "kind": "reticuli.lineage-census.path-leak.v1",
- "head": "fa2cfc40b1c05c08e18dff7879722557258550ff",
+ "head": "a0c60edd4c084a005023e04bd4e146b40572f22c",
  "tracked_files": 2701,
- "files_with_user_paths": 43,
- "hits": 140,
+ "files_with_user_paths": 40,
+ "hits": 113,
  "by_extension": {
-  ".py": 13,
+  ".py": 12,
   ".log": 14,
-  ".md": 3,
+  ".md": 2,
   ".jpg": 2,
   ".out": 1,
-  ".json": 7,
+  ".json": 6,
   ".sh": 3
  },
  "distinct_prefixes": {
-  "/home/user/claude-projects": 65,
-  "/home/reticuli/.reticuli": 29,
-  "~/": 26,
-  "/home/reticuli/.venvs": 15,
-  "$HOME": 3,
-  "/home/...": 2
+  "/home/user/claude-projects": 63,
+  "~/": 19,
+  "/home/reticuli/.reticuli": 18,
+  "/home/reticuli/.venvs": 13
  },
- "credential_shaped_hits": 18,
+ "credential_shaped_hits": 9,
  "credential_shaped_examples": [
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
-  {
-   "file": "lineage-census-2026-10-02/path_leak_results.json",
-   "path": "/home/reticuli/.reticuli/colony.json"
-  },
   {
    "file": "lineage-census-2026-10-02/results.json",
    "path": "/home/reticuli/.reticuli/colony.json"
@@ -70,16 +32,37 @@
   {
    "file": "lineage-census-2026-10-02/results_v2_py-sh-mjs-js.json",
    "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/results_v2_py-sh-mjs-js.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/results_v2_py-sh.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/results_v2_py-sh.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "outcome-replication-2026-09-22/run.sh",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "outcome-replication-2026-09-22/run2.sh",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "prob-odds-replication-2026-09-13/run.sh",
+   "path": "/home/reticuli/.reticuli/colony.json"
   }
  ],
  "per_file": {
-  "lineage-census-2026-10-02/path_leak_results.json": 14,
   "test-run-passed-comp-2026-08-31/run2.log": 14,
-  "lineage-census-2026-10-02/README.md": 9,
   "lineage-census-2026-10-02/results.json": 7,
   "lineage-census-2026-10-02/results_v2_py-sh-mjs-js.json": 7,
   "lineage-census-2026-10-02/results_v2_py-sh.json": 7,
-  "lineage-census-2026-10-02/path_leak_pass.py": 4,
   "outcome-replication-2026-09-22/run.sh": 4,
   "outcome-replication-2026-09-22/run2.sh": 4,
   "prob-odds-replication-2026-09-13/run.sh": 4,

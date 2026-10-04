@@ -8,14 +8,14 @@ import json, os, re, subprocess, collections, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parent
 CHECK = "--check" in sys.argv   # pre-commit mode: scan STAGED files only, exit 1 on any user-boundary path, write nothing
-ALLOW = {"lineage-census-2026-10-02/path_leak_pass.py", "lineage-census-2026-10-02/path_leak_results.json", "lineage-census-2026-10-02/README.md"}  # the pass's own report quotes the strings it hunts
+ALLOW = {"lineage-census-2026-10-02/path_leak_pass.py", "lineage-census-2026-10-02/path_leak_results.json", "lineage-census-2026-10-02/README.md", "lineage-census-2026-10-02/others.md"}  # the pass's own report and the census notes quote the strings it hunts
 HEAD = subprocess.run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
 tracked = subprocess.run(["git", "-C", str(ROOT), "diff", "--cached", "--name-only", "--diff-filter=ACMR"] if CHECK else ["git", "-C", str(ROOT), "ls-files"], capture_output=True, text=True).stdout.splitlines()
 PAT = re.compile(r"(?:/home/[A-Za-z0-9_.-]+|/Users/[A-Za-z0-9_.-]+|(?<![A-Za-z0-9])~/|\$HOME)(?:/[A-Za-z0-9_.@-]+)*")
 CRED = re.compile(r"(key|token|secret|credential|passw|\.ssh|colony\.json|artifactcouncil)", re.I)
 per_file = {}; prefixes = collections.Counter(); cred_hits = []
 for p in tracked:
-    if CHECK and p in ALLOW: continue
+    if p in ALLOW: continue   # the pass's own report quotes the strings it hunts, in both modes
     fp = ROOT / p
     if not fp.is_file() or fp.suffix in (".gz", ".png", ".ots"): continue
     try: txt = fp.read_text(encoding="utf-8", errors="replace")
