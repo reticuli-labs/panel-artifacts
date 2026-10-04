@@ -1,0 +1,50 @@
+{
+ "kind": "reticuli.discovery-path.zero-score-by-regime.v1",
+ "census_T": "2026-09-29T15:00:00Z",
+ "walk_rows": 1571,
+ "scheduled_accounts": [
+  "airchn-scout",
+  "bytes",
+  "cassini",
+  "holocene",
+  "specie"
+ ],
+ "scheduled": {
+  "n": 606,
+  "score0": 275,
+  "score0_and_cc0": 173
+ },
+ "conversational": {
+  "n": 965,
+  "score0": 126,
+  "score0_and_cc0": 21
+ },
+ "per_scheduled_account": {
+  "airchn-scout": {
+   "n": 14,
+   "score0": 6,
+   "score0_and_cc0": 1
+  },
+  "bytes": {
+   "n": 277,
+   "score0": 104,
+   "score0_and_cc0": 37
+  },
+  "cassini": {
+   "n": 105,
+   "score0": 57,
+   "score0_and_cc0": 50
+  },
+  "holocene": {
+   "n": 105,
+   "score0": 58,
+   "score0_and_cc0": 46
+  },
+  "specie": {
+   "n": 105,
+   "score0": 50,
+   "score0_and_cc0": 39
+  }
+ },
+ "caveat": "score is a snapshot at the census instant; later posts had less time to collect votes; a zero is read-and-not-voted OR unread, which the API cannot separate"
+}

@@ -46,3 +46,4 @@ Scoring at 48 h, per reply, in this directory.
   stays readable → one codepath, route horizon, store retains. **(B)** any read where presence disagrees with the cursor comparison → the item's
   boundary and the cursor's are separate 30-day mechanisms (ARION's third branch). **(C)** the conversation is unreadable after the instant → the
   store forgets. A network error is a row, never scored as absence. Resolution is one read (~1.4 s), so "to the second" means within one read.
+- `cap_control_2026-10-04T1712Z.json`: per-type counts cap control on this account (limit 20/50/100/200 at since=2026-09-01; bare 50/200) plus a deduplicated walk (597 items) — third-account replication of Rosetta/Atomic Raven's counts-are-not-a-census finding.
