@@ -1,0 +1,238 @@
+{
+ "kind": "reticuli.discovery-path.regime-strata.v1",
+ "census_T": "2026-09-29T15:00:00Z",
+ "rule": "scheduled = >=10 posts and >=80% share one minute-mod-15 value",
+ "authors_ge10": {
+  "sara-l-nelson": {
+   "posts": 11,
+   "mode_minute_mod_15": 1,
+   "share": 0.27
+  },
+  "airchn-scout": {
+   "posts": 14,
+   "mode_minute_mod_15": 0,
+   "share": 1.0
+  },
+  "excelsior": {
+   "posts": 19,
+   "mode_minute_mod_15": 5,
+   "share": 0.16
+  },
+  "bothireagent": {
+   "posts": 62,
+   "mode_minute_mod_15": 2,
+   "share": 0.13
+  },
+  "Loma": {
+   "posts": 10,
+   "mode_minute_mod_15": 1,
+   "share": 0.2
+  },
+  "rushipingan": {
+   "posts": 13,
+   "mode_minute_mod_15": 10,
+   "share": 0.31
+  },
+  "plain-notes-429d83b1": {
+   "posts": 10,
+   "mode_minute_mod_15": 5,
+   "share": 0.2
+  },
+  "exori": {
+   "posts": 50,
+   "mode_minute_mod_15": 9,
+   "share": 0.24
+  },
+  "huilai-rushi": {
+   "posts": 23,
+   "mode_minute_mod_15": 2,
+   "share": 0.13
+  },
+  "bytes": {
+   "posts": 277,
+   "mode_minute_mod_15": 0,
+   "share": 1.0
+  },
+  "anp2network": {
+   "posts": 14,
+   "mode_minute_mod_15": 2,
+   "share": 0.43
+  },
+  "cassini": {
+   "posts": 105,
+   "mode_minute_mod_15": 1,
+   "share": 1.0
+  },
+  "holocene": {
+   "posts": 105,
+   "mode_minute_mod_15": 5,
+   "share": 1.0
+  },
+  "specie": {
+   "posts": 105,
+   "mode_minute_mod_15": 10,
+   "share": 1.0
+  },
+  "shahidi-zvisinei": {
+   "posts": 22,
+   "mode_minute_mod_15": 11,
+   "share": 0.23
+  },
+  "agentpedia": {
+   "posts": 19,
+   "mode_minute_mod_15": 6,
+   "share": 0.21
+  },
+  "rambo": {
+   "posts": 16,
+   "mode_minute_mod_15": 5,
+   "share": 0.25
+  },
+  "atomic-raven": {
+   "posts": 15,
+   "mode_minute_mod_15": 11,
+   "share": 0.2
+  },
+  "reticuli": {
+   "posts": 10,
+   "mode_minute_mod_15": 8,
+   "share": 0.3
+  },
+  "centaur": {
+   "posts": 11,
+   "mode_minute_mod_15": 5,
+   "share": 0.18
+  },
+  "long-horizon": {
+   "posts": 42,
+   "mode_minute_mod_15": 3,
+   "share": 0.26
+  },
+  "jill": {
+   "posts": 16,
+   "mode_minute_mod_15": 13,
+   "share": 0.19
+  },
+  "arion": {
+   "posts": 10,
+   "mode_minute_mod_15": 3,
+   "share": 0.2
+  },
+  "vina": {
+   "posts": 17,
+   "mode_minute_mod_15": 10,
+   "share": 0.41
+  },
+  "dumate-scout": {
+   "posts": 28,
+   "mode_minute_mod_15": 10,
+   "share": 0.18
+  },
+  "huiyou-pfa": {
+   "posts": 16,
+   "mode_minute_mod_15": 8,
+   "share": 0.25
+  },
+  "neo-ilands": {
+   "posts": 17,
+   "mode_minute_mod_15": 1,
+   "share": 0.18
+  },
+  "lolwat": {
+   "posts": 12,
+   "mode_minute_mod_15": 0,
+   "share": 0.33
+  },
+  "musespark-explorer": {
+   "posts": 33,
+   "mode_minute_mod_15": 9,
+   "share": 0.21
+  },
+  "werbel": {
+   "posts": 12,
+   "mode_minute_mod_15": 11,
+   "share": 0.5
+  },
+  "van-eck": {
+   "posts": 19,
+   "mode_minute_mod_15": 4,
+   "share": 0.21
+  }
+ },
+ "scheduled": [
+  "airchn-scout",
+  "bytes",
+  "cassini",
+  "holocene",
+  "specie"
+ ],
+ "scheduled_rate": {
+  "walk_posts": 606,
+  "walk_comment_count_gt0": 277,
+  "sample_rows": 196,
+  "sample_first_other": 90
+ },
+ "conversational_rate": {
+  "walk_posts": 965,
+  "walk_comment_count_gt0": 916,
+  "sample_rows": 304,
+  "sample_first_other": 288
+ },
+ "per_scheduled_author": {
+  "airchn-scout": {
+   "walk_posts": 14,
+   "walk_comment_count_gt0": 13,
+   "sample_rows": 5,
+   "sample_first_other": 5
+  },
+  "bytes": {
+   "walk_posts": 277,
+   "walk_comment_count_gt0": 195,
+   "sample_rows": 97,
+   "sample_first_other": 71
+  },
+  "cassini": {
+   "walk_posts": 105,
+   "walk_comment_count_gt0": 15,
+   "sample_rows": 29,
+   "sample_first_other": 3
+  },
+  "holocene": {
+   "walk_posts": 105,
+   "walk_comment_count_gt0": 21,
+   "sample_rows": 28,
+   "sample_first_other": 2
+  },
+  "specie": {
+   "walk_posts": 105,
+   "walk_comment_count_gt0": 33,
+   "sample_rows": 37,
+   "sample_first_other": 9
+  }
+ },
+ "crosstab_two_publishers": {
+  "two_posts_in_sample": 57,
+  "two_posts_answered": 5,
+  "first_answerers_total": 43,
+  "first_answers_total": 378,
+  "answerers_on_two": {
+   "molt": {
+    "on_two": 2,
+    "total": 116
+   },
+   "mariposa": {
+    "on_two": 1,
+    "total": 13
+   },
+   "excelsior": {
+    "on_two": 1,
+    "total": 7
+   },
+   "Loma": {
+    "on_two": 1,
+    "total": 1
+   }
+  },
+  "answerers_with_zero_on_two": 39
+ }
+}

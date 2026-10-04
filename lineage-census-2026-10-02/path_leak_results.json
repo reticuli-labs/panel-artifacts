@@ -1,0 +1,120 @@
+{
+ "kind": "reticuli.lineage-census.path-leak.v1",
+ "head": "fa2cfc40b1c05c08e18dff7879722557258550ff",
+ "tracked_files": 2701,
+ "files_with_user_paths": 43,
+ "hits": 140,
+ "by_extension": {
+  ".py": 13,
+  ".log": 14,
+  ".md": 3,
+  ".jpg": 2,
+  ".out": 1,
+  ".json": 7,
+  ".sh": 3
+ },
+ "distinct_prefixes": {
+  "/home/user/claude-projects": 65,
+  "/home/reticuli/.reticuli": 29,
+  "~/": 26,
+  "/home/reticuli/.venvs": 15,
+  "$HOME": 3,
+  "/home/...": 2
+ },
+ "credential_shaped_hits": 18,
+ "credential_shaped_examples": [
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/path_leak_results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/results.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  },
+  {
+   "file": "lineage-census-2026-10-02/results_v2_py-sh-mjs-js.json",
+   "path": "/home/reticuli/.reticuli/colony.json"
+  }
+ ],
+ "per_file": {
+  "lineage-census-2026-10-02/path_leak_results.json": 14,
+  "test-run-passed-comp-2026-08-31/run2.log": 14,
+  "lineage-census-2026-10-02/README.md": 9,
+  "lineage-census-2026-10-02/results.json": 7,
+  "lineage-census-2026-10-02/results_v2_py-sh-mjs-js.json": 7,
+  "lineage-census-2026-10-02/results_v2_py-sh.json": 7,
+  "lineage-census-2026-10-02/path_leak_pass.py": 4,
+  "outcome-replication-2026-09-22/run.sh": 4,
+  "outcome-replication-2026-09-22/run2.sh": 4,
+  "prob-odds-replication-2026-09-13/run.sh": 4,
+  "choose-any-comprehension-replica-2026-09-25/run/panel_run.log": 3,
+  "counted-n-comprehension-2026-09-25/run/panel_run.log": 3,
+  "idempotent-no-retry-comprehension-2026-09-25/run/panel_run.log": 3,
+  "idempotent-no-retry-legend-window-2026-10-02/run/panel_run.log": 3,
+  "on-behalf-of-comprehension-2026-09-25/run/panel_run.log": 3,
+  "outcome-replication-2026-09-22/run1.log": 3,
+  "outcome-replication-2026-09-22/run2.log": 3,
+  "prob-odds-replication-2026-09-13/run1.log": 3,
+  "repeat-restore-comp-2026-08-31/run1.log": 3,
+  "replace-old-comprehension-replica-2026-09-25/run/panel_run.log": 3,
+  "send-snapshot-comprehension-replica-2026-09-25/run/panel_run.log": 3,
+  "test-run-passed-comp-2026-08-31/run1.log": 3,
+  "test-run-passed-comp-2026-08-31/run3.log": 3,
+  "attested-strata-uvf-2026-09-17/census.py": 2,
+  "comparator-class-2026-09-13/gen_v5_from_v4.py": 2,
+  "dry6-careful.out": 2,
+  "no-undo-token-original-2026-09-30/noundo_token.py": 2,
+  "outcome-replication-2026-09-22/runspec.json.attempt-296b536b-c049-46e5-9469-7cfea2119a1e.abort.json": 2,
+  "test-run-passed-comp-2026-08-31/runspec.json.attempt-dfe1b6ef-21d5-4bcc-9ff6-683b70036efa.abort.json": 2,
+  "test-run-passed-comp-2026-08-31/runspec.json.attempt-f497c7a1-f5c8-4c70-ad6b-2037ffe26b74.abort.json": 2,
+  "attested-strata-uvf-2026-09-17/freeze.py": 1,
+  "colony-round-2026-09-28/preview-probes/preview_probe2.py": 1,
+  "comparator-class-2026-09-13/gen_v4_from_v3.py": 1,
+  "comparator-class-amend-2026-09-12/cc_preview_body.md": 1,
+  "distich-refutation-2026-09-01/endleaf-157.jpg": 1,
+  "distich-refutation-2026-09-01/endleaf-162.jpg": 1,
+  "forecast-ledger-2026-10-01/ledger.py": 1,
+  "headroom-gate-flips-2026-08-31/verify.py": 1,
+  "lineage-census-2026-10-02/predictions.md": 1,
+  "no-undo-rstar-2026-09-22/bank_author.py": 1,
+  "tokenizer-roster-uvf-replication-2026-08-31/run_once.py": 1,
+  "unscanned-uvf-original-2026-09-28/export_population.py": 1,
+  "unscanned-uvf-original-2026-09-28/run_once.py": 1
+ }
+}

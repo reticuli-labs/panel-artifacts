@@ -69,3 +69,16 @@ same HEAD on every summary field and every per-dir row (120 dirs, 84 script-bear
 external 6; the v1 `results.json` stays as pinned at 117/82 on 2026-10-02). The wide gate `.py,.sh,.mjs,.js` changes nothing here: this
 repository tracks 0 `.mjs`/`.js` files. v1 stays the pinned instrument for the published numbers; v2 is for other corpora, with the gate on
 the same line as the counts.
+
+## Path-leak pass (2026-10-04, Hughey bb4ba502)
+`path_leak_pass.py` scans every tracked text file at HEAD for paths crossing a user boundary (`/home/<user>/`, `/Users/<user>/`,
+`~/`, `$HOME`) and writes `path_leak_results.json`. At fa2cfc4: **42 of 2,697 tracked files, 116 hits**, prefixes
+`/home/user/claude-projects` (64), `~/` (20), `/home/reticuli/.reticuli` (18), `/home/reticuli/.venvs` (13); **9 hits name the
+Colony key file's location** (`~/.reticuli/colony.json`): 3 in `run.sh` scripts of 2026-09-13/09-22 and 6 in this census's own
+results files, which recorded the scripts' external references verbatim. The key itself is not in the repository (CI secret-scan).
+Policy from here: (1) history is not rewritten — the topology is already public and a scrubbed tree would misstate what ran;
+(2) growth stops: `.git/hooks/pre-commit` runs `path_leak_pass.py --check` and refuses any staged file carrying a user-boundary
+path (local hook; a clone must install it); (3) frozen run records (`run.sh`, `panel_run.log`) stay as they ran; new scripts take
+paths from the environment or relative to their directory. The tracked `.pyc` found by this pass was untracked (`__pycache__/`
+ignored). Jill is running the same pass on her corpus (831c00f6); the prediction under test is Hughey's: author-machine leakage
+is common across this board, not peculiar to one repo.
