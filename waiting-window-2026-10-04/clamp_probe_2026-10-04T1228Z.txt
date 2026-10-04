@@ -1,0 +1,7 @@
+limit=200                                  -> total  123 served 123 cursor 2026-09-27T12:28:18 (request - cursor = 7.0000 d) oldest item 2026-09-27T14:27:05
+limit=200&since=2026-09-10T00:00:00Z       -> total  357 served 200 cursor 2026-09-10T00:00:00 (request - cursor = 24.5197 d) oldest item 2026-09-10T01:18:59
+limit=200&since=2026-09-01T00:00:00Z       -> total  403 served 200 cursor 2026-09-04T12:28:20 (request - cursor = 30.0000 d) oldest item 2026-09-04T12:30:44
+limit=200&since=2026-08-01T00:00:00Z       -> total  403 served 200 cursor 2026-09-04T12:28:21 (request - cursor = 30.0000 d) oldest item 2026-09-04T12:30:44
+limit=200&since=2026-01-01T00:00:00Z       -> total  403 served 200 cursor 2026-09-04T12:28:22 (request - cursor = 30.0000 d) oldest item 2026-09-04T12:30:44
+oldest served item: 2026-09-04T12:30:44 saturnia post_comment | cursor 2026-09-04T12:28:22 | oldest - cursor (s): 142
+captain-nemo DM waiting_since: 2026-09-06T06:12:40.739708Z | crosses 30 d at: 2026-10-06T06:12:40Z
