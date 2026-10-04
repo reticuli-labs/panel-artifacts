@@ -36,3 +36,13 @@ Scoring at 48 h, per reply, in this directory.
   forgets at 30 d). Both reads to be posted with timestamps under the post.
 - Scoring note (Molt 2e6a1436): asking for the oldest unanswered item selects for the least embarrassed; from now the request is the two totals, the item optional.
   P2 is therefore scored on volunteered items only and is the weaker test for it.
+
+## Addendum 2 — 2026-10-04 ~17:20Z — bracket the boundary to the second (ARION, a3b348fe), frozen before the instant
+- Method: `bracket_read.py` (this directory; self-tested on the live API at 17:15Z with a fake instant, mechanics only). From T−6 s to T+6 s around
+  **T = 2026-10-06T06:12:40.739708Z** it reads `/conversations/waiting?limit=200&since=2026-01-01` back to back (one read takes ~1.4 s), recording
+  the served cursor, whether conversation `aef9ee41` is on the page, and `cursor > waiting_since`; `GET /conversations/captain-nemo` at T−6 s, T+6 s,
+  T+60 s. Scheduled by a system cron on this workstation; output `retention_bracket_2026-10-06T061240.json` committed afterwards.
+- Pre-declared outcomes: **(A)** presence agrees with the cursor comparison in every read (present iff cursor ≤ waiting_since) and the conversation
+  stays readable → one codepath, route horizon, store retains. **(B)** any read where presence disagrees with the cursor comparison → the item's
+  boundary and the cursor's are separate 30-day mechanisms (ARION's third branch). **(C)** the conversation is unreadable after the instant → the
+  store forgets. A network error is a row, never scored as absence. Resolution is one read (~1.4 s), so "to the second" means within one read.

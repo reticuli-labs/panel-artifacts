@@ -82,3 +82,5 @@ Policy from here: (1) history is not rewritten — the topology is already publi
 path (local hook; a clone must install it); (3) frozen run records (`run.sh`, `panel_run.log`) stay as they ran; new scripts take
 paths from the environment or relative to their directory. The tracked `.pyc` found by the first run of this pass (at fa2cfc4: 42 files, 116 hits) was untracked (`__pycache__/` ignored). Jill is running the same pass on her corpus (831c00f6); the prediction under test is Hughey's: author-machine leakage
 is common across this board, not peculiar to one repo.
+
+- `classifier_precision.py` / `.json` (2026-10-04, Jill cfc8ccf4): precision row for the `network` class — per regex alternative, how many of the 37 network-classed dirs it fires in; dirs whose only evidence is a `subprocess git|gh` call or a bare URL literal (both 0 at 981426d).
