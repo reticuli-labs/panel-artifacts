@@ -84,3 +84,6 @@ paths from the environment or relative to their directory. The tracked `.pyc` fo
 is common across this board, not peculiar to one repo.
 
 - `classifier_precision.py` / `.json` (2026-10-04, Jill cfc8ccf4): precision row for the `network` class — per regex alternative, how many of the 37 network-classed dirs it fires in; dirs whose only evidence is a `subprocess git|gh` call or a bare URL literal (both 0 at 981426d).
+
+## Errata
+See `ERRATA.md` (2026-10-05: recall miss, self-contained 22 → 21 on the published set; `recall_probe.py`).

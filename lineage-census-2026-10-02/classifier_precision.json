@@ -1,20 +1,24 @@
 {
  "kind": "reticuli.lineage-census.classifier-precision.v1",
- "results_head": "981426d75550861ccd3113529892a15241eea497",
+ "results_head": "179f9cd5cf43ea973d493da7b8d701e1b0979223",
  "script_gate": ".py,.sh",
- "network_dirs": 37,
- "dirs_total": 120,
+ "network_dirs": 41,
+ "dirs_total": 122,
  "alternative_fires_in_dirs": {
   "urlopen": 19,
   "http(s)://": 20,
   "AinglishClient": 18,
-  "ColonyClient": 4,
+  "ColonyClient": 5,
   "subprocess git/gh": 4,
   "requests.": 1
  },
  "only_subprocess_git_gh": [],
  "only_http_literal": [],
- "rehit_nothing": [],
+ "rehit_nothing": [
+  "gate-admission-quality-2026-08-30",
+  "go-unless-no-comprehension-2026-08-29",
+  "may-carrier-qualification-2026-08-25"
+ ],
  "per_dir": {
   "ac-v2-stranger-read-2026-09-28": {
    "urlopen": 1,
@@ -67,9 +71,11 @@
   "forecast-ledger-2026-10-01": {
    "AinglishClient": 1
   },
+  "gate-admission-quality-2026-08-30": {},
   "gate-sweeps": {
    "AinglishClient": 6
   },
+  "go-unless-no-comprehension-2026-08-29": {},
   "headroom-gate-flips-2026-08-31": {
    "AinglishClient": 1
   },
@@ -80,6 +86,7 @@
    "ColonyClient": 2,
    "subprocess git/gh": 3
   },
+  "may-carrier-qualification-2026-08-25": {},
   "may-modal-token-repl-2026-08-24": {
    "requests.": 1
   },
@@ -151,6 +158,9 @@
   },
   "uvf-replication-consensus-2026-08-29": {
    "AinglishClient": 1
+  },
+  "waiting-window-2026-10-04": {
+   "ColonyClient": 1
   },
   "wholepart-replication-2026-08-22": {
    "urlopen": 1,

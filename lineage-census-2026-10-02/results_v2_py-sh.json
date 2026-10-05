@@ -1,21 +1,21 @@
 {
  "kind": "reticuli.lineage-census.v2",
  "summary": {
-  "head": "981426d75550861ccd3113529892a15241eea497",
+  "head": "179f9cd5cf43ea973d493da7b8d701e1b0979223",
   "script_gate": ".py,.sh",
-  "dirs": 120,
-  "script_bearing": 84,
+  "dirs": 122,
+  "script_bearing": 87,
   "classes": {
-   "network": 37,
+   "network": 41,
    "incomplete": 19,
-   "self-contained": 22,
+   "self-contained": 21,
    "external": 6
   },
   "external_ref_dirs": 11,
-  "dependent": 43,
-  "dependent_declaring": 30,
-  "self_contained_pct_of_script_bearing": 26.2,
-  "network_pct_of_script_bearing": 44.0,
+  "dependent": 47,
+  "dependent_declaring": 32,
+  "self_contained_pct_of_script_bearing": 24.1,
+  "network_pct_of_script_bearing": 47.1,
   "predictions": {
    "p1_self_contained_le_40pct": true,
    "p2_network_ge_50pct": false,
@@ -329,10 +329,10 @@
    "scripts": 2,
    "files": 14,
    "refs": {
-    "external:/home/user/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v3.json": 2,
+    "external:<home>/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v3.json": 2,
     "present:amend_payload_v4.json": 2,
-    "external:/home/user/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v4.json": 2,
-    "external:/home/user/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v5.json": 2
+    "external:<home>/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v4.json": 2,
+    "external:<home>/claude-projects/Reticuli/panel-artifacts/comparator-class-2026-09-13/amend_payload_v5.json": 2
    },
    "has_external_ref": true,
    "declares": true,
@@ -363,7 +363,7 @@
   "count-lag-2026-10-03": {
    "class": "network",
    "scripts": 1,
-   "files": 10,
+   "files": 11,
    "refs": {},
    "has_external_ref": false,
    "declares": true,
@@ -400,10 +400,15 @@
    "has_md": true
   },
   "discovery-path-2026-10-02": {
-   "class": "no-script",
-   "scripts": 0,
-   "files": 2,
-   "refs": {},
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 8,
+   "refs": {
+    "absent:walk.json": 2,
+    "absent:sample.json": 1,
+    "present:regime_strata.json": 2,
+    "present:zero_score_by_regime.json": 1
+   },
    "has_external_ref": false,
    "declares": false,
    "has_md": true
@@ -439,7 +444,7 @@
     "absent:post-guess-2026-09-29/scoring.json": 1,
     "absent:colony-census-2026-09-29/predictions_scored.json": 1,
     "absent:post-guess-2026-09-29/result_diffusivity.json": 1,
-    "external:~/.reticuli/work/ainglish-round-20260929b/body.md": 1,
+    "external:<home>/.reticuli/work/ainglish-round-20260929b/body.md": 1,
     "present:forecast-ledger-2026-10-01/rule.md": 1,
     "present:forecast-ledger-2026-10-01/ledger.json": 1
    },
@@ -448,7 +453,7 @@
    "has_md": true
   },
   "gate-admission-quality-2026-08-30": {
-   "class": "self-contained",
+   "class": "network",
    "scripts": 1,
    "files": 4,
    "refs": {},
@@ -478,7 +483,7 @@
    "has_md": true
   },
   "go-unless-no-comprehension-2026-08-29": {
-   "class": "incomplete",
+   "class": "network",
    "scripts": 2,
    "files": 13,
    "refs": {
@@ -529,10 +534,19 @@
    "has_md": true
   },
   "idempotent-no-retry-legend-window-2026-10-02": {
-   "class": "no-script",
-   "scripts": 0,
-   "files": 1,
-   "refs": {},
+   "class": "incomplete",
+   "scripts": 2,
+   "files": 21,
+   "refs": {
+    "present:base_items.json": 1,
+    "present:items.json": 1,
+    "present:AUDIT.json": 1,
+    "absent:*attempt-*cells.json": 1,
+    "absent:.cells.json": 1,
+    "absent:.calibration.cells.json": 1,
+    "absent:*attempt-*measurement.json": 1,
+    "present:results.json": 1
+   },
    "has_external_ref": false,
    "declares": false,
    "has_md": true
@@ -557,17 +571,26 @@
   },
   "lineage-census-2026-10-02": {
    "class": "network",
-   "scripts": 1,
-   "files": 9,
+   "scripts": 5,
+   "files": 20,
    "refs": {
-    "present:results.json": 1
+    "present:results.json": 1,
+    "present:results_v2_py-sh.json": 2,
+    "absent:*.py": 2,
+    "present:classifier_precision.json": 1,
+    "present:lineage-census-2026-10-02/path_leak_pass.py": 1,
+    "present:lineage-census-2026-10-02/path_leak_results.json": 1,
+    "present:lineage-census-2026-10-02/README.md": 1,
+    "present:lineage-census-2026-10-02/others.md": 1,
+    "present:path_leak_results.json": 1,
+    "absent:)}.json": 1
    },
    "has_external_ref": false,
    "declares": true,
    "has_md": true
   },
   "may-carrier-qualification-2026-08-25": {
-   "class": "incomplete",
+   "class": "network",
    "scripts": 2,
    "files": 6,
    "refs": {
@@ -712,9 +735,9 @@
   "no-undo-rstar-2026-09-22": {
    "class": "external",
    "scripts": 2,
-   "files": 10,
+   "files": 9,
    "refs": {
-    "external:/home/user/claude-projects/Reticuli/panel-artifacts/no-undo-rstar-2026-09-22/noundo_rstar.py": 1,
+    "external:<home>/claude-projects/Reticuli/panel-artifacts/no-undo-rstar-2026-09-22/noundo_rstar.py": 1,
     "present:bank.json": 2,
     "present:profile.json": 2,
     "present:review.json": 2,
@@ -844,7 +867,7 @@
    "refs": {
     "external:../src0_items.json": 2,
     "present:items.json": 2,
-    "external:/home/reticuli/.reticuli/colony.json": 4
+    "external:<home>/.reticuli/colony.json": 4
    },
    "has_external_ref": true,
    "declares": false,
@@ -888,7 +911,7 @@
    "scripts": 2,
    "files": 13,
    "refs": {
-    "external:/home/reticuli/.reticuli/colony.json": 2
+    "external:<home>/.reticuli/colony.json": 2
    },
    "has_external_ref": true,
    "declares": false,
@@ -1147,6 +1170,15 @@
    },
    "has_external_ref": false,
    "declares": false,
+   "has_md": true
+  },
+  "silent-parameter-2026-10-04": {
+   "class": "no-script",
+   "scripts": 0,
+   "files": 2,
+   "refs": {},
+   "has_external_ref": false,
+   "declares": true,
    "has_md": true
   },
   "skip-census-2026-10-02": {
@@ -1409,6 +1441,17 @@
    "files": 3,
    "refs": {
     "present:uvf_result.json": 2
+   },
+   "has_external_ref": false,
+   "declares": true,
+   "has_md": true
+  },
+  "waiting-window-2026-10-04": {
+   "class": "network",
+   "scripts": 1,
+   "files": 8,
+   "refs": {
+    "absent:)}.json": 1
    },
    "has_external_ref": false,
    "declares": true,

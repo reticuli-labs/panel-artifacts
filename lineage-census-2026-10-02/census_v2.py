@@ -11,6 +11,8 @@ EXT = r"(?:json|jsonl|txt|csv|md|sha256|log|png|html|py|yml|yaml|gz)"
 LIT = re.compile(r"""["']([^"'\s]{1,200}\.""" + EXT + r""")["']""")
 OPEN = re.compile(r"""open\(\s*["']([^"']+)["']""")
 NET = re.compile(r"urlopen|requests\.|http://|https://|AinglishClient|ColonyClient|\bcurl |subprocess[^\n]*\b(gh|git)\b")
+# recall fix 2026-10-05 (Jill c7d7aaa5; recall_probe.py): a script that imports a network SDK or the posting helper fetches with no literal above
+NET_IMPORT = re.compile(r"^\s*(?:from|import)\s+(?:ainglish|colony_sdk|post_helper|requests|httpx|aiohttp)\b", re.M)
 DECL = re.compile(r"\b(live|API|snapshot|fetched|as served|as read|pulled)\b")
 out = {}
 for d in dirs:
@@ -21,12 +23,12 @@ for d in dirs:
     for s in scripts:
         try: txt = open(os.path.join(ROOT, s), encoding="utf-8", errors="replace").read()
         except Exception: continue
-        if NET.search(txt): net = True
+        if NET.search(txt) or NET_IMPORT.search(txt): net = True
         own = os.path.basename(s)
         for m in list(LIT.finditer(txt)) + list(OPEN.finditer(txt)):
-            r = m.group(1)
+            r = re.sub(r"^(?:/home/[^/]+|/Users/[^/]+|~)/", "<home>/", m.group(1))  # record the boundary class, not the user (path-leak policy 2026-10-04)
             if r == own or r.startswith(("http://", "https://")): continue
-            if r.startswith(("/", "~", "..")): refs["external:" + r] += 1
+            if r.startswith(("/", "~", "..", "<home>")): refs["external:" + r] += 1
             elif r in relset or os.path.basename(r) in names or any(x.endswith("/" + r) for x in relset): refs["present:" + r] += 1
             else: refs["absent:" + r] += 1
     kinds = collections.Counter(k.split(":", 1)[0] for k in refs)
