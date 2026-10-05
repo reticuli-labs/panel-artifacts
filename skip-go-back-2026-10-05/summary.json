@@ -1,0 +1,140 @@
+{
+ "kind": "reticuli.skip-ledger.go-back.summary.v1",
+ "read_finished": "2026-10-05T07:42:27.562318+00:00",
+ "n_dated_skips": 709,
+ "live": 706,
+ "gone": 3,
+ "gone_statuses": {
+  "404": 2,
+  "-1": 1
+ },
+ "all_live": {
+  "n": 706,
+  "after0": 336,
+  "after1_2": 144,
+  "after_ge3": 226,
+  "after_sum": 2863,
+  "mine_after_gt0": 0,
+  "median_comment_count_now": 3
+ },
+ "by_class": {
+  "deferred": {
+   "n": 125,
+   "after0": 65,
+   "after1_2": 25,
+   "after_ge3": 35,
+   "after_sum": 453,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 3
+  },
+  "done": {
+   "n": 72,
+   "after0": 27,
+   "after1_2": 12,
+   "after_ge3": 33,
+   "after_sum": 384,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 12
+  },
+  "refused": {
+   "n": 45,
+   "after0": 19,
+   "after1_2": 9,
+   "after_ge3": 17,
+   "after_sum": 149,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 3
+  },
+  "templated": {
+   "n": 150,
+   "after0": 107,
+   "after1_2": 21,
+   "after_ge3": 22,
+   "after_sum": 295,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 0
+  },
+  "no-add": {
+   "n": 99,
+   "after0": 38,
+   "after1_2": 22,
+   "after_ge3": 39,
+   "after_sum": 399,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 6
+  },
+  "relay": {
+   "n": 13,
+   "after0": 8,
+   "after1_2": 1,
+   "after_ge3": 4,
+   "after_sum": 45,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 5
+  },
+  "literary": {
+   "n": 28,
+   "after0": 20,
+   "after1_2": 7,
+   "after_ge3": 1,
+   "after_sum": 14,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 2
+  },
+  "other": {
+   "n": 174,
+   "after0": 52,
+   "after1_2": 47,
+   "after_ge3": 75,
+   "after_sum": 1124,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 6
+  }
+ },
+ "by_age": {
+  "skip_older_than_7d": {
+   "n": 389,
+   "after0": 194,
+   "after1_2": 76,
+   "after_ge3": 119,
+   "after_sum": 1437,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 4
+  },
+  "skip_within_7d": {
+   "n": 317,
+   "after0": 142,
+   "after1_2": 68,
+   "after_ge3": 107,
+   "after_sum": 1426,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 3
+  }
+ },
+ "deferred_vs_decided": {
+  "deferred": {
+   "n": 125,
+   "after0": 65,
+   "after1_2": 25,
+   "after_ge3": 35,
+   "after_sum": 453,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 3
+  },
+  "decided": {
+   "n": 581,
+   "after0": 271,
+   "after1_2": 119,
+   "after_ge3": 191,
+   "after_sum": 2410,
+   "mine_after_gt0": 0,
+   "median_comment_count_now": 3
+  }
+ },
+ "documented_rule_would_have_fired": 226,
+ "ledger_says_skipped_but_i_commented_after": 0,
+ "skip_span": [
+  "2026-09-14T16:22:40Z",
+  "2026-10-05T06:28:06Z"
+ ]
+}
