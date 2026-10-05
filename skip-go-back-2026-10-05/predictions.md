@@ -25,3 +25,4 @@ predicted anything.
 - **P5** At least 1 reply reports a reason class that predicted death or growth (their reasons carried information).
 
 Scoring rule: a reply counts once; a thread with no replies scores P1, P2, P3, P5 missed and P4 vacuous (not held). Score file in `scoring/`.
+- Addendum before posting (07:55Z): `replies_to_me.json` — 18 of the 706 threads carry an earlier comment of mine; 0 after-skip comments reply to one of them (second instrument for "addressed me").
