@@ -1,0 +1,76 @@
+{
+ "kind": "reticuli.waiting-window.cursor-offset-probe.v1",
+ "note": "cursor + 30 d compared with the client's wall clock before and after each request; inside_window means the server computed now()-30d at some instant within the request",
+ "probes": [
+  {
+   "t_before": "2026-10-05T06:16:10.423365+00:00",
+   "t_after": "2026-10-05T06:16:10.861425+00:00",
+   "cursor": "2026-09-05T06:16:10.556168Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "cursor_plus_30d_minus_t_before_s": 0.132803,
+   "cursor_plus_30d_minus_t_after_s": -0.305257,
+   "inside_window": true
+  },
+  {
+   "t_before": "2026-10-05T06:16:10.861462+00:00",
+   "t_after": "2026-10-05T06:16:11.266509+00:00",
+   "cursor": "2026-09-05T06:16:10.984081Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "cursor_plus_30d_minus_t_before_s": 0.122619,
+   "cursor_plus_30d_minus_t_after_s": -0.282428,
+   "inside_window": true
+  },
+  {
+   "t_before": "2026-10-05T06:16:11.266543+00:00",
+   "t_after": "2026-10-05T06:16:11.749420+00:00",
+   "cursor": "2026-09-05T06:16:11.380305Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "cursor_plus_30d_minus_t_before_s": 0.113762,
+   "cursor_plus_30d_minus_t_after_s": -0.369115,
+   "inside_window": true
+  },
+  {
+   "t_before": "2026-10-05T06:16:11.749452+00:00",
+   "t_after": "2026-10-05T06:16:12.129792+00:00",
+   "cursor": "2026-09-05T06:16:11.850086Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "cursor_plus_30d_minus_t_before_s": 0.100634,
+   "cursor_plus_30d_minus_t_after_s": -0.279706,
+   "inside_window": true
+  },
+  {
+   "t_before": "2026-10-05T06:16:12.129826+00:00",
+   "t_after": "2026-10-05T06:16:12.561938+00:00",
+   "cursor": "2026-09-05T06:16:12.239969Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "cursor_plus_30d_minus_t_before_s": 0.110143,
+   "cursor_plus_30d_minus_t_after_s": -0.321969,
+   "inside_window": true
+  }
+ ]
+}

@@ -1,0 +1,307 @@
+{
+ "kind": "reticuli.waiting-window.retention-bracket.v1",
+ "args": {
+  "instant": "2026-10-06T06:12:40.739708Z",
+  "conversation_id": "aef9ee41-0d6c-4ae8-ba14-a44a10877925",
+  "username": "captain-nemo",
+  "since": "2026-01-01T00:00:00Z",
+  "pre": 6.0,
+  "post": 6.0,
+  "step": 0.2,
+  "late": 60.0,
+  "out": null
+ },
+ "rows": [
+  {
+   "tag": "pre",
+   "kind": "conversation",
+   "t_before": "2026-10-06T06:12:34.739799Z",
+   "t_after": "2026-10-06T06:12:35.015046Z",
+   "readable": true,
+   "keys": [
+    "id",
+    "messages",
+    "other_user"
+   ],
+   "messages": 27,
+   "conversation_id_matches": true
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:35.015118Z",
+   "t_after": "2026-10-06T06:12:35.800385Z",
+   "cursor": "2026-09-06T06:12:35.123916Z",
+   "counts": {
+    "dm": 4,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 404
+   },
+   "page": 200,
+   "present": true,
+   "oldest_served": "2026-09-06T06:12:40.739708Z",
+   "cursor_minus_waiting_since_s": -5.615792,
+   "cursor_past_item": false
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:36.000616Z",
+   "t_after": "2026-10-06T06:12:36.644308Z",
+   "cursor": "2026-09-06T06:12:36.107893Z",
+   "counts": {
+    "dm": 4,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 404
+   },
+   "page": 200,
+   "present": true,
+   "oldest_served": "2026-09-06T06:12:40.739708Z",
+   "cursor_minus_waiting_since_s": -4.631815,
+   "cursor_past_item": false
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:36.844592Z",
+   "t_after": "2026-10-06T06:12:37.736338Z",
+   "cursor": "2026-09-06T06:12:37.141053Z",
+   "counts": {
+    "dm": 4,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 404
+   },
+   "page": 200,
+   "present": true,
+   "oldest_served": "2026-09-06T06:12:40.739708Z",
+   "cursor_minus_waiting_since_s": -3.598655,
+   "cursor_past_item": false
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:37.936610Z",
+   "t_after": "2026-10-06T06:12:38.579856Z",
+   "cursor": "2026-09-06T06:12:38.131960Z",
+   "counts": {
+    "dm": 4,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 404
+   },
+   "page": 200,
+   "present": true,
+   "oldest_served": "2026-09-06T06:12:40.739708Z",
+   "cursor_minus_waiting_since_s": -2.607748,
+   "cursor_past_item": false
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:38.780134Z",
+   "t_after": "2026-10-06T06:12:39.523904Z",
+   "cursor": "2026-09-06T06:12:38.879498Z",
+   "counts": {
+    "dm": 4,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 404
+   },
+   "page": 200,
+   "present": true,
+   "oldest_served": "2026-09-06T06:12:40.739708Z",
+   "cursor_minus_waiting_since_s": -1.86021,
+   "cursor_past_item": false
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:39.724190Z",
+   "t_after": "2026-10-06T06:12:40.384064Z",
+   "cursor": "2026-09-06T06:12:39.848132Z",
+   "counts": {
+    "dm": 4,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 404
+   },
+   "page": 200,
+   "present": true,
+   "oldest_served": "2026-09-06T06:12:40.739708Z",
+   "cursor_minus_waiting_since_s": -0.891576,
+   "cursor_past_item": false
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:40.584342Z",
+   "t_after": "2026-10-06T06:12:41.461057Z",
+   "cursor": "2026-09-06T06:12:40.766449Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "page": 200,
+   "present": false,
+   "oldest_served": "2026-09-06T06:14:35.147636Z",
+   "cursor_minus_waiting_since_s": 0.026741,
+   "cursor_past_item": true
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:41.661423Z",
+   "t_after": "2026-10-06T06:12:42.628345Z",
+   "cursor": "2026-09-06T06:12:41.936231Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "page": 200,
+   "present": false,
+   "oldest_served": "2026-09-06T06:14:35.147636Z",
+   "cursor_minus_waiting_since_s": 1.196523,
+   "cursor_past_item": true
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:42.828619Z",
+   "t_after": "2026-10-06T06:12:43.936017Z",
+   "cursor": "2026-09-06T06:12:43.078170Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "page": 200,
+   "present": false,
+   "oldest_served": "2026-09-06T06:14:35.147636Z",
+   "cursor_minus_waiting_since_s": 2.338462,
+   "cursor_past_item": true
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:44.136280Z",
+   "t_after": "2026-10-06T06:12:45.028986Z",
+   "cursor": "2026-09-06T06:12:44.463015Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "page": 200,
+   "present": false,
+   "oldest_served": "2026-09-06T06:14:35.147636Z",
+   "cursor_minus_waiting_since_s": 3.723307,
+   "cursor_past_item": true
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:45.229281Z",
+   "t_after": "2026-10-06T06:12:45.928932Z",
+   "cursor": "2026-09-06T06:12:45.388155Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "page": 200,
+   "present": false,
+   "oldest_served": "2026-09-06T06:14:35.147636Z",
+   "cursor_minus_waiting_since_s": 4.648447,
+   "cursor_past_item": true
+  },
+  {
+   "tag": "bracket",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:12:46.129203Z",
+   "t_after": "2026-10-06T06:12:47.124073Z",
+   "cursor": "2026-09-06T06:12:46.229855Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "page": 200,
+   "present": false,
+   "oldest_served": "2026-09-06T06:14:35.147636Z",
+   "cursor_minus_waiting_since_s": 5.490147,
+   "cursor_past_item": true
+  },
+  {
+   "tag": "post",
+   "kind": "conversation",
+   "t_before": "2026-10-06T06:12:47.324345Z",
+   "t_after": "2026-10-06T06:12:47.886784Z",
+   "readable": true,
+   "keys": [
+    "id",
+    "messages",
+    "other_user"
+   ],
+   "messages": 27,
+   "conversation_id_matches": true
+  },
+  {
+   "tag": "late",
+   "kind": "waiting",
+   "t_before": "2026-10-06T06:13:40.739906Z",
+   "t_after": "2026-10-06T06:13:41.212673Z",
+   "cursor": "2026-09-06T06:13:40.846408Z",
+   "counts": {
+    "dm": 3,
+    "comment_reply": 200,
+    "post_comment": 200,
+    "total": 403
+   },
+   "page": 200,
+   "present": false,
+   "oldest_served": "2026-09-06T06:14:35.147636Z",
+   "cursor_minus_waiting_since_s": 60.1067,
+   "cursor_past_item": true
+  },
+  {
+   "tag": "late",
+   "kind": "conversation",
+   "t_before": "2026-10-06T06:13:41.212825Z",
+   "t_after": "2026-10-06T06:13:41.438870Z",
+   "readable": true,
+   "keys": [
+    "id",
+    "messages",
+    "other_user"
+   ],
+   "messages": 27,
+   "conversation_id_matches": true
+  }
+ ],
+ "summary": {
+  "instant": "2026-10-06T06:12:40.739708Z",
+  "waiting_since": "2026-09-06T06:12:40.739708Z",
+  "waiting_reads": 13,
+  "errors": 0,
+  "last_present_t_after": "2026-10-06T06:12:40.384064Z",
+  "first_absent_t_before": "2026-10-06T06:12:40.584342Z",
+  "reads_where_presence_disagrees_with_cursor": [],
+  "conversation_readable": {
+   "pre": true,
+   "post": true,
+   "late": true
+  },
+  "outcome": "A"
+ }
+}
