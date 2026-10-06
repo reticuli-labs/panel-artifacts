@@ -1,0 +1,102 @@
+{
+ "verified_at": "2026-10-06T13:08:35.945Z",
+ "disclosure": "https://touchstone.cv/d/127123616a5c4b28a77567fb490bb883",
+ "verifier": "touchstone.cv/verifier.js (served copy, byte-identical to repo public/verifier.js at freeze)",
+ "result": {
+  "ok": true,
+  "edUnsupported": false,
+  "tier": "evidence",
+  "subject": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+  "recorder": "rec_01kvx7h58yy2z2hbdkza8387jv",
+  "entries": [
+   {
+    "seq": 0,
+    "type": "genesis",
+    "redacted": false,
+    "checks": [
+     {
+      "ok": true,
+      "msg": "entry_hash integrity"
+     },
+     {
+      "ok": true,
+      "msg": "genesis proof-of-possession"
+     },
+     {
+      "ok": true,
+      "msg": "merkle inclusion in checkpoint #5"
+     },
+     {
+      "ok": true,
+      "msg": "anchored (self, 2026-06-24T16:33:12Z) — server signature verified",
+      "info": true
+     },
+     {
+      "ok": true,
+      "msg": "OTS → Bitcoin block 955202 CLAIMED — not confirmed against mainnet here; verify the .ots with `ots verify`",
+      "info": true
+     }
+    ]
+   },
+   {
+    "seq": 1,
+    "type": "commitment",
+    "redacted": false,
+    "checks": [
+     {
+      "ok": true,
+      "msg": "entry_hash integrity"
+     },
+     {
+      "ok": true,
+      "msg": "actor signature (subject key)"
+     },
+     {
+      "ok": true,
+      "msg": "names counterparty 03d084e1-68c9-4061-8aa6-c578d2e12e04 (awaiting co-signature)",
+      "info": true
+     },
+     {
+      "ok": true,
+      "msg": "chain linkage to seq 0"
+     },
+     {
+      "ok": true,
+      "msg": "merkle inclusion in checkpoint #5"
+     },
+     {
+      "ok": true,
+      "msg": "anchored (self, 2026-06-24T16:33:12Z) — server signature verified",
+      "info": true
+     },
+     {
+      "ok": true,
+      "msg": "OTS → Bitcoin block 955202 CLAIMED — not confirmed against mainnet here; verify the .ots with `ots verify`",
+      "info": true
+     }
+    ]
+   }
+  ],
+  "checkpoints": [
+   {
+    "ok": true,
+    "info": true,
+    "msg": "attribution binds to the genesis key, which self-claims subject \"040b6f79-a867-46d4-8069-fd6143bd9e20\"; confirm that key at /.well-known/touchstone/pubkeys/040b6f79-a867-46d4-8069-fd6143bd9e20 — this bundle alone does not prove the subject→key binding"
+   },
+   {
+    "ok": true,
+    "msg": "checkpoint #5 root signed by Touchstone server"
+   },
+   {
+    "ok": true,
+    "info": true,
+    "msg": "checkpoint #5 mirrored to Nostr (event 1dd38f6729a3…, kind 1623); fetch from a relay and compare"
+   },
+   {
+    "ok": true,
+    "info": true,
+    "msg": "checkpoint #5 head claims Bitcoin block 955202 (server-asserted; this offline check does not confirm the .ots commits to that block) — fork tie-breaker once verified: of conflicting heads the lowest VERIFIED block wins. Confirm with `ots verify`, or gossip_check.py + ots_verify.py."
+   }
+  ]
+ }
+}
