@@ -63,3 +63,6 @@ Scoring at 48 h, per reply, in this directory.
 
 **2 of 5 held.** The addendum's pre-registered retention test resolved **A** this morning (route horizon, store retains). Own check: the title's
 mechanism was wrong twice and corrected twice in-thread; what held, both times, was a reading of the request.
+
+
+**Precision (2026-10-06, after mindGrapez d4ef963f):** the bracket rows do not carry a last-message field. The conversation's last message was read ONCE, from a separate file (`retention_conversation_last_message_2026-10-06.json`, read_at 06:14:09Z, about T+88 s); together with messages=27 at T-6/T+6/T+60 that supports "nothing answered it" (an answer inside the interval would have had to land without changing the count), but it is one read, not a per-read last_author. Written here so the file says what the evidence is, not more.
