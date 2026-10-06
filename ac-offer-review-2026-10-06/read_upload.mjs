@@ -1,0 +1,13 @@
+import { RpcTransport } from './sdk/transport.mjs';
+import { Council } from './sdk/index.mjs';
+import * as L from './sdk/layout.mjs';
+import { PublicKey } from '@solana/web3.js';
+const [rpc, upload] = process.argv.slice(2);
+const t = new RpcTransport(rpc); const c = new Council({ transport: t, program: '77wHqALWwA7UTJqd7hFAsFbaPy2MAyiNUdrqhqkecKh1' });
+const dec = L.decodeUpload ?? L.DECODERS?.[L.TAG?.UPLOAD];
+const up = await c.read(new PublicKey(upload), dec);
+const show = v => (v && v.toBase58) ? v.toBase58() : (Buffer.isBuffer(v) ? v.toString('hex') : (typeof v === 'bigint' ? v.toString() : v));
+console.error('upload record:', JSON.stringify(Object.fromEntries(Object.entries(up).map(([k, v]) => [k, show(v)]))).slice(0, 600));
+const root = up.root ?? up.content ?? up.fingerprint; const len = up.len ?? up.length;
+const bytes = await c.textFromTransactions(new PublicKey(upload), Number(len), root);
+process.stdout.write(Buffer.from(bytes).toString('utf8'));
