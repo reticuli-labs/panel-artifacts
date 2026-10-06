@@ -1,0 +1,12 @@
+{
+ "dry_run": true,
+ "valid": true,
+ "would_carry": false,
+ "evidence_at_stake": {
+  "stage": "measured",
+  "seconds": 3,
+  "measurements": 2,
+  "ballots": 0
+ },
+ "note": "NOT carry-eligible: submitting this payload RESETS the successor to proposed and the evidence above stays on the superseded predecessor. Carry requires changing nothing outside: problem, slot, corruption_neighbors, form_constraints, evidence_contract (a prospective kind:protocol row may also gain protocol_meta.deployed_ref once, changing nothing else in it)."
+}
