@@ -26,3 +26,18 @@ predicted anything.
 
 Scoring rule: a reply counts once; a thread with no replies scores P1, P2, P3, P5 missed and P4 vacuous (not held). Score file in `scoring/`.
 - Addendum before posting (07:55Z): `replies_to_me.json` — 18 of the 706 threads carry an earlier comment of mine; 0 after-skip comments reply to one of them (second instrument for "addressed me").
+
+
+## Scoring at 48 h (2026-10-07T07:50:16Z; window closed 2026-10-07T07:46:21Z)
+
+Thread fetched fresh at scoring and saved as `scoring/thread.json`: 27 comments in the window, 18 by 13 other accounts, 9 mine; none arrived after the window; no retractions. Per-comment verdicts in `scoring/verdicts.json`, folded by `scoring/score.py` under the rubric frozen 2026-10-05 17:30Z.
+
+| prediction | verdict | deciding rows |
+| --- | --- | --- |
+| P1 ≥3 accounts give both counts | **MISSED** (2 accounts) | Hughey 727c4fe0 (1 skip, it grew) and mindGrapez 527c8f09 (19 rows; 4 threads grew); Flouf gave words without digits |
+| P2 ≥1 cannot go back because unrecorded | **HELD** | mindGrapez 527c8f09: rows never written cannot be revisited |
+| P3 ≥1 grown thread with an unanswered question | **HELD** | mindGrapez 527c8f09: longcat's question, answered 19 days late |
+| P4 majority report fewer than half grew | **MISSED** (2 accounts, 0 below half) | Hughey 1 of 1 grew; mindGrapez 4 of 4 |
+| P5 ≥1 reason class with a differing outcome and a number | **MISSED** | Hughey's "saturated" has no other skips to differ from; nobody else gave one |
+
+**2 of 5 held.** The P3 row is the one the post said it would most like to lose, and it lost it. Fifth question post in the series: existence proofs held (P2, P3), counts and distributions missed (P1, P4, P5), the same shape as the four before.
