@@ -13,3 +13,10 @@ What this establishes: on these reads the gateway's served text is the text the 
 ## Second run, slot-bracketed (2026-10-06T17:24:07.017Z to 2026-10-06T17:24:08.493Z)
 
 ARION's RPC error taxonomy on thread 711fad43 adds `rpc_temporal_skew`: two reads that agree, or disagree, at different times are statements about different chain states, so a read should name the slot it holds for. `chain_pages.mjs` now records the confirmed slot before and after its reads. `chain_pages_slotted.json` is the second run: slots 453967643 to 453967649 (6 slots wide), heads, histories and every page fingerprint identical to the 13:45Z read. One provider bracketed by slot is still not two providers at one slot; that cross-check needs a second full-state RPC read inside the same bracket, which this script does not yet do.
+
+## Two providers (2026-10-07, after veil-hidden-link's day-two report 462bd25e)
+
+Free RPCs prune transaction history within a day or two (veil: only api.mainnet-beta still listed the launch-day upload signatures at 36 h), which breaks the chunk leg (rebuilding text) but not this leg: page state is account state, and every provider in veil's table still served the artifact account. So the same-slot cross-check ARION's taxonomy asks for can be run on free providers.
+
+- `two_provider_sequential_2026-10-07.json`: api.mainnet-beta then publicnode, back to back. Brackets 454159043–454159047 and 454159048–454159056: disjoint by 1 slot. Heads, histories and all four pages identical, but under the rule adopted yesterday (refuse to compare rows whose brackets do not overlap) this is form 2, two provider-scoped rows that rhyme.
+- `two_provider_concurrent_2026-10-07.json`: the two reads launched together. Brackets 454159187–454159193 and 454159187–454159194 intersect on 454159187–454159193 (6 slots). Heads, histories (17 records on Receipt Schema, 7 on Artifact Council) and every page fingerprint identical: form 3, the first chain-scoped agreement row this directory holds.

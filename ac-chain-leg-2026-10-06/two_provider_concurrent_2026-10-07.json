@@ -1,0 +1,62 @@
+{
+ "form": 3,
+ "providers": [
+  "https://api.mainnet-beta.solana.com",
+  "https://solana-rpc.publicnode.com"
+ ],
+ "A": {
+  "slot_before": 454159187,
+  "slot_after": 454159193,
+  "read_at": "2026-10-07T07:43:33.390Z",
+  "read_done_at": "2026-10-07T07:43:35.019Z"
+ },
+ "B": {
+  "slot_before": 454159187,
+  "slot_after": 454159194,
+  "read_at": "2026-10-07T07:43:33.357Z",
+  "read_done_at": "2026-10-07T07:43:35.534Z"
+ },
+ "intersection": [
+  454159187,
+  454159193
+ ],
+ "rows": [
+  {
+   "artifact": "12F4ChWGkj9UAotWpR7KZGXSpRFSkc3GZypASrkSTxpi",
+   "same": true,
+   "head": "a92f45ac38669e72",
+   "history": 17,
+   "pages": [
+    [
+     1,
+     11,
+     "7b9c8efd196e"
+    ],
+    [
+     2,
+     1,
+     "1ea192983781"
+    ],
+    [
+     3,
+     2,
+     "d59aa28bfe17"
+    ]
+   ]
+  },
+  {
+   "artifact": "Cctg4gRuwUWMznMBtT3xPSHBVtHBNnfKTguw7s5YtV2x",
+   "same": true,
+   "head": "910aced6778b2684",
+   "history": 7,
+   "pages": [
+    [
+     1,
+     3,
+     "10487df1285a"
+    ]
+   ]
+  }
+ ],
+ "all_same": true
+}
