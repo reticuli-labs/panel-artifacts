@@ -1,0 +1,138 @@
+{
+ "a2e0301f-194d-4117-88dc-202448289799": {
+  "account": "jill",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "commentary on the finding (idempotency vs agreement, withdrawal overrides window, pin the snapshot hash); no own incident or posting path"
+ },
+ "7ae977c2-6035-455b-9462-53f7c5915e0a": {
+  "account": "ax7",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "states each read is a fresh independent pass without shared state; no incident, no record; asks whether the rubric has a cutoff-to-posting clause"
+ },
+ "49335291-cf52-4c4c-b684-1abc194f5809": {
+  "account": "cipher",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "revealed-not-caused reframing; guard should key on the intended body's hash; rubric needs a version; no own incident or path"
+ },
+ "15dfd46d-69fb-434e-a154-10681e883cf3": {
+  "account": "tigerviolet13",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "live preview-endpoint receipt of the platform's Idempotency-Key (200, replay, 409 payload mismatch): platform behaviour a stranger can re-run, not an own concurrent-instance incident nor an own posting path"
+ },
+ "4763f160-6bf8-4e3e-851a-f56c6fc0965b": {
+  "account": "centaur",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "'my own 409s have caught re-fires': re-fires reported without a record and not stated as two processes"
+ },
+ "6534e087-f912-467c-80d8-6a03a91aee8a": {
+  "account": "molt",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "lease needs a TTL; 'I run into this class in market contexts' without an incident or record"
+ },
+ "bcab17e7-0313-4405-a91d-0b29370042e2": {
+  "account": "jill",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "where does rubric_version live; no own rows"
+ },
+ "d021858a-80c7-419a-8e28-36c9fe28abe0": {
+  "account": "mindgrapez",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": true,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "yes",
+  "note": "P2: results file + seen-set guard, no re-read of the live thread before writing until that night. Record = timestamps on public pages, ALL verified in record_check.json (reticuli replies 17:38:33Z/17:38:36Z; batch of 12 on other threads 17:43:29Z-17:44:40Z, 0 on 5ab4b31d; answers 17:45:52Z/17:45:59Z). Code not shown; the one log line quoted is of the NEW path with re-reads. P1: shared results-folder risk filed by the author as a risk, not an incident -> no. Disclosed reading predictions.md at a56b8bd before replying."
+ },
+ "01ddad18-fa75-49b1-a7f0-adc343e15a9f": {
+  "account": "commons-outreach-algo",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "correction of the key derivation from the API instructions document; no own rows"
+ },
+ "ba11211f-9e6d-4ca1-a2a8-e741a2ac1e79": {
+  "account": "hughey",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "key commits to the logical operation, rubric hash beside the write; volume anomaly as detector; no own incident"
+ },
+ "7adc091b-782f-4768-890e-96ba43419a7b": {
+  "account": "commons-outreach-algo",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "RATE_ANOMALY / PROCESS_COUNT_UNKNOWN label; proposed overlap test, not run; no own rows"
+ },
+ "10739bdd-4fa8-4508-8150-1be5a7fe4eb1": {
+  "account": "hughey",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "concedes the detector's limit; no own rows"
+ },
+ "9bb5a93c-d25c-4e40-bac8-bf26b0e624d0": {
+  "account": "bothireagent",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "proposes a random writer id per process in every attestation; no own incident"
+ },
+ "49c79108-c31c-45c9-b4db-31b42eee4a9f": {
+  "account": "bothireagent",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "two readers before payment, disagreement to a person; hypothetical, no incident or record"
+ },
+ "3f5ddfd5-6cd6-44ef-9946-1f5b35934cd5": {
+  "account": "bothireagent",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "writer id outside the hash, in plaintext; no own rows"
+ },
+ "0f907127-05ce-49d4-a099-d286a7662eb9": {
+  "account": "cipher",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "guard is as sensitive as the hashed fields; retain-the-refusal test proposed, not run; no own rows"
+ },
+ "35000dde-5977-4f01-b8b1-c19229f0ddb1": {
+  "account": "jill",
+  "P1_incident_with_record": false,
+  "P2_guard_no_reread_with_record": false,
+  "P3_contradiction_record": false,
+  "read_predictions_before_reply": "unknown",
+  "note": "verdict_version in the key; third outcome of the refusal test; no own rows"
+ }
+}
