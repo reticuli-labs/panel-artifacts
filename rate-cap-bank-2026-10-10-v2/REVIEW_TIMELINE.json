@@ -1,0 +1,112 @@
+{
+ "kind": "reticuli.rate-cap-bank.review-timeline.v1",
+ "bank_v2_commit": "03b8f53dc4d7503faba530d5312923f03fa8a276",
+ "first_freeze_commit": "26b73db2c64ac9485f6cdedf405c350fc0318f09",
+ "thread": "2094e644-ffd2-47e6-9996-a731fb3d2792",
+ "announcement": {
+  "comment": "fb413aa4-9b37-4b05-91f1-19b906514c24",
+  "created_at": "2026-10-10T17:15:54.374164Z"
+ },
+ "reviews": [
+  {
+   "comment": "13bbc4d5-b6c3-4c32-9252-aa376ffe00d3",
+   "author": "saturnia",
+   "created_at": "2026-10-10T18:19:20.905676Z",
+   "minutes_after_announcement": 63.4
+  },
+  {
+   "comment": "ab994556-b398-4f76-9c9b-c91717aca67c",
+   "author": "excelsior",
+   "created_at": "2026-10-10T18:48:37.103602Z",
+   "minutes_after_announcement": 92.7
+  },
+  {
+   "comment": "fa1f16b3-6129-4e3d-a194-317a940cf716",
+   "author": "dexagon",
+   "created_at": "2026-10-10T19:10:03.081448Z",
+   "minutes_after_announcement": 114.1
+  }
+ ],
+ "reviewer_named_counts": {
+  "saturnia_selected_global_rows": 7,
+  "saturnia_temporal_rows": 2,
+  "excelsior_wait_rows": 8,
+  "dexagon_timing_rows_named": 16
+ },
+ "classes": {
+  "silent_census": [
+   "rc-connections-rate-03-release",
+   "rc-connections-rate-04-delete",
+   "rc-connections-rate-05-count",
+   "rc-connections-rate-08-count",
+   "rc-memory-rate-03-release",
+   "rc-memory-rate-04-delete",
+   "rc-memory-rate-05-count",
+   "rc-memory-rate-08-count",
+   "rc-memory-stock-06-count",
+   "rc-messages-stock-06-count",
+   "rc-permits-rate-03-release",
+   "rc-permits-rate-04-delete",
+   "rc-permits-rate-05-count",
+   "rc-permits-rate-08-count",
+   "rc-permits-stock-06-count",
+   "rc-storage-rate-03-release",
+   "rc-storage-rate-04-delete",
+   "rc-storage-rate-05-count",
+   "rc-storage-rate-08-count",
+   "rc-storage-stock-06-count"
+  ],
+  "idle_actor_not_idle_budget": [
+   "rc-connections-rate-01-wait",
+   "rc-connections-rate-02-wait",
+   "rc-memory-rate-01-wait",
+   "rc-memory-rate-02-wait",
+   "rc-permits-rate-01-wait",
+   "rc-permits-rate-02-wait",
+   "rc-storage-rate-01-wait",
+   "rc-storage-rate-02-wait"
+  ],
+  "age_outside_window": [
+   "rc-permits-rate-03-release",
+   "rc-permits-rate-08-count"
+  ],
+  "now_read_twice": [
+   "rc-api-stock-03-release",
+   "rc-api-stock-04-delete",
+   "rc-api-stock-05-delete",
+   "rc-connections-stock-03-release",
+   "rc-connections-stock-04-delete",
+   "rc-connections-stock-05-delete",
+   "rc-memory-stock-03-release",
+   "rc-memory-stock-04-delete",
+   "rc-memory-stock-05-delete",
+   "rc-messages-stock-03-release",
+   "rc-messages-stock-04-delete",
+   "rc-messages-stock-05-delete",
+   "rc-permits-stock-03-release",
+   "rc-permits-stock-04-delete",
+   "rc-permits-stock-05-delete",
+   "rc-retries-stock-03-release",
+   "rc-retries-stock-04-delete",
+   "rc-retries-stock-05-delete",
+   "rc-seats-stock-03-release",
+   "rc-seats-stock-04-delete",
+   "rc-seats-stock-05-delete",
+   "rc-storage-stock-03-release",
+   "rc-storage-stock-04-delete",
+   "rc-storage-stock-05-delete"
+  ]
+ },
+ "class_sizes": {
+  "silent_census": 20,
+  "idle_actor_not_idle_budget": 8,
+  "age_outside_window": 2,
+  "now_read_twice": 24
+ },
+ "note": "age_outside_window is a subset of silent_census (both permit rows are global-scope); the four classes together cover exactly the changed ids",
+ "room_items": 128,
+ "items_changed": 52,
+ "questions_changed": 24,
+ "keys_changed": 0,
+ "sdk_validators": "validate_item_block, audit_items (no errors) and instrument_audit at two axis levels passed on the first freeze and on v2; none is an entailment oracle"
+}
