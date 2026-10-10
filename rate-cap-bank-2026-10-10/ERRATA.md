@@ -15,6 +15,6 @@ Row `a-xsxt32tpek5ptj91`, read on 2026-10-10 after both findings: two completed 
 ## What v2 changes (rules; the v2 generator refuses on any disagreement with them)
 
 - Ages for week windows are rendered in hours; every age inside a "preceding window" sentence is asserted strictly inside that window, and every deliberately aged-out event strictly outside it.
-- Every global-scope rate item that gives counts carries an explicit sentence closing the counted period to other actors; the two global wait items per domain carry "No other actor … during the coming window"; the global `stock-06-count` items say no other owner has a member in the set. Per-identity items are unchanged and remain the scope controls.
+- Every global-scope rate item that gives counts carries an explicit sentence closing the counted period to other actors; the two global wait items per domain carry "No other actor … during the coming window"; the global `stock-06-count` items say no other owner has a member in the set. The per-identity wait and census items are unchanged and remain the scope controls (the timing repair below applies to both scopes).
 - Stock release and delete items date their count at T0, immediately before the action, and ask only about T1, immediately after it (finding 4).
 - No key changes for any id. Every item whose rendered text or question changed is listed in v2's `CHANGES.json` with old and new lines.

@@ -5,7 +5,7 @@ Row `a-xsxt32tpek5ptj91`, claim carrier `comprehension_accuracy_delta` (protocol
 ## What changed and why (details in `plan.md`, final section, and `ERRATA.md` beside the first freeze)
 
 - Week-window ages are rendered in hours and every age is asserted strictly inside its window; the two permit rows whose ages ran past seven days are repaired.
-- Every global-scope rate item that gives counts closes the counted period to other actors in one sentence; the global wait items add that no other actor acts during the coming window; the global `stock-06-count` items say no other owner has a member in the set. Per-identity items are unchanged and remain the scope controls.
+- Every global-scope rate item that gives counts closes the counted period to other actors in one sentence; the global wait items add that no other actor acts during the coming window; the global `stock-06-count` items say no other owner has a member in the set. The per-identity wait and census items are unchanged and remain the scope controls; rule 6 below applies to both scopes, so 12 of the 24 re-dated stock rows are per-identity.
 - The stock release and delete items date their count at T0, immediately before the action, and ask only about T1, immediately after it, under a header that says so.
 - `keys.json` gains `scope_closure`; the guards check the rendered text against it.
 
