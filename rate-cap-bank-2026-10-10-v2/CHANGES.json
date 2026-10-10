@@ -1,0 +1,681 @@
+{
+ "v1_commit": "26b73db2c64ac9485f6cdedf405c350fc0318f09",
+ "v1_digests": {
+  "items_filed.json": "750be8a059f4fac39dc749e2d99cbae5007889240217e1654dd724c0879a3e62",
+  "items_bare.json": "12c205629f4d06b3382dc272f1a493064f904adda0272b11012b7a0755d27de6",
+  "items_permission.json": "2a05f82ce03994351175004517655a6c191218d26cafc571ec76a6361c7ec9ed",
+  "items_undisclosed.json": "74926123238118b64a9bd38941d1b90de6405ead7d7c20b0d61b69d7513d1e53",
+  "keys.json": "7b0c2d14e1745ebbda55a8320a2f914b133c88e632bde2517f660f5b747302d4"
+ },
+ "v2_digests": {
+  "items_filed.json": "3b131486f2c2974dcbf048605e1003882f78cbfbf87a98a704976133ee8f8bb2",
+  "items_bare.json": "adeaff29f3b6a0472c75a905def4b392a5a1851e625ad2388e863f7ad475b10a",
+  "items_permission.json": "9874dedc59ea518bd88c52a595507ed433516acd34e23251a670cf5939b735ef",
+  "items_undisclosed.json": "74926123238118b64a9bd38941d1b90de6405ead7d7c20b0d61b69d7513d1e53",
+  "keys.json": "8502bbb6e7c988138fb3062d61475935551565a4cc49b7da875d31177b3b09f0"
+ },
+ "changed": {
+  "items_filed.json": [
+   {
+    "id": "rc-storage-rate-01-wait",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a snapshot during the coming day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-02-wait",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a snapshot during the coming day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-03-release",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-04-delete",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-05-count",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than the backup agent and the archive agent took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-08-count",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-stock-06-count",
+    "facts_v1": [
+     "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set; no other owner has any snapshot in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-01-wait",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opens a connection during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-02-wait",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opens a connection during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-03-release",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-04-delete",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-05-count",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than worker A and worker B opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-08-count",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-messages-stock-06-count",
+    "facts_v1": [
+     "This sender has one message in the named set now; another sender has two messages in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "This sender has one message in the named set now; another sender has two messages in the same named set; no other owner has any message in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-01-wait",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor issues a permit during the coming week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-02-wait",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor issues a permit during the coming week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-03-release",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued eight permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days and 8 days."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued eight permits, aged 28 hours, 42 hours, 56 hours, 70 hours, 84 hours, 98 hours, 112 hours and 126 hours.",
+     "No other actor issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-04-delete",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued two permits, aged 1 day and 2 days.",
+     "Just now, this permit holder deleted an older permit that it issued last week; nothing else changed."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued two permits, aged 16 hours and 28 hours.",
+     "No other actor issued any permits in the preceding week.",
+     "Just now, this permit holder deleted an older permit that it issued last month; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-05-count",
+    "facts_v1": [
+     "This permit holder issued four permits: two of them 1 day and 2 days ago, and two of them 10 days and 14 days ago."
+    ],
+    "facts_v2": [
+     "This permit holder issued four permits: two of them 16 hours and 33 hours ago, and two of them 252 hours and 336 hours ago.",
+     "No actor other than this permit holder and another permit holder issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-08-count",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued ten permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 8 days, 9 days and 10 days."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued ten permits, aged 28 hours, 36 hours, 44 hours, 52 hours, 60 hours, 68 hours, 76 hours, 84 hours, 92 hours and 100 hours.",
+     "No other actor issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-stock-06-count",
+    "facts_v1": [
+     "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set; no other owner has any vehicle in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-01-wait",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a reservation during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-02-wait",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a reservation during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-03-release",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-04-delete",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-05-count",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than service S and service U took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-08-count",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-stock-06-count",
+    "facts_v1": [
+     "Service S has one reservation in the named set now; service U has two reservations in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "Service S has one reservation in the named set now; service U has two reservations in the same named set; no other owner has any reservation in that set. No membership changes."
+    ]
+   }
+  ],
+  "items_bare.json": [
+   {
+    "id": "rc-storage-rate-01-wait-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a snapshot during the coming day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-02-wait-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a snapshot during the coming day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-03-release-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-04-delete-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-05-count-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than the backup agent and the archive agent took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-08-count-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-stock-06-count-bare",
+    "facts_v1": [
+     "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set; no other owner has any snapshot in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-01-wait-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opens a connection during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-02-wait-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opens a connection during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-03-release-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-04-delete-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-05-count-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than worker A and worker B opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-08-count-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-messages-stock-06-count-bare",
+    "facts_v1": [
+     "This sender has one message in the named set now; another sender has two messages in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "This sender has one message in the named set now; another sender has two messages in the same named set; no other owner has any message in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-01-wait-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor issues a permit during the coming week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-02-wait-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor issues a permit during the coming week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-03-release-bare",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued eight permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days and 8 days."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued eight permits, aged 28 hours, 42 hours, 56 hours, 70 hours, 84 hours, 98 hours, 112 hours and 126 hours.",
+     "No other actor issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-04-delete-bare",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued two permits, aged 1 day and 2 days.",
+     "Just now, this permit holder deleted an older permit that it issued last week; nothing else changed."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued two permits, aged 16 hours and 28 hours.",
+     "No other actor issued any permits in the preceding week.",
+     "Just now, this permit holder deleted an older permit that it issued last month; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-05-count-bare",
+    "facts_v1": [
+     "This permit holder issued four permits: two of them 1 day and 2 days ago, and two of them 10 days and 14 days ago."
+    ],
+    "facts_v2": [
+     "This permit holder issued four permits: two of them 16 hours and 33 hours ago, and two of them 252 hours and 336 hours ago.",
+     "No actor other than this permit holder and another permit holder issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-08-count-bare",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued ten permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 8 days, 9 days and 10 days."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued ten permits, aged 28 hours, 36 hours, 44 hours, 52 hours, 60 hours, 68 hours, 76 hours, 84 hours, 92 hours and 100 hours.",
+     "No other actor issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-stock-06-count-bare",
+    "facts_v1": [
+     "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set; no other owner has any vehicle in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-01-wait-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a reservation during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-02-wait-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a reservation during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-03-release-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-04-delete-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-05-count-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than service S and service U took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-08-count-bare",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-stock-06-count-bare",
+    "facts_v1": [
+     "Service S has one reservation in the named set now; service U has two reservations in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "Service S has one reservation in the named set now; service U has two reservations in the same named set; no other owner has any reservation in that set. No membership changes."
+    ]
+   }
+  ],
+  "items_permission.json": [
+   {
+    "id": "rc-storage-rate-01-wait-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a snapshot during the coming day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-02-wait-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a snapshot during the coming day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-03-release-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-04-delete-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-05-count-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than the backup agent and the archive agent took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-rate-08-count-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any snapshots in the preceding day."
+    ]
+   },
+   {
+    "id": "rc-storage-stock-06-count-permission",
+    "facts_v1": [
+     "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set; no other owner has any snapshot in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-01-wait-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opens a connection during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-02-wait-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opens a connection during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-03-release-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-04-delete-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-05-count-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than worker A and worker B opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-rate-08-count-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-messages-stock-06-count-permission",
+    "facts_v1": [
+     "This sender has one message in the named set now; another sender has two messages in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "This sender has one message in the named set now; another sender has two messages in the same named set; no other owner has any message in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-01-wait-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor issues a permit during the coming week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-02-wait-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor issues a permit during the coming week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-03-release-permission",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued eight permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days and 8 days."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued eight permits, aged 28 hours, 42 hours, 56 hours, 70 hours, 84 hours, 98 hours, 112 hours and 126 hours.",
+     "No other actor issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-04-delete-permission",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued two permits, aged 1 day and 2 days.",
+     "Just now, this permit holder deleted an older permit that it issued last week; nothing else changed."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued two permits, aged 16 hours and 28 hours.",
+     "No other actor issued any permits in the preceding week.",
+     "Just now, this permit holder deleted an older permit that it issued last month; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-05-count-permission",
+    "facts_v1": [
+     "This permit holder issued four permits: two of them 1 day and 2 days ago, and two of them 10 days and 14 days ago."
+    ],
+    "facts_v2": [
+     "This permit holder issued four permits: two of them 16 hours and 33 hours ago, and two of them 252 hours and 336 hours ago.",
+     "No actor other than this permit holder and another permit holder issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-rate-08-count-permission",
+    "facts_v1": [
+     "In the preceding week, this permit holder issued ten permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 8 days, 9 days and 10 days."
+    ],
+    "facts_v2": [
+     "In the preceding week, this permit holder issued ten permits, aged 28 hours, 36 hours, 44 hours, 52 hours, 60 hours, 68 hours, 76 hours, 84 hours, 92 hours and 100 hours.",
+     "No other actor issued any permits in the preceding week."
+    ]
+   },
+   {
+    "id": "rc-permits-stock-06-count-permission",
+    "facts_v1": [
+     "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set; no other owner has any vehicle in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-01-wait-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a reservation during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-02-wait-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor takes a reservation during the coming minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-03-release-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-04-delete-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-05-count-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No actor other than service S and service U took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-rate-08-count-permission",
+    "facts_v1": [],
+    "facts_v2": [
+     "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-stock-06-count-permission",
+    "facts_v1": [
+     "Service S has one reservation in the named set now; service U has two reservations in the same named set. No membership changes."
+    ],
+    "facts_v2": [
+     "Service S has one reservation in the named set now; service U has two reservations in the same named set; no other owner has any reservation in that set. No membership changes."
+    ]
+   }
+  ],
+  "items_undisclosed.json": [],
+  "keys.json": []
+ }
+}

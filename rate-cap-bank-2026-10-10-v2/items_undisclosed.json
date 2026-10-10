@@ -1,0 +1,930 @@
+[
+ {
+  "id": "rc-api-undisclosed-rate",
+  "english": "Service note, API budget.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 5 requests.\nCounts below are as of now, before any further action.\nFive requests are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis client waits one hour and does nothing else.",
+  "ainglish": "Service note, API budget.\nA limit of 5 requests.\nCounts below are as of now, before any further action.\nFive requests are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis client waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for three more",
+   "No room for another",
+   "Room for four more",
+   "Room for one more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "api",
+  "semantic_frame": "undisclosed-rate"
+ },
+ {
+  "id": "rc-api-undisclosed-stock",
+  "english": "Service note, API budget.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 3 requests.\nCounts below are as of now, before any further action.\nThree requests are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis client waits one hour and does nothing else.",
+  "ainglish": "Service note, API budget.\nA limit of 3 requests.\nCounts below are as of now, before any further action.\nThree requests are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis client waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for one more",
+   "Room for the full allowance of three",
+   "No room for another",
+   "Room for two more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "api",
+  "semantic_frame": "undisclosed-stock"
+ },
+ {
+  "id": "rc-storage-undisclosed-rate",
+  "english": "Storage policy note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 5 snapshots.\nCounts below are as of now, before any further action.\nFive snapshots are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThe backup agent waits one hour and does nothing else.",
+  "ainglish": "Storage policy note.\nA limit of 5 snapshots.\nCounts below are as of now, before any further action.\nFive snapshots are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThe backup agent waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for the full allowance of five",
+   "Room for one more",
+   "Room for three more",
+   "Room for two more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "storage",
+  "semantic_frame": "undisclosed-rate"
+ },
+ {
+  "id": "rc-storage-undisclosed-stock",
+  "english": "Storage policy note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 3 snapshots.\nCounts below are as of now, before any further action.\nThree snapshots are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThe backup agent waits one hour and does nothing else.",
+  "ainglish": "Storage policy note.\nA limit of 3 snapshots.\nCounts below are as of now, before any further action.\nThree snapshots are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThe backup agent waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for one more",
+   "Room for the full allowance of three",
+   "No room for another",
+   "Room for two more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "storage",
+  "semantic_frame": "undisclosed-stock"
+ },
+ {
+  "id": "rc-seats-undisclosed-rate",
+  "english": "Licensing note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 5 activations.\nCounts below are as of now, before any further action.\nFive activations are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nTeam T waits one hour and does nothing else.",
+  "ainglish": "Licensing note.\nA limit of 5 activations.\nCounts below are as of now, before any further action.\nFive activations are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nTeam T waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for three more",
+   "Room for one more",
+   "Room for the full allowance of five",
+   "Room for two more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "seats",
+  "semantic_frame": "undisclosed-rate"
+ },
+ {
+  "id": "rc-seats-undisclosed-stock",
+  "english": "Licensing note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 3 seats.\nCounts below are as of now, before any further action.\nThree seats are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nTeam T waits one hour and does nothing else.",
+  "ainglish": "Licensing note.\nA limit of 3 seats.\nCounts below are as of now, before any further action.\nThree seats are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nTeam T waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for one more",
+   "No room for another",
+   "Room for two more",
+   "Room for the full allowance of three",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "seats",
+  "semantic_frame": "undisclosed-stock"
+ },
+ {
+  "id": "rc-connections-undisclosed-rate",
+  "english": "Connection pool note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 5 connections.\nCounts below are as of now, before any further action.\nFive connections are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nWorker A waits one hour and does nothing else.",
+  "ainglish": "Connection pool note.\nA limit of 5 connections.\nCounts below are as of now, before any further action.\nFive connections are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nWorker A waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for one more",
+   "Room for the full allowance of five",
+   "Room for four more",
+   "No room for another",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "connections",
+  "semantic_frame": "undisclosed-rate"
+ },
+ {
+  "id": "rc-connections-undisclosed-stock",
+  "english": "Connection pool note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 3 connections.\nCounts below are as of now, before any further action.\nThree connections are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nWorker A waits one hour and does nothing else.",
+  "ainglish": "Connection pool note.\nA limit of 3 connections.\nCounts below are as of now, before any further action.\nThree connections are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nWorker A waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for two more",
+   "Room for the full allowance of three",
+   "Room for one more",
+   "No room for another",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "connections",
+  "semantic_frame": "undisclosed-stock"
+ },
+ {
+  "id": "rc-messages-undisclosed-rate",
+  "english": "Messaging note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 5 messages.\nCounts below are as of now, before any further action.\nFive messages are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis sender waits one hour and does nothing else.",
+  "ainglish": "Messaging note.\nA limit of 5 messages.\nCounts below are as of now, before any further action.\nFive messages are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis sender waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for one more",
+   "No room for another",
+   "Room for two more",
+   "Room for three more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "messages",
+  "semantic_frame": "undisclosed-rate"
+ },
+ {
+  "id": "rc-messages-undisclosed-stock",
+  "english": "Messaging note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 3 messages.\nCounts below are as of now, before any further action.\nThree messages are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis sender waits one hour and does nothing else.",
+  "ainglish": "Messaging note.\nA limit of 3 messages.\nCounts below are as of now, before any further action.\nThree messages are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis sender waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for the full allowance of three",
+   "Room for two more",
+   "Room for one more",
+   "No room for another",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "messages",
+  "semantic_frame": "undisclosed-stock"
+ },
+ {
+  "id": "rc-permits-undisclosed-rate",
+  "english": "Parking office note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 5 permits.\nCounts below are as of now, before any further action.\nFive permits are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis permit holder waits one hour and does nothing else.",
+  "ainglish": "Parking office note.\nA limit of 5 permits.\nCounts below are as of now, before any further action.\nFive permits are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis permit holder waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for four more",
+   "Room for three more",
+   "Room for two more",
+   "No room for another",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "permits",
+  "semantic_frame": "undisclosed-rate"
+ },
+ {
+  "id": "rc-permits-undisclosed-stock",
+  "english": "Parking office note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 3 vehicles.\nCounts below are as of now, before any further action.\nThree vehicles are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis permit holder waits one hour and does nothing else.",
+  "ainglish": "Parking office note.\nA limit of 3 vehicles.\nCounts below are as of now, before any further action.\nThree vehicles are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nThis permit holder waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for two more",
+   "Room for the full allowance of three",
+   "No room for another",
+   "Room for one more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "permits",
+  "semantic_frame": "undisclosed-stock"
+ },
+ {
+  "id": "rc-retries-undisclosed-rate",
+  "english": "Retry policy note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 5 retries.\nCounts below are as of now, before any further action.\nFive retries are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nJob J waits one hour and does nothing else.",
+  "ainglish": "Retry policy note.\nA limit of 5 retries.\nCounts below are as of now, before any further action.\nFive retries are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nJob J waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for the full allowance of five",
+   "Room for one more",
+   "Room for three more",
+   "Room for two more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "retries",
+  "semantic_frame": "undisclosed-rate"
+ },
+ {
+  "id": "rc-retries-undisclosed-stock",
+  "english": "Retry policy note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 3 retries.\nCounts below are as of now, before any further action.\nThree retries are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nJob J waits one hour and does nothing else.",
+  "ainglish": "Retry policy note.\nA limit of 3 retries.\nCounts below are as of now, before any further action.\nThree retries are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nJob J waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "No room for another",
+   "Room for two more",
+   "Room for the full allowance of three",
+   "Room for one more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "retries",
+  "semantic_frame": "undisclosed-stock"
+ },
+ {
+  "id": "rc-memory-undisclosed-rate",
+  "english": "Memory reservation note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 5 reservations.\nCounts below are as of now, before any further action.\nFive reservations are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nService S waits one hour and does nothing else.",
+  "ainglish": "Memory reservation note.\nA limit of 5 reservations.\nCounts below are as of now, before any further action.\nFive reservations are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nService S waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for the full allowance of five",
+   "Room for two more",
+   "Room for three more",
+   "Room for four more",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "memory",
+  "semantic_frame": "undisclosed-rate"
+ },
+ {
+  "id": "rc-memory-undisclosed-stock",
+  "english": "Memory reservation note.\nRegister definition: Attach exactly one cap operator to a countable noun in a statement of a limit, quota, budget or allowance. `X rate-cap(N; W)` means at most N X may be created, performed or spent within the window W, and capacity returns as W passes, independent of what later happens to any earlier X; W is a bare period unit such as hour, day or 60m. A bare unit says how long the window is and nothing about how it is aligned: whether the count restarts at a clock boundary or slides is stated as a separate per-clock or per-any statement when it is load-bearing, and is never written inside the argument. Where no alignment statement accompanies a rate-cap, a reader treats boundary questions, such as whether two maximal bursts either side of an hour mark are both legal, as unknown rather than inferring an alignment from the unit. rate-cap says nothing about how many X may exist at once. `X stock-cap(N; S)` means at most N X belonging to the set S may exist or be held at one time, and capacity returns only when a member of S leaves it by being closed, released, deleted or consumed; the passage of time alone returns nothing, and stock-cap says nothing about how fast X may be created. S names the scope of the holding, for example `open proposals by this sub` or `pages of this artifact`, so per-identity versus global is carried by S, not by the marker. Both forms state a ceiling, not an entitlement, and neither says who enforces the limit, what happens on breach, or whether the cap can change. The discriminating question is one a reader can put to any limit: if the actor does nothing, does capacity come back? Yes is rate-cap; no is stock-cap. If a writer cannot answer that question, ask rather than guess. Bare `limit`, `quota` or `cap` remains legal where only one reading is possible or the distinction cannot affect an inference or action.\nA limit of 3 reservations.\nCounts below are as of now, before any further action.\nThree reservations are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nService S waits one hour and does nothing else.",
+  "ainglish": "Memory reservation note.\nA limit of 3 reservations.\nCounts below are as of now, before any further action.\nThree reservations are counted against the limit now. The source that stated the limit says nothing about whether, or when, room comes back.\nService S waits one hour and does nothing else.",
+  "question": "How much room is there under this limit after that hour?",
+  "options": [
+   "Room for the full allowance of three",
+   "Room for one more",
+   "Room for two more",
+   "No room for another",
+   "Cannot determine from the statement and the facts"
+  ],
+  "answer": "Cannot determine from the statement and the facts",
+  "settlement_stratum": "undisclosed",
+  "probe": "wait",
+  "domain": "memory",
+  "semantic_frame": "undisclosed-stock"
+ },
+ {
+  "id": "rc-calibration-01",
+  "calibration": true,
+  "english": "Bay-record-430: either Clerk-Ochre-69 or Clerk-Rust-69 is the responsible clerk; this has not been settled. Either Bay-Moss-31 or Bay-Umber-31 is the destination bay; this also has not been settled.",
+  "ainglish": "Bay-record-430: Clerk-Ochre-69, not Clerk-Rust-69, is the responsible clerk. Bay-Moss-31, not Bay-Umber-31, is the destination bay.",
+  "question": "Which complete clerk/bay assignment is established by this record?",
+  "options": [
+   "Clerk-Rust-69 / Bay-Umber-31",
+   "Clerk-Rust-69 / Bay-Moss-31",
+   "The record contradicts itself.",
+   "Clerk established; bay not established.",
+   "Clerk not established; bay established.",
+   "Clerk-Ochre-69 / Bay-Moss-31",
+   "Clerk-Ochre-69 / Bay-Umber-31",
+   "Neither is established."
+  ],
+  "answer": "Clerk-Ochre-69 / Bay-Moss-31",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-02",
+  "calibration": true,
+  "english": "Shelf-record-569: either Keeper-Moss-55 or Keeper-Teal-55 is the responsible keeper; this has not been settled. Either Shelf-Ochre-60 or Shelf-Sable-60 is the destination shelf; this also has not been settled.",
+  "ainglish": "Shelf-record-569: Keeper-Moss-55, not Keeper-Teal-55, is the responsible keeper. Shelf-Ochre-60, not Shelf-Sable-60, is the destination shelf.",
+  "question": "Which complete keeper/shelf assignment is established by this record?",
+  "options": [
+   "Neither is established.",
+   "Keeper-Moss-55 / Shelf-Ochre-60",
+   "Keeper-Moss-55 / Shelf-Sable-60",
+   "Keeper established; shelf not established.",
+   "The record contradicts itself.",
+   "Keeper not established; shelf established.",
+   "Keeper-Teal-55 / Shelf-Ochre-60",
+   "Keeper-Teal-55 / Shelf-Sable-60"
+  ],
+  "answer": "Keeper-Moss-55 / Shelf-Ochre-60",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-03",
+  "calibration": true,
+  "english": "Shelf-record-939: either Warden-Moss-27 or Warden-Ochre-27 is the responsible warden; this has not been settled. Either Shelf-Rust-61 or Shelf-Umber-61 is the destination shelf; this also has not been settled.",
+  "ainglish": "Shelf-record-939: Warden-Moss-27, not Warden-Ochre-27, is the responsible warden. Shelf-Rust-61, not Shelf-Umber-61, is the destination shelf.",
+  "question": "Which complete warden/shelf assignment is established by this record?",
+  "options": [
+   "Warden established; shelf not established.",
+   "Warden-Ochre-27 / Shelf-Umber-61",
+   "Warden not established; shelf established.",
+   "Neither is established.",
+   "The record contradicts itself.",
+   "Warden-Ochre-27 / Shelf-Rust-61",
+   "Warden-Moss-27 / Shelf-Umber-61",
+   "Warden-Moss-27 / Shelf-Rust-61"
+  ],
+  "answer": "Warden-Moss-27 / Shelf-Rust-61",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-04",
+  "calibration": true,
+  "english": "Shelf-record-153: either Clerk-Teal-47 or Clerk-Umber-47 is the responsible clerk; this has not been settled. Either Shelf-Moss-33 or Shelf-Rust-33 is the destination shelf; this also has not been settled.",
+  "ainglish": "Shelf-record-153: Clerk-Teal-47, not Clerk-Umber-47, is the responsible clerk. Shelf-Moss-33, not Shelf-Rust-33, is the destination shelf.",
+  "question": "Which complete clerk/shelf assignment is established by this record?",
+  "options": [
+   "Clerk-Umber-47 / Shelf-Rust-33",
+   "The record contradicts itself.",
+   "Neither is established.",
+   "Clerk established; shelf not established.",
+   "Clerk not established; shelf established.",
+   "Clerk-Umber-47 / Shelf-Moss-33",
+   "Clerk-Teal-47 / Shelf-Rust-33",
+   "Clerk-Teal-47 / Shelf-Moss-33"
+  ],
+  "answer": "Clerk-Teal-47 / Shelf-Moss-33",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-05",
+  "calibration": true,
+  "english": "Dock-record-797: either Auditor-Sable-55 or Auditor-Moss-55 is the responsible auditor; this has not been settled. Either Dock-Umber-62 or Dock-Ivory-62 is the destination dock; this also has not been settled.",
+  "ainglish": "Dock-record-797: Auditor-Sable-55, not Auditor-Moss-55, is the responsible auditor. Dock-Umber-62, not Dock-Ivory-62, is the destination dock.",
+  "question": "Which complete auditor/dock assignment is established by this record?",
+  "options": [
+   "Auditor-Moss-55 / Dock-Umber-62",
+   "Auditor not established; dock established.",
+   "Auditor-Moss-55 / Dock-Ivory-62",
+   "Neither is established.",
+   "The record contradicts itself.",
+   "Auditor-Sable-55 / Dock-Umber-62",
+   "Auditor-Sable-55 / Dock-Ivory-62",
+   "Auditor established; dock not established."
+  ],
+  "answer": "Auditor-Sable-55 / Dock-Umber-62",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-06",
+  "calibration": true,
+  "english": "Bay-record-758: either Clerk-Ochre-50 or Clerk-Plum-50 is the responsible clerk; this has not been settled. Either Bay-Ivory-68 or Bay-Rust-68 is the destination bay; this also has not been settled.",
+  "ainglish": "Bay-record-758: Clerk-Ochre-50, not Clerk-Plum-50, is the responsible clerk. Bay-Ivory-68, not Bay-Rust-68, is the destination bay.",
+  "question": "Which complete clerk/bay assignment is established by this record?",
+  "options": [
+   "Clerk-Plum-50 / Bay-Rust-68",
+   "Clerk not established; bay established.",
+   "The record contradicts itself.",
+   "Clerk-Plum-50 / Bay-Ivory-68",
+   "Clerk-Ochre-50 / Bay-Ivory-68",
+   "Clerk established; bay not established.",
+   "Neither is established.",
+   "Clerk-Ochre-50 / Bay-Rust-68"
+  ],
+  "answer": "Clerk-Ochre-50 / Bay-Ivory-68",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-07",
+  "calibration": true,
+  "english": "Bay-record-869: either Steward-Rust-95 or Steward-Plum-95 is the responsible steward; this has not been settled. Either Bay-Umber-77 or Bay-Ochre-77 is the destination bay; this also has not been settled.",
+  "ainglish": "Bay-record-869: Steward-Rust-95, not Steward-Plum-95, is the responsible steward. Bay-Umber-77, not Bay-Ochre-77, is the destination bay.",
+  "question": "Which complete steward/bay assignment is established by this record?",
+  "options": [
+   "Steward-Plum-95 / Bay-Umber-77",
+   "Neither is established.",
+   "Steward-Rust-95 / Bay-Ochre-77",
+   "Steward-Plum-95 / Bay-Ochre-77",
+   "Steward established; bay not established.",
+   "The record contradicts itself.",
+   "Steward not established; bay established.",
+   "Steward-Rust-95 / Bay-Umber-77"
+  ],
+  "answer": "Steward-Rust-95 / Bay-Umber-77",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-08",
+  "calibration": true,
+  "english": "Bay-record-628: either Marshal-Plum-14 or Marshal-Teal-14 is the responsible marshal; this has not been settled. Either Bay-Umber-66 or Bay-Sable-66 is the destination bay; this also has not been settled.",
+  "ainglish": "Bay-record-628: Marshal-Plum-14, not Marshal-Teal-14, is the responsible marshal. Bay-Umber-66, not Bay-Sable-66, is the destination bay.",
+  "question": "Which complete marshal/bay assignment is established by this record?",
+  "options": [
+   "Marshal-Plum-14 / Bay-Sable-66",
+   "Marshal-Teal-14 / Bay-Umber-66",
+   "The record contradicts itself.",
+   "Marshal-Teal-14 / Bay-Sable-66",
+   "Marshal-Plum-14 / Bay-Umber-66",
+   "Neither is established.",
+   "Marshal established; bay not established.",
+   "Marshal not established; bay established."
+  ],
+  "answer": "Marshal-Plum-14 / Bay-Umber-66",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-09",
+  "calibration": true,
+  "english": "Vault-record-685: either Steward-Rust-11 or Steward-Teal-11 is the responsible steward; this has not been settled. Either Vault-Umber-41 or Vault-Ivory-41 is the destination vault; this also has not been settled.",
+  "ainglish": "Vault-record-685: Steward-Rust-11, not Steward-Teal-11, is the responsible steward. Vault-Umber-41, not Vault-Ivory-41, is the destination vault.",
+  "question": "Which complete steward/vault assignment is established by this record?",
+  "options": [
+   "Steward-Rust-11 / Vault-Umber-41",
+   "Neither is established.",
+   "Steward-Rust-11 / Vault-Ivory-41",
+   "Steward not established; vault established.",
+   "Steward established; vault not established.",
+   "Steward-Teal-11 / Vault-Umber-41",
+   "The record contradicts itself.",
+   "Steward-Teal-11 / Vault-Ivory-41"
+  ],
+  "answer": "Steward-Rust-11 / Vault-Umber-41",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-10",
+  "calibration": true,
+  "english": "Vault-record-209: either Clerk-Moss-84 or Clerk-Teal-84 is the responsible clerk; this has not been settled. Either Vault-Plum-49 or Vault-Umber-49 is the destination vault; this also has not been settled.",
+  "ainglish": "Vault-record-209: Clerk-Moss-84, not Clerk-Teal-84, is the responsible clerk. Vault-Plum-49, not Vault-Umber-49, is the destination vault.",
+  "question": "Which complete clerk/vault assignment is established by this record?",
+  "options": [
+   "The record contradicts itself.",
+   "Clerk not established; vault established.",
+   "Clerk-Moss-84 / Vault-Plum-49",
+   "Clerk-Teal-84 / Vault-Plum-49",
+   "Clerk-Teal-84 / Vault-Umber-49",
+   "Clerk established; vault not established.",
+   "Neither is established.",
+   "Clerk-Moss-84 / Vault-Umber-49"
+  ],
+  "answer": "Clerk-Moss-84 / Vault-Plum-49",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-11",
+  "calibration": true,
+  "english": "Dock-record-723: either Keeper-Ochre-21 or Keeper-Rust-21 is the responsible keeper; this has not been settled. Either Dock-Ivory-21 or Dock-Umber-21 is the destination dock; this also has not been settled.",
+  "ainglish": "Dock-record-723: Keeper-Ochre-21, not Keeper-Rust-21, is the responsible keeper. Dock-Ivory-21, not Dock-Umber-21, is the destination dock.",
+  "question": "Which complete keeper/dock assignment is established by this record?",
+  "options": [
+   "Neither is established.",
+   "Keeper-Ochre-21 / Dock-Umber-21",
+   "Keeper-Rust-21 / Dock-Umber-21",
+   "Keeper not established; dock established.",
+   "Keeper established; dock not established.",
+   "Keeper-Rust-21 / Dock-Ivory-21",
+   "The record contradicts itself.",
+   "Keeper-Ochre-21 / Dock-Ivory-21"
+  ],
+  "answer": "Keeper-Ochre-21 / Dock-Ivory-21",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-12",
+  "calibration": true,
+  "english": "Dock-record-943: either Keeper-Moss-62 or Keeper-Rust-62 is the responsible keeper; this has not been settled. Either Dock-Plum-85 or Dock-Umber-85 is the destination dock; this also has not been settled.",
+  "ainglish": "Dock-record-943: Keeper-Moss-62, not Keeper-Rust-62, is the responsible keeper. Dock-Plum-85, not Dock-Umber-85, is the destination dock.",
+  "question": "Which complete keeper/dock assignment is established by this record?",
+  "options": [
+   "Keeper-Rust-62 / Dock-Umber-85",
+   "Keeper established; dock not established.",
+   "Keeper-Rust-62 / Dock-Plum-85",
+   "Keeper-Moss-62 / Dock-Umber-85",
+   "Keeper-Moss-62 / Dock-Plum-85",
+   "The record contradicts itself.",
+   "Neither is established.",
+   "Keeper not established; dock established."
+  ],
+  "answer": "Keeper-Moss-62 / Dock-Plum-85",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-13",
+  "calibration": true,
+  "english": "Dock-record-953: either Auditor-Teal-73 or Auditor-Sable-73 is the responsible auditor; this has not been settled. Either Dock-Umber-67 or Dock-Rust-67 is the destination dock; this also has not been settled.",
+  "ainglish": "Dock-record-953: Auditor-Teal-73, not Auditor-Sable-73, is the responsible auditor. Dock-Umber-67, not Dock-Rust-67, is the destination dock.",
+  "question": "Which complete auditor/dock assignment is established by this record?",
+  "options": [
+   "The record contradicts itself.",
+   "Auditor-Sable-73 / Dock-Umber-67",
+   "Auditor-Teal-73 / Dock-Umber-67",
+   "Auditor not established; dock established.",
+   "Neither is established.",
+   "Auditor-Sable-73 / Dock-Rust-67",
+   "Auditor-Teal-73 / Dock-Rust-67",
+   "Auditor established; dock not established."
+  ],
+  "answer": "Auditor-Teal-73 / Dock-Umber-67",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-14",
+  "calibration": true,
+  "english": "Bay-record-296: either Warden-Sable-97 or Warden-Ivory-97 is the responsible warden; this has not been settled. Either Bay-Umber-79 or Bay-Rust-79 is the destination bay; this also has not been settled.",
+  "ainglish": "Bay-record-296: Warden-Sable-97, not Warden-Ivory-97, is the responsible warden. Bay-Umber-79, not Bay-Rust-79, is the destination bay.",
+  "question": "Which complete warden/bay assignment is established by this record?",
+  "options": [
+   "Warden not established; bay established.",
+   "Neither is established.",
+   "Warden-Ivory-97 / Bay-Rust-79",
+   "Warden-Sable-97 / Bay-Umber-79",
+   "Warden established; bay not established.",
+   "The record contradicts itself.",
+   "Warden-Sable-97 / Bay-Rust-79",
+   "Warden-Ivory-97 / Bay-Umber-79"
+  ],
+  "answer": "Warden-Sable-97 / Bay-Umber-79",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-15",
+  "calibration": true,
+  "english": "Loft-record-900: either Keeper-Ochre-66 or Keeper-Plum-66 is the responsible keeper; this has not been settled. Either Loft-Moss-62 or Loft-Sable-62 is the destination loft; this also has not been settled.",
+  "ainglish": "Loft-record-900: Keeper-Ochre-66, not Keeper-Plum-66, is the responsible keeper. Loft-Moss-62, not Loft-Sable-62, is the destination loft.",
+  "question": "Which complete keeper/loft assignment is established by this record?",
+  "options": [
+   "Keeper established; loft not established.",
+   "The record contradicts itself.",
+   "Keeper-Plum-66 / Loft-Sable-62",
+   "Keeper-Ochre-66 / Loft-Moss-62",
+   "Neither is established.",
+   "Keeper not established; loft established.",
+   "Keeper-Ochre-66 / Loft-Sable-62",
+   "Keeper-Plum-66 / Loft-Moss-62"
+  ],
+  "answer": "Keeper-Ochre-66 / Loft-Moss-62",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-16",
+  "calibration": true,
+  "english": "Shelf-record-248: either Auditor-Teal-22 or Auditor-Rust-22 is the responsible auditor; this has not been settled. Either Shelf-Moss-72 or Shelf-Umber-72 is the destination shelf; this also has not been settled.",
+  "ainglish": "Shelf-record-248: Auditor-Teal-22, not Auditor-Rust-22, is the responsible auditor. Shelf-Moss-72, not Shelf-Umber-72, is the destination shelf.",
+  "question": "Which complete auditor/shelf assignment is established by this record?",
+  "options": [
+   "Auditor-Rust-22 / Shelf-Moss-72",
+   "Auditor-Teal-22 / Shelf-Moss-72",
+   "The record contradicts itself.",
+   "Auditor not established; shelf established.",
+   "Neither is established.",
+   "Auditor-Rust-22 / Shelf-Umber-72",
+   "Auditor-Teal-22 / Shelf-Umber-72",
+   "Auditor established; shelf not established."
+  ],
+  "answer": "Auditor-Teal-22 / Shelf-Moss-72",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-17",
+  "calibration": true,
+  "english": "Bay-record-246: either Warden-Teal-85 or Warden-Moss-85 is the responsible warden; this has not been settled. Either Bay-Plum-45 or Bay-Sable-45 is the destination bay; this also has not been settled.",
+  "ainglish": "Bay-record-246: Warden-Teal-85, not Warden-Moss-85, is the responsible warden. Bay-Plum-45, not Bay-Sable-45, is the destination bay.",
+  "question": "Which complete warden/bay assignment is established by this record?",
+  "options": [
+   "The record contradicts itself.",
+   "Warden established; bay not established.",
+   "Warden not established; bay established.",
+   "Neither is established.",
+   "Warden-Moss-85 / Bay-Sable-45",
+   "Warden-Moss-85 / Bay-Plum-45",
+   "Warden-Teal-85 / Bay-Plum-45",
+   "Warden-Teal-85 / Bay-Sable-45"
+  ],
+  "answer": "Warden-Teal-85 / Bay-Plum-45",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-18",
+  "calibration": true,
+  "english": "Rack-record-827: either Auditor-Sable-80 or Auditor-Teal-80 is the responsible auditor; this has not been settled. Either Rack-Rust-74 or Rack-Ochre-74 is the destination rack; this also has not been settled.",
+  "ainglish": "Rack-record-827: Auditor-Sable-80, not Auditor-Teal-80, is the responsible auditor. Rack-Rust-74, not Rack-Ochre-74, is the destination rack.",
+  "question": "Which complete auditor/rack assignment is established by this record?",
+  "options": [
+   "Auditor-Teal-80 / Rack-Ochre-74",
+   "Auditor not established; rack established.",
+   "The record contradicts itself.",
+   "Neither is established.",
+   "Auditor-Sable-80 / Rack-Rust-74",
+   "Auditor established; rack not established.",
+   "Auditor-Sable-80 / Rack-Ochre-74",
+   "Auditor-Teal-80 / Rack-Rust-74"
+  ],
+  "answer": "Auditor-Sable-80 / Rack-Rust-74",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-19",
+  "calibration": true,
+  "english": "Shelf-record-474: either Warden-Ochre-70 or Warden-Teal-70 is the responsible warden; this has not been settled. Either Shelf-Rust-49 or Shelf-Sable-49 is the destination shelf; this also has not been settled.",
+  "ainglish": "Shelf-record-474: Warden-Ochre-70, not Warden-Teal-70, is the responsible warden. Shelf-Rust-49, not Shelf-Sable-49, is the destination shelf.",
+  "question": "Which complete warden/shelf assignment is established by this record?",
+  "options": [
+   "Warden established; shelf not established.",
+   "The record contradicts itself.",
+   "Warden not established; shelf established.",
+   "Warden-Ochre-70 / Shelf-Sable-49",
+   "Warden-Ochre-70 / Shelf-Rust-49",
+   "Warden-Teal-70 / Shelf-Rust-49",
+   "Neither is established.",
+   "Warden-Teal-70 / Shelf-Sable-49"
+  ],
+  "answer": "Warden-Ochre-70 / Shelf-Rust-49",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-20",
+  "calibration": true,
+  "english": "Vault-record-791: either Clerk-Teal-69 or Clerk-Sable-69 is the responsible clerk; this has not been settled. Either Vault-Ochre-47 or Vault-Umber-47 is the destination vault; this also has not been settled.",
+  "ainglish": "Vault-record-791: Clerk-Teal-69, not Clerk-Sable-69, is the responsible clerk. Vault-Ochre-47, not Vault-Umber-47, is the destination vault.",
+  "question": "Which complete clerk/vault assignment is established by this record?",
+  "options": [
+   "Clerk not established; vault established.",
+   "Clerk-Teal-69 / Vault-Umber-47",
+   "Neither is established.",
+   "The record contradicts itself.",
+   "Clerk-Teal-69 / Vault-Ochre-47",
+   "Clerk established; vault not established.",
+   "Clerk-Sable-69 / Vault-Umber-47",
+   "Clerk-Sable-69 / Vault-Ochre-47"
+  ],
+  "answer": "Clerk-Teal-69 / Vault-Ochre-47",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-21",
+  "calibration": true,
+  "english": "Dock-record-229: either Clerk-Plum-10 or Clerk-Ochre-10 is the responsible clerk; this has not been settled. Either Dock-Teal-81 or Dock-Sable-81 is the destination dock; this also has not been settled.",
+  "ainglish": "Dock-record-229: Clerk-Plum-10, not Clerk-Ochre-10, is the responsible clerk. Dock-Teal-81, not Dock-Sable-81, is the destination dock.",
+  "question": "Which complete clerk/dock assignment is established by this record?",
+  "options": [
+   "Clerk-Plum-10 / Dock-Sable-81",
+   "Clerk not established; dock established.",
+   "Clerk-Ochre-10 / Dock-Sable-81",
+   "Clerk-Ochre-10 / Dock-Teal-81",
+   "Neither is established.",
+   "Clerk established; dock not established.",
+   "Clerk-Plum-10 / Dock-Teal-81",
+   "The record contradicts itself."
+  ],
+  "answer": "Clerk-Plum-10 / Dock-Teal-81",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-22",
+  "calibration": true,
+  "english": "Rack-record-414: either Warden-Moss-89 or Warden-Umber-89 is the responsible warden; this has not been settled. Either Rack-Ivory-92 or Rack-Teal-92 is the destination rack; this also has not been settled.",
+  "ainglish": "Rack-record-414: Warden-Moss-89, not Warden-Umber-89, is the responsible warden. Rack-Ivory-92, not Rack-Teal-92, is the destination rack.",
+  "question": "Which complete warden/rack assignment is established by this record?",
+  "options": [
+   "Warden-Moss-89 / Rack-Ivory-92",
+   "Warden-Umber-89 / Rack-Teal-92",
+   "Warden-Moss-89 / Rack-Teal-92",
+   "Neither is established.",
+   "Warden not established; rack established.",
+   "The record contradicts itself.",
+   "Warden-Umber-89 / Rack-Ivory-92",
+   "Warden established; rack not established."
+  ],
+  "answer": "Warden-Moss-89 / Rack-Ivory-92",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-23",
+  "calibration": true,
+  "english": "Dock-record-705: either Warden-Teal-30 or Warden-Moss-30 is the responsible warden; this has not been settled. Either Dock-Umber-50 or Dock-Plum-50 is the destination dock; this also has not been settled.",
+  "ainglish": "Dock-record-705: Warden-Teal-30, not Warden-Moss-30, is the responsible warden. Dock-Umber-50, not Dock-Plum-50, is the destination dock.",
+  "question": "Which complete warden/dock assignment is established by this record?",
+  "options": [
+   "Warden established; dock not established.",
+   "Warden-Moss-30 / Dock-Umber-50",
+   "Warden not established; dock established.",
+   "Warden-Teal-30 / Dock-Plum-50",
+   "Neither is established.",
+   "Warden-Moss-30 / Dock-Plum-50",
+   "Warden-Teal-30 / Dock-Umber-50",
+   "The record contradicts itself."
+  ],
+  "answer": "Warden-Teal-30 / Dock-Umber-50",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-24",
+  "calibration": true,
+  "english": "Shelf-record-636: either Warden-Teal-92 or Warden-Umber-92 is the responsible warden; this has not been settled. Either Shelf-Sable-51 or Shelf-Moss-51 is the destination shelf; this also has not been settled.",
+  "ainglish": "Shelf-record-636: Warden-Teal-92, not Warden-Umber-92, is the responsible warden. Shelf-Sable-51, not Shelf-Moss-51, is the destination shelf.",
+  "question": "Which complete warden/shelf assignment is established by this record?",
+  "options": [
+   "Warden-Teal-92 / Shelf-Moss-51",
+   "The record contradicts itself.",
+   "Warden-Umber-92 / Shelf-Moss-51",
+   "Warden not established; shelf established.",
+   "Warden established; shelf not established.",
+   "Warden-Teal-92 / Shelf-Sable-51",
+   "Warden-Umber-92 / Shelf-Sable-51",
+   "Neither is established."
+  ],
+  "answer": "Warden-Teal-92 / Shelf-Sable-51",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-25",
+  "calibration": true,
+  "english": "Vault-record-737: either Clerk-Teal-91 or Clerk-Moss-91 is the responsible clerk; this has not been settled. Either Vault-Ochre-70 or Vault-Sable-70 is the destination vault; this also has not been settled.",
+  "ainglish": "Vault-record-737: Clerk-Teal-91, not Clerk-Moss-91, is the responsible clerk. Vault-Ochre-70, not Vault-Sable-70, is the destination vault.",
+  "question": "Which complete clerk/vault assignment is established by this record?",
+  "options": [
+   "Clerk-Moss-91 / Vault-Sable-70",
+   "Clerk not established; vault established.",
+   "Clerk-Teal-91 / Vault-Sable-70",
+   "Clerk established; vault not established.",
+   "The record contradicts itself.",
+   "Clerk-Teal-91 / Vault-Ochre-70",
+   "Clerk-Moss-91 / Vault-Ochre-70",
+   "Neither is established."
+  ],
+  "answer": "Clerk-Teal-91 / Vault-Ochre-70",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-26",
+  "calibration": true,
+  "english": "Loft-record-240: either Steward-Sable-16 or Steward-Ochre-16 is the responsible steward; this has not been settled. Either Loft-Rust-99 or Loft-Plum-99 is the destination loft; this also has not been settled.",
+  "ainglish": "Loft-record-240: Steward-Sable-16, not Steward-Ochre-16, is the responsible steward. Loft-Rust-99, not Loft-Plum-99, is the destination loft.",
+  "question": "Which complete steward/loft assignment is established by this record?",
+  "options": [
+   "Steward-Ochre-16 / Loft-Plum-99",
+   "Neither is established.",
+   "The record contradicts itself.",
+   "Steward established; loft not established.",
+   "Steward-Sable-16 / Loft-Plum-99",
+   "Steward not established; loft established.",
+   "Steward-Sable-16 / Loft-Rust-99",
+   "Steward-Ochre-16 / Loft-Rust-99"
+  ],
+  "answer": "Steward-Sable-16 / Loft-Rust-99",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-27",
+  "calibration": true,
+  "english": "Shelf-record-677: either Auditor-Sable-28 or Auditor-Umber-28 is the responsible auditor; this has not been settled. Either Shelf-Teal-31 or Shelf-Rust-31 is the destination shelf; this also has not been settled.",
+  "ainglish": "Shelf-record-677: Auditor-Sable-28, not Auditor-Umber-28, is the responsible auditor. Shelf-Teal-31, not Shelf-Rust-31, is the destination shelf.",
+  "question": "Which complete auditor/shelf assignment is established by this record?",
+  "options": [
+   "Auditor established; shelf not established.",
+   "Auditor-Umber-28 / Shelf-Rust-31",
+   "Auditor-Umber-28 / Shelf-Teal-31",
+   "Auditor not established; shelf established.",
+   "Auditor-Sable-28 / Shelf-Teal-31",
+   "The record contradicts itself.",
+   "Auditor-Sable-28 / Shelf-Rust-31",
+   "Neither is established."
+  ],
+  "answer": "Auditor-Sable-28 / Shelf-Teal-31",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-28",
+  "calibration": true,
+  "english": "Bay-record-161: either Keeper-Plum-21 or Keeper-Ivory-21 is the responsible keeper; this has not been settled. Either Bay-Moss-65 or Bay-Rust-65 is the destination bay; this also has not been settled.",
+  "ainglish": "Bay-record-161: Keeper-Plum-21, not Keeper-Ivory-21, is the responsible keeper. Bay-Moss-65, not Bay-Rust-65, is the destination bay.",
+  "question": "Which complete keeper/bay assignment is established by this record?",
+  "options": [
+   "Keeper-Ivory-21 / Bay-Moss-65",
+   "Neither is established.",
+   "Keeper-Plum-21 / Bay-Rust-65",
+   "Keeper established; bay not established.",
+   "Keeper not established; bay established.",
+   "Keeper-Plum-21 / Bay-Moss-65",
+   "Keeper-Ivory-21 / Bay-Rust-65",
+   "The record contradicts itself."
+  ],
+  "answer": "Keeper-Plum-21 / Bay-Moss-65",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-29",
+  "calibration": true,
+  "english": "Bay-record-257: either Auditor-Rust-48 or Auditor-Sable-48 is the responsible auditor; this has not been settled. Either Bay-Moss-77 or Bay-Plum-77 is the destination bay; this also has not been settled.",
+  "ainglish": "Bay-record-257: Auditor-Rust-48, not Auditor-Sable-48, is the responsible auditor. Bay-Moss-77, not Bay-Plum-77, is the destination bay.",
+  "question": "Which complete auditor/bay assignment is established by this record?",
+  "options": [
+   "Auditor not established; bay established.",
+   "Auditor-Sable-48 / Bay-Moss-77",
+   "Auditor-Rust-48 / Bay-Plum-77",
+   "Auditor established; bay not established.",
+   "Auditor-Sable-48 / Bay-Plum-77",
+   "The record contradicts itself.",
+   "Auditor-Rust-48 / Bay-Moss-77",
+   "Neither is established."
+  ],
+  "answer": "Auditor-Rust-48 / Bay-Moss-77",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-30",
+  "calibration": true,
+  "english": "Loft-record-751: either Auditor-Ochre-45 or Auditor-Moss-45 is the responsible auditor; this has not been settled. Either Loft-Ivory-41 or Loft-Sable-41 is the destination loft; this also has not been settled.",
+  "ainglish": "Loft-record-751: Auditor-Ochre-45, not Auditor-Moss-45, is the responsible auditor. Loft-Ivory-41, not Loft-Sable-41, is the destination loft.",
+  "question": "Which complete auditor/loft assignment is established by this record?",
+  "options": [
+   "Neither is established.",
+   "Auditor-Ochre-45 / Loft-Sable-41",
+   "The record contradicts itself.",
+   "Auditor not established; loft established.",
+   "Auditor-Moss-45 / Loft-Ivory-41",
+   "Auditor-Moss-45 / Loft-Sable-41",
+   "Auditor established; loft not established.",
+   "Auditor-Ochre-45 / Loft-Ivory-41"
+  ],
+  "answer": "Auditor-Ochre-45 / Loft-Ivory-41",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-31",
+  "calibration": true,
+  "english": "Vault-record-412: either Clerk-Sable-59 or Clerk-Moss-59 is the responsible clerk; this has not been settled. Either Vault-Rust-49 or Vault-Teal-49 is the destination vault; this also has not been settled.",
+  "ainglish": "Vault-record-412: Clerk-Sable-59, not Clerk-Moss-59, is the responsible clerk. Vault-Rust-49, not Vault-Teal-49, is the destination vault.",
+  "question": "Which complete clerk/vault assignment is established by this record?",
+  "options": [
+   "The record contradicts itself.",
+   "Clerk established; vault not established.",
+   "Clerk-Sable-59 / Vault-Teal-49",
+   "Clerk-Sable-59 / Vault-Rust-49",
+   "Clerk not established; vault established.",
+   "Neither is established.",
+   "Clerk-Moss-59 / Vault-Teal-49",
+   "Clerk-Moss-59 / Vault-Rust-49"
+  ],
+  "answer": "Clerk-Sable-59 / Vault-Rust-49",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ },
+ {
+  "id": "rc-calibration-32",
+  "calibration": true,
+  "english": "Dock-record-775: either Keeper-Plum-98 or Keeper-Sable-98 is the responsible keeper; this has not been settled. Either Dock-Moss-76 or Dock-Rust-76 is the destination dock; this also has not been settled.",
+  "ainglish": "Dock-record-775: Keeper-Plum-98, not Keeper-Sable-98, is the responsible keeper. Dock-Moss-76, not Dock-Rust-76, is the destination dock.",
+  "question": "Which complete keeper/dock assignment is established by this record?",
+  "options": [
+   "Keeper not established; dock established.",
+   "Keeper established; dock not established.",
+   "Keeper-Plum-98 / Dock-Rust-76",
+   "Neither is established.",
+   "Keeper-Sable-98 / Dock-Rust-76",
+   "The record contradicts itself.",
+   "Keeper-Plum-98 / Dock-Moss-76",
+   "Keeper-Sable-98 / Dock-Moss-76"
+  ],
+  "answer": "Keeper-Plum-98 / Dock-Moss-76",
+  "settlement_stratum": "calibration",
+  "semantic_frame": "calibration-planted-pair"
+ }
+]
