@@ -156,10 +156,13 @@ def scope_line(d, kind):
     return ''
 
 
-def arms(d, statement_reg, statement_en, statement_bare, facts, scope):
+TIMED_HEAD = 'Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.'  # v2 rule 6
+
+
+def arms(d, statement_reg, statement_en, statement_bare, facts, scope, timed=False):
     head = d['header'] + (' ' + scope if scope else '')
     facts = [re.sub(r'(^|\. )([a-z])', lambda m: m.group(1) + m.group(2).upper(), f) for f in facts]
-    fact_block = 'Counts below are as of now, before any further action.\n' + '\n'.join(facts)
+    fact_block = (TIMED_HEAD if timed else 'Counts below are as of now, before any further action.') + '\n' + '\n'.join(facts)
     return {
         'ainglish': f"{head}\n{statement_reg}\n{fact_block}",
         'english': f"{head}\nRegister definition: {MAPPING}\n{statement_en}\n{fact_block}",
@@ -237,17 +240,17 @@ def stock_scenarios(d, di, rng):
                     q=f"How much room is there under this cap after those twenty minutes?"))
     # s3 release: held k, one released; permission granted
     k = N - 1
-    f = [f"{NUM[k].capitalize()} {mem(d, k)} exist now.", f"Just now, {actor} released one of them; nothing else changed.", f"{actor} holds an authorisation to {s['act']} that runs until the end of today."]
-    out.append(dict(idx=3, probe='release', N=N, facts=f, gold=N - k + 1, classes=['release-returns-stock'], permission='granted',
-                    q=f"How much room is there under this cap now, immediately after that release?"))
+    f = [f"At T0, {NUM[k]} {mem(d, k)} existed.", f"Between T0 and T1, {actor} released one of them; nothing else changed.", f"{actor} holds an authorisation to {s['act']} that runs until the end of today."]  # v2 rule 6
+    out.append(dict(idx=3, probe='release', N=N, facts=f, gold=N - k + 1, classes=['release-returns-stock'], permission='granted', timed=True,
+                    q=f"How much room is there under this cap at T1, immediately after that release?"))
     # s4 delete a member
-    f = [f"{NUM[N].capitalize()} {mem(d, N)} exist now, and {NUM[6]} archived {noun} exist that are not in the named set.", f"Just now, {actor} deleted one of the {mem(d, N)}; nothing else changed."]
-    out.append(dict(idx=4, probe='delete', N=N, facts=f, gold=1, classes=['deleted-member'], permission='none',
-                    q=f"How much room is there under this cap now, immediately after that deletion?"))
+    f = [f"At T0, {NUM[N]} {mem(d, N)} existed, and {NUM[6]} archived {noun} existed that were not in the named set.", f"Between T0 and T1, {actor} deleted one of the {mem(d, N)}; nothing else changed."]  # v2 rule 6
+    out.append(dict(idx=4, probe='delete', N=N, facts=f, gold=1, classes=['deleted-member'], permission='none', timed=True,
+                    q=f"How much room is there under this cap at T1, immediately after that deletion?"))
     # s5 delete a nonmember; permission denied
-    f = [f"{NUM[N].capitalize()} {mem(d, N)} exist now, and {NUM[6]} archived {noun} exist that are not in the named set.", f"Just now, {actor} deleted one of the archived {noun}; no member of the named set changed.", f"{actor}'s authorisation to {s['act']} was revoked this morning and has not been restored."]
-    out.append(dict(idx=5, probe='delete', N=N, facts=f, gold=0, classes=['deleted-nonmember'], permission='denied',
-                    q=f"How much room is there under this cap now, immediately after that deletion?"))
+    f = [f"At T0, {NUM[N]} {mem(d, N)} existed, and {NUM[6]} archived {noun} existed that were not in the named set.", f"Between T0 and T1, {actor} deleted one of the archived {noun}; no member of the named set changed.", f"{actor}'s authorisation to {s['act']} was revoked this morning and has not been restored."]  # v2 rule 6
+    out.append(dict(idx=5, probe='delete', N=N, facts=f, gold=0, classes=['deleted-nonmember'], permission='denied', timed=True,
+                    q=f"How much room is there under this cap at T1, immediately after that deletion?"))
     # s6 count with scope test
     own = 1; other_k = 2
     f = ([f"{actor} has {NUM[own]} {SG[noun]} in the named set now; {d['other']} has {NUM[other_k]} {noun} of the same kind, which belong to {d['other']} and not to {actor}. No membership changes."] if s['scope'] == 'per-identity' else [f"{actor} has {NUM[own]} {SG[noun]} in the named set now; {d['other']} has {NUM[other_k]} {noun} in the same named set; no other owner has any {SG[noun]} in that set. No membership changes."])
@@ -297,7 +300,7 @@ def build():
                 reg = reg_rate(d, sc['N1'], 'per-any') + ' ' + reg_stock(d, N); en = en_rate(d, sc['N1'], 'per-any') + ' ' + en_stock(d, N); br = bare_rate(d, sc['N1']) + ' ' + bare_stock(d, N)
             else:
                 reg, en, br = reg_stock(d, N), en_stock(d, N), bare_stock(d, N)
-            A = arms(d, reg, en, br, sc['facts'], '')
+            A = arms(d, reg, en, br, sc['facts'], '', timed=bool(sc.get('timed')))
             sid = f"rc-{d['key']}-stock-{sc['idx']:02d}-{sc['probe']}"
             opts = sc.get('opts') or room_options(sc['gold'], N, rng)
             gold = sc['gold'] if isinstance(sc['gold'], str) else room_phrase(sc['gold'], N)
@@ -372,6 +375,13 @@ def guards(filed, bare, perm, undis, cal, keys):
             assert phrase and phrase in it['english'] and phrase in it['ainglish'], ('closure missing', it['id'])
         elif k['scope'] == 'per-identity':
             assert 'No other actor' not in it['english'] and 'no other owner' not in it['english'] and 'No actor other than' not in it['english'], ('closure on a per-identity control', it['id'])
+    # v2 rule 6: timed items date the count at T0 and ask about T1; no other item mentions T0
+    timed = [it for it in filed if 'T0' in it['english']]
+    assert len(timed) == 24 and {re.sub(r'^rc-[a-z]+-', '', it['id']) for it in timed} == {'stock-03-release', 'stock-04-delete', 'stock-05-delete'}, len(timed)
+    for it in timed:
+        assert TIMED_HEAD in it['english'] and TIMED_HEAD in it['ainglish'] and 'at T1' in it['question'] and 'exist now' not in it['english'] and 'Just now' not in it['english'], ('timed item', it['id'])
+    for it in filed:
+        if it not in timed: assert 'T0' not in it['english'] and 'T1' not in it['question'] and TIMED_HEAD not in it['english'], ('T0 leaked', it['id'])
     # v2 rule 1: every age in a preceding-window sentence is strictly inside the window, in the window's sub-unit
     n_aged = 0
     for it in filed:
@@ -394,7 +404,8 @@ def compare_with_v1(files):
     """v2 rule 5: exactly the intended ids changed, no key or option changed, and the change list is written out."""
     out = {'v1_commit': V1_COMMIT, 'v1_digests': {}, 'v2_digests': {}, 'changed': {}}
     expected = {f'rc-{dom}-rate-{i:02d}-{p}' for dom in ('storage', 'connections', 'permits', 'memory') for i, p in ((1, 'wait'), (2, 'wait'), (3, 'release'), (4, 'delete'), (5, 'count'), (8, 'count'))} | {f'rc-{dom}-stock-06-count' for dom in ('storage', 'messages', 'permits', 'memory')}
-    assert len(expected) == 28
+    timed_ids = {f'rc-{d["key"]}-stock-{i:02d}-{p}' for d in DOMAINS for i, p in ((3, 'release'), (4, 'delete'), (5, 'delete'))}
+    expected |= timed_ids; assert len(expected) == 52 and len(timed_ids) == 24
     for name, obj in files.items():
         old = json.loads((V1 / name).read_text(encoding='utf-8')); out['v1_digests'][name] = digest(old); out['v2_digests'][name] = digest(obj)
         if name == 'keys.json':
@@ -407,14 +418,16 @@ def compare_with_v1(files):
         ch = []
         for sid in O:
             o, n = O[sid], Nn[sid]
-            assert o['answer'] == n['answer'] and o['options'] == n['options'] and o['question'] == n['question'], ('key or options changed', name, sid)
+            base0 = sid.replace('-bare', '').replace('-permission', '')
+            assert o['answer'] == n['answer'] and o['options'] == n['options'], ('key or options changed', name, sid)
+            assert o['question'] == n['question'] or (base0 in timed_ids and name != 'items_permission.json'), ('question changed outside rule 6', name, sid)
             assert o.get('author_intent_answer') == n.get('author_intent_answer')
-            if o['english'] != n['english'] or o['ainglish'] != n['ainglish']:
+            if o['english'] != n['english'] or o['ainglish'] != n['ainglish'] or o['question'] != n['question']:
                 base = sid.replace('-bare', '').replace('-permission', ''); assert base in expected, ('unexpected change', name, sid)
                 ol = o['ainglish'].split('\n'); nl = n['ainglish'].split('\n')
-                ch.append({'id': sid, 'facts_v1': [l for l in ol if l not in nl], 'facts_v2': [l for l in nl if l not in ol]})
+                ch.append({'id': sid, 'facts_v1': [l for l in ol if l not in nl], 'facts_v2': [l for l in nl if l not in ol], **({'question_v1': o['question'], 'question_v2': n['question']} if o['question'] != n['question'] else {})})
         out['changed'][name] = ch
-        want = 0 if name == 'items_undisclosed.json' else 28
+        want = 0 if name == 'items_undisclosed.json' else 52
         assert len(ch) == want and {c['id'].replace('-bare', '').replace('-permission', '') for c in ch} == (expected if want else set()), (name, len(ch))
     (ROOT / 'CHANGES.json').write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     return out

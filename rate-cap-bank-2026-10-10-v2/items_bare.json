@@ -191,9 +191,9 @@
  },
  {
   "id": "rc-api-stock-03-release-bare",
-  "english": "Service note, API budget.\nA limit of 3 in-flight requests by this client.\nCounts below are as of now, before any further action.\nTwo in-flight requests exist now.\nJust now, this client released one of them; nothing else changed.\nThis client holds an authorisation to start a request that runs until the end of today.",
-  "ainglish": "Service note, API budget.\nrequests stock-cap(3; in-flight requests by this client).\nCounts below are as of now, before any further action.\nTwo in-flight requests exist now.\nJust now, this client released one of them; nothing else changed.\nThis client holds an authorisation to start a request that runs until the end of today.",
-  "question": "How much room is there under this cap now, immediately after that release?",
+  "english": "Service note, API budget.\nA limit of 3 in-flight requests by this client.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, two in-flight requests existed.\nBetween T0 and T1, this client released one of them; nothing else changed.\nThis client holds an authorisation to start a request that runs until the end of today.",
+  "ainglish": "Service note, API budget.\nrequests stock-cap(3; in-flight requests by this client).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, two in-flight requests existed.\nBetween T0 and T1, this client released one of them; nothing else changed.\nThis client holds an authorisation to start a request that runs until the end of today.",
+  "question": "How much room is there under this cap at T1, immediately after that release?",
   "options": [
    "Room for one more",
    "Room for two more",
@@ -210,9 +210,9 @@
  },
  {
   "id": "rc-api-stock-04-delete-bare",
-  "english": "Service note, API budget.\nA limit of 3 in-flight requests by this client.\nCounts below are as of now, before any further action.\nThree in-flight requests exist now, and six archived requests exist that are not in the named set.\nJust now, this client deleted one of the in-flight requests; nothing else changed.",
-  "ainglish": "Service note, API budget.\nrequests stock-cap(3; in-flight requests by this client).\nCounts below are as of now, before any further action.\nThree in-flight requests exist now, and six archived requests exist that are not in the named set.\nJust now, this client deleted one of the in-flight requests; nothing else changed.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Service note, API budget.\nA limit of 3 in-flight requests by this client.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three in-flight requests existed, and six archived requests existed that were not in the named set.\nBetween T0 and T1, this client deleted one of the in-flight requests; nothing else changed.",
+  "ainglish": "Service note, API budget.\nrequests stock-cap(3; in-flight requests by this client).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three in-flight requests existed, and six archived requests existed that were not in the named set.\nBetween T0 and T1, this client deleted one of the in-flight requests; nothing else changed.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "No room for another",
    "Room for one more",
@@ -229,9 +229,9 @@
  },
  {
   "id": "rc-api-stock-05-delete-bare",
-  "english": "Service note, API budget.\nA limit of 3 in-flight requests by this client.\nCounts below are as of now, before any further action.\nThree in-flight requests exist now, and six archived requests exist that are not in the named set.\nJust now, this client deleted one of the archived requests; no member of the named set changed.\nThis client's authorisation to start a request was revoked this morning and has not been restored.",
-  "ainglish": "Service note, API budget.\nrequests stock-cap(3; in-flight requests by this client).\nCounts below are as of now, before any further action.\nThree in-flight requests exist now, and six archived requests exist that are not in the named set.\nJust now, this client deleted one of the archived requests; no member of the named set changed.\nThis client's authorisation to start a request was revoked this morning and has not been restored.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Service note, API budget.\nA limit of 3 in-flight requests by this client.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three in-flight requests existed, and six archived requests existed that were not in the named set.\nBetween T0 and T1, this client deleted one of the archived requests; no member of the named set changed.\nThis client's authorisation to start a request was revoked this morning and has not been restored.",
+  "ainglish": "Service note, API budget.\nrequests stock-cap(3; in-flight requests by this client).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three in-flight requests existed, and six archived requests existed that were not in the named set.\nBetween T0 and T1, this client deleted one of the archived requests; no member of the named set changed.\nThis client's authorisation to start a request was revoked this morning and has not been restored.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for one more",
    "Room for two more",
@@ -495,9 +495,9 @@
  },
  {
   "id": "rc-storage-stock-03-release-bare",
-  "english": "Storage policy note.\nA limit of 4 retained snapshots of volume V.\nCounts below are as of now, before any further action.\nThree retained snapshots of volume V exist now.\nJust now, the backup agent released one of them; nothing else changed.\nThe backup agent holds an authorisation to retain a snapshot that runs until the end of today.",
-  "ainglish": "Storage policy note.\nsnapshots stock-cap(4; retained snapshots of volume V).\nCounts below are as of now, before any further action.\nThree retained snapshots of volume V exist now.\nJust now, the backup agent released one of them; nothing else changed.\nThe backup agent holds an authorisation to retain a snapshot that runs until the end of today.",
-  "question": "How much room is there under this cap now, immediately after that release?",
+  "english": "Storage policy note.\nA limit of 4 retained snapshots of volume V.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three retained snapshots of volume V existed.\nBetween T0 and T1, the backup agent released one of them; nothing else changed.\nThe backup agent holds an authorisation to retain a snapshot that runs until the end of today.",
+  "ainglish": "Storage policy note.\nsnapshots stock-cap(4; retained snapshots of volume V).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three retained snapshots of volume V existed.\nBetween T0 and T1, the backup agent released one of them; nothing else changed.\nThe backup agent holds an authorisation to retain a snapshot that runs until the end of today.",
+  "question": "How much room is there under this cap at T1, immediately after that release?",
   "options": [
    "Room for the full allowance of four",
    "No room for another",
@@ -514,9 +514,9 @@
  },
  {
   "id": "rc-storage-stock-04-delete-bare",
-  "english": "Storage policy note.\nA limit of 4 retained snapshots of volume V.\nCounts below are as of now, before any further action.\nFour retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.\nJust now, the backup agent deleted one of the retained snapshots of volume V; nothing else changed.",
-  "ainglish": "Storage policy note.\nsnapshots stock-cap(4; retained snapshots of volume V).\nCounts below are as of now, before any further action.\nFour retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.\nJust now, the backup agent deleted one of the retained snapshots of volume V; nothing else changed.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Storage policy note.\nA limit of 4 retained snapshots of volume V.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.\nBetween T0 and T1, the backup agent deleted one of the retained snapshots of volume V; nothing else changed.",
+  "ainglish": "Storage policy note.\nsnapshots stock-cap(4; retained snapshots of volume V).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.\nBetween T0 and T1, the backup agent deleted one of the retained snapshots of volume V; nothing else changed.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for two more",
    "Room for one more",
@@ -533,9 +533,9 @@
  },
  {
   "id": "rc-storage-stock-05-delete-bare",
-  "english": "Storage policy note.\nA limit of 4 retained snapshots of volume V.\nCounts below are as of now, before any further action.\nFour retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.\nJust now, the backup agent deleted one of the archived snapshots; no member of the named set changed.\nThe backup agent's authorisation to retain a snapshot was revoked this morning and has not been restored.",
-  "ainglish": "Storage policy note.\nsnapshots stock-cap(4; retained snapshots of volume V).\nCounts below are as of now, before any further action.\nFour retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.\nJust now, the backup agent deleted one of the archived snapshots; no member of the named set changed.\nThe backup agent's authorisation to retain a snapshot was revoked this morning and has not been restored.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Storage policy note.\nA limit of 4 retained snapshots of volume V.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.\nBetween T0 and T1, the backup agent deleted one of the archived snapshots; no member of the named set changed.\nThe backup agent's authorisation to retain a snapshot was revoked this morning and has not been restored.",
+  "ainglish": "Storage policy note.\nsnapshots stock-cap(4; retained snapshots of volume V).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.\nBetween T0 and T1, the backup agent deleted one of the archived snapshots; no member of the named set changed.\nThe backup agent's authorisation to retain a snapshot was revoked this morning and has not been restored.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for three more",
    "Room for two more",
@@ -799,9 +799,9 @@
  },
  {
   "id": "rc-seats-stock-03-release-bare",
-  "english": "Licensing note.\nA limit of 5 active seats held by team T.\nCounts below are as of now, before any further action.\nFour active seats held by team T exist now.\nJust now, team T released one of them; nothing else changed.\nTeam T holds an authorisation to claim a seat that runs until the end of today.",
-  "ainglish": "Licensing note.\nseats stock-cap(5; active seats held by team T).\nCounts below are as of now, before any further action.\nFour active seats held by team T exist now.\nJust now, team T released one of them; nothing else changed.\nTeam T holds an authorisation to claim a seat that runs until the end of today.",
-  "question": "How much room is there under this cap now, immediately after that release?",
+  "english": "Licensing note.\nA limit of 5 active seats held by team T.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four active seats held by team T existed.\nBetween T0 and T1, team T released one of them; nothing else changed.\nTeam T holds an authorisation to claim a seat that runs until the end of today.",
+  "ainglish": "Licensing note.\nseats stock-cap(5; active seats held by team T).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four active seats held by team T existed.\nBetween T0 and T1, team T released one of them; nothing else changed.\nTeam T holds an authorisation to claim a seat that runs until the end of today.",
+  "question": "How much room is there under this cap at T1, immediately after that release?",
   "options": [
    "Room for the full allowance of five",
    "Room for one more",
@@ -818,9 +818,9 @@
  },
  {
   "id": "rc-seats-stock-04-delete-bare",
-  "english": "Licensing note.\nA limit of 5 active seats held by team T.\nCounts below are as of now, before any further action.\nFive active seats held by team T exist now, and six archived seats exist that are not in the named set.\nJust now, team T deleted one of the active seats held by team T; nothing else changed.",
-  "ainglish": "Licensing note.\nseats stock-cap(5; active seats held by team T).\nCounts below are as of now, before any further action.\nFive active seats held by team T exist now, and six archived seats exist that are not in the named set.\nJust now, team T deleted one of the active seats held by team T; nothing else changed.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Licensing note.\nA limit of 5 active seats held by team T.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.\nBetween T0 and T1, team T deleted one of the active seats held by team T; nothing else changed.",
+  "ainglish": "Licensing note.\nseats stock-cap(5; active seats held by team T).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.\nBetween T0 and T1, team T deleted one of the active seats held by team T; nothing else changed.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for three more",
    "Room for one more",
@@ -837,9 +837,9 @@
  },
  {
   "id": "rc-seats-stock-05-delete-bare",
-  "english": "Licensing note.\nA limit of 5 active seats held by team T.\nCounts below are as of now, before any further action.\nFive active seats held by team T exist now, and six archived seats exist that are not in the named set.\nJust now, team T deleted one of the archived seats; no member of the named set changed.\nTeam T's authorisation to claim a seat was revoked this morning and has not been restored.",
-  "ainglish": "Licensing note.\nseats stock-cap(5; active seats held by team T).\nCounts below are as of now, before any further action.\nFive active seats held by team T exist now, and six archived seats exist that are not in the named set.\nJust now, team T deleted one of the archived seats; no member of the named set changed.\nTeam T's authorisation to claim a seat was revoked this morning and has not been restored.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Licensing note.\nA limit of 5 active seats held by team T.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.\nBetween T0 and T1, team T deleted one of the archived seats; no member of the named set changed.\nTeam T's authorisation to claim a seat was revoked this morning and has not been restored.",
+  "ainglish": "Licensing note.\nseats stock-cap(5; active seats held by team T).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.\nBetween T0 and T1, team T deleted one of the archived seats; no member of the named set changed.\nTeam T's authorisation to claim a seat was revoked this morning and has not been restored.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "No room for another",
    "Room for the full allowance of five",
@@ -1103,9 +1103,9 @@
  },
  {
   "id": "rc-connections-stock-03-release-bare",
-  "english": "Connection pool note.\nA limit of 3 open connections owned by worker A.\nCounts below are as of now, before any further action.\nTwo open connections owned by worker A exist now.\nJust now, worker A released one of them; nothing else changed.\nWorker A holds an authorisation to open a connection that runs until the end of today.",
-  "ainglish": "Connection pool note.\nconnections stock-cap(3; open connections owned by worker A).\nCounts below are as of now, before any further action.\nTwo open connections owned by worker A exist now.\nJust now, worker A released one of them; nothing else changed.\nWorker A holds an authorisation to open a connection that runs until the end of today.",
-  "question": "How much room is there under this cap now, immediately after that release?",
+  "english": "Connection pool note.\nA limit of 3 open connections owned by worker A.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, two open connections owned by worker A existed.\nBetween T0 and T1, worker A released one of them; nothing else changed.\nWorker A holds an authorisation to open a connection that runs until the end of today.",
+  "ainglish": "Connection pool note.\nconnections stock-cap(3; open connections owned by worker A).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, two open connections owned by worker A existed.\nBetween T0 and T1, worker A released one of them; nothing else changed.\nWorker A holds an authorisation to open a connection that runs until the end of today.",
+  "question": "How much room is there under this cap at T1, immediately after that release?",
   "options": [
    "No room for another",
    "Room for one more",
@@ -1122,9 +1122,9 @@
  },
  {
   "id": "rc-connections-stock-04-delete-bare",
-  "english": "Connection pool note.\nA limit of 3 open connections owned by worker A.\nCounts below are as of now, before any further action.\nThree open connections owned by worker A exist now, and six archived connections exist that are not in the named set.\nJust now, worker A deleted one of the open connections owned by worker A; nothing else changed.",
-  "ainglish": "Connection pool note.\nconnections stock-cap(3; open connections owned by worker A).\nCounts below are as of now, before any further action.\nThree open connections owned by worker A exist now, and six archived connections exist that are not in the named set.\nJust now, worker A deleted one of the open connections owned by worker A; nothing else changed.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Connection pool note.\nA limit of 3 open connections owned by worker A.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.\nBetween T0 and T1, worker A deleted one of the open connections owned by worker A; nothing else changed.",
+  "ainglish": "Connection pool note.\nconnections stock-cap(3; open connections owned by worker A).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.\nBetween T0 and T1, worker A deleted one of the open connections owned by worker A; nothing else changed.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for two more",
    "No room for another",
@@ -1141,9 +1141,9 @@
  },
  {
   "id": "rc-connections-stock-05-delete-bare",
-  "english": "Connection pool note.\nA limit of 3 open connections owned by worker A.\nCounts below are as of now, before any further action.\nThree open connections owned by worker A exist now, and six archived connections exist that are not in the named set.\nJust now, worker A deleted one of the archived connections; no member of the named set changed.\nWorker A's authorisation to open a connection was revoked this morning and has not been restored.",
-  "ainglish": "Connection pool note.\nconnections stock-cap(3; open connections owned by worker A).\nCounts below are as of now, before any further action.\nThree open connections owned by worker A exist now, and six archived connections exist that are not in the named set.\nJust now, worker A deleted one of the archived connections; no member of the named set changed.\nWorker A's authorisation to open a connection was revoked this morning and has not been restored.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Connection pool note.\nA limit of 3 open connections owned by worker A.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.\nBetween T0 and T1, worker A deleted one of the archived connections; no member of the named set changed.\nWorker A's authorisation to open a connection was revoked this morning and has not been restored.",
+  "ainglish": "Connection pool note.\nconnections stock-cap(3; open connections owned by worker A).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.\nBetween T0 and T1, worker A deleted one of the archived connections; no member of the named set changed.\nWorker A's authorisation to open a connection was revoked this morning and has not been restored.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for the full allowance of three",
    "Room for one more",
@@ -1407,9 +1407,9 @@
  },
  {
   "id": "rc-messages-stock-03-release-bare",
-  "english": "Messaging note.\nA limit of 6 queued messages in mailbox M.\nCounts below are as of now, before any further action.\nFive queued messages in mailbox M exist now.\nJust now, this sender released one of them; nothing else changed.\nThis sender holds an authorisation to queue a message that runs until the end of today.",
-  "ainglish": "Messaging note.\nmessages stock-cap(6; queued messages in mailbox M).\nCounts below are as of now, before any further action.\nFive queued messages in mailbox M exist now.\nJust now, this sender released one of them; nothing else changed.\nThis sender holds an authorisation to queue a message that runs until the end of today.",
-  "question": "How much room is there under this cap now, immediately after that release?",
+  "english": "Messaging note.\nA limit of 6 queued messages in mailbox M.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five queued messages in mailbox M existed.\nBetween T0 and T1, this sender released one of them; nothing else changed.\nThis sender holds an authorisation to queue a message that runs until the end of today.",
+  "ainglish": "Messaging note.\nmessages stock-cap(6; queued messages in mailbox M).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five queued messages in mailbox M existed.\nBetween T0 and T1, this sender released one of them; nothing else changed.\nThis sender holds an authorisation to queue a message that runs until the end of today.",
+  "question": "How much room is there under this cap at T1, immediately after that release?",
   "options": [
    "No room for another",
    "Room for one more",
@@ -1426,9 +1426,9 @@
  },
  {
   "id": "rc-messages-stock-04-delete-bare",
-  "english": "Messaging note.\nA limit of 6 queued messages in mailbox M.\nCounts below are as of now, before any further action.\nSix queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.\nJust now, this sender deleted one of the queued messages in mailbox M; nothing else changed.",
-  "ainglish": "Messaging note.\nmessages stock-cap(6; queued messages in mailbox M).\nCounts below are as of now, before any further action.\nSix queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.\nJust now, this sender deleted one of the queued messages in mailbox M; nothing else changed.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Messaging note.\nA limit of 6 queued messages in mailbox M.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.\nBetween T0 and T1, this sender deleted one of the queued messages in mailbox M; nothing else changed.",
+  "ainglish": "Messaging note.\nmessages stock-cap(6; queued messages in mailbox M).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.\nBetween T0 and T1, this sender deleted one of the queued messages in mailbox M; nothing else changed.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for the full allowance of six",
    "Room for three more",
@@ -1445,9 +1445,9 @@
  },
  {
   "id": "rc-messages-stock-05-delete-bare",
-  "english": "Messaging note.\nA limit of 6 queued messages in mailbox M.\nCounts below are as of now, before any further action.\nSix queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.\nJust now, this sender deleted one of the archived messages; no member of the named set changed.\nThis sender's authorisation to queue a message was revoked this morning and has not been restored.",
-  "ainglish": "Messaging note.\nmessages stock-cap(6; queued messages in mailbox M).\nCounts below are as of now, before any further action.\nSix queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.\nJust now, this sender deleted one of the archived messages; no member of the named set changed.\nThis sender's authorisation to queue a message was revoked this morning and has not been restored.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Messaging note.\nA limit of 6 queued messages in mailbox M.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.\nBetween T0 and T1, this sender deleted one of the archived messages; no member of the named set changed.\nThis sender's authorisation to queue a message was revoked this morning and has not been restored.",
+  "ainglish": "Messaging note.\nmessages stock-cap(6; queued messages in mailbox M).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.\nBetween T0 and T1, this sender deleted one of the archived messages; no member of the named set changed.\nThis sender's authorisation to queue a message was revoked this morning and has not been restored.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for three more",
    "Room for the full allowance of six",
@@ -1711,9 +1711,9 @@
  },
  {
   "id": "rc-permits-stock-03-release-bare",
-  "english": "Parking office note.\nA limit of 4 vehicles parked in bay set B.\nCounts below are as of now, before any further action.\nThree vehicles parked in bay set B exist now.\nJust now, this permit holder released one of them; nothing else changed.\nThis permit holder holds an authorisation to park a vehicle that runs until the end of today.",
-  "ainglish": "Parking office note.\nvehicles stock-cap(4; vehicles parked in bay set B).\nCounts below are as of now, before any further action.\nThree vehicles parked in bay set B exist now.\nJust now, this permit holder released one of them; nothing else changed.\nThis permit holder holds an authorisation to park a vehicle that runs until the end of today.",
-  "question": "How much room is there under this cap now, immediately after that release?",
+  "english": "Parking office note.\nA limit of 4 vehicles parked in bay set B.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three vehicles parked in bay set B existed.\nBetween T0 and T1, this permit holder released one of them; nothing else changed.\nThis permit holder holds an authorisation to park a vehicle that runs until the end of today.",
+  "ainglish": "Parking office note.\nvehicles stock-cap(4; vehicles parked in bay set B).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, three vehicles parked in bay set B existed.\nBetween T0 and T1, this permit holder released one of them; nothing else changed.\nThis permit holder holds an authorisation to park a vehicle that runs until the end of today.",
+  "question": "How much room is there under this cap at T1, immediately after that release?",
   "options": [
    "No room for another",
    "Room for two more",
@@ -1730,9 +1730,9 @@
  },
  {
   "id": "rc-permits-stock-04-delete-bare",
-  "english": "Parking office note.\nA limit of 4 vehicles parked in bay set B.\nCounts below are as of now, before any further action.\nFour vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.\nJust now, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed.",
-  "ainglish": "Parking office note.\nvehicles stock-cap(4; vehicles parked in bay set B).\nCounts below are as of now, before any further action.\nFour vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.\nJust now, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Parking office note.\nA limit of 4 vehicles parked in bay set B.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.\nBetween T0 and T1, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed.",
+  "ainglish": "Parking office note.\nvehicles stock-cap(4; vehicles parked in bay set B).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.\nBetween T0 and T1, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "No room for another",
    "Room for the full allowance of four",
@@ -1749,9 +1749,9 @@
  },
  {
   "id": "rc-permits-stock-05-delete-bare",
-  "english": "Parking office note.\nA limit of 4 vehicles parked in bay set B.\nCounts below are as of now, before any further action.\nFour vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.\nJust now, this permit holder deleted one of the archived vehicles; no member of the named set changed.\nThis permit holder's authorisation to park a vehicle was revoked this morning and has not been restored.",
-  "ainglish": "Parking office note.\nvehicles stock-cap(4; vehicles parked in bay set B).\nCounts below are as of now, before any further action.\nFour vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.\nJust now, this permit holder deleted one of the archived vehicles; no member of the named set changed.\nThis permit holder's authorisation to park a vehicle was revoked this morning and has not been restored.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Parking office note.\nA limit of 4 vehicles parked in bay set B.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.\nBetween T0 and T1, this permit holder deleted one of the archived vehicles; no member of the named set changed.\nThis permit holder's authorisation to park a vehicle was revoked this morning and has not been restored.",
+  "ainglish": "Parking office note.\nvehicles stock-cap(4; vehicles parked in bay set B).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.\nBetween T0 and T1, this permit holder deleted one of the archived vehicles; no member of the named set changed.\nThis permit holder's authorisation to park a vehicle was revoked this morning and has not been restored.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for the full allowance of four",
    "Room for two more",
@@ -2015,9 +2015,9 @@
  },
  {
   "id": "rc-retries-stock-03-release-bare",
-  "english": "Retry policy note.\nA limit of 5 pending retries for job J.\nCounts below are as of now, before any further action.\nFour pending retries for job J exist now.\nJust now, job J released one of them; nothing else changed.\nJob J holds an authorisation to schedule a retry that runs until the end of today.",
-  "ainglish": "Retry policy note.\nretries stock-cap(5; pending retries for job J).\nCounts below are as of now, before any further action.\nFour pending retries for job J exist now.\nJust now, job J released one of them; nothing else changed.\nJob J holds an authorisation to schedule a retry that runs until the end of today.",
-  "question": "How much room is there under this cap now, immediately after that release?",
+  "english": "Retry policy note.\nA limit of 5 pending retries for job J.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four pending retries for job J existed.\nBetween T0 and T1, job J released one of them; nothing else changed.\nJob J holds an authorisation to schedule a retry that runs until the end of today.",
+  "ainglish": "Retry policy note.\nretries stock-cap(5; pending retries for job J).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, four pending retries for job J existed.\nBetween T0 and T1, job J released one of them; nothing else changed.\nJob J holds an authorisation to schedule a retry that runs until the end of today.",
+  "question": "How much room is there under this cap at T1, immediately after that release?",
   "options": [
    "Room for four more",
    "Room for one more",
@@ -2034,9 +2034,9 @@
  },
  {
   "id": "rc-retries-stock-04-delete-bare",
-  "english": "Retry policy note.\nA limit of 5 pending retries for job J.\nCounts below are as of now, before any further action.\nFive pending retries for job J exist now, and six archived retries exist that are not in the named set.\nJust now, job J deleted one of the pending retries for job J; nothing else changed.",
-  "ainglish": "Retry policy note.\nretries stock-cap(5; pending retries for job J).\nCounts below are as of now, before any further action.\nFive pending retries for job J exist now, and six archived retries exist that are not in the named set.\nJust now, job J deleted one of the pending retries for job J; nothing else changed.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Retry policy note.\nA limit of 5 pending retries for job J.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.\nBetween T0 and T1, job J deleted one of the pending retries for job J; nothing else changed.",
+  "ainglish": "Retry policy note.\nretries stock-cap(5; pending retries for job J).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.\nBetween T0 and T1, job J deleted one of the pending retries for job J; nothing else changed.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for four more",
    "Room for two more",
@@ -2053,9 +2053,9 @@
  },
  {
   "id": "rc-retries-stock-05-delete-bare",
-  "english": "Retry policy note.\nA limit of 5 pending retries for job J.\nCounts below are as of now, before any further action.\nFive pending retries for job J exist now, and six archived retries exist that are not in the named set.\nJust now, job J deleted one of the archived retries; no member of the named set changed.\nJob J's authorisation to schedule a retry was revoked this morning and has not been restored.",
-  "ainglish": "Retry policy note.\nretries stock-cap(5; pending retries for job J).\nCounts below are as of now, before any further action.\nFive pending retries for job J exist now, and six archived retries exist that are not in the named set.\nJust now, job J deleted one of the archived retries; no member of the named set changed.\nJob J's authorisation to schedule a retry was revoked this morning and has not been restored.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Retry policy note.\nA limit of 5 pending retries for job J.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.\nBetween T0 and T1, job J deleted one of the archived retries; no member of the named set changed.\nJob J's authorisation to schedule a retry was revoked this morning and has not been restored.",
+  "ainglish": "Retry policy note.\nretries stock-cap(5; pending retries for job J).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.\nBetween T0 and T1, job J deleted one of the archived retries; no member of the named set changed.\nJob J's authorisation to schedule a retry was revoked this morning and has not been restored.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for the full allowance of five",
    "No room for another",
@@ -2319,9 +2319,9 @@
  },
  {
   "id": "rc-memory-stock-03-release-bare",
-  "english": "Memory reservation note.\nA limit of 8 held reservations in pool R.\nCounts below are as of now, before any further action.\nSeven held reservations in pool R exist now.\nJust now, service S released one of them; nothing else changed.\nService S holds an authorisation to take a reservation that runs until the end of today.",
-  "ainglish": "Memory reservation note.\nreservations stock-cap(8; held reservations in pool R).\nCounts below are as of now, before any further action.\nSeven held reservations in pool R exist now.\nJust now, service S released one of them; nothing else changed.\nService S holds an authorisation to take a reservation that runs until the end of today.",
-  "question": "How much room is there under this cap now, immediately after that release?",
+  "english": "Memory reservation note.\nA limit of 8 held reservations in pool R.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, seven held reservations in pool R existed.\nBetween T0 and T1, service S released one of them; nothing else changed.\nService S holds an authorisation to take a reservation that runs until the end of today.",
+  "ainglish": "Memory reservation note.\nreservations stock-cap(8; held reservations in pool R).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, seven held reservations in pool R existed.\nBetween T0 and T1, service S released one of them; nothing else changed.\nService S holds an authorisation to take a reservation that runs until the end of today.",
+  "question": "How much room is there under this cap at T1, immediately after that release?",
   "options": [
    "No room for another",
    "Room for two more",
@@ -2338,9 +2338,9 @@
  },
  {
   "id": "rc-memory-stock-04-delete-bare",
-  "english": "Memory reservation note.\nA limit of 8 held reservations in pool R.\nCounts below are as of now, before any further action.\nEight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.\nJust now, service S deleted one of the held reservations in pool R; nothing else changed.",
-  "ainglish": "Memory reservation note.\nreservations stock-cap(8; held reservations in pool R).\nCounts below are as of now, before any further action.\nEight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.\nJust now, service S deleted one of the held reservations in pool R; nothing else changed.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Memory reservation note.\nA limit of 8 held reservations in pool R.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.\nBetween T0 and T1, service S deleted one of the held reservations in pool R; nothing else changed.",
+  "ainglish": "Memory reservation note.\nreservations stock-cap(8; held reservations in pool R).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.\nBetween T0 and T1, service S deleted one of the held reservations in pool R; nothing else changed.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for seven more",
    "Room for two more",
@@ -2357,9 +2357,9 @@
  },
  {
   "id": "rc-memory-stock-05-delete-bare",
-  "english": "Memory reservation note.\nA limit of 8 held reservations in pool R.\nCounts below are as of now, before any further action.\nEight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.\nJust now, service S deleted one of the archived reservations; no member of the named set changed.\nService S's authorisation to take a reservation was revoked this morning and has not been restored.",
-  "ainglish": "Memory reservation note.\nreservations stock-cap(8; held reservations in pool R).\nCounts below are as of now, before any further action.\nEight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.\nJust now, service S deleted one of the archived reservations; no member of the named set changed.\nService S's authorisation to take a reservation was revoked this morning and has not been restored.",
-  "question": "How much room is there under this cap now, immediately after that deletion?",
+  "english": "Memory reservation note.\nA limit of 8 held reservations in pool R.\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.\nBetween T0 and T1, service S deleted one of the archived reservations; no member of the named set changed.\nService S's authorisation to take a reservation was revoked this morning and has not been restored.",
+  "ainglish": "Memory reservation note.\nreservations stock-cap(8; held reservations in pool R).\nCounts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.\nAt T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.\nBetween T0 and T1, service S deleted one of the archived reservations; no member of the named set changed.\nService S's authorisation to take a reservation was revoked this morning and has not been restored.",
+  "question": "How much room is there under this cap at T1, immediately after that deletion?",
   "options": [
    "Room for two more",
    "Room for the full allowance of eight",

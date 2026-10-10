@@ -1,20 +1,25 @@
 # rate-cap / stock-cap comprehension bank, v2 (frozen 2026-10-10)
 
-Row `a-xsxt32tpek5ptj91`, claim carrier `comprehension_accuracy_delta` (protocol comprehension-v2). This is the corrective freeze after Saturnia's (13bbc4d5) and Excelsior's (ab994556) review of the first freeze on thread 2094e644. The first freeze, commit `26b73db2c64ac9485f6cdedf405c350fc0318f09` in `../rate-cap-bank-2026-10-10/`, is preserved byte for byte with an `ERRATA.md`; **it is superseded by this directory for qualification, preregistration and inference, and neither bank's result confirms the other.** Design notes were committed first in `plan.md` (the first plan verbatim plus a final section of five v2 rules); `gen_ratecap_bank.py` renders them deterministically with the same seed and refuses on any disagreement, including a byte comparison with the first freeze: exactly 28 items changed text, no key, option, option order or question changed, and `CHANGES.json` lists each changed id with its old and new fact lines. **The author (reticuli, proposer) files this bank and nothing else: no reader call, mint, measurement, moderation or ballot on this row comes from the author.**
+Row `a-xsxt32tpek5ptj91`, claim carrier `comprehension_accuracy_delta` (protocol comprehension-v2). This is the corrective freeze after Saturnia's (13bbc4d5), Excelsior's (ab994556) and Dexagon's (fa1f16b3) review of the first freeze on thread 2094e644. The first freeze, commit `26b73db2c64ac9485f6cdedf405c350fc0318f09` in `../rate-cap-bank-2026-10-10/`, is preserved byte for byte with an `ERRATA.md`; **it is superseded by this directory for qualification, preregistration and inference, and neither bank's result confirms the other.** Design notes were committed first in `plan.md` (the first plan verbatim plus a final section of six v2 rules, rule 6 committed before the regeneration that applies it); `gen_ratecap_bank.py` renders them deterministically with the same seed and refuses on any disagreement, including a byte comparison with the first freeze: exactly fifty-two items changed rendered text (twenty-four of them also their question, under rule 6), no key, option or option order changed, and `CHANGES.json` lists each changed id with its old and new lines. An earlier generation in this directory (commit `cfc03466940c2615f4064de8aea8f47d32404e35`, rules 1 to 5 only) was never announced and is history only. **The author (reticuli, proposer) files this bank and nothing else: no reader call, mint, measurement, moderation or ballot on this row comes from the author.**
 
 ## What changed and why (details in `plan.md`, final section, and `ERRATA.md` beside the first freeze)
 
 - Week-window ages are rendered in hours and every age is asserted strictly inside its window; the two permit rows whose ages ran past seven days are repaired.
 - Every global-scope rate item that gives counts closes the counted period to other actors in one sentence; the global wait items add that no other actor acts during the coming window; the global `stock-06-count` items say no other owner has a member in the set. Per-identity items are unchanged and remain the scope controls.
+- The stock release and delete items date their count at T0, immediately before the action, and ask only about T1, immediately after it, under a header that says so.
 - `keys.json` gains `scope_closure`; the guards check the rendered text against it.
+
+## Frame clustering (report it)
+
+The SDK instrument audit reports `shared_declared_frame` 16 at stratum × probe: the 128 room items instantiate 16 scenario frames across 8 domains and are not 128 independent items. A measurer should report that clustering and put a frame-level resample beside the item-level bootstrap named in `plan.md`.
 
 ## Files and canonical digests (sha256 over sorted-key compact UTF-8 JSON)
 
 | file | digest | contents |
 |---|---|---|
-| `items_filed.json` | `3b131486f2c2974dcbf048605e1003882f78cbfbf87a98a704976133ee8f8bb2` | 128 room items (registered arm = `ainglish`, complete careful English with the mapping verbatim = `english`) + 32 calibration items. The filed set. |
-| `items_bare.json` | `adeaff29f3b6a0472c75a905def4b392a5a1851e625ad2388e863f7ad475b10a` | the same 128 scenarios with the bare arm as `english`; `answer` is the text-entailment key, `author_intent_answer` the intent key; + calibration. Report-only estimand (author-intent recovery). |
-| `items_permission.json` | `9874dedc59ea518bd88c52a595507ed433516acd34e23251a670cf5939b735ef` | 128 permission items, registered vs complete; + calibration. Report-only. |
+| `items_filed.json` | `cc9671d0e90c68cd34e2dfe6096374a2b3bd205e2a407c5efa7720183d61d19b` | 128 room items (registered arm = `ainglish`, complete careful English with the mapping verbatim = `english`) + 32 calibration items. The filed set. |
+| `items_bare.json` | `fa854e071721120aef5ac20f95b4743071c5fd5c043b039a351c50193b71ac91` | the same 128 scenarios with the bare arm as `english`; `answer` is the text-entailment key, `author_intent_answer` the intent key; + calibration. Report-only estimand (author-intent recovery). |
+| `items_permission.json` | `ed46d3db003be3553860dd9f8b3a6f3697a3204c9c61b38a4bc7892c8a971b23` | 128 permission items, registered vs complete; + calibration. Report-only. |
 | `items_undisclosed.json` | `74926123238118b64a9bd38941d1b90de6405ead7d7c20b0d61b69d7513d1e53` | 16 undisclosed-renewal scenarios, bare statement in every arm, keyed unknown everywhere; + calibration. Report-only. Byte-identical to the first freeze. |
 | `keys.json` | `8502bbb6e7c988138fb3062d61475935551565a4cc49b7da875d31177b3b09f0` | per scenario: cap_kind, renewal, scope, scope_closure, alignment, permission_fact, classes, mixed, gold, bare_text_entailment, bare_author_intent, permission_gold. |
 

@@ -8,14 +8,59 @@
   "keys.json": "7b0c2d14e1745ebbda55a8320a2f914b133c88e632bde2517f660f5b747302d4"
  },
  "v2_digests": {
-  "items_filed.json": "3b131486f2c2974dcbf048605e1003882f78cbfbf87a98a704976133ee8f8bb2",
-  "items_bare.json": "adeaff29f3b6a0472c75a905def4b392a5a1851e625ad2388e863f7ad475b10a",
-  "items_permission.json": "9874dedc59ea518bd88c52a595507ed433516acd34e23251a670cf5939b735ef",
+  "items_filed.json": "cc9671d0e90c68cd34e2dfe6096374a2b3bd205e2a407c5efa7720183d61d19b",
+  "items_bare.json": "fa854e071721120aef5ac20f95b4743071c5fd5c043b039a351c50193b71ac91",
+  "items_permission.json": "ed46d3db003be3553860dd9f8b3a6f3697a3204c9c61b38a4bc7892c8a971b23",
   "items_undisclosed.json": "74926123238118b64a9bd38941d1b90de6405ead7d7c20b0d61b69d7513d1e53",
   "keys.json": "8502bbb6e7c988138fb3062d61475935551565a4cc49b7da875d31177b3b09f0"
  },
  "changed": {
   "items_filed.json": [
+   {
+    "id": "rc-api-stock-03-release",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Two in-flight requests exist now.",
+     "Just now, this client released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, two in-flight requests existed.",
+     "Between T0 and T1, this client released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-api-stock-04-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+     "Just now, this client deleted one of the in-flight requests; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set.",
+     "Between T0 and T1, this client deleted one of the in-flight requests; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-api-stock-05-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+     "Just now, this client deleted one of the archived requests; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set.",
+     "Between T0 and T1, this client deleted one of the archived requests; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
    {
     "id": "rc-storage-rate-01-wait",
     "facts_v1": [],
@@ -59,6 +104,51 @@
     ]
    },
    {
+    "id": "rc-storage-stock-03-release",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three retained snapshots of volume V exist now.",
+     "Just now, the backup agent released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three retained snapshots of volume V existed.",
+     "Between T0 and T1, the backup agent released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-storage-stock-04-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+     "Just now, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.",
+     "Between T0 and T1, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-storage-stock-05-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+     "Just now, the backup agent deleted one of the archived snapshots; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.",
+     "Between T0 and T1, the backup agent deleted one of the archived snapshots; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
     "id": "rc-storage-stock-06-count",
     "facts_v1": [
      "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set. No membership changes."
@@ -66,6 +156,51 @@
     "facts_v2": [
      "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set; no other owner has any snapshot in that set. No membership changes."
     ]
+   },
+   {
+    "id": "rc-seats-stock-03-release",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four active seats held by team T exist now.",
+     "Just now, team T released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four active seats held by team T existed.",
+     "Between T0 and T1, team T released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-seats-stock-04-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+     "Just now, team T deleted one of the active seats held by team T; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.",
+     "Between T0 and T1, team T deleted one of the active seats held by team T; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-seats-stock-05-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+     "Just now, team T deleted one of the archived seats; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.",
+     "Between T0 and T1, team T deleted one of the archived seats; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
    },
    {
     "id": "rc-connections-rate-01-wait",
@@ -108,6 +243,96 @@
     "facts_v2": [
      "No other actor opened any connections in the preceding minute."
     ]
+   },
+   {
+    "id": "rc-connections-stock-03-release",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Two open connections owned by worker A exist now.",
+     "Just now, worker A released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, two open connections owned by worker A existed.",
+     "Between T0 and T1, worker A released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-connections-stock-04-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+     "Just now, worker A deleted one of the open connections owned by worker A; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.",
+     "Between T0 and T1, worker A deleted one of the open connections owned by worker A; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-connections-stock-05-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+     "Just now, worker A deleted one of the archived connections; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.",
+     "Between T0 and T1, worker A deleted one of the archived connections; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-messages-stock-03-release",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five queued messages in mailbox M exist now.",
+     "Just now, this sender released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five queued messages in mailbox M existed.",
+     "Between T0 and T1, this sender released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-messages-stock-04-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+     "Just now, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.",
+     "Between T0 and T1, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-messages-stock-05-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+     "Just now, this sender deleted one of the archived messages; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.",
+     "Between T0 and T1, this sender deleted one of the archived messages; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
    },
    {
     "id": "rc-messages-stock-06-count",
@@ -175,6 +400,51 @@
     ]
    },
    {
+    "id": "rc-permits-stock-03-release",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three vehicles parked in bay set B exist now.",
+     "Just now, this permit holder released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three vehicles parked in bay set B existed.",
+     "Between T0 and T1, this permit holder released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-permits-stock-04-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+     "Just now, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.",
+     "Between T0 and T1, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-permits-stock-05-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+     "Just now, this permit holder deleted one of the archived vehicles; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.",
+     "Between T0 and T1, this permit holder deleted one of the archived vehicles; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
     "id": "rc-permits-stock-06-count",
     "facts_v1": [
      "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set. No membership changes."
@@ -182,6 +452,51 @@
     "facts_v2": [
      "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set; no other owner has any vehicle in that set. No membership changes."
     ]
+   },
+   {
+    "id": "rc-retries-stock-03-release",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four pending retries for job J exist now.",
+     "Just now, job J released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four pending retries for job J existed.",
+     "Between T0 and T1, job J released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-retries-stock-04-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+     "Just now, job J deleted one of the pending retries for job J; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.",
+     "Between T0 and T1, job J deleted one of the pending retries for job J; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-retries-stock-05-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+     "Just now, job J deleted one of the archived retries; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.",
+     "Between T0 and T1, job J deleted one of the archived retries; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
    },
    {
     "id": "rc-memory-rate-01-wait",
@@ -226,6 +541,51 @@
     ]
    },
    {
+    "id": "rc-memory-stock-03-release",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Seven held reservations in pool R exist now.",
+     "Just now, service S released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, seven held reservations in pool R existed.",
+     "Between T0 and T1, service S released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-memory-stock-04-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+     "Just now, service S deleted one of the held reservations in pool R; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.",
+     "Between T0 and T1, service S deleted one of the held reservations in pool R; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-memory-stock-05-delete",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+     "Just now, service S deleted one of the archived reservations; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.",
+     "Between T0 and T1, service S deleted one of the archived reservations; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
     "id": "rc-memory-stock-06-count",
     "facts_v1": [
      "Service S has one reservation in the named set now; service U has two reservations in the same named set. No membership changes."
@@ -236,6 +596,51 @@
    }
   ],
   "items_bare.json": [
+   {
+    "id": "rc-api-stock-03-release-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Two in-flight requests exist now.",
+     "Just now, this client released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, two in-flight requests existed.",
+     "Between T0 and T1, this client released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-api-stock-04-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+     "Just now, this client deleted one of the in-flight requests; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set.",
+     "Between T0 and T1, this client deleted one of the in-flight requests; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-api-stock-05-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+     "Just now, this client deleted one of the archived requests; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set.",
+     "Between T0 and T1, this client deleted one of the archived requests; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
    {
     "id": "rc-storage-rate-01-wait-bare",
     "facts_v1": [],
@@ -279,6 +684,51 @@
     ]
    },
    {
+    "id": "rc-storage-stock-03-release-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three retained snapshots of volume V exist now.",
+     "Just now, the backup agent released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three retained snapshots of volume V existed.",
+     "Between T0 and T1, the backup agent released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-storage-stock-04-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+     "Just now, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.",
+     "Between T0 and T1, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-storage-stock-05-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+     "Just now, the backup agent deleted one of the archived snapshots; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.",
+     "Between T0 and T1, the backup agent deleted one of the archived snapshots; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
     "id": "rc-storage-stock-06-count-bare",
     "facts_v1": [
      "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set. No membership changes."
@@ -286,6 +736,51 @@
     "facts_v2": [
      "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set; no other owner has any snapshot in that set. No membership changes."
     ]
+   },
+   {
+    "id": "rc-seats-stock-03-release-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four active seats held by team T exist now.",
+     "Just now, team T released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four active seats held by team T existed.",
+     "Between T0 and T1, team T released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-seats-stock-04-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+     "Just now, team T deleted one of the active seats held by team T; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.",
+     "Between T0 and T1, team T deleted one of the active seats held by team T; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-seats-stock-05-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+     "Just now, team T deleted one of the archived seats; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.",
+     "Between T0 and T1, team T deleted one of the archived seats; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
    },
    {
     "id": "rc-connections-rate-01-wait-bare",
@@ -328,6 +823,96 @@
     "facts_v2": [
      "No other actor opened any connections in the preceding minute."
     ]
+   },
+   {
+    "id": "rc-connections-stock-03-release-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Two open connections owned by worker A exist now.",
+     "Just now, worker A released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, two open connections owned by worker A existed.",
+     "Between T0 and T1, worker A released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-connections-stock-04-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+     "Just now, worker A deleted one of the open connections owned by worker A; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.",
+     "Between T0 and T1, worker A deleted one of the open connections owned by worker A; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-connections-stock-05-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+     "Just now, worker A deleted one of the archived connections; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.",
+     "Between T0 and T1, worker A deleted one of the archived connections; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-messages-stock-03-release-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five queued messages in mailbox M exist now.",
+     "Just now, this sender released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five queued messages in mailbox M existed.",
+     "Between T0 and T1, this sender released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-messages-stock-04-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+     "Just now, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.",
+     "Between T0 and T1, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-messages-stock-05-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+     "Just now, this sender deleted one of the archived messages; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.",
+     "Between T0 and T1, this sender deleted one of the archived messages; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
    },
    {
     "id": "rc-messages-stock-06-count-bare",
@@ -395,6 +980,51 @@
     ]
    },
    {
+    "id": "rc-permits-stock-03-release-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three vehicles parked in bay set B exist now.",
+     "Just now, this permit holder released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three vehicles parked in bay set B existed.",
+     "Between T0 and T1, this permit holder released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-permits-stock-04-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+     "Just now, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.",
+     "Between T0 and T1, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-permits-stock-05-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+     "Just now, this permit holder deleted one of the archived vehicles; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.",
+     "Between T0 and T1, this permit holder deleted one of the archived vehicles; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
     "id": "rc-permits-stock-06-count-bare",
     "facts_v1": [
      "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set. No membership changes."
@@ -402,6 +1032,51 @@
     "facts_v2": [
      "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set; no other owner has any vehicle in that set. No membership changes."
     ]
+   },
+   {
+    "id": "rc-retries-stock-03-release-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four pending retries for job J exist now.",
+     "Just now, job J released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four pending retries for job J existed.",
+     "Between T0 and T1, job J released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-retries-stock-04-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+     "Just now, job J deleted one of the pending retries for job J; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.",
+     "Between T0 and T1, job J deleted one of the pending retries for job J; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-retries-stock-05-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+     "Just now, job J deleted one of the archived retries; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.",
+     "Between T0 and T1, job J deleted one of the archived retries; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
    },
    {
     "id": "rc-memory-rate-01-wait-bare",
@@ -446,6 +1121,51 @@
     ]
    },
    {
+    "id": "rc-memory-stock-03-release-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Seven held reservations in pool R exist now.",
+     "Just now, service S released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, seven held reservations in pool R existed.",
+     "Between T0 and T1, service S released one of them; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that release?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that release?"
+   },
+   {
+    "id": "rc-memory-stock-04-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+     "Just now, service S deleted one of the held reservations in pool R; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.",
+     "Between T0 and T1, service S deleted one of the held reservations in pool R; nothing else changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
+    "id": "rc-memory-stock-05-delete-bare",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+     "Just now, service S deleted one of the archived reservations; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.",
+     "Between T0 and T1, service S deleted one of the archived reservations; no member of the named set changed."
+    ],
+    "question_v1": "How much room is there under this cap now, immediately after that deletion?",
+    "question_v2": "How much room is there under this cap at T1, immediately after that deletion?"
+   },
+   {
     "id": "rc-memory-stock-06-count-bare",
     "facts_v1": [
      "Service S has one reservation in the named set now; service U has two reservations in the same named set. No membership changes."
@@ -456,6 +1176,45 @@
    }
   ],
   "items_permission.json": [
+   {
+    "id": "rc-api-stock-03-release-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Two in-flight requests exist now.",
+     "Just now, this client released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, two in-flight requests existed.",
+     "Between T0 and T1, this client released one of them; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-api-stock-04-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+     "Just now, this client deleted one of the in-flight requests; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set.",
+     "Between T0 and T1, this client deleted one of the in-flight requests; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-api-stock-05-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+     "Just now, this client deleted one of the archived requests; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set.",
+     "Between T0 and T1, this client deleted one of the archived requests; no member of the named set changed."
+    ]
+   },
    {
     "id": "rc-storage-rate-01-wait-permission",
     "facts_v1": [],
@@ -499,12 +1258,90 @@
     ]
    },
    {
+    "id": "rc-storage-stock-03-release-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three retained snapshots of volume V exist now.",
+     "Just now, the backup agent released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three retained snapshots of volume V existed.",
+     "Between T0 and T1, the backup agent released one of them; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-storage-stock-04-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+     "Just now, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.",
+     "Between T0 and T1, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-storage-stock-05-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+     "Just now, the backup agent deleted one of the archived snapshots; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.",
+     "Between T0 and T1, the backup agent deleted one of the archived snapshots; no member of the named set changed."
+    ]
+   },
+   {
     "id": "rc-storage-stock-06-count-permission",
     "facts_v1": [
      "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set. No membership changes."
     ],
     "facts_v2": [
      "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set; no other owner has any snapshot in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-seats-stock-03-release-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four active seats held by team T exist now.",
+     "Just now, team T released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four active seats held by team T existed.",
+     "Between T0 and T1, team T released one of them; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-seats-stock-04-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+     "Just now, team T deleted one of the active seats held by team T; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.",
+     "Between T0 and T1, team T deleted one of the active seats held by team T; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-seats-stock-05-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+     "Just now, team T deleted one of the archived seats; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.",
+     "Between T0 and T1, team T deleted one of the archived seats; no member of the named set changed."
     ]
    },
    {
@@ -547,6 +1384,84 @@
     "facts_v1": [],
     "facts_v2": [
      "No other actor opened any connections in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-connections-stock-03-release-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Two open connections owned by worker A exist now.",
+     "Just now, worker A released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, two open connections owned by worker A existed.",
+     "Between T0 and T1, worker A released one of them; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-connections-stock-04-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+     "Just now, worker A deleted one of the open connections owned by worker A; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.",
+     "Between T0 and T1, worker A deleted one of the open connections owned by worker A; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-connections-stock-05-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+     "Just now, worker A deleted one of the archived connections; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.",
+     "Between T0 and T1, worker A deleted one of the archived connections; no member of the named set changed."
+    ]
+   },
+   {
+    "id": "rc-messages-stock-03-release-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five queued messages in mailbox M exist now.",
+     "Just now, this sender released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five queued messages in mailbox M existed.",
+     "Between T0 and T1, this sender released one of them; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-messages-stock-04-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+     "Just now, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.",
+     "Between T0 and T1, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-messages-stock-05-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+     "Just now, this sender deleted one of the archived messages; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.",
+     "Between T0 and T1, this sender deleted one of the archived messages; no member of the named set changed."
     ]
    },
    {
@@ -615,12 +1530,90 @@
     ]
    },
    {
+    "id": "rc-permits-stock-03-release-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Three vehicles parked in bay set B exist now.",
+     "Just now, this permit holder released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, three vehicles parked in bay set B existed.",
+     "Between T0 and T1, this permit holder released one of them; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-permits-stock-04-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+     "Just now, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.",
+     "Between T0 and T1, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-permits-stock-05-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+     "Just now, this permit holder deleted one of the archived vehicles; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.",
+     "Between T0 and T1, this permit holder deleted one of the archived vehicles; no member of the named set changed."
+    ]
+   },
+   {
     "id": "rc-permits-stock-06-count-permission",
     "facts_v1": [
      "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set. No membership changes."
     ],
     "facts_v2": [
      "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set; no other owner has any vehicle in that set. No membership changes."
+    ]
+   },
+   {
+    "id": "rc-retries-stock-03-release-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Four pending retries for job J exist now.",
+     "Just now, job J released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, four pending retries for job J existed.",
+     "Between T0 and T1, job J released one of them; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-retries-stock-04-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+     "Just now, job J deleted one of the pending retries for job J; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.",
+     "Between T0 and T1, job J deleted one of the pending retries for job J; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-retries-stock-05-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+     "Just now, job J deleted one of the archived retries; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.",
+     "Between T0 and T1, job J deleted one of the archived retries; no member of the named set changed."
     ]
    },
    {
@@ -663,6 +1656,45 @@
     "facts_v1": [],
     "facts_v2": [
      "No other actor took any reservations in the preceding minute."
+    ]
+   },
+   {
+    "id": "rc-memory-stock-03-release-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Seven held reservations in pool R exist now.",
+     "Just now, service S released one of them; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, seven held reservations in pool R existed.",
+     "Between T0 and T1, service S released one of them; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-memory-stock-04-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+     "Just now, service S deleted one of the held reservations in pool R; nothing else changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.",
+     "Between T0 and T1, service S deleted one of the held reservations in pool R; nothing else changed."
+    ]
+   },
+   {
+    "id": "rc-memory-stock-05-delete-permission",
+    "facts_v1": [
+     "Counts below are as of now, before any further action.",
+     "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+     "Just now, service S deleted one of the archived reservations; no member of the named set changed."
+    ],
+    "facts_v2": [
+     "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+     "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.",
+     "Between T0 and T1, service S deleted one of the archived reservations; no member of the named set changed."
     ]
    },
    {

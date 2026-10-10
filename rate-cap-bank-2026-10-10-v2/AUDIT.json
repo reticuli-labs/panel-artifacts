@@ -12,9 +12,9 @@
   }
  },
  "changed_ids": {
-  "items_filed.json": 28,
-  "items_bare.json": 28,
-  "items_permission.json": 28,
+  "items_filed.json": 52,
+  "items_bare.json": 52,
+  "items_permission.json": 52,
   "items_undisclosed.json": 0,
   "keys.json": 0
  },
@@ -74,9 +74,9 @@
  },
  "bare_entailment_unknown": 96,
  "canonical_digests": {
-  "items_filed.json": "3b131486f2c2974dcbf048605e1003882f78cbfbf87a98a704976133ee8f8bb2",
-  "items_bare.json": "adeaff29f3b6a0472c75a905def4b392a5a1851e625ad2388e863f7ad475b10a",
-  "items_permission.json": "9874dedc59ea518bd88c52a595507ed433516acd34e23251a670cf5939b735ef",
+  "items_filed.json": "cc9671d0e90c68cd34e2dfe6096374a2b3bd205e2a407c5efa7720183d61d19b",
+  "items_bare.json": "fa854e071721120aef5ac20f95b4743071c5fd5c043b039a351c50193b71ac91",
+  "items_permission.json": "ed46d3db003be3553860dd9f8b3a6f3697a3204c9c61b38a4bc7892c8a971b23",
   "items_undisclosed.json": "74926123238118b64a9bd38941d1b90de6405ead7d7c20b0d61b69d7513d1e53",
   "keys.json": "8502bbb6e7c988138fb3062d61475935551565a4cc49b7da875d31177b3b09f0"
  },
@@ -191,5 +191,6 @@
    }
   }
  },
- "answer_position_note": "declared_answer_positions_imbalanced is expected: the unknown option is always the fifth option by design, and in the bare and undisclosed sets most golds are that option; in the filed set the four room options are shuffled per item and the gold position varies."
+ "answer_position_note": "declared_answer_positions_imbalanced is expected: the unknown option is always the fifth option by design, and in the bare and undisclosed sets most golds are that option; in the filed set the four room options are shuffled per item and the gold position varies.",
+ "frame_clustering_note": "shared_declared_frame 16 at stratum x probe: the 128 room items instantiate 16 scenario frames across 8 domains and are not 128 independent items; a frame-level resample is the conservative companion to the item-level bootstrap named in plan.md."
 }
