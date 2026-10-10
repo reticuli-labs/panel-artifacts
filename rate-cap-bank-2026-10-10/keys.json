@@ -1,0 +1,2874 @@
+{
+ "rc-api-rate-01-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "granted",
+  "domain": "api",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of four",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of four",
+  "permission_gold": "Yes, this client is authorised to make a request",
+  "N": 4,
+  "N2": null
+ },
+ "rc-api-rate-02-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of four",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of four",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N2": null
+ },
+ "rc-api-rate-03-release": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "release",
+  "classes": [
+   "release-useless-for-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N2": null
+ },
+ "rc-api-rate-04-delete": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "denied",
+  "domain": "api",
+  "probe": "delete",
+  "classes": [
+   "delete-useless-for-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "No, this client is not authorised to make a request",
+  "N": 4,
+  "N2": null
+ },
+ "rc-api-rate-05-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "count",
+  "classes": [
+   "scope-per-identity",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Room for two more",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N2": null
+ },
+ "rc-api-rate-06-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N2": null
+ },
+ "rc-api-rate-07-boundary": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "boundary",
+  "classes": [
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Yes, both bursts can be legal",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Yes, both bursts can be legal",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N2": null
+ },
+ "rc-api-rate-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "count",
+  "classes": [
+   "mixed-rate-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N2": 5
+ },
+ "rc-api-stock-01-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "wait",
+  "classes": [
+   "waiting-useless-for-stock"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-api-stock-02-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "wait",
+  "classes": [
+   "expiry-member-leaves"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-api-stock-03-release": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "granted",
+  "domain": "api",
+  "probe": "release",
+  "classes": [
+   "release-returns-stock",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Yes, this client is authorised to start a request",
+  "N": 3,
+  "N1": null
+ },
+ "rc-api-stock-04-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "delete",
+  "classes": [
+   "deleted-member"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-api-stock-05-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "denied",
+  "domain": "api",
+  "probe": "delete",
+  "classes": [
+   "deleted-nonmember",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "No, this client is not authorised to start a request",
+  "N": 3,
+  "N1": null
+ },
+ "rc-api-stock-06-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "count",
+  "classes": [
+   "scope-per-identity"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Room for two more",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-api-stock-07-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-api-stock-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "api",
+  "probe": "count",
+  "classes": [
+   "mixed-stock-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": 4
+ },
+ "rc-storage-rate-01-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "granted",
+  "domain": "storage",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of five",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of five",
+  "permission_gold": "Yes, the backup agent is authorised to take a snapshot",
+  "N": 5,
+  "N2": null
+ },
+ "rc-storage-rate-02-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of five",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of five",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-storage-rate-03-release": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "release",
+  "classes": [
+   "release-useless-for-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-storage-rate-04-delete": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "denied",
+  "domain": "storage",
+  "probe": "delete",
+  "classes": [
+   "delete-useless-for-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for three more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for three more",
+  "permission_gold": "No, the backup agent is not authorised to take a snapshot",
+  "N": 5,
+  "N2": null
+ },
+ "rc-storage-rate-05-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "count",
+  "classes": [
+   "scope-global",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-storage-rate-06-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-storage-rate-07-boundary": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "boundary",
+  "classes": [
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "No, at most one of the two bursts can be legal",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No, at most one of the two bursts can be legal",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-storage-rate-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "count",
+  "classes": [
+   "mixed-rate-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": 5
+ },
+ "rc-storage-stock-01-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "wait",
+  "classes": [
+   "waiting-useless-for-stock"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-storage-stock-02-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "wait",
+  "classes": [
+   "expiry-member-leaves"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-storage-stock-03-release": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "granted",
+  "domain": "storage",
+  "probe": "release",
+  "classes": [
+   "release-returns-stock",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Yes, the backup agent is authorised to retain a snapshot",
+  "N": 4,
+  "N1": null
+ },
+ "rc-storage-stock-04-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "delete",
+  "classes": [
+   "deleted-member"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-storage-stock-05-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "denied",
+  "domain": "storage",
+  "probe": "delete",
+  "classes": [
+   "deleted-nonmember",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "No, the backup agent is not authorised to retain a snapshot",
+  "N": 4,
+  "N1": null
+ },
+ "rc-storage-stock-06-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "count",
+  "classes": [
+   "scope-global"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Room for one more",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-storage-stock-07-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-storage-stock-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "storage",
+  "probe": "count",
+  "classes": [
+   "mixed-stock-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": 4
+ },
+ "rc-seats-rate-01-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "granted",
+  "domain": "seats",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of six",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of six",
+  "permission_gold": "Yes, team T is authorised to activate a licence",
+  "N": 6,
+  "N2": null
+ },
+ "rc-seats-rate-02-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of six",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of six",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-seats-rate-03-release": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "release",
+  "classes": [
+   "release-useless-for-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-seats-rate-04-delete": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "denied",
+  "domain": "seats",
+  "probe": "delete",
+  "classes": [
+   "delete-useless-for-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for four more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for four more",
+  "permission_gold": "No, team T is not authorised to activate a licence",
+  "N": 6,
+  "N2": null
+ },
+ "rc-seats-rate-05-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "count",
+  "classes": [
+   "scope-per-identity",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for four more",
+  "bare_text_entailment": "Room for four more",
+  "bare_author_intent": "Room for four more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-seats-rate-06-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-seats-rate-07-boundary": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "boundary",
+  "classes": [
+   "boundary-unknown"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-seats-rate-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "count",
+  "classes": [
+   "mixed-rate-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": 5
+ },
+ "rc-seats-stock-01-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "wait",
+  "classes": [
+   "waiting-useless-for-stock"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-seats-stock-02-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "wait",
+  "classes": [
+   "expiry-member-leaves"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-seats-stock-03-release": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "granted",
+  "domain": "seats",
+  "probe": "release",
+  "classes": [
+   "release-returns-stock",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Yes, team T is authorised to claim a seat",
+  "N": 5,
+  "N1": null
+ },
+ "rc-seats-stock-04-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "delete",
+  "classes": [
+   "deleted-member"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-seats-stock-05-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "denied",
+  "domain": "seats",
+  "probe": "delete",
+  "classes": [
+   "deleted-nonmember",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "No, team T is not authorised to claim a seat",
+  "N": 5,
+  "N1": null
+ },
+ "rc-seats-stock-06-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "count",
+  "classes": [
+   "scope-per-identity"
+  ],
+  "mixed": false,
+  "gold": "Room for four more",
+  "bare_text_entailment": "Room for four more",
+  "bare_author_intent": "Room for four more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-seats-stock-07-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-seats-stock-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "seats",
+  "probe": "count",
+  "classes": [
+   "mixed-stock-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": 4
+ },
+ "rc-connections-rate-01-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "granted",
+  "domain": "connections",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of eight",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of eight",
+  "permission_gold": "Yes, worker A is authorised to open a connection",
+  "N": 8,
+  "N2": null
+ },
+ "rc-connections-rate-02-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of eight",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of eight",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N2": null
+ },
+ "rc-connections-rate-03-release": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "release",
+  "classes": [
+   "release-useless-for-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N2": null
+ },
+ "rc-connections-rate-04-delete": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "denied",
+  "domain": "connections",
+  "probe": "delete",
+  "classes": [
+   "delete-useless-for-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for six more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for six more",
+  "permission_gold": "No, worker A is not authorised to open a connection",
+  "N": 8,
+  "N2": null
+ },
+ "rc-connections-rate-05-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "count",
+  "classes": [
+   "scope-global",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for three more",
+  "bare_text_entailment": "Room for three more",
+  "bare_author_intent": "Room for three more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N2": null
+ },
+ "rc-connections-rate-06-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N2": null
+ },
+ "rc-connections-rate-07-boundary": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "boundary",
+  "classes": [
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Yes, both bursts can be legal",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Yes, both bursts can be legal",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N2": null
+ },
+ "rc-connections-rate-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "count",
+  "classes": [
+   "mixed-rate-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N2": 5
+ },
+ "rc-connections-stock-01-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "wait",
+  "classes": [
+   "waiting-useless-for-stock"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-connections-stock-02-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "wait",
+  "classes": [
+   "expiry-member-leaves"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-connections-stock-03-release": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "granted",
+  "domain": "connections",
+  "probe": "release",
+  "classes": [
+   "release-returns-stock",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Yes, worker A is authorised to open a connection",
+  "N": 3,
+  "N1": null
+ },
+ "rc-connections-stock-04-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "delete",
+  "classes": [
+   "deleted-member"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-connections-stock-05-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "denied",
+  "domain": "connections",
+  "probe": "delete",
+  "classes": [
+   "deleted-nonmember",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "No, worker A is not authorised to open a connection",
+  "N": 3,
+  "N1": null
+ },
+ "rc-connections-stock-06-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "count",
+  "classes": [
+   "scope-per-identity"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Room for two more",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-connections-stock-07-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": null
+ },
+ "rc-connections-stock-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "connections",
+  "probe": "count",
+  "classes": [
+   "mixed-stock-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N1": 4
+ },
+ "rc-messages-rate-01-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "granted",
+  "domain": "messages",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of three",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of three",
+  "permission_gold": "Yes, this sender is authorised to send a message",
+  "N": 3,
+  "N2": null
+ },
+ "rc-messages-rate-02-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of three",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of three",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N2": null
+ },
+ "rc-messages-rate-03-release": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "release",
+  "classes": [
+   "release-useless-for-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N2": null
+ },
+ "rc-messages-rate-04-delete": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "denied",
+  "domain": "messages",
+  "probe": "delete",
+  "classes": [
+   "delete-useless-for-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "No, this sender is not authorised to send a message",
+  "N": 3,
+  "N2": null
+ },
+ "rc-messages-rate-05-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "count",
+  "classes": [
+   "scope-per-identity",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Room for one more",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N2": null
+ },
+ "rc-messages-rate-06-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N2": null
+ },
+ "rc-messages-rate-07-boundary": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "boundary",
+  "classes": [
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "No, at most one of the two bursts can be legal",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No, at most one of the two bursts can be legal",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N2": null
+ },
+ "rc-messages-rate-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "count",
+  "classes": [
+   "mixed-rate-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 3,
+  "N2": 5
+ },
+ "rc-messages-stock-01-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "wait",
+  "classes": [
+   "waiting-useless-for-stock"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N1": null
+ },
+ "rc-messages-stock-02-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "wait",
+  "classes": [
+   "expiry-member-leaves"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N1": null
+ },
+ "rc-messages-stock-03-release": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "granted",
+  "domain": "messages",
+  "probe": "release",
+  "classes": [
+   "release-returns-stock",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Yes, this sender is authorised to queue a message",
+  "N": 6,
+  "N1": null
+ },
+ "rc-messages-stock-04-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "delete",
+  "classes": [
+   "deleted-member"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N1": null
+ },
+ "rc-messages-stock-05-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "denied",
+  "domain": "messages",
+  "probe": "delete",
+  "classes": [
+   "deleted-nonmember",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "No, this sender is not authorised to queue a message",
+  "N": 6,
+  "N1": null
+ },
+ "rc-messages-stock-06-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "count",
+  "classes": [
+   "scope-global"
+  ],
+  "mixed": false,
+  "gold": "Room for three more",
+  "bare_text_entailment": "Room for three more",
+  "bare_author_intent": "Room for three more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N1": null
+ },
+ "rc-messages-stock-07-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N1": null
+ },
+ "rc-messages-stock-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "messages",
+  "probe": "count",
+  "classes": [
+   "mixed-stock-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N1": 4
+ },
+ "rc-permits-rate-01-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "granted",
+  "domain": "permits",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of ten",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of ten",
+  "permission_gold": "Yes, this permit holder is authorised to issue a permit",
+  "N": 10,
+  "N2": null
+ },
+ "rc-permits-rate-02-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of ten",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of ten",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 10,
+  "N2": null
+ },
+ "rc-permits-rate-03-release": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "release",
+  "classes": [
+   "release-useless-for-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 10,
+  "N2": null
+ },
+ "rc-permits-rate-04-delete": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "denied",
+  "domain": "permits",
+  "probe": "delete",
+  "classes": [
+   "delete-useless-for-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for eight more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for eight more",
+  "permission_gold": "No, this permit holder is not authorised to issue a permit",
+  "N": 10,
+  "N2": null
+ },
+ "rc-permits-rate-05-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "count",
+  "classes": [
+   "scope-global",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for five more",
+  "bare_text_entailment": "Room for five more",
+  "bare_author_intent": "Room for five more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 10,
+  "N2": null
+ },
+ "rc-permits-rate-06-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 10,
+  "N2": null
+ },
+ "rc-permits-rate-07-boundary": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "boundary",
+  "classes": [
+   "boundary-unknown"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 10,
+  "N2": null
+ },
+ "rc-permits-rate-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "count",
+  "classes": [
+   "mixed-rate-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 10,
+  "N2": 5
+ },
+ "rc-permits-stock-01-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "wait",
+  "classes": [
+   "waiting-useless-for-stock"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-permits-stock-02-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "wait",
+  "classes": [
+   "expiry-member-leaves"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-permits-stock-03-release": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "granted",
+  "domain": "permits",
+  "probe": "release",
+  "classes": [
+   "release-returns-stock",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Yes, this permit holder is authorised to park a vehicle",
+  "N": 4,
+  "N1": null
+ },
+ "rc-permits-stock-04-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "delete",
+  "classes": [
+   "deleted-member"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-permits-stock-05-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "denied",
+  "domain": "permits",
+  "probe": "delete",
+  "classes": [
+   "deleted-nonmember",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "No, this permit holder is not authorised to park a vehicle",
+  "N": 4,
+  "N1": null
+ },
+ "rc-permits-stock-06-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "count",
+  "classes": [
+   "scope-global"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Room for one more",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-permits-stock-07-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": null
+ },
+ "rc-permits-stock-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "permits",
+  "probe": "count",
+  "classes": [
+   "mixed-stock-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 4,
+  "N1": 4
+ },
+ "rc-retries-rate-01-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "granted",
+  "domain": "retries",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of five",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of five",
+  "permission_gold": "Yes, job J is authorised to schedule a retry",
+  "N": 5,
+  "N2": null
+ },
+ "rc-retries-rate-02-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of five",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of five",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-retries-rate-03-release": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "release",
+  "classes": [
+   "release-useless-for-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-retries-rate-04-delete": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "denied",
+  "domain": "retries",
+  "probe": "delete",
+  "classes": [
+   "delete-useless-for-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for three more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for three more",
+  "permission_gold": "No, job J is not authorised to schedule a retry",
+  "N": 5,
+  "N2": null
+ },
+ "rc-retries-rate-05-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "count",
+  "classes": [
+   "scope-per-identity",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for three more",
+  "bare_text_entailment": "Room for three more",
+  "bare_author_intent": "Room for three more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-retries-rate-06-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-retries-rate-07-boundary": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "boundary",
+  "classes": [
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Yes, both bursts can be legal",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Yes, both bursts can be legal",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": null
+ },
+ "rc-retries-rate-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "rate",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "count",
+  "classes": [
+   "mixed-rate-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N2": 5
+ },
+ "rc-retries-stock-01-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "wait",
+  "classes": [
+   "waiting-useless-for-stock"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-retries-stock-02-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "wait",
+  "classes": [
+   "expiry-member-leaves"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-retries-stock-03-release": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "granted",
+  "domain": "retries",
+  "probe": "release",
+  "classes": [
+   "release-returns-stock",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Yes, job J is authorised to schedule a retry",
+  "N": 5,
+  "N1": null
+ },
+ "rc-retries-stock-04-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "delete",
+  "classes": [
+   "deleted-member"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-retries-stock-05-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "denied",
+  "domain": "retries",
+  "probe": "delete",
+  "classes": [
+   "deleted-nonmember",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "No, job J is not authorised to schedule a retry",
+  "N": 5,
+  "N1": null
+ },
+ "rc-retries-stock-06-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "count",
+  "classes": [
+   "scope-per-identity"
+  ],
+  "mixed": false,
+  "gold": "Room for four more",
+  "bare_text_entailment": "Room for four more",
+  "bare_author_intent": "Room for four more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-retries-stock-07-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": null
+ },
+ "rc-retries-stock-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "stock",
+  "scope": "per-identity",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "retries",
+  "probe": "count",
+  "classes": [
+   "mixed-stock-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 5,
+  "N1": 4
+ },
+ "rc-memory-rate-01-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "granted",
+  "domain": "memory",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of six",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of six",
+  "permission_gold": "Yes, service S is authorised to take a reservation",
+  "N": 6,
+  "N2": null
+ },
+ "rc-memory-rate-02-wait": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-clock",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "wait",
+  "classes": [
+   "waiting-returns-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for the full allowance of six",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for the full allowance of six",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-memory-rate-03-release": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "release",
+  "classes": [
+   "release-useless-for-rate",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-memory-rate-04-delete": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "denied",
+  "domain": "memory",
+  "probe": "delete",
+  "classes": [
+   "delete-useless-for-rate",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for four more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for four more",
+  "permission_gold": "No, service S is not authorised to take a reservation",
+  "N": 6,
+  "N2": null
+ },
+ "rc-memory-rate-05-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "count",
+  "classes": [
+   "scope-global",
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Room for one more",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-memory-rate-06-count": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "none",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-memory-rate-07-boundary": {
+  "cap_kind": "rate",
+  "renewal": "time",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "boundary",
+  "classes": [
+   "boundary-known"
+  ],
+  "mixed": false,
+  "gold": "No, at most one of the two bursts can be legal",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No, at most one of the two bursts can be legal",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": null
+ },
+ "rc-memory-rate-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "rate",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "count",
+  "classes": [
+   "mixed-rate-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 6,
+  "N2": 5
+ },
+ "rc-memory-stock-01-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "wait",
+  "classes": [
+   "waiting-useless-for-stock"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N1": null
+ },
+ "rc-memory-stock-02-wait": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "wait",
+  "classes": [
+   "expiry-member-leaves"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N1": null
+ },
+ "rc-memory-stock-03-release": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "granted",
+  "domain": "memory",
+  "probe": "release",
+  "classes": [
+   "release-returns-stock",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "Room for two more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for two more",
+  "permission_gold": "Yes, service S is authorised to take a reservation",
+  "N": 8,
+  "N1": null
+ },
+ "rc-memory-stock-04-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "delete",
+  "classes": [
+   "deleted-member"
+  ],
+  "mixed": false,
+  "gold": "Room for one more",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Room for one more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N1": null
+ },
+ "rc-memory-stock-05-delete": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "denied",
+  "domain": "memory",
+  "probe": "delete",
+  "classes": [
+   "deleted-nonmember",
+   "headroom-not-permission"
+  ],
+  "mixed": false,
+  "gold": "No room for another",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "No, service S is not authorised to take a reservation",
+  "N": 8,
+  "N1": null
+ },
+ "rc-memory-stock-06-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "count",
+  "classes": [
+   "scope-global"
+  ],
+  "mixed": false,
+  "gold": "Room for five more",
+  "bare_text_entailment": "Room for five more",
+  "bare_author_intent": "Room for five more",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N1": null
+ },
+ "rc-memory-stock-07-count": {
+  "cap_kind": "stock",
+  "renewal": "release",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "n/a",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "count",
+  "classes": [
+   "ceiling-not-count"
+  ],
+  "mixed": false,
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N1": null
+ },
+ "rc-memory-stock-08-count": {
+  "cap_kind": "mixed",
+  "renewal": "both",
+  "stratum": "stock",
+  "scope": "global",
+  "alignment": "per-any",
+  "permission_fact": "none",
+  "domain": "memory",
+  "probe": "count",
+  "classes": [
+   "mixed-stock-decides",
+   "boundary-known"
+  ],
+  "mixed": true,
+  "gold": "No room for another",
+  "bare_text_entailment": "No room for another",
+  "bare_author_intent": "No room for another",
+  "permission_gold": "Cannot determine from the statement and the facts",
+  "N": 8,
+  "N1": 4
+ },
+ "rc-api-undisclosed-rate": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "rate",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "api",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 5
+ },
+ "rc-api-undisclosed-stock": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "stock",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "api",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 3
+ },
+ "rc-storage-undisclosed-rate": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "rate",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "storage",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 5
+ },
+ "rc-storage-undisclosed-stock": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "stock",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "storage",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 3
+ },
+ "rc-seats-undisclosed-rate": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "rate",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "seats",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 5
+ },
+ "rc-seats-undisclosed-stock": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "stock",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "seats",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 3
+ },
+ "rc-connections-undisclosed-rate": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "rate",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "connections",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 5
+ },
+ "rc-connections-undisclosed-stock": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "stock",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "connections",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 3
+ },
+ "rc-messages-undisclosed-rate": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "rate",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "messages",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 5
+ },
+ "rc-messages-undisclosed-stock": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "stock",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "messages",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 3
+ },
+ "rc-permits-undisclosed-rate": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "rate",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "permits",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 5
+ },
+ "rc-permits-undisclosed-stock": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "stock",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "permits",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 3
+ },
+ "rc-retries-undisclosed-rate": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "rate",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "retries",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 5
+ },
+ "rc-retries-undisclosed-stock": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "stock",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "retries",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 3
+ },
+ "rc-memory-undisclosed-rate": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "rate",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "memory",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 5
+ },
+ "rc-memory-undisclosed-stock": {
+  "cap_kind": "undisclosed",
+  "intended_kind": "stock",
+  "renewal": "undisclosed",
+  "stratum": "undisclosed",
+  "domain": "memory",
+  "probe": "wait",
+  "classes": [
+   "undisclosed-renewal"
+  ],
+  "gold": "Cannot determine from the statement and the facts",
+  "bare_text_entailment": "Cannot determine from the statement and the facts",
+  "bare_author_intent": "Cannot determine from the statement and the facts",
+  "N": 3
+ }
+}

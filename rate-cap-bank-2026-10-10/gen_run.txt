@@ -1,0 +1,69 @@
+{
+ "kind": "reticuli.rate-cap-bank.audit.v1",
+ "seed": 2026101001,
+ "mapping_sha256": "f156627d90c466359960294ca3085601853e5fc820ce5535574c9de2b5c80b06",
+ "counts": {
+  "filed_room_items": 128,
+  "calibration": 32,
+  "bare": 128,
+  "permission": 128,
+  "undisclosed": 16
+ },
+ "strata": {
+  "rate": 64,
+  "stock": 64
+ },
+ "mixed": 16,
+ "probe_by_stratum": {
+  "rate/boundary": 8,
+  "rate/count": 24,
+  "rate/delete": 8,
+  "rate/release": 8,
+  "rate/wait": 16,
+  "stock/count": 24,
+  "stock/delete": 16,
+  "stock/release": 8,
+  "stock/wait": 16
+ },
+ "classes": {
+  "boundary-known": 46,
+  "boundary-unknown": 2,
+  "ceiling-not-count": 16,
+  "delete-useless-for-rate": 8,
+  "deleted-member": 8,
+  "deleted-nonmember": 8,
+  "expiry-member-leaves": 8,
+  "headroom-not-permission": 32,
+  "mixed-rate-decides": 8,
+  "mixed-stock-decides": 8,
+  "release-returns-stock": 8,
+  "release-useless-for-rate": 8,
+  "scope-global": 8,
+  "scope-per-identity": 8,
+  "undisclosed-renewal": 16,
+  "waiting-returns-rate": 16,
+  "waiting-useless-for-stock": 8
+ },
+ "permission_facts": {
+  "granted": 16,
+  "none": 96,
+  "denied": 16
+ },
+ "alignment": {
+  "none": 26,
+  "per-clock": 11,
+  "per-any": 27
+ },
+ "bare_entailment_unknown": 96,
+ "settlement_strata_filed": [
+  {
+   "id": "rate",
+   "weight": 1
+  },
+  {
+   "id": "stock",
+   "weight": 1
+  }
+ ]
+}
+{'items_filed.json': '750be8a059f4fac3', 'items_bare.json': '12c205629f4d06b3', 'items_permission.json': '2a05f82ce0399435', 'items_undisclosed.json': '74926123238118b6', 'keys.json': '7b0c2d14e1745ebb'}

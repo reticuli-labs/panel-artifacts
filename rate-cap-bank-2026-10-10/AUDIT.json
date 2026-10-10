@@ -1,0 +1,177 @@
+{
+ "kind": "reticuli.rate-cap-bank.audit.v1",
+ "seed": 2026101001,
+ "mapping_sha256": "f156627d90c466359960294ca3085601853e5fc820ce5535574c9de2b5c80b06",
+ "counts": {
+  "filed_room_items": 128,
+  "calibration": 32,
+  "bare": 128,
+  "permission": 128,
+  "undisclosed": 16
+ },
+ "strata": {
+  "rate": 64,
+  "stock": 64
+ },
+ "mixed": 16,
+ "probe_by_stratum": {
+  "rate/boundary": 8,
+  "rate/count": 24,
+  "rate/delete": 8,
+  "rate/release": 8,
+  "rate/wait": 16,
+  "stock/count": 24,
+  "stock/delete": 16,
+  "stock/release": 8,
+  "stock/wait": 16
+ },
+ "classes": {
+  "boundary-known": 46,
+  "boundary-unknown": 2,
+  "ceiling-not-count": 16,
+  "delete-useless-for-rate": 8,
+  "deleted-member": 8,
+  "deleted-nonmember": 8,
+  "expiry-member-leaves": 8,
+  "headroom-not-permission": 32,
+  "mixed-rate-decides": 8,
+  "mixed-stock-decides": 8,
+  "release-returns-stock": 8,
+  "release-useless-for-rate": 8,
+  "scope-global": 8,
+  "scope-per-identity": 8,
+  "undisclosed-renewal": 16,
+  "waiting-returns-rate": 16,
+  "waiting-useless-for-stock": 8
+ },
+ "permission_facts": {
+  "granted": 16,
+  "none": 96,
+  "denied": 16
+ },
+ "alignment": {
+  "none": 26,
+  "per-clock": 11,
+  "per-any": 27
+ },
+ "bare_entailment_unknown": 96,
+ "canonical_digests": {
+  "items_filed.json": "750be8a059f4fac39dc749e2d99cbae5007889240217e1654dd724c0879a3e62",
+  "items_bare.json": "12c205629f4d06b3382dc272f1a493064f904adda0272b11012b7a0755d27de6",
+  "items_permission.json": "2a05f82ce03994351175004517655a6c191218d26cafc571ec76a6361c7ec9ed",
+  "items_undisclosed.json": "74926123238118b64a9bd38941d1b90de6405ead7d7c20b0d61b69d7513d1e53",
+  "keys.json": "7b0c2d14e1745ebbda55a8320a2f914b133c88e632bde2517f660f5b747302d4"
+ },
+ "settlement_strata_filed": [
+  {
+   "id": "rate",
+   "weight": 1
+  },
+  {
+   "id": "stock",
+   "weight": 1
+  }
+ ],
+ "sdk_audits": {
+  "sdk_commit": "ai-nglish/ainglish master d5cb4e42 (instrument_audit from #217)",
+  "dummy_roster_note": "two placeholder readers; crossed cells at stratum x probe x domain hold one item each, so single-arm cells there are the counterbalancing itself, not a defect; the stratum x probe level is the one to read",
+  "per_file": {
+   "items_filed.json": {
+    "validate_item_block": true,
+    "audit_items_errors": [],
+    "audit_items_warnings": [
+     "{'code': 'declared_answer_positions_imbalanced', 'counts': [22, 28, 28, 32, 18]}"
+    ],
+    "instrument_audit": {
+     "settlement_stratumxprobe": {
+      "cells": 20,
+      "findings": {
+       "empty_crossed_cell": 2,
+       "shared_declared_frame": 16
+      }
+     },
+     "settlement_stratumxprobexdomain": {
+      "cells": 160,
+      "findings": {
+       "single_arm_cell": 92,
+       "empty_crossed_cell": 16,
+       "shared_declared_frame": 16
+      }
+     }
+    },
+    "same_arm_calibration_ids": 0
+   },
+   "items_bare.json": {
+    "validate_item_block": true,
+    "audit_items_errors": [],
+    "audit_items_warnings": [
+     "{'code': 'declared_answer_positions_imbalanced', 'counts': [6, 5, 11, 10, 96]}"
+    ],
+    "instrument_audit": {
+     "settlement_stratumxprobe": {
+      "cells": 20,
+      "findings": {
+       "empty_crossed_cell": 2,
+       "shared_declared_frame": 16
+      }
+     },
+     "settlement_stratumxprobexdomain": {
+      "cells": 160,
+      "findings": {
+       "single_arm_cell": 97,
+       "empty_crossed_cell": 16,
+       "shared_declared_frame": 16
+      }
+     }
+    },
+    "same_arm_calibration_ids": 0
+   },
+   "items_permission.json": {
+    "validate_item_block": true,
+    "audit_items_errors": [],
+    "audit_items_warnings": [
+     "{'code': 'declared_answer_positions_imbalanced', 'counts': [16, 16, 0, 0, 96]}"
+    ],
+    "instrument_audit": {
+     "settlement_stratumxprobe": {
+      "cells": 2,
+      "findings": {
+       "shared_declared_frame": 16
+      }
+     },
+     "settlement_stratumxprobexdomain": {
+      "cells": 16,
+      "findings": {
+       "shared_declared_frame": 16
+      }
+     }
+    },
+    "same_arm_calibration_ids": 0
+   },
+   "items_undisclosed.json": {
+    "validate_item_block": true,
+    "audit_items_errors": [],
+    "audit_items_warnings": [
+     "{'code': 'declared_answer_positions_imbalanced', 'counts': [0, 0, 0, 0, 16]}"
+    ],
+    "instrument_audit": {
+     "settlement_stratumxprobe": {
+      "cells": 2,
+      "findings": {
+       "shared_declared_frame": 2
+      }
+     },
+     "settlement_stratumxprobexdomain": {
+      "cells": 16,
+      "findings": {
+       "single_arm_cell": 10,
+       "shared_declared_frame": 2
+      }
+     }
+    },
+    "same_arm_calibration_ids": 0
+   }
+  }
+ },
+ "answer_position_note": "declared_answer_positions_imbalanced is expected: the unknown option is always the fifth option by design, and in the bare and undisclosed sets most golds are that option; in the filed set the four room options are shuffled per item and the gold's position varies."
+}
