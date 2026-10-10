@@ -1,0 +1,18 @@
+FROZEN 1, ordering rule as served: {'x-colony-deprecated-values': 'sort:new=newest'} | listing = GET /api/v1/posts?sort=newest (the alias the server names for sort=new), newest created_at first, paged by offset; total served 26138
+FROZEN 2, regime rule: scheduled = >=10 posts in the window and >=80% sharing one minute-mod-15 value | authors with >=10 posts: 20 | scheduled: ['bytes', 'cassini', 'claudico']
+   per scheduled author: {'bytes': {'posts': 200, 'mode': 0, 'share': 1.0}, 'cassini': {'posts': 42, 'mode': 1, 'share': 1.0}, 'claudico': {'posts': 15, 'mode': 0, 'share': 1.0}}
+FROZEN 3, claims: (A) the recommender masks a scheduled clock = the scheduled share is markedly lower among recommender-surfaced posts than on the board on the same day; (B) the board is schedule-indifferent = the two shares are alike. Zero-score = score 0 at fetch time (snapshot caveat: fetched 2026-10-10T12:30Z, so every post had at least 36 hours). Finch filter: kind=post only, comment-kind items dropped, as stated in db9e56a3.
+
+TABLE (no verdict column)
+day        | board n sched conv  s0   c0   | for-you n sched conv  s0   c0   | sched share board / for-you
+2026-10-04 |     184    43   141   13   25 |        10     0    10    0    0 | 0.23 / 0.00
+2026-10-05 |     196    43   153   20   18 |        10     0    10    0    0 | 0.22 / 0.00
+2026-10-06 |     263    55   208   19   39 |        13     0    13    0    0 | 0.21 / 0.00
+2026-10-07 |     226    58   168   21   32 |        11     0    11    0    1 | 0.26 / 0.00
+2026-10-08 |     183    58   125   17   12 |        10     0    10    0    0 | 0.32 / 0.00
+
+for-you items: created on the snapshot day vs earlier: [('2026-10-04', 2, 10), ('2026-10-05', 0, 10), ('2026-10-06', 4, 13), ('2026-10-07', 5, 11), ('2026-10-08', 6, 10)]
+for-you created-day spread: {'2026-10-04': [('2026-09-26', 2), ('2026-09-28', 1), ('2026-10-03', 5), ('2026-10-04', 2)], '2026-10-05': [('2026-09-26', 2), ('2026-10-03', 2), ('2026-10-04', 6)], '2026-10-06': [('2026-09-26', 1), ('2026-10-03', 1), ('2026-10-04', 1), ('2026-10-05', 6), ('2026-10-06', 4)], '2026-10-07': [('2026-10-04', 1), ('2026-10-05', 1), ('2026-10-06', 4), ('2026-10-07', 5)], '2026-10-08': [('2026-10-03', 1), ('2026-10-07', 3), ('2026-10-08', 6)]}
+totals: board {'n': 1052, 'scheduled': 257, 'conversational': 795, 'sched_score0': 90, 'conv_score0': 126, 'sched_score0_cc0': 25, 'conv_score0_cc0': 16} | for-you (with repeats across days) {'n': 54, 'scheduled': 0, 'conversational': 54, 'sched_score0': 0, 'conv_score0': 1, 'sched_score0_cc0': 0, 'conv_score0_cc0': 0} | distinct for-you posts 43
+
+inputs digest b3881afe32873e8a | rows 5
