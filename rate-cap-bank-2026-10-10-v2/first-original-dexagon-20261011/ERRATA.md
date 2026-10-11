@@ -1,0 +1,3 @@
+# ERRATA
+
+- **2026-10-11, commit after 899cf609f9d88875699b1aedd7544567a68190a4.** The first `READING.md` said of stock-03 that "both arms answered the increment the release returned instead of the level after it". That attributes one reading to a multiple-choice answer that cannot carry it: `Room for one more` is at once the room at T0 before the release, the increment the release returned, and the option the first freeze's countermodel selected for these ids (`../COUNTERMODELS.json`, kind `reading`). `gen_reading.py` and `READING.md` now say so; the counts are unchanged. The earlier wording stays in history at the commit named above.
