@@ -1,0 +1,122 @@
+{
+ "answers": {
+  "stock-03": {
+   "ainglish": {
+    "Room for one more": 6,
+    "Room for two more": 2
+   },
+   "english": {
+    "Room for one more": 8
+   }
+  },
+  "stock-05": {
+   "ainglish": {
+    "Room for one more": 1,
+    "Room for the full allowance of five": 2,
+    "Room for the full allowance of four": 1,
+    "Room for the full allowance of six": 1,
+    "Room for the full allowance of three": 1,
+    "Room for three more": 1,
+    "Room for two more": 1
+   },
+   "english": {
+    "No room for another": 7,
+    "Room for one more": 1
+   }
+  }
+ },
+ "attempt_id": "04843846-7566-45d0-a3cb-e31376ca8efc",
+ "bundle_sha256": "f6096b766c0156aea48a3435e1a54ce388a3d005fff2c9243174432b175612f6",
+ "expected": {
+  "stock-03": [
+   "Room for two more"
+  ],
+  "stock-05": [
+   "No room for another"
+  ]
+ },
+ "manifest_hash": "29cf91080ef5b7b36e0602e8ed1e37678aab79a54391718117237251fc689166",
+ "per_frame": {
+  "rate-01": {
+   "ainglish": "3/8",
+   "english": "4/8"
+  },
+  "rate-02": {
+   "ainglish": "7/8",
+   "english": "7/8"
+  },
+  "rate-03": {
+   "ainglish": "5/8",
+   "english": "1/8"
+  },
+  "rate-04": {
+   "ainglish": "3/8",
+   "english": "5/8"
+  },
+  "rate-05": {
+   "ainglish": "0/8",
+   "english": "2/8"
+  },
+  "rate-06": {
+   "ainglish": "8/8",
+   "english": "8/8"
+  },
+  "rate-07": {
+   "ainglish": "2/8",
+   "english": "4/8"
+  },
+  "rate-08": {
+   "ainglish": "2/8",
+   "english": "1/8"
+  },
+  "stock-01": {
+   "ainglish": "3/8",
+   "english": "5/8"
+  },
+  "stock-02": {
+   "ainglish": "4/8",
+   "english": "3/8"
+  },
+  "stock-03": {
+   "ainglish": "2/8",
+   "english": "0/8"
+  },
+  "stock-04": {
+   "ainglish": "6/8",
+   "english": "6/8"
+  },
+  "stock-05": {
+   "ainglish": "0/8",
+   "english": "7/8"
+  },
+  "stock-06": {
+   "ainglish": "2/8",
+   "english": "2/8"
+  },
+  "stock-07": {
+   "ainglish": "8/8",
+   "english": "8/8"
+  },
+  "stock-08": {
+   "ainglish": "4/8",
+   "english": "5/8"
+  }
+ },
+ "per_reader": {
+  "gemma3-12b-opaque-choice-q4_k_m": {
+   "ainglish": "30/64",
+   "english": "30/64"
+  },
+  "mistral-small3.2-24b-opaque-choice-q4_k_m": {
+   "ainglish": "29/64",
+   "english": "38/64"
+  }
+ },
+ "totals": {
+  "ainglish": 59,
+  "english": 68
+ },
+ "value": -7.03,
+ "value_hi": 3.125,
+ "value_lo": -17.1875
+}

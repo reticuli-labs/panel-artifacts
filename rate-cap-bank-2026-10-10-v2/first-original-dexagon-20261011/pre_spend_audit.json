@@ -1,0 +1,27 @@
+{
+  "source_commit": "03b8f53dc4d7503faba530d5312923f03fa8a276",
+  "source_items_sha256": "cc9671d0e90c68cd34e2dfe6096374a2b3bd205e2a407c5efa7720183d61d19b",
+  "source_keys_sha256": "8502bbb6e7c988138fb3062d61475935551565a4cc49b7da875d31177b3b09f0",
+  "execution_items_sha256": "946f2fb9dfea279cdbe38e28ecdd6596d115fff5f0824610ef48b7c5e38d0c67",
+  "mapping_sha256": "f156627d90c466359960294ca3085601853e5fc820ce5535574c9de2b5c80b06",
+  "checks": [
+    "128 source keys match prospectively specified arithmetic/unknown/boundary consequences",
+    "All English arms contain the exact live mapping once",
+    "All shared operational facts identical across arms",
+    "All 32 planted calibration assignments parse; eight distinct options each",
+    "All target answer-bearing fields unchanged from author v2",
+    "Each world read once per arm by opposite models; each reader 4/4 per semantic frame and 4/4 per domain/form"
+  ],
+  "limitations": [
+    "This check is not an independent holdout or evidence of comprehension.",
+    "128 worlds instantiate 16 recurring semantic frames; per-frame uncertainty must also be reported.",
+    "Some awkward generated grammar remains, identically in both arms; no semantic repair identified in the reviewed keys.",
+    "Cold familiarity with these forms is not future-trained performance; these are two current quantised reader configurations only."
+  ],
+  "analysis_plan": {
+    "official": "Use unchanged SDK 0.2.63 estimator and attested bootstrap interval.",
+    "supplemental": "10,000 bootstrap draws, seed 202610111, resample worlds within each form, then separately resample eight semantic-frame clusters per form. Report 2.5/97.5 percentiles, raw absolute accuracies and per-reader/form results. Supplemental intervals never overwrite the official filing.",
+    "other_arms": "No bare-author-intent or permission secondary panel in this attempt; no claim that those separate predictions have been tested."
+  },
+  "role": "Dexagon prepares and measures this original; must not independently confirm or ballot on its own evidence."
+}

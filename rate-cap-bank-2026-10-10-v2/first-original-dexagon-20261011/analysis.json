@@ -1,0 +1,514 @@
+{
+  "attempt_id": "04843846-7566-45d0-a3cb-e31376ca8efc",
+  "official_result_unchanged": {
+    "value": -7.03,
+    "value_lo": -17.1875,
+    "value_hi": 3.125,
+    "arms": {
+      "english": 0.5313,
+      "ainglish": 0.4609,
+      "chance": 0.2
+    },
+    "stratum_results": [
+      {
+        "id": "rate",
+        "value": -3.12,
+        "arms": {
+          "english": 0.5,
+          "ainglish": 0.4688,
+          "chance": 0.2
+        }
+      },
+      {
+        "id": "stock",
+        "value": -10.94,
+        "arms": {
+          "english": 0.5625,
+          "ainglish": 0.4531,
+          "chance": 0.2
+        }
+      }
+    ]
+  },
+  "summaries": [
+    {
+      "kind": "overall",
+      "label": "all",
+      "correct_total": {
+        "english": [
+          68,
+          128
+        ],
+        "ainglish": [
+          59,
+          128
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.53125,
+        "ainglish": 0.4609375
+      },
+      "delta_pp": -7.03125
+    },
+    {
+      "kind": "form",
+      "label": "rate",
+      "correct_total": {
+        "english": [
+          32,
+          64
+        ],
+        "ainglish": [
+          30,
+          64
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.5,
+        "ainglish": 0.46875
+      },
+      "delta_pp": -3.125
+    },
+    {
+      "kind": "reader_form",
+      "label": "gemma3-12b-opaque-choice-q4_k_m / rate",
+      "correct_total": {
+        "english": [
+          13,
+          32
+        ],
+        "ainglish": [
+          15,
+          32
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.40625,
+        "ainglish": 0.46875
+      },
+      "delta_pp": 6.25
+    },
+    {
+      "kind": "frame",
+      "label": "rate-01-wait",
+      "correct_total": {
+        "english": [
+          4,
+          8
+        ],
+        "ainglish": [
+          3,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.5,
+        "ainglish": 0.375
+      },
+      "delta_pp": -12.5
+    },
+    {
+      "kind": "frame",
+      "label": "rate-02-wait",
+      "correct_total": {
+        "english": [
+          7,
+          8
+        ],
+        "ainglish": [
+          7,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.875,
+        "ainglish": 0.875
+      },
+      "delta_pp": 0.0
+    },
+    {
+      "kind": "frame",
+      "label": "rate-03-release",
+      "correct_total": {
+        "english": [
+          1,
+          8
+        ],
+        "ainglish": [
+          5,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.125,
+        "ainglish": 0.625
+      },
+      "delta_pp": 50.0
+    },
+    {
+      "kind": "frame",
+      "label": "rate-04-delete",
+      "correct_total": {
+        "english": [
+          5,
+          8
+        ],
+        "ainglish": [
+          3,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.625,
+        "ainglish": 0.375
+      },
+      "delta_pp": -25.0
+    },
+    {
+      "kind": "frame",
+      "label": "rate-05-count",
+      "correct_total": {
+        "english": [
+          2,
+          8
+        ],
+        "ainglish": [
+          0,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.25,
+        "ainglish": 0.0
+      },
+      "delta_pp": -25.0
+    },
+    {
+      "kind": "frame",
+      "label": "rate-06-count",
+      "correct_total": {
+        "english": [
+          8,
+          8
+        ],
+        "ainglish": [
+          8,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 1.0,
+        "ainglish": 1.0
+      },
+      "delta_pp": 0.0
+    },
+    {
+      "kind": "frame",
+      "label": "rate-07-boundary",
+      "correct_total": {
+        "english": [
+          4,
+          8
+        ],
+        "ainglish": [
+          2,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.5,
+        "ainglish": 0.25
+      },
+      "delta_pp": -25.0
+    },
+    {
+      "kind": "frame",
+      "label": "rate-08-count",
+      "correct_total": {
+        "english": [
+          1,
+          8
+        ],
+        "ainglish": [
+          2,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.125,
+        "ainglish": 0.25
+      },
+      "delta_pp": 12.5
+    },
+    {
+      "kind": "form",
+      "label": "stock",
+      "correct_total": {
+        "english": [
+          36,
+          64
+        ],
+        "ainglish": [
+          29,
+          64
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.5625,
+        "ainglish": 0.453125
+      },
+      "delta_pp": -10.9375
+    },
+    {
+      "kind": "reader_form",
+      "label": "gemma3-12b-opaque-choice-q4_k_m / stock",
+      "correct_total": {
+        "english": [
+          17,
+          32
+        ],
+        "ainglish": [
+          15,
+          32
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.53125,
+        "ainglish": 0.46875
+      },
+      "delta_pp": -6.25
+    },
+    {
+      "kind": "frame",
+      "label": "stock-01-wait",
+      "correct_total": {
+        "english": [
+          5,
+          8
+        ],
+        "ainglish": [
+          3,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.625,
+        "ainglish": 0.375
+      },
+      "delta_pp": -25.0
+    },
+    {
+      "kind": "frame",
+      "label": "stock-02-wait",
+      "correct_total": {
+        "english": [
+          3,
+          8
+        ],
+        "ainglish": [
+          4,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.375,
+        "ainglish": 0.5
+      },
+      "delta_pp": 12.5
+    },
+    {
+      "kind": "frame",
+      "label": "stock-03-release",
+      "correct_total": {
+        "english": [
+          0,
+          8
+        ],
+        "ainglish": [
+          2,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.0,
+        "ainglish": 0.25
+      },
+      "delta_pp": 25.0
+    },
+    {
+      "kind": "frame",
+      "label": "stock-04-delete",
+      "correct_total": {
+        "english": [
+          6,
+          8
+        ],
+        "ainglish": [
+          6,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.75,
+        "ainglish": 0.75
+      },
+      "delta_pp": 0.0
+    },
+    {
+      "kind": "frame",
+      "label": "stock-05-delete",
+      "correct_total": {
+        "english": [
+          7,
+          8
+        ],
+        "ainglish": [
+          0,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.875,
+        "ainglish": 0.0
+      },
+      "delta_pp": -87.5
+    },
+    {
+      "kind": "frame",
+      "label": "stock-06-count",
+      "correct_total": {
+        "english": [
+          2,
+          8
+        ],
+        "ainglish": [
+          2,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.25,
+        "ainglish": 0.25
+      },
+      "delta_pp": 0.0
+    },
+    {
+      "kind": "frame",
+      "label": "stock-07-count",
+      "correct_total": {
+        "english": [
+          8,
+          8
+        ],
+        "ainglish": [
+          8,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 1.0,
+        "ainglish": 1.0
+      },
+      "delta_pp": 0.0
+    },
+    {
+      "kind": "frame",
+      "label": "stock-08-count",
+      "correct_total": {
+        "english": [
+          5,
+          8
+        ],
+        "ainglish": [
+          4,
+          8
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.625,
+        "ainglish": 0.5
+      },
+      "delta_pp": -12.5
+    },
+    {
+      "kind": "reader_form",
+      "label": "mistral-small3.2-24b-opaque-choice-q4_k_m / rate",
+      "correct_total": {
+        "english": [
+          19,
+          32
+        ],
+        "ainglish": [
+          15,
+          32
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.59375,
+        "ainglish": 0.46875
+      },
+      "delta_pp": -12.5
+    },
+    {
+      "kind": "reader_form",
+      "label": "mistral-small3.2-24b-opaque-choice-q4_k_m / stock",
+      "correct_total": {
+        "english": [
+          19,
+          32
+        ],
+        "ainglish": [
+          14,
+          32
+        ]
+      },
+      "absolute_accuracy": {
+        "english": 0.59375,
+        "ainglish": 0.4375
+      },
+      "delta_pp": -15.625
+    }
+  ],
+  "supplemental_bootstrap": {
+    "draws": 10000,
+    "seed": 202610111,
+    "rng": "Python random.Random MT19937; methods/forms in listed order",
+    "quantiles": "linear interpolation, 0.025 and 0.975",
+    "intervals_pp": {
+      "item_within_form": {
+        "rate": [
+          -18.75,
+          10.9375
+        ],
+        "stock": [
+          -23.4375,
+          1.5625
+        ],
+        "overall": [
+          -17.1875,
+          3.125
+        ]
+      },
+      "semantic_frame_cluster_within_form": {
+        "rate": [
+          -17.1875,
+          15.625
+        ],
+        "stock": [
+          -35.9375,
+          7.8125
+        ],
+        "overall": [
+          -21.11328,
+          6.25
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Two fixed, quantised current-reader configurations; not model-population uncertainty.",
+    "Public author bank, 128 worlds in 16 recurring semantic frames; not independent confirmation.",
+    "Supplemental intervals are report-only and do not replace attested official bounds or current admission rules.",
+    "Cold-model performance does not predict performance after Ainglish is incorporated into training or tokenisers."
+  ]
+}

@@ -1,0 +1,2562 @@
+[
+  {
+    "item_id": "rc-api-rate-01-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-api-rate-01-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-api-rate-02-wait-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-api-rate-02-wait-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-api-rate-03-release-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-api-rate-03-release-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-api-rate-04-delete-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-api-rate-04-delete-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-api-rate-05-count-dxalloc-9",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-rate-05-count-dxalloc-9",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-rate-06-count-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-rate-06-count-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-rate-07-boundary-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-api-rate-07-boundary-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-api-rate-08-count-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-rate-08-count-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-stock-01-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-api-stock-01-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-api-stock-02-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-api-stock-02-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-api-stock-03-release-dxalloc-5",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-api-stock-03-release-dxalloc-5",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-api-stock-04-delete-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-api-stock-04-delete-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-api-stock-05-delete-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-api-stock-05-delete-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-api-stock-06-count-dxalloc-7",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-stock-06-count-dxalloc-7",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-stock-07-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-stock-07-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-stock-08-count-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-api-stock-08-count-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "api",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-rate-01-wait-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-storage-rate-01-wait-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-storage-rate-02-wait-dxalloc-13",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-storage-rate-02-wait-dxalloc-13",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-storage-rate-03-release-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-storage-rate-03-release-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-storage-rate-04-delete-dxalloc-11",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-storage-rate-04-delete-dxalloc-11",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-storage-rate-05-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-rate-05-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-rate-06-count-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-rate-06-count-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-rate-07-boundary-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-storage-rate-07-boundary-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-storage-rate-08-count-dxalloc-8",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-rate-08-count-dxalloc-8",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-stock-01-wait-dxalloc-10",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-storage-stock-01-wait-dxalloc-10",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-storage-stock-02-wait-dxalloc-9",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-storage-stock-02-wait-dxalloc-9",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-storage-stock-03-release-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-storage-stock-03-release-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-storage-stock-04-delete-dxalloc-10",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-storage-stock-04-delete-dxalloc-10",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-storage-stock-05-delete-dxalloc-7",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-storage-stock-05-delete-dxalloc-7",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-storage-stock-06-count-dxalloc-7",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-stock-06-count-dxalloc-7",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-stock-07-count-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-stock-07-count-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-stock-08-count-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-storage-stock-08-count-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "storage",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-rate-01-wait-dxalloc-6",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-seats-rate-01-wait-dxalloc-6",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-seats-rate-02-wait-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-seats-rate-02-wait-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-seats-rate-03-release-dxalloc-6",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-seats-rate-03-release-dxalloc-6",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-seats-rate-04-delete-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-seats-rate-04-delete-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-seats-rate-05-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-rate-05-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-rate-06-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-rate-06-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-rate-07-boundary-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-seats-rate-07-boundary-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-seats-rate-08-count-dxalloc-5",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-rate-08-count-dxalloc-5",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-stock-01-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-seats-stock-01-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-seats-stock-02-wait-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-seats-stock-02-wait-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-seats-stock-03-release-dxalloc-8",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-seats-stock-03-release-dxalloc-8",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-seats-stock-04-delete-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-seats-stock-04-delete-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-seats-stock-05-delete-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-seats-stock-05-delete-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-seats-stock-06-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-stock-06-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-stock-07-count-dxalloc-9",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-stock-07-count-dxalloc-9",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-stock-08-count-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-seats-stock-08-count-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "seats",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-rate-01-wait-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-connections-rate-01-wait-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-connections-rate-02-wait-dxalloc-10",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-connections-rate-02-wait-dxalloc-10",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-connections-rate-03-release-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-connections-rate-03-release-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-connections-rate-04-delete-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-connections-rate-04-delete-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-connections-rate-05-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-rate-05-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-rate-06-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-rate-06-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-rate-07-boundary-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-connections-rate-07-boundary-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-connections-rate-08-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-rate-08-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "connections",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-stock-01-wait-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-connections-stock-01-wait-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-connections-stock-02-wait-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-connections-stock-02-wait-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-connections-stock-03-release-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-connections-stock-03-release-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-connections-stock-04-delete-dxalloc-5",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-connections-stock-04-delete-dxalloc-5",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-connections-stock-05-delete-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-connections-stock-05-delete-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-connections-stock-06-count-dxalloc-8",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-stock-06-count-dxalloc-8",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-stock-07-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-stock-07-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-stock-08-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-connections-stock-08-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "connections",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-rate-01-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-messages-rate-01-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-messages-rate-02-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-messages-rate-02-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-messages-rate-03-release-dxalloc-9",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-messages-rate-03-release-dxalloc-9",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-messages-rate-04-delete-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-messages-rate-04-delete-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-messages-rate-05-count-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-rate-05-count-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-rate-06-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-rate-06-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-rate-07-boundary-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-messages-rate-07-boundary-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-messages-rate-08-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-rate-08-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "messages",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-stock-01-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-messages-stock-01-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-messages-stock-02-wait-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-messages-stock-02-wait-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-messages-stock-03-release-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-messages-stock-03-release-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-messages-stock-04-delete-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-messages-stock-04-delete-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-messages-stock-05-delete-dxalloc-8",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-messages-stock-05-delete-dxalloc-8",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-messages-stock-06-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-stock-06-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-stock-07-count-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-stock-07-count-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-stock-08-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-messages-stock-08-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "messages",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-rate-01-wait-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-permits-rate-01-wait-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-permits-rate-02-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-permits-rate-02-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-permits-rate-03-release-dxalloc-9",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-permits-rate-03-release-dxalloc-9",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-permits-rate-04-delete-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-permits-rate-04-delete-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-permits-rate-05-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-rate-05-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-rate-06-count-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-rate-06-count-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-rate-07-boundary-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-permits-rate-07-boundary-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-permits-rate-08-count-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-rate-08-count-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-stock-01-wait-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-permits-stock-01-wait-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-permits-stock-02-wait-dxalloc-9",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-permits-stock-02-wait-dxalloc-9",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-permits-stock-03-release-dxalloc-5",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-permits-stock-03-release-dxalloc-5",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-permits-stock-04-delete-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-permits-stock-04-delete-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-permits-stock-05-delete-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-permits-stock-05-delete-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-permits-stock-06-count-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-stock-06-count-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-stock-07-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-stock-07-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-stock-08-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-permits-stock-08-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "permits",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-rate-01-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-retries-rate-01-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-retries-rate-02-wait-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-retries-rate-02-wait-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-retries-rate-03-release-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-retries-rate-03-release-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-retries-rate-04-delete-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-retries-rate-04-delete-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-retries-rate-05-count-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-rate-05-count-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-rate-06-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-rate-06-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-rate-07-boundary-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-retries-rate-07-boundary-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-retries-rate-08-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-rate-08-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-stock-01-wait-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-retries-stock-01-wait-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-retries-stock-02-wait-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-retries-stock-02-wait-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-retries-stock-03-release-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-retries-stock-03-release-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-retries-stock-04-delete-dxalloc-8",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-retries-stock-04-delete-dxalloc-8",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-retries-stock-05-delete-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-retries-stock-05-delete-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-retries-stock-06-count-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-stock-06-count-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-stock-07-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-stock-07-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-stock-08-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-retries-stock-08-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "retries",
+    "scope": "per-identity",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-rate-01-wait-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-memory-rate-01-wait-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-01-wait",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-memory-rate-02-wait-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-memory-rate-02-wait-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-02-wait",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-memory-rate-03-release-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-memory-rate-03-release-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-03-release",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-memory-rate-04-delete-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-memory-rate-04-delete-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-04-delete",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-memory-rate-05-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-rate-05-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-05-count",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-rate-06-count-dxalloc-4",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-rate-06-count-dxalloc-4",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-06-count",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-rate-07-boundary-dxalloc-6",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-memory-rate-07-boundary-dxalloc-6",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-07-boundary",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "boundary"
+  },
+  {
+    "item_id": "rc-memory-rate-08-count-dxalloc-2",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-rate-08-count-dxalloc-2",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "rate-08-count",
+    "form": "rate",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-stock-01-wait-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-memory-stock-01-wait-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-01-wait",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-memory-stock-02-wait-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-memory-stock-02-wait-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-02-wait",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "wait"
+  },
+  {
+    "item_id": "rc-memory-stock-03-release-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-memory-stock-03-release-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-03-release",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "release"
+  },
+  {
+    "item_id": "rc-memory-stock-04-delete-dxalloc-7",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-memory-stock-04-delete-dxalloc-7",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-04-delete",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-memory-stock-05-delete-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-memory-stock-05-delete-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-05-delete",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "delete"
+  },
+  {
+    "item_id": "rc-memory-stock-06-count-dxalloc-0",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-stock-06-count-dxalloc-0",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-06-count",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-stock-07-count-dxalloc-3",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-stock-07-count-dxalloc-3",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-07-count",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-stock-08-count-dxalloc-1",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  },
+  {
+    "item_id": "rc-memory-stock-08-count-dxalloc-1",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "frame": "stock-08-count",
+    "form": "stock",
+    "domain": "memory",
+    "scope": "global",
+    "probe": "count"
+  }
+]

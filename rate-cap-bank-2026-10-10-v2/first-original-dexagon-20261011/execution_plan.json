@@ -1,0 +1,133 @@
+{
+  "slug": "count-noun-rate-cap-n-window-count-noun-stock-cap-n-held-3",
+  "construct": "<count-noun> rate-cap(<n>; <window>) | <count-noun> stock-cap(<n>; <held-set>)",
+  "metric": "comprehension_accuracy_delta",
+  "seed": 202610111,
+  "items_url": "https://paste.c-net.org/6lmi2r1jdtp2",
+  "items_sha256": "946f2fb9dfea279cdbe38e28ecdd6596d115fff5f0824610ef48b7c5e38d0c67",
+  "panel": [
+    {
+      "name": "gemma3-12b-opaque-choice-q4_k_m",
+      "provider": "ollama",
+      "base_url": "http://127.0.0.1:11435/v1",
+      "api": "openai",
+      "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+      "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+      "precision": "q4_k_m",
+      "max_tokens": 64,
+      "timeout_s": 180,
+      "temperature": 0,
+      "seed": 202610101
+    },
+    {
+      "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+      "provider": "ollama",
+      "base_url": "http://127.0.0.1:11435/v1",
+      "api": "openai",
+      "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+      "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+      "precision": "q4_k_m",
+      "max_tokens": 64,
+      "timeout_s": 180,
+      "temperature": 0,
+      "seed": 202610101
+    }
+  ],
+  "reader_qualifications": [
+    {
+      "kind": "ainglish.reader-qualification.v1",
+      "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+      "reader": {
+        "provider": "ollama",
+        "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+        "precision": "q4_k_m",
+        "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+        "digest_source": "ollama:/api/tags"
+      },
+      "lineage": {
+        "key": "gemma-3-12b-it",
+        "basis": "Local Ollama artifact pinned by sha256 model digest; stateless opaque-choice wrapper over Gemma 3 12B IT Q4_K_M."
+      },
+      "screen_sha256": "182e7137d3c2474b25ee2490b75ee958fe041a8675a4ba5d7cc6ab50467522ee",
+      "settings_sha256": "3adaccc7434195c2b901275d4db17d19de012847470a6d69eec87e564671b58a",
+      "qualified_at": "2026-10-10T13:27:50+00:00",
+      "valid_until": "2026-10-17T13:27:50+00:00",
+      "result": {
+        "detectable_correct": 8,
+        "detectable_total": 8,
+        "other_correct": 0,
+        "other_total": 8,
+        "min_gap_bps": 2500,
+        "min_recovered_bps": 7500,
+        "passed": true
+      }
+    },
+    {
+      "kind": "ainglish.reader-qualification.v1",
+      "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+      "reader": {
+        "provider": "ollama",
+        "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+        "precision": "q4_k_m",
+        "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+        "digest_source": "ollama:/api/tags"
+      },
+      "lineage": {
+        "key": "mistral-small-3.2-24b-instruct-2506",
+        "basis": "Local Ollama artifact pinned by sha256 model digest; stateless opaque-choice wrapper over Mistral Small 3.2 24B Instruct 2506 Q4_K_M."
+      },
+      "screen_sha256": "182e7137d3c2474b25ee2490b75ee958fe041a8675a4ba5d7cc6ab50467522ee",
+      "settings_sha256": "30afc5d3f219e9a27bcbc356c3ce81c4689f7339faa659a2fcc3c63739d17cf1",
+      "qualified_at": "2026-10-10T13:28:27+00:00",
+      "valid_until": "2026-10-17T13:28:27+00:00",
+      "result": {
+        "detectable_correct": 8,
+        "detectable_total": 8,
+        "other_correct": 0,
+        "other_total": 8,
+        "min_gap_bps": 2500,
+        "min_recovered_bps": 7500,
+        "passed": true
+      }
+    }
+  ],
+  "panel_neff": 2,
+  "calibration_min_gap": 0.125,
+  "calibration_min_recovered": 0.5,
+  "calibration_rule": "headroom-relative-v1",
+  "planted_arm": "ainglish",
+  "comparator": {
+    "kind": "complete-careful-english-v1",
+    "description": "Every English arm includes the full live mapping verbatim, an instantiated policy, and identical operational facts; marked arm is cold, without an added definition."
+  },
+  "settlement_strata": [
+    {
+      "id": "rate",
+      "weight": 1
+    },
+    {
+      "id": "stock",
+      "weight": 1
+    }
+  ],
+  "study_purpose": "claim_test",
+  "study_scope": "First original on author bank v2: 128 worlds, 16 repeated semantic frames, eight domains, two pinned readers. Execution IDs only changed for fully crossed reader allocation; all answer-bearing bytes retained. Not an independent replication, not human validation, not a future-training test.",
+  "attempt": {
+    "estimand": "Accuracy delta in percentage points, registered form minus full verbatim careful English, separately for rate and stock with equal-weight headline; finite author bank and two pinned reader configurations, no claim of 128 independent semantic frames.",
+    "admissibility_gates": [
+      "Reuse exact Oct 10 target-independent qualifications, unexpired through Oct 17, and verify model digests. No alternative readers, reruns, or target-informed tuning.",
+      "Official calibration-first and yield rules unchanged. Preserve all null/adverse outcomes and any evidenced abort; no question, key, arm, model or stratum dropped after exposure.",
+      "Retain both 64-world form strata. A -5pp author prediction is not the live acceptance rule: a confirmed loss remains a veto; zero-crossing or resolution-bound evidence is not a pass."
+    ],
+    "planned_sample": {
+      "target_worlds": 128,
+      "semantic_frames": 16,
+      "readers": 2,
+      "target_calls": 256,
+      "calibration_items": 32,
+      "calibration_calls": 128,
+      "total_maximum_calls": 384
+    },
+    "proposal_revision": "count-noun-rate-cap-n-window-count-noun-stock-cap-n-held-3"
+  }
+}
