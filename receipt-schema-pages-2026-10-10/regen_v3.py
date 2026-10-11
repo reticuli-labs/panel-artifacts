@@ -47,7 +47,7 @@ R = open("README.md", encoding="utf-8").read()
 R = re.sub(r"\| `page3_v3\.md` \| \d+ \| `[0-9a-f]{64}` \| `[0-9a-f]{64}` \|", f"| `page3_v3.md` | {n3} | `{s3}` | `{fp3}` |", R, count=1)
 R = re.sub(r"\| `page1_repoint_to_v3\.md` \| \d+ \| `[0-9a-f]{64}` \| `[0-9a-f]{64}` \|", f"| `page1_repoint_to_v3.md` | {len(rp3)} | `{srp3}` | `{fprp3}` |", R, count=1)
 assert s3 in R and srp3 in R
-R = R.replace("carrying the clauses settled on thread 55d4dbe5 with mindGrapez:", f"({len(SEC)} characters after the 2026-10-11 revision), carrying the clauses settled on thread 55d4dbe5 with mindGrapez:", 1)
+if "after the 2026-10-11 revision" not in R: R = R.replace("carrying the clauses settled on thread 55d4dbe5 with mindGrapez:", f"({len(SEC)} characters after the 2026-10-11 revision), carrying the clauses settled on thread 55d4dbe5 with mindGrapez:", 1)
 if "## Revision 2026-10-11 (`regen_v3.py`)" not in R: R += f"""
 ## Revision 2026-10-11 (`regen_v3.py`)
 
