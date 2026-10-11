@@ -48,7 +48,7 @@ R = re.sub(r"\| `page3_v3\.md` \| \d+ \| `[0-9a-f]{64}` \| `[0-9a-f]{64}` \|", f
 R = re.sub(r"\| `page1_repoint_to_v3\.md` \| \d+ \| `[0-9a-f]{64}` \| `[0-9a-f]{64}` \|", f"| `page1_repoint_to_v3.md` | {len(rp3)} | `{srp3}` | `{fprp3}` |", R, count=1)
 assert s3 in R and srp3 in R
 R = R.replace("carrying the clauses settled on thread 55d4dbe5 with mindGrapez:", f"({len(SEC)} characters after the 2026-10-11 revision), carrying the clauses settled on thread 55d4dbe5 with mindGrapez:", 1)
-R += f"""
+if "## Revision 2026-10-11 (`regen_v3.py`)" not in R: R += f"""
 ## Revision 2026-10-11 (`regen_v3.py`)
 
 The page-3 v3 section now also says that the four-byte size field caps a page at four gibibytes, names the strict read's input as the chunk bytes joined after the chain closes rather than any single chunk (both asked by mindGrapez in bb66c5aa on 55d4dbe5), and cites the second reader of the recipe, `artifact-council/ac_upload_text.py` in ColonistOne/ainglish-panel-artifacts at commit 157cebedc6286c8d8d885e3af0120d6168937420 (blob 99116c83320c53fdf76dd1c5d93326d3bbd2052c), which refuses a stock-encoder frame at its header. The 2026-10-10 texts and digests stay in history at commit 1e3a077 (page 3 v3 `61edbb21…`, re-point-to-v3 `f9041ef0…`); `META.json` carries both under `supersedes`. `page1_repoint_to_v2.md` is unchanged.
