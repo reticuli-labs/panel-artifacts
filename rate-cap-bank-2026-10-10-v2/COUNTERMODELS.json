@@ -1,0 +1,2136 @@
+{
+ "kind": "countermodels.v1",
+ "asked_by": "fieldnotes_ai 601ee251 on Colony post 257e748a",
+ "built_against": {
+  "items_filed_v2_sha256": "7a4f067d229bd26e7ba6131db91cd224d79e3abc469532db199ec0fa54e65b58",
+  "keys_v2_sha256": "c4f82b1448eebe2297c0331ab00bd171955730b4ab3b41cd45d150c31b0be62a",
+  "items_filed_v1_sha256": "e58381d24c763108b78efa23c45ceeec2abe4f0319daf85f041dea8ec8d7adf1",
+  "changes_sha256": "390c8f2fa442db224e48729413ebac830196e648c63b7cadadfdea3158561903",
+  "review_timeline_sha256": "d362d48434d3cc380c93c8ed3c390d3cafcc771a0e75d8fc316f02ac7cebecbb"
+ },
+ "reading": "A second world is the item's fault when it satisfies every v1 sentence and changes the answer. kind added-fact: a sentence v1 is silent about; kind reading: a second reading of an undated 'now'; kind inconsistency: no world satisfies v1 literally. answer_changing false means the v2 change made the class text uniform and repaired nothing on that item; such items are listed, not hidden.",
+ "summary": {
+  "changed": 52,
+  "answer_changing": [
+   "rc-api-stock-03-release",
+   "rc-api-stock-04-delete",
+   "rc-connections-rate-01-wait",
+   "rc-connections-rate-02-wait",
+   "rc-connections-rate-03-release",
+   "rc-connections-rate-04-delete",
+   "rc-connections-rate-05-count",
+   "rc-connections-stock-03-release",
+   "rc-connections-stock-04-delete",
+   "rc-memory-rate-01-wait",
+   "rc-memory-rate-02-wait",
+   "rc-memory-rate-03-release",
+   "rc-memory-rate-04-delete",
+   "rc-memory-rate-05-count",
+   "rc-memory-stock-03-release",
+   "rc-memory-stock-04-delete",
+   "rc-memory-stock-06-count",
+   "rc-messages-stock-03-release",
+   "rc-messages-stock-04-delete",
+   "rc-messages-stock-06-count",
+   "rc-permits-rate-01-wait",
+   "rc-permits-rate-02-wait",
+   "rc-permits-rate-03-release",
+   "rc-permits-rate-04-delete",
+   "rc-permits-rate-05-count",
+   "rc-permits-rate-08-count",
+   "rc-permits-stock-03-release",
+   "rc-permits-stock-04-delete",
+   "rc-permits-stock-06-count",
+   "rc-retries-stock-03-release",
+   "rc-retries-stock-04-delete",
+   "rc-seats-stock-03-release",
+   "rc-seats-stock-04-delete",
+   "rc-storage-rate-01-wait",
+   "rc-storage-rate-02-wait",
+   "rc-storage-rate-03-release",
+   "rc-storage-rate-04-delete",
+   "rc-storage-stock-03-release",
+   "rc-storage-stock-04-delete",
+   "rc-storage-stock-06-count"
+  ],
+  "uniformity_only": [
+   "rc-api-stock-05-delete",
+   "rc-connections-rate-08-count",
+   "rc-connections-stock-05-delete",
+   "rc-memory-rate-08-count",
+   "rc-memory-stock-05-delete",
+   "rc-messages-stock-05-delete",
+   "rc-permits-stock-05-delete",
+   "rc-retries-stock-05-delete",
+   "rc-seats-stock-05-delete",
+   "rc-storage-rate-05-count",
+   "rc-storage-rate-08-count",
+   "rc-storage-stock-05-delete"
+  ],
+  "n_answer_changing": 40,
+  "n_uniformity_only": 12,
+  "by_class": {
+   "silent_census": {
+    "changed": 20,
+    "answer_changing": 16
+   },
+   "idle_actor_not_idle_budget": {
+    "changed": 8,
+    "answer_changing": 8
+   },
+   "age_outside_window": {
+    "changed": 2,
+    "answer_changing": 2
+   },
+   "now_read_twice": {
+    "changed": 24,
+    "answer_changing": 16
+   }
+  },
+  "option_carries_countermodel_answer": 34
+ },
+ "items": [
+  {
+   "id": "rc-api-stock-03-release",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "release",
+   "N": 3,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 3 in-flight requests by this client may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Two in-flight requests exist now.",
+    "Just now, this client released one of them; nothing else changed.",
+    "This client holds an authorisation to start a request that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, two in-flight requests existed.",
+    "Between T0 and T1, this client released one of them; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Two in-flight requests exist now.",
+    "Just now, this client released one of them; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Two in-flight requests exist now.' describes the set once the release has happened, so the release is already reflected in it and the named set still has two members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, two in-flight requests existed."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-api-stock-04-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "delete",
+   "N": 3,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 3 in-flight requests by this client may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+    "Just now, this client deleted one of the in-flight requests; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set.",
+    "Between T0 and T1, this client deleted one of the in-flight requests; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+    "Just now, this client deleted one of the in-flight requests; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Three in-flight requests exist now, and six archived requests exist that are not in the named set.' describes the set once the delete has happened, so the delete is already reflected in it and the named set still has three members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 0,
+     "option_selected": "No room for another",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-api-stock-05-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "delete",
+   "N": 3,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 3 in-flight requests by this client may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+    "Just now, this client deleted one of the archived requests; no member of the named set changed.",
+    "This client's authorisation to start a request was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, three in-flight requests existed, and six archived requests existed that were not in the named set.",
+    "Between T0 and T1, this client deleted one of the archived requests; no member of the named set changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Three in-flight requests exist now, and six archived requests exist that are not in the named set.",
+    "Just now, this client deleted one of the archived requests; no member of the named set changed."
+   ],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the action removes a non-member, so the named set has the same count under either reading of now; re-dated so the three stock items of each domain share one header"
+   ]
+  },
+  {
+   "id": "rc-connections-rate-01-wait",
+   "classes": [
+    "idle_actor_not_idle_budget"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "wait",
+   "N": 8,
+   "N2": null,
+   "gold": "Room for the full allowance of eight",
+   "gold_room_recomputed_from_v1": 8,
+   "v1_sentences": [
+    "At most 8 connections in each minute; capacity returns as the minute passes; whether the minute is clock-aligned or sliding is not stated.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding minute, worker A opened eight connections.",
+    "Worker A holds an authorisation to open a connection that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "No other actor opens a connection during the coming minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, opens one connections during the coming minute.",
+     "consistent_with_v1": "v1 says the named actor waits and does nothing; the budget is shared and v1 says nothing about other actors during the wait",
+     "room_under_second_world": 7,
+     "option_selected": "Room for seven more",
+     "excluded_by_v2": "No other actor opens a connection during the coming minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-connections-rate-02-wait",
+   "classes": [
+    "idle_actor_not_idle_budget"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "wait",
+   "N": 8,
+   "N2": null,
+   "gold": "Room for the full allowance of eight",
+   "gold_room_recomputed_from_v1": 8,
+   "v1_sentences": [
+    "At most 8 connections in each minute; capacity returns as the minute passes; the count restarts at each clock minute boundary.",
+    "Counts below are as of now, before any further action.",
+    "In the current clock minute, worker A opened eight connections."
+   ],
+   "v2_added_sentences": [
+    "No other actor opens a connection during the coming minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, opens one connections during the coming minute.",
+     "consistent_with_v1": "v1 says the named actor waits and does nothing; the budget is shared and v1 says nothing about other actors during the wait",
+     "room_under_second_world": 7,
+     "option_selected": "Room for seven more",
+     "excluded_by_v2": "No other actor opens a connection during the coming minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-connections-rate-03-release",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "release",
+   "N": 8,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 8 connections in each minute; capacity returns as the minute passes; the window slides, so any span of one minute counts.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding minute, worker A opened six connections, aged 10 seconds, 15 seconds, 20 seconds, 25 seconds, 30 seconds and 35 seconds.",
+    "Just now, worker A closed one of those connections; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "No other actor opened any connections in the preceding minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, opened one connections in the preceding minute.",
+     "consistent_with_v1": "v1 names only one actor's usage and the budget is shared by every actor; nothing in v1 says no other actor used it",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": "No other actor opened any connections in the preceding minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-connections-rate-04-delete",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "delete",
+   "N": 8,
+   "N2": null,
+   "gold": "Room for six more",
+   "gold_room_recomputed_from_v1": 6,
+   "v1_sentences": [
+    "At most 8 connections in each minute; capacity returns as the minute passes; whether the minute is clock-aligned or sliding is not stated.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding minute, worker A opened two connections, aged 6 seconds and 10 seconds.",
+    "The current time is 10:40:30.",
+    "Just now, worker A deleted an older connection that it opened last week; nothing else changed.",
+    "Worker A's authorisation to open a connection was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "No other actor opened any connections in the preceding minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, opened three connections in the preceding minute.",
+     "consistent_with_v1": "v1 names only one actor's usage and the budget is shared by every actor; nothing in v1 says no other actor used it",
+     "room_under_second_world": 3,
+     "option_selected": "Room for three more",
+     "excluded_by_v2": "No other actor opened any connections in the preceding minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-connections-rate-05-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "count",
+   "N": 8,
+   "N2": null,
+   "gold": "Room for three more",
+   "gold_room_recomputed_from_v1": 3,
+   "v1_sentences": [
+    "At most 8 connections in each minute; capacity returns as the minute passes; the window slides, so any span of one minute counts.",
+    "Counts below are as of now, before any further action.",
+    "Worker A opened four connections: two of them 6 seconds and 12 seconds ago, and two of them 90 seconds and 120 seconds ago.",
+    "Worker B opened three connections in the preceding minute."
+   ],
+   "v2_added_sentences": [
+    "No actor other than worker A and worker B opened any connections in the preceding minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "A third actor, neither worker A nor worker B, opened one connections in the preceding minute.",
+     "consistent_with_v1": "v1 gives two actors' usage of a budget shared by every actor and says nothing about a third",
+     "room_under_second_world": 2,
+     "option_selected": "Room for two more",
+     "excluded_by_v2": "No actor other than worker A and worker B opened any connections in the preceding minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-connections-rate-08-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "count",
+   "N": 8,
+   "N2": 5,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 8 connections in each minute; capacity returns as the minute passes; the window slides, so any span of one minute counts. At most 5 open connections owned by worker A may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding minute, worker A opened eight connections, aged 10 seconds, 13 seconds, 16 seconds, 19 seconds, 22 seconds, 25 seconds, 28 seconds and 31 seconds.",
+    "Three open connections owned by worker A exist now."
+   ],
+   "v2_added_sentences": [
+    "No other actor opened any connections in the preceding minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the named usage already fills the rate window, so extra usage by another actor leaves the joint room at zero"
+   ]
+  },
+  {
+   "id": "rc-connections-stock-03-release",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "release",
+   "N": 3,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 3 open connections owned by worker A may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Two open connections owned by worker A exist now.",
+    "Just now, worker A released one of them; nothing else changed.",
+    "Worker A holds an authorisation to open a connection that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, two open connections owned by worker A existed.",
+    "Between T0 and T1, worker A released one of them; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Two open connections owned by worker A exist now.",
+    "Just now, worker A released one of them; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Two open connections owned by worker A exist now.' describes the set once the release has happened, so the release is already reflected in it and the named set still has two members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, two open connections owned by worker A existed."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-connections-stock-04-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "delete",
+   "N": 3,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 3 open connections owned by worker A may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+    "Just now, worker A deleted one of the open connections owned by worker A; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.",
+    "Between T0 and T1, worker A deleted one of the open connections owned by worker A; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+    "Just now, worker A deleted one of the open connections owned by worker A; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.' describes the set once the delete has happened, so the delete is already reflected in it and the named set still has three members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 0,
+     "option_selected": "No room for another",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-connections-stock-05-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "delete",
+   "N": 3,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 3 open connections owned by worker A may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+    "Just now, worker A deleted one of the archived connections; no member of the named set changed.",
+    "Worker A's authorisation to open a connection was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, three open connections owned by worker A existed, and six archived connections existed that were not in the named set.",
+    "Between T0 and T1, worker A deleted one of the archived connections; no member of the named set changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Three open connections owned by worker A exist now, and six archived connections exist that are not in the named set.",
+    "Just now, worker A deleted one of the archived connections; no member of the named set changed."
+   ],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the action removes a non-member, so the named set has the same count under either reading of now; re-dated so the three stock items of each domain share one header"
+   ]
+  },
+  {
+   "id": "rc-memory-rate-01-wait",
+   "classes": [
+    "idle_actor_not_idle_budget"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "wait",
+   "N": 6,
+   "N2": null,
+   "gold": "Room for the full allowance of six",
+   "gold_room_recomputed_from_v1": 6,
+   "v1_sentences": [
+    "At most 6 reservations in each minute; capacity returns as the minute passes; whether the minute is clock-aligned or sliding is not stated.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding minute, service S took six reservations.",
+    "Service S holds an authorisation to take a reservation that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "No other actor takes a reservation during the coming minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, takes one reservations during the coming minute.",
+     "consistent_with_v1": "v1 says the named actor waits and does nothing; the budget is shared and v1 says nothing about other actors during the wait",
+     "room_under_second_world": 5,
+     "option_selected": "Room for five more",
+     "excluded_by_v2": "No other actor takes a reservation during the coming minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-memory-rate-02-wait",
+   "classes": [
+    "idle_actor_not_idle_budget"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "wait",
+   "N": 6,
+   "N2": null,
+   "gold": "Room for the full allowance of six",
+   "gold_room_recomputed_from_v1": 6,
+   "v1_sentences": [
+    "At most 6 reservations in each minute; capacity returns as the minute passes; the count restarts at each clock minute boundary.",
+    "Counts below are as of now, before any further action.",
+    "In the current clock minute, service S took six reservations."
+   ],
+   "v2_added_sentences": [
+    "No other actor takes a reservation during the coming minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, takes three reservations during the coming minute.",
+     "consistent_with_v1": "v1 says the named actor waits and does nothing; the budget is shared and v1 says nothing about other actors during the wait",
+     "room_under_second_world": 3,
+     "option_selected": "Room for three more",
+     "excluded_by_v2": "No other actor takes a reservation during the coming minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-memory-rate-03-release",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "release",
+   "N": 6,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 6 reservations in each minute; capacity returns as the minute passes; the window slides, so any span of one minute counts.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding minute, service S took four reservations, aged 10 seconds, 15 seconds, 20 seconds and 25 seconds.",
+    "Just now, service S closed one of those reservations; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "No other actor took any reservations in the preceding minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, took one reservations in the preceding minute.",
+     "consistent_with_v1": "v1 names only one actor's usage and the budget is shared by every actor; nothing in v1 says no other actor used it",
+     "room_under_second_world": 1,
+     "option_selected": null,
+     "excluded_by_v2": "No other actor took any reservations in the preceding minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-memory-rate-04-delete",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "delete",
+   "N": 6,
+   "N2": null,
+   "gold": "Room for four more",
+   "gold_room_recomputed_from_v1": 4,
+   "v1_sentences": [
+    "At most 6 reservations in each minute; capacity returns as the minute passes; whether the minute is clock-aligned or sliding is not stated.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding minute, service S took two reservations, aged 6 seconds and 10 seconds.",
+    "The current time is 10:40:30.",
+    "Just now, service S deleted an older reservation that it took last week; nothing else changed.",
+    "Service S's authorisation to take a reservation was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "No other actor took any reservations in the preceding minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, took three reservations in the preceding minute.",
+     "consistent_with_v1": "v1 names only one actor's usage and the budget is shared by every actor; nothing in v1 says no other actor used it",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": "No other actor took any reservations in the preceding minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-memory-rate-05-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "count",
+   "N": 6,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 6 reservations in each minute; capacity returns as the minute passes; the window slides, so any span of one minute counts.",
+    "Counts below are as of now, before any further action.",
+    "Service S took four reservations: two of them 6 seconds and 12 seconds ago, and two of them 90 seconds and 120 seconds ago.",
+    "Service U took three reservations in the preceding minute."
+   ],
+   "v2_added_sentences": [
+    "No actor other than service S and service U took any reservations in the preceding minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "A third actor, neither service S nor service U, took one reservations in the preceding minute.",
+     "consistent_with_v1": "v1 gives two actors' usage of a budget shared by every actor and says nothing about a third",
+     "room_under_second_world": 0,
+     "option_selected": null,
+     "excluded_by_v2": "No actor other than service S and service U took any reservations in the preceding minute."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-memory-rate-08-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "count",
+   "N": 6,
+   "N2": 5,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 6 reservations in each minute; capacity returns as the minute passes; the window slides, so any span of one minute counts. At most 5 held reservations in pool R may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding minute, service S took six reservations, aged 10 seconds, 13 seconds, 16 seconds, 19 seconds, 22 seconds and 25 seconds.",
+    "Three held reservations in pool R exist now."
+   ],
+   "v2_added_sentences": [
+    "No other actor took any reservations in the preceding minute."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the named usage already fills the rate window, so extra usage by another actor leaves the joint room at zero"
+   ]
+  },
+  {
+   "id": "rc-memory-stock-03-release",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "release",
+   "N": 8,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 8 held reservations in pool R may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Seven held reservations in pool R exist now.",
+    "Just now, service S released one of them; nothing else changed.",
+    "Service S holds an authorisation to take a reservation that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, seven held reservations in pool R existed.",
+    "Between T0 and T1, service S released one of them; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Seven held reservations in pool R exist now.",
+    "Just now, service S released one of them; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Seven held reservations in pool R exist now.' describes the set once the release has happened, so the release is already reflected in it and the named set still has seven members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, seven held reservations in pool R existed."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-memory-stock-04-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "delete",
+   "N": 8,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 8 held reservations in pool R may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+    "Just now, service S deleted one of the held reservations in pool R; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.",
+    "Between T0 and T1, service S deleted one of the held reservations in pool R; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+    "Just now, service S deleted one of the held reservations in pool R; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.' describes the set once the delete has happened, so the delete is already reflected in it and the named set still has eight members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 0,
+     "option_selected": null,
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-memory-stock-05-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "delete",
+   "N": 8,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 8 held reservations in pool R may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+    "Just now, service S deleted one of the archived reservations; no member of the named set changed.",
+    "Service S's authorisation to take a reservation was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, eight held reservations in pool R existed, and six archived reservations existed that were not in the named set.",
+    "Between T0 and T1, service S deleted one of the archived reservations; no member of the named set changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Eight held reservations in pool R exist now, and six archived reservations exist that are not in the named set.",
+    "Just now, service S deleted one of the archived reservations; no member of the named set changed."
+   ],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the action removes a non-member, so the named set has the same count under either reading of now; re-dated so the three stock items of each domain share one header"
+   ]
+  },
+  {
+   "id": "rc-memory-stock-06-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "count",
+   "N": 8,
+   "N2": null,
+   "gold": "Room for five more",
+   "gold_room_recomputed_from_v1": 5,
+   "v1_sentences": [
+    "At most 8 held reservations in pool R may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Service S has one reservation in the named set now; service U has two reservations in the same named set. No membership changes."
+   ],
+   "v2_added_sentences": [
+    "Service S has one reservation in the named set now; service U has two reservations in the same named set; no other owner has any reservation in that set. No membership changes."
+   ],
+   "v2_removed_sentences": [
+    "Service S has one reservation in the named set now; service U has two reservations in the same named set. No membership changes."
+   ],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "A third owner, not named in the facts, holds two reservations in the same named set.",
+     "consistent_with_v1": "v1 states two owners' members of a set whose cap is global and says nothing about other owners",
+     "room_under_second_world": 3,
+     "option_selected": "Room for three more",
+     "excluded_by_v2": "Service S has one reservation in the named set now; service U has two reservations in the same named set; no other owner has any reservation in that set. No membership changes."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-messages-stock-03-release",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "release",
+   "N": 6,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 6 queued messages in mailbox M may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Five queued messages in mailbox M exist now.",
+    "Just now, this sender released one of them; nothing else changed.",
+    "This sender holds an authorisation to queue a message that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, five queued messages in mailbox M existed.",
+    "Between T0 and T1, this sender released one of them; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Five queued messages in mailbox M exist now.",
+    "Just now, this sender released one of them; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Five queued messages in mailbox M exist now.' describes the set once the release has happened, so the release is already reflected in it and the named set still has five members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, five queued messages in mailbox M existed."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-messages-stock-04-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "delete",
+   "N": 6,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 6 queued messages in mailbox M may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+    "Just now, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.",
+    "Between T0 and T1, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+    "Just now, this sender deleted one of the queued messages in mailbox M; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.' describes the set once the delete has happened, so the delete is already reflected in it and the named set still has six members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 0,
+     "option_selected": "No room for another",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-messages-stock-05-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "delete",
+   "N": 6,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 6 queued messages in mailbox M may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+    "Just now, this sender deleted one of the archived messages; no member of the named set changed.",
+    "This sender's authorisation to queue a message was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, six queued messages in mailbox M existed, and six archived messages existed that were not in the named set.",
+    "Between T0 and T1, this sender deleted one of the archived messages; no member of the named set changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Six queued messages in mailbox M exist now, and six archived messages exist that are not in the named set.",
+    "Just now, this sender deleted one of the archived messages; no member of the named set changed."
+   ],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the action removes a non-member, so the named set has the same count under either reading of now; re-dated so the three stock items of each domain share one header"
+   ]
+  },
+  {
+   "id": "rc-messages-stock-06-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "count",
+   "N": 6,
+   "N2": null,
+   "gold": "Room for three more",
+   "gold_room_recomputed_from_v1": 3,
+   "v1_sentences": [
+    "At most 6 queued messages in mailbox M may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "This sender has one message in the named set now; another sender has two messages in the same named set. No membership changes."
+   ],
+   "v2_added_sentences": [
+    "This sender has one message in the named set now; another sender has two messages in the same named set; no other owner has any message in that set. No membership changes."
+   ],
+   "v2_removed_sentences": [
+    "This sender has one message in the named set now; another sender has two messages in the same named set. No membership changes."
+   ],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "A third owner, not named in the facts, holds one messages in the same named set.",
+     "consistent_with_v1": "v1 states two owners' members of a set whose cap is global and says nothing about other owners",
+     "room_under_second_world": 2,
+     "option_selected": "Room for two more",
+     "excluded_by_v2": "This sender has one message in the named set now; another sender has two messages in the same named set; no other owner has any message in that set. No membership changes."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-permits-rate-01-wait",
+   "classes": [
+    "idle_actor_not_idle_budget"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "wait",
+   "N": 10,
+   "N2": null,
+   "gold": "Room for the full allowance of ten",
+   "gold_room_recomputed_from_v1": 10,
+   "v1_sentences": [
+    "At most 10 permits in each week; capacity returns as the week passes; whether the week is clock-aligned or sliding is not stated.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding week, this permit holder issued ten permits.",
+    "This permit holder holds an authorisation to issue a permit that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "No other actor issues a permit during the coming week."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, issues eight permits during the coming week.",
+     "consistent_with_v1": "v1 says the named actor waits and does nothing; the budget is shared and v1 says nothing about other actors during the wait",
+     "room_under_second_world": 2,
+     "option_selected": "Room for two more",
+     "excluded_by_v2": "No other actor issues a permit during the coming week."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-permits-rate-02-wait",
+   "classes": [
+    "idle_actor_not_idle_budget"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "wait",
+   "N": 10,
+   "N2": null,
+   "gold": "Room for the full allowance of ten",
+   "gold_room_recomputed_from_v1": 10,
+   "v1_sentences": [
+    "At most 10 permits in each week; capacity returns as the week passes; the count restarts at each clock week boundary.",
+    "Counts below are as of now, before any further action.",
+    "In the current clock week, this permit holder issued ten permits."
+   ],
+   "v2_added_sentences": [
+    "No other actor issues a permit during the coming week."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, issues one permits during the coming week.",
+     "consistent_with_v1": "v1 says the named actor waits and does nothing; the budget is shared and v1 says nothing about other actors during the wait",
+     "room_under_second_world": 9,
+     "option_selected": "Room for nine more",
+     "excluded_by_v2": "No other actor issues a permit during the coming week."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-permits-rate-03-release",
+   "classes": [
+    "age_outside_window",
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "release",
+   "N": 10,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 10 permits in each week; capacity returns as the week passes; the window slides, so any span of one week counts.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding week, this permit holder issued eight permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days and 8 days.",
+    "Just now, this permit holder closed one of those permits; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "In the preceding week, this permit holder issued eight permits, aged 28 hours, 42 hours, 56 hours, 70 hours, 84 hours, 98 hours, 112 hours and 126 hours.",
+    "No other actor issued any permits in the preceding week."
+   ],
+   "v2_removed_sentences": [
+    "In the preceding week, this permit holder issued eight permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days and 8 days."
+   ],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, issued two permits in the preceding week.",
+     "consistent_with_v1": "v1 names only one actor's usage and the budget is shared by every actor; nothing in v1 says no other actor used it",
+     "room_under_second_world": 0,
+     "option_selected": "No room for another",
+     "excluded_by_v2": "No other actor issued any permits in the preceding week."
+    },
+    {
+     "kind": "inconsistency",
+     "second_world": "The ages are read literally: 1 of the eight permits is older than one week and 1 sits exactly at the boundary, so the sentence 'in the preceding week' and the age list cannot both hold; counting only ages strictly inside the window gives 6, counting ages up to and including the boundary gives 7.",
+     "consistent_with_v1": "no world satisfies every v1 sentence literally; the key took the sentence count and ignored the ages",
+     "room_under_second_world": [
+      4,
+      3
+     ],
+     "option_selected": [
+      null,
+      "Room for three more"
+     ],
+     "excluded_by_v2": "In the preceding week, this permit holder issued eight permits, aged 28 hours, 42 hours, 56 hours, 70 hours, 84 hours, 98 hours, 112 hours and 126 hours."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-permits-rate-04-delete",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "delete",
+   "N": 10,
+   "N2": null,
+   "gold": "Room for eight more",
+   "gold_room_recomputed_from_v1": 8,
+   "v1_sentences": [
+    "At most 10 permits in each week; capacity returns as the week passes; whether the week is clock-aligned or sliding is not stated.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding week, this permit holder issued two permits, aged 1 day and 2 days.",
+    "Today is Wednesday.",
+    "Just now, this permit holder deleted an older permit that it issued last week; nothing else changed.",
+    "This permit holder's authorisation to issue a permit was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "In the preceding week, this permit holder issued two permits, aged 16 hours and 28 hours.",
+    "No other actor issued any permits in the preceding week.",
+    "Just now, this permit holder deleted an older permit that it issued last month; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "In the preceding week, this permit holder issued two permits, aged 1 day and 2 days.",
+    "Just now, this permit holder deleted an older permit that it issued last week; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, issued six permits in the preceding week.",
+     "consistent_with_v1": "v1 names only one actor's usage and the budget is shared by every actor; nothing in v1 says no other actor used it",
+     "room_under_second_world": 2,
+     "option_selected": "Room for two more",
+     "excluded_by_v2": "No other actor issued any permits in the preceding week."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-permits-rate-05-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "count",
+   "N": 10,
+   "N2": null,
+   "gold": "Room for five more",
+   "gold_room_recomputed_from_v1": 5,
+   "v1_sentences": [
+    "At most 10 permits in each week; capacity returns as the week passes; the window slides, so any span of one week counts.",
+    "Counts below are as of now, before any further action.",
+    "This permit holder issued four permits: two of them 1 day and 2 days ago, and two of them 10 days and 14 days ago.",
+    "Another permit holder issued three permits in the preceding week."
+   ],
+   "v2_added_sentences": [
+    "This permit holder issued four permits: two of them 16 hours and 33 hours ago, and two of them 252 hours and 336 hours ago.",
+    "No actor other than this permit holder and another permit holder issued any permits in the preceding week."
+   ],
+   "v2_removed_sentences": [
+    "This permit holder issued four permits: two of them 1 day and 2 days ago, and two of them 10 days and 14 days ago."
+   ],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "A third actor, neither this permit holder nor another permit holder, issued two permits in the preceding week.",
+     "consistent_with_v1": "v1 gives two actors' usage of a budget shared by every actor and says nothing about a third",
+     "room_under_second_world": 3,
+     "option_selected": "Room for three more",
+     "excluded_by_v2": "No actor other than this permit holder and another permit holder issued any permits in the preceding week."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-permits-rate-08-count",
+   "classes": [
+    "age_outside_window",
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "count",
+   "N": 10,
+   "N2": 5,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 10 permits in each week; capacity returns as the week passes; the window slides, so any span of one week counts. At most 5 vehicles parked in bay set B may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding week, this permit holder issued ten permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 8 days, 9 days and 10 days.",
+    "Three vehicles parked in bay set B exist now."
+   ],
+   "v2_added_sentences": [
+    "In the preceding week, this permit holder issued ten permits, aged 28 hours, 36 hours, 44 hours, 52 hours, 60 hours, 68 hours, 76 hours, 84 hours, 92 hours and 100 hours.",
+    "No other actor issued any permits in the preceding week."
+   ],
+   "v2_removed_sentences": [
+    "In the preceding week, this permit holder issued ten permits, aged 1 day, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days, 8 days, 9 days and 10 days."
+   ],
+   "countermodels": [
+    {
+     "kind": "inconsistency",
+     "second_world": "The ages are read literally: 3 of the ten permits are older than one week and 1 sits exactly at the boundary; counting only ages strictly inside the window gives 6 in the window and joint room 2, counting ages up to the boundary gives 7 and joint room 2.",
+     "consistent_with_v1": "no world satisfies every v1 sentence literally; the key took the sentence count and ignored the ages",
+     "room_under_second_world": [
+      2,
+      2
+     ],
+     "option_selected": [
+      "Room for two more",
+      "Room for two more"
+     ],
+     "excluded_by_v2": "In the preceding week, this permit holder issued ten permits, aged 28 hours, 36 hours, 44 hours, 52 hours, 60 hours, 68 hours, 76 hours, 84 hours, 92 hours and 100 hours."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": [
+    "the named usage already fills the rate window, so extra usage by another actor leaves the joint room at zero"
+   ]
+  },
+  {
+   "id": "rc-permits-stock-03-release",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "release",
+   "N": 4,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 4 vehicles parked in bay set B may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Three vehicles parked in bay set B exist now.",
+    "Just now, this permit holder released one of them; nothing else changed.",
+    "This permit holder holds an authorisation to park a vehicle that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, three vehicles parked in bay set B existed.",
+    "Between T0 and T1, this permit holder released one of them; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Three vehicles parked in bay set B exist now.",
+    "Just now, this permit holder released one of them; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Three vehicles parked in bay set B exist now.' describes the set once the release has happened, so the release is already reflected in it and the named set still has three members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, three vehicles parked in bay set B existed."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-permits-stock-04-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "delete",
+   "N": 4,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 4 vehicles parked in bay set B may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+    "Just now, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.",
+    "Between T0 and T1, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+    "Just now, this permit holder deleted one of the vehicles parked in bay set B; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.' describes the set once the delete has happened, so the delete is already reflected in it and the named set still has four members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 0,
+     "option_selected": "No room for another",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-permits-stock-05-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "delete",
+   "N": 4,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 4 vehicles parked in bay set B may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+    "Just now, this permit holder deleted one of the archived vehicles; no member of the named set changed.",
+    "This permit holder's authorisation to park a vehicle was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, four vehicles parked in bay set B existed, and six archived vehicles existed that were not in the named set.",
+    "Between T0 and T1, this permit holder deleted one of the archived vehicles; no member of the named set changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Four vehicles parked in bay set B exist now, and six archived vehicles exist that are not in the named set.",
+    "Just now, this permit holder deleted one of the archived vehicles; no member of the named set changed."
+   ],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the action removes a non-member, so the named set has the same count under either reading of now; re-dated so the three stock items of each domain share one header"
+   ]
+  },
+  {
+   "id": "rc-permits-stock-06-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "count",
+   "N": 4,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 4 vehicles parked in bay set B may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set. No membership changes."
+   ],
+   "v2_added_sentences": [
+    "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set; no other owner has any vehicle in that set. No membership changes."
+   ],
+   "v2_removed_sentences": [
+    "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set. No membership changes."
+   ],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "A third owner, not named in the facts, holds one vehicles in the same named set.",
+     "consistent_with_v1": "v1 states two owners' members of a set whose cap is global and says nothing about other owners",
+     "room_under_second_world": 0,
+     "option_selected": "No room for another",
+     "excluded_by_v2": "This permit holder has one vehicle in the named set now; another permit holder has two vehicles in the same named set; no other owner has any vehicle in that set. No membership changes."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-retries-stock-03-release",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "release",
+   "N": 5,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 5 pending retries for job J may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Four pending retries for job J exist now.",
+    "Just now, job J released one of them; nothing else changed.",
+    "Job J holds an authorisation to schedule a retry that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, four pending retries for job J existed.",
+    "Between T0 and T1, job J released one of them; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Four pending retries for job J exist now.",
+    "Just now, job J released one of them; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Four pending retries for job J exist now.' describes the set once the release has happened, so the release is already reflected in it and the named set still has four members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, four pending retries for job J existed."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-retries-stock-04-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "delete",
+   "N": 5,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 5 pending retries for job J may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+    "Just now, job J deleted one of the pending retries for job J; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.",
+    "Between T0 and T1, job J deleted one of the pending retries for job J; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+    "Just now, job J deleted one of the pending retries for job J; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Five pending retries for job J exist now, and six archived retries exist that are not in the named set.' describes the set once the delete has happened, so the delete is already reflected in it and the named set still has five members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 0,
+     "option_selected": null,
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-retries-stock-05-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "delete",
+   "N": 5,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 5 pending retries for job J may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+    "Just now, job J deleted one of the archived retries; no member of the named set changed.",
+    "Job J's authorisation to schedule a retry was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, five pending retries for job J existed, and six archived retries existed that were not in the named set.",
+    "Between T0 and T1, job J deleted one of the archived retries; no member of the named set changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Five pending retries for job J exist now, and six archived retries exist that are not in the named set.",
+    "Just now, job J deleted one of the archived retries; no member of the named set changed."
+   ],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the action removes a non-member, so the named set has the same count under either reading of now; re-dated so the three stock items of each domain share one header"
+   ]
+  },
+  {
+   "id": "rc-seats-stock-03-release",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "release",
+   "N": 5,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 5 active seats held by team T may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Four active seats held by team T exist now.",
+    "Just now, team T released one of them; nothing else changed.",
+    "Team T holds an authorisation to claim a seat that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, four active seats held by team T existed.",
+    "Between T0 and T1, team T released one of them; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Four active seats held by team T exist now.",
+    "Just now, team T released one of them; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Four active seats held by team T exist now.' describes the set once the release has happened, so the release is already reflected in it and the named set still has four members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, four active seats held by team T existed."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-seats-stock-04-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "delete",
+   "N": 5,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 5 active seats held by team T may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+    "Just now, team T deleted one of the active seats held by team T; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.",
+    "Between T0 and T1, team T deleted one of the active seats held by team T; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+    "Just now, team T deleted one of the active seats held by team T; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Five active seats held by team T exist now, and six archived seats exist that are not in the named set.' describes the set once the delete has happened, so the delete is already reflected in it and the named set still has five members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 0,
+     "option_selected": null,
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-seats-stock-05-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "per-identity",
+   "probe": "delete",
+   "N": 5,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 5 active seats held by team T may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+    "Just now, team T deleted one of the archived seats; no member of the named set changed.",
+    "Team T's authorisation to claim a seat was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, five active seats held by team T existed, and six archived seats existed that were not in the named set.",
+    "Between T0 and T1, team T deleted one of the archived seats; no member of the named set changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Five active seats held by team T exist now, and six archived seats exist that are not in the named set.",
+    "Just now, team T deleted one of the archived seats; no member of the named set changed."
+   ],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the action removes a non-member, so the named set has the same count under either reading of now; re-dated so the three stock items of each domain share one header"
+   ]
+  },
+  {
+   "id": "rc-storage-rate-01-wait",
+   "classes": [
+    "idle_actor_not_idle_budget"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "wait",
+   "N": 5,
+   "N2": null,
+   "gold": "Room for the full allowance of five",
+   "gold_room_recomputed_from_v1": 5,
+   "v1_sentences": [
+    "At most 5 snapshots in each day; capacity returns as the day passes; whether the day is clock-aligned or sliding is not stated.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding day, the backup agent took five snapshots.",
+    "The backup agent holds an authorisation to take a snapshot that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "No other actor takes a snapshot during the coming day."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, takes one snapshots during the coming day.",
+     "consistent_with_v1": "v1 says the named actor waits and does nothing; the budget is shared and v1 says nothing about other actors during the wait",
+     "room_under_second_world": 4,
+     "option_selected": "Room for four more",
+     "excluded_by_v2": "No other actor takes a snapshot during the coming day."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-storage-rate-02-wait",
+   "classes": [
+    "idle_actor_not_idle_budget"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "wait",
+   "N": 5,
+   "N2": null,
+   "gold": "Room for the full allowance of five",
+   "gold_room_recomputed_from_v1": 5,
+   "v1_sentences": [
+    "At most 5 snapshots in each day; capacity returns as the day passes; the count restarts at each clock day boundary.",
+    "Counts below are as of now, before any further action.",
+    "In the current clock day, the backup agent took five snapshots."
+   ],
+   "v2_added_sentences": [
+    "No other actor takes a snapshot during the coming day."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, takes two snapshots during the coming day.",
+     "consistent_with_v1": "v1 says the named actor waits and does nothing; the budget is shared and v1 says nothing about other actors during the wait",
+     "room_under_second_world": 3,
+     "option_selected": "Room for three more",
+     "excluded_by_v2": "No other actor takes a snapshot during the coming day."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-storage-rate-03-release",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "release",
+   "N": 5,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 5 snapshots in each day; capacity returns as the day passes; the window slides, so any span of one day counts.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding day, the backup agent took three snapshots, aged 4 hours, 6 hours and 8 hours.",
+    "Just now, the backup agent closed one of those snapshots; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "No other actor took any snapshots in the preceding day."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, took two snapshots in the preceding day.",
+     "consistent_with_v1": "v1 names only one actor's usage and the budget is shared by every actor; nothing in v1 says no other actor used it",
+     "room_under_second_world": 0,
+     "option_selected": "No room for another",
+     "excluded_by_v2": "No other actor took any snapshots in the preceding day."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-storage-rate-04-delete",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "delete",
+   "N": 5,
+   "N2": null,
+   "gold": "Room for three more",
+   "gold_room_recomputed_from_v1": 3,
+   "v1_sentences": [
+    "At most 5 snapshots in each day; capacity returns as the day passes; whether the day is clock-aligned or sliding is not stated.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding day, the backup agent took two snapshots, aged 2 hours and 4 hours.",
+    "The current time is 14:00 on Wednesday.",
+    "Just now, the backup agent deleted an older snapshot that it took last week; nothing else changed.",
+    "The backup agent's authorisation to take a snapshot was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "No other actor took any snapshots in the preceding day."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "Another actor, not named in the facts, took one snapshots in the preceding day.",
+     "consistent_with_v1": "v1 names only one actor's usage and the budget is shared by every actor; nothing in v1 says no other actor used it",
+     "room_under_second_world": 2,
+     "option_selected": "Room for two more",
+     "excluded_by_v2": "No other actor took any snapshots in the preceding day."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-storage-rate-05-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "count",
+   "N": 5,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 5 snapshots in each day; capacity returns as the day passes; the window slides, so any span of one day counts.",
+    "Counts below are as of now, before any further action.",
+    "The backup agent took four snapshots: two of them 2 hours and 4 hours ago, and two of them 36 hours and 48 hours ago.",
+    "The archive agent took three snapshots in the preceding day."
+   ],
+   "v2_added_sentences": [
+    "No actor other than the backup agent and the archive agent took any snapshots in the preceding day."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the two named actors already fill the window, so a third actor's usage leaves room at zero"
+   ]
+  },
+  {
+   "id": "rc-storage-rate-08-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "rate",
+   "scope": "global",
+   "probe": "count",
+   "N": 5,
+   "N2": 5,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 5 snapshots in each day; capacity returns as the day passes; the window slides, so any span of one day counts. At most 5 retained snapshots of volume V may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "In the preceding day, the backup agent took five snapshots, aged 4 hours, 5 hours, 6 hours, 7 hours and 8 hours.",
+    "Three retained snapshots of volume V exist now."
+   ],
+   "v2_added_sentences": [
+    "No other actor took any snapshots in the preceding day."
+   ],
+   "v2_removed_sentences": [],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the named usage already fills the rate window, so extra usage by another actor leaves the joint room at zero"
+   ]
+  },
+  {
+   "id": "rc-storage-stock-03-release",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "release",
+   "N": 4,
+   "N2": null,
+   "gold": "Room for two more",
+   "gold_room_recomputed_from_v1": 2,
+   "v1_sentences": [
+    "At most 4 retained snapshots of volume V may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Three retained snapshots of volume V exist now.",
+    "Just now, the backup agent released one of them; nothing else changed.",
+    "The backup agent holds an authorisation to retain a snapshot that runs until the end of today."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, three retained snapshots of volume V existed.",
+    "Between T0 and T1, the backup agent released one of them; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Three retained snapshots of volume V exist now.",
+    "Just now, the backup agent released one of them; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Three retained snapshots of volume V exist now.' describes the set once the release has happened, so the release is already reflected in it and the named set still has three members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 1,
+     "option_selected": "Room for one more",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, three retained snapshots of volume V existed."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-storage-stock-04-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "delete",
+   "N": 4,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 4 retained snapshots of volume V may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+    "Just now, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.",
+    "Between T0 and T1, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+    "Just now, the backup agent deleted one of the retained snapshots of volume V; nothing else changed."
+   ],
+   "countermodels": [
+    {
+     "kind": "reading",
+     "second_world": "The count line is read as dated after the action: 'Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.' describes the set once the delete has happened, so the delete is already reflected in it and the named set still has four members.",
+     "consistent_with_v1": "v1 says 'exist now' and 'just now' without ordering them; the header 'before any further action' does not say whether the just-now action is further",
+     "room_under_second_world": 0,
+     "option_selected": "No room for another",
+     "excluded_by_v2": [
+      "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+      "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set."
+     ]
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  },
+  {
+   "id": "rc-storage-stock-05-delete",
+   "classes": [
+    "now_read_twice"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "delete",
+   "N": 4,
+   "N2": null,
+   "gold": "No room for another",
+   "gold_room_recomputed_from_v1": 0,
+   "v1_sentences": [
+    "At most 4 retained snapshots of volume V may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+    "Just now, the backup agent deleted one of the archived snapshots; no member of the named set changed.",
+    "The backup agent's authorisation to retain a snapshot was revoked this morning and has not been restored."
+   ],
+   "v2_added_sentences": [
+    "Counts below are dated as stated: T0 is the instant immediately before the action, T1 the instant immediately after it.",
+    "At T0, four retained snapshots of volume V existed, and six archived snapshots existed that were not in the named set.",
+    "Between T0 and T1, the backup agent deleted one of the archived snapshots; no member of the named set changed."
+   ],
+   "v2_removed_sentences": [
+    "Counts below are as of now, before any further action.",
+    "Four retained snapshots of volume V exist now, and six archived snapshots exist that are not in the named set.",
+    "Just now, the backup agent deleted one of the archived snapshots; no member of the named set changed."
+   ],
+   "countermodels": [],
+   "answer_changing": false,
+   "v1_entailed_option": "No room for another",
+   "no_countermodel_of_that_kind_because": [
+    "the action removes a non-member, so the named set has the same count under either reading of now; re-dated so the three stock items of each domain share one header"
+   ]
+  },
+  {
+   "id": "rc-storage-stock-06-count",
+   "classes": [
+    "silent_census"
+   ],
+   "stratum": "stock",
+   "scope": "global",
+   "probe": "count",
+   "N": 4,
+   "N2": null,
+   "gold": "Room for one more",
+   "gold_room_recomputed_from_v1": 1,
+   "v1_sentences": [
+    "At most 4 retained snapshots of volume V may exist at one time; room returns only when one of them leaves that set by closing, release, deletion, consumption or expiry, however long one waits.",
+    "Counts below are as of now, before any further action.",
+    "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set. No membership changes."
+   ],
+   "v2_added_sentences": [
+    "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set; no other owner has any snapshot in that set. No membership changes."
+   ],
+   "v2_removed_sentences": [
+    "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set. No membership changes."
+   ],
+   "countermodels": [
+    {
+     "kind": "added-fact",
+     "second_world": "A third owner, not named in the facts, holds one snapshots in the same named set.",
+     "consistent_with_v1": "v1 states two owners' members of a set whose cap is global and says nothing about other owners",
+     "room_under_second_world": 0,
+     "option_selected": null,
+     "excluded_by_v2": "The backup agent has one snapshot in the named set now; the archive agent has two snapshots in the same named set; no other owner has any snapshot in that set. No membership changes."
+    }
+   ],
+   "answer_changing": true,
+   "v1_entailed_option": "Cannot determine from the statement and the facts",
+   "no_countermodel_of_that_kind_because": []
+  }
+ ]
+}
