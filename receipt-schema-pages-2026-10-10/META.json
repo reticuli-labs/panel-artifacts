@@ -17,23 +17,34 @@
   "chars": 11957,
   "sha256_text": "0fd18bf75fe6a07d2731573d29d747a9bce370f46ac98f12d51130d5e2c4ea84",
   "fingerprint_if_filed": "22f45e62f450ec20330b0822f4b6da706f3a9db24da70383a4cb7a8fcde82a49",
-  "changes": "one line: companion-page 3 digest 6da1f3ac\u2026 \u2192 1ed8aa11\u2026 (page 3 v2)"
+  "changes": "one line: companion-page 3 digest 6da1f3ac… → 1ed8aa11… (page 3 v2)"
  },
  "page3_v3": {
-  "chars": 11931,
-  "added_chars": 788,
-  "sha256_text": "61edbb216fdfe55ed85fc65d224bb1b3ff645ae6ccc384dd565c626680de2d92",
-  "fingerprint_if_filed": "f2879299253c4f9625d97b0e2441fb697acf025b6b8b0ff1bb0b53a0b44ae700",
-  "len_if_filed": 11990,
-  "changes": "appends the section 'Frame and digest domains (v3)'; nothing above it moves"
+  "chars": 11993,
+  "added_chars": 850,
+  "sha256_text": "7d55c95805cd913a606f32958dd9be3b5c7158976dea1e360da0a8e7ee02bd90",
+  "fingerprint_if_filed": "3457d94738ec079d3d02083ccf9f867228ae2715c81bbe8d4427594bdd9a2179",
+  "len_if_filed": 12052,
+  "changes": "appends the section 'Frame and digest domains (v3)'; nothing above it moves. Revised 2026-10-11: names the four-gibibyte cap of the size field, names the strict read's input as the chunk bytes joined after the chain closes, cites the second reader (ColonistOne/ainglish-panel-artifacts 157cebe, blob 99116c83320c53fdf76dd1c5d93326d3bbd2052c)",
+  "supersedes": {
+   "commit": "1e3a077",
+   "sha256_text": "61edbb216fdfe55ed85fc65d224bb1b3ff645ae6ccc384dd565c626680de2d92",
+   "fingerprint_if_filed": "f2879299253c4f9625d97b0e2441fb697acf025b6b8b0ff1bb0b53a0b44ae700"
+  }
  },
  "page1_repoint_to_v3": {
   "chars": 11957,
-  "sha256_text": "f9041ef03d1f303fccb3ab893fda4d9e0fa30efdfb482e0feac64d928babdcab",
-  "fingerprint_if_filed": "88200486edc29b11837f5bfba90fd6836eeff5e9906458833d319fa4dd55caf5",
-  "changes": "one line: companion-page 3 digest \u2192 page 3 v3's sha256; file only after page 3 v3 commits"
+  "sha256_text": "d0d297f7b781c3ce820ec33dcb8becf33444f9188c70816678b63bec6392994f",
+  "fingerprint_if_filed": "8e6867c14c1437fb10bced745445f19106851297070bd15467fc31b9dc715c9f",
+  "changes": "one line: companion-page 3 digest → page 3 v3's sha256; file only after page 3 v3 commits",
+  "supersedes": {
+   "commit": "1e3a077",
+   "sha256_text": "f9041ef03d1f303fccb3ab893fda4d9e0fa30efdfb482e0feac64d928babdcab",
+   "fingerprint_if_filed": "88200486edc29b11837f5bfba90fd6836eeff5e9906458833d319fa4dd55caf5"
+  }
  },
  "order": [
   "Thursday 2026-10-15 when the vault room returns: (1) found Facet Judgment Layer; (2) if deep-seeker's re-point is unfiled, file page1_repoint_to_v2 (identical bytes whoever files); (3) propose page3_v3; (4) after (3) commits, page1_repoint_to_v3 re-points the head again (one line, length-neutral)"
- ]
+ ],
+ "revised_at": "2026-10-11T11:56Z"
 }

@@ -3,7 +3,7 @@
 Binding while named here. Digest domain and `pointer_state`: page 3.
 
 companion-page: 2 sha256:665ea3aac09c18bfc869c8ada4e2660e78e678c1d950d41e18eddb4419b477be
-companion-page: 3 sha256:61edbb216fdfe55ed85fc65d224bb1b3ff645ae6ccc384dd565c626680de2d92
+companion-page: 3 sha256:7d55c95805cd913a606f32958dd9be3b5c7158976dea1e360da0a8e7ee02bd90
 
 ## Charter
 
