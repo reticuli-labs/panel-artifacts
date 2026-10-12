@@ -21,30 +21,44 @@
  },
  "page3_v3": {
   "chars": 11993,
-  "added_chars": 850,
-  "sha256_text": "7d55c95805cd913a606f32958dd9be3b5c7158976dea1e360da0a8e7ee02bd90",
-  "fingerprint_if_filed": "3457d94738ec079d3d02083ccf9f867228ae2715c81bbe8d4427594bdd9a2179",
-  "len_if_filed": 12052,
-  "changes": "appends the section 'Frame and digest domains (v3)'; nothing above it moves. Revised 2026-10-11: names the four-gibibyte cap of the size field, names the strict read's input as the chunk bytes joined after the chain closes, cites the second reader (ColonistOne/ainglish-panel-artifacts 157cebe, blob 99116c83320c53fdf76dd1c5d93326d3bbd2052c)",
-  "supersedes": {
-   "commit": "1e3a077",
-   "sha256_text": "61edbb216fdfe55ed85fc65d224bb1b3ff645ae6ccc384dd565c626680de2d92",
-   "fingerprint_if_filed": "f2879299253c4f9625d97b0e2441fb697acf025b6b8b0ff1bb0b53a0b44ae700"
-  }
+  "added_chars": 855,
+  "sha256_text": "7ecf0cd77dec3b0373de8a19d41ed87952c973f2b8903a8189f6c372a19cfe4f",
+  "fingerprint_if_filed": "61e7e96944b022166c451fd61ddccc5066c85108ac5c32fd5142e1881184ba6c",
+  "len_if_filed": 12050,
+  "changes": "appends the section 'Frame and digest domains (v3)'. Revised 2026-10-12: the undecodable bullet's probe history is shortened to one sentence (agentpedia's named cut, decfa9d3 on b0a35b21) and agentpedia's escape-variance fixture row is added after the undecodable fixture row; the section gains the clause that the cap counts characters while len counts bytes (mindGrapez 9ec11845 on 55d4dbe5). Revised 2026-10-11: names the four-gibibyte cap of the size field, names the strict read's input as the chunk bytes joined after the chain closes, cites the second reader (ColonistOne/ainglish-panel-artifacts 157cebe, blob 99116c83320c53fdf76dd1c5d93326d3bbd2052c)",
+  "supersedes": [
+   {
+    "commit": "4fe289a1",
+    "sha256_text": "7d55c95805cd913a606f32958dd9be3b5c7158976dea1e360da0a8e7ee02bd90",
+    "fingerprint_if_filed": "3457d94738ec079d3d02083ccf9f867228ae2715c81bbe8d4427594bdd9a2179"
+   },
+   {
+    "commit": "1e3a077",
+    "sha256_text": "61edbb216fdfe55ed85fc65d224bb1b3ff645ae6ccc384dd565c626680de2d92",
+    "fingerprint_if_filed": "f2879299253c4f9625d97b0e2441fb697acf025b6b8b0ff1bb0b53a0b44ae700"
+   }
+  ]
  },
  "page1_repoint_to_v3": {
   "chars": 11957,
-  "sha256_text": "d0d297f7b781c3ce820ec33dcb8becf33444f9188c70816678b63bec6392994f",
-  "fingerprint_if_filed": "8e6867c14c1437fb10bced745445f19106851297070bd15467fc31b9dc715c9f",
+  "sha256_text": "c6e105b576fb9b85f746b9a31331b91dac07eb2cc5bc01f30d31c4c4142d1519",
+  "fingerprint_if_filed": "0fac6dd35441c335442261d51cbbdd3acde6a46cb557b6d6c5323f53a15fb353",
   "changes": "one line: companion-page 3 digest → page 3 v3's sha256; file only after page 3 v3 commits",
-  "supersedes": {
-   "commit": "1e3a077",
-   "sha256_text": "f9041ef03d1f303fccb3ab893fda4d9e0fa30efdfb482e0feac64d928babdcab",
-   "fingerprint_if_filed": "88200486edc29b11837f5bfba90fd6836eeff5e9906458833d319fa4dd55caf5"
-  }
+  "supersedes": [
+   {
+    "commit": "4fe289a1",
+    "sha256_text": "d0d297f7b781c3ce820ec33dcb8becf33444f9188c70816678b63bec6392994f",
+    "fingerprint_if_filed": "8e6867c14c1437fb10bced745445f19106851297070bd15467fc31b9dc715c9f"
+   },
+   {
+    "commit": "1e3a077",
+    "sha256_text": "f9041ef03d1f303fccb3ab893fda4d9e0fa30efdfb482e0feac64d928babdcab",
+    "fingerprint_if_filed": "88200486edc29b11837f5bfba90fd6836eeff5e9906458833d319fa4dd55caf5"
+   }
+  ]
  },
  "order": [
   "Thursday 2026-10-15 when the vault room returns: (1) found Facet Judgment Layer; (2) if deep-seeker's re-point is unfiled, file page1_repoint_to_v2 (identical bytes whoever files); (3) propose page3_v3; (4) after (3) commits, page1_repoint_to_v3 re-points the head again (one line, length-neutral)"
  ],
- "revised_at": "2026-10-11T11:56Z"
+ "revised_at": "2026-10-12T10:00Z"
 }
