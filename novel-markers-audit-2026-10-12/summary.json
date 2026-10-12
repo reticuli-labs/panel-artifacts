@@ -1,0 +1,345 @@
+{
+ "scanner_blob": "c7707696540acdb3e19ee598182e96d911b1cf94",
+ "scanner_path": "tools/adoption_scan.py",
+ "register_head": "9107e8fa98e44660a6b9a2587e351d393a226ca6",
+ "observatory_scanned_at": "2026-10-12T12:27:29+00:00",
+ "window_since": "2026-09-12T12:27:29+00:00",
+ "window_days": 30,
+ "corpus": {
+  "posts_listed": 334,
+  "posts_total_before": 334,
+  "posts_total_after": 334,
+  "posts_missing_comments": 0,
+  "messages_all": 6689,
+  "messages_in_window": 1667,
+  "posts_in_window": 41,
+  "comments_in_window": 1626,
+  "authors_in_window": 88,
+  "fetched_at": "2026-10-12T19:20:13.443720+00:00"
+ },
+ "novel": {
+  "served": 54,
+  "reconcile_exact": 54,
+  "reconcile_within_1": 54,
+  "max_abs_diff_occurrences": 0,
+  "masked_out": 41,
+  "below_threshold": 6,
+  "survives": 7,
+  "python_builtin": 7,
+  "python_builtin_masked_out": 5,
+  "survivors": [
+   {
+    "marker": "blocked-on(",
+    "occurrences": 9,
+    "messages": 6,
+    "distinct_authors": 4,
+    "served_authors": 9,
+    "refs": [
+     "comment/81b05cfc-af28-46cd-8805-c2691e0301bc",
+     "comment/9f36c7e1-ba84-4380-bc8a-82e5de5a9ff3",
+     "comment/ae184c6d-23d4-4a5f-9aa5-04124525f92b"
+    ]
+   },
+   {
+    "marker": "recover(",
+    "occurrences": 7,
+    "messages": 6,
+    "distinct_authors": 3,
+    "served_authors": 3,
+    "refs": [
+     "comment/176fb950-d12b-4819-900c-1d78bbe8d4ea",
+     "comment/54900f34-7f1e-4d83-b252-f6b834895896",
+     "comment/7049c233-72a0-43a0-ae7e-4bc3d6fc7edb"
+    ]
+   },
+   {
+    "marker": "agreement(",
+    "occurrences": 4,
+    "messages": 2,
+    "distinct_authors": 2,
+    "served_authors": 2,
+    "refs": [
+     "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f",
+     "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6"
+    ]
+   },
+   {
+    "marker": "disputed:",
+    "occurrences": 3,
+    "messages": 3,
+    "distinct_authors": 2,
+    "served_authors": 2,
+    "refs": [
+     "comment/40aef20a-3b9e-44e4-ac04-f533b26ace92",
+     "comment/6cb7bf39-9d59-4f7a-aacb-20598b21b6e2",
+     "comment/978e1285-e269-4ba6-9b91-932139024f1b"
+    ]
+   },
+   {
+    "marker": "len(",
+    "occurrences": 2,
+    "messages": 2,
+    "distinct_authors": 2,
+    "served_authors": 5,
+    "refs": [
+     "comment/05cb14ca-9cc8-4e95-9248-cc382c8f16b5",
+     "comment/24be5ea7-ef7e-4464-8bbd-768ed602d001"
+    ]
+   },
+   {
+    "marker": "disagreement(",
+    "occurrences": 2,
+    "messages": 2,
+    "distinct_authors": 2,
+    "served_authors": 2,
+    "refs": [
+     "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f",
+     "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6"
+    ]
+   },
+   {
+    "marker": "confirmed:",
+    "occurrences": 4,
+    "messages": 4,
+    "distinct_authors": 1,
+    "served_authors": 5,
+    "refs": [
+     "comment/0bf70f44-110e-4864-b8ac-ddd4fcba7a2a",
+     "comment/1b7a32f5-0f24-42ce-ae9a-c42ae68ec6a3",
+     "comment/4b383ac0-68fb-4cf0-9218-9a885e65fa88"
+    ]
+   }
+  ],
+  "masked_out_markers": [
+   "as-many(",
+   "at_least:",
+   "at_most:",
+   "carried:",
+   "changed:",
+   "checkable(",
+   "examined:",
+   "form:",
+   "held:",
+   "keys(",
+   "marker_helps:",
+   "mode:",
+   "my_vote:",
+   "no-reply-in(",
+   "open:",
+   "owner:",
+   "panel_neff:",
+   "persisted:",
+   "point_effect:",
+   "proposal(",
+   "range(",
+   "read:",
+   "readable:",
+   "ready:",
+   "renewal:",
+   "rule_applied:",
+   "sales_count:",
+   "satisfied:",
+   "set(",
+   "side_overlap:",
+   "slot:",
+   "sorted(",
+   "stance:",
+   "sum(",
+   "tokens(",
+   "total:",
+   "unread:",
+   "unscreened:",
+   "valid:",
+   "would_carry:",
+   "zip("
+  ],
+  "below_threshold_markers": [
+   "important(",
+   "sha256(",
+   "significant(",
+   "str(",
+   "suggestions(",
+   "vote("
+  ],
+  "api_field_name": 9,
+  "api_field_name_masked_out": 8,
+  "colony_field_name": 1,
+  "masked_out_explained": 14,
+  "masked_out_unexplained_markers": [
+   "as-many(",
+   "changed:",
+   "checkable(",
+   "examined:",
+   "keys(",
+   "marker_helps:",
+   "mode:",
+   "my_vote:",
+   "no-reply-in(",
+   "open:",
+   "owner:",
+   "panel_neff:",
+   "persisted:",
+   "point_effect:",
+   "proposal(",
+   "read:",
+   "readable:",
+   "ready:",
+   "renewal:",
+   "rule_applied:",
+   "sales_count:",
+   "side_overlap:",
+   "stance:",
+   "total:",
+   "unread:",
+   "valid:",
+   "would_carry:"
+  ],
+  "inline_code_share_of_removed_pct": 76.4,
+  "removed_by_stage_totals": {
+   "fenced": 69,
+   "non_running_line": 6,
+   "inline_code": 249,
+   "markdown_link": 0,
+   "url": 0,
+   "quoted": 2
+  },
+  "masked_out_inline_span_shape": {
+   "kv": 237,
+   "call": 17,
+   "other": 8
+  },
+  "masked_out_inline_kv_or_call_pct": 96.9,
+  "filed_but_dropped_from_known": {
+   "blocked-on(": [
+    [
+     "blocked-on-x",
+     "lapsed"
+    ]
+   ]
+  },
+  "share_masked_or_below_pct": 87.0
+ },
+ "in_pipeline": {
+  "served": 46,
+  "reconcile_exact": 46,
+  "masked_out": 22,
+  "has_prose": 24,
+  "prose_authors_ge2": 9
+ },
+ "snapshot_cap_rows": 100,
+ "served_rows_total": 100,
+ "raw_novel_uncapped": 54,
+ "raw_novel_not_served_by_cap": [],
+ "raw_pipeline_uncapped": 71,
+ "raw_pipeline_not_served_by_cap": [
+  "attempt:",
+  "caused-by(",
+  "co-occurring(",
+  "each-group(",
+  "equal-to(",
+  "fits-neither(",
+  "next-week(",
+  "no-charge(",
+  "none-of(",
+  "now(",
+  "observed:",
+  "on-behalf-of(",
+  "over(",
+  "part(",
+  "penalize(",
+  "prob(",
+  "question(",
+  "refuted(",
+  "remain-in(",
+  "settled(",
+  "still(",
+  "stretch(",
+  "throughout(",
+  "time-total(",
+  "wit("
+ ],
+ "masked_novel_list": [
+  {
+   "marker": "blocked-on(",
+   "occurrences": 9,
+   "messages": 6,
+   "distinct_authors": 4,
+   "refs": [
+    "comment/81b05cfc-af28-46cd-8805-c2691e0301bc",
+    "comment/9f36c7e1-ba84-4380-bc8a-82e5de5a9ff3",
+    "comment/ae184c6d-23d4-4a5f-9aa5-04124525f92b",
+    "comment/ae45bb6e-a993-44e7-8659-f605d6a4a870",
+    "post/46ccf44c-8c3b-41db-8bcc-2f5526bea53d"
+   ]
+  },
+  {
+   "marker": "recover(",
+   "occurrences": 7,
+   "messages": 6,
+   "distinct_authors": 3,
+   "refs": [
+    "comment/176fb950-d12b-4819-900c-1d78bbe8d4ea",
+    "comment/54900f34-7f1e-4d83-b252-f6b834895896",
+    "comment/7049c233-72a0-43a0-ae7e-4bc3d6fc7edb",
+    "comment/8ea1b3b8-8f71-4dd4-8aa3-3aab0c6967bd",
+    "comment/97b913d9-f2c1-47e3-b623-70a4210f7fe9"
+   ]
+  },
+  {
+   "marker": "agreement(",
+   "occurrences": 4,
+   "messages": 2,
+   "distinct_authors": 2,
+   "refs": [
+    "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f",
+    "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6"
+   ]
+  },
+  {
+   "marker": "disputed:",
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2,
+   "refs": [
+    "comment/40aef20a-3b9e-44e4-ac04-f533b26ace92",
+    "comment/6cb7bf39-9d59-4f7a-aacb-20598b21b6e2",
+    "comment/978e1285-e269-4ba6-9b91-932139024f1b"
+   ]
+  },
+  {
+   "marker": "disagreement(",
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2,
+   "refs": [
+    "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f",
+    "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6"
+   ]
+  },
+  {
+   "marker": "len(",
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2,
+   "refs": [
+    "comment/05cb14ca-9cc8-4e95-9248-cc382c8f16b5",
+    "comment/24be5ea7-ef7e-4464-8bbd-768ed602d001"
+   ]
+  },
+  {
+   "marker": "confirmed:",
+   "occurrences": 4,
+   "messages": 4,
+   "distinct_authors": 1,
+   "refs": [
+    "comment/0bf70f44-110e-4864-b8ac-ddd4fcba7a2a",
+    "comment/1b7a32f5-0f24-42ce-ae9a-c42ae68ec6a3",
+    "comment/4b383ac0-68fb-4cf0-9218-9a885e65fa88",
+    "comment/a0f7555b-8aae-411a-8718-808aebeaf13c"
+   ]
+  }
+ ],
+ "masked_novel_count": 7,
+ "masked_novel_single_author": 1,
+ "served_novel_in_masked_list": 7
+}
