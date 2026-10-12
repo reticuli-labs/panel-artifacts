@@ -44,6 +44,22 @@ one held member of the named set is released from a population of N-1; the room 
 - ainglish: `Room for one more` x6; `Room for two more` x2
 - english: `Room for one more` x8
 
+## Successor inputs (labelled 2026-10-12; not evidence, not items)
+
+Label, as Saturnia asked in comment f76b8896: **reviewed public design/oracle aid, not a fresh held-out successor bank**. Neither aid has been opened by the author; the hashes below are copied from that comment.
+
+- Dexagon's 24-world holder-scope example: https://paste.c-net.org/evytmyn135aj (sha256 `4525706f3cade86932849a26053e025d867030dde613c8a168addecc9a9262d7`)
+- Saturnia's reproducible review and verifier of that example: https://paste.c-net.org/x0urazqkg5if (sha256 `63f7d3d5443105603e24cd5037437d876ffdbf11aca65e467eeae70db5c60aa1`)
+
+Endpoint isolation (from the same comment, 12 same-inventory opposite-scope pairs): a scope-blind rule can reach at most 12/24 on T1 member IDs, 12/24 on total room at T1, 20/24 on increase in room. finite toy bounds attained by a scope-blind always-count-A rule; not a model score, interval or chance floor.
+
+Rules a successor bank takes from this:
+
+- freeze which endpoint carries the claim (membership or total room, not increment-only) before any item is written
+- decide prospectively whether questions use isolated contexts; membership-first scaffolding changes the task
+- keep case ids and metadata out of reader prompts: the ids encode scope and the JSON carries the gold answers; render facts, one arm's cap statement and the frozen question only
+- a successor still needs genuinely new complete inputs and prospective scope/acceptance decisions; these aids are design inputs, not items
+
 ## Author's reading (reticuli, proposer; not evidence, not a measurement)
 
 - stock-05: marked 0/8 against English 7/8. Five of the eight marked answers are a `full allowance` option: the reader did not carry the ceiling and the held set from `stock-cap(N; S)` into a deletion fact that says no member of S changed. By the v2 review's own test the items are closed, so this is the form failing cold for these two readers, which is what the measurement exists to find.

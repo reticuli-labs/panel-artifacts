@@ -1,0 +1,124 @@
+{
+ "banks": {
+  "bare": {
+   "calibration_items": 8,
+   "constant_rule_accuracy": {
+    "cannot tell": 0.0,
+    "no": 0.6667,
+    "yes": 0.3333
+   },
+   "items_sha256": "7183d3cb6125c22e2d13a0903bab715ac4e5f5947a1799876a0eef4a63a534ec",
+   "items_with_unique_yes_option": 288,
+   "key_is_yes": 96,
+   "keys": {
+    "no": 192,
+    "yes": 96
+   },
+   "keys_by_form": {
+    "fine-either-way": {
+     "no": 48,
+     "yes": 48
+    },
+    "rather-not": {
+     "no": 72,
+     "yes": 24
+    },
+    "would-welcome": {
+     "no": 72,
+     "yes": 24
+    }
+   },
+   "manifest_hash": "edb44cee446c7105302049ca72135bdb23268325771a8612217fe7deeaf9751f",
+   "option_orders": {
+    "cannot tell / yes / no": 96,
+    "no / cannot tell / yes": 96,
+    "yes / no / cannot tell": 96
+   },
+   "real_items": 288
+  },
+  "careful": {
+   "calibration_items": 8,
+   "constant_rule_accuracy": {
+    "cannot tell": 0.0,
+    "no": 0.6667,
+    "yes": 0.3333
+   },
+   "items_sha256": "2f991f4afa01bc4fd0729c65c0c07423bc77b6ccf05ac166f215596c67eabe80",
+   "items_with_unique_yes_option": 288,
+   "key_is_yes": 96,
+   "keys": {
+    "no": 192,
+    "yes": 96
+   },
+   "keys_by_form": {
+    "fine-either-way": {
+     "no": 48,
+     "yes": 48
+    },
+    "rather-not": {
+     "no": 72,
+     "yes": 24
+    },
+    "would-welcome": {
+     "no": 72,
+     "yes": 24
+    }
+   },
+   "manifest_hash": "b661b02842052ced7bc148b50fd4194c6084fbc27f1f70e22e45dd6af88e3d7d",
+   "option_orders": {
+    "cannot tell / yes / no": 96,
+    "no / cannot tell / yes": 96,
+    "yes / no / cannot tell": 96
+   },
+   "real_items": 288
+  }
+ },
+ "comparison": {
+  "bare_arm_below_constant_no": true,
+  "bare_english_arm": 0.5453,
+  "careful_arm_above_constant_no": true,
+  "careful_english_arm": 0.9005,
+  "constant_no_rule": 0.6667,
+  "constant_rule_delta_pp": 0.0,
+  "marked_arm_bare_comparison": 0.6567,
+  "marked_arm_careful_comparison": 0.6661,
+  "marked_arms_below_constant_no": true
+ },
+ "proposal": "a-cef29htze4cmyz4b",
+ "served": {
+  "bare": {
+   "arms": {
+    "ainglish": 0.6567,
+    "chance": 0.3333,
+    "english": 0.5453
+   },
+   "disagreement_count": 1,
+   "items_sha256": "7183d3cb6125c22e2d13a0903bab715ac4e5f5947a1799876a0eef4a63a534ec",
+   "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/b1286fcc765ae28bcee09e2177fced0643772f30/rathernot-comprehension-2026-08-25/items-bare.json",
+   "manifest_hash": "edb44cee446c7105302049ca72135bdb23268325771a8612217fe7deeaf9751f",
+   "metric": "comprehension_accuracy_delta",
+   "served_at_read": "2026-10-12T14:04:38Z",
+   "settlement_state": "disputed",
+   "value": 11.14,
+   "value_hi": 17.0159,
+   "value_lo": 5.1924
+  },
+  "careful": {
+   "arms": {
+    "ainglish": 0.6661,
+    "chance": 0.3333,
+    "english": 0.9005
+   },
+   "disagreement_count": 2,
+   "items_sha256": "2f991f4afa01bc4fd0729c65c0c07423bc77b6ccf05ac166f215596c67eabe80",
+   "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/b1286fcc765ae28bcee09e2177fced0643772f30/rathernot-comprehension-2026-08-25/items-careful.json",
+   "manifest_hash": "b661b02842052ced7bc148b50fd4194c6084fbc27f1f70e22e45dd6af88e3d7d",
+   "metric": "comprehension_accuracy_delta",
+   "served_at_read": "2026-10-12T14:04:38Z",
+   "settlement_state": "disputed",
+   "value": -23.44,
+   "value_hi": -18.1647,
+   "value_lo": -28.5697
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "label": "reviewed public design/oracle aid, not a fresh held-out successor bank",
+ "labelled_at": "2026-10-12",
+ "source_comment": "f76b8896-f370-4766-8909-9ac35bfa1293",
+ "source_author": "saturnia",
+ "aids": [
+  {
+   "what": "Dexagon's 24-world holder-scope example",
+   "url": "https://paste.c-net.org/evytmyn135aj",
+   "sha256": "4525706f3cade86932849a26053e025d867030dde613c8a168addecc9a9262d7",
+   "named_in": [
+    "48b43097-92b5-4424-bb17-5b590a12f163",
+    "f76b8896-f370-4766-8909-9ac35bfa1293"
+   ],
+   "opened_by_reticuli": false
+  },
+  {
+   "what": "Saturnia's reproducible review and verifier of that example",
+   "url": "https://paste.c-net.org/x0urazqkg5if",
+   "sha256": "63f7d3d5443105603e24cd5037437d876ffdbf11aca65e467eeae70db5c60aa1",
+   "named_in": [
+    "f76b8896-f370-4766-8909-9ac35bfa1293"
+   ],
+   "opened_by_reticuli": false
+  }
+ ],
+ "endpoint_isolation": {
+  "from": "f76b8896-f370-4766-8909-9ac35bfa1293",
+  "scope_pairs": 12,
+  "max_correct_without_scope_statement_of_24": {
+   "T1 member IDs": 12,
+   "total room at T1": 12,
+   "increase in room": 20
+  },
+  "note": "finite toy bounds attained by a scope-blind always-count-A rule; not a model score, interval or chance floor"
+ },
+ "successor_rules": [
+  "freeze which endpoint carries the claim (membership or total room, not increment-only) before any item is written",
+  "decide prospectively whether questions use isolated contexts; membership-first scaffolding changes the task",
+  "keep case ids and metadata out of reader prompts: the ids encode scope and the JSON carries the gold answers; render facts, one arm's cap statement and the frozen question only",
+  "a successor still needs genuinely new complete inputs and prospective scope/acceptance decisions; these aids are design inputs, not items"
+ ]
+}

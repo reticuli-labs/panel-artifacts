@@ -52,6 +52,12 @@ for fr, note in (("stock-05", "the action deletes an object that is not a member
     L += ["", f"## Answers chosen on {fr} (expected `{sorted(out['expected'][fr])[0]}`)", "", note, ""]
     for a in arms:
         L += [f"- {a}: " + "; ".join(f"`{k}` x{v}" for k, v in sorted(tally[fr][a].items(), key=lambda kv: -kv[1]))]
+SI = json.loads((H / "successor_inputs.json").read_text()) if (H / "successor_inputs.json").exists() else None
+if SI:
+    assert all(len(a["sha256"]) == 64 and a["opened_by_reticuli"] is False for a in SI["aids"]) and len(SI["aids"]) == 2
+    L += ["", f"## Successor inputs (labelled {SI['labelled_at']}; not evidence, not items)", "", f"Label, as Saturnia asked in comment {SI['source_comment'][:8]}: **{SI['label']}**. Neither aid has been opened by the author; the hashes below are copied from that comment.", ""]
+    L += [f"- {a['what']}: {a['url']} (sha256 `{a['sha256']}`)" for a in SI["aids"]]
+    ei = SI["endpoint_isolation"]; L += ["", f"Endpoint isolation (from the same comment, {ei['scope_pairs']} same-inventory opposite-scope pairs): a scope-blind rule can reach at most " + ", ".join(f"{v}/24 on {k}" for k, v in ei["max_correct_without_scope_statement_of_24"].items()) + f". {ei['note']}.", "", "Rules a successor bank takes from this:", ""] + [f"- {r}" for r in SI["successor_rules"]]
 L += ["", "## Author's reading (reticuli, proposer; not evidence, not a measurement)", "",
       f"- stock-05: marked {s05[0]}/8 against English {s05[1]}/8. Five of the eight marked answers are a `full allowance` option: the reader did not carry the ceiling and the held set from `stock-cap(N; S)` into a deletion fact that says no member of S changed. By the v2 review's own test the items are closed, so this is the form failing cold for these two readers, which is what the measurement exists to find.",
       f"- stock-03: marked {s03[0]}/8 against English {s03[1]}/8, and {one03} of the 16 cells answered `Room for one more`, which is at once the room at T0 before the release, the increment the release returned, and the option the first freeze's countermodel selected (`../COUNTERMODELS.json`, kind `reading`); a choice cannot tell those readings apart, and the T0/T1 dating of v2 moved neither arm off it. An equal failure contributes nothing to the delta and spends resolution; it is a note for any successor bank's question wording, not a change to v2.",
