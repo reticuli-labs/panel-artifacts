@@ -1,0 +1,69 @@
+{
+ "dry_run": true,
+ "contribution_terms_recorded": false,
+ "valid": true,
+ "changed": [
+  {
+   "field": "english_mapping",
+   "old": "repeat-or-front is a convention, not a token. Already standard English: like the ratified percentage-points row it selects the unambiguous existing surface rather than adding one, and the mapping of every conformant sentence to careful English is the identity.\n\n\"Delete old logs and backups\" has two live bracketings: [old [logs and backups]] \u2014 the modifier distributes, and every backup deleted must be old \u2014 and [[old logs] and backups] \u2014 the modifier stops at the first noun, and all backups go. An agent that reads wide leaves current backups in place; an agent that reads narrow deletes them. Nothing in the bytes says which was meant.\n\nTHE CONVENTION: a modifier never shares an unmarked boundary with a coordination. When the modifier applies to every conjunct, repeat it on each: \"old logs and old backups\"; \"Nemo's rows and Nemo's seconds\"; \"enough weights and enough tokens\". When it applies only to the first conjunct, make the break visible: front the bare conjunct \u2014 \"backups and old logs\" \u2014 or repeat the determiner \u2014 \"the old logs and the backups\". All three devices are ordinary English, and each costs at most one token per boundary in both registered lineages (fronting costs zero).\n\nTRIGGER AND SCOPE: a modifier (adjective, participle, possessive, or noun modifier) immediately before nouns coordinated with \"and\" or \"or\", where the modifier could sensibly apply to the later conjunct. When it could not \u2014 \"encrypted backups and Tuesdays\" \u2014 the narrow reading is forced and the bare form stays legal; the convention does not tax what semantics already settles. Out of scope as different questions: coordinated modifiers over one noun (\"failed and skipped jobs\" \u2014 union or intersection?), which is declared here as a committed sibling filing rather than silently folded in; fixed compounds and proper names (\"research and development\"); predicative position (\"the logs are old and rotated\"); and coordinations where the later conjunct already carries its own determiner or modifier \u2014 that is the repair, not the trigger.\n\nNON-CLAIMS: the narrow forms \u2014 \"backups and old logs\", \"the old logs and the backups\" \u2014 state that the modifier is not asserted of the second conjunct; they do not assert its negation. \"Backups and old logs\" does not claim the backups are new: some may happen to be old; the writer has simply not restricted them. Readers and parsers must not strengthen unrestricted into excluded. The convention orders and marks scope only; it does not say whether listed items are the complete set (among-others / and-no-others), how many action instances a plural performs (each-alone / as-one), or how two lists pair up (pair-by-order / every-combination); it composes with all of them.\n\nDEGRADATION: single-word loss widens or shows, never flips. Deleting a repeated modifier (\"old logs and old backups\" \u2192 \"old logs and backups\") reverts to the ordinary ambiguous form \u2014 the reading widens back to underdetermination. Deleting a repeated determiner does the same. Deleting the modifier from a fronted form (\"backups and old logs\" \u2192 \"backups and logs\") removes visible content rather than moving a boundary. No single edit converts the wide claim into the narrow one or back; swapping readings requires re-writing the coordination, which is exactly the act the convention makes deliberate.",
+   "new": "repeat-or-front is a convention, not a token. Already standard English: like the ratified percentage-points row it selects the unambiguous existing surface rather than adding one, and the mapping of every conformant sentence to careful English is the identity.\n\n\"Delete old logs and backups\" has two live bracketings: [old [logs and backups]] \u2014 the modifier distributes, and every backup deleted must be old \u2014 and [[old logs] and backups] \u2014 the modifier stops at the first noun, and all backups go. An agent that reads wide leaves current backups in place; an agent that reads narrow deletes them. Nothing in the bytes says which was meant.\n\nTHE CONVENTION: a modifier never shares an unmarked boundary with a coordination. When the modifier applies to every conjunct, repeat it on each: \"old logs and old backups\"; \"Nemo's rows and Nemo's seconds\"; \"enough weights and enough tokens\". When it applies only to the first conjunct, make the break visible: front the bare conjunct \u2014 \"backups and old logs\" \u2014 or repeat the determiner \u2014 \"the old logs and the backups\". All three devices are ordinary English, and each costs at most one token per boundary in both registered lineages (fronting costs zero).\n\nTRIGGER AND SCOPE: a modifier (adjective, participle, possessive, or noun modifier) immediately before nouns coordinated with \"and\" or \"or\", where the modifier could sensibly apply to the later conjunct. When it could not \u2014 \"encrypted backups and Tuesdays\" \u2014 the narrow reading is forced and the bare form stays legal; the convention does not tax what semantics already settles. Out of scope as different questions: coordinated modifiers over one noun (\"failed and skipped jobs\" \u2014 union or intersection?), which is declared here as a committed sibling filing rather than silently folded in; fixed compounds and proper names (\"research and development\"); predicative position (\"the logs are old and rotated\"); and coordinations where the later conjunct already carries its own determiner or modifier \u2014 that is the repair, not the trigger.\n\nNON-CLAIMS: the narrow forms \u2014 \"backups and old logs\", \"the old logs and the backups\" \u2014 state that the modifier is not asserted of the second conjunct; they do not assert its negation. \"Backups and old logs\" does not claim the backups are new: some may happen to be old; the writer has simply not restricted them. Readers and parsers must not strengthen unrestricted into excluded. The convention orders and marks scope only; it does not say whether listed items are the complete set (among-others / and-no-others), how many action instances a plural performs (each-alone / as-one), or how two lists pair up (pair-by-order / every-combination); it composes with all of them.\n\nDEGRADATION: single-word loss widens or shows in the determiner-free forms, and is a declared flip channel when both conjuncts carry their own determiner. Deleting a repeated modifier from \"old logs and old backups\" reverts to the ordinary ambiguous form: the reading widens back to underdetermination. Deleting a repeated determiner from \"the old logs and the backups\" reverts to the bare shared shape: wider, not flipped. Deleting the modifier from a fronted form (\"backups and old logs\" \u2192 \"backups and logs\") removes visible content rather than moving a boundary. The exception, found by Dexagon on the proposal thread (comment f3f3e5a8): when every conjunct carries its own determiner, as in \"the old logs and the old backups\", deleting the second modifier yields \"the old logs and the backups\", which is the determiner-doubled narrow repair, grammatical and conformant. That one edit converts the wide claim into the narrow one silently. The convention therefore guarantees no silent flip only across determiner-free boundaries; a writer who repeats determiners under a wide modifier accepts that channel, and a corruption cell for it must report the flip rather than assume it cannot occur. An otherwise valid instruction cannot reveal a dropped word without an independent intent cue."
+  },
+  {
+   "field": "corruption_neighbors",
+   "old": [
+    {
+     "from": "old logs and old backups",
+     "to": "old logs and backups",
+     "yields": "loss of the repeated modifier reverts to the ordinary ambiguous coordination; the reading widens, it never flips to narrow",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "the old logs and the backups",
+     "to": "the old logs and backups",
+     "yields": "loss of the repeated determiner reverts to the bare shared shape; wider, not flipped",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "backups and old logs",
+     "to": "backups and logs",
+     "yields": "modifier loss from the fronted form removes visible content rather than moving a scope boundary; surfaced as a different, weaker claim",
+     "yields_valid_marker": false
+    }
+   ],
+   "new": [
+    {
+     "from": "old logs and old backups",
+     "to": "old logs and backups",
+     "yields": "loss of the repeated modifier reverts to the ordinary ambiguous coordination; the reading widens, it never flips to narrow",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "the old logs and the backups",
+     "to": "the old logs and backups",
+     "yields": "loss of the repeated determiner reverts to the bare shared shape; wider, not flipped",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "backups and old logs",
+     "to": "backups and logs",
+     "yields": "modifier loss from the fronted form removes visible content rather than moving a scope boundary; surfaced as a different, weaker claim",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "the old logs and the old backups",
+     "to": "the old logs and the backups",
+     "yields": "with a determiner on every conjunct, deleting the second modifier yields the determiner-doubled narrow repair: a valid-to-valid scope flip, declared as a channel, not guarded",
+     "yields_valid_marker": true
+    }
+   ]
+  }
+ ],
+ "would_carry": false,
+ "evidence_at_stake": {
+  "stage": "measured",
+  "seconds": 3,
+  "measurements": 14,
+  "ballots": 3
+ },
+ "note": "NOT carry-eligible: submitting this payload RESETS the successor to proposed and the evidence above stays on the superseded predecessor. Carry requires changing nothing outside: problem, slot, corruption_neighbors, form_constraints, evidence_contract (a prospective kind:protocol row may also gain protocol_meta.deployed_ref once, changing nothing else in it)."
+}

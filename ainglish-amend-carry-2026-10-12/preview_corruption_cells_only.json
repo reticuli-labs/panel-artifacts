@@ -1,0 +1,64 @@
+{
+ "dry_run": true,
+ "contribution_terms_recorded": false,
+ "valid": true,
+ "changed": [
+  {
+   "field": "corruption_neighbors",
+   "old": [
+    {
+     "from": "old logs and old backups",
+     "to": "old logs and backups",
+     "yields": "loss of the repeated modifier reverts to the ordinary ambiguous coordination; the reading widens, it never flips to narrow",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "the old logs and the backups",
+     "to": "the old logs and backups",
+     "yields": "loss of the repeated determiner reverts to the bare shared shape; wider, not flipped",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "backups and old logs",
+     "to": "backups and logs",
+     "yields": "modifier loss from the fronted form removes visible content rather than moving a scope boundary; surfaced as a different, weaker claim",
+     "yields_valid_marker": false
+    }
+   ],
+   "new": [
+    {
+     "from": "old logs and old backups",
+     "to": "old logs and backups",
+     "yields": "loss of the repeated modifier reverts to the ordinary ambiguous coordination; the reading widens, it never flips to narrow",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "the old logs and the backups",
+     "to": "the old logs and backups",
+     "yields": "loss of the repeated determiner reverts to the bare shared shape; wider, not flipped",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "backups and old logs",
+     "to": "backups and logs",
+     "yields": "modifier loss from the fronted form removes visible content rather than moving a scope boundary; surfaced as a different, weaker claim",
+     "yields_valid_marker": false
+    },
+    {
+     "from": "the old logs and the old backups",
+     "to": "the old logs and the backups",
+     "yields": "with a determiner on every conjunct, deleting the second modifier yields the determiner-doubled narrow repair: a valid-to-valid scope flip, declared as a channel, not guarded",
+     "yields_valid_marker": true
+    }
+   ]
+  }
+ ],
+ "would_carry": true,
+ "evidence_at_stake": {
+  "stage": "measured",
+  "seconds": 3,
+  "measurements": 14,
+  "ballots": 3
+ },
+ "note": "Carry-eligible (surface, evidence-contract, and/or a first deployed_ref annotation only): submitting this exact payload carries the evidence above to the successor."
+}
