@@ -1,0 +1,228 @@
+{
+ "banks_floor_below_uniform_before_erratum": 22,
+ "banks_floor_below_uniform_list": [
+  [
+   "0d656022d1f1",
+   60,
+   4,
+   0.1167,
+   0.25,
+   "longest option"
+  ],
+  [
+   "0e3cf6b2ccda",
+   32,
+   4,
+   0.0625,
+   0.25,
+   "shortest option"
+  ],
+  [
+   "1444a930eaf4",
+   18,
+   4,
+   0.2222,
+   0.25,
+   "longest option"
+  ],
+  [
+   "2e88803e2ca2",
+   16,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "2f60f42ac49b",
+   64,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "51c51607bb58",
+   8,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "52f9e013a81f",
+   8,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "660c2d352e53",
+   32,
+   4,
+   0.0312,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "6dfd5e12b61d",
+   60,
+   4,
+   0.1167,
+   0.25,
+   "longest option"
+  ],
+  [
+   "75f8133c508f",
+   32,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "7bff0db2dd4b",
+   32,
+   4,
+   0.0312,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "7eebab2193de",
+   100,
+   4,
+   0.2,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "86eab4b6b02a",
+   36,
+   4,
+   0.1667,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "8873795292d2",
+   192,
+   4,
+   0.0104,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "8f546ed2f86f",
+   392,
+   4,
+   0.0816,
+   0.25,
+   "shortest option"
+  ],
+  [
+   "922c4eb8631d",
+   4,
+   3,
+   0.25,
+   0.3333,
+   "constant answer"
+  ],
+  [
+   "bbb1d36bc5a9",
+   60,
+   4,
+   0.1167,
+   0.25,
+   "longest option"
+  ],
+  [
+   "bd72a4b4b258",
+   8,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "c07f87f3b43e",
+   144,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "c571056b2c60",
+   128,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "c873562d7615",
+   256,
+   4,
+   0.125,
+   0.25,
+   "constant answer"
+  ],
+  [
+   "dcfbf05e743a",
+   128,
+   3,
+   0.25,
+   0.3333,
+   "constant answer"
+  ]
+ ],
+ "banks_orderfree_perfect": 23,
+ "banks_recurring_option_never_key": 198,
+ "banks_scored": 304,
+ "definition": "floor = max(best of {constant answer, longest option, shortest option, constant first word}, 1/k) where k is the modal option count of the bank",
+ "floor_quartiles": [
+  0.1172,
+  0.3333,
+  0.5,
+  0.5556,
+  1.0
+ ],
+ "floor_quartiles_before_erratum": [
+  0.0104,
+  0.3333,
+  0.5,
+  0.5556,
+  1.0
+ ],
+ "live_both_below_by_state": {
+  "None/replication": 11,
+  "awaiting/original": 11,
+  "confirmed/original": 2,
+  "disputed/original": 3
+ },
+ "live_both_below_floor": 27,
+ "live_chance_uniform": 301,
+ "live_english_below_floor": 42,
+ "live_gap_ge_10pp": 199,
+ "live_gap_ge_25pp": 111,
+ "live_gap_ge_5pp": 213,
+ "live_gap_max_pp": 83.3,
+ "live_gap_median_pp": 16.7,
+ "live_gap_min_pp": -1.7,
+ "live_gap_quartiles_pp": [
+  -1.7,
+  0.0,
+  16.7,
+  30.0,
+  83.3
+ ],
+ "live_marked_below_floor": 61,
+ "live_rows_floor_equals_chance": 81,
+ "live_rows_on_perfect_banks": 24,
+ "live_rows_on_those_banks": 28,
+ "rows_live": 306,
+ "rows_scored": 339,
+ "rows_served": 394
+}
