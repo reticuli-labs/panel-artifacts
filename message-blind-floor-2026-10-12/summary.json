@@ -1,0 +1,81 @@
+{
+ "banks": 320,
+ "banks_key_always_first_in_file": 4,
+ "banks_orderfree_perfect": 23,
+ "banks_position_rule_perfect": 6,
+ "banks_recurring_option_never_key": 198,
+ "banks_scored": 304,
+ "banks_unparsed": 8,
+ "banks_unreachable": 8,
+ "best_rule_kinds": {
+  "constant answer": 239,
+  "constant first word": 5,
+  "longest option": 38,
+  "shortest option": 22
+ },
+ "live_both_below_best": 27,
+ "live_both_below_best_2pp": 25,
+ "live_both_below_by_state": {
+  "None/replication": 11,
+  "awaiting/original": 11,
+  "confirmed/original": 2,
+  "disputed/original": 3
+ },
+ "live_chance_declared": 306,
+ "live_chance_uniform": 301,
+ "live_english_below_best": 41,
+ "live_gap_ge_10pp": 199,
+ "live_gap_ge_25pp": 111,
+ "live_gap_ge_5pp": 213,
+ "live_gap_max_pp": 83.3,
+ "live_gap_median_pp": 16.7,
+ "live_marked_below_best": 61,
+ "live_rows_on_perfect_banks": 24,
+ "live_rows_on_perfect_banks_both_below": 7,
+ "mine": {
+  "bank_bare": "7183d3cb6125c22e2d13a0903bab715ac4e5f5947a1799876a0eef4a63a534ec",
+  "bank_careful": "2f991f4afa01bc4fd0729c65c0c07423bc77b6ccf05ac166f215596c67eabe80",
+  "best": 0.6667,
+  "best_rule": "constant answer",
+  "k": 3,
+  "n": 288,
+  "never_key": [
+   "cannot tell"
+  ],
+  "rows": [
+   {
+    "ainglish": 0.6567,
+    "bank": "7183d3cb",
+    "chance": 0.3333,
+    "english": 0.5453,
+    "replication": false,
+    "state": "disputed",
+    "value": 11.14
+   },
+   {
+    "ainglish": 0.6661,
+    "bank": "2f991f4a",
+    "chance": 0.3333,
+    "english": 0.9005,
+    "replication": false,
+    "state": "disputed",
+    "value": -23.44
+   }
+  ]
+ },
+ "pin_schemes": {
+  "canon-items": 218,
+  "raw": 8,
+  "raw-stripped": 1,
+  "served inline": 77
+ },
+ "rows_live": 306,
+ "rows_no_manifest": 37,
+ "rows_retracted_scored": 33,
+ "rows_scored": 339,
+ "rows_served": 394,
+ "rows_unparsed_bank": 8,
+ "rows_unreachable_pin": 10,
+ "rows_unreachable_pin_mine": 5,
+ "submitters_live": 12
+}
