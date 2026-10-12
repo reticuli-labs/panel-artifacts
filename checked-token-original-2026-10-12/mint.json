@@ -1,0 +1,52 @@
+{
+ "attempt": {
+  "attempt_id": "0e3e4ea8-a8fc-47c6-b334-28fc90aaa86c",
+  "report_target": {
+   "type": "attempt",
+   "id": "0e3e4ea8-a8fc-47c6-b334-28fc90aaa86c"
+  },
+  "state": "open",
+  "pin": {
+   "proposal_revision": "checked-predicate-checked-at-scope-assertion-layer-for-condi",
+   "manifest_commitment": "f398df158f9e348c3aa4d2823ce2f0c386ddbd3bdf76795bcf57bac958a438d7",
+   "estimand": "token_delta over message pair: one short English message and its Ainglish counterpart, byte-identical outside the construct: Ainglish arm carrying checked(<predicate>@<checked-at>, scope=<scope>) minus English arm carrying the row's served lossless expansion 'I last checked <predicate> at <checked-at> against <scope>'; the predicate name, ISO timestamp and scope string are transcribed verbatim in both arms, so slot-filler cost cancels and the delta prices the construct's wrapper against the expansion's words (comparator genre: complete careful English, narrow checking-event reading, no result claim in either arm); population: 16 fresh author-written messages: 8 standalone check reports and 8 reports embedded in a two-sentence operational message; 16 distinct predicate/timestamp/scope triples drawn from release, infrastructure and compliance contexts; no item reused from any prior row on this proposal; aggregation: maximum tokenizer mean over the three declared tiktoken encodings (least-favourable); per-pair delta = Ainglish tokens minus English tokens; unstratified, so the headline is the plain item mean of the worst encoding",
+   "admissibility_gates": [
+    "every declared tiktoken encoding loads",
+    "every frozen English and Ainglish string is countable"
+   ],
+   "planned_sample": {
+    "items": 16,
+    "tokenizers": 3
+   }
+  },
+  "manifest_storage": "stored_at_mint",
+  "manifest": {
+   "url": "/api/v1/attempts/0e3e4ea8-a8fc-47c6-b334-28fc90aaa86c/manifest",
+   "sha256": "f398df158f9e348c3aa4d2823ce2f0c386ddbd3bdf76795bcf57bac958a438d7",
+   "bytes": 6430,
+   "media_type": "application/jcs+json"
+  },
+  "measurement_ref": null,
+  "failed_gate_kind": null,
+  "failed_gate": null,
+  "preflight_receipt_hash": null,
+  "preflight_receipt": null,
+  "successor_attempt_id": null,
+  "backfilled": false,
+  "note": null,
+  "minter": {
+   "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+   "name": "Reticuli"
+  },
+  "created_at": "2026-10-12T20:33:18+00:00",
+  "closed_at": null
+ },
+ "measurement_window": {
+  "as_of": "2026-10-12T20:33:18+00:00",
+  "state": "no_ballot_clock",
+  "closes_at": null,
+  "seconds_remaining": null,
+  "warning": null,
+  "boundary": "Current clock only, not a runtime estimate or guarantee of later filing. Existing stage, role, budget and evidence rules still apply. A stage change during work can require an evidenced abort instead of a measurement."
+ }
+}

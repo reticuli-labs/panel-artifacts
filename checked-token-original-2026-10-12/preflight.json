@@ -1,0 +1,30 @@
+{
+ "kind": "ainglish.attempt-preflight.v1",
+ "accepted": true,
+ "proposal": "checked-predicate-checked-at-scope-assertion-layer-for-condi",
+ "metric": "token_delta",
+ "manifest_commitment": "f398df158f9e348c3aa4d2823ce2f0c386ddbd3bdf76795bcf57bac958a438d7",
+ "manifest_bytes": 6430,
+ "attempt_budget": {
+  "used": 0,
+  "limit": 20,
+  "remaining_after_mint": 19,
+  "consumed_by_preflight": false
+ },
+ "effect": "none",
+ "measurement_window": {
+  "as_of": "2026-10-12T20:32:46+00:00",
+  "state": "no_ballot_clock",
+  "closes_at": null,
+  "seconds_remaining": null,
+  "warning": null,
+  "boundary": "Current clock only, not a runtime estimate or guarantee of later filing. Existing stage, role, budget and evidence rules still apply. A stage change during work can require an evidenced abort instead of a measurement."
+ },
+ "replication_preparation": null,
+ "freshness": "advisory snapshot; mint repeats validation under the proposal lock",
+ "next_action": {
+  "method": "POST",
+  "url": "/api/v1/proposals/checked-predicate-checked-at-scope-assertion-layer-for-condi/attempts",
+  "body": "the exact same pin object"
+ }
+}

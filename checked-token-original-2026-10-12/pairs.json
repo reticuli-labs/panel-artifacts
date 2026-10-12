@@ -1,0 +1,66 @@
+[
+ {
+  "english": "I last checked tests-green at 2026-08-22T11:10Z against repo/main.",
+  "ainglish": "checked(tests-green@2026-08-22T11:10Z, scope=repo/main)."
+ },
+ {
+  "english": "I last checked lint-clean at 2026-10-12T09:40Z against repo@c7a1b2e.",
+  "ainglish": "checked(lint-clean@2026-10-12T09:40Z, scope=repo@c7a1b2e)."
+ },
+ {
+  "english": "I last checked backup-complete at 2026-10-11T03:05Z against host/db-3.",
+  "ainglish": "checked(backup-complete@2026-10-11T03:05Z, scope=host/db-3)."
+ },
+ {
+  "english": "I last checked cert-valid at 2026-10-12T08:00Z against api.example.test.",
+  "ainglish": "checked(cert-valid@2026-10-12T08:00Z, scope=api.example.test)."
+ },
+ {
+  "english": "I last checked disk-free-above-20pct at 2026-10-12T07:15Z against cluster/prod-eu.",
+  "ainglish": "checked(disk-free-above-20pct@2026-10-12T07:15Z, scope=cluster/prod-eu)."
+ },
+ {
+  "english": "I last checked migration-applied at 2026-10-10T18:20Z against db/prod.",
+  "ainglish": "checked(migration-applied@2026-10-10T18:20Z, scope=db/prod)."
+ },
+ {
+  "english": "I last checked deps-pinned at 2026-10-09T14:00Z against requirements.txt@main.",
+  "ainglish": "checked(deps-pinned@2026-10-09T14:00Z, scope=requirements.txt@main)."
+ },
+ {
+  "english": "I last checked queue-empty at 2026-10-12T19:58Z against workers/pool-b.",
+  "ainglish": "checked(queue-empty@2026-10-12T19:58Z, scope=workers/pool-b)."
+ },
+ {
+  "english": "Status for the release manager: I last checked tests-green at 2026-10-12T17:02Z against repo@9f0d4c1. The rollout plan is unchanged.",
+  "ainglish": "Status for the release manager: checked(tests-green@2026-10-12T17:02Z, scope=repo@9f0d4c1). The rollout plan is unchanged."
+ },
+ {
+  "english": "I last checked index-fresh at 2026-10-12T06:30Z against search/node-2. Treat older figures as unverified.",
+  "ainglish": "checked(index-fresh@2026-10-12T06:30Z, scope=search/node-2). Treat older figures as unverified."
+ },
+ {
+  "english": "Before you cut over: I last checked mirror-synced at 2026-10-12T12:00Z against mirror/eu-west. Decide against your own freshness window.",
+  "ainglish": "Before you cut over: checked(mirror-synced@2026-10-12T12:00Z, scope=mirror/eu-west). Decide against your own freshness window."
+ },
+ {
+  "english": "For the audit file: I last checked license-current at 2026-10-01T09:00Z against contracts/4471. No later check is on record.",
+  "ainglish": "For the audit file: checked(license-current@2026-10-01T09:00Z, scope=contracts/4471). No later check is on record."
+ },
+ {
+  "english": "I last checked secrets-rotated at 2026-10-05T16:45Z against vault/deploy/prod. The rotation itself is logged separately.",
+  "ainglish": "checked(secrets-rotated@2026-10-05T16:45Z, scope=vault/deploy/prod). The rotation itself is logged separately."
+ },
+ {
+  "english": "Handing over: I last checked canary-healthy at 2026-10-12T19:30Z against region/ap-south. Page me if that is too old for you.",
+  "ainglish": "Handing over: checked(canary-healthy@2026-10-12T19:30Z, scope=region/ap-south). Page me if that is too old for you."
+ },
+ {
+  "english": "I last checked quota-available at 2026-10-12T15:10Z against billing/project-7. Nothing here says the quota still holds.",
+  "ainglish": "checked(quota-available@2026-10-12T15:10Z, scope=billing/project-7). Nothing here says the quota still holds."
+ },
+ {
+  "english": "Record of looking only: I last checked docs-published at 2026-10-08T10:25Z against docs.example.test. Whether it is still live is yours to check.",
+  "ainglish": "Record of looking only: checked(docs-published@2026-10-08T10:25Z, scope=docs.example.test). Whether it is still live is yours to check."
+ }
+]
