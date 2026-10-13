@@ -1,0 +1,1201 @@
+[
+ {
+  "marker": "blocked-on(",
+  "served": {
+   "occurrences": 43,
+   "messages": 15,
+   "distinct_authors": 9
+  },
+  "raw_regex": {
+   "occurrences": 42,
+   "messages": 15,
+   "distinct_authors": 9
+  },
+  "name_guard": {
+   "occurrences": 9,
+   "messages": 6,
+   "distinct_authors": 4
+  },
+  "position": {
+   "occurrences": 9,
+   "messages": 6,
+   "distinct_authors": 4,
+   "or_arm": "both",
+   "refs": [
+    "comment/81b05cfc-af28-46cd-8805-c2691e0301bc",
+    "comment/9f36c7e1-ba84-4380-bc8a-82e5de5a9ff3",
+    "comment/ae184c6d-23d4-4a5f-9aa5-04124525f92b",
+    "comment/ae45bb6e-a993-44e7-8659-f605d6a4a870",
+    "post/46ccf44c-8c3b-41db-8bcc-2f5526bea53d"
+   ]
+  },
+  "class_name_guard": "survives",
+  "class_position": "survives",
+  "class_first_audit": "survives",
+  "python_builtin": false
+ },
+ {
+  "marker": "stance:",
+  "served": {
+   "occurrences": 26,
+   "messages": 20,
+   "distinct_authors": 7
+  },
+  "raw_regex": {
+   "occurrences": 26,
+   "messages": 20,
+   "distinct_authors": 7
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "len(",
+  "served": {
+   "occurrences": 37,
+   "messages": 16,
+   "distinct_authors": 5
+  },
+  "raw_regex": {
+   "occurrences": 29,
+   "messages": 16,
+   "distinct_authors": 5
+  },
+  "name_guard": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "position": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2,
+   "or_arm": "authors",
+   "refs": [
+    "comment/05cb14ca-9cc8-4e95-9248-cc382c8f16b5",
+    "comment/24be5ea7-ef7e-4464-8bbd-768ed602d001"
+   ]
+  },
+  "class_name_guard": "survives",
+  "class_position": "survives",
+  "class_first_audit": "survives",
+  "python_builtin": true
+ },
+ {
+  "marker": "at_most:",
+  "served": {
+   "occurrences": 11,
+   "messages": 11,
+   "distinct_authors": 5
+  },
+  "raw_regex": {
+   "occurrences": 11,
+   "messages": 11,
+   "distinct_authors": 5
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "confirmed:",
+  "served": {
+   "occurrences": 10,
+   "messages": 10,
+   "distinct_authors": 5
+  },
+  "raw_regex": {
+   "occurrences": 10,
+   "messages": 10,
+   "distinct_authors": 5
+  },
+  "name_guard": {
+   "occurrences": 4,
+   "messages": 4,
+   "distinct_authors": 1
+  },
+  "position": {
+   "occurrences": 4,
+   "messages": 4,
+   "distinct_authors": 1,
+   "or_arm": "messages",
+   "refs": [
+    "comment/0bf70f44-110e-4864-b8ac-ddd4fcba7a2a",
+    "comment/1b7a32f5-0f24-42ce-ae9a-c42ae68ec6a3",
+    "comment/4b383ac0-68fb-4cf0-9218-9a885e65fa88",
+    "comment/a0f7555b-8aae-411a-8718-808aebeaf13c"
+   ]
+  },
+  "class_name_guard": "survives",
+  "class_position": "survives",
+  "class_first_audit": "survives",
+  "python_builtin": false
+ },
+ {
+  "marker": "carried:",
+  "served": {
+   "occurrences": 11,
+   "messages": 7,
+   "distinct_authors": 4
+  },
+  "raw_regex": {
+   "occurrences": 10,
+   "messages": 7,
+   "distinct_authors": 4
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "unread:",
+  "served": {
+   "occurrences": 7,
+   "messages": 6,
+   "distinct_authors": 4
+  },
+  "raw_regex": {
+   "occurrences": 7,
+   "messages": 6,
+   "distinct_authors": 4
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "suggestions(",
+  "served": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 4
+  },
+  "raw_regex": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 4
+  },
+  "name_guard": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1
+  },
+  "position": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1,
+   "or_arm": "none",
+   "refs": [
+    "post/46e13340-aa2c-4723-aaa5-aeb92ad6f7cd"
+   ]
+  },
+  "class_name_guard": "below_threshold",
+  "class_position": "below_threshold",
+  "class_first_audit": "below_threshold",
+  "python_builtin": false
+ },
+ {
+  "marker": "panel_neff:",
+  "served": {
+   "occurrences": 27,
+   "messages": 26,
+   "distinct_authors": 3
+  },
+  "raw_regex": {
+   "occurrences": 27,
+   "messages": 26,
+   "distinct_authors": 3
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "sum(",
+  "served": {
+   "occurrences": 12,
+   "messages": 5,
+   "distinct_authors": 3
+  },
+  "raw_regex": {
+   "occurrences": 9,
+   "messages": 5,
+   "distinct_authors": 3
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": true
+ },
+ {
+  "marker": "recover(",
+  "served": {
+   "occurrences": 8,
+   "messages": 7,
+   "distinct_authors": 3
+  },
+  "raw_regex": {
+   "occurrences": 7,
+   "messages": 7,
+   "distinct_authors": 3
+  },
+  "name_guard": {
+   "occurrences": 6,
+   "messages": 6,
+   "distinct_authors": 3
+  },
+  "position": {
+   "occurrences": 6,
+   "messages": 6,
+   "distinct_authors": 3,
+   "or_arm": "both",
+   "refs": [
+    "comment/176fb950-d12b-4819-900c-1d78bbe8d4ea",
+    "comment/54900f34-7f1e-4d83-b252-f6b834895896",
+    "comment/7049c233-72a0-43a0-ae7e-4bc3d6fc7edb",
+    "comment/8ea1b3b8-8f71-4dd4-8aa3-3aab0c6967bd",
+    "comment/97b913d9-f2c1-47e3-b623-70a4210f7fe9"
+   ]
+  },
+  "class_name_guard": "survives",
+  "class_position": "survives",
+  "class_first_audit": "survives",
+  "python_builtin": false
+ },
+ {
+  "marker": "significant(",
+  "served": {
+   "occurrences": 6,
+   "messages": 3,
+   "distinct_authors": 3
+  },
+  "raw_regex": {
+   "occurrences": 5,
+   "messages": 3,
+   "distinct_authors": 3
+  },
+  "name_guard": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1
+  },
+  "position": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1,
+   "or_arm": "none",
+   "refs": [
+    "post/10d1637c-9dfa-4e40-b560-4218b61f116b"
+   ]
+  },
+  "class_name_guard": "below_threshold",
+  "class_position": "below_threshold",
+  "class_first_audit": "below_threshold",
+  "python_builtin": false
+ },
+ {
+  "marker": "vote(",
+  "served": {
+   "occurrences": 6,
+   "messages": 5,
+   "distinct_authors": 3
+  },
+  "raw_regex": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 3
+  },
+  "name_guard": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1
+  },
+  "position": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1,
+   "or_arm": "none",
+   "refs": [
+    "comment/9eb450e6-0681-4cc7-8b04-64c23d2f2a65"
+   ]
+  },
+  "class_name_guard": "below_threshold",
+  "class_position": "below_threshold",
+  "class_first_audit": "below_threshold",
+  "python_builtin": false
+ },
+ {
+  "marker": "slot:",
+  "served": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 3
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 3
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "my_vote:",
+  "served": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 3
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 3
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "keys(",
+  "served": {
+   "occurrences": 12,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 12,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "set(",
+  "served": {
+   "occurrences": 8,
+   "messages": 5,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 8,
+   "messages": 5,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": true
+ },
+ {
+  "marker": "renewal:",
+  "served": {
+   "occurrences": 7,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 7,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "range(",
+  "served": {
+   "occurrences": 6,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 6,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": true
+ },
+ {
+  "marker": "sorted(",
+  "served": {
+   "occurrences": 6,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 4,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": true
+ },
+ {
+  "marker": "tokens(",
+  "served": {
+   "occurrences": 6,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 6,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "persisted:",
+  "served": {
+   "occurrences": 6,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "open:",
+  "served": {
+   "occurrences": 6,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 6,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "rule_applied:",
+  "served": {
+   "occurrences": 6,
+   "messages": 6,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 6,
+   "messages": 6,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "valid:",
+  "served": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "point_effect:",
+  "served": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "would_carry:",
+  "served": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 5,
+   "messages": 5,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "mode:",
+  "served": {
+   "occurrences": 4,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 4,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "held:",
+  "served": {
+   "occurrences": 4,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "at_least:",
+  "served": {
+   "occurrences": 4,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 4,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "ready:",
+  "served": {
+   "occurrences": 4,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "agreement(",
+  "served": {
+   "occurrences": 4,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "position": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2,
+   "or_arm": "authors",
+   "refs": [
+    "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f",
+    "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6"
+   ]
+  },
+  "class_name_guard": "survives",
+  "class_position": "survives",
+  "class_first_audit": "survives",
+  "python_builtin": false
+ },
+ {
+  "marker": "str(",
+  "served": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1
+  },
+  "position": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1,
+   "or_arm": "none",
+   "refs": [
+    "comment/fd9de7a9-c9cd-455a-9660-0764c9c0d696"
+   ]
+  },
+  "class_name_guard": "below_threshold",
+  "class_position": "below_threshold",
+  "class_first_audit": "below_threshold",
+  "python_builtin": true
+ },
+ {
+  "marker": "sales_count:",
+  "served": {
+   "occurrences": 3,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "sha256(",
+  "served": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 1
+  },
+  "position": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 1,
+   "or_arm": "none",
+   "refs": [
+    "comment/7049c233-72a0-43a0-ae7e-4bc3d6fc7edb",
+    "comment/e97e4176-b758-465e-9454-26891d77a453"
+   ]
+  },
+  "class_name_guard": "below_threshold",
+  "class_position": "below_threshold",
+  "class_first_audit": "below_threshold",
+  "python_builtin": false
+ },
+ {
+  "marker": "disputed:",
+  "served": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "position": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2,
+   "or_arm": "both",
+   "refs": [
+    "comment/40aef20a-3b9e-44e4-ac04-f533b26ace92",
+    "comment/6cb7bf39-9d59-4f7a-aacb-20598b21b6e2",
+    "comment/978e1285-e269-4ba6-9b91-932139024f1b"
+   ]
+  },
+  "class_name_guard": "survives",
+  "class_position": "survives",
+  "class_first_audit": "survives",
+  "python_builtin": false
+ },
+ {
+  "marker": "important(",
+  "served": {
+   "occurrences": 3,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1
+  },
+  "position": {
+   "occurrences": 1,
+   "messages": 1,
+   "distinct_authors": 1,
+   "or_arm": "none",
+   "refs": [
+    "post/10d1637c-9dfa-4e40-b560-4218b61f116b"
+   ]
+  },
+  "class_name_guard": "below_threshold",
+  "class_position": "below_threshold",
+  "class_first_audit": "below_threshold",
+  "python_builtin": false
+ },
+ {
+  "marker": "read:",
+  "served": {
+   "occurrences": 3,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "changed:",
+  "served": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "marker_helps:",
+  "served": {
+   "occurrences": 3,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 3,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "total:",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "owner:",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "proposal(",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "unscreened:",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "form:",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "readable:",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "checkable(",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "satisfied:",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "zip(",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": true
+ },
+ {
+  "marker": "as-many(",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "examined:",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "disagreement(",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "position": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2,
+   "or_arm": "authors",
+   "refs": [
+    "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f",
+    "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6"
+   ]
+  },
+  "class_name_guard": "survives",
+  "class_position": "survives",
+  "class_first_audit": "survives",
+  "python_builtin": false
+ },
+ {
+  "marker": "side_overlap:",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ },
+ {
+  "marker": "no-reply-in(",
+  "served": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "raw_regex": {
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2
+  },
+  "name_guard": null,
+  "position": null,
+  "class_name_guard": "masked_out",
+  "class_position": "masked_out",
+  "class_first_audit": "masked_out",
+  "python_builtin": false
+ }
+]

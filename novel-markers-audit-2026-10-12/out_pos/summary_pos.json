@@ -1,0 +1,108 @@
+{
+ "rule": "occurrence = (marker, name-span); survives iff matched at the same span in raw and masked text",
+ "fixture": "Saturnia 7f434b6a five cases asserted at start",
+ "served": 54,
+ "messages_in_window": 1667,
+ "name_guard": {
+  "masked_out": 41,
+  "below_threshold": 6,
+  "survives": 7
+ },
+ "position": {
+  "masked_out": 41,
+  "below_threshold": 6,
+  "survives": 7
+ },
+ "class_changed_markers": [],
+ "name_guard_vs_first_audit_disagreements": [],
+ "occurrence_definition_note": "the first audit counted occurrences by string count (text.count); this run counts regex matches, so occurrence totals differ while the class only depends on >0 / authors / messages",
+ "survivors_position": [
+  {
+   "marker": "blocked-on(",
+   "occurrences": 9,
+   "messages": 6,
+   "distinct_authors": 4,
+   "or_arm": "both",
+   "refs": [
+    "comment/81b05cfc-af28-46cd-8805-c2691e0301bc",
+    "comment/9f36c7e1-ba84-4380-bc8a-82e5de5a9ff3",
+    "comment/ae184c6d-23d4-4a5f-9aa5-04124525f92b",
+    "comment/ae45bb6e-a993-44e7-8659-f605d6a4a870",
+    "post/46ccf44c-8c3b-41db-8bcc-2f5526bea53d"
+   ]
+  },
+  {
+   "marker": "len(",
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2,
+   "or_arm": "authors",
+   "refs": [
+    "comment/05cb14ca-9cc8-4e95-9248-cc382c8f16b5",
+    "comment/24be5ea7-ef7e-4464-8bbd-768ed602d001"
+   ]
+  },
+  {
+   "marker": "confirmed:",
+   "occurrences": 4,
+   "messages": 4,
+   "distinct_authors": 1,
+   "or_arm": "messages",
+   "refs": [
+    "comment/0bf70f44-110e-4864-b8ac-ddd4fcba7a2a",
+    "comment/1b7a32f5-0f24-42ce-ae9a-c42ae68ec6a3",
+    "comment/4b383ac0-68fb-4cf0-9218-9a885e65fa88",
+    "comment/a0f7555b-8aae-411a-8718-808aebeaf13c"
+   ]
+  },
+  {
+   "marker": "recover(",
+   "occurrences": 6,
+   "messages": 6,
+   "distinct_authors": 3,
+   "or_arm": "both",
+   "refs": [
+    "comment/176fb950-d12b-4819-900c-1d78bbe8d4ea",
+    "comment/54900f34-7f1e-4d83-b252-f6b834895896",
+    "comment/7049c233-72a0-43a0-ae7e-4bc3d6fc7edb",
+    "comment/8ea1b3b8-8f71-4dd4-8aa3-3aab0c6967bd",
+    "comment/97b913d9-f2c1-47e3-b623-70a4210f7fe9"
+   ]
+  },
+  {
+   "marker": "agreement(",
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2,
+   "or_arm": "authors",
+   "refs": [
+    "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f",
+    "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6"
+   ]
+  },
+  {
+   "marker": "disputed:",
+   "occurrences": 3,
+   "messages": 3,
+   "distinct_authors": 2,
+   "or_arm": "both",
+   "refs": [
+    "comment/40aef20a-3b9e-44e4-ac04-f533b26ace92",
+    "comment/6cb7bf39-9d59-4f7a-aacb-20598b21b6e2",
+    "comment/978e1285-e269-4ba6-9b91-932139024f1b"
+   ]
+  },
+  {
+   "marker": "disagreement(",
+   "occurrences": 2,
+   "messages": 2,
+   "distinct_authors": 2,
+   "or_arm": "authors",
+   "refs": [
+    "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f",
+    "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6"
+   ]
+  }
+ ],
+ "occurrences_lost_to_position_rule": 0
+}
