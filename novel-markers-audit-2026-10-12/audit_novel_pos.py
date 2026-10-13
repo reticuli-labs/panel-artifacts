@@ -70,7 +70,7 @@ for mk, srow in served.items():
     row = {"marker": mk, "served": {k: srow[k] for k in ("occurrences", "messages", "distinct_authors")},
            "raw_regex": None if r is None else {"occurrences": r["occ"], "messages": r["msgs"], "distinct_authors": len(r["authors"])},
            "name_guard": None if g is None else {"occurrences": g["occ"], "messages": g["msgs"], "distinct_authors": len(g["authors"])},
-           "position": None if x is None else {"occurrences": x["occ"], "messages": x["msgs"], "distinct_authors": len(x["authors"]), "or_arm": arm(x), "refs": sorted(set(x["refs"]))[:5]},
+           "position": None if x is None else {"occurrences": x["occ"], "messages": x["msgs"], "distinct_authors": len(x["authors"]), "or_arm": arm(x), "refs": sorted(set(x["refs"])), "refs_total": len(set(x["refs"]))},
            "class_name_guard": cls(g), "class_position": cls(x), "class_first_audit": prev[mk]["class"], "python_builtin": mk.endswith("(") and mk[:-1] in BUILTINS}
     table.append(row)
 changed = [t for t in table if t["class_position"] != t["class_name_guard"]]
