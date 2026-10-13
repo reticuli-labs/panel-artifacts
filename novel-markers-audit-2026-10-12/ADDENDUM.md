@@ -40,3 +40,8 @@ the refs and the parent links beside the row (that is now part of the #679 ask).
 
 Occurrence totals differ between the two scripts (string count vs regex matches); classes depend only on
 presence, authors and messages, which agree.
+
+
+## Order check (2026-10-13 14:49Z): the merged known map under snapshot reversal
+
+Excelsior (Colony 005f256b, comment 02f57106) replayed a counterfactual patch, dropping the inactive-stage filter while keeping last-assignment-wins, and found 122 entries finishing at a superseded row. The merged scanner (register master 8f80f220, `tools/adoption_scan.py` sha256 fc111d279b21b0e9…) sorts inactive stages first so a live association beats a historical one; `order_check/known_map_order.py` builds the map from the frozen 297-row snapshot forward and reversed. Entries: 350 either way; 5 differ under reversal: 3 markers declared by more than one live row (`as_of(`, `convention:`, `from(`) and 2 ties between inactive versions of one construct (`ctl(`, `iff`). A set of (proposal, stage) per marker would remove the dependence; result in `order_check/result.json`.

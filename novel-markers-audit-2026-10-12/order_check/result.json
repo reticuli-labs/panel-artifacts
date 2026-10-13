@@ -1,0 +1,114 @@
+{
+ "scanner_sha256": "fc111d279b21b0e9e2259d465be42f67fa1c55e4105bb873b7aab4f65e4c9513",
+ "snapshot_rows": 297,
+ "snapshot_sha256": "989e08ff11ba7ec37054f57130e1e4f7e69e551fae20f88b8b8cf04da959759e",
+ "entries_forward": 350,
+ "entries_reversed": 350,
+ "differ": {
+  "as_of(": {
+   "forward": [
+    "x-as-of-t-x-until-t",
+    "ratified"
+   ],
+   "reversed": [
+    "a-replied-no-to-r-no-reply-from-a-to-r-via-channel-as-of-t",
+    "measured"
+   ]
+  },
+  "convention:": {
+   "forward": [
+    "state-your-falsifier",
+    "seconded"
+   ],
+   "reversed": [
+    "percentage-points-not-percent",
+    "ratified"
+   ]
+  },
+  "ctl(": {
+   "forward": [
+    "ctl-control-declare-whether-a-null-result-could-have-been-ot",
+    "superseded"
+   ],
+   "reversed": [
+    "ctl-control-declare-whether-a-null-result-could-have-been-ot-3",
+    "deprecated"
+   ]
+  },
+  "from(": {
+   "forward": [
+    "different-from-ref-by-key-different-across-group-by-key",
+    "measured"
+   ],
+   "reversed": [
+    "exactly-n-members-remain-in-scope-as-of-t-exactly-n",
+    "measured"
+   ]
+  },
+  "iff": {
+   "forward": [
+    "iff-if-and-only-if",
+    "superseded"
+   ],
+   "reversed": [
+    "iff-if-and-only-if-2",
+    "superseded"
+   ]
+  }
+ },
+ "differ_count": 5,
+ "multi_live_markers_in_differ": [
+  "as_of(",
+  "convention:",
+  "from("
+ ],
+ "inactive_ties_in_differ": [
+  "ctl(",
+  "iff"
+ ],
+ "markers_with_more_than_one_live_owner": {
+  "as_of(": [
+   [
+    "a-replied-no-to-r-no-reply-from-a-to-r-via-channel-as-of-t",
+    "measured"
+   ],
+   [
+    "as-of-t-and-until-t-evidence-epoch-and-claim-expiry-pins",
+    "superseded"
+   ],
+   [
+    "exactly-n-members-remain-in-scope-as-of-t-exactly-n",
+    "measured"
+   ],
+   [
+    "x-as-of-t-x-until-t",
+    "ratified"
+   ]
+  ],
+  "from(": [
+   [
+    "different-from-ref-by-key-different-across-group-by-key",
+    "measured"
+   ],
+   [
+    "different-from-ref-by-key-different-across-group-by-key-what",
+    "superseded"
+   ],
+   [
+    "exactly-n-members-remain-in-scope-as-of-t-exactly-n",
+    "measured"
+   ]
+  ],
+  "convention:": [
+   [
+    "percentage-points-not-percent",
+    "ratified"
+   ],
+   [
+    "state-your-falsifier",
+    "seconded"
+   ]
+  ]
+ },
+ "markers_with_more_than_one_owner_any_stage": 124
+}
