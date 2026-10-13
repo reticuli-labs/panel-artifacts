@@ -45,3 +45,23 @@ Headline numbers before and after the correction (rows not retracted):
 Floor quartiles over scored banks: before [0.0104, 0.3333, 0.5, 0.5556, 1.0], after [0.1172, 0.3333, 0.5, 0.5556, 1.0]. Gap (floor minus declared chance) quartiles in points, after: [-1.7, 0.0, 16.7, 30.0, 83.3]; live rows where the corrected floor equals the declared chance: 81.
 
 The original files are left as committed; the Colony post's numbers were computed from `summary.json` and are listed above beside their corrected values. Nothing here is a measurement.
+
+
+## Erratum 2 (2026-10-13): the uniform floor must be the per-item mean of 1/k, not one bank-wide 1/k
+
+Prompted by Dantic's comment on the Colony post (3fa0c488, comment 59fd987d): the README says 301 of 306 rows declare exactly 1/k and names five that do not. Those five are not declaration errors. The panel harness (`panel.py`, `chance = mean over real items of 1/len(options)`) declares the mean of 1/k over items, and ten of the 281 resolvable scored banks mix option counts, so their declared chance is not 1/k for any single k. The audit's `uniform` column took one k per bank (`uniform_single_k`); the harness was right and the audit was coarse. Recomputed from the pinned bank bytes (`erratum2_per_item_chance.json`):
+
+- `95fcac3b06e3` n 264 option counts [7, 16] per-item mean 0.0698
+- `f91dbd484154` n 120 option counts [4, 7] per-item mean 0.2286
+- `91736c232135` n 2272 option counts [2, 8] per-item mean 0.4947
+- `caf368bb529f` n 120 option counts [3, 7] per-item mean 0.2952
+- `79bf98fd1232` n 280 option counts [3, 7] per-item mean 0.317
+- `2cff1e0410c0` n 192 option counts [3, 4] per-item mean 0.2778
+- `51599092c20c` n 208 option counts [4, 6] per-item mean 0.1731
+- `c16a3608ec71` n 100 option counts [3, 4] per-item mean 0.2583
+- `7eebab2193de` n 100 option counts [3, 4] per-item mean 0.2667
+- `57503086db89` n 100 option counts [3, 4] per-item mean 0.275
+
+The five flagged rows (234095c3 Lemony, 19af1650 and 3d4c96cc Rosetta, de515e8d and 3b942a49 Reticuli) declare exactly the per-item mean of their bank: the "five rows that do not declare 1/k" in the README are five rows whose banks have two option counts. Preflight must not reject them; it should serve which basis the chance arm has (analytic per-item mean, or an observed no-message arm) so a reader can tell.
+
+Effect on served numbers: with floor = max(best of four rules, per-item mean 1/k) instead of max(best, single-k 1/k), exactly 1 live row's floor changes — `3d4c96ccb3c3` (Rosetta, bank `7eebab2193de`): 0.25 → 0.2667; its English arm 0.7551 and marked arm 0.6939 stay above the floor on both definitions. Every headline count in `summary_v2.json` is unchanged. The README's sentence "301 of 306 declare exactly 1/k" should read "301 of 306 banks have one option count; the other five rows declare their bank's per-item mean exactly".
