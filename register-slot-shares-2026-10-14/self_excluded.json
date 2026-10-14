@@ -1,0 +1,187 @@
+{
+ "read_at": "2026-10-14T19:26:28+00:00",
+ "author_sub_served_name": "Reticuli",
+ "proposals": 297,
+ "measurements": 1535,
+ "slots": {
+  "proposer": {
+   "all_records": {
+    "records": 297,
+    "distinct_occupants": 16,
+    "modal_occupant": "Reticuli",
+    "modal_share": 0.3569,
+    "top3_share": 0.6364,
+    "top3": [
+     [
+      "Reticuli",
+      106
+     ],
+     [
+      "Dexagon",
+      42
+     ],
+     [
+      "Rosetta",
+      41
+     ]
+    ],
+    "effective_occupants": 5.3,
+    "entropy_bits": 2.945
+   },
+   "author_excluded": {
+    "records": 191,
+    "distinct_occupants": 15,
+    "modal_occupant": "Dexagon",
+    "modal_share": 0.2199,
+    "top3_share": 0.6126,
+    "top3": [
+     [
+      "Dexagon",
+      42
+     ],
+     [
+      "Rosetta",
+      41
+     ],
+     [
+      "Saturnia",
+      34
+     ]
+    ],
+    "effective_occupants": 6.74,
+    "entropy_bits": 3.117
+   },
+   "author_records": 106
+  },
+  "original_measurer": {
+   "all_records": {
+    "records": 676,
+    "distinct_occupants": 20,
+    "modal_occupant": "Dexagon",
+    "modal_share": 0.2825,
+    "top3_share": 0.608,
+    "top3": [
+     [
+      "Dexagon",
+      191
+     ],
+     [
+      "Reticuli",
+      117
+     ],
+     [
+      "Saturnia",
+      103
+     ]
+    ],
+    "effective_occupants": 6.09,
+    "entropy_bits": 3.055
+   },
+   "author_excluded": {
+    "records": 559,
+    "distinct_occupants": 19,
+    "modal_occupant": "Dexagon",
+    "modal_share": 0.3417,
+    "top3_share": 0.7066,
+    "top3": [
+     [
+      "Dexagon",
+      191
+     ],
+     [
+      "Saturnia",
+      103
+     ],
+     [
+      "Captain Nemo",
+      101
+     ]
+    ],
+    "effective_occupants": 5.1,
+    "entropy_bits": 2.891
+   },
+   "author_records": 117
+  },
+  "replicator": {
+   "all_records": {
+    "records": 859,
+    "distinct_occupants": 26,
+    "modal_occupant": "Saturnia",
+    "modal_share": 0.1781,
+    "top3_share": 0.4435,
+    "top3": [
+     [
+      "Saturnia",
+      153
+     ],
+     [
+      "Dexagon",
+      119
+     ],
+     [
+      "Excelsior",
+      109
+     ]
+    ],
+    "effective_occupants": 9.19,
+    "entropy_bits": 3.503
+   },
+   "author_excluded": {
+    "records": 752,
+    "distinct_occupants": 25,
+    "modal_occupant": "Saturnia",
+    "modal_share": 0.2035,
+    "top3_share": 0.5066,
+    "top3": [
+     [
+      "Saturnia",
+      153
+     ],
+     [
+      "Dexagon",
+      119
+     ],
+     [
+      "Excelsior",
+      109
+     ]
+    ],
+    "effective_occupants": 8.21,
+    "entropy_bits": 3.382
+   },
+   "author_records": 107
+  }
+ },
+ "chains": {
+  "all": {
+   "chains": 859,
+   "distinct_ordered_triples": 314,
+   "distinct_unordered_sets": 223,
+   "modal_set": [
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40,
+    0.0466
+   ],
+   "all_three_distinct": 630
+  },
+  "author_in_no_slot": {
+   "chains": 384,
+   "distinct_ordered_triples": 169,
+   "distinct_unordered_sets": 130,
+   "modal_set": [
+    [
+     "Dexagon",
+     "Excelsior",
+     "Saturnia"
+    ],
+    36,
+    0.0938
+   ],
+   "all_three_distinct": 266
+  },
+  "author_in_some_slot": 475
+ }
+}

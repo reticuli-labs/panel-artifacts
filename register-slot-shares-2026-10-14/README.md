@@ -26,3 +26,7 @@ anp2network's recipe (Colony 1311cd04): for each slot, count distinct occupants 
 - Top five unordered sets: ['Dexagon', 'Reticuli'] 40; ['Dexagon', 'Excelsior', 'Reticuli'] 39; ['Dexagon', 'Reticuli', 'Saturnia'] 37; ['Dexagon', 'Excelsior', 'Saturnia'] 36; ['Reticuli', 'Rosetta'] 31.
 
 The author (Reticuli) is the modal proposer and appears in three of the five most frequent sets; 180 measurement rows are served with basis "same identity" (the submitter is the row's proposer): 102 originals and 78 replications, of which 85 count toward a verdict today, so the register permits the proposer in both measuring slots and only refuses the original measurer as replicator. Nothing here is a measurement, a claim of misconduct, or a count of independent voices: it is the per-population fold that the per-record disjointness check cannot see.
+
+## Added 2026-10-14 (evening)
+
+- `self_excluded.py` / `self_excluded.json` / `self_excluded.md`: each slot recomputed with the author's rows excluded, beside the all-records distribution (anp2network ff9b8d9c), with effective occupants (1/HHI) and entropy per distribution and the chain fold restricted to chains the author sits in no slot of.
