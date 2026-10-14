@@ -1,0 +1,1672 @@
+{
+ "bare_cd": 96,
+ "bare_settled": 32,
+ "cd_by_source": {
+  "mirrored_closed_key": 18,
+  "probe_class_default": 78
+ },
+ "cd_probe_class_default_by_stratum_probe": {
+  "rate/boundary": 6,
+  "rate/delete": 8,
+  "rate/release": 8,
+  "rate/wait": 16,
+  "stock/delete": 16,
+  "stock/release": 8,
+  "stock/wait": 16
+ },
+ "domains_per_frame": 8,
+ "frames_mirrored_closed_key": [
+  "rate-06-count",
+  "rate-07-boundary",
+  "stock-07-count"
+ ],
+ "frames_mirrored_closed_key_count": 3,
+ "frames_probe_class_default": [
+  "rate-01-wait",
+  "rate-02-wait",
+  "rate-03-release",
+  "rate-04-delete",
+  "rate-07-boundary",
+  "stock-01-wait",
+  "stock-02-wait",
+  "stock-03-release",
+  "stock-04-delete",
+  "stock-05-delete"
+ ],
+ "frames_probe_class_default_count": 10,
+ "inputs": {
+  "items_bare_json_sha256": "db0265de41f01f006604e5a71ac4786bebea230a85668425960865bb6552e357",
+  "keys_json_sha256": "c4f82b1448eebe2297c0331ab00bd171955730b4ab3b41cd45d150c31b0be62a"
+ },
+ "obligation": "the inverse check (exhibit a second admissible world with a different count) is owed only on the probe_class_default rows; the mirrored rows inherit it from the closed key (Dantic's inheritance argument). One construction per frame covers all eight domains of that frame if the construction does not depend on the domain's N; that assumption is itself to be checked per frame.",
+ "rows": [
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "api",
+   "frame": "rate-01-wait",
+   "id": "rc-api-rate-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "boundary-known"
+   ],
+   "domain": "api",
+   "frame": "rate-02-wait",
+   "id": "rc-api-rate-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-useless-for-rate",
+    "boundary-known"
+   ],
+   "domain": "api",
+   "frame": "rate-03-release",
+   "id": "rc-api-rate-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "delete-useless-for-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "api",
+   "frame": "rate-04-delete",
+   "id": "rc-api-rate-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-per-identity",
+    "boundary-known"
+   ],
+   "domain": "api",
+   "frame": "rate-05-count",
+   "id": "rc-api-rate-05-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "api",
+   "frame": "rate-06-count",
+   "id": "rc-api-rate-06-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "boundary-known"
+   ],
+   "domain": "api",
+   "frame": "rate-07-boundary",
+   "id": "rc-api-rate-07-boundary",
+   "probe": "boundary",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-rate-decides",
+    "boundary-known"
+   ],
+   "domain": "api",
+   "frame": "rate-08-count",
+   "id": "rc-api-rate-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-useless-for-stock"
+   ],
+   "domain": "api",
+   "frame": "stock-01-wait",
+   "id": "rc-api-stock-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "expiry-member-leaves"
+   ],
+   "domain": "api",
+   "frame": "stock-02-wait",
+   "id": "rc-api-stock-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-returns-stock",
+    "headroom-not-permission"
+   ],
+   "domain": "api",
+   "frame": "stock-03-release",
+   "id": "rc-api-stock-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-member"
+   ],
+   "domain": "api",
+   "frame": "stock-04-delete",
+   "id": "rc-api-stock-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-nonmember",
+    "headroom-not-permission"
+   ],
+   "domain": "api",
+   "frame": "stock-05-delete",
+   "id": "rc-api-stock-05-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-per-identity"
+   ],
+   "domain": "api",
+   "frame": "stock-06-count",
+   "id": "rc-api-stock-06-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "api",
+   "frame": "stock-07-count",
+   "id": "rc-api-stock-07-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-stock-decides",
+    "boundary-known"
+   ],
+   "domain": "api",
+   "frame": "stock-08-count",
+   "id": "rc-api-stock-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "connections",
+   "frame": "rate-01-wait",
+   "id": "rc-connections-rate-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "boundary-known"
+   ],
+   "domain": "connections",
+   "frame": "rate-02-wait",
+   "id": "rc-connections-rate-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-useless-for-rate",
+    "boundary-known"
+   ],
+   "domain": "connections",
+   "frame": "rate-03-release",
+   "id": "rc-connections-rate-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "delete-useless-for-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "connections",
+   "frame": "rate-04-delete",
+   "id": "rc-connections-rate-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-global",
+    "boundary-known"
+   ],
+   "domain": "connections",
+   "frame": "rate-05-count",
+   "id": "rc-connections-rate-05-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "connections",
+   "frame": "rate-06-count",
+   "id": "rc-connections-rate-06-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "boundary-known"
+   ],
+   "domain": "connections",
+   "frame": "rate-07-boundary",
+   "id": "rc-connections-rate-07-boundary",
+   "probe": "boundary",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-rate-decides",
+    "boundary-known"
+   ],
+   "domain": "connections",
+   "frame": "rate-08-count",
+   "id": "rc-connections-rate-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-useless-for-stock"
+   ],
+   "domain": "connections",
+   "frame": "stock-01-wait",
+   "id": "rc-connections-stock-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "expiry-member-leaves"
+   ],
+   "domain": "connections",
+   "frame": "stock-02-wait",
+   "id": "rc-connections-stock-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-returns-stock",
+    "headroom-not-permission"
+   ],
+   "domain": "connections",
+   "frame": "stock-03-release",
+   "id": "rc-connections-stock-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-member"
+   ],
+   "domain": "connections",
+   "frame": "stock-04-delete",
+   "id": "rc-connections-stock-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-nonmember",
+    "headroom-not-permission"
+   ],
+   "domain": "connections",
+   "frame": "stock-05-delete",
+   "id": "rc-connections-stock-05-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-per-identity"
+   ],
+   "domain": "connections",
+   "frame": "stock-06-count",
+   "id": "rc-connections-stock-06-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "connections",
+   "frame": "stock-07-count",
+   "id": "rc-connections-stock-07-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-stock-decides",
+    "boundary-known"
+   ],
+   "domain": "connections",
+   "frame": "stock-08-count",
+   "id": "rc-connections-stock-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "memory",
+   "frame": "rate-01-wait",
+   "id": "rc-memory-rate-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "boundary-known"
+   ],
+   "domain": "memory",
+   "frame": "rate-02-wait",
+   "id": "rc-memory-rate-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-useless-for-rate",
+    "boundary-known"
+   ],
+   "domain": "memory",
+   "frame": "rate-03-release",
+   "id": "rc-memory-rate-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "delete-useless-for-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "memory",
+   "frame": "rate-04-delete",
+   "id": "rc-memory-rate-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-global",
+    "boundary-known"
+   ],
+   "domain": "memory",
+   "frame": "rate-05-count",
+   "id": "rc-memory-rate-05-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "memory",
+   "frame": "rate-06-count",
+   "id": "rc-memory-rate-06-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "boundary-known"
+   ],
+   "domain": "memory",
+   "frame": "rate-07-boundary",
+   "id": "rc-memory-rate-07-boundary",
+   "probe": "boundary",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-rate-decides",
+    "boundary-known"
+   ],
+   "domain": "memory",
+   "frame": "rate-08-count",
+   "id": "rc-memory-rate-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-useless-for-stock"
+   ],
+   "domain": "memory",
+   "frame": "stock-01-wait",
+   "id": "rc-memory-stock-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "expiry-member-leaves"
+   ],
+   "domain": "memory",
+   "frame": "stock-02-wait",
+   "id": "rc-memory-stock-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-returns-stock",
+    "headroom-not-permission"
+   ],
+   "domain": "memory",
+   "frame": "stock-03-release",
+   "id": "rc-memory-stock-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-member"
+   ],
+   "domain": "memory",
+   "frame": "stock-04-delete",
+   "id": "rc-memory-stock-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-nonmember",
+    "headroom-not-permission"
+   ],
+   "domain": "memory",
+   "frame": "stock-05-delete",
+   "id": "rc-memory-stock-05-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-global"
+   ],
+   "domain": "memory",
+   "frame": "stock-06-count",
+   "id": "rc-memory-stock-06-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "memory",
+   "frame": "stock-07-count",
+   "id": "rc-memory-stock-07-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-stock-decides",
+    "boundary-known"
+   ],
+   "domain": "memory",
+   "frame": "stock-08-count",
+   "id": "rc-memory-stock-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "messages",
+   "frame": "rate-01-wait",
+   "id": "rc-messages-rate-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "boundary-known"
+   ],
+   "domain": "messages",
+   "frame": "rate-02-wait",
+   "id": "rc-messages-rate-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-useless-for-rate",
+    "boundary-known"
+   ],
+   "domain": "messages",
+   "frame": "rate-03-release",
+   "id": "rc-messages-rate-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "delete-useless-for-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "messages",
+   "frame": "rate-04-delete",
+   "id": "rc-messages-rate-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-per-identity",
+    "boundary-known"
+   ],
+   "domain": "messages",
+   "frame": "rate-05-count",
+   "id": "rc-messages-rate-05-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "messages",
+   "frame": "rate-06-count",
+   "id": "rc-messages-rate-06-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "boundary-known"
+   ],
+   "domain": "messages",
+   "frame": "rate-07-boundary",
+   "id": "rc-messages-rate-07-boundary",
+   "probe": "boundary",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-rate-decides",
+    "boundary-known"
+   ],
+   "domain": "messages",
+   "frame": "rate-08-count",
+   "id": "rc-messages-rate-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-useless-for-stock"
+   ],
+   "domain": "messages",
+   "frame": "stock-01-wait",
+   "id": "rc-messages-stock-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "expiry-member-leaves"
+   ],
+   "domain": "messages",
+   "frame": "stock-02-wait",
+   "id": "rc-messages-stock-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-returns-stock",
+    "headroom-not-permission"
+   ],
+   "domain": "messages",
+   "frame": "stock-03-release",
+   "id": "rc-messages-stock-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-member"
+   ],
+   "domain": "messages",
+   "frame": "stock-04-delete",
+   "id": "rc-messages-stock-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-nonmember",
+    "headroom-not-permission"
+   ],
+   "domain": "messages",
+   "frame": "stock-05-delete",
+   "id": "rc-messages-stock-05-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-global"
+   ],
+   "domain": "messages",
+   "frame": "stock-06-count",
+   "id": "rc-messages-stock-06-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "messages",
+   "frame": "stock-07-count",
+   "id": "rc-messages-stock-07-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-stock-decides",
+    "boundary-known"
+   ],
+   "domain": "messages",
+   "frame": "stock-08-count",
+   "id": "rc-messages-stock-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "permits",
+   "frame": "rate-01-wait",
+   "id": "rc-permits-rate-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "boundary-known"
+   ],
+   "domain": "permits",
+   "frame": "rate-02-wait",
+   "id": "rc-permits-rate-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-useless-for-rate",
+    "boundary-known"
+   ],
+   "domain": "permits",
+   "frame": "rate-03-release",
+   "id": "rc-permits-rate-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "delete-useless-for-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "permits",
+   "frame": "rate-04-delete",
+   "id": "rc-permits-rate-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-global",
+    "boundary-known"
+   ],
+   "domain": "permits",
+   "frame": "rate-05-count",
+   "id": "rc-permits-rate-05-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "permits",
+   "frame": "rate-06-count",
+   "id": "rc-permits-rate-06-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "boundary-unknown"
+   ],
+   "domain": "permits",
+   "frame": "rate-07-boundary",
+   "id": "rc-permits-rate-07-boundary",
+   "probe": "boundary",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-rate-decides",
+    "boundary-known"
+   ],
+   "domain": "permits",
+   "frame": "rate-08-count",
+   "id": "rc-permits-rate-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-useless-for-stock"
+   ],
+   "domain": "permits",
+   "frame": "stock-01-wait",
+   "id": "rc-permits-stock-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "expiry-member-leaves"
+   ],
+   "domain": "permits",
+   "frame": "stock-02-wait",
+   "id": "rc-permits-stock-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-returns-stock",
+    "headroom-not-permission"
+   ],
+   "domain": "permits",
+   "frame": "stock-03-release",
+   "id": "rc-permits-stock-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-member"
+   ],
+   "domain": "permits",
+   "frame": "stock-04-delete",
+   "id": "rc-permits-stock-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-nonmember",
+    "headroom-not-permission"
+   ],
+   "domain": "permits",
+   "frame": "stock-05-delete",
+   "id": "rc-permits-stock-05-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-global"
+   ],
+   "domain": "permits",
+   "frame": "stock-06-count",
+   "id": "rc-permits-stock-06-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "permits",
+   "frame": "stock-07-count",
+   "id": "rc-permits-stock-07-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-stock-decides",
+    "boundary-known"
+   ],
+   "domain": "permits",
+   "frame": "stock-08-count",
+   "id": "rc-permits-stock-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "retries",
+   "frame": "rate-01-wait",
+   "id": "rc-retries-rate-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "boundary-known"
+   ],
+   "domain": "retries",
+   "frame": "rate-02-wait",
+   "id": "rc-retries-rate-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-useless-for-rate",
+    "boundary-known"
+   ],
+   "domain": "retries",
+   "frame": "rate-03-release",
+   "id": "rc-retries-rate-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "delete-useless-for-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "retries",
+   "frame": "rate-04-delete",
+   "id": "rc-retries-rate-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-per-identity",
+    "boundary-known"
+   ],
+   "domain": "retries",
+   "frame": "rate-05-count",
+   "id": "rc-retries-rate-05-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "retries",
+   "frame": "rate-06-count",
+   "id": "rc-retries-rate-06-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "boundary-known"
+   ],
+   "domain": "retries",
+   "frame": "rate-07-boundary",
+   "id": "rc-retries-rate-07-boundary",
+   "probe": "boundary",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-rate-decides",
+    "boundary-known"
+   ],
+   "domain": "retries",
+   "frame": "rate-08-count",
+   "id": "rc-retries-rate-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-useless-for-stock"
+   ],
+   "domain": "retries",
+   "frame": "stock-01-wait",
+   "id": "rc-retries-stock-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "expiry-member-leaves"
+   ],
+   "domain": "retries",
+   "frame": "stock-02-wait",
+   "id": "rc-retries-stock-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-returns-stock",
+    "headroom-not-permission"
+   ],
+   "domain": "retries",
+   "frame": "stock-03-release",
+   "id": "rc-retries-stock-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-member"
+   ],
+   "domain": "retries",
+   "frame": "stock-04-delete",
+   "id": "rc-retries-stock-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-nonmember",
+    "headroom-not-permission"
+   ],
+   "domain": "retries",
+   "frame": "stock-05-delete",
+   "id": "rc-retries-stock-05-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-per-identity"
+   ],
+   "domain": "retries",
+   "frame": "stock-06-count",
+   "id": "rc-retries-stock-06-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "retries",
+   "frame": "stock-07-count",
+   "id": "rc-retries-stock-07-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-stock-decides",
+    "boundary-known"
+   ],
+   "domain": "retries",
+   "frame": "stock-08-count",
+   "id": "rc-retries-stock-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "seats",
+   "frame": "rate-01-wait",
+   "id": "rc-seats-rate-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "boundary-known"
+   ],
+   "domain": "seats",
+   "frame": "rate-02-wait",
+   "id": "rc-seats-rate-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-useless-for-rate",
+    "boundary-known"
+   ],
+   "domain": "seats",
+   "frame": "rate-03-release",
+   "id": "rc-seats-rate-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "delete-useless-for-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "seats",
+   "frame": "rate-04-delete",
+   "id": "rc-seats-rate-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-per-identity",
+    "boundary-known"
+   ],
+   "domain": "seats",
+   "frame": "rate-05-count",
+   "id": "rc-seats-rate-05-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "seats",
+   "frame": "rate-06-count",
+   "id": "rc-seats-rate-06-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "boundary-unknown"
+   ],
+   "domain": "seats",
+   "frame": "rate-07-boundary",
+   "id": "rc-seats-rate-07-boundary",
+   "probe": "boundary",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-rate-decides",
+    "boundary-known"
+   ],
+   "domain": "seats",
+   "frame": "rate-08-count",
+   "id": "rc-seats-rate-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-useless-for-stock"
+   ],
+   "domain": "seats",
+   "frame": "stock-01-wait",
+   "id": "rc-seats-stock-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "expiry-member-leaves"
+   ],
+   "domain": "seats",
+   "frame": "stock-02-wait",
+   "id": "rc-seats-stock-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-returns-stock",
+    "headroom-not-permission"
+   ],
+   "domain": "seats",
+   "frame": "stock-03-release",
+   "id": "rc-seats-stock-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-member"
+   ],
+   "domain": "seats",
+   "frame": "stock-04-delete",
+   "id": "rc-seats-stock-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-nonmember",
+    "headroom-not-permission"
+   ],
+   "domain": "seats",
+   "frame": "stock-05-delete",
+   "id": "rc-seats-stock-05-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-per-identity"
+   ],
+   "domain": "seats",
+   "frame": "stock-06-count",
+   "id": "rc-seats-stock-06-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "seats",
+   "frame": "stock-07-count",
+   "id": "rc-seats-stock-07-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-stock-decides",
+    "boundary-known"
+   ],
+   "domain": "seats",
+   "frame": "stock-08-count",
+   "id": "rc-seats-stock-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "storage",
+   "frame": "rate-01-wait",
+   "id": "rc-storage-rate-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-returns-rate",
+    "boundary-known"
+   ],
+   "domain": "storage",
+   "frame": "rate-02-wait",
+   "id": "rc-storage-rate-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-useless-for-rate",
+    "boundary-known"
+   ],
+   "domain": "storage",
+   "frame": "rate-03-release",
+   "id": "rc-storage-rate-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "delete-useless-for-rate",
+    "headroom-not-permission"
+   ],
+   "domain": "storage",
+   "frame": "rate-04-delete",
+   "id": "rc-storage-rate-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-global",
+    "boundary-known"
+   ],
+   "domain": "storage",
+   "frame": "rate-05-count",
+   "id": "rc-storage-rate-05-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "storage",
+   "frame": "rate-06-count",
+   "id": "rc-storage-rate-06-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "boundary-known"
+   ],
+   "domain": "storage",
+   "frame": "rate-07-boundary",
+   "id": "rc-storage-rate-07-boundary",
+   "probe": "boundary",
+   "source": "probe_class_default",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-rate-decides",
+    "boundary-known"
+   ],
+   "domain": "storage",
+   "frame": "rate-08-count",
+   "id": "rc-storage-rate-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "rate"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "waiting-useless-for-stock"
+   ],
+   "domain": "storage",
+   "frame": "stock-01-wait",
+   "id": "rc-storage-stock-01-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "expiry-member-leaves"
+   ],
+   "domain": "storage",
+   "frame": "stock-02-wait",
+   "id": "rc-storage-stock-02-wait",
+   "probe": "wait",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "release-returns-stock",
+    "headroom-not-permission"
+   ],
+   "domain": "storage",
+   "frame": "stock-03-release",
+   "id": "rc-storage-stock-03-release",
+   "probe": "release",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-member"
+   ],
+   "domain": "storage",
+   "frame": "stock-04-delete",
+   "id": "rc-storage-stock-04-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "deleted-nonmember",
+    "headroom-not-permission"
+   ],
+   "domain": "storage",
+   "frame": "stock-05-delete",
+   "id": "rc-storage-stock-05-delete",
+   "probe": "delete",
+   "source": "probe_class_default",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "scope-global"
+   ],
+   "domain": "storage",
+   "frame": "stock-06-count",
+   "id": "rc-storage-stock-06-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "CD",
+   "classes": [
+    "ceiling-not-count"
+   ],
+   "domain": "storage",
+   "frame": "stock-07-count",
+   "id": "rc-storage-stock-07-count",
+   "probe": "count",
+   "source": "mirrored_closed_key",
+   "stratum": "stock"
+  },
+  {
+   "bare_key": "settled",
+   "classes": [
+    "mixed-stock-decides",
+    "boundary-known"
+   ],
+   "domain": "storage",
+   "frame": "stock-08-count",
+   "id": "rc-storage-stock-08-count",
+   "probe": "count",
+   "source": "settled",
+   "stratum": "stock"
+  }
+ ],
+ "rule_location": "gen_ratecap_bank.py lines 287 (rate) and 307 (stock); provenance per key is derivable from keys.json fields probe and gold, no provenance field is stored",
+ "scenarios": 128,
+ "settled_by_class": {
+  "boundary-known": 24,
+  "mixed-rate-decides": 8,
+  "mixed-stock-decides": 8,
+  "scope-global": 8,
+  "scope-per-identity": 8
+ },
+ "settled_by_frame": {
+  "rate-05-count": 8,
+  "rate-08-count": 8,
+  "stock-06-count": 8,
+  "stock-08-count": 8
+ },
+ "settled_by_scope_closure": {
+  "explicit": 12,
+  "per-identity": 16,
+  "set-total": 4
+ }
+}

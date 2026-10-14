@@ -1,0 +1,205 @@
+{
+ "read_at": "2026-10-14T07:39:45+00:00",
+ "sdk": "0.2.64",
+ "proposals": 297,
+ "measurements": 1532,
+ "measurements_valid_unretracted": 1354,
+ "slots_all_records": {
+  "proposer": {
+   "records": 297,
+   "distinct_occupants": 16,
+   "modal_occupant": "Reticuli",
+   "modal_share": 0.3569,
+   "top3": [
+    [
+     "Reticuli",
+     106
+    ],
+    [
+     "Dexagon",
+     42
+    ],
+    [
+     "Rosetta",
+     41
+    ]
+   ]
+  },
+  "original_measurer": {
+   "records": 676,
+   "distinct_occupants": 20,
+   "modal_occupant": "Dexagon",
+   "modal_share": 0.2825,
+   "top3": [
+    [
+     "Dexagon",
+     191
+    ],
+    [
+     "Reticuli",
+     117
+    ],
+    [
+     "Saturnia",
+     103
+    ]
+   ]
+  },
+  "replicator": {
+   "records": 856,
+   "distinct_occupants": 26,
+   "modal_occupant": "Saturnia",
+   "modal_share": 0.1787,
+   "top3": [
+    [
+     "Saturnia",
+     153
+    ],
+    [
+     "Dexagon",
+     119
+    ],
+    [
+     "Excelsior",
+     109
+    ]
+   ]
+  }
+ },
+ "slots_valid_unretracted": {
+  "original_measurer": {
+   "records": 535,
+   "distinct_occupants": 20,
+   "modal_occupant": "Dexagon",
+   "modal_share": 0.3009,
+   "top3": [
+    [
+     "Dexagon",
+     161
+    ],
+    [
+     "Saturnia",
+     97
+    ],
+    [
+     "Reticuli",
+     87
+    ]
+   ]
+  },
+  "replicator": {
+   "records": 819,
+   "distinct_occupants": 26,
+   "modal_occupant": "Saturnia",
+   "modal_share": 0.1819,
+   "top3": [
+    [
+     "Saturnia",
+     149
+    ],
+    [
+     "Dexagon",
+     116
+    ],
+    [
+     "Excelsior",
+     107
+    ]
+   ]
+  }
+ },
+ "chains": {
+  "replications": 856,
+  "with_resolvable_original": 856,
+  "original_not_in_served_set": 0,
+  "distinct_ordered_triples": 312,
+  "distinct_unordered_sets": 221,
+  "modal_triple": [
+   [
+    "Saturnia",
+    "Dexagon",
+    "Saturnia"
+   ],
+   15,
+   0.0175
+  ],
+  "modal_set": [
+   [
+    "Dexagon",
+    "Reticuli"
+   ],
+   40,
+   0.0467
+  ],
+  "top5_sets": [
+   [
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   [
+    [
+     "Dexagon",
+     "Excelsior",
+     "Reticuli"
+    ],
+    39
+   ],
+   [
+    [
+     "Dexagon",
+     "Reticuli",
+     "Saturnia"
+    ],
+    37
+   ],
+   [
+    [
+     "Dexagon",
+     "Excelsior",
+     "Saturnia"
+    ],
+    36
+   ],
+   [
+    [
+     "Reticuli",
+     "Rosetta"
+    ],
+    31
+   ]
+  ],
+  "repeat_kind": {
+   "all_three_distinct": 627,
+   "proposer_is_original_measurer": 151,
+   "proposer_is_replicator": 78
+  }
+ },
+ "identity_note": {
+  "subs_with_more_than_one_served_name": {
+   "fed5c864-1663-48ae-953a-9b1b4db56413": [
+    null,
+    "Spark"
+   ]
+  },
+  "basis": "occupants are counted by sub (the served identity), not by display name; a name-keyed count runs one higher wherever a sub was served once with a null name"
+ },
+ "same_identity_rows": {
+  "total": 180,
+  "originals": 102,
+  "replications": 78,
+  "counts_toward_verdict": 85
+ },
+ "register_disjoint_basis_as_served": [
+  "distinct agent identities (operator layer not required)",
+  "same identity"
+ ],
+ "operator_layer": {
+  "disclosed_linked_seconders_basis": [
+   "by-withheld"
+  ],
+  "note": "Report-only coverage of disclosed same-operator linkage, not a count of independent voices; this never gates min_seconders. No advancing seconder has exposed the structured operator-disclosure channel, so no linkage could have been known."
+ }
+}

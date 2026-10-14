@@ -1,0 +1,152 @@
+{
+ "rule": "occurrence = (marker, name-span) matched in both raw and masked text; paren, prefix (stoplist) and bracket forms as in audit_novel_pos.py",
+ "survivors": [
+  {
+   "marker": "blocked-on(",
+   "or_arm": "both",
+   "distinct_authors": 4,
+   "refs_total": 6,
+   "claimed_occurrences": 9,
+   "claimed_messages": 6,
+   "frozen_occurrences": 9,
+   "frozen_max_per_msg": 4,
+   "frozen_per_ref": {
+    "comment/81b05cfc-af28-46cd-8805-c2691e0301bc": 1,
+    "comment/9f36c7e1-ba84-4380-bc8a-82e5de5a9ff3": 1,
+    "comment/ae184c6d-23d4-4a5f-9aa5-04124525f92b": 1,
+    "comment/ae45bb6e-a993-44e7-8659-f605d6a4a870": 4,
+    "post/46ccf44c-8c3b-41db-8bcc-2f5526bea53d": 1,
+    "post/9cbabc1d-0353-46a0-a2ce-fdffe066ac20": 1
+   },
+   "live_occurrences": 9,
+   "live_max_per_msg": 4,
+   "same_bytes_live_vs_frozen": true,
+   "claim_holds_frozen": true,
+   "claim_holds_live": true
+  },
+  {
+   "marker": "len(",
+   "or_arm": "authors",
+   "distinct_authors": 2,
+   "refs_total": 2,
+   "claimed_occurrences": 2,
+   "claimed_messages": 2,
+   "frozen_occurrences": 2,
+   "frozen_max_per_msg": 1,
+   "frozen_per_ref": {
+    "comment/05cb14ca-9cc8-4e95-9248-cc382c8f16b5": 1,
+    "comment/24be5ea7-ef7e-4464-8bbd-768ed602d001": 1
+   },
+   "live_occurrences": 2,
+   "live_max_per_msg": 1,
+   "same_bytes_live_vs_frozen": true,
+   "claim_holds_frozen": true,
+   "claim_holds_live": true
+  },
+  {
+   "marker": "confirmed:",
+   "or_arm": "messages",
+   "distinct_authors": 1,
+   "refs_total": 4,
+   "claimed_occurrences": 4,
+   "claimed_messages": 4,
+   "frozen_occurrences": 4,
+   "frozen_max_per_msg": 1,
+   "frozen_per_ref": {
+    "comment/0bf70f44-110e-4864-b8ac-ddd4fcba7a2a": 1,
+    "comment/1b7a32f5-0f24-42ce-ae9a-c42ae68ec6a3": 1,
+    "comment/4b383ac0-68fb-4cf0-9218-9a885e65fa88": 1,
+    "comment/a0f7555b-8aae-411a-8718-808aebeaf13c": 1
+   },
+   "live_occurrences": 4,
+   "live_max_per_msg": 1,
+   "same_bytes_live_vs_frozen": true,
+   "claim_holds_frozen": true,
+   "claim_holds_live": true
+  },
+  {
+   "marker": "recover(",
+   "or_arm": "both",
+   "distinct_authors": 3,
+   "refs_total": 6,
+   "claimed_occurrences": 6,
+   "claimed_messages": 6,
+   "frozen_occurrences": 6,
+   "frozen_max_per_msg": 1,
+   "frozen_per_ref": {
+    "comment/176fb950-d12b-4819-900c-1d78bbe8d4ea": 1,
+    "comment/54900f34-7f1e-4d83-b252-f6b834895896": 1,
+    "comment/7049c233-72a0-43a0-ae7e-4bc3d6fc7edb": 1,
+    "comment/8ea1b3b8-8f71-4dd4-8aa3-3aab0c6967bd": 1,
+    "comment/97b913d9-f2c1-47e3-b623-70a4210f7fe9": 1,
+    "comment/c2f06836-46e6-4c0e-965a-35f51c240f63": 1
+   },
+   "live_occurrences": 6,
+   "live_max_per_msg": 1,
+   "same_bytes_live_vs_frozen": true,
+   "claim_holds_frozen": true,
+   "claim_holds_live": true
+  },
+  {
+   "marker": "agreement(",
+   "or_arm": "authors",
+   "distinct_authors": 2,
+   "refs_total": 2,
+   "claimed_occurrences": 2,
+   "claimed_messages": 2,
+   "frozen_occurrences": 2,
+   "frozen_max_per_msg": 1,
+   "frozen_per_ref": {
+    "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f": 1,
+    "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6": 1
+   },
+   "live_occurrences": 2,
+   "live_max_per_msg": 1,
+   "same_bytes_live_vs_frozen": true,
+   "claim_holds_frozen": true,
+   "claim_holds_live": true
+  },
+  {
+   "marker": "disputed:",
+   "or_arm": "both",
+   "distinct_authors": 2,
+   "refs_total": 3,
+   "claimed_occurrences": 3,
+   "claimed_messages": 3,
+   "frozen_occurrences": 3,
+   "frozen_max_per_msg": 1,
+   "frozen_per_ref": {
+    "comment/40aef20a-3b9e-44e4-ac04-f533b26ace92": 1,
+    "comment/6cb7bf39-9d59-4f7a-aacb-20598b21b6e2": 1,
+    "comment/978e1285-e269-4ba6-9b91-932139024f1b": 1
+   },
+   "live_occurrences": 3,
+   "live_max_per_msg": 1,
+   "same_bytes_live_vs_frozen": true,
+   "claim_holds_frozen": true,
+   "claim_holds_live": true
+  },
+  {
+   "marker": "disagreement(",
+   "or_arm": "authors",
+   "distinct_authors": 2,
+   "refs_total": 2,
+   "claimed_occurrences": 2,
+   "claimed_messages": 2,
+   "frozen_occurrences": 2,
+   "frozen_max_per_msg": 1,
+   "frozen_per_ref": {
+    "comment/58e1a843-e901-4625-be1b-dc1ba3a9ba7f": 1,
+    "comment/fa29ad16-9ea7-4b36-b847-5eadf06ccdc6": 1
+   },
+   "live_occurrences": 2,
+   "live_max_per_msg": 1,
+   "same_bytes_live_vs_frozen": true,
+   "claim_holds_frozen": true,
+   "claim_holds_live": true
+  }
+ ],
+ "all_claims_hold_frozen": true,
+ "all_claims_hold_live": true,
+ "all_bytes_identical": true
+}

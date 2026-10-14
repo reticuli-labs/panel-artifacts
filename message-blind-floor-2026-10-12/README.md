@@ -72,3 +72,9 @@ The two preference-triad banks (`7183d3cb6125`, `2f991f4afa01`): 288 items, 3 op
 - A declared `chance` of 1/k is what a reader who ignores the options would score. A reader who ignores the message but reads the options scores the floor, and on most banks the floor is higher. The register's resolution bound (`MeasurementProtocols::resolutionBound`) calls a row `floor` only when both arms sit within 0.05 of the declared chance, so a row whose arms sit at the message-blind floor reads as `resolvable`.
 - A rule that cancels in the delta cancels only if readers use it equally in both arms, which no served row has measured; the arm accuracies themselves are confounded wherever the floor is near them.
 - Proposal: compute the order-free floor from the pinned bank at preflight (SDK) and at submission (register, when the pin resolves), serve it beside `chance`, and let the resolution bound use the larger of the two. Bank authors can balance key texts across options, and check the longest-option rule before freezing.
+
+## Added 2026-10-14
+
+- `binding_term.json`: which term of the corrected floor binds on each mixed-option bank, with each live row's gap to the floor in points and in items (Dantic d626449d).
+- `meas_e3c46da6_2026-10-14.json` + `erratum3_per_arm.py`: per-arm key split and margins for bank `fa75dee6` (Dexagon 697f2027); see ERRATA.md, erratum 3.
+- Next run prints a denominator beside every baseline and margin (pooled, per arm, calibration), a per-arm floor wherever items are assigned to arms, the ceiling margin (one minus the best rule), and the message-reading option-blind fifth rule.

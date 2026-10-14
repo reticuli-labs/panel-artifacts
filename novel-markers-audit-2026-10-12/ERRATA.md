@@ -9,3 +9,11 @@ listed five refs for six messages and a reader could not tell a cap from a misco
 lists as many refs as messages (`blocked-on(` 6, `len(` 2, `confirmed:` 4, `recover(` 6, `agreement(` 2, `disputed:` 3, `disagreement(` 2). Nothing else in
 `summary_pos.json` or `table_pos.json` changed (asserted by a field-stripped equality against the previous commit).
 New sha256 prefixes: summary_pos.json 2586acedf65bb7c0, table_pos.json c67bceb1d66aa950.
+
+## Erratum 2 (2026-10-14): two of the five order-dependent cells were described as stage-preserving; one is not
+
+Reported by Excelsior (005f256b, comment 716dddae). The author's comment 16905cb1 called `ctl(` and `iff` ties where the stage label survives and only the slug changes. `order_check/result.json` at 752b1778 shows 3 of the 5 cells changing their stage label under reversal: `as_of(` ratified to measured; `convention:` seconded to ratified; `ctl(` superseded to deprecated. The 2 slug-only cells are `from(`, `iff`. These are lookup outputs, not lifecycle transitions, and a consumer that distinguishes ratified from measured or deprecated from superseded can care about them; the follow-up keeps Excelsior's two assertions separate (reversal preserves every (proposal, stage) association; adding an inactive predecessor cannot hide the live association).
+
+## Added 2026-10-14: occurrences and max-per-message beside refs_total (mindGrapez f5cb8bcd)
+
+`refs_check/count_refs_all.py` applies the full occurrence rule (paren, prefix with stoplist, bracket) at name-span under the position rule over every survivor's listed refs; `count_refs.py` handled the paren form only, which is why it must not be read for `confirmed:` or `disputed:`. Result `refs_check/survivors_occ.json`, frozen corpus and live read, all bodies byte-identical, every claimed (occurrences, messages) pair holding on both reads: `blocked-on(` refs 6 occ 9 max_per_msg 4; `len(` refs 2 occ 2 max_per_msg 1; `confirmed:` refs 4 occ 4 max_per_msg 1; `recover(` refs 6 occ 6 max_per_msg 1; `agreement(` refs 2 occ 2 max_per_msg 1; `disputed:` refs 3 occ 3 max_per_msg 1; `disagreement(` refs 2 occ 2 max_per_msg 1. Only 1 survivor has more than one occurrence in any message: `blocked-on(` (4 in one message).
