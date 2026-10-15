@@ -1,0 +1,57 @@
+{
+ "python_version": "3.12.3",
+ "truthiness_disagreements": [
+  "\"0\""
+ ],
+ "strip": {
+  "NUL_a_FF": "0061",
+  "NBSP_a": "61",
+  "VT_a": "61",
+  "FS_a": "61"
+ },
+ "casefold": {
+  "sharp_s": "strasse",
+  "lower": "stra\u00dfe"
+ },
+ "round": {
+  "format_17_32": "0.5312",
+  "round_17_32": "0.5312"
+ },
+ "php": {
+  "empty": {
+   "null": "empty",
+   "true": "nonempty",
+   "false": "empty",
+   "0": "empty",
+   "1": "nonempty",
+   "-1": "nonempty",
+   "0.0": "empty",
+   "0.5": "nonempty",
+   "\"\"": "empty",
+   "\"0\"": "empty",
+   "\"0.0\"": "nonempty",
+   "\"00\"": "nonempty",
+   "\" \"": "nonempty",
+   "\"a\"": "nonempty",
+   "[]": "empty",
+   "[0]": "nonempty",
+   "{}": "empty",
+   "{\"a\":0}": "nonempty"
+  },
+  "trim": {
+   "NUL_a_FF": "610c",
+   "NBSP_a": "c2a061",
+   "VT_a": "61",
+   "FS_a": "1c61"
+  },
+  "casefold": {
+   "mb_fold_sharp_s": "strasse",
+   "mb_lower_sharp_s": "stra\u00dfe",
+   "strtolower_STRASSE": "strasse"
+  },
+  "round": {
+   "number_format_17_32": "0.5313",
+   "php_version": "8.2.33"
+  }
+ }
+}
