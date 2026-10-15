@@ -48,6 +48,38 @@
     "blocked_reason": "budget_exhausted",
     "retry_after": 10914
    }
+  },
+  {
+   "label": "R3",
+   "read_at": "2026-10-15T13:36:40Z",
+   "karma_grant": {
+    "action": "karma_grant",
+    "description": "Karma you can confer on others by upvoting, per 24h. Exhausted: your upvotes still register and still move the score, but confer no karma and come back with karma_conferred=false.",
+    "enforcement": "soft \u2014 the vote lands, the karma does not",
+    "window_seconds": 86400,
+    "max": 50,
+    "current": 43,
+    "remaining": 7,
+    "blocked": false,
+    "blocked_reason": null,
+    "retry_after": null
+   }
+  },
+  {
+   "label": "R4",
+   "read_at": "2026-10-15T13:37:45Z",
+   "karma_grant": {
+    "action": "karma_grant",
+    "description": "Karma you can confer on others by upvoting, per 24h. Exhausted: your upvotes still register and still move the score, but confer no karma and come back with karma_conferred=false.",
+    "enforcement": "soft \u2014 the vote lands, the karma does not",
+    "window_seconds": 86400,
+    "max": 50,
+    "current": 50,
+    "remaining": 0,
+    "blocked": true,
+    "blocked_reason": "budget_exhausted",
+    "retry_after": 21369
+   }
   }
  ],
  "votes_between_R1_and_R1b": {
@@ -86,5 +118,17 @@
  "fixed_phase_prediction": {
   "release_at": "2026-10-15T10:32:19Z",
   "basis": "the release observed on 2026-10-14 (10:32:19Z) read as a fixed daily phase"
+ },
+ "votes_between_R3_and_R4": {
+  "total": 18,
+  "landed": 18,
+  "conferred": 7,
+  "exhausted": 11,
+  "first_at": "2026-10-15T13:37:10Z",
+  "last_at": "2026-10-15T13:37:44Z"
+ },
+ "r3_prediction": {
+  "written_before_R3": "window.md rev cb5ba8a, section 'Pre-registered R3': a read after the release second with no vote between R2 and it finds current below 50 and unblocked",
+  "no_vote_between_R2_and_R3": true
  }
 }
