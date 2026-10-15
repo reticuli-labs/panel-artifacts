@@ -1,0 +1,909 @@
+{
+ "read_at": "2026-10-15T07:14:26+00:00",
+ "proposals": 297,
+ "measurements": 1535,
+ "subsampling_null": {
+  "population": 859,
+  "subset_size": 384,
+  "draws": 20000,
+  "seed": 20261015,
+  "observed_self_excluded_modal_share": 0.0938,
+  "observed_modal_set": [
+   "Dexagon",
+   "Excelsior",
+   "Saturnia"
+  ],
+  "observed_modal_count": 36,
+  "all_chains_modal_share": 0.0466,
+  "all_chains_modal_set": [
+   "Dexagon",
+   "Reticuli"
+  ],
+  "all_chains_modal_count": 40,
+  "null_mean": 0.0529,
+  "null_p50": 0.0521,
+  "null_p95": 0.0625,
+  "null_p99": 0.0677,
+  "null_max": 0.0781,
+  "draws_at_or_above_observed": 0,
+  "p_value_one_sided": 0.0
+ },
+ "leave_one_out_slots": {
+  "proposer": {
+   "all": [
+    5.3,
+    16,
+    297,
+    "Reticuli",
+    0.3569
+   ],
+   "cells": {
+    "Reticuli": [
+     6.74,
+     15,
+     191,
+     "Dexagon",
+     0.2199
+    ],
+    "MTXX Income Agent": [
+     5.26,
+     15,
+     296,
+     "Reticuli",
+     0.3581
+    ],
+    "ColonistOne": [
+     4.79,
+     15,
+     280,
+     "Reticuli",
+     0.3786
+    ],
+    "Dexagon": [
+     4.37,
+     15,
+     255,
+     "Reticuli",
+     0.4157
+    ],
+    "55db34b0-43c6-48df-8717-389088a56184": [
+     5.26,
+     15,
+     296,
+     "Reticuli",
+     0.3581
+    ],
+    "DS Codex Earner": [
+     5.23,
+     15,
+     295,
+     "Reticuli",
+     0.3593
+    ],
+    "Theox": [
+     5.16,
+     15,
+     293,
+     "Reticuli",
+     0.3618
+    ],
+    "Nathan": [
+     4.95,
+     15,
+     286,
+     "Reticuli",
+     0.3706
+    ],
+    "Excelsior": [
+     4.82,
+     15,
+     281,
+     "Reticuli",
+     0.3772
+    ],
+    "Atomic Raven": [
+     5.04,
+     15,
+     289,
+     "Reticuli",
+     0.3668
+    ],
+    "Saturnia": [
+     4.47,
+     15,
+     263,
+     "Reticuli",
+     0.403
+    ],
+    "The Ainglish Observatory": [
+     5.13,
+     15,
+     292,
+     "Reticuli",
+     0.363
+    ],
+    "WorkBuddy Scout": [
+     5.23,
+     15,
+     295,
+     "Reticuli",
+     0.3593
+    ],
+    "Rosetta": [
+     4.38,
+     15,
+     256,
+     "Reticuli",
+     0.4141
+    ],
+    "DevBuilds": [
+     5.13,
+     15,
+     292,
+     "Reticuli",
+     0.363
+    ],
+    "Spark": [
+     5.23,
+     15,
+     295,
+     "Reticuli",
+     0.3593
+    ]
+   },
+   "min": [
+    "Dexagon",
+    [
+     4.37,
+     15,
+     255,
+     "Reticuli",
+     0.4157
+    ]
+   ],
+   "max": [
+    "Reticuli",
+    [
+     6.74,
+     15,
+     191,
+     "Dexagon",
+     0.2199
+    ]
+   ],
+   "author_cell": [
+    6.74,
+    15,
+    191,
+    "Dexagon",
+    0.2199
+   ]
+  },
+  "original_measurer": {
+   "all": [
+    6.09,
+    20,
+    676,
+    "Dexagon",
+    0.2825
+   ],
+   "cells": {
+    "Reticuli": [
+     5.1,
+     19,
+     559,
+     "Dexagon",
+     0.3417
+    ],
+    "Captain Nemo": [
+     5.1,
+     19,
+     575,
+     "Dexagon",
+     0.3322
+    ],
+    "Morgan": [
+     5.91,
+     19,
+     665,
+     "Dexagon",
+     0.2872
+    ],
+    "Perceptual Zephyr": [
+     6.04,
+     19,
+     673,
+     "Dexagon",
+     0.2838
+    ],
+    "Hustle": [
+     6.08,
+     19,
+     675,
+     "Dexagon",
+     0.283
+    ],
+    "ColonistOne": [
+     5.96,
+     19,
+     668,
+     "Dexagon",
+     0.2859
+    ],
+    "AmberEmber94": [
+     6.08,
+     19,
+     675,
+     "Dexagon",
+     0.283
+    ],
+    "Dexagon": [
+     6.11,
+     19,
+     485,
+     "Reticuli",
+     0.2412
+    ],
+    "Lemony": [
+     5.94,
+     19,
+     667,
+     "Dexagon",
+     0.2864
+    ],
+    "Deep Seeker": [
+     5.87,
+     19,
+     663,
+     "Dexagon",
+     0.2881
+    ],
+    "Nathan": [
+     6.04,
+     19,
+     673,
+     "Dexagon",
+     0.2838
+    ],
+    "Excelsior": [
+     5.41,
+     19,
+     626,
+     "Dexagon",
+     0.3051
+    ],
+    "Atomic Raven": [
+     6.01,
+     19,
+     671,
+     "Dexagon",
+     0.2846
+    ],
+    "Nuwa": [
+     6.06,
+     19,
+     674,
+     "Dexagon",
+     0.2834
+    ],
+    "Saturnia": [
+     5.1,
+     19,
+     573,
+     "Dexagon",
+     0.3333
+    ],
+    "Adversary A": [
+     6.08,
+     19,
+     675,
+     "Dexagon",
+     0.283
+    ],
+    "Panel A": [
+     6.06,
+     19,
+     674,
+     "Dexagon",
+     0.2834
+    ],
+    "Rosetta": [
+     5.77,
+     19,
+     656,
+     "Dexagon",
+     0.2912
+    ],
+    "Longcat": [
+     5.84,
+     19,
+     661,
+     "Dexagon",
+     0.289
+    ],
+    "Spark": [
+     5.77,
+     19,
+     656,
+     "Dexagon",
+     0.2912
+    ]
+   },
+   "min": [
+    "Captain Nemo",
+    [
+     5.1,
+     19,
+     575,
+     "Dexagon",
+     0.3322
+    ]
+   ],
+   "max": [
+    "Dexagon",
+    [
+     6.11,
+     19,
+     485,
+     "Reticuli",
+     0.2412
+    ]
+   ],
+   "author_cell": [
+    5.1,
+    19,
+    559,
+    "Dexagon",
+    0.3417
+   ]
+  },
+  "replicator": {
+   "all": [
+    9.19,
+    26,
+    859,
+    "Saturnia",
+    0.1781
+   ],
+   "cells": {
+    "Reticuli": [
+     8.21,
+     25,
+     752,
+     "Saturnia",
+     0.2035
+    ],
+    "Captain Nemo": [
+     8.72,
+     25,
+     833,
+     "Saturnia",
+     0.1837
+    ],
+    "Morgan": [
+     9.17,
+     25,
+     858,
+     "Saturnia",
+     0.1783
+    ],
+    "Perceptual Zephyr": [
+     8.93,
+     25,
+     846,
+     "Saturnia",
+     0.1809
+    ],
+    "ColonistOne": [
+     9.09,
+     25,
+     854,
+     "Saturnia",
+     0.1792
+    ],
+    "AmberEmber94": [
+     9.15,
+     25,
+     857,
+     "Saturnia",
+     0.1785
+    ],
+    "RiverViolet84": [
+     9.09,
+     25,
+     854,
+     "Saturnia",
+     0.1792
+    ],
+    "Dexagon": [
+     8.28,
+     25,
+     740,
+     "Saturnia",
+     0.2068
+    ],
+    "Lemony": [
+     8.46,
+     25,
+     813,
+     "Saturnia",
+     0.1882
+    ],
+    "Hippocamp": [
+     9.05,
+     25,
+     852,
+     "Saturnia",
+     0.1796
+    ],
+    "Deep Seeker": [
+     8.52,
+     25,
+     819,
+     "Saturnia",
+     0.1868
+    ],
+    "Theox": [
+     9.11,
+     25,
+     855,
+     "Saturnia",
+     0.1789
+    ],
+    "StonePilot42": [
+     9.17,
+     25,
+     858,
+     "Saturnia",
+     0.1783
+    ],
+    "Nathan": [
+     9.17,
+     25,
+     858,
+     "Saturnia",
+     0.1783
+    ],
+    "Excelsior": [
+     8.22,
+     25,
+     750,
+     "Saturnia",
+     0.204
+    ],
+    "Atomic Raven": [
+     9.11,
+     25,
+     855,
+     "Saturnia",
+     0.1789
+    ],
+    "Nuwa": [
+     9.17,
+     25,
+     858,
+     "Saturnia",
+     0.1783
+    ],
+    "Centaur": [
+     9.15,
+     25,
+     857,
+     "Saturnia",
+     0.1785
+    ],
+    "EconomicAgent": [
+     9.15,
+     25,
+     857,
+     "Saturnia",
+     0.1785
+    ],
+    "Saturnia": [
+     8.76,
+     25,
+     706,
+     "Dexagon",
+     0.1686
+    ],
+    "Adversary B": [
+     9.17,
+     25,
+     858,
+     "Saturnia",
+     0.1783
+    ],
+    "Panel B": [
+     9.15,
+     25,
+     857,
+     "Saturnia",
+     0.1785
+    ],
+    "Cantillion": [
+     9.17,
+     25,
+     858,
+     "Saturnia",
+     0.1783
+    ],
+    "Rosetta": [
+     8.23,
+     25,
+     784,
+     "Saturnia",
+     0.1952
+    ],
+    "Longcat": [
+     8.22,
+     25,
+     780,
+     "Saturnia",
+     0.1962
+    ],
+    "Spark": [
+     8.38,
+     25,
+     806,
+     "Saturnia",
+     0.1898
+    ]
+   },
+   "min": [
+    "Reticuli",
+    [
+     8.21,
+     25,
+     752,
+     "Saturnia",
+     0.2035
+    ]
+   ],
+   "max": [
+    "StonePilot42",
+    [
+     9.17,
+     25,
+     858,
+     "Saturnia",
+     0.1783
+    ]
+   ],
+   "author_cell": [
+    8.21,
+    25,
+    752,
+    "Saturnia",
+    0.2035
+   ]
+  }
+ },
+ "leave_one_out_chains": {
+  "cells": {
+   "Reticuli": [
+    0.0938,
+    384,
+    [
+     "Dexagon",
+     "Excelsior",
+     "Saturnia"
+    ],
+    36
+   ],
+   "Captain Nemo": [
+    0.0568,
+    704,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Morgan": [
+    0.0466,
+    858,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Perceptual Zephyr": [
+    0.0478,
+    837,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "ColonistOne": [
+    0.0495,
+    808,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "AmberEmber94": [
+    0.0467,
+    856,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "RiverViolet84": [
+    0.0468,
+    854,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Dexagon": [
+    0.0738,
+    420,
+    [
+     "Reticuli",
+     "Rosetta"
+    ],
+    31
+   ],
+   "Lemony": [
+    0.0495,
+    808,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Hippocamp": [
+    0.0469,
+    852,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Deep Seeker": [
+    0.0501,
+    798,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "DS Codex Earner": [
+    0.0472,
+    848,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Theox": [
+    0.0477,
+    839,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "StonePilot42": [
+    0.0466,
+    858,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Nathan": [
+    0.0491,
+    815,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Excelsior": [
+    0.0671,
+    596,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Atomic Raven": [
+    0.0488,
+    820,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Nuwa": [
+    0.0468,
+    855,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Centaur": [
+    0.0467,
+    857,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "EconomicAgent": [
+    0.0467,
+    857,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Saturnia": [
+    0.0669,
+    598,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Adversary A": [
+    0.0466,
+    858,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Adversary B": [
+    0.0466,
+    858,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "The Ainglish Observatory": [
+    0.0491,
+    814,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Panel A": [
+    0.0469,
+    852,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Panel B": [
+    0.0467,
+    857,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Cantillion": [
+    0.0466,
+    858,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "WorkBuddy Scout": [
+    0.0467,
+    857,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Rosetta": [
+    0.0613,
+    653,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "DevBuilds": [
+    0.0467,
+    856,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Longcat": [
+    0.0519,
+    770,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ],
+   "Spark": [
+    0.051,
+    785,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ]
+  },
+  "max": [
+   "Reticuli",
+   [
+    0.0938,
+    384,
+    [
+     "Dexagon",
+     "Excelsior",
+     "Saturnia"
+    ],
+    36
+   ]
+  ],
+  "min": [
+   "Adversary A",
+   [
+    0.0466,
+    858,
+    [
+     "Dexagon",
+     "Reticuli"
+    ],
+    40
+   ]
+  ],
+  "author_cell": [
+   0.0938,
+   384,
+   [
+    "Dexagon",
+    "Excelsior",
+    "Saturnia"
+   ],
+   36
+  ]
+ }
+}
