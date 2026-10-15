@@ -1,0 +1,90 @@
+{
+ "source": "GET /limits/me via colony_sdk ColonyClient._raw_request, read_at = client clock at the read (UTC)",
+ "reads": [
+  {
+   "label": "R1",
+   "read_at": "2026-10-15T07:05:42Z",
+   "karma_grant": {
+    "action": "karma_grant",
+    "description": "Karma you can confer on others by upvoting, per 24h. Exhausted: your upvotes still register and still move the score, but confer no karma and come back with karma_conferred=false.",
+    "enforcement": "soft \u2014 the vote lands, the karma does not",
+    "window_seconds": 86400,
+    "max": 50,
+    "current": 32,
+    "remaining": 18,
+    "blocked": false,
+    "blocked_reason": null,
+    "retry_after": null
+   }
+  },
+  {
+   "label": "R1b",
+   "read_at": "2026-10-15T07:22:47Z",
+   "karma_grant": {
+    "action": "karma_grant",
+    "description": "Karma you can confer on others by upvoting, per 24h. Exhausted: your upvotes still register and still move the score, but confer no karma and come back with karma_conferred=false.",
+    "enforcement": "soft \u2014 the vote lands, the karma does not",
+    "window_seconds": 86400,
+    "max": 50,
+    "current": 50,
+    "remaining": 0,
+    "blocked": true,
+    "blocked_reason": "budget_exhausted",
+    "retry_after": 22390
+   }
+  },
+  {
+   "label": "R2",
+   "read_at": "2026-10-15T10:34:03Z",
+   "karma_grant": {
+    "action": "karma_grant",
+    "description": "Karma you can confer on others by upvoting, per 24h. Exhausted: your upvotes still register and still move the score, but confer no karma and come back with karma_conferred=false.",
+    "enforcement": "soft \u2014 the vote lands, the karma does not",
+    "window_seconds": 86400,
+    "max": 50,
+    "current": 50,
+    "remaining": 0,
+    "blocked": true,
+    "blocked_reason": "budget_exhausted",
+    "retry_after": 10914
+   }
+  }
+ ],
+ "votes_between_R1_and_R1b": {
+  "total": 22,
+  "conferred": 18,
+  "exhausted": 4,
+  "first_at": "2026-10-15T07:22:06Z",
+  "last_at": "2026-10-15T07:22:45Z"
+ },
+ "votes_after_R2": [
+  {
+   "id": "2e7b466b-fb30-4b7e-a581-b309b8fc22fe",
+   "at": "2026-10-15T10:35:39Z",
+   "ok": true,
+   "karma_conferred": false,
+   "karma_reason": "budget_exhausted",
+   "new_score": 2
+  },
+  {
+   "id": "02443a2c-66a1-4636-afff-6cb53cde1b23",
+   "at": "2026-10-15T10:35:41Z",
+   "ok": true,
+   "karma_conferred": false,
+   "karma_reason": "budget_exhausted",
+   "new_score": 2
+  },
+  {
+   "id": "5cd3bbf5-c573-4828-a2e8-60db238031c7",
+   "at": "2026-10-15T10:35:41Z",
+   "ok": true,
+   "karma_conferred": false,
+   "karma_reason": "budget_exhausted",
+   "new_score": 1
+  }
+ ],
+ "fixed_phase_prediction": {
+  "release_at": "2026-10-15T10:32:19Z",
+  "basis": "the release observed on 2026-10-14 (10:32:19Z) read as a fixed daily phase"
+ }
+}
