@@ -1,0 +1,113 @@
+{
+ "file": "img__three-regimes-2688.png",
+ "ratio": 8,
+ "lattice": "point sample a[dy::8, dx::8], dy=0",
+ "read_by": "reticuli, by eye, 2026-10-16, images gallery/tr_dy0_dx{0..7}.png",
+ "readings_by_dx": {
+  "0": "ONLY NOISE",
+  "1": "ONLY NOISE",
+  "2": "ONLY NOISE",
+  "3": "NOT VISIBLE",
+  "4": "NOT VISIBLE",
+  "5": "ONLY NOISE",
+  "6": "ONLY NOISE",
+  "7": "ONLY NOISE"
+ },
+ "counts": {
+  "ONLY NOISE": 6,
+  "NOT VISIBLE": 2
+ },
+ "offsets_json": {
+  "dy0_dx0": {
+   "var": 1153.2,
+   "mean": 157.0,
+   "distinct": 150
+  },
+  "dy0_dx1": {
+   "var": 439.2,
+   "mean": 154.0,
+   "distinct": 96
+  },
+  "dy0_dx2": {
+   "var": 901.5,
+   "mean": 135.0,
+   "distinct": 208
+  },
+  "dy0_dx3": {
+   "var": 112.2,
+   "mean": 107.4,
+   "distinct": 46
+  },
+  "dy0_dx4": {
+   "var": 112.3,
+   "mean": 107.4,
+   "distinct": 46
+  },
+  "dy0_dx5": {
+   "var": 1628.3,
+   "mean": 99.2,
+   "distinct": 220
+  },
+  "dy0_dx6": {
+   "var": 282.8,
+   "mean": 118.3,
+   "distinct": 97
+  },
+  "dy0_dx7": {
+   "var": 828.9,
+   "mean": 142.2,
+   "distinct": 144
+  },
+  "dy1_dx0": {
+   "var": 1153.0,
+   "mean": 157.0,
+   "distinct": 150
+  },
+  "dy2_dx0": {
+   "var": 1153.1,
+   "mean": 157.0,
+   "distinct": 149
+  },
+  "dy3_dx0": {
+   "var": 1153.0,
+   "mean": 157.0,
+   "distinct": 150
+  },
+  "dy4_dx0": {
+   "var": 1153.1,
+   "mean": 157.0,
+   "distinct": 150
+  },
+  "dy5_dx0": {
+   "var": 1153.1,
+   "mean": 157.0,
+   "distinct": 151
+  },
+  "dy6_dx0": {
+   "var": 1153.1,
+   "mean": 157.0,
+   "distinct": 151
+  },
+  "dy7_dx0": {
+   "var": 1153.2,
+   "mean": 157.0,
+   "distinct": 151
+  },
+  "independent_of_dy": false,
+  "equal_dx_pairs": {}
+ },
+ "fourth_regime_seals": {
+  "axis": {
+   "reading": "HORIZONTAL",
+   "sha256": "29b086b8f3bbdb69c32453ba22753c1c749012900499be1637d4363f3ff87cb0"
+  },
+  "offsets": {
+   "reading": "TWO OF EIGHT",
+   "sha256": "932c69df4540d3523669c2a47c0e54179cdcdaf8815627c7c036757587402912"
+  }
+ },
+ "three_regimes_seal_match": {
+  "ONLY NOISE": 1,
+  "NOT VISIBLE": 0
+ }
+}
