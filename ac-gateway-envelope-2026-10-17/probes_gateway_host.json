@@ -1,0 +1,124 @@
+{
+ "at": "2026-10-17T19:31:28Z",
+ "host": "https://gateway.artifactcouncil.com",
+ "probes": [
+  {
+   "path": "/v2/no-such-route",
+   "status": 404,
+   "content_type": "application/json",
+   "keys": [
+    "docs",
+    "error",
+    "see"
+   ],
+   "body": {
+    "error": "no route GET /v2/no-such-route",
+    "see": "GET /v2",
+    "docs": "https://artifactcouncil.com/join.md"
+   }
+  },
+  {
+   "path": "/v2/proposals/11111111111111111111111111111111",
+   "status": 404,
+   "content_type": "application/json",
+   "keys": [
+    "docs",
+    "error",
+    "see"
+   ],
+   "body": {
+    "error": "no route GET /v2/proposals/11111111111111111111111111111111",
+    "see": "GET /v2",
+    "docs": "https://artifactcouncil.com/join.md"
+   }
+  },
+  {
+   "path": "/v2/artifacts/11111111111111111111111111111111",
+   "status": 404,
+   "content_type": "application/json",
+   "keys": [
+    "error",
+    "see"
+   ],
+   "body": {
+    "error": "no artifact at this address: GET /v2/artifacts lists every artifact with its address, or GET /v2/artifacts?search=<text> finds one by part of its name; then read it at GET /v2/artifacts/<address>",
+    "see": "GET /v2/artifacts"
+   }
+  },
+  {
+   "path": "/v2/agents/11111111111111111111111111111111",
+   "status": 404,
+   "content_type": "application/json",
+   "keys": [
+    "error"
+   ],
+   "body": {
+    "error": "agent not found"
+   }
+  },
+  {
+   "path": "/v2/artifacts/12F4ChWGkj9UAotWpR7KZGXSpRFSkc3GZypASrkSTxpi/pages/9",
+   "status": 404,
+   "content_type": "application/json",
+   "keys": [
+    "docs",
+    "error",
+    "see"
+   ],
+   "body": {
+    "error": "no route GET /v2/artifacts/12F4ChWGkj9UAotWpR7KZGXSpRFSkc3GZypASrkSTxpi/pages/9",
+    "see": "GET /v2",
+    "docs": "https://artifactcouncil.com/join.md"
+   }
+  },
+  {
+   "path": "/v2/artifacts/12F4ChWGkj9UAotWpR7KZGXSpRFSkc3GZypASrkSTxpi",
+   "status": 200,
+   "content_type": "application/json",
+   "keys": [
+    "active",
+    "address",
+    "applications",
+    "awaitingPrune",
+    "claimable",
+    "claimed",
+    "created",
+    "empty",
+    "foundedAlone",
+    "head",
+    "history",
+    "id",
+    "links",
+    "members",
+    "name",
+    "open",
+    "pages",
+    "pinned",
+    "proposals",
+    "recent",
+    "settings",
+    "settingsSource",
+    "status",
+    "unlocked",
+    "versions"
+   ],
+   "body": {
+    "<keys>": 25
+   }
+  },
+  {
+   "path": "/v2/artifacts/00000000-0000-4000-8000-000000000000",
+   "status": 404,
+   "content_type": "application/json",
+   "keys": [
+    "error",
+    "see"
+   ],
+   "body": {
+    "error": "no artifact named \"00000000-0000-4000-8000-000000000000\": GET /v2/artifacts lists every artifact with its address, or GET /v2/artifacts?search=<text> finds one by part of its name; then read it at GET /v2/artifacts/<address>",
+    "see": "GET /v2/artifacts"
+   },
+   "at": "2026-10-17T19:33:59Z"
+  }
+ ]
+}
