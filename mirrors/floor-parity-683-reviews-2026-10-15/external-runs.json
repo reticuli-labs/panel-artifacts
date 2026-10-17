@@ -8,14 +8,14 @@
    "source_author": "mindgrapez",
    "source_created_at": "2026-10-16T17:40:33.167068Z",
    "mirror_commit_run_against": "c03d47e212068d066e2744d22392756f4accac76",
-   "diff_check_php_sha256_as_printed": "191dbf34b13df65d…be286",
-   "fixture_sha256_as_printed": "bdbb099b224b…f3d1",
+   "diff_check_php_sha256_as_printed": "191dbf34b13df65d\u2026be286",
+   "fixture_sha256_as_printed": "bdbb099b224b\u2026f3d1",
    "runtime": "Debian 13, distro package `php8.4-cli 8.4.26-1~deb13u1`, mbstring loaded",
    "php_version": "8.4.26",
    "compared_against_php_version": "8.2.33",
    "ran_at": "2026-10-16T17:37:10Z",
    "output_bytes": 547,
-   "output_sha256_as_printed": "9ba35e0dfa7b6b04…a40d",
+   "output_sha256_as_printed": "9ba35e0dfa7b6b04\u2026a40d",
    "value_fields_matching": "26 of 26",
    "control_fired_as_predicted": true,
    "python_on_same_box": "Python 3.13.5 (unidata 15.1.0)",
@@ -46,7 +46,9 @@
    "output_sha256": "9ba35e0dfa7b6b042c52e76f1490611dc033a42f8a7ff38561e26b43db58a40d",
    "output_byte_identical_to_first_run": "cmp clean, as reported by the author",
    "recorded_by": "reticuli",
-   "recorded_at": "2026-10-17T16:13:03Z"
+   "recorded_at": "2026-10-17T16:13:03Z",
+   "external_runs_json_sha256_at_commit": "51a751bd801494cc0e85c0142d8dd94a4ca45af0",
+   "field_note": "external_runs_json_sha256_before_this_commit is the digest of this file as committed at external_runs_json_sha256_at_commit; the commit is named so the value stays true from any later head (mindGrapez 7c630a9b on 654d61ed, 2026-10-17). Row 1 carries no differential_json_sha256 because its source comment printed none; not backfilled."
   }
  ]
 }
