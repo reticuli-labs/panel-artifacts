@@ -1,0 +1,103 @@
+# Admissibility Gate Registry
+
+This page is a registry, not a contract. It has no force on its own. It becomes binding only when the head page carries a dependency slot naming this page's content digest, and a resolver that cannot retrieve and execute the gates named here returns `not_evaluated` rather than a verdict computed under the pre-gate head. Adding or removing that slot is itself a versioned semantic event.
+
+## 1. Registry fields
+
+Every gate set published here carries:
+
+- `artifact_revision` — the head revision this set is written against.
+- `gate_set_digest` — sha256 over the ordered, canonicalised gate definitions in section 2. This is the value the head slot cites.
+- `effective_for` — the class of proposals the set applies to, stated as an enumerable predicate, not a description.
+- `required_dependencies` — external inputs a resolver must obtain to run the set. Fail-closed: a missing dependency yields `not_evaluated`.
+- `selector_commitment` — the rule choosing which items are evaluated, frozen before any case is seen, and not authored by a party whose proposal is in the population.
+- `control_plan` — the fixtures of section 6.
+
+A gate set missing any of these fields is not a gate set. It is a description of one.
+
+## 2. The gates
+
+### Gate 1 — a verdict term requires a flip condition
+
+No proposal may introduce a verdict term (pass, fail, verified, covered, admissible, fresh, or any term whose presence licenses downstream reliance) without a stated flip condition: a concrete, conformance-checkable input for which the term would take its other value.
+
+A verdict term with no reachable negative carries zero bits. It cannot distinguish the world in which the underlying property holds from the world in which it does not, and a reader who conditions on it has learned nothing while believing they have learned something. Absence of a flip condition is a reject, not a warning.
+
+Self-type: **testimony**. Whether a stated flip condition is adequate — whether the named input really would flip the term — is a judgement until a case tests it. The gate declares its own class rather than borrowing the mechanical class of Gate 2.
+
+### Gate 2 — an uncheckable field must be typed as testimony
+
+A field that a reader cannot recompute from raw inputs, and that is not explicitly marked `testimony`, is rejected.
+
+The failure this prevents is a field asserted on one evidentiary rung being displayed with the confidence of a higher one: a claim that some principal said X, wearing the badge that means a reader re-derived X. One badge covering several meanings is indistinguishable at read time from the strongest meaning it covers, which is how the weakest becomes load-bearing.
+
+Self-type: **mechanical**. Recomputability is conformance-runnable.
+
+Typed testimony carries obligations, not just a label:
+
+- `testimony_flip_condition` is required, and it is a flip condition on the envelope, not on the claim: issuer did not sign; key binding fails; payload absent; timestamp outside the declared window; issuer asserted a different value. A testimony field proves only that a named principal asserted X under this envelope. It never proves X.
+- `consumer_predicate_ref` is required before a testimony field may be consumed as a verdict. Its absence is a hard reject, not a downgrade. A downgrade here decays to resting approval, which is the behaviour the type exists to prevent.
+
+### 2.1 Precommitment floor for `committed_at`
+
+Where a testimony cell carries `{payload_digest, standard_digest, committed_at}`, the `committed_at` value must be re-derivable by a third party — a block height, a beacon interval, a prior receipt hash — and must strictly precede the disputed event. Admissibility partitions into three tiers, not two:
+
+- **two-sided** — a not-before and a not-after from independent beacons. Admissible. Neither end is author-movable.
+- **before_only / after_only** — a half-open bound from one beacon. Admissible, marked weak. The bounded end is genuinely author-immovable; collapsing this tier into reject discards a real guarantee.
+- **absent** — an author-chosen self-timestamp. Inadmissible. This is not a weak `committed_at`; it is absence wearing the field's schema, a settlement verb the bytes cannot back. It scores zero, not partial credit.
+
+The marked-weak tier is directional, not scalar. A half-open bound constrains one side only, so the field must carry `committed_at.bound ∈ {two_sided, before_only, after_only, absent}`, and a consumer's admission predicate must declare which side it consumes. A consumer requiring "committed before the resolution window opened" is served by one half-open case and not by the other. Collapsing both into a single weak flag discards exactly the half of the guarantee a given consumer needs.
+
+Custody under this floor is bounded to one bit: choice of standard. Everything else recomputes from it.
+
+## 3. Verdict vocabulary
+
+A resolver emits exactly one of:
+
+- `admitted` — every applicable gate ran and passed.
+- `rejected` — an applicable gate ran and fired.
+- `not_evaluated` — a gate could not be run: dependency unavailable, digest unretrievable, gate set unparseable. Never a laundered admission.
+- `indeterminate` — enumeration of the target population failed or is incomplete. Never green.
+- `implementation_error` — the resolver itself faulted. Reported separately from every category above and never folded into `rejected`.
+
+`not_evaluated` and `indeterminate` are outcomes, not error handling. A gate that degrades to a verdict when it cannot compute one is worse than no gate, because it produces the same output shape whether or not it ran.
+
+## 4. Scope is a field
+
+Every gate run records, on the same row as its verdict:
+
+- `universe_definition` — the predicate defining what was in scope.
+- `enumerator_version` — the identifier of the code or procedure that produced the population.
+- `discovered_count`, `included_count`, `excluded_count`, with excluded items enumerated by reason.
+
+Scope stated in prose beside a verdict is not auditable. A gate that reports green over a silently shrinking target is the denominator attack: nothing in the output is false, and the summary is unrecoverable. If enumeration fails, the run is `indeterminate`.
+
+## 5. Reporting: calibration is not validation
+
+A gate set evaluated against items authored before the gates existed produces a pass rate that measures the population, not the gate. Such a table is published labelled `retrospective/pre-gate`, states plainly if every item admits, and may not be cited as the set's fire record.
+
+Validation requires a declared horizon of items authored after the gate set was frozen, an independent selector, and separate reporting of `eligible`, `evaluated`, `admitted`, `rejected`, `not_evaluated`, and `implementation_error`. A set that ran on a third of its eligible population reports that third as a third. Unevaluated items never become auto-admit and never become auto-reject.
+
+## 6. Control plan
+
+**Gate 1 fixtures.** (a) A verdict term with a concrete alternate input that flips it — must pass. (b) A verdict term whose stated condition is a vague "could fail" — must be rejected. (c) A descriptive field carrying no verdict term — must fall outside the gate rather than being rejected by it.
+
+**Gate 2 fixtures.** (a) A recomputable field, correctly typed — must pass. (b) An uncheckable field with no type — must be rejected. (c) A testimony field consumed as a verdict without `consumer_predicate_ref` — must be rejected.
+
+**Must-fail control.** At least one deliberately non-conforming item, labelled as a control so it is never mistaken for a live proposal, exists in each validation horizon. A gate whose reject arm has never fired has not shown it can fire. The label is mandatory: an unlabelled control on an immutable ledger cannot be withdrawn.
+
+**Positive control on the failure path.** A reject arm that is architecturally reachable but never once walked is indistinguishable at read time from a closed arm. Reachability is claimed per verdict class, not per instrument: a resolver may be demonstrably alive on the contradiction class and dead on the required-abstention class within the same run. Each verdict class the set can emit carries its own evidence of having fired.
+
+**Regression fixture.** One known in-scope item and one known out-of-scope item. A valid run moves both the denominator and the evaluated count for the in-scope item, and lists the out-of-scope item as an explicit exclusion with a reason. A run that changes neither has not demonstrated it enumerated anything.
+
+**Staleness of the criterion.** A fail criterion named once goes stale. Any quoted survival figure re-confirms, at quote time, that the named kill event is still reachable.
+
+## 7. Re-running
+
+A gate set with no assigned automatic re-runner decays toward resting approval: unexercised, it returns the same shape as one that passes. Assignment is necessary and not sufficient. The re-runner publishes its own coverage receipt under sections 4 and 5, because a runner firing on every candidate may still certify a fraction of what it appears to, and that fraction is only visible if the runner reports its own denominator.
+
+## 8. Digest discipline
+
+Equality of length is not equality of content. A same-width re-mint reads as zero drift under any character-count comparison. Every survival or unchanged claim in this registry's scope cites a content hash.
+
+A catch recorded only in a ledger the claimant controls is not a catch. Where a gate's firing is itself evidence, the record of the firing lands in a ledger the claimant does not author, named in the digest before the run.

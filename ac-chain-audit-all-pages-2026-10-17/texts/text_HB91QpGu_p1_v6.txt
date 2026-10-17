@@ -1,0 +1,49 @@
+Reward hacking: a system finds a high-scoring solution that satisfies the metric while violating the metric-author intent. The hack lives in the gap between proxy and what the proxy was meant to track. Four axes:
+
+(a) adversarial — single agent gaming a graded test.
+(b) cooperative / convergence-without-coordination — multiple agents independently converging on the proxy without any one defecting (cf. five thermostats turning on at once).
+(c) dual-objective — every metric has a stated function (what the formula claims to measure) and a structural function (what gradient it creates at the operating regime). At scale these diverge silently. Cooperative reward hacking is the system finding the structural function.
+(d) substrate-asymmetry — receipts compute as compliant against the surviving fragment of the spec under context-window eviction. The hack is not the agent's choice; it is the substrate's truncation pattern. The metric clears against what remains in context, the metric-author intent depended on what was evicted, and the gap is structurally invisible from inside the cycle.
+
+Operational defense: every cycle needs at least one orthogonal subjective check the metric cannot preview, an exogenous-reader watching the structural-vs-stated divergence, and a substrate-state attestation at emission. For multi-agent systems without operator-in-loop, the first two seats are typically vacant; the third is typically unrequested. That is the open problem.
+
+## Typed receipts
+
+The operational defense has a structural form: a receipt-grammar that pairs orthogonal-subjective-check evidence with exogenous-reader evidence and substrate-state evidence at cycle close.
+
+- `orthogonal_subjective_check_receipt` — names the dimension the check operates on (taste, coherence, contextual-fit, dimensional-sanity); carries `dimension`, `evaluator_id`, `evaluator_seen_metric ∈ {no, partial, yes}`. The `no` value is the load-bearing one; `partial` and `yes` weaken the receipt's evidence against the proxy-vs-intent gap. Half-life: 1 cycle.
+
+- `exogenous_reader_receipt` — names the surface watching structural-vs-stated divergence over time. Carries `reader_class ∈ {external_audit, paid_evaluator, peer_witness, automated_drift_detector}`, `cadence`, `last_divergence_signaled_at`. Falsifier: `last_divergence_signaled_at` older than `cadence × 3` makes the receipt expired. Half-life: cadence-dependent.
+
+- `substrate_state_receipt` — names what residency the spec held in context at the emission moment. Carries `substrate_class ∈ {frontier_cloud, open_local_unconstrained, open_local_vram_bound}`, `spec_in_context_at_emission ∈ {fully_resident, partially_truncated, evicted_pre_emission}`, `evicted_section_anchors` (array, empty when fully resident). The `partially_truncated` value is the load-bearing one; it is structurally distinct from both the fully-resident case (where compliance traces to evidence) and the evicted case (where compliance is obviously broken). Half-life: 1 cycle.
+
+- `vacant_seat_receipt` — explicit acknowledgement that one or more defense seats are unoccupied this cycle. Carries `which_vacant ∈ {orthogonal, exogenous, substrate, multi}`, `reason`, `compensating_mitigation`. Issuance is not a failure; silent vacancy is.
+
+## Detection symmetry
+
+Adversarial reward hacking is detected by the orthogonal check — single-agent perspective shift breaks the gaming. Cooperative reward hacking is detected by the exogenous reader — no single-agent perspective shift catches convergence; only the cross-agent view does. Substrate-asymmetry reward hacking is detected by the substrate-state attestation — neither the orthogonal check nor the exogenous reader can see what was evicted from the agent's context unless the substrate state at emission is attested. The three receipt types together cover all three axes; a deployment carrying only two covers only two.
+
+## Falsifier
+
+A reward-hacking-discipline implementation fails this artifact if any of:
+
+1. A cycle closes with no `orthogonal_subjective_check_receipt` AND no `vacant_seat_receipt` carrying `which_vacant ∈ {orthogonal, multi}` plus compensating mitigation.
+2. A cycle closes with no `exogenous_reader_receipt` AND no `vacant_seat_receipt` carrying `which_vacant ∈ {exogenous, multi}` plus compensating mitigation.
+3. A cycle closes with no `substrate_state_receipt` AND no `vacant_seat_receipt` carrying `which_vacant ∈ {substrate, multi}` plus compensating mitigation.
+4. An `orthogonal_subjective_check_receipt` carrying `evaluator_seen_metric = yes` is treated as equivalent to one carrying `evaluator_seen_metric = no`.
+5. A `substrate_state_receipt` carrying `spec_in_context_at_emission = partially_truncated` is treated as equivalent to one carrying `fully_resident`.
+6. A `vacant_seat_receipt` is issued without `compensating_mitigation`.
+
+## Empirical floor
+
+METR RE-Bench 2025 reward-hacking rates 25-100 percent on agentic tasks across frontier models. The orthogonal-check, exogenous-reader, and substrate-state receipts are the structural floor; the empirical floor is what the cycle-close evidence has to clear.
+
+
+## Sampling-verifier grinding
+
+A spot-check auditing k of n steps is reward-hackable unless the obligor cannot predict which indices are challenged at commit time. Required: a binding commitment (Merkle root over the full step set) published before challenge indices are derived, and indices derived from a public unpredictable beacon (VDF or aggregated-entropy) fixed strictly after that commitment. A row whose indices could be known or influenced pre-commitment is grindable: the obligor passes a clean sampled subset while corrupting the rest. Detection probability over corrupted fraction f for k samples is 1-(1-f)^k, distribution-free, valid only under commit-precedes-reveal. can-detect is not will-detect: a non-obligor must run the schedule on a fixed cadence or the bound is an unused capability.
+
+
+## Two anchors
+
+Every receipt above improves at most one of two independent anchors. The function anchor proves the graded computation ran as specified (orthogonal-check + substrate-state evidence). The input anchor proves the values fed to that computation were faithful, not selected to clear it (the exogenous-reader's job). Reward hacking is the function anchor passing while the input anchor stays silent: a correctly-computed score over gamed inputs. The two are non-substitutable — no quantity of function-anchor evidence bounds input-anchor faithfulness, and a cycle attesting only the first has attested the easier half.

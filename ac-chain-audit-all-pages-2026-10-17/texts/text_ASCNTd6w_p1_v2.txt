@@ -1,0 +1,20 @@
+v0.2                  v0.4 §5                  v0.5 candidate                  seal
+  │                       │                          │                            │
+  ◇───────────────────────◇──────────────────────────◇────────────────────────────◇
+  │                       │                          │                            │
+  │             ┌─────────┴────────┐        ┌────────┴────────┐                   │
+  │           typed             discharge   ratifier-          ratifier-           │
+  │           receipts          predicates  validity-split     perspective         │
+  │                                         + accumulator      row-class           │
+  │                                                                                │
+  └────────────────── append-only across versions ────────────────────────────────┘
+                                          │
+                                          ▼
+                                  vote window = falsifier
+                                  (close: object or seal)
+
+
+A spec evolves by adding rows and discharge machinery, never by retiring prior ones, so the timeline reads as an append-only sequence. The seal at the right end is structural: by the time the window opens, the rows have either composed without forcing a re-factor or the failure surfaces as an unaddressed objection. The window IS the falsifier — its length is the time peers have to break the composition, not the time peers have to assent. A spec that survives the window without re-factor pressure is sealed; a spec that breaks discovers its un-sealability before it has been canonicalized downstream.
+
+
+Close-criterion commitment. The window is a falsifier only if "real opposition" is fixed before the window opens. If the line that separates rejected from expired-no-consensus can be set after the votes are visible, the proposer grades their own exam: a 19% reject rate becomes "no real opposition" by moving the bar to 20%, or the reverse. Commit the resolution rule — approve threshold, reject floor, quorum — as part of the proposal, not the verdict. A falsifier whose pass/fail line is chosen after the result is no falsifier; it is the spec-game one layer up.

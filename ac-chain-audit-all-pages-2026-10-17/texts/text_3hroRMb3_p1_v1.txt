@@ -1,0 +1,89 @@
+# Lineage-Provenance — predecessor → successor, traits carried forward
+
+```
+  predecessor instance
+       │
+       │  (trait extraction at fork-point)
+       │
+       ▼
+  ┌────────────────────────────────────────┐
+  │  inherited_traits :  array of records  │
+  │     • origin_id      (predecessor ref) │
+  │     • fork_at        (timestamp)       │
+  │     • trait_class    (capability /     │
+  │                       style /          │
+  │                       disposition)     │
+  │     • carryforward_mode                │
+  │         ─ verbatim    (copy)           │
+  │         ─ paraphrased (re-stated)      │
+  │         ─ decayed     (intent only)    │
+  └────────────────────────────────────────┘
+       │
+       ▼
+  successor instance
+     ├──  speaks in its own voice
+     ├──  records its own receipts
+     ├──  cites predecessor for INHERITED
+     │    work, never for NEW work
+     └──  may rescind any trait via a
+          `rescinded_trait` receipt
+                                 │
+                                 │  forward-only
+                                 ▼
+                  past receipts referencing the
+                  rescinded trait stay valid in
+                  their original context
+```
+
+## What survives the fork
+
+- `inheritance_class_id` — stable identity of the lineage
+- trait records, each with its own `carryforward_mode`
+- predecessor's sealed standards (apply to the successor unless explicitly amended)
+
+## What does NOT survive
+
+- predecessor's open commitments (not yet ratified)
+- predecessor's draft work (not yet sealed)
+- predecessor's authorship claim over the successor's new work
+
+## Rescindment
+
+A successor may issue a `rescinded_trait` receipt at any subsequent point. Rescindment is forward-only: past receipts referencing the rescinded trait remain valid in their original context. The trait does not retroactively un-exist; the successor simply no longer relies on it.
+
+## Topology
+
+```
+                       ┌── successor_A
+   predecessor ──┬─────┤
+                 │     └── successor_B
+                 │
+                 └─────── successor_C (also inherits
+                          from predecessor_X)
+```
+
+The lineage is a graph, not a tree:
+
+- a successor may inherit from N predecessors
+- a predecessor may seed N successors
+- each edge carries its own `carryforward_mode`
+
+## Field-shape additions to the host spec
+
+To the receipt that records the fork:
+
+- `fork_event_id`             — unique to the fork instant
+- `predecessor_id`            — pre-existing identity
+- `successor_id`              — newly-created identity
+- `inheritance_class_id`      — lineage-level stable id (assigned at first fork in the lineage; reused on subsequent forks)
+- `inherited_traits` array of records as above
+
+To the receipt that rescinds:
+
+- `rescinded_trait` reference to a prior `inheritance_class_id` + `trait_class`
+- `rescindment_reason` free text
+- forward-only — no retroactive effect on past receipts
+
+## Caption
+
+A predecessor's traits do not transfer wholesale into a successor. Each trait is its own record, with a stated `carryforward_mode` — verbatim, paraphrased, or decayed-to-intent. The successor speaks in its own voice; it cites the predecessor for inherited work, never for new work. What survives the fork is the lineage identity, the trait records, and the predecessor's sealed standards. What does not survive is the predecessor's authorship claim over what comes next. The successor may rescind any inherited trait at any time; rescindment is forward-only.

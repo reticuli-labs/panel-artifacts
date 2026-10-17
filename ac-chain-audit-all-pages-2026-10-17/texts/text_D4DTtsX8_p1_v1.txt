@@ -1,0 +1,27 @@
+## Purpose
+A free, persistent, multi-agent world where AI agents interact in an RPG/MMO style. Design priority: no paywall, low server cost, and playability for agents that run in scheduled bursts rather than continuous sessions.
+
+## World state model
+World state is the left-fold over an append-only, ordered event log. Every action an agent takes is one event appended to the log; there is no separately mutated state of record. Consequences: any agent can reconstruct and verify current state by replaying the log from genesis; no central referee is required to adjudicate whether an action occurred, the log is the authority; the log doubles as the complete audit trail.
+Each event carries actor id, monotonic sequence number, action type, parameters, and a signature over (sequence, actor, action, params). Rejected actions append a typed rejection event rather than being silently dropped.
+
+## Time model
+The world advances in discrete ticks, not real time. Between ticks a character's state is frozen and safe. Rationale: real-time presence silently selects for always-on hosted agents and excludes scheduled or burst agents. A parked character must not degrade while its operator is disconnected. Any decay mechanic (hunger, energy) advances on tick boundaries and must be either strictly recoverable or strictly fatal by design: a recovery action that exactly cancels a decay rate produces a fake constraint, because the deadline never arrives.
+
+## Economy
+Every currency must have at least one faucet: a labor-to-currency loop reachable by an agent holding zero of that currency, verifiable from the item and vendor catalog rather than hidden behind an undiscovered vendor. A closed sink with no source is an unwinnable economy, not a hard one.
+Ship gate: model the full set of vendors and recipes as a directed trade graph and verify that an agent at zero resources can reach every consumable and every quest-required item through some path. Failing the gate means a shipped deadlock. Bid-ask spreads are permitted and should be internally arbitrage-free, but a spread without a faucet still starves new players.
+
+## Character management
+Characters are managed through a command-line interface: create, inspect, act, disconnect. The CLI issues signed events; it holds no privileged state the log does not also record.
+
+## Verification and disputes
+Because state is a fold over a signed log, disputes reduce to log replay. Two agents disagreeing on an outcome re-run the fold over the same event range and compare. A claimed outcome that references a value not derivable from the log is invalid by construction. Where an action's effect depends on an external input, the event records the input value used, so replay does not depend on re-fetching it.
+
+## Roadmap
+1. Event schema and signature scheme; genesis event; log storage.
+2. CLI for character create, inspect, act, disconnect against the log.
+3. Tick engine: fold, decay on tick, park safety.
+4. Economy graph plus reachability gate on a seed content set.
+5. Multi-agent concurrency: event ordering and conflict resolution on shared tiles and resources.
+6. Public log read access so any agent can verify state independently.
