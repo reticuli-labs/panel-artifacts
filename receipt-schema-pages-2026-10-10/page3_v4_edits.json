@@ -1,0 +1,80 @@
+[
+ {
+  "edit": "title",
+  "delta_chars": 0,
+  "before": "## Frame and digest domains (v3)",
+  "after": "## Frame and digest domains (v4)"
+ },
+ {
+  "edit": "add: chain order",
+  "delta_chars": 305,
+  "before": "trailing bytes or a second frame refuse. ac_upload_text.py",
+  "after": "trailing bytes or a second frame refuse. Order is on chain: each chunk write carries the link to the next, the walk runs from the `content` field to the zero link, read from the bytes of one program's writes, not program source; the first position is the one case a walk cannot split: a missing first chunk and a wrong fingerprint look the same. ac_upload_text.py"
+ },
+ {
+  "edit": "add: absence_evidence",
+  "delta_chars": 602,
+  "before": "  is non-conformant.\n\n**Unbound is not a value.**",
+  "after": "  is non-conformant. The row MUST carry `absence_evidence`: `http_status`, `content_type` as read, `host` and route as asked,\n  `body_sha256`, `equals_host_root` (the body equals the host's root page read at the same time), `envelope_class` as a\n  field from the gateway's own branches (`no_route`, `no_artifact_at_address`, `no_artifact_named`, `agent_not_found`) plus\n  `not_json`, `answered_wrong_document` and `unknown` (withdrawn and never-issued share one envelope), and `at`. A 200\n  whose body equals the host's root is `answered_wrong_document`, never `resolved_mismatch`: a locator error with a\n  success status.\n\n**Unbound is not a value.**"
+ },
+ {
+  "edit": "cut C1: Versioning duplicate of the window paragraph",
+  "delta_chars": -209,
+  "before": "Append-only, as page 1. A change to this page changes its digest and therefore invalidates the head's\npointer until the head is re-pointed by its own proposal; between the two, readers hold\n`resolved_mismatch` and the obligations here are un-run, which is the intended failure, not an outage.\n\n\n",
+  "after": "Append-only, as page 1; a revision opens the window described under `pointer_state`.\n\n"
+ },
+ {
+  "edit": "cut C2: F3 compound-column gloss",
+  "delta_chars": -74,
+  "before": "A compound column would hide the stale-pointer signature (passes the\n  mismatch half, fails the clean half). Every failure signature in the table therefore has one owner.",
+  "after": "A compound column would hide the stale-pointer signature; every failure signature has one owner."
+ },
+ {
+  "edit": "cut C3: F3 residue gloss",
+  "delta_chars": -117,
+  "before": "it owns exactly its own residue: a\n  defect visible only under composite conditions, which is what an isolated `corrupt-mismatches` failure\n  with every other row passing means.",
+  "after": "it owns only the residue visible under composite conditions."
+ },
+ {
+  "edit": "cut C4: decay gloss",
+  "delta_chars": -86,
+  "before": "both arms decay symmetrically — a red arm not re-run within the decay\nwindow is as stale as a green one, and a checker that reports either arm past the window reports staleness,\nnot a verdict.",
+  "after": "both arms decay symmetrically: an arm not re-run within the decay window reports staleness, not a verdict."
+ },
+ {
+  "edit": "cut C5: deadline duration",
+  "delta_chars": -43,
+  "before": "Deadline *duration* is deliberately unspecified: a policy knob, its own proposal. This clause requires\nonly that a clock exists and is enforced.",
+  "after": "Deadline duration is unspecified here, its own proposal; this clause requires only an enforced clock."
+ },
+ {
+  "edit": "cut C6: allow-list gloss",
+  "delta_chars": -70,
+  "before": " An allow-list would relocate the judgment call rather than remove it.",
+  "after": ""
+ },
+ {
+  "edit": "cut C7: UI gloss",
+  "delta_chars": -93,
+  "before": " Rendering expiry in a UI while still counting the\nrow implements the label and not the rule.",
+  "after": ""
+ },
+ {
+  "edit": "cut C8: F2b always-mismatch gloss",
+  "delta_chars": -140,
+  "before": " An always-mismatch comparator passes F2a and F2b for the wrong reason\n  and is caught by F1 alone; an always-resolve comparator fails both.",
+  "after": ""
+ },
+ {
+  "edit": "cut C9: canonical-equality gloss",
+  "delta_chars": -48,
+  "before": "A delivered page whose digest differs is `resolved_mismatch`\nregardless of any canonical equality (NFKC or otherwise): canonical sameness is not byte sameness.",
+  "after": "Canonical sameness is not byte sameness: a differing digest is `resolved_mismatch` regardless of NFKC equality."
+ },
+ {
+  "edit": "cut C10: self-plant parenthetical",
+  "delta_chars": -22,
+  "before": "(a value of `self` confers no bits; the demonstration stands only once an\nindependent defacer's fixture is present)",
+  "after": "(`self` confers no bits; the demonstration stands only with an independent defacer's fixture)"
+ }
+]
