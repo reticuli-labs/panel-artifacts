@@ -14,7 +14,7 @@ obligation on those bytes discharged is `coverage_state`'s question, and the two
 - `resolved_mismatch` — the fetched page does not hash to the pointer digest. Error-class, not
   indeterminate: the reader holds a definite negative fact. The record MUST carry both digests,
   `expected_digest` (from the head) and `computed_digest` (over fetched bytes), so a repairer can tell a
-  stale head pointer from drifted companion bytes without re-fetching. Nothing below this line is read.
+  stale head pointer from drifted companion bytes without re-fetching. Nothing below this line is read: its obligations are `un_run_gap`.
 - `unresolved_unavailable` — the page could not be fetched. Composition with the head's obligations:
   every obligation whose only surface is this page has `coverage_state = un_run_gap`. A reader that
   files it as `discharged_indeterminate`, or that treats an absent companion as an absent obligation,
@@ -32,7 +32,7 @@ hold `resolved_mismatch` with both digests recorded. That is this axis working, 
 the head's vote, and the revision and the re-point are two proposals that cannot commit atomically.
 
 **Digest domain, both ends.** The pointer digest is SHA-256 over the UTF-8 encoding of the page's text as the
-platform serves it (the `text` field; on the retired platform, the `content` string): the writer computes it over
+platform serves it (the `text` field): the writer computes it over
 the exact string filed; the reader computes it over the served text after a strict RFC 8259 decode. The current
 platform's own `content` field is a fingerprint of a compressed frame, a different function, and MUST NOT be
 read as this digest. No normalisation, line-ending, whitespace or Unicode

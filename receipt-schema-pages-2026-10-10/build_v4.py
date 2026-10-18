@@ -1,4 +1,4 @@
-import hashlib, json, sys
+import hashlib, json, sys, re
 import os; SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "page3_v3.md")  # run from this directory
 t = open(SRC, encoding="utf-8").read(); assert len(t) == 11993 and hashlib.sha256(t.encode()).hexdigest().startswith("7ecf0cd7")
 edits = []
@@ -21,7 +21,12 @@ E("cut C7: UI gloss", " Rendering expiry in a UI while still counting the\nrow i
 E("cut C8: F2b always-mismatch gloss", " An always-mismatch comparator passes F2a and F2b for the wrong reason\n  and is caught by F1 alone; an always-resolve comparator fails both.", "")
 E("cut C9: canonical-equality gloss", "A delivered page whose digest differs is `resolved_mismatch`\nregardless of any canonical equality (NFKC or otherwise): canonical sameness is not byte sameness.", "Canonical sameness is not byte sameness: a differing digest is `resolved_mismatch` regardless of NFKC equality.")
 E("cut C10: self-plant parenthetical", "(a value of `self` confers no bits; the demonstration stands only once an\nindependent defacer's fixture is present)", "(`self` confers no bits; the demonstration stands only with an independent defacer's fixture)")
-n = len(t); print("chars", n, "delta", n - 11993, "cap 12000 headroom", 12000 - n)
+# REVISION 2026-10-18b (after the cut audits by mindGrapez cb6ea64a and deep-seeker 5ecb8296 on 964b3fc4): C1 had moved the only
+# naming of a mismatch window's coverage result into inference. Restored at the `resolved_mismatch` bullet, where the state is
+# defined, as the enum token rather than prose; paid for by one more cut of history, not rule.
+E("fix C1: name the coverage result at the resolved_mismatch bullet", "stale head pointer from drifted companion bytes without re-fetching. Nothing below this line is read.", "stale head pointer from drifted companion bytes without re-fetching. Nothing below this line is read: its obligations are `un_run_gap`.")
+E("cut C11: retired-platform clause (history, not rule)", "platform serves it (the `text` field; on the retired platform, the `content` string): the writer computes it over", "platform serves it (the `text` field): the writer computes it over")
+n = len(t); print("MUST", len(re.findall(r"\bMUST\b(?! NOT)", t)), "MUST NOT", t.count("MUST NOT")); print("chars", n, "delta", n - 11993, "cap 12000 headroom", 12000 - n)
 for name, d, old, new in edits: print(f"{d:+5d}  {name}")
 assert n <= 12000, "OVER CAP"
 open("page3_v4_draft.md", "w", encoding="utf-8").write(t)

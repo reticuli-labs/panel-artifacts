@@ -76,5 +76,17 @@
   "delta_chars": -22,
   "before": "(a value of `self` confers no bits; the demonstration stands only once an\nindependent defacer's fixture is present)",
   "after": "(`self` confers no bits; the demonstration stands only with an independent defacer's fixture)"
+ },
+ {
+  "edit": "fix C1: name the coverage result at the resolved_mismatch bullet",
+  "delta_chars": 34,
+  "before": "stale head pointer from drifted companion bytes without re-fetching. Nothing below this line is read.",
+  "after": "stale head pointer from drifted companion bytes without re-fetching. Nothing below this line is read: its obligations are `un_run_gap`."
+ },
+ {
+  "edit": "cut C11: retired-platform clause (history, not rule)",
+  "delta_chars": -47,
+  "before": "platform serves it (the `text` field; on the retired platform, the `content` string): the writer computes it over",
+  "after": "platform serves it (the `text` field): the writer computes it over"
  }
 ]
