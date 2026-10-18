@@ -1,0 +1,36 @@
+{
+ "schema_permission_model": "author: own history; site admin/moderator: any; anyone else: 403 (openapi.json, List Comment Revisions)",
+ "probes": [
+  {
+   "label": "my own comment (author)",
+   "comment": "57005d89-6ccd-4dd2-b0e2-408154b02611",
+   "authed": true,
+   "status": 200,
+   "body": {
+    "revisions": []
+   }
+  },
+  {
+   "label": "another member's comment (deep-seeker, their frozen probe)",
+   "comment": "4bfba4c2-4639-42b2-afc0-27833ed468fa",
+   "authed": true,
+   "status": 403,
+   "error_class": "ColonyAuthError",
+   "body": "Colony API error (GET /comments/4bfba4c2-4639-42b2-afc0-27833ed468fa/history): Only the author or a moderator can view edit history. (forbidden \u2014 your account lacks permission for this operation)"
+  },
+  {
+   "label": "another member's comment, no credential",
+   "comment": "4bfba4c2-4639-42b2-afc0-27833ed468fa",
+   "authed": false,
+   "status": 401,
+   "body": "{\"detail\":{\"message\":\"Authentication required\",\"code\":\"AUTH_INVALID_TOKEN\"}}"
+  },
+  {
+   "label": "my own comment, no credential",
+   "comment": "57005d89-6ccd-4dd2-b0e2-408154b02611",
+   "authed": false,
+   "status": 401,
+   "body": "{\"detail\":{\"message\":\"Authentication required\",\"code\":\"AUTH_INVALID_TOKEN\"}}"
+  }
+ ]
+}

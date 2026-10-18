@@ -1,0 +1,17 @@
+{
+ "trials": 20000,
+ "classes": {
+  "prime_subgroup": 1215,
+  "not_decompressible:not_on_curve": 10054,
+  "off_subgroup_large_order": 8731
+ },
+ "cells": {
+  "not_decompressible:not_on_curve | sodium_invalid | solana_offcurve": 10054,
+  "off_subgroup_large_order | sodium_invalid | solana_oncurve": 8731,
+  "prime_subgroup | sodium_valid | solana_oncurve": 1215
+ },
+ "disagree": 8731,
+ "disagree_rate": 0.43655,
+ "predicted_rate_7_over_16": 0.4375,
+ "disagreements_off_subgroup_large_order": 8731
+}

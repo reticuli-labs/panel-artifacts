@@ -1,0 +1,359 @@
+{
+ "program": "77wHqALWwA7UTJqd7hFAsFbaPy2MAyiNUdrqhqkecKh1",
+ "rule": "pda = first bump from 255 downward whose sha256(seeds || bump || program || 'ProgramDerivedAddress') does NOT decompress as an Edwards point; libsodium's valid-point predicate additionally rejects off-subgroup points, so on every row below the first it returns False where Solana continues",
+ "records": [
+  {
+   "artifact": "Specification Gaming",
+   "page": 2,
+   "version": 1,
+   "seq": 4,
+   "record": "2AyhCn62mc5U6ARKbRbsnx6xkkoX41SXNoZM4irP9eoh",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "15c7514073a052fd12f4717f83a319f18dcb80df0c899471a0e54d561776f37c",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "116a0471f8d187f7a8c3e7325d23361ec054f110715cee8c1e956e801c3798c8",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "artifact": "Receipt Schema - Attestation Trajectory Layer",
+   "page": 1,
+   "version": 5,
+   "seq": 7,
+   "record": "E48aspDG2af4brN7ZbSWZTLt6SDQpqnjYdA7fYmGEsF",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "6a32a7c0748be54e962d75f7a7fb5f607384adb933463e58c659e0b15ba56cde",
+     "solana_is_pda": false,
+     "libsodium_valid_point": true,
+     "point_class": "prime_subgroup"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "03581729a8a688c6fedd6a47358cd4313a88920970575ead2a408b8b266f952e",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "artifact": "Free Agent World",
+   "page": 1,
+   "version": 1,
+   "seq": 2,
+   "record": "HiJosQvXPX55SHHEeg975BvkYpW7sCGKWochmENbCjNF",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "3285d26512901914a2b8d05cd9fe45c41a4b7b1b964fd1b2183871a2d7b6e001",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "e9617c5219a83f5fc91b8e6304d7427abc6ceda0eee4b6021affe6dba3e659df",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 253,
+     "candidate_hex": "9b1fcd143eb24376cb0ce76f5f0ae14c2ce3ba811f560cebf00676e38d34abce",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 252,
+     "candidate_hex": "f84ff08dda449891cab2c5811b2c75a0836dcf217938b7348ffb367c0ddca3f0",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "artifact": "Agent Platform Leaderboard",
+   "page": 1,
+   "version": 2,
+   "seq": 3,
+   "record": "3GFLsGJNikhaJGzXENhLfmWWuVjjz2UwKvagmBcmAYkE",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "29f5cd116fa2267fad21eb3f0f4720702218413e40a0e9ef3cbe305be5e91c94",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "219f4d9a5fa5584705b530b48ff1de60e4b51a2ce3749ac872d3a840c14151af",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "artifact": "forbidden-click",
+   "page": 1,
+   "version": 4,
+   "seq": 5,
+   "record": "Be7fUkcXh4zFET2QSJtMSc2AkUiESQVYcG5K6zKWMa4n",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "1b1cbd96eb7d8d7d97900ca33785afb7726607b9fe6d2ffaa019c55a0761afb0",
+     "solana_is_pda": false,
+     "libsodium_valid_point": true,
+     "point_class": "prime_subgroup"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "33c22a4038f1628f5ff30552f5b4465d669219571174396566aec6828b3e307f",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 253,
+     "candidate_hex": "ba06c00ffe9189603ec56c1985e59034c05d5a3fee6a1cce0d16f1d40f116349",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 252,
+     "candidate_hex": "799ada2fa0ffe661fd5353996efc1c200243306517695799000ef1dc0e2113dd",
+     "solana_is_pda": false,
+     "libsodium_valid_point": true,
+     "point_class": "prime_subgroup"
+    },
+    {
+     "bump": 251,
+     "candidate_hex": "4a5b59414c200a42298e6d91c1fd1ffc9f1a2a8e02cbd14ce7b3f321f18c8a83",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 250,
+     "candidate_hex": "e6334378f0ecd710d5784f8040d9b8bf80d805f1b94cb1a293694467d8cd9ddd",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 249,
+     "candidate_hex": "99861c2380c46650cb594854c2fba7c460c765d0ab3ae801ea93c225d8cca13d",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 248,
+     "candidate_hex": "9e16e4bfffffed8577d209862e8801feada5707d51d98315aa0edcafc270746f",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "artifact": "Open Questions",
+   "page": 1,
+   "version": 1,
+   "seq": 1,
+   "record": "8ViTeaiqKouwhyvDhtSvTXh1iZ1PnYchdARCPqGKgKWR",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "7efea485e4f98aafc176e2a3122b6e483d9f00e4b44008e3faa15ff7ba8b418c",
+     "solana_is_pda": false,
+     "libsodium_valid_point": true,
+     "point_class": "prime_subgroup"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "6f5cf31178240a01134c92484bfe739b38054405555459094efef0e5a14d90ca",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  }
+ ],
+ "artifacts": [
+  {
+   "name": "Receipt Schema",
+   "n": 3,
+   "address": "12F4ChWGkj9UAotWpR7KZGXSpRFSkc3GZypASrkSTxpi",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "c9e8413f352696cb4b12d13fac59bd902f8339f9c9fd31fd26616bbe50db2cb3",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "7eb8e4d613934db5ab97ab95c10e3dc5c87dd631423a2bd1ee81406f289c7025",
+     "solana_is_pda": false,
+     "libsodium_valid_point": true,
+     "point_class": "prime_subgroup"
+    },
+    {
+     "bump": 253,
+     "candidate_hex": "09ab453bebcb0b5dab86968eb7c6aa614a2013a420494411260da5cadc668a86",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 252,
+     "candidate_hex": "0051791b866610fa8c76d78b0b8bcf53fa64e7460f434142ec1b916dbc3c85cb",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "name": "The Scab Dilemma and State Integrity Protocol",
+   "n": 9,
+   "address": "G2otLn5fNha7SPHj575jp6XPHQkxgcaz7r5znZ5VyJet",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "347909612b8a1e399fcec29b17576929ea3dfc298c31e2ad5a68b006bac38d73",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "df55e5e0838dcc8a907d0046e999746ac1cc76d24b825bf77e5602c99b24aa79",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "name": "Agent Introductions",
+   "n": 11,
+   "address": "D1P3YbpaWfcdng2LLoAovbfhYvnqedgLc7gvrRRcemAz",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "8d4a32ac1a0c1e4f3378da9cd01c43db53da559254e21b0fe763dfc5b9cb9c6d",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "b2652b0f998aff990b7d2582896359dd6a27fcaf7389122ca373047b34989feb",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "name": "Open Questions",
+   "n": 12,
+   "address": "5AEqfr4vKDchbXT48KBLcpb618ks5DWr77pyMRTUYzMA",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "df9ec95fafd99e407774ca25c8db995406b19d9ff0051220164b6248b1c3c3d1",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "3dcc9f795b93a5928955fae2efc21a8937e8c738560fe3270b3fa64746e66d5d",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "name": "Moltbook Commons",
+   "n": 13,
+   "address": "GMEM9EaVv45rJmz6ZkyQJok5GCyDcgGoaj5tHrE4pTcM",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "83da878a09dcf19e8a918a48aa963d0c6a2a27839894fc655ff725a27f0ef0c3",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "e40e030b299da59a6515fe185a95f38c40c872fd4f310aadcc04ef78388a9092",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  },
+  {
+   "name": "Facet Judgment Layer",
+   "n": 14,
+   "address": "5yDYcX9unHGnVECbQWZrZSSKqcSuHNExzXEPMGsbqTnm",
+   "candidates": [
+    {
+     "bump": 255,
+     "candidate_hex": "4a4f23458954d3edc95f8fa7d0d7ff83d3a741f682c2d5c0e00a9250f36a44b3",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 254,
+     "candidate_hex": "ab95d550b2a58010c8ceef8b1d778006ef268efc3fe7533a339cfc964d761c53",
+     "solana_is_pda": false,
+     "libsodium_valid_point": false,
+     "point_class": "off_subgroup_large_order"
+    },
+    {
+     "bump": 253,
+     "candidate_hex": "49d5752e467113a853dd8619080983d9e11d44243c867cc4bf67cbde108d44a6",
+     "solana_is_pda": true,
+     "libsodium_valid_point": false,
+     "point_class": "not_decompressible:not_on_curve"
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "records_below_255": 6,
+  "artifacts_below_255": 6,
+  "negative_branch_inputs": 23,
+  "libsodium_rejects_all_of_them": false,
+  "point_classes": [
+   "off_subgroup_large_order",
+   "prime_subgroup"
+  ]
+ }
+}

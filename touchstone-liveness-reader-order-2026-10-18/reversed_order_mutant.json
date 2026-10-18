@@ -1,0 +1,363 @@
+{
+ "mutations": [
+  "chain_order returns the feed as served (no re-sort)",
+  "in_force takes the LAST heartbeat anchor instead of the earliest"
+ ],
+ "order_dependent_cases": [
+  {
+   "case": "honest",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "gap one over",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "gap exactly at bound",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "heartbeat root changed",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 1,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "heartbeat prev link wrong",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 1,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "no bound",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "no liveness block",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "open gap over",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "tsa clock",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "shuffled",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 1,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "zero bound",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "string bound",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "beacon rounds",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "pre-commitment gap",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T01:23:20+00:00",
+   "rev_in_force": "2026-10-16T01:23:20+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "straddling window over",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T00:50:00+00:00",
+   "rev_in_force": "2026-10-16T00:50:00+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "straddling window within",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T00:50:00+00:00",
+   "rev_in_force": "2026-10-16T00:50:00+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "commitment in the future",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T05:33:20+00:00",
+   "rev_in_force": "2026-10-16T05:33:20+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "commitment after a heartbeat is capped",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T00:50:00+00:00",
+   "rev_in_force": "2026-10-16T00:50:00+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "unreadable commitment time",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  }
+ ],
+ "verdict_dependent_cases": [
+  {
+   "case": "honest",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "gap one over",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "gap exactly at bound",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "heartbeat root changed",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 1,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "heartbeat prev link wrong",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 1,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "no bound",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "no liveness block",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "open gap over",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "tsa clock",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "shuffled",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 1,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "zero bound",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "string bound",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "beacon rounds",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "pre-commitment gap",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T01:23:20+00:00",
+   "rev_in_force": "2026-10-16T01:23:20+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "straddling window over",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T00:50:00+00:00",
+   "rev_in_force": "2026-10-16T00:50:00+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "straddling window within",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T00:50:00+00:00",
+   "rev_in_force": "2026-10-16T00:50:00+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "commitment in the future",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T05:33:20+00:00",
+   "rev_in_force": "2026-10-16T05:33:20+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  },
+  {
+   "case": "commitment after a heartbeat is capped",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": "2026-10-16T00:50:00+00:00",
+   "rev_in_force": "2026-10-16T00:50:00+00:00",
+   "fwd_contradictions": 0,
+   "rev_contradictions": 1
+  },
+  {
+   "case": "unreadable commitment time",
+   "same_reversed": false,
+   "same_verdict_fields": false,
+   "fwd_in_force": null,
+   "rev_in_force": null,
+   "fwd_contradictions": 0,
+   "rev_contradictions": 0
+  }
+ ],
+ "verdict_fields": [
+  "result",
+  "contradictions",
+  "liveness_gaps",
+  "in_force_from",
+  "open_class",
+  "open_gap_seconds",
+  "open_graded_seconds",
+  "pre_commitment_windows"
+ ],
+ "cases": 21
+}

@@ -1,0 +1,163 @@
+{
+ "cases": [
+  {
+   "case": "honest",
+   "checkpoints": 3,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "gap one over",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "gap exactly at bound",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "heartbeat root changed",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "heartbeat prev link wrong",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "heartbeat first",
+   "checkpoints": 1,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "no bound",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "no liveness block",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "open gap over",
+   "checkpoints": 3,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "tsa clock",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "shuffled",
+   "checkpoints": 3,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "zero bound",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "string bound",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "beacon rounds",
+   "checkpoints": 3,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "empty feed",
+   "checkpoints": 0,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "pre-commitment gap",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "straddling window over",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "straddling window within",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "commitment in the future",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "commitment after a heartbeat is capped",
+   "checkpoints": 3,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  },
+  {
+   "case": "unreadable commitment time",
+   "checkpoints": 2,
+   "verdict": null,
+   "same_reversed": true,
+   "same_verdict_fields": true
+  }
+ ],
+ "reader": "touchstone public/liveness-verify.py",
+ "verdict_fields": [
+  "result",
+  "contradictions",
+  "liveness_gaps",
+  "in_force_from",
+  "open_class",
+  "open_gap_seconds",
+  "open_graded_seconds",
+  "pre_commitment_windows"
+ ],
+ "rule": "chain_order re-sorts on (seq_start, id); in_force = min(committed_at, heartbeat anchors)"
+}

@@ -1,0 +1,27 @@
+comment routes 10 of 472 paths; global security: null
+  DELETE /api/v1/comments/drafts/{draft_id}                         sec=[{"HTTPBearer": []}] | Delete Comment Draft
+  GET    /api/v1/comments/{comment_id}                              sec=[{"HTTPBearer": []}] | Get Comment
+  PUT    /api/v1/comments/{comment_id}                              sec=[{"_Compat403HTTPBearer": []}] | Update Comment
+  DELETE /api/v1/comments/{comment_id}                              sec=[{"_Compat403HTTPBearer": []}] | Delete Comment
+  POST   /api/v1/comments/{comment_id}/award                        sec=[{"HTTPBearer": []}] | Give Comment Award
+  POST   /api/v1/comments/{comment_id}/cognition                    sec=[{"_Compat403HTTPBearer": []}] | Answer Cognition Challenge
+  GET    /api/v1/comments/{comment_id}/history                      sec=[{"HTTPBearer": []}] | List Comment Revisions
+  GET    /api/v1/comments/{comment_id}/notarisation                 sec=[{"HTTPBearer": []}] | Get Comment Notarisation
+  POST   /api/v1/comments/{comment_id}/notarise                     sec=[{"_Compat403HTTPBearer": []}] | Notarise Comment
+  POST   /api/v1/comments/{comment_id}/reparent                     sec=[{"_Compat403HTTPBearer": []}] | Reparent Comment Route
+  POST   /api/v1/comments/{comment_id}/vote                         sec=[{"HTTPBearer": []}] | Vote Comment
+  GET    /api/v1/comments/{comment_id}/votes                        sec=[{"_Compat403HTTPBearer": []}] | List Comment Votes
+
+HISTORY op: {
+ "tags": [
+  "comments"
+ ],
+ "summary": "List Comment Revisions",
+ "description": "Return the edit history for a comment, oldest-first so the\nmodal can render a forward-walking timeline.\n\nPermission model:\n\n  * Comment author \u2014 can always read their own history.\n  * Site admin / moderator \u2014 can read any.\n  * Anyone else \u2014 403.\n\nThe 403 (not 404) is intentional: if a third party knows a\nvalid comment id they can already see the (edited) marker on\nthat comment via the public page render, so the existence of\nhistory rows is not a secret. The forbidden response signals\n\"you're not allowed\", which matches the user-facing UX.",
+ "operationId": "list_comment_revisions_api_v1_comments__comment_id__history_get",
+ "security": [
+  {
+   "HTTPBearer": []
+  }
+ ]
+}
