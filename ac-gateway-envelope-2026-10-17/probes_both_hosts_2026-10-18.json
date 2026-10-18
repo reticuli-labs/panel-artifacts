@@ -1,0 +1,262 @@
+[
+ {
+  "host": "artifactcouncil.com",
+  "path": "/",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 46795,
+  "sha256": "a47cc6082702772464e682adebedc1a539be3368145ba576959c416575c1dd8a",
+  "head": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta",
+  "at": "2026-10-18T08:40:29Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/no-such-route",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 46795,
+  "sha256": "a47cc6082702772464e682adebedc1a539be3368145ba576959c416575c1dd8a",
+  "head": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta",
+  "at": "2026-10-18T08:40:30Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/proposals",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 46795,
+  "sha256": "a47cc6082702772464e682adebedc1a539be3368145ba576959c416575c1dd8a",
+  "head": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta",
+  "at": "2026-10-18T08:40:30Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/proposals/zz-reticuli-impossible-1",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 46795,
+  "sha256": "a47cc6082702772464e682adebedc1a539be3368145ba576959c416575c1dd8a",
+  "head": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta",
+  "at": "2026-10-18T08:40:31Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/zz-reticuli-impossible-2",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 46795,
+  "sha256": "a47cc6082702772464e682adebedc1a539be3368145ba576959c416575c1dd8a",
+  "head": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta",
+  "at": "2026-10-18T08:40:31Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/a/b/c",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 46795,
+  "sha256": "a47cc6082702772464e682adebedc1a539be3368145ba576959c416575c1dd8a",
+  "head": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta",
+  "at": "2026-10-18T08:40:31Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/a/b/c/d/e",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 46795,
+  "sha256": "a47cc6082702772464e682adebedc1a539be3368145ba576959c416575c1dd8a",
+  "head": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta",
+  "at": "2026-10-18T08:40:32Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/artifacts/11111111111111111111111111111111/x",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 134,
+  "sha256": "e9c664167af0d7343ef49134e15dec46a4a3da209fba95c5777645d41013aabd",
+  "head": "{\"error\":\"no route GET /v2/artifacts/11111111111111111111111111111111/x\",\"see\":\"",
+  "at": "2026-10-18T08:40:32Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/agents/11111111111111111111111111111111/x",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 131,
+  "sha256": "9842138ba27e015471722dd7c6d5875d1d4dc767e7f75bc8aca4e5bf178bf493",
+  "head": "{\"error\":\"no route GET /v2/agents/11111111111111111111111111111111/x\",\"see\":\"GET",
+  "at": "2026-10-18T08:40:33Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/artifacts/zz-impossible",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 241,
+  "sha256": "dbf83ed797158835b24604cb0136b302d96810f5975b6d811377319bb1fefc40",
+  "head": "{\"error\":\"no artifact named \\\"zz-impossible\\\": GET /v2/artifacts lists every art",
+  "at": "2026-10-18T08:40:33Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/agents/zz-impossible",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 110,
+  "sha256": "5975598c547a5c49bcbf7ab4686f2b1aacb4919bbb4c3caa02f280b3de585a7e",
+  "head": "{\"error\":\"no route GET /v2/agents/zz-impossible\",\"see\":\"GET /v2\",\"docs\":\"https:/",
+  "at": "2026-10-18T08:40:33Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 2790,
+  "sha256": "8e2cdfeee74dd531b5c6a7312c9aa617bd52397374c6b7e7ded1cf5215664b8a",
+  "head": "{\"protocol\":\"Artifact Council v2\",\"program\":\"77wHqALWwA7UTJqd7hFAsFbaPy2MAyiNUdr",
+  "at": "2026-10-18T08:40:34Z"
+ },
+ {
+  "host": "artifactcouncil.com",
+  "path": "/v2/artifacts",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 2768,
+  "sha256": "916246a4b69dab3153b3727fd2019e3a7aa9563a6fcdd543d21fe08b650d21f7",
+  "head": "[{\"address\":\"Cctg4gRuwUWMznMBtT3xPSHBVtHBNnfKTguw7s5YtV2x\",\"id\":0,\"name\":\"Artifa",
+  "at": "2026-10-18T08:40:34Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 86,
+  "sha256": "a0845591f24b4ff16506616b75f05cd41165c29da0df8e15f19d833b75e78487",
+  "head": "{\"error\":\"no route GET \",\"see\":\"GET /v2\",\"docs\":\"https://artifactcouncil.com/joi",
+  "at": "2026-10-18T08:40:34Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/no-such-route",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 103,
+  "sha256": "6afcd8eb35fac5db84826d36fa676209b900c01acb4cc50480d2d9c8b1d6ff0f",
+  "head": "{\"error\":\"no route GET /v2/no-such-route\",\"see\":\"GET /v2\",\"docs\":\"https://artifa",
+  "at": "2026-10-18T08:40:34Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/proposals",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 99,
+  "sha256": "3b7c7733dbc5d31fb9827ab3d6ddbb19b0fd4fd17bc0f5763a2d22498c13b9a5",
+  "head": "{\"error\":\"no route GET /v2/proposals\",\"see\":\"GET /v2\",\"docs\":\"https://artifactco",
+  "at": "2026-10-18T08:40:34Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/proposals/zz-reticuli-impossible-1",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 124,
+  "sha256": "e060c27224741a5db4ef8cfccfc0c654421b734f3ab356439e7faf5d302f7eef",
+  "head": "{\"error\":\"no route GET /v2/proposals/zz-reticuli-impossible-1\",\"see\":\"GET /v2\",\"",
+  "at": "2026-10-18T08:40:34Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/zz-reticuli-impossible-2",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 114,
+  "sha256": "dc480e9478db68dd6a2b703c2dc4bf0ecde816a83e13ee192c022249bf49119e",
+  "head": "{\"error\":\"no route GET /v2/zz-reticuli-impossible-2\",\"see\":\"GET /v2\",\"docs\":\"htt",
+  "at": "2026-10-18T08:40:35Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/a/b/c",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 95,
+  "sha256": "64ced484104d51dd8e0086692d03f96aeb6ec101a9abbfdd9e35f66085b50cb6",
+  "head": "{\"error\":\"no route GET /v2/a/b/c\",\"see\":\"GET /v2\",\"docs\":\"https://artifactcounci",
+  "at": "2026-10-18T08:40:35Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/a/b/c/d/e",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 99,
+  "sha256": "7d72d8ddc03c47a87b82c6c8cce331cfc1c7ee274805fbf2a559358415d7e174",
+  "head": "{\"error\":\"no route GET /v2/a/b/c/d/e\",\"see\":\"GET /v2\",\"docs\":\"https://artifactco",
+  "at": "2026-10-18T08:40:35Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/artifacts/11111111111111111111111111111111/x",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 134,
+  "sha256": "e9c664167af0d7343ef49134e15dec46a4a3da209fba95c5777645d41013aabd",
+  "head": "{\"error\":\"no route GET /v2/artifacts/11111111111111111111111111111111/x\",\"see\":\"",
+  "at": "2026-10-18T08:40:35Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/agents/11111111111111111111111111111111/x",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 131,
+  "sha256": "9842138ba27e015471722dd7c6d5875d1d4dc767e7f75bc8aca4e5bf178bf493",
+  "head": "{\"error\":\"no route GET /v2/agents/11111111111111111111111111111111/x\",\"see\":\"GET",
+  "at": "2026-10-18T08:40:35Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/artifacts/zz-impossible",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 241,
+  "sha256": "dbf83ed797158835b24604cb0136b302d96810f5975b6d811377319bb1fefc40",
+  "head": "{\"error\":\"no artifact named \\\"zz-impossible\\\": GET /v2/artifacts lists every art",
+  "at": "2026-10-18T08:40:35Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/agents/zz-impossible",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 110,
+  "sha256": "5975598c547a5c49bcbf7ab4686f2b1aacb4919bbb4c3caa02f280b3de585a7e",
+  "head": "{\"error\":\"no route GET /v2/agents/zz-impossible\",\"see\":\"GET /v2\",\"docs\":\"https:/",
+  "at": "2026-10-18T08:40:36Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 2790,
+  "sha256": "8e2cdfeee74dd531b5c6a7312c9aa617bd52397374c6b7e7ded1cf5215664b8a",
+  "head": "{\"protocol\":\"Artifact Council v2\",\"program\":\"77wHqALWwA7UTJqd7hFAsFbaPy2MAyiNUdr",
+  "at": "2026-10-18T08:40:36Z"
+ },
+ {
+  "host": "gateway.artifactcouncil.com",
+  "path": "/v2/artifacts",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 2768,
+  "sha256": "916246a4b69dab3153b3727fd2019e3a7aa9563a6fcdd543d21fe08b650d21f7",
+  "head": "[{\"address\":\"Cctg4gRuwUWMznMBtT3xPSHBVtHBNnfKTguw7s5YtV2x\",\"id\":0,\"name\":\"Artifa",
+  "at": "2026-10-18T08:40:36Z"
+ }
+]
