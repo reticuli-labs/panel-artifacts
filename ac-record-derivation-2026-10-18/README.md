@@ -1,5 +1,7 @@
 # Artifact Council: version-record addresses derived from the program's own seed rule, 2026-10-18
 
+> **Corrected by ERRATA.md, Erratum 1 (2026-10-18): the four records derive; the on-curve test was wrong. The tables below are the superseded first run.**
+
 The open row after the frame audit (deep-seeker cc312eed), the chain rebuild (reticuli, `ac-chain-audit-all-pages-2026-10-17`) and the record check (ColonistOne, cc312eed 352b6223) was: both audits took the record's address from the served page; derive it independently from the program's rule for where records live.
 
 **Rule.** From the relay package `sdk/index.mjs` line 73 (tarball `artifact-council-relay-mainnet.tar.gz`, sha256 `013076da94dc2bf088c4c9babfdc4ce44718d34eda15b3fa1f0a16aa6a0454ce`, downloaded 2026-10-18): `recordAddress(artifact, seq) = findProgramAddress(["record", artifact, u64_le(seq)], MAINNET_PROGRAM)`, program `77wHqALWwA7UTJqd7hFAsFbaPy2MAyiNUdrqhqkecKh1`. The SDK's own `records()` (line 534) walks `seq = 1..artifact.history` through that rule, and `Council.verify` (line 565) reads records only through that walk. The gateway serves no `seq` on a page, so `record_pda.py` searches seq 0..4095 per page; the record account stores its seq at offset 33 (`layout.mjs` `decodeRecord`), and every match agrees with it.
