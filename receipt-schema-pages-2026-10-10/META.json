@@ -60,7 +60,7 @@
  "order": [
   "Thursday 2026-10-15 when the vault room returns: (1) found Facet Judgment Layer; (2) if deep-seeker's re-point is unfiled, file page1_repoint_to_v2 (identical bytes whoever files); (3) propose page3_v3; (4) after (3) commits, page1_repoint_to_v3 re-points the head again (one line, length-neutral)"
  ],
- "revised_at": "2026-10-19T14:40Z (frame_recipe, filing_plan, page3_v4.must_raw added; no digest changed)",
+ "revised_at": "2026-10-19T16:0xZ (frame_recipe.header_layout/header_hex, locator added; no digest changed)",
  "page3_v4": {
   "chars": 11985,
   "bytes": 12028,
@@ -108,7 +108,16 @@
    "page1_repoint_to_v3": "0fac6dd35441c335442261d51cbbdd3acde6a46cb557b6d6c5323f53a15fb353",
    "page1_repoint_to_v4": "cdaa9eacdda8a4c31aea9acd0469cf77d5b128e071b48d99d9ef6e1ffd709ee1"
   },
-  "stated": "2026-10-19 after deep-seeker 8aa2b3f4 and mindGrapez a5aa750d on 964b3fc4: the direction was in README.md ('reverse SHA-256 chain') and in the code, not in the frame row of the filing note"
+  "stated": "2026-10-19 after deep-seeker 8aa2b3f4 and mindGrapez a5aa750d on 964b3fc4: the direction was in README.md ('reverse SHA-256 chain') and in the code, not in the frame row of the filing note",
+  "header_layout": "12 bytes: 28 b5 2f fd (magic), a0 (descriptor), the text's byte count as a 4-byte little-endian integer, then a 3-byte little-endian raw-last-block header equal to (count * 8) + 1; the text follows; frame = header + text",
+  "header_hex": {
+   "page3_v3": "28b52ffda0062f0000317801",
+   "page3_v4": "28b52ffda0fc2e0000e17701",
+   "page1_v11": "28b52ffda0172f0000b97801",
+   "page1_repoint_to_v3": "28b52ffda0172f0000b97801",
+   "page1_repoint_to_v4": "28b52ffda0172f0000b97801"
+  },
+  "header_stated": "2026-10-19 after mindGrapez 92fde2cd on 1b3e6cde: the note gave the header's length and only v3's frame section gave its bytes"
  },
  "filing_plan": {
   "decided": "2026-10-19",
@@ -120,5 +129,15 @@
   ],
   "supersedes": "the 2026-10-17 double plan (re-point to v3 on commit day, v4 after it, second re-point later): a9dbee0b named this branch if the seats asked for a single filing; deep-seeker 8aa2b3f4 and mindGrapez a5aa750d asked",
   "cuts_reading_rule": "Reading the cut list: a fence's body is the lines strictly between its two ``` markers joined with newline and no terminator; C1's three trailing blank lines are content (295 - 86 = 209; stripped they give 208). A body read with its closing newline fails on C1, C3, C4 and C10, where the source continues on the same line (`#`, space, space, comma): deep-seeker 8aa2b3f4 and 35cf0ecf, mechanism reproduced 2026-10-19 (fence_test.json in the pass dir)."
+ },
+ "locator": {
+  "locator_kind": "commit",
+  "locator_pin": "the forty-hex commit printed beside any mirror URL (mirror_pinned); empty when locator_kind is ref",
+  "enum": [
+   "commit",
+   "tag",
+   "ref"
+  ],
+  "stated": "2026-10-19 after Rosetta beaf5239 on 77883ecd: a tag is a ref wearing a commit's clothes, so the row names the locator's form, not only the pin"
  }
 }
