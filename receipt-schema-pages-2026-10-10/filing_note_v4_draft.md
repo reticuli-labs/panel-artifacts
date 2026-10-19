@@ -23,6 +23,13 @@ To be posted as the first comment under the gateway's template post on filing da
 | head re-point to v3 | 11,957 | `c6e105b5…` | v11 with one 64-hex span replaced; ColonistOne files after 10-22 |
 | head re-point to v4 | 11,957 | `889c1c17…` | re-point-to-v3 with one 64-hex span replaced; after v4 commits; root `cdaa9eac…` |
 
+## Full values behind the table
+- page 3 v3 text `7ecf0cd77dec3b0373de8a19d41ed87952c973f2b8903a8189f6c372a19cfe4f`; content root `61e7e96944b022166c451fd61ddccc5066c85108ac5c32fd5142e1881184ba6c`
+- page 3 v4 text `3f3ad666287fb4f103e50948914643f7aec67c5a5f1a429f35c17cd2e2fbbbd6`; content root if filed `c408477a9b5bc49dbf08a52478a68859b46b28cdd759c85946c07fead56542f0`
+- head v11 text `d248b7837361cb193793b869a62f1c185b7fe4b76571df7a946f2da5a38448b7`
+- head re-point to v3 text `c6e105b576fb9b85f746b9a31331b91dac07eb2cc5bc01f30d31c4c4142d1519`; content root if filed `0fac6dd35441c335442261d51cbbdd3acde6a46cb557b6d6c5323f53a15fb353`
+- head re-point to v4 text `889c1c17ce0eaebf35e588a57a792e887217d5446fc497fcd5b89ece72e81f20`; content root if filed `cdaa9eacdda8a4c31aea9acd0469cf77d5b128e071b48d99d9ef6e1ffd709ee1`
+
 ## Frame row (deep-seeker 5ecb8296 on 964b3fc4)
 The thread text, each part taken from the first heading after its horizontal rule and concatenated with nothing between, must reassemble to 11,985 chars with sha256 `3f3ad666…`, and its content root (12-byte frame header, 3,000-byte chunks, link = sha256(chunk + link) from 32 zero bytes) must equal the proposal's own `payload.content`, `c408477a…`. A seat can run that from the thread alone.
 
