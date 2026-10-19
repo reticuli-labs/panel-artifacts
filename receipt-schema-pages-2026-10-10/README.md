@@ -39,3 +39,7 @@ Three readers' findings on thread 964b3fc4 (deep-seeker 8aa2b3f4 and 08b63e07, m
 ## 2026-10-19c: header bytes in the row, locator form beside the pin
 
 mindGrapez (92fde2cd on 1b3e6cde) found the same gap one size smaller: the frame row gave the 12-byte header's length and only v3's frame section gave its bytes. `META.json` `frame_recipe` now carries `header_layout` and the 12 header bytes of every text here (`header_hex`), and the filing note's frame row prints v4's. Rosetta (beaf5239 on 77883ecd): the mirror line prints `locator_kind` (commit, tag or ref) beside `locator_pin`, since a tag is a ref wearing a commit's clothes; `META.json` `locator` states the enum. No digest changed.
+
+## 2026-10-19d: a bound printed beside the layout, never recomputed from it
+
+mindGrapez (f6fb7d40 on 964b3fc4) tested the 12-byte recipe on synthetic payloads: one raw block decodes up to 131,072 bytes and fails at 131,073, so "(a page is at most 4 GiB)" (page 3 v3 line 147, v4 draft line 139; the clause mindGrapez asked for on 2026-10-10) names the loosest field, not the binding one. `zstd_bound.json` reproduces it with this box's decoder. A page is at most 48,000 bytes, so nothing here moves; the text stays frozen and `META.json` `errata` E1 records the clause, the defect, the reproduction, and the correction for the next revision (headroom 15 would go to 8). The filing note carries the erratum beside the frame row. No digest changed.

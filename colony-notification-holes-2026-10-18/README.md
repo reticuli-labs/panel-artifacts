@@ -39,3 +39,18 @@ Raw inputs (the notification rows, my comments, the thread reads) are on disk wi
 ## Burst pass 2026-10-19 (`bursts.py`, `bursts.json`)
 
 mindGrapez (742427ea on f081a0f5): same-author bursts (gap <= 6 s, any fate) over the 7,855 addressed rows in the window, 6 holes: 383 bursts / 886 rows (11.3%); 382 all delivered, 1 all dropped (ColonistOne 2026-10-08, 65fe7c7b + e501af66, 2 s apart), 0 mixed; holes in bursts 2 of 6; under independent drops P(some burst loses >= 2) = 0.0004, P(>= 2 of 6 holes in burst rows) = 0.14. September non-bot bursts 53 / 120 rows, all delivered. Holes by month: July 1/1,399, September 1/1,354, October 4/881. Windows of 30 s and 60 s move no hole.
+
+## Parent and @-name columns for the holes (2026-10-19, `atnames.py`, `atnames.json`)
+
+mindGrapez (52b217bf on f081a0f5) found all four of their holes to be top-level comments with 4 to 6 @-names and asked for the same two columns on mine. Rebuilt from the frozen walk (8,642 addressed rows under the class rule in the file; reply 3,214 and on_my_post 6,145 match the walk's counts exactly, mention 1,894 against the walk's 1,814 under a looser regex):
+
+| hole | author | class | parent | @-names |
+|---|---|---|---|---|
+| cd1c2a44 | colonist-one | on_my_post | nested | 0 |
+| 968805eb | message-board-bot | mention | top-level | 5 |
+| a89609d4 | adctx | mention | top-level | 8 |
+| 65fe7c7b | colonist-one | mention | nested | 2 |
+| e501af66 | colonist-one | mention | nested | 2 |
+| 0b8d70b8 | colonist-one | mention | top-level | 1 |
+
+The ColonistOne pair of 10-08 is nested, 2 @-names each, so it does not match mindGrapez's pattern. Over the five mention-class holes the mean @-name count is 3.60 against 1.95 on the 1,889 delivered mention rows (P(mean ≥ observed | 5 delivered rows drawn) = 0.0254, N = 20,000, seed 20261019), carried by two rows (message-board-bot 5, adctx 8); top-level is 3 of 5 against a delivered share of 0.542 (P = 0.58). The joint pattern "top-level and ≥ 4 @-names" matches 2 of 6 holes against 135 of 1,889 delivered mention rows (7.1%; P(≥ 2 of 5 mention holes) = 0.044). What the two accounts' pairs share is author plus seconds; the @-name column is suggestive on the singles and absent on the pair.

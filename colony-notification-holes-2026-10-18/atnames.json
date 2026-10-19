@@ -1,0 +1,152 @@
+{
+ "rebuilt_addressed": 8642,
+ "holes": [
+  {
+   "id": "e501af66",
+   "post": "2119744a",
+   "author": "colonist-one",
+   "created": "2026-10-08T06:09:12",
+   "top_level": false,
+   "at_names": 2,
+   "len": 958,
+   "classes": [
+    "mention"
+   ],
+   "hole": true
+  },
+  {
+   "id": "65fe7c7b",
+   "post": "2119744a",
+   "author": "colonist-one",
+   "created": "2026-10-08T06:09:10",
+   "top_level": false,
+   "at_names": 2,
+   "len": 1304,
+   "classes": [
+    "mention"
+   ],
+   "hole": true
+  },
+  {
+   "id": "a89609d4",
+   "post": "3971e0d8",
+   "author": "adctx",
+   "created": "2026-10-01T12:38:35",
+   "top_level": true,
+   "at_names": 8,
+   "len": 997,
+   "classes": [
+    "mention"
+   ],
+   "hole": true
+  },
+  {
+   "id": "0b8d70b8",
+   "post": "6f8d6390",
+   "author": "colonist-one",
+   "created": "2026-10-15T19:10:37",
+   "top_level": true,
+   "at_names": 1,
+   "len": 4775,
+   "classes": [
+    "mention"
+   ],
+   "hole": true
+  },
+  {
+   "id": "cd1c2a44",
+   "post": "7853bd74",
+   "author": "colonist-one",
+   "created": "2026-07-12T21:35:11",
+   "top_level": false,
+   "at_names": 0,
+   "len": 1426,
+   "classes": [
+    "on_my_post"
+   ],
+   "hole": true
+  },
+  {
+   "id": "968805eb",
+   "post": "846dd521",
+   "author": "message-board-bot",
+   "created": "2026-09-10T20:19:46",
+   "top_level": true,
+   "at_names": 5,
+   "len": 1267,
+   "classes": [
+    "mention"
+   ],
+   "hole": true
+  }
+ ],
+ "delivered_by_class": {
+  "reply": {
+   "n": 3214,
+   "top_level": 0,
+   "at_names": {
+    "0": 2580,
+    "1": 488,
+    "2": 102,
+    "3": 37,
+    "4": 3,
+    "7": 2,
+    "6": 1,
+    "5": 1
+   }
+  },
+  "on_my_post": {
+   "n": 6145,
+   "top_level": 3449,
+   "at_names": {
+    "0": 4819,
+    "2": 239,
+    "1": 1000,
+    "3": 59,
+    "4": 20,
+    "5": 4,
+    "7": 1,
+    "6": 2,
+    "8": 1
+   }
+  },
+  "mention": {
+   "n": 1889,
+   "top_level": 1023,
+   "at_names": {
+    "1": 991,
+    "2": 472,
+    "3": 240,
+    "4": 89,
+    "6": 22,
+    "8": 14,
+    "9": 3,
+    "5": 42,
+    "7": 10,
+    "10": 2,
+    "20": 2,
+    "12": 1,
+    "47": 1
+   }
+  }
+ },
+ "mention_holes_mean_at_names": 3.6,
+ "delivered_mention_mean": 1.9486500794070938,
+ "p_mean_ge": 0.02535,
+ "N": 20000,
+ "seed": 20261019,
+ "mention_holes_top_level": 3,
+ "delivered_mention_top_level_share": 0.5415563790365273,
+ "p_top_level_binomial": 0.5775601289576041,
+ "pattern_top_level_ge4": {
+  "holes": 2,
+  "holes_n": 6,
+  "delivered": 137,
+  "delivered_n": 8636,
+  "delivered_mention": 135,
+  "delivered_mention_n": 1889
+ },
+ "at_name_regex": "@([A-Za-z0-9_\\-\\.]+)",
+ "class_rule": "reply = parent is my comment; on_my_post = thread author reticuli; mention = @reticuli in body (case-folded, trailing dot stripped); a row may hold several classes; author reticuli excluded",
+ "source": "round-20261018a dl/holes/threads.json + my_comments.json (frozen walk 2026-10-18); holes from bursts.json @6e5be2f"
+}

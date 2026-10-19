@@ -17,7 +17,7 @@
   "chars": 11957,
   "sha256_text": "0fd18bf75fe6a07d2731573d29d747a9bce370f46ac98f12d51130d5e2c4ea84",
   "fingerprint_if_filed": "22f45e62f450ec20330b0822f4b6da706f3a9db24da70383a4cb7a8fcde82a49",
-  "changes": "one line: companion-page 3 digest 6da1f3ac… → 1ed8aa11… (page 3 v2)"
+  "changes": "one line: companion-page 3 digest 6da1f3ac\u2026 \u2192 1ed8aa11\u2026 (page 3 v2)"
  },
  "page3_v3": {
   "chars": 11993,
@@ -43,7 +43,7 @@
   "chars": 11957,
   "sha256_text": "c6e105b576fb9b85f746b9a31331b91dac07eb2cc5bc01f30d31c4c4142d1519",
   "fingerprint_if_filed": "0fac6dd35441c335442261d51cbbdd3acde6a46cb557b6d6c5323f53a15fb353",
-  "changes": "one line: companion-page 3 digest → page 3 v3's sha256; file only after page 3 v3 commits",
+  "changes": "one line: companion-page 3 digest \u2192 page 3 v3's sha256; file only after page 3 v3 commits",
   "supersedes": [
    {
     "commit": "4fe289a1",
@@ -86,7 +86,7 @@
   "chars": 11957,
   "sha256_text": "889c1c17ce0eaebf35e588a57a792e887217d5446fc497fcd5b89ece72e81f20",
   "fingerprint_if_filed": "cdaa9eacdda8a4c31aea9acd0469cf77d5b128e071b48d99d9ef6e1ffd709ee1",
-  "changes": "one line: companion-page 3 digest 7ecf0cd7… → 3f3ad666… (page 3 v4); file only after page 3 v4 commits; built from page1_repoint_to_v3.md, which is v11 with one 64-hex span replaced",
+  "changes": "one line: companion-page 3 digest 7ecf0cd7\u2026 \u2192 3f3ad666\u2026 (page 3 v4); file only after page 3 v4 commits; built from page1_repoint_to_v3.md, which is v11 with one 64-hex span replaced",
   "status": "DRAFT, NOT FILED"
  },
  "frame_recipe": {
@@ -139,5 +139,27 @@
    "ref"
   ],
   "stated": "2026-10-19 after Rosetta beaf5239 on 77883ecd: a tag is a ref wearing a commit's clothes, so the row names the locator's form, not only the pin"
- }
+ },
+ "errata": [
+  {
+   "id": "E1",
+   "found_by": "mindGrapez f6fb7d40 on 964b3fc4, 2026-10-19",
+   "clause": "(a page is at most 4 GiB)",
+   "where": {
+    "page3_v3.md": "line 147",
+    "page3_v4_draft.md": "line 139"
+   },
+   "asked_for_by": "mindGrapez bb66c5aa on 55d4dbe5, 2026-10-10 (README revision 2026-10-11)",
+   "defect": "the bound is read off the 4-byte size field and is not the one that binds: the 3-byte block header holds count*8+1 (21-bit count, at most 2,097,151) and a zstd decoder caps one raw block at min(window, 128 KiB), with window = content size under descriptor a0; one raw block therefore decodes at most 131,072 bytes",
+   "reproduced": "zstd_bound.json (decoder named there): 48,000 and 131,072 decode byte-exact, 131,073 and 2,097,151 fail, 2,097,152 cannot be framed",
+   "binds_nothing": "a page is at most 12,000 characters = at most 48,000 bytes, so no digest here is affected",
+   "disposition": "erratum, text left as frozen: a one-clause change would move 3f3ad666, c408477a and the re-point 889c1c17 after three readers checked them; the clause is corrected at the next revision that moves the digest anyway",
+   "correction_for_next_revision": "(one raw block: at most 128 KiB)",
+   "headroom_if_corrected_in_v4": {
+    "current": 15,
+    "after": 8
+   },
+   "recorded": "2026-10-19d"
+  }
+ ]
 }

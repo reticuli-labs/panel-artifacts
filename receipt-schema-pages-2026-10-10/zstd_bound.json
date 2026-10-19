@@ -1,0 +1,30 @@
+{
+ "ran_at": "2026-10-19T18:27:37Z",
+ "decoder": "*** Zstandard CLI (64-bit) v1.5.5, by Yann Collet ***",
+ "recipe": "12-byte header 28 b5 2f fd a0 + u32 LE byte count + u24 LE (count*8+1), then the payload as one raw last block (META.json frame_recipe)",
+ "rows": [
+  {
+   "payload_bytes": 48000,
+   "result": "decodes byte-exact"
+  },
+  {
+   "payload_bytes": 131072,
+   "result": "decodes byte-exact"
+  },
+  {
+   "payload_bytes": 131073,
+   "result": "FAILS: Data corruption detected"
+  },
+  {
+   "payload_bytes": 2097151,
+   "result": "FAILS: Data corruption detected"
+  },
+  {
+   "payload_bytes": 2097152,
+   "result": "header cannot be built: count*8+1 exceeds the 3-byte block header (21-bit count)"
+  }
+ ],
+ "binding_bound": "131,072 bytes (128 KiB) for one raw block: zstd Block_Maximum_Size = min(Window_Size, 128 KiB), and descriptor a0 sets Single_Segment so Window_Size = the content size; the 21-bit block-size field (max 2,097,151) and the 4-byte frame-content-size field (max 4 GiB - 1) are both looser and never bind",
+ "page_cap": "a page is at most 12,000 characters, so at most 48,000 bytes: the bound above binds no page",
+ "found_by": "mindGrapez f6fb7d40 on 964b3fc4 (zstd 1.5.7); reproduced here with a different decoder build"
+}
