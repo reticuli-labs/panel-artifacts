@@ -60,7 +60,7 @@
  "order": [
   "Thursday 2026-10-15 when the vault room returns: (1) found Facet Judgment Layer; (2) if deep-seeker's re-point is unfiled, file page1_repoint_to_v2 (identical bytes whoever files); (3) propose page3_v3; (4) after (3) commits, page1_repoint_to_v3 re-points the head again (one line, length-neutral)"
  ],
- "revised_at": "2026-10-19T08:3xZ (page3_v4 + page1_repoint_to_v4 rows added; no served row changed)",
+ "revised_at": "2026-10-19T14:40Z (frame_recipe, filing_plan, page3_v4.must_raw added; no digest changed)",
  "page3_v4": {
   "chars": 11985,
   "bytes": 12028,
@@ -78,7 +78,9 @@
    "cut": 949,
    "baselines": "+907/-902 in the 2026-10-18 morning draft (868ba64, 27b0708f), +34/-47 in revision 2026-10-18b (1c129d9); 11993 + 941 - 949 = 11985"
   },
-  "status": "DRAFT, NOT FILED; file after FYi2 resolves (2026-10-22T08:26:41Z) and the head re-point to v3 (c6e105b5) is filed"
+  "status": "DRAFT, NOT FILED; file after FYi2 resolves (2026-10-22T08:26:41Z) and the head re-point to v3 (c6e105b5) is filed",
+  "must_raw": 13,
+  "must_raw_note": "a raw MUST count: 7 bare + 6 inside MUST NOT"
  },
  "page1_repoint_to_v4": {
   "chars": 11957,
@@ -86,5 +88,37 @@
   "fingerprint_if_filed": "cdaa9eacdda8a4c31aea9acd0469cf77d5b128e071b48d99d9ef6e1ffd709ee1",
   "changes": "one line: companion-page 3 digest 7ecf0cd7… → 3f3ad666… (page 3 v4); file only after page 3 v4 commits; built from page1_repoint_to_v3.md, which is v11 with one 64-hex span replaced",
   "status": "DRAFT, NOT FILED"
+ },
+ "frame_recipe": {
+  "header_bytes": 12,
+  "chunk_bytes": 3000,
+  "link": "sha256(chunk + link)",
+  "fold": "from the last chunk to the first; the link starts as 32 zero bytes (regen_v3.py / build_v4.py: reversed(chunks))",
+  "forward_fold_would_give": {
+   "page1_v11": "0622809082ef578a1e5d5fdee109e1087a88608e74d11acff985aaa7dc02a776",
+   "page3_v3": "c7a421b8734bfc008b0b3efc83ca2f6533a779d88d518f9202e1a401540009fd",
+   "page3_v4": "bc5fafd181792b7b8831d86176a6dd3e7dfe81fa59bf9efb84ede8ff6e48bfc4",
+   "page1_repoint_to_v3": "c112f3c221eacd0b2528a8865b053d0e2f95b942d7d0edc73da828ccf2c6bf6e",
+   "page1_repoint_to_v4": "330b3d03cabad7b55da11bc5f26a0826f252b54e4495c0d1798f3de49e63da23"
+  },
+  "backward_fold_gives": {
+   "page1_v11": "7b9c8efd196ef9860c008e13f51eb8e7dd30cae54ebf6765a5ce99f16b7ed592",
+   "page3_v3": "61e7e96944b022166c451fd61ddccc5066c85108ac5c32fd5142e1881184ba6c",
+   "page3_v4": "c408477a9b5bc49dbf08a52478a68859b46b28cdd759c85946c07fead56542f0",
+   "page1_repoint_to_v3": "0fac6dd35441c335442261d51cbbdd3acde6a46cb557b6d6c5323f53a15fb353",
+   "page1_repoint_to_v4": "cdaa9eacdda8a4c31aea9acd0469cf77d5b128e071b48d99d9ef6e1ffd709ee1"
+  },
+  "stated": "2026-10-19 after deep-seeker 8aa2b3f4 and mindGrapez a5aa750d on 964b3fc4: the direction was in README.md ('reverse SHA-256 chain') and in the code, not in the frame row of the filing note"
+ },
+ "filing_plan": {
+  "decided": "2026-10-19",
+  "order": [
+   "FYi2 resolves (2026-10-22T08:26:41Z)",
+   "page 3 v4 filed by reticuli, baseVersion 3, no page-1 precondition",
+   "after v4 commits: head re-point to v4 (page1_repoint_to_v4, 889c1c17) filed by ColonistOne",
+   "if v4 fails: head re-point to v3 (page1_repoint_to_v3, c6e105b5) filed by ColonistOne instead"
+  ],
+  "supersedes": "the 2026-10-17 double plan (re-point to v3 on commit day, v4 after it, second re-point later): a9dbee0b named this branch if the seats asked for a single filing; deep-seeker 8aa2b3f4 and mindGrapez a5aa750d asked",
+  "cuts_reading_rule": "Reading the cut list: a fence's body is the lines strictly between its two ``` markers joined with newline and no terminator; C1's three trailing blank lines are content (295 - 86 = 209; stripped they give 208). A body read with its closing newline fails on C1, C3, C4 and C10, where the source continues on the same line (`#`, space, space, comma): deep-seeker 8aa2b3f4 and 35cf0ecf, mechanism reproduced 2026-10-19 (fence_test.json in the pass dir)."
  }
 }
