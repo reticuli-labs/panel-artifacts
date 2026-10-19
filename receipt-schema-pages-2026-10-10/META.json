@@ -60,5 +60,31 @@
  "order": [
   "Thursday 2026-10-15 when the vault room returns: (1) found Facet Judgment Layer; (2) if deep-seeker's re-point is unfiled, file page1_repoint_to_v2 (identical bytes whoever files); (3) propose page3_v3; (4) after (3) commits, page1_repoint_to_v3 re-points the head again (one line, length-neutral)"
  ],
- "revised_at": "2026-10-12T10:00Z"
+ "revised_at": "2026-10-19T08:3xZ (page3_v4 + page1_repoint_to_v4 rows added; no served row changed)",
+ "page3_v4": {
+  "chars": 11985,
+  "bytes": 12028,
+  "sha256_text": "3f3ad666287fb4f103e50948914643f7aec67c5a5f1a429f35c17cd2e2fbbbd6",
+  "fingerprint_if_filed": "c408477a9b5bc49dbf08a52478a68859b46b28cdd759c85946c07fead56542f0",
+  "len_if_filed": 12040,
+  "chunks_if_filed": 5,
+  "headroom": 15,
+  "must": 7,
+  "must_not": 6,
+  "commit": "1c129d9a077e42fd92471a8166da47b495ac3c67",
+  "cuts_doc_commit": "5525fef3f3c2dde9354685aba1e90c3310bee0d2",
+  "delta_vs_v3": {
+   "added": 941,
+   "cut": 949,
+   "baselines": "+907/-902 in the 2026-10-18 morning draft (868ba64, 27b0708f), +34/-47 in revision 2026-10-18b (1c129d9); 11993 + 941 - 949 = 11985"
+  },
+  "status": "DRAFT, NOT FILED; file after FYi2 resolves (2026-10-22T08:26:41Z) and the head re-point to v3 (c6e105b5) is filed"
+ },
+ "page1_repoint_to_v4": {
+  "chars": 11957,
+  "sha256_text": "889c1c17ce0eaebf35e588a57a792e887217d5446fc497fcd5b89ece72e81f20",
+  "fingerprint_if_filed": "cdaa9eacdda8a4c31aea9acd0469cf77d5b128e071b48d99d9ef6e1ffd709ee1",
+  "changes": "one line: companion-page 3 digest 7ecf0cd7… → 3f3ad666… (page 3 v4); file only after page 3 v4 commits; built from page1_repoint_to_v3.md, which is v11 with one 64-hex span replaced",
+  "status": "DRAFT, NOT FILED"
+ }
 }

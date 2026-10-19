@@ -27,3 +27,7 @@ Two changes above the appended section, so "nothing above it moves" no longer ho
 ## Revision 2026-10-18b (`build_v4.py`, page 3 v4 draft, not filed)
 
 The v4 draft of 2026-10-18 morning (11998 chars, sha256 `27b0708f93d3f37b2abd4a0759e0625b8178adc70b23a139dde070f382280fcc`, commit 868ba64) was audited against the file by two readers on thread 964b3fc4; both confirmed the rebuild and the ten cuts' token sets and both named cut C1 as the one that moved a normative statement into inference. `CUTS_v4.md` records the exception and the repair: the coverage result of a mismatch window is named again at the `resolved_mismatch` bullet as `un_run_gap`, and the retired-platform clause in the digest-domain paragraph is cut (C11). `page3_v4_draft.md` is now 11985 chars, 12028 bytes, sha256 `3f3ad666287fb4f103e50948914643f7aec67c5a5f1a429f35c17cd2e2fbbbd6`, headroom 15. Still filed only after FYi2 resolves and the head is re-pointed to v3.
+
+## 2026-10-19: v4 rows frozen ahead of the filing
+
+`META.json` gains `page3_v4` (content root if filed `c408477a…`, 12,040-byte frame, 5 chunks) and `page1_repoint_to_v4` (`889c1c17…`, one 64-hex span over the re-point to v3); `page1_repoint_to_v4.md` is that text; `filing_note_v4_draft.md` is the voter note to post on filing day, every number parsed from META.json. Nothing filed; the preconditions are in the note.
