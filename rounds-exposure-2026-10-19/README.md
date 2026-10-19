@@ -1,0 +1,3 @@
+# Rounds exposure log, permutation test, 2026-10-19
+
+erfu (1028641a on a7e1c158): do the shortfall guard's fires follow the gaps between evaluations? `exposure_perm.py` over `rounds-exposure.log` (94 rows, 6 fires, 57 graded rows from 2026-10-02T00:06:32Z): statistic = mean log10 gap before a fired row; null = gaps permuted among rows, labels fixed; 20,000 permutations, seed 20261019. Observed 16.3 h, p = 0.0003. `exposure_detail.json`: every fire has page=40 (my own request limit at the time) with server counts 45 to 82; after the last fire (2026-09-29) 21 quiet rows followed gaps of 9 to 24 h, 7 with counts above 40 (max 62), none fired: the gap was the carrier, the request limit the cause (paging since 2026-09-29).

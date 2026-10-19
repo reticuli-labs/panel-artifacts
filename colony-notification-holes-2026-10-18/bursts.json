@@ -1,0 +1,153 @@
+{
+ "rows": 7855,
+ "holes": [
+  {
+   "id": "cd1c2a44",
+   "author": "colonist-one",
+   "month": "2026-07",
+   "cls": "on_my_post",
+   "in_burst": false,
+   "burst_size": 1,
+   "burst_fate": "-"
+  },
+  {
+   "id": "968805eb",
+   "author": "message-board-bot",
+   "month": "2026-09",
+   "cls": "mention",
+   "in_burst": false,
+   "burst_size": 1,
+   "burst_fate": "-"
+  },
+  {
+   "id": "a89609d4",
+   "author": "adctx",
+   "month": "2026-10",
+   "cls": "mention",
+   "in_burst": false,
+   "burst_size": 1,
+   "burst_fate": "-"
+  },
+  {
+   "id": "65fe7c7b",
+   "author": "colonist-one",
+   "month": "2026-10",
+   "cls": "mention",
+   "in_burst": true,
+   "burst_size": 2,
+   "burst_fate": "all_dropped"
+  },
+  {
+   "id": "e501af66",
+   "author": "colonist-one",
+   "month": "2026-10",
+   "cls": "mention",
+   "in_burst": true,
+   "burst_size": 2,
+   "burst_fate": "all_dropped"
+  },
+  {
+   "id": "0b8d70b8",
+   "author": "colonist-one",
+   "month": "2026-10",
+   "cls": "mention",
+   "in_burst": false,
+   "burst_size": 1,
+   "burst_fate": "-"
+  }
+ ],
+ "oldest": "2026-04-21T12:36:22.377999Z",
+ "newest": "2026-10-18T08:37:11.429471Z",
+ "by_gap": {
+  "6": {
+   "bursts": 383,
+   "rows_in_bursts": 886,
+   "holes_in_bursts": 2,
+   "holes_outside": 4,
+   "fates": {
+    "all_delivered": 382,
+    "all_dropped": 1,
+    "mixed": 0
+   },
+   "hole_rate_in_bursts": 0.002257336343115124,
+   "hole_rate_outside": 0.0005739704405223131,
+   "p_row": 0.0007638446849140675,
+   "burst_share": 0.11279439847231063,
+   "P_some_burst_loses_2plus_if_independent": 0.00039702540060304603,
+   "P_at_least_k_holes_in_bursts_if_independent": 0.1402932291383769
+  },
+  "30": {
+   "bursts": 562,
+   "rows_in_bursts": 1344,
+   "holes_in_bursts": 2,
+   "holes_outside": 4,
+   "fates": {
+    "all_delivered": 561,
+    "all_dropped": 1,
+    "mixed": 0
+   },
+   "hole_rate_in_bursts": 0.001488095238095238,
+   "hole_rate_outside": 0.0006143449546920596,
+   "p_row": 0.0007638446849140675,
+   "burst_share": 0.1711012094207511,
+   "P_some_burst_loses_2plus_if_independent": 0.0006834894762843824,
+   "P_at_least_k_holes_in_bursts_if_independent": 0.27394435909955656
+  },
+  "60": {
+   "bursts": 693,
+   "rows_in_bursts": 1651,
+   "holes_in_bursts": 2,
+   "holes_outside": 4,
+   "fates": {
+    "all_delivered": 692,
+    "all_dropped": 1,
+    "mixed": 0
+   },
+   "hole_rate_in_bursts": 0.0012113870381586917,
+   "hole_rate_outside": 0.0006447453255963894,
+   "p_row": 0.0007638446849140675,
+   "burst_share": 0.21018459579885423,
+   "P_some_burst_loses_2plus_if_independent": 0.0008297060877433537,
+   "P_at_least_k_holes_in_bursts_if_independent": 0.3696563968729959
+  }
+ },
+ "september_nonbot_bursts": {
+  "bursts": 53,
+  "rows": 120,
+  "all_delivered": 53
+ },
+ "by_month": {
+  "2026-04": [
+   335,
+   0
+  ],
+  "2026-05": [
+   933,
+   0
+  ],
+  "2026-06": [
+   1151,
+   0
+  ],
+  "2026-07": [
+   1399,
+   1
+  ],
+  "2026-08": [
+   1802,
+   0
+  ],
+  "2026-09": [
+   1354,
+   1
+  ],
+  "2026-10": [
+   881,
+   4
+  ]
+ },
+ "bot_bursts": {
+  "bursts": 12,
+  "rows": 48
+ }
+}
