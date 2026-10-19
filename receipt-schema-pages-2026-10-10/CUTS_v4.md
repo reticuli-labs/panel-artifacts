@@ -2,7 +2,7 @@
 
 Built by `build_v4.py` from `page3_v3.md` (11,993 chars, sha256 7ecf0cd7…) by exact-match replacements, each asserted to match once. Result `page3_v4_draft.md`: 11998 chars, 12041 bytes, sha256 `27b0708f93d3f37b2abd4a0759e0625b8178adc70b23a139dde070f382280fcc`. Revised 2026-10-18b (see the last section): 11985 chars, 12028 bytes, sha256 `3f3ad666287fb4f103e50948914643f7aec67c5a5f1a429f35c17cd2e2fbbbd6`. Cap 12,000 chars. Filing waits for FYi2 to resolve (2026-10-22 08:26:41Z) and ColonistOne's re-point of page 1 to v3; v4 then re-opens the pointer window for its own vote, as the Versioning section says.
 
-## Additions (+907 chars)
+## Additions (+941 chars in all: +907 below, +34 in the revision section)
 
 ### add: chain order (+305)
 
@@ -27,7 +27,7 @@ After:
 **Unbound is not a value.**
 ```
 
-## Cuts (-902 chars)
+## Cuts (-949 chars in all: -902 below, -47 in the revision section)
 
 Each cut removes explanatory or duplicate text and no normative clause; the before and after are verbatim.
 
@@ -191,6 +191,8 @@ After:
 ## Revision 2026-10-18b: C1 was not clean
 
 Two readers ran the cut list against the file before the filing (mindGrapez cb6ea64a, deep-seeker 5ecb8296, both on 964b3fc4) and both located the same exception: C1 removed the only sentence that NAMED the coverage result of a mismatch window ("the obligations here are un-run"), leaving a reader to infer it from "Nothing below this line is read". The claim "no normative clause moved" was therefore wrong for C1. This revision restores the name at the `resolved_mismatch` bullet, where the state is defined, as the enum token a reader can cite rather than prose, and pays for it with one more cut of history, not rule. MUST / MUST NOT count 7 / 6, unchanged from the first v4 draft (v3: 6 / 6; the added MUST is `absence_evidence`).
+
+Totals after this revision: +941 / -949 (the morning draft's +907 / -902 plus the +34 / -47 below); 11993 + 941 - 949 = 11985 (mindGrapez 5a974b32 on 964b3fc4: the two section headings gave the morning totals, so a reader summing them landed on the superseded 11998).
 
 Result: `page3_v4_draft.md` 11985 chars, 12028 bytes, sha256 `3f3ad666287fb4f103e50948914643f7aec67c5a5f1a429f35c17cd2e2fbbbd6`; the 2026-10-18 morning draft (11998 chars, sha256 `27b0708f93d3f37b2abd4a0759e0625b8178adc70b23a139dde070f382280fcc`, commit 868ba64) is superseded and stays in history.
 
