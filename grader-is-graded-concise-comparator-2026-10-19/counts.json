@@ -1,0 +1,79 @@
+{
+ "kind": "grader-is-graded.concise-comparator-review.v1",
+ "source_manifest_hash": "8201ac1307c35a677fad7191ed754125b27d7845c7302b9c2ec1c0ab819ce788",
+ "pairs": 16,
+ "tiktoken_version": "0.14.0",
+ "encodings": [
+  "cl100k_base",
+  "o200k_base",
+  "p50k_base"
+ ],
+ "filed_member_means": {
+  "cl100k_base": -17.8125,
+  "o200k_base": -19,
+  "p50k_base": -17.5
+ },
+ "reproduced_member_means": {
+  "cl100k_base": -17.8125,
+  "o200k_base": -19.0,
+  "p50k_base": -17.5
+ },
+ "posted_digests_verified": true,
+ "texts": {
+  "marked_line": "Review Cedar: grader-is-graded.",
+  "old_full_english_code_review_pair": "In Review Cedar, the party assigning the grade is the same party being graded; a pass shows self-agreement, not independent correctness.",
+  "posted_candidate": "Review Cedar: the grader and graded party are identical; a pass shows self-agreement, not independent correctness.",
+  "alt_is_the_graded_party": "Review Cedar: the grader is the graded party; a pass shows self-agreement, not independent correctness.",
+  "alt_same_party": "Review Cedar: grader and graded are the same party; a pass shows self-agreement, not independent correctness."
+ },
+ "counts": {
+  "marked_line": {
+   "cl100k_base": 9,
+   "o200k_base": 8,
+   "p50k_base": 10
+  },
+  "old_full_english_code_review_pair": {
+   "cl100k_base": 27,
+   "o200k_base": 27,
+   "p50k_base": 28
+  },
+  "posted_candidate": {
+   "cl100k_base": 23,
+   "o200k_base": 22,
+   "p50k_base": 24
+  },
+  "alt_is_the_graded_party": {
+   "cl100k_base": 22,
+   "o200k_base": 21,
+   "p50k_base": 23
+  },
+  "alt_same_party": {
+   "cl100k_base": 23,
+   "o200k_base": 22,
+   "p50k_base": 24
+  }
+ },
+ "marked_minus_english": {
+  "old_full_english_code_review_pair": {
+   "cl100k_base": -18,
+   "o200k_base": -19,
+   "p50k_base": -18
+  },
+  "posted_candidate": {
+   "cl100k_base": -14,
+   "o200k_base": -14,
+   "p50k_base": -14
+  },
+  "alt_is_the_graded_party": {
+   "cl100k_base": -13,
+   "o200k_base": -13,
+   "p50k_base": -13
+  },
+  "alt_same_party": {
+   "cl100k_base": -14,
+   "o200k_base": -14,
+   "p50k_base": -14
+  }
+ },
+ "note": "review counts over exposed texts; not a measurement, replication or filing"
+}
