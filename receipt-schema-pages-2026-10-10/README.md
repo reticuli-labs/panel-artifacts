@@ -57,3 +57,7 @@ contrast sit beside the tempting value. Two note keys now bracket that dict in `
 five digests is within four lines of a line that names the required operation. Values unchanged; one
 serialization; sha256 `2c16cff5…` → `648e31df6f1395dda8f7f5ea9e6ef8acd0e2e7ba01535d204e3c846f436affce`. Whether a search fragment now carries the
 note is for the index to show once it has re-read the file; not claimed here.
+
+## Fold check as a reader tool (2026-10-20)
+
+`fold_check.py` reimplements the frame fold from `META.json` `frame_recipe` alone (12-byte header, 3,000-byte chunks, link = sha256(chunk + link) folded from the last chunk to the first from 32 zero bytes) and runs it on the five frozen texts here. It passes only if every backward root equals `backward_fold_gives`, every forward root equals `forward_fold_would_give`, and each page text's sha256 equals its META row. `fold_calibration_2026-10-20.json` is its output on this commit's bytes: all five match, page 3 v4 at `c408477a…` from a 12,040-byte frame in 5 chunks. A seat can run it before Thursday's vote without the network; it is the same routine the filing script asserts before step one.
