@@ -1,0 +1,144 @@
+{
+ "prior_copy": "4d855cae-a467-4a93-b111-752348c4995f",
+ "prior_rows": 19,
+ "cases": {
+  "identical": {
+   "key_diff": {
+    "keys_added_since_prior_copy": [],
+    "keys_removed_since_prior_copy": [],
+    "rows_compared": 19,
+    "rows_only_now": 0,
+    "rows_only_prior": 0,
+    "keys_added_on_all_common_rows": [],
+    "keys_added_on_some_common_rows": [],
+    "keys_removed_from_all_common_rows": [],
+    "keys_removed_from_some_common_rows": [],
+    "note": "union view: field names over the post row and every comment row, this read minus the overwritten copy; per-row view: each row id held by both copies against its own prior keys; rows held by one copy only are counted, not compared"
+   },
+   "rename_suspect": false
+  },
+  "rename_all_rows": {
+   "missing_pairs": 19,
+   "key_diff": {
+    "keys_added_since_prior_copy": [
+     "posted_at"
+    ],
+    "keys_removed_since_prior_copy": [
+     "created_at"
+    ],
+    "rows_compared": 19,
+    "rows_only_now": 0,
+    "rows_only_prior": 0,
+    "keys_added_on_all_common_rows": [
+     "posted_at"
+    ],
+    "keys_added_on_some_common_rows": [],
+    "keys_removed_from_all_common_rows": [
+     "created_at"
+    ],
+    "keys_removed_from_some_common_rows": [],
+    "note": "union view: field names over the post row and every comment row, this read minus the overwritten copy; per-row view: each row id held by both copies against its own prior keys; rows held by one copy only are counted, not compared"
+   },
+   "rename_suspect": true
+  },
+  "new_comment_with_optional_field": {
+   "key_diff": {
+    "keys_added_since_prior_copy": [
+     "optional_only_here"
+    ],
+    "keys_removed_since_prior_copy": [],
+    "rows_compared": 19,
+    "rows_only_now": 1,
+    "rows_only_prior": 0,
+    "keys_added_on_all_common_rows": [],
+    "keys_added_on_some_common_rows": [],
+    "keys_removed_from_all_common_rows": [],
+    "keys_removed_from_some_common_rows": [],
+    "note": "union view: field names over the post row and every comment row, this read minus the overwritten copy; per-row view: each row id held by both copies against its own prior keys; rows held by one copy only are counted, not compared"
+   },
+   "rename_suspect": false
+  },
+  "new_comment_optional_field_and_rule_field_missing_on_it": {
+   "missing_pairs": 1,
+   "key_diff": {
+    "keys_added_since_prior_copy": [
+     "optional_only_here"
+    ],
+    "keys_removed_since_prior_copy": [],
+    "rows_compared": 19,
+    "rows_only_now": 1,
+    "rows_only_prior": 0,
+    "keys_added_on_all_common_rows": [],
+    "keys_added_on_some_common_rows": [],
+    "keys_removed_from_all_common_rows": [],
+    "keys_removed_from_some_common_rows": [],
+    "note": "union view: field names over the post row and every comment row, this read minus the overwritten copy; per-row view: each row id held by both copies against its own prior keys; rows held by one copy only are counted, not compared"
+   },
+   "rename_suspect": false
+  },
+  "existing_comment_gains_optional_field": {
+   "key_diff": {
+    "keys_added_since_prior_copy": [
+     "edited_at"
+    ],
+    "keys_removed_since_prior_copy": [],
+    "rows_compared": 19,
+    "rows_only_now": 0,
+    "rows_only_prior": 0,
+    "keys_added_on_all_common_rows": [],
+    "keys_added_on_some_common_rows": [
+     "edited_at"
+    ],
+    "keys_removed_from_all_common_rows": [],
+    "keys_removed_from_some_common_rows": [],
+    "note": "union view: field names over the post row and every comment row, this read minus the overwritten copy; per-row view: each row id held by both copies against its own prior keys; rows held by one copy only are counted, not compared"
+   },
+   "rename_suspect": false
+  },
+  "rename_all_rows_plus_new_comment": {
+   "missing_pairs": 20,
+   "key_diff": {
+    "keys_added_since_prior_copy": [
+     "posted_at"
+    ],
+    "keys_removed_since_prior_copy": [
+     "created_at"
+    ],
+    "rows_compared": 19,
+    "rows_only_now": 1,
+    "rows_only_prior": 0,
+    "keys_added_on_all_common_rows": [
+     "posted_at"
+    ],
+    "keys_added_on_some_common_rows": [],
+    "keys_removed_from_all_common_rows": [
+     "created_at"
+    ],
+    "keys_removed_from_some_common_rows": [],
+    "note": "union view: field names over the post row and every comment row, this read minus the overwritten copy; per-row view: each row id held by both copies against its own prior keys; rows held by one copy only are counted, not compared"
+   },
+   "rename_suspect": true
+  }
+ },
+ "carrier_sha256": "570a031be27b3b8871b292e3d16c0b5169fc687a13762a466602f069e13734eb",
+ "live_reread_4d855cae": {
+  "comments": 18,
+  "rule_fields_missing": [],
+  "key_diff": {
+   "keys_added_since_prior_copy": [],
+   "keys_removed_since_prior_copy": [],
+   "rows_compared": 19,
+   "rows_only_now": 0,
+   "rows_only_prior": 0,
+   "keys_added_on_all_common_rows": [],
+   "keys_added_on_some_common_rows": [],
+   "keys_removed_from_all_common_rows": [],
+   "keys_removed_from_some_common_rows": [],
+   "note": "union view: field names over the post row and every comment row, this read minus the overwritten copy; per-row view: each row id held by both copies against its own prior keys; rows held by one copy only are counted, not compared"
+  },
+  "rename_suspect": false,
+  "comparability": "same-route",
+  "carrier_sha256": "570a031be27b3b8871b292e3d16c0b5169fc687a13762a466602f069e13734eb",
+  "fetched": "2026-10-19T07:46:20Z"
+ }
+}
