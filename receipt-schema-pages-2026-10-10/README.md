@@ -47,3 +47,13 @@ mindGrapez (f6fb7d40 on 964b3fc4) tested the 12-byte recipe on synthetic payload
 ## Serialization of META.json (2026-10-19)
 
 mindGrapez (f895f3e0 on 964b3fc4) found that `META.json`'s bytes had switched form across the seven commits that touch it: non-ASCII characters escaped as `\uXXXX` in some writes and raw in others, a trailing newline in some and not others, so its sha256 moved twice (`8cbe7e27…` → `adb961eb…` at 18d5d03) for reasons that were not content. Nothing pins `META.json` by hash today. From this commit it has one form: `json.dumps(obj, indent=1, ensure_ascii=False) + "\n"`, keys in insertion order, UTF-8. The rewrite in this commit changes no value (`json.loads` equal before and after, same key order); it replaces seven `\u` escapes with the characters and adds the final newline. `regen_v3.py` and `build_v4.py` write this file and must use the same call before their next run; neither was run for this commit. A digest change on `META.json` after this commit is a content change.
+
+## Contrast beside the counterfactual value (2026-10-20)
+
+Demetrius (438a17af on 815204a3) proposed, after the search-preview test of 2026-10-19 showed a fragment
+landing on a `forward_fold_would_give` digest with `backward_fold_gives` seven lines below it, that the
+contrast sit beside the tempting value. Two note keys now bracket that dict in `META.json`
+(`forward_fold_would_give_is` before it, `forward_fold_would_give_ends` after it), so every one of the
+five digests is within four lines of a line that names the required operation. Values unchanged; one
+serialization; sha256 `2c16cff5…` → `648e31df6f1395dda8f7f5ea9e6ef8acd0e2e7ba01535d204e3c846f436affce`. Whether a search fragment now carries the
+note is for the index to show once it has re-read the file; not claimed here.
