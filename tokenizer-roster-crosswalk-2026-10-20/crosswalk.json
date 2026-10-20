@@ -1,0 +1,3520 @@
+{
+ "built": "2026-10-20",
+ "source": "GET /api/v1/measurements via AinglishClient.iter_measurements (public), pulled 2026-10-20",
+ "rows_total": 1545,
+ "token_delta_rows": 1014,
+ "token_delta_rows_with_suffix": 107,
+ "suffix_forms": {
+  "@tiktoken-0.13.0": 21,
+  "@0.13.0": 88,
+  "@vocab": 88,
+  "@842da379/tokenizer#cc8d3a0ce36466cc": 3,
+  "@0.14.0": 14,
+  "@842da3794eaa0b77d5f08bae87a17459d91ff475": 1,
+  "@cl100k_base": 2,
+  "@o200k_base": 2
+ },
+ "distinct_old_identities": 15,
+ "identity_crosswalk": {
+  "cl100k_base@tiktoken-0.13.0": {
+   "old_identity": "cl100k_base@tiktoken-0.13.0",
+   "encoding": "cl100k_base",
+   "library": "tiktoken",
+   "version": "0.13.0",
+   "suffix": "tiktoken-0.13.0",
+   "suffix_kind": "library-version",
+   "note": null
+  },
+  "gemma-4-31b-it@842da379/tokenizer#cc8d3a0ce36466cc": {
+   "old_identity": "gemma-4-31b-it@842da379/tokenizer#cc8d3a0ce36466cc",
+   "encoding": "gemma-4-31b-it",
+   "library": null,
+   "version": "842da379/tokenizer#cc8d3a0ce36466cc",
+   "suffix": "842da379/tokenizer#cc8d3a0ce36466cc",
+   "suffix_kind": "hf revision + tokenizer digest",
+   "note": "short revision plus a 16-hex digest of the tokenizer file"
+  },
+  "hf/google/gemma-4-31B-it@842da3794eaa0b77d5f08bae87a17459d91ff475": {
+   "old_identity": "hf/google/gemma-4-31B-it@842da3794eaa0b77d5f08bae87a17459d91ff475",
+   "encoding": "hf/google/gemma-4-31B-it",
+   "library": null,
+   "version": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+   "suffix": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+   "suffix_kind": "hf revision",
+   "note": "a git revision of the model repo, not a library version"
+  },
+  "o200k_base@tiktoken-0.13.0": {
+   "old_identity": "o200k_base@tiktoken-0.13.0",
+   "encoding": "o200k_base",
+   "library": "tiktoken",
+   "version": "0.13.0",
+   "suffix": "tiktoken-0.13.0",
+   "suffix_kind": "library-version",
+   "note": null
+  },
+  "p50k_base@tiktoken-0.13.0": {
+   "old_identity": "p50k_base@tiktoken-0.13.0",
+   "encoding": "p50k_base",
+   "library": "tiktoken",
+   "version": "0.13.0",
+   "suffix": "tiktoken-0.13.0",
+   "suffix_kind": "library-version",
+   "note": null
+  },
+  "raw-api-tiktoken@cl100k_base": {
+   "old_identity": "raw-api-tiktoken@cl100k_base",
+   "encoding": "cl100k_base",
+   "library": null,
+   "version": null,
+   "suffix": "cl100k_base",
+   "suffix_kind": "inverted: the encoding sits after the @",
+   "note": "the bare half is a harness label, not an encoding"
+  },
+  "raw-api-tiktoken@o200k_base": {
+   "old_identity": "raw-api-tiktoken@o200k_base",
+   "encoding": "o200k_base",
+   "library": null,
+   "version": null,
+   "suffix": "o200k_base",
+   "suffix_kind": "inverted: the encoding sits after the @",
+   "note": "the bare half is a harness label, not an encoding"
+  },
+  "tiktoken/cl100k_base@0.13.0": {
+   "old_identity": "tiktoken/cl100k_base@0.13.0",
+   "encoding": "tiktoken/cl100k_base",
+   "library": "tiktoken",
+   "version": "0.13.0",
+   "suffix": "0.13.0",
+   "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+   "note": null
+  },
+  "tiktoken/cl100k_base@0.14.0": {
+   "old_identity": "tiktoken/cl100k_base@0.14.0",
+   "encoding": "tiktoken/cl100k_base",
+   "library": "tiktoken",
+   "version": "0.14.0",
+   "suffix": "0.14.0",
+   "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+   "note": null
+  },
+  "tiktoken/cl100k_base@vocab": {
+   "old_identity": "tiktoken/cl100k_base@vocab",
+   "encoding": "tiktoken/cl100k_base",
+   "library": null,
+   "version": null,
+   "suffix": "vocab",
+   "suffix_kind": "marker: vocab, no version carried",
+   "note": null
+  },
+  "tiktoken/gpt2@vocab": {
+   "old_identity": "tiktoken/gpt2@vocab",
+   "encoding": "tiktoken/gpt2",
+   "library": null,
+   "version": null,
+   "suffix": "vocab",
+   "suffix_kind": "marker: vocab, no version carried",
+   "note": null
+  },
+  "tiktoken/o200k_base@0.13.0": {
+   "old_identity": "tiktoken/o200k_base@0.13.0",
+   "encoding": "tiktoken/o200k_base",
+   "library": "tiktoken",
+   "version": "0.13.0",
+   "suffix": "0.13.0",
+   "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+   "note": null
+  },
+  "tiktoken/o200k_base@0.14.0": {
+   "old_identity": "tiktoken/o200k_base@0.14.0",
+   "encoding": "tiktoken/o200k_base",
+   "library": "tiktoken",
+   "version": "0.14.0",
+   "suffix": "0.14.0",
+   "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+   "note": null
+  },
+  "tiktoken/o200k_base@vocab": {
+   "old_identity": "tiktoken/o200k_base@vocab",
+   "encoding": "tiktoken/o200k_base",
+   "library": null,
+   "version": null,
+   "suffix": "vocab",
+   "suffix_kind": "marker: vocab, no version carried",
+   "note": null
+  },
+  "tiktoken/p50k_base@vocab": {
+   "old_identity": "tiktoken/p50k_base@vocab",
+   "encoding": "tiktoken/p50k_base",
+   "library": null,
+   "version": null,
+   "suffix": "vocab",
+   "suffix_kind": "marker: vocab, no version carried",
+   "note": null
+  }
+ },
+ "rows": [
+  {
+   "attempt_id": "362853f5-65bc-4344-8f06-2971eb25c2a1",
+   "manifest_hash": "836eb7047a0d3672350d7bdce0efec66a2e0166d0d96d628df5ad509cc31d74d",
+   "at": "2026-08-25T12:15:04+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "cb93d8d1-797f-47dd-a9f6-2cdd59a23d3f",
+   "manifest_hash": "b3b5cb796964bfd4b39db682d8d727d13d223833b96d6721e09c357c9e913cc8",
+   "at": "2026-08-25T08:10:21+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "56627ea7-0c26-4da1-a6f4-cbcd6cf0a475",
+   "manifest_hash": "396737f60929fae433a278868cf31a157732a01ed84e89838f5faac94981f27e",
+   "at": "2026-08-24T20:44:30+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "2229e291-fc16-42a9-b70c-bc623fe2a4b8",
+   "manifest_hash": "3ed12a548b0c08be5dc4a9b81a403502af7bb2818e159d76df33e84ecd019789",
+   "at": "2026-08-24T19:07:45+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "a10045ec-bc2f-4490-b705-937090c2a2f5",
+   "manifest_hash": "bc067539a9a46b5654243627405ad566c96a0e10d5e4c555e007834f66274b7f",
+   "at": "2026-08-24T18:45:16+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "673b1e5e-75f5-4b9f-8f2c-3372441f3084",
+   "manifest_hash": "2c6847963a38b5b2b2c4866da7b7199400732ad37efa11d05de2202b1955c42b",
+   "at": "2026-08-24T18:33:23+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "ab818aed-fa0b-4573-8c8d-c83e2f62cdf4",
+    "name": "Saturnia"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "65d32b9b-5d92-47c4-ad8b-8e7603338ab4",
+   "manifest_hash": "285d943697fc1567fc3c3d00ffd160942226b712aee71ed244f16829b8601e7e",
+   "at": "2026-08-24T18:06:19+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "b1f472c5-3c6b-4cee-a953-8f7f88bc61d0",
+   "manifest_hash": "5c95cf66ff97eb41b2f1d90c26dba7edec2885e227f92692a30b53a2c55d9d21",
+   "at": "2026-08-24T18:01:07+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "eb29dd06-3583-473c-b801-bcdde4aa57a2",
+   "manifest_hash": "30ace965589a698437e021e43cda719f7f90363a7ab14cece499a5486c02d6ea",
+   "at": "2026-08-24T17:33:21+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "7ee75534-b082-453a-a2eb-eae3f70ba347",
+    "name": "Theox"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/p50k_base@vocab",
+     "encoding": "tiktoken/p50k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/gpt2@vocab",
+     "encoding": "tiktoken/gpt2",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "8ac8f67f-1f50-409d-b089-6c9c8a599ef8",
+   "manifest_hash": "ead8571ce276ebc166511b4a1561b4a89ccf4af7275117c036e2de63ec6383c5",
+   "at": "2026-08-24T16:24:56+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "e69e6cd1-da44-4d6c-b759-e42a11167a90",
+   "manifest_hash": "8b11f3f1ffdf2e0dd07512a18ffd983bb8e7aeced7ba8d19546ab68cc0269940",
+   "at": "2026-08-24T10:02:40+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "7ee75534-b082-453a-a2eb-eae3f70ba347",
+    "name": "Theox"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/p50k_base@vocab",
+     "encoding": "tiktoken/p50k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/gpt2@vocab",
+     "encoding": "tiktoken/gpt2",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "34997009-8f1d-4f9b-a970-f9fb38b2514b",
+   "manifest_hash": "c7dd02f1a8a9e933977734b7454069c8543639d061a5d57b91edd0ce44fc53b2",
+   "at": "2026-08-23T22:04:56+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "gemma-4-31b-it@842da379/tokenizer#cc8d3a0ce36466cc",
+     "encoding": "gemma-4-31b-it",
+     "library": null,
+     "version": "842da379/tokenizer#cc8d3a0ce36466cc",
+     "suffix": "842da379/tokenizer#cc8d3a0ce36466cc",
+     "suffix_kind": "hf revision + tokenizer digest",
+     "note": "short revision plus a 16-hex digest of the tokenizer file"
+    }
+   ]
+  },
+  {
+   "attempt_id": "17be4edc-f0dc-49bf-a9aa-47f67ff50adb",
+   "manifest_hash": "1cd9051815ce0f921c0d289e544679707c5dd5fe8700ef78d693ffe679179552",
+   "at": "2026-08-23T22:04:35+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "968abaf0-b93c-4f6f-9283-9b65d4d25a4c",
+   "manifest_hash": "41ccca2c9a588e825355c3b93ff36b83edf976e6f3148964efd0bb58127a897a",
+   "at": "2026-08-23T22:03:59+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "gemma-4-31b-it@842da379/tokenizer#cc8d3a0ce36466cc",
+     "encoding": "gemma-4-31b-it",
+     "library": null,
+     "version": "842da379/tokenizer#cc8d3a0ce36466cc",
+     "suffix": "842da379/tokenizer#cc8d3a0ce36466cc",
+     "suffix_kind": "hf revision + tokenizer digest",
+     "note": "short revision plus a 16-hex digest of the tokenizer file"
+    }
+   ]
+  },
+  {
+   "attempt_id": "28e75396-b9ba-4e2a-9aa9-9f9acbeba73d",
+   "manifest_hash": "527773d6757603d5c97dddff89e02f3280c94be4f1e1f38882ea7f4e0a3651e8",
+   "at": "2026-08-23T22:03:35+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "p50k_base@tiktoken-0.13.0",
+     "encoding": "p50k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "068ebd88-9504-4bbf-942a-869275a95253",
+   "manifest_hash": "e0fd9f41dace57be29fabeb68df15fabed35bff6b69cbdaea2a88b940f0f7c7e",
+   "at": "2026-08-22T04:36:01+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "bbc98998-6772-485f-9c9c-e72298157416",
+   "manifest_hash": "b81318cb98ff91ccffdb957a0dcd1d0e108799de90f1913c3aed35f93f764348",
+   "at": "2026-08-22T00:51:11+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "942e6be4-b698-455b-bea0-a03e6b759acd",
+   "manifest_hash": "0aeda214d8f9184c8614d9b0d6261c91e4360484847307ba27e05c7d3dc51f1f",
+   "at": "2026-08-21T20:22:03+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "cf79e7f5-4a88-4167-bf3a-8202885b477c",
+   "manifest_hash": "d2ca022941393744ca81050ada89d50c9bcadc83b4c124f63b88ada660a77740",
+   "at": "2026-08-21T17:18:34+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "7ee75534-b082-453a-a2eb-eae3f70ba347",
+    "name": "Theox"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/p50k_base@vocab",
+     "encoding": "tiktoken/p50k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/gpt2@vocab",
+     "encoding": "tiktoken/gpt2",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "ea9adee9-8930-43ed-a3a8-b351db5bddcf",
+   "manifest_hash": "b42a91bfc5362e0f0a20f9f8ce4d0ee12d5f3ebc7c448a28872b24386f408514",
+   "at": "2026-08-21T16:25:08+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "a455b457-e3af-4692-84e0-df468573aa55",
+    "name": "EconomicAgent"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "cc3e47df-1f47-4bd0-a978-9e85ece94bc1",
+   "manifest_hash": "16ebaf1e4f80ccf9bd3ff6a43c342a9b7639b7ba717bb19537112acff7b7421c",
+   "at": "2026-08-21T13:57:28+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "cl100k_base@tiktoken-0.13.0",
+     "encoding": "cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "o200k_base@tiktoken-0.13.0",
+     "encoding": "o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "tiktoken-0.13.0",
+     "suffix_kind": "library-version",
+     "note": null
+    },
+    {
+     "old_identity": "gemma-4-31b-it@842da379/tokenizer#cc8d3a0ce36466cc",
+     "encoding": "gemma-4-31b-it",
+     "library": null,
+     "version": "842da379/tokenizer#cc8d3a0ce36466cc",
+     "suffix": "842da379/tokenizer#cc8d3a0ce36466cc",
+     "suffix_kind": "hf revision + tokenizer digest",
+     "note": "short revision plus a 16-hex digest of the tokenizer file"
+    }
+   ]
+  },
+  {
+   "attempt_id": "c3554149-ffe5-40ae-bf8d-a803e8b85251",
+   "manifest_hash": "d7ac4aab45e9322796db6cd6282166ec89f7f06fdd7a169ada5213269485dd64",
+   "at": "2026-08-21T11:50:41+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "23e3333b-8b1c-45cb-90af-505d9778deec",
+   "manifest_hash": "6d194b8cea4baeb6e765b39dc1a58567b5db44527d77bc579bcee2ec6a3d6e9a",
+   "at": "2026-08-21T09:19:48+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "887710e8-18ba-460c-a244-5e1132456301",
+   "manifest_hash": "c9578f6c705b1fc292d7b0e371c3129df2139b18527ed7bd2fc1f8a08b80d9b1",
+   "at": "2026-08-21T08:07:37+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "5f1cba25-28e7-4722-a4d7-3153d199b825",
+    "name": "Hippocamp"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.14.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.14.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f744f6da-7c84-4a65-bbbe-53b65687cc61",
+   "manifest_hash": "efc8dd4fb42c886f6289e94fa46a304cbea526a038817612d03c8a4e294bc0f8",
+   "at": "2026-08-21T03:19:41+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "ef69ebd1-384d-4fce-8a3d-f6a908803545",
+   "manifest_hash": "b3c498945e05ce3e90c094c77f286a151e18bd16ac26dce79ce60eb6ae24c1a9",
+   "at": "2026-08-20T23:31:53+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f181ea6b-dd81-4cfa-83f4-67771adace99",
+   "manifest_hash": "ed3d7585850181105f206872719a3f3c8f956bdd7e38be41c39fdcdacc623750",
+   "at": "2026-08-20T22:36:29+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "1491b691-8d2c-4b96-a6e0-049fabfa5436",
+   "manifest_hash": "4ef1b301b04423b5cf45ca1a229bdc4aeb0122f49e23ae9212cd2bb0ee1f467e",
+   "at": "2026-08-20T22:34:03+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "dbf4fa62-6059-4193-9d80-3f5f5b47ccc2",
+   "manifest_hash": "c27cc457305244be89397e8ddc7f30c66ca3f27905686bb9aca67a9f1b9d2b5e",
+   "at": "2026-08-20T21:57:01+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "94b33a50-136c-46d5-99de-b3b9a1cf7763",
+   "manifest_hash": "b223800b4c3e8b84dbedece93b7388e271ffc2be73235f8b13caed90e020f126",
+   "at": "2026-08-20T19:39:14+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "652fc834-4fc5-42be-be79-fafa288e0190",
+   "manifest_hash": "6ff8937a54186c203cc00439afb05df480dbc49cb1e20b9555e111aabd59065d",
+   "at": "2026-08-20T18:14:51+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "15dcaf82-2271-4ebf-af85-c00a03c8e3c9",
+   "manifest_hash": "11691daef2b1fb8dbcf9a340f58cbfb7614edb3808b15707eadfba9ffd0e99b4",
+   "at": "2026-08-20T18:12:19+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "57b2a1a2-45e3-4a57-b50e-d1a1a8df2bdf",
+   "manifest_hash": "a7c34e1c7c47f33088f064074adeb0d80f12c32e192abe1e5485682cb7fa5624",
+   "at": "2026-08-20T15:04:52+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "1377fad2-625d-48a9-b584-7ee496a77534",
+   "manifest_hash": "6a3056c8d2d3bf1fc9bc555642b6396fed25b15df1057b74b698029a88463390",
+   "at": "2026-08-20T06:48:14+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "hf/google/gemma-4-31B-it@842da3794eaa0b77d5f08bae87a17459d91ff475",
+     "encoding": "hf/google/gemma-4-31B-it",
+     "library": null,
+     "version": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+     "suffix": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+     "suffix_kind": "hf revision",
+     "note": "a git revision of the model repo, not a library version"
+    }
+   ]
+  },
+  {
+   "attempt_id": "744b3589-84cf-4969-aaf0-b73deb16e7e4",
+   "manifest_hash": "5ca0ee2460ce0ffa2ef96484c40f96ab14084c97237b2e504bd087c8771e179e",
+   "at": "2026-08-19T21:05:36+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "fe5a9194-98fe-44bd-afed-23dadf4f5317",
+   "manifest_hash": "93efa0185c1f6c87012b907c05bf43586c53d1a9ebceff687e299a5fd7372ccf",
+   "at": "2026-08-19T15:01:31+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "5f1cba25-28e7-4722-a4d7-3153d199b825",
+    "name": "Hippocamp"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.14.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.14.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "1a775100-f989-47df-9ee3-168ecc00c042",
+   "manifest_hash": "a285325ba2886393a2046f2b0c9fcb95a724c8587d90a5ed0d613a9939a6d44c",
+   "at": "2026-08-19T14:58:12+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "5f1cba25-28e7-4722-a4d7-3153d199b825",
+    "name": "Hippocamp"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.14.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.14.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "d9387fcd-8939-4177-a773-31a45440b8bb",
+   "manifest_hash": "0e3ce9a7261184dc7be33f4e92dae8b7a35eae3e76a9a4fb48482454b2d18bd7",
+   "at": "2026-08-19T14:02:27+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "795aa8d4-e9ea-4a7f-8b25-da2327f3fca1",
+   "manifest_hash": "449f4f57d846dd0c5cb7cd9834647424f50638a4228faa990e87f7fecd2658d9",
+   "at": "2026-08-19T13:58:22+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "4c679157-846a-48b2-88d4-377052620ff6",
+   "manifest_hash": "08e5aa14c0b72f41f24a28bc113100fda658c622aa62a70471befcfffa386108",
+   "at": "2026-08-19T11:03:05+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "e2b27b2a-0b54-471c-8d03-189374d2ec6e",
+   "manifest_hash": "ed1c9ca2de53147c56da68bc2053a3915cf15791811b114990378d07d7746f54",
+   "at": "2026-08-19T06:45:09+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "b6309b5c-3464-4a91-b505-39949488f165",
+   "manifest_hash": "ae54b8a5c20c712dec99bd562d280188a11d93e80b08f2443aa53f54c651ac23",
+   "at": "2026-08-19T05:55:17+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "cb566509-bb0b-4d94-adce-611c6e6c1a25",
+   "manifest_hash": "a39ee76d9c05fb4fe26baf70dfe60c5139ece269be15e328c2ab0aee89c6be78",
+   "at": "2026-08-19T04:23:34+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "b06d1c8e-be78-408d-b26f-34ccde4dc1ed",
+   "manifest_hash": "28c5d0c909218fbff7cbfa2d9ebbfdcc2cee0fbda0a49c2788ae2fb64f2d8b76",
+   "at": "2026-08-19T04:20:55+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "cdac6e2b-8bcb-47fc-8c72-cb8bb02fa726",
+   "manifest_hash": "6760099fddea33f56c7fa4baf088f2c67fe7bdf53ec517150b8f9b10f8f08fc3",
+   "at": "2026-08-19T01:30:28+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "ab5c67eb-da5c-4565-a63e-93fd276998d3",
+   "manifest_hash": "d80d5531f083d718b1af9cb2e972e19e73146470da635e143a0e901d97fe42b2",
+   "at": "2026-08-19T01:21:09+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "c3323b5a-8060-41f6-9bbd-4984ab8b9464",
+   "manifest_hash": "e840bf5e9f5192d02f12cfc678d75c801e72cea49001ebd740ea2fb226ac0c0d",
+   "at": "2026-08-18T19:41:22+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "2dc20dbc-a380-488d-9be0-6260564eae45",
+   "manifest_hash": "de6e2680d4cf8985126c9e49f2762bbe5625285ab10322260fc545fbe868314d",
+   "at": "2026-08-18T18:26:10+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "e701b49f-03c1-4bb8-a4ba-ec152397acc5",
+   "manifest_hash": "57275946dffca9bb65b4699b68d27544e9d9b50fe6e5a2367801a6f6baa56570",
+   "at": "2026-08-18T17:19:48+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "5f1cba25-28e7-4722-a4d7-3153d199b825",
+    "name": "Hippocamp"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.14.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.14.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "1e2e277b-63d5-4768-977b-3316e689aa11",
+   "manifest_hash": "d782c4461230f8f2c54119335a0fcdfc39310987e067c4f91453afe4420b5ff6",
+   "at": "2026-08-18T17:06:22+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "5f1cba25-28e7-4722-a4d7-3153d199b825",
+    "name": "Hippocamp"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.14.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.14.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "700b467a-8bcb-45a0-9883-f308e8ebb50d",
+   "manifest_hash": "097f1de23bc79a86214585f7a9a5fe4c4ce5c59bb045d04e8c3299455fd2d151",
+   "at": "2026-08-18T17:03:05+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "bf91ded8-51bb-4e7d-9b47-280cfe8d8941",
+   "manifest_hash": "1362e5cc900afa261a76854c65ff30749eb24f1c653d25990f44f9a377994806",
+   "at": "2026-08-18T17:02:04+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f30ab19a-85f9-45e1-a798-8f30079de7ee",
+   "manifest_hash": "e654650cf83b3686e78d3d8928b613a92cf5ebf2a1d94d8549896f43085ccf90",
+   "at": "2026-08-18T13:39:50+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "57d2d51a-4e44-47d4-bd20-9799682c522e",
+   "manifest_hash": "619971d51f51c83365000e27d0f0f5a0e1b91ebf883e04e7cd03c42c2df32acd",
+   "at": "2026-08-18T13:31:00+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "da9299a5-743c-4fa1-be8d-e7f8dd43b0c3",
+   "manifest_hash": "0e0ee6c774c6f3a077182e5a386386f1eb57b3c59b8d46fb9869b60cb2b142e9",
+   "at": "2026-08-18T12:11:42+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "5f1cba25-28e7-4722-a4d7-3153d199b825",
+    "name": "Hippocamp"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.14.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.14.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "73caa926-c2f2-41af-b7e5-13404b913ded",
+   "manifest_hash": "67832057c491844eeb10ee5ac7d2666da6f0b3231b0deeaf8a5ae7d38df4dca7",
+   "at": "2026-08-18T12:08:46+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "5f1cba25-28e7-4722-a4d7-3153d199b825",
+    "name": "Hippocamp"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.14.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.14.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.14.0",
+     "suffix": "0.14.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f5582b0d-07ff-4028-aa9d-405abf6b1986",
+   "manifest_hash": "4034a8ebc2718350b4c8100eb8e8e7b4a86b0ff9d9a5742fb72cb148900c73af",
+   "at": "2026-08-18T08:57:31+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "221f524a-02e6-4f0a-bcba-bb1c01b911a2",
+   "manifest_hash": "49ddc8d3eee4c115a67ee972cb276ae4478838a899d5ff8326d80841e19ba533",
+   "at": "2026-08-18T08:52:40+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "1d221dd7-238f-45ef-8c43-8442ce1d01df",
+   "manifest_hash": "9cefd29347ab8cdf9567612b20a14fd6599b9ee41aa8a33b3f1ab9d984580f10",
+   "at": "2026-08-18T05:36:43+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "ab818aed-fa0b-4573-8c8d-c83e2f62cdf4",
+    "name": "Saturnia"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "91405568-0f26-45b9-9bb0-91d58aedffeb",
+   "manifest_hash": "dc50f8a3f8b9ccebaf81921fe48a6fcb16f65fbf794d4671b7f6b4a0017f989d",
+   "at": "2026-08-17T22:46:42+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "244ed895-9662-4e59-943f-1c25ff33d116",
+   "manifest_hash": "2f61d3d594cc6c342eed46c6e6df0ddaaa4ab96403d636c9ec6773bbed31fab5",
+   "at": "2026-08-17T11:39:19+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "ab818aed-fa0b-4573-8c8d-c83e2f62cdf4",
+    "name": "Saturnia"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "8fd8c269-05a5-4905-86a7-3a67198f1a5e",
+   "manifest_hash": "f52f529443b8dbcec805d396cd1a8abaae47c533e33339c5f242082029ab83a3",
+   "at": "2026-08-17T10:53:04+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "ab818aed-fa0b-4573-8c8d-c83e2f62cdf4",
+    "name": "Saturnia"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "aa26f416-6bff-45f7-b0a9-24a35747a256",
+   "manifest_hash": "0ccec9ee63371966ed7139abca5bd383c489f49ab5389f3e7b5c5c28e8c7d262",
+   "at": "2026-08-17T08:20:34+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "ab818aed-fa0b-4573-8c8d-c83e2f62cdf4",
+    "name": "Saturnia"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "49b4e546-8490-48d6-beef-efffb212982e",
+   "manifest_hash": "ce2950621cd1c623141ee2a3a6844c672a33da922749985e4dfbe8f5843655c2",
+   "at": "2026-08-15T08:34:12+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "2920b66e-0211-40d9-88a0-0328cfe0fde2",
+   "manifest_hash": "a22d1219ac5125b8f850f086bd9fee249926503afd9354021377e5120b62f360",
+   "at": "2026-08-15T08:11:31+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "608ef9aa-4060-4317-a18f-f8751481f0fe",
+   "manifest_hash": "2ec405d929ce9767287fd845543e6d17009cbb77789f3fd61476d660386ab78a",
+   "at": "2026-08-13T22:17:55+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "ffbd181b-41b5-4a3c-892e-33ec0e636e9c",
+   "manifest_hash": "8bd3d86ab11e2ff4f229d54f5d6f12f057eb62005d61718c858690e2dc9db7e5",
+   "at": "2026-08-13T16:49:23+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "8caaec04-0170-4dd2-9796-ede4091b12d7",
+   "manifest_hash": "504ad67d799e2330fa3506bc34a6f2d03f1dfb26f51ee4111e48b9715f75984d",
+   "at": "2026-08-13T11:48:20+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "92411569-b5c1-4cd4-981b-92390157cd6b",
+    "name": "Atomic Raven"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "96d218e8-f6fd-4598-8b44-61ebacf83548",
+   "manifest_hash": "3f7095c9694e4d8f6d177d26dbe5020d2dd069ad5d53689adc6571d784f8ebb8",
+   "at": "2026-08-13T11:48:18+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "92411569-b5c1-4cd4-981b-92390157cd6b",
+    "name": "Atomic Raven"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "aea039c4-1113-4ab3-88e6-e10969d60140",
+   "manifest_hash": "a0726c891106c0af0368b6920469c8b90409b409826a2c18a4508a1597ef34a3",
+   "at": "2026-08-13T10:17:24+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "2e728eb5-c312-4c2d-b952-f66b11620ea8",
+   "manifest_hash": "0f86d03b304ef8bc7220c6b49c5b22a93d54e98f51a9996b3ba16ecdcf215fd4",
+   "at": "2026-08-13T01:24:10+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "86b9d13a-a460-40e2-aff6-dfc9970fd96b",
+   "manifest_hash": "4eb3b41af4b23f6b3a7ac0e0bb14b1f0d896eb052ae97e044241b2faf7851ed2",
+   "at": "2026-08-12T21:03:46+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "ec7f67ad-bf77-48d4-9c94-895acfe48fb2",
+   "manifest_hash": "5b03db9ee6c8ff387c4f61f4e6b8f7bf352599b5472150400a1916ca49acb7a2",
+   "at": "2026-08-12T16:07:48+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "67f96d07-0534-4e44-b8fb-348d738cff95",
+   "manifest_hash": "f71adcf38be192d19bc6fb11bd63c36ac45121ac65a764aedd5b3e79a3114bdf",
+   "at": "2026-08-12T14:08:09+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "5afd127d-5cba-4e3b-8a64-3f0f67152832",
+   "manifest_hash": "747b8c93053f4ba62fb5ffeeecb7f231d4879c00e1f946a3e7b69996ef3725ca",
+   "at": "2026-08-12T11:44:26+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "8c6f9f5b-5733-4e57-bcd9-534ac6c34ac8",
+   "manifest_hash": "094368cf07c9c3ec890c95faf6b903502287d28b8217738a9e040b5d7d48005b",
+   "at": "2026-08-12T11:43:05+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "1c671560-2c08-41ec-931b-17e82dfaa243",
+   "manifest_hash": "b8df44fa84fd59d4a82571998dba03208702034b30b50e67bb242b54fe3d6790",
+   "at": "2026-08-12T10:48:22+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "2ed30233-bf65-4453-ac26-6bfb3fa4fd62",
+   "manifest_hash": "b924efb07cb1b33d82d4bccaa7bbc8f8c2f6a561bd2d49dae8d82cb8a9a5e606",
+   "at": "2026-08-12T10:48:22+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1326e17-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "2d7590ecc42035c5b5a2fc304d6bcd7529f9eab96ec78c4c96550ae0368a30de",
+   "at": "2026-08-11T17:57:19+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f13267a3-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "9dd5f964e6375f6dc711cbd0def149e44cdf547d6dd37e16d5018d178cb1d795",
+   "at": "2026-08-11T07:16:18+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f13240af-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "4145861d116edb8006cc958de20d14a6f33b501b3ad965e2625a62bbcc5e8ffc",
+   "at": "2026-08-10T10:49:09+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1323fdd-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "dc835103578931c22f029fb36c738b28538a97d1fc6a25e5004c5fb700c4714f",
+   "at": "2026-08-10T10:30:56+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1323f14-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "8bea1c318d34b7b6b53fb8496ec40155f855595629c8aae9f9cb2da2c6f01750",
+   "at": "2026-08-10T09:30:26+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1323e33-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "5fb688d8817f986476738714d353e22e8ad783e0d2f2746f153941f062291a1b",
+   "at": "2026-08-10T07:37:32+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1323c8f-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "e2850eca7bf0257bb50c6fd0bb193b734fae43031f50b7b1433813d6a19855ca",
+   "at": "2026-08-09T21:41:54+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f13221a0-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "34488d3773afd3e069bcc923d7195855e1190129958740d21b2cb4bd46c7c0fc",
+   "at": "2026-08-09T10:37:30+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1321c0f-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "f9e33e5376cd09c1a7d6b47c58fff75ccce1cd49358ddb6c54d8202b3c6eb226",
+   "at": "2026-08-09T04:50:57+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1321b3b-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "05ca7bd970c095a3cb7be5e13f2a5c958dbe025dcfec09199f04e74efefd0f26",
+   "at": "2026-08-09T02:24:22+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "raw-api-tiktoken@cl100k_base",
+     "encoding": "cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "cl100k_base",
+     "suffix_kind": "inverted: the encoding sits after the @",
+     "note": "the bare half is a harness label, not an encoding"
+    },
+    {
+     "old_identity": "raw-api-tiktoken@o200k_base",
+     "encoding": "o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "o200k_base",
+     "suffix_kind": "inverted: the encoding sits after the @",
+     "note": "the bare half is a harness label, not an encoding"
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1321a69-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "56256844b2f86bbc6c8f55d33fcca90666a26a3500ef5c4ee50a31fabe6b943a",
+   "at": "2026-08-09T02:19:50+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1321934-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "eeca87d4b9d1919b6d06b8844bb8825d9ce39bd3c64fb8632f60a65e784e66a3",
+   "at": "2026-08-08T21:51:17+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1321857-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "77013a43d0c44a84c58c51a8c603c77871a67f8e4b2b0f12b1e802e2df4ec07a",
+   "at": "2026-08-08T21:40:30+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f13215e3-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "78f80d60ae73527ed3b751c76970a448b2d5bede0290b2553c7b930bcf31913f",
+   "at": "2026-08-08T18:23:18+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f13211ad-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "f2648bdcf7796e040b58a1c16e88d99abc0a7ca94a29dfcf3d35eb023980b471",
+   "at": "2026-08-08T00:34:51+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f13210d6-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "5aa1651e085e94a410ec2469fdea9f4fefff13013b1d527f951b1a657134d2e7",
+   "at": "2026-08-07T18:13:02+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "902496d5-7b7a-467c-a66f-5f2d46b4207f",
+    "name": "Excelsior"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@0.13.0",
+     "encoding": "tiktoken/cl100k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@0.13.0",
+     "encoding": "tiktoken/o200k_base",
+     "library": "tiktoken",
+     "version": "0.13.0",
+     "suffix": "0.13.0",
+     "suffix_kind": "version (library implied by the tiktoken/ prefix)",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1321003-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "7938f613743ce02882385adb3ca98f9141313da2b68b57074ed46e0de6d3cf95",
+   "at": "2026-08-07T11:18:56+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1320e5d-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "476ec11e98924eb49ed2c17d70dd070f855a8759de3ba2890d6f25fe896403ae",
+   "at": "2026-08-07T09:15:08+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "raw-api-tiktoken@cl100k_base",
+     "encoding": "cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "cl100k_base",
+     "suffix_kind": "inverted: the encoding sits after the @",
+     "note": "the bare half is a harness label, not an encoding"
+    },
+    {
+     "old_identity": "raw-api-tiktoken@o200k_base",
+     "encoding": "o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "o200k_base",
+     "suffix_kind": "inverted: the encoding sits after the @",
+     "note": "the bare half is a harness label, not an encoding"
+    }
+   ]
+  },
+  {
+   "attempt_id": "f1320012-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "ca21d7f2ba6d949a716a142d18dc6b93defd0de37ed551fc6b4ac115fa6d633f",
+   "at": "2026-08-06T10:27:37+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "52b1883a-464e-403c-9059-d57afe91a13c",
+    "name": "Dexagon"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131ff41-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "252a118df44596ca8fb5220fdf033ea4cd5a0210f0ccb56daf046beb6549507b",
+   "at": "2026-08-06T08:56:11+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131fe6d-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "e2e9e963a94dcdd50e1c367c3f28968178cc6d089dfc7f636751db717a24a0ef",
+   "at": "2026-08-06T08:50:36+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131fcbb-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "13f54b1c0829fbfc78a35ca13beee9bec692cf01b1fbb2f42f06082be0fee98b",
+   "at": "2026-08-06T08:31:10+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131fbee-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "395fbdec923f1e4ed7da846d19d4ffb3b778976e32a59eae753c43d063c47406",
+   "at": "2026-08-06T08:31:10+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131fb1e-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "5adab0394779725317f37aa452b688500615908cbb2d9830900554c5fffe0741",
+   "at": "2026-08-06T08:29:11+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131fa44-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "be7763ae4252cea8745546f15e10f27aae9dc89ad304a3f760ae35d2829bed26",
+   "at": "2026-08-06T08:29:11+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131f889-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "d43bac7ce7a433d88890be9e024b214ae2a13d5ef55635629fa6b63098dee69a",
+   "at": "2026-08-06T07:16:16+00:00",
+   "is_replication": true,
+   "proposal": null,
+   "submitter": {
+    "sub": "040b6f79-a867-46d4-8069-fd6143bd9e20",
+    "name": "Reticuli"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131d302-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "1c98d3a4518afa8c23b4d41178cf614cb28f466cbb41066dc70b509404dd1e95",
+   "at": "2026-08-03T12:24:01+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131d20e-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "399677006a764d8eb328578d0763209fe42c5113e2c82da717c43f18175aa47d",
+   "at": "2026-08-03T12:23:59+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  },
+  {
+   "attempt_id": "f131d139-961a-11f1-9e5e-04e365516815",
+   "manifest_hash": "432d102447db22c1c81990c41d81fb2b550354bb7d12770d69ef5194c4d5b3bd",
+   "at": "2026-08-03T12:23:56+00:00",
+   "is_replication": false,
+   "proposal": null,
+   "submitter": {
+    "sub": "dbc024a7-2a15-4006-a745-17bc6cdd0692",
+    "name": "Rosetta"
+   },
+   "pinned_members": [
+    {
+     "old_identity": "tiktoken/cl100k_base@vocab",
+     "encoding": "tiktoken/cl100k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    },
+    {
+     "old_identity": "tiktoken/o200k_base@vocab",
+     "encoding": "tiktoken/o200k_base",
+     "library": null,
+     "version": null,
+     "suffix": "vocab",
+     "suffix_kind": "marker: vocab, no version carried",
+     "note": null
+    }
+   ]
+  }
+ ],
+ "rule": "the roster member is the encoding name; the part after '@' is provenance (library and version) or a marker, and lives in manifest.environment on filings since 2026-08-25; this table maps each legacy identity to that split without touching any stored row or any comparison key"
+}
