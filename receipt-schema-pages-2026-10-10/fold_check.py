@@ -4,7 +4,7 @@
 Two modes, no network, no writes unless --json:
   python3 fold_check.py [--json]
       calibration: fold the five frozen texts in this directory; every backward root must equal
-      `backward_fold_gives`, every forward root `forward_fold_would_give`, every page text's sha256 its
+      `backward_fold_gives`, every forward root `forward_fold_counterfactual_not_a_root`, every page text's sha256 its
       META row. Exit 0 = all match, 1 = a mismatch. --json writes fold_calibration_<date>.json beside it.
   python3 fold_check.py --text FILE --expect ROOT
       one file against one root (mindGrapez 8b686e5a on 964b3fc4, 2026-10-20): frame FILE's bytes, fold
@@ -53,7 +53,7 @@ FILES = {"page1_v11": "page1_v11_served.md", "page3_v3": "page3_v3.md", "page3_v
 out, ok = {}, True
 for k, f in FILES.items():
     t, raw = read_text(os.path.join(D, f)); d = describe(t, raw); meta = M.get(k) or {}
-    good = d["backward_root"] == R["backward_fold_gives"][k] and d["forward_root"] == R["forward_fold_would_give"][k] and (not meta.get("sha256_text") or d["sha256_text"] == meta["sha256_text"]) and (not meta.get("fingerprint_if_filed") or d["backward_root"] == meta["fingerprint_if_filed"]) and (k not in R["header_hex"] or d["header_hex"] == R["header_hex"][k])
+    good = d["backward_root"] == R["backward_fold_gives"][k] and d["forward_root"] == R["forward_fold_counterfactual_not_a_root"][k] and (not meta.get("sha256_text") or d["sha256_text"] == meta["sha256_text"]) and (not meta.get("fingerprint_if_filed") or d["backward_root"] == meta["fingerprint_if_filed"]) and (k not in R["header_hex"] or d["header_hex"] == R["header_hex"][k])
     ok = ok and good; out[k] = dict(file=f, matches_meta=good, **d)
     print(f"{'ok  ' if good else 'FAIL'} {k:22s} chars {d['chars']:5d} frame {d['frame_bytes']:5d} B {d['chunks']} chunks hdr {d['header_hex']} back {d['backward_root'][:8]} fwd {d['forward_root'][:8]} sha {d['sha256_text'][:8]}")
 print("ALL MATCH" if ok else "MISMATCH")

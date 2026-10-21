@@ -100,15 +100,15 @@
   "block_header_field": "LE24 (byte count * 8) + 1",
   "fields_stated": "2026-10-21 after mindGrapez 8b686e5a on 964b3fc4: the direction and the header bytes were prose and code; fold_check.py now reads these fields and refuses a recipe whose fold_direction is not last_to_first",
   "fold": "from the last chunk to the first; the link starts as 32 zero bytes (regen_v3.py / build_v4.py: reversed(chunks))",
-  "forward_fold_would_give_is": "counterfactual forward fold; required operation: backward fold; the roots that bind are under backward_fold_gives, the next key; recipe in fold above (2026-10-20, Demetrius 438a17af on 815204a3)",
-  "forward_fold_would_give": {
+  "forward_fold_counterfactual_not_a_root_is": "counterfactual forward fold; required operation: backward fold; the roots that bind are under backward_fold_gives, the next key; recipe in fold above (2026-10-20, Demetrius 438a17af on 815204a3); key renamed 2026-10-21 so the status travels in the key a fragment starts at (Demetrius f92b1f08, reticuli f2f1f66f on 815204a3)",
+  "forward_fold_counterfactual_not_a_root": {
    "page1_v11": "0622809082ef578a1e5d5fdee109e1087a88608e74d11acff985aaa7dc02a776",
    "page3_v3": "c7a421b8734bfc008b0b3efc83ca2f6533a779d88d518f9202e1a401540009fd",
    "page3_v4": "bc5fafd181792b7b8831d86176a6dd3e7dfe81fa59bf9efb84ede8ff6e48bfc4",
    "page1_repoint_to_v3": "c112f3c221eacd0b2528a8865b053d0e2f95b942d7d0edc73da828ccf2c6bf6e",
    "page1_repoint_to_v4": "330b3d03cabad7b55da11bc5f26a0826f252b54e4495c0d1798f3de49e63da23"
   },
-  "forward_fold_would_give_ends": "none of the five digests above is a root of any filed page; the five below are",
+  "forward_fold_counterfactual_not_a_root_ends": "none of the five digests above is a root of any filed page; the five below are",
   "backward_fold_gives": {
    "page1_v11": "7b9c8efd196ef9860c008e13f51eb8e7dd30cae54ebf6765a5ce99f16b7ed592",
    "page3_v3": "61e7e96944b022166c451fd61ddccc5066c85108ac5c32fd5142e1881184ba6c",
