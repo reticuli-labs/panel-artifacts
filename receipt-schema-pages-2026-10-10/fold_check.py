@@ -1,26 +1,56 @@
 #!/usr/bin/env python3
-"""Reader tool: the frame fold reimplemented from META.json `frame_recipe` alone, run on the five frozen texts in this directory. Every backward root must equal `backward_fold_gives` and every forward root `forward_fold_would_give`; the page texts' sha256 must equal their META rows. Exit 0 = all match. Usage: python3 fold_check.py [--json]. No network, no writes unless --json (writes fold_calibration_<date>.json beside it)."""
+"""Reader tool: the frame fold reimplemented from META.json `frame_recipe` alone.
+
+Two modes, no network, no writes unless --json:
+  python3 fold_check.py [--json]
+      calibration: fold the five frozen texts in this directory; every backward root must equal
+      `backward_fold_gives`, every forward root `forward_fold_would_give`, every page text's sha256 its
+      META row. Exit 0 = all match, 1 = a mismatch. --json writes fold_calibration_<date>.json beside it.
+  python3 fold_check.py --text FILE --expect ROOT
+      one file against one root (mindGrapez 8b686e5a on 964b3fc4, 2026-10-20): frame FILE's bytes, fold
+      the chunks, compare the backward root with ROOT (64 hex). Exit 0 = match, 1 = mismatch, 2 = usage.
+      On a mismatch the forward root is printed too, and named if ROOT equals it (wrong direction).
+      For filing day: FILE = the text reassembled from the thread by the note's reader rule, ROOT = the
+      gateway's payload.content for the page. The reassembly and the GET stay the reader's own steps.
+The direction, link seed, chunk size and header bytes are READ from the recipe's fields, not assumed."""
 import json, hashlib, struct, sys, os, datetime as dt
 D = os.path.dirname(os.path.abspath(__file__)); M = json.load(open(os.path.join(D, "META.json"), encoding="utf-8")); R = M["frame_recipe"]
-assert R["header_bytes"] == 12 and R["chunk_bytes"] == 3000 and R["link"] == "sha256(chunk + link)"
+assert R["header_bytes"] == 12 and R["link"] == "sha256(chunk + link)", "recipe shape"
+assert R["fold_direction"] == "last_to_first", "this tool implements the last-to-first fold only; the recipe says %r" % R.get("fold_direction")
+CHUNK = int(R["chunk_bytes"]); MAGIC = bytes.fromhex(R["magic_descriptor_hex"]); SEED = bytes.fromhex(R["link_seed_hex"]); assert len(MAGIC) == 5 and len(SEED) == 32
 def frame(text):
     b = text.encode("utf-8"); n = len(b)
-    return bytes.fromhex("28b52ffda0") + struct.pack("<I", n) + struct.pack("<I", n * 8 + 1)[:3] + b   # magic, descriptor, size LE32, (count*8+1) LE24
-def fold(chunks, backward):
-    link = bytes(32)
-    for c in (reversed(chunks) if backward else chunks): link = hashlib.sha256(c + link).digest()
+    return MAGIC + struct.pack("<I", n) + struct.pack("<I", n * 8 + 1)[:3] + b   # magic+descriptor, size LE32, (count*8+1) LE24, text
+def chunks(fr): return [fr[i:i + CHUNK] for i in range(0, len(fr), CHUNK)]
+def fold(cs, backward=True):
+    link = SEED
+    for c in (reversed(cs) if backward else cs): link = hashlib.sha256(c + link).digest()
     return link.hex()
+def describe(t):
+    fr = frame(t); cs = chunks(fr)
+    return {"chars": len(t), "bytes": len(t.encode("utf-8")), "frame_bytes": len(fr), "chunks": len(cs), "header_hex": fr[:12].hex(), "sha256_text": hashlib.sha256(t.encode("utf-8")).hexdigest(), "backward_root": fold(cs, True), "forward_root": fold(cs, False)}
+def usage(msg):
+    print("usage error:", msg, file=sys.stderr); print(__doc__, file=sys.stderr); sys.exit(2)
+args = sys.argv[1:]
+if "--text" in args or "--expect" in args:
+    try: f = args[args.index("--text") + 1]; root = args[args.index("--expect") + 1].strip().lower()
+    except (ValueError, IndexError): usage("--text FILE and --expect ROOT are both required")
+    if len(root) != 64 or any(ch not in "0123456789abcdef" for ch in root): usage("ROOT must be 64 hex characters (a prefix can false-match)")
+    if not os.path.isfile(f): usage("no such file: %s" % f)
+    d = describe(open(f, encoding="utf-8").read()); match = d["backward_root"] == root
+    print(f"{'MATCH   ' if match else 'MISMATCH'} {os.path.basename(f)} chars {d['chars']} bytes {d['bytes']} frame {d['frame_bytes']} B {d['chunks']} chunks hdr {d['header_hex']}")
+    print(f"  backward root {d['backward_root']}\n  expected      {root}")
+    if not match:
+        print(f"  forward root  {d['forward_root']}" + ("  <- expected EQUALS the forward fold: wrong direction, the roots that bind are backward" if root == d["forward_root"] else ""))
+    sys.exit(0 if match else 1)
 FILES = {"page1_v11": "page1_v11_served.md", "page3_v3": "page3_v3.md", "page3_v4": "page3_v4_draft.md", "page1_repoint_to_v3": "page1_repoint_to_v3.md", "page1_repoint_to_v4": "page1_repoint_to_v4.md"}
 out, ok = {}, True
 for k, f in FILES.items():
-    t = open(os.path.join(D, f), encoding="utf-8").read(); fr = frame(t); cs = [fr[i:i + 3000] for i in range(0, len(fr), 3000)]
-    back, fwd, sha = fold(cs, True), fold(cs, False), hashlib.sha256(t.encode("utf-8")).hexdigest()
-    meta = M.get(k) or {}
-    good = back == R["backward_fold_gives"][k] and fwd == R["forward_fold_would_give"][k] and (not meta.get("sha256_text") or sha == meta["sha256_text"]) and (not meta.get("fingerprint_if_filed") or back == meta["fingerprint_if_filed"])
-    ok = ok and good
-    out[k] = {"file": f, "chars": len(t), "bytes": len(t.encode("utf-8")), "frame_bytes": len(fr), "chunks": len(cs), "header_hex": fr[:12].hex(), "sha256_text": sha, "backward_root": back, "forward_root": fwd, "matches_meta": good}
-    print(f"{'ok  ' if good else 'FAIL'} {k:22s} chars {len(t):5d} frame {len(fr):5d} B {len(cs)} chunks hdr {fr[:12].hex()} back {back[:8]} fwd {fwd[:8]} sha {sha[:8]}")
+    d = describe(open(os.path.join(D, f), encoding="utf-8").read()); meta = M.get(k) or {}
+    good = d["backward_root"] == R["backward_fold_gives"][k] and d["forward_root"] == R["forward_fold_would_give"][k] and (not meta.get("sha256_text") or d["sha256_text"] == meta["sha256_text"]) and (not meta.get("fingerprint_if_filed") or d["backward_root"] == meta["fingerprint_if_filed"]) and (k not in R["header_hex"] or d["header_hex"] == R["header_hex"][k])
+    ok = ok and good; out[k] = dict(file=f, matches_meta=good, **d)
+    print(f"{'ok  ' if good else 'FAIL'} {k:22s} chars {d['chars']:5d} frame {d['frame_bytes']:5d} B {d['chunks']} chunks hdr {d['header_hex']} back {d['backward_root'][:8]} fwd {d['forward_root'][:8]} sha {d['sha256_text'][:8]}")
 print("ALL MATCH" if ok else "MISMATCH")
-if "--json" in sys.argv:
+if "--json" in args:
     p = os.path.join(D, f"fold_calibration_{dt.date.today().isoformat()}.json"); json.dump({"ran": dt.datetime.now(dt.timezone.utc).isoformat()[:19] + "Z", "all_match": ok, "texts": out}, open(p, "w"), indent=1); print("wrote", os.path.basename(p))
 sys.exit(0 if ok else 1)

@@ -93,6 +93,12 @@
   "header_bytes": 12,
   "chunk_bytes": 3000,
   "link": "sha256(chunk + link)",
+  "fold_direction": "last_to_first",
+  "link_seed_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+  "magic_descriptor_hex": "28b52ffda0",
+  "size_field": "LE32 text byte count",
+  "block_header_field": "LE24 (byte count * 8) + 1",
+  "fields_stated": "2026-10-21 after mindGrapez 8b686e5a on 964b3fc4: the direction and the header bytes were prose and code; fold_check.py now reads these fields and refuses a recipe whose fold_direction is not last_to_first",
   "fold": "from the last chunk to the first; the link starts as 32 zero bytes (regen_v3.py / build_v4.py: reversed(chunks))",
   "forward_fold_would_give_is": "counterfactual forward fold; required operation: backward fold; the roots that bind are under backward_fold_gives, the next key; recipe in fold above (2026-10-20, Demetrius 438a17af on 815204a3)",
   "forward_fold_would_give": {
