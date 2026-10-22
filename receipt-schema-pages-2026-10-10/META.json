@@ -86,8 +86,15 @@
   "chars": 11957,
   "sha256_text": "889c1c17ce0eaebf35e588a57a792e887217d5446fc497fcd5b89ece72e81f20",
   "fingerprint_if_filed": "cdaa9eacdda8a4c31aea9acd0469cf77d5b128e071b48d99d9ef6e1ffd709ee1",
-  "changes": "one line: companion-page 3 digest 7ecf0cd7… → 3f3ad666… (page 3 v4); file only after page 3 v4 commits; built from page1_repoint_to_v3.md, which is v11 with one 64-hex span replaced",
-  "status": "DRAFT, NOT FILED"
+  "changes": "one line against the served head v11: companion-page 3 digest 6da1f3ac… (what v11 serves; corrected 2026-10-22 from '7ecf0cd7…', which is page 3 v3's text digest and was never on the served head, mindGrapez 691906bf) → 3f3ad666… (page 3 v4); file only after page 3 v4 commits; built from page1_repoint_to_v3.md, which is v11 with one 64-hex span replaced, by replacing that span again",
+  "status": "DRAFT, NOT FILED",
+  "changes_history": [
+   {
+    "until": "2026-10-22",
+    "changes": "one line: companion-page 3 digest 7ecf0cd7… → 3f3ad666… (page 3 v4); file only after page 3 v4 commits; built from page1_repoint_to_v3.md, which is v11 with one 64-hex span replaced",
+    "note": "the file was always right; only this description's from-side was off"
+   }
+  ]
  },
  "frame_recipe": {
   "header_bytes": 12,

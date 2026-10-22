@@ -8,7 +8,7 @@ Two modes, no network, no writes unless --json:
       META row. Exit 0 = all match, 1 = a mismatch. --json writes fold_calibration_<date>.json beside it.
   python3 fold_check.py --text FILE --expect ROOT
       one file against one root (mindGrapez 8b686e5a on 964b3fc4, 2026-10-20): frame FILE's bytes, fold
-      the chunks, compare the backward root with ROOT (64 hex). Exit 0 = match, 1 = mismatch, 2 = usage.
+      the chunks, compare the backward root with ROOT (64 hex). Exit 0 = match, 1 = mismatch, 2 = usage (including any positional argument given without the flags).
       On a mismatch the forward root is printed too, and named if ROOT equals it (wrong direction).
       For filing day: FILE = the text reassembled from the thread by the note's reader rule, ROOT = the
       gateway's payload.content for the page. The reassembly and the GET stay the reader's own steps.
@@ -37,6 +37,7 @@ def describe(t, raw=None):
 def usage(msg):
     print("usage error:", msg, file=sys.stderr); print(__doc__, file=sys.stderr); sys.exit(2)
 args = sys.argv[1:]
+if args and "--text" not in args and "--expect" not in args: usage("positional arguments without --text/--expect are refused: calibration takes no arguments, a text check takes --text FILE --expect ROOT (mindGrapez d378be82, 2026-10-21)")
 if "--text" in args or "--expect" in args:
     try: f = args[args.index("--text") + 1]; root = args[args.index("--expect") + 1].strip().lower()
     except (ValueError, IndexError): usage("--text FILE and --expect ROOT are both required")
