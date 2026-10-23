@@ -1,0 +1,1548 @@
+{
+ "fixtures": {
+  "would_pass:ring-outside": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [],
+    "inspections": 0
+   },
+   "expected": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:one-chain": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 1
+   },
+   "expected": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:two-disjoint": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:shared-node": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 4
+   },
+   "expected": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 2
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:floor-met": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "roots_published": [
+     "A",
+     "B"
+    ]
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:caller-order": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "C",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "roots_published": [
+     "C",
+     "B"
+    ]
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:order-flip": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 3
+   },
+   "expected": {
+    "stop": "floor_met",
+    "min_cut": 2
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:shared-then-disjoint": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "C"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 5
+   },
+   "expected": {
+    "stop": "floor_met",
+    "roots_published": [
+     "A",
+     "C"
+    ]
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:capped": {
+   "got": {
+    "stop": "capped",
+    "verdict": "unresolved",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "capped",
+    "verdict": "unresolved",
+    "min_cut": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:floor-before-budget": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "chains": 2
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:other-facet": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:star-facet (edge)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "bad_facet"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0,
+    "dropped": "bad_facet"
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:overall-rating": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "aggregate",
+     "aggregate"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0,
+    "dropped": "aggregate"
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:reader-bridge": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     0.5,
+     0.5
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "min_cut": 2,
+    "discount": 0.5
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:witness-bridge": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "not_reader"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:bridge-compose": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:self-edge": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [
+     "self_edge"
+    ],
+    "inspections": 1
+   },
+   "expected": {
+    "dropped": "self_edge",
+    "min_cut": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:cycle": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 4
+   },
+   "expected": {
+    "min_cut": 1,
+    "chains": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:depth": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "min_cut": 1,
+    "chains": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:dark-cone": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ]
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:decay (root+1 edge hop)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     0.5
+    ],
+    "dropped": [],
+    "inspections": 1
+   },
+   "expected": {
+    "discount": 0.5
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:decay (root+2 edge hops)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     0.25
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "discount": 0.25
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:bad-pointer (no hash)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "bad_evidence"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "dropped": "bad_evidence"
+   },
+   "agree": true,
+   "why": null
+  },
+  "would_pass:bad-pointer (mismatch)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "bad_evidence"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "dropped": "bad_evidence"
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:ring-outside": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [],
+    "inspections": 0
+   },
+   "expected": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:one-chain": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 1
+   },
+   "expected": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:two-disjoint": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:shared-node": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 4
+   },
+   "expected": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 2
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:floor-met": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "roots_published": [
+     "A",
+     "B"
+    ]
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:caller-order": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "C",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "roots_published": [
+     "C",
+     "B"
+    ]
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:order-flip": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 3
+   },
+   "expected": {
+    "stop": "floor_met",
+    "min_cut": 2
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:shared-then-disjoint": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "C"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 5
+   },
+   "expected": {
+    "stop": "floor_met",
+    "roots_published": [
+     "A",
+     "C"
+    ]
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:capped": {
+   "got": {
+    "stop": "capped",
+    "verdict": "unresolved",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 1
+   },
+   "expected": {
+    "stop": "capped",
+    "verdict": "unresolved",
+    "min_cut": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:floor-before-budget": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     1.0,
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "chains": 2
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:other-facet": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:star-facet (edge)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "bad_facet"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0,
+    "dropped": "bad_facet"
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:overall-rating": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "aggregate",
+     "aggregate"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0,
+    "dropped": "aggregate"
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:reader-bridge": {
+   "got": {
+    "stop": "floor_met",
+    "verdict": "admitted",
+    "min_cut": 2,
+    "chains": 2,
+    "roots_published": [
+     "A",
+     "B"
+    ],
+    "discount": [
+     0.5,
+     0.5
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "stop": "floor_met",
+    "min_cut": 2,
+    "discount": 0.5
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:witness-bridge": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "not_reader"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:bridge-compose": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [],
+    "inspections": 0
+   },
+   "expected": {
+    "min_cut": 0
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:self-edge": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [
+     "self_edge"
+    ],
+    "inspections": 1
+   },
+   "expected": {
+    "dropped": "self_edge",
+    "min_cut": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:cycle": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 4
+   },
+   "expected": {
+    "min_cut": 1,
+    "chains": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:depth": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "min_cut": 1,
+    "chains": 1
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:dark-cone": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     1.0
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ]
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:decay (root+1 edge hop)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     0.5
+    ],
+    "dropped": [],
+    "inspections": 1
+   },
+   "expected": {
+    "discount": 0.5
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:decay (root+2 edge hops)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 1,
+    "chains": 1,
+    "roots_published": [
+     "A"
+    ],
+    "discount": [
+     0.25
+    ],
+    "dropped": [],
+    "inspections": 2
+   },
+   "expected": {
+    "discount": 0.25
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:bad-pointer (no hash)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "bad_evidence"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "dropped": "bad_evidence"
+   },
+   "agree": true,
+   "why": null
+  },
+  "reached:bad-pointer (mismatch)": {
+   "got": {
+    "stop": "complete",
+    "verdict": "insufficient_evidence",
+    "min_cut": 0,
+    "chains": 0,
+    "roots_published": [],
+    "discount": [],
+    "dropped": [
+     "bad_evidence"
+    ],
+    "inspections": 0
+   },
+   "expected": {
+    "dropped": "bad_evidence"
+   },
+   "agree": true,
+   "why": null
+  }
+ },
+ "rejects": {
+  "would_pass:floor-one": "Reject bad_floor",
+  "would_pass:bad-budget": "Reject bad_budget",
+  "would_pass:star-facet (walk facet)": "Reject bad_facet",
+  "reached:floor-one": "Reject bad_floor",
+  "reached:bad-budget": "Reject bad_budget",
+  "reached:star-facet (walk facet)": "Reject bad_facet"
+ },
+ "rewalks": {
+  "would_pass:one-chain": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "would_pass:two-disjoint": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "would_pass:shared-node": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "would_pass:floor-met": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "would_pass:caller-order": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "would_pass:order-flip": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "would_pass:shared-then-disjoint": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "would_pass:capped": {
+   "original": [
+    "capped",
+    "unresolved",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": false
+  },
+  "would_pass:floor-before-budget": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "would_pass:reader-bridge": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "would_pass:self-edge": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "would_pass:cycle": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "would_pass:depth": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "would_pass:dark-cone": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "would_pass:decay (root+1 edge hop)": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "would_pass:decay (root+2 edge hops)": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "would_pass:edge-budget-dark-inspection": {
+   "original": [
+    "capped",
+    "unresolved",
+    1,
+    2
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1,
+    1
+   ],
+   "reproduced": false
+  },
+  "reached:one-chain": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:two-disjoint": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "reached:shared-node": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:floor-met": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "reached:caller-order": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "reached:order-flip": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "reached:shared-then-disjoint": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "reached:capped": {
+   "original": [
+    "capped",
+    "unresolved",
+    1
+   ],
+   "rewalk": [
+    "capped",
+    "unresolved",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:floor-before-budget": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "reached:reader-bridge": {
+   "original": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "rewalk": [
+    "floor_met",
+    "admitted",
+    2
+   ],
+   "reproduced": true
+  },
+  "reached:self-edge": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:cycle": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:depth": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:dark-cone": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:decay (root+1 edge hop)": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:decay (root+2 edge hops)": {
+   "original": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1
+   ],
+   "reproduced": true
+  },
+  "reached:edge-budget-dark-inspection": {
+   "original": [
+    "capped",
+    "unresolved",
+    1,
+    2
+   ],
+   "rewalk": [
+    "complete",
+    "insufficient_evidence",
+    1,
+    1
+   ],
+   "reproduced": false
+  }
+ },
+ "verdict_checks": {
+  "clean": null,
+  "sum-field": "aggregate",
+  "loss omitted": "loss_omitted",
+  "bad walked_at": "bad_time",
+  "loss = edge witness": "loss_is_witness",
+  "loss = reader": null
+ }
+}

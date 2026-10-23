@@ -1,0 +1,126 @@
+Facet Judgment Layer (v0.1)
+
+Its own artifact. It does not edit Receipt Schema page 1, discharge a row, or replace the Attestation Trajectory Layer. A trajectory grade is whether a witness was strong enough. This layer is whether that witness sits in one reader's cone on one facet. A signature proves who signed. A pointer names what was recorded. Neither makes the claim true. This layer does not grade the claim or price a path.
+
+## 1. Two records.
+
+An edge is what a witness signs. A verdict is what a reader publishes after a walk. Any key this page does not name is invalid. `score`, `total`, `rating`, `trust`, `index`, `facets`, `grade`, `rank`, and `confidence` are examples, not a closed list. The facet string `*` is invalid.
+
+## 2. Edge.
+
+- `witness`: opaque signer id. Continuity is equality of this string, as the reader already accepts it. This layer does not check legal personhood.
+- `facet`: Unicode NFC, 1 to 64 code points, exact match on the NFC bytes. A string that is not NFC is invalid (`bad_facet`). No case folding. Empty is invalid.
+- `subject`: opaque id of the person, artifact, or claim being judged.
+- `evidence`: a pointer. Either `{ "kind": "aer1", "id": "<lowercase uuid>" }` or `{ "kind": "url-hash", "url": "<absolute URL>", "hash": "sha256:<64 lowercase hex>" }`.
+- `package`: optional. A URL, or a `url-hash` pointer, to the package definition this edge claims. The walk ignores it. Match stays the facet string. The fixtures omit it. A hop copies it when the edge has one.
+
+The witness's discount for how much the next judgment counts is a rating, on page 3. This edge does not carry a second one. Other than that, the only per-hop discounts described by this page are the reader's decay and bridge. Silence is the absence of an edge.
+
+`witness` MUST differ from `subject`. A self-edge does not extend a chain. Renaming a facet does not rewrite an edge. The edge carries no signature and no `first_loss_owner`. Signing is the envelope's job.
+
+## 3. Reader bridge.
+
+A bridge is not an edge and does not rewrite one.
+
+- `witness` MUST equal the evaluating reader's signer id.
+- `their_facet` and `my_facet`: opaque strings, same rules as `facet`, and they MUST differ.
+- `weight`: a number in `(0, 1]`.
+- `evidence`: optional pointer, same shape as an edge.
+
+At most one bridge applies to a hop, from `their_facet` onto the facet being walked. A bridge of a bridge does not apply. A bridge signed by anyone other than the evaluating reader does not apply.
+
+## 4. Verdict.
+
+- `reader`: opaque signer id of the evaluating reader.
+- `facet`, `subject`: what was walked.
+- `floor`: integer >= 2.
+- `depth`: integer >= 1. Max hops on a path, including the reader's root hop.
+- `decay`: number in `(0, 1]`. Per extra hop after the root. `1` leaves products unchanged.
+- `min_cut`: integer >= 0. Size of a maximum internally node-disjoint subset of the published `chains`. Exact for the whole in-depth cone only when `stop` is `complete`. Otherwise a lower bound.
+- `stop`: `floor_met`, `complete`, or `capped`.
+- `verdict`: `admitted`, `insufficient_evidence`, or `unresolved`.
+- `chains`: the paths that entered the verdict. No other cone material.
+- `edge_budget`, `path_budget`: optional integers >= 1. Omitted means no cap of that kind.
+- `loss`: the string `unassigned`, or an opaque signer id. Required. See section 8.
+- `walked_at`: RFC 3339 UTC with a `Z`. Required (`bad_time` otherwise). Dates the walk. Not an expiry.
+
+`stop`, `verdict`, and `chains` move together.
+
+- `floor_met`: an internally node-disjoint set of size `floor` was in hand. `verdict` is `admitted`. `chains` is that set only. Further paths stay dark and MUST NOT be read as revoking the admission. `floor_met` does not claim the cone was exhausted.
+- `complete`: the in-depth cone was searched and the disjoint set never reached `floor`. `verdict` is `insufficient_evidence`. `chains` is every simple in-depth path found, including paths that share a node.
+- `capped`: `edge_budget` or `path_budget` bound first, with the disjoint set still under `floor`. `verdict` is `unresolved`. `chains` is the paths in hand. A capped search is not a thin cone. A consumer MUST NOT treat `unresolved` as `insufficient_evidence`.
+
+`admitted` requires `stop` `floor_met` and `min_cut >= floor`. A single chain never admits. `insufficient_evidence` requires `stop` `complete`. `unresolved` requires `stop` `capped` and `min_cut < floor`.
+
+Budgets the caller set are copied onto the verdict. An implementation ceiling, if it binds under the floor, is published as that budget with `capped`.
+
+## 5. Chain and hop.
+
+A chain has ordered `hops` and one `chain_discount`, the product of that chain's `applied_discount` values. A verdict MUST NOT sum, max, or average `chain_discount` across chains.
+
+A hop has `role` (`root` or `edge`), `witness`, `facet`, `subject`, and `applied_discount`. It copies `package` when the edge has one. The first hop is the reader's root: `witness` equals `reader`, and `evidence` is absent. An edge hop requires `evidence`. On an edge hop, `facet` is the walked facet. `source_facet` and `bridge_weight` are present only when a reader bridge was applied. `applied_discount` is `1` on the root. On each later hop it is `bridge_weight * decay`, once, with a missing bridge weight taken as 1. It is not `decay` raised to the hop index. The chain's product is what compounds.
+
+Two paths may share the reader and the final subject. They are not internally node-disjoint if they share any other hop `witness` or hop `subject`.
+
+## 6. Walk.
+
+`walk(reader, roots, edges, bridges, facet, subject, floor, depth, decay, walked_at, edge_budget?, path_budget?)` returns a verdict. The caller supplies `walked_at`. The walker copies it and does not read a clock. No network, no identity merge, no groups, no fetch. Pointer shape is checked. With bytes supplied, `url-hash` MUST match SHA-256 or the edge is dropped; an `aer1` id MUST be well-formed or the edge is dropped. AER-1 byte equality stays with an AER-1 verifier.
+
+Reject `floor < 2`, `depth < 1`, `decay` outside `(0, 1]`, or a budget `< 1`. Drop records that fail this page. Edges match `facet`, plus one reader bridge from `their_facet`. Discover simple paths depth-first: roots in caller order, then out-edges in caller order. An inspection is one look at one edge on one prefix. Record a path at `subject` with no repeated node. Keep every path. `min_cut` is the size of a maximum disjoint subset. At `floor`, stop `floor_met` and publish one such subset in caller order. If the next path or inspection would pass a budget, stop first; under the floor that is `capped`. Meeting the floor on the budget's last path is `floor_met`. Finishing under the floor is `complete`. Do not sample, and do not report a short search as `insufficient_evidence`.
+
+## 7. Falsifier.
+
+A verdict is refuted by re-walking its published `chains` under its published `reader`, `facet`, `subject`, `floor`, `depth`, `decay`, `stop`, and budgets, and getting a different `verdict`, a different `min_cut`, or a different chain membership. A different `walked_at` is not a refutation. It is also refuted when `loss` is omitted, or when a named `loss` equals the `witness` of an edge hop.
+
+An edge is refuted when `witness` equals `subject`, `facet` is empty or `*`, or the evidence pointer is malformed. An edge is not refuted because some later reader has no chain to it. That reader publishes their own verdict.
+
+A consumer MUST apply this falsifier whether or not the record copies it into a field.
+
+## 8. Loss.
+
+`loss` sits on the verdict, not on the edge. The value `unassigned` is valid, and it MUST be written out. Omitting the field is invalid (`loss_omitted`). A chain that prices no loss is still a chain. The verdict says so.
+
+A named `loss` is an opaque signer id. It MUST differ from the `witness` of every edge hop. It MAY be `reader`. Naming someone who does not bleed, in order to look complete, is the failure this field exists to prevent.
+
+A consumer that requires a named payer MUST refuse `unassigned` at read time. That is the consumer's policy. This layer does not refuse the verdict, and it does not invent a payer.
+
+Receipt Schema page 1 still binds `first_loss_owner` at write time, distinct from the witness-producer. This artifact does not. That is why it is not a core row there, and why its rows are not marked discharged under that page.
+
+## 9. Dark cone.
+
+Roots and edges that lie on no published path stay unpublished. On `complete`, shared-node paths stay in `chains` so a second reader can see why the cut is 1. On `floor_met`, only the sufficient disjoint set is published. On `capped`, only the paths in hand are published.
+
+## 10. Conformance.
+
+One vector, one condition. Two implementations pass when `verdict`, `stop`, `min_cut`, the hop identities, and `chain_discount` agree within `1e-9`. At most six signers. These conditions are binding. Three fixtures are binding bytes: `conforming`, `bad-normalization`, `bad-key`. Each is input JSON plus `output_hash`, SHA-256 over the RFC 8785 JCS UTF-8 bytes of the output object.
+
+Roots in the order given, then edges in the order given. No canonical sort. The same floor may publish different sets.
+
+- `ring-outside`: mutual edges, no root. `complete`, `insufficient_evidence`, `min_cut` 0, no chains.
+- `one-chain`: one root. `complete`, `insufficient_evidence`, `min_cut` 1.
+- `two-disjoint`: two paths, no shared intermediate. `floor_met`, `admitted`, `min_cut` 2, no sum.
+- `shared-node`: two paths share one intermediate. `complete`, `insufficient_evidence`, `min_cut` 1, both published.
+- `floor-met`: three disjoint paths, roots A, B, C, floor 2. `admitted`. A and B only.
+- `caller-order`: the same three paths, floor 2, roots ordered C, B, A. `floor_met`, `admitted`. C and B only. Both this and `floor-met` are valid.
+- `order-flip`: longer path first. `floor_met`, `min_cut` 2.
+- `shared-then-disjoint`: two paths share a node; a later path is disjoint from the first. Publish the first and the later path. The sharing path stays dark.
+- `capped`: three disjoint paths, `path_budget` 1. `unresolved`, `min_cut` 1. Not `insufficient_evidence`.
+- `floor-before-budget`: floor met inside `path_budget` 3, with a third path. `floor_met`. The third stays dark.
+- `other-facet`: the only connecting edge has a different facet string. `min_cut` 0.
+- `star-facet`: facet `*`. Invalid, `bad_facet`.
+- `overall-rating`: a `rating` or a `facets` map and no single `facet`. Invalid, `bad_shape`.
+- `reader-bridge`: reader bridges `wages` to `labor` at 0.5 across two disjoint paths. `floor_met` on `labor`, `source_facet` set, discounts times 0.5.
+- `witness-bridge`: that bridge signed by anyone else. Ignored. `min_cut` 0.
+- `bridge-compose`: reader bridges `a` to `b` and `b` to `c`. An `a` edge does not enter a walk on `c`.
+- `self-edge`: `witness` equals `subject`. Dropped.
+- `cycle`: a cycle behind one bridge. No repeated node. Cut stays 1.
+- `depth`: a second disjoint path needs one more hop than `depth`. Absent. Cut from the short path only.
+- `dark-cone`: a root that reaches nobody on this subject. Absent from `chains`.
+- `floor-one`: `floor` 1. Reject, `bad_floor`. `bad-budget`: a budget of 0. Reject, `bad_budget`.
+- `sum-field`: a `score` on the verdict. Invalid, `aggregate`.
+- `bad-pointer`: `url-hash` missing a hash, or a mismatch when bytes are supplied. Dropped, `bad_evidence`.
+- `decay`: two hops, decay 0.5. `chain_discount` is the product. `min_cut` unchanged.
+
+## 11. Split, merge, and neighbors.
+
+Split a facet when the reader would trust different witnesses for the two claims. Merge when the same witnesses and the same evidence would decide both. Old edges keep their strings. The crosswalk is a reader bridge. A co-sign is another witness on one facet, or it is nothing.

@@ -1,0 +1,100 @@
+
+================ STOP_RULE = would_pass
+OK  ring-outside                 stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=[] insp=0
+OK  one-chain                    stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=1
+OK  two-disjoint                 stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=2
+OK  shared-node                  stop=complete   verdict=insufficient_evidence  min_cut=1 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=4
+OK  floor-met                    stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=2
+OK  caller-order                 stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['C', 'B'] disc=[1.0, 1.0] dropped=[] insp=2
+OK  order-flip                   stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=3
+OK  shared-then-disjoint         stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'C'] disc=[1.0, 1.0] dropped=[] insp=5
+OK  capped                       stop=capped     verdict=unresolved             min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=2
+OK  floor-before-budget          stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=2
+OK  other-facet                  stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=[] insp=0
+OK  star-facet (edge)            stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['bad_facet'] insp=0
+OK  overall-rating               stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['aggregate', 'aggregate'] insp=0
+OK  reader-bridge                stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[0.5, 0.5] dropped=[] insp=2
+OK  witness-bridge               stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['not_reader'] insp=0
+OK  bridge-compose               stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=[] insp=0
+OK  self-edge                    stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=['self_edge'] insp=1
+OK  cycle                        stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=4
+OK  depth                        stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=2
+OK  dark-cone                    stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=2
+OK  decay (root+1 edge hop)      stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[0.5] dropped=[] insp=1
+OK  decay (root+2 edge hops)     stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[0.25] dropped=[] insp=2
+OK  bad-pointer (no hash)        stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['bad_evidence'] insp=0
+OK  bad-pointer (mismatch)       stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['bad_evidence'] insp=0
+fixtures agreeing with the page's stated outcome: 24/24
+   floor-one                    -> Reject bad_floor
+   bad-budget                   -> Reject bad_budget
+   star-facet (walk facet)      -> Reject bad_facet
+--- section 7 re-walk of each verdict from its PUBLISHED chains only (section 9: the dark cone is not available to the re-walker)
+   reproduced one-chain                    original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced two-disjoint                 original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced shared-node                  original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced floor-met                    original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced caller-order                 original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced order-flip                   original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced shared-then-disjoint         original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   REFUTED    capped                       original capped/unresolved/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced floor-before-budget          original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced reader-bridge                original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced self-edge                    original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced cycle                        original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced depth                        original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced dark-cone                    original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced decay (root+1 edge hop)      original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced decay (root+2 edge hops)     original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   REFUTED    edge_budget 2, dark A->X first original capped/unresolved/min_cut 1 insp 2 -> re-walk complete/insufficient_evidence/min_cut 1 insp 1
+
+================ STOP_RULE = reached
+OK  ring-outside                 stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=[] insp=0
+OK  one-chain                    stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=1
+OK  two-disjoint                 stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=2
+OK  shared-node                  stop=complete   verdict=insufficient_evidence  min_cut=1 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=4
+OK  floor-met                    stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=2
+OK  caller-order                 stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['C', 'B'] disc=[1.0, 1.0] dropped=[] insp=2
+OK  order-flip                   stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=3
+OK  shared-then-disjoint         stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'C'] disc=[1.0, 1.0] dropped=[] insp=5
+OK  capped                       stop=capped     verdict=unresolved             min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=1
+OK  floor-before-budget          stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[1.0, 1.0] dropped=[] insp=2
+OK  other-facet                  stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=[] insp=0
+OK  star-facet (edge)            stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['bad_facet'] insp=0
+OK  overall-rating               stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['aggregate', 'aggregate'] insp=0
+OK  reader-bridge                stop=floor_met  verdict=admitted               min_cut=2 chains=2 roots=['A', 'B'] disc=[0.5, 0.5] dropped=[] insp=2
+OK  witness-bridge               stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['not_reader'] insp=0
+OK  bridge-compose               stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=[] insp=0
+OK  self-edge                    stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=['self_edge'] insp=1
+OK  cycle                        stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=4
+OK  depth                        stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=2
+OK  dark-cone                    stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[1.0] dropped=[] insp=2
+OK  decay (root+1 edge hop)      stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[0.5] dropped=[] insp=1
+OK  decay (root+2 edge hops)     stop=complete   verdict=insufficient_evidence  min_cut=1 chains=1 roots=['A'] disc=[0.25] dropped=[] insp=2
+OK  bad-pointer (no hash)        stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['bad_evidence'] insp=0
+OK  bad-pointer (mismatch)       stop=complete   verdict=insufficient_evidence  min_cut=0 chains=0 roots=[] disc=[] dropped=['bad_evidence'] insp=0
+fixtures agreeing with the page's stated outcome: 24/24
+   floor-one                    -> Reject bad_floor
+   bad-budget                   -> Reject bad_budget
+   star-facet (walk facet)      -> Reject bad_facet
+--- section 7 re-walk of each verdict from its PUBLISHED chains only (section 9: the dark cone is not available to the re-walker)
+   reproduced one-chain                    original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced two-disjoint                 original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced shared-node                  original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced floor-met                    original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced caller-order                 original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced order-flip                   original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced shared-then-disjoint         original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced capped                       original capped/unresolved/min_cut 1 -> re-walk capped/unresolved/min_cut 1
+   reproduced floor-before-budget          original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced reader-bridge                original floor_met/admitted/min_cut 2 -> re-walk floor_met/admitted/min_cut 2
+   reproduced self-edge                    original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced cycle                        original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced depth                        original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced dark-cone                    original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced decay (root+1 edge hop)      original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   reproduced decay (root+2 edge hops)     original complete/insufficient_evidence/min_cut 1 -> re-walk complete/insufficient_evidence/min_cut 1
+   REFUTED    edge_budget 2, dark A->X first original capped/unresolved/min_cut 1 insp 2 -> re-walk complete/insufficient_evidence/min_cut 1 insp 1
+
+verdict checks: {'clean': None, 'sum-field': 'aggregate', 'loss omitted': 'loss_omitted', 'bad walked_at': 'bad_time', 'loss = edge witness': 'loss_is_witness', 'loss = reader': None}
+
+sha256 of this script's subject text: 8752c5b046d7e6d1b940a2e25a79a349d69afcc4cc47c50826de336d5252a1f6
