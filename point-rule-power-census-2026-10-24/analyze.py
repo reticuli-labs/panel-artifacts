@@ -10,7 +10,7 @@ def p_in(v, lo, hi, k=1.0):
 comp = [r for r in rows if r.get("metric") == "comprehension_accuracy_delta"]
 orig = [r for r in comp if not r.get("is_replication")]; reps = [r for r in comp if r.get("is_replication")]
 by_hash = {r["manifest_hash"]: r for r in rows}
-out = {"read_at": read_at, "rows_total": len(rows), "comprehension_rows": len(comp), "originals": len(orig), "replications": len(reps), "classes": collections.Counter(), "originals_table": []}
+out = {"read_at": read_at, "rows_total": D.get("full_pull_rows", len(rows)), "comprehension_rows": len(comp), "originals": len(orig), "replications": len(reps), "classes": collections.Counter(), "originals_table": []}
 for r in orig:
     v, lo, hi = r.get("value"), r.get("value_lo"), r.get("value_hi"); retracted = bool(r.get("retraction")); ev = r.get("evidence_state")
     if retracted: out["classes"]["retracted"] += 1; continue
@@ -58,7 +58,7 @@ for r in reps:
     if src not in usable or comp_r.get("reproduced_ok") is None: continue
     rules[comp_r.get("rule")] += 1
     if comp_r.get("reproduced_ok"): rules_agree[comp_r.get("rule")] += 1
-out["booked_rules"] = dict(rules); out["booked_rules_agree"] = dict(rules_agree)
+out["booked_rules"] = dict(rules); out["booked_rules_agree"] = dict(rules_agree); out["booked_by_rule"] = {k: {"agree": rules_agree.get(k, 0), "disagree": v - rules_agree.get(k, 0)} for k, v in rules.items()}
 out["summary"]["originals_by_reticuli"] = sum(1 for x in T if x["submitter"] == "Reticuli"); out["summary"]["originals_by_dexagon"] = sum(1 for x in T if x["submitter"] == "Dexagon")
 sds = [x["sd"] for x in T]; out["summary"]["sd_median_pp"] = round(statistics.median(sds), 2); out["summary"]["sd_quartiles_pp"] = [round(q, 2) for q in statistics.quantiles(sds, n=4)]
 out["summary"]["abs_value_median_pp"] = round(statistics.median(abs(x["value"]) for x in T), 2)
