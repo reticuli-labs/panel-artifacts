@@ -1,0 +1,351 @@
+{
+ "attempt": "8ab30123-7a18-402a-8194-92e859977ed4",
+ "calibration": {
+  "ainglish/correct": 24,
+  "english/incorrect": 24
+ },
+ "cells": {
+  "both/ainglish/all": {
+   "accuracy": 0.5286,
+   "answers": {
+    "RnIn": 5,
+    "RnIy": 28,
+    "RyIy": 37
+   },
+   "correct": 37,
+   "n": 70
+  },
+  "both/ainglish/gemma3": {
+   "accuracy": 0.4737,
+   "answers": {
+    "RnIn": 5,
+    "RnIy": 15,
+    "RyIy": 18
+   },
+   "correct": 18,
+   "n": 38
+  },
+  "both/ainglish/mistral": {
+   "accuracy": 0.5938,
+   "answers": {
+    "RnIy": 13,
+    "RyIy": 19
+   },
+   "correct": 19,
+   "n": 32
+  },
+  "both/english/all": {
+   "accuracy": 0.527,
+   "answers": {
+    "RnIn": 8,
+    "RnIy": 27,
+    "RyIy": 39
+   },
+   "correct": 39,
+   "n": 74
+  },
+  "both/english/gemma3": {
+   "accuracy": 0.5294,
+   "answers": {
+    "RnIn": 8,
+    "RnIy": 8,
+    "RyIy": 18
+   },
+   "correct": 18,
+   "n": 34
+  },
+  "both/english/mistral": {
+   "accuracy": 0.525,
+   "answers": {
+    "RnIy": 19,
+    "RyIy": 21
+   },
+   "correct": 21,
+   "n": 40
+  },
+  "interval/ainglish/all": {
+   "accuracy": 0.6282,
+   "answers": {
+    "RnIn": 24,
+    "RnIy": 49,
+    "RyIy": 5
+   },
+   "correct": 49,
+   "n": 78
+  },
+  "interval/ainglish/gemma3": {
+   "accuracy": 0.2564,
+   "answers": {
+    "RnIn": 24,
+    "RnIy": 10,
+    "RyIy": 5
+   },
+   "correct": 10,
+   "n": 39
+  },
+  "interval/ainglish/mistral": {
+   "accuracy": 1.0,
+   "answers": {
+    "RnIy": 39
+   },
+   "correct": 39,
+   "n": 39
+  },
+  "interval/english/all": {
+   "accuracy": 0.5606,
+   "answers": {
+    "RnIn": 15,
+    "RnIy": 37,
+    "RyIy": 14
+   },
+   "correct": 37,
+   "n": 66
+  },
+  "interval/english/gemma3": {
+   "accuracy": 0.1212,
+   "answers": {
+    "RnIn": 15,
+    "RnIy": 4,
+    "RyIy": 14
+   },
+   "correct": 4,
+   "n": 33
+  },
+  "interval/english/mistral": {
+   "accuracy": 1.0,
+   "answers": {
+    "RnIy": 33
+   },
+   "correct": 33,
+   "n": 33
+  },
+  "neither/ainglish/all": {
+   "accuracy": 0.4054,
+   "answers": {
+    "RnIn": 30,
+    "RnIy": 41,
+    "RyIy": 3
+   },
+   "correct": 30,
+   "n": 74
+  },
+  "neither/ainglish/gemma3": {
+   "accuracy": 0.4,
+   "answers": {
+    "RnIn": 16,
+    "RnIy": 21,
+    "RyIy": 3
+   },
+   "correct": 16,
+   "n": 40
+  },
+  "neither/ainglish/mistral": {
+   "accuracy": 0.4118,
+   "answers": {
+    "RnIn": 14,
+    "RnIy": 20
+   },
+   "correct": 14,
+   "n": 34
+  },
+  "neither/english/all": {
+   "accuracy": 0.4857,
+   "answers": {
+    "RnIn": 34,
+    "RnIy": 35,
+    "RyIy": 1
+   },
+   "correct": 34,
+   "n": 70
+  },
+  "neither/english/gemma3": {
+   "accuracy": 0.5938,
+   "answers": {
+    "RnIn": 19,
+    "RnIy": 12,
+    "RyIy": 1
+   },
+   "correct": 19,
+   "n": 32
+  },
+  "neither/english/mistral": {
+   "accuracy": 0.3947,
+   "answers": {
+    "RnIn": 15,
+    "RnIy": 23
+   },
+   "correct": 15,
+   "n": 38
+  },
+  "reason/ainglish/all": {
+   "accuracy": 0.0137,
+   "answers": {
+    "RnIn": 18,
+    "RnIy": 36,
+    "RyIn": 1,
+    "RyIy": 18
+   },
+   "correct": 1,
+   "n": 73
+  },
+  "reason/ainglish/gemma3": {
+   "accuracy": 0.0,
+   "answers": {
+    "RnIn": 18,
+    "RnIy": 3,
+    "RyIy": 13
+   },
+   "correct": 0,
+   "n": 34
+  },
+  "reason/ainglish/mistral": {
+   "accuracy": 0.0256,
+   "answers": {
+    "RnIy": 33,
+    "RyIn": 1,
+    "RyIy": 5
+   },
+   "correct": 1,
+   "n": 39
+  },
+  "reason/english/all": {
+   "accuracy": 0.4225,
+   "answers": {
+    "RnIn": 17,
+    "RnIy": 9,
+    "RyIn": 30,
+    "RyIy": 15
+   },
+   "correct": 30,
+   "n": 71
+  },
+  "reason/english/gemma3": {
+   "accuracy": 0.1579,
+   "answers": {
+    "RnIn": 17,
+    "RyIn": 6,
+    "RyIy": 15
+   },
+   "correct": 6,
+   "n": 38
+  },
+  "reason/english/mistral": {
+   "accuracy": 0.7273,
+   "answers": {
+    "RnIy": 9,
+    "RyIn": 24
+   },
+   "correct": 24,
+   "n": 33
+  }
+ },
+ "echo": {
+  "both/ainglish": {
+   "has_because": 72,
+   "has_ever_since": 72,
+   "has_explains_why": 0,
+   "has_from_that_event": 0,
+   "has_present_perfect": 72,
+   "n": 72
+  },
+  "both/english": {
+   "has_because": 0,
+   "has_ever_since": 0,
+   "has_explains_why": 72,
+   "has_from_that_event": 72,
+   "has_present_perfect": 72,
+   "n": 72
+  },
+  "interval/ainglish": {
+   "has_because": 0,
+   "has_ever_since": 72,
+   "has_explains_why": 0,
+   "has_from_that_event": 0,
+   "has_present_perfect": 72,
+   "n": 72
+  },
+  "interval/english": {
+   "has_because": 0,
+   "has_ever_since": 0,
+   "has_explains_why": 0,
+   "has_from_that_event": 72,
+   "has_present_perfect": 72,
+   "n": 72
+  },
+  "neither/ainglish": {
+   "has_because": 0,
+   "has_ever_since": 0,
+   "has_explains_why": 0,
+   "has_from_that_event": 0,
+   "has_present_perfect": 72,
+   "n": 72
+  },
+  "neither/english": {
+   "has_because": 0,
+   "has_ever_since": 0,
+   "has_explains_why": 0,
+   "has_from_that_event": 0,
+   "has_present_perfect": 72,
+   "n": 72
+  },
+  "reason/ainglish": {
+   "has_because": 72,
+   "has_ever_since": 0,
+   "has_explains_why": 0,
+   "has_from_that_event": 0,
+   "has_present_perfect": 72,
+   "n": 72
+  },
+  "reason/english": {
+   "has_because": 0,
+   "has_ever_since": 0,
+   "has_explains_why": 72,
+   "has_from_that_event": 0,
+   "has_present_perfect": 72,
+   "n": 72
+  }
+ },
+ "items_sha256": "682c87dd59e9a9b7b86ef82138bb46ccbfed0e1241463949e0513f6115bd33c1",
+ "manifest_hash": "415552aa6812ef5bd51cb44f238792098a0ba6a65e920ae4fa5c56d11e2713ed",
+ "neither_items_identical_arms": 72,
+ "questions_distinct": 6,
+ "served_interval_pp": [
+  -18.0511,
+  -2.8207
+ ],
+ "served_value_pp": -10.4975,
+ "stratum_step": {
+  "both": {
+   "cells_ainglish": 70,
+   "cells_english": 74,
+   "one_item_step_pp": 1.4286,
+   "tolerance_below_step": true,
+   "tolerance_pp": 0.02,
+   "value_pp": 0.16
+  },
+  "interval": {
+   "cells_ainglish": 78,
+   "cells_english": 66,
+   "one_item_step_pp": 1.5152,
+   "tolerance_below_step": true,
+   "tolerance_pp": 0.676,
+   "value_pp": 6.76
+  },
+  "neither": {
+   "cells_ainglish": 74,
+   "cells_english": 70,
+   "one_item_step_pp": 1.4286,
+   "tolerance_below_step": true,
+   "tolerance_pp": 0.803,
+   "value_pp": -8.03
+  },
+  "reason": {
+   "cells_ainglish": 73,
+   "cells_english": 71,
+   "one_item_step_pp": 1.4085,
+   "tolerance_below_step": false,
+   "tolerance_pp": 4.088,
+   "value_pp": -40.88
+  }
+ }
+}
