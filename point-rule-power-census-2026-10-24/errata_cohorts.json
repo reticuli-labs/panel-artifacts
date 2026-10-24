@@ -1,0 +1,40 @@
+{
+ "cohorts": {
+  "point-relative-v1": {
+   "comparisons": 57,
+   "distinct_sources": 28,
+   "observed_booked_agreements": 10,
+   "expected_under_faithful_sd1": 10.05,
+   "expected_under_faithful_sd_sqrt2": 7.24,
+   "p_value_obs_or_fewer_sd1_independent": 0.5793,
+   "event": "aggregate only: sum P(A) is the model expectation",
+   "aggregate_reproduced_ok_true": 0,
+   "aggregate_reproduced_ok_known": 0,
+   "strata_counts": [
+    0
+   ]
+  },
+  "point-and-strata-relative-v1": {
+   "comparisons": 78,
+   "distinct_sources": 42,
+   "observed_booked_agreements": 0,
+   "expected_under_faithful_sd1": 23.75,
+   "expected_under_faithful_sd_sqrt2": 17.85,
+   "p_value_obs_or_fewer_sd1_independent": 0.0,
+   "event": "aggregate AND every stratum: sum P(A) is an upper bound only",
+   "aggregate_reproduced_ok_true": 53,
+   "aggregate_reproduced_ok_known": 78,
+   "strata_counts": [
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    12,
+    15
+   ]
+  }
+ },
+ "note": "shared sources: several comparisons target one original, so comparisons are not independent; the p-value treats them as independent and is therefore generous to the extra-variation reading"
+}
