@@ -1,0 +1,111 @@
+{
+ "source": "3ce6e06b081df949a1710342a097a3633d77fc913d84344b81964b4f9d2899db",
+ "items_sha256": "1a14882fcad9a66ebf1d7255fd42cea1a482dd4a3492443dc060ad9c1b52c1c7",
+ "items_per_stratum": 72,
+ "readers": 2,
+ "cells_per_stratum": 144,
+ "tolerance_rule": "max(0.02, 0.1*|value|) percentage points on the stratum value",
+ "strata": [
+  {
+   "id": "no-charge-positive",
+   "value": -16.52,
+   "english": [
+    39,
+    70
+   ],
+   "ainglish": [
+    29,
+    74
+   ],
+   "step_english_pp": 1.429,
+   "step_ainglish_pp": 1.351,
+   "tolerance_pp": 1.652,
+   "tolerance_below_both_steps": false,
+   "p_within_tolerance_same_split": 0.1798,
+   "p_within_tolerance_balanced_72_72": 0.2003,
+   "balanced_grid_points_within_tolerance": [
+    -18.056,
+    -16.667,
+    -15.278
+   ]
+  },
+  {
+   "id": "no-charge-negated",
+   "value": -1.41,
+   "english": [
+    25,
+    63
+   ],
+   "ainglish": [
+    31,
+    81
+   ],
+   "step_english_pp": 1.587,
+   "step_ainglish_pp": 1.235,
+   "tolerance_pp": 0.141,
+   "tolerance_below_both_steps": true,
+   "p_within_tolerance_same_split": 0.0097,
+   "p_within_tolerance_balanced_72_72": 0.0681,
+   "balanced_grid_points_within_tolerance": [
+    -1.389
+   ]
+  },
+  {
+   "id": "available-now-positive",
+   "value": -2.22,
+   "english": [
+    37,
+    79
+   ],
+   "ainglish": [
+    29,
+    65
+   ],
+   "step_english_pp": 1.266,
+   "step_ainglish_pp": 1.538,
+   "tolerance_pp": 0.222,
+   "tolerance_below_both_steps": true,
+   "p_within_tolerance_same_split": 0.0181,
+   "p_within_tolerance_balanced_72_72": 0.0,
+   "balanced_grid_points_within_tolerance": []
+  },
+  {
+   "id": "available-now-negated",
+   "value": -43.12,
+   "english": [
+    42,
+    80
+   ],
+   "ainglish": [
+    6,
+    64
+   ],
+   "step_english_pp": 1.25,
+   "step_ainglish_pp": 1.562,
+   "tolerance_pp": 4.312,
+   "tolerance_below_both_steps": false,
+   "p_within_tolerance_same_split": 0.4728,
+   "p_within_tolerance_balanced_72_72": 0.5244,
+   "balanced_grid_points_within_tolerance": [
+    -47.222,
+    -45.833,
+    -44.444,
+    -43.056,
+    -41.667,
+    -40.278,
+    -38.889
+   ]
+  }
+ ],
+ "p_all_four_same_split": 1.5e-05,
+ "p_all_four_balanced": 0.0,
+ "aggregate": {
+  "value": -15.8175,
+  "tolerance_pp": 1.582,
+  "note": "aggregate = mean of the four stratum values (equal weights); its tolerance is wider than any stratum's step",
+  "p_within_tolerance_same_split": 0.3116,
+  "sd_of_replication_mean_pp": 3.942
+ },
+ "p_all_four_and_aggregate_same_split_upper_bound": 1.5e-05,
+ "model": "faithful replication: same readers, same 72 items per stratum split into arms as the source was, each arm's cells binomial at the source's observed arm accuracy; strata independent; settlement = every stratum and the aggregate within tolerance (strata_effect required_all)"
+}
