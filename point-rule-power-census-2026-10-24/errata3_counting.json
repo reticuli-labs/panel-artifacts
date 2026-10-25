@@ -1,0 +1,162 @@
+{
+ "n_all": 135,
+ "counting_rows": 118,
+ "all_stored": {
+  "ALL": {
+   "n": 135,
+   "sources": 70,
+   "booked_ok": 10,
+   "literal_point_pass": 10,
+   "expected_sd1": 33.8,
+   "expected_sqrt2": 25.09,
+   "P_literal_le_obs_sd1": 0.0,
+   "P_literal_le_obs_sqrt2": 4e-05,
+   "aggregate_reproduced_ok_true": 53
+  },
+  "stored point-relative-v1": {
+   "n": 57,
+   "sources": 28,
+   "booked_ok": 10,
+   "literal_point_pass": 4,
+   "expected_sd1": 10.05,
+   "expected_sqrt2": 7.24,
+   "P_literal_le_obs_sd1": 0.01222,
+   "P_literal_le_obs_sqrt2": 0.11933,
+   "aggregate_reproduced_ok_true": 0
+  },
+  "stored point-and-strata-relative-v1": {
+   "n": 78,
+   "sources": 42,
+   "booked_ok": 0,
+   "literal_point_pass": 6,
+   "expected_sd1": 23.75,
+   "expected_sqrt2": 17.85,
+   "P_literal_le_obs_sd1": 0.0,
+   "P_literal_le_obs_sqrt2": 7e-05,
+   "aggregate_reproduced_ok_true": 53
+  },
+  "rule_applied absent": {
+   "n": 22,
+   "sources": 14,
+   "booked_ok": 2,
+   "literal_point_pass": 2,
+   "expected_sd1": 5.11,
+   "expected_sqrt2": 3.7,
+   "P_literal_le_obs_sd1": 0.06757,
+   "P_literal_le_obs_sqrt2": 0.24301,
+   "aggregate_reproduced_ok_true": 0
+  },
+  "rule_applied interval-overlap-commensurable-v1": {
+   "n": 87,
+   "sources": 49,
+   "booked_ok": 7,
+   "literal_point_pass": 7,
+   "expected_sd1": 24.89,
+   "expected_sqrt2": 18.66,
+   "P_literal_le_obs_sd1": 0.0,
+   "P_literal_le_obs_sqrt2": 0.00016,
+   "aggregate_reproduced_ok_true": 53
+  },
+  "rule_applied point-relative-v1": {
+   "n": 26,
+   "sources": 17,
+   "booked_ok": 1,
+   "literal_point_pass": 1,
+   "expected_sd1": 3.81,
+   "expected_sqrt2": 2.74,
+   "P_literal_le_obs_sd1": 0.06922,
+   "P_literal_le_obs_sqrt2": 0.20574,
+   "aggregate_reproduced_ok_true": 0
+  },
+  "rule_applied point-or-absent": {
+   "n": 48,
+   "sources": 21,
+   "booked_ok": 3,
+   "literal_point_pass": 3,
+   "expected_sd1": 8.91,
+   "expected_sqrt2": 6.43,
+   "P_literal_le_obs_sd1": 0.00854,
+   "P_literal_le_obs_sqrt2": 0.0848,
+   "aggregate_reproduced_ok_true": 0
+  }
+ },
+ "counting_only": {
+  "ALL": {
+   "n": 118,
+   "sources": 67,
+   "booked_ok": 9,
+   "literal_point_pass": 10,
+   "expected_sd1": 29.98,
+   "expected_sqrt2": 22.31,
+   "P_literal_le_obs_sd1": 0.0,
+   "P_literal_le_obs_sqrt2": 0.00039,
+   "aggregate_reproduced_ok_true": 53
+  },
+  "stored point-relative-v1": {
+   "n": 43,
+   "sources": 26,
+   "booked_ok": 9,
+   "literal_point_pass": 4,
+   "expected_sd1": 7.47,
+   "expected_sqrt2": 5.38,
+   "P_literal_le_obs_sd1": 0.09151,
+   "P_literal_le_obs_sqrt2": 0.35007,
+   "aggregate_reproduced_ok_true": 0
+  },
+  "stored point-and-strata-relative-v1": {
+   "n": 75,
+   "sources": 41,
+   "booked_ok": 0,
+   "literal_point_pass": 6,
+   "expected_sd1": 22.51,
+   "expected_sqrt2": 16.93,
+   "P_literal_le_obs_sd1": 0.0,
+   "P_literal_le_obs_sqrt2": 0.00017,
+   "aggregate_reproduced_ok_true": 53
+  },
+  "rule_applied absent": {
+   "n": 13,
+   "sources": 12,
+   "booked_ok": 2,
+   "literal_point_pass": 2,
+   "expected_sd1": 3.22,
+   "expected_sqrt2": 2.33,
+   "P_literal_le_obs_sd1": 0.32148,
+   "P_literal_le_obs_sqrt2": 0.57879,
+   "aggregate_reproduced_ok_true": 0
+  },
+  "rule_applied interval-overlap-commensurable-v1": {
+   "n": 83,
+   "sources": 47,
+   "booked_ok": 6,
+   "literal_point_pass": 7,
+   "expected_sd1": 23.54,
+   "expected_sqrt2": 17.66,
+   "P_literal_le_obs_sd1": 0.0,
+   "P_literal_le_obs_sqrt2": 0.00039,
+   "aggregate_reproduced_ok_true": 53
+  },
+  "rule_applied point-relative-v1": {
+   "n": 22,
+   "sources": 16,
+   "booked_ok": 1,
+   "literal_point_pass": 1,
+   "expected_sd1": 3.22,
+   "expected_sqrt2": 2.32,
+   "P_literal_le_obs_sd1": 0.12155,
+   "P_literal_le_obs_sqrt2": 0.29132,
+   "aggregate_reproduced_ok_true": 0
+  },
+  "rule_applied point-or-absent": {
+   "n": 35,
+   "sources": 20,
+   "booked_ok": 3,
+   "literal_point_pass": 3,
+   "expected_sd1": 6.44,
+   "expected_sqrt2": 4.64,
+   "P_literal_le_obs_sd1": 0.07268,
+   "P_literal_le_obs_sqrt2": 0.28317,
+   "aggregate_reproduced_ok_true": 0
+  }
+ }
+}

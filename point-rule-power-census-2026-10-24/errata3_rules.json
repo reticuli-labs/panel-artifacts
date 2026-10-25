@@ -1,0 +1,112 @@
+{
+ "n": 135,
+ "rule_x_rule_applied": {
+  "point-and-strata-relative-v1 | interval-overlap-commensurable-v1": 78,
+  "point-relative-v1 | point-relative-v1": 26,
+  "point-relative-v1 | interval-overlap-commensurable-v1": 9,
+  "point-relative-v1 | None": 22
+ },
+ "rule_x_point_effect": {
+  "point-and-strata-relative-v1 | reported_only": 78,
+  "point-relative-v1 | None": 48,
+  "point-relative-v1 | reported_only": 9
+ },
+ "cohorts": {
+  "stored rule point-relative-v1": {
+   "n": 57,
+   "sources": 28,
+   "booked_ok": 10,
+   "literal_point_pass": 4,
+   "booked_ok_and_literal_pass": 4,
+   "booked_ok_without_literal_pass": 6,
+   "aggregate_reproduced_ok_true": 0,
+   "expected_faithful_sd1": 10.05
+  },
+  "stored rule point-and-strata-relative-v1": {
+   "n": 78,
+   "sources": 42,
+   "booked_ok": 0,
+   "literal_point_pass": 6,
+   "booked_ok_and_literal_pass": 0,
+   "booked_ok_without_literal_pass": 0,
+   "aggregate_reproduced_ok_true": 53,
+   "expected_faithful_sd1": 23.75
+  },
+  "rule_applied == point (any stored label)": {
+   "n": 26,
+   "sources": 17,
+   "booked_ok": 1,
+   "literal_point_pass": 1,
+   "booked_ok_and_literal_pass": 1,
+   "booked_ok_without_literal_pass": 0,
+   "aggregate_reproduced_ok_true": 0,
+   "expected_faithful_sd1": 3.81
+  },
+  "rule_applied absent (not served)": {
+   "n": 22,
+   "sources": 14,
+   "booked_ok": 2,
+   "literal_point_pass": 2,
+   "booked_ok_and_literal_pass": 2,
+   "booked_ok_without_literal_pass": 0,
+   "aggregate_reproduced_ok_true": 0,
+   "expected_faithful_sd1": 5.11
+  },
+  "rule_applied interval-overlap": {
+   "n": 87,
+   "sources": 49,
+   "booked_ok": 7,
+   "literal_point_pass": 7,
+   "booked_ok_and_literal_pass": 1,
+   "booked_ok_without_literal_pass": 6,
+   "aggregate_reproduced_ok_true": 53,
+   "expected_faithful_sd1": 24.89
+  },
+  "point decided: rule_applied point OR absent": {
+   "n": 48,
+   "sources": 21,
+   "booked_ok": 3,
+   "literal_point_pass": 3,
+   "booked_ok_and_literal_pass": 3,
+   "booked_ok_without_literal_pass": 0,
+   "aggregate_reproduced_ok_true": 0,
+   "expected_faithful_sd1": 8.91
+  }
+ },
+ "literal_point_event_all_135": {
+  "observed_literal_pass": 10,
+  "expected_faithful_sd1": 33.8,
+  "expected_faithful_sd_sqrt2": 25.09
+ },
+ "example_110117db": {
+  "rep": "110117db0f56",
+  "src": "48eb9efde1b6",
+  "rule": "point-relative-v1",
+  "rule_applied": "interval-overlap-commensurable-v1",
+  "point_effect": "reported_only",
+  "ok": true,
+  "agg_ok": null,
+  "literal_point_pass": false,
+  "diff": 28.57,
+  "tol": 2.857,
+  "p": 0.1334,
+  "keys": [
+   "absolute_difference",
+   "commensurability",
+   "governance_effect",
+   "interval",
+   "member_diagnostics_effect",
+   "original_value",
+   "point_effect",
+   "replication_value",
+   "reproduced_ok",
+   "roster_changed",
+   "rule",
+   "rule_applied",
+   "settlement_withheld",
+   "shared_members",
+   "tolerance",
+   "unpinned_rule"
+  ]
+ }
+}
