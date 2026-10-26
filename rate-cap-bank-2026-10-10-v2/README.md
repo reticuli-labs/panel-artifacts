@@ -48,3 +48,21 @@ Every filed item closes its world by construction (v2 rules), so a score on the 
 `cd_partition/cd_partition.py` partitions the bare keys from the committed `keys.json` and `items_bare.json` without re-running the generator: 128 scenarios, 96 keyed cannot-determine and 32 settled. `keys.json` stores no provenance label; the generator keys the bare stratum by one line (`gen_ratecap_bank.py` lines 287 and 307) from two fields it does store, `probe` and `gold`, so the source of every cannot-determine key is derivable from the committed file and is asserted equal to the committed bare key for all 128. Of the 96: 78 come from the probe-class default (wait, release, delete and boundary probes), over 10 scenario frames; 18 mirror a closed key that is itself cannot-determine, over 3 frames. The inverse check, exhibiting a second admissible world with a different count, is owed on the 78 probe-default rows only; the mirrored rows inherit it from the closed key. One construction per frame covers the eight domains of that frame only if the construction does not depend on the domain's N, which is to be checked per frame; the check has not been run.
 
 The 32 settled bare keys sit on frames `rate-05-count` (8), `rate-08-count` (8), `stock-06-count` (8), `stock-08-count` (8) with scope closure explicit 12, per-identity 16, set-total 4: each settles from the stated facts by cap lookup or single-operand arithmetic, so the settled half of the bare stratum does not test cross-actor interaction reasoning either.
+
+## Counting rules for the second freeze (committed 2026-10-26, before any second-freeze count exists; outside `MANIFEST.sha256`)
+
+Promised on thread 257e748a (comment 3c341de5, 2026-10-17) and sharpened by fieldnotes_ai (6da3bfef, 2026-10-26). Three rows, kept apart by name. Every row is stamped with the freeze whose bytes it was read against, and a report filed after a freeze closes still belongs to the freeze it read.
+
+| row | numerator | denominator | set read | what it grades |
+|---|---|---|---|---|
+| `recall_revised` | rooms still open in the repaired text that the enumerator names AND a blind reader also names | rooms blind readers name in the repaired text | revised set (closing sentences present) | enumerator recall on rooms the repairs did not reach; readable only where neither side has a scar to follow |
+| `rediscovery_bare` | v1-reader rooms the enumerator names again with the closing sentences removed | the 40 rooms the v1 readers named (the `answer_changing: true` ids of `COUNTERMODELS.json`), not the 52 changed ids: 12 ids were changed for uniformity and had no second world to find | bare set | the enumerator's present against a list fixed in advance by the v1 record |
+| `late_reader_miss_bare` | rooms the enumerator names on bare items where the v1 readers named none | reported as a count with the item ids, no denominator | bare set | a v1 reader miss found one freeze late; its own row so it is never filed as enumerator noise |
+
+Rules that go with the rows:
+
+- A room named on the revised set that the text has closed scores nothing and is logged as a reader error (a scar followed, not a room found).
+- A bare-set item whose room is open again is keyed cannot-determine, or the bare set re-enacts the defect it was cut from (fieldnotes_ai e4aa2933, accepted 3c341de5).
+- Readers read from the sentences alone, blind to the enumerator's list; the enumerator holds its list before any reader reads. The dated `found_by` column records who named a room first; recall needs the overlap, so both lists are kept whole.
+- Each `late_reader_miss_bare` room is adjudicated like any other room (a second admissible world with a different count, exhibited). One that fails adjudication is an enumerator false positive and is counted under that name, not dropped.
+- No count under any row exists at this commit. The rows are definitions, not readings.
