@@ -1,0 +1,208 @@
+{
+ "seed": 7,
+ "layout": "G(4) D(4) M(8); family A scored on M(8) G(4) D(4)",
+ "partial_table_recomputed_matches_10_25_copy": true,
+ "partial_table": {
+  "cfg1_documented": {
+   "B_props": [
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "B_score": 3,
+   "A_props": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "A_score": 3
+  },
+  "D_swap_only": {
+   "B_props": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "B_score": 4,
+   "A_props": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "A_score": 3
+  },
+  "M_edits_only_no_swap": {
+   "B_props": [
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "B_score": 3,
+   "A_props": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "A_score": 3
+  },
+  "cfg3_adjusted": {
+   "B_props": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "B_score": 5,
+   "A_props": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "A_score": 3
+  },
+  "cfg1_damaged_10_5": {
+   "B_props": [
+    true,
+    false,
+    false,
+    true,
+    false
+   ],
+   "B_score": 2,
+   "A_props": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "A_score": 6
+  },
+  "cfg1_transpositions": {
+   "n": 120,
+   "B_score_hist": {
+    "0": 55,
+    "1": 17,
+    "2": 11,
+    "3": 35,
+    "4": 2,
+    "5": 0
+   }
+  },
+  "D_orderings_with_cfg1_M": {
+   "n": 24,
+   "B_score_hist": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 23,
+    "4": 1,
+    "5": 0
+   }
+  },
+  "D_orderings_with_cfg3_M": {
+   "n": 24,
+   "B_score_hist": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 23,
+    "4": 0,
+    "5": 1
+   }
+  }
+ },
+ "cfg1_best": {
+  "edits_only": 3,
+  "swap_only": 4,
+  "swap_and_edits": 5
+ },
+ "null_no_freedom": {
+  "pool": "config1",
+  "n": 1000000,
+  "hist": {
+   "0": 822077,
+   "1": 170861,
+   "2": 6919,
+   "3": 141,
+   "4": 2,
+   "5": 0
+  }
+ },
+ "null_swap_only": {
+  "pool": "config1",
+  "n": 1000000,
+  "hist": {
+   "0": 772387,
+   "1": 206099,
+   "2": 20029,
+   "3": 1459,
+   "4": 26,
+   "5": 0
+  },
+  "seconds": 12.4
+ },
+ "null_edits_only": {
+  "pool": "config1",
+  "n": 3000,
+  "hist": {
+   "0": 443,
+   "1": 1749,
+   "2": 709,
+   "3": 97,
+   "4": 2,
+   "5": 0
+  },
+  "p_best_ge4": 0.0006666666666666666,
+  "p_best_eq5": 0.0
+ },
+ "null_swap_only_3000": {
+  "pool": "config1",
+  "n": 3000,
+  "hist": {
+   "0": 2322,
+   "1": 613,
+   "2": 63,
+   "3": 2,
+   "4": 0,
+   "5": 0
+  },
+  "p_best_ge4": 0.0,
+  "p_best_eq5": 0.0
+ },
+ "null_swap_and_edits": {
+  "pool": "config1",
+  "n": 3000,
+  "hist": {
+   "0": 29,
+   "1": 1078,
+   "2": 1470,
+   "3": 410,
+   "4": 13,
+   "5": 0
+  },
+  "p_best_ge4": 0.004333333333333333,
+  "p_best_eq5": 0.0
+ },
+ "seconds_3000": 848.7
+}

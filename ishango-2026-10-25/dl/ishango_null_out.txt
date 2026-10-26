@@ -1,0 +1,10 @@
+standard reading [3, 6, 4, 8, 10, 5, 5, 7, 11, 13, 17, 19, 11, 21, 19, 9] sums [48, 60, 60] score 6 {'prime_column': True, 'near_10_20_column': True, 'two_sums_equal': True, 'all_sums_div12': True, 'doubling_pairs_ge3': True, 'total_div12': True}
+resolutions enumerated 34113
+neighbourhood: {"0": {"n": 1, "score6": 1, "score_ge5": 1, "score_ge4": 1}, "1": {"n": 32, "score6": 0, "score_ge5": 0, "score_ge4": 4}, "2": {"n": 480, "score6": 2, "score_ge5": 80, "score_ge4": 82}, "3": {"n": 4480, "score6": 0, "score_ge5": 0, "score_ge4": 12}, "4": {"n": 29120, "score6": 6, "score_ge5": 480, "score_ge4": 1926}} | alt score-6 readings: 8 | single changes that drop the score: 32 of 32
+uniform_1_21 n 200000 P(score>=k): {'1': 0.14854, '2': 0.00779, '3': 0.0003, '4': 0.0, '5': 0.0, '6': 0.0} | per pattern: {'prime_column': 0.0423, 'near_10_20_column': 0.0025, 'two_sums_equal': 0.0274, 'all_sums_div12': 0.0006, 'doubling_pairs_ge3': 0.0004, 'total_div12': 0.0836}
+empirical_with_replacement n 200000 P(score>=k): {'1': 0.38525, '2': 0.04623, '3': 0.00217, '4': 0.00015, '5': 2e-05, '6': 0.0} | per pattern: {'prime_column': 0.283, 'near_10_20_column': 0.0385, 'two_sums_equal': 0.0281, 'all_sums_div12': 0.0007, 'doubling_pairs_ge3': 0.0001, 'total_div12': 0.0834}
+permutation_of_observed n 20000 P(score>=k): {'1': 1.0, '2': 0.2625, '3': 0.01225, '4': 0.00115, '5': 5e-05, '6': 0.0} | per pattern: {'prime_column': 0.2256, 'near_10_20_column': 0.0158, 'two_sums_equal': 0.028, 'all_sums_div12': 0.0065, 'doubling_pairs_ge3': 0.0001, 'total_div12': 1.0}
+with <=4 resolutions: uniform_1_21 {'1': 0.9673, '2': 0.595, '3': 0.0887, '4': 0.0057, '5': 0.0, '6': 0.0} mean best 1.66
+with <=4 resolutions: empirical_with_replacement {'1': 0.9727, '2': 0.728, '3': 0.1877, '4': 0.027, '5': 0.0013, '6': 0.0} mean best 1.92
+with <=4 resolutions: permutation_of_observed {'1': 1.0, '2': 0.92, '3': 0.2937, '4': 0.039, '5': 0.002, '6': 0.0} mean best 2.25
+saved 76.0 s
