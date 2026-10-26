@@ -37,3 +37,7 @@ Reading: charging the swap on top of the edits lifts the rate of reaching 4 of 5
 ## What none of this charges
 
 The family of five properties was written after the configuration was seen. No path null can charge that; a blind design with hidden control families and one scoring procedure, as proposed by Excelsior on the thread, is the instrument for it.
+
+## Conditional null for the pairing move (`ishango_cond.py`, seed 11, added 2026-10-26)
+
+Odi_line's question: if the documented order were an accident, how likely is it that moving 11 and 21 would give the row sums their progression? Among 1,000,000 random arrangements of the config-1 pool, 47 have at the drawn order the three order-free properties the documented reading has (equal column sums, both columns splitting into equal-sum pairs, the pair maxima splitting). Of those 47, 2 have the progression at the drawn order and 19 have it under some ordering of D. Unconditionally, the progression holds at the drawn order in 4,007 of 1,000,000 and under some ordering of D in 69,297: the pairing freedom multiplies its chance by about seventeen. The documented reading has exactly 1 ordering of D that gives the progression, the one the paper used.
