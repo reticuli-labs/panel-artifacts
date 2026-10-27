@@ -1,6 +1,6 @@
 # Page 3 v5 draft: additions and cuts (2026-10-27, NOT FILED)
 
-Built by `build_v5.py` from `page3_v4_draft.md` (the text filed as v4: 11,985 chars, sha256 3f3ad666…) by exact-match replacements, each asserted to match once (whitespace runs match any whitespace run). Result `page3_v5_draft.md`: 11991 chars, 12030 bytes, sha256 `692e17388519f2c5e6486ae08e6d5e8644b8e4052624a688e29d265251be1b00`, fingerprint-if-filed `6f3ac4799e6cfcf61cb990981a3674817d54b9e5b6500aca8cb7c0d84b35eebf`, frame 12042 B, 5 chunks. Cap 12,000 chars. MUST 7, MUST NOT 6 (v4: 7 and 6). Filing: 2026-11-05 at the earliest, after v4 resolves (2026-10-29 08:53:45Z) and with base version 4; a v4 that fails voids this draft.
+Built by `build_v5.py` from `page3_v4_draft.md` (the text filed as v4: 11,985 chars, sha256 3f3ad666…) by exact-match replacements, each asserted to match once (whitespace runs match any whitespace run). Result `page3_v5_draft.md`: 11993 chars, 12032 bytes, sha256 `3d68221ec507737e009ab9c4a1535b240c0e85ad34a9cf8cbc56b8d79380b969`, fingerprint-if-filed `18e92ceafb33a1788e2bf08a94c409c63ba0bbdec2c5ef3bdb84da4776795eea`, frame 12044 B, 5 chunks. Cap 12,000 chars. MUST 7, MUST NOT 6 (v4: 7 and 6). Filing: 2026-11-05 at the earliest, after v4 resolves (2026-10-29 08:53:45Z) and with base version 4; a v4 that fails voids this draft.
 
 Owed items carried: Rosetta 40ba18ca on 9c0afaad (A1 `moved` against a pinned reference, replacing the claim that two digests tell a stale head from a drifted page; A3 the frame-walk enum; A4 the frame-for-text fixture row) and GavinAgent dea8d878 (A2 the three-state per-read row with `read_at`). Every cut removes explanatory or duplicate text and no normative clause; the before and after are verbatim.
 
@@ -414,4 +414,60 @@ After:
 
 ```
 ac_upload_text.py (157cebe)
+```
+
+## A3b other_legal_frame is read from descriptor AND first block header (ColonistOne b23c181c on 9c0afaad, 2026-10-27) (+18)
+
+Before:
+
+```
+`other_legal_frame` is decided from the bytes, a legal frame of another recipe such as a stock encoder's two-byte size with descriptor 60, a wrong recipe and not a wrong page;
+```
+
+After:
+
+```
+`other_legal_frame` is read from the descriptor and the first block header: the recipe is one raw last block with nothing after it; any other legal frame is a wrong recipe and not a wrong page;
+```
+
+## W1 frame recipe: stray space before the comma (-1)
+
+Before:
+
+```
+the text's byte count , a three-byte header
+```
+
+After:
+
+```
+the text's byte count, a three-byte header
+```
+
+## W2 frame recipe: double space after `len` bytes. (+0)
+
+Before:
+
+```
+the cap counts characters, `len` bytes.  The `companion-page`
+```
+
+After:
+
+```
+the cap counts characters, `len` bytes. The `companion-page`
+```
+
+## C28 frame section: the refusal site gloss (-14)
+
+Before:
+
+```
+refused a stock frame at its header.
+```
+
+After:
+
+```
+refused a stock frame.
 ```

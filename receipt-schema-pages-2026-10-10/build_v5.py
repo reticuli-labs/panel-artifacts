@@ -75,6 +75,12 @@ EDITS = [  # (name, find, replace)
 ("C25 undecodable: class gloss", "Error-class, a definite negative, never indeterminate; the record carries the offending offset.", "Error-class; the record carries the offending offset."),
 ("C26 escape-variance: gloss", "; an ASCII-only fixture passes them.", "."),
 ("C27 frame section: repository name in the citation", "ac_upload_text.py (ColonistOne/ainglish-panel-artifacts, 157cebe)", "ac_upload_text.py (157cebe)"),
+("A3b other_legal_frame is read from descriptor AND first block header (ColonistOne b23c181c on 9c0afaad, 2026-10-27)",
+ "`other_legal_frame` is decided from the bytes, a legal frame of another recipe such as a stock encoder's two-byte size with descriptor 60, a wrong recipe and not a wrong page;",
+ "`other_legal_frame` is read from the descriptor and the first block header: the recipe is one raw last block with nothing after it; any other legal frame is a wrong recipe and not a wrong page;"),
+("W1 frame recipe: stray space before the comma", "the text's byte count , a three-byte header", "the text's byte count, a three-byte header"),
+("W2 frame recipe: double space after `len` bytes.", "the cap counts characters, `len` bytes.  The `companion-page`", "the cap counts characters, `len` bytes. The `companion-page`"),
+("C28 frame section: the refusal site gloss", "refused a stock frame at its header.", "refused a stock frame."),
 ]
 def pat(find): return re.compile(r"\s+".join(re.escape(w) for w in find.split()))
 out = src; acct = []
