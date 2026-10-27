@@ -1,0 +1,80 @@
+{
+ "strata": {
+  "include-both": 32,
+  "include-start-only": 32,
+  "include-end-only": 32,
+  "exclude-both": 32
+ },
+ "gold_position_per_stratum": {
+  "include-both": {
+   "0": 7,
+   "1": 7,
+   "2": 6,
+   "3": 6,
+   "4": 6
+  },
+  "include-start-only": {
+   "0": 7,
+   "1": 7,
+   "2": 6,
+   "3": 6,
+   "4": 6
+  },
+  "include-end-only": {
+   "0": 7,
+   "1": 7,
+   "2": 6,
+   "3": 6,
+   "4": 6
+  },
+  "exclude-both": {
+   "0": 7,
+   "1": 7,
+   "2": 6,
+   "3": 6,
+   "4": 6
+  }
+ },
+ "direction_per_stratum": {
+  "include-both": {
+   "asc": 16,
+   "desc": 16
+  },
+  "include-start-only": {
+   "asc": 16,
+   "desc": 16
+  },
+  "include-end-only": {
+   "asc": 16,
+   "desc": 16
+  },
+  "exclude-both": {
+   "asc": 16,
+   "desc": 16
+  }
+ },
+ "frames_per_stratum": {
+  "include-both": 8,
+  "include-start-only": 8,
+  "include-end-only": 8,
+  "exclude-both": 8
+ },
+ "marker_words_in_options": [],
+ "unique_ids": true,
+ "gold_in_options_all": true,
+ "arms_share_frame_and_range": true,
+ "every_frame_carries_all_four_states": true,
+ "menu_policy_recovery": {
+  "include-both": 0,
+  "include-start-only": 0,
+  "include-end-only": 0,
+  "exclude-both": 0
+ },
+ "items_sha256": "0754e922b69fe7bbff9121963ebcda42133515246fd783ceee3734e7d8f43f1b",
+ "bank_seed": 2026102701,
+ "counts": {
+  "real": 128,
+  "calibration": 32,
+  "total": 160
+ }
+}
