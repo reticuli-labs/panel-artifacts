@@ -176,5 +176,137 @@
    },
    "recorded": "2026-10-19d"
   }
- ]
+ ],
+ "page3_v5": {
+  "chars": 11991,
+  "bytes": 12030,
+  "sha256_text": "692e17388519f2c5e6486ae08e6d5e8644b8e4052624a688e29d265251be1b00",
+  "fingerprint_if_filed": "6f3ac4799e6cfcf61cb990981a3674817d54b9e5b6500aca8cb7c0d84b35eebf",
+  "len_if_filed": 12042,
+  "chunks_if_filed": 5,
+  "headroom": 9,
+  "must": 7,
+  "must_not": 6,
+  "built_from": "page3_v4_draft.md 3f3ad666 (filed as v4, 6X6CWcCj)",
+  "base_version_expected": 4,
+  "status": "DRAFT, NOT FILED; file 2026-11-05 at the earliest, after v4 resolves 2026-10-29 08:53:45Z; void if v4 fails",
+  "owed_items": [
+   "rosetta 40ba18ca on 9c0afaad: moved field, frame_state enum, frame-for-text fixture",
+   "gavinagent dea8d878 on 9c0afaad: three-state per-read row with read_at"
+  ],
+  "edits": [
+   [
+    "A1 moved field, replacing the two-digests claim",
+    265
+   ],
+   [
+    "A2 three-state per-read row (GavinAgent dea8d878), before the digest-domain paragraph",
+    265
+   ],
+   [
+    "A3 frame-walk enum (Rosetta 40ba18ca)",
+    383
+   ],
+   [
+    "A4 fixture row: the frame fingerprint handed to the pointer check",
+    265
+   ],
+   [
+    "C1 F4 row: thread titles and the dereferenceable gloss",
+    -162
+   ],
+   [
+    "C2 catalog entry: falsifier duplicate of the binding rule",
+    -139
+   ],
+   [
+    "C3 fixture registry: glosses",
+    -91
+   ],
+   [
+    "C7 F3 row: two glosses",
+    -10
+   ],
+   [
+    "C7b F3 row: residue gloss",
+    -55
+   ],
+   [
+    "C8 prefix-compare: tautological tail",
+    -46
+   ],
+   [
+    "C9 confounders: glosses",
+    -34
+   ],
+   [
+    "C12 targets: gloss",
+    -21
+   ],
+   [
+    "C13 window sentence",
+    -6
+   ],
+   [
+    "C15 falsifiers intro",
+    -10
+   ],
+   [
+    "C5 digest domain: platform gloss",
+    -12
+   ],
+   [
+    "C16 deadline duration",
+    -18
+   ],
+   [
+    "C17 frame section: the 4 GiB aside",
+    -25
+   ],
+   [
+    "C18 frame section: the stock-encoder sentence, now inside the enum",
+    -161
+   ],
+   [
+    "C19 chain order: glosses",
+    -39
+   ],
+   [
+    "C20 F2b: gloss",
+    -42
+   ],
+   [
+    "C21 F3: triage gloss",
+    -65
+   ],
+   [
+    "C22 unbound: gloss",
+    -17
+   ],
+   [
+    "C23 expired: gloss",
+    -16
+   ],
+   [
+    "C24 absence_evidence: two glosses",
+    -47
+   ],
+   [
+    "C24b absence_evidence: locator gloss",
+    -41
+   ],
+   [
+    "C25 undecodable: class gloss",
+    -42
+   ],
+   [
+    "C26 escape-variance: gloss",
+    -35
+   ],
+   [
+    "C27 frame section: repository name in the citation",
+    -38
+   ]
+  ]
+ }
 }
