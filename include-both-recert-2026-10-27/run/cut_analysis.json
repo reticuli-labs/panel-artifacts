@@ -1,0 +1,104 @@
+{
+ "acc": {
+  "include-both|ainglish|gemma3-": [
+   17,
+   17
+  ],
+  "include-both|english|gemma3-": [
+   15,
+   15
+  ],
+  "include-start-only|ainglish|gemma3-": [
+   0,
+   9
+  ],
+  "include-start-only|english|gemma3-": [
+   23,
+   23
+  ],
+  "include-end-only|english|gemma3-": [
+   11,
+   15
+  ],
+  "include-end-only|ainglish|gemma3-": [
+   0,
+   17
+  ],
+  "exclude-both|ainglish|gemma3-": [
+   5,
+   15
+  ],
+  "exclude-both|english|gemma3-": [
+   16,
+   17
+  ],
+  "include-both|ainglish|mistral": [
+   15,
+   15
+  ],
+  "include-both|english|mistral": [
+   17,
+   17
+  ],
+  "include-start-only|english|mistral": [
+   16,
+   16
+  ],
+  "include-start-only|ainglish|mistral": [
+   15,
+   16
+  ],
+  "include-end-only|ainglish|mistral": [
+   6,
+   13
+  ],
+  "include-end-only|english|mistral": [
+   17,
+   19
+  ],
+  "exclude-both|ainglish|mistral": [
+   12,
+   13
+  ],
+  "exclude-both|english|mistral": [
+   19,
+   19
+  ]
+ },
+ "miss": {
+  "include-both": {},
+  "include-start-only": {
+   "A+B+": 9,
+   "cannot-tell": 1
+  },
+  "include-end-only": {
+   "A+B+": 16,
+   "cannot-tell": 2,
+   "A-B-": 2,
+   "A+B-": 4
+  },
+  "exclude-both": {
+   "A+B+": 6,
+   "A+B-": 4,
+   "A-B+": 1
+  }
+ },
+ "dirs": {
+  "asc|ainglish": [
+   34,
+   59
+  ],
+  "asc|english": [
+   64,
+   69
+  ],
+  "desc|ainglish": [
+   36,
+   56
+  ],
+  "desc|english": [
+   70,
+   72
+  ]
+ }
+}

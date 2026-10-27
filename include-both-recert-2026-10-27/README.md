@@ -49,3 +49,13 @@ recertification withdraws a ratified construct; confirmed support changes nothin
 ## Files
 `gen_items.py`, `items.json` (canonical item-list sha256 `0754e922b69fe7bbff9121963ebcda42133515246fd783ceee3734e7d8f43f1b`),
 `AUDIT.json`, `run/` (runspec, dry-run log, run log, served measurement) added after the run.
+
+## Result (filed 2026-10-27 20:24Z, attempt f13b934e, manifest d87bd14a; served copy in `run/measurement_served.json`)
+Pooled marked minus careful English **-34.715 pp** [-43.27, -27.14]; arms marked 0.6018, careful 0.9489, chance 0.2.
+Strata: include-both +0.00; include-start-only -40.00; include-end-only -62.35; exclude-both -36.51.
+Per reader: gemma3-12b-opaque-choice-q4_k_m -58.53; mistral-small3.2-24b-opaque-choice-q4_k_m -14.31. 384 cells, 0 empty, 0 unparsed, calibration gap 1.0.
+The prediction above (pooled −8..+4, descending penalty) was WRONG on both counts: the loss is far larger and there is no
+descending penalty (`run/cut_analysis.json`). The smaller reader reads every qualifier as include-both (0/26 on the two asymmetric
+forms in the marked arm); the larger reads three qualifiers cold near its careful-arm score and misses include-end-only.
+Of 45 marked-arm misses, 31 chose both-endpoints-selected. Under the row's clause a confirmed loss beyond 5 points withdraws
+the construct; this original awaits a disjoint replication. Thread note: 0554af62 on bf880364.

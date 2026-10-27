@@ -1,0 +1,136 @@
+{
+ "construct": "a-v6srdj64msfdqzy5",
+ "slug": "include-both-include-start-only-include-end-only-exclude-bot",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 2026102701,
+ "panel": [
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+   "name": "gemma3-12b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026102701,
+   "temperature": 0,
+   "timeout_s": 120
+  },
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 128,
+   "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+   "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026102701,
+   "temperature": 0,
+   "timeout_s": 120
+  }
+ ],
+ "models": [
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_neff": 1,
+ "settlement_strata": [
+  {
+   "id": "include-both",
+   "weight": 1
+  },
+  {
+   "id": "include-start-only",
+   "weight": 1
+  },
+  {
+   "id": "include-end-only",
+   "weight": 1
+  },
+  {
+   "id": "exclude-both",
+   "weight": 1
+  }
+ ],
+ "comparator": {
+  "kind": "complete-careful-english-v1",
+  "description": "Same frame and range; marked arm appends the qualifier as the mapping places it (', include-both'); careful arm appends the mapping's membership statement with both endpoints named (', including both 100 and 200' / ', including 100 and excluding 200' / ', excluding 100 and including 200' / ', excluding both 100 and 200'). No interval brackets."
+ },
+ "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/ae825c46506e08f9eabae1d02b42ab7d324d7d68/include-both-recert-2026-10-27/items.json",
+ "items_sha256": "0754e922b69fe7bbff9121963ebcda42133515246fd783ceee3734e7d8f43f1b",
+ "calibration_min_gap": 0.5,
+ "attempt": {
+  "estimand": "RECERTIFICATION comprehension_accuracy_delta ORIGINAL on a-v6srdj64msfdqzy5 (ratified 0.42.0, no prior comprehension evidence): the marked qualifier (include-both / include-start-only / include-end-only / exclude-both, placed after the range as the mapping states) minus complete careful English (the mapping's membership statement naming both endpoints), same frame and range, on 128 fresh range-instruction items authored 2026-10-27 by Reticuli: strata = the four markers (32 each, weight 1, all load-bearing); 8 frames (numeric-asc, numeric-desc, dates-asc, dates-desc, timestamps-asc, identifiers-desc, alphabetic-desc, pagination-asc) x 4 value pairs, every frame carrying all four states, direction as written balanced 16/16 inside each stratum and recorded per item; one joint two-bit question per item (is a value exactly equal to the first written endpoint selected, and one exactly equal to the second) with five fixed options enumerating the four joint states plus cannot-tell, gold position cycled; read by two qualified readers (gemma3-12b and mistral-small3.2-24b opaque-choice q4_k_m, receipts 2026-10-24 valid to 10-31), counterbalanced one arm per reader per item, both-arms-per-reader-item planted calibration first. Prediction stated before any read: pooled -8..+4; include-both and exclude-both within +/-4; include-start-only and include-end-only down to -10; descending items 3..8 points worse for the marked arm than ascending. The bare descriptive arm is not run. Not a replication.",
+  "admissibility_gates": [
+   "calibration-first absolute-gap rule: panel planted-arm gap >= 0.5 on the 32 construct-free controls before any real cell, else abort with the calibration receipt",
+   "reader digests bound from /api/tags at run time must equal the qualified digests sha256:de1f65ea... and sha256:6629ee92..., else refuse before spend",
+   "no automatic retries; any transport fault or truncated answer on a real cell is recorded and the run aborts if the yield guard fires",
+   "items fetched from the commit-pinned URL must hash to the frozen items_sha256, else refuse"
+  ],
+  "planned_sample": {
+   "real_items": 128,
+   "calibration_items": 32,
+   "readers": 2,
+   "target_cells": 256,
+   "calibration_cells": 128
+  }
+ },
+ "reader_qualifications": [
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "lineage": {
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data.",
+    "key": "google/gemma3-12b"
+   },
+   "qualified_at": "2026-10-24T17:25:05+00:00",
+   "reader": {
+    "digest_source": "ollama:/api/tags",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+    "precision": "q4_k_m",
+    "provider": "ollama"
+   },
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "other_correct": 0,
+    "other_total": 32,
+    "passed": true
+   },
+   "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "042182ab7468d3a383bea068c2e04e62fc9ac4b7c662270ea0a753a47d38f590",
+   "valid_until": "2026-10-31T17:25:05+00:00"
+  },
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "lineage": {
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data.",
+    "key": "mistral/mistral-small3.2-24b"
+   },
+   "qualified_at": "2026-10-24T17:29:49+00:00",
+   "reader": {
+    "digest_source": "ollama:/api/tags",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+    "precision": "q4_k_m",
+    "provider": "ollama"
+   },
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "other_correct": 0,
+    "other_total": 32,
+    "passed": true
+   },
+   "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "b016c9d522264527715468770c7661eaf84025a9e6d1a69daf70ad69e617f0ce",
+   "valid_until": "2026-10-31T17:29:49+00:00"
+  }
+ ]
+}
