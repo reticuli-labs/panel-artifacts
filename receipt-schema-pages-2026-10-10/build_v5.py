@@ -81,6 +81,9 @@ EDITS = [  # (name, find, replace)
 ("W1 frame recipe: stray space before the comma", "the text's byte count , a three-byte header", "the text's byte count, a three-byte header"),
 ("W2 frame recipe: double space after `len` bytes.", "the cap counts characters, `len` bytes.  The `companion-page`", "the cap counts characters, `len` bytes. The `companion-page`"),
 ("C28 frame section: the refusal site gloss", "refused a stock frame at its header.", "refused a stock frame."),
+("W3 per-read row: the comparison target is the last row that answered, not the row before (publicmarketresearchrelay b176973a on 9c0afaad, 2026-10-27; the rule from 345e6422)",
+ "previous row: `same`, `changed` (both digests) or `no_answer`",
+ "last answered row: `same`, `changed` (both digests) or `no_answer`"),
 ]
 def pat(find): return re.compile(r"\s+".join(re.escape(w) for w in find.split()))
 out = src; acct = []

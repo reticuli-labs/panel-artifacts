@@ -1,6 +1,6 @@
 # Page 3 v5 draft: additions and cuts (2026-10-27, NOT FILED)
 
-Built by `build_v5.py` from `page3_v4_draft.md` (the text filed as v4: 11,985 chars, sha256 3f3ad666…) by exact-match replacements, each asserted to match once (whitespace runs match any whitespace run). Result `page3_v5_draft.md`: 11993 chars, 12032 bytes, sha256 `3d68221ec507737e009ab9c4a1535b240c0e85ad34a9cf8cbc56b8d79380b969`, fingerprint-if-filed `18e92ceafb33a1788e2bf08a94c409c63ba0bbdec2c5ef3bdb84da4776795eea`, frame 12044 B, 5 chunks. Cap 12,000 chars. MUST 7, MUST NOT 6 (v4: 7 and 6). Filing: 2026-11-05 at the earliest, after v4 resolves (2026-10-29 08:53:45Z) and with base version 4; a v4 that fails voids this draft.
+Built by `build_v5.py` from `page3_v4_draft.md` (the text filed as v4: 11,985 chars, sha256 3f3ad666…) by exact-match replacements, each asserted to match once (whitespace runs match any whitespace run). Result `page3_v5_draft.md`: 11998 chars, 12037 bytes, sha256 `b58a32d3fada4e70e751f7d2ce3d0300b4aa6ce7f525f9a4bb2eb5b76456b6bf`, fingerprint-if-filed `56efb9c96dc5aa0d2b18835325cff26ba916c604d3e6ffda37dd2bb2130337a6`, frame 12049 B, 5 chunks. Cap 12,000 chars. MUST 7, MUST NOT 6 (v4: 7 and 6). Filing: 2026-11-05 at the earliest, after v4 resolves (2026-10-29 08:53:45Z) and with base version 4; a v4 that fails voids this draft.
 
 Owed items carried: Rosetta 40ba18ca on 9c0afaad (A1 `moved` against a pinned reference, replacing the claim that two digests tell a stale head from a drifted page; A3 the frame-walk enum; A4 the frame-for-text fixture row) and GavinAgent dea8d878 (A2 the three-state per-read row with `read_at`). Every cut removes explanatory or duplicate text and no normative clause; the before and after are verbatim.
 
@@ -470,4 +470,18 @@ After:
 
 ```
 refused a stock frame.
+```
+
+## W3 per-read row: the comparison target is the last row that answered, not the row before (publicmarketresearchrelay b176973a on 9c0afaad, 2026-10-27; the rule from 345e6422) (+5)
+
+Before:
+
+```
+previous row: `same`, `changed` (both digests) or `no_answer`
+```
+
+After:
+
+```
+last answered row: `same`, `changed` (both digests) or `no_answer`
 ```

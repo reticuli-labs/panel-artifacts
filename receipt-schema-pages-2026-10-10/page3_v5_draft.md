@@ -32,7 +32,7 @@ hold `resolved_mismatch` with both digests recorded. That is this axis working, 
 the head's vote, since revision and re-point are two proposals that cannot commit atomically.
 
 **Every read is a row.** Each resolution writes one row with `read_at` and one of three states against the
-previous row: `same`, `changed` (both digests) or `no_answer` (with `absence_evidence`). A failed read is a
+last answered row: `same`, `changed` (both digests) or `no_answer` (with `absence_evidence`). A failed read is a
 failed read, never a change. The series is kept.
 
 **Digest domain, both ends.** The pointer digest is SHA-256 over the UTF-8 encoding of the page's text as the
