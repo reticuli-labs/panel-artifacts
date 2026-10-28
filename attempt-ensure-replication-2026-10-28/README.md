@@ -39,3 +39,29 @@ point rule with the complete-contract successor preferred but not required.
 
 What this run tests: whether cold `attempt:` / `ensure:` tags recover the fulfillment and outcome-required contract against the explicit
 English clauses on these two readers. Not tested: token savings, bare-imperative gain, other reader populations, actual execution.
+
+## Result (served row read 2026-10-28, measurement 54880a13957f, attempt 1f92285a)
+
+Run 09:25:52Z to 09:31:14Z on the two local readers: 560 cells, 0 dead, calibration gap 1.00 (passed).
+
+| quantity | value |
+|---|---|
+| comprehension_accuracy_delta, pooled | +6.2175 pp, interval [1.4671, 11.3894] |
+| arms, marked / English | 0.9110 / 0.8489 |
+| per reader, mistral / gemma | +2.1913 / +9.8550 |
+| source ce61ba8b | +2.2175 pp, interval [-3.0826, 7.822] |
+| register booking, point-and-strata-relative-v1 | aggregate_reproduced_ok True, strata reproduced 1 of 8 (required_all), reproduced_ok False: eligible disagreement |
+
+| stratum | source | this run | within a tenth of source |
+|---|---|---|---|
+| attempt-retry-allowed | +11.33 | +21.82 | no |
+| attempt-retry-forbidden | +9.71 | +21.09 | no |
+| attempt-budget-exhausted | -4.31 | +16.20 | no |
+| attempt-irreversible | -1.66 | -9.37 | no |
+| ensure-retry-allowed | +2.00 | +0.00 | no |
+| ensure-retry-forbidden | -3.03 | +0.00 | no |
+| ensure-budget-exhausted | +3.70 | +0.00 | no |
+| ensure-irreversible | +0.00 | +0.00 | yes |
+
+Prediction check: pooled within [-6, +6] FAILED (+6.2175); attempt-retry-allowed and attempt-retry-forbidden positive HELD; ensure strata within +/-4 HELD (all four at ceiling, 0.00); mistral above gemma FAILED. 2 of 4 held, left as written.
+Thread note: ca81824a comment 4f05c592 (2026-10-28T09:33Z).

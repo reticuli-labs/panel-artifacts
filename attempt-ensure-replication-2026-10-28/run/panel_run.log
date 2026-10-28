@@ -1,0 +1,4592 @@
+ATTEMPT MINTED BEFORE READER SPEND: 1f92285a-d0e5-4366-bc08-baee1d0a7843 (manifest 54880a13957f2a682b65bad30cafe45f129b3379fa6f3f89472c3aead0572efd)
+calibration: planted arm 1.00 vs other 0.00 — recovered 1.00 of 1.00 headroom; panel can detect. ctl(planted-items) passes. 512 real cells to go.
+cell yield: 560 cells, dead_rate 0.0 — per (model, arm) in the manifest spec.
+transport faults: 0 cell(s) lost to the wire, not retried (a retried cell is a second draw and the receipt would have to say so).
+resample-down: value stays inside its own interval at [0.75, 0.5] of items.
+{
+ "metric": "comprehension_accuracy_delta",
+ "value": 6.2175,
+ "resample_down": [
+  {
+   "kept_fraction": 0.75,
+   "items": 192,
+   "value": 8.25,
+   "sign_flipped": false,
+   "outside_interval": false
+  },
+  {
+   "kept_fraction": 0.5,
+   "items": 128,
+   "value": 8.795,
+   "sign_flipped": false,
+   "outside_interval": false
+  }
+ ],
+ "yield_report": {
+  "cells": 560,
+  "empty": 0,
+  "unparsed": 0,
+  "dead_rate": 0.0,
+  "per_cell": {
+   "gemma3-12b-opaque-choice-q4_k_m/ainglish": {
+    "n": 135,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "gemma3-12b-opaque-choice-q4_k_m/english": {
+    "n": 145,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m/ainglish": {
+    "n": 148,
+    "empty": 0,
+    "unparsed": 0
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m/english": {
+    "n": 132,
+    "empty": 0,
+    "unparsed": 0
+   }
+  }
+ },
+ "calibration": {
+  "planted_arm": "ainglish",
+  "detectable": 1.0,
+  "other": 0.0,
+  "gap": 1.0,
+  "headroom": 1.0,
+  "recovered": 1.0,
+  "min_gap": 0.5,
+  "min_recovered": null,
+  "rule": "absolute-gap-v1",
+  "passed": true,
+  "transport_faults": {
+   "total": 0,
+   "retried": false,
+   "per_cell": {}
+  },
+  "transport_truncations": {
+   "total": 0,
+   "per_reader_cell": {},
+   "by_cell": {
+    "english": 0,
+    "ainglish": 0
+   },
+   "imbalanced_across_cells": false
+  }
+ },
+ "value_lo": 1.4671,
+ "value_hi": 11.3894,
+ "arms": {
+  "english": 0.8489,
+  "ainglish": 0.911,
+  "chance": 0.3333
+ },
+ "panel_models": [
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_members": 2,
+ "is_adversarial": false,
+ "panel_agreement": 0.9343,
+ "per_member": [
+  {
+   "model": "gemma3-12b-opaque-choice-q4_k_m",
+   "value": 9.855,
+   "precision": "q4_k_m"
+  },
+  {
+   "model": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "value": 2.1913,
+   "precision": "q4_k_m"
+  }
+ ],
+ "manifest": {
+  "construct": "a-mznv1j4k869me22t",
+  "metric": "comprehension_accuracy_delta",
+  "seed": 2026102801,
+  "comparator": {
+   "kind": "careful-english-v1",
+   "description": "Both arms have identical fictional outcomes, effort/failure facts and authority limits. English states the genuine-effort/report-either-way or outcome-required contract; Ainglish uses the corresponding tag without a glossary. Unmarked imperatives are not scored against a hidden intended failure contract."
+  },
+  "study_purpose": "claim_test",
+  "study_scope": "Fresh-input REPLICATION of Dexagon's comprehension original ce61ba8b on attempt:/ensure: (a-mznv1j4k869me22t): the source crossing kept exactly (2 tags x 4 failure contexts = the source's eight equal-weight settlement strata, x 4 domains x 8 probes = 256 fresh items authored 2026-10-28 by Reticuli, plus 12 fresh planted calibration items); every input replaced (new domains rotate/publish/refund/index, new record ids, re-worded passages with the same facts); the source's question texts, option sets and careful-english-v1 comparator kept because they define the probes and the mapping under test; the source's exact two reader instruments by digest. Tests whether cold attempt:/ensure: tags recover the fulfillment and outcome-required contract against the explicit English clauses on these readers. Not tested: token savings, bare-imperative gain, other reader populations, actual execution.",
+  "items_sha256": "c1a1d28e981eec00aad78b2553b6f79e1d33e4c4bd4cf8e4539bc001063b5dcc",
+  "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/343429a99a948c3d729f0bf51bb28b816a7c0ecb/attempt-ensure-replication-2026-10-28/items.json",
+  "models": [
+   "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+  ],
+  "reader_qualifications": [
+   {
+    "kind": "ainglish.reader-qualification.v1",
+    "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+    "reader": {
+     "provider": "ollama",
+     "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+     "precision": "q4_k_m",
+     "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+     "digest_source": "ollama:/api/tags"
+    },
+    "lineage": {
+     "key": "google/gemma3-12b",
+     "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+    },
+    "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+    "settings_sha256": "042182ab7468d3a383bea068c2e04e62fc9ac4b7c662270ea0a753a47d38f590",
+    "qualified_at": "2026-10-24T17:25:05+00:00",
+    "valid_until": "2026-10-31T17:25:05+00:00",
+    "result": {
+     "detectable_correct": 32,
+     "detectable_total": 32,
+     "min_gap_bps": 5000,
+     "min_recovered_bps": 8750,
+     "other_correct": 0,
+     "other_total": 32,
+     "passed": true
+    }
+   },
+   {
+    "kind": "ainglish.reader-qualification.v1",
+    "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+    "reader": {
+     "provider": "ollama",
+     "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+     "precision": "q4_k_m",
+     "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+     "digest_source": "ollama:/api/tags"
+    },
+    "lineage": {
+     "key": "mistral/mistral-small3.2-24b",
+     "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data."
+    },
+    "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+    "settings_sha256": "b016c9d522264527715468770c7661eaf84025a9e6d1a69daf70ad69e617f0ce",
+    "qualified_at": "2026-10-24T17:29:49+00:00",
+    "valid_until": "2026-10-31T17:29:49+00:00",
+    "result": {
+     "detectable_correct": 32,
+     "detectable_total": 32,
+     "min_gap_bps": 5000,
+     "min_recovered_bps": 8750,
+     "other_correct": 0,
+     "other_total": 32,
+     "passed": true
+    }
+   }
+  ],
+  "readers": [
+   {
+    "name": "gemma3-12b-opaque-choice-q4_k_m",
+    "provider": "ollama",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+    "digest_source": "ollama:/api/tags",
+    "instrument_preparation": {
+     "entry_point": "prepare_reader_instruments",
+     "binding": "ollama:/api/tags"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 64,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026102801,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   },
+   {
+    "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "provider": "ollama",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "precision": "q4_k_m",
+    "api": "openai",
+    "base_url": "http://127.0.0.1:11434/v1",
+    "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+    "digest_source": "ollama:/api/tags",
+    "instrument_preparation": {
+     "entry_point": "prepare_reader_instruments",
+     "binding": "ollama:/api/tags"
+    },
+    "answer_protocol": "opaque-choice-v1",
+    "max_tokens": 64,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026102801,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   }
+  ],
+  "instrument_preparation": {
+   "entry_point": "prepare_reader_instruments",
+   "binding": [
+    {
+     "reader": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+     "digest_source": "ollama:/api/tags"
+    },
+    {
+     "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+     "digest_source": "ollama:/api/tags"
+    }
+   ]
+  },
+  "item_counts": {
+   "real": 256,
+   "calibration": 12
+  },
+  "interval_kind": "bootstrap_items",
+  "interval_estimator": {
+   "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+   "algorithm": "sha256-counter-modulo-v1",
+   "draws": 2000,
+   "sampling_unit": "item",
+   "quantiles": [
+    "0.025",
+    "0.975"
+   ],
+   "items_index_sha256": "97fe1afe6fcc29330bacfb771730f4b32a7b9a5c05f6cb4a3acf25b6c13a68d1"
+  },
+  "settlement_strata": [
+   {
+    "id": "attempt-retry-allowed",
+    "weight": 1
+   },
+   {
+    "id": "attempt-retry-forbidden",
+    "weight": 1
+   },
+   {
+    "id": "attempt-budget-exhausted",
+    "weight": 1
+   },
+   {
+    "id": "attempt-irreversible",
+    "weight": 1
+   },
+   {
+    "id": "ensure-retry-allowed",
+    "weight": 1
+   },
+   {
+    "id": "ensure-retry-forbidden",
+    "weight": 1
+   },
+   {
+    "id": "ensure-budget-exhausted",
+    "weight": 1
+   },
+   {
+    "id": "ensure-irreversible",
+    "weight": 1
+   }
+  ],
+  "settlement_item_field": "settlement_stratum",
+  "settlement_rule": "manifest-weighted arms and value; every stratum load-bearing",
+  "calibration": {
+   "planted_arm": "ainglish",
+   "min_gap": 0.5,
+   "min_recovered": null,
+   "rule": "absolute-gap-v1",
+   "ordering": "calibration-first",
+   "arm_exposure": "both-arms-per-reader-item",
+   "cells": 48
+  },
+  "difficulty": {
+   "annotated": false
+  },
+  "harness": "ainglish-panel/0.2.65",
+  "transport": {
+   "gemma3-12b-opaque-choice-q4_k_m@q4_k_m": {
+    "max_tokens": 64,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026102801,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   },
+   "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m": {
+    "max_tokens": 64,
+    "timeout_s": 120,
+    "temperature": 0,
+    "seed": 2026102801,
+    "top_p": "provider-default",
+    "top_k": "provider-default",
+    "num_ctx": "provider-default",
+    "reasoning_effort": "provider-default"
+   }
+  },
+  "concurrency": {
+   "max_in_flight": 1,
+   "per_reader_max_in_flight": {
+    "gemma3-12b-opaque-choice-q4_k_m": 1,
+    "mistral-small3.2-24b-opaque-choice-q4_k_m": 1
+   },
+   "result_order": "deterministic-plan-order",
+   "calibration_barrier": true,
+   "automatic_retries": false
+  },
+  "transport_observations": {
+   "schema": "panel-transport-v1",
+   "location": "calibration"
+  },
+  "protocol": "panel.py counterbalanced real arms + both-arms-per-reader-item planted-effect calibration gate",
+  "replicates_hash": "ce61ba8b9182a5b072a8dc8734f3b92f3b76829e0aff1108cd6e7086c398aaa0"
+ },
+ "interval_provenance": {
+  "kind": "ainglish.panel.bootstrap-items-attestation.v1",
+  "metric": "comprehension_accuracy_delta",
+  "estimator": "manifest_weighted_stratum_accuracy_delta_pp",
+  "algorithm": {
+   "name": "sha256-counter-modulo-v1",
+   "draws": 2000,
+   "accepted_draws": 2000,
+   "sampling_unit": "item",
+   "lower_quantile": {
+    "numerator": 25,
+    "denominator": 1000,
+    "index_rule": "floor"
+   },
+   "upper_quantile": {
+    "numerator": 975,
+    "denominator": 1000,
+    "index_rule": "floor"
+   }
+  },
+  "seed": 2026102801,
+  "items": [
+   {
+    "id": "aer-attempt-budget-exhausted-index-escalation-authority",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-index-failure-completion",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-index-failure-is-not-success",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-index-failure-unreported",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-index-no-effort",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-index-outcome-required",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-index-retry-authority",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-index-success",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-publish-escalation-authority",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-publish-failure-completion",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-publish-failure-is-not-success",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-publish-failure-unreported",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-publish-no-effort",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-publish-outcome-required",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-publish-retry-authority",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-publish-success",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-refund-escalation-authority",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-refund-failure-completion",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-refund-failure-is-not-success",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-refund-failure-unreported",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-refund-no-effort",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-refund-outcome-required",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-refund-retry-authority",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-refund-success",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-rotate-escalation-authority",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-rotate-failure-completion",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-rotate-failure-is-not-success",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-rotate-failure-unreported",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-rotate-no-effort",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-rotate-outcome-required",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-rotate-retry-authority",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-budget-exhausted-rotate-success",
+    "stratum": "attempt-budget-exhausted"
+   },
+   {
+    "id": "aer-attempt-irreversible-index-escalation-authority",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-index-failure-completion",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-index-failure-is-not-success",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-index-failure-unreported",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-index-no-effort",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-index-outcome-required",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-index-retry-authority",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-index-success",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-publish-escalation-authority",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-publish-failure-completion",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-publish-failure-is-not-success",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-publish-failure-unreported",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-publish-no-effort",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-publish-outcome-required",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-publish-retry-authority",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-publish-success",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-refund-escalation-authority",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-refund-failure-completion",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-refund-failure-is-not-success",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-refund-failure-unreported",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-refund-no-effort",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-refund-outcome-required",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-refund-retry-authority",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-refund-success",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-rotate-escalation-authority",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-rotate-failure-completion",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-rotate-failure-is-not-success",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-rotate-failure-unreported",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-rotate-no-effort",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-rotate-outcome-required",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-rotate-retry-authority",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-irreversible-rotate-success",
+    "stratum": "attempt-irreversible"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-index-escalation-authority",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-index-failure-completion",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-index-failure-is-not-success",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-index-failure-unreported",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-index-no-effort",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-index-outcome-required",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-index-retry-authority",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-index-success",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-publish-escalation-authority",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-publish-failure-completion",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-publish-failure-is-not-success",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-publish-failure-unreported",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-publish-no-effort",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-publish-outcome-required",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-publish-retry-authority",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-publish-success",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-refund-escalation-authority",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-refund-failure-completion",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-refund-failure-is-not-success",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-refund-failure-unreported",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-refund-no-effort",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-refund-outcome-required",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-refund-retry-authority",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-refund-success",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-rotate-escalation-authority",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-rotate-failure-completion",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-rotate-failure-is-not-success",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-rotate-failure-unreported",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-rotate-no-effort",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-rotate-outcome-required",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-rotate-retry-authority",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-allowed-rotate-success",
+    "stratum": "attempt-retry-allowed"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-index-escalation-authority",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-index-failure-completion",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-index-failure-is-not-success",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-index-failure-unreported",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-index-no-effort",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-index-outcome-required",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-index-retry-authority",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-index-success",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-publish-escalation-authority",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-publish-failure-completion",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-publish-failure-is-not-success",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-publish-failure-unreported",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-publish-no-effort",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-publish-outcome-required",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-publish-retry-authority",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-publish-success",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-refund-escalation-authority",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-refund-failure-completion",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-refund-failure-is-not-success",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-refund-failure-unreported",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-refund-no-effort",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-refund-outcome-required",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-refund-retry-authority",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-refund-success",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-rotate-escalation-authority",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-rotate-failure-completion",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-rotate-failure-is-not-success",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-rotate-failure-unreported",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-rotate-no-effort",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-rotate-outcome-required",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-rotate-retry-authority",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-attempt-retry-forbidden-rotate-success",
+    "stratum": "attempt-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-index-escalation-authority",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-index-failure-completion",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-index-failure-is-not-success",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-index-failure-unreported",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-index-no-effort",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-index-outcome-required",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-index-retry-authority",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-index-success",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-publish-escalation-authority",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-publish-failure-completion",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-publish-failure-is-not-success",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-publish-failure-unreported",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-publish-no-effort",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-publish-outcome-required",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-publish-retry-authority",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-publish-success",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-refund-escalation-authority",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-refund-failure-completion",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-refund-failure-is-not-success",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-refund-failure-unreported",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-refund-no-effort",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-refund-outcome-required",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-refund-retry-authority",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-refund-success",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-rotate-escalation-authority",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-rotate-failure-completion",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-rotate-failure-is-not-success",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-rotate-failure-unreported",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-rotate-no-effort",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-rotate-outcome-required",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-rotate-retry-authority",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-budget-exhausted-rotate-success",
+    "stratum": "ensure-budget-exhausted"
+   },
+   {
+    "id": "aer-ensure-irreversible-index-escalation-authority",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-index-failure-completion",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-index-failure-is-not-success",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-index-failure-unreported",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-index-no-effort",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-index-outcome-required",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-index-retry-authority",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-index-success",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-publish-escalation-authority",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-publish-failure-completion",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-publish-failure-is-not-success",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-publish-failure-unreported",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-publish-no-effort",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-publish-outcome-required",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-publish-retry-authority",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-publish-success",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-refund-escalation-authority",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-refund-failure-completion",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-refund-failure-is-not-success",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-refund-failure-unreported",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-refund-no-effort",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-refund-outcome-required",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-refund-retry-authority",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-refund-success",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-rotate-escalation-authority",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-rotate-failure-completion",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-rotate-failure-is-not-success",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-rotate-failure-unreported",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-rotate-no-effort",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-rotate-outcome-required",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-rotate-retry-authority",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-irreversible-rotate-success",
+    "stratum": "ensure-irreversible"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-index-escalation-authority",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-index-failure-completion",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-index-failure-is-not-success",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-index-failure-unreported",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-index-no-effort",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-index-outcome-required",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-index-retry-authority",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-index-success",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-publish-escalation-authority",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-publish-failure-completion",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-publish-failure-is-not-success",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-publish-failure-unreported",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-publish-no-effort",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-publish-outcome-required",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-publish-retry-authority",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-publish-success",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-refund-escalation-authority",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-refund-failure-completion",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-refund-failure-is-not-success",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-refund-failure-unreported",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-refund-no-effort",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-refund-outcome-required",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-refund-retry-authority",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-refund-success",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-rotate-escalation-authority",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-rotate-failure-completion",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-rotate-failure-is-not-success",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-rotate-failure-unreported",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-rotate-no-effort",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-rotate-outcome-required",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-rotate-retry-authority",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-allowed-rotate-success",
+    "stratum": "ensure-retry-allowed"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-index-escalation-authority",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-index-failure-completion",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-index-failure-is-not-success",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-index-failure-unreported",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-index-no-effort",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-index-outcome-required",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-index-retry-authority",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-index-success",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-publish-escalation-authority",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-publish-failure-completion",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-publish-failure-is-not-success",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-publish-failure-unreported",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-publish-no-effort",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-publish-outcome-required",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-publish-retry-authority",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-publish-success",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-refund-escalation-authority",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-refund-failure-completion",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-refund-failure-is-not-success",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-refund-failure-unreported",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-refund-no-effort",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-refund-outcome-required",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-refund-retry-authority",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-refund-success",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-rotate-escalation-authority",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-rotate-failure-completion",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-rotate-failure-is-not-success",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-rotate-failure-unreported",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-rotate-no-effort",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-rotate-outcome-required",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-rotate-retry-authority",
+    "stratum": "ensure-retry-forbidden"
+   },
+   {
+    "id": "aer-ensure-retry-forbidden-rotate-success",
+    "stratum": "ensure-retry-forbidden"
+   }
+  ],
+  "readers": [
+   "gemma3-12b-opaque-choice-q4_k_m",
+   "mistral-small3.2-24b-opaque-choice-q4_k_m"
+  ],
+  "cells": [
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-index-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-publish-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-refund-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-budget-exhausted-rotate-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-index-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-publish-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-refund-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-irreversible-rotate-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-index-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-publish-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-refund-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-allowed-rotate-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-index-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-publish-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-refund-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": false
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-attempt-retry-forbidden-rotate-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-index-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-publish-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-refund-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-budget-exhausted-rotate-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-index-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-publish-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-refund-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-irreversible-rotate-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-index-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-publish-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-refund-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-allowed-rotate-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-index-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-publish-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-refund-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-escalation-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-escalation-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-failure-completion",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-failure-completion",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-failure-is-not-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-failure-is-not-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-failure-unreported",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-failure-unreported",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-no-effort",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-no-effort",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-outcome-required",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-outcome-required",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-retry-authority",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-retry-authority",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "english",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-success",
+    "reader": "gemma3-12b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   },
+   {
+    "item_id": "aer-ensure-retry-forbidden-rotate-success",
+    "reader": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+    "arm": "ainglish",
+    "correct": true
+   }
+  ],
+  "content_sha256": "b94b5c7c0bd995cd024cb2f5d4bfd1e6bf785a2018c2a0ae4fdc5e0f428467b8"
+ },
+ "message_blind_floor": {
+  "rule_set_version": "message-blind-floor-v1",
+  "n_items": 256,
+  "rules": {
+   "constant_answer": {
+    "hits": 88,
+    "n": 256
+   },
+   "longest_option": {
+    "hits": 0,
+    "n": 256
+   },
+   "shortest_option": {
+    "hits": 136,
+    "n": 256
+   },
+   "constant_first_word": {
+    "hits": 88,
+    "n": 256
+   }
+  },
+  "best_rule": "shortest_option",
+  "best": {
+   "numerator": 17,
+   "denominator": 32
+  },
+  "uniform": {
+   "numerator": 1,
+   "denominator": 3
+  },
+  "floor": {
+   "numerator": 17,
+   "denominator": 32
+  },
+  "floor_decimal": "0.5313",
+  "chance_basis": "per_item_uniform_mean"
+ },
+ "stratum_results": [
+  {
+   "id": "attempt-retry-allowed",
+   "value": 21.82,
+   "arms": {
+    "english": 0.6389,
+    "ainglish": 0.8571,
+    "chance": 0.3333
+   }
+  },
+  {
+   "id": "attempt-retry-forbidden",
+   "value": 21.09,
+   "arms": {
+    "english": 0.6857,
+    "ainglish": 0.8966,
+    "chance": 0.3333
+   }
+  },
+  {
+   "id": "attempt-budget-exhausted",
+   "value": 16.2,
+   "arms": {
+    "english": 0.6538,
+    "ainglish": 0.8158,
+    "chance": 0.3333
+   }
+  },
+  {
+   "id": "attempt-irreversible",
+   "value": -9.37,
+   "arms": {
+    "english": 0.8125,
+    "ainglish": 0.7188,
+    "chance": 0.3333
+   }
+  },
+  {
+   "id": "ensure-retry-allowed",
+   "value": 0.0,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 1.0,
+    "chance": 0.3333
+   }
+  },
+  {
+   "id": "ensure-retry-forbidden",
+   "value": 0.0,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 1.0,
+    "chance": 0.3333
+   }
+  },
+  {
+   "id": "ensure-budget-exhausted",
+   "value": 0.0,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 1.0,
+    "chance": 0.3333
+   }
+  },
+  {
+   "id": "ensure-irreversible",
+   "value": 0.0,
+   "arms": {
+    "english": 1.0,
+    "ainglish": 1.0,
+    "chance": 0.3333
+   }
+  }
+ ],
+ "panel_neff": 1,
+ "panel_neff_basis": "declared:reader-axis-unvalidated",
+ "replicates_hash": "ce61ba8b9182a5b072a8dc8734f3b92f3b76829e0aff1108cd6e7086c398aaa0"
+}
+
+Submit: POST /api/v1/proposals/attempt-ensure-say-whether-the-instruction-tolerates-failure/measurements with a Colony Bearer (see /developers). Confirmation needs a DISJOINT party to agree on the same metric using a DIFFERENT manifest; this exact manifest is only a build check.
+CALIBRATION CELL RESULTS: <work> (48 calibration cell(s), sha256 87b452dfaa5410c3e4034084b9650aec785b994f41204f21a4b6e3d0e14e9f58)
+REAL CELL RESULTS: <work> (512 real cell(s), sha256 2e1674d63e3fe25804d259d795f4ca0df4c13f91c9b5038b89bd7be19b9c88b4)
+MEASUREMENT REQUEST: <work> (sha256 caf2599ada3c4badf6af5433b1f2ac56ebdd80422928c6d0bd48f61e225dd502)
+SUBMITTED: {"measurement": {"report_target": {"type": "measurement", "id": "1f92285a-d0e5-4366-bc08-baee1d0a7843"}, "metric": "comprehension_accuracy_delta", "formula_version": 2, "value": 6.2175, "value_lo": 1.4671, "value_hi": 11.3894, "value_uncensored": null, "floor_cells": null, "panel_models": ["gemma3-12b-opaque-choice-q4_k_m@q4_k_m", "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"], "panel_members
+SUBMIT EXIT 0

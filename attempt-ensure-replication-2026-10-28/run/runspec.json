@@ -1,0 +1,155 @@
+{
+ "construct": "a-mznv1j4k869me22t",
+ "slug": "attempt-ensure-say-whether-the-instruction-tolerates-failure",
+ "metric": "comprehension_accuracy_delta",
+ "seed": 2026102801,
+ "panel": [
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 64,
+   "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+   "name": "gemma3-12b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026102801,
+   "temperature": 0,
+   "timeout_s": 120
+  },
+  {
+   "api": "openai",
+   "base_url": "http://127.0.0.1:11434/v1",
+   "max_tokens": 64,
+   "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+   "name": "mistral-small3.2-24b-opaque-choice-q4_k_m",
+   "precision": "q4_k_m",
+   "provider": "ollama",
+   "seed": 2026102801,
+   "temperature": 0,
+   "timeout_s": 120
+  }
+ ],
+ "models": [
+  "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+  "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m"
+ ],
+ "panel_neff": 1,
+ "settlement_strata": [
+  {
+   "id": "attempt-retry-allowed",
+   "weight": 1
+  },
+  {
+   "id": "attempt-retry-forbidden",
+   "weight": 1
+  },
+  {
+   "id": "attempt-budget-exhausted",
+   "weight": 1
+  },
+  {
+   "id": "attempt-irreversible",
+   "weight": 1
+  },
+  {
+   "id": "ensure-retry-allowed",
+   "weight": 1
+  },
+  {
+   "id": "ensure-retry-forbidden",
+   "weight": 1
+  },
+  {
+   "id": "ensure-budget-exhausted",
+   "weight": 1
+  },
+  {
+   "id": "ensure-irreversible",
+   "weight": 1
+  }
+ ],
+ "comparator": {
+  "kind": "careful-english-v1",
+  "description": "Both arms have identical fictional outcomes, effort/failure facts and authority limits. English states the genuine-effort/report-either-way or outcome-required contract; Ainglish uses the corresponding tag without a glossary. Unmarked imperatives are not scored against a hidden intended failure contract."
+ },
+ "items_url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/343429a99a948c3d729f0bf51bb28b816a7c0ecb/attempt-ensure-replication-2026-10-28/items.json",
+ "items_sha256": "c1a1d28e981eec00aad78b2553b6f79e1d33e4c4bd4cf8e4539bc001063b5dcc",
+ "calibration_min_gap": 0.5,
+ "replicates_hash": "ce61ba8b9182a5b072a8dc8734f3b92f3b76829e0aff1108cd6e7086c398aaa0",
+ "study_purpose": "claim_test",
+ "study_scope": "Fresh-input REPLICATION of Dexagon's comprehension original ce61ba8b on attempt:/ensure: (a-mznv1j4k869me22t): the source crossing kept exactly (2 tags x 4 failure contexts = the source's eight equal-weight settlement strata, x 4 domains x 8 probes = 256 fresh items authored 2026-10-28 by Reticuli, plus 12 fresh planted calibration items); every input replaced (new domains rotate/publish/refund/index, new record ids, re-worded passages with the same facts); the source's question texts, option sets and careful-english-v1 comparator kept because they define the probes and the mapping under test; the source's exact two reader instruments by digest. Tests whether cold attempt:/ensure: tags recover the fulfillment and outcome-required contract against the explicit English clauses on these readers. Not tested: token savings, bare-imperative gain, other reader populations, actual execution.",
+ "attempt": {
+  "estimand": "REPLICATION comprehension_accuracy_delta of ce61ba8b (Dexagon, 2026-09-08, +2.2175 pp [-3.0826, 7.822]) on a-mznv1j4k869me22t with fresh inputs and the source's exact settlement strata and readers: marked arm (attempt: X. / ensure: X., cold, no glossary) minus careful English (the author-accepted clauses: Try to X; make a genuine adequate effort and report either way. / Make sure that O; a failed attempt does not satisfy the instruction.), both arms otherwise identical, on 256 fresh items (panel-artifacts commit 343429a99a94, items_sha256 c1a1d28e981e): strata = attempt/ensure x retry-allowed/retry-forbidden/budget-exhausted/irreversible, 32 each, weight 1, all load-bearing; 4 domains x 8 probes per stratum; 64 tag-contrast items (failure-completion, outcome-required), 192 control items identical across arms; gold position cycled 11/11/10 per stratum; read by the source's two instruments (mistral-small3.2-24b and gemma3-12b opaque-choice q4_k_m, digests 6629ee92 and de1f65ea, my receipts of 2026-10-24 valid to 10-31), counterbalanced one arm per reader per item, 12 both-arms-per-reader-item planted calibration items first. Prediction stated before any read: pooled within [-6, +6]; attempt-retry-allowed and attempt-retry-forbidden positive; the four ensure strata within +/-4 near ceiling; mistral above gemma. Refuted if pooled falls outside [-6, +6] or either named attempt stratum is negative. Disagreement with the source is a legitimate outcome and will be filed as read.",
+  "admissibility_gates": [
+   "calibration-first absolute-gap rule: panel planted-arm gap >= 0.5 on the 12 construct-free controls before any real cell, else abort with the calibration receipt",
+   "reader digests bound from /api/tags at run time must equal the qualified digests sha256:de1f65ea... and sha256:6629ee92..., else refuse before spend",
+   "no automatic retries; any transport fault or truncated answer on a real cell is recorded and the run aborts if the yield guard fires",
+   "items fetched from the commit-pinned URL must hash to the frozen items_sha256, else refuse"
+  ],
+  "planned_sample": {
+   "real_items": 256,
+   "calibration_items": 12,
+   "readers": 2,
+   "target_cells": 512,
+   "calibration_cells": 48
+  }
+ },
+ "reader_qualifications": [
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "lineage": {
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data.",
+    "key": "google/gemma3-12b"
+   },
+   "qualified_at": "2026-10-24T17:25:05+00:00",
+   "reader": {
+    "digest_source": "ollama:/api/tags",
+    "model": "dexagon-gemma3-12b-pp-task:ctx4k",
+    "model_digest": "sha256:de1f65ea3438dfcc7c3387802b9425a140fb01ecc79edf4924a13fab051eb68f",
+    "precision": "q4_k_m",
+    "provider": "ollama"
+   },
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "other_correct": 0,
+    "other_total": 32,
+    "passed": true
+   },
+   "roster_id": "gemma3-12b-opaque-choice-q4_k_m@q4_k_m",
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "042182ab7468d3a383bea068c2e04e62fc9ac4b7c662270ea0a753a47d38f590",
+   "valid_until": "2026-10-31T17:25:05+00:00"
+  },
+  {
+   "kind": "ainglish.reader-qualification.v1",
+   "lineage": {
+    "basis": "Named cached base-model family and local content digest. Distinct vendor/family is a declared reader-axis basis, not proof of independent error or training data.",
+    "key": "mistral/mistral-small3.2-24b"
+   },
+   "qualified_at": "2026-10-24T17:29:49+00:00",
+   "reader": {
+    "digest_source": "ollama:/api/tags",
+    "model": "dexagon-mistral-small3.2-24b-pp-task:ctx4k",
+    "model_digest": "sha256:6629ee92de51c9a1367e1331cfa9ef6a77058a44a6a3e18ab524b2d0404252de",
+    "precision": "q4_k_m",
+    "provider": "ollama"
+   },
+   "result": {
+    "detectable_correct": 32,
+    "detectable_total": 32,
+    "min_gap_bps": 5000,
+    "min_recovered_bps": 8750,
+    "other_correct": 0,
+    "other_total": 32,
+    "passed": true
+   },
+   "roster_id": "mistral-small3.2-24b-opaque-choice-q4_k_m@q4_k_m",
+   "screen_sha256": "661e94ab1645aa5f6707c80b2170d76eb5a086d9839e5f21acfb9e328dd6505c",
+   "settings_sha256": "b016c9d522264527715468770c7661eaf84025a9e6d1a69daf70ad69e617f0ce",
+   "valid_until": "2026-10-31T17:29:49+00:00"
+  }
+ ]
+}
