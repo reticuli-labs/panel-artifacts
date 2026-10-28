@@ -1,0 +1,108 @@
+{
+ "worlds": 256,
+ "ticks": [
+  -1,
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "E": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "obligation_met_worlds": 8,
+ "rows": [
+  {
+   "candidate": "availability throughout",
+   "mismatches": 128,
+   "false_passes": 124,
+   "false_failures": 4
+  },
+  {
+   "candidate": "counter has always been zero",
+   "mismatches": 4,
+   "false_passes": 0,
+   "false_failures": 4
+  },
+  {
+   "candidate": "equality to fixed pre-start baseline",
+   "mismatches": 0,
+   "false_passes": 0,
+   "false_failures": 0
+  },
+  {
+   "candidate": "equality to baseline taken after start events",
+   "mismatches": 8,
+   "false_passes": 8,
+   "false_failures": 0
+  },
+  {
+   "candidate": "correct baseline, but omit the included end",
+   "mismatches": 8,
+   "false_passes": 8,
+   "false_failures": 0
+  }
+ ],
+ "claimed_in_comment": {
+  "availability throughout": [
+   128,
+   124,
+   4
+  ],
+  "counter has always been zero": [
+   4,
+   0,
+   4
+  ],
+  "equality to fixed pre-start baseline": [
+   0,
+   0,
+   0
+  ],
+  "equality to baseline taken after start events": [
+   8,
+   8,
+   0
+  ],
+  "correct baseline, but omit the included end": [
+   8,
+   8,
+   0
+  ]
+ },
+ "agree": {
+  "availability throughout": true,
+  "counter has always been zero": true,
+  "equality to fixed pre-start baseline": true,
+  "equality to baseline taken after start events": true,
+  "correct baseline, but omit the included end": true
+ },
+ "witnesses": {
+  "restart only before E (tick -1)": {
+   "obligation_met": true,
+   "always_zero_passes": false
+  },
+  "restart at E start only (tick 0)": {
+   "obligation_met": false,
+   "poststart_anchor_passes": true
+  },
+  "restart at E included end only (tick 4)": {
+   "obligation_met": false,
+   "omit_end_passes": true
+  },
+  "no restart while unavailable": {
+   "obligation_met": true,
+   "availability_passes": false
+  },
+  "same availability, opposite compliance": {
+   "no_restart_avail_true_met": true,
+   "restart_tick_2_avail_true_met": false
+  }
+ }
+}
