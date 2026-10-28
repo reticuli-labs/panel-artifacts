@@ -1,0 +1,121 @@
+{
+ "strata": {
+  "attempt-retry-allowed": 32,
+  "attempt-retry-forbidden": 32,
+  "attempt-budget-exhausted": 32,
+  "attempt-irreversible": 32,
+  "ensure-retry-allowed": 32,
+  "ensure-retry-forbidden": 32,
+  "ensure-budget-exhausted": 32,
+  "ensure-irreversible": 32
+ },
+ "golds_per_stratum": {
+  "attempt-retry-allowed": {
+   "The instruction is fulfilled.": 8,
+   "The instruction is not fulfilled.": 8,
+   "no": 8,
+   "yes": 8
+  },
+  "attempt-retry-forbidden": {
+   "The instruction is fulfilled.": 8,
+   "The instruction is not fulfilled.": 8,
+   "no": 12,
+   "yes": 4
+  },
+  "attempt-budget-exhausted": {
+   "The instruction is fulfilled.": 8,
+   "The instruction is not fulfilled.": 8,
+   "no": 16
+  },
+  "attempt-irreversible": {
+   "The instruction is fulfilled.": 8,
+   "The instruction is not fulfilled.": 8,
+   "no": 16
+  },
+  "ensure-retry-allowed": {
+   "The instruction is not fulfilled.": 12,
+   "The instruction is fulfilled.": 4,
+   "yes": 12,
+   "no": 4
+  },
+  "ensure-retry-forbidden": {
+   "The instruction is not fulfilled.": 12,
+   "The instruction is fulfilled.": 4,
+   "yes": 8,
+   "no": 8
+  },
+  "ensure-budget-exhausted": {
+   "The instruction is not fulfilled.": 12,
+   "The instruction is fulfilled.": 4,
+   "yes": 4,
+   "no": 12
+  },
+  "ensure-irreversible": {
+   "The instruction is not fulfilled.": 12,
+   "The instruction is fulfilled.": 4,
+   "yes": 4,
+   "no": 12
+  }
+ },
+ "gold_position_per_stratum": {
+  "attempt-retry-allowed": {
+   "0": 11,
+   "1": 11,
+   "2": 10
+  },
+  "attempt-retry-forbidden": {
+   "1": 11,
+   "2": 11,
+   "0": 10
+  },
+  "attempt-budget-exhausted": {
+   "2": 11,
+   "0": 11,
+   "1": 10
+  },
+  "attempt-irreversible": {
+   "0": 11,
+   "1": 11,
+   "2": 10
+  },
+  "ensure-retry-allowed": {
+   "0": 11,
+   "1": 11,
+   "2": 10
+  },
+  "ensure-retry-forbidden": {
+   "1": 11,
+   "2": 11,
+   "0": 10
+  },
+  "ensure-budget-exhausted": {
+   "2": 11,
+   "0": 11,
+   "1": 10
+  },
+  "ensure-irreversible": {
+   "0": 11,
+   "1": 11,
+   "2": 10
+  }
+ },
+ "unique_ids": true,
+ "gold_in_options_all": true,
+ "arms_differ_only_in_instruction": true,
+ "tag_contrast_items": 64,
+ "question_only_determined_items": 32,
+ "question_only_determined_probes": [
+  "failure-is-not-success"
+ ],
+ "marker_words_in_passages": [],
+ "sentences_shared_with_source": [],
+ "source_ids_shared": [],
+ "items_sha256": "c1a1d28e981eec00aad78b2553b6f79e1d33e4c4bd4cf8e4539bc001063b5dcc",
+ "bank_seed": 2026102801,
+ "replicates_hash": "ce61ba8b9182a5b072a8dc8734f3b92f3b76829e0aff1108cd6e7086c398aaa0",
+ "counts": {
+  "real": 256,
+  "calibration": 12,
+  "total": 268
+ }
+}
