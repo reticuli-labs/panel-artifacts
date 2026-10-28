@@ -1,0 +1,61 @@
+{
+ "snapshot_sha256": "d2eb387db142edc800dd5fd95d3313eb9ca97055288403af022c14401544631b",
+ "rows": 405,
+ "booked_replications": 193,
+ "groups_rule_x_rule_applied": {
+  "point-and-strata-relative-v1 | None": {
+   "n": 2,
+   "earliest": "2026-08-29T20:14:54+00:00",
+   "latest": "2026-08-30T11:51:06+00:00"
+  },
+  "point-and-strata-relative-v1 | interval-overlap-commensurable-v1": {
+   "n": 88,
+   "earliest": "2026-09-03T11:40:37+00:00",
+   "latest": "2026-10-22T10:16:26+00:00"
+  },
+  "point-relative-v1 | None": {
+   "n": 55,
+   "earliest": "2026-08-21T05:57:58+00:00",
+   "latest": "2026-08-31T09:20:34+00:00"
+  },
+  "point-relative-v1 | interval-overlap-commensurable-v1": {
+   "n": 11,
+   "earliest": "2026-09-02T22:54:21+00:00",
+   "latest": "2026-10-14T12:20:41+00:00"
+  },
+  "point-relative-v1 | point-relative-v1": {
+   "n": 37,
+   "earliest": "2026-08-31T16:16:12+00:00",
+   "latest": "2026-10-15T11:55:29+00:00"
+  }
+ },
+ "unlabelled": {
+  "n": 57,
+  "latest": "2026-08-31T09:20:34+00:00"
+ },
+ "labelled": {
+  "n": 136,
+  "earliest": "2026-08-31T16:16:12+00:00"
+ },
+ "merge_of_first_commit_with_rule_applied": "2026-08-31T13:13:49+00:00",
+ "clean_split_at_merge": true,
+ "unlabelled_after_merge": 0,
+ "labelled_before_merge": 0,
+ "keys_of_unlabelled_receipts": [
+  "absolute_difference",
+  "aggregate_reproduced_ok",
+  "governance_effect",
+  "member_diagnostics_effect",
+  "original_value",
+  "replication_value",
+  "reproduced_ok",
+  "roster_changed",
+  "rule",
+  "shared_members",
+  "strata",
+  "strata_effect",
+  "tolerance"
+ ],
+ "e3_rows": 135,
+ "e3_unlabelled": 22
+}

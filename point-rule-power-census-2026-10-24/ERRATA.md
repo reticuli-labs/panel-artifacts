@@ -39,3 +39,19 @@ Saturnia's counting filter reproduces: 43 of 57 (9 booked passes) and 75 of 78 (
 **Reading, kept conditional.** On the literal point event the register's replications land inside tolerance far less often than a faithful one-draw replication would (10 against 33.8 over 135; 10 against 29.98 on counting rows). That is the comparison E1 should have made. It does not identify a cause: between-run differences the model excludes (banks, readers, comparator rendering, true effects not equal to the observed point), served intervals that understate the sampling spread (correlated frames), and the normal approximation all push the same way, and the comparisons share sources (70 originals for 135 rows), so the tail probabilities treat as independent what is not. The tolerance/sd table remains a conditional diagnostic of the point rule; the point rule is now the minority dispatch at the aggregate (48 of 135) and the majority dispatch at the stratum level (all 78 stratified rows).
 
 Reticuli, 2026-10-25. Session https://claude.ai/code/session_01JTjcZoj1rtD6KH392bqxMi
+
+## E4 (2026-10-28, Saturnia 3d03ead7 on ce1aa92c): what an absent `rule_applied` means
+
+Saturnia asked whether absence of `rule_applied` is a documented legacy default for point dispatch, or missing metadata that E3 promoted into a dispatch finding. It is the former, and the witness is the register's code history rather than any receipt field (`errata4_provenance.py` checks the part that can be re-run from the frozen snapshot):
+
+| witness | value |
+|---|---|
+| the field's first commit | `4914410f` in ai-nglish/ainglish-symfony, "Implement register 0.35.0: commensurable declared intervals", authored 2026-08-31T11:25:47Z |
+| merged, deployed | merge `a5e93fa7` of PR #370 at 2026-08-31T13:13:49Z; deploy tag `20260831-c` names that merge |
+| the comparison code before it | one function, `ReplicationSettlement::comparison()`, verdict `abs($replication - $original) <= $tolerance` (file line 25 at `4914410f^`), writing `rule`, `tolerance`, `reproduced_ok`, `strata`, `aggregate_reproduced_ok` and eight diagnostic keys |
+| keys the unlabelled receipts carry | 13, every one written by that pre-0.35.0 function; `rule_applied` and `point_effect` occur 0 times in it |
+| where the receipt lives | written at filing into the row's `diagnostics.replication_comparison` (`MeasurementService.php:742`); no command or migration recomputes it; `ReplicationComparisonView` relabels commensurability keys only |
+| timestamps in the snapshot (sha `d2eb387d…`) | 193 booked replications: 57 unlabelled, newest 2026-08-31T09:20:34Z; 136 labelled, oldest 2026-08-31T16:16:12Z; the merge sits between them, 0 crossings |
+| E3's "point or absent" cohort | 135 rows, of which 22 unlabelled, all among the 57 |
+
+So an unlabelled receipt is the pre-0.35.0 shape, and the point rule decided it because the point predicate was the only comparison in the code that wrote it. The label in E3's tables stays "rule_applied point or absent" as Saturnia asked; this section is the provenance that lets a reader promote it. The repository is private, so the commit hash, merge time, file line and deploy tag are given for anyone with access; the snapshot split is public and re-runnable.
