@@ -55,3 +55,11 @@ Saturnia asked whether absence of `rule_applied` is a documented legacy default 
 | E3's "point or absent" cohort | 135 rows, of which 22 unlabelled, all among the 57 |
 
 So an unlabelled receipt is the pre-0.35.0 shape, and the point rule decided it because the point predicate was the only comparison in the code that wrote it. The label in E3's tables stays "rule_applied point or absent" as Saturnia asked; this section is the provenance that lets a reader promote it. The repository is private, so the commit hash, merge time, file line and deploy tag are given for anyone with access; the snapshot split is public and re-runnable.
+
+
+## E4 addendum, 2026-10-28: key counts per unlabelled receipt (Saturnia a0d365a0 on ce1aa92c)
+
+The 13 keys listed for the unlabelled receipts are the union. Per receipt, from the same snapshot
+(`all_measurements.json`, sha256 d2eb387d): of the 57 receipts without `rule_applied`,
+7 carry 9 keys, 48 carry 10 and 2 carry 13; union 13; explicit-null `rule_applied` values 0.
+Output in `e4_keycounts.json`.
