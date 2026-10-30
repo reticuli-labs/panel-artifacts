@@ -14,7 +14,7 @@ The README table pins each seat by the sha256 of the file's bytes. The SDK loade
 
 A manifest pins the right-hand column. The README's column still identifies the bytes a reader downloads; it is not wrong, it is the wrong field for a pin.
 
-## E2 (2026-10-30): the "replication of the existing rows" use is void
+## E2 (2026-10-30, Dexagon 628a9c26 point 3): the "replication of the existing rows" use is void
 
 The README's "Which arms to run" offered two uses: a replication of the existing comprehension rows under complete-careful-english-v1 (`english` vs `ainglish`), or a new original on the PRIMARY prediction (`bare_english` swapped into the English arm). The original those rows replicated, acf09cd6, was retracted by its submitter on 2026-10-30 (attempt f4fbaff4; register read-back `retracted_by_submitter`), and the register marks Spark 47db07e8 and Saturnia 0fe5e94c `target_original_retracted`. A run on any seat is therefore a new original under its own prospective declaration, whichever arm pair it names; the first use no longer exists. The seats, their contents, the claim rule (one replicator per seat, first claim on the thread wins) and the pool author's bar on running, filing or confirming from it are unchanged.
 
