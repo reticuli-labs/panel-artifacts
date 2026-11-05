@@ -1,0 +1,7737 @@
+{
+ "read_at": "2026-11-05T13:38:21Z",
+ "z": 2.0,
+ "rows": [
+  {
+   "rep": "edc6ade4",
+   "orig": "5153b958",
+   "proposal": "",
+   "rep_value": -0.0625,
+   "orig_value": -0.125,
+   "diff": 0.0625,
+   "tolerance": 0.02,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-10-17",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.18145001279376408,
+   "band": 0.36290002558752815,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "assignment",
+     "difference": 0.25,
+     "band": 0.5,
+     "within": true
+    },
+    {
+     "id": "default",
+     "difference": 0.125,
+     "band": 0.5261042808091513,
+     "within": true
+    }
+   ],
+   "n": [
+    16,
+    16
+   ],
+   "variance": [
+    6.25,
+    7.2625
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "4ce97325",
+   "orig": "64045bdf",
+   "proposal": "",
+   "rep_value": 3.875,
+   "orig_value": 5.25,
+   "diff": 1.375,
+   "tolerance": 0.525,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-10-07",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.6603302167254046,
+   "band": 3.320660433450809,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    10.785714285714286,
+    11.267857142857142
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "301cd246",
+   "orig": "5153b958",
+   "proposal": "",
+   "rep_value": -0.3125,
+   "orig_value": -0.125,
+   "diff": 0.1875,
+   "tolerance": 0.02,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-10-06",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.1875,
+   "band": 0.375,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "assignment",
+     "difference": 0.0,
+     "band": 0.4629100498862757,
+     "within": true
+    },
+    {
+     "id": "default",
+     "difference": 0.375,
+     "band": 0.5900968443520823,
+     "within": true
+    }
+   ],
+   "n": [
+    16,
+    16
+   ],
+   "variance": [
+    6.25,
+    7.295833333333333
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "6528cb3d",
+   "orig": "f7bca7aa",
+   "proposal": "",
+   "rep_value": 1.125,
+   "orig_value": 2,
+   "diff": 0.875,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-10-06",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.3421398160081108,
+   "band": 2.6842796320162217,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    10.0,
+    4.410714285714286
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "e64b076c",
+   "orig": "cc063657",
+   "proposal": "",
+   "rep_value": 2.5,
+   "orig_value": 2.75,
+   "diff": 0.25,
+   "tolerance": 0.275,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-10-06",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.5590169943749475,
+   "band": 1.118033988749895,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "statistical",
+     "difference": 1.0,
+     "band": 1.9578900207451218,
+     "within": true
+    },
+    {
+     "id": "practical",
+     "difference": 0.5,
+     "band": 1.0801234497346432,
+     "within": true
+    }
+   ],
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    1.3571428571428572,
+    1.1428571428571428
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "6da75835",
+   "orig": "f97fb461",
+   "proposal": "",
+   "rep_value": -8.25,
+   "orig_value": -8,
+   "diff": 0.25,
+   "tolerance": 0.8,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-10-06",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.25,
+   "band": 0.5,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "counted",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "estimated",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "quoted",
+     "difference": 1.0,
+     "band": 2.0,
+     "within": true
+    },
+    {
+     "id": "placeholder",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    }
+   ],
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    19.142857142857142,
+    17.928571428571427
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "674263ec",
+   "orig": "cc063657",
+   "proposal": "",
+   "rep_value": 2.875,
+   "orig_value": 2.75,
+   "diff": 0.125,
+   "tolerance": 0.275,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-10-06",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.7107800878846658,
+   "band": 1.4215601757693317,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "statistical",
+     "difference": 0.5,
+     "band": 2.273030282830976,
+     "within": true
+    },
+    {
+     "id": "practical",
+     "difference": 0.75,
+     "band": 1.707825127659933,
+     "within": true
+    }
+   ],
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    1.3571428571428572,
+    2.4107142857142856
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "5cc37c00",
+   "orig": "3c5350ea",
+   "proposal": "",
+   "rep_value": -1.25,
+   "orig_value": -1,
+   "diff": 0.25,
+   "tolerance": 0.1,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-10-05",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.2700308624336608,
+   "band": 0.5400617248673216,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "latest-so-far",
+     "difference": 0.25,
+     "band": 0.7637626158259733,
+     "within": true
+    },
+    {
+     "id": "final-in-sequence",
+     "difference": 0.25,
+     "band": 0.7637626158259733,
+     "within": true
+    }
+   ],
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    0.5714285714285714,
+    0.5
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "98e41c82",
+   "orig": "3c5350ea",
+   "proposal": "",
+   "rep_value": -1.25,
+   "orig_value": -1,
+   "diff": 0.25,
+   "tolerance": 0.1,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-10-02",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.2700308624336608,
+   "band": 0.5400617248673216,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "latest-so-far",
+     "difference": 0.25,
+     "band": 0.7637626158259733,
+     "within": true
+    },
+    {
+     "id": "final-in-sequence",
+     "difference": 0.25,
+     "band": 0.7637626158259733,
+     "within": true
+    }
+   ],
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    0.5714285714285714,
+    0.5
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "effef516",
+   "orig": "13706318",
+   "proposal": "",
+   "rep_value": 1.125,
+   "orig_value": 0.75,
+   "diff": 0.375,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-30",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.06954358003302336,
+   "band": 0.1390871600660467,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "well-formed-under",
+     "difference": 0.375,
+     "band": 0.1966989481173608,
+     "within": false
+    },
+    {
+     "id": "admissible-under",
+     "difference": 0.375,
+     "band": 0.1966989481173608,
+     "within": false
+    }
+   ],
+   "n": [
+    128,
+    128
+   ],
+   "variance": [
+    2.4881889763779528,
+    2.661417322834646
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "2f116b36",
+   "orig": "13706318",
+   "proposal": "",
+   "rep_value": 0.828125,
+   "orig_value": 0.75,
+   "diff": 0.078125,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-30",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.06503716790670852,
+   "band": 0.13007433581341704,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "well-formed-under",
+     "difference": 0.078125,
+     "band": 0.18395288982400676,
+     "within": true
+    },
+    {
+     "id": "admissible-under",
+     "difference": 0.078125,
+     "band": 0.18395288982400676,
+     "within": true
+    }
+   ],
+   "n": [
+    128,
+    128
+   ],
+   "variance": [
+    2.4881889763779528,
+    2.5843996062992125
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "c48d3129",
+   "orig": "616bae70",
+   "proposal": "",
+   "rep_value": 1.7,
+   "orig_value": 1.8333333333333,
+   "diff": 0.1333333333333,
+   "tolerance": 0.18333333333333002,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-30",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.09612370197756297,
+   "band": 0.19224740395512593,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "while-overlap",
+     "difference": 0.10000000000000003,
+     "band": 0.4230217115244236,
+     "within": true
+    },
+    {
+     "id": "while-throughout",
+     "difference": 0.5,
+     "band": 0.39202577788496984,
+     "within": false
+    },
+    {
+     "id": "while-contrast",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    }
+   ],
+   "n": [
+    60,
+    60
+   ],
+   "variance": [
+    3.598870056497175,
+    3.4
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "5f5c8b85",
+   "orig": "616bae70",
+   "proposal": "",
+   "rep_value": 1.7666666666667,
+   "orig_value": 1.8333333333333,
+   "diff": 0.06666666666663335,
+   "tolerance": 0.18333333333333002,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-30",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.09926631437497134,
+   "band": 0.19853262874994268,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "while-overlap",
+     "difference": 0.050000000000000044,
+     "band": 0.42735416102732454,
+     "within": true
+    },
+    {
+     "id": "while-throughout",
+     "difference": 0.25,
+     "band": 0.41485571366186424,
+     "within": true
+    },
+    {
+     "id": "while-contrast",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    }
+   ],
+   "n": [
+    60,
+    60
+   ],
+   "variance": [
+    3.598870056497175,
+    3.470056497175141
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "32e3ec31",
+   "orig": "7e486c41",
+   "proposal": "",
+   "rep_value": -56.25,
+   "orig_value": -45,
+   "diff": 11.25,
+   "tolerance": 4.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "9af2b054",
+   "orig": "b9572064",
+   "proposal": "",
+   "rep_value": -0.71875,
+   "orig_value": -0.6875,
+   "diff": 0.03125,
+   "tolerance": 0.06875,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-30",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.2083854101578771,
+   "band": 0.4167708203157542,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "no-undo",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "can-undo",
+     "difference": 0.0625,
+     "band": 0.8335416406315084,
+     "within": true
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    0.8024193548387096,
+    0.7247983870967742
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "4620b888",
+   "orig": "b9572064",
+   "proposal": "",
+   "rep_value": -0.59375,
+   "orig_value": -0.6875,
+   "diff": 0.09375,
+   "tolerance": 0.06875,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-30",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.21454287644509043,
+   "band": 0.42908575289018086,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "no-undo",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "can-undo",
+     "difference": 0.1875,
+     "band": 0.8581715057803617,
+     "within": true
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    0.8024193548387096,
+    0.8941532258064516
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "ba4eb123",
+   "orig": "e2ff808e",
+   "proposal": "",
+   "rep_value": 0.25,
+   "orig_value": -0.75,
+   "diff": 1,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-25",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.1513825177048746,
+   "band": 0.3027650354097492,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "request",
+     "difference": 1.0,
+     "band": 0.6055300708194984,
+     "within": false
+    },
+    {
+     "id": "report",
+     "difference": 1.0,
+     "band": 0.6055300708194984,
+     "within": false
+    },
+    {
+     "id": "proposal",
+     "difference": 1.0,
+     "band": 0.6055300708194984,
+     "within": false
+    },
+    {
+     "id": "simulation",
+     "difference": 1.0,
+     "band": 0.6055300708194984,
+     "within": false
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.4444444444444444,
+    0.9523809523809523
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "d4cfa53e",
+   "orig": "0f029f87",
+   "proposal": "",
+   "rep_value": -20.6,
+   "orig_value": -21.2,
+   "diff": 0.6000000000000014,
+   "tolerance": 2.12,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-22",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.2643417167415646,
+   "band": 0.5286834334831292,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "stopped",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "done-under",
+     "difference": 0.10000000000000142,
+     "band": 1.4251705550954747,
+     "within": true
+    },
+    {
+     "id": "complete-for",
+     "difference": 1.9000000000000004,
+     "band": 0.6960204339273729,
+     "within": false
+    }
+   ],
+   "n": [
+    30,
+    30
+   ],
+   "variance": [
+    39.47586206896549,
+    49.834482758620716
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "fc1357ce",
+   "orig": "3856933a",
+   "proposal": "",
+   "rep_value": -1.78125,
+   "orig_value": -2.5,
+   "diff": 0.71875,
+   "tolerance": 0.25,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-19",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.25706172248443887,
+   "band": 0.5141234449688777,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "impact-recovered",
+     "difference": 0.125,
+     "band": 0.7274384280931732,
+     "within": true
+    },
+    {
+     "id": "cause-resolved",
+     "difference": 1.3125,
+     "band": 0.7267220926874316,
+     "within": false
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    7.935483870967742,
+    11.918346774193548
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "302ca2a2",
+   "orig": "0079e4b4",
+   "proposal": "",
+   "rep_value": 3.6875,
+   "orig_value": 3.3125,
+   "diff": 0.375,
+   "tolerance": 0.33125000000000004,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-19",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.14613064930625153,
+   "band": 0.29226129861250305,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "identity",
+     "difference": 0.5,
+     "band": 0.3027650354097492,
+     "within": false
+    },
+    {
+     "id": "value",
+     "difference": 0.25,
+     "band": 0.5,
+     "within": true
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    5.254032258064516,
+    4.737903225806452
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "53fd5a65",
+   "orig": "3856933a",
+   "proposal": "",
+   "rep_value": -2.25,
+   "orig_value": -2.5,
+   "diff": 0.25,
+   "tolerance": 0.25,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-19",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.23133444404152184,
+   "band": 0.4626688880830437,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "impact-recovered",
+     "difference": 0.1875,
+     "band": 0.5942432162002357,
+     "within": true
+    },
+    {
+     "id": "cause-resolved",
+     "difference": 0.6875,
+     "band": 0.7093130479555554,
+     "within": true
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    7.935483870967742,
+    10.516129032258064
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "8247a589",
+   "orig": "ac9ce308",
+   "proposal": "",
+   "rep_value": 3.125,
+   "orig_value": 3.5,
+   "diff": 0.375,
+   "tolerance": 0.35000000000000003,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-18",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.479490056503484,
+   "band": 0.958980113006968,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    1.1428571428571428,
+    0.6964285714285714
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "62e45602",
+   "orig": "e5274f09",
+   "proposal": "",
+   "rep_value": 1.25,
+   "orig_value": 1.125,
+   "diff": 0.125,
+   "tolerance": 0.1125,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-17",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.6321025007295663,
+   "band": 1.2642050014591326,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    1.8392857142857142,
+    1.3571428571428572
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "a5c87ba7",
+   "orig": "ab628282",
+   "proposal": "",
+   "rep_value": 0.875,
+   "orig_value": 0.75,
+   "diff": 0.125,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-16",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.09391786047461384,
+   "band": 0.18783572094922768,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "each-group",
+     "difference": 0.125,
+     "band": 0.26563982406452585,
+     "within": true
+    },
+    {
+     "id": "groups-combined",
+     "difference": 0.125,
+     "band": 0.26563982406452585,
+     "within": true
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.4444444444444444,
+    0.1111111111111111
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "dc8633ee",
+   "orig": "d241bbec",
+   "proposal": "",
+   "rep_value": -9.9166666666667,
+   "orig_value": -8.933,
+   "diff": 0.9836666666666662,
+   "tolerance": 0.8933,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-15",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 0.5211883882953057,
+   "band": 1.0423767765906113,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    15,
+    24
+   ],
+   "variance": [
+    3.2095238095238137,
+    1.3840579710144993
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "98a3fd7f",
+   "orig": "ab628282",
+   "proposal": "",
+   "rep_value": 0.25,
+   "orig_value": 0.75,
+   "diff": 0.5,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-15",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.10040241611281235,
+   "band": 0.2008048322256247,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "each-group",
+     "difference": 0.5,
+     "band": 0.2839809171235324,
+     "within": false
+    },
+    {
+     "id": "groups-combined",
+     "difference": 0.5,
+     "band": 0.2839809171235324,
+     "within": false
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.4444444444444444,
+    0.19047619047619047
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "f895591a",
+   "orig": "ab628282",
+   "proposal": "",
+   "rep_value": 0.875,
+   "orig_value": 0.75,
+   "diff": 0.125,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-15",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.1299426051961453,
+   "band": 0.2598852103922906,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "each-group",
+     "difference": 0.125,
+     "band": 0.3675331891969626,
+     "within": true
+    },
+    {
+     "id": "groups-combined",
+     "difference": 0.125,
+     "band": 0.3675331891969626,
+     "within": true
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.4444444444444444,
+    0.6190476190476191
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "73bd8d10",
+   "orig": "f7bca7aa",
+   "proposal": "",
+   "rep_value": 3.5,
+   "orig_value": 2,
+   "diff": 1.5,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-14",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.7728105208558367,
+   "band": 3.5456210417116734,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    10.0,
+    15.142857142857142
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "0ee70d58",
+   "orig": "b69c504b",
+   "proposal": "",
+   "rep_value": -2.1666666666667,
+   "orig_value": -1.25,
+   "diff": 0.9166666666666665,
+   "tolerance": 0.125,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-12",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.4256605087236408,
+   "band": 0.8513210174472816,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    12,
+    12
+   ],
+   "variance": [
+    1.6590909090909092,
+    0.5151515151515149
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "26402cc2",
+   "orig": "7ddf8b71",
+   "proposal": "",
+   "rep_value": -8,
+   "orig_value": -5,
+   "diff": 3,
+   "tolerance": 0.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-12",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 3.0276503540974917,
+   "band": 6.0553007081949835,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    4,
+    4
+   ],
+   "variance": [
+    14.666666666666666,
+    22.0
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "74224b7b",
+   "orig": "e2ff808e",
+   "proposal": "",
+   "rep_value": -0.625,
+   "orig_value": -0.75,
+   "diff": 0.125,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-11",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.13209056236789465,
+   "band": 0.2641811247357893,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "request",
+     "difference": 0.125,
+     "band": 0.5283622494715786,
+     "within": true
+    },
+    {
+     "id": "report",
+     "difference": 0.125,
+     "band": 0.5283622494715786,
+     "within": true
+    },
+    {
+     "id": "proposal",
+     "difference": 0.125,
+     "band": 0.5283622494715786,
+     "within": true
+    },
+    {
+     "id": "simulation",
+     "difference": 0.125,
+     "band": 0.5283622494715786,
+     "within": true
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.4444444444444444,
+    0.6190476190476191
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "0f5219f3",
+   "orig": "6a5e62a8",
+   "proposal": "",
+   "rep_value": 0.6875,
+   "orig_value": 0.875,
+   "diff": 0.1875,
+   "tolerance": 0.08750000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-10",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.18470133549417916,
+   "band": 0.36940267098835833,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "no-undo",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "can-undo",
+     "difference": 0.375,
+     "band": 0.7388053419767167,
+     "within": true
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    0.24193548387096775,
+    0.9314516129032258
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "2341c235",
+   "orig": "6a5e62a8",
+   "proposal": "",
+   "rep_value": 1.875,
+   "orig_value": 0.875,
+   "diff": 1,
+   "tolerance": 0.08750000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-10",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.1513825177048746,
+   "band": 0.3027650354097492,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "no-undo",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "can-undo",
+     "difference": 2.0,
+     "band": 0.6055300708194984,
+     "within": false
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    0.24193548387096775,
+    1.2741935483870968
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "801316eb",
+   "orig": "903b67a6",
+   "proposal": "",
+   "rep_value": 0.375,
+   "orig_value": 0.625,
+   "diff": 0.25,
+   "tolerance": 0.0625,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-10",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 2.6177621304137952,
+   "band": 5.2355242608275905,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    27.982142857142858,
+    26.839285714285715
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "d161a47b",
+   "orig": "903b67a6",
+   "proposal": "",
+   "rep_value": -0.125,
+   "orig_value": 0.625,
+   "diff": 0.75,
+   "tolerance": 0.0625,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-10",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 2.6347607644175755,
+   "band": 5.269521528835151,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    27.982142857142858,
+    27.553571428571427
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "27af388e",
+   "orig": "0079e4b4",
+   "proposal": "",
+   "rep_value": 4.375,
+   "orig_value": 3.3125,
+   "diff": 1.0625,
+   "tolerance": 0.33125000000000004,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-10",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.1605654072333141,
+   "band": 0.3211308144666282,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "identity",
+     "difference": 1.625,
+     "band": 0.2813657169355689,
+     "within": false
+    },
+    {
+     "id": "value",
+     "difference": 0.5,
+     "band": 0.5773502691896258,
+     "within": true
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    5.254032258064516,
+    3.2096774193548385
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "48b0860e",
+   "orig": "0079e4b4",
+   "proposal": "",
+   "rep_value": 3.375,
+   "orig_value": 3.3125,
+   "diff": 0.0625,
+   "tolerance": 0.33125000000000004,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.1340475661845451,
+   "band": 0.2680951323690902,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "identity",
+     "difference": 0.25,
+     "band": 0.3027650354097492,
+     "within": true
+    },
+    {
+     "id": "value",
+     "difference": 0.125,
+     "band": 0.4425306015783918,
+     "within": true
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    5.254032258064516,
+    4.370967741935484
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "f9cb0712",
+   "orig": "903b67a6",
+   "proposal": "",
+   "rep_value": -0.125,
+   "orig_value": 0.625,
+   "diff": 0.75,
+   "tolerance": 0.0625,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 2.708287545400493,
+   "band": 5.416575090800986,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    27.982142857142858,
+    30.696428571428573
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "a3d4d779",
+   "orig": "b68f560f",
+   "proposal": "",
+   "rep_value": 0.875,
+   "orig_value": 1.0625,
+   "diff": 0.1875,
+   "tolerance": 0.10625000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.3639154789321988,
+   "band": 0.7278309578643976,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    2.060483870967742,
+    2.1774193548387095
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "fc45231b",
+   "orig": "256a9288",
+   "proposal": "",
+   "rep_value": -0.875,
+   "orig_value": 1.125,
+   "diff": 2,
+   "tolerance": 0.1125,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.4252192813739224,
+   "band": 2.850438562747845,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    3.267857142857143,
+    12.982142857142858
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "4aa698ed",
+   "orig": "69debfe9",
+   "proposal": "",
+   "rep_value": 6.140625,
+   "orig_value": 6.875,
+   "diff": 0.734375,
+   "tolerance": 0.6875,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-09",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.11305265856118624,
+   "band": 0.22610531712237247,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "replied-no",
+     "difference": 1.71875,
+     "band": 0.36157717333193984,
+     "within": false
+    },
+    {
+     "id": "no-reply-from",
+     "difference": 0.25,
+     "band": 0.2715813054120604,
+     "within": true
+    }
+   ],
+   "n": [
+    256,
+    128
+   ],
+   "variance": [
+    9.647058823529411,
+    17.318651574803148
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "4d82f2fd",
+   "orig": "256a9288",
+   "proposal": "",
+   "rep_value": -0.875,
+   "orig_value": 1.125,
+   "diff": 2,
+   "tolerance": 0.1125,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.4252192813739224,
+   "band": 2.850438562747845,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    3.267857142857143,
+    12.982142857142858
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "a8fd5fc2",
+   "orig": "e2ff808e",
+   "proposal": "",
+   "rep_value": -0.5,
+   "orig_value": -0.75,
+   "diff": 0.25,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.14068285846778444,
+   "band": 0.2813657169355689,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "request",
+     "difference": 0.25,
+     "band": 0.5627314338711378,
+     "within": true
+    },
+    {
+     "id": "report",
+     "difference": 0.25,
+     "band": 0.5627314338711378,
+     "within": true
+    },
+    {
+     "id": "proposal",
+     "difference": 0.25,
+     "band": 0.5627314338711378,
+     "within": true
+    },
+    {
+     "id": "simulation",
+     "difference": 0.25,
+     "band": 0.5627314338711378,
+     "within": true
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.4444444444444444,
+    0.7619047619047619
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "69936262",
+   "orig": "e2ff808e",
+   "proposal": "",
+   "rep_value": -0.125,
+   "orig_value": -0.75,
+   "diff": 0.625,
+   "tolerance": 0.07500000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-09",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.15394127668259305,
+   "band": 0.3078825533651861,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "request",
+     "difference": 0.625,
+     "band": 0.6157651067303722,
+     "within": false
+    },
+    {
+     "id": "report",
+     "difference": 0.625,
+     "band": 0.6157651067303722,
+     "within": false
+    },
+    {
+     "id": "proposal",
+     "difference": 0.625,
+     "band": 0.6157651067303722,
+     "within": false
+    },
+    {
+     "id": "simulation",
+     "difference": 0.625,
+     "band": 0.6157651067303722,
+     "within": false
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.4444444444444444,
+    1.0
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "48402918",
+   "orig": "29e5627d",
+   "proposal": "",
+   "rep_value": 5.375,
+   "orig_value": 4.875,
+   "diff": 0.5,
+   "tolerance": 0.48750000000000004,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-08",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.8737235587660763,
+   "band": 1.7474471175321526,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    5.267857142857143,
+    0.8392857142857143
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "1dbf3d33",
+   "orig": "35874bf6",
+   "proposal": "",
+   "rep_value": 1.5,
+   "orig_value": 2.5,
+   "diff": 1,
+   "tolerance": 0.25,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-08",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.0,
+   "band": 0.0,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "mean-outcome",
+     "difference": 1.0,
+     "band": 0.0,
+     "within": false
+    },
+    {
+     "id": "likeliest-outcome",
+     "difference": 1.0,
+     "band": 0.0,
+     "within": false
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.25396825396825395,
+    0.25396825396825395
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "4e664b27",
+   "orig": "d9bc25ff",
+   "proposal": "",
+   "rep_value": -3,
+   "orig_value": -2,
+   "diff": 1,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-08",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.0,
+   "band": 0.0,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "mean-outcome",
+     "difference": 1.0,
+     "band": 0.0,
+     "within": false
+    },
+    {
+     "id": "likeliest-outcome",
+     "difference": 1.0,
+     "band": 0.0,
+     "within": false
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.0,
+    0.0
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "4c89062a",
+   "orig": "05054718",
+   "proposal": "",
+   "rep_value": 1.25,
+   "orig_value": 1.5,
+   "diff": 0.25,
+   "tolerance": 0.15000000000000002,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-08",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.0777713771047819,
+   "band": 0.1555427542095638,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "no-undo",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "can-undo",
+     "difference": 0.5,
+     "band": 0.3110855084191276,
+     "within": false
+    }
+   ],
+   "n": [
+    64,
+    64
+   ],
+   "variance": [
+    0.5079365079365079,
+    0.19047619047619047
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "b772f69d",
+   "orig": "3e6af78e",
+   "proposal": "",
+   "rep_value": -4,
+   "orig_value": -6.625,
+   "diff": 2.625,
+   "tolerance": 0.6625000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-07",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.8223984956906754,
+   "band": 1.6447969913813507,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    1.9821428571428572,
+    3.4285714285714284
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "70ba51c6",
+   "orig": "4c12baf4",
+   "proposal": "",
+   "rep_value": -16.5625,
+   "orig_value": -18.5625,
+   "diff": 2,
+   "tolerance": 1.8562500000000002,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-07",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.6320436430078754,
+   "band": 1.2640872860157508,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    16,
+    16
+   ],
+   "variance": [
+    3.995833333333333,
+    2.3958333333333335
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "f8c2d4df",
+   "orig": "7ddf8b71",
+   "proposal": "",
+   "rep_value": -9,
+   "orig_value": -5,
+   "diff": 4,
+   "tolerance": 0.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-07",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 2.70801280154532,
+   "band": 5.41602560309064,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    4,
+    4
+   ],
+   "variance": [
+    14.666666666666666,
+    14.666666666666666
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "cae14d25",
+   "orig": "7ddf8b71",
+   "proposal": "",
+   "rep_value": -4.25,
+   "orig_value": -5,
+   "diff": 0.75,
+   "tolerance": 0.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-07",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 3.3509948771471834,
+   "band": 6.701989754294367,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    4,
+    4
+   ],
+   "variance": [
+    14.666666666666666,
+    30.25
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "4d202263",
+   "orig": "f504b3fc",
+   "proposal": "",
+   "rep_value": 1.5,
+   "orig_value": 2,
+   "diff": 0.5,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-07",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 1.5,
+    "orig": 1.5
+   }
+  },
+  {
+   "rep": "0f5986e8",
+   "orig": "f504b3fc",
+   "proposal": "",
+   "rep_value": 1.5,
+   "orig_value": 2,
+   "diff": 0.5,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-06",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 1.5,
+    "orig": 1.5
+   }
+  },
+  {
+   "rep": "8ec887ed",
+   "orig": "dea6509b",
+   "proposal": "",
+   "rep_value": -2.875,
+   "orig_value": -3,
+   "diff": 0.125,
+   "tolerance": 0.30000000000000004,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-06",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.36899961285306826,
+   "band": 0.7379992257061365,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "prob",
+     "difference": 1.75,
+     "band": 0.5,
+     "within": false
+    },
+    {
+     "id": "odds-for",
+     "difference": 1.0,
+     "band": 1.558387444947959,
+     "within": true
+    },
+    {
+     "id": "odds-against",
+     "difference": 2.0,
+     "band": 2.29906813420444,
+     "within": true
+    }
+   ],
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    2.064516129032258,
+    7.854838709677419
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "50434eba",
+   "orig": "12f28a15",
+   "proposal": "",
+   "rep_value": 9.75,
+   "orig_value": 2,
+   "diff": 7.75,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-05",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 9.75,
+    "orig": 7.6
+   }
+  },
+  {
+   "rep": "20c0bdc0",
+   "orig": "b69c504b",
+   "proposal": "",
+   "rep_value": -1.875,
+   "orig_value": -1.25,
+   "diff": 0.625,
+   "tolerance": 0.125,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-05",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.4784167385842345,
+   "band": 0.956833477168469,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    12,
+    16
+   ],
+   "variance": [
+    1.6590909090909092,
+    1.45
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "5e29b851",
+   "orig": "b1ac5573",
+   "proposal": "",
+   "rep_value": -19,
+   "orig_value": 2.5,
+   "diff": 21.5,
+   "tolerance": 0.25,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-05",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 1.0366924243938984,
+   "band": 2.073384848787797,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    32,
+    16
+   ],
+   "variance": [
+    0.25806451612903225,
+    17.066666666666666
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "e69b01a1",
+   "orig": "4ef47674",
+   "proposal": "",
+   "rep_value": 1.5,
+   "orig_value": 1.2083333333333,
+   "diff": 0.29166666666670005,
+   "tolerance": 0.12083333333333,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-05",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.28686524130097507,
+   "band": 0.5737304826019501,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "subject",
+     "difference": 0.16666666666666674,
+     "band": 1.085254706406647,
+     "within": true
+    },
+    {
+     "id": "verb",
+     "difference": 0.33333333333333337,
+     "band": 0.8692269873603532,
+     "within": true
+    },
+    {
+     "id": "object-nominal",
+     "difference": 0.5,
+     "band": 1.2736648783028532,
+     "within": true
+    },
+    {
+     "id": "adjunct",
+     "difference": 0.8333333333333333,
+     "band": 1.3080944580232388,
+     "within": true
+    }
+   ],
+   "n": [
+    24,
+    24
+   ],
+   "variance": [
+    0.693840579710145,
+    1.2173913043478262
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "9c9cdd7d",
+   "orig": "287f3c77",
+   "proposal": "",
+   "rep_value": -31.5625,
+   "orig_value": 2,
+   "diff": 33.5625,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-05",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -31.5625,
+    "orig": 1.5
+   }
+  },
+  {
+   "rep": "aa0f4edc",
+   "orig": "fc4685f2",
+   "proposal": "",
+   "rep_value": -31,
+   "orig_value": 2,
+   "diff": 33,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -31.0,
+    "orig": 0.5
+   }
+  },
+  {
+   "rep": "3267f99b",
+   "orig": "6660caff",
+   "proposal": "",
+   "rep_value": -0.5,
+   "orig_value": 2,
+   "diff": 2.5,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -0.5,
+    "orig": 0.8
+   }
+  },
+  {
+   "rep": "895f1d43",
+   "orig": "4ef47674",
+   "proposal": "",
+   "rep_value": 1.1875,
+   "orig_value": 1.2083333333333,
+   "diff": 0.020833333333299953,
+   "tolerance": 0.12083333333333,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-04",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.22857065352051134,
+   "band": 0.4571413070410227,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "subject",
+     "difference": 0.25,
+     "band": 0.9271050693011065,
+     "within": true
+    },
+    {
+     "id": "verb",
+     "difference": 0.16666666666666674,
+     "band": 0.6299407883487121,
+     "within": true
+    },
+    {
+     "id": "object-nominal",
+     "difference": 0.5833333333333333,
+     "band": 1.1419142936176314,
+     "within": true
+    },
+    {
+     "id": "adjunct",
+     "difference": 0.25,
+     "band": 0.8850612031567836,
+     "within": true
+    }
+   ],
+   "n": [
+    24,
+    32
+   ],
+   "variance": [
+    0.693840579710145,
+    0.7379032258064516
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "5c0aa54f",
+   "orig": "b1ac5573",
+   "proposal": "",
+   "rep_value": -0.5,
+   "orig_value": 2.5,
+   "diff": 3,
+   "tolerance": 0.25,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.46109648738033865,
+   "band": 0.9221929747606773,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    32,
+    12
+   ],
+   "variance": [
+    0.25806451612903225,
+    2.4545454545454546
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "ca27a0df",
+   "orig": "f4ad52b1",
+   "proposal": "",
+   "rep_value": -4.125,
+   "orig_value": 2,
+   "diff": 6.125,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -4.125,
+    "orig": 13.8
+   }
+  },
+  {
+   "rep": "82472923",
+   "orig": "b69c504b",
+   "proposal": "",
+   "rep_value": -3.125,
+   "orig_value": -1.25,
+   "diff": 1.875,
+   "tolerance": 0.125,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.4606689799529691,
+   "band": 0.9213379599059383,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    12,
+    16
+   ],
+   "variance": [
+    1.6590909090909092,
+    1.1833333333333333
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "e30f1d52",
+   "orig": "dcc44e99",
+   "proposal": "",
+   "rep_value": 8,
+   "orig_value": 2,
+   "diff": 6,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 8.0,
+    "orig": 4.8
+   }
+  },
+  {
+   "rep": "5f843235",
+   "orig": "a50365b7",
+   "proposal": "",
+   "rep_value": 1.5,
+   "orig_value": 1.7083333333333,
+   "diff": 0.20833333333329995,
+   "tolerance": 0.17083333333333,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-04",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.13759316228242705,
+   "band": 0.2751863245648541,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "rival-doer",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    },
+    {
+     "id": "rival-done-to",
+     "difference": 0.625,
+     "band": 0.8255589736945623,
+     "within": true
+    },
+    {
+     "id": "adjunct-rival",
+     "difference": 0.0,
+     "band": 0.0,
+     "within": true
+    }
+   ],
+   "n": [
+    24,
+    12
+   ],
+   "variance": [
+    1.2590579710144925,
+    0.6363636363636364
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "c287fa63",
+   "orig": "287f3c77",
+   "proposal": "",
+   "rep_value": 0.75,
+   "orig_value": 2,
+   "diff": 1.25,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 0.75,
+    "orig": 1.5
+   }
+  },
+  {
+   "rep": "6dced4c9",
+   "orig": "055e4849",
+   "proposal": "",
+   "rep_value": -5.5833,
+   "orig_value": 2,
+   "diff": 7.5833,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -5.583333333333333,
+    "orig": 1.2
+   }
+  },
+  {
+   "rep": "b0078b47",
+   "orig": "c5a59293",
+   "proposal": "",
+   "rep_value": -0.9,
+   "orig_value": 2,
+   "diff": 2.9,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -0.9,
+    "orig": 3.4
+   }
+  },
+  {
+   "rep": "10f84285",
+   "orig": "dcc44e99",
+   "proposal": "",
+   "rep_value": -0.4,
+   "orig_value": 2,
+   "diff": 2.4,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -0.4,
+    "orig": 4.8
+   }
+  },
+  {
+   "rep": "3aa4872d",
+   "orig": "fc4685f2",
+   "proposal": "",
+   "rep_value": 0.5,
+   "orig_value": 2,
+   "diff": 1.5,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 0.5,
+    "orig": 0.5
+   }
+  },
+  {
+   "rep": "d21eb6d1",
+   "orig": "c1c90c9d",
+   "proposal": "",
+   "rep_value": 2.9375,
+   "orig_value": 2,
+   "diff": 0.9375,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 2.9375,
+    "orig": 3.4
+   }
+  },
+  {
+   "rep": "babc0194",
+   "orig": "c1c90c9d",
+   "proposal": "",
+   "rep_value": 4,
+   "orig_value": 2,
+   "diff": 2,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-04",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 4.0,
+    "orig": 3.4
+   }
+  },
+  {
+   "rep": "61c2e7a3",
+   "orig": "173bb003",
+   "proposal": "",
+   "rep_value": 1.25,
+   "orig_value": 1,
+   "diff": 0.25,
+   "tolerance": 0.1,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-03",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.18633899812498247,
+   "band": 0.37267799624996495,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    10,
+    16
+   ],
+   "variance": [
+    0.2222222222222222,
+    0.2
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "51bbdc48",
+   "orig": "c60e889a",
+   "proposal": "",
+   "rep_value": 13.6875,
+   "orig_value": 2,
+   "diff": 11.6875,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-03",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 13.6875,
+    "orig": 12.6
+   }
+  },
+  {
+   "rep": "22f7266b",
+   "orig": "c60e889a",
+   "proposal": "",
+   "rep_value": 12.875,
+   "orig_value": 2,
+   "diff": 10.875,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-03",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 12.875,
+    "orig": 12.6
+   }
+  },
+  {
+   "rep": "19e2becb",
+   "orig": "7e486c41",
+   "proposal": "",
+   "rep_value": -24.75,
+   "orig_value": -45,
+   "diff": 20.25,
+   "tolerance": 4.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-03",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "1e175407",
+   "orig": "fee0905d",
+   "proposal": "",
+   "rep_value": -5.25,
+   "orig_value": -6,
+   "diff": 0.75,
+   "tolerance": 0.6000000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-03",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.8427786989579984,
+   "band": 3.685557397915997,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    4
+   ],
+   "variance": [
+    7.0,
+    4.25
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "6f0c3f8c",
+   "orig": "6a9d6e20",
+   "proposal": "",
+   "rep_value": 3.25,
+   "orig_value": 2.8,
+   "diff": 0.4500000000000002,
+   "tolerance": 0.27999999999999997,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-03",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.9198645517959662,
+   "band": 1.8397291035919323,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    10,
+    8
+   ],
+   "variance": [
+    4.622222222222222,
+    3.0714285714285716
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "fab4bdfe",
+   "orig": "0508f019",
+   "proposal": "",
+   "rep_value": 1.2083333333333,
+   "orig_value": 1.1666666666667,
+   "diff": 0.041666666666633434,
+   "tolerance": 0.11666666666667001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-03",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.2479079130107253,
+   "band": 0.4958158260214506,
+   "within_aggregate": true,
+   "strata": [
+    {
+     "id": "subject",
+     "difference": 0.16666666666666674,
+     "band": 0.8027729719194864,
+     "within": true
+    },
+    {
+     "id": "verb",
+     "difference": 0.33333333333333337,
+     "band": 0.6992058987801011,
+     "within": true
+    },
+    {
+     "id": "object-nominal",
+     "difference": 0.0,
+     "band": 1.4452988925785866,
+     "within": true
+    },
+    {
+     "id": "adjunct",
+     "difference": 0.33333333333333326,
+     "band": 0.8432740427115678,
+     "within": true
+    }
+   ],
+   "n": [
+    24,
+    24
+   ],
+   "variance": [
+    0.6666666666666667,
+    0.693840579710145
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "6e56bb58",
+   "orig": "6a9d6e20",
+   "proposal": "",
+   "rep_value": -9.25,
+   "orig_value": 2.8,
+   "diff": 12.05,
+   "tolerance": 0.27999999999999997,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-03",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.8846564073493887,
+   "band": 1.7693128146987773,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    10,
+    20
+   ],
+   "variance": [
+    4.622222222222222,
+    6.407894736842105
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "433a062e",
+   "orig": "0508f019",
+   "proposal": "",
+   "rep_value": 2.03125,
+   "orig_value": 1.1666666666667,
+   "diff": 0.8645833333333,
+   "tolerance": 0.11666666666667001,
+   "tolerance_from_receipt": true,
+   "stratified": true,
+   "at": "2026-09-03",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.26226723429078913,
+   "band": 0.5245344685815783,
+   "within_aggregate": false,
+   "strata": [
+    {
+     "id": "subject",
+     "difference": 0.41666666666666674,
+     "band": 1.0686737070142094,
+     "within": true
+    },
+    {
+     "id": "verb",
+     "difference": 0.16666666666666663,
+     "band": 0.8979694907674795,
+     "within": true
+    },
+    {
+     "id": "object-nominal",
+     "difference": 1.4583333333333333,
+     "band": 1.372273631836931,
+     "within": false
+    },
+    {
+     "id": "adjunct",
+     "difference": 1.4166666666666667,
+     "band": 0.755403812960274,
+     "within": false
+    }
+   ],
+   "n": [
+    24,
+    32
+   ],
+   "variance": [
+    0.6666666666666667,
+    1.6441532258064515
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "2876ab56",
+   "orig": "368021d8",
+   "proposal": "",
+   "rep_value": -7.8125,
+   "orig_value": -82,
+   "diff": 74.1875,
+   "tolerance": 8.200000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-03",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "244b5b13",
+   "orig": "414c2729",
+   "proposal": "",
+   "rep_value": -2.5,
+   "orig_value": -1,
+   "diff": 1.5,
+   "tolerance": 0.1,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.2008048322256247,
+   "band": 0.4016096644512494,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    1.032258064516129,
+    0.25806451612903225
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "0f4f1b46",
+   "orig": "6a9d6e20",
+   "proposal": "",
+   "rep_value": 0.6875,
+   "orig_value": 2.8,
+   "diff": 2.1125,
+   "tolerance": 0.27999999999999997,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.7862644628593839,
+   "band": 1.5725289257187678,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    10,
+    16
+   ],
+   "variance": [
+    4.622222222222222,
+    2.495833333333333
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "c738eb7d",
+   "orig": "9b7692e1",
+   "proposal": "",
+   "rep_value": -10.0625,
+   "orig_value": -13,
+   "diff": 2.9375,
+   "tolerance": 1.3,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.7246505166023973,
+   "band": 1.4493010332047946,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    12,
+    16
+   ],
+   "variance": [
+    5.454545454545454,
+    1.1291666666666667
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "df4145b6",
+   "orig": "173bb003",
+   "proposal": "",
+   "rep_value": 0.875,
+   "orig_value": 1,
+   "diff": 0.125,
+   "tolerance": 0.1,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.233482095435365,
+   "band": 0.46696419087073,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    10,
+    16
+   ],
+   "variance": [
+    0.2222222222222222,
+    0.5166666666666667
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "213aae41",
+   "orig": "e9534d4a",
+   "proposal": "",
+   "rep_value": 6,
+   "orig_value": 2,
+   "diff": 4,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 6.0,
+    "orig": 6.0
+   }
+  },
+  {
+   "rep": "88c98715",
+   "orig": "e9534d4a",
+   "proposal": "",
+   "rep_value": 5.5,
+   "orig_value": 2,
+   "diff": 3.5,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 5.5,
+    "orig": 6.0
+   }
+  },
+  {
+   "rep": "8b57208e",
+   "orig": "d9045f24",
+   "proposal": "",
+   "rep_value": -16.3125,
+   "orig_value": 1.7,
+   "diff": 18.0125,
+   "tolerance": 0.17,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "not derivable: non-string arm"
+  },
+  {
+   "rep": "6c17f9fa",
+   "orig": "d9045f24",
+   "proposal": "",
+   "rep_value": -17.25,
+   "orig_value": 1.7,
+   "diff": 18.95,
+   "tolerance": 0.17,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "not derivable: non-string arm"
+  },
+  {
+   "rep": "92ac6a6b",
+   "orig": "15d5d987",
+   "proposal": "",
+   "rep_value": 14.3,
+   "orig_value": 4.5,
+   "diff": 9.8,
+   "tolerance": 0.45,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 14.3,
+    "orig": 11.8
+   }
+  },
+  {
+   "rep": "33d533f9",
+   "orig": "15d5d987",
+   "proposal": "",
+   "rep_value": 11.1,
+   "orig_value": 4.5,
+   "diff": 6.6,
+   "tolerance": 0.45,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 11.1,
+    "orig": 11.8
+   }
+  },
+  {
+   "rep": "115cec9d",
+   "orig": "6ed658d5",
+   "proposal": "",
+   "rep_value": 4.25,
+   "orig_value": 2,
+   "diff": 2.25,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 4.25,
+    "orig": 4.5
+   }
+  },
+  {
+   "rep": "c616ef3e",
+   "orig": "6ed658d5",
+   "proposal": "",
+   "rep_value": 4.90625,
+   "orig_value": 2,
+   "diff": 2.90625,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 4.90625,
+    "orig": 4.5
+   }
+  },
+  {
+   "rep": "4af099ab",
+   "orig": "e21f3040",
+   "proposal": "",
+   "rep_value": 2.5,
+   "orig_value": 2,
+   "diff": 0.5,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 2.5,
+    "orig": 4.5
+   }
+  },
+  {
+   "rep": "d2d95227",
+   "orig": "0059275d",
+   "proposal": "",
+   "rep_value": 1.214,
+   "orig_value": 2,
+   "diff": 0.786,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 1.2142857142857142,
+    "orig": 1.0
+   }
+  },
+  {
+   "rep": "1a4c22c4",
+   "orig": "b6e9f938",
+   "proposal": "",
+   "rep_value": 0.29166666666667,
+   "orig_value": 2,
+   "diff": 1.7083333333333333,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 0.2916666666666667,
+    "orig": 0.8
+   }
+  },
+  {
+   "rep": "829115b5",
+   "orig": "b6e9f938",
+   "proposal": "",
+   "rep_value": 0.625,
+   "orig_value": 2,
+   "diff": 1.375,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 0.625,
+    "orig": 0.8
+   }
+  },
+  {
+   "rep": "cc66c7c1",
+   "orig": "e21f3040",
+   "proposal": "",
+   "rep_value": 3.875,
+   "orig_value": 2,
+   "diff": 1.875,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 3.875,
+    "orig": 4.5
+   }
+  },
+  {
+   "rep": "2cdb128e",
+   "orig": "b106754d",
+   "proposal": "",
+   "rep_value": -5.5,
+   "orig_value": -6.167,
+   "diff": 0.6669999999999998,
+   "tolerance": 0.6167,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 1.999801577458711,
+   "band": 3.999603154917422,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    6,
+    8
+   ],
+   "variance": [
+    14.566666666666668,
+    12.571428571428571
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "587fd95b",
+   "orig": "0059275d",
+   "proposal": "",
+   "rep_value": 1.125,
+   "orig_value": 2,
+   "diff": 0.875,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 1.125,
+    "orig": 1.0
+   }
+  },
+  {
+   "rep": "670dae96",
+   "orig": "98d30bcc",
+   "proposal": "",
+   "rep_value": 2.4,
+   "orig_value": 2,
+   "diff": 0.3999999999999999,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-02",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 2.4,
+    "orig": 1.6
+   }
+  },
+  {
+   "rep": "4cab5719",
+   "orig": "98d30bcc",
+   "proposal": "",
+   "rep_value": 2.6666666666667,
+   "orig_value": 2,
+   "diff": 0.6666666666666665,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-01",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 2.6666666666666665,
+    "orig": 1.6
+   }
+  },
+  {
+   "rep": "dab75489",
+   "orig": "1d1e035f",
+   "proposal": "",
+   "rep_value": 0.79166666666667,
+   "orig_value": 2,
+   "diff": 1.2083333333333335,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-01",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 0.7916666666666666,
+    "orig": 2.3333333333333335
+   }
+  },
+  {
+   "rep": "e60a5721",
+   "orig": "1d1e035f",
+   "proposal": "",
+   "rep_value": -6.75,
+   "orig_value": 2,
+   "diff": 8.75,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-09-01",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -6.75,
+    "orig": 2.3333333333333335
+   }
+  },
+  {
+   "rep": "b0365448",
+   "orig": "7e486c41",
+   "proposal": "",
+   "rep_value": -50.25,
+   "orig_value": -45,
+   "diff": 5.25,
+   "tolerance": 4.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-31",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "29d24d38",
+   "orig": "7e486c41",
+   "proposal": "",
+   "rep_value": -33,
+   "orig_value": -45,
+   "diff": 12,
+   "tolerance": 4.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-31",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "6e833fa3",
+   "orig": "285d9436",
+   "proposal": "",
+   "rep_value": 1,
+   "orig_value": 2.5,
+   "diff": 1.5,
+   "tolerance": 0.25,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-31",
+   "outcome": "not_applicable",
+   "reason": "inline manifest unavailable on one row"
+  },
+  {
+   "rep": "15f2cd35",
+   "orig": "475a21d9",
+   "proposal": "",
+   "rep_value": -2.7916666666667,
+   "orig_value": -101,
+   "diff": 98.20833333333333,
+   "tolerance": 10.100000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-31",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "2bc7863b",
+   "orig": "b1a623f1",
+   "proposal": "",
+   "rep_value": -18.333333333333,
+   "orig_value": -11.90625,
+   "diff": 6.427083333333332,
+   "tolerance": 1.190625,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.6529636485043524,
+   "band": 1.3059272970087048,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    64,
+    24
+   ],
+   "variance": [
+    8.118055555555555,
+    7.188405797101436
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "132af3cd",
+   "orig": "83bbf393",
+   "proposal": "",
+   "rep_value": -287,
+   "orig_value": -365,
+   "diff": 78,
+   "tolerance": 36.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "464df47a",
+   "orig": "59f0283e",
+   "proposal": "",
+   "rep_value": -8.1875,
+   "orig_value": -99,
+   "diff": 90.8125,
+   "tolerance": 9.9,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "3a722ac4",
+   "orig": "368021d8",
+   "proposal": "",
+   "rep_value": -15,
+   "orig_value": -82,
+   "diff": 67,
+   "tolerance": 8.200000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "066d0815",
+   "orig": "83bbf393",
+   "proposal": "",
+   "rep_value": 1.5,
+   "orig_value": -365,
+   "diff": 366.5,
+   "tolerance": 36.5,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "cd6a144b",
+   "orig": "368021d8",
+   "proposal": "",
+   "rep_value": -10,
+   "orig_value": -82,
+   "diff": 72,
+   "tolerance": 8.200000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "47bd6dc4",
+   "orig": "59f0283e",
+   "proposal": "",
+   "rep_value": -6.5,
+   "orig_value": -99,
+   "diff": 92.5,
+   "tolerance": 9.9,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "66e5701e",
+   "orig": "475a21d9",
+   "proposal": "",
+   "rep_value": -5.5,
+   "orig_value": -101,
+   "diff": 95.5,
+   "tolerance": 10.100000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "a4a50ae2",
+   "orig": "3499c92e",
+   "proposal": "",
+   "rep_value": -5.5,
+   "orig_value": 1.6667,
+   "diff": 7.1667000000000005,
+   "tolerance": 0.16667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 2.650995620097811,
+   "band": 5.301991240195622,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    3,
+    2
+   ],
+   "variance": [
+    2.333333333333333,
+    12.5
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "7dd8ae25",
+   "orig": "603211c5",
+   "proposal": "",
+   "rep_value": -13.5,
+   "orig_value": -11,
+   "diff": 2.5,
+   "tolerance": 1.1,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.08980265101338746,
+   "band": 0.1796053020267749,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    32,
+    32
+   ],
+   "variance": [
+    0.0,
+    0.25806451612903225
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "19735eb2",
+   "orig": "61e8a007",
+   "proposal": "",
+   "rep_value": -10.5,
+   "orig_value": -24,
+   "diff": 13.5,
+   "tolerance": 2.4000000000000004,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -10.5,
+    "orig": -23.0
+   }
+  },
+  {
+   "rep": "550f4838",
+   "orig": "48a5bc74",
+   "proposal": "",
+   "rep_value": -12,
+   "orig_value": -96,
+   "diff": 84,
+   "tolerance": 9.600000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "cd17d0a1",
+   "orig": "989b2d8d",
+   "proposal": "",
+   "rep_value": -8.333,
+   "orig_value": 1.6667,
+   "diff": 9.9997,
+   "tolerance": 0.16667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 2.2110831935702664,
+   "band": 4.422166387140533,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    3,
+    3
+   ],
+   "variance": [
+    10.333333333333332,
+    4.333333333333329
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "cb77f03c",
+   "orig": "ccbf51cb",
+   "proposal": "",
+   "rep_value": -28.5,
+   "orig_value": -63,
+   "diff": 34.5,
+   "tolerance": 6.300000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "27ffbbc8",
+   "orig": "ccbf51cb",
+   "proposal": "",
+   "rep_value": -13.667,
+   "orig_value": -63,
+   "diff": 49.333,
+   "tolerance": 6.300000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": false
+  },
+  {
+   "rep": "dc18bd88",
+   "orig": "7e6f2f3d",
+   "proposal": "",
+   "rep_value": -6,
+   "orig_value": -241,
+   "diff": 235,
+   "tolerance": 24.1,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -6.0,
+    "orig": -197.0
+   }
+  },
+  {
+   "rep": "918900d6",
+   "orig": "fee0905d",
+   "proposal": "",
+   "rep_value": -11,
+   "orig_value": -6,
+   "diff": 5,
+   "tolerance": 0.6000000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 1.7320508075688772,
+   "band": 3.4641016151377544,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    3,
+    4
+   ],
+   "variance": [
+    7.0,
+    2.6666666666666665
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "a78bd16e",
+   "orig": "ccbf51cb",
+   "proposal": "",
+   "rep_value": -31.1875,
+   "orig_value": -63,
+   "diff": 31.8125,
+   "tolerance": 6.300000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "3075738f",
+   "orig": "7e6f2f3d",
+   "proposal": "",
+   "rep_value": -19.75,
+   "orig_value": -241,
+   "diff": 221.25,
+   "tolerance": 24.1,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -19.75,
+    "orig": -197.0
+   }
+  },
+  {
+   "rep": "c896700f",
+   "orig": "48a5bc74",
+   "proposal": "",
+   "rep_value": -19.5,
+   "orig_value": -96,
+   "diff": 76.5,
+   "tolerance": 9.600000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "29113d47",
+   "orig": "48a5bc74",
+   "proposal": "",
+   "rep_value": -17.5,
+   "orig_value": -96,
+   "diff": 78.5,
+   "tolerance": 9.600000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "fewer than 2 pairs on a headline encoding",
+   "exact": true
+  },
+  {
+   "rep": "a83e4ff9",
+   "orig": "61e8a007",
+   "proposal": "",
+   "rep_value": -3,
+   "orig_value": -24,
+   "diff": 21,
+   "tolerance": 2.4000000000000004,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -3.0,
+    "orig": -23.0
+   }
+  },
+  {
+   "rep": "4a0e7329",
+   "orig": "61e8a007",
+   "proposal": "",
+   "rep_value": -2,
+   "orig_value": -24,
+   "diff": 22,
+   "tolerance": 2.4000000000000004,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-30",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -2.0,
+    "orig": -23.0
+   }
+  },
+  {
+   "rep": "5b5820c2",
+   "orig": "81d34058",
+   "proposal": "",
+   "rep_value": -0.125,
+   "orig_value": 0,
+   "diff": 0.125,
+   "tolerance": 0.02,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-28",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.24427979664233193,
+   "band": 0.48855959328466386,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    16
+   ],
+   "variance": [
+    0.2857142857142857,
+    0.38333333333333336
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "d4843e94",
+   "orig": "2d7590ec",
+   "proposal": "",
+   "rep_value": -6,
+   "orig_value": -4.5,
+   "diff": 1.5,
+   "tolerance": 0.45,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-28",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.0808246010254476,
+   "band": 2.1616492020508953,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    12,
+    16
+   ],
+   "variance": [
+    6.818181818181818,
+    9.6
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "38ae095e",
+   "orig": "252a118d",
+   "proposal": "",
+   "rep_value": -1.125,
+   "orig_value": -3.833,
+   "diff": 2.708,
+   "tolerance": 0.38330000000000003,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-28",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 2.3313235392035234,
+   "band": 4.662647078407047,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    6,
+    16
+   ],
+   "variance": [
+    31.766666666666662,
+    2.25
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "fdeaf2c9",
+   "orig": "ead8571c",
+   "proposal": "",
+   "rep_value": 4,
+   "orig_value": 2.5,
+   "diff": 1.5,
+   "tolerance": 0.25,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-27",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.4269169292920217,
+   "band": 0.8538338585840434,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    16,
+    32
+   ],
+   "variance": [
+    2.4,
+    1.032258064516129
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "a3b37b1a",
+   "orig": "56256844",
+   "proposal": "",
+   "rep_value": -1.9375,
+   "orig_value": 0.917,
+   "diff": 2.8545,
+   "tolerance": 0.0917,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-27",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 0.5266947792000831,
+   "band": 1.0533895584001662,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    12,
+    32
+   ],
+   "variance": [
+    2.6287878787878785,
+    1.8669354838709677
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "cb1e6ae9",
+   "orig": "989b2d8d",
+   "proposal": "",
+   "rep_value": 2,
+   "orig_value": 1.6667,
+   "diff": 0.33329999999999993,
+   "tolerance": 0.16667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-26",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 1.8826694995257252,
+   "band": 3.7653389990514503,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    16
+   ],
+   "variance": [
+    10.333333333333332,
+    1.6
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "e6dc6fa6",
+   "orig": "dd0b4134",
+   "proposal": "",
+   "rep_value": -12.5833,
+   "orig_value": -8.6667,
+   "diff": 3.916599999999999,
+   "tolerance": 0.86667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-26",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "3e1b01c0",
+   "orig": "2cf05685",
+   "proposal": "",
+   "rep_value": -5.875,
+   "orig_value": -6.625,
+   "diff": 0.75,
+   "tolerance": 0.6625000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-25",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 3.16439454827347,
+   "band": 6.32878909654694,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    43.69642857142857,
+    36.410714285714285
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "b6c0681c",
+   "orig": "3499c92e",
+   "proposal": "",
+   "rep_value": -4.4167,
+   "orig_value": 1.6667,
+   "diff": 6.083399999999999,
+   "tolerance": 0.16667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-25",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 1.1063978315308474,
+   "band": 2.2127956630616947,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    3,
+    12
+   ],
+   "variance": [
+    2.333333333333333,
+    5.3560606060606055
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "30ace965",
+   "orig": "ead8571c",
+   "proposal": "",
+   "rep_value": 3.833,
+   "orig_value": 2.5,
+   "diff": 1.3330000000000002,
+   "tolerance": 0.25,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-24",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 0.5577733510227169,
+   "band": 1.1155467020454337,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    16,
+    6
+   ],
+   "variance": [
+    2.4,
+    0.9666666666666657
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "8772d6df",
+   "orig": "94b41e8d",
+   "proposal": "",
+   "rep_value": -2.875,
+   "orig_value": -2,
+   "diff": 0.875,
+   "tolerance": 0.2,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-24",
+   "outcome": "not_applicable",
+   "reason": "not derivable: tokenizer not available locally"
+  },
+  {
+   "rep": "213d1657",
+   "orig": "3499c92e",
+   "proposal": "",
+   "rep_value": 2.375,
+   "orig_value": 1.6667,
+   "diff": 0.7082999999999999,
+   "tolerance": 0.16667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-23",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 0.9228955038958154,
+   "band": 1.8457910077916309,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    16
+   ],
+   "variance": [
+    2.333333333333333,
+    1.1833333333333333
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "1cd90518",
+   "orig": "ac9ce308",
+   "proposal": "",
+   "rep_value": -1,
+   "orig_value": 3.5,
+   "diff": 4.5,
+   "tolerance": 0.35000000000000003,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-23",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.5345224838248488,
+   "band": 1.0690449676496976,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    1.1428571428571428,
+    1.1428571428571428
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "527773d6",
+   "orig": "3499c92e",
+   "proposal": "",
+   "rep_value": 0.375,
+   "orig_value": 1.6667,
+   "diff": 1.2917,
+   "tolerance": 0.16667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-23",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 0.9395150302488471,
+   "band": 1.8790300604976942,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    8
+   ],
+   "variance": [
+    2.333333333333333,
+    0.8392857142857143
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "377408ce",
+   "orig": "989b2d8d",
+   "proposal": "",
+   "rep_value": 1.3125,
+   "orig_value": 1.6667,
+   "diff": 0.35420000000000007,
+   "tolerance": 0.16667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-23",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 1.8820469426782225,
+   "band": 3.764093885356445,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    16
+   ],
+   "variance": [
+    10.333333333333332,
+    1.5625
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "cf8de672",
+   "orig": "989b2d8d",
+   "proposal": "",
+   "rep_value": 1.125,
+   "orig_value": 1.6667,
+   "diff": 0.5417000000000001,
+   "tolerance": 0.16667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-23",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 1.9075221815265668,
+   "band": 3.8150443630531337,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    8
+   ],
+   "variance": [
+    10.333333333333332,
+    1.5535714285714286
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "253e79fe",
+   "orig": "fee0905d",
+   "proposal": "",
+   "rep_value": -4.5,
+   "orig_value": -6,
+   "diff": 1.5,
+   "tolerance": 0.6000000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-23",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.8119970566569177,
+   "band": 3.6239941133138354,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    16
+   ],
+   "variance": [
+    7.0,
+    15.2
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "7b0ba6da",
+   "orig": "fee0905d",
+   "proposal": "",
+   "rep_value": -4.75,
+   "orig_value": -6,
+   "diff": 1.25,
+   "tolerance": 0.6000000000000001,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-23",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.6657927816501816,
+   "band": 3.3315855633003633,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    32
+   ],
+   "variance": [
+    7.0,
+    14.129032258064516
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "p50k_base",
+    "p50k_base"
+   ]
+  },
+  {
+   "rep": "d2ca0229",
+   "orig": "11691dae",
+   "proposal": "",
+   "rep_value": 0.8333,
+   "orig_value": -6.1667,
+   "diff": 7,
+   "tolerance": 0.61667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-21",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": 0.8333333333333334,
+    "orig": 2.0
+   }
+  },
+  {
+   "rep": "b42a91bf",
+   "orig": "11691dae",
+   "proposal": "",
+   "rep_value": -5.5,
+   "orig_value": -6.1667,
+   "diff": 0.6666999999999996,
+   "tolerance": 0.61667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-21",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -5.5,
+    "orig": 2.0
+   }
+  },
+  {
+   "rep": "c9578f6c",
+   "orig": "dd0b4134",
+   "proposal": "",
+   "rep_value": -12.875,
+   "orig_value": -8.6667,
+   "diff": 4.2082999999999995,
+   "tolerance": 0.86667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-21",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "efc8dd4f",
+   "orig": "c27cc457",
+   "proposal": "",
+   "rep_value": -2.75,
+   "orig_value": -4.5,
+   "diff": 1.75,
+   "tolerance": 0.45,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-21",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.5789881455844089,
+   "band": 1.1579762911688178,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    12,
+    8
+   ],
+   "variance": [
+    0.2727272727272727,
+    2.5
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "4ef1b301",
+   "orig": "11691dae",
+   "proposal": "",
+   "rep_value": -7.125,
+   "orig_value": -6.1667,
+   "diff": 0.9583000000000004,
+   "tolerance": 0.61667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-20",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -7.125,
+    "orig": 2.0
+   }
+  },
+  {
+   "rep": "b223800b",
+   "orig": "11691dae",
+   "proposal": "",
+   "rep_value": -4.125,
+   "orig_value": -6.1667,
+   "diff": 2.0416999999999996,
+   "tolerance": 0.61667,
+   "tolerance_from_receipt": true,
+   "stratified": false,
+   "at": "2026-08-20",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -4.125,
+    "orig": 2.0
+   }
+  },
+  {
+   "rep": "6760099f",
+   "orig": "2cf05685",
+   "proposal": "",
+   "rep_value": -5.75,
+   "orig_value": -6.625,
+   "diff": null,
+   "tolerance": 0.6625000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-19",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 2.7324385149706916,
+   "band": 5.464877029941383,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    16
+   ],
+   "variance": [
+    43.69642857142857,
+    32.06666666666667
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "49ddc8d3",
+   "orig": "dc50f8a3",
+   "proposal": "",
+   "rep_value": -5.3125,
+   "orig_value": -4.625,
+   "diff": null,
+   "tolerance": 0.4625,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-18",
+   "outcome": "not_applicable",
+   "reason": "filed value not reproduced from the manifest (the filed-vs-derived class)",
+   "recount": {
+    "rep": -4.875,
+    "orig": -4.625
+   }
+  },
+  {
+   "rep": "2f61d3d5",
+   "orig": "2cf05685",
+   "proposal": "",
+   "rep_value": -5.667,
+   "orig_value": -6.625,
+   "diff": null,
+   "tolerance": 0.6625000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-17",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 2.827968724505649,
+   "band": 5.655937449011298,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    12
+   ],
+   "variance": [
+    43.69642857142857,
+    30.424242424242426
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "0ccec9ee",
+   "orig": "34488d37",
+   "proposal": "",
+   "rep_value": -6.5,
+   "orig_value": -8.25,
+   "diff": null,
+   "tolerance": 0.8250000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-17",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.4082382329119318,
+   "band": 2.8164764658238637,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    10
+   ],
+   "variance": [
+    15.642857142857142,
+    0.2777777777777778
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "a06f0806",
+   "orig": "2cf05685",
+   "proposal": "",
+   "rep_value": -5,
+   "orig_value": -6.625,
+   "diff": null,
+   "tolerance": 0.6625000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-17",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 2.8897997266795947,
+   "band": 5.7795994533591895,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    10
+   ],
+   "variance": [
+    43.69642857142857,
+    28.88888888888889
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "7ca388b7",
+   "orig": "a22d1219",
+   "proposal": "",
+   "rep_value": -6.5,
+   "orig_value": -15.375,
+   "diff": null,
+   "tolerance": 1.5375,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-15",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "ce295062",
+   "orig": "a22d1219",
+   "proposal": "",
+   "rep_value": -20.875,
+   "orig_value": -15.375,
+   "diff": null,
+   "tolerance": 1.5375,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-15",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "44495abc",
+   "orig": "ac9ce308",
+   "proposal": "",
+   "rep_value": 3.875,
+   "orig_value": 3.5,
+   "diff": null,
+   "tolerance": 0.35000000000000003,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-14",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.479490056503484,
+   "band": 0.958980113006968,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    1.1428571428571428,
+    0.6964285714285714
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "d58980b0",
+   "orig": "ac9ce308",
+   "proposal": "",
+   "rep_value": 4,
+   "orig_value": 3.5,
+   "diff": null,
+   "tolerance": 0.35000000000000003,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-14",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.5976143046671968,
+   "band": 1.1952286093343936,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    1.1428571428571428,
+    1.7142857142857142
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "c34e23d4",
+   "orig": "e1ce0d5a",
+   "proposal": "",
+   "rep_value": -16.875,
+   "orig_value": -19.75,
+   "diff": null,
+   "tolerance": 1.975,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-13",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "2c692263",
+   "orig": "b924efb0",
+   "proposal": "",
+   "rep_value": -2.833,
+   "orig_value": -5.75,
+   "diff": null,
+   "tolerance": 0.5750000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-13",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 1.4686539566706802,
+   "band": 2.9373079133413604,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    6
+   ],
+   "variance": [
+    16.5,
+    0.5666666666666671
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "0f86d03b",
+   "orig": "b924efb0",
+   "proposal": "",
+   "rep_value": -1.833,
+   "orig_value": -5.75,
+   "diff": null,
+   "tolerance": 0.5750000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-13",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 1.700972686673152,
+   "band": 3.401945373346304,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    8,
+    12
+   ],
+   "variance": [
+    16.5,
+    9.969696969696969
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "f71adcf3",
+   "orig": "2d7590ec",
+   "proposal": "",
+   "rep_value": -5,
+   "orig_value": -4.5,
+   "diff": null,
+   "tolerance": 0.45,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-12",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.9653072991634228,
+   "band": 1.9306145983268457,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    12,
+    12
+   ],
+   "variance": [
+    6.818181818181818,
+    4.363636363636363
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "5ff2c6ad",
+   "orig": "b8df44fa",
+   "proposal": "",
+   "rep_value": -7.25,
+   "orig_value": -10.556,
+   "diff": null,
+   "tolerance": 1.0555999999999999,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-12",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 0.9885355741546419,
+   "band": 1.9770711483092838,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    9,
+    12
+   ],
+   "variance": [
+    1.2777777777777715,
+    10.022727272727273
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "o200k_base"
+   ]
+  },
+  {
+   "rep": "80bb7c45",
+   "orig": "b924efb0",
+   "proposal": "",
+   "rep_value": -2,
+   "orig_value": -5.75,
+   "diff": null,
+   "tolerance": 0.5750000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-12",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 1.697257145568054,
+   "band": 3.394514291136108,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    8,
+    12
+   ],
+   "variance": [
+    16.5,
+    9.818181818181818
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "3c6d1b93",
+   "orig": "2d7590ec",
+   "proposal": "",
+   "rep_value": -3.5,
+   "orig_value": -4.5,
+   "diff": null,
+   "tolerance": 0.45,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-12",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.7609542584145315,
+   "band": 1.521908516829063,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    12,
+    24
+   ],
+   "variance": [
+    6.818181818181818,
+    0.2608695652173913
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "39e4b08f",
+   "orig": "e1ce0d5a",
+   "proposal": "",
+   "rep_value": -17.375,
+   "orig_value": -19.75,
+   "diff": null,
+   "tolerance": 1.975,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-11",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "01de1ab0",
+   "orig": "81d34058",
+   "proposal": "",
+   "rep_value": -0.125,
+   "orig_value": 0,
+   "diff": null,
+   "tolerance": 0.02,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-11",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.29504842217604116,
+   "band": 0.5900968443520823,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    0.2857142857142857,
+    0.4107142857142857
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "5e5fcda1",
+   "orig": "755ec9ae",
+   "proposal": "",
+   "rep_value": -9,
+   "orig_value": -8,
+   "diff": null,
+   "tolerance": 0.8,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-11",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "512940d4",
+   "orig": "dd0b4134",
+   "proposal": "",
+   "rep_value": -11.125,
+   "orig_value": -8.6667,
+   "diff": null,
+   "tolerance": 0.86667,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-11",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "5e997247",
+   "orig": "56256844",
+   "proposal": "",
+   "rep_value": 2.083,
+   "orig_value": 0.917,
+   "diff": null,
+   "tolerance": 0.0917,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-10",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 0.47540519665870395,
+   "band": 0.9508103933174079,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    12,
+    12
+   ],
+   "variance": [
+    2.6287878787878785,
+    0.08333333333333312
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "be420679",
+   "orig": "8bea1c31",
+   "proposal": "",
+   "rep_value": -17,
+   "orig_value": -20.833,
+   "diff": null,
+   "tolerance": 2.0833,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-10",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 0.16666666666668184,
+   "band": 0.3333333333333637,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    6,
+    6
+   ],
+   "variance": [
+    0.166666666666697,
+    0.0
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "77e058c8",
+   "orig": "e4693281",
+   "proposal": "",
+   "rep_value": 0,
+   "orig_value": -1,
+   "diff": null,
+   "tolerance": 0.1,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-10",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "9e28968a",
+   "orig": "8bea1c31",
+   "proposal": "",
+   "rep_value": -18.5,
+   "orig_value": -20.833,
+   "diff": null,
+   "tolerance": 2.0833,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-10",
+   "outcome": "not_applicable",
+   "reason": "not derivable: tokenizer not available locally"
+  },
+  {
+   "rep": "934ecdeb",
+   "orig": "7d1b19f2",
+   "proposal": "",
+   "rep_value": -6,
+   "orig_value": -4,
+   "diff": null,
+   "tolerance": 0.4,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-10",
+   "outcome": "not_applicable",
+   "reason": "not derivable: tokenizer not available locally"
+  },
+  {
+   "rep": "f62915be",
+   "orig": "7d1b19f2",
+   "proposal": "",
+   "rep_value": -6.625,
+   "orig_value": -4,
+   "diff": null,
+   "tolerance": 0.4,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-10",
+   "outcome": "not_applicable",
+   "reason": "not derivable: tokenizer not available locally"
+  },
+  {
+   "rep": "4145861d",
+   "orig": "56256844",
+   "proposal": "",
+   "rep_value": 1.75,
+   "orig_value": 0.917,
+   "diff": null,
+   "tolerance": 0.0917,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-10",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 0.5161532150574492,
+   "band": 1.0323064301148983,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    12,
+    12
+   ],
+   "variance": [
+    2.6287878787878785,
+    0.5681818181818182
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "e2850eca",
+   "orig": "5adab039",
+   "proposal": "",
+   "rep_value": -2.5,
+   "orig_value": -3.5,
+   "diff": null,
+   "tolerance": 0.35000000000000003,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.6055300708194983,
+   "band": 1.2110601416389966,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    6,
+    6
+   ],
+   "variance": [
+    1.9,
+    0.3
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "f821e44c",
+   "orig": "e4693281",
+   "proposal": "",
+   "rep_value": 0,
+   "orig_value": -1,
+   "diff": null,
+   "tolerance": 0.1,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "f490ab97",
+   "orig": "34488d37",
+   "proposal": "",
+   "rep_value": -6,
+   "orig_value": -8.25,
+   "diff": null,
+   "tolerance": 0.8250000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 1.3983408536037065,
+   "band": 2.796681707207413,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    6
+   ],
+   "variance": [
+    15.642857142857142,
+    0.0
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "e7e666d2",
+   "orig": "e4693281",
+   "proposal": "",
+   "rep_value": 0,
+   "orig_value": -1,
+   "diff": null,
+   "tolerance": 0.1,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "2294afd9",
+   "orig": "3958e107",
+   "proposal": "",
+   "rep_value": 1,
+   "orig_value": -3,
+   "diff": null,
+   "tolerance": 0.30000000000000004,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.0,
+   "band": 0.0,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    6,
+    6
+   ],
+   "variance": [
+    0.0,
+    0.0
+   ],
+   "tolerance_below_band": false,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "7a093a42",
+   "orig": "f9e33e53",
+   "proposal": "",
+   "rep_value": -0.333,
+   "orig_value": 0.5,
+   "diff": null,
+   "tolerance": 0.05,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 0.4620520138383378,
+   "band": 0.9241040276766757,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    6
+   ],
+   "variance": [
+    0.2857142857142857,
+    1.0666666666666667
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "964b58bd",
+   "orig": "dfeb481d",
+   "proposal": "",
+   "rep_value": -3.833,
+   "orig_value": -4.5,
+   "diff": null,
+   "tolerance": 0.45,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 0.9222283071479916,
+   "band": 1.8444566142959833,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    12,
+    6
+   ],
+   "variance": [
+    0.2727272727272727,
+    4.966666666666666
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "270f3311",
+   "orig": "34488d37",
+   "proposal": "",
+   "rep_value": -4.5,
+   "orig_value": -8.25,
+   "diff": null,
+   "tolerance": 0.8250000000000001,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 1.5933268579266704,
+   "band": 3.186653715853341,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    8,
+    6
+   ],
+   "variance": [
+    15.642857142857142,
+    3.5
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "bff1fd0f",
+   "orig": "56256844",
+   "proposal": "",
+   "rep_value": -0.833,
+   "orig_value": 0.917,
+   "diff": null,
+   "tolerance": 0.0917,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 0.9557772235254933,
+   "band": 1.9115544470509866,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    12,
+    6
+   ],
+   "variance": [
+    2.6287878787878785,
+    4.166666666666666
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "700397ca",
+   "orig": "81d34058",
+   "proposal": "",
+   "rep_value": -1,
+   "orig_value": 0,
+   "diff": null,
+   "tolerance": 0.02,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": true,
+   "se": 0.1889822365046136,
+   "band": 0.3779644730092272,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    8,
+    6
+   ],
+   "variance": [
+    0.2857142857142857,
+    0.0
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "ff93063d",
+   "orig": "755ec9ae",
+   "proposal": "",
+   "rep_value": -5,
+   "orig_value": -8,
+   "diff": null,
+   "tolerance": 0.8,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "a65cc5cc",
+   "orig": "755ec9ae",
+   "proposal": "",
+   "rep_value": -9.333,
+   "orig_value": -8,
+   "diff": null,
+   "tolerance": 0.8,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "9bfd0ca8",
+   "orig": "9d2b8015",
+   "proposal": "",
+   "rep_value": -14.167,
+   "orig_value": -17.625,
+   "diff": null,
+   "tolerance": 1.7625000000000002,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": false,
+   "se": 1.8604461617136139,
+   "band": 3.7208923234272278,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    6
+   ],
+   "variance": [
+    0.26785714285714285,
+    20.566666666666652
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "o200k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "21211e12",
+   "orig": "56256844",
+   "proposal": "",
+   "rep_value": 1.917,
+   "orig_value": 0.917,
+   "diff": null,
+   "tolerance": 0.0917,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 0.491082086989147,
+   "band": 0.982164173978294,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    12,
+    12
+   ],
+   "variance": [
+    2.6287878787878785,
+    0.2651515151515149
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "470f6964",
+   "orig": "81d34058",
+   "proposal": "",
+   "rep_value": -0.125,
+   "orig_value": 0,
+   "diff": null,
+   "tolerance": 0.02,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-09",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.29504842217604116,
+   "band": 0.5900968443520823,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    8,
+    8
+   ],
+   "variance": [
+    0.2857142857142857,
+    0.4107142857142857
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "77013a43",
+   "orig": "8cff56fa",
+   "proposal": "",
+   "rep_value": -2.5,
+   "orig_value": -5.6,
+   "diff": null,
+   "tolerance": 0.5599999999999999,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-08",
+   "outcome": "not_applicable",
+   "reason": "not derivable: tokenizer not available locally"
+  },
+  {
+   "rep": "902c61f3",
+   "orig": "a68b2562",
+   "proposal": "",
+   "rep_value": -2,
+   "orig_value": -2.6666666666667,
+   "diff": null,
+   "tolerance": 0.26666666666667,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-08",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.9888264649460885,
+   "band": 1.977652929892177,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    6
+   ],
+   "variance": [
+    1.333333333333334,
+    3.2
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "78f80d60",
+   "orig": "8cff56fa",
+   "proposal": "",
+   "rep_value": -1,
+   "orig_value": -5.6,
+   "diff": null,
+   "tolerance": 0.5599999999999999,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-08",
+   "outcome": "not_applicable",
+   "reason": "not derivable: tokenizer not available locally"
+  },
+  {
+   "rep": "476ec11e",
+   "orig": "af673f02",
+   "proposal": "",
+   "rep_value": -18.167,
+   "orig_value": -22.33,
+   "diff": null,
+   "tolerance": 2.233,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-07",
+   "outcome": "not_applicable",
+   "reason": "not derivable: test_set is not a list of pairs"
+  },
+  {
+   "rep": "ca21d7f2",
+   "orig": "39967700",
+   "proposal": "",
+   "rep_value": -3.333,
+   "orig_value": -2.333,
+   "diff": null,
+   "tolerance": 0.23330000000000004,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-06",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 0.36237153766973934,
+   "band": 0.7247430753394787,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    6,
+    12
+   ],
+   "variance": [
+    0.6666666666666672,
+    0.24242424242424157
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "13f54b1c",
+   "orig": "e3ca5cfe",
+   "proposal": "",
+   "rep_value": -3.5,
+   "orig_value": -4.4,
+   "diff": null,
+   "tolerance": 0.44000000000000006,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-06",
+   "outcome": "not_applicable",
+   "reason": "not derivable: tokenizer not available locally"
+  },
+  {
+   "rep": "395fbdec",
+   "orig": "8cff56fa",
+   "proposal": "",
+   "rep_value": -3.667,
+   "orig_value": -5.6,
+   "diff": null,
+   "tolerance": 0.5599999999999999,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-06",
+   "outcome": "not_applicable",
+   "reason": "not derivable: tokenizer not available locally"
+  },
+  {
+   "rep": "d43bac7c",
+   "orig": "39967700",
+   "proposal": "",
+   "rep_value": -3.667,
+   "orig_value": -2.333,
+   "diff": null,
+   "tolerance": 0.23330000000000004,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-06",
+   "outcome": "disagreement_stands",
+   "reason": null,
+   "exact": false,
+   "se": 0.5374838498865699,
+   "band": 1.0749676997731399,
+   "within_aggregate": false,
+   "strata": null,
+   "n": [
+    6,
+    6
+   ],
+   "variance": [
+    0.6666666666666672,
+    1.0666666666666658
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  },
+  {
+   "rep": "4e4c1473",
+   "orig": "38e422f9",
+   "proposal": "",
+   "rep_value": -1.5,
+   "orig_value": -2.6666666666667,
+   "diff": null,
+   "tolerance": 0.26666666666667,
+   "tolerance_from_receipt": false,
+   "stratified": false,
+   "at": "2026-08-05",
+   "outcome": "unconfirmable",
+   "reason": null,
+   "exact": true,
+   "se": 0.7031674369909664,
+   "band": 1.4063348739819328,
+   "within_aggregate": true,
+   "strata": null,
+   "n": [
+    3,
+    6
+   ],
+   "variance": [
+    1.333333333333334,
+    0.3
+   ],
+   "tolerance_below_band": true,
+   "headline": [
+    "cl100k_base",
+    "cl100k_base"
+   ]
+  }
+ ],
+ "per_original": {
+  "5153b958": {
+   "eligible": 2,
+   "unconfirmable": 2,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "64045bdf": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "f7bca7aa": {
+   "eligible": 2,
+   "unconfirmable": 2,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "cc063657": {
+   "eligible": 2,
+   "unconfirmable": 2,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "f97fb461": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "3c5350ea": {
+   "eligible": 2,
+   "unconfirmable": 2,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "13706318": {
+   "eligible": 2,
+   "unconfirmable": 1,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "616bae70": {
+   "eligible": 2,
+   "unconfirmable": 1,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "7e486c41": {
+   "eligible": 4,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 4,
+   "agreements": 0,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "b9572064": {
+   "eligible": 2,
+   "unconfirmable": 2,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "e2ff808e": {
+   "eligible": 4,
+   "unconfirmable": 2,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "0f029f87": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "3856933a": {
+   "eligible": 2,
+   "unconfirmable": 1,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "0079e4b4": {
+   "eligible": 3,
+   "unconfirmable": 1,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "ac9ce308": {
+   "eligible": 4,
+   "unconfirmable": 3,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "confirmed_contested",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "e5274f09": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "ab628282": {
+   "eligible": 3,
+   "unconfirmable": 2,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "d241bbec": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "b69c504b": {
+   "eligible": 3,
+   "unconfirmable": 1,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "7ddf8b71": {
+   "eligible": 3,
+   "unconfirmable": 3,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "6a5e62a8": {
+   "eligible": 2,
+   "unconfirmable": 1,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "903b67a6": {
+   "eligible": 3,
+   "unconfirmable": 3,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "b68f560f": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "256a9288": {
+   "eligible": 2,
+   "unconfirmable": 2,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "69debfe9": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "29e5627d": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "35874bf6": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "d9bc25ff": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "05054718": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "3e6af78e": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "4c12baf4": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "f504b3fc": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "dea6509b": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "12f28a15": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "b1ac5573": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 3,
+   "disagreements": 2,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "4ef47674": {
+   "eligible": 2,
+   "unconfirmable": 2,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "287f3c77": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "fc4685f2": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "6660caff": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "f4ad52b1": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "dcc44e99": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "a50365b7": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "055e4849": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "c5a59293": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "c1c90c9d": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "173bb003": {
+   "eligible": 2,
+   "unconfirmable": 2,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "c60e889a": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "fee0905d": {
+   "eligible": 4,
+   "unconfirmable": 3,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "confirmed_contested",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "6a9d6e20": {
+   "eligible": 3,
+   "unconfirmable": 1,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "0508f019": {
+   "eligible": 2,
+   "unconfirmable": 1,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "368021d8": {
+   "eligible": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "414c2729": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "9b7692e1": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 2,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "e9534d4a": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "d9045f24": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "15d5d987": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "6ed658d5": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "e21f3040": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "0059275d": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "b6e9f938": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "b106754d": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "98d30bcc": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "1d1e035f": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "285d9436": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 2,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "475a21d9": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "b1a623f1": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "83bbf393": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "59f0283e": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "3499c92e": {
+   "eligible": 4,
+   "unconfirmable": 2,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "603211c5": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 2,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "61e8a007": {
+   "eligible": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "48a5bc74": {
+   "eligible": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "989b2d8d": {
+   "eligible": 4,
+   "unconfirmable": 3,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "ccbf51cb": {
+   "eligible": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "7e6f2f3d": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "81d34058": {
+   "eligible": 4,
+   "unconfirmable": 3,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "confirmed_contested",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "2d7590ec": {
+   "eligible": 3,
+   "unconfirmable": 3,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 2,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "confirmed",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "252a118d": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "ead8571c": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 2,
+   "disagreements": 2,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "56256844": {
+   "eligible": 5,
+   "unconfirmable": 2,
+   "standing": 3,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 5,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "dd0b4134": {
+   "eligible": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "agreements": 1,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "2cf05685": {
+   "eligible": 4,
+   "unconfirmable": 4,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "awaiting",
+   "served_state": "disputed",
+   "all_unconfirmable": true
+  },
+  "94b41e8d": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "11691dae": {
+   "eligible": 4,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 4,
+   "agreements": 1,
+   "disagreements": 4,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "c27cc457": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "dc50f8a3": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 2,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "34488d37": {
+   "eligible": 3,
+   "unconfirmable": 2,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "a22d1219": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "e1ce0d5a": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 0,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "b924efb0": {
+   "eligible": 3,
+   "unconfirmable": 1,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "b8df44fa": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "755ec9ae": {
+   "eligible": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "agreements": 1,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "8bea1c31": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 1,
+   "agreements": 2,
+   "disagreements": 2,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "e4693281": {
+   "eligible": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "7d1b19f2": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "agreements": 1,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "5adab039": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "3958e107": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 1,
+   "not_derivable": 0,
+   "agreements": 0,
+   "disagreements": 1,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "f9e33e53": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "dfeb481d": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "9d2b8015": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "8cff56fa": {
+   "eligible": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "agreements": 0,
+   "disagreements": 3,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "a68b2562": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  },
+  "af673f02": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "39967700": {
+   "eligible": 2,
+   "unconfirmable": 0,
+   "standing": 2,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 2,
+   "status_now": "disputed",
+   "status_if_band": "disputed",
+   "served_state": "disputed",
+   "all_unconfirmable": false
+  },
+  "e3ca5cfe": {
+   "eligible": 1,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 1,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed_contested",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": false
+  },
+  "38e422f9": {
+   "eligible": 1,
+   "unconfirmable": 1,
+   "standing": 0,
+   "not_derivable": 0,
+   "agreements": 1,
+   "disagreements": 1,
+   "status_now": "confirmed_contested",
+   "status_if_band": "confirmed",
+   "served_state": "confirmed_contested",
+   "all_unconfirmable": true
+  }
+ },
+ "status_counterfactual": {
+  "disputed->awaiting": 13,
+  "confirmed_contested->confirmed": 13,
+  "disputed->disputed": 55,
+  "disputed->confirmed_contested": 3,
+  "confirmed_contested->confirmed_contested": 21,
+  "disputed->confirmed": 1
+ },
+ "moves": [
+  [
+   "5153b958",
+   0,
+   2,
+   2,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "64045bdf",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "f7bca7aa",
+   0,
+   2,
+   2,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "cc063657",
+   0,
+   2,
+   2,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "f97fb461",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "3c5350ea",
+   0,
+   2,
+   2,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "b9572064",
+   0,
+   2,
+   2,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "ac9ce308",
+   1,
+   4,
+   3,
+   "disputed",
+   "confirmed_contested"
+  ],
+  [
+   "e5274f09",
+   0,
+   1,
+   1,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "d241bbec",
+   0,
+   1,
+   1,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "7ddf8b71",
+   0,
+   3,
+   3,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "903b67a6",
+   0,
+   3,
+   3,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "b68f560f",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "256a9288",
+   0,
+   2,
+   2,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "29e5627d",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "4ef47674",
+   0,
+   2,
+   2,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "a50365b7",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "173bb003",
+   0,
+   2,
+   2,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "fee0905d",
+   1,
+   4,
+   3,
+   "disputed",
+   "confirmed_contested"
+  ],
+  [
+   "b106754d",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "81d34058",
+   1,
+   4,
+   3,
+   "disputed",
+   "confirmed_contested"
+  ],
+  [
+   "2d7590ec",
+   2,
+   3,
+   3,
+   "disputed",
+   "confirmed"
+  ],
+  [
+   "252a118d",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "2cf05685",
+   0,
+   4,
+   4,
+   "disputed",
+   "awaiting"
+  ],
+  [
+   "5adab039",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "f9e33e53",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "dfeb481d",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "9d2b8015",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "a68b2562",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ],
+  [
+   "38e422f9",
+   1,
+   1,
+   1,
+   "confirmed_contested",
+   "confirmed"
+  ]
+ ],
+ "queue_shadow": {
+  "81d34058": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 4,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 4,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "ac9ce308": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 4,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 4,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "989b2d8d": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 4,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 4,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "3499c92e": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 4,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 4,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "7e486c41": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 4,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 4,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "0508f019": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "4ef47674": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "173bb003": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "6a9d6e20": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "e2ff808e": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 4,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 4,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "0079e4b4": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "903b67a6": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 3,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 3,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "3856933a": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "cc063657": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "3c5350ea": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "b9572064": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "616bae70": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "13706318": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  },
+  "5153b958": {
+   "kind": "ainglish.sampling-band.v1",
+   "rule": "unconfirmable-by-tolerance-v1",
+   "z": 2,
+   "advisory_only": true,
+   "eligible_disagreements": 2,
+   "unconfirmable": 0,
+   "standing": 0,
+   "not_derivable": 2,
+   "all_unconfirmable": false,
+   "note": "Shadow reading from server recounts (or the backfilled dispersion shadow); stored labels and counters are untouched. all_unconfirmable means every eligible disagreement on this original lies inside the sampling band: a same-design rerun of similar dispersion is likely to land there too. It is a reading of the existing samples, not an impossibility: the band never touches the point-rule agreement set, so a fresh replication can still file a point agreement."
+  }
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "facts_at": "2026-11-05T13:57:10Z",
+ "read_at": "2026-11-05T13:38:21Z",
+ "z": 2.0,
+ "population": {
+  "measurements": 1559,
+  "token_rows": 1021,
+  "standing_token_disagreements": 210,
+  "originals": 106,
+  "rows_with_server_dispersion": 8,
+  "band_assessed_rows_on_register": 1,
+  "unconfirmable_rows_on_register": 1
+ },
+ "outcomes": {
+  "unconfirmable": 75,
+  "disagreement_stands": 48,
+  "not_applicable": 87
+ },
+ "unreachable": {
+  "fewer than 2 pairs on a headline encoding": 19,
+  "filed value not reproduced from the manifest (the filed-vs-derived class)": 43,
+  "not derivable: non-string arm": 2,
+  "inline manifest unavailable on one row": 1,
+  "not derivable: test_set is not a list of pairs": 14,
+  "not derivable: tokenizer not available locally": 8
+ },
+ "derivable": {
+  "n": 123,
+  "exact": 96,
+  "rounded": 27,
+  "stratified": 38,
+  "tolerance_below_band": 111
+ },
+ "band_zero_rows": {
+  "n": 3,
+  "outcomes": {
+   "disagreement_stands": 3
+  },
+  "note": "both samples had identical per-pair deltas on the headline encoding, so the band is zero and any difference stands"
+ },
+ "tolerance_over_band": {
+  "n": 120,
+  "q1": 0.093,
+  "median": 0.202,
+  "q3": 0.327,
+  "max": 6.25,
+  "below_one": 111
+ },
+ "standing_diff_over_band": {
+  "n": 45,
+  "median": 1.67,
+  "min": 0.17,
+  "max": 13.92
+ },
+ "unconfirmable_diff_over_band": {
+  "n": 75,
+  "median": 0.39,
+  "max": 0.99
+ },
+ "unconfirmable_by_stratification": {
+  "stratified": 22,
+  "of_stratified": 38,
+  "simple": 53,
+  "of_simple": 85
+ },
+ "originals": {
+  "n": 106,
+  "all_unconfirmable": 27,
+  "any_unconfirmable": 45,
+  "fully_derivable": 63,
+  "none_derivable": 42
+ },
+ "counterfactual": {
+  "disputed->awaiting": 13,
+  "confirmed_contested->confirmed": 13,
+  "disputed->disputed": 55,
+  "disputed->confirmed_contested": 3,
+  "confirmed_contested->confirmed_contested": 21,
+  "disputed->confirmed": 1
+ },
+ "counterfactual_moves": 30,
+ "register_shadow": {
+  "queue_token_originals": 19,
+  "register_derivable_rows": 0,
+  "register_unconfirmable": 0,
+  "mine_derivable_on_those": 49,
+  "mine_unconfirmable_on_those": 34
+ },
+ "single_pair_rows": {
+  "n": 19,
+  "one_pair_on_at_least_one_side": 19,
+  "held_by_resolution_hold": 0,
+  "gaps": [
+   5.25,
+   11.25,
+   12.0,
+   20.25,
+   31.812,
+   34.5,
+   49.333,
+   67.0,
+   72.0,
+   74.188,
+   76.5,
+   78.0,
+   78.5,
+   84.0,
+   90.812,
+   92.5,
+   95.5,
+   98.208,
+   366.5
+  ]
+ },
+ "calibration": "the port reproduces the served sampling-band block on 42d2addb vs 130bcdcf exactly: variances 5.85 and 4.8667, standard error 0.8184, band 1.6368",
+ "tiktoken": "0.14.0"
+}
