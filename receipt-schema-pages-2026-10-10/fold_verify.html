@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frame Fold Verifier</title>
+<meta name="description" content="Reproduces an Artifact Council page's content digest from its text, in the browser, with no network and nothing installed.">
+<style>
+  :root {
+    --bg: #f3f5f4;
+    --surface: #ffffff;
+    --ink: #14201c;
+    --muted: #5c6b66;
+    --rule: #d3dbd7;
+    --accent: #0f766e;
+    --accent-ink: #ffffff;
+    --good-bg: #e2f3ea;
+    --good-ink: #14532d;
+    --bad-bg: #fde8e6;
+    --bad-ink: #7f1d1d;
+    --warn-bg: #fdf3dc;
+    --warn-ink: #713f12;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1513; --surface: #161e1b; --ink: #e4ebe8; --muted: #97a7a1; --rule: #2a3531;
+      --accent: #34d3c0; --accent-ink: #06201c;
+      --good-bg: #12301f; --good-ink: #9fe3b8; --bad-bg: #3b1414; --bad-ink: #fca5a5; --warn-bg: #3a2a0b; --warn-ink: #fcd77a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1513; --surface: #161e1b; --ink: #e4ebe8; --muted: #97a7a1; --rule: #2a3531;
+    --accent: #34d3c0; --accent-ink: #06201c;
+    --good-bg: #12301f; --good-ink: #9fe3b8; --bad-bg: #3b1414; --bad-ink: #fca5a5; --warn-bg: #3a2a0b; --warn-ink: #fcd77a;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.5; }
+  main { max-width: 820px; margin: 0 auto; padding: 24px 16px 64px; display: flex; flex-direction: column; gap: 24px; }
+  h1 { font-size: 1.6rem; line-height: 1.2; margin: 0 0 6px; text-wrap: balance; letter-spacing: -0.01em; }
+  h2 { font-size: 1.05rem; margin: 0 0 10px; }
+  p { margin: 0 0 10px; max-width: 68ch; }
+  .lede { color: var(--muted); max-width: 68ch; }
+  .strip { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; padding: 10px 14px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface); font-size: 0.95rem; }
+  .strip .label { text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.72rem; color: var(--muted); }
+  section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 18px 16px; }
+  .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+  .field:last-child { margin-bottom: 0; }
+  label { font-weight: 600; font-size: 0.95rem; }
+  .hint { color: var(--muted); font-size: 0.88rem; }
+  textarea, input[type="text"], select { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; padding: 8px 10px; }
+  textarea { min-height: 140px; font-family: var(--mono); font-size: 0.86rem; resize: vertical; }
+  input.hex { font-family: var(--mono); font-size: 0.9rem; }
+  input[type="file"] { font: inherit; color: var(--ink); max-width: 100%; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  button { font: inherit; font-weight: 600; padding: 8px 14px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+  button.quiet { background: transparent; color: var(--accent); }
+  button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.04em; }
+  .pill.good { background: var(--good-bg); color: var(--good-ink); }
+  .pill.bad { background: var(--bad-bg); color: var(--bad-ink); }
+  .pill.warn { background: var(--warn-bg); color: var(--warn-ink); }
+  .pill.muted { background: var(--bg); color: var(--muted); border: 1px solid var(--rule); }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  td.mono, span.mono { font-family: var(--mono); font-size: 0.84rem; word-break: break-all; }
+  code { font-family: var(--mono); font-size: 0.84rem; overflow-wrap: anywhere; }
+  .scroll { overflow-x: auto; }
+  .note { padding: 10px 12px; border-radius: 6px; background: var(--warn-bg); color: var(--warn-ink); font-size: 0.92rem; }
+  .note.good { background: var(--good-bg); color: var(--good-ink); }
+  .note.bad { background: var(--bad-bg); color: var(--bad-ink); }
+  details { border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+  .grid2 { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  @media (min-width: 640px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+  footer { color: var(--muted); font-size: 0.88rem; }
+  footer p { max-width: 72ch; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Frame Fold Verifier</h1>
+    <p class="lede">Reproduces the content digest of an Artifact Council page from its text: the 12-byte raw zstd frame around the UTF-8 bytes, cut into 3,000-byte chunks, folded with SHA-256 from the last chunk to the first. Everything runs in this page. It makes no network request, loads no script or font, and nothing you paste leaves your browser.</p>
+    <div class="strip" id="selftest" aria-live="polite"><span class="label">Self-test</span><span id="selftest-text">Running the built-in vectors.</span></div>
+  </header>
+
+  <section class="card" aria-labelledby="h-text">
+    <h2 id="h-text">1. The text</h2>
+    <div class="field">
+      <label for="file">Load the page text as a file. This is the byte-exact route.</label>
+      <input type="file" id="file">
+      <span class="hint">The file is read as raw bytes, with no newline translation. A copy with CRLF line ends is a different text and folds to a different root, and the CR count below will say so.</span>
+    </div>
+    <div class="field">
+      <label for="paste">Or paste the text.</label>
+      <textarea id="paste" spellcheck="false" placeholder="Paste the page text here"></textarea>
+      <span class="hint">Pasted text is encoded as UTF-8 here. Browsers normalise line breaks in a text area to LF, so for a file whose bytes you need to match exactly, load the file instead.</span>
+    </div>
+    <div class="row"><span class="pill muted" id="source">No text yet</span></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-root">
+    <h2 id="h-root">2. The expected root</h2>
+    <div class="grid2">
+      <div class="field">
+        <label for="filed">A filed root from META.json</label>
+        <select id="filed">
+          <option value="">Choose a filed page, or paste a root below</option>
+        </select>
+        <span class="hint">These are the five frozen texts in this directory plus the served page 2 text behind proposal 12. Load the matching file and the verdict should read MATCH.</span>
+      </div>
+      <div class="field">
+        <label for="expected">Expected root, 64 hex characters</label>
+        <input type="text" id="expected" class="hex" autocomplete="off" spellcheck="false" placeholder="the gateway's payload.content for the page">
+        <span class="hint">A prefix can false-match, so only the full 64 characters are accepted. Leave it empty to compute the root without a verdict.</span>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 12px;"><button id="run" type="button">Verify</button><span class="hint">Runs again on every change.</span></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-result">
+    <h2 id="h-result">3. Result</h2>
+    <div id="result"><p class="hint">Load or paste a text to see its frame and roots.</p></div>
+    <details id="steps-details">
+      <summary>Fold steps, last chunk to first</summary>
+      <div class="scroll" id="steps"></div>
+    </details>
+  </section>
+
+  <section class="card" aria-labelledby="h-recipe">
+    <h2 id="h-recipe">Recipe</h2>
+    <p class="hint">The fields below are read from <code>META.json</code> <code>frame_recipe</code> in <code>receipt-schema-pages-2026-10-10</code> and typed here as values, so compare them with the committed file. They are editable so that a changed recipe can be tried on purpose; the self-test runs on the filed values only.</p>
+    <div class="grid2">
+      <div class="field">
+        <label for="magic">Magic and descriptor, 5 bytes hex</label>
+        <input type="text" id="magic" class="hex" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="chunk">Chunk size, bytes</label>
+        <input type="text" id="chunk" class="hex" inputmode="numeric">
+      </div>
+      <div class="field" style="grid-column: 1 / -1;">
+        <label for="seed">Link seed, 32 bytes hex</label>
+        <input type="text" id="seed" class="hex" spellcheck="false">
+      </div>
+    </div>
+    <div class="row" style="margin-top: 6px;">
+      <span class="hint">Header: magic and descriptor, then the text's byte count as a 4-byte little-endian integer, then a 3-byte little-endian block header equal to count times 8 plus 1. Link: sha256 of the chunk followed by the previous link, folded from the last chunk to the first. The forward fold is reported as a counterfactual only; the roots that bind are backward.</span>
+    </div>
+    <div class="row" style="margin-top: 10px;"><button id="reset" type="button" class="quiet">Reset to the filed recipe</button><span class="pill muted" id="recipe-state">Filed recipe</span></div>
+  </section>
+
+  <footer>
+    <p>The same check on the command line: <code>python3 fold_check.py --text FILE --expect ROOT</code> in this directory, which exits 0 on a match. Both tools read the recipe from <code>META.json</code>; this page carries the values typed, the Python tool reads the file.</p>
+    <p>To check that this page is the one committed in the repository, compare <code>sha256sum fold_verify.html</code> with the digest in the commit that added it. The page has one inline script and one inline stylesheet and nothing else.</p>
+  </footer>
+</main>
+<script>
+"use strict";
+const FILED_RECIPE = Object.freeze({
+  header_bytes: 12,
+  chunk_bytes: 3000,
+  link: "sha256(chunk + link)",
+  fold_direction: "last_to_first",
+  magic_descriptor_hex: "28b52ffda0",
+  link_seed_hex: "0000000000000000000000000000000000000000000000000000000000000000",
+  source: "META.json frame_recipe, receipt-schema-pages-2026-10-10"
+});
+
+const FILED_ROOTS = [
+  { key: "page1_v11", label: "page 1 v11, served (page1_v11_served.md)", root: "7b9c8efd196ef9860c008e13f51eb8e7dd30cae54ebf6765a5ce99f16b7ed592" },
+  { key: "page3_v3", label: "page 3 v3 (page3_v3.md)", root: "61e7e96944b022166c451fd61ddccc5066c85108ac5c32fd5142e1881184ba6c" },
+  { key: "page3_v4", label: "page 3 v4 draft (page3_v4_draft.md)", root: "c408477a9b5bc49dbf08a52478a68859b46b28cdd759c85946c07fead56542f0" },
+  { key: "page1_repoint_to_v3", label: "page 1 re-pointed to v3 (page1_repoint_to_v3.md)", root: "0fac6dd35441c335442261d51cbbdd3acde6a46cb557b6d6c5323f53a15fb353" },
+  { key: "page1_repoint_to_v4", label: "page 1 re-pointed to v4 (page1_repoint_to_v4.md)", root: "cdaa9eacdda8a4c31aea9acd0469cf77d5b128e071b48d99d9ef6e1ffd709ee1" },
+  { key: "page2_v2_section9", label: "page 2 v2 with section 9, served text behind proposal 12 (gateway payload.content, read 2026-11-04)", root: "21f98dd8c10f2e400292b8634fe50d0c0d06474e8b43bb65c5e62d6faf7cfc4f" }
+];
+
+// Each vector's roots were produced by fold_check.py on the same bytes (fold_vectors_2026-11-05.json beside this file).
+const SELFTEST = [
+  { name: "empty text", text: "", header_hex: "28b52ffda000000000010000", backward: "91397ee0fd5bb2c2012ff0594a4fa37f9664269bece0e5304fadc393fae4de51", forward: "91397ee0fd5bb2c2012ff0594a4fa37f9664269bece0e5304fadc393fae4de51" },
+  { name: "abc", text: "abc", header_hex: "28b52ffda003000000190000", backward: "b9cd29912504a756cd03496054f153875782ba83721f0ae312f4cf5dd6dd2cfc", forward: "b9cd29912504a756cd03496054f153875782ba83721f0ae312f4cf5dd6dd2cfc" },
+  { name: "2988 bytes, the frame is exactly one chunk", text: "x".repeat(2988), header_hex: "28b52ffda0ac0b0000615d00", backward: "1abedf1a4059f58b423a232225165eaf96905efa126e9b8c911dd705813efe90", forward: "1abedf1a4059f58b423a232225165eaf96905efa126e9b8c911dd705813efe90" },
+  { name: "2989 bytes, a second chunk of one byte, direction matters", text: "y".repeat(2988) + "z", header_hex: "28b52ffda0ad0b0000695d00", backward: "32c1a22513789fcd0fae25e321468671980a057522242b4d80ae3d465b4e6c7c", forward: "a1ab7ddc4325fe4d8b426345bbe7d0a429f20a69b4cc86fe05eeba0974ff9b2e" },
+  { name: "multibyte UTF-8", text: "Ainglish → réponse é\n", header_hex: "28b52ffda019000000c90000", backward: "19652df00bc9b6fffc569023e3814c138e29a4da0e732e21b09e5ab873e85a62", forward: "19652df00bc9b6fffc569023e3814c138e29a4da0e732e21b09e5ab873e85a62" },
+  { name: "CRLF line ends", text: "line one\r\nline two\r\n", header_hex: "28b52ffda014000000a10000", backward: "d584b689a64c63f345d9d3d2ba800d6d15c6a5a0c8aca350afa91b4cb36405f4", forward: "d584b689a64c63f345d9d3d2ba800d6d15c6a5a0c8aca350afa91b4cb36405f4" },
+  { name: "LF line ends, same words", text: "line one\nline two\n", header_hex: "28b52ffda012000000910000", backward: "f82529d5b7548f39f8f7ab7bffe86689d5afbf0c6b3b5667ceb36f08e715325f", forward: "f82529d5b7548f39f8f7ab7bffe86689d5afbf0c6b3b5667ceb36f08e715325f" }
+];
+
+function hexToBytes(h) {
+  const s = String(h || "").trim().toLowerCase();
+  if (!/^[0-9a-f]*$/.test(s) || s.length % 2 !== 0) throw new Error("not an even-length hex string");
+  const u = new Uint8Array(s.length / 2);
+  for (let i = 0; i < u.length; i++) u[i] = parseInt(s.substr(2 * i, 2), 16);
+  return u;
+}
+function bytesToHex(u) {
+  let s = "";
+  for (let i = 0; i < u.length; i++) s += u[i].toString(16).padStart(2, "0");
+  return s;
+}
+function concat(a, b) {
+  const u = new Uint8Array(a.length + b.length);
+  u.set(a, 0); u.set(b, a.length);
+  return u;
+}
+function normaliseRecipe(r) {
+  const magic = hexToBytes(r.magic_descriptor_hex);
+  if (magic.length !== 5) throw new Error("magic and descriptor must be 5 bytes");
+  const seed = hexToBytes(r.link_seed_hex);
+  if (seed.length !== 32) throw new Error("link seed must be 32 bytes");
+  const chunk = Number(r.chunk_bytes);
+  if (!Number.isInteger(chunk) || chunk < 1) throw new Error("chunk size must be a positive integer");
+  return { magic, seed, chunk };
+}
+// frame = magic+descriptor (5), text byte count LE32 (4), (count*8+1) LE24 (3), then the text bytes
+function frameBytes(raw, recipe) {
+  const { magic } = normaliseRecipe(recipe);
+  const n = raw.length;
+  const hdr = new Uint8Array(12);
+  hdr.set(magic, 0);
+  hdr[5] = n % 256; hdr[6] = Math.floor(n / 256) % 256; hdr[7] = Math.floor(n / 65536) % 256; hdr[8] = Math.floor(n / 16777216) % 256;
+  const bh = n * 8 + 1;
+  hdr[9] = bh % 256; hdr[10] = Math.floor(bh / 256) % 256; hdr[11] = Math.floor(bh / 65536) % 256;
+  return concat(hdr, raw);
+}
+function chunkFrame(frame, size) {
+  const out = [];
+  for (let i = 0; i < frame.length; i += size) out.push(frame.subarray(i, Math.min(i + size, frame.length)));
+  return out;
+}
+async function sha256(u8) {
+  const d = await crypto.subtle.digest("SHA-256", u8);
+  return new Uint8Array(d);
+}
+async function fold(chunks, seed, backward) {
+  let link = seed;
+  const order = chunks.map((_, i) => i);
+  if (backward) order.reverse();
+  const steps = [];
+  for (const i of order) {
+    link = await sha256(concat(chunks[i], link));
+    steps.push({ index: i, link: bytesToHex(link) });
+  }
+  return { root: bytesToHex(link), steps };
+}
+async function describe(raw, recipe) {
+  const { seed, chunk } = normaliseRecipe(recipe);
+  const frame = frameBytes(raw, recipe);
+  const chunks = chunkFrame(frame, chunk);
+  const back = await fold(chunks, seed, true);
+  const fwd = await fold(chunks, seed, false);
+  let cr = 0;
+  for (let i = 0; i < raw.length; i++) if (raw[i] === 13) cr++;
+  return {
+    bytes: raw.length,
+    cr_count: cr,
+    sha256_raw: bytesToHex(await sha256(raw)),
+    frame_bytes: frame.length,
+    header_hex: bytesToHex(frame.subarray(0, 12)),
+    chunk_bytes: chunk,
+    chunk_count: chunks.length,
+    chunk_lengths: chunks.map(c => c.length),
+    backward_root: back.root,
+    forward_root: fwd.root,
+    steps: back.steps,
+    block_header_overflow: (raw.length * 8 + 1) >= 16777216
+  };
+}
+function validateRoot(s) {
+  const r = String(s || "").trim().toLowerCase();
+  return /^[0-9a-f]{64}$/.test(r) ? r : null;
+}
+async function verify(raw, expected, recipe) {
+  const d = await describe(raw, recipe);
+  const root = validateRoot(expected);
+  d.expected = root;
+  d.verdict = root === null ? "no_root" : (d.backward_root === root ? "match" : "mismatch");
+  d.wrong_direction = root !== null && root === d.forward_root && root !== d.backward_root;
+  return d;
+}
+async function runSelfTest(recipe) {
+  const rows = [];
+  for (const v of SELFTEST) {
+    const raw = new TextEncoder().encode(v.text);
+    const d = await describe(raw, recipe);
+    const pass = d.header_hex === v.header_hex && d.backward_root === v.backward && d.forward_root === v.forward;
+    rows.push({ name: v.name, pass, got: d });
+  }
+  return { passed: rows.filter(r => r.pass).length, total: rows.length, rows };
+}
+const FoldCore = { FILED_RECIPE, FILED_ROOTS, SELFTEST, hexToBytes, bytesToHex, frameBytes, chunkFrame, fold, describe, verify, validateRoot, runSelfTest };
+if (typeof module !== "undefined" && module.exports) module.exports = FoldCore;
+
+if (typeof document !== "undefined") {
+  const $ = id => document.getElementById(id);
+  const el = (tag, attrs, children) => {
+    const e = document.createElement(tag);
+    if (attrs) for (const k of Object.keys(attrs)) { if (k === "class") e.className = attrs[k]; else e.setAttribute(k, attrs[k]); }
+    for (const c of (children || [])) e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+    return e;
+  };
+  const state = { raw: null, source: "none", sourceLabel: "No text yet", timer: null };
+  function recipeFromForm() {
+    return { magic_descriptor_hex: $("magic").value, chunk_bytes: Number($("chunk").value), link_seed_hex: $("seed").value, fold_direction: "last_to_first" };
+  }
+  function recipeIsFiled(r) {
+    return String(r.magic_descriptor_hex).trim().toLowerCase() === FILED_RECIPE.magic_descriptor_hex && Number(r.chunk_bytes) === FILED_RECIPE.chunk_bytes && String(r.link_seed_hex).trim().toLowerCase() === FILED_RECIPE.link_seed_hex;
+  }
+  function setRecipeForm(r) {
+    $("magic").value = r.magic_descriptor_hex; $("chunk").value = String(r.chunk_bytes); $("seed").value = r.link_seed_hex;
+  }
+  function kv(label, value, mono) {
+    return el("tr", null, [el("th", { scope: "row" }, [label]), el("td", mono ? { class: "mono" } : null, [String(value)])]);
+  }
+  function copyButton(text) {
+    const b = el("button", { type: "button", class: "quiet", style: "padding: 2px 8px; font-size: 0.8rem; margin-left: 8px;" }, ["copy"]);
+    b.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(text); b.textContent = "copied"; } catch (e) { b.textContent = "select and copy"; }
+    });
+    return b;
+  }
+  function render(d, err) {
+    const box = $("result"); box.textContent = "";
+    const steps = $("steps"); steps.textContent = "";
+    if (err) { box.appendChild(el("div", { class: "note bad" }, ["Could not fold: " + err.message])); return; }
+    const head = el("div", { class: "row", style: "margin-bottom: 10px;" });
+    if (d.verdict === "match") head.appendChild(el("span", { class: "pill good" }, ["MATCH"]));
+    else if (d.verdict === "mismatch") head.appendChild(el("span", { class: "pill bad" }, ["MISMATCH"]));
+    else head.appendChild(el("span", { class: "pill muted" }, ["NO EXPECTED ROOT"]));
+    head.appendChild(el("span", { class: "hint" }, [d.verdict === "match" ? "The backward fold of the frame of these bytes equals the expected root." : d.verdict === "mismatch" ? "The backward fold of these bytes does not equal the expected root." : "Computed only. Paste a root for a verdict."]));
+    box.appendChild(head);
+    if (d.wrong_direction) box.appendChild(el("div", { class: "note bad", style: "margin-bottom: 10px;" }, ["The expected root equals the forward fold. That is the wrong direction: the roots that bind are folded from the last chunk to the first."]));
+    if (d.cr_count > 0) box.appendChild(el("div", { class: "note", style: "margin-bottom: 10px;" }, ["This text contains " + d.cr_count + " carriage return bytes. A CRLF copy of an LF page folds to a different root; if the page was filed with LF line ends, load the original file."]));
+    if (d.block_header_overflow) box.appendChild(el("div", { class: "note", style: "margin-bottom: 10px;" }, ["The text is large enough that the 3-byte block header wraps. The Python tool wraps the same way, so the roots still agree, but no filed page is this size."]));
+    if (!recipeIsFiled(recipeFromForm())) box.appendChild(el("div", { class: "note", style: "margin-bottom: 10px;" }, ["The recipe has been edited. These roots are for the edited recipe, not the filed one."]));
+    const t = el("table");
+    const tb = el("tbody");
+    tb.appendChild(kv("source", state.sourceLabel, false));
+    tb.appendChild(kv("text bytes", d.bytes, false));
+    tb.appendChild(kv("CR bytes", d.cr_count, false));
+    const rawRow = kv("sha256 of the raw bytes", d.sha256_raw, true); rawRow.lastChild.appendChild(copyButton(d.sha256_raw)); tb.appendChild(rawRow);
+    tb.appendChild(kv("frame bytes", d.frame_bytes, false));
+    tb.appendChild(kv("header, 12 bytes hex", d.header_hex, true));
+    tb.appendChild(kv("chunks", d.chunk_count + " of up to " + d.chunk_bytes + " bytes, lengths " + d.chunk_lengths.join(", "), false));
+    const backRow = kv("backward root, the one that binds", d.backward_root, true); backRow.lastChild.appendChild(copyButton(d.backward_root)); tb.appendChild(backRow);
+    tb.appendChild(kv("expected root", d.expected === null ? "none given" : d.expected, d.expected !== null));
+    tb.appendChild(kv("forward root, counterfactual, not a root of any filed page", d.forward_root, true));
+    t.appendChild(tb); box.appendChild(el("div", { class: "scroll" }, [t]));
+    const st = el("table");
+    st.appendChild(el("thead", null, [el("tr", null, [el("th", null, ["step"]), el("th", null, ["chunk"]), el("th", null, ["frame bytes"]), el("th", null, ["link after this step"])])]));
+    const sb = el("tbody");
+    d.steps.forEach((s, k) => {
+      const start = s.index * d.chunk_bytes; const end = start + d.chunk_lengths[s.index];
+      sb.appendChild(el("tr", null, [el("td", null, [String(k + 1)]), el("td", null, [String(s.index + 1) + " of " + d.chunk_count]), el("td", null, [start + " to " + (end - 1)]), el("td", { class: "mono" }, [s.link])]));
+    });
+    st.appendChild(sb); steps.appendChild(st);
+  }
+  async function run() {
+    if (state.raw === null) { $("result").textContent = ""; $("result").appendChild(el("p", { class: "hint" }, ["Load or paste a text to see its frame and roots."])); $("steps").textContent = ""; return; }
+    try {
+      const d = await verify(state.raw, $("expected").value, recipeFromForm());
+      render(d, null);
+    } catch (e) { render(null, e); }
+    $("recipe-state").textContent = recipeIsFiled(recipeFromForm()) ? "Filed recipe" : "Edited recipe";
+  }
+  function schedule() { clearTimeout(state.timer); state.timer = setTimeout(run, 120); }
+  async function init() {
+    for (const r of FILED_ROOTS) $("filed").appendChild(el("option", { value: r.root }, [r.label]));
+    setRecipeForm(FILED_RECIPE);
+    if (!(globalThis.crypto && crypto.subtle)) {
+      $("selftest-text").textContent = "This page needs a secure context for SHA-256: open it from a file, from https, or from localhost.";
+      $("selftest").classList.add("note", "bad");
+      return;
+    }
+    try {
+      const s = await runSelfTest(FILED_RECIPE);
+      $("selftest-text").textContent = s.passed === s.total ? "All " + s.total + " built-in vectors reproduce the Python tool's header and roots, including the two-chunk vector that separates the directions and the CRLF against LF pair." : "FAILED: " + (s.total - s.passed) + " of " + s.total + " built-in vectors do not reproduce the Python tool's roots. Do not trust this copy of the page.";
+      if (s.passed !== s.total) $("selftest").classList.add("note", "bad");
+    } catch (e) {
+      $("selftest-text").textContent = "Self-test could not run: " + e.message;
+      $("selftest").classList.add("note", "bad");
+    }
+    $("file").addEventListener("change", async () => {
+      const f = $("file").files && $("file").files[0];
+      if (!f) return;
+      const buf = await f.arrayBuffer();
+      state.raw = new Uint8Array(buf); state.source = "file"; state.sourceLabel = "file " + f.name + ", " + state.raw.length + " bytes as stored";
+      $("source").textContent = state.sourceLabel; schedule();
+    });
+    $("paste").addEventListener("input", () => {
+      const v = $("paste").value;
+      if (v.length === 0 && state.source === "paste") { state.raw = null; state.source = "none"; state.sourceLabel = "No text yet"; $("source").textContent = state.sourceLabel; schedule(); return; }
+      if (v.length === 0) return;
+      state.raw = new TextEncoder().encode(v); state.source = "paste"; state.sourceLabel = "pasted text, " + state.raw.length + " bytes as UTF-8, line breaks as the browser left them";
+      $("source").textContent = state.sourceLabel; schedule();
+    });
+    $("filed").addEventListener("change", () => { if ($("filed").value) { $("expected").value = $("filed").value; schedule(); } });
+    $("expected").addEventListener("input", () => { if ($("filed").value && $("filed").value !== $("expected").value.trim().toLowerCase()) $("filed").value = ""; schedule(); });
+    for (const id of ["magic", "chunk", "seed"]) $(id).addEventListener("input", schedule);
+    $("reset").addEventListener("click", () => { setRecipeForm(FILED_RECIPE); schedule(); });
+    $("run").addEventListener("click", run);
+  }
+  document.addEventListener("DOMContentLoaded", init);
+}
+</script>
+</body>
+</html>
