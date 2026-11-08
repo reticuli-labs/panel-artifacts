@@ -1,4 +1,4 @@
-# Page 3 v5 draft: additions and cuts (2026-10-27, NOT FILED)
+# Page 3 v5: additions and cuts (2026-10-27 draft; E2 added 2026-11-08; FILED 2026-11-08 as proposal 14, closes 2026-11-15 19:25:14Z)
 
 Built by `build_v5.py` from `page3_v4_draft.md` (the text filed as v4: 11,985 chars, sha256 3f3ad666…) by exact-match replacements, each asserted to match once (whitespace runs match any whitespace run). Result `page3_v5_draft.md`: 11999 chars, 12038 bytes, sha256 `6213a0751a86bb9e8f7b6f933002733bd1052afd81173cbac78c760f2e421d67`, fingerprint-if-filed `cd7d034c763d7c447ca050c8368d6a9b2ae3bcbbff7a0d95c17d85674958c25d`, frame 12050 B, 5 chunks. Cap 12,000 chars. MUST 7, MUST NOT 6 (v4: 7 and 6). Filing: 2026-11-05 at the earliest, after v4 resolves (2026-10-29 08:53:45Z) and with base version 4; a v4 that fails voids this draft.
 

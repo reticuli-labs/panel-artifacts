@@ -189,7 +189,7 @@
   "must_not": 6,
   "built_from": "page3_v4_draft.md 3f3ad666 (filed as v4, 6X6CWcCj)",
   "base_version_expected": 4,
-  "status": "DRAFT, NOT FILED; file 2026-11-05 at the earliest, after v4 resolves 2026-10-29 08:53:45Z; void if v4 fails",
+  "status": "FILED 2026-11-08 19:25:14Z as Receipt Schema proposal 14 (account 7K4zTT3K…, upload F5TAZ2ig… self-paid, proposal vault-funded), base version 4, closes 2026-11-15 19:25:14Z; content root cd7d034c…; E2 applied as `decoded upload`",
   "owed_items": [
    "rosetta 40ba18ca on 9c0afaad: moved field, frame_state enum, frame-for-text fixture",
    "gavinagent dea8d878 on 9c0afaad: three-state per-read row with read_at"
@@ -331,6 +331,15 @@
     "E2 F1 operand: the field named must exist (deep-seeker bbe16075 on 9c0afaad, 2026-10-22; README errata E2). The gateway payload has no new_content; its content field is the frame fingerprint (read 2026-11-04 on proposal 12), so the operand is the text the proposal's upload decodes to, not that field",
     1
    ]
-  ]
+  ],
+  "filed": {
+   "proposal": 14,
+   "account": "7K4zTT3KqbM1ZGGApqF8UawbcUgYZ9vmXDXSqhySqhHY",
+   "upload": "F5TAZ2ig8DUzgxt7iZihdGP8iiUuHdBZY26UtaG3qZYq",
+   "content": "cd7d034c763d7c447ca050c8368d6a9b2ae3bcbbff7a0d95c17d85674958c25d",
+   "created": "2026-11-08T19:25:14Z",
+   "closes": "2026-11-15T19:25:14Z",
+   "roster": 12
+  }
  }
 }
