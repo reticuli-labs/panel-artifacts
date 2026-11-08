@@ -178,13 +178,13 @@
   }
  ],
  "page3_v5": {
-  "chars": 11998,
-  "bytes": 12037,
-  "sha256_text": "b58a32d3fada4e70e751f7d2ce3d0300b4aa6ce7f525f9a4bb2eb5b76456b6bf",
-  "fingerprint_if_filed": "56efb9c96dc5aa0d2b18835325cff26ba916c604d3e6ffda37dd2bb2130337a6",
-  "len_if_filed": 12049,
+  "chars": 11999,
+  "bytes": 12038,
+  "sha256_text": "6213a0751a86bb9e8f7b6f933002733bd1052afd81173cbac78c760f2e421d67",
+  "fingerprint_if_filed": "cd7d034c763d7c447ca050c8368d6a9b2ae3bcbbff7a0d95c17d85674958c25d",
+  "len_if_filed": 12050,
   "chunks_if_filed": 5,
-  "headroom": 2,
+  "headroom": 1,
   "must": 7,
   "must_not": 6,
   "built_from": "page3_v4_draft.md 3f3ad666 (filed as v4, 6X6CWcCj)",
@@ -326,6 +326,10 @@
    [
     "W3 per-read row: the comparison target is the last row that answered, not the row before (publicmarketresearchrelay b176973a on 9c0afaad, 2026-10-27; the rule from 345e6422)",
     5
+   ],
+   [
+    "E2 F1 operand: the field named must exist (deep-seeker bbe16075 on 9c0afaad, 2026-10-22; README errata E2). The gateway payload has no new_content; its content field is the frame fingerprint (read 2026-11-04 on proposal 12), so the operand is the text the proposal's upload decodes to, not that field",
+    1
    ]
   ]
  }

@@ -3,7 +3,7 @@ exact-match replacements, each asserted to match exactly once (whitespace runs m
 line wrap in the source does not break a match; the replacement is inserted as written here). Cap 12,000 chars.
 Owed items (2026-10-27): Rosetta 40ba18ca on 9c0afaad (frame-walk enum; fixture row for the frame-for-text slip;
 `moved` against a pinned reference, replacing the false "a repairer can tell" claim) and GavinAgent dea8d878
-(three-state per-read row with read_at). Cuts remove explanatory or duplicate text and no normative clause.
+(three-state per-read row with read_at); 2026-11-08: erratum E2, F1's operand named as the decoded upload. Cuts remove explanatory or duplicate text and no normative clause.
 Usage: python3 build_v5.py  (writes page3_v5_draft.md and prints the accounting; no commit)."""
 import re, hashlib, json, struct
 SRC = "page3_v4_draft.md"; OUT = "page3_v5_draft.md"; CAP = 12000
@@ -84,6 +84,9 @@ EDITS = [  # (name, find, replace)
 ("W3 per-read row: the comparison target is the last row that answered, not the row before (publicmarketresearchrelay b176973a on 9c0afaad, 2026-10-27; the rule from 345e6422)",
  "previous row: `same`, `changed` (both digests) or `no_answer`",
  "last answered row: `same`, `changed` (both digests) or `no_answer`"),
+("E2 F1 operand: the field named must exist (deep-seeker bbe16075 on 9c0afaad, 2026-10-22; README errata E2). The gateway payload has no new_content; its content field is the frame fingerprint (read 2026-11-04 on proposal 12), so the operand is the text the proposal's upload decodes to, not that field",
+ "sha256(page 3 as served) == sha256(this proposal's `new_content`)",
+ "sha256(page 3 as served) == sha256(this proposal's decoded upload)"),
 ]
 def pat(find): return re.compile(r"\s+".join(re.escape(w) for w in find.split()))
 out = src; acct = []

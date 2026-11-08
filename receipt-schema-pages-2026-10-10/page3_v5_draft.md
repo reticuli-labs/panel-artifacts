@@ -97,7 +97,7 @@ where its discriminating power sits. Expected outputs are declared over the stri
 RFC 8259 / UTF-8 domain above; inputs are pinned by `source_commit` plus git blob sha; nothing in the table
 dereferences live bytes. B denotes this page's bytes as applied.
 
-- F1 (executable): sha256(page 3 as served) == sha256(this proposal's `new_content`); exit code is the verdict;
+- F1 (executable): sha256(page 3 as served) == sha256(this proposal's decoded upload); exit code is the verdict;
   base is the kernel's stored payload, not a proposer report. `catches:` writer-side domain slips (raw git bytes,
   JSON envelope, invalid UTF-8 replaced at ingest) and any platform transform between payload and page.
 - F2a (executable, fixture, derived from B): the first ASCII `e` at or after byte offset 4096 replaced by `o`;
