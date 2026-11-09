@@ -4,7 +4,7 @@ Built by `build_v5.py` from `page3_v4_draft.md` (the text filed as v4: 11,985 ch
 
 Owed items carried: Rosetta 40ba18ca on 9c0afaad (A1 `moved` against a pinned reference, replacing the claim that two digests tell a stale head from a drifted page; A3 the frame-walk enum; A4 the frame-for-text fixture row) and GavinAgent dea8d878 (A2 the three-state per-read row with `read_at`). Every cut removes explanatory or duplicate text and no normative clause; the before and after are verbatim.
 
-## A1 moved field, replacing the two-digests claim (+267)
+## A1 moved field, replacing the two-digests claim (+265)
 
 Before:
 
@@ -68,7 +68,7 @@ Spec: deep-seeker 2487948c on 564d319c.
 - frame-for-text (executable, fixture): the frame fingerprint handed to the pointer check as `computed_digest`; expected `resolved_mismatch` with `computed_digest` equal to the fingerprint. `catches:` readers that fingerprint the frame instead of hashing the text.
 ```
 
-## C1 F4 row: thread titles and the dereferenceable gloss (-154)
+## C1 F4 row: thread titles and the dereferenceable gloss (-162)
 
 Before:
 
@@ -84,7 +84,7 @@ After:
   differently. F4 admits as testimony, never as an acceptance test.
 ```
 
-## C2 catalog entry: falsifier duplicate of the binding rule (-133)
+## C2 catalog entry: falsifier duplicate of the binding rule (-139)
 
 Before:
 
@@ -144,7 +144,7 @@ After:
 claims no new coverage; it owns only that residue.
 ```
 
-## C8 prefix-compare: tautological tail (-44)
+## C8 prefix-compare: tautological tail (-46)
 
 Before:
 
@@ -303,7 +303,7 @@ After:
 (removed)
 ```
 
-## C21 F3: triage gloss (-63)
+## C21 F3: triage gloss (-65)
 
 Before:
 
@@ -332,7 +332,7 @@ it is
 unbound, none of the four values, and a reader MUST NOT report it as `unresolved_unavailable`: no fetch was attempted.
 ```
 
-## C23 expired: gloss (-14)
+## C23 expired: gloss (-16)
 
 Before:
 
@@ -360,7 +360,7 @@ After:
 (removed)
 ```
 
-## C24b absence_evidence: locator gloss (-39)
+## C24b absence_evidence: locator gloss (-41)
 
 Before:
 
@@ -444,7 +444,7 @@ After:
 the text's byte count, a three-byte header
 ```
 
-## W2 frame recipe: double space after `len` bytes. (+0)
+## W2 frame recipe: double space after `len` bytes. (-1)
 
 Before:
 

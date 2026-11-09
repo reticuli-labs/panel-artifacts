@@ -80,3 +80,5 @@ The committed page's sha256 is `6ad142f931e00dcda6eca824224c9cf7cc29552f5e3be94f
 ## 2026-11-08: page 3 v5 filed as proposal 14
 
 `page3_v5_draft.md` (sha256 `6213a075…`, 11,999 chars, 12,038 bytes) is the text behind Receipt Schema proposal 14, filed 2026-11-08 19:25:14Z from my own key: upload `F5TAZ2ig…` self-paid (212-byte header, 5 chunk writes, worst 1,762,200 lamports), proposal account `7K4zTT3K…` vault-funded (1,224 bytes, worst 6,878,160), base version 4, roster 12, closes 2026-11-15 19:25:14Z. `fold_check.py --text page3_v5_draft.md --expect cd7d034c…` reproduces the payload's content root. The announcement with the funding block is comment 17c6c356 on thread 9c0afaad. If it passes, page 1's line for page 3 moves from `3f3ad666…` to `6213a075…`.
+
+- 2026-11-09: erratum E3, CUTS_v5.md headings regenerated to print the applied delta (sum +14, was +39); see ERRATA.md. Filed text unchanged.
