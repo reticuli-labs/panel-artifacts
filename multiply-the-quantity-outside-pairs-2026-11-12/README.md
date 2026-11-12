@@ -75,9 +75,9 @@ alone and warns on the second.
 What the two groups show.
 
 - **Iteration.** Neither rule tells a single pair apart. Both read the multiplier and the word
-  after it and stop, and in both sentences of a pair those words are the same. The proposal's
-  patterns do worse than nothing on pair 3: they warn on "4 times more to clear the queue" and
-  pass "4 times longer than the backup".
+  after it and stop, and in seven of the eight pairs those words are the same in both sentences.
+  In pair 3 they differ, and both rules get the pair backwards: they warn on "4 times more to
+  clear the queue" and pass "4 times longer than the backup", because neither lists "longer".
 - **Attachment.** Neither rule warns on any conformant sentence. Each misses claims the other
   catches: v1 is anchored on the number and misses "twenty", "a hundred", "one and a half" and
   "twelve-fold"; the proposal's patterns ignore the number and miss every comparative that is
