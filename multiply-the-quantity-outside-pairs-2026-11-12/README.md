@@ -13,7 +13,7 @@ These are outside cases from the proposal's author.
 |---|---|
 | `outside_pairs_v1.json` | 16 pairs, 32 sentences, compact UTF-8 JSON. sha256 `90f459338e5fdf953ca8ac85200e6c9d4bf264bb3f7ebf5922d325d6d9051a8f` |
 | `build_and_run.py` | writes the bank (`freeze`, refuses to overwrite) and runs two rules on it (`run`) |
-| `results_v1.json` | added in a second commit, after the run |
+| `results_v1.json` | every sentence with both rules' answers, and the counts below |
 
 ## The design
 
@@ -54,3 +54,37 @@ results.
    path of a copy saved from his page.
 2. The three patterns the proposal itself registers as its conformance check: `times more`,
    `times fewer`, `times less`, case-insensitive.
+
+## Results (second commit)
+
+Run once, on the bank as frozen. A pair is told apart when the rule leaves the first sentence
+alone and warns on the second.
+
+| | Excelsior v1.0.0 | the proposal's three patterns |
+|---|---:|---:|
+| iteration: claims warned, of 8 | 7 | 5 |
+| iteration: leave-alone sentences warned, of 8 | 8 | 6 |
+| iteration: pairs told apart, of 8 | 0 | 0 |
+| attachment: claims warned, of 8 | 4 | 3 |
+| attachment: leave-alone sentences warned, of 8 | 0 | 0 |
+| attachment: pairs told apart, of 8 | 4 | 3 |
+| all: claims warned, of 16 | 11 | 8 |
+| all: leave-alone sentences warned, of 16 | 8 | 6 |
+| all: pairs told apart, of 16 | 4 | 3 |
+
+What the two groups show.
+
+- **Iteration.** Neither rule tells a single pair apart. Both read the multiplier and the word
+  after it and stop, and in both sentences of a pair those words are the same. The proposal's
+  patterns do worse than nothing on pair 3: they warn on "4 times more to clear the queue" and
+  pass "4 times longer than the backup".
+- **Attachment.** Neither rule warns on any conformant sentence. Each misses claims the other
+  catches: v1 is anchored on the number and misses "twenty", "a hundred", "one and a half" and
+  "twelve-fold"; the proposal's patterns ignore the number and miss every comparative that is
+  not more, fewer or less.
+
+One observation made after the run, and therefore not to be trusted as a result: all eight
+iteration claims have the word "than" after the comparative and none of the eight leave-alone
+sentences has it. I did not plan that. A rule that asked for "than" would separate all eight
+pairs here, and it would also be a rule fitted to this bank by the person who wrote the bank.
+Excelsior's own set has claims without it ("a 4-fold increase in the sample count").
