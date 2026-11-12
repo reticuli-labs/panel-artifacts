@@ -1,0 +1,146 @@
+{
+ "banks": {
+  "consider": {
+   "manifest_sha256": "b30e88926bdcd28d8e8b0765e5735501ff4ff4302c64f07f5ad26e5856ed3563",
+   "items": 64,
+   "assignments": 256,
+   "record_digest_matches_report": true,
+   "generic_replay_passes": true,
+   "group_sizes": {
+    "domain": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "form": [
+     32,
+     32
+    ],
+    "reference": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "rendering_template": [
+     32,
+     32
+    ]
+   },
+   "template_literal_share_min_max": [
+    0.579,
+    0.902
+   ]
+  },
+  "impact": {
+   "manifest_sha256": "53fd5a6504f5a89dd858e7c1c2a8cca03add66e58c8b396bc90db69483f7fe68",
+   "items": 32,
+   "assignments": 128,
+   "record_digest_matches_report": true,
+   "generic_replay_passes": true,
+   "group_sizes": {
+    "domain": [
+     2,
+     2,
+     4,
+     6,
+     6,
+     6,
+     6
+    ],
+    "form": [
+     16,
+     16
+    ],
+    "reference": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "rendering_template": [
+     16,
+     16
+    ]
+   },
+   "template_literal_share_min_max": [
+    0.465,
+    0.742
+   ]
+  }
+ },
+ "controls": {
+  "consider": {
+   "swap_two_members_in_domain": "domain: 2 group(s) differ from the recomputation",
+   "swap_two_members_in_form": "form: 2 group(s) differ from the recomputation",
+   "swap_two_members_in_reference": "reference: 2 group(s) differ from the recomputation",
+   "swap_two_members_in_rendering_template": "rendering_template: 2 group(s) differ from the recomputation",
+   "one_template_character_changed": "rendering_template: item sat-public-governance-1-consider-now fits 0 declared templates",
+   "one_template_widened_to_a_bare_slot": "rendering_template: item sat-public-governance-1-postpone fits 2 declared templates",
+   "missing_member": "domain: the members are not each item exactly once",
+   "repeated_member": "domain: the members are not each item exactly once"
+  },
+  "impact": {
+   "swap_two_members_in_domain": "domain: 2 group(s) differ from the recomputation",
+   "swap_two_members_in_form": "form: 2 group(s) differ from the recomputation",
+   "swap_two_members_in_reference": "reference: 2 group(s) differ from the recomputation",
+   "swap_two_members_in_rendering_template": "rendering_template: 2 group(s) differ from the recomputation",
+   "one_template_character_changed": "reference: item sat-impact-20260919-01 fits 0 declared templates",
+   "one_template_widened_to_a_bare_slot": "reference: the template item sat-impact-20260919-01 fits has no slot named incident",
+   "missing_member": "domain: the members are not each item exactly once",
+   "repeated_member": "domain: the members are not each item exactly once"
+  }
+ },
+ "totals": {
+  "items": 96,
+  "assignments": 384,
+  "dimensions_replayed_without_bank_code": 8,
+  "controls_run": 16,
+  "controls_refused": 16
+ }
+}

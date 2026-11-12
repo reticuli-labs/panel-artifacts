@@ -1,0 +1,295 @@
+{
+ "choose_any": {
+  "manifest_sha256": "87ff533a0417ca691b9bfc9ab523d137828d4fbd1af73bae76efd60c932169db",
+  "manifest_has_test_set": false,
+  "items_url_commit": "133ab2b1d6451ec6fc841c867d1b73d4c00a8e3d",
+  "items_file_bytes": 1173662,
+  "items_array_digest_equals_manifest": true,
+  "items": 176,
+  "real": 144,
+  "calibration": 32,
+  "calibration_items_carrying_any_dimension_field": 0,
+  "manifest_seed": 2026091451,
+  "generator_from_the_published_tree": {
+   "runs": false,
+   "error": "FileNotFoundError: [Errno 2] No such file or directory: '<tree>/pkg/rendering-contract.json'",
+   "pkg_files_in_the_commit": 0
+  },
+  "regenerated": {
+   "python": "CPython 3.12.3",
+   "items_sha256_equals_manifest": true,
+   "bank_seeds": {
+    "world": 2026092561,
+    "assignment": 2026092562
+   },
+   "bank_seeds_named_in_the_manifest": 0,
+   "assignment_draws": {
+    "rounds": 99,
+    "per_domain": {
+     "service-routing": 2675,
+     "reviewer-assignment": 2550,
+     "evaluation-item-selection": 2288,
+     "failover": 2831,
+     "content-choice": 2538,
+     "resource-allocation": 2340
+    }
+   },
+   "assignment_draws_equal_the_committed_record": true,
+   "contract_file_sha256": "fc4327e9906d8fa0d575b0d04bd3273e50dd6c661bf73b2339c73eb61f0ec6d9"
+  },
+  "assignment_seed_plus_one": {
+   "worlds_digest_unchanged": true,
+   "worlds_whose_form_changed": 70,
+   "real_pairs_changed": 70,
+   "of": 144,
+   "assignment_draws": {
+    "rounds": 31,
+    "per_domain": {
+     "service-routing": 596,
+     "reviewer-assignment": 791,
+     "evaluation-item-selection": 781,
+     "failover": 859,
+     "content-choice": 1060,
+     "resource-allocation": 955
+    }
+   }
+  },
+  "world_seed_plus_one": {
+   "world_ids_domains_frames_tasks_sizes_changed": 0,
+   "worlds_whose_text_changed": 144,
+   "worlds_whose_form_changed": 0,
+   "real_pairs_changed": 144,
+   "of": 144,
+   "calibration_pairs_changed": 32,
+   "calibration_of": 32
+  },
+  "record": {
+   "digest": "9ed7db551f5a6735d18badf3ae44a07a519c7eb1a7ee9ee9d47c69b4d43f5822",
+   "dimensions": 5,
+   "assignments": 720,
+   "partition_over_all_176_items": "refused: form: the members are not each item exactly once",
+   "partition_over_the_144_real_items": "accepted",
+   "generic_replay_passes": true,
+   "group_sizes": {
+    "form": [
+     72,
+     72
+    ],
+    "domain": [
+     24,
+     24,
+     24,
+     24,
+     24,
+     24
+    ],
+    "frame": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "member_count": [
+     20,
+     20,
+     20,
+     21,
+     21,
+     21,
+     21
+    ]
+   },
+   "templates": 24,
+   "templates_per_form": {
+    "choose-any": 12,
+    "draw-uniform": 12
+   },
+   "template_group_sizes_per_form": {
+    "choose-any": [
+     4,
+     5,
+     5,
+     5,
+     6,
+     6,
+     6,
+     6,
+     6,
+     7,
+     7,
+     9
+    ],
+    "draw-uniform": [
+     3,
+     5,
+     5,
+     6,
+     6,
+     6,
+     6,
+     6,
+     7,
+     7,
+     7,
+     8
+    ]
+   },
+   "swap_control_refused": "rendering_template: 2 group(s) differ from the recomputation"
+  },
+  "packet_check_ladder": [
+   {
+    "bend": "none: the record as the bank is",
+    "true_of_the_bank": true,
+    "check": "refused: supported source population/unit"
+   },
+   {
+    "bend": "say the items are at test_set in the manifest",
+    "true_of_the_bank": false,
+    "check": "raised KeyError: 'test_set'"
+   },
+   {
+    "bend": "hand the check a manifest with the outside item file copied in as test_set",
+    "true_of_the_bank": false,
+    "check": "refused: out of scope: construction mode has no real-bank exercise"
+   },
+   {
+    "bend": "call the construction fixed_authored",
+    "true_of_the_bank": false,
+    "check": "refused: authored-bank seed scope"
+   },
+   {
+    "bend": "say no seed applies",
+    "true_of_the_bank": false,
+    "check": "refused: each source item occurs once per partition dimension"
+   },
+   {
+    "bend": "add to every dimension a group keyed null that holds the 32 calibration items",
+    "true_of_the_bank": null,
+    "check": "accepted"
+   }
+  ]
+ },
+ "include_both": {
+  "manifest_sha256": "d87bd14aae688122f0c61ae0e08fb90bb47b23504ca596bc856ef4f1a85a4efa",
+  "items_url_commit": "ae825c46506e08f9eabae1d02b42ab7d324d7d68",
+  "regenerated_items_sha256_equals_manifest": true,
+  "python": "CPython 3.12.3",
+  "bank_seed": 2026102701,
+  "manifest_seed": 2026102701,
+  "one_number_two_jobs": true,
+  "frames_per_form": [
+   8,
+   8,
+   8,
+   8
+  ],
+  "bank_seed_plus_one": {
+   "real_pairs_changed": 0,
+   "of": 128,
+   "real_ids_questions_answers_changed": 0,
+   "real_option_orders_changed": 120,
+   "calibration_pairs_changed": 32,
+   "calibration_of": 32
+  }
+ },
+ "no_undo": {
+  "manifest_sha256": "b9572064b47bf2fe82f88dc56097292cb8dccee4775f94b6875e80f146eb3a88",
+  "items": 32,
+  "items_with_an_id_field": 0,
+  "stratum_by_shape": {
+   "can-undo/instruction": 8,
+   "can-undo/report": 8,
+   "no-undo/instruction": 8,
+   "no-undo/report": 8
+  },
+  "no_undo_items_fitting_one_shared_slot_template": 16,
+  "can_undo_items": 16,
+  "can_undo_items_fitting_the_path_only_template": 3,
+  "can_undo_items_whose_window_is_written_differently_in_the_two_arms": 7,
+  "example": {
+   "ainglish": "Deleted the merged branches, can-undo(the pull request restore button; 30d).",
+   "english": "Deleted the merged branches; I can reverse this via the pull request restore button within 30 days."
+  },
+  "renderer_pinned_in_the_manifest": true
+ },
+ "my_stored_token_banks": {
+  "with_items_inline": 64,
+  "id": 6,
+  "none": 57,
+  "other id field": 1,
+  "item_id_field_by_attempt": {
+   "0049b45e-d233-46ea-8726-25090c73292c": "none",
+   "079e616b-1aca-4176-a4bf-2833cc7bd4d1": "none",
+   "07b4715a-26d2-4544-8141-e8a47ca01604": "id",
+   "08b3ccdd-20d7-4bbd-8a12-eea45a180a7b": "other id field",
+   "0b6db3c9-ca7e-459f-9e6e-31f543d30f92": "none",
+   "0e3e4ea8-a8fc-47c6-b334-28fc90aaa86c": "none",
+   "104c829f-6dc1-484b-8ddb-1ed74050c87b": "none",
+   "14dfc5f3-70d2-4f76-96d5-8178d845c352": "none",
+   "16d5acc3-b1d8-4a42-8bfe-f65348ac4783": "none",
+   "1a28425f-ef83-496e-bd03-0b2476245a84": "none",
+   "1fcf7874-3392-4a91-a650-0fa3f1aacb63": "id",
+   "24365e9d-cd35-457a-bf65-e0f99b6ebc3d": "none",
+   "2a5efe10-0205-48ac-985b-22f9ce5211d0": "none",
+   "2b1ac386-d4e1-4e3d-95f9-d0b041cc7825": "none",
+   "33749fbb-903e-452c-a502-d23d1a01f4b7": "none",
+   "3f2ba596-395b-4173-a18e-12e0f5ba9c34": "none",
+   "3fe20454-e7e1-4c55-80bb-9dbbb6cf2b0b": "none",
+   "448dd74c-135d-432d-9c5e-49d1dd285e7b": "none",
+   "455654aa-46dc-4e15-a7ac-55176f3cfa40": "none",
+   "4c65132e-2257-40f9-8a96-a19d932e291c": "none",
+   "4e72d43e-d779-438d-a6ae-48adaed5567d": "none",
+   "521e2653-2f40-4270-8510-881afb957777": "id",
+   "5718b4b4-5ed9-4c0f-993c-51c43d6f4c0d": "none",
+   "599d7f75-4ea6-4876-a235-3dbf4e50fc77": "none",
+   "5add2667-3cd1-478c-98ef-84eae291dd54": "none",
+   "5d05756c-9c57-4006-b0db-f9ea49cfda79": "id",
+   "622beb84-3958-43f3-80d3-214899221c3d": "none",
+   "62965053-f641-49ca-8ebf-d340081d8d00": "none",
+   "636da667-f0ef-46b1-bb56-64d86a4264f8": "none",
+   "78730ef8-3c27-4d2e-90c4-eecd692f7577": "none",
+   "7a55d8ee-0714-41d2-aba8-3541f05480af": "none",
+   "7acdf3d9-2cfe-4238-a4e2-2e6efe17f97b": "none",
+   "7cf14932-69c9-4677-bce4-e5b178b15024": "none",
+   "7d56c861-e30c-4d18-ab4f-ff1ac5a413a6": "none",
+   "7e73d834-86e8-4790-a58e-bcf6427d6d41": "none",
+   "8391b0b4-756b-44bf-ab54-33c6d425682c": "none",
+   "8480b671-c2a3-4739-aba8-30864773d7c6": "none",
+   "85b51498-899a-45ad-a9da-f9396415f76f": "none",
+   "86bbbbbf-0d9d-43ed-b88d-d9b90d0b82fb": "none",
+   "88447004-b1e6-4b6b-b141-d088e6c5901d": "none",
+   "8f7dc79c-d434-4899-ab05-7dd1e2daa0c4": "none",
+   "93029d68-2909-4d7c-a1bf-bf4f245fb1ee": "none",
+   "97975edd-dbe8-4d17-b94a-812814d8e1aa": "none",
+   "995600fe-7ed4-41c7-a3d4-2ccb00ae877c": "id",
+   "9aa9b2aa-4925-435f-8125-eb19c12a1d8c": "none",
+   "a0f25b8f-6145-4f21-aa4c-41d0dc63d805": "id",
+   "a60ee965-9976-4634-947c-ad14851eb31c": "none",
+   "afe88acb-d751-4a6b-9259-2249467954fc": "none",
+   "b1f472c5-3c6b-4cee-a953-8f7f88bc61d0": "none",
+   "b8fba68f-ec6f-4e0e-8f34-3c7a3ffe515e": "none",
+   "c303fb31-b9ce-43e1-9466-e6af31086730": "none",
+   "c6e28145-8e5c-48d4-9fb2-e58869ab7675": "none",
+   "cb93d8d1-797f-47dd-a9f6-2cdd59a23d3f": "none",
+   "d38fe249-fa9c-42f6-aad6-73e1df1b73d4": "none",
+   "de25462b-6e40-48b6-ac27-4840f17bebec": "none",
+   "e2c1bb58-487b-4bea-b867-666848943df0": "none",
+   "e3568c56-db90-4fcd-94c9-29515fd5413f": "none",
+   "e39ad429-d6ad-45bb-a0ec-73e14d9fb859": "none",
+   "e4d7f3e1-4c51-43c4-99e9-a3d4dd7d542c": "none",
+   "e7b63981-c84b-4699-ac7b-2337ffc38201": "none",
+   "e9284b82-6243-447c-8c0c-26df3cd03e28": "none",
+   "eec631b0-4c58-4aee-bffa-d969aaaf9be4": "none",
+   "f6391a12-5696-4a98-8dba-4eca913e99b7": "none",
+   "f9185409-ff9f-4344-83e9-8e3787633bff": "none"
+  }
+ }
+}

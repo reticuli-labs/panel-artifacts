@@ -1,0 +1,1244 @@
+{
+ "kind": "example.ainglish.membership-record.draft0",
+ "status": "discussion_only",
+ "source": {
+  "packet_bank_key": "choose-any-replica",
+  "manifest_sha256": "87ff533a0417ca691b9bfc9ab523d137828d4fbd1af73bae76efd60c932169db",
+  "items_sha256": "027145c53242a6e068becb34bdd245d562fd9c6ab4c1d105a5b8bbdae11e32de",
+  "items_path": null,
+  "item_id_field": "id",
+  "unit": "complete_test_set_item",
+  "items_locator": {
+   "url": "https://raw.githubusercontent.com/reticuli-labs/panel-artifacts/133ab2b1d6451ec6fc841c867d1b73d4c00a8e3d/choose-any-comprehension-replica-2026-09-25/items.json",
+   "file_sha256": "177256ec56dae080e02cd015b07da3abfe6e2d7c6231f2276ba67615bb14cd6f"
+  },
+  "population": {
+   "rule": "items that carry the manifest's settlement_item_field",
+   "field": "settlement_stratum",
+   "inside": 144,
+   "outside": 32,
+   "outside_are": "planted calibration items"
+  }
+ },
+ "declaration": {
+  "author": "Reticuli",
+  "timing": "post_outcome_projection",
+  "timing_basis": "Written on 2026-11-12, after the bank's result was filed. The generator and its seeds were committed before the mint; this record was not."
+ },
+ "construction": {
+  "mode": "seeded_generator",
+  "description": "144 world skeletons (6 domains x 24, sizes 2 to 8, 12 frames, 6 tasks per domain) are fixed by the code. One seed draws the names, scores and orders inside each world; a second seed deals the worlds to the two forms by rejection sampling under balance rules.",
+  "seed_state": "two_bank_seeds_and_one_run_seed",
+  "seed_basis": "World seed and assignment seed are constants of the generator at the pinned commit. The manifest's own seed is the run seed and is neither of them.",
+  "generator": {
+   "path": "choose-any-comprehension-replica-2026-09-25/my_instrument.py",
+   "commit": "133ab2b1d6451ec6fc841c867d1b73d4c00a8e3d",
+   "sha256": "77e7e1c1120e40b1479761e29da806317036cc7415b9f594d79e0088247dc809",
+   "reads": [
+    {
+     "expects": "../pkg/rendering-contract.json",
+     "published_as": "choose-any-comprehension-replica-2026-09-25/rendering-contract-source.json",
+     "sha256": "fc4327e9906d8fa0d575b0d04bd3273e50dd6c661bf73b2339c73eb61f0ec6d9"
+    }
+   ],
+   "regenerates_committed_items_on": "CPython 3.12.3"
+  },
+  "seeds": [
+   {
+    "name": "world",
+    "value": 2026092561,
+    "decides": "names, scores, weighted member and option orders inside each world; the text of every calibration item",
+    "stream": "one per world, keyed by seed and world id"
+   },
+   {
+    "name": "assignment",
+    "value": 2026092562,
+    "decides": "which form each world is rendered in",
+    "stream": "one for the whole bank, with rejection",
+    "draws": {
+     "rounds": 99,
+     "per_domain": {
+      "service-routing": 2675,
+      "reviewer-assignment": 2550,
+      "evaluation-item-selection": 2288,
+      "failover": 2831,
+      "content-choice": 2538,
+      "resource-allocation": 2340
+     }
+    }
+   },
+   {
+    "name": "run",
+    "value": 2026091451,
+    "decides": "the deal of arms to readers and the resampling; nothing in the bank",
+    "stream": "the harness's"
+   }
+  ]
+ },
+ "dimensions": [
+  {
+   "id": "form",
+   "definition": "Literal committed settlement stratum. Its membership is the outcome of the seeded assignment.",
+   "basis": {
+    "source_paths": [
+     "items[].settlement_stratum"
+    ],
+    "procedure": "field"
+   },
+   "membership_mode": "partition",
+   "groups": [
+    {
+     "id": "sha256:0750d1990c6d4af4c5ed049564963e1bce7573bd83ecc54a811607c11ab66ca4",
+     "key": "choose-any",
+     "members": [
+      "rt1-world-02-01",
+      "rt1-world-04-01",
+      "rt1-world-05-01",
+      "rt1-world-06-01",
+      "rt1-world-01-02",
+      "rt1-world-02-02",
+      "rt1-world-06-02",
+      "rt1-world-03-03",
+      "rt1-world-04-03",
+      "rt1-world-05-03",
+      "rt1-world-01-04",
+      "rt1-world-02-04",
+      "rt1-world-03-04",
+      "rt1-world-05-04",
+      "rt1-world-06-04",
+      "rt1-world-01-05",
+      "rt1-world-04-05",
+      "rt1-world-05-05",
+      "rt1-world-06-05",
+      "rt1-world-01-06",
+      "rt1-world-02-06",
+      "rt1-world-04-06",
+      "rt1-world-05-06",
+      "rt1-world-06-06",
+      "rt1-world-01-07",
+      "rt1-world-02-07",
+      "rt1-world-04-07",
+      "rt1-world-05-07",
+      "rt1-world-02-08",
+      "rt1-world-06-08",
+      "rt1-world-01-09",
+      "rt1-world-03-09",
+      "rt1-world-05-09",
+      "rt1-world-02-10",
+      "rt1-world-04-10",
+      "rt1-world-06-10",
+      "rt1-world-01-11",
+      "rt1-world-04-11",
+      "rt1-world-06-11",
+      "rt1-world-03-12",
+      "rt1-world-03-13",
+      "rt1-world-04-13",
+      "rt1-world-01-14",
+      "rt1-world-03-14",
+      "rt1-world-01-15",
+      "rt1-world-03-15",
+      "rt1-world-05-15",
+      "rt1-world-04-16",
+      "rt1-world-05-16",
+      "rt1-world-01-17",
+      "rt1-world-02-18",
+      "rt1-world-03-18",
+      "rt1-world-04-18",
+      "rt1-world-05-18",
+      "rt1-world-02-19",
+      "rt1-world-06-19",
+      "rt1-world-02-20",
+      "rt1-world-03-20",
+      "rt1-world-05-20",
+      "rt1-world-06-21",
+      "rt1-world-01-22",
+      "rt1-world-03-22",
+      "rt1-world-04-22",
+      "rt1-world-02-23",
+      "rt1-world-03-23",
+      "rt1-world-04-23",
+      "rt1-world-06-23",
+      "rt1-world-01-24",
+      "rt1-world-02-24",
+      "rt1-world-03-24",
+      "rt1-world-05-24",
+      "rt1-world-06-24"
+     ]
+    },
+    {
+     "id": "sha256:9625a9c9f72d678c59c435d6255ae474ab19643c00feeb3808813627815112ce",
+     "key": "draw-uniform",
+     "members": [
+      "rt1-world-01-01",
+      "rt1-world-03-01",
+      "rt1-world-03-02",
+      "rt1-world-04-02",
+      "rt1-world-05-02",
+      "rt1-world-01-03",
+      "rt1-world-02-03",
+      "rt1-world-06-03",
+      "rt1-world-04-04",
+      "rt1-world-02-05",
+      "rt1-world-03-05",
+      "rt1-world-03-06",
+      "rt1-world-03-07",
+      "rt1-world-06-07",
+      "rt1-world-01-08",
+      "rt1-world-03-08",
+      "rt1-world-04-08",
+      "rt1-world-05-08",
+      "rt1-world-02-09",
+      "rt1-world-04-09",
+      "rt1-world-06-09",
+      "rt1-world-01-10",
+      "rt1-world-03-10",
+      "rt1-world-05-10",
+      "rt1-world-02-11",
+      "rt1-world-03-11",
+      "rt1-world-05-11",
+      "rt1-world-01-12",
+      "rt1-world-02-12",
+      "rt1-world-04-12",
+      "rt1-world-05-12",
+      "rt1-world-06-12",
+      "rt1-world-01-13",
+      "rt1-world-02-13",
+      "rt1-world-05-13",
+      "rt1-world-06-13",
+      "rt1-world-02-14",
+      "rt1-world-04-14",
+      "rt1-world-05-14",
+      "rt1-world-06-14",
+      "rt1-world-02-15",
+      "rt1-world-04-15",
+      "rt1-world-06-15",
+      "rt1-world-01-16",
+      "rt1-world-02-16",
+      "rt1-world-03-16",
+      "rt1-world-06-16",
+      "rt1-world-02-17",
+      "rt1-world-03-17",
+      "rt1-world-04-17",
+      "rt1-world-05-17",
+      "rt1-world-06-17",
+      "rt1-world-01-18",
+      "rt1-world-06-18",
+      "rt1-world-01-19",
+      "rt1-world-03-19",
+      "rt1-world-04-19",
+      "rt1-world-05-19",
+      "rt1-world-01-20",
+      "rt1-world-04-20",
+      "rt1-world-06-20",
+      "rt1-world-01-21",
+      "rt1-world-02-21",
+      "rt1-world-03-21",
+      "rt1-world-04-21",
+      "rt1-world-05-21",
+      "rt1-world-02-22",
+      "rt1-world-05-22",
+      "rt1-world-06-22",
+      "rt1-world-01-23",
+      "rt1-world-05-23",
+      "rt1-world-04-24"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "domain",
+   "definition": "Literal committed domain label.",
+   "basis": {
+    "source_paths": [
+     "items[].domain"
+    ],
+    "procedure": "field"
+   },
+   "membership_mode": "partition",
+   "groups": [
+    {
+     "id": "sha256:4c15d16ccc26e6f0a5dfe8e5d495f3dd0c3e476486dbe9e162798fff75f003c4",
+     "key": "content-choice",
+     "members": [
+      "rt1-world-05-01",
+      "rt1-world-05-02",
+      "rt1-world-05-03",
+      "rt1-world-05-04",
+      "rt1-world-05-05",
+      "rt1-world-05-06",
+      "rt1-world-05-07",
+      "rt1-world-05-08",
+      "rt1-world-05-09",
+      "rt1-world-05-10",
+      "rt1-world-05-11",
+      "rt1-world-05-12",
+      "rt1-world-05-13",
+      "rt1-world-05-14",
+      "rt1-world-05-15",
+      "rt1-world-05-16",
+      "rt1-world-05-17",
+      "rt1-world-05-18",
+      "rt1-world-05-19",
+      "rt1-world-05-20",
+      "rt1-world-05-21",
+      "rt1-world-05-22",
+      "rt1-world-05-23",
+      "rt1-world-05-24"
+     ]
+    },
+    {
+     "id": "sha256:1a19d660f5a8b0ce886de424d0570c448edb30837831c0e48c673dd871df143b",
+     "key": "evaluation-item-selection",
+     "members": [
+      "rt1-world-03-01",
+      "rt1-world-03-02",
+      "rt1-world-03-03",
+      "rt1-world-03-04",
+      "rt1-world-03-05",
+      "rt1-world-03-06",
+      "rt1-world-03-07",
+      "rt1-world-03-08",
+      "rt1-world-03-09",
+      "rt1-world-03-10",
+      "rt1-world-03-11",
+      "rt1-world-03-12",
+      "rt1-world-03-13",
+      "rt1-world-03-14",
+      "rt1-world-03-15",
+      "rt1-world-03-16",
+      "rt1-world-03-17",
+      "rt1-world-03-18",
+      "rt1-world-03-19",
+      "rt1-world-03-20",
+      "rt1-world-03-21",
+      "rt1-world-03-22",
+      "rt1-world-03-23",
+      "rt1-world-03-24"
+     ]
+    },
+    {
+     "id": "sha256:e608eecf290defe1b3cbd5a247840bba7c43d9676c41d500e4f7fcb8c752e33f",
+     "key": "failover",
+     "members": [
+      "rt1-world-04-01",
+      "rt1-world-04-02",
+      "rt1-world-04-03",
+      "rt1-world-04-04",
+      "rt1-world-04-05",
+      "rt1-world-04-06",
+      "rt1-world-04-07",
+      "rt1-world-04-08",
+      "rt1-world-04-09",
+      "rt1-world-04-10",
+      "rt1-world-04-11",
+      "rt1-world-04-12",
+      "rt1-world-04-13",
+      "rt1-world-04-14",
+      "rt1-world-04-15",
+      "rt1-world-04-16",
+      "rt1-world-04-17",
+      "rt1-world-04-18",
+      "rt1-world-04-19",
+      "rt1-world-04-20",
+      "rt1-world-04-21",
+      "rt1-world-04-22",
+      "rt1-world-04-23",
+      "rt1-world-04-24"
+     ]
+    },
+    {
+     "id": "sha256:f9ebbb82f2a314c8362c4f72e850e13cdbd65e05c119e198be26b12f87ff155e",
+     "key": "resource-allocation",
+     "members": [
+      "rt1-world-06-01",
+      "rt1-world-06-02",
+      "rt1-world-06-03",
+      "rt1-world-06-04",
+      "rt1-world-06-05",
+      "rt1-world-06-06",
+      "rt1-world-06-07",
+      "rt1-world-06-08",
+      "rt1-world-06-09",
+      "rt1-world-06-10",
+      "rt1-world-06-11",
+      "rt1-world-06-12",
+      "rt1-world-06-13",
+      "rt1-world-06-14",
+      "rt1-world-06-15",
+      "rt1-world-06-16",
+      "rt1-world-06-17",
+      "rt1-world-06-18",
+      "rt1-world-06-19",
+      "rt1-world-06-20",
+      "rt1-world-06-21",
+      "rt1-world-06-22",
+      "rt1-world-06-23",
+      "rt1-world-06-24"
+     ]
+    },
+    {
+     "id": "sha256:0412790229a591cdd00692030974d8193da83861fe407876896c481f781028fb",
+     "key": "reviewer-assignment",
+     "members": [
+      "rt1-world-02-01",
+      "rt1-world-02-02",
+      "rt1-world-02-03",
+      "rt1-world-02-04",
+      "rt1-world-02-05",
+      "rt1-world-02-06",
+      "rt1-world-02-07",
+      "rt1-world-02-08",
+      "rt1-world-02-09",
+      "rt1-world-02-10",
+      "rt1-world-02-11",
+      "rt1-world-02-12",
+      "rt1-world-02-13",
+      "rt1-world-02-14",
+      "rt1-world-02-15",
+      "rt1-world-02-16",
+      "rt1-world-02-17",
+      "rt1-world-02-18",
+      "rt1-world-02-19",
+      "rt1-world-02-20",
+      "rt1-world-02-21",
+      "rt1-world-02-22",
+      "rt1-world-02-23",
+      "rt1-world-02-24"
+     ]
+    },
+    {
+     "id": "sha256:ef023661655ed63835dde4e6a948fc4d1123b7507a06c2edc1f6b2c333eb55e8",
+     "key": "service-routing",
+     "members": [
+      "rt1-world-01-01",
+      "rt1-world-01-02",
+      "rt1-world-01-03",
+      "rt1-world-01-04",
+      "rt1-world-01-05",
+      "rt1-world-01-06",
+      "rt1-world-01-07",
+      "rt1-world-01-08",
+      "rt1-world-01-09",
+      "rt1-world-01-10",
+      "rt1-world-01-11",
+      "rt1-world-01-12",
+      "rt1-world-01-13",
+      "rt1-world-01-14",
+      "rt1-world-01-15",
+      "rt1-world-01-16",
+      "rt1-world-01-17",
+      "rt1-world-01-18",
+      "rt1-world-01-19",
+      "rt1-world-01-20",
+      "rt1-world-01-21",
+      "rt1-world-01-22",
+      "rt1-world-01-23",
+      "rt1-world-01-24"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "frame",
+   "definition": "Literal committed frame family: which of twelve opening sentences the item carries.",
+   "basis": {
+    "source_paths": [
+     "items[].frame_family"
+    ],
+    "procedure": "field"
+   },
+   "membership_mode": "partition",
+   "groups": [
+    {
+     "id": "sha256:1dbf20d903ab2c564c911f8afb0c999685099ed9150da73679e6ed95ff03682c",
+     "key": "rt1-frame-00",
+     "members": [
+      "rt1-world-01-01",
+      "rt1-world-02-01",
+      "rt1-world-03-01",
+      "rt1-world-04-01",
+      "rt1-world-05-01",
+      "rt1-world-06-01",
+      "rt1-world-01-13",
+      "rt1-world-02-13",
+      "rt1-world-03-13",
+      "rt1-world-04-13",
+      "rt1-world-05-13",
+      "rt1-world-06-13"
+     ]
+    },
+    {
+     "id": "sha256:ac16d2f1719fb836e40138891174a652c5e386711d584a5204aae1b124c4165d",
+     "key": "rt1-frame-01",
+     "members": [
+      "rt1-world-01-02",
+      "rt1-world-02-02",
+      "rt1-world-03-02",
+      "rt1-world-04-02",
+      "rt1-world-05-02",
+      "rt1-world-06-02",
+      "rt1-world-01-14",
+      "rt1-world-02-14",
+      "rt1-world-03-14",
+      "rt1-world-04-14",
+      "rt1-world-05-14",
+      "rt1-world-06-14"
+     ]
+    },
+    {
+     "id": "sha256:a446eb3fb6658f438a157c87adf93034a66c33f02e1f9575f78cd9d9320dd64e",
+     "key": "rt1-frame-02",
+     "members": [
+      "rt1-world-01-03",
+      "rt1-world-02-03",
+      "rt1-world-03-03",
+      "rt1-world-04-03",
+      "rt1-world-05-03",
+      "rt1-world-06-03",
+      "rt1-world-01-15",
+      "rt1-world-02-15",
+      "rt1-world-03-15",
+      "rt1-world-04-15",
+      "rt1-world-05-15",
+      "rt1-world-06-15"
+     ]
+    },
+    {
+     "id": "sha256:88c7507705f78d4cc70ede4ea5be19a8bb4220c5abe35c7fa0e3b17062c902fe",
+     "key": "rt1-frame-03",
+     "members": [
+      "rt1-world-01-04",
+      "rt1-world-02-04",
+      "rt1-world-03-04",
+      "rt1-world-04-04",
+      "rt1-world-05-04",
+      "rt1-world-06-04",
+      "rt1-world-01-16",
+      "rt1-world-02-16",
+      "rt1-world-03-16",
+      "rt1-world-04-16",
+      "rt1-world-05-16",
+      "rt1-world-06-16"
+     ]
+    },
+    {
+     "id": "sha256:8cb08a33b8854f521528639249b24414eb50ba2c360d7788b66162618be492fd",
+     "key": "rt1-frame-04",
+     "members": [
+      "rt1-world-01-05",
+      "rt1-world-02-05",
+      "rt1-world-03-05",
+      "rt1-world-04-05",
+      "rt1-world-05-05",
+      "rt1-world-06-05",
+      "rt1-world-01-17",
+      "rt1-world-02-17",
+      "rt1-world-03-17",
+      "rt1-world-04-17",
+      "rt1-world-05-17",
+      "rt1-world-06-17"
+     ]
+    },
+    {
+     "id": "sha256:06cf7dea91caf9d4d689d7fe736dbf798158ec8f505d87351c938ce069f67740",
+     "key": "rt1-frame-05",
+     "members": [
+      "rt1-world-01-06",
+      "rt1-world-02-06",
+      "rt1-world-03-06",
+      "rt1-world-04-06",
+      "rt1-world-05-06",
+      "rt1-world-06-06",
+      "rt1-world-01-18",
+      "rt1-world-02-18",
+      "rt1-world-03-18",
+      "rt1-world-04-18",
+      "rt1-world-05-18",
+      "rt1-world-06-18"
+     ]
+    },
+    {
+     "id": "sha256:c249e19df85e77283383970ea9c2c582b21cee73021422f5ebb603547e2b71cb",
+     "key": "rt1-frame-06",
+     "members": [
+      "rt1-world-01-07",
+      "rt1-world-02-07",
+      "rt1-world-03-07",
+      "rt1-world-04-07",
+      "rt1-world-05-07",
+      "rt1-world-06-07",
+      "rt1-world-01-19",
+      "rt1-world-02-19",
+      "rt1-world-03-19",
+      "rt1-world-04-19",
+      "rt1-world-05-19",
+      "rt1-world-06-19"
+     ]
+    },
+    {
+     "id": "sha256:c83be6f7b131f1e7c115cbd4fad2a6c9534c12cbe87f44d99da8541cce9eace1",
+     "key": "rt1-frame-07",
+     "members": [
+      "rt1-world-01-08",
+      "rt1-world-02-08",
+      "rt1-world-03-08",
+      "rt1-world-04-08",
+      "rt1-world-05-08",
+      "rt1-world-06-08",
+      "rt1-world-01-20",
+      "rt1-world-02-20",
+      "rt1-world-03-20",
+      "rt1-world-04-20",
+      "rt1-world-05-20",
+      "rt1-world-06-20"
+     ]
+    },
+    {
+     "id": "sha256:30fd6559b75112f459da101a021198689930c0ba7e32ef6c4f98f2327e16d364",
+     "key": "rt1-frame-08",
+     "members": [
+      "rt1-world-01-09",
+      "rt1-world-02-09",
+      "rt1-world-03-09",
+      "rt1-world-04-09",
+      "rt1-world-05-09",
+      "rt1-world-06-09",
+      "rt1-world-01-21",
+      "rt1-world-02-21",
+      "rt1-world-03-21",
+      "rt1-world-04-21",
+      "rt1-world-05-21",
+      "rt1-world-06-21"
+     ]
+    },
+    {
+     "id": "sha256:48dc4496cb96c224eccae11721d23855ad517c31c044e37c513d7e82150df52c",
+     "key": "rt1-frame-09",
+     "members": [
+      "rt1-world-01-10",
+      "rt1-world-02-10",
+      "rt1-world-03-10",
+      "rt1-world-04-10",
+      "rt1-world-05-10",
+      "rt1-world-06-10",
+      "rt1-world-01-22",
+      "rt1-world-02-22",
+      "rt1-world-03-22",
+      "rt1-world-04-22",
+      "rt1-world-05-22",
+      "rt1-world-06-22"
+     ]
+    },
+    {
+     "id": "sha256:ff281c4506f7322e5dd0f8ed5eefda154d6486138c8389853b38c8492634297e",
+     "key": "rt1-frame-10",
+     "members": [
+      "rt1-world-01-11",
+      "rt1-world-02-11",
+      "rt1-world-03-11",
+      "rt1-world-04-11",
+      "rt1-world-05-11",
+      "rt1-world-06-11",
+      "rt1-world-01-23",
+      "rt1-world-02-23",
+      "rt1-world-03-23",
+      "rt1-world-04-23",
+      "rt1-world-05-23",
+      "rt1-world-06-23"
+     ]
+    },
+    {
+     "id": "sha256:b3f55875e9b75d09cecfc40b5223d354ac90fea3c022bac6341524b029b229b9",
+     "key": "rt1-frame-11",
+     "members": [
+      "rt1-world-01-12",
+      "rt1-world-02-12",
+      "rt1-world-03-12",
+      "rt1-world-04-12",
+      "rt1-world-05-12",
+      "rt1-world-06-12",
+      "rt1-world-01-24",
+      "rt1-world-02-24",
+      "rt1-world-03-24",
+      "rt1-world-04-24",
+      "rt1-world-05-24",
+      "rt1-world-06-24"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "member_count",
+   "definition": "Literal committed size of the item's set.",
+   "basis": {
+    "source_paths": [
+     "items[].member_count"
+    ],
+    "procedure": "field"
+   },
+   "membership_mode": "partition",
+   "groups": [
+    {
+     "id": "sha256:d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+     "key": 2,
+     "members": [
+      "rt1-world-01-01",
+      "rt1-world-03-02",
+      "rt1-world-05-03",
+      "rt1-world-02-05",
+      "rt1-world-04-06",
+      "rt1-world-06-07",
+      "rt1-world-01-08",
+      "rt1-world-03-09",
+      "rt1-world-05-10",
+      "rt1-world-02-12",
+      "rt1-world-04-13",
+      "rt1-world-06-14",
+      "rt1-world-01-15",
+      "rt1-world-03-16",
+      "rt1-world-05-17",
+      "rt1-world-02-19",
+      "rt1-world-04-20",
+      "rt1-world-06-21",
+      "rt1-world-01-22",
+      "rt1-world-03-23",
+      "rt1-world-05-24"
+     ]
+    },
+    {
+     "id": "sha256:4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+     "key": 3,
+     "members": [
+      "rt1-world-06-01",
+      "rt1-world-01-02",
+      "rt1-world-03-03",
+      "rt1-world-05-04",
+      "rt1-world-02-06",
+      "rt1-world-04-07",
+      "rt1-world-06-08",
+      "rt1-world-01-09",
+      "rt1-world-03-10",
+      "rt1-world-05-11",
+      "rt1-world-02-13",
+      "rt1-world-04-14",
+      "rt1-world-06-15",
+      "rt1-world-01-16",
+      "rt1-world-03-17",
+      "rt1-world-05-18",
+      "rt1-world-02-20",
+      "rt1-world-04-21",
+      "rt1-world-06-22",
+      "rt1-world-01-23",
+      "rt1-world-03-24"
+     ]
+    },
+    {
+     "id": "sha256:4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+     "key": 4,
+     "members": [
+      "rt1-world-04-01",
+      "rt1-world-06-02",
+      "rt1-world-01-03",
+      "rt1-world-03-04",
+      "rt1-world-05-05",
+      "rt1-world-02-07",
+      "rt1-world-04-08",
+      "rt1-world-06-09",
+      "rt1-world-01-10",
+      "rt1-world-03-11",
+      "rt1-world-05-12",
+      "rt1-world-02-14",
+      "rt1-world-04-15",
+      "rt1-world-06-16",
+      "rt1-world-01-17",
+      "rt1-world-03-18",
+      "rt1-world-05-19",
+      "rt1-world-02-21",
+      "rt1-world-04-22",
+      "rt1-world-06-23",
+      "rt1-world-01-24"
+     ]
+    },
+    {
+     "id": "sha256:ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+     "key": 5,
+     "members": [
+      "rt1-world-02-01",
+      "rt1-world-04-02",
+      "rt1-world-06-03",
+      "rt1-world-01-04",
+      "rt1-world-03-05",
+      "rt1-world-05-06",
+      "rt1-world-02-08",
+      "rt1-world-04-09",
+      "rt1-world-06-10",
+      "rt1-world-01-11",
+      "rt1-world-03-12",
+      "rt1-world-05-13",
+      "rt1-world-02-15",
+      "rt1-world-04-16",
+      "rt1-world-06-17",
+      "rt1-world-01-18",
+      "rt1-world-03-19",
+      "rt1-world-05-20",
+      "rt1-world-02-22",
+      "rt1-world-04-23",
+      "rt1-world-06-24"
+     ]
+    },
+    {
+     "id": "sha256:e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683",
+     "key": 6,
+     "members": [
+      "rt1-world-02-02",
+      "rt1-world-04-03",
+      "rt1-world-06-04",
+      "rt1-world-01-05",
+      "rt1-world-03-06",
+      "rt1-world-05-07",
+      "rt1-world-02-09",
+      "rt1-world-04-10",
+      "rt1-world-06-11",
+      "rt1-world-01-12",
+      "rt1-world-03-13",
+      "rt1-world-05-14",
+      "rt1-world-02-16",
+      "rt1-world-04-17",
+      "rt1-world-06-18",
+      "rt1-world-01-19",
+      "rt1-world-03-20",
+      "rt1-world-05-21",
+      "rt1-world-02-23",
+      "rt1-world-04-24"
+     ]
+    },
+    {
+     "id": "sha256:7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451",
+     "key": 7,
+     "members": [
+      "rt1-world-05-01",
+      "rt1-world-02-03",
+      "rt1-world-04-04",
+      "rt1-world-06-05",
+      "rt1-world-01-06",
+      "rt1-world-03-07",
+      "rt1-world-05-08",
+      "rt1-world-02-10",
+      "rt1-world-04-11",
+      "rt1-world-06-12",
+      "rt1-world-01-13",
+      "rt1-world-03-14",
+      "rt1-world-05-15",
+      "rt1-world-02-17",
+      "rt1-world-04-18",
+      "rt1-world-06-19",
+      "rt1-world-01-20",
+      "rt1-world-03-21",
+      "rt1-world-05-22",
+      "rt1-world-02-24"
+     ]
+    },
+    {
+     "id": "sha256:2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+     "key": 8,
+     "members": [
+      "rt1-world-03-01",
+      "rt1-world-05-02",
+      "rt1-world-02-04",
+      "rt1-world-04-05",
+      "rt1-world-06-06",
+      "rt1-world-01-07",
+      "rt1-world-03-08",
+      "rt1-world-05-09",
+      "rt1-world-02-11",
+      "rt1-world-04-12",
+      "rt1-world-06-13",
+      "rt1-world-01-14",
+      "rt1-world-03-15",
+      "rt1-world-05-16",
+      "rt1-world-02-18",
+      "rt1-world-04-19",
+      "rt1-world-06-20",
+      "rt1-world-01-21",
+      "rt1-world-03-22",
+      "rt1-world-05-23"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rendering_template",
+   "definition": "Exact complete English and marked string templates; one per form and frame.",
+   "basis": {
+    "source_paths": [
+     "items[].english",
+     "items[].ainglish"
+    ],
+    "procedure": "template"
+   },
+   "membership_mode": "partition",
+   "groups": [
+    {
+     "id": "sha256:3f7bdc72c0904832e7fc9ae4f93b5edd038c8c3cf418b1b2e613f5089eb4c646",
+     "key": {
+      "english": "A change request has arrived for {task}; the on-call engineer is checking what it permits.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "A change request has arrived for {task}; the on-call engineer is checking what it permits.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-03-03",
+      "rt1-world-04-03",
+      "rt1-world-05-03",
+      "rt1-world-01-15",
+      "rt1-world-03-15",
+      "rt1-world-05-15"
+     ]
+    },
+    {
+     "id": "sha256:1ea187ee81c85132317d7a6fc4da07df923fbeb3e53aabaf67c5ab4ed9ae7cd1",
+     "key": {
+      "english": "A change request has arrived for {task}; the on-call engineer is checking what it permits.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "A change request has arrived for {task}; the on-call engineer is checking what it permits.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-03",
+      "rt1-world-02-03",
+      "rt1-world-06-03",
+      "rt1-world-02-15",
+      "rt1-world-04-15",
+      "rt1-world-06-15"
+     ]
+    },
+    {
+     "id": "sha256:04bfbcf97ab676d8844c06250fefec8b88ca6e9ff5c2e5fe9a7fb106a786c723",
+     "key": {
+      "english": "A checklist item asks what the selection wording for {task} actually commits to.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "A checklist item asks what the selection wording for {task} actually commits to.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-04",
+      "rt1-world-02-04",
+      "rt1-world-03-04",
+      "rt1-world-05-04",
+      "rt1-world-06-04",
+      "rt1-world-04-16",
+      "rt1-world-05-16"
+     ]
+    },
+    {
+     "id": "sha256:a6d91c7a40ccc9b2ba805acb1b821a5fad771b0d5bdd5ab571fba630107be35e",
+     "key": {
+      "english": "A checklist item asks what the selection wording for {task} actually commits to.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "A checklist item asks what the selection wording for {task} actually commits to.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-04-04",
+      "rt1-world-01-16",
+      "rt1-world-02-16",
+      "rt1-world-03-16",
+      "rt1-world-06-16"
+     ]
+    },
+    {
+     "id": "sha256:5802e63257b2d295141b0f10766f095bd6bba380f0c96bd6b631790854c8a422",
+     "key": {
+      "english": "A compliance note distinguishes what the request for {task} permits from what it promises.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "A compliance note distinguishes what the request for {task} permits from what it promises.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-09",
+      "rt1-world-03-09",
+      "rt1-world-05-09",
+      "rt1-world-06-21"
+     ]
+    },
+    {
+     "id": "sha256:76bc28d612b9bed48db0f6fc3dbb29c1f411e9d1a2e9941319567ba493aceb41",
+     "key": {
+      "english": "A compliance note distinguishes what the request for {task} permits from what it promises.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "A compliance note distinguishes what the request for {task} permits from what it promises.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-02-09",
+      "rt1-world-04-09",
+      "rt1-world-06-09",
+      "rt1-world-01-21",
+      "rt1-world-02-21",
+      "rt1-world-03-21",
+      "rt1-world-04-21",
+      "rt1-world-05-21"
+     ]
+    },
+    {
+     "id": "sha256:a06b1c550976d5cadc3862a4852a02c517a5b83dd5b011d51bb17f931193dd1a",
+     "key": {
+      "english": "A junior engineer asks a senior one what the instruction about {task} rules in and out.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "A junior engineer asks a senior one what the instruction about {task} rules in and out.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-02-10",
+      "rt1-world-04-10",
+      "rt1-world-06-10",
+      "rt1-world-01-22",
+      "rt1-world-03-22",
+      "rt1-world-04-22"
+     ]
+    },
+    {
+     "id": "sha256:931f1991f19ea9fda40e65e81eb2101b3a0e00acfaabfa7a05c0982c65f23560",
+     "key": {
+      "english": "A junior engineer asks a senior one what the instruction about {task} rules in and out.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "A junior engineer asks a senior one what the instruction about {task} rules in and out.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-10",
+      "rt1-world-03-10",
+      "rt1-world-05-10",
+      "rt1-world-02-22",
+      "rt1-world-05-22",
+      "rt1-world-06-22"
+     ]
+    },
+    {
+     "id": "sha256:a621cd8c5bcedbbdc4504a338656d5fe1855ee67946f3e798f6f8e8e80332652",
+     "key": {
+      "english": "A reviewer is asked which procedures would comply with the request for {task}.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "A reviewer is asked which procedures would comply with the request for {task}.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-07",
+      "rt1-world-02-07",
+      "rt1-world-04-07",
+      "rt1-world-05-07",
+      "rt1-world-02-19",
+      "rt1-world-06-19"
+     ]
+    },
+    {
+     "id": "sha256:c02a1ae79189d0bc369edd95fddbc4d22cd54e95a3efdf5b7a452c3e31339ac0",
+     "key": {
+      "english": "A reviewer is asked which procedures would comply with the request for {task}.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "A reviewer is asked which procedures would comply with the request for {task}.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-03-07",
+      "rt1-world-06-07",
+      "rt1-world-01-19",
+      "rt1-world-03-19",
+      "rt1-world-04-19",
+      "rt1-world-05-19"
+     ]
+    },
+    {
+     "id": "sha256:9044f68db31b14bdf01654b22dab1ed2781eb799189f5eb79327b137c5df7013",
+     "key": {
+      "english": "A routing note about {task} is under review before it is acted on.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "A routing note about {task} is under review before it is acted on.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-02-01",
+      "rt1-world-04-01",
+      "rt1-world-05-01",
+      "rt1-world-06-01",
+      "rt1-world-03-13",
+      "rt1-world-04-13"
+     ]
+    },
+    {
+     "id": "sha256:92f5ca50148416f9286e60293d586ec77d844515c454be121b08766b28dd0b2d",
+     "key": {
+      "english": "A routing note about {task} is under review before it is acted on.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "A routing note about {task} is under review before it is acted on.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-01",
+      "rt1-world-03-01",
+      "rt1-world-01-13",
+      "rt1-world-02-13",
+      "rt1-world-05-13",
+      "rt1-world-06-13"
+     ]
+    },
+    {
+     "id": "sha256:686ef06b2c0e246edc67af4e19933b5af583dc311ab1667863f9c79f61bfc248",
+     "key": {
+      "english": "A ticket about {task} is being triaged; the wording of its selection line matters.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "A ticket about {task} is being triaged; the wording of its selection line matters.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-02-08",
+      "rt1-world-06-08",
+      "rt1-world-02-20",
+      "rt1-world-03-20",
+      "rt1-world-05-20"
+     ]
+    },
+    {
+     "id": "sha256:7e63c03f994e8db5456917bb35bb9d8a5f499fc488ac2006e4b04fcb412c417d",
+     "key": {
+      "english": "A ticket about {task} is being triaged; the wording of its selection line matters.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "A ticket about {task} is being triaged; the wording of its selection line matters.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-08",
+      "rt1-world-03-08",
+      "rt1-world-04-08",
+      "rt1-world-05-08",
+      "rt1-world-01-20",
+      "rt1-world-04-20",
+      "rt1-world-06-20"
+     ]
+    },
+    {
+     "id": "sha256:f5cd992f4cdb6c5d059fa8944da93a259f8fdffabbb21fa0a9012322dbc9a8df",
+     "key": {
+      "english": "An incident retrospective re-reads the original selection request for {task}.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "An incident retrospective re-reads the original selection request for {task}.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-03-12",
+      "rt1-world-01-24",
+      "rt1-world-02-24",
+      "rt1-world-03-24",
+      "rt1-world-05-24",
+      "rt1-world-06-24"
+     ]
+    },
+    {
+     "id": "sha256:15ffcfa59c42028ce329320806388fef05f6adb59d1c6b00b9b77b67adef5a8d",
+     "key": {
+      "english": "An incident retrospective re-reads the original selection request for {task}.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "An incident retrospective re-reads the original selection request for {task}.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-12",
+      "rt1-world-02-12",
+      "rt1-world-04-12",
+      "rt1-world-05-12",
+      "rt1-world-06-12",
+      "rt1-world-04-24"
+     ]
+    },
+    {
+     "id": "sha256:d3d4ab20790c217bba12df59e0905a2f09d685706350699aeee8b17f49540303",
+     "key": {
+      "english": "Before running anything, a planner writes down what the request about {task} requires.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "Before running anything, a planner writes down what the request about {task} requires.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-05",
+      "rt1-world-04-05",
+      "rt1-world-05-05",
+      "rt1-world-06-05",
+      "rt1-world-01-17"
+     ]
+    },
+    {
+     "id": "sha256:ca3dfe10637c5c0a153c168bd05f909b4662873efa5e5ba452518a67a908368c",
+     "key": {
+      "english": "Before running anything, a planner writes down what the request about {task} requires.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "Before running anything, a planner writes down what the request about {task} requires.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-02-05",
+      "rt1-world-03-05",
+      "rt1-world-02-17",
+      "rt1-world-03-17",
+      "rt1-world-04-17",
+      "rt1-world-05-17",
+      "rt1-world-06-17"
+     ]
+    },
+    {
+     "id": "sha256:e3ea33954ea006751e5d615e246d8de2b87ab05723afbfa20926f06f069e8be9",
+     "key": {
+      "english": "The dispatch log will record the interpretation of the request for {task}; nothing has run yet.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "The dispatch log will record the interpretation of the request for {task}; nothing has run yet.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-11",
+      "rt1-world-04-11",
+      "rt1-world-06-11",
+      "rt1-world-02-23",
+      "rt1-world-03-23",
+      "rt1-world-04-23",
+      "rt1-world-06-23"
+     ]
+    },
+    {
+     "id": "sha256:24cc5132401ef12e3f793200023ff5729cf3e814d5d32af2b0fd08b53ad7666d",
+     "key": {
+      "english": "The dispatch log will record the interpretation of the request for {task}; nothing has run yet.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "The dispatch log will record the interpretation of the request for {task}; nothing has run yet.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-02-11",
+      "rt1-world-03-11",
+      "rt1-world-05-11",
+      "rt1-world-01-23",
+      "rt1-world-05-23"
+     ]
+    },
+    {
+     "id": "sha256:77c01b2fa7f1a8d3742a86c416c3ef9ace7092870425e98c8839f2e105dbc405",
+     "key": {
+      "english": "The runbook entry for {task} contains a selection instruction that needs interpreting.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "The runbook entry for {task} contains a selection instruction that needs interpreting.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-06",
+      "rt1-world-02-06",
+      "rt1-world-04-06",
+      "rt1-world-05-06",
+      "rt1-world-06-06",
+      "rt1-world-02-18",
+      "rt1-world-03-18",
+      "rt1-world-04-18",
+      "rt1-world-05-18"
+     ]
+    },
+    {
+     "id": "sha256:84354a2611f223e814a33a4274a9e66876bef2e4f492f4d83b20029de7cea2c0",
+     "key": {
+      "english": "The runbook entry for {task} contains a selection instruction that needs interpreting.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "The runbook entry for {task} contains a selection instruction that needs interpreting.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-03-06",
+      "rt1-world-01-18",
+      "rt1-world-06-18"
+     ]
+    },
+    {
+     "id": "sha256:b56b7716992183b7c1cb7d5efe8b9e5ad36da8e5583959e279d3166c39dbb18f",
+     "key": {
+      "english": "Two operators are reading the same request concerning {task} and must agree what it asks.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref}) requires {set_ref} to resolve uniquely to a finite, nonempty set of distinct eligible member identities. It denotes choosing exactly one member of {set_ref} and explicitly makes every member acceptable; the selection policy is otherwise unconstrained. A deterministic first-member rule, a cost- or latency-based rule, a weighted rule, or a uniform draw can all satisfy choose-any. The form therefore makes no claim of randomness, equal probability, unpredictability, independence, rotation, or fairness.",
+      "ainglish": "Two operators are reading the same request concerning {task} and must agree what it asks.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: choose-any({set_ref})."
+     },
+     "members": [
+      "rt1-world-01-02",
+      "rt1-world-02-02",
+      "rt1-world-06-02",
+      "rt1-world-01-14",
+      "rt1-world-03-14"
+     ]
+    },
+    {
+     "id": "sha256:38631d380d6a71f9fbf6eecdf88f095eb30a7e94e05d28e1beb37ec306efde4e",
+     "key": {
+      "english": "Two operators are reading the same request concerning {task} and must agree what it asks.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref}) denotes exactly one stochastic draw from the same kind of resolved set. Conditional on the frozen eligibility set and before the outcome is known, every distinct member identity has probability exactly 1/|{set_ref}| of being returned. Duplicate rows do not buy an identity extra probability: identity and deduplication rules belong to {set_ref} and must be resolved before the draw. An empty, ambiguous, or concurrently mutable set without a version or time anchor is invalid rather than guessed. draw-uniform does not by itself promise cryptographic unpredictability, public verifiability, independence between repeated draws, sampling with or without replacement, or a balanced finite run; it specifies one draw only. A realized outcome alone neither proves nor refutes its distribution.",
+      "ainglish": "Two operators are reading the same request concerning {task} and must agree what it asks.\nThe frozen roster lists these eligible {member_type} identities, in recorded order: {members}. Recorded {criterion} scores, in the same order: {scores}. The reference {set_ref} resolves uniquely to this finite, nonempty snapshot of distinct identities. The snapshot was fixed before any selection, and {outsider} is not in it. Nothing else has been required of the selection, and no outcome has been observed yet. Each distinct identity is one member; repeated appearances do not create another member.\nRequest: draw-uniform({set_ref})."
+     },
+     "members": [
+      "rt1-world-03-02",
+      "rt1-world-04-02",
+      "rt1-world-05-02",
+      "rt1-world-02-14",
+      "rt1-world-04-14",
+      "rt1-world-05-14",
+      "rt1-world-06-14"
+     ]
+    }
+   ]
+  }
+ ]
+}
