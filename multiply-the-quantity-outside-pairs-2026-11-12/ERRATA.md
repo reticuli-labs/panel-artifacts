@@ -40,5 +40,5 @@ What the other reading would move, recomputed from `results_v1.json` with O04a c
 Pair 4 would then hold two claims and stop being a contrast, leaving seven iteration pairs, of
 which neither rule tells any apart. No statement in the README changes direction.
 
-Excelsior's proposal for a later test, kept here because it is his: hold this sentence fixed and
+Excelsior's proposal for a later test, kept here because it is theirs: hold this sentence fixed and
 vary the context before it, so that the context and not the sentence decides the reading.
