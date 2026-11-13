@@ -1,0 +1,233 @@
+{
+ "runs_per_model": {
+  "gemma3_12b": 8,
+  "llama3.1_8b-instruct-q4_K_M": 8,
+  "mistral-small3.2_24b-instruct-2506-q4_K_M": 8,
+  "qwen3.6_27b": 8
+ },
+ "seeds": {
+  "gemma3_12b": [
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008
+  ],
+  "llama3.1_8b-instruct-q4_K_M": [
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008
+  ],
+  "mistral-small3.2_24b-instruct-2506-q4_K_M": [
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008
+  ],
+  "qwen3.6_27b": [
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008
+  ]
+ },
+ "model_digests": {
+  "gemma3_12b": [
+   "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a"
+  ],
+  "llama3.1_8b-instruct-q4_K_M": [
+   "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e"
+  ],
+  "mistral-small3.2_24b-instruct-2506-q4_K_M": [
+   "5a408ab55df5c1b5cf46533c368813b30bf9e4d8fc39263bf2a3338cfa3b895b"
+  ],
+  "qwen3.6_27b": [
+   "a50eda8ed977ab48a12431878896b27ffd5cef552c17af3317d9623b939a7f1e"
+  ]
+ },
+ "patterns": {
+  "title 'Der Tag, an dem / als ...'": "Der Tag, (an dem|als) ",
+  "a month is named": "\\b(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)\\b",
+  "November": "\\bNovember\\b",
+  "März": "\\bMärz\\b",
+  "the date '14. November'": "14\\. November",
+  "a weekday is named": "\\b(Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag)",
+  "Dienstag": "\\bDienstag",
+  "opens 'nicht mit einem ..., sondern'": "nicht mit einem[^.]{0,80}sondern, in the first 600 characters",
+  "a person called Elias": "\\bElias\\b",
+  "'Ein Jahr später saß Elias, ein ehemaliger'": "Ein Jahr später(, im November 2028,)? saß Elias, ein ehemaliger",
+  "a person called Anya Sharma": "Anya Sharma|\\bSharma\\b",
+  "Brandt": "Brandt",
+  "Aequitas": "\\bAequitas\\b",
+  "Echo": "\\bEcho\\b",
+  "Harmonia": "\\bHarmonia\\b",
+  "Veritas": "\\bVeritas\\b",
+  "Aurora or Aura": "\\bAurora\\b|\\bAURA\\b|\\bAura\\b",
+  "journalist or reporter": "Journalist|Reporter|Redakteur",
+  "apples": "\\bApfel|Äpfel"
+ },
+ "counts": {
+  "gemma3_12b": {
+   "title 'Der Tag, an dem / als ...'": 6,
+   "a month is named": 3,
+   "November": 0,
+   "März": 0,
+   "the date '14. November'": 0,
+   "a weekday is named": 0,
+   "Dienstag": 0,
+   "opens 'nicht mit einem ..., sondern'": 0,
+   "a person called Elias": 0,
+   "'Ein Jahr später saß Elias, ein ehemaliger'": 0,
+   "a person called Anya Sharma": 2,
+   "Brandt": 0,
+   "Aequitas": 3,
+   "Echo": 3,
+   "Harmonia": 2,
+   "Veritas": 2,
+   "Aurora or Aura": 2,
+   "journalist or reporter": 1,
+   "apples": 0
+  },
+  "llama3.1_8b-instruct-q4_K_M": {
+   "title 'Der Tag, an dem / als ...'": 0,
+   "a month is named": 5,
+   "November": 0,
+   "März": 2,
+   "the date '14. November'": 0,
+   "a weekday is named": 0,
+   "Dienstag": 0,
+   "opens 'nicht mit einem ..., sondern'": 0,
+   "a person called Elias": 0,
+   "'Ein Jahr später saß Elias, ein ehemaliger'": 0,
+   "a person called Anya Sharma": 0,
+   "Brandt": 0,
+   "Aequitas": 0,
+   "Echo": 0,
+   "Harmonia": 0,
+   "Veritas": 0,
+   "Aurora or Aura": 0,
+   "journalist or reporter": 0,
+   "apples": 0
+  },
+  "mistral-small3.2_24b-instruct-2506-q4_K_M": {
+   "title 'Der Tag, an dem / als ...'": 0,
+   "a month is named": 3,
+   "November": 2,
+   "März": 1,
+   "the date '14. November'": 0,
+   "a weekday is named": 2,
+   "Dienstag": 2,
+   "opens 'nicht mit einem ..., sondern'": 0,
+   "a person called Elias": 0,
+   "'Ein Jahr später saß Elias, ein ehemaliger'": 0,
+   "a person called Anya Sharma": 0,
+   "Brandt": 0,
+   "Aequitas": 0,
+   "Echo": 0,
+   "Harmonia": 0,
+   "Veritas": 0,
+   "Aurora or Aura": 0,
+   "journalist or reporter": 0,
+   "apples": 0
+  },
+  "qwen3.6_27b": {
+   "title 'Der Tag, an dem / als ...'": 3,
+   "a month is named": 7,
+   "November": 5,
+   "März": 2,
+   "the date '14. November'": 3,
+   "a weekday is named": 5,
+   "Dienstag": 4,
+   "opens 'nicht mit einem ..., sondern'": 3,
+   "a person called Elias": 5,
+   "'Ein Jahr später saß Elias, ein ehemaliger'": 3,
+   "a person called Anya Sharma": 0,
+   "Brandt": 0,
+   "Aequitas": 0,
+   "Echo": 1,
+   "Harmonia": 0,
+   "Veritas": 1,
+   "Aurora or Aura": 4,
+   "journalist or reporter": 1,
+   "apples": 0
+  }
+ },
+ "first_month_named": {
+  "gemma3_12b": [
+   [
+    "None",
+    5
+   ],
+   [
+    "August",
+    2
+   ],
+   [
+    "Dezember",
+    1
+   ]
+  ],
+  "llama3.1_8b-instruct-q4_K_M": [
+   [
+    "None",
+    3
+   ],
+   [
+    "Februar",
+    2
+   ],
+   [
+    "März",
+    2
+   ],
+   [
+    "Juli",
+    1
+   ]
+  ],
+  "mistral-small3.2_24b-instruct-2506-q4_K_M": [
+   [
+    "None",
+    5
+   ],
+   [
+    "November",
+    2
+   ],
+   [
+    "März",
+    1
+   ]
+  ],
+  "qwen3.6_27b": [
+   [
+    "November",
+    5
+   ],
+   [
+    "März",
+    2
+   ],
+   [
+    "None",
+    1
+   ]
+  ]
+ }
+}
