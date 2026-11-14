@@ -1,0 +1,348 @@
+{
+ "note": "Each claim used in the answer, the source it rests on, and a passage copied from that source. verify_quotes.py asserts that every passage occurs in the text as fetched on 2026-11-14. 'read' says how much of the source was read: full = the full text, abstract = the authors' abstract only, record = the bibliographic record only.",
+ "claims": [
+  {
+   "id": "H17-design",
+   "source": "hallmann2017",
+   "read": "full",
+   "claim": "63 protected areas, 96 location-year combinations, Malaise traps, 27 years",
+   "quote": "deployed over 27 years in 63 nature protection areas in Germany (96 unique location-year combinations)"
+  },
+  {
+   "id": "H17-once",
+   "source": "hallmann2017",
+   "read": "full",
+   "claim": "37 of the 63 locations were sampled in one year only",
+   "quote": "Most locations (59%, n = 37) were sampled in only one year, 20 locations in two years, five locations in three years, and one in four years"
+  },
+  {
+   "id": "H17-notlong",
+   "source": "hallmann2017",
+   "read": "full",
+   "claim": "the paper itself says the data are not longitudinal records at single sites",
+   "quote": "Our data do not represent longitudinal records at single sites"
+  },
+  {
+   "id": "H17-26",
+   "source": "hallmann2017",
+   "read": "full",
+   "claim": "the authors re-estimated the decline on the 26 locations sampled in more than one year and got nearly the same value",
+   "quote": "Re-estimation of the annual decline based on 26 locations that have been sampled in more than one year ( S4 Fig ), revealed a similar rate of decline (76.2%[73.9–78.3%])"
+  },
+  {
+   "id": "H17-decline",
+   "source": "hallmann2017",
+   "read": "full",
+   "claim": "seasonal biomass decline 76.7% over 27 years",
+   "quote": "results in an overall 76.7% [74.8–78.5%] decline over a 27 year period"
+  },
+  {
+   "id": "H17-rate",
+   "source": "hallmann2017",
+   "read": "full",
+   "claim": "the paper's own annual rate from plot-specific models is 5.2%",
+   "quote": "annual trend coefficient = −0.053, sd = 0.002, i.e. 5.2% annual decline"
+  },
+  {
+   "id": "H17-samples",
+   "source": "hallmann2017",
+   "read": "full",
+   "claim": "1,503 trap samples",
+   "quote": "We collected in total 1503 trap samples"
+  },
+  {
+   "id": "H17-cause",
+   "source": "hallmann2017",
+   "read": "full",
+   "claim": "weather, land use and habitat did not explain the decline in the 2017 analysis",
+   "quote": "changes in weather, land use, and habitat characteristics cannot explain this overall decline"
+  },
+  {
+   "id": "S19-design",
+   "source": "seibold2019",
+   "read": "abstract",
+   "claim": "150 grassland and 140 forest sites, three regions, 2008 to 2017",
+   "quote": "taken between 2008 and 2017 at 150 grassland and 140 forest sites in 3 regions of Germany"
+  },
+  {
+   "id": "S19-grass",
+   "source": "seibold2019",
+   "read": "abstract",
+   "claim": "grassland: biomass -67%, abundance -78%, species -34%",
+   "quote": "biomass, abundance and number of species declined by 67%, 78% and 34%, respectively"
+  },
+  {
+   "id": "S19-forest",
+   "source": "seibold2019",
+   "read": "abstract",
+   "claim": "forest: biomass -41%, species -36%, abundance no decline",
+   "quote": "biomass and species number-but not abundance-decreased by 41% and 36%, respectively"
+  },
+  {
+   "id": "D21-year",
+   "source": "daskalova2021",
+   "read": "abstract",
+   "claim": "with a year random effect four of the five reported declines are no longer significant",
+   "quote": "four of the five reported declines become non-significant out of six tests overall"
+  },
+  {
+   "id": "D21-series",
+   "source": "daskalova2021",
+   "read": "abstract",
+   "claim": "640 time series from 1,167 sites",
+   "quote": "640 time series from 1167 sites around the world"
+  },
+  {
+   "id": "D21-short",
+   "source": "daskalova2021",
+   "read": "abstract",
+   "claim": "the shortest series give the most extreme estimates in both directions",
+   "quote": "yielded the most extreme decline and increase estimates"
+  },
+  {
+   "id": "SR21-reply",
+   "source": "seibold2021reply",
+   "read": "abstract",
+   "claim": "the authors answer that a year random effect misses non-linear trends and treats consecutive years as independent",
+   "quote": "fail to detect non-linear trends and assume that consecutive years are independent samples"
+  },
+  {
+   "id": "VK20-design",
+   "source": "vanklink2020",
+   "read": "abstract",
+   "claim": "166 long-term surveys, 1,676 sites",
+   "quote": "166 long-term surveys of insect assemblages across 1676 sites"
+  },
+  {
+   "id": "VK20-trend",
+   "source": "vanklink2020",
+   "read": "abstract",
+   "claim": "terrestrial abundance about -9% per decade, freshwater about +11% per decade",
+   "quote": "an average decline of terrestrial insect abundance by ~9% per decade and an increase of freshwater insect abundance by ~11% per decade"
+  },
+  {
+   "id": "EEOC-2026",
+   "source": "science_eeoc_record",
+   "read": "record",
+   "claim": "Science published an Editorial Expression of Concern for the meta-analysis, first published 2026-01-22",
+   "quote": "Editorial Expression of Concern for the Report \"Meta-analysis reveals declines in terrestrial but increases in freshwater insect abundances\""
+  },
+  {
+   "id": "G24-half",
+   "source": "gaume2024",
+   "read": "abstract",
+   "claim": "more than half of the original studies in the database investigated manipulated factors or strong disturbances",
+   "quote": "in more than half of the original studies, the factors investigated were experimentally manipulated or were strong -often not natural- disturbances"
+  },
+  {
+   "id": "G24-up",
+   "source": "gaume2024",
+   "read": "abstract",
+   "claim": "these situations more often favoured an increase than a decrease",
+   "quote": "created situations more frequently favouring an increase than a decrease in insects"
+  },
+  {
+   "id": "G26-restoration",
+   "source": "gaume_statement_2026",
+   "read": "full",
+   "claim": "the critics name habitat creation, site remediation and restoration as over-represented contexts",
+   "quote": "The over-representation of specific contexts such as habitat creation, site remediation or restoration favouring insect increase"
+  },
+  {
+   "id": "M23-weather",
+   "source": "mueller2023",
+   "read": "abstract",
+   "claim": "the weather model explained the decline and a recent increase on weather variables alone",
+   "quote": "This model explained variation in temporal decline in insect biomass, including an observed increase in biomass in recent years, solely on the basis of these weather variables"
+  },
+  {
+   "id": "H25-aic",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the rebuttal: the weather-anomaly model is statistically inferior to year plus sampling weather, by 67.3 AIC units",
+   "quote": "Despite the lack of support (∆AIC = 67.3)"
+  },
+  {
+   "id": "H25-incomparable",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the rebuttal: the new data differ in trap type, placement, sampling period and latitude",
+   "quote": "such as trap type, trap placement in the field, period of sampling, latitudinal differences"
+  },
+  {
+   "id": "H25-gaps",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the rebuttal: in 2022 samples came predominantly from artificially established forest gaps",
+   "quote": "samples were predominantly taken from artificially established forest gaps"
+  },
+  {
+   "id": "H25-norecovery",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the rebuttal: two data sets collected with the original method (1,611 and 886 samples) show no recovery",
+   "quote": "(n = 1,611 and 886 distinct samples) than ref. 4 and have meticulously followed the methodology of the original study"
+  },
+  {
+   "id": "H25-ongoing",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the rebuttal reads those data as an ongoing decline",
+   "quote": "these results suggest an ongoing decline in flying insect biomass"
+  },
+  {
+   "id": "MR25-goal",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the reply: the goal was mechanisms, not trends",
+   "quote": "the goal of our study was not to analyse trends but to gain a better understanding of potential mechanisms driving biomass variation"
+  },
+  {
+   "id": "MR25-insufficient",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the reply: neither data set from after 2016 suffices to test for a change of trend",
+   "quote": "neither our nor their new data from after 2016 are sufficient to test for trend changes"
+  },
+  {
+   "id": "MR25-1503",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the reanalysis was trained on the same 1,503 observations",
+   "quote": "given the number of training data of 1,503 observations"
+  },
+  {
+   "id": "MR25-longer",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the reply: longer time series are needed",
+   "quote": "Longer time series are needed to do so"
+  },
+  {
+   "id": "MR25-time",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the reply: time by itself is not an informative ecological predictor",
+   "quote": "time per se is not an informative ecological predictor"
+  },
+  {
+   "id": "MR25-sampling",
+   "source": "hallmann2025_and_reply",
+   "read": "full",
+   "claim": "the reply grants that the agreement with the validation data is primarily due to sampling weather",
+   "quote": "the strong correlation between our validation data and the prediction is primarily due to the strong effect of sampling weather"
+  },
+  {
+   "id": "DF24-decline",
+   "source": "duchenne2024",
+   "read": "abstract",
+   "claim": "a second reanalysis finds a decline that weather does not explain",
+   "quote": "there is a significant temporal decline in insect biomass that is not explained by weather conditions"
+  },
+  {
+   "id": "MU24-design",
+   "source": "muehlethaler2024",
+   "read": "full",
+   "claim": "DINA: 21 reserves, 2020 and 2021, the same methods as the Krefeld study",
+   "quote": "in 21 selected nature reserves across Germany in the years 2020 and 2021. We used the same methods and protocols for trapping and measuring the biomass of flying insects as in the earlier study"
+  },
+  {
+   "id": "MU24-updown",
+   "source": "muehlethaler2024",
+   "read": "full",
+   "claim": "from 2020 to 2021 biomass fell at 13 sites and rose at 8",
+   "quote": "At 13 sampling sites, we found a decrease in insect biomass and at eight sites an increase from 2020 to 2021"
+  },
+  {
+   "id": "MU24-low",
+   "source": "muehlethaler2024",
+   "read": "full",
+   "claim": "biomass stayed at the low level of 2007 to 2016",
+   "quote": "the measured insect biomass remained at low levels, consistent with previous findings from the years 2007–2016"
+  },
+  {
+   "id": "MU24-2km",
+   "source": "muehlethaler2024",
+   "read": "full",
+   "claim": "biomass was negatively correlated with agricultural production area within 2 km",
+   "quote": "biomass was negatively correlated with agricultural production area within 2 km of nature reserves"
+  },
+  {
+   "id": "W22-net",
+   "source": "welti2022",
+   "read": "abstract",
+   "claim": "a new monitoring network at 84 locations across Germany",
+   "quote": "the first year of a new monitoring network at 84 locations across Germany"
+  },
+  {
+   "id": "W22-temp",
+   "source": "welti2022",
+   "read": "abstract",
+   "claim": "biomass rises with temperature, and the effect turns negative in the hot months",
+   "quote": "the effect of temperature on flying insect biomass flipped to negative in the hot months of June and July"
+  },
+  {
+   "id": "B22-traps",
+   "source": "busse2022",
+   "read": "abstract",
+   "claim": "light and Malaise traps side by side on 52 plots",
+   "quote": "light and Malaise traps were simultaneously deployed to sample insects at 52 plots"
+  },
+  {
+   "id": "B22-contrary",
+   "source": "busse2022",
+   "read": "abstract",
+   "claim": "the two trap kinds gave opposite biomass patterns along canopy openness",
+   "quote": "Biomass in light traps showed a decreasing trend with increasing canopy openness while biomass in Malaise traps increased"
+  },
+  {
+   "id": "U22-types",
+   "source": "uhler2022traps",
+   "read": "abstract",
+   "claim": "five Malaise trap types differ in biomass by 20 to 55%",
+   "quote": "Insect biomass varied by 20%–55%"
+  },
+  {
+   "id": "U21-surrogate",
+   "source": "uhler2021",
+   "read": "abstract",
+   "claim": "biomass and richness cannot stand in for each other",
+   "quote": "The contrasting patterns of insect biomass and richness question the use of these indicators as mutual surrogates"
+  },
+  {
+   "id": "N22-nodecline",
+   "source": "neff2022",
+   "read": "abstract",
+   "claim": "Switzerland, 390 species, 1980 to 2020: no overall decline in occupancy, strong winners and losers",
+   "quote": "We found no overall decline, but strong increases and decreases in the distributions of different species"
+  },
+  {
+   "id": "N22-design",
+   "source": "neff2022",
+   "read": "abstract",
+   "claim": "390 species, 1980 to 2020",
+   "quote": "390 insect species (butterflies, grasshoppers, dragonflies), using 1.45 million records from across bioclimatic gradients of Switzerland between 1980 and 2020"
+  },
+  {
+   "id": "HNL-rates",
+   "source": "hallmann2020nl",
+   "read": "abstract",
+   "claim": "Netherlands: macro-moths, beetles and caddisflies declined by 3.8, 5.0 and 9.2% per year",
+   "quote": "with annual rates of decline of 3.8, 5.0 and 9.2%, respectively"
+  },
+  {
+   "id": "HNL-stable",
+   "source": "hallmann2020nl",
+   "read": "abstract",
+   "claim": "true bugs and mayflies appeared stable",
+   "quote": "Other orders appeared stable [true bugs (Hemiptera: Heteroptera and Auchenorrhyncha) and mayflies (Ephemeroptera)]"
+  },
+  {
+   "id": "F19-bias",
+   "source": "fournier2019",
+   "read": "abstract",
+   "claim": "sites chosen for high abundance tend to show an apparent decline even when there is none",
+   "quote": "apparent population declines are likely to be detected even if there is no decline"
+  }
+ ]
+}
