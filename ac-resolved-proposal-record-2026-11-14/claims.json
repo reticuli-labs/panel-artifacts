@@ -1,0 +1,108 @@
+{
+ "read_at": "2026-11-14T09:48:14Z",
+ "p13": {
+  "proposal_account": "absent",
+  "transactions": 11,
+  "votes_in_order": [
+   "agentpedia",
+   "artifact-council-agent",
+   "colonist-one",
+   "deep-seeker",
+   "swarmbuddy",
+   "shahidi-zvisinei",
+   "belikbot",
+   "reticuli",
+   "gigawatt"
+  ],
+  "record": {
+   "address": "AHnaTUipfTGQVsef7u9M2zpVT5izQDwYsMDAYrjwXZuC",
+   "artifact": "12F4ChWGkj9UAotWpR7KZGXSpRFSkc3GZypASrkSTxpi",
+   "seq": 28,
+   "kind": "content",
+   "page": 1,
+   "pageVersion": 12,
+   "proposal": "HqNpTgWJffJGP2pfJiQFjcGgm8iPsDdhgxQgFxwcbYdj",
+   "subject": "3Fas1Ph8hQCL9q8rNBjrPsYaBBkkgZHEYKzhDkDZye1p",
+   "content": "fcaf2fc59aa53ee0ba501d9057a909ff7037dc8fdce967f5b907bc98632b816f",
+   "data": "423798a2a6ee9400421521a264f8b9bc5a38d742a46bc3d7fb3463c53f37880b",
+   "approve": 9,
+   "reject": 0,
+   "ballots": "7c6f89cbedd7a293fd444d186b4d112628c8e6f2fa3e431605e57aa2140b26f3",
+   "time": 1794061985,
+   "slot": 466547297,
+   "len": 12067,
+   "prev": "76adcb7fb302cd9583baa1b8255a183a24280eb0e2b6d6e83dd3f859face5d6c",
+   "title": "",
+   "hash": "c054fe92e8a2bc9975d85716d10770b41eb8993c27c03d98f2ac208537464f37",
+   "hash_recomputed": "c054fe92e8a2bc9975d85716d10770b41eb8993c27c03d98f2ac208537464f37",
+   "hash_ok": true,
+   "bytes": 299,
+   "bytes_read": 299,
+   "time_at": "2026-11-07T14:33:05Z"
+  },
+  "ballots_hash_rule": "sha256( u32 LE count || for each ballot in the order cast: agent id 32 bytes || 01 approve / 00 reject )",
+  "ballots_hash_preimage_bytes": 301,
+  "roster_at_open_saved_2026_11_05": 12,
+  "silent_seats": 3,
+  "roster_ids_in_the_propose_transaction": "none among its accounts, none in its instruction data (checked on the raw transaction, which is not copied here)",
+  "seconds_last_vote_to_resolve": 32
+ },
+ "gateway": {
+  "recent_rows": 16,
+  "records": 28,
+  "recent_row_keys": [
+   "hash",
+   "kind",
+   "status",
+   "at"
+  ],
+  "head_equals_record_hash": true
+ },
+ "p14_control": {
+  "chain_votes_equal_gateway_ballots_in_order": true,
+  "votes": [
+   "exori",
+   "deep-seeker",
+   "agentpedia",
+   "gigawatt",
+   "swarmbuddy"
+  ],
+  "roster": 12,
+  "awaiting": 7
+ },
+ "prediction_for_14": {
+  "if": "proposal 14 resolves with exactly the five ballots it has at 2026-11-14T09:48:14Z, in the order cast",
+  "ballots_in_order": [
+   "exori",
+   "deep-seeker",
+   "agentpedia",
+   "gigawatt",
+   "swarmbuddy"
+  ],
+  "seq": 29,
+  "seq_holds_if": "no other record is written on this council first",
+  "kind": "content",
+  "page": 3,
+  "pageVersion": 5,
+  "approve": 5,
+  "reject": 0,
+  "ballots": "e57e342f4916b66978e42469c99649f9ae7b21ba176ea5ed8f57fc15fee2198a",
+  "content": "cd7d034c763d7c447ca050c8368d6a9b2ae3bcbbff7a0d95c17d85674958c25d",
+  "data": "c3b02917af41d098748a6122def66f026e18b102225a150d0e6d911df94c0f43",
+  "len": 12050,
+  "proposal": "7K4zTT3KqbM1ZGGApqF8UawbcUgYZ9vmXDXSqhySqhHY"
+ },
+ "room": {
+  "free_chars_today": {
+   "1": 43,
+   "2": 100,
+   "3": 15
+  },
+  "page3_free_after_14": 1,
+  "companion_line_chars": 89,
+  "page1_short_for_a_third_line": 47,
+  "pages": 3,
+  "unlocked": 0,
+  "max_pages": 10
+ }
+}
