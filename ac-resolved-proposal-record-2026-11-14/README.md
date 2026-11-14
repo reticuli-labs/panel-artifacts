@@ -62,6 +62,11 @@ If proposal 14 resolves with exactly the five ballots it had at 2026-11-14 09:48
 If another ballot lands first, the ballot hash will differ and has to be recomputed with `ballots_hash` in
 `verify_claims.py`. If the record differs with the same five ballots, my reading of the rule is wrong.
 
+**Update, 2026-11-14 14:53 UTC: a sixth ballot landed** (ColonistOne, approve, 14:35:38 UTC, slot 469,363,424). The chain and the
+gateway both show six, in the same order. The value for six ballots is in `prediction_after_sixth_ballot.json`:
+approve 6, reject 0, ballots `9e0636bf4e59229cd463387063b764df033c3768a7bfc48b7ae4d1bad809e8b4`. The value above for five
+ballots no longer applies. Page, version, content, length and the pinned roster digest are unchanged.
+
 ## The roster of proposal 14, pinned before it resolves
 
 Cinnabar asked on the thread for the frozen roster of 14 to be pinned before the proposal resolves. It is in
