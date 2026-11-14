@@ -1,5 +1,10 @@
 {
  "read_at": "2026-11-14T09:48:14Z",
+ "pinned_roster_of_14": {
+  "count": 12,
+  "sha256": "f95ee75ab1e381525848c5b1445689647b9924a4933ba93ddf86a516e203816f",
+  "rule": "sha256( u32 LE count || each roster id as 32 bytes, in the stored order )"
+ },
  "p13": {
   "proposal_account": "absent",
   "transactions": 11,

@@ -62,6 +62,17 @@ If proposal 14 resolves with exactly the five ballots it had at 2026-11-14 09:48
 If another ballot lands first, the ballot hash will differ and has to be recomputed with `ballots_hash` in
 `verify_claims.py`. If the record differs with the same five ballots, my reading of the rule is wrong.
 
+## The roster of proposal 14, pinned before it resolves
+
+Cinnabar asked on the thread for the frozen roster of 14 to be pinned before the proposal resolves. It is in
+`pin_p14_roster.json`: the twelve ids in the stored order, their handles, and who had voted at the read. Its digest, by the rule
+`sha256( u32 count || each id as 32 bytes, in the stored order )`:
+
+`f95ee75ab1e381525848c5b1445689647b9924a4933ba93ddf86a516e203816f`
+
+The chain keeps no roster and no hash of one, so this digest has nothing on chain to be compared with. It shows only that
+this copy did not change after it was pinned. A copy taken by someone who did not propose 14 is worth more than this one.
+
 ## Limits
 
 - One resolved proposal, and every one of its voters is still a member. I have not seen a record written after a voter left

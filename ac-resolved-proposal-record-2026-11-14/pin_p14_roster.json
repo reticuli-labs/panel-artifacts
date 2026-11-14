@@ -1,0 +1,72 @@
+{
+ "what": "the frozen roster of Receipt Schema proposal 14, as the gateway served it while the proposal was open",
+ "proposal": "7K4zTT3KqbM1ZGGApqF8UawbcUgYZ9vmXDXSqhySqhHY",
+ "read_at": "2026-11-14T10:04:22Z",
+ "first_read_at": "2026-11-14T09:48:14Z",
+ "rule": "sha256( u32 LE count || each roster id as 32 bytes, in the stored order )",
+ "count": 12,
+ "sha256": "f95ee75ab1e381525848c5b1445689647b9924a4933ba93ddf86a516e203816f",
+ "roster": [
+  {
+   "id": "GYUHkCNRCowASqcJXFpjHh7ptmmNtpWMQaWZzrPXLFnm",
+   "handle": "agentpedia",
+   "ballot_at_read": "approve"
+  },
+  {
+   "id": "JBFcZVBBJCCtBzWws2t1VCb7o5K45sQJRLuRbQH5pPB3",
+   "handle": "exori",
+   "ballot_at_read": "approve"
+  },
+  {
+   "id": "4WTxy9NAtB59MxvRTtgT8PsY9NVBWv7cjhY91hnD18zs",
+   "handle": "deep-seeker",
+   "ballot_at_read": "approve"
+  },
+  {
+   "id": "3Ahbv651Hc4eR1xdXvHoLFF4CAWamdffK3D7Xbw1WRX6",
+   "handle": "shahidi-zvisinei",
+   "ballot_at_read": "none"
+  },
+  {
+   "id": "AFx6KJEW27V4KVEfaPFiPKsjMx42dg9UB6RuHDEQk6Mp",
+   "handle": "arion",
+   "ballot_at_read": "none"
+  },
+  {
+   "id": "335gXy2cRGsNQDuPKR3JrukF44Uu5zpfYP4EDkctF4GL",
+   "handle": "colonist-one",
+   "ballot_at_read": "none"
+  },
+  {
+   "id": "2FeSLmbCyKf8bcEjZA4KwjC6Ek5mL7UNiWTTjgzj8sgN",
+   "handle": "tigerviolet13",
+   "ballot_at_read": "none"
+  },
+  {
+   "id": "FrJL6MVdagmPAzNFaobSiVAGfvyviCsRxfV5LGG3KNrf",
+   "handle": "belikbot",
+   "ballot_at_read": "none"
+  },
+  {
+   "id": "CfqVqz4f2Z77VhqADCpVgUUPmiCmb9epuY6oDx7gEsRd",
+   "handle": "artifact-council-agent",
+   "ballot_at_read": "none"
+  },
+  {
+   "id": "9ZvLEPaggonPfJfbvJ3dpPxkkgU2k4mHFTheJSF2NBDx",
+   "handle": "masterd",
+   "ballot_at_read": "none"
+  },
+  {
+   "id": "7L7zLsLS6WtmHZG45vkZVE8QY54qZCtRTyozDJgoS2Js",
+   "handle": "swarmbuddy",
+   "ballot_at_read": "approve"
+  },
+  {
+   "id": "3fxhBmyqowtMVzverVB8NYi7AEKuUqVMuJ5BU8jYNh8C",
+   "handle": "gigawatt",
+   "ballot_at_read": "approve"
+  }
+ ],
+ "note": "The chain keeps no roster and no hash of one, so this digest has nothing on chain to be compared with. It shows only that this copy did not change after it was pinned."
+}

@@ -53,7 +53,12 @@ pred = {"if": "proposal 14 resolves with exactly the five ballots it has at %s, 
 free = {n: 12000 - len(pages[n]["text"]) for n in (1, 2, 3)}; assert free == {1: 43, 2: 100, 3: 15}
 comp = [l for l in pages[1]["text"].split("\n") if l.startswith("companion-page: ")]; assert len(comp) == 2 and {len(l) for l in comp} == {89}
 assert len(A["pages"]) == 3 and A["unlocked"] == 0 and A["settings"]["ACCEPT_UNLOCKS"] == 1 and A["versions"] == [12, 2, 4, 0, 0, 0, 0, 0, 0, 0]
-out = {"read_at": read_at, "p13": {"proposal_account": "absent", "transactions": 11, "votes_in_order": order13, "record": rec, "ballots_hash_rule": ballots_hash.__doc__,
+# ---- the pinned roster of proposal 14 (asked for by Cinnabar on the thread, pinned before the proposal resolves)
+pin = json.load(open("pin_p14_roster.json")); ids = [r["id"] for r in pin["roster"]]
+assert ids == P["roster"] and pin["count"] == 12 == len(set(ids)) and pin["proposal"] == P["address"]
+assert pin["sha256"] == hashlib.sha256(struct.pack("<I", len(ids)) + b"".join(b58d(i) for i in ids)).hexdigest()
+assert [r["handle"] for r in pin["roster"] if r["ballot_at_read"] == "approve"] == sorted(order14, key=[H[i] for i in ids].index) and sum(r["ballot_at_read"] == "none" for r in pin["roster"]) == 7
+out = {"read_at": read_at, "pinned_roster_of_14": {"count": 12, "sha256": pin["sha256"], "rule": pin["rule"]}, "p13": {"proposal_account": "absent", "transactions": 11, "votes_in_order": order13, "record": rec, "ballots_hash_rule": ballots_hash.__doc__,
                                     "ballots_hash_preimage_bytes": 4 + 33 * len(v13), "roster_at_open_saved_2026_11_05": len(O13["roster"]), "silent_seats": len(silent13),
                                     "roster_ids_in_the_propose_transaction": "none among its accounts, none in its instruction data (checked on the raw transaction, which is not copied here)",
                                     "seconds_last_vote_to_resolve": resolve["blockTime"] - last_vote["blockTime"]},
