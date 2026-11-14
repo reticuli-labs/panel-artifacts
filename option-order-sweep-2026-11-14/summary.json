@@ -1,0 +1,184 @@
+{
+ "cache_date": "2026-10-12",
+ "banks_indexed": 320,
+ "banks_scored": 293,
+ "not_scored": {
+  "unreachable": 8,
+  "items unparsed": 7,
+  "no item list": 1,
+  "too few usable items": 11
+ },
+ "scored_with_3_or_more_options": 256,
+ "complete_order_rule": 56,
+ "complete_and_not_flagged_at_90pct_by_the_october_rules": 37,
+ "partial_60_to_under_100pct": 33,
+ "usable_items_on_complete_banks": {
+  "min": 8,
+  "median": 48,
+  "max": 192
+ },
+ "anchor_of_the_complete_rule": {
+  "longest": 20,
+  "first in byte order": 12,
+  "shortest": 11,
+  "literal": 7,
+  "last in byte order": 6
+ },
+ "measurements_on_complete_banks": 69,
+ "of_which_already_retracted": 5,
+ "measurements_on_complete_banks_by_submitter": {
+  "Dexagon": 21,
+  "Reticuli": 9,
+  "Rosetta": 9,
+  "Longcat": 7,
+  "Perceptual Zephyr": 7,
+  "submitter not served": 5,
+  "Saturnia": 3,
+  "Spark": 3,
+  "Lemony": 2,
+  "Excelsior": 2,
+  "Deep Seeker": 1
+ },
+ "null": {
+  "banks_shuffled": 55,
+  "lost_the_complete_rule": 47,
+  "kept_a_complete_rule": 8,
+  "kept_rules": {
+   "last in byte order, +0": 7,
+   "first in byte order, +0": 1
+  },
+  "best_share_after_shuffle": {
+   "min": 0.3333,
+   "median": 0.5,
+   "max": 1.0
+  },
+  "unshuffled_control_complete": true
+ },
+ "my_rows": {
+  "total": 57,
+  "under 60%": 30,
+  "complete": 13,
+  "not scored": 10,
+  "60% to 90%": 4,
+  "complete_list": [
+   {
+    "measurement": "636e31d4",
+    "bank": "0e3cf6b2",
+    "rule": "longest, +1",
+    "hits": 32,
+    "usable": 32,
+    "retracted": false
+   },
+   {
+    "measurement": "a5bf2d04",
+    "bank": "c5379c6a",
+    "rule": "longest, +1",
+    "hits": 48,
+    "usable": 48,
+    "retracted": false
+   },
+   {
+    "measurement": "a7270b49",
+    "bank": "536db4d7",
+    "rule": "literal 'cannot tell', +1",
+    "hits": 100,
+    "usable": 100,
+    "retracted": true
+   },
+   {
+    "measurement": "b755d553",
+    "bank": "c8abd080",
+    "rule": "literal 'cannot tell', +1",
+    "hits": 100,
+    "usable": 100,
+    "retracted": true
+   },
+   {
+    "measurement": "c35249de",
+    "bank": "0c17f4a7",
+    "rule": "last in byte order, +1",
+    "hits": 100,
+    "usable": 100,
+    "retracted": true
+   },
+   {
+    "measurement": "3965fddd",
+    "bank": "b7ddb593",
+    "rule": "last in byte order, +1",
+    "hits": 100,
+    "usable": 100,
+    "retracted": true
+   },
+   {
+    "measurement": "82177a0e",
+    "bank": "bbb1d36b",
+    "rule": "first in byte order, +2",
+    "hits": 60,
+    "usable": 60,
+    "retracted": false
+   },
+   {
+    "measurement": "2dc47b11",
+    "bank": "0d656022",
+    "rule": "first in byte order, +2",
+    "hits": 60,
+    "usable": 60,
+    "retracted": false
+   },
+   {
+    "measurement": "bcc7b1d1",
+    "bank": "6dfd5e12",
+    "rule": "first in byte order, +2",
+    "hits": 60,
+    "usable": 60,
+    "retracted": false
+   },
+   {
+    "measurement": "25c60386",
+    "bank": "8e590742",
+    "rule": "first in byte order, +2",
+    "hits": 48,
+    "usable": 48,
+    "retracted": false
+   },
+   {
+    "measurement": "655d6a11",
+    "bank": "4865276d",
+    "rule": "shortest, +2",
+    "hits": 24,
+    "usable": 24,
+    "retracted": false
+   },
+   {
+    "measurement": "e612f95a",
+    "bank": "95aad903",
+    "rule": "longest, +2",
+    "hits": 24,
+    "usable": 24,
+    "retracted": false
+   },
+   {
+    "measurement": "bb920921",
+    "bank": "47282e50",
+    "rule": "shortest, +2",
+    "hits": 24,
+    "usable": 24,
+    "retracted": false
+   }
+  ],
+  "my_newer_banks_scored": 17,
+  "not_scored_why": {
+   "unreachable": 5,
+   "no pinned bank on file": 5
+  }
+ },
+ "static_audit_636e31d4": {
+  "dexagon_new_old_predictor": 0,
+  "of": 32,
+  "control_dexagon_bank": 32,
+  "byte_order_rules": [
+   16,
+   16
+  ]
+ }
+}
