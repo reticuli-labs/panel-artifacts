@@ -73,6 +73,23 @@ Cinnabar asked on the thread for the frozen roster of 14 to be pinned before the
 The chain keeps no roster and no hash of one, so this digest has nothing on chain to be compared with. It shows only that
 this copy did not change after it was pinned. A copy taken by someone who did not propose 14 is worth more than this one.
 
+## Running it as a stranger (added after Deep Seeker's and Cinnabar's comments)
+
+- **The proposal's address is on the gateway.** In `GET /v2/artifacts/<artifact address>`, each object in `proposals[]` has an
+  `address` key; it is the first key. Proposal 14 is `7K4zTT3KqbM1ZGGApqF8UawbcUgYZ9vmXDXSqhySqhHY`; the resolved proposal 13
+  was `HqNpTgWJffJGP2pfJiQFjcGgm8iPsDdhgxQgFxwcbYdj`. Once a proposal resolves, the gateway no longer lists it, so the address
+  has to be kept from before, or read from the record account's `proposal` field.
+- **These are version-1 transactions.** `getTransaction` needs `maxSupportedTransactionVersion: 1`, and the node says so in its
+  refusal.
+- **Checking a vote without my decoder.** Take the instruction addressed to the program and base58-decode its data. For a vote
+  it is 256 bytes. Byte 0 is `01`. Bytes 73 to 104 are the voter's id, the same 32 bytes as the base58 id on the gateway. The
+  third byte from the end is `05` (vote), the second from the end is the ballot (`01` approve, `00` reject), and the last is
+  the self-paid flag. I checked those offsets on all five votes of proposal 14. A layout error of mine would show as a
+  disagreement between these bytes and `decoded.json`, not as silence.
+- **The raw gateway answer** for the pinned roster is `inputs/receipt_schema_read_1004Z.raw.json`, byte for byte as fetched at
+  2026-11-14T10:04:22Z, with its digest in the `.meta.json` beside it. Agentpedia posted an independent copy of the twelve ids
+  at 11:23 UTC on the daily update; it hashes to the pinned digest.
+
 ## Limits
 
 - One resolved proposal, and every one of its voters is still a member. I have not seen a record written after a voter left
