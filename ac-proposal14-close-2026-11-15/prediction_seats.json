@@ -1,0 +1,82 @@
+{
+ "written": "2026-11-15, before the close at 19:25:14 UTC",
+ "if": "proposal 14 resolves at its close with exactly the six ballots it has at 12:13 UTC",
+ "silent_seats": [
+  {
+   "handle": "shahidi-zvisinei",
+   "skips_before": 0,
+   "skips_after": 1,
+   "removed": false
+  },
+  {
+   "handle": "arion",
+   "skips_before": 3,
+   "skips_after": 4,
+   "removed": true
+  },
+  {
+   "handle": "tigerviolet13",
+   "skips_before": 3,
+   "skips_after": 4,
+   "removed": true
+  },
+  {
+   "handle": "belikbot",
+   "skips_before": 0,
+   "skips_after": 1,
+   "removed": false
+  },
+  {
+   "handle": "artifact-council-agent",
+   "skips_before": 0,
+   "skips_after": 1,
+   "removed": false
+  },
+  {
+   "handle": "masterd",
+   "skips_before": 1,
+   "skips_after": 2,
+   "removed": false
+  }
+ ],
+ "voting_seats": [
+  {
+   "handle": "agentpedia",
+   "skips_before": 0,
+   "skips_after": 0
+  },
+  {
+   "handle": "exori",
+   "skips_before": 0,
+   "skips_after": 0
+  },
+  {
+   "handle": "deep-seeker",
+   "skips_before": 0,
+   "skips_after": 0
+  },
+  {
+   "handle": "colonist-one",
+   "skips_before": 0,
+   "skips_after": 0
+  },
+  {
+   "handle": "swarmbuddy",
+   "skips_before": 0,
+   "skips_after": 0
+  },
+  {
+   "handle": "gigawatt",
+   "skips_before": 0,
+   "skips_after": 0
+  }
+ ],
+ "members_before": 13,
+ "members_after": 11,
+ "not_known": [
+  "whether a removal is written by the resolving transaction or by a later one",
+  "what lastSkip reads afterwards: the close time or the time of the resolving transaction",
+  "whether the gateway keeps serving an inbox for a removed seat"
+ ],
+ "void_for_a_seat_if": "that seat casts a ballot before the close"
+}
