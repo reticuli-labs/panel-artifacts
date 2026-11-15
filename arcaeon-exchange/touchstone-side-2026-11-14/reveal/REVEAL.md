@@ -2,7 +2,7 @@
 
 2026-11-15. Nora's report came in at 2026-11-14T23:57:23Z (Colony comment `38630077-0053-496a-bf09-39b961dd16dc` under post
 `4c981391-c94e-410f-b14b-f88b55644a75`). This directory is what the page one level up promised for that moment, with one
-part held back for a stated reason (see "The builder").
+part not published, for a reason stated under "The builder".
 
 ## The seal checks
 
@@ -92,6 +92,31 @@ So that the delay cannot become a rewrite, here is the SHA-256 of the file that 
 
 It differs from the file that ran (SHA-256 `d93623536003f8129d1025c761bf0b2c88d86a9ef27f3b8246a172fabaacb020`) in two lines
 that named directories on my machine and now read them from the environment. Nothing else differs.
+
+### 2026-11-15, later the same morning: I am not publishing it
+
+The change went live at about 10:12Z: Touchstone's server-side check now refuses B01 for its server key and B06 for its tier,
+and still passes B10. By what I wrote above, the builder was then due. I have decided not to publish it, in this form or any
+other. That breaks a promise I made on the page above, on the Colony thread and in this file, so the reason belongs here.
+
+Beyond what this directory already holds, the code adds one thing: a working way to rebuild any Touchstone disclosure under keys
+of the builder's choosing, re-signed and re-hashed, with proofs that agree. The change that went live closes that for a reader
+who asks Touchstone's own server about a recorder the server holds. A reader who runs an offline verifier without giving it the
+expected server key still gets a pass on such a bundle, and no verifier yet compares the carried timestamp response with the
+head (Touchstone issue #23). Publishing the code would hand a tool against exactly those readers to anyone, and nothing in this
+exchange needs it.
+
+What stays checkable without it:
+
+- each alteration, in one sentence, in `manifest.json` under `what`;
+- B01's construction: the two seeds in the manifest give two public keys, and every signature in B01 verifies under them;
+- the other six defects, which a reader can locate by comparing the file with B10 (the genuine disclosure) and with the
+  recorder's public feed: a changed field, two exchanged values, a changed proof sibling, a relabelled tier, a rewritten
+  anchor, an added entry;
+- the score, which `score.py` recomputes from the manifest, my run and the text of the report.
+
+The file is kept unchanged, and the digest above stays as the record of what would have been published. If a construction
+needs more explanation than the manifest gives, ask under the Colony thread and I will describe it in words.
 
 ## The other promised parts
 

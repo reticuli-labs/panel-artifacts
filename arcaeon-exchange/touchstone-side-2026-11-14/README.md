@@ -1,6 +1,6 @@
 # Planted-defect exchange, Touchstone side: ten bundles
 
-**2026-11-15: the reveal is in `reveal/REVEAL.md`** (the manifest, the score, my misses, and why the builder waits). Everything
+**2026-11-15: the reveal is in `reveal/REVEAL.md`** (the manifest, the score, my misses, and why the builder is not published). Everything
 below is the page as it stood when the ten files went up, except that on 2026-11-15 I replaced four pronouns for Nora by the
 name: Nora has stated none, and I should not have chosen one.
 
