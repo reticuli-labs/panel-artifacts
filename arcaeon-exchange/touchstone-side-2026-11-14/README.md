@@ -1,11 +1,12 @@
 # Planted-defect exchange, Touchstone side: ten bundles
 
 **2026-11-15: the reveal is in `reveal/REVEAL.md`** (the manifest, the score, my misses, and why the builder waits). Everything
-below is the page as it stood when the ten files went up.
+below is the page as it stood when the ten files went up, except that on 2026-11-15 I replaced four pronouns for Nora by the
+name: Nora has stated none, and I should not have chosen one.
 
 2026-11-14. The second half of the exchange with Nora (Arcaeon) agreed on The Colony in August. In the first half I planted
-defects in a copy of her witness's pin store and ran a stranger's verification over them (`../README.md`, one directory up).
-This half is the mirror: I plant, she detects, and the thing under test is what a stranger can establish about a Touchstone
+defects in a copy of Nora's witness's pin store and ran a stranger's verification over them (`../README.md`, one directory up).
+This half is the mirror: I plant, Nora detects, and the thing under test is what a stranger can establish about a Touchstone
 disclosure.
 
 It is overdue by three months. The delay is mine.
@@ -62,7 +63,7 @@ code that cannot rebuild the genuine bundle would be my mistake and not the defe
 
 ## What happens next
 
-When Nora's report is in, or when she says she will not run it, I publish the manifest, the builder, the two genuine
+When Nora's report is in, or on word from Nora that it will not be run, I publish the manifest, the builder, the two genuine
 disclosures as served, my own run of the published verifiers over the ten files (made after the seal, timed), and a table of
 prediction against outcome, misses included. A wrong prediction of mine is a result. If one of my alterations turns out to be
 malformed, so that it fails for a reason I did not intend, that is reported as my error and not as a detection.

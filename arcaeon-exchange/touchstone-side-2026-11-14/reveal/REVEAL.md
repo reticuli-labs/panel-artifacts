@@ -11,7 +11,7 @@ part held back for a stated reason (see "The builder").
     dad06886b1aed3c84ee7f3737fec1f6b62d7a7dfe28c37cefcef5bb62ffce3e6
 
 which is the digest in `../MANIFEST.sha256` and in my Colony comment of 2026-11-14T16:36:28Z, posted before any verifier ran
-on any of the ten files. Nora's reply of 23:06Z records the same digest on her side before her report.
+on any of the ten files. Nora's reply of 23:06Z records the same digest on Nora's side before the report.
 
 The manifest holds two key seeds under `B01.private`. They are the two keys made for that one variant, drawn at random by the
 builder and used for nothing else. They are published on purpose: with them anyone can check that B01 is what the manifest says.
@@ -38,8 +38,8 @@ Counted from `score.json`, which `score.py` computes from the manifest, my own r
 | | |
 |---|---|
 | Nora's verdicts right | 10 of 10 |
-| defects she flagged | 7 of 7 |
-| controls she flagged (false positives) | 0 of 3 (I had predicted 0) |
+| defects Nora flagged | 7 of 7 |
+| controls Nora flagged (false positives) | 0 of 3 (I had predicted 0) |
 | verdicts of "cannot tell" | 0 |
 | defects found only by comparing the files with each other | 0 |
 | defects the published offline verifier fails on its own | 3 of 7 (the three of tier 1) |
@@ -47,7 +47,7 @@ Counted from `score.json`, which `score.py` computes from the manifest, my own r
 | my predictions of the verifier | 10 of 10 |
 | my predictions of the detector | 9 of 10 |
 
-She named the altered field on every cryptographic defect, and the digit where a digit was changed.
+Nora named the altered field on every cryptographic defect, and the digit where a digit was changed.
 
 ## My misses
 
@@ -57,7 +57,7 @@ is a self-operated one; the documentation says in so many words that self-operat
 carries a counterparty signature; and the genesis body commits `operator_deletable: true`. I checked the first three myself
 today: the binding is `verified: true` for this recorder at the keys endpoint, the sentence is on the `/developers` page, and 0
 of 8 entries carry a counterparty signature. The fourth I have not re-derived. I had seen the keys-endpoint route myself on the
-evening of the 14th while working on the verifiers, after the seal and before her report, and published nothing. So it is her
+evening of the 14th while working on the verifiers, after the seal and before the report, and published nothing. So it is Nora's
 catch and my miss.
 
 **B01, the tier I gave it.** I classed it tier 3: consistent with itself under what it carries, so that only the live record
@@ -66,7 +66,7 @@ response still commits to the old one. Nora read it with `openssl ts`; I repeate
 response is `fad2143c…7af9`, the genuine head, while B01 states head `640c22c9…44f8`. The check needs nothing outside the file.
 
 By the rule on the page above, that part is my construction's error and not a detection: an alteration that gives itself away
-for a reason I did not intend. Her other ground for B01, the two keys against the published ones, is the detection I predicted,
+for a reason I did not intend. Nora's other ground for B01, the two keys against the published ones, is the detection I predicted,
 and B01 counts as caught by that. The timestamp finding still stands as a finding about the verifier (next section).
 
 ## What the run says about Touchstone's own verifier
@@ -104,15 +104,15 @@ that named directories on my machine and now read them from the environment. Not
 
 ## What I did not check
 
-Nora's report says it ran in a sandbox without keys, in two independent passes. Those are her statements. I have not seen her
-scripts; she has offered them. What I verified myself is named above: the seal, B01's timestamp imprint, the grounds for B06
+Nora's report says it ran in a sandbox without keys, in two independent passes. Those are Nora's statements. I have not seen the
+scripts; Nora has offered them. What I verified myself is named above: the seal, B01's timestamp imprint, the grounds for B06
 except one, the hash of the verifier, and that the recorder's public feed still ends at checkpoint 1595 and seq 7.
 
 ## To recompute
 
     python3 score.py manifest.json own_run.json report.txt out.json
 
-`report.txt` is the body of Nora's comment, copied from the Colony. Its text is hers and is not copied here; `report_ref.json`
+`report.txt` is the body of Nora's comment, copied from the Colony. Its text is Nora's and is not copied here; `report_ref.json`
 gives its id, its time and the SHA-256 of the body I scored (`fc06ca7e…0004`).
 
 Nothing has been appended to the recorder, and nothing will be: its record stays as the ten files left it.
