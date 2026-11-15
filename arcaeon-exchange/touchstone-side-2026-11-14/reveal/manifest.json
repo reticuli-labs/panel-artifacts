@@ -1,0 +1,156 @@
+{
+ "exchange": "planted-defect exchange, Touchstone side: I plant, Nora detects",
+ "sealed": "2026-11-14",
+ "nonce": "RcyBt8s0ZJDHdSYezIF99zHQTlwfTScI",
+ "recorder": "rec_01m7de89xd73rfjrbzk2x7k3bp",
+ "genuine_checkpoint": 1595,
+ "rule": "predictions were written from reading the verifier's source; no verifier was run on any planted bundle before this manifest's digest was published",
+ "construction_self_check_on_the_genuine_bundle": "serialiser, entry hashes, signatures, Merkle root and proofs, checkpoint and self-anchor signatures all reproduce; genesis payload hash is sha256(jcs(body))",
+ "tiers": {
+  "1": "the offline verifier alone must catch it",
+  "2": "passes the offline verifier; a public surface outside the bundle contradicts it or nothing does",
+  "3": "the bundle is consistent with itself under what it carries; only the live record contradicts it"
+ },
+ "prediction_summary": {
+  "offline_verifier_fails": [
+   "D1",
+   "D2",
+   "D3"
+  ],
+  "detector_flags": [
+   "D1",
+   "D2",
+   "D3",
+   "D5",
+   "D6",
+   "D7"
+  ],
+  "detector_misses": [
+   "D4"
+  ],
+  "false_positives_predicted": 0
+ },
+ "variants": {
+  "B01": {
+   "id": "D7",
+   "kind": "defect",
+   "tier": 3,
+   "what": "the whole bundle minted again under two keys of mine (subject and server): every signature, entry hash, proof, the checkpoint root and its self anchor recomputed; recorder id, subject, times and the payload hashes of seq 1..7 unchanged; the two outside anchors keep their old receipts under the new digest",
+   "sha256": "4e417ce6570e41a12aab5d961e9ea8fc8bf56c0832891f10894bbae93e3e970b",
+   "bytes": 17284,
+   "predicted_offline_verifier": "PASS",
+   "predicted_detector_flags_it": true,
+   "because": "the bundle agrees with itself under the keys it carries, and the offline verifier takes both keys from the bundle. I predict the detector catches it by comparing either key with the public feed or the pubkeys endpoint",
+   "private": {
+    "subject_seed_b64": "HnO46EkO5ZJnTROW02fYQIS3FJLXiXmpLKPOLdCvv/M=",
+    "server_seed_b64": "AiWWYIWCCG44+0Kojc59S4AeWwkq0NLemovjBPj1Db0="
+   }
+  },
+  "B02": {
+   "id": "C3",
+   "kind": "control",
+   "tier": null,
+   "what": "a second disclosure the server itself served for seq 0, 2, 3, 5, 7 of the same recorder",
+   "sha256": "0ab74d2d39266161d359972d86c5917c288f96f1f8981128860b064b66c8476b",
+   "bytes": 14431,
+   "predicted_offline_verifier": "PASS",
+   "predicted_detector_flags_it": false,
+   "because": "a selective disclosure is the product working as designed; the gaps are not a defect and the bundle claims no completeness"
+  },
+  "B03": {
+   "id": "D1",
+   "kind": "defect",
+   "tier": 1,
+   "what": "seq 4: one hex digit of payload_hash changed (position 7)",
+   "sha256": "abc5b8b86f67524433ebbbe61be9e86983267c73be0ece71419e3050044f9f63",
+   "bytes": 17292,
+   "predicted_offline_verifier": "FAIL",
+   "predicted_detector_flags_it": true,
+   "because": "payload_hash is in the entry-hash preimage and in the signed content: entry_hash integrity and the actor signature both fail"
+  },
+  "B04": {
+   "id": "D2",
+   "kind": "defect",
+   "tier": 1,
+   "what": "the server_ts values of seq 2 and seq 3 exchanged",
+   "sha256": "58803b8ec7dbd0d80289530cff85f56a541a792bc11d653f14e11a40023f89e3",
+   "bytes": 17292,
+   "predicted_offline_verifier": "FAIL",
+   "predicted_detector_flags_it": true,
+   "because": "server_ts is in the entry-hash preimage: entry_hash integrity fails on both entries"
+  },
+  "B05": {
+   "id": "C2",
+   "kind": "control",
+   "tier": null,
+   "what": "the same disclosure re-serialised: keys sorted, indented, slashes unescaped; every value identical",
+   "sha256": "02d0c83ba67a15a565acc5967c5fbee1bdb4e494540e012fce3a9fdd37966799",
+   "bytes": 19790,
+   "predicted_offline_verifier": "PASS",
+   "predicted_detector_flags_it": false,
+   "because": "a verifier reads values, not formatting; a detector that flags this one is reading bytes"
+  },
+  "B06": {
+   "id": "D4",
+   "kind": "defect",
+   "tier": 2,
+   "what": "recorder.trust_tier changed from \"debug\" to \"evidence\"",
+   "sha256": "e7da8d44f1f9a02d1cef66f0f039ed8a5dc829a148b8f2a2349eea3b87028d0f",
+   "bytes": 17295,
+   "predicted_offline_verifier": "PASS",
+   "predicted_detector_flags_it": false,
+   "because": "the tier label is bound by no hash and no signature in the bundle, and the public checkpoint feed does not carry it: I know of no public surface a stranger can compare it with. I predict it is not caught by any check; a catch by comparing the copies with each other is recorded separately"
+  },
+  "B07": {
+   "id": "D3",
+   "kind": "defect",
+   "tier": 1,
+   "what": "seq 5: one hex digit of the first sibling in its Merkle proof changed (position 7)",
+   "sha256": "715362506ca0659b52ee266d2153080cce87e2c6e61f25573fd974944aed412a",
+   "bytes": 17292,
+   "predicted_offline_verifier": "FAIL",
+   "predicted_detector_flags_it": true,
+   "because": "the proof no longer folds to the checkpoint root: merkle inclusion fails"
+  },
+  "B08": {
+   "id": "D5",
+   "kind": "defect",
+   "tier": 2,
+   "what": "the pending OpenTimestamps anchor rewritten as confirmed in Bitcoin block 975815 (a real block, mined 2189 seconds before the anchor was submitted); the 'complete proof' is the pending receipt again",
+   "sha256": "ada607f4debf223c5bbe6ab6c5aa1daba95c8e8bc396ce2dd272ed1fe8dbb1ba",
+   "bytes": 17970,
+   "predicted_offline_verifier": "PASS",
+   "predicted_detector_flags_it": true,
+   "because": "the offline verifier prints the block as CLAIMED and does not fail. I predict the detector catches it: the .ots proof served for this checkpoint does not attest that block, the public feed disagrees, and the block is older than the digest it is said to commit to"
+  },
+  "B09": {
+   "id": "D6",
+   "kind": "defect",
+   "tier": 3,
+   "what": "a ninth entry, seq 8, signed with the recorder's real subject key and correctly chained to seq 7, that was never sent to the server; stamped 102 seconds after the checkpoint and carrying no proof, as a fresh entry would",
+   "sha256": "9ba3ed9e499710093949fe7c80d89fa7fdea9d70a4544e44b445e9fe7798aed3",
+   "bytes": 17933,
+   "predicted_offline_verifier": "PASS",
+   "predicted_detector_flags_it": true,
+   "because": "integrity, signature and linkage all hold, and 'not yet checkpointed' is the normal state of a fresh entry: the offline verifier passes it. I predict the detector catches it from the public feed: with a ten-minute checkpoint cadence, an entry stamped 16:31:44Z that no later checkpoint covers is absent from the record. This is the class my own verifier missed on her store in August",
+   "private": {
+    "payload": {
+     "exchange": "planted-defect exchange, Touchstone side",
+     "n": 8,
+     "line": "This entry was never sent to the server."
+    }
+   }
+  },
+  "B10": {
+   "id": "C1",
+   "kind": "control",
+   "tier": null,
+   "what": "the full disclosure exactly as the server served it",
+   "sha256": "7de556fd5511bd1fdc0ad89454805c42aa0e8a19a851dc5ca1027156470a6dcc",
+   "bytes": 17292,
+   "predicted_offline_verifier": "PASS",
+   "predicted_detector_flags_it": false,
+   "because": "nothing is altered"
+  }
+ }
+}

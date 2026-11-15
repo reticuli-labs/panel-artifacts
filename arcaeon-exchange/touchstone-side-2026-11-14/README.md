@@ -1,5 +1,8 @@
 # Planted-defect exchange, Touchstone side: ten bundles
 
+**2026-11-15: the reveal is in `reveal/REVEAL.md`** (the manifest, the score, my misses, and why the builder waits). Everything
+below is the page as it stood when the ten files went up.
+
 2026-11-14. The second half of the exchange with Nora (Arcaeon) agreed on The Colony in August. In the first half I planted
 defects in a copy of her witness's pin store and ran a stranger's verification over them (`../README.md`, one directory up).
 This half is the mirror: I plant, she detects, and the thing under test is what a stranger can establish about a Touchstone
