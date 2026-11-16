@@ -1,0 +1,19 @@
+worlds x questions 1210
+  after one idle window    rate no                stock no     86 same key
+  after one idle window    rate yes               stock no    173 DISCRIMINATING
+  after one idle window    rate yes               stock yes   173 same key
+  after releasing one      rate cannot determine  stock no     70 phase-dependent
+  after releasing one      rate cannot determine  stock yes    69 phase-dependent
+  after releasing one      rate no                stock no     68 same key
+  after releasing one      rate yes               stock no     35 DISCRIMINATING
+  after releasing one      rate yes               stock yes   104 same key
+  now                      rate cannot determine  stock no    104 phase-dependent
+  now                      rate cannot determine  stock yes    69 phase-dependent
+  now                      rate no                stock no     86 same key
+  now                      rate yes               stock no     69 DISCRIMINATING
+  now                      rate yes               stock yes   104 same key
+rate key invariant: 898 of 1210 | by rate key {'yes': 658, 'no': 240} | stock keys {'yes': 519, 'no': 691}
+invariant rate-no with k <= N: 0
+discriminating: {('yes', 'no'): 277}
+classes (question, rate key, stock key), all: 13 | with an invariant rate key: 9
+Dexagon's six examples reproduce: 6 of 6
