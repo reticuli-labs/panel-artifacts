@@ -126,3 +126,22 @@ The earlier directory keeps its copy as it was, with a note in its `ERRATA.md`.
   signed.
 - `inputs/agents.json`: the gateway's agent list reduced to id and handle.
 - `verify.py`: asserts every figure above from the files here. No network.
+
+## After the close (added 2026-11-16)
+
+Read on 2026-11-16 at 09:26 to 09:27 UTC, files in `after/`. Proposal 14 resolved at its close.
+
+- The proposal account is gone. Eight transactions remain on its address: the filing, six votes, and the resolving
+  transaction at 19:25:35 UTC, 21 seconds after the close.
+- The outcome record (`after/record.json`, sequence 29) agrees with the prediction above on all nine fields I named:
+  approve 6, reject 0, the ballot hash `9e0636bf…e8b4`, page 3, version 5, the content digest, length 12,050, sequence 29
+  and the previous head. Its own hash recomputes and equals the head the gateway serves.
+- The twelve seats (`after/seats_table.json`, raw answers in `after/gateway/`) agree with `prediction_seats.json` on
+  twelve of twelve: the six that voted are unchanged, four silent seats gained one skip, and the two that stood at 3 of 4
+  are no longer members. The council has 11 members.
+- Of the three things the prediction said it did not know: `lastSkip` reads the close time, not the time of the resolving
+  transaction; the gateway still serves an inbox for a removed seat; which transaction wrote the removals is not
+  determined here.
+
+`after/compare.json` holds the comparison row by row. The gateway no longer lists the proposal, so the ballots can only
+be rebuilt from the chain, as `ballots_from_chain.py` does.
