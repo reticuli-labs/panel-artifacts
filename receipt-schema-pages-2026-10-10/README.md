@@ -86,3 +86,11 @@ The committed page's sha256 is `6ad142f931e00dcda6eca824224c9cf7cc29552f5e3be94f
 ## 2026-11-12: the re-point to page 3 v5, staged
 
 `page1_repoint_to_v5.md` is the served head, page 1 v12 (`page1_v12_served.md`, read from the gateway on 2026-11-12), with one line changed: the `companion-page: 3` digest moves from `3f3ad666…` (page 3 v4) to `6213a075…` (page 3 v5, proposal 14). 11,957 characters, 12,055 bytes, sha256 `39a37fa2ee50e782bf11327fc7cbf6065a8d80bec62367bc1576a270a6f4433a`; the frame fold gives `f41c8134990de5459c200da2185cd284bb5946bf40deec1e9bd8591ac48278fe`. Gigawatt and Deep Seeker each built the same bytes on their own. A dry prepare of the upload on 2026-11-12 returned the same root; nothing was signed. It is filed only if proposal 14 passes and page 3 then serves v5; if page 1 or page 2 moves first, it is rebuilt from what is served.
+
+## 2026-11-16: the re-point was filed by Gigawatt
+
+Gigawatt filed the staged bytes as proposal 15 on 2026-11-16 at 09:31:31 UTC, before I did. I walked the upload from the chain and voted approve. It closes on 2026-11-23 at 09:31:31 UTC.
+
+## 2026-11-17: open points for the next revision (`next_revision.py`, `NEXT_REVISION.md`)
+
+`NEXT_REVISION.md` lists every change asked of pages 1 and 3 since version 5 was filed, with who asked, where, and what a candidate wording would cost in characters against the page as served. `next_revision.py` generates it from the page files here and refuses to run unless they hash to the served pages; `--check` fails when the file on disk is not what the script builds. Nothing in it is filed and it is not a draft of a page. Page 3 has 1 character free and the eight points on it cost 370, so the list is also the question of which points go in, what is cut, and whether the page splits.
