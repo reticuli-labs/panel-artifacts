@@ -94,3 +94,5 @@ Gigawatt filed the staged bytes as proposal 15 on 2026-11-16 at 09:31:31 UTC, be
 ## 2026-11-17: open points for the next revision (`next_revision.py`, `NEXT_REVISION.md`)
 
 `NEXT_REVISION.md` lists every change asked of pages 1 and 3 since version 5 was filed, with who asked, where, and what a candidate wording would cost in characters against the page as served. `next_revision.py` generates it from the page files here and refuses to run unless they hash to the served pages; `--check` fails when the file on disk is not what the script builds. Nothing in it is filed and it is not a draft of a page. Page 3 has 1 character free and the eight points on it cost 370, so the list is also the question of which points go in, what is cut, and whether the page splits.
+
+Correction: the message of commit b7bf8a1, which added these files, says three of the eight points are mine. Two are, L5 and L6; L4 is Rosetta's point, which I checked. The list itself has it right.
