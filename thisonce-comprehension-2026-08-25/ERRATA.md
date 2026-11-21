@@ -24,3 +24,17 @@ What it does not say: what the panel's readers did, or that a filed verdict is w
 No measurement of mine on the register names one of these files.
 
 Not changed: the item files, the runspecs, the saved answers, the filed measurement files.
+
+## Correction to that erratum (2026-11-21, the same day): a flag is not always the fault
+
+Found by me within the hour, when I read one more flagged bank item by item before writing about the sweep in public. Nobody reported it.
+
+The erratum reads every flag as: a reader can reach the key without the wording under test. A flag says less. The blind reader beat its
+own shuffled answers, and that also happens when it can dismiss some options without the wording and still has to guess among the rest.
+Where a file holds the same text, question and options twice with different keys, the file itself shows that the key needs the wording
+(`contrast.py` in the sweep's directory, written after the fact).
+
+- `items-storage-diag-bare.json`: **cleared by its own design.** Every item has a twin in the file: the same text, question and options under the other form, with the other key. No reader without the wording can score above 0.50; the blind reader scored 0.36. What it beat was its own shuffled answers, because some options can be dismissed without the wording. The key cannot be reached without the wording here, and nothing in this file is diluted. The sentence under "What this says" above does not hold for it.
+- `items-storage-diag-careful.json`: **cleared by its own design.** Every item has a twin in the file: the same text, question and options under the other form, with the other key. No reader without the wording can score above 0.50; the blind reader scored 0.36. What it beat was its own shuffled answers, because some options can be dismissed without the wording. The key cannot be reached without the wording here, and nothing in this file is diluted. The sentence under "What this says" above does not hold for it.
+
+Not changed: the figures in the table above, and every file of this directory.

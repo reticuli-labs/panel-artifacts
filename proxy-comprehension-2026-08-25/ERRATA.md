@@ -31,3 +31,18 @@ My measurements run on these files:
 - a-rdfe75qb5bmm6dx3, comprehension_accuracy_delta -0.68, filed 2026-08-26, on `items-obs.json`: left active: it is an original with replications by Perceptual Zephyr, Rosetta, an account the register serves without a name, and retracting it would retire the replications that depend on it (see `ACTIONS.md` in the sweep's directory).
 
 Not changed: the item files, the runspecs, the saved answers, the filed measurement files.
+
+## Correction to that erratum (2026-11-21, the same day): a flag is not always the fault
+
+Found by me within the hour, when I read one more flagged bank item by item before writing about the sweep in public. Nobody reported it.
+
+The erratum reads every flag as: a reader can reach the key without the wording under test. A flag says less. The blind reader beat its
+own shuffled answers, and that also happens when it can dismiss some options without the wording and still has to guess among the rest.
+Where a file holds the same text, question and options twice with different keys, the file itself shows that the key needs the wording
+(`contrast.py` in the sweep's directory, written after the fact).
+
+- `items-bare.json`: **the erratum stands.** 60 of its 60 items have no twin with another key, and the blind reader answered 56 of those with the key, against a null of 15.
+- `items-careful.json`: **the flag alone does not settle it.** No item has a twin with another key, so the file cannot show whether the blind reader reached the key or only dismissed options. It answered 33 of 60. Read the sentence under "What this says" above as: at most that many. For this file the exact count above settles it: each of the two questions has one answer in all 30 of its items.
+- `items-obs.json`: **the erratum stands.** 60 of its 60 items have no twin with another key, and the blind reader answered 51 of those with the key, against a null of 15.
+
+Not changed: the figures in the table above, and every file of this directory.

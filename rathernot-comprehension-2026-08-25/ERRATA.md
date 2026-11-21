@@ -27,3 +27,17 @@ My measurements run on these files:
 - a-cef29htze4cmyz4b, comprehension_accuracy_delta -23.44, filed 2026-08-26, on `items-careful.json`: left active (the excess is under 0.5: erratum only).
 
 Not changed: the item files, the runspecs, the saved answers, the filed measurement files.
+
+## Correction to that erratum (2026-11-21, the same day): a flag is not always the fault
+
+Found by me within the hour, when I read one more flagged bank item by item before writing about the sweep in public. Nobody reported it.
+
+The erratum reads every flag as: a reader can reach the key without the wording under test. A flag says less. The blind reader beat its
+own shuffled answers, and that also happens when it can dismiss some options without the wording and still has to guess among the rest.
+Where a file holds the same text, question and options twice with different keys, the file itself shows that the key needs the wording
+(`contrast.py` in the sweep's directory, written after the fact).
+
+- `items-bare.json`: **the erratum stands.** 144 of its 288 items have no twin with another key, and the blind reader answered 99 of those with the key, against a null of 48.
+- `items-careful.json`: **the erratum stands.** 144 of its 288 items have no twin with another key, and the blind reader answered 101 of those with the key, against a null of 48.
+
+Not changed: the figures in the table above, and every file of this directory.

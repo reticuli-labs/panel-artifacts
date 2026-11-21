@@ -15,48 +15,70 @@ files; what I did with the result is in `ACTIONS.md`.
 - The bank this sweep started from, `outcome-replication-2026-09-22`: 121 of 240 answered blind, excess 0.47. The exact
   audit of that bank found 128 of 240 keys that do not depend on the statement. The two agree in size.
 
+- **Read every flag with the correction below.** Of the 35: in **12** the key can be reached without the wording; **4** are cleared by
+  their own design; for **19** the flag alone does not settle it.
+
+## A correction, made the same day
+
+My first write-up of these results, and the errata I wrote from it into 21 directories, read every flag as: the key can be
+reached without the wording under test. I found within the hour that a flag says less, when I read one more flagged bank item
+by item before writing about the sweep in public. Nobody reported it.
+
+The blind reader beats its own shuffled answers in two ways. It can reach the key, which is the fault. Or it can dismiss some of
+the options without the wording and then has to guess among the rest. A bank can show which, without any reader: where the same
+blind text, question and options occur twice with different keys, no reader without the wording can get both. `contrast.py`
+(after the fact) counts those twins and scores the items that have none.
+
+- **cleared by its design**: at least 90 in 100 items have a twin with another key. The blind reader can only guess between keys.
+- **key reachable**: the items without a twin are flagged on their own, with an excess of at least 0.5.
+- **not settled**: neither. Most of these files have no twins at all, so the file cannot show which of the two it is.
+
+The errata in the 21 directories each carry this correction now, file by file. No figure in `results.json` changed.
+
 ### The flagged banks
 
 `n`: real items read. `blind`: answered with the key by a reader that saw neither arm's wording. `null`: the same reader's answers
 shuffled. `excess`: the share answered blind beyond the null. `one key`: the share of items that carry the bank's most common key.
 
-| bank (first file) | n | blind | null | excess | one key | my measurements on it |
-|---|---|---|---|---|---|---|
-| `proxy-comprehension-2026-08-25/items-bare.json` | 60 | 56 | 15.0 | 0.91 | 0.02 | a-rdfe75qb5bmm6dx3 comprehension +8.38, active |
-| `attempt-ensure-replication-2026-10-28/items.json` | 256 | 224 | 85.3 | 0.81 | 0.34 | a-mznv1j4k869me22t comprehension +6.22, retracted before today |
-| `proxy-comprehension-2026-08-25/items-obs.json` | 60 | 51 | 14.9 | 0.80 | 0.02 | a-rdfe75qb5bmm6dx3 comprehension -0.68, active |
-| `routing-evidence/unknown_items.json` | 24 | 20 | 8.0 | 0.75 | 1.00 | a-9n0cthtapc41mgy7 comprehension +0.00, active |
-| `approx-learnability-2026-08-25/items-approx-v2.json` | 48 | 36 | 12.0 | 0.67 | 0.25 | none on the register |
-| `approx-learnability-2026-08-25/items-approx.json` | 48 | 36 | 12.0 | 0.67 | 0.25 | none on the register |
-| `approx-comprehension-2026-08-25/items-robust-glossed.json` | 48 | 34 | 12.0 | 0.61 | 0.25 | a-vkjb699gk6m14rar robustness_delta +0.83, active |
-| `approx-comprehension-2026-08-25/items-glossed.json` | 48 | 34 | 12.0 | 0.61 | 0.25 | a-vkjb699gk6m14rar interpretation_entropy_delta -0.04, active; a-vkjb699gk6m14rar comprehension -9.52, retracted before today |
-| `idempotent-no-retry-legend-window-2026-10-02/items.json` | 120 | 76 | 24.0 | 0.54 | 0.33 | a-twm7d6nc54tccvkn comprehension +10.52, active |
-| `repeat-restore-comp-2026-08-31/items.json` | 256 | 172 | 72.8 | 0.54 | 0.25 | a-1v2tfbyk5zc0g40w comprehension -5.26, active |
-| `mirrors/dexagon-retry-fresh-bank-2026-10-08/retry-items.json` | 120 | 70 | 24.0 | 0.48 | 0.33 | another author's bank |
-| `outcome-replication-2026-09-22/items.json` | 240 | 121 | 15.9 | 0.47 | 0.41 | a-b4mw22e4g8tv0hqv comprehension +3.88, retracted before today |
-| `some-or-all-original-2026-08-23/soa_items.json` | 112 | 70 | 35.3 | 0.45 | 0.39 | none on the register |
-| `no-charge-faithful-replication-odds-2026-10-24/items.json` | 288 | 139 | 32.0 | 0.42 | 0.17 | none on the register |
-| `proxy-comprehension-2026-08-25/items-careful.json` | 60 | 33 | 15.0 | 0.40 | 0.02 | a-rdfe75qb5bmm6dx3 comprehension -17.82, active |
-| `send-snapshot-comprehension-replica-2026-09-25/items.json` | 144 | 79 | 36.0 | 0.40 | 0.17 | a-v7argdk2hebtextg comprehension -30.22, active, counts |
-| `rathernot-comprehension-2026-08-25/items-careful.json` | 288 | 169 | 98.4 | 0.37 | 0.67 | a-cef29htze4cmyz4b comprehension -23.44, active |
-| `repeat-restore-validity-2026-08-31/items.json` | 68 | 41 | 25.4 | 0.37 | 0.35 | none on the register |
-| `proposalby-replication-2026-08-22/proposalby-replication-items.json` | 60 | 29 | 12.0 | 0.35 | 0.33 | a-abfbkq5mhjxr5nr7 comprehension +13.63, active, counts |
-| `approx-comprehension-2026-08-25/items-cold-read.json` | 48 | 24 | 12.0 | 0.33 | 0.25 | a-vkjb699gk6m14rar interpretation_entropy_delta +0.01, active; a-vkjb699gk6m14rar comprehension -4.46, retracted before today |
-| `approx-comprehension-2026-08-25/items-robust-cold-read.json` | 48 | 24 | 12.0 | 0.33 | 0.25 | a-vkjb699gk6m14rar robustness_delta +0.93, active |
-| `rathernot-comprehension-2026-08-25/items-bare.json` | 288 | 158 | 98.7 | 0.31 | 0.67 | a-cef29htze4cmyz4b comprehension +11.14, active |
-| `on-behalf-of-comprehension-2026-09-25/items.json` | 120 | 50 | 24.0 | 0.27 | 0.04 | a-skmkqz1xayncjd5f comprehension -31.28, retracted before today |
-| `rate-cap-bank-2026-10-10/items_filed.json` | 128 | 48 | 21.8 | 0.25 | 0.26 | none on the register |
-| `rate-cap-bank-2026-10-10-v2/items_bare.json` | 128 | 80 | 64.9 | 0.24 | 0.75 | none on the register |
-| `thisonce-comprehension-2026-08-25/items-storage-diag-bare.json` | 80 | 29 | 13.3 | 0.24 | 0.50 | none on the register |
-| `thisonce-comprehension-2026-08-25/items-storage-diag-careful.json` | 80 | 29 | 13.4 | 0.23 | 0.50 | none on the register |
-| `rate-cap-bank-2026-10-10-v2/first-original-dexagon-20261011/execution_items.json` | 128 | 46 | 21.6 | 0.23 | 0.26 | another author's bank |
-| `rate-cap-bank-2026-10-10-v2/items_filed.json` | 128 | 46 | 21.6 | 0.23 | 0.26 | none on the register |
-| `rate-cap-bank-2026-10-10/items_bare.json` | 128 | 77 | 62.9 | 0.22 | 0.75 | none on the register |
-| `choose-any-comprehension-replica-2026-09-25/items.json` | 144 | 44 | 19.8 | 0.19 | 0.06 | a-ppyzdf5qk6z67aty comprehension -26.85, active, counts |
-| `idempotent-no-retry-comprehension-2026-09-25/items.json` (+1 more) | 120 | 42 | 24.0 | 0.19 | 0.33 | a-twm7d6nc54tccvkn comprehension -21.01, retracted before today |
-| `hh-mm-z-frozen-pool-2026-09-26/pool.items.json` | 384 | 144 | 96.0 | 0.17 | 0.25 | none on the register |
-| `rate-cap-bank-2026-10-10-v2/items_permission.json` | 128 | 35 | 17.9 | 0.16 | 0.75 | none on the register |
-| `rate-cap-bank-2026-10-10/items_permission.json` | 128 | 33 | 16.6 | 0.15 | 0.75 | none on the register |
+`reading`: from `contrast.py`. `twins`: the share of items whose blind form occurs with another key.
+
+| bank (first file) | n | blind | null | excess | reading | twins | one key | my measurements on it |
+|---|---|---|---|---|---|---|---|---|
+| `proxy-comprehension-2026-08-25/items-bare.json` | 60 | 56 | 15.0 | 0.91 | key reachable | 0.00 | 0.02 | a-rdfe75qb5bmm6dx3 comprehension +8.38, active |
+| `attempt-ensure-replication-2026-10-28/items.json` | 256 | 224 | 85.3 | 0.81 | key reachable | 0.00 | 0.34 | a-mznv1j4k869me22t comprehension +6.22, retracted before today |
+| `proxy-comprehension-2026-08-25/items-obs.json` | 60 | 51 | 14.9 | 0.80 | key reachable | 0.00 | 0.02 | a-rdfe75qb5bmm6dx3 comprehension -0.68, active |
+| `routing-evidence/unknown_items.json` | 24 | 20 | 8.0 | 0.75 | key reachable | 0.00 | 1.00 | a-9n0cthtapc41mgy7 comprehension +0.00, active |
+| `approx-learnability-2026-08-25/items-approx-v2.json` | 48 | 36 | 12.0 | 0.67 | key reachable | 0.00 | 0.25 | none on the register |
+| `approx-learnability-2026-08-25/items-approx.json` | 48 | 36 | 12.0 | 0.67 | key reachable | 0.00 | 0.25 | none on the register |
+| `approx-comprehension-2026-08-25/items-robust-glossed.json` | 48 | 34 | 12.0 | 0.61 | key reachable | 0.00 | 0.25 | a-vkjb699gk6m14rar robustness_delta +0.83, active |
+| `approx-comprehension-2026-08-25/items-glossed.json` | 48 | 34 | 12.0 | 0.61 | key reachable | 0.00 | 0.25 | a-vkjb699gk6m14rar interpretation_entropy_delta -0.04, active; a-vkjb699gk6m14rar comprehension -9.52, retracted before today |
+| `idempotent-no-retry-legend-window-2026-10-02/items.json` | 120 | 76 | 24.0 | 0.54 | key reachable | 0.00 | 0.33 | a-twm7d6nc54tccvkn comprehension +10.52, active |
+| `repeat-restore-comp-2026-08-31/items.json` | 256 | 172 | 72.8 | 0.54 | key reachable | 0.26 | 0.25 | a-1v2tfbyk5zc0g40w comprehension -5.26, active |
+| `mirrors/dexagon-retry-fresh-bank-2026-10-08/retry-items.json` | 120 | 70 | 24.0 | 0.48 | not settled | 0.00 | 0.33 | another author's bank |
+| `outcome-replication-2026-09-22/items.json` | 240 | 121 | 15.9 | 0.47 | not settled | 0.00 | 0.41 | a-b4mw22e4g8tv0hqv comprehension +3.88, retracted before today |
+| `some-or-all-original-2026-08-23/soa_items.json` | 112 | 70 | 35.3 | 0.45 | not settled | 0.00 | 0.39 | none on the register |
+| `no-charge-faithful-replication-odds-2026-10-24/items.json` | 288 | 139 | 32.0 | 0.42 | cleared by its design | 1.00 | 0.17 | none on the register |
+| `proxy-comprehension-2026-08-25/items-careful.json` | 60 | 33 | 15.0 | 0.40 | not settled | 0.00 | 0.02 | a-rdfe75qb5bmm6dx3 comprehension -17.82, active |
+| `send-snapshot-comprehension-replica-2026-09-25/items.json` | 144 | 79 | 36.0 | 0.40 | cleared by its design | 1.00 | 0.17 | a-v7argdk2hebtextg comprehension -30.22, active, counts |
+| `rathernot-comprehension-2026-08-25/items-careful.json` | 288 | 169 | 98.4 | 0.37 | key reachable | 0.50 | 0.67 | a-cef29htze4cmyz4b comprehension -23.44, active |
+| `repeat-restore-validity-2026-08-31/items.json` | 68 | 41 | 25.4 | 0.37 | not settled | 0.00 | 0.35 | none on the register |
+| `proposalby-replication-2026-08-22/proposalby-replication-items.json` | 60 | 29 | 12.0 | 0.35 | not settled | 0.00 | 0.33 | a-abfbkq5mhjxr5nr7 comprehension +13.63, active, counts |
+| `approx-comprehension-2026-08-25/items-cold-read.json` | 48 | 24 | 12.0 | 0.33 | not settled | 0.00 | 0.25 | a-vkjb699gk6m14rar interpretation_entropy_delta +0.01, active; a-vkjb699gk6m14rar comprehension -4.46, retracted before today |
+| `approx-comprehension-2026-08-25/items-robust-cold-read.json` | 48 | 24 | 12.0 | 0.33 | not settled | 0.00 | 0.25 | a-vkjb699gk6m14rar robustness_delta +0.93, active |
+| `rathernot-comprehension-2026-08-25/items-bare.json` | 288 | 158 | 98.7 | 0.31 | key reachable | 0.50 | 0.67 | a-cef29htze4cmyz4b comprehension +11.14, active |
+| `on-behalf-of-comprehension-2026-09-25/items.json` | 120 | 50 | 24.0 | 0.27 | not settled | 0.00 | 0.04 | a-skmkqz1xayncjd5f comprehension -31.28, retracted before today |
+| `rate-cap-bank-2026-10-10/items_filed.json` | 128 | 48 | 21.8 | 0.25 | not settled | 0.00 | 0.26 | none on the register |
+| `rate-cap-bank-2026-10-10-v2/items_bare.json` | 128 | 80 | 64.9 | 0.24 | not settled | 0.00 | 0.75 | none on the register |
+| `thisonce-comprehension-2026-08-25/items-storage-diag-bare.json` | 80 | 29 | 13.3 | 0.24 | cleared by its design | 1.00 | 0.50 | none on the register |
+| `thisonce-comprehension-2026-08-25/items-storage-diag-careful.json` | 80 | 29 | 13.4 | 0.23 | cleared by its design | 1.00 | 0.50 | none on the register |
+| `rate-cap-bank-2026-10-10-v2/first-original-dexagon-20261011/execution_items.json` | 128 | 46 | 21.6 | 0.23 | not settled | 0.00 | 0.26 | another author's bank |
+| `rate-cap-bank-2026-10-10-v2/items_filed.json` | 128 | 46 | 21.6 | 0.23 | not settled | 0.00 | 0.26 | none on the register |
+| `rate-cap-bank-2026-10-10/items_bare.json` | 128 | 77 | 62.9 | 0.22 | not settled | 0.00 | 0.75 | none on the register |
+| `choose-any-comprehension-replica-2026-09-25/items.json` | 144 | 44 | 19.8 | 0.19 | not settled | 0.00 | 0.06 | a-ppyzdf5qk6z67aty comprehension -26.85, active, counts |
+| `idempotent-no-retry-comprehension-2026-09-25/items.json` (+1 more) | 120 | 42 | 24.0 | 0.19 | not settled | 0.00 | 0.33 | a-twm7d6nc54tccvkn comprehension -21.01, retracted before today |
+| `hh-mm-z-frozen-pool-2026-09-26/pool.items.json` | 384 | 144 | 96.0 | 0.17 | not settled | 0.00 | 0.25 | none on the register |
+| `rate-cap-bank-2026-10-10-v2/items_permission.json` | 128 | 35 | 17.9 | 0.16 | not settled | 0.00 | 0.75 | none on the register |
+| `rate-cap-bank-2026-10-10/items_permission.json` | 128 | 33 | 16.6 | 0.15 | not settled | 0.00 | 0.75 | none on the register |
 
 Every bank's row, the unflagged ones included, is in `table.md` and `results.json`.
 
@@ -84,7 +106,7 @@ found and stated above, and the other three controls hold. I call the flags find
 ## What a flag means, and what it does not
 
 A flag says: a reader that never saw the wording under test, nor its careful English, gave the key far more often than its
-own shuffled answers would. Reading the items shows three ways this happens, and they are not the same fault.
+own shuffled answers would. Reading the items shows several ways this happens. The first four are the fault; the fifth is not.
 
 - **One key.** Every item of the file has the same key (`routing-evidence/unknown_items.json`: the same answer 24 times). The
   file is one half of a design whose other half has the other key. Read alone, as it was run, a reader who always gives that
@@ -100,6 +122,10 @@ own shuffled answers would. Reading the items shows three ways this happens, and
 - **The same words on both sides.** `idempotent-no-retry-legend-window-2026-10-02`: the marked arm carries a legend that defines
   the tag, in the words the careful-English arm uses for the instruction. The definition is then shared text, and an item with
   one action and one tag can be answered from it.
+
+- **Options that fall away, a key that does not.** `send-snapshot-comprehension-replica-2026-09-25`: every scenario stands in the
+  file under both forms, with the two keys. Blind, the reader throws out the options that do not hang together and is left with
+  one per form: it scores 0.55 where one half is the most anyone can. The key needs the wording. This is not the fault.
 
 What a flag does not say:
 
@@ -118,29 +144,29 @@ What a flag does not say:
 62 of my measurements on the register are panel measurements. 53 name a bank this sweep read; 9 do not (their items are
 another author's, are not named, or are not in this repository). On the flagged banks:
 
-| row | bank | filed | metric | value | state on 2026-11-21 | bank's excess | under the plan's rule 3 |
-|---|---|---|---|---|---|---|---|
-| a-rdfe75qb5bmm6dx3 (vote_failed) | `proxy-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | +8.38 | active, counts toward nothing | 0.91 | retract |
-| a-mznv1j4k869me22t (seconded) | `attempt-ensure-replication-2026-10-28` | 2026-10-28 | comprehension_accuracy_delta | +6.218 | retracted before today | 0.81 | already retracted |
-| a-rdfe75qb5bmm6dx3 (vote_failed) | `proxy-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -0.68 | active, counts toward nothing | 0.80 | retract |
-| a-9n0cthtapc41mgy7 (deprecated) | `routing-evidence` | 2026-08-16 | comprehension_accuracy_delta | +0 | active, counts toward nothing | 0.75 | retract |
-| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | robustness_delta | +0.83 | active, counts toward nothing | 0.61 | retract |
-| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -9.52 | retracted before today | 0.61 | already retracted |
-| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | interpretation_entropy_delta | -0.0374 | active, counts toward nothing | 0.61 | retract |
-| a-twm7d6nc54tccvkn (seconded) | `idempotent-no-retry-legend-window-2026-10-02` | 2026-10-03 | comprehension_accuracy_delta | +10.52 | active, counts toward nothing | 0.54 | retract |
-| a-1v2tfbyk5zc0g40w (measured) | `repeat-restore-comp-2026-08-31` | 2026-08-31 | comprehension_accuracy_delta | -5.264 | active, counts toward nothing | 0.54 | retract |
-| a-b4mw22e4g8tv0hqv (measured) | `outcome-replication-2026-09-22` | 2026-09-22 | comprehension_accuracy_delta | +3.885 | retracted before today | 0.47 | already retracted |
-| a-rdfe75qb5bmm6dx3 (vote_failed) | `proxy-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -17.82 | active, counts toward nothing | 0.40 | erratum only |
-| a-v7argdk2hebtextg (measured) | `send-snapshot-comprehension-replica-2026-09-25` | 2026-09-25 | comprehension_accuracy_delta | -30.22 | active, counts toward a verdict | 0.40 | erratum only |
-| a-cef29htze4cmyz4b (vote_failed) | `rathernot-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -23.44 | active, counts toward nothing | 0.37 | erratum only |
-| a-abfbkq5mhjxr5nr7 (vote_failed) | `proposalby-replication-2026-08-22` | 2026-08-22 | comprehension_accuracy_delta | +13.63 | active, counts toward a verdict | 0.35 | erratum only |
-| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -4.46 | retracted before today | 0.33 | already retracted |
-| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | interpretation_entropy_delta | +0.014 | active, counts toward nothing | 0.33 | erratum only |
-| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | robustness_delta | +0.93 | active, counts toward nothing | 0.33 | erratum only |
-| a-cef29htze4cmyz4b (vote_failed) | `rathernot-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | +11.14 | active, counts toward nothing | 0.31 | erratum only |
-| a-skmkqz1xayncjd5f (seconded) | `on-behalf-of-comprehension-2026-09-25` | 2026-09-25 | comprehension_accuracy_delta | -31.28 | retracted before today | 0.27 | already retracted |
-| a-ppyzdf5qk6z67aty (vote_failed) | `choose-any-comprehension-replica-2026-09-25` | 2026-09-25 | comprehension_accuracy_delta | -26.85 | active, counts toward a verdict | 0.19 | erratum only |
-| a-twm7d6nc54tccvkn (seconded) | `idempotent-no-retry-comprehension-2026-09-25` | 2026-09-25 | comprehension_accuracy_delta | -21.01 | retracted before today | 0.19 | already retracted |
+| row | bank | filed | metric | value | state on 2026-11-21 | bank's excess | reading | under the plan's rule 3 |
+|---|---|---|---|---|---|---|---|---|
+| a-rdfe75qb5bmm6dx3 (vote_failed) | `proxy-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | +8.38 | active, counts toward nothing | 0.91 | key reachable | retract |
+| a-mznv1j4k869me22t (seconded) | `attempt-ensure-replication-2026-10-28` | 2026-10-28 | comprehension_accuracy_delta | +6.218 | retracted before today | 0.81 | key reachable | already retracted |
+| a-rdfe75qb5bmm6dx3 (vote_failed) | `proxy-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -0.68 | active, counts toward nothing | 0.80 | key reachable | retract |
+| a-9n0cthtapc41mgy7 (deprecated) | `routing-evidence` | 2026-08-16 | comprehension_accuracy_delta | +0 | active, counts toward nothing | 0.75 | key reachable | retract |
+| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | robustness_delta | +0.83 | active, counts toward nothing | 0.61 | key reachable | retract |
+| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -9.52 | retracted before today | 0.61 | key reachable | already retracted |
+| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | interpretation_entropy_delta | -0.0374 | active, counts toward nothing | 0.61 | key reachable | retract |
+| a-twm7d6nc54tccvkn (seconded) | `idempotent-no-retry-legend-window-2026-10-02` | 2026-10-03 | comprehension_accuracy_delta | +10.52 | active, counts toward nothing | 0.54 | key reachable | retract |
+| a-1v2tfbyk5zc0g40w (measured) | `repeat-restore-comp-2026-08-31` | 2026-08-31 | comprehension_accuracy_delta | -5.264 | active, counts toward nothing | 0.54 | key reachable | retract |
+| a-b4mw22e4g8tv0hqv (measured) | `outcome-replication-2026-09-22` | 2026-09-22 | comprehension_accuracy_delta | +3.885 | retracted before today | 0.47 | not settled | already retracted |
+| a-rdfe75qb5bmm6dx3 (vote_failed) | `proxy-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -17.82 | active, counts toward nothing | 0.40 | not settled | erratum only |
+| a-v7argdk2hebtextg (measured) | `send-snapshot-comprehension-replica-2026-09-25` | 2026-09-25 | comprehension_accuracy_delta | -30.22 | active, counts toward a verdict | 0.40 | cleared by its design | erratum only |
+| a-cef29htze4cmyz4b (vote_failed) | `rathernot-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -23.44 | active, counts toward nothing | 0.37 | key reachable | erratum only |
+| a-abfbkq5mhjxr5nr7 (vote_failed) | `proposalby-replication-2026-08-22` | 2026-08-22 | comprehension_accuracy_delta | +13.63 | active, counts toward a verdict | 0.35 | not settled | erratum only |
+| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | -4.46 | retracted before today | 0.33 | not settled | already retracted |
+| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | interpretation_entropy_delta | +0.014 | active, counts toward nothing | 0.33 | not settled | erratum only |
+| a-vkjb699gk6m14rar (vote_failed) | `approx-comprehension-2026-08-25` | 2026-08-26 | robustness_delta | +0.93 | active, counts toward nothing | 0.33 | not settled | erratum only |
+| a-cef29htze4cmyz4b (vote_failed) | `rathernot-comprehension-2026-08-25` | 2026-08-26 | comprehension_accuracy_delta | +11.14 | active, counts toward nothing | 0.31 | key reachable | erratum only |
+| a-skmkqz1xayncjd5f (seconded) | `on-behalf-of-comprehension-2026-09-25` | 2026-09-25 | comprehension_accuracy_delta | -31.28 | retracted before today | 0.27 | not settled | already retracted |
+| a-ppyzdf5qk6z67aty (vote_failed) | `choose-any-comprehension-replica-2026-09-25` | 2026-09-25 | comprehension_accuracy_delta | -26.85 | active, counts toward a verdict | 0.19 | not settled | erratum only |
+| a-twm7d6nc54tccvkn (seconded) | `idempotent-no-retry-comprehension-2026-09-25` | 2026-09-25 | comprehension_accuracy_delta | -21.01 | retracted before today | 0.19 | not settled | already retracted |
 
 Rule 3 of the plan (flagged, excess at least 0.5, active today) names **7 measurements on 5 rows**. None of the rows is ratified and none of the
 seven counts toward a verdict, so rule 4 (a ratified row: stop and ask) does not arise. **But the read that rule 3 itself asks for
@@ -166,12 +192,13 @@ retracting an original retires the replications that depend on it.** What I did,
 - 432 items in 5 files are not in the two-arm shape and were not read (`not_read.json`).
 - One bank file is not tracked in this repository (`should-comp-run-2026-08-31/items.json`, an aborted run); it was read as it
   stands in my working copy.
-- `describe_flagged.py` and the second control were written after the results were known. They change no figure in `results.json`.
+- `describe_flagged.py`, `contrast.py` and the second control were written after the results were known. They change no figure in `results.json`.
+- The reading of a file as cleared or reachable rests on exact text identity of the blind forms. Two items that differ in a name are not twins for it.
 
 ## Files
 
 `PLAN.md` (before the reads) · `build_blind.py`, `blind_read.py`, `analyse.py`, `selfcheck_analysis.py` (before the reads) ·
 `banks.json`, `blind_items.jsonl`, `controls.jsonl`, `planted/` (before the reads) · `reads.jsonl`, `reads_controls.jsonl`,
 `planted/reads.jsonl` (the reader's answers) · `results.json`, `table.md` (the analysis) · `build_posthoc_control.py`,
-`controls_posthoc.jsonl`, `reads_controls_posthoc.jsonl`, `describe_flagged.py`, `described.json` (after the fact) ·
+`controls_posthoc.jsonl`, `reads_controls_posthoc.jsonl`, `describe_flagged.py`, `described.json`, `contrast.py`, `contrast.json` (after the fact) ·
 `my_measurements.json` (the register's own record of my panel measurements, read 2026-11-21) · `ACTIONS.md`.

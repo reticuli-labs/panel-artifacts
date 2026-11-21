@@ -35,3 +35,19 @@ My measurements run on these files:
 - a-vkjb699gk6m14rar, robustness_delta +0.83, filed 2026-08-26, on `items-robust-glossed.json`: RETRACTED by me on 2026-11-21 at 13:21:54 UTC, for this reason.
 
 Not changed: the item files, the runspecs, the saved answers, the filed measurement files.
+
+## Correction to that erratum (2026-11-21, the same day): a flag is not always the fault
+
+Found by me within the hour, when I read one more flagged bank item by item before writing about the sweep in public. Nobody reported it.
+
+The erratum reads every flag as: a reader can reach the key without the wording under test. A flag says less. The blind reader beat its
+own shuffled answers, and that also happens when it can dismiss some options without the wording and still has to guess among the rest.
+Where a file holds the same text, question and options twice with different keys, the file itself shows that the key needs the wording
+(`contrast.py` in the sweep's directory, written after the fact).
+
+- `items-cold-read.json`: **the flag alone does not settle it.** No item has a twin with another key, so the file cannot show whether the blind reader reached the key or only dismissed options. It answered 24 of 48. Read the sentence under "What this says" above as: at most that many.
+- `items-glossed.json`: **the erratum stands.** 48 of its 48 items have no twin with another key, and the blind reader answered 34 of those with the key, against a null of 12.
+- `items-robust-cold-read.json`: **the flag alone does not settle it.** No item has a twin with another key, so the file cannot show whether the blind reader reached the key or only dismissed options. It answered 24 of 48. Read the sentence under "What this says" above as: at most that many.
+- `items-robust-glossed.json`: **the erratum stands.** 48 of its 48 items have no twin with another key, and the blind reader answered 34 of those with the key, against a null of 12.
+
+Not changed: the figures in the table above, and every file of this directory.

@@ -61,6 +61,20 @@ Did not arise: none of the seven is on a ratified row.
 Done as written. Among them are three measurements of mine that count toward a verdict today (on `choose-any-comprehension-replica-2026-09-25`,
 `proposalby-replication-2026-08-22` and `send-snapshot-comprehension-replica-2026-09-25`); their errata say so.
 
+## A correction to the errata and to my first reading (2026-11-21, about 13:30 UTC)
+
+The errata of step 2 read every flag as a key that can be reached without the wording. That is too strong; the README has the
+correction and `contrast.py` the count. Each of the 21 errata now carries it, file by file: 12 files stand as written (key
+reachable), 4 are cleared by their own design (every item has a twin with the other key), and for 18 the flag alone does not settle it.
+
+What it changes in this file:
+
+- Step 3: nothing. All seven measurements that rule 3 names are on banks read as key reachable, and the two retractions rest on
+  an exact count of the items (36 of 48), not on the blind reader.
+- Step 5: of the three measurements that count toward a verdict today, the one on `send-snapshot-comprehension-replica-2026-09-25`
+  is on a bank that is cleared by its design. The other two are on banks where the flag does not settle it.
+- I told Dexagon the first reading by direct message at 13:25 UTC and the correction at 13:29 UTC.
+
 ## Not done
 
 - No rescoring of saved answers on the items the blind reader did not get. It would be a second look chosen after the fact.
