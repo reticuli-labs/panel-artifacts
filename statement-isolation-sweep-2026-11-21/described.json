@@ -1,0 +1,2628 @@
+[
+ {
+  "bank": "approx-learnability-2026-08-25/calibration-approx-v2.json",
+  "sha256_items": "f3bf4323abfdbe416c7278c3837d5c1de736ea2aeb249c05d1131281b9497203",
+  "n": 8,
+  "blind": 8,
+  "excess": 1.0,
+  "flagged": false,
+  "top_key_share": 1.0,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 8,
+  "blind_by_question": []
+ },
+ {
+  "bank": "approx-learnability-2026-08-25/items-approx-v3.json",
+  "sha256_items": "3337cd56888baf0819cfbecaa49ac6bcb63abb1c95e0c8a5ea2c2ee316c3fbd6",
+  "n": 8,
+  "blind": 8,
+  "excess": 1.0,
+  "flagged": false,
+  "top_key_share": 1.0,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 8,
+  "blind_by_question": []
+ },
+ {
+  "bank": "proxy-comprehension-2026-08-25/items-bare.json",
+  "sha256_items": "0d656022d1f1d8801b942a315e596ba1acc9ab91b7c3a2367c862a5b2cd6e1a0",
+  "n": 60,
+  "blind": 56,
+  "excess": 0.9112,
+  "flagged": true,
+  "top_key_share": 0.017,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 60,
+  "blind_by_question": []
+ },
+ {
+  "bank": "attempt-ensure-replication-2026-10-28/items.json",
+  "sha256_items": "c1a1d28e981eec00aad78b2553b6f79e1d33e4c4bd4cf8e4539bc001063b5dcc",
+  "n": 256,
+  "blind": 224,
+  "excess": 0.8125,
+  "flagged": true,
+  "top_key_share": 0.344,
+  "keyed_to_question": 0.656,
+  "distinct_questions": 5,
+  "blind_by_question": [
+   {
+    "question": "Does the task record establish that the requested outcome is currently true?",
+    "items": 32,
+    "answered_blind": 32,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Do the current explicit limits authorize another attempt?",
+    "items": 32,
+    "answered_blind": 32,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Do the current explicit limits authorize asking the coordinator for help?",
+    "items": 32,
+    "answered_blind": 32,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Which statement about fulfillment follows from the task record?",
+    "items": 128,
+    "answered_blind": 112,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Is the requested outcome being true a requirement for counting this instruction as fulfilled?",
+    "items": 32,
+    "answered_blind": 16,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "proxy-comprehension-2026-08-25/items-obs.json",
+  "sha256_items": "bbb1d36bc5a9c86e00537002072829e7e106f04ed6d965bc9e6964ad78ff0b97",
+  "n": 60,
+  "blind": 51,
+  "excess": 0.8005,
+  "flagged": true,
+  "top_key_share": 0.017,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 60,
+  "blind_by_question": []
+ },
+ {
+  "bank": "routing-evidence/unknown_items.json",
+  "sha256_items": "4865276dd1616fc4464c008fb23f728431da283b931f9a7834d3f63b0e8ac2cf",
+  "n": 24,
+  "blind": 20,
+  "excess": 0.7499,
+  "flagged": true,
+  "top_key_share": 1.0,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "If the responder needs the actor's identity, which first route does this sentence support?",
+    "items": 24,
+    "answered_blind": 20,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "approx-learnability-2026-08-25/items-approx-v2.json",
+  "sha256_items": "22fa1bf8126515cd49d56bbeb856d59688db9bff11abebb1e121d8a5c2e951c9",
+  "n": 48,
+  "blind": 36,
+  "excess": 0.6667,
+  "flagged": true,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 47,
+  "blind_by_question": []
+ },
+ {
+  "bank": "approx-learnability-2026-08-25/items-approx.json",
+  "sha256_items": "b03079123fbc74f0a0a0423ef776040021f252dc959c33385b5dcbd9e780e65b",
+  "n": 48,
+  "blind": 36,
+  "excess": 0.6667,
+  "flagged": true,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 47,
+  "blind_by_question": []
+ },
+ {
+  "bank": "approx-comprehension-2026-08-25/items-robust-glossed.json",
+  "sha256_items": "8e9db1f0cf43ca18f660f2f8dd3bc03a6d3066eae780291c004dfccb04355f34",
+  "n": 48,
+  "blind": 34,
+  "excess": 0.6112,
+  "flagged": true,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 44,
+  "blind_by_question": []
+ },
+ {
+  "bank": "approx-comprehension-2026-08-25/items-glossed.json",
+  "sha256_items": "d47a636d0b255a11438b39ab3b912a2dccb3db346f64b8b2f4bec33f9c248daf",
+  "n": 48,
+  "blind": 34,
+  "excess": 0.611,
+  "flagged": true,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 44,
+  "blind_by_question": []
+ },
+ {
+  "bank": "idempotent-no-retry-legend-window-2026-10-02/items.json",
+  "sha256_items": "8adc8d085ccece7b1812103f6f683b3eecbd790be76ca5ce7a6d49b53e0389c3",
+  "n": 120,
+  "blind": 76,
+  "excess": 0.5417,
+  "flagged": true,
+  "top_key_share": 0.333,
+  "keyed_to_question": 0.667,
+  "distinct_questions": 58,
+  "blind_by_question": [
+   {
+    "question": "What does the record license the executor to do now about the second request, identical to the first? Choose t",
+    "items": 16,
+    "answered_blind": 15,
+    "distinct_keys": 2
+   },
+   {
+    "question": "What does the record license the executor to do now about the second request, issued after the reported schema",
+    "items": 8,
+    "answered_blind": 1,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "repeat-restore-comp-2026-08-31/items.json",
+  "sha256_items": "00b095dcdead7a457ef254879b16063a0109c38228f246f1a40c22117d03f1ff",
+  "n": 256,
+  "blind": 172,
+  "excess": 0.5415,
+  "flagged": true,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.457,
+  "distinct_questions": 8,
+  "blind_by_question": [
+   {
+    "question": "What does the main clause itself do with the action it names?",
+    "items": 56,
+    "answered_blind": 56,
+    "distinct_keys": 4
+   },
+   {
+    "question": "Setting the background aside: how is the action of the main clause put forward?",
+    "items": 72,
+    "answered_blind": 72,
+    "distinct_keys": 4
+   },
+   {
+    "question": "What earlier circumstance, if any, does the statement presuppose?",
+    "items": 8,
+    "answered_blind": 5,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Besides what the main clause does, what background circumstance does the statement take as already given?",
+    "items": 8,
+    "answered_blind": 4,
+    "distinct_keys": 1
+   },
+   {
+    "question": "A context sentence precedes the utterance. Does the background the speaker treats as already given fit what th",
+    "items": 9,
+    "answered_blind": 4,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Besides what the main clause does, what background circumstance does the statement take as already given?",
+    "items": 42,
+    "answered_blind": 17,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Given the context sentence first: is the circumstance the utterance takes for granted consistent with that con",
+    "items": 7,
+    "answered_blind": 2,
+    "distinct_keys": 2
+   },
+   {
+    "question": "What earlier circumstance, if any, does the statement presuppose?",
+    "items": 54,
+    "answered_blind": 12,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "mirrors/dexagon-retry-fresh-bank-2026-10-08/retry-items.json",
+  "sha256_items": "f75038147907f24b10e4a25763943c009ba8c5107213d653aae3d87ef9338ddc",
+  "n": 120,
+  "blind": 70,
+  "excess": 0.4791,
+  "flagged": true,
+  "top_key_share": 0.333,
+  "keyed_to_question": 0.933,
+  "distinct_questions": 98,
+  "blind_by_question": [
+   {
+    "question": "What does the record license the executor to do now about the second request, identical to the first? Choose t",
+    "items": 16,
+    "answered_blind": 13,
+    "distinct_keys": 2
+   },
+   {
+    "question": "What does the record license the executor to do now about the second request, issued after the reported schema",
+    "items": 8,
+    "answered_blind": 1,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "outcome-replication-2026-09-22/items.json",
+  "sha256_items": "a0f4313f3d959b238d7f205210c5bbbfdc010e344c12742c296bae9b68997bbf",
+  "n": 240,
+  "blind": 121,
+  "excess": 0.4689,
+  "flagged": true,
+  "top_key_share": 0.408,
+  "keyed_to_question": 0.408,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Evaluate the claim, whether x can actually occur, whether x alone is most probable, and whether the next resul",
+    "items": 240,
+    "answered_blind": 121,
+    "distinct_keys": 6
+   }
+  ]
+ },
+ {
+  "bank": "some-or-all-original-2026-08-23/soa_items.json",
+  "sha256_items": "874bda2353584f4b63bcdb288da83c68f3a345b9e1aab0690ded11969296d5f7",
+  "n": 112,
+  "blind": 70,
+  "excess": 0.4525,
+  "flagged": true,
+  "top_key_share": 0.393,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 112,
+  "blind_by_question": []
+ },
+ {
+  "bank": "approx-perreader-qualification-2026-08-26/dev-gemma4-31b-q4.json",
+  "sha256_items": "b1694efaea3eb1b0b6b257698a987586b85f7dd93418f199af8f6c2810d0d420",
+  "n": 8,
+  "blind": 5,
+  "excess": 0.4286,
+  "flagged": false,
+  "top_key_share": 0.375,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 8,
+  "blind_by_question": []
+ },
+ {
+  "bank": "no-charge-faithful-replication-odds-2026-10-24/items.json",
+  "sha256_items": "1a14882fcad9a66ebf1d7255fd42cea1a482dd4a3492443dc060ad9c1b52c1c7",
+  "n": 288,
+  "blind": 139,
+  "excess": 0.418,
+  "flagged": true,
+  "top_key_share": 0.167,
+  "keyed_to_question": 0.167,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Will assigning this item create a listed monetary charge in B, and can this requester get it assigned immediat",
+    "items": 288,
+    "answered_blind": 139,
+    "distinct_keys": 8
+   }
+  ]
+ },
+ {
+  "bank": "proxy-comprehension-2026-08-25/items-careful.json",
+  "sha256_items": "6dfd5e12b61df2b766c1ff05866fa4b2ff3db2360f7e87fc49afce9fbc2dc170",
+  "n": 60,
+  "blind": 33,
+  "excess": 0.4004,
+  "flagged": true,
+  "top_key_share": 0.017,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 60,
+  "blind_by_question": []
+ },
+ {
+  "bank": "send-snapshot-comprehension-replica-2026-09-25/items.json",
+  "sha256_items": "1347f52aa8c236ee26c6d9a0387939739fdbb278fec7356baa035f06696ad93d",
+  "n": 144,
+  "blind": 79,
+  "excess": 0.3981,
+  "flagged": true,
+  "top_key_share": 0.167,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 16,
+  "blind_by_question": [
+   {
+    "question": "Answer both questions by choosing the one option with both answers correct. (1) Which implementation satisfies",
+    "items": 48,
+    "answered_blind": 33,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Answer both questions by choosing the one option with both answers correct. (1) Which implementation satisfies",
+    "items": 48,
+    "answered_blind": 24,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Answer both questions by choosing the one option with both answers correct. (1) Which implementation satisfies",
+    "items": 12,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Answer both questions by choosing the one option with both answers correct. (1) Which implementation satisfies",
+    "items": 12,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "rathernot-comprehension-2026-08-25/items-careful.json",
+  "sha256_items": "2f991f4afa01bc4fd0729c65c0c07423bc77b6ccf05ac166f215596c67eabe80",
+  "n": 288,
+  "blind": 169,
+  "excess": 0.3725,
+  "flagged": true,
+  "top_key_share": 0.667,
+  "keyed_to_question": 0.833,
+  "distinct_questions": 32,
+  "blind_by_question": [
+   {
+    "question": "Would choosing not to write tests for this count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to update the changelog count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to rerun the full suite count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to open an issue first count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to cite the line numbers count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to notify the channel count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to bring anything count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to pin the dependency count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing to update the changelog have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 7,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose not to write tests for this. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to update the changelog. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to rerun the full suite. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to cite the line numbers. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to notify the channel. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to bring anything. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to open an issue first. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 5,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to cite the line numbers have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 5,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing to write tests for this have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 4,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose to write tests for this. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to update the changelog. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to rerun the full suite. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to open an issue first. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to open an issue first have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose to cite the line numbers. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to notify the channel. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to bring anything. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to bring anything have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose not to pin the dependency. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to pin the dependency. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to pin the dependency have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing to rerun the full suite have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing to notify the channel have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "repeat-restore-validity-2026-08-31/items.json",
+  "sha256_items": "16d7c54de0ea324f12d8dac593e693fcabe59fe4358ed697b2da7874b8c016bf",
+  "n": 68,
+  "blind": 41,
+  "excess": 0.3661,
+  "flagged": true,
+  "top_key_share": 0.353,
+  "keyed_to_question": 0.647,
+  "distinct_questions": 14,
+  "blind_by_question": [
+   {
+    "question": "The instruction takes as given that the billing service ran clean during some qualifying span. Given the sched",
+    "items": 7,
+    "answered_blind": 7,
+    "distinct_keys": 3
+   },
+   {
+    "question": "The instruction takes as given that the session cache held nothing during some qualifying span. Given the sche",
+    "items": 7,
+    "answered_blind": 7,
+    "distinct_keys": 3
+   },
+   {
+    "question": "The instruction takes as given that the beacon light was lit during some qualifying span. Given the schedule, ",
+    "items": 7,
+    "answered_blind": 7,
+    "distinct_keys": 3
+   },
+   {
+    "question": "The instruction takes as given that the west gate stood open during some qualifying span. Given the schedule, ",
+    "items": 7,
+    "answered_blind": 4,
+    "distinct_keys": 3
+   },
+   {
+    "question": "This statement takes as given that the west gate stood open during some span of time in the past. Given the pa",
+    "items": 6,
+    "answered_blind": 2,
+    "distinct_keys": 2
+   },
+   {
+    "question": "This statement takes as given that the billing service ran clean during some span of time in the past. Given t",
+    "items": 6,
+    "answered_blind": 2,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "proposalby-replication-2026-08-22/proposalby-replication-items.json",
+  "sha256_items": "bda4e787b91d1c446e07ee68f83d5a1dbdf47a1d9e47670652132a7e40eb1c77",
+  "n": 60,
+  "blind": 29,
+  "excess": 0.3542,
+  "flagged": true,
+  "top_key_share": 0.333,
+  "keyed_to_question": 0.333,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for considerat",
+    "items": 60,
+    "answered_blind": 29,
+    "distinct_keys": 3
+   }
+  ]
+ },
+ {
+  "bank": "approx-comprehension-2026-08-25/items-cold-read.json",
+  "sha256_items": "e2acd80c86ac3bab4bf5f9cbbbfa30a1515d7c3bd86c23cc4769dde588d7c2c1",
+  "n": 48,
+  "blind": 24,
+  "excess": 0.3336,
+  "flagged": true,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 47,
+  "blind_by_question": []
+ },
+ {
+  "bank": "approx-comprehension-2026-08-25/items-robust-cold-read.json",
+  "sha256_items": "603555bdd999f300d6ba7b720567077009b63161eb6f70e9f6309abb9708ff93",
+  "n": 48,
+  "blind": 24,
+  "excess": 0.3332,
+  "flagged": true,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 47,
+  "blind_by_question": []
+ },
+ {
+  "bank": "rathernot-comprehension-2026-08-25/items-bare.json",
+  "sha256_items": "7183d3cb6125c22e2d13a0903bab715ac4e5f5947a1799876a0eef4a63a534ec",
+  "n": 288,
+  "blind": 158,
+  "excess": 0.3134,
+  "flagged": true,
+  "top_key_share": 0.667,
+  "keyed_to_question": 0.833,
+  "distinct_questions": 32,
+  "blind_by_question": [
+   {
+    "question": "Would choosing not to write tests for this count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to update the changelog count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to rerun the full suite count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to open an issue first count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to cite the line numbers count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to notify the channel count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to bring anything count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing not to pin the dependency count as failing to do what was asked?",
+    "items": 9,
+    "answered_blind": 9,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose not to cite the line numbers. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to write tests for this have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 5,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing to update the changelog have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 5,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose not to rerun the full suite. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 5,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to open an issue first. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 5,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to cite the line numbers have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 5,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose not to bring anything. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 5,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to write tests for this. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 4,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to notify the channel. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 4,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to write tests for this. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose not to update the changelog. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to update the changelog. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to rerun the full suite. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to open an issue first. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to open an issue first have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose to cite the line numbers. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to notify the channel. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to bring anything. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to bring anything have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Suppose you chose not to pin the dependency. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose you chose to pin the dependency. Did the sender get what they wanted?",
+    "items": 9,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Would choosing to rerun the full suite have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing to notify the channel have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Would choosing to pin the dependency have gone against the instruction?",
+    "items": 9,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "on-behalf-of-comprehension-2026-09-25/items.json",
+  "sha256_items": "6be13ffddedc3fdbd275001751143da8482408ffbb1b2d7f6db0cd9f50f23975",
+  "n": 120,
+  "blind": 50,
+  "excess": 0.271,
+  "flagged": true,
+  "top_key_share": 0.042,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 120,
+  "blind_by_question": []
+ },
+ {
+  "bank": "evidentials-carrier/evidentials_items.json",
+  "sha256_items": "ce346f3db25a6c2a4dcb47b5bce787343021d01ce858090adb413e9fe862148e",
+  "n": 25,
+  "blind": 10,
+  "excess": 0.25,
+  "flagged": false,
+  "top_key_share": 0.2,
+  "keyed_to_question": 0.2,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Which evidential standing does the writer claim for this statement?",
+    "items": 25,
+    "answered_blind": 10,
+    "distinct_keys": 5
+   }
+  ]
+ },
+ {
+  "bank": "rate-cap-bank-2026-10-10/items_filed.json",
+  "sha256_items": "750be8a059f4fac39dc749e2d99cbae5007889240217e1654dd724c0879a3e62",
+  "n": 128,
+  "blind": 48,
+  "excess": 0.2464,
+  "flagged": true,
+  "top_key_share": 0.258,
+  "keyed_to_question": 0.898,
+  "distinct_questions": 106,
+  "blind_by_question": [
+   {
+    "question": "Can both planned bursts be legal under this cap?",
+    "items": 8,
+    "answered_blind": 3,
+    "distinct_keys": 3
+   }
+  ]
+ },
+ {
+  "bank": "test-run-passed-comp-2026-08-31/items.json",
+  "sha256_items": "99487bdee8f3c54f4e8c5244702d1e5abb6e519b5e7dd916476fdac1874df424",
+  "n": 96,
+  "blind": 48,
+  "excess": 0.2437,
+  "flagged": false,
+  "top_key_share": 0.375,
+  "keyed_to_question": 0.656,
+  "distinct_questions": 7,
+  "blind_by_question": [
+   {
+    "question": "Does the statement, by itself, license conclusions about qualities the named procedure does not check?",
+    "items": 7,
+    "answered_blind": 7,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Going by the statement alone: is it settled that all of the named procedure's declared criteria were satisfied",
+    "items": 30,
+    "answered_blind": 16,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Based only on the statement, does it establish that every acceptance criterion declared by the named procedure",
+    "items": 21,
+    "answered_blind": 11,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Does the statement, by itself, settle whether each criterion the named procedure declares was met?",
+    "items": 21,
+    "answered_blind": 9,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Going by the statement alone: did that specific procedure execute?",
+    "items": 9,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "rate-cap-bank-2026-10-10-v2/items_bare.json",
+  "sha256_items": "fa854e071721120aef5ac20f95b4743071c5fd5c043b039a351c50193b71ac91",
+  "n": 128,
+  "blind": 80,
+  "excess": 0.2397,
+  "flagged": true,
+  "top_key_share": 0.75,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 108,
+  "blind_by_question": [
+   {
+    "question": "Can both planned bursts be legal under this cap?",
+    "items": 8,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "thisonce-comprehension-2026-08-25/items-storage-diag-bare.json",
+  "sha256_items": "e3d0d7958ca7c4d425eb1cf0eeeb7d8b7ef2a400a20f897dd29fa8a674d9021f",
+  "n": 80,
+  "blind": 29,
+  "excess": 0.2351,
+  "flagged": true,
+  "top_key_share": 0.5,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+    "items": 80,
+    "answered_blind": 29,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "thisonce-comprehension-2026-08-25/items-storage-diag-careful.json",
+  "sha256_items": "095c4f344c8a2b0f7b84c174beecb568b1a71b926bbd120b6824beccf6bef488",
+  "n": 80,
+  "blind": 29,
+  "excess": 0.2347,
+  "flagged": true,
+  "top_key_share": 0.5,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Where should you keep that instruction so it applies exactly as far as it was meant to?",
+    "items": 80,
+    "answered_blind": 29,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "rate-cap-bank-2026-10-10-v2/first-original-dexagon-20261011/execution_items.json",
+  "sha256_items": "946f2fb9dfea279cdbe38e28ecdd6596d115fff5f0824610ef48b7c5e38d0c67",
+  "n": 128,
+  "blind": 46,
+  "excess": 0.2295,
+  "flagged": true,
+  "top_key_share": 0.258,
+  "keyed_to_question": 0.906,
+  "distinct_questions": 108,
+  "blind_by_question": [
+   {
+    "question": "Can both planned bursts be legal under this cap?",
+    "items": 8,
+    "answered_blind": 3,
+    "distinct_keys": 3
+   }
+  ]
+ },
+ {
+  "bank": "rate-cap-bank-2026-10-10-v2/items_filed.json",
+  "sha256_items": "cc9671d0e90c68cd34e2dfe6096374a2b3bd205e2a407c5efa7720183d61d19b",
+  "n": 128,
+  "blind": 46,
+  "excess": 0.2295,
+  "flagged": true,
+  "top_key_share": 0.258,
+  "keyed_to_question": 0.906,
+  "distinct_questions": 108,
+  "blind_by_question": [
+   {
+    "question": "Can both planned bursts be legal under this cap?",
+    "items": 8,
+    "answered_blind": 3,
+    "distinct_keys": 3
+   }
+  ]
+ },
+ {
+  "bank": "rate-cap-bank-2026-10-10/items_bare.json",
+  "sha256_items": "12c205629f4d06b3382dc272f1a493064f904adda0272b11012b7a0755d27de6",
+  "n": 128,
+  "blind": 77,
+  "excess": 0.2164,
+  "flagged": true,
+  "top_key_share": 0.75,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 106,
+  "blind_by_question": [
+   {
+    "question": "Can both planned bursts be legal under this cap?",
+    "items": 8,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "go-unless-no-comprehension-2026-08-29/gun_panel_bare.json",
+  "sha256_items": "011fdce5948a51f99ee2aeaf37e65f8e8dd60f47cfa107a42fa0b84900d24f01",
+  "n": 48,
+  "blind": 19,
+  "excess": 0.2054,
+  "flagged": false,
+  "top_key_share": 0.042,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 24,
+  "blind_by_question": []
+ },
+ {
+  "bank": "choose-any-comprehension-replica-2026-09-25/items.json",
+  "sha256_items": "027145c53242a6e068becb34bdd245d562fd9c6ab4c1d105a5b8bbdae11e32de",
+  "n": 144,
+  "blind": 44,
+  "excess": 0.1946,
+  "flagged": true,
+  "top_key_share": 0.056,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 144,
+  "blind_by_question": []
+ },
+ {
+  "bank": "idempotent-no-retry-comprehension-2026-09-25/items.json",
+  "sha256_items": "94c7c36d99cae4945a9788b4eb67daed4a13a88a34b51a513283bb22ab9f461b",
+  "n": 120,
+  "blind": 42,
+  "excess": 0.1875,
+  "flagged": true,
+  "top_key_share": 0.333,
+  "keyed_to_question": 0.667,
+  "distinct_questions": 58,
+  "blind_by_question": [
+   {
+    "question": "What does the record license the executor to do now about the second request, identical to the first? Choose t",
+    "items": 16,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   },
+   {
+    "question": "What does the record license the executor to do now about the second request, issued after the reported schema",
+    "items": 8,
+    "answered_blind": 1,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "hh-mm-z-frozen-pool-2026-09-26/seat-A.items.json",
+  "sha256_items": "2ac74e4bd2b010bd484164d97ec2373f3154711ee30e735ae44b1a9a84ffa09c",
+  "n": 128,
+  "blind": 48,
+  "excess": 0.1668,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.914,
+  "distinct_questions": 97,
+  "blind_by_question": []
+ },
+ {
+  "bank": "hh-mm-z-frozen-pool-2026-09-26/pool.items.json",
+  "sha256_items": "3b5455da569b3fe6c5948441ca0ebba381c377681810e9c4a2d13136c5beae37",
+  "n": 384,
+  "blind": 144,
+  "excess": 0.1667,
+  "flagged": true,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.883,
+  "distinct_questions": 208,
+  "blind_by_question": [
+   {
+    "question": "Does this message identify one unique dated instant? A = yes, always today. B = no unique dated instant. C = y",
+    "items": 7,
+    "answered_blind": 7,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = yes, always tomorrow. C",
+    "items": 7,
+    "answered_blind": 7,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Does this message identify one unique dated instant? A = yes, exactly one instant. B = no unique dated instant",
+    "items": 6,
+    "answered_blind": 6,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Does this message identify one unique dated instant? A = no unique dated instant. B = yes, always tomorrow. C ",
+    "items": 6,
+    "answered_blind": 6,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many actual UTC instants match that civil reading on the supplied date? A = two matching instants. B = one",
+    "items": 8,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   },
+   {
+    "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = the m",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   },
+   {
+    "question": "How many actual UTC instants match that civil reading on the supplied date? A = no matching instant. B = two m",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   },
+   {
+    "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a durat",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   },
+   {
+    "question": "How many actual UTC instants match that civil reading on the supplied date? A = the message guarantees a durat",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "hh-mm-z-frozen-pool-2026-09-26/seat-B.items.json",
+  "sha256_items": "a50926ebcf8b6a63a19aa2ce1055f39849c17a35e96ce5f991165e917181ce5d",
+  "n": 128,
+  "blind": 48,
+  "excess": 0.1667,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.898,
+  "distinct_questions": 96,
+  "blind_by_question": []
+ },
+ {
+  "bank": "hh-mm-z-frozen-pool-2026-09-26/seat-C.items.json",
+  "sha256_items": "d72535b92fd689e199e266a348429f41d9cbbc4f33c80c4bdf672fe8866391a7",
+  "n": 128,
+  "blind": 48,
+  "excess": 0.1667,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.938,
+  "distinct_questions": 101,
+  "blind_by_question": []
+ },
+ {
+  "bank": "rate-cap-bank-2026-10-10-v2/items_permission.json",
+  "sha256_items": "ed46d3db003be3553860dd9f8b3a6f3697a3204c9c61b38a4bc7892c8a971b23",
+  "n": 128,
+  "blind": 35,
+  "excess": 0.1554,
+  "flagged": true,
+  "top_key_share": 0.75,
+  "keyed_to_question": 0.75,
+  "distinct_questions": 13,
+  "blind_by_question": [
+   {
+    "question": "Independently of any room under the cap, is worker A authorised to open a connection at all?",
+    "items": 16,
+    "answered_blind": 6,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is service S authorised to take a reservation at all?",
+    "items": 16,
+    "answered_blind": 5,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this client authorised to make a request at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this client authorised to start a request at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is the backup agent authorised to take a snapshot at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is the backup agent authorised to retain a snapshot at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is team T authorised to activate a licence at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is team T authorised to claim a seat at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this sender authorised to send a message at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this sender authorised to queue a message at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this permit holder authorised to issue a permit at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this permit holder authorised to park a vehicle at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is job J authorised to schedule a retry at all?",
+    "items": 16,
+    "answered_blind": 4,
+    "distinct_keys": 3
+   }
+  ]
+ },
+ {
+  "bank": "wholepart-replication-2026-08-22/wholepart-replication-items.json",
+  "sha256_items": "d95039c2d98907c765e4f2019dba599255ae0a6e604ceb3450732922c9dded63",
+  "n": 60,
+  "blind": 27,
+  "excess": 0.1528,
+  "flagged": false,
+  "top_key_share": 0.55,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 60,
+  "blind_by_question": []
+ },
+ {
+  "bank": "mayas-comprehension-2026-08-25/items-careful.json",
+  "sha256_items": "9a4a83937ed67c50442f2b30e0f23d1af9f97b2ac96a51cbef511d6b89083d00",
+  "n": 160,
+  "blind": 58,
+  "excess": 0.15,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 2,
+  "blind_by_question": [
+   {
+    "question": "If the sentence turns out to be wrong, what is the reader licensed to do about it?",
+    "items": 80,
+    "answered_blind": 37,
+    "distinct_keys": 2
+   },
+   {
+    "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+    "items": 80,
+    "answered_blind": 21,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "mayas-comprehension-2026-08-25/items-bare.json",
+  "sha256_items": "dbd912de1f39c7acca44980fcdf32c021f179c9a9e1e80a3b2698ccd12fbf0aa",
+  "n": 160,
+  "blind": 58,
+  "excess": 0.1499,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 2,
+  "blind_by_question": [
+   {
+    "question": "If the sentence turns out to be wrong, what is the reader licensed to do about it?",
+    "items": 80,
+    "answered_blind": 37,
+    "distinct_keys": 2
+   },
+   {
+    "question": "A later fact arrives that contradicts the sentence. Which record would that fact have to be about?",
+    "items": 80,
+    "answered_blind": 21,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "rate-cap-bank-2026-10-10/items_permission.json",
+  "sha256_items": "2a05f82ce03994351175004517655a6c191218d26cafc571ec76a6361c7ec9ed",
+  "n": 128,
+  "blind": 33,
+  "excess": 0.147,
+  "flagged": true,
+  "top_key_share": 0.75,
+  "keyed_to_question": 0.75,
+  "distinct_questions": 13,
+  "blind_by_question": [
+   {
+    "question": "Independently of any room under the cap, is worker A authorised to open a connection at all?",
+    "items": 16,
+    "answered_blind": 5,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this client authorised to make a request at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this client authorised to start a request at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is the backup agent authorised to take a snapshot at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is the backup agent authorised to retain a snapshot at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is team T authorised to activate a licence at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is team T authorised to claim a seat at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this sender authorised to send a message at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this sender authorised to queue a message at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this permit holder authorised to issue a permit at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is this permit holder authorised to park a vehicle at all?",
+    "items": 8,
+    "answered_blind": 2,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is job J authorised to schedule a retry at all?",
+    "items": 16,
+    "answered_blind": 4,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Independently of any room under the cap, is service S authorised to take a reservation at all?",
+    "items": 16,
+    "answered_blind": 4,
+    "distinct_keys": 3
+   }
+  ]
+ },
+ {
+  "bank": "claim-tag/comprehension-v1.json",
+  "sha256_items": "c0842d16df0ea3a29350299056f37296159fcc005c844aced0963dacebb4372a",
+  "n": 20,
+  "blind": 9,
+  "excess": 0.1269,
+  "flagged": false,
+  "top_key_share": 0.35,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 20,
+  "blind_by_question": []
+ },
+ {
+  "bank": "claim-tag/comprehension-v2.json",
+  "sha256_items": "e278e5c7c38dc32101132929fa4f432dce0b6be3946c921b7e74ab8862ddefd8",
+  "n": 20,
+  "blind": 9,
+  "excess": 0.1265,
+  "flagged": false,
+  "top_key_share": 0.35,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 20,
+  "blind_by_question": []
+ },
+ {
+  "bank": "by-construction-comp-2026-08-31/items.json",
+  "sha256_items": "a975d1e376fe9d68650729a455e62386b03d17815298384f0f5bc50b5b51175d",
+  "n": 96,
+  "blind": 39,
+  "excess": 0.1076,
+  "flagged": false,
+  "top_key_share": 0.333,
+  "keyed_to_question": 0.51,
+  "distinct_questions": 4,
+  "blind_by_question": [
+   {
+    "question": "Under the claim as written about the FIRST property, could a counterexample to it arise without the system hav",
+    "items": 26,
+    "answered_blind": 17,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Suppose a counterexample to the FIRST property is then observed, with the system unchanged. Under the claim as",
+    "items": 23,
+    "answered_blind": 9,
+    "distinct_keys": 3
+   },
+   {
+    "question": "A counterexample to the first-mentioned property turns up and the system was not changed. Going only by the cl",
+    "items": 25,
+    "answered_blind": 8,
+    "distinct_keys": 3
+   },
+   {
+    "question": "Taking the claim about the first-mentioned property exactly as written: is a counterexample possible while the",
+    "items": 22,
+    "answered_blind": 5,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "they-one-they-many-comprehension-2026-08-29/items-run2.json",
+  "sha256_items": "8417e8bf936eb47ebf3c6d2869aa50da32bdc4ad80b6c3f9dde309157a926160",
+  "n": 192,
+  "blind": 77,
+  "excess": 0.1016,
+  "flagged": false,
+  "top_key_share": 0.042,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 12,
+  "blind_by_question": [
+   {
+    "question": "The budget line releases only on two or more approvals. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Release requires clearance from two or more parties. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "A waiver stands only when two or more parties accept it. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "An exception holds once two or more parties ratify it. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The change needs two or more independent sign-offs before it ships. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "An incident needs to be handed over immediately. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "You need a decision on the plan before the end of the day. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The key must be rotated today. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "A correction has to be merged into the runbook now. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The transfer completes on two or more countersignatures. What must happen next?",
+    "items": 16,
+    "answered_blind": 5,
+    "distinct_keys": 2
+   },
+   {
+    "question": "A quota increase must be granted this hour. What must happen next?",
+    "items": 16,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   },
+   {
+    "question": "An entry has to be withdrawn before publication. What must happen next?",
+    "items": 16,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "they-one-they-many-comprehension-2026-08-29/items.json",
+  "sha256_items": "09f83faaa3cfdea78c52538d1c245c3367c7c648fe4af40390be0b6bee3fd3ad",
+  "n": 192,
+  "blind": 77,
+  "excess": 0.1015,
+  "flagged": false,
+  "top_key_share": 0.042,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 12,
+  "blind_by_question": [
+   {
+    "question": "The budget line releases only on two or more approvals. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Release requires clearance from two or more parties. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "A waiver stands only when two or more parties accept it. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "An exception holds once two or more parties ratify it. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The change needs two or more independent sign-offs before it ships. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "An incident needs to be handed over immediately. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "You need a decision on the plan before the end of the day. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The key must be rotated today. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "A correction has to be merged into the runbook now. What must happen next?",
+    "items": 16,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The transfer completes on two or more countersignatures. What must happen next?",
+    "items": 16,
+    "answered_blind": 5,
+    "distinct_keys": 2
+   },
+   {
+    "question": "A quota increase must be granted this hour. What must happen next?",
+    "items": 16,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   },
+   {
+    "question": "An entry has to be withdrawn before publication. What must happen next?",
+    "items": 16,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "include-both-recert-2026-10-27/items.json",
+  "sha256_items": "0754e922b69fe7bbff9121963ebcda42133515246fd783ceee3734e7d8f43f1b",
+  "n": 128,
+  "blind": 32,
+  "excess": 0.0603,
+  "flagged": false,
+  "top_key_share": 0.008,
+  "keyed_to_question": 0.25,
+  "distinct_questions": 32,
+  "blind_by_question": []
+ },
+ {
+  "bank": "replace-old-comprehension-replica-2026-09-25/items.json",
+  "sha256_items": "0e3cf6b2ccdab95cd71138fc6f5bb40e064908871b84e2c5fdf7ed73a7997ba9",
+  "n": 32,
+  "blind": 9,
+  "excess": 0.0419,
+  "flagged": false,
+  "top_key_share": 0.031,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 32,
+  "blind_by_question": []
+ },
+ {
+  "bank": "someorall-comprehension-2026-08-25/items.json",
+  "sha256_items": "595ffdd87961a5ec53806e94f4a332583d0d55511c13eedd410017134c044053",
+  "n": 96,
+  "blind": 35,
+  "excess": 0.0339,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 32,
+  "blind_by_question": []
+ },
+ {
+  "bank": "some-or-all-original-2026-08-23/sba_items.json",
+  "sha256_items": "821c3d47815ee1b2119cb5b34a46cdfaba6c1607ae9740c636dce2c1f211b587",
+  "n": 112,
+  "blind": 32,
+  "excess": 0.0207,
+  "flagged": false,
+  "top_key_share": 0.518,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 112,
+  "blind_by_question": []
+ },
+ {
+  "bank": "thisonce-appl-2026-08-31/items.json",
+  "sha256_items": "7463a0a4fca412475403acad2ab14c191b6199ddc31cbdae20f3b9374f813c40",
+  "n": 140,
+  "blind": 48,
+  "excess": 0.0145,
+  "flagged": false,
+  "top_key_share": 0.571,
+  "keyed_to_question": 0.571,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Does that instruction apply to the work you are doing now?",
+    "items": 140,
+    "answered_blind": 48,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "go-unless-no-comprehension-2026-08-29/gun_manifest_run2.json",
+  "sha256_items": "85ed9cd26586f9e57818d195d2a05dc0e86391e985cf963355fab52241799d90",
+  "n": 48,
+  "blind": 3,
+  "excess": 0.011,
+  "flagged": false,
+  "top_key_share": 0.042,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 24,
+  "blind_by_question": []
+ },
+ {
+  "bank": "go-unless-no-comprehension-2026-08-29/gun_panel_items.json",
+  "sha256_items": "a8106ea58beb64bffe6166692af3ace6789e2e42e63d1b8306a4a4bc5d72fabb",
+  "n": 48,
+  "blind": 3,
+  "excess": 0.011,
+  "flagged": false,
+  "top_key_share": 0.042,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 24,
+  "blind_by_question": []
+ },
+ {
+  "bank": "thisonce-comprehension-2026-08-25/items-careful.json",
+  "sha256_items": "9cad1813de2acd89356a90adf9cc48098473a9968a01b8c2aaa8cd8ddee11013",
+  "n": 140,
+  "blind": 46,
+  "excess": 0.0093,
+  "flagged": false,
+  "top_key_share": 0.571,
+  "keyed_to_question": 0.571,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Does that instruction apply to the work you are doing now?",
+    "items": 140,
+    "answered_blind": 46,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "they-one-many-comp-2026-08-31/items.json",
+  "sha256_items": "0399d1ab4131ecaa30a41c9ff4deafd714c0c56d482f4a06085b049881e7ceeb",
+  "n": 128,
+  "blind": 41,
+  "excess": 0.0012,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.656,
+  "distinct_questions": 31,
+  "blind_by_question": [
+   {
+    "question": "House rules require a second, different signatory whenever exactly one party has acted so far. Based only on t",
+    "items": 36,
+    "answered_blind": 8,
+    "distinct_keys": 2
+   },
+   {
+    "question": "Policy: if only a single party performed this action, one more must be recruited before it stands. Going by th",
+    "items": 28,
+    "answered_blind": 3,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "nextyou-replication-2026-08-26/original-items.json",
+  "sha256_items": "31bc551d0b1b57b2c0f3d856108f6357619198653a6ba6662cc7f532830a3c61",
+  "n": 32,
+  "blind": 8,
+  "excess": 0.0004,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.25,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Who owns the next step?",
+    "items": 32,
+    "answered_blind": 8,
+    "distinct_keys": 4
+   }
+  ]
+ },
+ {
+  "bank": "wholepart-settlement/wholepart_items.json",
+  "sha256_items": "b933270a62ccd6f7be635aab9d046154e93c65d1caa831f558c120256c8dc19f",
+  "n": 24,
+  "blind": 11,
+  "excess": 0.0003,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 12,
+  "blind_by_question": []
+ },
+ {
+  "bank": "nextyou-replication-2026-08-26/items.json",
+  "sha256_items": "6940a4fd1ace233006797e1c8d22d70211a2f1dee32945dbe16297859af2d351",
+  "n": 32,
+  "blind": 8,
+  "excess": 0.0001,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.25,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Who owns the next step?",
+    "items": 32,
+    "answered_blind": 8,
+    "distinct_keys": 4
+   }
+  ]
+ },
+ {
+  "bank": "approx-robust/rb3-robustness-v1.json",
+  "sha256_items": "47282e50c57bbbd02b9e131bde68e65301b457a0527dfd1ee341da509b43b3c3",
+  "n": 24,
+  "blind": 0,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 1.0,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "What did the writer declare about the numeric figure: is it approximate, exact, or was no such declaration mad",
+    "items": 24,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "because-ever-since-cells-audit-2026-10-24/items.json",
+  "sha256_items": "682c87dd59e9a9b7b86ef82138bb46ccbfed0e1241463949e0513f6115bd33c1",
+  "n": 216,
+  "blind": 47,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 6,
+  "blind_by_question": [
+   {
+    "question": "1. Does this sentence itself say that the event explains why the main condition holds? 2. Does it itself asser",
+    "items": 36,
+    "answered_blind": 15,
+    "distinct_keys": 2
+   },
+   {
+    "question": "1. Does it itself assert a condition holding or recurring from that event through the review date? 2. Does thi",
+    "items": 54,
+    "answered_blind": 16,
+    "distinct_keys": 3
+   },
+   {
+    "question": "1. Does it itself assert a condition holding or recurring from that event through the review date? 2. Does thi",
+    "items": 54,
+    "answered_blind": 16,
+    "distinct_keys": 3
+   },
+   {
+    "question": "1. Does this sentence itself say that the event explains why the main condition holds? 2. Does it itself asser",
+    "items": 36,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   },
+   {
+    "question": "1. Does this sentence itself say that the event explains why the main condition holds? 2. Does it itself asser",
+    "items": 18,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "1. Does this sentence itself say that the event explains why the main condition holds? 2. Does it itself asser",
+    "items": 18,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "biweekly-e2w-repl-2026-08-24/items.json",
+  "sha256_items": "57503086db89a3156090b6a85ff1ba8e971e4ca8980a66f5cfa2808df9fbf7c3",
+  "n": 100,
+  "blind": 26,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.3,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 11,
+  "blind_by_question": [
+   {
+    "question": "What clock time does the instruction set for each occurrence?",
+    "items": 8,
+    "answered_blind": 8,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Does the instruction report whether the most recent occurrence completed successfully?",
+    "items": 7,
+    "answered_blind": 7,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Which weekday does the instruction assign to the recurrence?",
+    "items": 8,
+    "answered_blind": 6,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Which calendar date does the instruction give for the first occurrence?",
+    "items": 7,
+    "answered_blind": 5,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled recurrences does the instruction place inside that window?",
+    "items": 9,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled recurrences does the instruction place inside that window?",
+    "items": 14,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled recurrences does the instruction place inside that window?",
+    "items": 10,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled recurrences does the instruction place inside that window?",
+    "items": 11,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled recurrences does the instruction place inside that window?",
+    "items": 11,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled recurrences does the instruction place inside that window?",
+    "items": 7,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled recurrences does the instruction place inside that window?",
+    "items": 8,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "counted-n-comprehension-2026-09-25/items.json",
+  "sha256_items": "80525ad76b94ef849a50487cb77aa208c8078e5d260edb1cc8a42c993a1e7035",
+  "n": 160,
+  "blind": 21,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 0.537,
+  "distinct_questions": 57,
+  "blind_by_question": [
+   {
+    "question": "The receiver must decide how to treat the figure 0 in the second line of this record. Which reading is correct",
+    "items": 32,
+    "answered_blind": 8,
+    "distinct_keys": 4
+   },
+   {
+    "question": "The receiver must decide how to treat the figure 12 in the second line of this record. Which reading is correc",
+    "items": 6,
+    "answered_blind": 1,
+    "distinct_keys": 4
+   },
+   {
+    "question": "The receiver must decide how to treat the figure 9 in the second line of this record. Which reading is correct",
+    "items": 6,
+    "answered_blind": 1,
+    "distinct_keys": 3
+   }
+  ]
+ },
+ {
+  "bank": "moved-comprehension-2026-08-25/items-earlier-bare.json",
+  "sha256_items": "536db4d7b9e5e3871d1405e7951f05322783a860c3fd73fdfeb8a8eaeb0c4aa3",
+  "n": 100,
+  "blind": 25,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 52,
+  "blind_by_question": []
+ },
+ {
+  "bank": "moved-comprehension-2026-08-25/items-earlier-careful.json",
+  "sha256_items": "c8abd08059220319fa143fd8146c1196a7d7dbd312855653116dad92daf6d7a9",
+  "n": 100,
+  "blind": 25,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 52,
+  "blind_by_question": []
+ },
+ {
+  "bank": "moved-comprehension-2026-08-25/items-earlier.json",
+  "sha256_items": "072413d1c4ecee748c049a9abff7cf59e8caf261b0d8158bc0b9b6baf7a2934a",
+  "n": 102,
+  "blind": 24,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.49,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 57,
+  "blind_by_question": []
+ },
+ {
+  "bank": "moved-comprehension-2026-08-25/items-later-bare.json",
+  "sha256_items": "c825be8ffc774bf4088314bd95b9683e830c0e711ae2680aa21d8e148d058624",
+  "n": 100,
+  "blind": 3,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 51,
+  "blind_by_question": []
+ },
+ {
+  "bank": "moved-comprehension-2026-08-25/items-later-careful.json",
+  "sha256_items": "5566f54ed920481ea7eb3aad4d088d6f4bb966c6e2694339bc366da00736aeb9",
+  "n": 100,
+  "blind": 3,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 51,
+  "blind_by_question": []
+ },
+ {
+  "bank": "moved-comprehension-2026-08-25/items-later.json",
+  "sha256_items": "46086575c4f3aba065c294a92863e3fc891c12d0b8d94a41d2526d443d18ceb2",
+  "n": 101,
+  "blind": 2,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.495,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 58,
+  "blind_by_question": []
+ },
+ {
+  "bank": "movedearlier-comp-2026-08-31/items.json",
+  "sha256_items": "5b21d0de613216a3badde4c19785f1c2d446c44d4ba8f9b03fc580bef4d065d5",
+  "n": 60,
+  "blind": 18,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.4,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 24,
+  "blind_by_question": []
+ },
+ {
+  "bank": "multiply-the-quantity-frozen-pool-2026-09-27/pool.items.json",
+  "sha256_items": "c31ad57f887ed441f00fc62f32967a864877fc111cadeaabff3332143468d6a3",
+  "n": 96,
+  "blind": 0,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 96,
+  "blind_by_question": []
+ },
+ {
+  "bank": "multiply-the-quantity-frozen-pool-2026-09-27/seat-A.items.json",
+  "sha256_items": "cd92aaf216b416da24189e0d15dd83bb3f794c537b3e542c020f5bb3f0f2e265",
+  "n": 32,
+  "blind": 0,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 32,
+  "blind_by_question": []
+ },
+ {
+  "bank": "multiply-the-quantity-frozen-pool-2026-09-27/seat-B.items.json",
+  "sha256_items": "6f90d95cbc6b6d28f2235399c280998225d47aa818733961afdc3cd627f0d547",
+  "n": 32,
+  "blind": 0,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 32,
+  "blind_by_question": []
+ },
+ {
+  "bank": "multiply-the-quantity-frozen-pool-2026-09-27/seat-C.items.json",
+  "sha256_items": "90ef5a8086729f73bf48a7989f8c0e970bbb6b4882e4f88c392f65c54ab9495a",
+  "n": 32,
+  "blind": 0,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.25,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 32,
+  "blind_by_question": []
+ },
+ {
+  "bank": "none-of-not-all-of-comprehension-2026-08-30/items.json",
+  "sha256_items": "bc2168d64ae0fcc6e71cbdbd9b4ddf6fc10ded8ec85a8660c556f6e6265234c6",
+  "n": 192,
+  "blind": 37,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.125,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 4,
+  "blind_by_question": [
+   {
+    "question": "The build ships only if every integration suite reported clean, and a full bisect is started only once you kno",
+    "items": 48,
+    "answered_blind": 21,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The quarter closes only if every process owner signed, and the escalation notice is filed only once you know t",
+    "items": 48,
+    "answered_blind": 10,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The route releases only if every depot supervisor confirmed, and the reserve carrier is chartered only once yo",
+    "items": 48,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "The change window opens only if every regional lead cleared it, and a remediation call is warranted only once ",
+    "items": 48,
+    "answered_blind": 0,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "pp/pp-detectability-absent-v1.json",
+  "sha256_items": "2dc1bc99ec9ba09e105c678d828e3abd3675eaec08c22da50066c5f67d86747b",
+  "n": 32,
+  "blind": 1,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+    "items": 32,
+    "answered_blind": 1,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "pp/pp-detectability-present-v1.json",
+  "sha256_items": "bf6d1608bef71a2ce5b6ab31f8245b18cca88f49a52e36cbd417a9f70957054e",
+  "n": 32,
+  "blind": 16,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Consider only the numeric claims in this message. Are they internally consistent with one another?",
+    "items": 32,
+    "answered_blind": 16,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "prob-odds-replication-2026-09-13/items.json",
+  "sha256_items": "7ce1fec8493e6bc4a390b9ee6944a8ac5367c212d8ae91657eb197cd348afc28",
+  "n": 72,
+  "blind": 11,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.306,
+  "keyed_to_question": 0.958,
+  "distinct_questions": 66,
+  "blind_by_question": []
+ },
+ {
+  "bank": "proposalby-replication-2026-08-26/items.json",
+  "sha256_items": "c5379c6adceec3164dfb5c07713e369f3ad4063ec8d67f8b763e3a451ad8f7df",
+  "n": 48,
+  "blind": 8,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 1.0,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for considerat",
+    "items": 48,
+    "answered_blind": 8,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "proposalby-replication-2026-08-26/original-items.json",
+  "sha256_items": "0b951389b5cc9a917ff59df144fb7f0f3ab1e2c84c6f0c2eaa6d3370f5286c88",
+  "n": 48,
+  "blind": 4,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 1.0,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Choose the three-part profile that follows from the message. Part 1: is the action only offered for considerat",
+    "items": 48,
+    "answered_blind": 4,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "rate-cap-bank-2026-10-10/items_undisclosed.json",
+  "sha256_items": "74926123238118b64a9bd38941d1b90de6405ead7d7c20b0d61b69d7513d1e53",
+  "n": 16,
+  "blind": 14,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 1.0,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 7,
+  "blind_by_question": [
+   {
+    "question": "How much room is there under this limit after that hour?",
+    "items": 8,
+    "answered_blind": 6,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "rfc-2119/comprehension-v1.json",
+  "sha256_items": "4af62c35876c6d9a20d3e6b3e3bc0f419b41a08f29ccfc3efa040d6b378379f5",
+  "n": 42,
+  "blind": 12,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.333,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 2,
+  "blind_by_question": [
+   {
+    "question": "An implementation does this anyway, and is otherwise correct. What is its standing?",
+    "items": 14,
+    "answered_blind": 6,
+    "distinct_keys": 2
+   },
+   {
+    "question": "An implementation ships without doing this, and is otherwise correct. What is its standing?",
+    "items": 28,
+    "answered_blind": 6,
+    "distinct_keys": 3
+   }
+  ]
+ },
+ {
+  "bank": "rfc2119-replication/rfc2119_manifest.json",
+  "sha256_items": "e6740992344989bb58b1298b65e073bed45388e74712bfa132edeb739442901c",
+  "n": 20,
+  "blind": 8,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.6,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 20,
+  "blind_by_question": []
+ },
+ {
+  "bank": "routing-evidence/withheld_items.json",
+  "sha256_items": "95aad9039c66c6ed9666aa6c1ff2872fa978e8a609cf59dcdb9456ec4d1ed673",
+  "n": 24,
+  "blind": 4,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 1.0,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "If the responder needs the actor's identity, which first route does this sentence support?",
+    "items": 24,
+    "answered_blind": 4,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "should-comp-run-2026-08-31/items.json",
+  "sha256_items": "d86b7845b06ec227a9e4dea62fe3050677af7d606a7cf341bcbbaa64cc5b2e3e",
+  "n": 192,
+  "blind": 61,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "It did not happen. What follows?",
+    "items": 192,
+    "answered_blind": 61,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "should-comprehension-2026-08-30/items.json",
+  "sha256_items": "d5f025682eb4bd02f56d9da765e5538fe00c366d94dda76acb3de5607e7d395e",
+  "n": 192,
+  "blind": 42,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "It did not happen. What follows?",
+    "items": 192,
+    "answered_blind": 42,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "thisonce-comprehension-2026-08-25/items-bare.json",
+  "sha256_items": "8fc9e1db9aec7d691eef1e976f860e07daf8bed900cfc77c1588cf62d96a1ff9",
+  "n": 136,
+  "blind": 30,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.581,
+  "keyed_to_question": 0.581,
+  "distinct_questions": 1,
+  "blind_by_question": [
+   {
+    "question": "Does that instruction apply to the work you are doing now?",
+    "items": 136,
+    "answered_blind": 30,
+    "distinct_keys": 2
+   }
+  ]
+ },
+ {
+  "bank": "twice-weekly-replication-2026-08-21/twice-weekly-replication-items-v2.json",
+  "sha256_items": "fc5f03bce388911c24fe4337c6a0e577b3f8c8351973f86bccad198088005cae",
+  "n": 60,
+  "blind": 5,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.2,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 10,
+  "blind_by_question": [
+   {
+    "question": "Which two weekdays must host the runs?",
+    "items": 6,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Does this wording require the two runs to be evenly spaced within the week?",
+    "items": 6,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   },
+   {
+    "question": "What does the notice establish about the outcome of the most recent scheduled run?",
+    "items": 6,
+    "answered_blind": 1,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice prescribe inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice prescribe inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice prescribe inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice prescribe inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice prescribe inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice prescribe inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice prescribe inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "twice-weekly-replication-2026-08-21/twice-weekly-replication-items.json",
+  "sha256_items": "881af9412176895747b9a20b4689dd416ac2e63c1172fdd60f2153e42931b157",
+  "n": 60,
+  "blind": 5,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.2,
+  "keyed_to_question": 1.0,
+  "distinct_questions": 10,
+  "blind_by_question": [
+   {
+    "question": "Which two weekdays must host the runs?",
+    "items": 6,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   },
+   {
+    "question": "Does this wording require the two runs to be evenly spaced within the week?",
+    "items": 6,
+    "answered_blind": 2,
+    "distinct_keys": 1
+   },
+   {
+    "question": "What does the notice establish about the outcome of the most recent scheduled run?",
+    "items": 6,
+    "answered_blind": 1,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   },
+   {
+    "question": "How many scheduled run slots does the notice commit to inside that tracking period?",
+    "items": 6,
+    "answered_blind": 0,
+    "distinct_keys": 1
+   }
+  ]
+ },
+ {
+  "bank": "whole-part/wp-replication-fresh-v1.json",
+  "sha256_items": "c0c621a64b12dcdcaa3f0ce8042bab5563c38291b0cc5e51f8bbfa867927d2c0",
+  "n": 60,
+  "blind": 30,
+  "excess": 0.0,
+  "flagged": false,
+  "top_key_share": 0.5,
+  "keyed_to_question": 0.5,
+  "distinct_questions": 30,
+  "blind_by_question": []
+ }
+]

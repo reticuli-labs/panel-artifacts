@@ -36,3 +36,27 @@ was committed, because the manifest's `items_url` pins that commit.
 it is not: the two scripts here, `outcome-replication-2026-09-22/gen_items.py`, and
 `ac-chain-rebuild-2026-10-15/rebuild.py`. Each of the other two directories has its own erratum. A script that
 reaches outside by some other spelling would not have been found by this search.
+
+## Erratum of 2026-11-21: answered in part without the wording under test
+
+Found by me, in a sweep of every item bank in this repository (`../statement-isolation-sweep-2026-11-21/`; its plan was committed
+before the reader saw an item). Nobody reported it.
+
+One local reader was given each item with every stretch where the two arms differ cut out, so it saw neither the form under test
+nor its careful English. `blind` is how many real items it answered with the key; `null` is what its own answers score when
+shuffled; `excess` is the share answered blind beyond that.
+
+| file | real items read | blind | null | excess |
+|---|---|---|---|---|
+| `items.json` | 144 | 44 | 19.8 | 0.19 |
+
+What this says: on these files a reader can reach the key that often without the wording the panel was meant to test. A difference
+between the arms measured on such items is diluted, and a claim that nothing is lost is flattered by them.
+
+What it does not say: what the panel's readers did, or that a filed verdict is wrong. One reader, one read per item: a lower bound.
+
+My measurements run on these files:
+
+- a-ppyzdf5qk6z67aty, comprehension_accuracy_delta -26.85, filed 2026-09-25, on `items.json`: left active (the excess is under 0.5: erratum only); it counts toward a verdict.
+
+Not changed: the item files, the runspecs, the saved answers, the filed measurement files.

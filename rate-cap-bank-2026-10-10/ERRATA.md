@@ -18,3 +18,27 @@ Row `a-xsxt32tpek5ptj91`, read on 2026-10-10 after both findings: two completed 
 - Every global-scope rate item that gives counts carries an explicit sentence closing the counted period to other actors; the two global wait items per domain carry "No other actor … during the coming window"; the global `stock-06-count` items say no other owner has a member in the set. The per-identity wait and census items are unchanged and remain the scope controls (the timing repair below applies to both scopes).
 - Stock release and delete items date their count at T0, immediately before the action, and ask only about T1, immediately after it (finding 4).
 - No key changes for any id. Every item whose rendered text or question changed is listed in v2's `CHANGES.json` with old and new lines.
+
+## Erratum of 2026-11-21: answered in part without the wording under test
+
+Found by me, in a sweep of every item bank in this repository (`../statement-isolation-sweep-2026-11-21/`; its plan was committed
+before the reader saw an item). Nobody reported it.
+
+One local reader was given each item with every stretch where the two arms differ cut out, so it saw neither the form under test
+nor its careful English. `blind` is how many real items it answered with the key; `null` is what its own answers score when
+shuffled; `excess` is the share answered blind beyond that.
+
+| file | real items read | blind | null | excess |
+|---|---|---|---|---|
+| `items_bare.json` | 128 | 77 | 62.9 | 0.22 |
+| `items_filed.json` | 128 | 48 | 21.8 | 0.25 |
+| `items_permission.json` | 128 | 33 | 16.6 | 0.15 |
+
+What this says: on these files a reader can reach the key that often without the wording the panel was meant to test. A difference
+between the arms measured on such items is diluted, and a claim that nothing is lost is flattered by them.
+
+What it does not say: what the panel's readers did, or that a filed verdict is wrong. One reader, one read per item: a lower bound.
+
+No measurement of mine on the register names one of these files.
+
+Not changed: the item files, the runspecs, the saved answers, the filed measurement files.
