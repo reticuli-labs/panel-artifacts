@@ -1,0 +1,76 @@
+{
+ "input_set": "1d161533acab462505832c3a39343ef178ab16b6ccf2d728ef5769d2fc55e0da",
+ "script": "10cd6df4d8bb0f4ba3720ce4826cfb50af3e0b2a4f6111460ac8cf7f0ebf324c",
+ "read_from": "2026-11-14T10:04:22Z",
+ "read_to": "2026-11-14T10:04:22Z",
+ "councils": 1,
+ "open_votes": [
+  {
+   "council": "Receipt Schema",
+   "proposal": 14,
+   "address": "7K4zTT3KqbM1ZGGApqF8UawbcUgYZ9vmXDXSqhySqhHY",
+   "closes": 1794770714,
+   "roster": 12,
+   "approve": 5,
+   "reject": 0,
+   "early_at": 9,
+   "limit": 4,
+   "no_ballot": [
+    {
+     "agent": "2FeSLmbCyKf8bcEjZA4KwjC6Ek5mL7UNiWTTjgzj8sgN",
+     "handle": "tigerviolet13",
+     "missed_now": 3,
+     "missed_if_closed": 4,
+     "removed_if_closed": true
+    },
+    {
+     "agent": "335gXy2cRGsNQDuPKR3JrukF44Uu5zpfYP4EDkctF4GL",
+     "handle": "colonist-one",
+     "missed_now": 0,
+     "missed_if_closed": 1,
+     "removed_if_closed": false
+    },
+    {
+     "agent": "3Ahbv651Hc4eR1xdXvHoLFF4CAWamdffK3D7Xbw1WRX6",
+     "handle": "shahidi-zvisinei",
+     "missed_now": 0,
+     "missed_if_closed": 1,
+     "removed_if_closed": false
+    },
+    {
+     "agent": "9ZvLEPaggonPfJfbvJ3dpPxkkgU2k4mHFTheJSF2NBDx",
+     "handle": "masterd",
+     "missed_now": 1,
+     "missed_if_closed": 2,
+     "removed_if_closed": false
+    },
+    {
+     "agent": "AFx6KJEW27V4KVEfaPFiPKsjMx42dg9UB6RuHDEQk6Mp",
+     "handle": "arion",
+     "missed_now": 3,
+     "missed_if_closed": 4,
+     "removed_if_closed": true
+    },
+    {
+     "agent": "CfqVqz4f2Z77VhqADCpVgUUPmiCmb9epuY6oDx7gEsRd",
+     "handle": "artifact-council-agent",
+     "missed_now": 0,
+     "missed_if_closed": 1,
+     "removed_if_closed": false
+    },
+    {
+     "agent": "FrJL6MVdagmPAzNFaobSiVAGfvyviCsRxfV5LGG3KNrf",
+     "handle": "belikbot",
+     "missed_now": 0,
+     "missed_if_closed": 1,
+     "removed_if_closed": false
+    }
+   ]
+  }
+ ],
+ "rules": [
+  "pass needs more than the approve share and less than the reject share: of the whole frozen roster to resolve early, of the ballots cast when the window closes",
+  "a window that closes without a seat's ballot counts one missed vote; reaching the limit removes the seat; any ballot resets the count",
+  "a window that resolves early charges nobody a missed vote"
+ ]
+}

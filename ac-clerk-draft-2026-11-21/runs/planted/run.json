@@ -1,0 +1,75 @@
+{
+ "input_set": "fe1a1b69cc67c0a066a0699664968b7858a14a46313efc9a8531591b9ad6ad29",
+ "script": "10cd6df4d8bb0f4ba3720ce4826cfb50af3e0b2a4f6111460ac8cf7f0ebf324c",
+ "read_from": "2030-03-17T17:46:40Z",
+ "read_to": "2030-03-17T17:46:40Z",
+ "councils": 1,
+ "open_votes": [
+  {
+   "council": "Planted Council",
+   "proposal": 1,
+   "address": "Planted91xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+   "closes": 1900183600,
+   "roster": 5,
+   "approve": 1,
+   "reject": 1,
+   "early_at": 4,
+   "limit": 4,
+   "no_ballot": [
+    {
+     "agent": "Planted04xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "dune",
+     "missed_now": 0,
+     "missed_if_closed": 1,
+     "removed_if_closed": false
+    },
+    {
+     "agent": "Planted05xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "elm",
+     "missed_now": 2,
+     "missed_if_closed": 3,
+     "removed_if_closed": false
+    },
+    {
+     "agent": "Planted06xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "fern",
+     "missed_now": 3,
+     "missed_if_closed": 4,
+     "removed_if_closed": true
+    }
+   ]
+  },
+  {
+   "council": "Planted Council",
+   "proposal": 2,
+   "address": "Planted92xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+   "closes": 1900018120,
+   "roster": 2,
+   "approve": 0,
+   "reject": 0,
+   "early_at": 2,
+   "limit": 2,
+   "no_ballot": [
+    {
+     "agent": "Planted01xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "aster",
+     "missed_now": 0,
+     "missed_if_closed": 1,
+     "removed_if_closed": false
+    },
+    {
+     "agent": "Planted07xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "gorse",
+     "missed_now": 1,
+     "missed_if_closed": 2,
+     "removed_if_closed": true
+    }
+   ]
+  }
+ ],
+ "rules": [
+  "pass needs more than the approve share and less than the reject share: of the whole frozen roster to resolve early, of the ballots cast when the window closes",
+  "a window that closes without a seat's ballot counts one missed vote; reaching the limit removes the seat; any ballot resets the count",
+  "a window that resolves early charges nobody a missed vote"
+ ]
+}

@@ -1,0 +1,88 @@
+[
+ {
+  "case": "the limit frozen on a proposal is ignored",
+  "caught": true,
+  "said": [
+   "planted: the posting lacks 'No ballot yet: 2. If the window closes without a ballot, each of these is charged one missed vote. The limit is 2.'",
+   "planted: the posting lacks '- aster: 0 now, 1 of 2 then\\n- gorse: 1 now, 2 of 2 then, and the seat is removed'"
+  ]
+ },
+ {
+  "case": "a seat is removed only above the limit",
+  "caught": true,
+  "said": [
+   "planted: the posting lacks '- aster: 0 now, 1 of 2 then\\n- gorse: 1 now, 2 of 2 then, and the seat is removed'",
+   "planted: the posting lacks '- dune: 0 now, 1 of 4 then\\n- elm: 2 now, 3 of 4 then\\n- fern: 3 now, 4 of 4 then, and the seat is removed'"
+  ]
+ },
+ {
+  "case": "the record marks removal only above the limit",
+  "caught": true,
+  "said": [
+   "rs14: marked as removed [], gone after the close ['2FeSLm', 'AFx6KJ']",
+   "rs14: 2FeSLm is at None after the close, the clerk said 4"
+  ]
+ },
+ {
+  "case": "a seat that left the council still counts",
+  "caught": true,
+  "said": [
+   "planted: the posting lacks 'Ballots: 1 approve, 1 reject, on a roster of 5. It resolves early at 4 approvals, if rejections stay under 20 percent of the roster. At the close it passes if more than 69 percent of the ballots cast approve and fewer than 20 percent reject.'",
+   "planted: the posting lacks 'On the roster when it was filed and no longer a member: heath-gone.'"
+  ]
+ },
+ {
+  "case": "early resolution at exactly the share",
+  "caught": true,
+  "said": [
+   "planted: the posting lacks 'Ballots: 0 approve, 0 reject, on a roster of 2. It resolves early at 2 approvals, if rejections stay under 20 percent of the roster.'",
+   "planted: the posting lacks 'Ballots: 1 approve, 1 reject, on a roster of 5. It resolves early at 4 approvals, if rejections stay under 20 percent of the roster. At the close it passes if more than 69 percent of the ballots cast approve and fewer than 20 percent reject.'"
+  ]
+ },
+ {
+  "case": "a resolved proposal is listed",
+  "caught": true,
+  "said": [
+   "planted: the posting lacks '1 council read, 2 votes open.'",
+   "planted: a resolved proposal, a seat that left, or the proposer was given a line"
+  ]
+ },
+ {
+  "case": "the vote that closes first is not put first",
+  "caught": true,
+  "said": [
+   "planted: the vote that closes first is not first"
+  ]
+ },
+ {
+  "case": "a changed input is accepted",
+  "caught": true,
+  "said": [
+   "planted: an input changed after the read was accepted"
+  ]
+ },
+ {
+  "case": "a missed vote is not added",
+  "caught": true,
+  "said": [
+   "rs14: 3Ahbv6 is at 1 after the close, the clerk said 0",
+   "rs14: 9ZvLEP is at 2 after the close, the clerk said 1"
+  ]
+ },
+ {
+  "case": "the count shown is not the one served",
+  "caught": true,
+  "said": [
+   "planted: the posting lacks '- aster: 0 now, 1 of 2 then\\n- gorse: 1 now, 2 of 2 then, and the seat is removed'",
+   "planted: the posting lacks '- dune: 0 now, 1 of 4 then\\n- elm: 2 now, 3 of 4 then\\n- fern: 3 now, 4 of 4 then, and the seat is removed'"
+  ]
+ },
+ {
+  "case": "a rejection is counted as an approval",
+  "caught": true,
+  "said": [
+   "planted: the posting lacks 'Ballots: 1 approve, 1 reject, on a roster of 5. It resolves early at 4 approvals, if rejections stay under 20 percent of the roster. At the close it passes if more than 69 percent of the ballots cast approve and fewer than 20 percent reject.'",
+   "planted: the posting lacks 'Approved: birch.'"
+  ]
+ }
+]
