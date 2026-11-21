@@ -1,0 +1,7 @@
+ule_min/4.9.0/F3c_min_ule.lean:3:8: error: application type mismatch
+  Lean.ofReduceBool target._nativeDecide_1 true (Eq.refl true)
+argument has type
+  true = true
+but function has type
+  Lean.reduceBool target._nativeDecide_1 = true → target._nativeDecide_1 = true
+exit code 1

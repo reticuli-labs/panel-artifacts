@@ -1,0 +1,781 @@
+{
+ "F0": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "fast._cstage1": [],
+    "target": [
+     "slow",
+     "fast",
+     "lemma1"
+    ],
+    "slow._cstage2": [],
+    "fast._cstage2": [],
+    "fast": [],
+    "lemma1": [
+     "slow",
+     "fast"
+    ],
+    "slow._cstage1": [],
+    "slow": [],
+    "unused": []
+   },
+   "live": [
+    "fast",
+    "lemma1",
+    "slow",
+    "target"
+   ],
+   "dead": [
+    "fast._cstage1",
+    "fast._cstage2",
+    "slow._cstage1",
+    "slow._cstage2",
+    "unused"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "fast._cstage1": [],
+    "target": [
+     "slow",
+     "fast",
+     "lemma1"
+    ],
+    "slow._cstage2": [],
+    "fast._cstage2": [],
+    "fast": [],
+    "lemma1": [
+     "slow",
+     "fast"
+    ],
+    "slow._cstage1": [],
+    "slow": []
+   },
+   "live": [
+    "fast",
+    "lemma1",
+    "slow",
+    "target"
+   ],
+   "dead": [
+    "fast._cstage1",
+    "fast._cstage2",
+    "slow._cstage1",
+    "slow._cstage2"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "unused"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F1": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "f._unsafe_rec": [
+     "f.match_1"
+    ],
+    "_private.fixtures.F1_with.0.f.match_1.eq_2": [
+     "f.match_1"
+    ],
+    "f._cstage1": [
+     "f"
+    ],
+    "target": [
+     "f",
+     "f.eq_2",
+     "f.eq_1"
+    ],
+    "_private.fixtures.F1_with.0.f.match_1.eq_1": [
+     "f.match_1"
+    ],
+    "_private.fixtures.F1_with.0.f.match_1.splitter._rarg._cstage2": [],
+    "_private.fixtures.F1_with.0.f.match_1.splitter._cstage2": [],
+    "f.match_1._cstage1": [],
+    "f._cstage2": [
+     "f"
+    ],
+    "_private.fixtures.F1_with.0.f.match_1.splitter._cstage1": [],
+    "f.match_1": [],
+    "f": [
+     "f.match_1"
+    ],
+    "_private.fixtures.F1_with.0.f.match_1.splitter": [],
+    "f.eq_2": [
+     "f"
+    ],
+    "dead": [
+     "f",
+     "f.eq_1"
+    ],
+    "f._sunfold": [
+     "f",
+     "f.match_1"
+    ],
+    "f.eq_1": [
+     "f"
+    ]
+   },
+   "live": [
+    "f",
+    "f.eq_1",
+    "f.eq_2",
+    "f.match_1",
+    "target"
+   ],
+   "dead": [
+    "_private.fixtures.F1_with.0.f.match_1.eq_1",
+    "_private.fixtures.F1_with.0.f.match_1.eq_2",
+    "_private.fixtures.F1_with.0.f.match_1.splitter",
+    "_private.fixtures.F1_with.0.f.match_1.splitter._cstage1",
+    "_private.fixtures.F1_with.0.f.match_1.splitter._cstage2",
+    "_private.fixtures.F1_with.0.f.match_1.splitter._rarg._cstage2",
+    "dead",
+    "f._cstage1",
+    "f._cstage2",
+    "f._sunfold",
+    "f._unsafe_rec",
+    "f.match_1._cstage1"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "_private.fixtures.F1_without.0.f.match_1.splitter": [],
+    "f._unsafe_rec": [
+     "f.match_1"
+    ],
+    "f._cstage1": [
+     "f"
+    ],
+    "target": [
+     "f",
+     "f.eq_2",
+     "f.eq_1"
+    ],
+    "_private.fixtures.F1_without.0.f.match_1.splitter._cstage2": [],
+    "_private.fixtures.F1_without.0.f.match_1.splitter._rarg._cstage2": [],
+    "f.match_1._cstage1": [],
+    "f._cstage2": [
+     "f"
+    ],
+    "_private.fixtures.F1_without.0.f.match_1.splitter._cstage1": [],
+    "_private.fixtures.F1_without.0.f.match_1.eq_1": [
+     "f.match_1"
+    ],
+    "f.match_1": [],
+    "f": [
+     "f.match_1"
+    ],
+    "f.eq_2": [
+     "f"
+    ],
+    "_private.fixtures.F1_without.0.f.match_1.eq_2": [
+     "f.match_1"
+    ],
+    "f._sunfold": [
+     "f",
+     "f.match_1"
+    ],
+    "f.eq_1": [
+     "f"
+    ]
+   },
+   "live": [
+    "f",
+    "f.eq_1",
+    "f.eq_2",
+    "f.match_1",
+    "target"
+   ],
+   "dead": [
+    "_private.fixtures.F1_without.0.f.match_1.eq_1",
+    "_private.fixtures.F1_without.0.f.match_1.eq_2",
+    "_private.fixtures.F1_without.0.f.match_1.splitter",
+    "_private.fixtures.F1_without.0.f.match_1.splitter._cstage1",
+    "_private.fixtures.F1_without.0.f.match_1.splitter._cstage2",
+    "_private.fixtures.F1_without.0.f.match_1.splitter._rarg._cstage2",
+    "f._cstage1",
+    "f._cstage2",
+    "f._sunfold",
+    "f._unsafe_rec",
+    "f.match_1._cstage1"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "dead"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2a": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "fixtures.F2a_with._auxLemma.2": [
+     "Q",
+     "nq"
+    ],
+    "P": [],
+    "target": [
+     "fixtures.F2a_with._auxLemma.2",
+     "Q"
+    ],
+    "fixtures.F2a_with._auxLemma.1": [
+     "P",
+     "np"
+    ],
+    "Q": [],
+    "np": [
+     "P"
+    ],
+    "nq": [
+     "Q"
+    ],
+    "dead": [
+     "P",
+     "fixtures.F2a_with._auxLemma.1"
+    ]
+   },
+   "live": [
+    "Q",
+    "fixtures.F2a_with._auxLemma.2",
+    "nq",
+    "target"
+   ],
+   "dead": [
+    "P",
+    "dead",
+    "fixtures.F2a_with._auxLemma.1",
+    "np"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "P": [],
+    "target": [
+     "fixtures.F2a_without._auxLemma.1",
+     "Q"
+    ],
+    "Q": [],
+    "np": [
+     "P"
+    ],
+    "fixtures.F2a_without._auxLemma.1": [
+     "Q",
+     "nq"
+    ],
+    "nq": [
+     "Q"
+    ]
+   },
+   "live": [
+    "Q",
+    "fixtures.F2a_without._auxLemma.1",
+    "nq",
+    "target"
+   ],
+   "dead": [
+    "P",
+    "np"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "P",
+    "np",
+    "dead"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2b": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "fixtures.F2b_with._auxLemma.2": [
+     "Q",
+     "nq"
+    ],
+    "P": [],
+    "target": [
+     "fixtures.F2b_with._auxLemma.2",
+     "Q"
+    ],
+    "Q": [],
+    "np": [
+     "P"
+    ],
+    "nq": [
+     "Q"
+    ],
+    "fixtures.F2b_with._auxLemma.1": [
+     "P",
+     "np"
+    ],
+    "dead": [
+     "fixtures.F2b_with._auxLemma.1",
+     "P"
+    ]
+   },
+   "live": [
+    "Q",
+    "fixtures.F2b_with._auxLemma.2",
+    "nq",
+    "target"
+   ],
+   "dead": [
+    "P",
+    "dead",
+    "fixtures.F2b_with._auxLemma.1",
+    "np"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "P": [],
+    "fixtures.F2b_without._auxLemma.1": [
+     "Q",
+     "nq"
+    ],
+    "target": [
+     "Q",
+     "fixtures.F2b_without._auxLemma.1"
+    ],
+    "Q": [],
+    "nq": [
+     "Q"
+    ]
+   },
+   "live": [
+    "Q",
+    "fixtures.F2b_without._auxLemma.1",
+    "nq",
+    "target"
+   ],
+   "dead": [
+    "P"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "P",
+    "np",
+    "dead"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2c": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "liveD": [
+     "liveD.proof_1"
+    ],
+    "liveD._cstage1": [],
+    "target": [
+     "liveD"
+    ],
+    "liveD.proof_1": [],
+    "liveD._cstage2": [],
+    "deadD": [
+     "deadD.proof_1"
+    ],
+    "deadD.proof_1": [],
+    "deadD._cstage2": [],
+    "deadD._cstage1": []
+   },
+   "live": [
+    "liveD",
+    "liveD.proof_1",
+    "target"
+   ],
+   "dead": [
+    "deadD",
+    "deadD._cstage1",
+    "deadD._cstage2",
+    "deadD.proof_1",
+    "liveD._cstage1",
+    "liveD._cstage2"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "liveD": [
+     "liveD.proof_1"
+    ],
+    "liveD._cstage1": [],
+    "target": [
+     "liveD"
+    ],
+    "liveD.proof_1": [],
+    "liveD._cstage2": []
+   },
+   "live": [
+    "liveD",
+    "liveD.proof_1",
+    "target"
+   ],
+   "dead": [
+    "liveD._cstage1",
+    "liveD._cstage2"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "deadD"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2d": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "liveM._cstage1": [],
+    "deadM": [
+     "deadM.match_1"
+    ],
+    "target": [
+     "liveM"
+    ],
+    "deadM.match_1": [],
+    "deadM._cstage2": [],
+    "liveM": [
+     "deadM.match_1"
+    ],
+    "liveM._cstage2": [],
+    "deadM._cstage1": [],
+    "deadM.match_1._cstage1": []
+   },
+   "live": [
+    "deadM.match_1",
+    "liveM",
+    "target"
+   ],
+   "dead": [
+    "deadM",
+    "deadM._cstage1",
+    "deadM._cstage2",
+    "deadM.match_1._cstage1",
+    "liveM._cstage1",
+    "liveM._cstage2"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "liveM._cstage1": [],
+    "liveM.match_1._cstage1": [],
+    "target": [
+     "liveM"
+    ],
+    "liveM": [
+     "liveM.match_1"
+    ],
+    "liveM.match_1": [],
+    "liveM._cstage2": []
+   },
+   "live": [
+    "liveM",
+    "liveM.match_1",
+    "target"
+   ],
+   "dead": [
+    "liveM._cstage1",
+    "liveM._cstage2",
+    "liveM.match_1._cstage1"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "deadM"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2e": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "target": [
+     "deadT.match_1"
+    ],
+    "deadT.match_1": [],
+    "deadT": [
+     "deadT.match_1"
+    ]
+   },
+   "live": [
+    "deadT.match_1",
+    "target"
+   ],
+   "dead": [
+    "deadT"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "target": [
+     "target.match_1"
+    ],
+    "target.match_1": []
+   },
+   "live": [
+    "target",
+    "target.match_1"
+   ],
+   "dead": []
+  },
+  "minimized": {
+   "dropped_commands": [
+    "deadT"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F3a": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "fast._cstage1": [],
+    "target": [
+     "slow",
+     "target._nativeDecide_1"
+    ],
+    "target._nativeDecide_1._cstage1": [],
+    "slow._cstage2": [],
+    "fast._cstage2": [],
+    "fast": [],
+    "target._nativeDecide_1": [
+     "slow"
+    ],
+    "slow_eq_fast": [
+     "slow",
+     "fast"
+    ],
+    "slow._cstage1": [],
+    "slow": [],
+    "target._nativeDecide_1._cstage2": []
+   },
+   "live": [
+    "slow",
+    "target",
+    "target._nativeDecide_1"
+   ],
+   "dead": [
+    "fast",
+    "fast._cstage1",
+    "fast._cstage2",
+    "slow._cstage1",
+    "slow._cstage2",
+    "slow_eq_fast",
+    "target._nativeDecide_1._cstage1",
+    "target._nativeDecide_1._cstage2"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "fast._cstage1": [],
+    "target": [
+     "slow",
+     "target._nativeDecide_1"
+    ],
+    "target._nativeDecide_1._cstage1": [],
+    "slow._cstage2": [],
+    "fast._cstage2": [],
+    "fast": [],
+    "target._nativeDecide_1": [
+     "slow"
+    ],
+    "slow._cstage1": [],
+    "slow": [],
+    "target._nativeDecide_1._cstage2": []
+   },
+   "live": [
+    "slow",
+    "target",
+    "target._nativeDecide_1"
+   ],
+   "dead": [
+    "fast",
+    "fast._cstage1",
+    "fast._cstage2",
+    "slow._cstage1",
+    "slow._cstage2",
+    "target._nativeDecide_1._cstage1",
+    "target._nativeDecide_1._cstage2"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "fast",
+    "slow_eq_fast"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F3b": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "target": [
+     "g",
+     "target._nativeDecide_1"
+    ],
+    "target._nativeDecide_1._cstage1": [],
+    "g._cstage2": [],
+    "gImpl._cstage1": [],
+    "gImpl": [],
+    "gImpl._cstage2": [],
+    "target._nativeDecide_1": [
+     "g"
+    ],
+    "target._nativeDecide_1._cstage2": [],
+    "g._cstage1": [],
+    "g": []
+   },
+   "live": [
+    "g",
+    "target",
+    "target._nativeDecide_1"
+   ],
+   "dead": [
+    "g._cstage1",
+    "g._cstage2",
+    "gImpl",
+    "gImpl._cstage1",
+    "gImpl._cstage2",
+    "target._nativeDecide_1._cstage1",
+    "target._nativeDecide_1._cstage2"
+   ]
+  },
+  "without": {
+   "builds": false,
+   "first_line": "fixtures/F3b_without.lean:6:8: error: application type mismatch"
+  },
+  "minimized": {
+   "dropped_commands": [
+    "gImpl"
+   ],
+   "builds": false,
+   "first_line": "ule_min/4.9.0/F3b_min_keepint.lean:3:26: error: unknown constant 'gImpl'"
+  }
+ },
+ "F3c": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "fast._cstage1": [],
+    "target": [
+     "slow",
+     "target._nativeDecide_1"
+    ],
+    "target._nativeDecide_1._cstage1": [],
+    "slow._cstage2": [],
+    "fast._cstage2": [],
+    "fast": [],
+    "target._nativeDecide_1": [
+     "slow"
+    ],
+    "slow_eq_fast": [
+     "slow",
+     "fast"
+    ],
+    "slow._cstage1": [],
+    "slow": [],
+    "target._nativeDecide_1._cstage2": []
+   },
+   "live": [
+    "slow",
+    "target",
+    "target._nativeDecide_1"
+   ],
+   "dead": [
+    "fast",
+    "fast._cstage1",
+    "fast._cstage2",
+    "slow._cstage1",
+    "slow._cstage2",
+    "slow_eq_fast",
+    "target._nativeDecide_1._cstage1",
+    "target._nativeDecide_1._cstage2"
+   ]
+  },
+  "without": {
+   "builds": false,
+   "first_line": "fixtures/F3c_without.lean:7:8: error: application type mismatch"
+  },
+  "minimized": {
+   "dropped_commands": [
+    "fast",
+    "slow_eq_fast"
+   ],
+   "builds": false,
+   "first_line": "ule_min/4.9.0/F3c_min_keepint.lean:3:8: error: application type mismatch"
+  }
+ },
+ "F3d": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "target": [
+     "h",
+     "target._nativeDecide_1"
+    ],
+    "target._nativeDecide_1._cstage1": [],
+    "hImpl._cstage1": [],
+    "h": [],
+    "target._nativeDecide_1": [
+     "h"
+    ],
+    "hImpl._cstage2": [],
+    "hImpl": [],
+    "target._nativeDecide_1._cstage2": []
+   },
+   "live": [
+    "h",
+    "target",
+    "target._nativeDecide_1"
+   ],
+   "dead": [
+    "hImpl",
+    "hImpl._cstage1",
+    "hImpl._cstage2",
+    "target._nativeDecide_1._cstage1",
+    "target._nativeDecide_1._cstage2"
+   ]
+  },
+  "without": {
+   "builds": false,
+   "first_line": "fixtures/F3d_without.lean:4:17: error: unknown constant 'hImpl'"
+  },
+  "minimized": {
+   "dropped_commands": [
+    "hImpl"
+   ],
+   "builds": false,
+   "first_line": "ule_min/4.9.0/F3d_min_keepint.lean:1:17: error: unknown constant 'hImpl'"
+  }
+ }
+}

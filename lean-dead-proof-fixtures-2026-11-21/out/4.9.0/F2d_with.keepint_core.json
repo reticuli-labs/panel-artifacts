@@ -1,0 +1,22 @@
+{
+  "total_declared": 9,
+  "reachable_from_target": 3,
+  "dead": [
+    "deadM",
+    "deadM._cstage1",
+    "deadM._cstage2",
+    "deadM.match_1._cstage1",
+    "liveM._cstage1",
+    "liveM._cstage2"
+  ],
+  "dead_count": 6,
+  "live": [
+    "deadM.match_1",
+    "liveM",
+    "target"
+  ],
+  "targets": [
+    "target"
+  ],
+  "elimination_pct": 66.7
+}

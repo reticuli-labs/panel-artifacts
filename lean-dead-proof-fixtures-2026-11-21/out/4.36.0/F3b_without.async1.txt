@@ -1,0 +1,12 @@
+file fixtures/F3b_without.lean | Elab.async true | 4.36.0
+[1] def g (n : Nat) : Nat := n
+      + g (def)
+[2] theorem target : g 5 = 6 := by native_decide
+      + target (theorem)
+constants of this file at the end: 2
+ROOT g (def) reaches in this file: []
+ROOT g axioms: []
+ROOT gImpl: not a constant (in the kernel map: false)
+ROOT target (theorem) reaches in this file: [g]
+ROOT target axioms: [sorryAx]
+exit code 0

@@ -1,0 +1,24 @@
+file fixtures/F3a_with.lean | Elab.async false | 4.36.0
+[1] def slow (n : Nat) : Nat := n + 0
+      + slow (def)
+[2] def fast (n : Nat) : Nat := n
+      + fast (def)
+[3] @[csimp] theorem slow_eq_fast : @slow = @fast := rfl
+      + slow_eq_fast (theorem)
+[4] set_option trace.compiler.ir.result true in
+      + target (theorem)
+      + target._native.native_decide.ax_1 (axiom)
+      ! [Compiler.IR] [result]
+    def target._native.native_decide.decl_1 : u8 :=
+      let x_1 : u8 := 1;
+      ret x_1
+constants of this file at the end: 5
+ROOT slow (def) reaches in this file: []
+ROOT slow axioms: []
+ROOT fast (def) reaches in this file: []
+ROOT fast axioms: []
+ROOT slow_eq_fast (theorem) reaches in this file: [fast, slow]
+ROOT slow_eq_fast axioms: []
+ROOT target (theorem) reaches in this file: [slow, target._native.native_decide.ax_1]
+ROOT target axioms: [target._native.native_decide.ax_1]
+exit code 0

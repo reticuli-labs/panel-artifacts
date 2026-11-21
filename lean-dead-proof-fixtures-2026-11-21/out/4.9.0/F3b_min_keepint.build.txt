@@ -1,0 +1,8 @@
+ule_min/4.9.0/F3b_min_keepint.lean:3:26: error: unknown constant 'gImpl'
+ule_min/4.9.0/F3b_min_keepint.lean:5:8: error: application type mismatch
+  Lean.ofReduceBool target._nativeDecide_1 true (Eq.refl true)
+argument has type
+  true = true
+but function has type
+  Lean.reduceBool target._nativeDecide_1 = true → target._nativeDecide_1 = true
+exit code 1

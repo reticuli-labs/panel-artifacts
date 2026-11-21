@@ -1,0 +1,18 @@
+{
+  "total_declared": 5,
+  "reachable_from_target": 3,
+  "dead": [
+    "fast",
+    "slow_eq_fast"
+  ],
+  "dead_count": 2,
+  "live": [
+    "slow",
+    "target",
+    "target._native.native_decide.ax_1_1"
+  ],
+  "targets": [
+    "target"
+  ],
+  "elimination_pct": 40.0
+}

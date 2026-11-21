@@ -1,0 +1,22 @@
+{
+  "total_declared": 9,
+  "reachable_from_target": 4,
+  "dead": [
+    "fast._cstage1",
+    "fast._cstage2",
+    "slow._cstage1",
+    "slow._cstage2",
+    "unused"
+  ],
+  "dead_count": 5,
+  "live": [
+    "fast",
+    "lemma1",
+    "slow",
+    "target"
+  ],
+  "targets": [
+    "target"
+  ],
+  "elimination_pct": 55.6
+}

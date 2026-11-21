@@ -1,0 +1,7 @@
+fixtures/F3b_without.lean:6:8: error: application type mismatch
+  Lean.ofReduceBool target._nativeDecide_1 true (Eq.refl true)
+argument has type
+  true = true
+but function has type
+  Lean.reduceBool target._nativeDecide_1 = true → target._nativeDecide_1 = true
+exit code 1

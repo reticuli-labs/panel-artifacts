@@ -1,0 +1,25 @@
+file fixtures/F1_with.lean | Elab.async true | 4.36.0
+[1] def f : Nat → Nat
+      + f (def)
+      + f._f (def)
+      + f._sunfold (def)
+      + f._unsafe_rec (def)
+      + f.match_1 (def)
+[2] theorem dead : f 0 = 1 := by rw [f]
+      + dead (theorem)
+      + f.eq_1 (theorem)
+      + f.eq_2 (theorem)
+[3] theorem target : f 1 = 3 := by rw [f, f]
+      + target (theorem)
+constants of this file at the end: 9
+ROOT f (def) reaches in this file: [f._f, f.match_1]
+ROOT f axioms: []
+ROOT dead (theorem) reaches in this file: [f, f._f, f.eq_1, f.match_1]
+ROOT dead axioms: []
+ROOT target (theorem) reaches in this file: [f, f._f, f.eq_1, f.eq_2, f.match_1]
+ROOT target axioms: []
+ROOT f.eq_1 (theorem) reaches in this file: [f, f._f, f.match_1]
+ROOT f.eq_1 axioms: []
+ROOT f.eq_2 (theorem) reaches in this file: [f, f._f, f.match_1]
+ROOT f.eq_2 axioms: []
+exit code 0

@@ -1,0 +1,19 @@
+file fixtures/F3c_without.lean | Elab.async false | 4.36.0
+[1] def slow (n : Nat) : Nat := n
+      + slow (def)
+[2] def fast (n : Nat) : Nat := n + 1
+      + fast (def)
+[3] theorem target : slow 5 = 6 := by native_decide
+      + target (theorem)
+      ! fixtures/F3c_without.lean:7:34: error: Tactic `native_decide` evaluated that the proposition
+  slow 5 = 6
+is false
+constants of this file at the end: 3
+ROOT slow (def) reaches in this file: []
+ROOT slow axioms: []
+ROOT fast (def) reaches in this file: []
+ROOT fast axioms: []
+ROOT slow_eq_fast: not a constant (in the kernel map: false)
+ROOT target (theorem) reaches in this file: [slow]
+ROOT target axioms: [sorryAx]
+exit code 0

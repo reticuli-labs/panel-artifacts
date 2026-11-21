@@ -1,0 +1,74 @@
+[
+ {
+  "case": "the control no longer lists the used lemma",
+  "stopped": true,
+  "line": 45,
+  "error": "AssertionError"
+ },
+ {
+  "case": "the equation theorems filed under another command",
+  "stopped": true,
+  "line": 53,
+  "error": "AssertionError: ('4.36.0', 'f.eq_1')"
+ },
+ {
+  "case": "4.9.0: no renumbering",
+  "stopped": true,
+  "line": 62,
+  "error": "AssertionError: (['_auxLemma.1'], ['_auxLemma.1'])"
+ },
+ {
+  "case": "4.36.0: the target's auxiliary name moves",
+  "stopped": true,
+  "line": 66,
+  "error": "AssertionError: ('1', {'reach': ['Q', 'nq', 'target._simp_1_1'], 'axioms': ['propext']})"
+ },
+ {
+  "case": "the match is not shared",
+  "stopped": true,
+  "line": 71,
+  "error": "AssertionError"
+ },
+ {
+  "case": "sorry shows among the target's axioms",
+  "stopped": true,
+  "line": 87,
+  "error": "AssertionError"
+ },
+ {
+  "case": "the file without the false lemma builds",
+  "stopped": true,
+  "line": 87,
+  "error": "AssertionError"
+ },
+ {
+  "case": "the later attribute takes effect on 4.36.0",
+  "stopped": true,
+  "line": 93,
+  "error": "AssertionError"
+ },
+ {
+  "case": "their tool lists nq as live",
+  "stopped": true,
+  "line": 100,
+  "error": "AssertionError: ('4.36.0', 'F2a')"
+ },
+ {
+  "case": "their kept file builds",
+  "stopped": true,
+  "line": 100,
+  "error": "AssertionError: ('4.36.0', 'F2a')"
+ },
+ {
+  "case": "the variant's kept file fails",
+  "stopped": true,
+  "line": 101,
+  "error": "AssertionError: ('4.9.0', 'F2b')"
+ },
+ {
+  "case": "another fixture's kept file fails (the count)",
+  "stopped": true,
+  "line": 112,
+  "error": "AssertionError: {'4.36.0': {'fixture_files_that_build': 10, 'kept_file_does_not_build': ['F2a', 'F2b', 'F2c', 'F3c', 'F3"
+ }
+]

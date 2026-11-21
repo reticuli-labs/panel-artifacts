@@ -1,0 +1,33 @@
+file fixtures/F1_with.lean | Elab.async true | 4.9.0
+[1] def f : Nat → Nat
+      + f (def)
+      + f._cstage1 (def)
+      + f._cstage2 (def)
+      + f._sunfold (def)
+      + f._unsafe_rec (def)
+      + f.match_1 (def)
+      + f.match_1._cstage1 (def)
+[2] theorem dead : f 0 = 1 := by rw [f]
+      + _private.0.f.match_1.eq_1 (theorem)
+      + _private.0.f.match_1.eq_2 (theorem)
+      + _private.0.f.match_1.splitter (def)
+      + _private.0.f.match_1.splitter._cstage1 (def)
+      + _private.0.f.match_1.splitter._cstage2 (def)
+      + _private.0.f.match_1.splitter._rarg._cstage2 (def)
+      + dead (theorem)
+      + f.eq_1 (theorem)
+      + f.eq_2 (theorem)
+[3] theorem target : f 1 = 3 := by rw [f, f]
+      + target (theorem)
+constants of this file at the end: 17
+ROOT f (def) reaches in this file: [f.match_1]
+ROOT f axioms: []
+ROOT dead (theorem) reaches in this file: [f, f.eq_1, f.match_1]
+ROOT dead axioms: []
+ROOT target (theorem) reaches in this file: [f, f.eq_1, f.eq_2, f.match_1]
+ROOT target axioms: []
+ROOT f.eq_1 (theorem) reaches in this file: [f, f.match_1]
+ROOT f.eq_1 axioms: []
+ROOT f.eq_2 (theorem) reaches in this file: [f, f.match_1]
+ROOT f.eq_2 axioms: []
+exit code 0

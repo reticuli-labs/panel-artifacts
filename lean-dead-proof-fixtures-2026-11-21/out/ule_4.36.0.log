@@ -1,0 +1,13 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+their files: {'ule_extract.lean': '49719922fd39c454', 'ule_core.py': '36ec4dbb48e3ab5e'}
+F0 | with: live ['fast', 'lemma1', 'slow', 'target'] dead ['unused'] | minimized (dropped ['unused']): BUILDS
+F1 | with: live ['f', 'f.eq_1', 'f.eq_2', 'target'] dead ['dead', 'f.match_1'] | minimized (dropped ['dead']): BUILDS
+F2a | with: live ['Q', 'target'] dead ['P', 'dead', 'np', 'nq'] | minimized (dropped ['P', 'np', 'nq', 'dead']): FAILS: ule_min/4.36.0/F2a_min_ule.lean:3:41: error(lean.unknownIdentifier): Unknown identifier `nq`
+F2b | with: live ['Q', 'target'] dead ['P', 'dead', 'np', 'nq'] | minimized (dropped ['P', 'np', 'nq', 'dead']): FAILS: ule_min/4.36.0/F2b_min_ule.lean:3:32: error: unsolved goals
+F2c | with: live ['liveD', 'target'] dead ['deadD'] | minimized (dropped ['deadD']): BUILDS
+F2d | with: live ['deadM.match_1', 'liveM', 'target'] dead ['deadM'] | minimized (dropped ['deadM']): BUILDS
+F2e | with: live ['target', 'target.match_1_1'] dead ['deadT', 'deadT.match_1_1'] | minimized (dropped ['deadT']): BUILDS
+F3a | with: live ['slow', 'target'] dead ['fast', 'slow_eq_fast'] | minimized (dropped ['fast', 'slow_eq_fast']): BUILDS
+F3b | with: live None dead None | minimized (dropped None): not made: {'builds': False, 'first_line': 'fixtures/F3b_with.lean:8:31: error: Tactic `native_decide` evaluated that the proposition'}
+F3c | with: live ['slow', 'target'] dead ['fast', 'slow_eq_fast'] | minimized (dropped ['fast', 'slow_eq_fast']): FAILS: ule_min/4.36.0/F3c_min_ule.lean:3:34: error: Tactic `native_decide` evaluated that the proposition
+F3d | with: live ['h', 'target'] dead ['hImpl'] | minimized (dropped ['hImpl']): FAILS: ule_min/4.36.0/F3d_min_ule.lean:1:17: error(lean.unknownIdentifier): Unknown constant `hImpl`

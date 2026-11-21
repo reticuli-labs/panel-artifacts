@@ -1,0 +1,13 @@
+file fixtures/F2c_without.lean | Elab.async false | 4.36.0
+[1] def liveD : Fin 5 := ⟨3, by decide⟩
+      + liveD (def)
+      + liveD._proof_1 (theorem)
+[2] theorem target : liveD.val = 3 := rfl
+      + target (theorem)
+constants of this file at the end: 3
+ROOT deadD: not a constant (in the kernel map: false)
+ROOT liveD (def) reaches in this file: [liveD._proof_1]
+ROOT liveD axioms: []
+ROOT target (theorem) reaches in this file: [liveD, liveD._proof_1]
+ROOT target axioms: []
+exit code 0

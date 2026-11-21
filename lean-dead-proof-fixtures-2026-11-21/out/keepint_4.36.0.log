@@ -1,0 +1,13 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+their files: {'ule_extract_keep_internal.lean': 'ea22587c105c3e31', 'ule_core.py': '36ec4dbb48e3ab5e'}
+F0 | with: live ['fast', 'lemma1', 'slow', 'target'] dead ['unused'] | minimized (dropped ['unused']): BUILDS
+F1 | with: live ['f', 'f._f', 'f.eq_1', 'f.eq_2', 'f.match_1', 'target'] dead ['dead', 'f._sunfold', 'f._unsafe_rec'] | minimized (dropped ['dead']): BUILDS
+F2a | with: live ['Q', 'nq', 'target', 'target._simp_1_1'] dead ['P', 'dead', 'dead._simp_1_1', 'np'] | minimized (dropped ['P', 'np', 'dead']): BUILDS
+F2b | with: live ['Q', 'nq', 'nq._simp_1', 'target'] dead ['P', 'dead', 'np', 'np._simp_1'] | minimized (dropped ['P', 'np', 'dead']): BUILDS
+F2c | with: live ['deadD._proof_1', 'liveD', 'target'] dead ['deadD'] | minimized (dropped ['deadD']): BUILDS
+F2d | with: live ['deadM.match_1', 'liveM', 'target'] dead ['deadM'] | minimized (dropped ['deadM']): BUILDS
+F2e | with: live ['target', 'target.match_1_1'] dead ['deadT', 'deadT.match_1_1'] | minimized (dropped ['deadT']): BUILDS
+F3a | with: live ['slow', 'target', 'target._native.native_decide.ax_1_1'] dead ['fast', 'slow_eq_fast'] | minimized (dropped ['fast', 'slow_eq_fast']): BUILDS
+F3b | with: live None dead None | minimized (dropped None): not made: {'builds': False, 'first_line': 'fixtures/F3b_with.lean:8:31: error: Tactic `native_decide` evaluated that the proposition'}
+F3c | with: live ['slow', 'target', 'target._native.native_decide.ax_1_1'] dead ['fast', 'slow_eq_fast'] | minimized (dropped ['fast', 'slow_eq_fast']): FAILS: ule_min/4.36.0/F3c_min_keepint.lean:3:34: error: Tactic `native_decide` evaluated that the proposition
+F3d | with: live ['h', 'target', 'target._native.native_decide.ax_1_1'] dead ['hImpl'] | minimized (dropped ['hImpl']): FAILS: ule_min/4.36.0/F3d_min_keepint.lean:1:17: error(lean.unknownIdentifier): Unknown constant `hImpl`

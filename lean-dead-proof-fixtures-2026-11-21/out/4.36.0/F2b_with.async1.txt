@@ -1,0 +1,25 @@
+file fixtures/F2b_with.lean | Elab.async true | 4.36.0
+[1] def P (n : Nat) : Prop := n = 0
+      + P (def)
+[2] def Q (n : Nat) : Prop := n = 1
+      + Q (def)
+[3] @[simp] theorem np : ¬ P 5 := by unfold P; decide
+      + np (theorem)
+      + np._simp_1 (theorem)
+[4] @[simp] theorem nq : ¬ Q 5 := by unfold Q; decide
+      + nq (theorem)
+      + nq._simp_1 (theorem)
+[5] theorem dead : P 5 = False := by simp
+      + dead (theorem)
+[6] theorem target : Q 5 = False := by simp
+      + target (theorem)
+constants of this file at the end: 8
+ROOT np (theorem) reaches in this file: [P]
+ROOT np axioms: []
+ROOT nq (theorem) reaches in this file: [Q]
+ROOT nq axioms: []
+ROOT dead (theorem) reaches in this file: [P, np, np._simp_1]
+ROOT dead axioms: [propext]
+ROOT target (theorem) reaches in this file: [Q, nq, nq._simp_1]
+ROOT target axioms: [propext]
+exit code 0

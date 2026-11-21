@@ -1,0 +1,19 @@
+file fixtures/F3b_with.lean | Elab.async false | 4.36.0
+[1] def g (n : Nat) : Nat := n
+      + g (def)
+[2] def gImpl (n : Nat) : Nat := n + 1
+      + gImpl (def)
+[3] attribute [implemented_by gImpl] g
+[4] theorem target : g 5 = 6 := by native_decide
+      + target (theorem)
+      ! fixtures/F3b_with.lean:8:31: error: Tactic `native_decide` evaluated that the proposition
+  g 5 = 6
+is false
+constants of this file at the end: 3
+ROOT g (def) reaches in this file: []
+ROOT g axioms: []
+ROOT gImpl (def) reaches in this file: []
+ROOT gImpl axioms: []
+ROOT target (theorem) reaches in this file: [g]
+ROOT target axioms: [sorryAx]
+exit code 0

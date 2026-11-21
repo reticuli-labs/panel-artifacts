@@ -1,0 +1,23 @@
+{
+  "total_declared": 10,
+  "reachable_from_target": 3,
+  "dead": [
+    "fast",
+    "fast._cstage1",
+    "fast._cstage2",
+    "slow._cstage1",
+    "slow._cstage2",
+    "target._nativeDecide_1._cstage1",
+    "target._nativeDecide_1._cstage2"
+  ],
+  "dead_count": 7,
+  "live": [
+    "slow",
+    "target",
+    "target._nativeDecide_1"
+  ],
+  "targets": [
+    "target"
+  ],
+  "elimination_pct": 70.0
+}

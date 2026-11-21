@@ -1,0 +1,21 @@
+{
+  "total_declared": 8,
+  "reachable_from_target": 6,
+  "dead": [
+    "f._sunfold",
+    "f._unsafe_rec"
+  ],
+  "dead_count": 2,
+  "live": [
+    "f",
+    "f._f",
+    "f.eq_1",
+    "f.eq_2",
+    "f.match_1",
+    "target"
+  ],
+  "targets": [
+    "target"
+  ],
+  "elimination_pct": 25.0
+}

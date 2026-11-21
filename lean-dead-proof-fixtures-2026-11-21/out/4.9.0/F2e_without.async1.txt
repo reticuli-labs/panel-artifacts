@@ -1,0 +1,9 @@
+file fixtures/F2e_without.lean | Elab.async true | 4.9.0
+[1] theorem target (x : Option Nat) : x.isSome = x.isSome :=
+      + target (theorem)
+      + target.match_1 (def)
+constants of this file at the end: 2
+ROOT deadT: not a constant (in the kernel map: false)
+ROOT target (theorem) reaches in this file: [target.match_1]
+ROOT target axioms: []
+exit code 0

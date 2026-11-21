@@ -1,0 +1,609 @@
+{
+ "F0": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "unused": [],
+    "slow": [],
+    "target": [
+     "slow",
+     "fast",
+     "lemma1"
+    ],
+    "lemma1": [
+     "slow",
+     "fast"
+    ],
+    "fast": []
+   },
+   "live": [
+    "fast",
+    "lemma1",
+    "slow",
+    "target"
+   ],
+   "dead": [
+    "unused"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "slow": [],
+    "target": [
+     "slow",
+     "fast",
+     "lemma1"
+    ],
+    "lemma1": [
+     "slow",
+     "fast"
+    ],
+    "fast": []
+   },
+   "live": [
+    "fast",
+    "lemma1",
+    "slow",
+    "target"
+   ],
+   "dead": []
+  },
+  "minimized": {
+   "dropped_commands": [
+    "unused"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F1": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "f": [
+     "f._f"
+    ],
+    "dead": [
+     "f",
+     "f.eq_1"
+    ],
+    "f.eq_2": [
+     "f"
+    ],
+    "f._unsafe_rec": [
+     "f.match_1"
+    ],
+    "f.eq_1": [
+     "f"
+    ],
+    "f.match_1": [],
+    "f._sunfold": [
+     "f",
+     "f.match_1"
+    ],
+    "f._f": [
+     "f.match_1"
+    ],
+    "target": [
+     "f",
+     "f.eq_2",
+     "f.eq_1"
+    ]
+   },
+   "live": [
+    "f",
+    "f._f",
+    "f.eq_1",
+    "f.eq_2",
+    "f.match_1",
+    "target"
+   ],
+   "dead": [
+    "dead",
+    "f._sunfold",
+    "f._unsafe_rec"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "f": [
+     "f._f"
+    ],
+    "f.eq_2": [
+     "f"
+    ],
+    "f._unsafe_rec": [
+     "f.match_1"
+    ],
+    "f.eq_1": [
+     "f"
+    ],
+    "f.match_1": [],
+    "f._sunfold": [
+     "f",
+     "f.match_1"
+    ],
+    "f._f": [
+     "f.match_1"
+    ],
+    "target": [
+     "f",
+     "f.eq_2",
+     "f.eq_1"
+    ]
+   },
+   "live": [
+    "f",
+    "f._f",
+    "f.eq_1",
+    "f.eq_2",
+    "f.match_1",
+    "target"
+   ],
+   "dead": [
+    "f._sunfold",
+    "f._unsafe_rec"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "dead"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2a": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "dead": [
+     "dead._simp_1_1",
+     "P"
+    ],
+    "np": [
+     "P"
+    ],
+    "dead._simp_1_1": [
+     "P",
+     "np"
+    ],
+    "nq": [
+     "Q"
+    ],
+    "target._simp_1_1": [
+     "Q",
+     "nq"
+    ],
+    "P": [],
+    "Q": [],
+    "target": [
+     "target._simp_1_1",
+     "Q"
+    ]
+   },
+   "live": [
+    "Q",
+    "nq",
+    "target",
+    "target._simp_1_1"
+   ],
+   "dead": [
+    "P",
+    "dead",
+    "dead._simp_1_1",
+    "np"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "np": [
+     "P"
+    ],
+    "nq": [
+     "Q"
+    ],
+    "target._simp_1_1": [
+     "Q",
+     "nq"
+    ],
+    "P": [],
+    "Q": [],
+    "target": [
+     "target._simp_1_1",
+     "Q"
+    ]
+   },
+   "live": [
+    "Q",
+    "nq",
+    "target",
+    "target._simp_1_1"
+   ],
+   "dead": [
+    "P",
+    "np"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "P",
+    "np",
+    "dead"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2b": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "np._simp_1": [
+     "P",
+     "np"
+    ],
+    "dead": [
+     "np._simp_1",
+     "P"
+    ],
+    "np": [
+     "P"
+    ],
+    "nq": [
+     "Q"
+    ],
+    "P": [],
+    "Q": [],
+    "nq._simp_1": [
+     "Q",
+     "nq"
+    ],
+    "target": [
+     "Q",
+     "nq._simp_1"
+    ]
+   },
+   "live": [
+    "Q",
+    "nq",
+    "nq._simp_1",
+    "target"
+   ],
+   "dead": [
+    "P",
+    "dead",
+    "np",
+    "np._simp_1"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "nq": [
+     "Q"
+    ],
+    "P": [],
+    "Q": [],
+    "nq._simp_1": [
+     "Q",
+     "nq"
+    ],
+    "target": [
+     "Q",
+     "nq._simp_1"
+    ]
+   },
+   "live": [
+    "Q",
+    "nq",
+    "nq._simp_1",
+    "target"
+   ],
+   "dead": [
+    "P"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "P",
+    "np",
+    "dead"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2c": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "deadD._proof_1": [],
+    "deadD": [
+     "deadD._proof_1"
+    ],
+    "liveD": [
+     "deadD._proof_1"
+    ],
+    "target": [
+     "liveD"
+    ]
+   },
+   "live": [
+    "deadD._proof_1",
+    "liveD",
+    "target"
+   ],
+   "dead": [
+    "deadD"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "liveD._proof_1": [],
+    "liveD": [
+     "liveD._proof_1"
+    ],
+    "target": [
+     "liveD"
+    ]
+   },
+   "live": [
+    "liveD",
+    "liveD._proof_1",
+    "target"
+   ],
+   "dead": []
+  },
+  "minimized": {
+   "dropped_commands": [
+    "deadD"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2d": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "liveM": [
+     "deadM.match_1"
+    ],
+    "deadM": [
+     "deadM.match_1"
+    ],
+    "deadM.match_1": [],
+    "target": [
+     "liveM"
+    ]
+   },
+   "live": [
+    "deadM.match_1",
+    "liveM",
+    "target"
+   ],
+   "dead": [
+    "deadM"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "liveM": [
+     "liveM.match_1"
+    ],
+    "liveM.match_1": [],
+    "target": [
+     "liveM"
+    ]
+   },
+   "live": [
+    "liveM",
+    "liveM.match_1",
+    "target"
+   ],
+   "dead": []
+  },
+  "minimized": {
+   "dropped_commands": [
+    "deadM"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F2e": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "deadT.match_1_1": [],
+    "target": [
+     "target.match_1_1"
+    ],
+    "target.match_1_1": [],
+    "deadT": [
+     "deadT.match_1_1"
+    ]
+   },
+   "live": [
+    "target",
+    "target.match_1_1"
+   ],
+   "dead": [
+    "deadT",
+    "deadT.match_1_1"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "target": [
+     "target.match_1_1"
+    ],
+    "target.match_1_1": []
+   },
+   "live": [
+    "target",
+    "target.match_1_1"
+   ],
+   "dead": []
+  },
+  "minimized": {
+   "dropped_commands": [
+    "deadT"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F3a": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "target._native.native_decide.ax_1_1": [
+     "slow"
+    ],
+    "slow_eq_fast": [
+     "slow",
+     "fast"
+    ],
+    "slow": [],
+    "target": [
+     "slow",
+     "target._native.native_decide.ax_1_1"
+    ],
+    "fast": []
+   },
+   "live": [
+    "slow",
+    "target",
+    "target._native.native_decide.ax_1_1"
+   ],
+   "dead": [
+    "fast",
+    "slow_eq_fast"
+   ]
+  },
+  "without": {
+   "builds": true,
+   "graph": {
+    "target._native.native_decide.ax_1_1": [
+     "slow"
+    ],
+    "slow": [],
+    "target": [
+     "slow",
+     "target._native.native_decide.ax_1_1"
+    ],
+    "fast": []
+   },
+   "live": [
+    "slow",
+    "target",
+    "target._native.native_decide.ax_1_1"
+   ],
+   "dead": [
+    "fast"
+   ]
+  },
+  "minimized": {
+   "dropped_commands": [
+    "fast",
+    "slow_eq_fast"
+   ],
+   "builds": true,
+   "first_line": ""
+  }
+ },
+ "F3b": {
+  "with": {
+   "builds": false,
+   "first_line": "fixtures/F3b_with.lean:8:31: error: Tactic `native_decide` evaluated that the proposition"
+  },
+  "without": {
+   "builds": false,
+   "first_line": "fixtures/F3b_without.lean:6:31: error: Tactic `native_decide` evaluated that the proposition"
+  }
+ },
+ "F3c": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "target._native.native_decide.ax_1_1": [
+     "slow"
+    ],
+    "slow_eq_fast": [
+     "slow",
+     "fast"
+    ],
+    "slow": [],
+    "target": [
+     "slow",
+     "target._native.native_decide.ax_1_1"
+    ],
+    "fast": []
+   },
+   "live": [
+    "slow",
+    "target",
+    "target._native.native_decide.ax_1_1"
+   ],
+   "dead": [
+    "fast",
+    "slow_eq_fast"
+   ]
+  },
+  "without": {
+   "builds": false,
+   "first_line": "fixtures/F3c_without.lean:7:34: error: Tactic `native_decide` evaluated that the proposition"
+  },
+  "minimized": {
+   "dropped_commands": [
+    "fast",
+    "slow_eq_fast"
+   ],
+   "builds": false,
+   "first_line": "ule_min/4.36.0/F3c_min_keepint.lean:3:34: error: Tactic `native_decide` evaluated that the proposition"
+  }
+ },
+ "F3d": {
+  "with": {
+   "builds": true,
+   "graph": {
+    "target._native.native_decide.ax_1_1": [
+     "h"
+    ],
+    "hImpl": [],
+    "h": [],
+    "target": [
+     "h",
+     "target._native.native_decide.ax_1_1"
+    ]
+   },
+   "live": [
+    "h",
+    "target",
+    "target._native.native_decide.ax_1_1"
+   ],
+   "dead": [
+    "hImpl"
+   ]
+  },
+  "without": {
+   "builds": false,
+   "first_line": "fixtures/F3d_without.lean:4:17: error(lean.unknownIdentifier): Unknown constant `hImpl`"
+  },
+  "minimized": {
+   "dropped_commands": [
+    "hImpl"
+   ],
+   "builds": false,
+   "first_line": "ule_min/4.36.0/F3d_min_keepint.lean:1:17: error(lean.unknownIdentifier): Unknown constant `hImpl`"
+  }
+ }
+}

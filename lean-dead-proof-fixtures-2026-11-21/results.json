@@ -1,0 +1,103 @@
+{
+ "toolchains": [
+  "4.36.0",
+  "4.9.0"
+ ],
+ "statements": {
+  "control_reader_lists_a_used_lemma_and_sorry": true,
+  "c1_equation_theorems_appear_in_the_first_askers_command": {
+   "4.36.0": true,
+   "4.9.0": true
+  },
+  "c2_counter_over_the_file": {
+   "4.9.0": {
+    "target_with_dead": "_auxLemma.2",
+    "target_without_dead": "_auxLemma.1"
+   },
+   "4.36.0": {
+    "target_with_dead": "target._simp_1_1",
+    "target_without_dead": "target._simp_1_1",
+    "with_async_off": "target._simp_1"
+   }
+  },
+  "c2_sharing": {
+   "4.36.0": {
+    "match_shared_between_definitions": true,
+    "proof_shared_between_definitions": true,
+    "liveD_with_dead": [
+     "deadD._proof_1"
+    ],
+    "match_shared_between_theorems": {
+     "async_on": false,
+     "async_off": true
+    }
+   },
+   "4.9.0": {
+    "match_shared_between_definitions": true,
+    "proof_shared_between_definitions": false,
+    "liveD_with_dead": [
+     "liveD.proof_1"
+    ],
+    "match_shared_between_theorems": {
+     "async_on": true,
+     "async_off": true
+    }
+   }
+  },
+  "c3_compiler_channel": {
+   "4.36.0": {
+    "csimp_lemma_not_reached_axioms_equal": true,
+    "false_csimp_lemma_by_sorry_target_builds_without_sorryAx": true,
+    "implemented_by_at_the_definition": true,
+    "implemented_by_in_a_later_attribute_command_takes_effect": false,
+    "target_axioms": [
+     "target._native.native_decide.ax_1_1"
+    ]
+   },
+   "4.9.0": {
+    "csimp_lemma_not_reached_axioms_equal": true,
+    "false_csimp_lemma_by_sorry_target_builds_without_sorryAx": true,
+    "implemented_by_at_the_definition": true,
+    "implemented_by_in_a_later_attribute_command_takes_effect": true,
+    "target_axioms": [
+     "Lean.ofReduceBool",
+     "Lean.trustCompiler"
+    ]
+   }
+  },
+  "c3_extern": "not tested",
+  "found_internal_names_skipped": {
+   "4.36.0": {
+    "nq_listed_dead": true,
+    "kept_file_builds": false,
+    "with_the_skip_taken_out_kept_file_builds": true
+   },
+   "4.9.0": {
+    "nq_listed_dead": true,
+    "kept_file_builds": false,
+    "with_the_skip_taken_out_kept_file_builds": true
+   }
+  },
+  "counts_their_tool": {
+   "4.36.0": {
+    "fixture_files_that_build": 10,
+    "kept_file_does_not_build": [
+     "F2a",
+     "F2b",
+     "F3c",
+     "F3d"
+    ]
+   },
+   "4.9.0": {
+    "fixture_files_that_build": 11,
+    "kept_file_does_not_build": [
+     "F2a",
+     "F2b",
+     "F3b",
+     "F3c",
+     "F3d"
+    ]
+   }
+  }
+ }
+}

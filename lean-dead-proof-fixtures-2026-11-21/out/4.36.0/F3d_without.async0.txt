@@ -1,0 +1,13 @@
+file fixtures/F3d_without.lean | Elab.async false | 4.36.0
+[1] @[implemented_by hImpl] def h (n : Nat) : Nat := n
+      + h (def)
+      ! fixtures/F3d_without.lean:4:17: error(lean.unknownIdentifier): Unknown constant `hImpl`
+[2] theorem target : h 5 = 6 := by native_decide
+      + target (theorem)
+constants of this file at the end: 2
+ROOT h (def) reaches in this file: []
+ROOT h axioms: []
+ROOT hImpl: not a constant (in the kernel map: false)
+ROOT target (theorem) reaches in this file: [h]
+ROOT target axioms: [sorryAx]
+exit code 0

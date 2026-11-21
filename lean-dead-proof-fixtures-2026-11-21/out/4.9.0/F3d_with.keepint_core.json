@@ -1,0 +1,21 @@
+{
+  "total_declared": 8,
+  "reachable_from_target": 3,
+  "dead": [
+    "hImpl",
+    "hImpl._cstage1",
+    "hImpl._cstage2",
+    "target._nativeDecide_1._cstage1",
+    "target._nativeDecide_1._cstage2"
+  ],
+  "dead_count": 5,
+  "live": [
+    "h",
+    "target",
+    "target._nativeDecide_1"
+  ],
+  "targets": [
+    "target"
+  ],
+  "elimination_pct": 62.5
+}

@@ -1,0 +1,16 @@
+file fixtures/F3d_with.lean | Elab.async false | 4.36.0
+[1] def hImpl (n : Nat) : Nat := n + 1
+      + hImpl (def)
+[2] @[implemented_by hImpl] def h (n : Nat) : Nat := n
+      + h (def)
+[3] theorem target : h 5 = 6 := by native_decide
+      + target (theorem)
+      + target._native.native_decide.ax_1 (axiom)
+constants of this file at the end: 4
+ROOT h (def) reaches in this file: []
+ROOT h axioms: []
+ROOT hImpl (def) reaches in this file: []
+ROOT hImpl axioms: []
+ROOT target (theorem) reaches in this file: [h, target._native.native_decide.ax_1]
+ROOT target axioms: [target._native.native_decide.ax_1]
+exit code 0

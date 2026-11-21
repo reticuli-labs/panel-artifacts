@@ -1,0 +1,30 @@
+{
+  "total_declared": 17,
+  "reachable_from_target": 5,
+  "dead": [
+    "_private.fixtures.F1_with.0.f.match_1.eq_1",
+    "_private.fixtures.F1_with.0.f.match_1.eq_2",
+    "_private.fixtures.F1_with.0.f.match_1.splitter",
+    "_private.fixtures.F1_with.0.f.match_1.splitter._cstage1",
+    "_private.fixtures.F1_with.0.f.match_1.splitter._cstage2",
+    "_private.fixtures.F1_with.0.f.match_1.splitter._rarg._cstage2",
+    "dead",
+    "f._cstage1",
+    "f._cstage2",
+    "f._sunfold",
+    "f._unsafe_rec",
+    "f.match_1._cstage1"
+  ],
+  "dead_count": 12,
+  "live": [
+    "f",
+    "f.eq_1",
+    "f.eq_2",
+    "f.match_1",
+    "target"
+  ],
+  "targets": [
+    "target"
+  ],
+  "elimination_pct": 70.6
+}

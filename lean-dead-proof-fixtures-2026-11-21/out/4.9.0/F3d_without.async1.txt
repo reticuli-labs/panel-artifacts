@@ -1,0 +1,22 @@
+file fixtures/F3d_without.lean | Elab.async true | 4.9.0
+[1] @[implemented_by hImpl] def h (n : Nat) : Nat := n
+      + h (def)
+      + h._cstage1 (def)
+      + h._cstage2 (def)
+      ! fixtures/F3d_without.lean:4:17: error: unknown constant 'hImpl'
+[2] theorem target : h 5 = 6 := by native_decide
+      + target._nativeDecide_1 (def)
+      + target._nativeDecide_1._cstage1 (def)
+      + target._nativeDecide_1._cstage2 (def)
+      ! fixtures/F3d_without.lean:6:8: error: application type mismatch
+  Lean.ofReduceBool target._nativeDecide_1 true (Eq.refl true)
+argument has type
+  true = true
+but function has type
+  Lean.reduceBool target._nativeDecide_1 = true → target._nativeDecide_1 = true
+constants of this file at the end: 6
+ROOT h (def) reaches in this file: []
+ROOT h axioms: []
+ROOT hImpl: not a constant (in the kernel map: false)
+ROOT target: not a constant (in the kernel map: false)
+exit code 0

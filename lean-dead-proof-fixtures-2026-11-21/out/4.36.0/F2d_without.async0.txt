@@ -1,0 +1,13 @@
+file fixtures/F2d_without.lean | Elab.async false | 4.36.0
+[1] def liveM (x : Option Nat) : Nat :=
+      + liveM (def)
+      + liveM.match_1 (def)
+[2] theorem target : liveM none = 7 := rfl
+      + target (theorem)
+constants of this file at the end: 3
+ROOT deadM: not a constant (in the kernel map: false)
+ROOT liveM (def) reaches in this file: [liveM.match_1]
+ROOT liveM axioms: []
+ROOT target (theorem) reaches in this file: [liveM, liveM.match_1]
+ROOT target axioms: []
+exit code 0

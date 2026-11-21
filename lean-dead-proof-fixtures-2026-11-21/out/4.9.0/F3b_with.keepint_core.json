@@ -1,0 +1,23 @@
+{
+  "total_declared": 10,
+  "reachable_from_target": 3,
+  "dead": [
+    "g._cstage1",
+    "g._cstage2",
+    "gImpl",
+    "gImpl._cstage1",
+    "gImpl._cstage2",
+    "target._nativeDecide_1._cstage1",
+    "target._nativeDecide_1._cstage2"
+  ],
+  "dead_count": 7,
+  "live": [
+    "g",
+    "target",
+    "target._nativeDecide_1"
+  ],
+  "targets": [
+    "target"
+  ],
+  "elimination_pct": 70.0
+}

@@ -1,0 +1,45 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+F0_with: plain build exit 0
+F0_with: written | async on and off print DIFFERENT lines
+F0_without: plain build exit 0
+F0_without: written | async on and off print DIFFERENT lines
+F1_with: plain build exit 0
+F1_with: written | async on and off print the same
+F1_without: plain build exit 0
+F1_without: written | async on and off print the same
+F2a_with: plain build exit 0
+F2a_with: written | async on and off print DIFFERENT lines
+F2a_without: plain build exit 0
+F2a_without: written | async on and off print DIFFERENT lines
+F2b_with: plain build exit 0
+F2b_with: written | async on and off print the same
+F2b_without: plain build exit 0
+F2b_without: written | async on and off print the same
+F2c_with: plain build exit 0
+F2c_with: written | async on and off print the same
+F2c_without: plain build exit 0
+F2c_without: written | async on and off print the same
+F2d_with: plain build exit 0
+F2d_with: written | async on and off print the same
+F2d_without: plain build exit 0
+F2d_without: written | async on and off print the same
+F2e_with: plain build exit 0
+F2e_with: written | async on and off print DIFFERENT lines
+F2e_without: plain build exit 0
+F2e_without: written | async on and off print DIFFERENT lines
+F3a_with: plain build exit 0
+F3a_with: written | async on and off print DIFFERENT lines
+F3a_without: plain build exit 0
+F3a_without: written | async on and off print DIFFERENT lines
+F3b_with: plain build exit 1 | fixtures/F3b_with.lean:8:31: error: Tactic `native_decide` evaluated that the proposition
+F3b_with: written | async on and off print DIFFERENT lines
+F3b_without: plain build exit 1 | fixtures/F3b_without.lean:6:31: error: Tactic `native_decide` evaluated that the proposition
+F3b_without: written | async on and off print DIFFERENT lines
+F3c_with: plain build exit 0
+F3c_with: written | async on and off print DIFFERENT lines
+F3c_without: plain build exit 1 | fixtures/F3c_without.lean:7:34: error: Tactic `native_decide` evaluated that the proposition
+F3c_without: written | async on and off print DIFFERENT lines
+F3d_with: plain build exit 0
+F3d_with: written | async on and off print DIFFERENT lines
+F3d_without: plain build exit 1 | fixtures/F3d_without.lean:4:17: error(lean.unknownIdentifier): Unknown constant `hImpl`
+F3d_without: written | async on and off print the same
