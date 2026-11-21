@@ -1,0 +1,4363 @@
+{
+ "summary": {
+  "real_items": 240,
+  "A_key_depends_on_statement": 60,
+  "A_key_independent_of_statement": 180,
+  "A_by_variant": {
+   "0": [
+    30,
+    60
+   ],
+   "1": [
+    0,
+    60
+   ],
+   "2": [
+    30,
+    60
+   ],
+   "3": [
+    0,
+    60
+   ]
+  },
+  "A_by_stratum": {
+   "likeliest-outcome": [
+    36,
+    120
+   ],
+   "mean-outcome": [
+    24,
+    120
+   ]
+  },
+  "B_rule_mean_or_mode_right": 240,
+  "B_right_among_dependent": 60,
+  "C_best_statement_blind_rule_right": 240,
+  "C_feature_cells": 6,
+  "C_right_among_dependent": 60,
+  "C_mixed_cells": {}
+ },
+ "rows": [
+  {
+   "id": "outcome-careful-outcome-full-000",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-001",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-002",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-003",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-004",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-005",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-006",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-007",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-008",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-009",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-010",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-011",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-012",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-013",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-014",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-015",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-016",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-017",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-018",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-019",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-020",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-021",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-022",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-023",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-024",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-025",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-026",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-027",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-028",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-029",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-030",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-031",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-032",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-033",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-034",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-035",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-036",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-037",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-038",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-039",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-040",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-041",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-042",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-043",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-044",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-045",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-046",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-047",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-048",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-049",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-050",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-051",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-052",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-053",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-054",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-055",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-056",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-057",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-058",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-059",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-060",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-061",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-062",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-063",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-064",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-065",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-066",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-067",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-068",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-069",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-070",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-071",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-072",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-073",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-074",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-075",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-076",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-077",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-078",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-079",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-080",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-081",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-082",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-083",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-084",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-085",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-086",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-087",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-088",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-089",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-090",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-091",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-092",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-093",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-094",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-095",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-096",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-097",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-098",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-099",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-100",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-101",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-102",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-103",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-104",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-105",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-106",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-107",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-108",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-109",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-110",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-111",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-112",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-113",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-114",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-115",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-116",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-117",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-118",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-119",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-120",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-121",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-122",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-123",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-124",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-125",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-126",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-127",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-128",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-129",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-130",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-131",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-132",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-133",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-134",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-135",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-136",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-137",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-138",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-139",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-140",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-141",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-142",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-143",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-144",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-145",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-146",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-147",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-148",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-149",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-150",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-151",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-152",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-153",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-154",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-155",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-156",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-157",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-158",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-159",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-160",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-161",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-162",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-163",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-164",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-165",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-166",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-167",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-168",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-169",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-170",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-171",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-172",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-173",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-174",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-175",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-176",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-177",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-178",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-179",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-180",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-181",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-182",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-183",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-184",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-185",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-186",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-187",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-188",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-189",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-190",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-191",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-192",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-193",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-194",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-195",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-196",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-197",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-198",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-199",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-200",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-201",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-202",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-203",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-204",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-205",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-206",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-207",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-208",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-209",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-210",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-211",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-212",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-213",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-214",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-215",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-216",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-217",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-218",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-219",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-220",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-221",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-222",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-223",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-224",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-225",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-226",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-227",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-228",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-229",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-230",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-231",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-232",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-233",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-234",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-235",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-236",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-237",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-238",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-careful-outcome-full-239",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4376 @@
+{
+ "summary": {
+  "real_items": 240,
+  "A_key_depends_on_statement": 112,
+  "A_key_independent_of_statement": 128,
+  "A_by_variant": {
+   "0": [
+    47,
+    60
+   ],
+   "1": [
+    22,
+    60
+   ],
+   "2": [
+    0,
+    60
+   ],
+   "3": [
+    43,
+    60
+   ]
+  },
+  "A_by_stratum": {
+   "likeliest-outcome": [
+    55,
+    120
+   ],
+   "mean-outcome": [
+    57,
+    120
+   ]
+  },
+  "B_rule_mean_or_mode_right": 185,
+  "B_right_among_dependent": 57,
+  "C_best_statement_blind_rule_right": 185,
+  "C_feature_cells": 7,
+  "C_right_among_dependent": 57,
+  "C_mixed_cells": {
+   "yes no no no no": {
+    "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.": 23,
+    "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.": 21
+   },
+   "no yes yes no no": {
+    "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.": 22,
+    "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.": 22
+   },
+   "no yes yes yes no": {
+    "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.": 12,
+    "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.": 12
+   }
+  }
+ },
+ "rows": [
+  {
+   "id": "outcome-repl-r22-000",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-001",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-002",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-003",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-004",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-005",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-006",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-007",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-008",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-009",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-010",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-011",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-012",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-013",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-014",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-015",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-016",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-017",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-018",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-019",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-020",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-021",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-022",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-023",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-024",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-025",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-026",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-027",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-028",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-029",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-030",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-031",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-032",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-033",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-034",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-035",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-036",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-037",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-038",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-039",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-040",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-041",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-042",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-043",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-044",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-045",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-046",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-047",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-048",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-049",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-050",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-051",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-052",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-053",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-054",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-055",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-056",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-057",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-058",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-059",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-060",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-061",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-062",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-063",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-064",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-065",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-066",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-067",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-068",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-069",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-070",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-071",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-072",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-073",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-074",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-075",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-076",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-077",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-078",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-079",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-080",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-081",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-082",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-083",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-084",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-085",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-086",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-087",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-088",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-089",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-090",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-091",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-092",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-093",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-094",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-095",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-096",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-097",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-098",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-099",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-100",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-101",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-102",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-103",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-104",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-105",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-106",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-107",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-108",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-109",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-110",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-111",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-112",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-113",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-114",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-115",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-116",
+   "stratum": "mean-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-117",
+   "stratum": "mean-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-118",
+   "stratum": "mean-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-119",
+   "stratum": "mean-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-120",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-121",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-122",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-123",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-124",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-125",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-126",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-127",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-128",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-129",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-130",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-131",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-132",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-133",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-134",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-135",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-136",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-137",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-138",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-139",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-140",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-141",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-outside",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-142",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-143",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-outside",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-144",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-145",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-146",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-147",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-148",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-149",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-150",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-151",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-152",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-153",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-154",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-155",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-156",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-157",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-158",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-159",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-160",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-161",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-162",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-163",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-164",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mode-below-half",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-165",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-166",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-167",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mode-below-half",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-168",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-169",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-170",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-171",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-172",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-173",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-174",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-175",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-176",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-177",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-178",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-179",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-180",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-181",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-182",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-183",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-184",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-185",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-186",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-187",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-188",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-189",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "tied-modes",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-190",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-191",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "tied-modes",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-192",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-193",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-194",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-195",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-196",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-197",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-198",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-199",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-200",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-201",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-202",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-203",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-204",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-205",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-206",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-207",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-208",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-209",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-210",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-211",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-212",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-213",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-214",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-215",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "mean-is-mode",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-216",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-217",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-218",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-219",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-220",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-221",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-222",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-223",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-224",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-225",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-226",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-227",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-228",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-229",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-230",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-231",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-232",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-233",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-234",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-235",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": false,
+   "features": [
+    true,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-236",
+   "stratum": "likeliest-outcome",
+   "variant": 0,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "depends_on_statement": true,
+   "rule_b": "Claim true: yes; x possible: yes; x unique most probable: yes; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-237",
+   "stratum": "likeliest-outcome",
+   "variant": 1,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: yes; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-238",
+   "stratum": "likeliest-outcome",
+   "variant": 2,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "id": "outcome-repl-r22-239",
+   "stratum": "likeliest-outcome",
+   "variant": 3,
+   "boundary": "aggregate-paths",
+   "key": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "key_if_other_statistic": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "depends_on_statement": false,
+   "rule_b": "Claim true: no; x possible: no; x unique most probable: no; next result guaranteed x: no.",
+   "rule_b_right": true,
+   "features": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  }
+ ]
+}
