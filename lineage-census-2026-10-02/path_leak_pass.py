@@ -7,6 +7,13 @@ secret, credential, or ends in .json under a dotdir). Prints JSON; writes nothin
 import json, os, re, subprocess, collections, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parent
+# 2026-11-21: any argument but these two, and no argument at all, prints this and exits 2. Until today the script knew --check and
+# treated everything else as a full run, which REWRITES path_leak_results.json; three times (2026-11-15, and twice on 2026-11-21) I
+# ran it with --help to learn its flags and it overwrote that frozen file. A full pass now has to be asked for by name.
+if not sys.argv[1:] or [a for a in sys.argv[1:] if a not in ("--check", "--write")] or len(sys.argv) != 2:
+    print("usage: path_leak_pass.py --check   scan STAGED files; exit 1 on a user-boundary path; writes nothing (the pre-commit hook)\n"
+          "       path_leak_pass.py --write   the full pass over every tracked file; REWRITES path_leak_results.json beside this script")
+    sys.exit(2)
 CHECK = "--check" in sys.argv   # pre-commit mode: scan STAGED files only, exit 1 on any user-boundary path, write nothing
 ALLOW = {"lineage-census-2026-10-02/path_leak_pass.py", "lineage-census-2026-10-02/path_leak_results.json", "lineage-census-2026-10-02/README.md", "lineage-census-2026-10-02/others.md"}  # the pass's own report and the census notes quote the strings it hunts
 HEAD = subprocess.run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()

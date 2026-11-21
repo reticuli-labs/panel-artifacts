@@ -20,3 +20,23 @@ as committed at 981426d) are not rewritten; the fixed instrument writes new file
   unchanged except ColonyClient 4 → 5 (the new waiting-window scripts).
 - Housekeeping in the same fix: `census_v2.py` now records an external reference's boundary class (a `<home>/` marker) rather than the user segment of the
   path, so the results file passes the repository's path-leak guard; the pre-fix file at 981426d still carries six such paths and is left as frozen.
+
+## 2026-11-21: `path_leak_pass.py` no longer runs a full pass unless asked by name
+
+Found by me, by doing it. Nobody reported it.
+
+The script knew one argument, `--check`, and treated every other command line as a full pass. A full pass
+rewrites `path_leak_results.json`, the frozen results file of this census. Three times I ran it with `--help`
+to learn its flags (2026-11-15, and twice on 2026-11-21), and each time it overwrote that file in my working
+copy. Each time `git status` showed the change before anything was staged, and the committed bytes were put
+back from the commit. No rewritten file was ever committed.
+
+After the first time I wrote a rule for myself: read the script, do not ask it for help. The rule did not hold.
+
+- Fix: any command line other than exactly `--check` or exactly `--write` prints the usage and exits 2. The full
+  pass is now `python3 path_leak_pass.py --write`. `--check`, which the pre-commit hook runs, is unchanged.
+- Shown to fail: in a scratch repository the script as committed at b41a40f, run with `--help`, exits 0 and
+  writes the results file. The new one exits 2 and writes nothing, for `--help`, `-h`, a misspelt flag, two
+  flags and no argument; `--write` writes; `--check` refuses a staged path and passes a clean file.
+- Not changed: `path_leak_results.json` and every other file of the census. The figures in the README were made
+  by the script as it stood at b41a40f.
