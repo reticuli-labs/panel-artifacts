@@ -1,0 +1,1122 @@
+[
+ {
+  "id": "gap-only-00",
+  "english": "Shipment log 700 was opened on a weekday at the north dock. The person who signed for crate 0 was Kemi, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 700 was opened on a weekday at the north dock. Crate 0: signed-by(Kemi). The dock was dry.",
+  "question": "Who signed for crate 0?",
+  "options": [
+   "Kemi",
+   "Pia",
+   "Oren",
+   "Mira"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-00",
+  "english": "Shipment log 800: Pia signed for crate 0 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 800: Pia signed for crate 0 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 0?",
+  "options": [
+   "Joss",
+   "Ilka",
+   "Pia",
+   "Noor"
+  ],
+  "answer": "Pia",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-01",
+  "english": "Shipment log 701 was opened on a weekday at the north dock. The person who signed for crate 1 was Oren, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 701 was opened on a weekday at the north dock. Crate 1: signed-by(Oren). The dock was dry.",
+  "question": "Who signed for crate 1?",
+  "options": [
+   "Noor",
+   "Joss",
+   "Oren",
+   "Mira"
+  ],
+  "answer": "Oren",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-01",
+  "english": "Shipment log 801: Kemi signed for crate 1 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 801: Kemi signed for crate 1 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 1?",
+  "options": [
+   "Noor",
+   "Kemi",
+   "Mira",
+   "Ilka"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-02",
+  "english": "Shipment log 702 was opened on a weekday at the north dock. The person who signed for crate 2 was Lior, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 702 was opened on a weekday at the north dock. Crate 2: signed-by(Lior). The dock was dry.",
+  "question": "Who signed for crate 2?",
+  "options": [
+   "Oren",
+   "Ilka",
+   "Lior",
+   "Pia"
+  ],
+  "answer": "Lior",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-02",
+  "english": "Shipment log 802: Noor signed for crate 2 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 802: Noor signed for crate 2 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 2?",
+  "options": [
+   "Joss",
+   "Pia",
+   "Noor",
+   "Oren"
+  ],
+  "answer": "Noor",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-03",
+  "english": "Shipment log 703 was opened on a weekday at the north dock. The person who signed for crate 3 was Ilka, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 703 was opened on a weekday at the north dock. Crate 3: signed-by(Ilka). The dock was dry.",
+  "question": "Who signed for crate 3?",
+  "options": [
+   "Ilka",
+   "Kemi",
+   "Mira",
+   "Lior"
+  ],
+  "answer": "Ilka",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-03",
+  "english": "Shipment log 803: Oren signed for crate 3 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 803: Oren signed for crate 3 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 3?",
+  "options": [
+   "Lior",
+   "Oren",
+   "Mira",
+   "Joss"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-04",
+  "english": "Shipment log 704 was opened on a weekday at the north dock. The person who signed for crate 4 was Noor, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 704 was opened on a weekday at the north dock. Crate 4: signed-by(Noor). The dock was dry.",
+  "question": "Who signed for crate 4?",
+  "options": [
+   "Mira",
+   "Pia",
+   "Noor",
+   "Oren"
+  ],
+  "answer": "Noor",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-04",
+  "english": "Shipment log 804: Pia signed for crate 4 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 804: Pia signed for crate 4 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 4?",
+  "options": [
+   "Oren",
+   "Lior",
+   "Mira",
+   "Pia"
+  ],
+  "answer": "Pia",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-05",
+  "english": "Shipment log 705 was opened on a weekday at the north dock. The person who signed for crate 5 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 705 was opened on a weekday at the north dock. Crate 5: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 5?",
+  "options": [
+   "Mira",
+   "Pia",
+   "Ilka",
+   "Joss"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-05",
+  "english": "Shipment log 805: Pia signed for crate 5 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 805: Pia signed for crate 5 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 5?",
+  "options": [
+   "Pia",
+   "Lior",
+   "Oren",
+   "Noor"
+  ],
+  "answer": "Pia",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-06",
+  "english": "Shipment log 706 was opened on a weekday at the north dock. The person who signed for crate 6 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 706 was opened on a weekday at the north dock. Crate 6: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 6?",
+  "options": [
+   "Pia",
+   "Mira",
+   "Noor",
+   "Kemi"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-06",
+  "english": "Shipment log 806: Joss signed for crate 6 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 806: Joss signed for crate 6 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 6?",
+  "options": [
+   "Joss",
+   "Lior",
+   "Kemi",
+   "Noor"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-07",
+  "english": "Shipment log 707 was opened on a weekday at the north dock. The person who signed for crate 7 was Kemi, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 707 was opened on a weekday at the north dock. Crate 7: signed-by(Kemi). The dock was dry.",
+  "question": "Who signed for crate 7?",
+  "options": [
+   "Kemi",
+   "Pia",
+   "Joss",
+   "Oren"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-07",
+  "english": "Shipment log 807: Lior signed for crate 7 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 807: Lior signed for crate 7 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 7?",
+  "options": [
+   "Oren",
+   "Kemi",
+   "Lior",
+   "Pia"
+  ],
+  "answer": "Lior",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-08",
+  "english": "Shipment log 708 was opened on a weekday at the north dock. The person who signed for crate 8 was Lior, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 708 was opened on a weekday at the north dock. Crate 8: signed-by(Lior). The dock was dry.",
+  "question": "Who signed for crate 8?",
+  "options": [
+   "Ilka",
+   "Lior",
+   "Noor",
+   "Mira"
+  ],
+  "answer": "Lior",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-08",
+  "english": "Shipment log 808: Oren signed for crate 8 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 808: Oren signed for crate 8 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 8?",
+  "options": [
+   "Kemi",
+   "Mira",
+   "Noor",
+   "Oren"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-09",
+  "english": "Shipment log 709 was opened on a weekday at the north dock. The person who signed for crate 9 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 709 was opened on a weekday at the north dock. Crate 9: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 9?",
+  "options": [
+   "Lior",
+   "Oren",
+   "Pia",
+   "Ilka"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-09",
+  "english": "Shipment log 809: Joss signed for crate 9 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 809: Joss signed for crate 9 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 9?",
+  "options": [
+   "Oren",
+   "Kemi",
+   "Joss",
+   "Mira"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-10",
+  "english": "Shipment log 710 was opened on a weekday at the north dock. The person who signed for crate 10 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 710 was opened on a weekday at the north dock. Crate 10: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 10?",
+  "options": [
+   "Ilka",
+   "Pia",
+   "Mira",
+   "Joss"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-10",
+  "english": "Shipment log 810: Ilka signed for crate 10 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 810: Ilka signed for crate 10 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 10?",
+  "options": [
+   "Pia",
+   "Mira",
+   "Oren",
+   "Ilka"
+  ],
+  "answer": "Ilka",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-11",
+  "english": "Shipment log 711 was opened on a weekday at the north dock. The person who signed for crate 11 was Noor, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 711 was opened on a weekday at the north dock. Crate 11: signed-by(Noor). The dock was dry.",
+  "question": "Who signed for crate 11?",
+  "options": [
+   "Pia",
+   "Mira",
+   "Noor",
+   "Kemi"
+  ],
+  "answer": "Noor",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-11",
+  "english": "Shipment log 811: Ilka signed for crate 11 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 811: Ilka signed for crate 11 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 11?",
+  "options": [
+   "Mira",
+   "Lior",
+   "Ilka",
+   "Noor"
+  ],
+  "answer": "Ilka",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-12",
+  "english": "Shipment log 712 was opened on a weekday at the north dock. The person who signed for crate 12 was Noor, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 712 was opened on a weekday at the north dock. Crate 12: signed-by(Noor). The dock was dry.",
+  "question": "Who signed for crate 12?",
+  "options": [
+   "Ilka",
+   "Noor",
+   "Joss",
+   "Pia"
+  ],
+  "answer": "Noor",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-12",
+  "english": "Shipment log 812: Joss signed for crate 12 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 812: Joss signed for crate 12 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 12?",
+  "options": [
+   "Ilka",
+   "Joss",
+   "Lior",
+   "Oren"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-13",
+  "english": "Shipment log 713 was opened on a weekday at the north dock. The person who signed for crate 13 was Noor, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 713 was opened on a weekday at the north dock. Crate 13: signed-by(Noor). The dock was dry.",
+  "question": "Who signed for crate 13?",
+  "options": [
+   "Kemi",
+   "Noor",
+   "Mira",
+   "Oren"
+  ],
+  "answer": "Noor",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-13",
+  "english": "Shipment log 813: Mira signed for crate 13 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 813: Mira signed for crate 13 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 13?",
+  "options": [
+   "Mira",
+   "Kemi",
+   "Joss",
+   "Pia"
+  ],
+  "answer": "Mira",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-14",
+  "english": "Shipment log 714 was opened on a weekday at the north dock. The person who signed for crate 14 was Noor, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 714 was opened on a weekday at the north dock. Crate 14: signed-by(Noor). The dock was dry.",
+  "question": "Who signed for crate 14?",
+  "options": [
+   "Joss",
+   "Mira",
+   "Oren",
+   "Noor"
+  ],
+  "answer": "Noor",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-14",
+  "english": "Shipment log 814: Joss signed for crate 14 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 814: Joss signed for crate 14 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 14?",
+  "options": [
+   "Noor",
+   "Joss",
+   "Mira",
+   "Lior"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-15",
+  "english": "Shipment log 715 was opened on a weekday at the north dock. The person who signed for crate 15 was Kemi, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 715 was opened on a weekday at the north dock. Crate 15: signed-by(Kemi). The dock was dry.",
+  "question": "Who signed for crate 15?",
+  "options": [
+   "Lior",
+   "Oren",
+   "Noor",
+   "Kemi"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-15",
+  "english": "Shipment log 815: Ilka signed for crate 15 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 815: Ilka signed for crate 15 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 15?",
+  "options": [
+   "Lior",
+   "Ilka",
+   "Mira",
+   "Joss"
+  ],
+  "answer": "Ilka",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-16",
+  "english": "Shipment log 716 was opened on a weekday at the north dock. The person who signed for crate 16 was Joss, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 716 was opened on a weekday at the north dock. Crate 16: signed-by(Joss). The dock was dry.",
+  "question": "Who signed for crate 16?",
+  "options": [
+   "Mira",
+   "Joss",
+   "Kemi",
+   "Noor"
+  ],
+  "answer": "Joss",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-16",
+  "english": "Shipment log 816: Oren signed for crate 16 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 816: Oren signed for crate 16 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 16?",
+  "options": [
+   "Oren",
+   "Pia",
+   "Kemi",
+   "Ilka"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-17",
+  "english": "Shipment log 717 was opened on a weekday at the north dock. The person who signed for crate 17 was Joss, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 717 was opened on a weekday at the north dock. Crate 17: signed-by(Joss). The dock was dry.",
+  "question": "Who signed for crate 17?",
+  "options": [
+   "Kemi",
+   "Mira",
+   "Joss",
+   "Lior"
+  ],
+  "answer": "Joss",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-17",
+  "english": "Shipment log 817: Ilka signed for crate 17 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 817: Ilka signed for crate 17 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 17?",
+  "options": [
+   "Mira",
+   "Lior",
+   "Ilka",
+   "Pia"
+  ],
+  "answer": "Ilka",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-18",
+  "english": "Shipment log 718 was opened on a weekday at the north dock. The person who signed for crate 18 was Mira, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 718 was opened on a weekday at the north dock. Crate 18: signed-by(Mira). The dock was dry.",
+  "question": "Who signed for crate 18?",
+  "options": [
+   "Lior",
+   "Noor",
+   "Mira",
+   "Kemi"
+  ],
+  "answer": "Mira",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-18",
+  "english": "Shipment log 818: Oren signed for crate 18 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 818: Oren signed for crate 18 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 18?",
+  "options": [
+   "Ilka",
+   "Mira",
+   "Pia",
+   "Oren"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-19",
+  "english": "Shipment log 719 was opened on a weekday at the north dock. The person who signed for crate 19 was Kemi, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 719 was opened on a weekday at the north dock. Crate 19: signed-by(Kemi). The dock was dry.",
+  "question": "Who signed for crate 19?",
+  "options": [
+   "Pia",
+   "Ilka",
+   "Kemi",
+   "Lior"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-19",
+  "english": "Shipment log 819: Joss signed for crate 19 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 819: Joss signed for crate 19 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 19?",
+  "options": [
+   "Joss",
+   "Ilka",
+   "Kemi",
+   "Pia"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-20",
+  "english": "Shipment log 720 was opened on a weekday at the north dock. The person who signed for crate 20 was Ilka, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 720 was opened on a weekday at the north dock. Crate 20: signed-by(Ilka). The dock was dry.",
+  "question": "Who signed for crate 20?",
+  "options": [
+   "Pia",
+   "Joss",
+   "Ilka",
+   "Lior"
+  ],
+  "answer": "Ilka",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-20",
+  "english": "Shipment log 820: Joss signed for crate 20 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 820: Joss signed for crate 20 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 20?",
+  "options": [
+   "Joss",
+   "Noor",
+   "Lior",
+   "Kemi"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-21",
+  "english": "Shipment log 721 was opened on a weekday at the north dock. The person who signed for crate 21 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 721 was opened on a weekday at the north dock. Crate 21: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 21?",
+  "options": [
+   "Noor",
+   "Ilka",
+   "Pia",
+   "Lior"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-21",
+  "english": "Shipment log 821: Mira signed for crate 21 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 821: Mira signed for crate 21 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 21?",
+  "options": [
+   "Ilka",
+   "Kemi",
+   "Mira",
+   "Pia"
+  ],
+  "answer": "Mira",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-22",
+  "english": "Shipment log 722 was opened on a weekday at the north dock. The person who signed for crate 22 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 722 was opened on a weekday at the north dock. Crate 22: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 22?",
+  "options": [
+   "Mira",
+   "Lior",
+   "Joss",
+   "Pia"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-22",
+  "english": "Shipment log 822: Oren signed for crate 22 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 822: Oren signed for crate 22 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 22?",
+  "options": [
+   "Noor",
+   "Lior",
+   "Kemi",
+   "Oren"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-23",
+  "english": "Shipment log 723 was opened on a weekday at the north dock. The person who signed for crate 23 was Joss, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 723 was opened on a weekday at the north dock. Crate 23: signed-by(Joss). The dock was dry.",
+  "question": "Who signed for crate 23?",
+  "options": [
+   "Noor",
+   "Lior",
+   "Joss",
+   "Pia"
+  ],
+  "answer": "Joss",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-23",
+  "english": "Shipment log 823: Joss signed for crate 23 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 823: Joss signed for crate 23 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 23?",
+  "options": [
+   "Mira",
+   "Kemi",
+   "Joss",
+   "Noor"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-24",
+  "english": "Shipment log 724 was opened on a weekday at the north dock. The person who signed for crate 24 was Mira, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 724 was opened on a weekday at the north dock. Crate 24: signed-by(Mira). The dock was dry.",
+  "question": "Who signed for crate 24?",
+  "options": [
+   "Pia",
+   "Mira",
+   "Kemi",
+   "Ilka"
+  ],
+  "answer": "Mira",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-24",
+  "english": "Shipment log 824: Mira signed for crate 24 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 824: Mira signed for crate 24 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 24?",
+  "options": [
+   "Joss",
+   "Ilka",
+   "Noor",
+   "Mira"
+  ],
+  "answer": "Mira",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-25",
+  "english": "Shipment log 725 was opened on a weekday at the north dock. The person who signed for crate 25 was Joss, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 725 was opened on a weekday at the north dock. Crate 25: signed-by(Joss). The dock was dry.",
+  "question": "Who signed for crate 25?",
+  "options": [
+   "Noor",
+   "Mira",
+   "Joss",
+   "Kemi"
+  ],
+  "answer": "Joss",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-25",
+  "english": "Shipment log 825: Oren signed for crate 25 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 825: Oren signed for crate 25 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 25?",
+  "options": [
+   "Joss",
+   "Oren",
+   "Lior",
+   "Pia"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-26",
+  "english": "Shipment log 726 was opened on a weekday at the north dock. The person who signed for crate 26 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 726 was opened on a weekday at the north dock. Crate 26: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 26?",
+  "options": [
+   "Ilka",
+   "Lior",
+   "Joss",
+   "Pia"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-26",
+  "english": "Shipment log 826: Joss signed for crate 26 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 826: Joss signed for crate 26 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 26?",
+  "options": [
+   "Noor",
+   "Oren",
+   "Pia",
+   "Joss"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-27",
+  "english": "Shipment log 727 was opened on a weekday at the north dock. The person who signed for crate 27 was Noor, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 727 was opened on a weekday at the north dock. Crate 27: signed-by(Noor). The dock was dry.",
+  "question": "Who signed for crate 27?",
+  "options": [
+   "Noor",
+   "Kemi",
+   "Joss",
+   "Pia"
+  ],
+  "answer": "Noor",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-27",
+  "english": "Shipment log 827: Kemi signed for crate 27 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 827: Kemi signed for crate 27 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 27?",
+  "options": [
+   "Oren",
+   "Kemi",
+   "Pia",
+   "Noor"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-28",
+  "english": "Shipment log 728 was opened on a weekday at the north dock. The person who signed for crate 28 was Lior, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 728 was opened on a weekday at the north dock. Crate 28: signed-by(Lior). The dock was dry.",
+  "question": "Who signed for crate 28?",
+  "options": [
+   "Oren",
+   "Ilka",
+   "Lior",
+   "Joss"
+  ],
+  "answer": "Lior",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-28",
+  "english": "Shipment log 828: Joss signed for crate 28 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 828: Joss signed for crate 28 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 28?",
+  "options": [
+   "Oren",
+   "Mira",
+   "Pia",
+   "Joss"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-29",
+  "english": "Shipment log 729 was opened on a weekday at the north dock. The person who signed for crate 29 was Ilka, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 729 was opened on a weekday at the north dock. Crate 29: signed-by(Ilka). The dock was dry.",
+  "question": "Who signed for crate 29?",
+  "options": [
+   "Ilka",
+   "Pia",
+   "Noor",
+   "Mira"
+  ],
+  "answer": "Ilka",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-29",
+  "english": "Shipment log 829: Oren signed for crate 29 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 829: Oren signed for crate 29 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 29?",
+  "options": [
+   "Oren",
+   "Kemi",
+   "Joss",
+   "Pia"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-30",
+  "english": "Shipment log 730 was opened on a weekday at the north dock. The person who signed for crate 30 was Mira, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 730 was opened on a weekday at the north dock. Crate 30: signed-by(Mira). The dock was dry.",
+  "question": "Who signed for crate 30?",
+  "options": [
+   "Oren",
+   "Pia",
+   "Mira",
+   "Ilka"
+  ],
+  "answer": "Mira",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-30",
+  "english": "Shipment log 830: Pia signed for crate 30 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 830: Pia signed for crate 30 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 30?",
+  "options": [
+   "Pia",
+   "Noor",
+   "Joss",
+   "Mira"
+  ],
+  "answer": "Pia",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-31",
+  "english": "Shipment log 731 was opened on a weekday at the north dock. The person who signed for crate 31 was Mira, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 731 was opened on a weekday at the north dock. Crate 31: signed-by(Mira). The dock was dry.",
+  "question": "Who signed for crate 31?",
+  "options": [
+   "Joss",
+   "Oren",
+   "Kemi",
+   "Mira"
+  ],
+  "answer": "Mira",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-31",
+  "english": "Shipment log 831: Pia signed for crate 31 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 831: Pia signed for crate 31 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 31?",
+  "options": [
+   "Mira",
+   "Pia",
+   "Oren",
+   "Joss"
+  ],
+  "answer": "Pia",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-32",
+  "english": "Shipment log 732 was opened on a weekday at the north dock. The person who signed for crate 32 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 732 was opened on a weekday at the north dock. Crate 32: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 32?",
+  "options": [
+   "Ilka",
+   "Mira",
+   "Pia",
+   "Kemi"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-32",
+  "english": "Shipment log 832: Joss signed for crate 32 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 832: Joss signed for crate 32 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 32?",
+  "options": [
+   "Lior",
+   "Pia",
+   "Kemi",
+   "Joss"
+  ],
+  "answer": "Joss",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-33",
+  "english": "Shipment log 733 was opened on a weekday at the north dock. The person who signed for crate 33 was Pia, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 733 was opened on a weekday at the north dock. Crate 33: signed-by(Pia). The dock was dry.",
+  "question": "Who signed for crate 33?",
+  "options": [
+   "Pia",
+   "Ilka",
+   "Oren",
+   "Joss"
+  ],
+  "answer": "Pia",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-33",
+  "english": "Shipment log 833: Lior signed for crate 33 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 833: Lior signed for crate 33 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 33?",
+  "options": [
+   "Noor",
+   "Lior",
+   "Oren",
+   "Joss"
+  ],
+  "answer": "Lior",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-34",
+  "english": "Shipment log 734 was opened on a weekday at the north dock. The person who signed for crate 34 was Kemi, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 734 was opened on a weekday at the north dock. Crate 34: signed-by(Kemi). The dock was dry.",
+  "question": "Who signed for crate 34?",
+  "options": [
+   "Ilka",
+   "Noor",
+   "Joss",
+   "Kemi"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-34",
+  "english": "Shipment log 834: Lior signed for crate 34 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 834: Lior signed for crate 34 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 34?",
+  "options": [
+   "Lior",
+   "Ilka",
+   "Pia",
+   "Joss"
+  ],
+  "answer": "Lior",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-35",
+  "english": "Shipment log 735 was opened on a weekday at the north dock. The person who signed for crate 35 was Kemi, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 735 was opened on a weekday at the north dock. Crate 35: signed-by(Kemi). The dock was dry.",
+  "question": "Who signed for crate 35?",
+  "options": [
+   "Joss",
+   "Ilka",
+   "Kemi",
+   "Lior"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-35",
+  "english": "Shipment log 835: Mira signed for crate 35 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 835: Mira signed for crate 35 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 35?",
+  "options": [
+   "Joss",
+   "Mira",
+   "Lior",
+   "Oren"
+  ],
+  "answer": "Mira",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-36",
+  "english": "Shipment log 736 was opened on a weekday at the north dock. The person who signed for crate 36 was Oren, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 736 was opened on a weekday at the north dock. Crate 36: signed-by(Oren). The dock was dry.",
+  "question": "Who signed for crate 36?",
+  "options": [
+   "Pia",
+   "Ilka",
+   "Oren",
+   "Joss"
+  ],
+  "answer": "Oren",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-36",
+  "english": "Shipment log 836: Oren signed for crate 36 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 836: Oren signed for crate 36 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 36?",
+  "options": [
+   "Pia",
+   "Oren",
+   "Kemi",
+   "Joss"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-37",
+  "english": "Shipment log 737 was opened on a weekday at the north dock. The person who signed for crate 37 was Lior, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 737 was opened on a weekday at the north dock. Crate 37: signed-by(Lior). The dock was dry.",
+  "question": "Who signed for crate 37?",
+  "options": [
+   "Pia",
+   "Kemi",
+   "Lior",
+   "Oren"
+  ],
+  "answer": "Lior",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-37",
+  "english": "Shipment log 837: Ilka signed for crate 37 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 837: Ilka signed for crate 37 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 37?",
+  "options": [
+   "Ilka",
+   "Noor",
+   "Lior",
+   "Kemi"
+  ],
+  "answer": "Ilka",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-38",
+  "english": "Shipment log 738 was opened on a weekday at the north dock. The person who signed for crate 38 was Noor, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 738 was opened on a weekday at the north dock. Crate 38: signed-by(Noor). The dock was dry.",
+  "question": "Who signed for crate 38?",
+  "options": [
+   "Lior",
+   "Noor",
+   "Mira",
+   "Pia"
+  ],
+  "answer": "Noor",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-38",
+  "english": "Shipment log 838: Lior signed for crate 38 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 838: Lior signed for crate 38 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 38?",
+  "options": [
+   "Pia",
+   "Lior",
+   "Mira",
+   "Ilka"
+  ],
+  "answer": "Lior",
+  "planted_class": "key in the shared text"
+ },
+ {
+  "id": "gap-only-39",
+  "english": "Shipment log 739 was opened on a weekday at the north dock. The person who signed for crate 39 was Kemi, as the ledger shows. The dock was dry.",
+  "ainglish": "Shipment log 739 was opened on a weekday at the north dock. Crate 39: signed-by(Kemi). The dock was dry.",
+  "question": "Who signed for crate 39?",
+  "options": [
+   "Mira",
+   "Ilka",
+   "Noor",
+   "Kemi"
+  ],
+  "answer": "Kemi",
+  "planted_class": "key only in the gap"
+ },
+ {
+  "id": "shared-39",
+  "english": "Shipment log 839: Oren signed for crate 39 at the north dock on a weekday. The crate was weighed afterwards, and the weight was entered in the ledger as checked.",
+  "ainglish": "Shipment log 839: Oren signed for crate 39 at the north dock on a weekday. Crate weighed after; weight: ledger-checked.",
+  "question": "Who signed for crate 39?",
+  "options": [
+   "Pia",
+   "Oren",
+   "Noor",
+   "Kemi"
+  ],
+  "answer": "Oren",
+  "planted_class": "key in the shared text"
+ }
+]

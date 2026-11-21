@@ -1,0 +1,42 @@
+{
+ "target_bank": "hh-mm-z-frozen-pool-2026-09-26/pool.items.json",
+ "readers": {
+  "guesser": {
+   "flagged": 0,
+   "instrument_ok": false,
+   "target_flagged": false,
+   "target_excess": 0.0,
+   "other_banks_flagged": 0,
+   "of_them_sharing_no_item_with_the_target": 0,
+   "banks_tested": 92
+  },
+  "first": {
+   "flagged": 0,
+   "instrument_ok": false,
+   "target_flagged": false,
+   "target_excess": 0.0,
+   "other_banks_flagged": 0,
+   "of_them_sharing_no_item_with_the_target": 0,
+   "banks_tested": 92
+  },
+  "one bank": {
+   "flagged": 4,
+   "instrument_ok": true,
+   "target_flagged": true,
+   "target_excess": 1.0,
+   "other_banks_flagged": 3,
+   "of_them_sharing_no_item_with_the_target": 0,
+   "banks_tested": 92
+  },
+  "half": {
+   "flagged": 4,
+   "instrument_ok": true,
+   "target_flagged": true,
+   "target_excess": 0.4826,
+   "other_banks_flagged": 3,
+   "of_them_sharing_no_item_with_the_target": 0,
+   "banks_tested": 92
+  }
+ },
+ "not_as_required": []
+}
