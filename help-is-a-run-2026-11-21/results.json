@@ -1,0 +1,5637 @@
+{
+ "summary": {
+  "commit": "428b27b94a96a8efc02d32103378b87d94f4adca",
+  "python_files": 312,
+  "excluded": 1,
+  "not_parsed": 0,
+  "read": 311,
+  "by_class": {
+   "never": 208,
+   "by hand": 97,
+   "parser": 6
+  },
+  "writes_a_file_when_run": {
+   "never": 183,
+   "by hand": 81,
+   "parser": 5
+  },
+  "removes_or_moves_files_when_run": {
+   "never": 5,
+   "by hand": 3,
+   "parser": 1
+  },
+  "writes_removes_or_moves_when_run": {
+   "never": 183,
+   "by hand": 81,
+   "parser": 5
+  },
+  "has_a_write_somewhere": {
+   "never": 183,
+   "by hand": 82,
+   "parser": 5
+  },
+  "imports_a_module_that_reaches_out": {
+   "never": 60,
+   "by hand": 41,
+   "parser": 2
+  },
+  "appends_to_a_file_when_run": {
+   "never": 10,
+   "by hand": 3,
+   "parser": 0
+  },
+  "calls_a_method_that_changes_a_service_when_run": {
+   "never": 0,
+   "by hand": 1,
+   "parser": 0
+  },
+  "neither_writes_when_run_nor_imports_one": {
+   "never": 17,
+   "by hand": 14,
+   "parser": 0
+  },
+  "mode_not_literal": {
+   "never": 0,
+   "by hand": 0,
+   "parser": 0
+  }
+ },
+ "excluded": [
+  "rate-cap-bank-2026-10-10-v2/first-original-dexagon-20261011/gen_reading.py"
+ ],
+ "not_parsed": [],
+ "rows": [
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    49,
+    51,
+    74
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess",
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-chain-audit-all-pages-2026-10-17/chain_audit.py",
+   "sha256": "513af0e66fef0ea27ac3a4aa9c048ec7f843113629d47fd2146725301143d7d3"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    18
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ac-chain-rebuild-2026-10-15/linkwalk.py",
+   "sha256": "256ea4a9c66a2cbd962f5d91024fee9fff7afe1da611a305e7ae6c86e9e1c21b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    49,
+    51,
+    63
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess",
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-chain-rebuild-2026-10-15/rebuild.py",
+   "sha256": "37da501d08a11ecfc2182498d895fef42f9ffc9006f13ddd3ae387aca3221ae1"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    40,
+    47,
+    107,
+    108
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": true,
+   "file": "ac-clerk-draft-2026-11-21/clerk.py",
+   "sha256": "10cd6df4d8bb0f4ba3720ce4826cfb50af3e0b2a4f6111460ac8cf7f0ebf324c"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    13,
+    15
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ac-clerk-draft-2026-11-21/make_run.py",
+   "sha256": "d64d824bb24d3da4e2e15abc8195883692973460e04aac4a8cc0c7061047aca1"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    38,
+    40
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "ac-clerk-draft-2026-11-21/mutants_clerk.py",
+   "sha256": "82bfa423c432b448c3ce9d858106922513e7185090f78dfdbdd5567826d1c069"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    31,
+    47,
+    48,
+    69
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "ac-clerk-draft-2026-11-21/test_clerk.py",
+   "sha256": "c642f8932093239aa84b765530d5ecd80ec41410725912f63cbb9ff6a20ac138"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    69,
+    85,
+    99
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-proposal14-close-2026-11-15/ballots_from_chain.py",
+   "sha256": "692bcbac94cdfaced261daa009cb5aa82a42616269899a1e0f358e1638423bf6"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ac-proposal14-close-2026-11-15/verify.py",
+   "sha256": "218a54c38958513b732a1bfb9eb8006a06e75d259587cc817d913ab4672e7243"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    34,
+    43,
+    49
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-proposal14-close-2026-11-15/walk_proposal.py",
+   "sha256": "83bf44c3b288499878a9d8b0772403c3e27766080ff618933170fb0518cbf6d5"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    51
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ac-record-derivation-2026-10-18/cofactor_check.py",
+   "sha256": "c123c40d5cabf5a3424b33cd77d55889c78253c8fbc74a6b3c685bef266df268"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ac-record-derivation-2026-10-18/fixture_test.py",
+   "sha256": "61da51f7d1d5cc414e2d9773b295dff803db4acee4c49079987262dc00a0c7b7"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    68
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "ac-record-derivation-2026-10-18/negative_fixtures.py",
+   "sha256": "4829c56299c52592decc2c46d031cba2420ac9e5184334d39844e47144337399"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    41
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "ac-record-derivation-2026-10-18/pda_check.py",
+   "sha256": "8142c9066043664a80c0ec8fe9fb9816885823b6d75bebe12a157663fbff2f2b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    36
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-record-derivation-2026-10-18/record_pda.py",
+   "sha256": "62e8f6ee111bd446a9d9a6e4f58224728c0324b27577797334f556450f70faab"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    32
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-record-derivation-2026-10-18/record_pda2.py",
+   "sha256": "da4f7a97f4807c5d6159fe05090d95236c881636275ecaaf0d7b20477a205624"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    24
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-record-derivation-2026-10-18/record_pda3.py",
+   "sha256": "14eef8b4282b6615b75eb54ce9d4a0798fb336513d6eac7c372011d44f7913cc"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    45
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-record-derivation-2026-10-18/record_pda4.py",
+   "sha256": "883747f197fa92b90eded26dfc5e658d2a8d1dd15041549078f8d85b0b021f86"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    32,
+    50
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-record-derivation-2026-10-18/record_walk_fixed.py",
+   "sha256": "1e440f488ce8423ec1b4ccdaadc648f95fe8fed941c44ab127b13b1de69d761f"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    62,
+    77,
+    91
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-resolved-proposal-record-2026-11-14/ballots_from_chain.py",
+   "sha256": "9c825bf6bf7b85ac15cfc4acb40075d2ed17749d3117a3fc1e678fc9a5765c98"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    68
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ac-resolved-proposal-record-2026-11-14/verify_claims.py",
+   "sha256": "e353c015bb81ee914d73dda4b28ef834ed436f0476c3f7f8df12dff2a2545842"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    34,
+    43,
+    49
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-resolved-proposal-record-2026-11-14/walk_proposal.py",
+   "sha256": "83bf44c3b288499878a9d8b0772403c3e27766080ff618933170fb0518cbf6d5"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    20
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ac-v2-stranger-read-2026-09-28/fingerprint.py",
+   "sha256": "b9e8d58ba42c08e34d8a701c0a9c496e1f3ab98cb091d27c76545fbe1a6effa2"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    39
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "ac-v2-stranger-read-2026-09-28/prepare_probe.py",
+   "sha256": "d3750adafaabb6c844bc9794090170032e487e47e8e8e54d78abb8c3e5e52df8"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    18
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "adoption-judge-2026-08-25/judge.py",
+   "sha256": "3814d80596292da929ce90e16afccfaeca8ddf9e887ba04865534fb65d8ec20b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    31
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ainglish-amend-carry-2026-10-12/gen_readme.py",
+   "sha256": "a272e3134d29bdce3964559922b894ba275843f0b587be6a65d37d8329e5591b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    16
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "ainglish-ballots-2026-09-29/ballots.py",
+   "sha256": "cdb65cb4b0122781bdcf05004bbaf682bbf697777054643acae7ed9c3eac0823"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    16,
+    36
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "ainglish-ballots-2026-09-29/ballots2.py",
+   "sha256": "c1cfe4ea3950cf06abf4bc0b23e95bf03a5793784604db7552cd5e594c6c7dd5"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    44
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ainglish-ballots-2026-09-29/facts.py",
+   "sha256": "4c10a5339f78254c996e6e33346cbcb3279db44661b03b90dfb7b85778ba6972"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    34
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ainglish-ballots-2026-09-29/lineage/compact.py",
+   "sha256": "25f0d61f52f5a24fc9a98e52338d1a9be1b38a2b01421d29ac18896ca479ffec"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    102
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "approx-comprehension-2026-08-25/gen_items.py",
+   "sha256": "0f81af01211d3cc61131c485e70356a48c18c402cb2e6b33316960cb10122e38"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    77,
+    105,
+    115,
+    126
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "arcaeon-exchange/make_variants.py",
+   "sha256": "3f684f0a726bf2218e7c207115c6e100ee8033f9613d384456663a663d179f3a"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "arcaeon-exchange/stranger_verify.py",
+   "sha256": "ffee3443650ec34ec4e48c6fa835daa07864c358f3a24dc3cb49cb8a32235dd3"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    37
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "arcaeon-exchange/touchstone-side-2026-11-14/reveal/score.py",
+   "sha256": "508378f3fbcb9fd5e056deb7a9cc46708d0a1bdec37adeac03276b610ed213e4"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    166,
+    169
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "attempt-ensure-replication-2026-10-28/gen_ae.py",
+   "sha256": "1f61bf76c97e36fdd9787036c8e5b596c1b779731a5a82adf8d167a6b31542dc"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    29
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "attempt-ensure-replication-2026-10-28/probe_recount.py",
+   "sha256": "22590b56a1ae6552f07ce7e07cda84ef229d49c708b96fa65d5203dc9f94d296"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    60,
+    96,
+    112,
+    113
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "attested-strata-uvf-2026-09-17/census.py",
+   "sha256": "e00dc5999086d0c90768a19eebe336af05325e0c868a5eb4adf062106738501e"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    9,
+    16,
+    27,
+    38
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish",
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "attested-strata-uvf-2026-09-17/freeze.py",
+   "sha256": "6cde239c0d14b160cacb4110669ac6c013b3aa546ac0858a7af8d2cc546b021e"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    145
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "attested-strata-uvf-2026-09-17/reference.py",
+   "sha256": "613eb4ee1e23acb60f6f1cf38558c33df2e6ec2b74c628437ee24d38f9853a55"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "attested-strata-uvf-2026-09-17/replay.py",
+   "sha256": "b39a98d55aaafd12781d3d4ccd171113eea0b72cdbdbc8fe7bf064a6c5958a5d"
+  },
+  {
+   "class": "parser",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    86,
+    124,
+    128,
+    131,
+    133
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "attested-strata-uvf-2026-09-18/candidate.py",
+   "sha256": "cc9dc690830a4b9b1247baa63d4469cb7398e535154aa81a3def332685ba9b74"
+  },
+  {
+   "class": "parser",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    58,
+    99,
+    111,
+    135,
+    136
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "attested-strata-uvf-2026-09-18/census.py",
+   "sha256": "b6604caf00c1cf2dc52d934bda50fcc848d276ebc99927a7ea6fab4af4d3eccc"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    32,
+    34
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish",
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "attested-strata-uvf-2026-09-18/fetch_raw.py",
+   "sha256": "d82b633bed3df4dde3c3dbb3ffad7a999ef434ed107e76bec478ee62b6e82a41"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    140
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "attested-strata-uvf-2026-09-18/make_readme.py",
+   "sha256": "2489546b588f8c8b79cb61c90fbfda27a54d80dc8412a9611b593d7814af34cf"
+  },
+  {
+   "class": "parser",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    34
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "attested-strata-uvf-2026-09-18/oracle.py",
+   "sha256": "2ec5cbeeb6155a865fbf2efd177bcd9a4d24d29b2baafd437ccfb8271c36866f"
+  },
+  {
+   "class": "parser",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    337
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "attested-strata-uvf-2026-09-18/reference.py",
+   "sha256": "f102a9f80fc53318de99df0a6352f52069c7b6da385d3a02f148f3d090583dd0"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "attested-strata-uvf-2026-09-18/replay.py",
+   "sha256": "b39a98d55aaafd12781d3d4ccd171113eea0b72cdbdbc8fe7bf064a6c5958a5d"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    47
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ballot-and-measurement-sweep-2026-11-21/table.py",
+   "sha256": "ef7a7925c31f102deb2f72ce645526ed38d13dbb5de56b42c23641beea2ab3f2"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    74,
+    85
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "because-ever-since-cells-audit-2026-10-24/audit.py",
+   "sha256": "fb834baa981374cfc2fbbf35dba5e09772e92db1124d7118064e50f592b76073"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    121
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "biweekly-e2w-repl-2026-08-24/gen_items.py",
+   "sha256": "58782c1f527f33331927dbdfdf9bb34271ca6ee619eb893fc516d74ffc06a3ef"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    385,
+    388
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": true,
+   "file": "bounded-prerequisites-uvf-replication-2026-08-31/run_once.py",
+   "sha256": "2ff2e507ad33a86b401a605d690d2c9bd37bea46d8453c4a6b716350a7e73d2c"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "by-construction-comp-2026-08-31/generate_items.py",
+   "sha256": "03ab1af1f1ea4292cceee01d7e043e29b3ec2381d81bde9f433cf66cd02ad9ee"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    45
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "cad-prerequisite-ceiling-census-2026-09-19/census.py",
+   "sha256": "b815326f15efdbd4f5e1ed8f6bdd8eb72fd84006233936322c657b6da5196244"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    35
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish",
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "cad-prerequisite-ceiling-census-2026-09-19/comparator_kinds.py",
+   "sha256": "c8bd9ce6b3f22fadc043ba51422520ee1a0843392088222962d9a895f29fb837"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    30
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "chomp-2026-10-20/chomp.py",
+   "sha256": "0bdb054453e08a71e60d0586dd4d14c576a884b5b9e1f364cd48a1cda377d9fe"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    92
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "choose-any-comprehension-replica-2026-09-25/audit_bank.py",
+   "sha256": "b4842212f563c984bfbfb3fcc6f870c8dbb3ee94ad26060fb663af332277d8e9"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    207,
+    208
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "choose-any-comprehension-replica-2026-09-25/my_instrument.py",
+   "sha256": "77e7e1c1120e40b1479761e29da806317036cc7415b9f594d79e0088247dc809"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": true,
+   "file": "colony-census-2026-09-29/census.py",
+   "sha256": "c3ead19eed3c708cfb23b998b8c306bc5161a6ef703d7a0eb6600c4f465bdb07"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    36
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "colony-census-2026-09-29/explore.py",
+   "sha256": "96de827e2668871843efe24217624ecf953fda99c2c716b2251e974dc6ce20d4"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    55
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "colony-census-2026-09-29/explore2.py",
+   "sha256": "b5b81e9a9deaea6e5dae9bccf4bf848d40c6d366bfddfc703181aa8c977740ca"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk",
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "colony-comment-history-route-2026-10-18/history_probe.py",
+   "sha256": "30c81540baf3ae9d8ab64b25b2029a67251ecbdd415bcc54dc0551c67d861ff8"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    85
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "colony-count-consistency-2026-10-01/census.py",
+   "sha256": "27feefae19c9a70921306d37dca2c4c4bdb0a93b42385434eb4bf44b34306993"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    34
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "colony-notification-holes-2026-10-18/atnames.py",
+   "sha256": "3f45415f7435a3ce7826b86429e9f4be482933c27d2077b77b2b5f32b5a55323"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    55
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "colony-notification-holes-2026-10-18/bursts.py",
+   "sha256": "650130986bd4473e5d791200d66a28e5e59f67edf08b8e9e0da70106a3a7c638"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    24
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "colony-notification-holes-2026-10-18/hidden_mentions.py",
+   "sha256": "2677025392e680543a733e45fd857037622beb0c66edb82089dc972a384f4995"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    8,
+    32,
+    44,
+    54,
+    74,
+    76,
+    100
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk",
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "colony-notification-holes-2026-10-18/holes.py",
+   "sha256": "02b74be6fe14513fc1025618dffaffc68c6b25bdb221b813ee54dcdeae3d566b"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    25
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "colony-notification-holes-2026-10-18/mention_precedence.py",
+   "sha256": "7997f9964c59a920d898a46cd186ec27bf4004ef5debe89561d05fb4a313e8b6"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    46,
+    47
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "colony-round-2026-09-28/concordtwin-pin/concord_pin.py",
+   "sha256": "ce301a0a9629c10b4772f544d45ba6321d20a6b563498f83f6b9d9939f3543a8"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "colony-round-2026-09-28/preview-probes/preview_bisect.py",
+   "sha256": "af1b56d579f980161c4ba42e5bd077bf003510cbd5487d5490d137d37659ae2a"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    76
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "colony-round-2026-09-28/preview-probes/preview_probe.py",
+   "sha256": "70e6636c3a387163d28cfd16e5066a6988f01c2f1bdb7fbcc032e52679fc199c"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    28
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "colony-round-2026-09-28/preview-probes/preview_probe2.py",
+   "sha256": "318f37a42dba1c5349b1d1beb7c6b9a81be465e76333541a24eca8f94d91f0e3"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    69,
+    77,
+    89
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "colony-thread-helper/fetch.py",
+   "sha256": "570a031be27b3b8871b292e3d16c0b5169fc687a13762a466602f069e13734eb"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    37
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "colony-thread-helper/keydiff-cases/keydiff_test.py",
+   "sha256": "895a243629896c8ad5f5cecd9c45d75bf776bbf01563307baacc6271354105f7"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    30
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "colony-thread-helper/keydiff-cases/keydiff_test7.py",
+   "sha256": "972a3e2452ab0d2d972e04cfdef7ca2e6f491bb05104d87d66fb95e7da8f5038"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    42,
+    43
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "comparative-role-frame-2026-11-21/frame.py",
+   "sha256": "07590d6792e2aaf0cda98d5b29d7383e9a02104518bd6b8e23cf12a397f3a834"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    30
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "comparator-class-2026-09-13/gen_v4_from_v3.py",
+   "sha256": "7d16c0d47d190a55f667b53888d348863de067de9385603d58617b091422c79e"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    24
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "comparator-class-2026-09-13/gen_v5_from_v4.py",
+   "sha256": "08415e111f8264c1d138673a339be8204d52db4c2861590a1c61ce616bb5aea8"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "consequence-key-sweep-2026-11-15/audit_gun_bank.py",
+   "sha256": "cb28c01a14659f3afcdc6be80cd64c2d8bfeabef40e980e2ff14a2cc8e4114cd"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    66,
+    74
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "consequence-key-sweep-2026-11-15/build_public.py",
+   "sha256": "8c40b8cda922ba5493a6f004929aead3aea09598ab916adb65458ad16fdf5f80"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    50
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "consequence-key-sweep-2026-11-15/consequence_sweep.py",
+   "sha256": "9789a8d2cae1ec918198d2a4f15be4fdc12710b4aa2dd2ec2c751df062b28418"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    31
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "consequence-key-sweep-2026-11-15/flag_pass.py",
+   "sha256": "0d338a79e66a70d3e0f61184c2b731c84775d53750206765ea643f97f14d30a0"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    16,
+    32,
+    41
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "constant-filed-value-2026-09-08/recount_constant_rows.py",
+   "sha256": "ffc87bb41ee3ddf080954d6b4a9454f8375a88add940c8ca988ddbf7f38c57e1"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": true,
+   "file": "count-lag-2026-10-03/probe.py",
+   "sha256": "c3bbf38acdd9c40cd69fe82e21af6423b5e32fb4aaec73bd4ab74e880e2aecf2"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    221,
+    225
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "counted-n-comprehension-2026-09-25/my_cn_instrument.py",
+   "sha256": "f68d514a391573a81463ca964070387988f9b8a9c10db58aeb87a65d0b0cf002"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    33
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "discovery-path-2026-10-02/scoring/regime_strata.py",
+   "sha256": "f7c2b5fbda1453f7239c823b92a4d365e96b2dac38422aebfeaea4e33ac7ade3"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    14
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "discovery-path-2026-10-02/scoring/zero_score_by_regime.py",
+   "sha256": "973eb87f54d58fad471ea9b67d685edb92843f8e1f6712e10d442e219476e97b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    41
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "discovery-path-2026-10-02/surfacing-join-2026-10-10/join.py",
+   "sha256": "3dafdbd7c7ff5ec7a87076006503fd35d47ef2634e6885097e554ab553e95a3c"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    65
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "distich-refutation-2026-09-01/replicate_distich.py",
+   "sha256": "f44504e83332019c70d5061bfc60d2d030a8ce0cb74fe1c094edcf851da036f4"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    58,
+    149
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "echo-on-human-threads-2026-11-13/echo.py",
+   "sha256": "c4b12a672d113b30827abf10e50ce3b9966fc5ead19ad150dd6096177eebb18b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    39
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "echo-on-human-threads-2026-11-13/translate.py",
+   "sha256": "f4342fc448e8c7545be87be36dd305d11ee2cfb81e68f791494dba0f57466c7f"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    38
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "echo-on-human-threads-2026-11-13/translate_posts.py",
+   "sha256": "da644f1fc7fb6fce8ef85cc382333a048574d34eb1d94f31800dda40f925860f"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    49,
+    51,
+    65
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess",
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "fjl-page1-walk-2026-10-23/rebuild_fjl.py",
+   "sha256": "34a52ff6e0aea9fdd908da4feb3b8567d002228447cb3d216673b0674c90477f"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    212
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "fjl-page1-walk-2026-10-23/walk.py",
+   "sha256": "c15722cb814f6d416e7316609e3c068d0f1104cab7718c89e77cf654c577772e"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    143
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish",
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "forecast-ledger-2026-10-01/ledger.py",
+   "sha256": "db4a2206721572fe7bcf9348ada453ee037d10cfc3d794e970593d80b2db63d0"
+  },
+  {
+   "class": "parser",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": true,
+   "file": "gate-admission-quality-2026-08-30/simulate.py",
+   "sha256": "20d0b721ef95060f236ed42d4e72083aabf632b022b6c26e028bcd0e845163dd"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "gate-sweeps/2026-08-15-held-reasoned/held_sweep_v2.py",
+   "sha256": "e208979c3cd549e5431fb3e2808da70b5f9aea2952866c21f30a685c8a113788"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    53,
+    103
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "gate-sweeps/2026-08-16-attempt-durability/attempt_durability_sweep.py",
+   "sha256": "2e270647cad46dd9d544c3285c067cd15654223335528311f9f52b20d0e8fa9c"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    46,
+    90
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "gate-sweeps/2026-08-16-formula-version/formula_version_sweep.py",
+   "sha256": "7cb4f3c3d2348ec789c157e24bf670cf88c298faccdde4604f4f9223aa91a5fc"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    55,
+    105
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "gate-sweeps/2026-08-16-screen-coherence/screen_coherence_sweep.py",
+   "sha256": "2841d22957dcbcb81bddcad4ab783e41807b02018cf2f80e11445e169cdca0ab"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    82,
+    231
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "gate-sweeps/2026-08-16-settlement-receipt-rev1/receipt_scan_v2.py",
+   "sha256": "5c1dc7e2d3afdbb18093fd3755778aee6a464182ebef00074caaaa5c1768d9e3"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    54,
+    134
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "gate-sweeps/2026-08-16-settlement-receipt/receipt_scan.py",
+   "sha256": "906bd0e3d22a3be09174cb4f3849ab21183039a0e7b182e5421da554320d97d5"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    82,
+    231
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "gate-sweeps/2026-08-16-uvf-original/receipt_scan_v2.py",
+   "sha256": "5c1dc7e2d3afdbb18093fd3755778aee6a464182ebef00074caaaa5c1768d9e3"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    124,
+    125
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "go-unless-no-comprehension-2026-08-29/author_gun_panel.py",
+   "sha256": "d70b08e44ff7054e907955be6176b2d09f3660e52a3e211b576fc7b2ab2f1868"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    35
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "go-unless-no-comprehension-2026-08-29/run_gun_panel.py",
+   "sha256": "9a358e43b75d5aab44f0a600aa3f6fe1df14a6a0ec7209f67ed77d8a3f08fc5d"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    45
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "grader-is-graded-concise-comparator-2026-10-19/count.py",
+   "sha256": "6b32224ee19a4da16c17dab16b89244fe1b9186c7cc563a2179115848bbe5d70"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    14
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "hash-of-what-2026-10-07/scoring/score.py",
+   "sha256": "f098191a9f22dcc5e1f0e4ba2bb9c28806c2d5567f26b5458236e9ac1b260629"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish",
+    "subprocess"
+   ],
+   "main_guard": true,
+   "file": "headroom-gate-flips-2026-08-31/verify.py",
+   "sha256": "ba4e6923259822736100cdd46e66dbcf3770baa452f6c0e5fec58520f2da65f5"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    185,
+    188,
+    194
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "hh-mm-z-frozen-pool-2026-09-26/build_pool.py",
+   "sha256": "219e160ec8613dcc585118a09c8d08422eb7a725b8d6f8e94f418a54295e7436"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    206,
+    210
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "idempotent-no-retry-comprehension-2026-09-25/my_inr_instrument.py",
+   "sha256": "3ac07c0dd9b3b17001b6b9c8a179620df9b825bd746b6b57f67fabee3ffd964f"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    95,
+    100
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "idempotent-no-retry-legend-window-2026-10-02/gen_legend_items.py",
+   "sha256": "e314904785aa8d4e23618f9ff2e6eebd95510f07f407fd32ce5d03505d017a90"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    75
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "idempotent-no-retry-legend-window-2026-10-02/score_targets.py",
+   "sha256": "3e43707986339a59c862f03689753fe3a39d0f76606a28547fbf4b9ea2b70c1b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    137,
+    141
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "include-both-recert-2026-10-27/gen_items.py",
+   "sha256": "3b6ad593741e27921a677f40007b14e46ac7c934a342deaed945dbf861bd3645"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "insect-decline-methods-2026-11-14/fetch/abstracts.py",
+   "sha256": "6f632fd18b42b0397c8d2e5c81f7b87b552efd9336e4701665a5c2a3492c61f3"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    21
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "insect-decline-methods-2026-11-14/fetch/crossref.py",
+   "sha256": "93d8f1fb28c45d6f58333a7d3cafc4d44a1d8eb14b29e0659b5f1d157534719f"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    32
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "insect-decline-methods-2026-11-14/fetch/find.py",
+   "sha256": "0f4f7bdaec0261224044b5b7d313499898a3060ae5be3d889950ba88456a8da0"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    22,
+    38
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "insect-decline-methods-2026-11-14/fetch/find2.py",
+   "sha256": "145c960314440c76119a12bd5332ae210f2d026c29e242c4cc22cf2e1047e4d7"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "insect-decline-methods-2026-11-14/fetch/kwic.py",
+   "sha256": "fe2f639ad123b38e83683515230118109c644df804cda575833299539ca28575"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    45
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "insect-decline-methods-2026-11-14/fetch/sources.py",
+   "sha256": "9d94ebf974974021ff8175916fa4a15fb3ea4b84f55ff2d4218301017320fe9b"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    9
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "insect-decline-methods-2026-11-14/fetch/totext.py",
+   "sha256": "dcb12cc948db42d1d6e52b45c05c90062ad643cbc1a46663afbc9bc401d2a3ab"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "insect-decline-methods-2026-11-14/rates.py",
+   "sha256": "47579641a5a7a2de86c9e332b672aa778ec3056a2b123c1e2bb29a5eb75abf6e"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "insect-decline-methods-2026-11-14/verify_quotes.py",
+   "sha256": "e540b15e763e8d761800cd40bf674fd462aeb4ed246e15caedfd30054b75a453"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    48
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ishango-2026-10-25/author_test.py",
+   "sha256": "92436d10f22a90e4ddc1e186fad8dfc51647c433397626f70b54e6b09ba52b25"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    23
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ishango-2026-10-25/ishango_cond.py",
+   "sha256": "18c996e385c71e9dafae4a156ca3ca13a61dcb9f540034df714006ce8ae502a0"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    83
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ishango-2026-10-25/ishango_ext.py",
+   "sha256": "913ea90f47e615f0a1922dd7771c0e656f7b32c9c0d5cd1db588d3f57c7424f8"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    55
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "ishango-2026-10-25/ishango_null.py",
+   "sha256": "ab72843d9dfcffc349c0f35c36c2bd8dbae223eafea290b43498c1f128ea8b39"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    56
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "karma-window-2026-10-15/window.py",
+   "sha256": "f0176005fc44de994ae5608fc02013c6e54e28da733d1fef60d4f0911d339946"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    8
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "lean-dead-proof-fixtures-2026-11-21/make_variant.py",
+   "sha256": "53487f1ac1e089005d76a2d88b9bf622312f812a37ecbb26f4a6db17cf41ada7"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    57
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "lean-dead-proof-fixtures-2026-11-21/mutants_summary.py",
+   "sha256": "d7329a61b77758e79b57423c31f8e424dc79c196b2f9117040af69f65f017b1d"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    26,
+    30,
+    35
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "lean-dead-proof-fixtures-2026-11-21/run_fixtures.py",
+   "sha256": "b1c0e438587434eb4374239f507b46c4fc8677d57befd07459e24ddc6b2b3918"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    42,
+    45,
+    53,
+    55,
+    60
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "lean-dead-proof-fixtures-2026-11-21/run_ule.py",
+   "sha256": "6424a4dd88bbc2cd501c4c4561687fabbc5395fdce6ae15be3a734305b7296e3"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    114
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "lean-dead-proof-fixtures-2026-11-21/summarize.py",
+   "sha256": "10461df9447a08d991ed4472e0ca39a99e045beb5d00faa09751b2b8cfcf1b95"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    50
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "lineage-census-2026-10-02/census.py",
+   "sha256": "baac3371d06e4097e72687bb4b256b5011a5af142c3fe45fcb1ab470a9038584"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    55
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "lineage-census-2026-10-02/census_v2.py",
+   "sha256": "19e11e97c991150ff8db7a7110e21fc44216b64ffa9d46605a43c044228a34ee"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "lineage-census-2026-10-02/classifier_precision.py",
+   "sha256": "30538673f7050b519355b33521ad7d3c5f74f879d17872009284961ce9f4a443"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    42
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "lineage-census-2026-10-02/path_leak_pass.py",
+   "sha256": "2d2c3c582eaa0dbe0ab101c5743acc9e29674b00865fb6e0cf7bac33318b864d"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    23
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "lineage-census-2026-10-02/recall_probe.py",
+   "sha256": "2eb3a29ad7eaf2954c8a3a7b060ca9950636741451b2e346b88cb4c915130334"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    32,
+    39
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "manifest-retention-boundary-2026-10-15/boundary.py",
+   "sha256": "aec24d9b617cfeed31a57a3f1ce7ebdf7c157dd3a6d92db43519a89e34ae2c39"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    83
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "may-carrier-qualification-2026-08-25/gen_qual_items.py",
+   "sha256": "b6432a4b4f18cb74bbb8fd67dc7a1dfa7b3186cb67dc62f1cc5ce9db7689692d"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    78
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "may-carrier-qualification-2026-08-25/run_qual.py",
+   "sha256": "c3ba4eaee92590e420463c637fc306499a1209fb51e3410c50213ad3f5e7d820"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    61
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "may-modal-token-repl-2026-08-24/pairs.py",
+   "sha256": "02f6e342686782b1fe55929f52b4c2a6c4bb9b838041a7bb1b342fe2dbdff67e"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    87
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "mayas-comprehension-2026-08-25/gen_items.py",
+   "sha256": "22f1f8fef7e8e7fd05317d785c0e44e319dd4836255a6e03a64d0ceecfb038cb"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    26,
+    62
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "membership-record-draft0-trial-2026-11-12/fetch_sources.py",
+   "sha256": "a7ee9dc32a588454a35a91b61679a4ecb4505c66e1154730783b9b50dc991162"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "membership-record-draft0-trial-2026-11-12/generic.py",
+   "sha256": "84bf682481e8588fc3e90070e69466b2806f65cc27a86ecf35c03a747b3c8fca"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "membership-record-draft0-trial-2026-11-12/ladder.py",
+   "sha256": "3a201ae3719a09e48d581cca5c54054f4ea0e320c3a7cef0f62b5771e73b2f9c"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    109
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "membership-record-draft0-trial-2026-11-12/part_a_saturnia.py",
+   "sha256": "73cdb2b079463f7a39c7c292fa4a80fa84dd4bac1ff5d83b20a70d51f7f763f8"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    73,
+    82,
+    149,
+    192,
+    233
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "membership-record-draft0-trial-2026-11-12/part_b_mine.py",
+   "sha256": "c86af80418066168b40a3ecf1567c8ff07cacf5caa7fe01daf092a7e4f693696"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "membership-record-draft0-trial-2026-11-12/regen.py",
+   "sha256": "af75efdc506333368fb82fb56d1164e53d3ec7853f2985d6597d48a5aef50953"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    19
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "message-blind-floor-2026-10-12/binding_term.py",
+   "sha256": "d863ae16e2f62e22d58bbbd77936ab2658a17df972a90495c1b9dd1d57dbbd3c"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    23,
+    29,
+    32
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "message-blind-floor-2026-10-12/download.py",
+   "sha256": "913f869e5161eac120e5e010fb1a9fa86cd1b51f88e9543c231fd5c15a733c1d"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    19,
+    23
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "message-blind-floor-2026-10-12/erratum3_per_arm.py",
+   "sha256": "0de40b90db1fa1808e8ef5f8ff79c8b3c3f2356a5f6cd94d4ef80f9363cd59ed"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    31,
+    42
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "message-blind-floor-2026-10-12/erratum_floor.py",
+   "sha256": "80ed015e1c607fd48cdde2147764ba01843cef8ad84b5c0e931be42f459ee2f7"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    33,
+    62
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "message-blind-floor-2026-10-12/gen_readme.py",
+   "sha256": "d6693a65c0f967dfd9081e5afd2e91b3439c7408a1fae8f6659975bb63e69cb0"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    8,
+    12
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "message-blind-floor-2026-10-12/retry.py",
+   "sha256": "a3c002642a08f859afdce9632b79f13992a507196ab3f77d314acca07080ad67"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    87
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "message-blind-floor-2026-10-12/scan.py",
+   "sha256": "173180536d202dfc1c35ae52d4e304801bfc6a5458d68e01d7a89684fbf6f576"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    20
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "modal-token-repl-2026-08-26/pairs_gen.py",
+   "sha256": "cc5a164c51bc07246f58ed58c26b0f1c3c72b9f740588898576a8ae77d129bd1"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    77
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "moved-comprehension-2026-08-25/gen_items.py",
+   "sha256": "ee6ae0a2e718559ca22d35754b92bc9794f6c2588ba088b5e4dbff12e060ffb5"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    48
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "moved-token-original-2026-08-25/pairs.py",
+   "sha256": "9fe56656d752a27ebeab075586d77436f1768a0b3be57b041fa6491cb21d6c54"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "movedearlier-comp-2026-08-31/generate_items.py",
+   "sha256": "dde33b82c762eaa3bd1aeaf9992f2542917ec8f6ffcae0298b137e898891c250"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    111,
+    112,
+    118
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "multiply-the-quantity-frozen-pool-2026-09-27/build_pool.py",
+   "sha256": "cb2c2c7aae2f9f0b3deb0a1379a9ab5b9693e1eb3bd3ae1ba3521fd0c4994fcf"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    54,
+    73
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "multiply-the-quantity-outside-pairs-2026-11-12/build_and_run.py",
+   "sha256": "da2ad12291cb21e585c37026117b677a67597eba7fb3266cc76213a6fe0c069e"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    56
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "nextyou-replication-2026-08-26/gen_items.py",
+   "sha256": "3c1a1f95ddbdaa8f75dd3b86179c09e0923a8e83360434611c54bd018c30b51d"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    54
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "no-charge-faithful-replication-odds-2026-10-24/step_tol.py",
+   "sha256": "b87c920507c7ed1dc268e9b5eb917f03f29b371ff173a367c78f200f4526b9e8"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    69,
+    70,
+    71
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "no-undo-rstar-2026-09-22/bank_author.py",
+   "sha256": "c111d3e6d912ab1eeb202cc77a1ae8ef893caf6525030a937b81abd447164cb3"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "no-undo-rstar-2026-09-22/noundo_rstar.py",
+   "sha256": "b1cd2787af86de587058fb7914e959a66ddaaedbf974f1f6b440f43832dbeed8"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    17,
+    52,
+    56,
+    66,
+    69,
+    74,
+    76
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [
+    "measure",
+    "mint_attempt"
+   ],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish",
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "no-undo-token-original-2026-09-30/noundo_token.py",
+   "sha256": "36353bc86be0ace512164f30e6cd5658a2bcecae5fbb4ca5736061a0b4d37f60"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    284
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "none-of-not-all-of-comprehension-2026-08-30/author_none.py",
+   "sha256": "fd23fcbeefac0317a392898e805eca759105ee93272a3dfc98ef1ff4ba3206f3"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    115
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "nous-reasoning-effort-2026-08-30/run.py",
+   "sha256": "6750a72180b44708781be88ad973bcf0f0e6071142f826e754b5307f2d36934a"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    185,
+    186
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/audit_novel.py",
+   "sha256": "3a7e0281d21feca035b3fe471be3391848b0c69cd232a119347f8f42d199e4bc"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    88
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/audit_novel_pos.py",
+   "sha256": "e04b79e65eccd96f460646168ca885781d4221a4c97ab2c3ba3aaffefd6e679b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    14
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/erratum2_order_labels.py",
+   "sha256": "0237237a95495ea349b3699aba92a2980027f2ddc95e4b3faef5d942ad2b49c4"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    12,
+    25,
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/fetch_corpus.py",
+   "sha256": "f93c3bb9bd260fc1523746d23d0daccf2468b80fb4d358375217b9ef471c3551"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/gen_issue.py",
+   "sha256": "eb830f5ca8675e6eb7e5d10cb931c23a3752481504703793448de346ff984fd5"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    54
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/gen_readme.py",
+   "sha256": "24d96d934d2ccab5ac5257f678ad759635abff31c13e8ddeb1d8677260b1b56c"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    28
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/order_check/known_map_order.py",
+   "sha256": "b37bb5b1fc0ed5fd95637d7083fa75d0a08f8daf94a9b85bbc628bae20e0f713"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    46
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/refs_check/count_refs.py",
+   "sha256": "073c47c77548f310cc6efecfbd4947fc271aa78b0fa8562d77044392dd0ed656"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    54
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "novel-markers-audit-2026-10-12/refs_check/count_refs_all.py",
+   "sha256": "ed04a1b1a5649e0cecd7f06210110571bd5e34a52e7fad17452bc805e307771f"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    112
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "oi-tracker-state-panel-2026-09-27/analysis.py",
+   "sha256": "3f2e1aea017314f3c0c78a0cf674040f894f74d0ee92d7bd570cf8e0a1b9d3e7"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    46
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "oi-tracker-state-panel-2026-09-27/analysis2.py",
+   "sha256": "267a93d682c78ccf1443f8bb2c751eb4dfb81304d1cb5bbadd115fd74c401746"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    185,
+    189
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "on-behalf-of-comprehension-2026-09-25/my_obo_instrument.py",
+   "sha256": "97a2acd7ca48716db4ee9ab279cb2919c6422049a4459258f96709ebaa6d5fc4"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    39
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "one-brief-eight-times-2026-11-13/count.py",
+   "sha256": "8fc887132f04e243c527b34d522e650a27521632f937d95ce0888198c3d32c54"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    40
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "one-brief-eight-times-2026-11-13/run.py",
+   "sha256": "32732cd8ce6877948fa210c8291ba62c4d6dd747d17138a0de271035807bdd99"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    34
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "one-brief-eight-times-2026-11-13/tally.py",
+   "sha256": "d59f3bd75b47e5bd99c3c041f77bd2c6584fed8078518ad388dbac669474ade3"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    29
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "onlyif-dispute-2026-10-13/audit_dispute.py",
+   "sha256": "c53e946bd09a4ec5b7b1fad7e42b15313d27116c9089a458ac155ca52a935bf3"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    17
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "onlyif-dispute-2026-10-13/rederive_onlyif.py",
+   "sha256": "655b611429804b27ec19c14b071152ad59770a925e39ea108ba9a26ee0b50892"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    13,
+    30
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "onlyif-dispute-2026-10-13/roles.py",
+   "sha256": "a2fffc3ba07c7740992713271a9ee43d9aeff45180c4dc7d53ff94a6522ab64a"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    22
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "option-order-sweep-2026-11-14/my_rows.py",
+   "sha256": "d2989b8b898e18461eea05e7e63b292742fa6703f2a9c831c0232d8a978e37bd"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    21,
+    24,
+    26,
+    33
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "option-order-sweep-2026-11-14/order_null.py",
+   "sha256": "f8fd498ae7236b2e644fd959e1cbace583f4d9a231407f1c25688092eb005102"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    80
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "option-order-sweep-2026-11-14/order_sweep.py",
+   "sha256": "862c919df2fa4e0af925f7024ffee626a69d3a9ce231e36f695ae67ecb5ec675"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    75
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "option-order-sweep-2026-11-14/static_audit.py",
+   "sha256": "9c46ea5e7975aad37c122478e9a760f61c375a799e183539a7a281b212df48a7"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    29
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "option-order-sweep-2026-11-14/summary.py",
+   "sha256": "f29a906a2e78ecb0ffb94453fceebd61554c42ff2c57303bb053b0f83ba52404"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    111
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "outcome-replication-2026-09-22/audit_isolation.py",
+   "sha256": "97bcecabcbf9f21ff1616cb3d8e3bf8dc45add97f7220b350aac88ab41d0062f"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    121
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "outcome-replication-2026-09-22/gen_items.py",
+   "sha256": "7ca418ec09f82cb7c9de9d791f4d036b91c09473f36fb4e81d6729a80f9e7c72"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "outcome-replication-2026-09-22/overlap_check.py",
+   "sha256": "a08e248010c8d4dc592e1f159a7c42542e3bb7be1caa6891bc1f7fc89aa59c55"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    52
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "outcome-replication-2026-09-22/rescore_cells.py",
+   "sha256": "572ad9e1f7934db68b5d8ec345b19fe940506fb1b2a1bbc730939efa98651624"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    70,
+    74
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "point-rule-power-census-2026-10-24/analyze.py",
+   "sha256": "5ad2924f52423aa466069a144c6cc01f2c848b21323f408076f65f2226e163c9"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    26
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "point-rule-power-census-2026-10-24/errata3_counting.py",
+   "sha256": "7ead636b135490c64829cf454f1c08cfe9b46130fbcb634440b18405b6672cd6"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    24
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "point-rule-power-census-2026-10-24/errata3_rules.py",
+   "sha256": "1793bac429d362362556e57dbaf4e95890a35c78708008e5113df941f538ceb9"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    20
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "point-rule-power-census-2026-10-24/errata4_provenance.py",
+   "sha256": "95a83b11fc17de5c076d2385048c7427db0006ed3cb9ba7a8c95d119749d76ae"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    21
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "point-rule-power-census-2026-10-24/errata_cohorts.py",
+   "sha256": "7b0a8d880d6e412b4e7a17d0e8383ef135fb4a9315fa928894bcb8a22bd187b6"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    47
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "post-guess-2026-09-29/analyse.py",
+   "sha256": "096a62041c21d98acfdb57916e5622e8fc78fbc65c08081eff95c2516e50a04f"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    58
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "post-guess-2026-09-29/r12_direct.py",
+   "sha256": "72cdc0eb5f9522491c108d06ad7a55febc0d0609204985098eb1cc8ab7cf1270"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    64
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "post-guess-2026-09-29/r12_kd.py",
+   "sha256": "019172a8e7cf91b90ba178660163e11bbd5e7d18f07d2b2a6f8302fbf547a1b8"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    65
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "post-guess-2026-09-29/r12_kdc.py",
+   "sha256": "246f1efd4e9d76023f04d4f3454e98393b4e3b2c14236adc58146e854fadd7b9"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    46
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "post-guess-2026-09-29/scale_probe.py",
+   "sha256": "34b2fd1b1bb6fe9790a7f121b1fa4ee82879bc8299c17fb11d88e369319f1fed"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "post-guess-2026-09-29/scale_probe_r17.py",
+   "sha256": "5939bfd06df0e8802627f8ee944c76e69d21b9d11637ad34beb4eef6b13001c9"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    57
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "post-guess-2026-09-29/score.py",
+   "sha256": "75466c09444fc41f35d6b075d18607d76043bb536035d4511ec8c126216a3b7e"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "prob-odds-replication-2026-09-13/gen_items.py",
+   "sha256": "0336c30b61a5e9843489bc93b2d7fa5494544290fa39176925d1b612376f0ec1"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    36
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "problem-field-census-2026-09-08/census.py",
+   "sha256": "c2a54c6a9afc9c03221bdb2444c568b5fe6c04a07b254fd614afb9d670b01721"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    167
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "proposalby-replication-2026-08-22/gen-pb-items.py",
+   "sha256": "8d214baf9fdbbff8ceb70ba8273586bec4c0627a02b7c57befc57260cff94eb8"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    16,
+    106
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "proposalby-replication-2026-08-22/pb-run.py",
+   "sha256": "1ef646f7ce9ae11bcc58c9f9c80d93aa085594abebfa4c8829ab45ece5bd33f0"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    59
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "proposalby-replication-2026-08-26/gen_items.py",
+   "sha256": "1bd6c75cbbba0fb1164a35d06cbbe76d74c8afdd9dca5cf1405f6a2f3a8c6292"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    49
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "prose-identifier-check-2026-10-17/prose_ids.py",
+   "sha256": "234079f95b767d8f1ae29fc5ae9ac846f10350737fb2f3e4c38aa735a45e5eea"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    76
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "proxy-comprehension-2026-08-25/gen_items.py",
+   "sha256": "359b0f9c247f9e0258cdabd979c25c8a124a2717fe7caa518508a39a734d12a6"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    41
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "rate-cap-bank-2026-10-10-v2/cd_partition/cd_partition.py",
+   "sha256": "7baaa98cc79acb3992182de5f869fead4b284215d82a7ccc1f95e98a63d56eca"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    8
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "rate-cap-bank-2026-10-10-v2/cd_partition/gen_readme_section.py",
+   "sha256": "70e65c8b90e0449877cbfcd29584dbc23649f371cd7ecc00d6f60019827e4f07"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    130
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "rate-cap-bank-2026-10-10-v2/gen_countermodels.py",
+   "sha256": "cbbc36bdcb6b288130d3d2cd0e270e3a098519a1e93e84a7427c6cf4f6f2a9e6"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    432,
+    442,
+    451,
+    452
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "rate-cap-bank-2026-10-10-v2/gen_ratecap_bank.py",
+   "sha256": "f9fa772e6ccbd0f97384ef1ddd8d65810f3ac4e266f8c5f5e253c2ea4de20d0b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    363,
+    371,
+    372
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "rate-cap-bank-2026-10-10/gen_ratecap_bank.py",
+   "sha256": "2a4782f7f2e0873f4181429336c558e1b20522a15f5db1b925687cd08bbab466"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "rate-cap-batch-fit-frame-2026-11-16/frame.py",
+   "sha256": "e71d9eb56e6e7bbb1124a984013588197c6983e6a2908b3d2091b6b829a0ebe3"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    63
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "rathernot-comprehension-2026-08-25/gen_items.py",
+   "sha256": "7449dfe3583994e33a6bc41499c85223ee7a3c41529b489a920657c4bf319806"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    37,
+    58
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "rathernot-comprehension-2026-08-25/static-key-check-2026-10-12/check.py",
+   "sha256": "4fa089492469cdd64f077fbad352e34be8936328867051243c8734272b654a7c"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    32,
+    33
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "receipt-schema-pages-2026-10-10/build_v4.py",
+   "sha256": "b10cefdf16843b95db16aee597ab76dcb50b1ed59608c7d2dba2cef5d5a61456"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    97,
+    109,
+    114,
+    116
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "receipt-schema-pages-2026-10-10/build_v5.py",
+   "sha256": "63ddec344816666a6e70d0de367fc871017c1a7dbe05d68f03b65d84c152846b"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    62
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "receipt-schema-pages-2026-10-10/fold_check.py",
+   "sha256": "ddb3174849cca5c1a0d534191e79a9318acd12b7ad2f3d5897dd022543e87b8c"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    219
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "receipt-schema-pages-2026-10-10/next_revision.py",
+   "sha256": "53ec3cf3399853bb883b2a4d893d5b0b02806d03db6167b958807280bb853f72"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    47,
+    53,
+    69
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "receipt-schema-pages-2026-10-10/regen_v3.py",
+   "sha256": "72685d6866d8f4d6c5c316a6b000315e2044726011036e8ef1f2972d788c5bed"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    26,
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "register-role-saturation-2026-09-26/role_map.py",
+   "sha256": "098f7d51c22080d2f86560c91f7f0861af548a18f2db7ab1b73b4c117295b641"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    18
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "register-slot-shares-2026-10-14/gen_readme.py",
+   "sha256": "5209bea32847e1edb68091265af279565d052780cd993ff7c2b383ed79721114"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    51,
+    60
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "register-slot-shares-2026-10-14/jackknife.py",
+   "sha256": "7026f1da6961f51943122280b6904b5c48734f68bbb13a21050e9f82843f0614"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    39,
+    47
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "register-slot-shares-2026-10-14/self_excluded.py",
+   "sha256": "85c19c073cae01d405edc59e1369395bb32d59fedd003db0c66b9eea23112f87"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    49
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "register-slot-shares-2026-10-14/slot_shares.py",
+   "sha256": "b0f499978167fb35292b775049d90e4b72d342d9e2ac922fe28059b163073b9a"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "repeat-restore-comp-2026-08-31/generate_items.py",
+   "sha256": "d78fe9fb1e3597e14780ad0f8de7f37e6385a499a17807233eb9d3404df4dede"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "repeat-restore-validity-2026-08-31/generate_items.py",
+   "sha256": "d16daa0c1a8ecfc885cc3845839f007f8cad8bf797bfff89068b593495de6466"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    60
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "replace-old-comprehension-replica-2026-09-25/my_ro_instrument.py",
+   "sha256": "fc04d3cbe2434fc5745be8bf1c535b2927ef56268200d83b292efc61c0e7ff80"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "replication-item-identity-2026-08-30/scan.py",
+   "sha256": "2b328c0a31c7ff55bbc4c54816d56b04b104a7db8dffd58dbdbb156d8223aa13"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "reply-guess-2026-09-28/context.py",
+   "sha256": "1b4d627845599ad30ef2f96415597ec2c24ebf1fd9c8a651581a16186f37774e"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    29
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "reply-guess-2026-09-28/rescore_2026-09-29.py",
+   "sha256": "94374d4c88a674a260669beb044d6139cd6564feb9d76c050c389559e5e371a1"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    89,
+    90
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "reply-guess-2026-09-28/score.py",
+   "sha256": "5d9c429ce7e9979ae3304212b50594f5edf623abcb85df6eadc011e1d1f3ec13"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    38,
+    39
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "reply-guess-2026-09-28/targets.py",
+   "sha256": "cfb59f3d6140cc791d7c0f4405d84b0b2fb436e7dbc0d9b1a85a5560308161fa"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    161
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "rfc2119-replication/rfc2119_items.py",
+   "sha256": "b3f2fc459a7d70a9e89f6fbbcaf47a7b20599a87463c870a38fb46035781b8ee"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    21
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "rounds-exposure-2026-10-19/exposure_perm.py",
+   "sha256": "fc0cab249c850361ff328b86197d4f403a68d94ef2a7212d38cf3daf24d9e728"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    226
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "routing-evidence/routing_items.py",
+   "sha256": "b5970f106215e1fd35cb3dc7704883a69cb291c561c26b7f4e5097c9d99a3d92"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    137
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "sampling-band-census-2026-11-05/census.py",
+   "sha256": "1a282b4a4812d06f23c201f5301e2dbb4bb247da5035209e0c205999e0327368"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    50
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "sampling-band-census-2026-11-05/diag.py",
+   "sha256": "bb0b7591766c49af11050810136eef79a19052e1adf20088f86e4aca5c248893"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    45
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "sampling-band-census-2026-11-05/facts.py",
+   "sha256": "d5d6f364b9220971c22dcb7f32e1cf4ba2b21fe794432a4055b918b2abff04f7"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "sdk-finding-replication-2026-10-01/check.py",
+   "sha256": "58752c653fabe8eed1dbbd8918ef5cfaa9e2001140fd2cd2eb3083d22ce8985a"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    97
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "send-snapshot-comprehension-replica-2026-09-25/my_ss_instrument.py",
+   "sha256": "a7ec989321e271e6c6ccd8ccc6d3b92822adc89bbbb9e96a5730a75492657b2f"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    185
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "should-comprehension-2026-08-30/author_should_comp.py",
+   "sha256": "ca8e860a74c7a20741c006254e4cd8f7553460651ecb38807c45cc5ee0f55998"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    102
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "should-comprehension-2026-08-30/qualify.py",
+   "sha256": "b04bde45a7849b3f8e33dca4b1283ce89b614a8489668e9faf481610fa63cdfd"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    116
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "should-token-replication-2026-08-30/author_should.py",
+   "sha256": "d0d3c978fa76cf9f80cfb08fc977b680ab7d3d4ca54f9fa83212aff49e26a18d"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "should-token-replication-2026-08-30/compute.py",
+   "sha256": "e7c98decb156d166d91ac5d256521a251c920f412be4a2cddbc2d00467f20788"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    18
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "skip-go-back-2026-10-05/analyze.py",
+   "sha256": "6b44e6f9ac3f84ef7221d8e654162d2f0e471015a670011f422dea03b67c8bff"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    34,
+    35
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "skip-go-back-2026-10-05/go_back.py",
+   "sha256": "a52b447e20c607cef9492818157217b62847e81471ed8df60ef808837d5652fb"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    27
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "skip-go-back-2026-10-05/mentions.py",
+   "sha256": "52d348d876f36fa8298c7ac5d3810e9f0c8eca4456b005c35bfdc11d0765b3d2"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    18
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "skip-go-back-2026-10-05/redact.py",
+   "sha256": "ec124b3e17a7005ea845655d0dcf32f04d212e3e253e306923778704aa639d30"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    14
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "skip-go-back-2026-10-05/scoring/score.py",
+   "sha256": "4481e7ec0f4c6930f0774dc851efe2230f72f3661b0371ed3e1a609205fc772f"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "some-or-all-original-2026-08-23/banks.py",
+   "sha256": "12b187fe94b8ad2ff5ccb5939a9688aeffdf1b4bbc47496dfca577547e4a1b50"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    191
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "some-or-all-original-2026-08-23/build.py",
+   "sha256": "307557c9310163dc312ae834f818d38dd02797e33f529ced8f9940f2bb7cd700"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    58,
+    61
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "some-or-all-original-2026-08-23/calib_diag.py",
+   "sha256": "d09984917f8549e3b72fdd04f18235734387dd562987725ad9419735d5308fe6"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    81
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "someorall-comprehension-2026-08-25/gen_items.py",
+   "sha256": "e88e65f4abecc9153fcb7a784bcb2bfb2bf997aa2d1978df9405d56cfda467ec"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    85,
+    86
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "statement-isolation-sweep-2026-11-21/analyse.py",
+   "sha256": "f25f947306c8246da5e6453f418f1a4cdbcdf4c937c569b1bbe332824f884cb0"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    35
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": true,
+   "file": "statement-isolation-sweep-2026-11-21/blind_read.py",
+   "sha256": "b647f31cc4a38a9a76a42cc8543d3f34123af674b906fe9897e79af728951746"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    85,
+    87,
+    89,
+    90,
+    114
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "statement-isolation-sweep-2026-11-21/build_blind.py",
+   "sha256": "50bb2512843452bbcbe8ba33bafa146c0bbe9640094d99844ed60a7f37fcf693"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    18
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "statement-isolation-sweep-2026-11-21/build_posthoc_control.py",
+   "sha256": "d5fa91c35ff7fa5ba03242cc6664573da50d5be9015d582a38be47b993702f12"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    37
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "statement-isolation-sweep-2026-11-21/contrast.py",
+   "sha256": "ff206d2e69d89271a610d3629345d2be0b2e5516d97560bf91329596f455e64a"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    24
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "statement-isolation-sweep-2026-11-21/describe_flagged.py",
+   "sha256": "7ce2da6bbdd3b3c1b1cf9e2a284f1035cf0ed5a0fee86018170ee8ff87f23494"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    30
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "statement-isolation-sweep-2026-11-21/second_look_repeat_restore.py",
+   "sha256": "00797fc04273785712ad4f65b154953e0db4e86532d07c662507ac2c3e36d151"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    38,
+    57
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": false,
+   "file": "statement-isolation-sweep-2026-11-21/selfcheck_analysis.py",
+   "sha256": "e5166121d3223130b237ad70e7b656ace991171c6835421b687c41deb447985b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    193
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "statement-isolation-sweep-2026-11-21/write_readme.py",
+   "sha256": "a5d39eb77b3ea5d15f0a0c795796aa1b6f99e78bd68155a415d1e870de21915a"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "test-run-passed-comp-2026-08-31/generate_items.py",
+   "sha256": "69b26170790900d94f87a0b9bc2c5fb017287a67728dc03d07e33280f370adb0"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "they-one-many-comp-2026-08-31/generate_items.py",
+   "sha256": "a74a220f48189d8c9179b9f09412b195607e3273ff8bb3032da4fe4ff7c2918d"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    184
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "they-one-they-many-comprehension-2026-08-29/author_they.py",
+   "sha256": "c74b740a464a40f39b029b12a7f2c50807992050b70b9cf4f9c3b363fe82dca3"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "they-one-they-many-comprehension-2026-08-29/default_probe.py",
+   "sha256": "5ba674a28e1930c0934dc832b6af0b8fd928b9b59f07f75b07b3f50fff652128"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "they-one-they-many-comprehension-2026-08-29/qualify.py",
+   "sha256": "7672f0b8bca6d9307e2cb0b96f2ddecc679dbd0de03ef3235747ef997b262681"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    33
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "they-one-they-many-comprehension-2026-08-29/run_they_panel.py",
+   "sha256": "fae24d30ff622a54b735a5764cb18d294347f667c08fc3ed5337a4b8ff0a0d46"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "thisonce-appl-2026-08-31/generate_items.py",
+   "sha256": "b79fd1c48c75465e20bbdbb9d061292f3f04a12394c5422e7347abd0096a8527"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    100,
+    101
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "thisonce-comprehension-2026-08-25/gen_items.py",
+   "sha256": "9fc97c8bb56de1882049c1d137bd9f2bee1a6553a55c76147d367d1f759722d4"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": true,
+   "file": "token-delta-census-2026-08-29/census.py",
+   "sha256": "5ca48f87c5b67015781e66d01b6b0dde9100993a7822c8326f8c7f8e9b4c0916"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "token-delta-census-2026-08-29/confound.py",
+   "sha256": "14a554a583c7c26f9b7fa2c160f6eeccc1982ffe88f40d031cd08c547a0cdc6d"
+  },
+  {
+   "class": "by hand",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "token-delta-census-2026-08-29/decompose.py",
+   "sha256": "ad7ebe0cc81d16c16a755cb27e5be3fe652019316a1bbcbd7d6332358bb65f35"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "token-delta-replications-2026-08-28/author_items.py",
+   "sha256": "63e256b40aa33dbc56169d640bb5aae2ebfb6bcb05d0c1f3317d30eaea22f535"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    40
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "token-delta-replications-2026-08-28/author_items2.py",
+   "sha256": "135ecc71687ce41ca18fbe78fc723b8a51bfee6dcece45d8d407aa00cf938c01"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    40
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "token-delta-replications-2026-08-28b/author_ack.py",
+   "sha256": "477784ee487df8a6da05c82184fe8a561683eb62d0ed4052fdc54c7c099caaab"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    23
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "token-delta-replications-2026-08-28b/author_theyone_nextup.py",
+   "sha256": "4e1671db661c9603f3a68a63f5ef72e130adc4304acf4d6a7732f5c805d597b0"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    36
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "token-delta-replications-2026-08-29/author_batch3.py",
+   "sha256": "39ee9532f41583d2d8ce37c62e58455ce2ce4c1ba6c3c68f696d842b1d2f505a"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    32,
+    58
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "token-delta-tracks-english-2026-09-08/armlength.py",
+   "sha256": "9000d0a385d1f98e485d141b52c768a69b7fb7e8add875dfac91fa9dd61eab0b"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    26
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "token-delta-tracks-english-2026-09-08/crossing.py",
+   "sha256": "ebc495d04a4cbd89e9508ab49f39f1a2afae29c2e92fc3e94c7e0376e85e2967"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    39
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "token-delta-tracks-english-2026-09-08/sign_invariance.py",
+   "sha256": "038653f637c54f5c33a1e06842bd2ab889fd46d441b235ca01873769cc8faa3d"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    47
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "token-rederive-sample-2026-10-02/rederive.py",
+   "sha256": "05bdfb9203d443a8db2e9341c910bfd15fcdf6f4ab2d4ddff55e99fc9cfb0679"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    24
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "tokenizer-roster-crosswalk-2026-10-20/crosswalk_build.py",
+   "sha256": "0e3f01084b83d8551621a975ef4aede0a7da50e6779170cd77b0dffe09a340a0"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    8
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "tokenizer-roster-crosswalk-2026-10-20/crosswalk_collect.py",
+   "sha256": "7288ddf4b0430f719186fd8df6d9eb0dda0fb60ddf4351e74e0adb61184a2ecd"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    264
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [
+    "subprocess",
+    "urllib"
+   ],
+   "main_guard": true,
+   "file": "tokenizer-roster-uvf-replication-2026-08-31/run_once.py",
+   "sha256": "7882eaa4981954fe3a7bc0cee36c5dbc3aa87a8ee49c0ec643ba1c7dda9776ab"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": false,
+   "file": "tolerance-vs-interval-2026-08-30/scan.py",
+   "sha256": "79ff9642501c00e831c373e32820108b56e8d882cff6e5dda92fac92ae8260d4"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    72,
+    328
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [
+    "colony_sdk",
+    "urllib"
+   ],
+   "main_guard": true,
+   "file": "tools/colony-rounds/rounds.py",
+   "sha256": "f327bf87155cfe9746e0624756a81eaf03fc0720c01aae4f2c8fd6154a81a1ec"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    28
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "touchstone-beacon-margin-2026-10-02/measure.py",
+   "sha256": "de9c27cc7daa9e74bdb172046d4a950bb7474dae5f50a6d6e5cc3b4aa70e5e95"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    30
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "touchstone-liveness-reader-order-2026-10-18/reversed_order_mutant.py",
+   "sha256": "55d2ff49cca71d27602f1cb1e34e2fac51a630609f51c364c39b413f63b282fc"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    19
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "touchstone-liveness-reader-order-2026-10-18/reversed_order_test.py",
+   "sha256": "dfdce6859fc058897dae53dd70d95fd240fb42fd08d01c4723f86f58eea8decc"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    116
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "twice-weekly-replication-2026-08-21/gen-tw-items.py",
+   "sha256": "dbab85676c6a42db0b247d3915f5b3e3c3fb4c70fa26e7c5243eac2e722f6d49"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    18,
+    108
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "twice-weekly-replication-2026-08-21/tw-run.py",
+   "sha256": "2367f72e4b4641e5950be16cef0c5b765b24857101aecb0a3870331395072f06"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    16
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "two-of-me-2026-10-06/scoring/score.py",
+   "sha256": "5fd88ef88863380dbd46413df3a0b6baaf53322cb5d11e9ab4e7c41f891b62d0"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    75
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "subprocess"
+   ],
+   "main_guard": true,
+   "file": "unscanned-uvf-original-2026-09-28/export_population.py",
+   "sha256": "700e5b8c583491e50b1ac8b65311261fbcce353ffd85caf6df40574863b70fe4"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    28
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "unscanned-uvf-original-2026-09-28/make_synthetic.py",
+   "sha256": "4363839f7f90fef72be69a4616a4913f2fa760dae9097e9dc19a1dc7ecae2377"
+  },
+  {
+   "class": "by hand",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    200,
+    203,
+    330,
+    346
+   ],
+   "removes_or_moves_when_run": true,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": true,
+   "reaches_out": [
+    "subprocess",
+    "urllib"
+   ],
+   "main_guard": true,
+   "file": "unscanned-uvf-original-2026-09-28/run_once.py",
+   "sha256": "991b4bc2ef3a0f64b72331b595b577e532a3c683dd63831aa8c4605a5664da01"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    97
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "ainglish"
+   ],
+   "main_guard": true,
+   "file": "uvf-replication-consensus-2026-08-29/uvf_replication.py",
+   "sha256": "3736429dbe42efd1961a5ec4a77f23742f6292937a66bbf0d46a8537bc8cd936"
+  },
+  {
+   "class": "parser",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    84
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "colony_sdk"
+   ],
+   "main_guard": false,
+   "file": "waiting-window-2026-10-04/bracket_read.py",
+   "sha256": "de6f8ee3bb991fbade21e09cef4db9a7bc3c61287177520558a0dabea9b01f8d"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    44
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "while-throughout-anchor-audit-2026-10-28/rederive_restart.py",
+   "sha256": "4f1c66363a08acd4ee35c6c2c207309d7ffc6ea178394d29f88519f7437098a3"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    137
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "wholepart-replication-2026-08-22/gen-wp-items.py",
+   "sha256": "227744c0caa9f5b0ff42f528079584a1dcb4869872de2458fbd1d3a6ccd8df46"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    16,
+    106
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": true,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [
+    "urllib"
+   ],
+   "main_guard": false,
+   "file": "wholepart-replication-2026-08-22/wp-run.py",
+   "sha256": "66e00b646b1608fbe1bf2987e2e219102e1a26625decf9bb9e39ae943a91bc82"
+  },
+  {
+   "class": "never",
+   "writes": true,
+   "writes_when_run": true,
+   "write_lines_when_run": [
+    71
+   ],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "will-as-promise-replication-2026-08-30/build_items.py",
+   "sha256": "8d44eb0491627be2533863fbb5f1bc13b0e9d8ff3dd6e33e9381d9832defe150"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": false,
+   "file": "will-as-promise-replication-2026-08-30/gloss_sweep.py",
+   "sha256": "c9957bb9bac3224c5b1c1afb50840e43838ba26ba54d8624f9840741e9a47b70"
+  },
+  {
+   "class": "never",
+   "writes": false,
+   "writes_when_run": false,
+   "write_lines_when_run": [],
+   "removes_or_moves_when_run": false,
+   "appends_when_run": false,
+   "service_write_calls_when_run": [],
+   "mode_not_literal": false,
+   "changes_files": false,
+   "reaches_out": [],
+   "main_guard": true,
+   "file": "will-as-promise-replication-2026-08-30/measure.py",
+   "sha256": "d2e0fd21ee5377c4e7009436da39d49a6793677d37d7e37b3ef4f3ee11a0c83b"
+  }
+ ]
+}
