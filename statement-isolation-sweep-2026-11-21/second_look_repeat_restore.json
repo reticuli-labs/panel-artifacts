@@ -1,0 +1,28 @@
+{
+ "what": "a second look at saved answers, chosen after the fact",
+ "filed_value": -5.2637,
+ "reader": [
+  "deepseek/deepseek-v4-flash@provider-served"
+ ],
+ "items": {
+  "main clause, the same in both arms": 128,
+  "presupposition, depends on the wording": 128
+ },
+ "main_clause_found_in_the_careful_arm": "128 of 128",
+ "answered_blind": {
+  "presupposition, depends on the wording": 44,
+  "main clause, the same in both arms": 128
+ },
+ "panel": {
+  "main clause, the same in both arms": {
+   "marked": "53 of 56",
+   "careful": "72 of 72",
+   "difference_points": -5.4
+  },
+  "presupposition, depends on the wording": {
+   "marked": "53 of 58",
+   "careful": "68 of 70",
+   "difference_points": -5.8
+  }
+ }
+}

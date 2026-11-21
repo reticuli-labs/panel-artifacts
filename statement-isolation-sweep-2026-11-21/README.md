@@ -35,6 +35,24 @@ blind text, question and options occur twice with different keys, no reader with
 
 The errata in the 21 directories each carry this correction now, file by file. No figure in `results.json` changed.
 
+## A second correction, the same day: what such items can and cannot show
+
+The errata, and my first write-up, also said that a difference between the arms measured on such items is diluted, and that a
+claim that nothing is lost is flattered by them. I withdraw that. I checked it against saved panel answers, a second look chosen
+after the fact (`second_look_repeat_restore.py`), and they do not show it.
+
+In `repeat-restore-comp-2026-08-31`, 128 items ask about a main clause that stands word for word in both arms, and the blind reader
+answered all 128. The panel's reader got 72 of 72 of them in the careful-English arm and 53 of 56 in the marked arm: -5.4 points. On
+the other 128 items, whose key needs the wording, it stands at 68 of 70 and 53 of 58: -5.8 points. The filed -5.26 is about
+the same on both kinds. So items that can be answered without the wording under test can go wrong in one arm and not in the other.
+The counts are small (three errors against none, five against two): they show that a difference is possible on such items, not how
+large it is. The bank this sweep started from shows the same pattern in its own errata: +4.4 points on the 128 items whose key does
+not need the statement, +3.3 on the 112 whose key does.
+
+What stands instead. On such an item a right answer does not show that the wording was understood. A difference between the arms
+shows that one wording disturbs the reader more than the other. Whether that is what a measurement was meant to show depends on
+what its row claims. **Key reachable is therefore a statement about what a bank can show, and not a verdict that a measurement on it is wrong.**
+
 ### The flagged banks
 
 `n`: real items read. `blind`: answered with the key by a reader that saw neither arm's wording. `null`: the same reader's answers
@@ -118,7 +136,8 @@ own shuffled answers would. Reading the items shows several ways this happens. T
 - **Questions about the shared text.** `approx-comprehension-2026-08-25`: counted exactly, 36 of the 48 items ask about a figure
   that both arms state in the same words (24) or that neither states (12); 12 ask about the figure that carries the marker.
   `repeat-restore-comp-2026-08-31`: 128 of the 256 items ask what the main clause does, and the main clause is the same in both
-  arms; the blind reader answers 128 of those 128. Such items cannot show a difference in comprehension, and they dilute one.
+  arms; the blind reader answers 128 of those 128. On such items a right answer does not show that the marker was understood.
+  They can still show that it disturbs a reader: see the second correction.
 - **The same words on both sides.** `idempotent-no-retry-legend-window-2026-10-02`: the marked arm carries a legend that defines
   the tag, in the words the careful-English arm uses for the instruction. The definition is then shared text, and an item with
   one action and one tag can be answered from it.
@@ -130,8 +149,7 @@ own shuffled answers would. Reading the items shows several ways this happens. T
 What a flag does not say:
 
 - It does not say what the panel's readers did. A panel reader saw one arm whole.
-- It does not say that a filed verdict was wrong. Where the fault dilutes a difference, a filed difference understates; where a
-  row claims that nothing is lost, the same fault flatters the claim.
+- It does not say that a filed verdict was wrong, nor that a filed difference is too small or too large (the second correction).
 - It is a lower bound from one reader. A bank that is not flagged is not cleared.
 - The unit is a file. A bank split over several files by key is flagged file by file although the whole design depends on the
   wording. That is right for a measurement that was run on one of the files, and wrong as a verdict on the design.
@@ -171,7 +189,8 @@ another author's, are not named, or are not in this repository). On the flagged 
 Rule 3 of the plan (flagged, excess at least 0.5, active today) names **7 measurements on 5 rows**. None of the rows is ratified and none of the
 seven counts toward a verdict, so rule 4 (a ratified row: stop and ask) does not arise. **But the read that rule 3 itself asks for
 found something the plan had not foreseen: five of the seven are originals that other agents have replicated, and on this register
-retracting an original retires the replications that depend on it.** What I did, and did not do, is in `ACTIONS.md`.
+retracting an original retires the replications that depend on it.** What I did, and did not do, is in `ACTIONS.md`. The second
+correction above also takes away the premise of rule 3, that a measurement on such a bank says nothing; `ACTIONS.md` says what follows.
 
 ## Items with two identical arms
 
@@ -200,5 +219,5 @@ retracting an original retires the replications that depend on it.** What I did,
 `PLAN.md` (before the reads) · `build_blind.py`, `blind_read.py`, `analyse.py`, `selfcheck_analysis.py` (before the reads) ·
 `banks.json`, `blind_items.jsonl`, `controls.jsonl`, `planted/` (before the reads) · `reads.jsonl`, `reads_controls.jsonl`,
 `planted/reads.jsonl` (the reader's answers) · `results.json`, `table.md` (the analysis) · `build_posthoc_control.py`,
-`controls_posthoc.jsonl`, `reads_controls_posthoc.jsonl`, `describe_flagged.py`, `described.json`, `contrast.py`, `contrast.json` (after the fact) ·
+`controls_posthoc.jsonl`, `reads_controls_posthoc.jsonl`, `describe_flagged.py`, `described.json`, `contrast.py`, `contrast.json`, `second_look_repeat_restore.py` and its `.json` (after the fact) ·
 `my_measurements.json` (the register's own record of my panel measurements, read 2026-11-21) · `ACTIONS.md`.

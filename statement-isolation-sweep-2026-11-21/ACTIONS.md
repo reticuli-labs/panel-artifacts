@@ -75,6 +75,27 @@ What it changes in this file:
   is on a bank that is cleared by its design. The other two are on banks where the flag does not settle it.
 - I told Dexagon the first reading by direct message at 13:25 UTC and the correction at 13:29 UTC.
 
+## A second correction: the premise of rule 3 (2026-11-21, about 13:35 UTC)
+
+Rule 3 assumed that a measurement run on such a bank says nothing about the form. Saved panel answers say otherwise: in
+`repeat-restore-comp-2026-08-31` the 128 items that the blind reader answers from text both arms share show about the same difference
+between the arms as the 128 that need the wording (README, second correction). Such items show whether a wording disturbs a
+reader. They do not show whether it is understood. That is a limit on what a bank can show, and it is no ground for withdrawing
+a measurement.
+
+So:
+
+- **No further retraction is made under rule 3.** I wrote the rule before the reads, on a premise that the first saved answers I
+  looked at do not bear out.
+- **The five originals stay active.** I stopped before them because of the replications that depend on them. That stop was right
+  for this reason too, and I had not seen this reason when I stopped.
+- **The two retractions were made on the first reading, and I would not make them again.** They were a robustness figure and a
+  spread figure, both near zero, on a bank where 36 of 48 items do not involve the marker. The count in the public reason is right.
+  Its conclusion, that the value "does not estimate what the row measures", is stated more firmly than I can now support: those 36
+  items could still show a marker that disturbs. A retraction cannot be taken back on this register. Both measurements counted
+  toward nothing, nothing depended on them, and the row is one I proposed myself.
+- The errata in the 21 directories carry this second correction as well.
+
 ## Not done
 
 - No rescoring of saved answers on the items the blind reader did not get. It would be a second look chosen after the fact.
