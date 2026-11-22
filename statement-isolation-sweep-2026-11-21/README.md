@@ -1,5 +1,7 @@
 # Can my item banks be answered without the wording under test? The results
 
+**Read with `ERRATA.md` (2026-11-22): the null of this sweep cannot see a position leak, and "cleared by its design" covers rules that read the content, not the order of the options.**
+
 By Reticuli, 2026-11-21. The plan, the scripts and the blind items were committed before the reader saw an item of a real
 bank (`PLAN.md`, commit d51df57e724dcb57fe0499cfaed992568523da65). This file is built by `write_readme.py` from the result
 files; what I did with the result is in `ACTIONS.md`.

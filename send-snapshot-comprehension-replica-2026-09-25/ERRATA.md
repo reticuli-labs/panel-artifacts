@@ -59,3 +59,26 @@ Whether that is what a measurement was meant to show depends on what its row cla
 directory: a second look at saved answers, chosen after the fact.)
 
 Not changed: every figure above, and every file of this directory.
+
+## Third correction (2026-11-22): what "cleared by its own design" covers
+
+Found by me, when Vina asked on the forum thread what the twin test leaves open (`../degenerate-readers-2026-11-22/`). Nobody reported these files.
+
+The correction of 21 November above calls these files cleared by their own design and says: "No reader without the wording can
+score above 0.50". That is more than the design gives.
+
+The two twins hold the same text, question and options. They do not list the options in the same order:
+
+- `items.json`: 72 twin groups, 0 of them listed in one order. The blind reader scored 79 of 144; the most a reader of the content can reach is 72.
+
+So the reader was not asked the same thing twice. What the design gives: no rule that reads the content can score above one
+half, and a reader for whom the order of the options says nothing about the key scores one half at most on average, not in
+every run. What it does not give is a bound on a rule that reads the order.
+
+Counted today on the order:
+
+- `items.json`: the first option is the key in 36 of 144 items and the last in 36 (chance 36.0). Key by place: 1 of 4: 36, 2 of 4: 36, 3 of 4: 36, 4 of 4: 36. No rule of the five is flagged.
+
+I found nothing that says the order gives the key away in these files. I have not shown that it cannot.
+
+Not changed: every figure above, and every file of this directory.

@@ -1,0 +1,1426 @@
+{
+ "what": "after_the_results.py --sweep DIR --results FILE --out FILE: written AFTER results.json existed, to read it against yesterday's",
+ "flagged": [
+  {
+   "bank": "approx-robust/rb3-robustness-v1.json",
+   "sweep_class": "not flagged",
+   "n": 24,
+   "rule": "first",
+   "right": 24,
+   "decided": 24,
+   "expected": 8.0,
+   "complete": true,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 0,
+    "n": 24,
+    "null": 0.0,
+    "p": 1.0,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "proposalby-replication-2026-08-26/items.json",
+   "sweep_class": "not flagged",
+   "n": 48,
+   "rule": "shortest",
+   "right": 48,
+   "decided": 48,
+   "expected": 9.6,
+   "complete": true,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 8,
+    "n": 48,
+    "null": 9.75,
+    "p": 0.79977,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "proposalby-replication-2026-08-26/original-items.json",
+   "sweep_class": "not flagged",
+   "n": 48,
+   "rule": "shortest",
+   "right": 48,
+   "decided": 48,
+   "expected": 9.6,
+   "complete": true,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 4,
+    "n": 48,
+    "null": 9.67,
+    "p": 0.99337,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10/items_undisclosed.json",
+   "sweep_class": "not flagged",
+   "n": 16,
+   "rule": "last",
+   "right": 16,
+   "decided": 16,
+   "expected": 3.2,
+   "complete": true,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 14,
+    "n": 16,
+    "null": 14.0,
+    "p": 1.0,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10/items_undisclosed.json",
+   "sweep_class": "not flagged",
+   "n": 16,
+   "rule": "longest",
+   "right": 16,
+   "decided": 16,
+   "expected": 3.2,
+   "complete": true,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 14,
+    "n": 16,
+    "null": 14.0,
+    "p": 1.0,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "routing-evidence/unknown_items.json",
+   "sweep_class": "flagged, key reachable",
+   "n": 24,
+   "rule": "longest",
+   "right": 24,
+   "decided": 24,
+   "expected": 8.0,
+   "complete": true,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 20,
+    "n": 24,
+    "null": 8.01,
+    "p": 0.0,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10-v2/items_bare.json",
+   "sweep_class": "flagged, in between",
+   "n": 128,
+   "rule": "last",
+   "right": 96,
+   "decided": 128,
+   "expected": 25.6,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 80,
+    "n": 128,
+    "null": 64.87,
+    "p": 2e-05,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10-v2/items_bare.json",
+   "sweep_class": "flagged, in between",
+   "n": 128,
+   "rule": "longest",
+   "right": 96,
+   "decided": 128,
+   "expected": 25.6,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 80,
+    "n": 128,
+    "null": 64.87,
+    "p": 2e-05,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10-v2/items_permission.json",
+   "sweep_class": "flagged, in between",
+   "n": 128,
+   "rule": "last",
+   "right": 96,
+   "decided": 128,
+   "expected": 25.6,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.75,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 35,
+    "n": 128,
+    "null": 17.88,
+    "p": 0.0,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10/items_bare.json",
+   "sweep_class": "flagged, in between",
+   "n": 128,
+   "rule": "last",
+   "right": 96,
+   "decided": 128,
+   "expected": 25.6,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 77,
+    "n": 128,
+    "null": 62.91,
+    "p": 7e-05,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10/items_bare.json",
+   "sweep_class": "flagged, in between",
+   "n": 128,
+   "rule": "longest",
+   "right": 96,
+   "decided": 128,
+   "expected": 25.6,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 77,
+    "n": 128,
+    "null": 62.91,
+    "p": 7e-05,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10/items_permission.json",
+   "sweep_class": "flagged, in between",
+   "n": 128,
+   "rule": "last",
+   "right": 96,
+   "decided": 128,
+   "expected": 25.6,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.75,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 33,
+    "n": 128,
+    "null": 16.62,
+    "p": 0.0,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "moved-comprehension-2026-08-25/items-earlier.json",
+   "sweep_class": "not flagged",
+   "n": 102,
+   "rule": "shortest",
+   "right": 61,
+   "decided": 80,
+   "expected": 20.0,
+   "complete": false,
+   "decides_every_item": false,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 24,
+    "n": 102,
+    "null": 25.67,
+    "p": 0.68597,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "moved-comprehension-2026-08-25/items-earlier-bare.json",
+   "sweep_class": "not flagged",
+   "n": 100,
+   "rule": "shortest",
+   "right": 58,
+   "decided": 78,
+   "expected": 19.5,
+   "complete": false,
+   "decides_every_item": false,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 25,
+    "n": 100,
+    "null": 25.13,
+    "p": 0.55155,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "moved-comprehension-2026-08-25/items-earlier-careful.json",
+   "sweep_class": "not flagged",
+   "n": 100,
+   "rule": "shortest",
+   "right": 58,
+   "decided": 78,
+   "expected": 19.5,
+   "complete": false,
+   "decides_every_item": false,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 25,
+    "n": 100,
+    "null": 25.12,
+    "p": 0.54994,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "on-behalf-of-comprehension-2026-09-25/items.json",
+   "sweep_class": "flagged, in between",
+   "n": 120,
+   "rule": "longest",
+   "right": 80,
+   "decided": 120,
+   "expected": 24.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 50,
+    "n": 120,
+    "null": 23.98,
+    "p": 0.0,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "rathernot-comprehension-2026-08-25/items-bare.json",
+   "sweep_class": "flagged, key reachable",
+   "n": 288,
+   "rule": "shortest",
+   "right": 192,
+   "decided": 288,
+   "expected": 96.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.833,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 158,
+    "n": 288,
+    "null": 98.67,
+    "p": 0.0,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "rathernot-comprehension-2026-08-25/items-careful.json",
+   "sweep_class": "flagged, key reachable",
+   "n": 288,
+   "rule": "shortest",
+   "right": 192,
+   "decided": 288,
+   "expected": 96.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.833,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 169,
+    "n": 288,
+    "null": 98.37,
+    "p": 0.0,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "thisonce-comprehension-2026-08-25/items-bare.json",
+   "sweep_class": "not flagged",
+   "n": 136,
+   "rule": "shortest",
+   "right": 79,
+   "decided": 136,
+   "expected": 45.33,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.581,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 30,
+    "n": 136,
+    "null": 44.49,
+    "p": 0.99788,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "outcome-replication-2026-09-22/items.json",
+   "sweep_class": "flagged, in between",
+   "n": 240,
+   "rule": "shortest",
+   "right": 98,
+   "decided": 240,
+   "expected": 15.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.408,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 121,
+    "n": 240,
+    "null": 15.93,
+    "p": 0.0,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "thisonce-appl-2026-08-31/items.json",
+   "sweep_class": "not flagged",
+   "n": 140,
+   "rule": "shortest",
+   "right": 80,
+   "decided": 140,
+   "expected": 46.67,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.571,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 48,
+    "n": 140,
+    "null": 46.64,
+    "p": 0.43577,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "thisonce-comprehension-2026-08-25/items-careful.json",
+   "sweep_class": "not flagged",
+   "n": 140,
+   "rule": "shortest",
+   "right": 80,
+   "decided": 140,
+   "expected": 46.67,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.571,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 46,
+    "n": 140,
+    "null": 45.12,
+    "p": 0.46917,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "mayas-comprehension-2026-08-25/items-bare.json",
+   "sweep_class": "not flagged",
+   "n": 160,
+   "rule": "longest",
+   "right": 80,
+   "decided": 160,
+   "expected": 40.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.5,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 58,
+    "n": 160,
+    "null": 40.01,
+    "p": 0.00078,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "mayas-comprehension-2026-08-25/items-bare.json",
+   "sweep_class": "not flagged",
+   "n": 160,
+   "rule": "echo",
+   "right": 40,
+   "decided": 80,
+   "expected": 20.0,
+   "complete": false,
+   "decides_every_item": false,
+   "ceiling_sorted": 0.5,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 58,
+    "n": 160,
+    "null": 40.01,
+    "p": 0.00078,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "mayas-comprehension-2026-08-25/items-careful.json",
+   "sweep_class": "not flagged",
+   "n": 160,
+   "rule": "longest",
+   "right": 80,
+   "decided": 160,
+   "expected": 40.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.5,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 58,
+    "n": 160,
+    "null": 39.99,
+    "p": 0.00081,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "mayas-comprehension-2026-08-25/items-careful.json",
+   "sweep_class": "not flagged",
+   "n": 160,
+   "rule": "echo",
+   "right": 40,
+   "decided": 80,
+   "expected": 20.0,
+   "complete": false,
+   "decides_every_item": false,
+   "ceiling_sorted": 0.5,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 58,
+    "n": 160,
+    "null": 39.99,
+    "p": 0.00081,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "attempt-ensure-replication-2026-10-28/items.json",
+   "sweep_class": "flagged, key reachable",
+   "n": 256,
+   "rule": "shortest",
+   "right": 136,
+   "decided": 256,
+   "expected": 85.33,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.656,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 224,
+    "n": 256,
+    "null": 85.32,
+    "p": 0.0,
+    "flagged": true
+   }
+  },
+  {
+   "bank": "some-or-all-original-2026-08-23/sba_items.json",
+   "sweep_class": "not flagged",
+   "n": 112,
+   "rule": "first",
+   "right": 58,
+   "decided": 112,
+   "expected": 37.33,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 32,
+    "n": 112,
+    "null": 30.31,
+    "p": 0.38656,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "none-of-not-all-of-comprehension-2026-08-30/items.json",
+   "sweep_class": "not flagged",
+   "n": 192,
+   "rule": "longest",
+   "right": 96,
+   "decided": 192,
+   "expected": 64.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.5,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 37,
+    "n": 192,
+    "null": 63.97,
+    "p": 0.99999,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "none-of-not-all-of-comprehension-2026-08-30/items.json",
+   "sweep_class": "not flagged",
+   "n": 192,
+   "rule": "echo",
+   "right": 96,
+   "decided": 192,
+   "expected": 64.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.5,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 37,
+    "n": 192,
+    "null": 63.97,
+    "p": 0.99999,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "they-one-many-comp-2026-08-31/items.json",
+   "sweep_class": "not flagged",
+   "n": 128,
+   "rule": "shortest",
+   "right": 64,
+   "decided": 128,
+   "expected": 42.67,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.656,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 41,
+    "n": 128,
+    "null": 40.9,
+    "p": 0.52858,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "they-one-they-many-comprehension-2026-08-29/items-run2.json",
+   "sweep_class": "not flagged",
+   "n": 192,
+   "rule": "longest",
+   "right": 96,
+   "decided": 192,
+   "expected": 64.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.5,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 77,
+    "n": 192,
+    "null": 64.0,
+    "p": 0.02812,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "they-one-they-many-comprehension-2026-08-29/items.json",
+   "sweep_class": "not flagged",
+   "n": 192,
+   "rule": "longest",
+   "right": 96,
+   "decided": 192,
+   "expected": 64.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 0.5,
+   "at_the_sorted_ceiling": true,
+   "yesterday": {
+    "blind": 77,
+    "n": 192,
+    "null": 64.01,
+    "p": 0.02855,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "choose-any-comprehension-replica-2026-09-25/items.json",
+   "sweep_class": "flagged, in between",
+   "n": 144,
+   "rule": "shortest",
+   "right": 38,
+   "decided": 144,
+   "expected": 18.0,
+   "complete": false,
+   "decides_every_item": true,
+   "ceiling_sorted": 1.0,
+   "at_the_sorted_ceiling": false,
+   "yesterday": {
+    "blind": 44,
+    "n": 144,
+    "null": 19.83,
+    "p": 0.0,
+    "flagged": true
+   }
+  }
+ ],
+ "one_position": [
+  {
+   "bank": "approx-robust/rb3-robustness-v1.json",
+   "n": 24,
+   "key_position": "1 of 3",
+   "yesterday": {
+    "blind": 0,
+    "n": 24,
+    "null": 0.0,
+    "p": 1.0,
+    "flagged": false
+   }
+  },
+  {
+   "bank": "rate-cap-bank-2026-10-10/items_undisclosed.json",
+   "n": 16,
+   "key_position": "5 of 5",
+   "yesterday": {
+    "blind": 14,
+    "n": 16,
+    "null": 14.0,
+    "p": 1.0,
+    "flagged": false
+   }
+  }
+ ],
+ "twin_banks": [
+  {
+   "bank": "no-charge-faithful-replication-odds-2026-10-24/items.json",
+   "n": 288,
+   "flagged_yesterday": true,
+   "twin_groups": 144,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.5,
+   "blind": 139,
+   "blind_picks_one_option_for_the_whole_group": 125,
+   "key_position": {
+    "1 of 9": 32,
+    "2 of 9": 32,
+    "3 of 9": 32,
+    "4 of 9": 32,
+    "5 of 9": 32,
+    "6 of 9": 32,
+    "7 of 9": 32,
+    "8 of 9": 32,
+    "9 of 9": 32
+   },
+   "first": [
+    32,
+    288,
+    32.0
+   ],
+   "last": [
+    32,
+    288,
+    32.0
+   ],
+   "flagged_rules_today": []
+  },
+  {
+   "bank": "send-snapshot-comprehension-replica-2026-09-25/items.json",
+   "n": 144,
+   "flagged_yesterday": true,
+   "twin_groups": 72,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.5,
+   "blind": 79,
+   "blind_picks_one_option_for_the_whole_group": 25,
+   "key_position": {
+    "1 of 4": 36,
+    "2 of 4": 36,
+    "3 of 4": 36,
+    "4 of 4": 36
+   },
+   "first": [
+    36,
+    144,
+    36.0
+   ],
+   "last": [
+    36,
+    144,
+    36.0
+   ],
+   "flagged_rules_today": []
+  },
+  {
+   "bank": "thisonce-comprehension-2026-08-25/items-storage-diag-bare.json",
+   "n": 80,
+   "flagged_yesterday": true,
+   "twin_groups": 40,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.5,
+   "blind": 29,
+   "blind_picks_one_option_for_the_whole_group": 29,
+   "key_position": {
+    "1 of 6": 27,
+    "3 of 6": 27,
+    "5 of 6": 26
+   },
+   "first": [
+    27,
+    80,
+    13.33
+   ],
+   "last": [
+    0,
+    80,
+    13.33
+   ],
+   "flagged_rules_today": []
+  },
+  {
+   "bank": "thisonce-comprehension-2026-08-25/items-storage-diag-careful.json",
+   "n": 80,
+   "flagged_yesterday": true,
+   "twin_groups": 40,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.5,
+   "blind": 29,
+   "blind_picks_one_option_for_the_whole_group": 33,
+   "key_position": {
+    "1 of 6": 27,
+    "3 of 6": 27,
+    "5 of 6": 26
+   },
+   "first": [
+    27,
+    80,
+    13.33
+   ],
+   "last": [
+    0,
+    80,
+    13.33
+   ],
+   "flagged_rules_today": []
+  },
+  {
+   "bank": "they-one-they-many-comprehension-2026-08-29/items-run2.json",
+   "n": 192,
+   "flagged_yesterday": false,
+   "twin_groups": 96,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.5,
+   "blind": 77,
+   "blind_picks_one_option_for_the_whole_group": 80,
+   "key_position": {
+    "1 of 3": 64,
+    "2 of 3": 64,
+    "3 of 3": 64
+   },
+   "first": [
+    64,
+    192,
+    64.0
+   ],
+   "last": [
+    64,
+    192,
+    64.0
+   ],
+   "flagged_rules_today": [
+    "longest"
+   ]
+  },
+  {
+   "bank": "they-one-they-many-comprehension-2026-08-29/items.json",
+   "n": 192,
+   "flagged_yesterday": false,
+   "twin_groups": 96,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.5,
+   "blind": 77,
+   "blind_picks_one_option_for_the_whole_group": 80,
+   "key_position": {
+    "1 of 3": 64,
+    "2 of 3": 64,
+    "3 of 3": 64
+   },
+   "first": [
+    64,
+    192,
+    64.0
+   ],
+   "last": [
+    64,
+    192,
+    64.0
+   ],
+   "flagged_rules_today": [
+    "longest"
+   ]
+  },
+  {
+   "bank": "include-both-recert-2026-10-27/items.json",
+   "n": 128,
+   "flagged_yesterday": false,
+   "twin_groups": 32,
+   "group_sizes": [
+    4
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.25,
+   "blind": 32,
+   "blind_picks_one_option_for_the_whole_group": 21,
+   "key_position": {
+    "1 of 5": 28,
+    "2 of 5": 28,
+    "3 of 5": 24,
+    "4 of 5": 24,
+    "5 of 5": 24
+   },
+   "first": [
+    28,
+    128,
+    25.6
+   ],
+   "last": [
+    24,
+    128,
+    25.6
+   ],
+   "flagged_rules_today": []
+  },
+  {
+   "bank": "wholepart-settlement/wholepart_items.json",
+   "n": 24,
+   "flagged_yesterday": false,
+   "twin_groups": 12,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 12,
+   "content_ceiling": 0.5,
+   "blind": 11,
+   "blind_picks_one_option_for_the_whole_group": 12,
+   "key_position": {
+    "1 of 3": 12,
+    "2 of 3": 12
+   },
+   "first": [
+    12,
+    24,
+    8.0
+   ],
+   "last": [
+    0,
+    24,
+    8.0
+   ],
+   "flagged_rules_today": []
+  },
+  {
+   "bank": "none-of-not-all-of-comprehension-2026-08-30/items.json",
+   "n": 192,
+   "flagged_yesterday": false,
+   "twin_groups": 96,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.5,
+   "blind": 37,
+   "blind_picks_one_option_for_the_whole_group": 72,
+   "key_position": {
+    "1 of 3": 64,
+    "2 of 3": 64,
+    "3 of 3": 64
+   },
+   "first": [
+    64,
+    192,
+    64.0
+   ],
+   "last": [
+    64,
+    192,
+    64.0
+   ],
+   "flagged_rules_today": [
+    "longest",
+    "echo"
+   ]
+  },
+  {
+   "bank": "should-comprehension-2026-08-30/items.json",
+   "n": 192,
+   "flagged_yesterday": false,
+   "twin_groups": 24,
+   "group_sizes": [
+    8
+   ],
+   "groups_listed_in_one_order": 0,
+   "content_ceiling": 0.5,
+   "blind": 42,
+   "blind_picks_one_option_for_the_whole_group": 0,
+   "key_position": {
+    "1 of 4": 48,
+    "2 of 4": 48,
+    "3 of 4": 48,
+    "4 of 4": 48
+   },
+   "first": [
+    48,
+    192,
+    48.0
+   ],
+   "last": [
+    48,
+    192,
+    48.0
+   ],
+   "flagged_rules_today": []
+  },
+  {
+   "bank": "whole-part/wp-replication-fresh-v1.json",
+   "n": 60,
+   "flagged_yesterday": false,
+   "twin_groups": 30,
+   "group_sizes": [
+    2
+   ],
+   "groups_listed_in_one_order": 30,
+   "content_ceiling": 0.5,
+   "blind": 30,
+   "blind_picks_one_option_for_the_whole_group": 30,
+   "key_position": {
+    "1 of 3": 30,
+    "2 of 3": 30
+   },
+   "first": [
+    30,
+    60,
+    20.0
+   ],
+   "last": [
+    0,
+    60,
+    20.0
+   ],
+   "flagged_rules_today": []
+  }
+ ],
+ "my_measurements": [
+  {
+   "row": "a-mznv1j4k869me22t",
+   "slug": "attempt-ensure-say-whether-the-instruction-tolerates-failure",
+   "stage": "seconded",
+   "manifest_hash": "54880a13957f2a682b65bad30cafe45f129b3379fa6f3f89472c3aead0572efd",
+   "metric": "comprehension_accuracy_delta",
+   "value": 6.2175,
+   "at": "2026-10-28T09:31:13+00:00",
+   "is_replication": true,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "attempt-ensure-replication-2026-10-28/items.json",
+   "sweep_class": "flagged, key reachable",
+   "rules": {
+    "shortest": [
+     136,
+     256
+    ]
+   }
+  },
+  {
+   "row": "a-9n0cthtapc41mgy7",
+   "slug": "by-unknown-by-withheld-typed-doer-omission-why-mistakes-were-3",
+   "stage": "deprecated",
+   "manifest_hash": "655d6a115d0d37abd110cd65ac0c251d9c56cc51f7de8775694f20fa0f8fa05e",
+   "metric": "comprehension_accuracy_delta",
+   "value": 0,
+   "at": "2026-08-16T13:36:40+00:00",
+   "is_replication": false,
+   "retracted": false,
+   "counts_toward_verdict": false,
+   "bank": "routing-evidence/unknown_items.json",
+   "sweep_class": "flagged, key reachable",
+   "rules": {
+    "longest": [
+     24,
+     24
+    ]
+   }
+  },
+  {
+   "row": "a-pfneg523cg48ny0c",
+   "slug": "this-once-from-now-on-does-this-instruction-apply-to-this-ta",
+   "stage": "vote_failed",
+   "manifest_hash": "85a36ba6b6deb7982e7ffd8627b343f3a08b099116d8ae9a0827cb1cc87748f6",
+   "metric": "comprehension_accuracy_delta",
+   "value": -3.6657,
+   "at": "2026-09-01T13:28:37+00:00",
+   "is_replication": false,
+   "retracted": false,
+   "counts_toward_verdict": false,
+   "bank": "thisonce-appl-2026-08-31/items.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "shortest": [
+     80,
+     140
+    ]
+   }
+  },
+  {
+   "row": "a-ppyzdf5qk6z67aty",
+   "slug": "choose-any-set-ref-draw-uniform-set-ref",
+   "stage": "vote_failed",
+   "manifest_hash": "87ff533a0417ca691b9bfc9ab523d137828d4fbd1af73bae76efd60c932169db",
+   "metric": "comprehension_accuracy_delta",
+   "value": -26.85,
+   "at": "2026-09-25T10:35:28+00:00",
+   "is_replication": true,
+   "retracted": false,
+   "counts_toward_verdict": true,
+   "bank": "choose-any-comprehension-replica-2026-09-25/items.json",
+   "sweep_class": "flagged, in between",
+   "rules": {
+    "shortest": [
+     38,
+     144
+    ]
+   }
+  },
+  {
+   "row": "a-6tp9dcwend2vx7yn",
+   "slug": "they-one-they-many",
+   "stage": "measured",
+   "manifest_hash": "92b77fdcc4b1529f6446f1c9756b80cc08acad1c4433bf845e0a95c98b9693b0",
+   "metric": "comprehension_accuracy_delta",
+   "value": 46.96,
+   "at": "2026-08-29T17:53:22+00:00",
+   "is_replication": false,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "they-one-they-many-comprehension-2026-08-29/items-run2.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "longest": [
+     96,
+     192
+    ]
+   }
+  },
+  {
+   "row": "a-abfbkq5mhjxr5nr7",
+   "slug": "proposal-by-p-decision-by-a-say-whether-an-option-is-offered",
+   "stage": "vote_failed",
+   "manifest_hash": "a5bf2d04f9a9ce4a23951adefce510935891c6851f2f90ec3330ea025e0c2494",
+   "metric": "comprehension_accuracy_delta",
+   "value": -68.92,
+   "at": "2026-08-26T13:55:19+00:00",
+   "is_replication": true,
+   "retracted": false,
+   "counts_toward_verdict": true,
+   "bank": "proposalby-replication-2026-08-26/items.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "shortest": [
+     48,
+     48
+    ]
+   }
+  },
+  {
+   "row": "a-3kzhb61snecx3zmt",
+   "slug": "moved-earlier-moved-later-which-way-did-the-meeting-move-2",
+   "stage": "measured",
+   "manifest_hash": "a7270b497fbb5a8012223fa2be74c18ffd68c2dcb5ce3e5c13d6e1d3ff86bbfb",
+   "metric": "comprehension_accuracy_delta",
+   "value": 24.55,
+   "at": "2026-08-26T11:52:47+00:00",
+   "is_replication": false,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "moved-comprehension-2026-08-25/items-earlier-bare.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "shortest": [
+     58,
+     78
+    ]
+   }
+  },
+  {
+   "row": "a-pfneg523cg48ny0c",
+   "slug": "this-once-from-now-on-does-this-instruction-apply-to-this-ta",
+   "stage": "vote_failed",
+   "manifest_hash": "b4284015daf019e10b2bf4a7643c4341d6576859a57ae40d7c99ae0a1ced546c",
+   "metric": "comprehension_accuracy_delta",
+   "value": -9.67,
+   "at": "2026-08-26T13:08:57+00:00",
+   "is_replication": false,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "thisonce-comprehension-2026-08-25/items-careful.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "shortest": [
+     80,
+     140
+    ]
+   }
+  },
+  {
+   "row": "a-cef29htze4cmyz4b",
+   "slug": "rather-not-fine-either-way-would-welcome-you-don-t-have-to-s-2",
+   "stage": "vote_failed",
+   "manifest_hash": "b661b02842052ced7bc148b50fd4194c6084fbc27f1f70e22e45dd6af88e3d7d",
+   "metric": "comprehension_accuracy_delta",
+   "value": -23.44,
+   "at": "2026-08-26T12:09:22+00:00",
+   "is_replication": false,
+   "retracted": false,
+   "counts_toward_verdict": false,
+   "bank": "rathernot-comprehension-2026-08-25/items-careful.json",
+   "sweep_class": "flagged, key reachable",
+   "rules": {
+    "shortest": [
+     192,
+     288
+    ]
+   }
+  },
+  {
+   "row": "a-3kzhb61snecx3zmt",
+   "slug": "moved-earlier-moved-later-which-way-did-the-meeting-move-2",
+   "stage": "measured",
+   "manifest_hash": "b755d553d4c1f890a54833731a841aef8fa40348d2f641b6ec42b3d1f571813c",
+   "metric": "comprehension_accuracy_delta",
+   "value": 0.48,
+   "at": "2026-08-26T11:43:52+00:00",
+   "is_replication": false,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "moved-comprehension-2026-08-25/items-earlier-careful.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "shortest": [
+     58,
+     78
+    ]
+   }
+  },
+  {
+   "row": "a-xc9xmqy4sqy9zqm3",
+   "slug": "approx-n-approximation-marker-parenthesized-d-1-robust-3",
+   "stage": "superseded",
+   "manifest_hash": "bb920921f943941bbbde35db423dd6df225874f679c6ae6b911b9b80db8a2d9a",
+   "metric": "robustness_delta",
+   "value": 0,
+   "at": "2026-08-15T01:39:34+00:00",
+   "is_replication": false,
+   "retracted": false,
+   "counts_toward_verdict": false,
+   "bank": "approx-robust/rb3-robustness-v1.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "first": [
+     24,
+     24
+    ]
+   }
+  },
+  {
+   "row": "a-b0t3phkbfkk45e56",
+   "slug": "may-as-permission-may-as-possibility",
+   "stage": "measured",
+   "manifest_hash": "dba42c0e48b623502fb370067cf080a1b639a2bb621318400217f1f3d79b3e83",
+   "metric": "comprehension_accuracy_delta",
+   "value": 6.28,
+   "at": "2026-08-26T14:50:07+00:00",
+   "is_replication": false,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "mayas-comprehension-2026-08-25/items-careful.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "longest": [
+     80,
+     160
+    ],
+    "echo": [
+     40,
+     80
+    ]
+   }
+  },
+  {
+   "row": "a-pfneg523cg48ny0c",
+   "slug": "this-once-from-now-on-does-this-instruction-apply-to-this-ta",
+   "stage": "vote_failed",
+   "manifest_hash": "dbc96ac646e5eaa6b115bd904d90a624b08d400a1229833e806512feddf290ef",
+   "metric": "comprehension_accuracy_delta",
+   "value": 16.48,
+   "at": "2026-08-26T13:20:29+00:00",
+   "is_replication": false,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "thisonce-comprehension-2026-08-25/items-bare.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "shortest": [
+     79,
+     136
+    ]
+   }
+  },
+  {
+   "row": "a-skmkqz1xayncjd5f",
+   "slug": "on-behalf-of-principal-mark-envoy-written-messages",
+   "stage": "seconded",
+   "manifest_hash": "e9e77001d2d05feb7e07d4bc0175a87c0645f1afa6ae3825f3967bb80059425a",
+   "metric": "comprehension_accuracy_delta",
+   "value": -31.28,
+   "at": "2026-09-25T16:51:05+00:00",
+   "is_replication": false,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "on-behalf-of-comprehension-2026-09-25/items.json",
+   "sweep_class": "flagged, in between",
+   "rules": {
+    "longest": [
+     80,
+     120
+    ]
+   }
+  },
+  {
+   "row": "a-cef29htze4cmyz4b",
+   "slug": "rather-not-fine-either-way-would-welcome-you-don-t-have-to-s-2",
+   "stage": "vote_failed",
+   "manifest_hash": "edb44cee446c7105302049ca72135bdb23268325771a8612217fe7deeaf9751f",
+   "metric": "comprehension_accuracy_delta",
+   "value": 11.14,
+   "at": "2026-08-26T12:26:27+00:00",
+   "is_replication": false,
+   "retracted": false,
+   "counts_toward_verdict": false,
+   "bank": "rathernot-comprehension-2026-08-25/items-bare.json",
+   "sweep_class": "flagged, key reachable",
+   "rules": {
+    "shortest": [
+     192,
+     288
+    ]
+   }
+  },
+  {
+   "row": "a-b4mw22e4g8tv0hqv",
+   "slug": "value-is-mean-outcome-distribution-ref-value-is-likeliest",
+   "stage": "measured",
+   "manifest_hash": "f139083d38dc8ae931bc9ea0e3996e63dd1d56fa687ddaeb47ce4e982b04e81b",
+   "metric": "comprehension_accuracy_delta",
+   "value": 3.885,
+   "at": "2026-09-22T21:49:23+00:00",
+   "is_replication": true,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "outcome-replication-2026-09-22/items.json",
+   "sweep_class": "flagged, in between",
+   "rules": {
+    "shortest": [
+     98,
+     240
+    ]
+   }
+  },
+  {
+   "row": "a-b0t3phkbfkk45e56",
+   "slug": "may-as-permission-may-as-possibility",
+   "stage": "measured",
+   "manifest_hash": "fba86a10ff5400837aeb8eaaded01d2e84a233a3fac8f889e64e578ef76cfad8",
+   "metric": "comprehension_accuracy_delta",
+   "value": -2.32,
+   "at": "2026-08-26T14:59:07+00:00",
+   "is_replication": false,
+   "retracted": true,
+   "counts_toward_verdict": false,
+   "bank": "mayas-comprehension-2026-08-25/items-bare.json",
+   "sweep_class": "not flagged",
+   "rules": {
+    "longest": [
+     80,
+     160
+    ],
+    "echo": [
+     40,
+     80
+    ]
+   }
+  }
+ ],
+ "null_demo": {
+  "key always first, reader always answers the first": {
+   "right": 40,
+   "null_mean": 40.0,
+   "p": 1.0
+  },
+  "key in each position equally often, reader finds it every time": {
+   "right": 40,
+   "null_mean": 9.997465,
+   "p": 4.9999750001249995e-06
+  }
+ },
+ "counts": {
+  "flagged_pairs": 34,
+  "complete_pairs": 6,
+  "banks_with_a_complete_rule": 5,
+  "pairs_at_the_sorted_ceiling": 10,
+  "banks_flagged_today_not_yesterday": 17,
+  "banks_with_one_key_position": 2,
+  "twin_banks": 11,
+  "twin_banks_listed_in_one_order": 2,
+  "twin_banks_flagged_yesterday": 4,
+  "twin_banks_flagged_yesterday_listed_in_one_order": 0,
+  "my_measurements_on_flagged_banks": 17,
+  "of_them_retracted_before_today": 10,
+  "of_them_not_retracted": 7,
+  "of_them_counting_toward_a_verdict": 2,
+  "directories_with_a_flagged_bank": 18
+ }
+}

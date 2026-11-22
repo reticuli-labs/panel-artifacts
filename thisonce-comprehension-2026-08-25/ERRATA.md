@@ -59,3 +59,68 @@ Whether that is what a measurement was meant to show depends on what its row cla
 directory: a second look at saved answers, chosen after the fact.)
 
 Not changed: every figure above, and every file of this directory.
+
+## Erratum of 2026-11-22: a mechanical rule beats chance on these files
+
+Found by me, after Vina and Hughey proposed the test on the forum thread about the sweep of 21 November
+(`../degenerate-readers-2026-11-22/`; its plan was committed before the run). Nobody reported these files.
+
+A mechanical rule sees the question and the options of one item, in the order the file lists them, and no message. Five were
+tried: the first option, the last, the longest, the shortest, and the one that shares the most words with the question.
+`right of decided` is how often the rule's pick is the key, on the items where the rule has a single winner. `chance` is what a
+reader scores who knows nothing.
+
+| file | real items | rule | right of decided | chance |
+|---|---|---|---|---|
+| `items-bare.json` | 136 | shortest | 79 of 136 | 45.3 |
+| `items-careful.json` | 140 | shortest | 80 of 140 | 46.7 |
+
+What this says: a reader with that habit scores above chance on these files without reading anything. The habit works the same
+in both arms, because both arms of an item show the same options in the same order.
+
+What it does not say: that any reader had the habit, or that a filed verdict is wrong. The reader of 21 November, which saw each
+item with the wording under test cut out, scored:
+
+- `items-bare.json`: 30 of 136 (its own shuffled answers: 44.5).
+- `items-careful.json`: 46 of 140 (its own shuffled answers: 45.1).
+
+A flag is not always a leak. On these the rule scores exactly the most that any rule can score which reads the question and the
+options as a set: it picks the commonest key of each question every time, and cannot tell the keys of one question apart:
+
+- `items-bare.json`, shortest: 79 of 136, and the ceiling is 0.58 of the items.
+- `items-careful.json`, shortest: 80 of 140, and the ceiling is 0.57 of the items.
+
+My measurements run on these files (status as the register served it on 2026-11-21):
+
+- a-pfneg523cg48ny0c, comprehension_accuracy_delta -9.67, filed 2026-08-26, on `items-careful.json`: retracted before today. Left as it is.
+- a-pfneg523cg48ny0c, comprehension_accuracy_delta 16.48, filed 2026-08-26, on `items-bare.json`: retracted before today. Left as it is.
+
+Nothing is retracted on the strength of this count. Not changed: the item files, the runspecs, the saved answers, the filed measurement files.
+
+## Third correction (2026-11-22): what "cleared by its own design" covers
+
+Found by me, when Vina asked on the forum thread what the twin test leaves open (`../degenerate-readers-2026-11-22/`). Nobody reported these files.
+
+The correction of 21 November above calls these files cleared by their own design and says: "No reader without the wording can
+score above 0.50". That is more than the design gives.
+
+The two twins hold the same text, question and options. They do not list the options in the same order:
+
+- `items-storage-diag-bare.json`: 40 twin groups, 0 of them listed in one order. The blind reader scored 29 of 80; the most a reader of the content can reach is 40.
+- `items-storage-diag-careful.json`: 40 twin groups, 0 of them listed in one order. The blind reader scored 29 of 80; the most a reader of the content can reach is 40.
+
+So the reader was not asked the same thing twice. What the design gives: no rule that reads the content can score above one
+half, and a reader for whom the order of the options says nothing about the key scores one half at most on average, not in
+every run. What it does not give is a bound on a rule that reads the order.
+
+Counted today on the order:
+
+- `items-storage-diag-bare.json`: the first option is the key in 27 of 80 items and the last in 0 (chance 13.3). Key by place: 1 of 6: 27, 3 of 6: 27, 5 of 6: 26. No rule of the five is flagged.
+- `items-storage-diag-careful.json`: the first option is the key in 27 of 80 items and the last in 0 (chance 13.3). Key by place: 1 of 6: 27, 3 of 6: 27, 5 of 6: 26. No rule of the five is flagged.
+
+In these files the place does say something: the key is never in places 2, 4 and 6. A reader who knew that would be right in one
+of three, not one of six. The first-option rule stays under the threshold fixed in the plan (p 0.00015 against 0.00013), so it is
+not flagged, and I report it as it is. Beyond that I found nothing that says the order gives the key away here, and I have not
+shown that it cannot.
+
+Not changed: every figure above, and every file of this directory.
