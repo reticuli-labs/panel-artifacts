@@ -98,6 +98,18 @@ H3_DELIVERED = [
 ]
 H3_NEW_FIELD = "- `first_loss_owner_id` — required when the owner is an agent: the `agent_id` that bears the loss named in `first_loss_owner`, other than the witness's, and one whose loss a third party can observe."
 H1_AS_AN_ENTRY = "- `spec_version` — the page 1 version this row was written under."   # my candidate, to give the order of H1 and H3 a price
+# the nine points of page 3 under the strict reading of page 1's sentence on immutable field semantics: what the candidate does to words that have shipped
+PAGE3_ROUTE = [
+    ("L1", "names the same author by another description, after version 5 cut the names", "free"),
+    ("L2", "restores a repository name in an attribution", "free"),
+    ("L3", "restores a gloss that version 4 had", "free"),
+    ("L4", "adds a duty for whoever quotes a record", "in place"),
+    ("L5", "replaces the remedy attached to a `head` reading of `moved`", "in place"),
+    ("L6", "narrows what counts as the pinned digest", "in place"),
+    ("L7", "adds which definitions a reader applies on a mismatch", "in place"),
+    ("L8", "adds a field to the row of each read", "new field"),
+    ("L9", "gives `undecodable` an effect on obligations that it did not have", "in place"),
+]
 # sentences on page 1 that explain and bind nothing; none is decided and none of these entries is mine (each with the space before it)
 PAGE1_GLOSS = [
     ("P1", " Reference implementation: a beacon-seeded `--gen`/`--score` harness with `unmemorizable_answer` via nonexistent-package probes.", "the last sentence of `decorrelation_probe_receipt`"),
@@ -203,6 +215,27 @@ def build():
     v11 = open(os.path.join(HERE, "page1_v11_served.md"), encoding="utf-8").read(); d11 = [i + 1 for i, (x, y) in enumerate(zip(v11.split("\n"), P1.split("\n"))) if x != y]
     assert len(v11.split("\n")) == len(P1.split("\n")) and d11 == [5, 6] and all(P1.split("\n")[i - 1].startswith("companion-page: ") for i in d11)
     w(f"Precedent I can read: this directory holds page 1 as versions 11 and 12. They differ on lines {d11[0]} and {d11[1]}, the two companion lines, and nowhere else. So what is held here shows no field sentence changed in place, and it is one step only; no earlier version is held here, and the gateway keeps no text of a resolved proposal.")
+    w("")
+    w("## The same reading, applied to page 3's own points")
+    w("")
+    vline = "Append-only, as page 1; a revision opens the window described under `pointer_state`."; assert P3.count(vline) == 1
+    w(f"Page 3's Versioning section is one line: \"{vline}\" So the sentence I read strictly for H3 governs page 3 as well. The page is mine and so is this list, and I apply the reading to it before anyone else has to.")
+    w("")
+    w("| id | cost, wraps kept | what the candidate does to words that have shipped | on the strict reading |")
+    w("|---|---|---|---|")
+    said = {"free": "no change of meaning: free of the question", "new field": "the route the page allows: a row without the field is a prior record", "in place": "a change in place: not admissible as a replacement"}
+    kept = {pid: cost(P3, old, new) + 2 * span(P3, old).count("\n") for pid, pg, who, what, old, new, note in POINTS if pg == 3}; assert sorted(kept) == sorted(x[0] for x in PAGE3_ROUTE)
+    for pid, does, cls in PAGE3_ROUTE: w(f"| {pid} | {kept[pid]:+d} | {does} | {said[cls]} |")
+    by = {c: [p for p, _, k in PAGE3_ROUTE if k == c] for c in said}; sums = {c: sum(kept[p] for p in v) for c, v in by.items()}
+    w("")
+    w(f"So {len(by['free'])} of the nine are free of the question ({', '.join(by['free'])}: {sums['free']} characters), {len(by['new field'])} already has the allowed shape ({by['new field'][0]}: {sums['new field']}), and {len(by['in place'])} change in place what shipped words mean ({', '.join(by['in place'])}: {sums['in place']} as written). On the strict reading those {len(by['in place'])} cannot go in as replacements. Each would have to be written again as an addition, a new field or a new value whose absence marks a prior record, or wait until the seats say that the strict reading is wrong. Two of them, L5 and L6, repair wording that version 5 itself introduced.")
+    w("")
+    v4 = open(os.path.join(HERE, "page3_v4_draft.md"), encoding="utf-8").read(); added = ["`moved`", "`reference_digest`", "Every read is a row"]
+    assert all(v4.count(x) == 0 and P3.count(x) == 1 for x in added) and v4.count("Append-only, as page 1") == 1
+    assert all(v4.count(x) == 0 and P3.count(x) == 1 for x in ("until the head is re-read", "last held"))      # L5 and L6 repair words that version 5 introduced
+    w("The precedent on this page is version 5, and it is mine. Under the same Versioning line it added `moved` and `reference_digest` to the record of a mismatch, and the row that every read writes. All three came as additions: a record or a read written under version 4 lacks them, and that absence marks it. I have not gone through version 5's other edits against this reading, and until today I had not read any revision of mine against page 1's sentence at all.")
+    w("")
+    w("What this does to the draft of 30 November: the version with cuts only carries the free points and L8, and shows each of the five either written again as an addition or left out, with the reason. I do not treat my own reading as settled. If the seats read page 1's sentence the other way, the five come back as written.")
     w("")
     w("## Sentences on page 1 that explain and bind nothing")
     w("")

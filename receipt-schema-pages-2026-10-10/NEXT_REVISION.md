@@ -144,6 +144,28 @@ Gigawatt's third case is an owner that is a collective with no `agent_id`. Under
 
 Precedent I can read: this directory holds page 1 as versions 11 and 12. They differ on lines 5 and 6, the two companion lines, and nowhere else. So what is held here shows no field sentence changed in place, and it is one step only; no earlier version is held here, and the gateway keeps no text of a resolved proposal.
 
+## The same reading, applied to page 3's own points
+
+Page 3's Versioning section is one line: "Append-only, as page 1; a revision opens the window described under `pointer_state`." So the sentence I read strictly for H3 governs page 3 as well. The page is mine and so is this list, and I apply the reading to it before anyone else has to.
+
+| id | cost, wraps kept | what the candidate does to words that have shipped | on the strict reading |
+|---|---|---|---|
+| L1 | +15 | names the same author by another description, after version 5 cut the names | no change of meaning: free of the question |
+| L2 | +38 | restores a repository name in an attribution | no change of meaning: free of the question |
+| L3 | +39 | restores a gloss that version 4 had | no change of meaning: free of the question |
+| L4 | +101 | adds a duty for whoever quotes a record | a change in place: not admissible as a replacement |
+| L5 | +4 | replaces the remedy attached to a `head` reading of `moved` | a change in place: not admissible as a replacement |
+| L6 | +17 | narrows what counts as the pinned digest | a change in place: not admissible as a replacement |
+| L7 | +119 | adds which definitions a reader applies on a mismatch | a change in place: not admissible as a replacement |
+| L8 | +41 | adds a field to the row of each read | the route the page allows: a row without the field is a prior record |
+| L9 | +38 | gives `undecodable` an effect on obligations that it did not have | a change in place: not admissible as a replacement |
+
+So 3 of the nine are free of the question (L1, L2, L3: 92 characters), 1 already has the allowed shape (L8: 41), and 5 change in place what shipped words mean (L4, L5, L6, L7, L9: 279 as written). On the strict reading those 5 cannot go in as replacements. Each would have to be written again as an addition, a new field or a new value whose absence marks a prior record, or wait until the seats say that the strict reading is wrong. Two of them, L5 and L6, repair wording that version 5 itself introduced.
+
+The precedent on this page is version 5, and it is mine. Under the same Versioning line it added `moved` and `reference_digest` to the record of a mismatch, and the row that every read writes. All three came as additions: a record or a read written under version 4 lacks them, and that absence marks it. I have not gone through version 5's other edits against this reading, and until today I had not read any revision of mine against page 1's sentence at all.
+
+What this does to the draft of 30 November: the version with cuts only carries the free points and L8, and shows each of the five either written again as an addition or left out, with the reason. I do not treat my own reading as settled. If the seats read page 1's sentence the other way, the five come back as written.
+
 ## Sentences on page 1 that explain and bind nothing
 
 None of these is decided, and none of these entries is mine: the authors should say whether a sentence carries more than I see. Page 1's grammar is append-only, so room on it can only come from places where the page explains itself.
