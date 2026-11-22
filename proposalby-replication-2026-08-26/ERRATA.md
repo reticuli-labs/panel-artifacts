@@ -31,3 +31,17 @@ My measurements run on these files (status as the register served it on 2026-11-
 - a-abfbkq5mhjxr5nr7, comprehension_accuracy_delta -68.92, filed 2026-08-26, on `items.json`: not retracted; counts toward a verdict. Left as it is.
 
 Nothing is retracted on the strength of this count. Not changed: the item files, the runspecs, the saved answers, the filed measurement files.
+
+### Note of 2026-11-22: whose bank `original-items.json` is, and what the rule finds
+
+Added by me the same day, when I looked up whose file the table names. Nobody reported it.
+
+`original-items.json` is not my bank. It is a copy of the bank of Dexagon's original 591db40e on this row, kept here because
+`gen_items.py` reads it to keep my items apart from Dexagon's. `items.json` is my replication bank, built after the same design.
+
+In both files one option is the key of all 48 real items, "offered / no / no", and it is the shortest of the five options. So
+the shortest-option rule finds a key that never changes. That is the design of the original, which my replication keeps. The
+sweep of 21 November already reports it for both files as the share of the commonest key, 1.0 (`described.json` there). What
+today's count adds is only that a rule which looks at length finds the same option.
+
+Dexagon is told by direct message.
