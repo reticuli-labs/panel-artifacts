@@ -1,0 +1,139 @@
+{
+ "control_unaltered": {
+  "exit": 0,
+  "last_line": "selfcheck passed: 33 checks"
+ },
+ "mutants": [
+  {
+   "name": "first_picks_the_last",
+   "change": [
+    "if rule == \"first\": return 0",
+    "if rule == \"first\": return len(options) - 1"
+   ],
+   "exit": 1,
+   "refused_at": "line 53",
+   "last_line": "AssertionError: ('first', {'decided': 40, 'right': 0, 'expected': 10.0, 'p': 0.9999999999999838, 'excess': 0.0, 'flagged': False})"
+  },
+  {
+   "name": "longest_takes_the_shortest",
+   "change": [
+    "m = max(size) if rule == \"longest\" else min(size)",
+    "m = min(size) if rule == \"longest\" else max(size)"
+   ],
+   "exit": 1,
+   "refused_at": "line 53",
+   "last_line": "AssertionError: ('longest', {'decided': 40, 'right': 0, 'expected': 10.0, 'p': 0.9999999999999838, 'excess': 0.0, 'flagged': False})"
+  },
+  {
+   "name": "a_tie_in_length_picks_the_first",
+   "change": [
+    "return size.index(m) if size.count(m) == 1 else None",
+    "return size.index(m)"
+   ],
+   "exit": 1,
+   "refused_at": "line 58",
+   "last_line": "AssertionError"
+  },
+  {
+   "name": "a_tie_in_echo_picks_the_first",
+   "change": [
+    "return shared.index(m) if shared.count(m) == 1 else None",
+    "return shared.index(m)"
+   ],
+   "exit": 1,
+   "refused_at": "line 57",
+   "last_line": "AssertionError: {'decided': 400, 'right': 79, 'expected': 100.0, 'p': 0.994442576745577, 'excess': 0.0, 'flagged': False}"
+  },
+  {
+   "name": "echo_compares_without_lower_case",
+   "change": [
+    "q = set(WORD.findall(question.lower()))",
+    "q = set(WORD.findall(question))"
+   ],
+   "exit": 1,
+   "refused_at": "line 53",
+   "last_line": "AssertionError: ('echo', {'decided': 0, 'right': 0, 'expected': 0.0, 'p': 1.0, 'excess': 0.0, 'flagged': False})"
+  },
+  {
+   "name": "tail_leaves_out_the_observed_score",
+   "change": [
+    "dist[right:].sum()",
+    "dist[right + 1:].sum()"
+   ],
+   "exit": 1,
+   "refused_at": "line 94",
+   "last_line": "AssertionError: (0, 0.9166666666666663, 0.9999999999999999)"
+  },
+  {
+   "name": "threshold_not_divided_by_the_tests",
+   "change": [
+    "alpha = FAMILY_ALPHA / max(1, len(tests))",
+    "alpha = FAMILY_ALPHA"
+   ],
+   "exit": 1,
+   "refused_at": "line 103",
+   "last_line": "AssertionError: (0.05, 24)"
+  },
+  {
+   "name": "calibration_items_counted",
+   "change": [
+    "real = lambda v: not v.get(\"calibration\") and not v.get(\"identical_arms\")",
+    "real = lambda v: True"
+   ],
+   "exit": 1,
+   "refused_at": "line 112",
+   "last_line": "AssertionError: 30"
+  },
+  {
+   "name": "listed_ceiling_ignores_the_order",
+   "change": [
+    "tuple(v[\"options\"]) if listed else tuple(sorted(v[\"options\"]))",
+    "tuple(sorted(v[\"options\"]))"
+   ],
+   "exit": 1,
+   "refused_at": "line 82",
+   "last_line": "AssertionError: (0.25, 0.25)"
+  },
+  {
+   "name": "expected_score_is_zero",
+   "change": [
+    "n = len(ks); exp = sum(1.0 / k for k in ks)",
+    "n = len(ks); exp = 0.0"
+   ],
+   "exit": 1,
+   "refused_at": "line 61",
+   "last_line": "AssertionError: ({'decided': 40, 'right': 40, 'expected': 0.0, 'p': 8.271806125530277e-25, 'excess': 1.0, 'flagged': True}, 0.25)"
+  },
+  {
+   "name": "fewer_than_ten_items_tested",
+   "change": [
+    "MIN_N = 10",
+    "MIN_N = 5"
+   ],
+   "exit": 1,
+   "refused_at": "line 101",
+   "last_line": "AssertionError"
+  },
+  {
+   "name": "right_means_first_position",
+   "change": [
+    "right += v[\"options\"][pos] == v[\"answer\"]",
+    "right += pos == 0"
+   ],
+   "exit": 1,
+   "refused_at": "line 53",
+   "last_line": "AssertionError: ('last', {'decided': 40, 'right': 0, 'expected': 10.0, 'p': 0.9999999999999838, 'excess': 0.0, 'flagged': False})"
+  },
+  {
+   "name": "an_item_in_two_banks_pooled_twice",
+   "change": [
+    "if i not in seen and real(items[i])",
+    "if real(items[i])"
+   ],
+   "exit": 1,
+   "refused_at": "line 107",
+   "last_line": "AssertionError: 800"
+  }
+ ],
+ "all_caught": true
+}
