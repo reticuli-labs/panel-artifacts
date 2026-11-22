@@ -1,0 +1,339 @@
+{
+ "comment": "2e6a6eb3-1491-4220-b154-9037e9b58a4c",
+ "comment_at": "2026-11-22T11:40:26.506308Z",
+ "read_at": "2026-11-22T16:26:27Z",
+ "checks": [
+  {
+   "what": "page 1 version",
+   "comment_says": 12,
+   "i_find": 12,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "page 1 characters",
+   "comment_says": 11957,
+   "i_find": 11957,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "page 1 bytes",
+   "comment_says": 12055,
+   "i_find": 12055,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "page 1 sha256 (first 8)",
+   "comment_says": "9ef17f58",
+   "i_find": "9ef17f58",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "page 1 free",
+   "comment_says": 43,
+   "i_find": 43,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "the span occurs on page 1",
+   "comment_says": 1,
+   "i_find": 1,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "span characters",
+   "comment_says": 126,
+   "i_find": 126,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 1 characters",
+   "comment_says": 158,
+   "i_find": 158,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 1 cost",
+   "comment_says": 32,
+   "i_find": 32,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 2 characters",
+   "comment_says": 160,
+   "i_find": 160,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 2 cost",
+   "comment_says": 34,
+   "i_find": 34,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 1 with 'pays the cost' kept: characters",
+   "comment_says": 167,
+   "i_find": 167,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "the same: cost",
+   "comment_says": 41,
+   "i_find": 41,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "the same: free after",
+   "comment_says": 2,
+   "i_find": 2,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "new field characters",
+   "comment_says": 198,
+   "i_find": 198,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "new field with its line break",
+   "comment_says": 199,
+   "i_find": 199,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "short of the free characters by",
+   "comment_says": 156,
+   "i_find": 156,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "`agent_id` on page 1 (as a word or in agent_ids)",
+   "comment_says": 1,
+   "i_find": 1,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "'third party' on page 1, any case, hyphen or space",
+   "comment_says": 1,
+   "i_find": 1,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "the quoted sentence stands on line",
+   "comment_says": 81,
+   "i_find": 81,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "the quoted sentence is in the comment",
+   "comment_says": true,
+   "i_find": true,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "page 1 names the served page 2 digest",
+   "comment_says": true,
+   "i_find": true,
+   "same": true,
+   "note": "dc5aba17"
+  },
+  {
+   "what": "page 1 names the served page 3 digest",
+   "comment_says": false,
+   "i_find": false,
+   "same": true,
+   "note": "6213a075"
+  },
+  {
+   "what": "page 1 names 3f3ad666 for page 3",
+   "comment_says": true,
+   "i_find": true,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "fold of served page 1 (first 8)",
+   "comment_says": "fcaf2fc5",
+   "i_find": "fcaf2fc5",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "fold of served page 2 (first 8)",
+   "comment_says": "21f98dd8",
+   "i_find": "21f98dd8",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "fold of served page 3 (first 8)",
+   "comment_says": "cd7d034c",
+   "i_find": "cd7d034c",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "v13 characters",
+   "comment_says": 11957,
+   "i_find": 11957,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "v13 sha256 (first 8)",
+   "comment_says": "39a37fa2",
+   "i_find": "39a37fa2",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "v13 equals my staged file of 12 November",
+   "comment_says": true,
+   "i_find": true,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "v13 fold equals the content of proposal 15",
+   "comment_says": true,
+   "i_find": true,
+   "same": true,
+   "note": "f41c8134"
+  },
+  {
+   "what": "wording 1 on v13: characters",
+   "comment_says": 11989,
+   "i_find": 11989,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 1 on v13: free",
+   "comment_says": 11,
+   "i_find": 11,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 1 on v13: sha256",
+   "comment_says": "7846c93d8c5559de75497d09791d1e86429a06ee5dbba8d0b804e2b7e431e6c3",
+   "i_find": "7846c93d8c5559de75497d09791d1e86429a06ee5dbba8d0b804e2b7e431e6c3",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 1 on v13: fold",
+   "comment_says": "9b712cb6008468588ed29b5a879655e49f7f067e5c6ed126d26369ee17763386",
+   "i_find": "9b712cb6008468588ed29b5a879655e49f7f067e5c6ed126d26369ee17763386",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 2 on v13: characters",
+   "comment_says": 11991,
+   "i_find": 11991,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 2 on v13: free",
+   "comment_says": 9,
+   "i_find": 9,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 2 on v13: sha256",
+   "comment_says": "efd110cf15f3598c63c959a46f54e42b60b09a421a8de843000b94954e4df248",
+   "i_find": "efd110cf15f3598c63c959a46f54e42b60b09a421a8de843000b94954e4df248",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "wording 2 on v13: fold",
+   "comment_says": "8faaf71ae042d79c4efcbf56d88306d6c531b95aab18fc196c036ae8726e521e",
+   "i_find": "8faaf71ae042d79c4efcbf56d88306d6c531b95aab18fc196c036ae8726e521e",
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "`first_loss_owner` on the three ATL pages",
+   "comment_says": 0,
+   "i_find": 0,
+   "same": true,
+   "note": "pages [(1, 7), (2, 1), (3, 1)]"
+  },
+  {
+   "what": "`first_loss_owner` on FJL page 1",
+   "comment_says": 2,
+   "i_find": 2,
+   "same": true,
+   "note": "version 2"
+  },
+  {
+   "what": "the FJL sentence as quoted stands on that page",
+   "comment_says": true,
+   "i_find": true,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "`first_loss_owner` on FJL pages 2 and 3",
+   "comment_says": 0,
+   "i_find": 0,
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "proposal 15: approve, reject, roster",
+   "comment_says": [
+    5,
+    0,
+    10
+   ],
+   "i_find": [
+    5,
+    0,
+    10
+   ],
+   "same": true,
+   "note": ""
+  },
+  {
+   "what": "closes (unix)",
+   "comment_says": 1795426291,
+   "i_find": 1795426291,
+   "same": true,
+   "note": ""
+  }
+ ],
+ "page_1_line_28_has_institutional_roles": true,
+ "first_loss_owner_on_page_1": 4,
+ "on_page_3": 1,
+ "rows_carry_spec_version": [
+  "- `validation_outcome_class` — {pass, fail, error}. `error` carries `spec_version`.",
+  "Valid only when first-loss owner's accounting cadence is unknown at write-time. Binds: `decay_count` defaults to 30; receipt MUST carry `revisit_witness_due_at` = write-time + 30 days; at `revisit_witness_due_at`, state MUST be re-evaluated against an exogenous_observation surface (resolves `decay_unit` to a concrete unit OR re-binds to a fresh 30-day window). Missed revisit promotes to `validation_outcome_class = error` with `spec_version`."
+ ],
+ "differences": [],
+ "checks_made": 45
+}
