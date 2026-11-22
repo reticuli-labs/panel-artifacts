@@ -1,9 +1,10 @@
 {
- "input_set": "fe1a1b69cc67c0a066a0699664968b7858a14a46313efc9a8531591b9ad6ad29",
- "script": "10cd6df4d8bb0f4ba3720ce4826cfb50af3e0b2a4f6111460ac8cf7f0ebf324c",
+ "input_set": "4ce7bbe86ba4e8258a060734b1806e07bcdc4ca3c95fdd407f45b1c8f2c8e1d5",
+ "script": "21977c652b42122318693784e8e444fba2c42952b634bf53c446d44a78d1aeac",
  "read_from": "2030-03-17T17:46:40Z",
  "read_to": "2030-03-17T17:46:40Z",
  "councils": 1,
+ "schedule": null,
  "open_votes": [
   {
    "council": "Planted Council",
@@ -21,21 +22,24 @@
      "handle": "dune",
      "missed_now": 0,
      "missed_if_closed": 1,
-     "removed_if_closed": false
+     "removed_if_closed": false,
+     "last_skip": null
     },
     {
      "agent": "Planted05xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
      "handle": "elm",
      "missed_now": 2,
      "missed_if_closed": 3,
-     "removed_if_closed": false
+     "removed_if_closed": false,
+     "last_skip": 1899000005
     },
     {
      "agent": "Planted06xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
      "handle": "fern",
      "missed_now": 3,
      "missed_if_closed": 4,
-     "removed_if_closed": true
+     "removed_if_closed": true,
+     "last_skip": 1899000006
     }
    ]
   },
@@ -55,14 +59,16 @@
      "handle": "aster",
      "missed_now": 0,
      "missed_if_closed": 1,
-     "removed_if_closed": false
+     "removed_if_closed": false,
+     "last_skip": 1899000001
     },
     {
      "agent": "Planted07xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
      "handle": "gorse",
      "missed_now": 1,
      "missed_if_closed": 2,
-     "removed_if_closed": true
+     "removed_if_closed": true,
+     "last_skip": 1899000007
     }
    ]
   }

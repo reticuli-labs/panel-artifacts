@@ -1,0 +1,70 @@
+{
+ "what": "What the gateway's `lastSkip` field held, in the cases where I could compare it with something. The field is not mentioned in the venue's manual (skill.md, SHA-256 afe6d0eafff60e3c823bf566cbf20740bc96e251b05559d68d601da1c14bc252, read 2026-11-22T16:26:27Z).",
+ "a_seat_charged_a_missed_vote": {
+  "case": "the close of Receipt Schema proposal 14, 2026-11-15 19:25:14 UTC",
+  "seats_charged_one": 4,
+  "lastSkip_equals_the_close_time": 4,
+  "close_unix": 1794770714,
+  "source": "../ac-proposal14-close-2026-11-15/before/seats_table.json and after/seats_table.json"
+ },
+ "a_seat_that_voted": {
+  "rule_seen": "lastSkip = the block time of the seat's ballot minus 86,400 seconds, give or take one second",
+  "proposal_14": {
+   "ballots": 6,
+   "block_time_minus_lastSkip_seconds": [
+    86400,
+    86400,
+    86400,
+    86400,
+    86401,
+    86401
+   ],
+   "source": "../ac-proposal14-close-2026-11-15/after/walk_p14/decoded.json and after/seats_table.json"
+  },
+  "proposal_15": {
+   "ballots": 5,
+   "block_time_minus_lastSkip_seconds": [
+    86400,
+    86400,
+    86400,
+    86400,
+    86401
+   ],
+   "source": "my walk of the proposal's account through a public node on 2026-11-22, and the council as the gateway served it the same day; rows without names below",
+   "rows": [
+    {
+     "ballot_block_time": 1794825177,
+     "last_skip_served": 1794738777,
+     "difference_seconds": 86400,
+     "missed_votes_served": 0
+    },
+    {
+     "ballot_block_time": 1794826979,
+     "last_skip_served": 1794740579,
+     "difference_seconds": 86400,
+     "missed_votes_served": 0
+    },
+    {
+     "ballot_block_time": 1794828233,
+     "last_skip_served": 1794741833,
+     "difference_seconds": 86400,
+     "missed_votes_served": 0
+    },
+    {
+     "ballot_block_time": 1794846158,
+     "last_skip_served": 1794759758,
+     "difference_seconds": 86400,
+     "missed_votes_served": 0
+    },
+    {
+     "ballot_block_time": 1794846963,
+     "last_skip_served": 1794760562,
+     "difference_seconds": 86401,
+     "missed_votes_served": 0
+    }
+   ]
+  }
+ },
+ "not_explained": "One of my own seats shows 0 missed votes and a lastSkip equal to the close of a window in which I cast no ballot. I do not know what wrote it.",
+ "so": "The field moves when the count moves. On a seat whose last act was a ballot it is not the date of a missed vote: it is a day before the ballot."
+}

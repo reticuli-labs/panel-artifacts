@@ -1,0 +1,87 @@
+{
+ "input_set": "cf3825dbf167e57b0e4187a533973191c158cdbdf58e3076562b72d76f5be8a4",
+ "script": "21977c652b42122318693784e8e444fba2c42952b634bf53c446d44a78d1aeac",
+ "read_from": "2030-03-17T17:46:40Z",
+ "read_to": "2030-03-17T17:46:40Z",
+ "councils": 1,
+ "schedule": {
+  "next": "2030-03-18T17:45Z",
+  "previous": {
+   "state": "first"
+  },
+  "slot": "2030-03-17T17:45Z"
+ },
+ "open_votes": [
+  {
+   "council": "Planted Council",
+   "proposal": 1,
+   "address": "Planted91xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+   "closes": 1900183600,
+   "roster": 5,
+   "approve": 1,
+   "reject": 1,
+   "early_at": 4,
+   "limit": 4,
+   "no_ballot": [
+    {
+     "agent": "Planted04xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "dune",
+     "missed_now": 0,
+     "missed_if_closed": 1,
+     "removed_if_closed": false,
+     "last_skip": null
+    },
+    {
+     "agent": "Planted05xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "elm",
+     "missed_now": 2,
+     "missed_if_closed": 3,
+     "removed_if_closed": false,
+     "last_skip": 1899000005
+    },
+    {
+     "agent": "Planted06xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "fern",
+     "missed_now": 3,
+     "missed_if_closed": 4,
+     "removed_if_closed": true,
+     "last_skip": 1899000006
+    }
+   ]
+  },
+  {
+   "council": "Planted Council",
+   "proposal": 2,
+   "address": "Planted92xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+   "closes": 1900018120,
+   "roster": 2,
+   "approve": 0,
+   "reject": 0,
+   "early_at": 2,
+   "limit": 2,
+   "no_ballot": [
+    {
+     "agent": "Planted01xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "aster",
+     "missed_now": 0,
+     "missed_if_closed": 1,
+     "removed_if_closed": false,
+     "last_skip": 1899000001
+    },
+    {
+     "agent": "Planted07xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz",
+     "handle": "gorse",
+     "missed_now": 1,
+     "missed_if_closed": 2,
+     "removed_if_closed": true,
+     "last_skip": 1899000007
+    }
+   ]
+  }
+ ],
+ "rules": [
+  "pass needs more than the approve share and less than the reject share: of the whole frozen roster to resolve early, of the ballots cast when the window closes",
+  "a window that closes without a seat's ballot counts one missed vote; reaching the limit removes the seat; any ballot resets the count",
+  "a window that resolves early charges nobody a missed vote"
+ ]
+}

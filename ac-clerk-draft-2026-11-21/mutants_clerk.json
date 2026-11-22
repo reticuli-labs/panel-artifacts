@@ -4,15 +4,15 @@
   "caught": true,
   "said": [
    "planted: the posting lacks 'No ballot yet: 2. If the window closes without a ballot, each of these is charged one missed vote. The limit is 2.'",
-   "planted: the posting lacks '- aster: 0 now, 1 of 2 then\\n- gorse: 1 now, 2 of 2 then, and the seat is removed'"
+   "planted: the posting lacks '- aster: 0 now, 1 of 2 then; lastSkip 2030-03-06 04:00:01 UTC\\n- gorse: 1 now, 2 of 2 then, and the seat is removed; lastSkip 2030-03-06 04:00:07 UTC'"
   ]
  },
  {
   "case": "a seat is removed only above the limit",
   "caught": true,
   "said": [
-   "planted: the posting lacks '- aster: 0 now, 1 of 2 then\\n- gorse: 1 now, 2 of 2 then, and the seat is removed'",
-   "planted: the posting lacks '- dune: 0 now, 1 of 4 then\\n- elm: 2 now, 3 of 4 then\\n- fern: 3 now, 4 of 4 then, and the seat is removed'"
+   "planted: the posting lacks '- aster: 0 now, 1 of 2 then; lastSkip 2030-03-06 04:00:01 UTC\\n- gorse: 1 now, 2 of 2 then, and the seat is removed; lastSkip 2030-03-06 04:00:07 UTC'",
+   "planted: the posting lacks '- dune: 0 now, 1 of 4 then; lastSkip not set\\n- elm: 2 now, 3 of 4 then; lastSkip 2030-03-06 04:00:05 UTC\\n- fern: 3 now, 4 of 4 then, and the seat is removed; lastSkip 2030-03-06 04:00:06 UTC'"
   ]
  },
  {
@@ -27,8 +27,7 @@
   "case": "a seat that left the council still counts",
   "caught": true,
   "said": [
-   "planted: the posting lacks 'Ballots: 1 approve, 1 reject, on a roster of 5. It resolves early at 4 approvals, if rejections stay under 20 percent of the roster. At the close it passes if more than 69 percent of the ballots cast approve and fewer than 20 percent reject.'",
-   "planted: the posting lacks 'On the roster when it was filed and no longer a member: heath-gone.'"
+   "the test stopped: KeyError: 'Planted08xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz'"
   ]
  },
  {
@@ -58,7 +57,8 @@
   "case": "a changed input is accepted",
   "caught": true,
   "said": [
-   "planted: an input changed after the read was accepted"
+   "planted: an input changed after the read was accepted",
+   "planted_slot_posted: a schedule changed after the run was accepted"
   ]
  },
  {
@@ -73,8 +73,53 @@
   "case": "the count shown is not the one served",
   "caught": true,
   "said": [
-   "planted: the posting lacks '- aster: 0 now, 1 of 2 then\\n- gorse: 1 now, 2 of 2 then, and the seat is removed'",
-   "planted: the posting lacks '- dune: 0 now, 1 of 4 then\\n- elm: 2 now, 3 of 4 then\\n- fern: 3 now, 4 of 4 then, and the seat is removed'"
+   "planted: the posting lacks '- aster: 0 now, 1 of 2 then; lastSkip 2030-03-06 04:00:01 UTC\\n- gorse: 1 now, 2 of 2 then, and the seat is removed; lastSkip 2030-03-06 04:00:07 UTC'",
+   "planted: the posting lacks '- dune: 0 now, 1 of 4 then; lastSkip not set\\n- elm: 2 now, 3 of 4 then; lastSkip 2030-03-06 04:00:05 UTC\\n- fern: 3 now, 4 of 4 then, and the seat is removed; lastSkip 2030-03-06 04:00:06 UTC'"
+  ]
+ },
+ {
+  "case": "the lastSkip shown is not the one served",
+  "caught": true,
+  "said": [
+   "planted: the posting lacks '- aster: 0 now, 1 of 2 then; lastSkip 2030-03-06 04:00:01 UTC\\n- gorse: 1 now, 2 of 2 then, and the seat is removed; lastSkip 2030-03-06 04:00:07 UTC'",
+   "planted: the posting lacks '- dune: 0 now, 1 of 4 then; lastSkip not set\\n- elm: 2 now, 3 of 4 then; lastSkip 2030-03-06 04:00:05 UTC\\n- fern: 3 now, 4 of 4 then, and the seat is removed; lastSkip 2030-03-06 04:00:06 UTC'"
+  ]
+ },
+ {
+  "case": "a missed previous slot is printed as posted",
+  "caught": true,
+  "said": [
+   "planted_slot_missed: the posting lacks 'Slot of this run: 2030-03-17T17:45Z. Previous slot: missed, no run was made for it. Next run: 2030-03-18T17:45Z.'"
+  ]
+ },
+ {
+  "case": "the schedule is printed and left out of the run's record",
+  "caught": true,
+  "said": [
+   "the test stopped: TypeError: 'NoneType' object is not subscriptable"
+  ]
+ },
+ {
+  "case": "the schedule row is taken for a read of the gateway",
+  "caught": true,
+  "said": [
+   "planted_slot_posted: the schedule row moved the time of the read",
+   "planted_slot_missed: the schedule row moved the time of the read"
+  ]
+ },
+ {
+  "case": "the previous slot's input set is made up",
+  "caught": true,
+  "said": [
+   "live: the previous slot's input set is not the one in its record"
+  ]
+ },
+ {
+  "case": "a live run leaves its schedule out of the manifest",
+  "caught": true,
+  "said": [
+   "live: the manifest does not list the three reads and the schedule",
+   "live: the posting lacks its schedule line"
   ]
  },
  {

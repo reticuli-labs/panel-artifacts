@@ -6,7 +6,7 @@ D = os.path.dirname(os.path.abspath(__file__))
 CASES = [
  ("the limit frozen on a proposal is ignored", "    limit = min(x for x in (council[\"settings\"].get(\"SKIPS\"), p.get(\"skipLimit\")) if isinstance(x, int))", "    limit = council[\"settings\"][\"SKIPS\"]"),
  ("a seat is removed only above the limit", "\", and the seat is removed\" if s + 1 >= limit else \"\"", "\", and the seat is removed\" if s + 1 > limit else \"\""),
- ("the record marks removal only above the limit", "\"removed_if_closed\": skips[i] + 1 >= limit}", "\"removed_if_closed\": skips[i] + 1 > limit}"),
+ ("the record marks removal only above the limit", "\"removed_if_closed\": skips[i] + 1 >= limit, ", "\"removed_if_closed\": skips[i] + 1 > limit, "),
  ("a seat that left the council still counts", "    roster = [i for i in p[\"roster\"] if i in seated]; left = [i for i in p[\"roster\"] if i not in seated]", "    roster = list(p[\"roster\"]); left = []; skips = dict({i: 0 for i in roster}, **skips)"),
  ("early resolution at exactly the share", "    return next(n for n in range(roster + 2) if 10000 * n > bps * roster)", "    return next(n for n in range(roster + 2) if 10000 * n >= bps * roster - 9999)"),
  ("a resolved proposal is listed", "            if p.get(\"status\") != \"voting\": continue\n", ""),
@@ -14,6 +14,12 @@ CASES = [
  ("a changed input is accepted", "assert sha(b) == m[\"sha256\"] and len(b) == m[\"bytes\"], ", "assert True or sha(b) == m[\"sha256\"], "),
  ("a missed vote is not added", "\"missed_if_closed\": skips[i] + 1,", "\"missed_if_closed\": skips[i],"),
  ("the count shown is not the one served", "            s = skips[i]; out.append(", "            s = 0; out.append("),
+ ("the lastSkip shown is not the one served", "    last = {m[\"id\"]: m.get(\"lastSkip\") for m in council[\"members\"]}", "    last = {m[\"id\"]: 1899000001 for m in council[\"members\"]}"),
+ ("a missed previous slot is printed as posted", "\"missed\": \"missed, no run was made for it\"", "\"missed\": \"posted, input set %s\" % prev.get(\"input_set\")"),
+ ("the schedule is printed and left out of the run's record", "\"councils\": councils, \"schedule\": sched, \"open_votes\": rows", "\"councils\": councils, \"schedule\": None, \"open_votes\": rows"),
+ ("the schedule row is taken for a read of the gateway", "    read_times = sorted(m[\"fetched_at\"] for m in man if m[\"route\"] != SCHEDULE_ROUTE)", "    read_times = sorted([m[\"fetched_at\"] for m in man] + [\"2030-03-17T17:45:00Z\"] * any(m[\"route\"] == SCHEDULE_ROUTE for m in man))"),
+ ("the previous slot's input set is made up", "json.load(open(os.path.join(previous, \"run.json\"), encoding=\"utf-8\"))[\"input_set\"]}", "\"0\" * 64}"),
+ ("a live run leaves its schedule out of the manifest", "        man.append({\"route\": SCHEDULE_ROUTE,", "        [].append({\"route\": SCHEDULE_ROUTE,"),
  ("a rejection is counted as an approval", "    yes = sorted(name(i) for i, a in cast.items() if a); no = sorted(name(i) for i, a in cast.items() if not a)", "    yes = sorted(name(i) for i, a in cast.items()); no = []"),
 ]
 
