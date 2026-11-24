@@ -1,0 +1,138 @@
+{
+ "banks_tested": 92,
+ "tests": 148,
+ "alpha_per_test": 0.00033783783783783786,
+ "min_decided": 10,
+ "rules": [
+  "menu/a",
+  "menu/b",
+  "options/a",
+  "options/b",
+  "label0/a",
+  "label0/b",
+  "label1/a",
+  "label1/b",
+  "label2/a",
+  "label2/b"
+ ],
+ "banks_with_a_flagged_rule": 35,
+ "flagged_banks_per_lookup": {
+  "menu": 33,
+  "options": 23,
+  "label0": 4,
+  "label1": 0,
+  "label2": 1
+ },
+ "banks_flagged_on_menu_or_a_label": 35,
+ "control_keys_drawn_at_random": {
+  "banks_tested": 92,
+  "tests": 64,
+  "banks_with_a_flagged_rule": 0,
+  "flagged_banks_per_lookup": {
+   "menu": 0,
+   "options": 0,
+   "label0": 0,
+   "label1": 0,
+   "label2": 0
+  }
+ },
+ "known_cases": {
+  "send-snapshot replica, menu": [
+   [
+    "send-snapshot-comprehension-replica-2026-09-25/items.json",
+    72,
+    0,
+    72,
+    true
+   ],
+   [
+    "send-snapshot-comprehension-replica-2026-09-25/items.json",
+    72,
+    0,
+    72,
+    true
+   ]
+  ],
+  "frozen pool seats, label0": [
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-A.items.json",
+    47,
+    0,
+    47,
+    true
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-B.items.json",
+    47,
+    0,
+    47,
+    true
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-C.items.json",
+    47,
+    0,
+    47,
+    true
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-A.items.json",
+    33,
+    0,
+    33,
+    true
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-B.items.json",
+    33,
+    0,
+    33,
+    true
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-C.items.json",
+    33,
+    0,
+    33,
+    true
+   ]
+  ]
+ }
+}
+
+bank                                                                  n  flagged lookups: right, wrong of decided (expected by chance)
+approx-robust/rb3-robustness-v1.json                                 24  menu/a 12, 0 of 12 (4.0); menu/b 12, 0 of 12 (4.0); options/a 12, 0 of 12 (4.0); options/b 12, 0 of 12 (4.0)
+mayas-comprehension-2026-08-25/items-bare.json                      160  menu/a 80, 0 of 80 (20.0); menu/b 80, 0 of 80 (20.0)
+mayas-comprehension-2026-08-25/items-careful.json                   160  menu/a 80, 0 of 80 (20.0); menu/b 80, 0 of 80 (20.0)
+proposalby-replication-2026-08-26/items.json                         48  menu/a 24, 0 of 24 (4.8); menu/b 24, 0 of 24 (4.8); options/a 24, 0 of 24 (4.8); options/b 24, 0 of 24 (4.8)
+proposalby-replication-2026-08-26/original-items.json                48  menu/a 24, 0 of 24 (4.8); menu/b 24, 0 of 24 (4.8); options/a 24, 0 of 24 (4.8); options/b 24, 0 of 24 (4.8)
+routing-evidence/unknown_items.json                                  24  menu/a 12, 0 of 12 (4.0); menu/b 12, 0 of 12 (4.0); options/a 12, 0 of 12 (4.0); options/b 12, 0 of 12 (4.0)
+routing-evidence/withheld_items.json                                 24  menu/a 12, 0 of 12 (4.0); menu/b 12, 0 of 12 (4.0); options/a 12, 0 of 12 (4.0); options/b 12, 0 of 12 (4.0)
+send-snapshot-comprehension-replica-2026-09-25/items.json           144  menu/a 72, 0 of 72 (18.0); menu/b 72, 0 of 72 (18.0)
+they-one-they-many-comprehension-2026-08-29/items-run2.json         192  menu/a 96, 0 of 96 (32.0); menu/b 96, 0 of 96 (32.0)
+they-one-they-many-comprehension-2026-08-29/items.json              192  menu/a 96, 0 of 96 (32.0); menu/b 96, 0 of 96 (32.0)
+thisonce-comprehension-2026-08-25/items-storage-diag-bare.json       80  menu/a 40, 0 of 40 (6.7); menu/b 40, 0 of 40 (6.7)
+thisonce-comprehension-2026-08-25/items-storage-diag-careful.json    80  menu/a 40, 0 of 40 (6.7); menu/b 40, 0 of 40 (6.7)
+moved-comprehension-2026-08-25/items-earlier-bare.json               96  menu/a 34, 0 of 34 (8.5); menu/b 31, 0 of 31 (7.8); options/a 47, 0 of 47 (11.8); options/b 45, 0 of 45 (11.2)
+moved-comprehension-2026-08-25/items-earlier-careful.json            96  menu/a 34, 0 of 34 (8.5); menu/b 31, 0 of 31 (7.8); options/a 47, 0 of 47 (11.8); options/b 45, 0 of 45 (11.2)
+moved-comprehension-2026-08-25/items-later.json                     101  menu/a 26, 0 of 26 (6.5); menu/b 35, 0 of 35 (8.8); options/a 42, 0 of 42 (10.5); options/b 49, 0 of 49 (12.2)
+moved-comprehension-2026-08-25/items-later-bare.json                 98  menu/a 32, 0 of 32 (8.0); menu/b 30, 0 of 30 (7.5); options/a 44, 0 of 44 (11.0); options/b 46, 0 of 46 (11.5)
+moved-comprehension-2026-08-25/items-later-careful.json              98  menu/a 32, 0 of 32 (8.0); menu/b 30, 0 of 30 (7.5); options/a 44, 0 of 44 (11.0); options/b 46, 0 of 46 (11.5)
+no-charge-faithful-replication-odds-2026-10-24/items.json           288  menu/a 105, 0 of 105 (11.7); menu/b 119, 0 of 119 (13.2)
+moved-comprehension-2026-08-25/items-earlier.json                   100  menu/a 25, 0 of 25 (6.2); menu/b 26, 0 of 26 (6.5); options/a 37, 0 of 37 (9.2); options/b 38, 0 of 38 (9.5)
+hh-mm-z-frozen-pool-2026-09-26/seat-A.items.json                    128  menu/a 12, 6 of 18 (4.5); menu/b 11, 4 of 15 (3.8); options/a 16, 0 of 16 (4.0); options/b 19, 6 of 25 (6.2); label0/a 47, 0 of 47 (11.8); label0/b 33, 0 of 33 (8.2)
+hh-mm-z-frozen-pool-2026-09-26/seat-B.items.json                    128  options/a 16, 0 of 16 (4.0); options/b 19, 6 of 25 (6.2); label0/a 47, 0 of 47 (11.8); label0/b 33, 0 of 33 (8.2)
+hh-mm-z-frozen-pool-2026-09-26/seat-C.items.json                    128  menu/a 11, 5 of 16 (4.0); menu/b 15, 9 of 24 (6.0); options/a 16, 0 of 16 (4.0); options/b 19, 6 of 25 (6.2); label0/a 47, 0 of 47 (11.8); label0/b 33, 0 of 33 (8.2)
+hh-mm-z-frozen-pool-2026-09-26/pool.items.json                      384  menu/a 58, 24 of 82 (20.5); menu/b 61, 19 of 80 (20.0); options/a 45, 0 of 45 (11.2); options/b 51, 0 of 51 (12.8); label0/a 118, 0 of 118 (29.5); label0/b 122, 0 of 122 (30.5)
+go-unless-no-comprehension-2026-08-29/gun_manifest_run2.json         48  menu/a 14, 0 of 14 (4.7); menu/b 14, 0 of 14 (4.7); options/a 12, 0 of 12 (4.0); options/b 12, 0 of 12 (4.0)
+go-unless-no-comprehension-2026-08-29/gun_panel_bare.json            48  menu/a 14, 0 of 14 (4.7); menu/b 14, 0 of 14 (4.7); options/a 12, 0 of 12 (4.0); options/b 12, 0 of 12 (4.0)
+go-unless-no-comprehension-2026-08-29/gun_panel_items.json           48  menu/a 14, 0 of 14 (4.7); menu/b 14, 0 of 14 (4.7); options/a 12, 0 of 12 (4.0); options/b 12, 0 of 12 (4.0)
+should-comprehension-2026-08-30/items.json                          192  menu/a 42, 0 of 42 (10.5); menu/b 54, 0 of 54 (13.5)
+should-comp-run-2026-08-31/items.json                               144  menu/a 23, 0 of 23 (7.7); menu/b 25, 0 of 25 (8.3)
+biweekly-e2w-repl-2026-08-24/items.json                             100  menu/a 10, 0 of 10 (3.3); options/a 17, 0 of 17 (5.7); options/b 13, 0 of 13 (4.3)
+rate-cap-bank-2026-10-10-v2/items_bare.json                         128  menu/a 11, 5 of 16 (3.2); menu/b 12, 4 of 16 (3.2); options/a 21, 10 of 31 (6.2); options/b 19, 5 of 24 (4.8)
+rate-cap-bank-2026-10-10/items_bare.json                            128  menu/a 11, 5 of 16 (3.2); menu/b 12, 4 of 16 (3.2); options/a 21, 10 of 31 (6.2); options/b 19, 5 of 24 (4.8)
+test-run-passed-comp-2026-08-31/items.json                           96  menu/a 12, 0 of 12 (4.0); menu/b 12, 0 of 12 (4.0); options/a 12, 0 of 12 (4.0); options/b 12, 0 of 12 (4.0)
+mirrors/dexagon-retry-fresh-bank-2026-10-08/retry-items.json        120  label2/b 14, 6 of 20 (4.0)
+because-ever-since-cells-audit-2026-10-24/items.json                216  menu/a 21, 0 of 21 (5.2); menu/b 15, 0 of 15 (3.8)
+repeat-restore-comp-2026-08-31/items.json                           238  menu/b 11, 1 of 12 (4.0); options/b 10, 0 of 10 (3.3)
