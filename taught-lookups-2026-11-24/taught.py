@@ -7,12 +7,23 @@ import numpy as np
 RULES = ("menu", "options", "label0", "label1", "label2"); MIN_N = 10; FAMILY_ALPHA = 0.05
 IDENT = re.compile(r"\b(?=[A-Za-z0-9_-]*[A-Za-z])(?=[A-Za-z0-9_-]*\d\d)[A-Za-z0-9]+(?:[-_][A-Za-z0-9]+)*\b")
 num = lambda t: re.sub(r"\d+", "#", t)
+CODED = re.compile(r"\b([A-H]) = (.*?)(?=\. [A-H] = |\.?$)"); FOLDS = 4; SPLIT_SEED = 20261124
+
+
+def shown(v):
+    """The option texts a reader is shown, in order. Where a bank lists bare codes (A, B, C, D) and prints the texts in the question,
+    the texts are taken from the question (amendment of 2026-11-24); otherwise the listed options are the texts."""
+    o = v["options"]
+    if all(len(x) == 1 for x in o):
+        m = CODED.findall(v["question"])
+        if [k for k, _ in m] == list(o): return [t for _, t in m]
+    return list(o)
 
 
 def key(rule, v):
     """What the lookup may see of one item for this rule, or None when the item has no such thing."""
-    if rule == "menu": return tuple(num(o) for o in v["options"])
-    if rule == "options": return tuple(sorted(num(o) for o in v["options"]))
+    if rule == "menu": return tuple(num(o) for o in shown(v))
+    if rule == "options": return tuple(sorted(num(o) for o in shown(v)))
     m = IDENT.search(v.get("blind") or "")
     if not m: return None
     tok = m.group(0); digits = re.sub(r"\D", "", tok); p = int(rule[-1])
@@ -21,7 +32,7 @@ def key(rule, v):
 
 
 def target(rule, v):
-    return v["options"].index(v["answer"]) if rule == "menu" else num(v["answer"])
+    pos = v["options"].index(v["answer"]); return pos if rule == "menu" else num(shown(v)[pos])
 
 
 def predict(rule, table, v):
@@ -29,7 +40,7 @@ def predict(rule, table, v):
     if k is None or len(table.get(k, ())) != 1: return None
     t = next(iter(table[k]))
     if rule == "menu": return t if t < len(v["options"]) else None
-    hit = [i for i, o in enumerate(v["options"]) if num(o) == t]
+    hit = [i for i, o in enumerate(shown(v)) if num(o) == t]
     return hit[0] if len(hit) == 1 else None
 
 
@@ -44,14 +55,15 @@ def tail(ks, right):
 
 
 def score_rule(rule, rows):
-    """Two folds by the parity of an item's place in the bank: taught on one, scored on the other, both ways."""
-    ks, right, wrong = [], 0, 0
-    for fold in (0, 1):
+    """Four folds drawn by a seeded shuffle of the bank's items (amendment of 2026-11-24; the plan's split by parity is in run 1):
+    each item is scored by a lookup taught on the three other quarters."""
+    ks, right, wrong = [], 0, 0; order = list(range(len(rows))); random.Random(SPLIT_SEED).shuffle(order); part = {i: n % FOLDS for n, i in enumerate(order)}
+    for fold in range(FOLDS):
         table = collections.defaultdict(set)
         for i, v in enumerate(rows):
-            if i % 2 == fold and key(rule, v) is not None: table[key(rule, v)].add(target(rule, v))
+            if part[i] != fold and key(rule, v) is not None: table[key(rule, v)].add(target(rule, v))
         for i, v in enumerate(rows):
-            if i % 2 == fold: continue
+            if part[i] != fold: continue
             pos = predict(rule, table, v)
             if pos is None: continue
             ks.append(len(v["options"])); ok = v["options"][pos] == v["answer"]; right += ok; wrong += not ok

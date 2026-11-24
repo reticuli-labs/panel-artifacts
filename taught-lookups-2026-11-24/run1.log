@@ -1,0 +1,89 @@
+{
+ "banks_tested": 92,
+ "tests": 58,
+ "alpha_per_test": 0.0008620689655172415,
+ "min_decided": 10,
+ "rules": [
+  "menu",
+  "options",
+  "label0",
+  "label1",
+  "label2"
+ ],
+ "banks_with_a_flagged_rule": 20,
+ "flagged_banks_per_rule": {
+  "menu": 17,
+  "options": 15,
+  "label0": 0,
+  "label1": 0,
+  "label2": 1
+ },
+ "control_keys_drawn_at_random": {
+  "banks_tested": 92,
+  "tests": 20,
+  "banks_with_a_flagged_rule": 0,
+  "flagged_banks_per_rule": {
+   "menu": 0,
+   "options": 0,
+   "label0": 0,
+   "label1": 0,
+   "label2": 0
+  }
+ },
+ "known_cases": {
+  "send-snapshot replica, menu": [
+   [
+    "send-snapshot-comprehension-replica-2026-09-25/items.json",
+    0,
+    0,
+    0,
+    false
+   ]
+  ],
+  "frozen pool seats, label0": [
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-A.items.json",
+    0,
+    0,
+    0,
+    false
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-B.items.json",
+    0,
+    0,
+    0,
+    false
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-C.items.json",
+    0,
+    0,
+    0,
+    false
+   ]
+  ]
+ }
+}
+
+bank                                                                  n  flagged lookups: right, wrong of decided (expected by chance)
+approx-robust/rb3-robustness-v1.json                                 24  menu 24, 0 of 24 (8.0); options 24, 0 of 24 (8.0)
+go-unless-no-comprehension-2026-08-29/gun_manifest_run2.json         48  menu 48, 0 of 48 (16.0); options 44, 0 of 44 (14.7)
+go-unless-no-comprehension-2026-08-29/gun_panel_bare.json            48  menu 48, 0 of 48 (16.0); options 44, 0 of 44 (14.7)
+go-unless-no-comprehension-2026-08-29/gun_panel_items.json           48  menu 48, 0 of 48 (16.0); options 44, 0 of 44 (14.7)
+proposalby-replication-2026-08-26/items.json                         48  menu 48, 0 of 48 (9.6); options 48, 0 of 48 (9.6)
+proposalby-replication-2026-08-26/original-items.json                48  menu 48, 0 of 48 (9.6); options 48, 0 of 48 (9.6)
+routing-evidence/unknown_items.json                                  24  menu 24, 0 of 24 (8.0); options 24, 0 of 24 (8.0)
+routing-evidence/withheld_items.json                                 24  menu 24, 0 of 24 (8.0); options 24, 0 of 24 (8.0)
+should-comp-run-2026-08-31/items.json                               192  menu 64, 0 of 64 (21.3)
+twice-weekly-replication-2026-08-21/twice-weekly-replication-items   60  options 18, 0 of 18 (5.5)
+twice-weekly-replication-2026-08-21/twice-weekly-replication-items   60  options 18, 0 of 18 (5.5)
+rate-cap-bank-2026-10-10-v2/items_bare.json                         128  menu 17, 6 of 23 (4.6); options 35, 27 of 62 (12.4)
+rate-cap-bank-2026-10-10/items_bare.json                            128  menu 17, 6 of 23 (4.6); options 35, 27 of 62 (12.4)
+no-charge-faithful-replication-odds-2026-10-24/items.json           288  menu 64, 0 of 64 (7.1)
+rate-cap-bank-2026-10-10-v2/first-original-dexagon-20261011/execut  128  menu 19, 4 of 23 (4.6); options 28, 24 of 52 (10.4)
+rate-cap-bank-2026-10-10-v2/items_filed.json                        128  menu 19, 4 of 23 (4.6); options 28, 24 of 52 (10.4)
+rate-cap-bank-2026-10-10/items_filed.json                           128  menu 19, 4 of 23 (4.6); options 28, 24 of 52 (10.4)
+rathernot-comprehension-2026-08-25/items-bare.json                  288  menu 48, 48 of 96 (32.0)
+rathernot-comprehension-2026-08-25/items-careful.json               288  menu 48, 48 of 96 (32.0)
+choose-any-comprehension-replica-2026-09-25/items.json              144  label2 7, 3 of 10 (1.2)
