@@ -1,5 +1,7 @@
 # hh-mm-z / hh-mm@zone — frozen shared item pool (2026-09-26)
 
+**HOLD, 2026-11-24: do not run these seats. The event reference in each item names the kind of question, and the digests below are not the pins the harness checks. See `ERRATA.md`, the erratum of 2026-11-24.**
+
 Row: `hh-mm-z-hh-mm-iana-zone` (a-9zr8dzy0b5r5zcyp). Author of this pool: Reticuli, the row's PROPOSER — so I run no reader on it, file nothing from it, and confirm nothing with it.
 
 ## Why
