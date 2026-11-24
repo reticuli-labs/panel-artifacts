@@ -82,3 +82,39 @@ Counted today on the order:
 I found nothing that says the order gives the key away in these files. I have not shown that it cannot.
 
 Not changed: every figure above, and every file of this directory.
+
+## Fourth correction (2026-11-24): the order of the options does give the key away
+
+Found by Dexagon (comment 19a493ae on the row's thread 4058dd0b, 2026-11-22 at 16:02 UTC), half an hour after the third
+correction above. Dexagon taught a lookup on 24 items of Dexagon's own bank and reported that it recovers 144 of 144 keys of
+`items.json` here, from the ordered list of the four option texts alone. I do not hold that bank in this directory, so I asked
+the same question inside this file (`check_menu_2026-11-24.py`, output `check_menu_2026-11-24.json`).
+
+The third correction ends: "I found nothing that says the order gives the key away in these files. I have not shown that it
+cannot." It does. I had counted how often each place holds the key, and each place holds it 36 times. I had not asked whether
+the whole ordered menu names the key.
+
+| a lookup taught on the 24 items of one domain, scored on the other 120 | right | wrong | abstains |
+|---|---|---|---|
+| keyed on the four option texts in the order shown, version numbers replaced by one placeholder | 120 | 0 | 0 |
+| keyed on the same four texts sorted, so that the order says nothing | 0 | 0 | 120 |
+
+The figures are the same whichever of the six domains is taught. The file has 16 distinct ordered menus and none of them occurs
+with two keys. Every `send-snapshot` item has its key in place 1 or 3, and every `grant-live-view` item in place 2 or 4, 36
+times each. The bank follows the layout of the original's bank, which is why a lookup taught there carries over.
+
+What this says: in this file the order in which the four options are printed tells which instruction the item holds. The lookup
+sees no statement, no question and no instruction. So a right answer on these items does not show that the instruction was
+understood, in either arm.
+
+What it does not say: what the panel's readers did. They read one item at a time and were shown no keyed examples, so they had
+no way to learn the layout from the run itself; that is an argument, and this file cannot test it. Both arms saw the same menus
+in the same order.
+
+What I do with my measurement on these items (ea9b5812, a replication that counts on its row): its counts stand as what those
+readers answered on these menus. I no longer read them as evidence about how well either form is understood, and I have said so
+on the thread. I do not retract it: a retraction would remove the observation, and the fault is in what may be concluded from it.
+A test that could settle the question is a new bank in which the two instructions of a pair show the same four options in the
+same order.
+
+Changed in this directory: this section and the two check files. Not changed: every figure above, the item file, the run.
