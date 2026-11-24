@@ -4,7 +4,7 @@ is built from the options, or from an identifier in the part of the message that
 blind_items.jsonl in DIR; writes FILE and nothing else. Calls no reader. The lookups, the null and the flag are in PLAN.md."""
 import argparse, collections, json, math, os, random, re
 import numpy as np
-RULES = ("menu", "options", "label0", "label1", "label2"); MIN_N = 10; FAMILY_ALPHA = 0.05
+BASE = ("menu", "options", "label0", "label1", "label2"); RULES = tuple(r + d for r in BASE for d in ("/a", "/b")); MIN_N = 10; FAMILY_ALPHA = 0.05
 IDENT = re.compile(r"\b(?=[A-Za-z0-9_-]*[A-Za-z])(?=[A-Za-z0-9_-]*\d\d)[A-Za-z0-9]+(?:[-_][A-Za-z0-9]+)*\b")
 num = lambda t: re.sub(r"\d+", "#", t)
 CODED = re.compile(r"\b([A-H]) = (.*?)(?=\. [A-H] = |\.?$)"); FOLDS = 4; SPLIT_SEED = 20261124
@@ -22,21 +22,23 @@ def shown(v):
 
 def key(rule, v):
     """What the lookup may see of one item for this rule, or None when the item has no such thing."""
+    rule = rule.split("/")[0]
     if rule == "menu": return tuple(num(o) for o in shown(v))
     if rule == "options": return tuple(sorted(num(o) for o in shown(v)))
     m = IDENT.search(v.get("blind") or "")
     if not m: return None
-    tok = m.group(0); digits = re.sub(r"\D", "", tok); p = int(rule[-1])
+    tok = m.group(0); digits = re.sub(r"\D", "", tok); p = int(rule[5])
     if p >= len(digits): return None
     return (re.sub(r"[a-z]", "a", re.sub(r"[A-Z]", "A", re.sub(r"\d", "9", tok))), p, digits[p])
 
 
 def target(rule, v):
+    rule = rule.split("/")[0]
     pos = v["options"].index(v["answer"]); return pos if rule == "menu" else num(shown(v)[pos])
 
 
 def predict(rule, table, v):
-    k = key(rule, v)
+    k = key(rule, v); rule = rule.split("/")[0]
     if k is None or len(table.get(k, ())) != 1: return None
     t = next(iter(table[k]))
     if rule == "menu": return t if t < len(v["options"]) else None
@@ -54,35 +56,37 @@ def tail(ks, right):
     return float(min(1.0, dist[right:].sum()))
 
 
-def score_rule(rule, rows):
-    """Four folds drawn by a seeded shuffle of the bank's items (amendment of 2026-11-24; the plan's split by parity is in run 1):
-    each item is scored by a lookup taught on the three other quarters."""
-    ks, right, wrong = [], 0, 0; order = list(range(len(rows))); random.Random(SPLIT_SEED).shuffle(order); part = {i: n % FOLDS for n, i in enumerate(order)}
-    for fold in range(FOLDS):
-        table = collections.defaultdict(set)
-        for i, v in enumerate(rows):
-            if part[i] != fold and key(rule, v) is not None: table[key(rule, v)].add(target(rule, v))
-        for i, v in enumerate(rows):
-            if part[i] != fold: continue
-            pos = predict(rule, table, v)
-            if pos is None: continue
-            ks.append(len(v["options"])); ok = v["options"][pos] == v["answer"]; right += ok; wrong += not ok
+def score_rule(rule, rows, direction):
+    """One seeded shuffle deals the bank's distinct items into two halves. The lookup is taught on one half and scored on the other,
+    in ONE direction per call, so that given the taught half every scored answer is an independent draw under the null (second
+    amendment of 2026-11-24: scoring both ways and adding them makes pairs of answers depend on each other)."""
+    ks, right, wrong = [], 0, 0; order = list(range(len(rows))); random.Random(SPLIT_SEED).shuffle(order); part = {i: n % 2 for n, i in enumerate(order)}
+    table = collections.defaultdict(set)
+    for i, v in enumerate(rows):
+        if part[i] != direction and key(rule, v) is not None: table[key(rule, v)].add(target(rule, v))
+    scored = [v for i, v in enumerate(rows) if part[i] == direction]
+    for v in scored:
+        pos = predict(rule, table, v)
+        if pos is None: continue
+        ks.append(len(v["options"])); ok = v["options"][pos] == v["answer"]; right += ok; wrong += not ok
     n = len(ks); exp = sum(1.0 / k for k in ks)
-    return {"decided": n, "right": right, "wrong": wrong, "abstain": len(rows) - n, "expected": round(exp, 2), "p": tail(ks, right) if n else 1.0}
+    return {"scored_half": len(scored), "decided": n, "right": right, "wrong": wrong, "abstain": len(scored) - n, "expected": round(exp, 2), "p": tail(ks, right) if n else 1.0}
 
 
 def analyse(banks, items):
     real = lambda v: not v.get("calibration") and not v.get("identical_arms"); out = []
     for name, sha, ids in banks:
-        rows = [items[i] for i in ids if real(items[i])]
+        seen = set(); rows = [items[i] for i in ids if real(items[i]) and not (i in seen or seen.add(i))]      # an item listed twice is taught or scored once
         if len(rows) < MIN_N: continue
-        out.append({"bank": name, "sha256_items": sha, "n": len(rows), "rules": {r: score_rule(r, rows) for r in RULES}})
+        out.append({"bank": name, "sha256_items": sha, "n": len(rows), "rules": {r + d: score_rule(r, rows, n) for r in BASE for n, d in enumerate(("/a", "/b"))}})
     tests = [(b, r) for b in out for r in RULES if b["rules"][r]["decided"] >= MIN_N]; alpha = FAMILY_ALPHA / max(1, len(tests))
     for b in out:
         for r in RULES: b["rules"][r]["flagged"] = bool(b["rules"][r]["decided"] >= MIN_N and b["rules"][r]["p"] < alpha)
         b["flagged_rules"] = [r for r in RULES if b["rules"][r]["flagged"]]
+    fam = lambda b, r: any(b["rules"][r + d]["flagged"] for d in ("/a", "/b"))
     return {"banks_tested": len(out), "tests": len(tests), "alpha_per_test": alpha, "min_decided": MIN_N, "rules": list(RULES),
-            "banks_with_a_flagged_rule": sum(bool(b["flagged_rules"]) for b in out), "flagged_banks_per_rule": {r: sum(b["rules"][r]["flagged"] for b in out) for r in RULES},
+            "banks_with_a_flagged_rule": sum(bool(b["flagged_rules"]) for b in out), "flagged_banks_per_lookup": {r: sum(fam(b, r) for b in out) for r in BASE},
+            "banks_flagged_on_menu_or_a_label": sum(any(fam(b, r) for r in BASE if r != "options") for b in out),
             "rows": sorted(out, key=lambda b: (-max([x["right"] / b["n"] for x in b["rules"].values() if x["flagged"]] or [0.0]), b["bank"]))}
 
 
@@ -106,9 +110,9 @@ def rekeyed(items, seed=20261124):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0]); ap.add_argument("--sweep", required=True); ap.add_argument("--out", required=True); a = ap.parse_args()
     banks, items = load(a.sweep); res = analyse(banks, items); ctl = analyse(banks, rekeyed(items))
-    res["control_keys_drawn_at_random"] = {k: ctl[k] for k in ("banks_tested", "tests", "banks_with_a_flagged_rule", "flagged_banks_per_rule")}
+    res["control_keys_drawn_at_random"] = {k: ctl[k] for k in ("banks_tested", "tests", "banks_with_a_flagged_rule", "flagged_banks_per_lookup")}
     find = lambda part, rule: [(b["bank"], b["rules"][rule]["right"], b["rules"][rule]["wrong"], b["rules"][rule]["decided"], b["rules"][rule]["flagged"]) for b in res["rows"] if part in b["bank"]]
-    res["known_cases"] = {"send-snapshot replica, menu": find("send-snapshot-comprehension-replica-2026-09-25/items.json", "menu"), "frozen pool seats, label0": find("hh-mm-z-frozen-pool-2026-09-26/seat-", "label0")}
+    res["known_cases"] = {"send-snapshot replica, menu": find("send-snapshot-comprehension-replica-2026-09-25/items.json", "menu/a") + find("send-snapshot-comprehension-replica-2026-09-25/items.json", "menu/b"), "frozen pool seats, label0": find("hh-mm-z-frozen-pool-2026-09-26/seat-", "label0/a") + find("hh-mm-z-frozen-pool-2026-09-26/seat-", "label0/b")}
     json.dump(res, open(a.out, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print(json.dumps({k: v for k, v in res.items() if k != "rows"}, indent=1, ensure_ascii=False))
     print("\n%-66s %4s  %s" % ("bank", "n", "flagged lookups: right, wrong of decided (expected by chance)"))

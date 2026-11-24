@@ -1,0 +1,110 @@
+{
+ "banks_tested": 92,
+ "tests": 77,
+ "alpha_per_test": 0.0006493506493506494,
+ "min_decided": 10,
+ "rules": [
+  "menu",
+  "options",
+  "label0",
+  "label1",
+  "label2"
+ ],
+ "banks_with_a_flagged_rule": 41,
+ "flagged_banks_per_rule": {
+  "menu": 37,
+  "options": 29,
+  "label0": 5,
+  "label1": 1,
+  "label2": 0
+ },
+ "control_keys_drawn_at_random": {
+  "banks_tested": 92,
+  "tests": 41,
+  "banks_with_a_flagged_rule": 3,
+  "flagged_banks_per_rule": {
+   "menu": 1,
+   "options": 2,
+   "label0": 0,
+   "label1": 0,
+   "label2": 0
+  }
+ },
+ "known_cases": {
+  "send-snapshot replica, menu": [
+   [
+    "send-snapshot-comprehension-replica-2026-09-25/items.json",
+    144,
+    0,
+    144,
+    true
+   ]
+  ],
+  "frozen pool seats, label0": [
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-A.items.json",
+    80,
+    0,
+    80,
+    true
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-B.items.json",
+    80,
+    0,
+    80,
+    true
+   ],
+   [
+    "hh-mm-z-frozen-pool-2026-09-26/seat-C.items.json",
+    80,
+    0,
+    80,
+    true
+   ]
+  ]
+ }
+}
+
+bank                                                                  n  flagged lookups: right, wrong of decided (expected by chance)
+approx-robust/rb3-robustness-v1.json                                 24  menu 24, 0 of 24 (8.0); options 24, 0 of 24 (8.0)
+mayas-comprehension-2026-08-25/items-bare.json                      160  menu 160, 0 of 160 (40.0)
+mayas-comprehension-2026-08-25/items-careful.json                   160  menu 160, 0 of 160 (40.0)
+proposalby-replication-2026-08-26/items.json                         48  menu 48, 0 of 48 (9.6); options 48, 0 of 48 (9.6)
+proposalby-replication-2026-08-26/original-items.json                48  menu 48, 0 of 48 (9.6); options 48, 0 of 48 (9.6)
+routing-evidence/unknown_items.json                                  24  menu 24, 0 of 24 (8.0); options 24, 0 of 24 (8.0)
+routing-evidence/withheld_items.json                                 24  menu 24, 0 of 24 (8.0); options 24, 0 of 24 (8.0)
+send-snapshot-comprehension-replica-2026-09-25/items.json           144  menu 144, 0 of 144 (36.0)
+they-one-they-many-comprehension-2026-08-29/items-run2.json         192  menu 192, 0 of 192 (64.0)
+they-one-they-many-comprehension-2026-08-29/items.json              192  menu 192, 0 of 192 (64.0)
+thisonce-comprehension-2026-08-25/items-storage-diag-bare.json       80  menu 80, 0 of 80 (13.3)
+thisonce-comprehension-2026-08-25/items-storage-diag-careful.json    80  menu 80, 0 of 80 (13.3)
+moved-comprehension-2026-08-25/items-earlier-bare.json              100  menu 72, 0 of 72 (18.0); options 98, 0 of 98 (24.5)
+moved-comprehension-2026-08-25/items-earlier-careful.json           100  menu 72, 0 of 72 (18.0); options 98, 0 of 98 (24.5)
+moved-comprehension-2026-08-25/items-later-bare.json                100  menu 77, 0 of 77 (19.2); options 98, 0 of 98 (24.5)
+moved-comprehension-2026-08-25/items-later-careful.json             100  menu 77, 0 of 77 (19.2); options 98, 0 of 98 (24.5)
+moved-comprehension-2026-08-25/items-later.json                     101  menu 63, 0 of 63 (15.8); options 97, 0 of 97 (24.2)
+go-unless-no-comprehension-2026-08-29/gun_manifest_run2.json         48  menu 42, 0 of 42 (14.0); options 38, 0 of 38 (12.7)
+go-unless-no-comprehension-2026-08-29/gun_panel_bare.json            48  menu 42, 0 of 42 (14.0); options 38, 0 of 38 (12.7)
+go-unless-no-comprehension-2026-08-29/gun_panel_items.json           48  menu 42, 0 of 42 (14.0); options 38, 0 of 38 (12.7)
+moved-comprehension-2026-08-25/items-earlier.json                   102  menu 60, 0 of 60 (15.0); options 88, 0 of 88 (22.0)
+no-charge-faithful-replication-odds-2026-10-24/items.json           288  menu 224, 0 of 224 (24.9)
+rate-cap-bank-2026-10-10/items_undisclosed.json                      16  options 11, 0 of 11 (2.2)
+hh-mm-z-frozen-pool-2026-09-26/pool.items.json                      384  menu 126, 43 of 169 (42.2); options 96, 0 of 96 (24.0); label0 240, 0 of 240 (60.0)
+hh-mm-z-frozen-pool-2026-09-26/seat-A.items.json                    128  menu 24, 16 of 40 (10.0); options 33, 6 of 39 (9.8); label0 80, 0 of 80 (20.0)
+hh-mm-z-frozen-pool-2026-09-26/seat-B.items.json                    128  menu 22, 20 of 42 (10.5); options 33, 6 of 39 (9.8); label0 80, 0 of 80 (20.0)
+hh-mm-z-frozen-pool-2026-09-26/seat-C.items.json                    128  menu 28, 16 of 44 (11.0); options 33, 6 of 39 (9.8); label0 80, 0 of 80 (20.0)
+should-comprehension-2026-08-30/items.json                          192  menu 96, 0 of 96 (24.0)
+should-comp-run-2026-08-31/items.json                               192  menu 64, 0 of 64 (21.3)
+rate-cap-bank-2026-10-10-v2/items_bare.json                         128  menu 27, 11 of 38 (7.6); options 42, 16 of 58 (11.6)
+rate-cap-bank-2026-10-10/items_bare.json                            128  menu 27, 11 of 38 (7.6); options 42, 16 of 58 (11.6)
+biweekly-e2w-repl-2026-08-24/items.json                             100  menu 26, 0 of 26 (8.7); options 30, 0 of 30 (10.0)
+twice-weekly-replication-2026-08-21/twice-weekly-replication-items   60  options 18, 0 of 18 (5.5)
+twice-weekly-replication-2026-08-21/twice-weekly-replication-items   60  options 18, 0 of 18 (5.5)
+test-run-passed-comp-2026-08-31/items.json                           96  menu 24, 0 of 24 (8.0); options 24, 0 of 24 (8.0)
+rate-cap-bank-2026-10-10-v2/first-original-dexagon-20261011/execut  128  menu 21, 8 of 29 (5.8); options 27, 16 of 43 (8.6)
+rate-cap-bank-2026-10-10-v2/items_filed.json                        128  menu 21, 8 of 29 (5.8); options 27, 16 of 43 (8.6)
+rate-cap-bank-2026-10-10/items_filed.json                           128  menu 21, 8 of 29 (5.8); options 27, 16 of 43 (8.6)
+because-ever-since-cells-audit-2026-10-24/items.json                216  menu 36, 0 of 36 (9.0)
+repeat-restore-comp-2026-08-31/items.json                           256  menu 19, 3 of 22 (7.3); options 16, 0 of 16 (5.3)
+choose-any-comprehension-replica-2026-09-25/items.json              144  label0 8, 3 of 11 (1.4); label1 10, 4 of 14 (1.8)
